@@ -45,9 +45,9 @@ onEvent("recipes", event => {
 
     const extraMetals = ['soul_infused', 'shellite', 'twinite', 'dragonsteel']
 
-    event.shapeless('4x thermal_extra:soul_infused_dust', ['3x thermal_extra:soul_sand_dust', 'thermal:apatite_dust', '2x thermal:invar_dust', '2x the_vault:eternal_soul'])
-    event.shapeless('4x thermal_extra:shellite_dust', ['3x minecraft:shulker_shell', 'thermal:apatite_dust', 'thermal_extra:soul_infused_dust', 'the_vault:extraordinary_wutodie'])
-    event.shapeless('4x thermal_extra:twinite_dust', ['3x #forge:dusts/amethyst', 'thermal:apatite_dust', '2x thermal_extra:shellite_dust', '2x the_vault:extraordinary_alexandrite'])
+    event.shapeless('4x thermal_extra:soul_infused_dust', ['3x thermal_extra:soul_sand_dust', '#forge:dust/apatite', '2x thermal:invar_dust', '2x the_vault:eternal_soul'])
+    event.shapeless('4x thermal_extra:shellite_dust', ['3x minecraft:shulker_shell', '#forge:dust/apatite', 'thermal_extra:soul_infused_dust', 'the_vault:extraordinary_wutodie'])
+    event.shapeless('4x thermal_extra:twinite_dust', ['3x #forge:dusts/amethyst', '#forge:dust/apatite', '2x thermal_extra:shellite_dust', '2x the_vault:extraordinary_alexandrite'])
     event.shapeless('4x thermal_extra:dragonsteel_dust', ['3x minecraft:dragon_breath', 'thermal_extra:twinite_dust', '#forge:dusts/netherite', 'the_vault:perfect_echo_gem', 'the_vault:perfect_black_opal'])
 
     event.shaped(Item.of('thermal_extra:upgrade_augment'),

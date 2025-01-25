@@ -255,7 +255,7 @@ onEvent("recipes", event => {
             'EEE'
         ], {
         E: 'mysticalagriculture:energized_steel_essence'
-    })
+    }).id('mysticalagriculture:essence/powah/energized_steel')
 
     event.shaped(Item.of('thermal:niter_dust', 8),
         [

@@ -56,6 +56,7 @@ global.BLACK_LIST = {
 	'appmek:creative_chemical_cell': true,
 	'ae2:creative_item_cell': true,
 	'ae2:creative_fluid_cell': true,
+	'quark:soul_bead': true,
 
 
 

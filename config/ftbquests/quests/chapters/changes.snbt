@@ -179,8 +179,8 @@
 				""
 				"In this objective, your goal is still to light a number of braziers, but there are some caveats!"
 				""
-				"First, the crystal will always have 2 new Modifiers on it, Spooky and Haunting. Spooky works just like Wild but spawns Wraiths instead of Vault Dwellers, and Haunting works like Voiding but takes less time away on hit."
-				"The Wraiths spawned from this modifier will always spawn with resistance, so you will be unable to kill them. To weaken them, you'll need to light a brazier with them nearby, this will remove their resistance and do a big chunk of damage to them!"
+				"First, the crystal will always have 2 new Modifiers on it, Ghost Town and Haunting. Ghost Town works just like Wild but spawns special new Wraiths instead of Vault Dwellers, and Haunting works like Voiding but takes less time away on hit."
+				"You can weaken the Wraiths by lighting a brazier with them nearby, this will do a big chunk of damage to them!"
 				""
 				"The modifiers from both lighting braziers and pillaging them has all been changed up as well!"
 				""
@@ -321,10 +321,7 @@
 			x: -5.0d
 			y: -1.0d
 			subtitle: "I want a new one!"
-			description: [
-				"In this pack, you can buy Augment Boxes from a vendor, or you can craft an augment box from 4 of any augments and a little bit of materials."
-				"Nice to reroll unwanted augments with!"
-			]
+			description: ["In this pack, you can buy Augment Boxes from Vendoors and a few other sources!"]
 			id: "2924DAF22B0ECE71"
 			tasks: [{
 				id: "56057378B8AB941B"
@@ -892,37 +889,6 @@
 			}]
 		}
 		{
-			title: "Gear Augmenters"
-			x: -1.0d
-			y: 2.0d
-			subtitle: "Add suffix and prefix slots!"
-			description: ["The Waning and Waxing augmenters are new items that let you add prefix/suffix slots to your gear! Note, they are still limited to the normal maximum number of slots."]
-			id: "4BABA8010FB4D977"
-			tasks: [
-				{
-					id: "7FECC8FCF9F21B92"
-					type: "item"
-					item: "woldsvaults:waxing_augmenter"
-				}
-				{
-					id: "097FEF06DC1EEA43"
-					type: "item"
-					item: "woldsvaults:waning_augmenter"
-				}
-				{
-					id: "64B321BC289BC52B"
-					type: "item"
-					item: "woldsvaults:repair_augmenter"
-				}
-			]
-			rewards: [{
-				id: "59304C58444D18D6"
-				type: "item"
-				item: "the_vault:fundamental_focus"
-				count: 8
-			}]
-		}
-		{
 			title: "New Capstones!"
 			x: -7.0d
 			y: 2.0d
@@ -1118,6 +1084,24 @@
 					}
 				}
 			]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			subtitle: "The choice is yours"
+			description: ["In Wold's Vaults, you can craft Augments like you can Inscriptions! You'll need to discover a theme for the first time before you can craft it!\\n\\nYou will need to recycle Augments into Augment Pieces using the Vault Recycler or Salvager before you can craft any augments."]
+			id: "0996F6EA53D9BC23"
+			tasks: [{
+				id: "763EB3BB7443F035"
+				type: "item"
+				item: "woldsvaults:augment_crafting_table"
+			}]
+			rewards: [{
+				id: "1973697447CE1F89"
+				type: "item"
+				item: "woldsvaults:augment_piece"
+				count: 8
+			}]
 		}
 	]
 	quest_links: [ ]

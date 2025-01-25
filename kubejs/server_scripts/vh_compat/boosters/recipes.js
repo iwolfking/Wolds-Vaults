@@ -37,9 +37,9 @@ onEvent("recipes", event => {
 
     event.shaped(Item.of('rsinfinitybooster:dimension_card'),
         [
-            'PXP',
-            'XSX',
-            'PXP'
+            'PSP',
+            'SXS',
+            'PSP'
         ], {
         S: 'the_vault:wold_star',
         P: 'rsinfinitybooster:infinity_card',
@@ -48,9 +48,9 @@ onEvent("recipes", event => {
 
     event.shaped(Item.of('aeinfinitybooster:dimension_card'),
         [
-            'PXP',
-            'XSX',
-            'PXP'
+            'PSP',
+            'SXS',
+            'PSP'
         ], {
         S: 'the_vault:wold_star',
         P: 'aeinfinitybooster:infinity_card',

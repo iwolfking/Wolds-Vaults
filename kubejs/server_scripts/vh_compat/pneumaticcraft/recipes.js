@@ -630,6 +630,6 @@ onEvent("recipes", event => {
     })
 
     event.shapeless('pneumaticcraft:unassembled_netherite_drill_bit', ["pneumaticcraft:drill_bit_diamond", "the_vault:echoing_ingot"])
-
+    event.shapeless('9x pneumaticcraft:ingot_iron_compressed', ["pneumaticcraft:compressed_iron_block"])
 
 })

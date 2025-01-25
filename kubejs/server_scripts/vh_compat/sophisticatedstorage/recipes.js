@@ -788,7 +788,7 @@ onEvent("recipes", event => {
     ], {
         L: 'the_vault:gem_larimar',
         I: 'the_vault:chromatic_iron_ingot',
-        P: 'the_vault:wooden_planks'
+        P: 'the_vault:driftwood'
     }
     )
 
@@ -798,7 +798,7 @@ onEvent("recipes", event => {
         'PPP'
     ], {
         U: 'sophisticatedstorage:upgrade_base',
-        P: 'the_vault:wooden_planks'
+        P: 'the_vault:driftwood'
     }
     )
 
@@ -1026,7 +1026,7 @@ onEvent("recipes", event => {
             'OUO',
             'RLR'
         ], {
-        O: 'the_vault:wooden_planks',
+        O: 'the_vault:driftwood',
         P: 'minecraft:sticky_piston',
         R: 'the_vault:carbon',
         L: 'the_vault:perfect_larimar',
@@ -1039,7 +1039,7 @@ onEvent("recipes", event => {
             'OUO',
             'RLR'
         ], {
-        O: 'the_vault:wooden_planks',
+        O: 'the_vault:driftwood',
         P: 'minecraft:crafting_table',
         R: 'the_vault:vault_diamond',
         L: 'the_vault:extraordinary_larimar',

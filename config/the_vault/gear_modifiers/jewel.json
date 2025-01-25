@@ -343,7 +343,7 @@
           {
             "minLevel": 0,
             "maxLevel": 64,
-            "weight": 100,
+            "weight": 70,
             "value": {
               "min": 0.03,
               "max": 0.05,
@@ -353,7 +353,7 @@
           {
             "minLevel": 30,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 70,
             "value": {
               "min": 0.06,
               "max": 0.08,
@@ -363,7 +363,7 @@
           {
             "minLevel": 65,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 70,
             "value": {
               "min": 0.09,
               "max": 0.10,
@@ -373,7 +373,7 @@
           {
             "minLevel": 101,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 70,
             "value": {
               "min": 0.10,
               "max": 0.12,
@@ -383,7 +383,7 @@
           {
             "minLevel": 102,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 70,
             "value": {
               "min": 0.13,
               "max": 0.15,
@@ -513,6 +513,63 @@
               "min": 2,
               "max": 2,
               "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:dismantle_chance",
+        "group": "ModTrapDisarm",
+        "identifier": "the_vault:dismantle_chance",
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 30,
+            "value": {
+              "min": 0.12,
+              "max": 0.24,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 40,
+            "maxLevel": -1,
+            "weight": 30,
+            "value": {
+              "min": 0.25,
+              "max": 0.28,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 65,
+            "maxLevel": -1,
+            "weight": 30,
+            "value": {
+              "min": 0.29,
+              "max": 0.32,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 30,
+            "value": {
+              "min": 0.33,
+              "max": 0.4,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 30,
+            "value": {
+              "min": 0.41,
+              "max": 0.64,
+              "step": 0.01
             }
           }
         ]

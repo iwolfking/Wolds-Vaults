@@ -9,12 +9,13 @@
         ],
         "IMPLICIT": [
           "the_vault:base_armor",
+          "the_vault:jester_lucky_hit",
+          "the_vault:base_lucky_hit_chance",
           "the_vault:base_lucky_hit_chance"
         ],
         "PREFIX": [],
         "SUFFIX": [
-          "the_vault:u_item_rarity",
-          "the_vault:jester_lucky_hit"
+          "the_vault:u_item_rarity"
         ]
       },
       "modifierTags": [],
@@ -29,7 +30,8 @@
         ],
         "IMPLICIT": [
           "the_vault:base_armor",
-          "the_vault:u_critical_hit_mitigation"
+          "the_vault:u_critical_hit_mitigation",
+          "the_vault:u_resistance_effect"
         ],
         "PREFIX": [
           "the_vault:u_mod_armor",
@@ -53,6 +55,7 @@
           "the_vault:base_durability"
         ],
         "IMPLICIT": [
+          "the_vault:base_armor",
           "the_vault:base_health"
         ],
         "PREFIX": [
@@ -143,8 +146,24 @@
       "modifierTags": [],
       "weight": 1
     },
+    "woldsvaults:treasure_jewel": {
+      "name": "Treasured Jewel",
+      "model": "the_vault:gear/jewel/treasure",
+      "modifierIdentifiers": {
+        "IMPLICIT": [
+          "the_vault:u_jewel_size_treasure"
+        ],
+        "PREFIX": [
+          "the_vault:u_treasure_affinity"
+        ],
+        "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
     "the_vault:kaleidoscope": {
       "name": "Kaleidoscope",
+      "model": "the_vault:gear/jewel/kaleidoscope",
       "modifierIdentifiers": {
         "IMPLICIT": [
           "the_vault:u_jewel_size"
@@ -163,6 +182,7 @@
     },
     "the_vault:manabloom": {
       "name": "Manabloom",
+      "model": "the_vault:gear/jewel/manabloom",
       "modifierIdentifiers": {
         "IMPLICIT": [
           "the_vault:u_jewel_size_manabloom"
@@ -177,6 +197,7 @@
     },
     "the_vault:pax": {
       "name": "Pax",
+      "model": "the_vault:gear/jewel/pax",
       "modifierIdentifiers": {
         "IMPLICIT": [
           "the_vault:u_jewel_size"
@@ -184,7 +205,8 @@
         "PREFIX": [
           "the_vault:u_picking",
           "the_vault:u_axing",
-          "the_vault:u_shovelling"
+          "the_vault:u_shovelling",
+          "the_vault:u_reaping"
         ],
         "SUFFIX": []
       },
@@ -349,10 +371,13 @@
         "BASE_ATTRIBUTE": [
           "the_vault:base_durability"
         ],
-        "IMPLICIT": [],
+        "IMPLICIT": [
+          "the_vault:u_saturation",
+          "the_vault:u_regeneration"
+        ],
         "PREFIX": [],
         "SUFFIX": [
-          "the_vault:u_saturation"
+          "the_vault:u_baguette_healingeff"
         ]
       },
       "modifierTags": [],
@@ -615,6 +640,151 @@
       },
       "modifierTags": [],
       "weight": 1
+    },
+    "woldsvaults:zombie_horse_axe": {
+      "name": "Zombie Horse Axe",
+      "model": "the_vault:gear/axe/zombie_horse",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_leviathan_attack_damage",
+          "the_vault:base_attack_speed_axe"
+        ],
+        "PREFIX": [
+          "the_vault:u_movement_horse",
+          "the_vault:mod_attack_range"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_poison_cloud_zombie_horse"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:ninja_baton": {
+      "name": "Ninja Baton",
+      "model": "the_vault:gear/battlestaff/ninja_baton",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage_battlestaff",
+          "the_vault:base_attack_speed_battlestaff"
+        ],
+        "PREFIX": [
+        ],
+        "SUFFIX": [
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:bamboo_fightstick": {
+      "name": "Bamboo Fightstick",
+      "model": "the_vault:gear/battlestaff/bamboo_fightstick",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage_battlestaff_stick",
+          "the_vault:base_lucky_hit_battlestaff_stick",
+          "the_vault:base_attack_speed_battlestaff_stick",
+          "the_vault:base_attack_range_battlestaff_stick"
+        ],
+        "PREFIX": [
+        ],
+        "SUFFIX": [
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:mineral_greatsword": {
+      "name": "Mineral Greatsword",
+      "model": "the_vault:gear/sword/mineral_greatsword",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed_greatsword"
+        ],
+        "PREFIX": [
+          "the_vault:mod_attack_damage_mineral_greatsword"
+        ],
+        "SUFFIX": [
+          "the_vault:mineral_greatsword_stun",
+          "the_vault:mod_attack_range"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:grass_sword": {
+      "name": "Grass Sword",
+      "model": "the_vault:gear/sword/grass_blade",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:base_thorns_damage_flat_sword",
+          "the_vault:u_grass_sword_healing_eff"
+        ],
+        "SUFFIX": [
+          "the_vault:thorns_scaling_damage_grass_sword"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:young_kitsune": {
+      "name": "Young Kitsune Blade",
+      "model": "the_vault:gear/sword/young_kitsune",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_execution_young_kitsune"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_attack_speed_percent"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:safer_spaces": {
+      "name": "Safer Spaces",
+      "model": "the_vault:gear/plushie/safer_spaces",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:saferspaceeffect",
+          "the_vault:u_safer_block",
+          "the_vault:u_safer_block"
+        ],
+        "PREFIX": [],
+        "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 1
     }
   },
   "pools": {
@@ -711,6 +881,33 @@
     },
     "woldsvaults:hexblade": {
       "woldsvaults:hexblade": 1
+    },
+    "woldsvaults:zombie_horse_axe": {
+      "woldsvaults:zombie_horse_axe": 1
+    },
+    "woldsvaults:bamboo_fightstick": {
+      "woldsvaults:bamboo_fightstick": 1
+    },
+    "woldsvaults:ninja_baton": {
+      "woldsvaults:ninja_baton": 1
+    },
+    "woldsvaults:mineral_greatsword": {
+      "woldsvaults:mineral_greatsword": 1
+    },
+    "woldsvaults:grass_sword": {
+      "woldsvaults:grass_sword": 1
+    },
+    "woldsvaults:young_kitsune": {
+      "woldsvaults:young_kitsune": 1
+    },
+    "woldsvaults:treasure_jewel": {
+      "woldsvaults:treasure_jewel": 1
+    },
+    "the_vault:pax": {
+      "the_vault:pax": 1
+    },
+    "woldsvaults:safer_spaces": {
+      "woldsvaults:safer_spaces": 1
     }
   }
 }

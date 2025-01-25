@@ -94,19 +94,6 @@ JEI.hideIngredient(<item:powah:player_transmitter_starter>);
   }
 });
 
-<recipetype:powah:energizing>.addJsonRecipe("steel_energized", { //
-  "ingredients": [
-	{"item": "the_vault:chromatic_steel_ingot"},
-	{"item": "the_vault:gem_larimar"},
-    {"item": "the_vault:vault_essence"},
-  ],
-  "energy": 4000,
-  "result": {
-	"item": "powah:steel_energized",
-	"count": 4
-  }
-});
-
 <recipetype:powah:energizing>.addJsonRecipe("steel_energized_block", { //
   "ingredients": [
 	{"item": "the_vault:chromatic_steel_block"},
@@ -119,6 +106,20 @@ JEI.hideIngredient(<item:powah:player_transmitter_starter>);
 	"count": 4
   }
 });
+
+<recipetype:powah:energizing>.addJsonRecipe("steel_energized", { //
+  "ingredients": [
+	{"item": "the_vault:chromatic_steel_ingot"},
+  	{"item": "the_vault:gem_larimar"},
+  	{"item": "the_vault:vault_essence"}
+  ],
+  "energy": 10000,
+  "result": {
+	"item": "powah:steel_energized",
+	"count": 2
+  }
+});
+
 
 <recipetype:powah:energizing>.addJsonRecipe("ender_core", { //
   "ingredients": [
@@ -260,10 +261,6 @@ craftingTable.addShaped("powah_capacitor_nitro", <item:powah:capacitor_nitro>, [
 	[<item:powah:dielectric_paste>, <item:powah:crystal_nitro>, <item:powah:dielectric_paste>],
 	[<item:powah:crystal_nitro>, <item:powah:capacitor_spirited>, <item:powah:crystal_nitro>],
 	[<item:powah:dielectric_paste>, <item:powah:crystal_nitro>, <item:powah:dielectric_paste>]
-]);
-
-craftingTable.addShapeless("powah_block_to_ingots", <item:powah:steel_energized> *9, [
-	<item:powah:energized_steel_block>
 ]);
 
 craftingTable.addShaped("powah_energy_cell_starter", <item:powah:energy_cell_starter>, [

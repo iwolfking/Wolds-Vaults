@@ -2284,6 +2284,66 @@
       },
       {
         "attribute": "the_vault:added_ability_level",
+        "group": "ModLvlUtility",
+        "identifier": "the_vault:corrupted_added_ability_level_levitate",
+        "tags": [
+          "focusAbilityPower",
+          "focusAbilityPowerMegaJump"
+        ],
+        "tiers": [
+          {
+            "minLevel": 25,
+            "maxLevel": -1,
+            "weight": 60,
+            "value": {
+              "abilityKey": "Levitate",
+              "levelChange": 1
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:added_ability_level",
+        "group": "ModLvlDefensive",
+        "identifier": "the_vault:corrupted_added_ability_level_colossus",
+        "tags": [
+          "focusAbilityPower",
+          "focusAbilityPowerColossus"
+        ],
+        "tiers": [
+          {
+            "minLevel": 25,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "abilityKey": "Colossus",
+              "levelChange": 1
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:added_ability_level",
+        "group": "ModLvlUtility",
+        "identifier": "the_vault:corrupted_added_ability_level_sneakygetaway",
+        "tags": [
+          "focusAbilityPower",
+          "focusAbilityPowerColossus"
+        ],
+        "tiers": [
+          {
+            "minLevel": 25,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "abilityKey": "Sneaky_Getaway",
+              "levelChange": 1
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:added_ability_level",
         "group": "ModLvlBuff",
         "identifier": "the_vault:corrupted_added_ability_level_empower",
         "tags": [
@@ -2365,7 +2425,7 @@
       {
         "attribute": "the_vault:added_ability_level",
         "group": "ModLvlUtility",
-        "identifier": "the_vault:corrupted_added_ability_level_veinminerdura",
+        "identifier": "the_vault:corrupted_added_ability_level_veinminerchain",
         "tags": [
           "focusAbilityPower",
           "focusAbilityPowerVeinMiner"
@@ -2376,7 +2436,7 @@
             "maxLevel": -1,
             "weight": 60,
             "value": {
-              "abilityKey": "Vein_Miner_Durability",
+              "abilityKey": "Vein_Miner_Chain",
               "levelChange": 1
             }
           }

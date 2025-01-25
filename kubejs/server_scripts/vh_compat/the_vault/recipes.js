@@ -321,5 +321,6 @@ onEvent("recipes", event => {
     event.shapeless(Item.of('woldsvaults:chiseling_focus', '{modifier:"the_vault:soulbound"}'), ['the_vault:nullifying_focus', 'the_vault:smashed_vault_gem_cluster', 'minecraft:soul_sand'])
     event.shapeless(Item.of('woldsvaults:chiseling_focus', '{modifier:"the_vault:trap_disarming"}'), ['the_vault:nullifying_focus', 'the_vault:smashed_vault_gem_cluster', 'minecraft:lever'])
     event.shapeless(Item.of('woldsvaults:chiseling_focus', '{modifier:"the_vault:rotating"}'), ['the_vault:nullifying_focus', 'the_vault:smashed_vault_gem_cluster', 'minecraft:diamond'])
+    event.shapeless(Item.of('woldsvaults:chiseling_focus', '{modifier:"the_vault:dismantle_chance"}'), ['the_vault:nullifying_focus', 'the_vault:smashed_vault_gem_cluster', 'minecraft:copper_ingot'])
     event.shapeless(Item.of('woldsvaults:stylish_focus'), ['minecraft:ender_pearl', 'the_vault:smashed_vault_gem_cluster', 'minecraft:diamond'])
 })

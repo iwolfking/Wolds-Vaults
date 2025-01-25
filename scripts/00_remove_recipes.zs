@@ -884,7 +884,6 @@ craftingTable.remove(<item:powah:capacitor_basic_large>);
 craftingTable.remove(<item:powah:dielectric_casing>);
 craftingTable.remove(<item:powah:energizing_orb>);
 craftingTable.remove(<item:powah:thermoelectric_plate>);
-craftingTable.remove(<item:powah:steel_energized>);
 craftingTable.remove(<item:powah:photoelectric_pane>);
 craftingTable.remove(<item:powah:aerial_pearl>);
 craftingTable.remove(<item:powah:solar_panel_starter>);

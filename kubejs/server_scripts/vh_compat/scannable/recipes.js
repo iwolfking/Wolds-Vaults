@@ -274,13 +274,64 @@ onEvent("recipes", event => {
             'AMP',
             'XBX'
         ], {
-        M: 'scannable:blank_module',
-        A: 'the_vault:key_mould',
-        B: 'the_vault:wold_star_chunk',
+        M: 'scannable:vault_dungeon_doors_module',
+        A: 'scannable:vault_treasure_doors_module',
+        B: 'the_vault:echo_pog_1',
         X: 'the_vault:black_chromatic_steel_block',
-        P: 'the_vault:omega_pog'
+        P: 'scannable:vault_vendoors_module'
     })
 
+    event.shaped(Item.of('scannable:vault_treasure_doors_module'),
+    [
+        'XBX',
+        'AMP',
+        'XBX'
+    ], {
+    M: 'scannable:blank_module',
+    A: 'the_vault:capstone_treasure_hunter',
+    B: 'the_vault:wold_star_chunk',
+    X: 'the_vault:black_chromatic_steel_block',
+    P: 'the_vault:omega_pog'
+    })
+
+    event.shaped(Item.of('scannable:vault_dungeon_doors_module'),
+    [
+        'XBX',
+        'AMP',
+        'XBX'
+    ], {
+    M: 'scannable:blank_module',
+    A: 'the_vault:capstone_dungeon_hunter',
+    B: 'the_vault:wold_star_chunk',
+    X: 'the_vault:black_chromatic_steel_block',
+    P: 'the_vault:omega_pog'
+    })
+
+    event.shaped(Item.of('scannable:vault_vendoors_module'),
+    [
+        'XBX',
+        'AMP',
+        'XBX'
+    ], {
+    M: 'scannable:blank_module',
+    A: 'the_vault:capstone_vendoor_hunter',
+    B: 'the_vault:wold_star_chunk',
+    X: 'the_vault:black_chromatic_steel_block',
+    P: 'the_vault:omega_pog'
+    })
+
+    event.shaped(Item.of('scannable:vault_pylon_module'),
+    [
+        'XBX',
+        'AMP',
+        'XBX'
+    ], {
+    M: 'scannable:blank_module',
+    A: 'the_vault:capstone_pylon_hunter',
+    B: 'the_vault:wold_star_chunk',
+    X: 'the_vault:black_chromatic_steel_block',
+    P: 'the_vault:omega_pog'
+    })
 
 
 

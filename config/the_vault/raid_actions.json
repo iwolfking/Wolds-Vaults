@@ -587,6 +587,18 @@
       "color1": "0xFFED7B24",
       "color2": "0xFFe2a631"
     },
+    "pax": {
+      "type": "floating_item_reward",
+      "textColor": -1213660,
+      "name": "Pax Jewel",
+      "item": {
+        "id": "the_vault:jewel",
+        "nbt": "{\"the_vault:gear_unique_pool\":\"the_vault:pax\",\"the_vault:gear_roll_type\":\"Unique\"}",
+        "count": 1
+      },
+      "color1": "0xFFED7B24",
+      "color2": "0xFFe2a631"
+    },
     "baguette": {
       "type": "floating_item_reward",
       "textColor": -1213660,
@@ -697,70 +709,70 @@
       "name": "Gilded Chests",
       "textColor": "0xFFfff0a9",
       "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{Hidden:1b}",
-      "count": 7
+      "count": 10
     },
     "gilded_chest_big": {
       "type": "tile_reward",
       "name": "Gilded Chests",
       "textColor": "0xFFfff0a9",
       "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{Hidden:1b}",
-      "count": 10
+      "count": 16
     },
     "ornate_chest": {
       "type": "tile_reward",
       "name": "Ornate Chests",
       "textColor": "0xFFfff0a9",
       "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{Hidden:1b}",
-      "count": 7
+      "count": 10
     },
     "ornate_chest_big": {
       "type": "tile_reward",
       "name": "Ornate Chests",
       "textColor": "0xFFfff0a9",
       "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{Hidden:1b}",
-      "count": 10
+      "count": 16
     },
     "coin_pile": {
       "type": "tile_reward",
       "name": "Coin Piles",
       "textColor": "0xFFfff0a9",
       "tile": "the_vault:placeholder[type=coin_stacks,facing=up]{Hidden:1b}",
-      "count": 8
+      "count": 10
     },
     "coin_pile_big": {
       "type": "tile_reward",
       "name": "Coin Piles",
       "textColor": "0xFFfff0a9",
       "tile": "the_vault:placeholder[type=coin_stacks,facing=up]{Hidden:1b}",
-      "count": 12
+      "count": 16
     },
     "living_chest": {
       "type": "tile_reward",
       "name": "Living Chests",
       "textColor": "0xFFfff0a9",
       "tile": "the_vault:placeholder[type=living_chest,facing=up]{Hidden:1b}",
-      "count": 7
+      "count": 10
     },
     "living_chest_big": {
       "type": "tile_reward",
       "name": "Living Chests",
       "textColor": "0xFFfff0a9",
       "tile": "the_vault:placeholder[type=living_chest,facing=up]{Hidden:1b}",
-      "count": 10
+      "count": 16
     },
     "wooden_chest": {
       "type": "tile_reward",
       "name": "Wooden Chests",
       "textColor": "0xFFfff0a9",
       "tile": "the_vault:placeholder[type=wooden_chest,facing=up]{Hidden:1b}",
-      "count": 12
+      "count": 16
     },
     "wooden_chest_big": {
       "type": "tile_reward",
       "name": "Wooden Chests",
       "textColor": "0xFFfff0a9",
       "tile": "the_vault:placeholder[type=wooden_chest,facing=up]{Hidden:1b}",
-      "count": 16
+      "count": 24
     },
     "add_pillager": {
       "type": "mob_spawn",
@@ -1150,7 +1162,7 @@
       },
       {
         "value": "raid_rock_infinite",
-        "weight": 40
+        "weight": 10
       }
     ],
     "positive_base": [
@@ -1232,7 +1244,7 @@
       },
       {
         "value": "raid_rock",
-        "weight": 180
+        "weight": 90
       }
     ],
     "xmark": [
@@ -1314,7 +1326,11 @@
       },
       {
         "value": "manabloom",
-        "weight": 4
+        "weight": 3
+      },
+      {
+        "value": "pax",
+        "weight": 3
       }
     ],
     "positive_lab": [
@@ -1388,7 +1404,7 @@
       },
       {
         "value": "baguette",
-        "weight": 20
+        "weight": 6
       }
     ]
   }
