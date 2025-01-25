@@ -1,6 +1,111 @@
 {
   "modifiers": {
+    "the_vault:modifier_type/greedy": {
+      "the_vault:greedy": {
+        "properties": {},
+        "display": {
+          "name": "Greedy",
+          "color": "#EBFF8D",
+          "description": "Greedy!",
+          "descriptionFormatted": "Just asking for trouble...",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      }
+    },
+    "the_vault:modifier_type/add_inscription": {
+      "the_vault:arcade": {
+        "properties": {
+          "pool": "the_vault:arcade",
+          "color": 7012096
+        },
+        "display": {
+          "name": "Arcade Room",
+          "color": "#EBFF8D",
+          "description": "This vault has an arcade room!",
+          "descriptionFormatted": "This vault has an arcade room!",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      }
+    },
     "the_vault:modifier_type/difficulty_lock": {
+      "the_vault:piece_of_cake": {
+        "properties": {
+          "difficulty": "PIECE_OF_CAKE",
+          "lockHigher": true
+        },
+        "display": {
+          "name": "Piece of Cake",
+          "color": "#EBFF8D",
+          "description": "This vault's difficulty is locked to Piece of Cake!",
+          "descriptionFormatted": "This vault's difficulty is locked to Piece of Cake!",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
+      "the_vault:easy": {
+        "properties": {
+          "difficulty": "EASY",
+          "lockHigher": true
+        },
+        "display": {
+          "name": "Easy",
+          "color": "#EBFF8D",
+          "description": "This vault's difficulty is locked to Easy!",
+          "descriptionFormatted": "This vault's difficulty is locked to Easy!",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
+      "the_vault:normal": {
+        "properties": {
+          "difficulty": "NORMAL",
+          "lockHigher": true
+        },
+        "display": {
+          "name": "Normal",
+          "color": "#EBFF8D",
+          "description": "This vault's difficulty is locked to Normal!",
+          "descriptionFormatted": "This vault's difficulty is locked to Normal!",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
+      "the_vault:hard": {
+        "properties": {
+          "difficulty": "HARD",
+          "lockHigher": true
+        },
+        "display": {
+          "name": "Hard",
+          "color": "#EBFF8D",
+          "description": "This vault's difficulty is locked to Hard!",
+          "descriptionFormatted": "This vault's difficulty is locked to Hard!",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
+      "the_vault:impossible": {
+        "properties": {
+          "difficulty": "IMPOSSIBLE",
+          "lockHigher": true
+        },
+        "display": {
+          "name": "Impossible",
+          "color": "#EBFF8D",
+          "description": "This vault's difficulty is locked to Impossible!",
+          "descriptionFormatted": "This vault's difficulty is locked to Impossible!",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
+      "the_vault:fragged": {
+        "properties": {
+          "difficulty": "FRAGGED",
+          "lockHigher": true
+        },
+        "display": {
+          "name": "Fragged",
+          "color": "#EBFF8D",
+          "description": "This vault's difficulty is locked to Fragged!",
+          "descriptionFormatted": "This vault's difficulty is locked to Fragged!",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
       "the_vault:normalized": {
         "properties": {
           "difficulty": "NORMAL",
@@ -875,6 +980,54 @@
           "descriptionFormatted": "+%d%% Mob Health",
           "icon": "the_vault:gui/modifiers/destructive"
         }
+      },
+      "the_vault:map_mob_damage": {
+        "properties": {
+          "type": "attack_damage_additive_percentile"
+        },
+        "display": {
+          "name": "Vault Mob Attack Damage",
+          "color": "#dc693c",
+          "description": "+X% Mob Damage",
+          "descriptionFormatted": "+%d%% Mob Damage",
+          "icon": "the_vault:gui/modifiers/destructive"
+        }
+      },
+      "the_vault:map_mob_speed": {
+        "properties": {
+          "type": "speed_additive_percentile"
+        },
+        "display": {
+          "name": "Vault Mob Speed",
+          "color": "#dc693c",
+          "description": "+X% Mob Speed",
+          "descriptionFormatted": "+%d%% Mob Speed",
+          "icon": "the_vault:gui/modifiers/destructive"
+        }
+      },
+      "the_vault:map_mob_crit": {
+        "properties": {
+          "type": "crit_chance_additive"
+        },
+        "display": {
+          "name": "Vault Mob Crit",
+          "color": "#dc693c",
+          "description": "+X% Mob Critical Strike Chance",
+          "descriptionFormatted": "+%d%% Mob Critical Strike Chance",
+          "icon": "the_vault:gui/modifiers/destructive"
+        }
+      },
+      "the_vault:map_mob_kbr": {
+        "properties": {
+          "type": "knockback_resistance_additive"
+        },
+        "display": {
+          "name": "Vault Mob Knockback Resistance",
+          "color": "#dc693c",
+          "description": "+X% Mob Knockback Resistance",
+          "descriptionFormatted": "+%d%% Mob Knockback Resistance",
+          "icon": "the_vault:gui/modifiers/destructive"
+        }
       }
     },
     "the_vault:modifier_type/loot_item_quantity_settable": {
@@ -1319,7 +1472,7 @@
         "display": {
           "name": ":knife: Lethal",
           "color": "#dc693c",
-          "description": "Mobs in this vault will always hit critical strikes",
+          "description": "Mobs have guaranteed critical strikes",
           "descriptionFormatted": "Mobs in this vault will always hit critical strikes",
           "icon": "the_vault:gui/modifiers/destructive"
         }
@@ -2498,6 +2651,20 @@
       }
     },
     "the_vault:modifier_type/player_inventory_restore": {
+      "the_vault:map_afterlife": {
+        "properties": {
+          "preventsArtifact": false,
+          "experienceMultiplierOnDeath": 0.0,
+          "experienceMultiplierOnSuccess": 1.0,
+          "isInstantRevival": false
+        },
+        "display": {
+          "name": "Map Afterlife",
+          "color": "#3ffb9c",
+          "description": "No item loss on death",
+          "icon": "the_vault:gui/modifiers/afterlife"
+        }
+      },
       "the_vault:oneup": {
         "properties": {
           "preventsArtifact": false,
@@ -3042,6 +3209,19 @@
           "icon": "the_vault:gui/modifiers/antiheal2"
         }
       },
+      "the_vault:no_heal": {
+        "properties": {
+          "stat": "healing_effectiveness",
+          "addend": -5.0
+        },
+        "display": {
+          "name": "No Heal",
+          "color": "#849dc8",
+          "description": "You cannot heal",
+          "descriptionFormatted": "Healing in this vault is very inefficient",
+          "icon": "the_vault:gui/modifiers/antiheal"
+        }
+      },
       "the_vault:enervated": {
         "properties": {
           "stat": "healing_effectiveness",
@@ -3124,18 +3304,6 @@
           "description": "+3 Vault Level",
           "descriptionFormatted": "+%d Vault Level",
           "icon": "the_vault:gui/modifiers/difficult"
-        }
-      },
-      "the_vault:easy": {
-        "properties": {
-          "levelAdded": -3
-        },
-        "display": {
-          "name": "Easy",
-          "color": "#70FF2A",
-          "description": "-3 Vault Level",
-          "descriptionFormatted": "-%d Vault Level",
-          "icon": "the_vault:gui/modifiers/easy"
         }
       }
     },
@@ -3818,6 +3986,39 @@
           "color": "#5ece0c",
           "description": "+2% Chance for Champions to Spawn",
           "icon": "the_vault:gui/modifiers/champion_increase"
+        }
+      }
+    },
+    "the_vault:modifier_type/grouped_settable": {
+      "the_vault:map_group_test": {
+        "properties": {
+          "children": {
+            "the_vault:map_item_quantity": 1,
+            "the_vault:map_item_rarity": 1,
+            "the_vault:trial": 1
+          }
+        },
+        "display": {
+          "name": "Bundled Values",
+          "color": "#3ffbf4",
+          "description": "A multitude of items",
+          "descriptionFormatted": "+%d%% Item Quantity and Rarity",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
+      "the_vault:map_mob_health_and_damage": {
+        "properties": {
+          "children": {
+            "the_vault:map_mob_health": 1,
+            "the_vault:map_mob_damage": 1
+          }
+        },
+        "display": {
+          "name": "Map Mob Health and Damage",
+          "color": "#3ffbf4",
+          "description": "Adds to mob health and damage.",
+          "descriptionFormatted": "+%d%% Mob Health and Damage",
+          "icon": "the_vault:gui/modifiers/impossible"
         }
       }
     },

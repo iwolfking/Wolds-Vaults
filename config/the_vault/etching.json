@@ -3,29 +3,29 @@
     "the_vault:assassin": {
       "weight": 100,
       "name": "Assassin",
-      "effectText": "Effect Text",
+      "effectText": "50% Increased Lucky Hit Chance",
       "color": 6084886,
       "vendorMinValue": 10,
       "vendorMaxValue": 50,
       "config": {
-        "increasedFatalStrikeChance": 0.4
+        "increasedFatalStrikeChance": 0.5
       }
     },
     "the_vault:blood": {
       "weight": 100,
       "name": "Blood",
-      "effectText": "Effect Text",
+      "effectText": "1.5X Damage Multiplier",
       "color": 6084886,
       "vendorMinValue": 10,
       "vendorMaxValue": 50,
       "config": {
-        "increasedDamage": 2.0
+        "increasedDamage": 1.5
       }
     },
     "the_vault:dragon": {
       "weight": 100,
       "name": "Dragon",
-      "effectText": "Effect Text",
+      "effectText": "+50% Increased Area of Effect, +50% Ability Power",
       "color": 6084886,
       "vendorMinValue": 10,
       "vendorMaxValue": 50,
@@ -36,12 +36,12 @@
     "the_vault:dream": {
       "weight": 100,
       "name": "Dream",
-      "effectText": "Effect Text",
+      "effectText": "+10% Increased Damage, Resistance, Item Rarity, Block Chance, +2 Haste",
       "color": 6084886,
       "vendorMinValue": 10,
       "vendorMaxValue": 50,
       "config": {
-        "increasedDamage": 0.5,
+        "increasedDamage": 0.1,
         "increasedResistance": 0.1,
         "increasedItemRarity": 0.25,
         "increasedBlockChance": 0.1,
@@ -52,18 +52,18 @@
     "the_vault:dryad": {
       "weight": 100,
       "name": "Dryad",
-      "effectText": "Effect Text",
+      "effectText": "+15 Hearts",
       "color": 6084886,
       "vendorMinValue": 10,
       "vendorMaxValue": 50,
       "config": {
-        "extraHealth": 20.0
+        "extraHealth": 30.0
       }
     },
     "the_vault:golem": {
       "weight": 100,
       "name": "Golem",
-      "effectText": "Effect Text",
+      "effectText": "+20% Resistance Cap",
       "color": 6084886,
       "vendorMinValue": 10,
       "vendorMaxValue": 50,
@@ -74,29 +74,29 @@
     "the_vault:rift": {
       "weight": 100,
       "name": "Rift",
-      "effectText": "Effect Text",
+      "effectText": "+10% Cooldown Reduction Cap",
       "color": 6084886,
       "vendorMinValue": 10,
       "vendorMaxValue": 50,
       "config": {
-        "cooldownMultiplier": 0.5
+        "cooldownMultiplier": 0.1
       }
     },
     "the_vault:treasure": {
       "weight": 100,
       "name": "Treasure",
-      "effectText": "Effect Text",
+      "effectText": "100% Increased Item Rarity",
       "color": 6084886,
       "vendorMinValue": 10,
       "vendorMaxValue": 50,
       "config": {
-        "increasedItemRarity": 2.0
+        "increasedItemRarity": 1.0
       }
     },
     "the_vault:vampire": {
       "weight": 100,
       "name": "Vampire",
-      "effectText": "Effect Text",
+      "effectText": "5% Increased Leech",
       "color": 6084886,
       "vendorMinValue": 10,
       "vendorMaxValue": 50,
@@ -107,7 +107,7 @@
     "the_vault:divinity": {
       "weight": 100,
       "name": "Divinity",
-      "effectText": "Effect Text",
+      "effectText": "Negative Effect Immunity",
       "color": 6084886,
       "vendorMinValue": 10,
       "vendorMaxValue": 50,
@@ -116,7 +116,7 @@
     "the_vault:phoenix": {
       "weight": 100,
       "name": "Phoenix",
-      "effectText": "Effect Text",
+      "effectText": "When Second Chance triggers, gain Resistance, Regeneration, Absorption, Strength, and Speed for a brief period",
       "color": 6084886,
       "vendorMinValue": 10,
       "vendorMaxValue": 50,
@@ -125,11 +125,13 @@
     "the_vault:zod": {
       "weight": 100,
       "name": "Zod",
-      "effectText": "Effect Text",
+      "effectText": "+2 to All Ability Levels",
       "color": 6084886,
       "vendorMinValue": 10,
       "vendorMaxValue": 50,
-      "config": {}
+      "config": {
+        "increasedAbilityLevels": 2
+      }
     }
   }
 }

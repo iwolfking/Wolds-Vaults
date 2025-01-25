@@ -1451,7 +1451,7 @@
             "type": "infinite",
             "tunnel_span": 1
           },
-          "weight": 40
+          "weight": 10
         },
         {
           "value": {
@@ -1588,7 +1588,7 @@
             "type": "infinite",
             "tunnel_span": 1
           },
-          "weight": 80
+          "weight": 40
         },
         {
           "value": {
@@ -1644,6 +1644,108 @@
     }
   ],
   "OBJECTIVES": {
+    "the_vault:zealot": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "type": "zealot",
+              "target": {
+                "type": "uniform",
+                "min": 3,
+                "max": 5
+              }
+            },
+            "weight": 4
+          }
+        ]
+      }
+    ],
+    "the_vault:monolith": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "type": "monolith",
+              "target": {
+                "type": "uniform",
+                "min": 3,
+                "max": 5
+              }
+            },
+            "weight": 4
+          }
+        ]
+      }
+    ],
+    "the_vault:haunted_braziers": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "type": "haunted_braziers",
+              "target": {
+                "type": "uniform",
+                "min": 3,
+                "max": 5
+              }
+            },
+            "weight": 4
+          }
+        ]
+      }
+    ],
+    "the_vault:boss": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "type": "boss",
+              "objective_probability": 0.3,
+              "target": {
+                "type": "uniform",
+                "min": 3,
+                "max": 5
+              },
+              "wave": {
+                "type": "uniform",
+                "min": 3,
+                "max": 5
+              }
+            },
+            "weight": 2
+          }
+        ]
+      }
+    ],
+    "the_vault:brutal_bosses": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "type": "brutal_bosses",
+              "objective_probability": 0.3,
+              "target": {
+                "type": "uniform",
+                "min": 3,
+                "max": 5
+              },
+              "wave": {
+                "type": "uniform",
+                "min": 3,
+                "max": 5
+              }
+            },
+            "weight": 2
+          }
+        ]
+      }
+    ],
     "the_vault:default": [
       {
         "level": 0,
