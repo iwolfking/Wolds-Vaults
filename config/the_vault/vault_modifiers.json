@@ -1,7 +1,7 @@
 {
   "modifiers": {
     "the_vault:modifier_type/greedy": {
-      "the_vault:greedy": {
+      "the_vault:greedy_single": {
         "properties": {},
         "display": {
           "name": "Greedy",
@@ -4023,6 +4023,20 @@
       }
     },
     "the_vault:modifier_type/grouped": {
+      "the_vault:greedy": {
+        "properties": {
+          "children": {
+            "the_vault:greedy_single": 1,
+            "the_vault:locked": 1
+          }
+        },
+        "display": {
+          "name": "Greedy",
+          "color": "#3ffbf4",
+          "description": "Just asking for trouble...vault is locked until completion.",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
       "the_vault:trial": {
         "properties": {
           "children": {
