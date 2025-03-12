@@ -533,7 +533,6 @@ craftingTable.remove(<item:refinedstorage:raw_improved_processor>);
 craftingTable.remove(<item:refinedstorage:raw_advanced_processor>);
 craftingTable.remove(<item:refinedstorage:destruction_core>);
 craftingTable.remove(<item:refinedstorage:construction_core>);
-craftingTable.remove(<item:refinedstorage:quartz_enriched_iron>);
 craftingTable.remove(<item:refinedstorage:machine_casing>);
 craftingTable.remove(<item:refinedstorage:disk_drive>);
 craftingTable.remove(<tag:items:refinedstorage:grid>);
