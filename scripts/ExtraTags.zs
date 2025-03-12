@@ -769,6 +769,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:vault_altar_modded>.add(<item:mekanism:ingot_uranium>);
 <tag:items:the_vault:vault_altar_modded>.add(<item:immersiveengineering:ingot_uranium>);
 <tag:items:the_vault:vault_altar_modded>.add(<item:mekanism:ingot_osmium>);
+<tag:items:the_vault:vault_altar_modded>.add(<item:occultism:silver_ingot>);
 
 // Vault Altar: All Pools
 <tag:items:the_vault:vault_altar_all>.add(<tag:items:the_vault:vault_altar_resource>);
