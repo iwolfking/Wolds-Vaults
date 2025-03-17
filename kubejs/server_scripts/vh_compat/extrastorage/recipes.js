@@ -181,7 +181,7 @@ onEvent("recipes", event => {
         ], {
         I: 'the_vault:black_chromatic_steel_ingot',
         C: 'the_vault:gem_pog',
-        B: 'refinedstorage:crafter',
+        B: '#refinedstorage:crafter',
         X: 'refinedstorage:advanced_processor'
     })
 
