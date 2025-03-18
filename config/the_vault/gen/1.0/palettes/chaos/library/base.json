@@ -2,19 +2,39 @@
   "tile_processors": [
     {
       "type": "weighted_target",
-      "target": "the_vault:placeholder[type=gilded_chest]",
+      "target": "minecraft:light_blue_glazed_terracotta",
       "output": {
-        "the_vault:placeholder[type=gilded_chest]": 15,
-        "quark:dark_oak_bookshelf": 85
+        "the_vault:placeholder[type=gilded_chest]": 35,
+        "quark:dark_oak_bookshelf": 65
       }
     },
     {
       "type": "weighted_target",
-      "target": "minecraft:gray_glazed_terracotta",
+      "target": "the_vault:placeholder[type=gilded_chest]",
       "output": {
-        "the_vault:placeholder[type=gilded_chest]": 15,
-        "minecraft:air": 85
+        "the_vault:placeholder[type=gilded_chest]": 35,
+        "minecraft:air": 65
       }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:cyan_glazed_terracotta",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "gray_glazed_terracotta",
+      "output": {
+        "the_vault:vault_stone": 85,
+		    "the_vault:ore_larimar[type=vault_stone]": 10,
+		    "the_vault:ore_black_opal[type=vault_stone]": 3
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/gilded_chest_placeholder"
     },
     {
       "type": "reference",
