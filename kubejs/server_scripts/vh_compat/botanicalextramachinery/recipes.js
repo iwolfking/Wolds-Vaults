@@ -358,6 +358,18 @@ onEvent("recipes", event => {
         P: 'botanicalextramachinery:advanced_orechid'
     }).id('botanicalextramachinery:ultimate_orechid')
 
+    event.shaped(Item.of('botanicalextramachinery:jaded_amaranthus'),
+        [
+            'RIR',
+            'IFI',
+            'BBB'
+        ], {
+        R: 'the_vault:pog_prism',
+        I: 'botanicalextramachinery:crystal_ingot',
+        F: 'botania:jaded_amaranthus',
+        W: 'botanicalextramachinery:crystal_dragonstone_block'
+    }).id('botanicalextramachinery:jaded_amaranthus')
+
     event.shaped(Item.of('botanicalextramachinery:catalyst_mana_infinity'),
         [
             'BWB',
