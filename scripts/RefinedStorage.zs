@@ -103,10 +103,6 @@ craftingTable.addShaped("rs_quartz_enriched_iron", <item:refinedstorage:quartz_e
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
-craftingTable.addShapeless("rs_shapeless_quartz_enriched_iron", <item:refinedstorage:quartz_enriched_iron> *9, [
-    <item:refinedstorage:quartz_enriched_iron_block>
-]);
-
 craftingTable.addShaped("rs_machine_casing", <item:refinedstorage:machine_casing>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:refinedstorage:quartz_enriched_iron>, <item:the_vault:chromatic_steel_ingot>],
     [<item:refinedstorage:quartz_enriched_iron>, <item:the_vault:vault_diamond>, <item:refinedstorage:quartz_enriched_iron>],
