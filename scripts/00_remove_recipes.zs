@@ -469,7 +469,6 @@ craftingTable.remove(<item:mekanism:basic_pressurized_tube>);
 
 
 
-craftingTable.remove(<item:mekanism:upgrade_stone_generator>);
 craftingTable.remove(<item:mekanism:upgrade_anchor>);
 craftingTable.remove(<item:mekanism:upgrade_filter>);
 craftingTable.remove(<item:mekanism:module_base>);
