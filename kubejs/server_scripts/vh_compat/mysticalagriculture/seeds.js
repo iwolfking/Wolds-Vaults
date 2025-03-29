@@ -29,7 +29,8 @@ let removedOutputsMAGS = [
     'mysticalagriculture:nether_star_seeds',
     'mysticalagriculture:dragon_egg_seeds',
     'mysticalagriculture:energized_steel_seeds',
-    'mysticalagriculture:mithril_seeds'
+    'mysticalagriculture:mithril_seeds',
+    'mysticalagriculture:invar_seeds'
 ];
 onEvent("recipes", event => {
     removedOutputsMAGS.forEach(id => {

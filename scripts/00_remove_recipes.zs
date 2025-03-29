@@ -451,6 +451,7 @@ craftingTable.removeByModid("pipez");
 <recipetype:mekanism:metallurgic_infusing>.removeByName("mekanism:metallurgic_infusing/alloy/reinforced");
 <recipetype:mekanism:metallurgic_infusing>.removeByName("mekanism:metallurgic_infusing/alloy/atomic");
 <recipetype:mekanism:metallurgic_infusing>.removeByName("mekanism:control_circuit/basic");
+craftingTable.remove(<item:mekanism:upgrade_stone_generator>);
 craftingTable.remove(<item:mekanism:mekasuit_helmet>);
 craftingTable.remove(<item:mekanism:mekasuit_bodyarmor>);
 craftingTable.remove(<item:mekanism:mekasuit_pants>);
