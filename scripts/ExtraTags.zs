@@ -235,7 +235,6 @@ Updated for Version 3.14.3 */
 // Gilded Chest Loot
 <tag:items:the_vault:gilded_chest_loot>.add(<item:minecraft:experience_bottle>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:vault_diamond>);
-<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:relic_booster_pack>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:topaz_shard>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:jewel>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:magic_silk>);
@@ -244,15 +243,12 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:gilded_sconce>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:gilded_ingot>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:gilded_chest_scroll>);
-<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:regret_nugget>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:dreamstone>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:plushie>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:loot_sack>);
-<tag:items:the_vault:gilded_chest_loot>.add(<item:quark:blank_rune>);
+<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:magnet>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:ancient_copper_ingot>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:key_piece>);
-<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:plushie>);
-<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:loot_sack>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:altar_recatalyzer>);
 
 // Ornate Chest Loot
@@ -263,7 +259,6 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:sword>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:axe>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:shield>);
-<tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:magnet>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:trident>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:battlestaff>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:vault_alloy>);
