@@ -21,7 +21,12 @@
       "SWORD": [
         "the_vault:iskallibur",
         "the_vault:inflated_justice",
-        "the_vault:honey_stick"
+        "the_vault:honey_stick",
+        "woldsvaults:young_kitsune",
+        "woldsvaults:mineral_greatsword",
+        "woldsvaults:hexblade",
+        "woldsvaults:everflame",
+        "woldsvaults:everfrost"
       ],
       "SHIELD": [
         "the_vault:grim",
@@ -40,7 +45,18 @@
       "JEWEL": [
         "the_vault:kaleidoscope",
         "the_vault:manabloom",
-        "the_vault:pax"
+        "the_vault:pax",
+        "woldsvaults:eternal_stella",
+        "woldsvaults:treasure_jewel"
+      ],
+      "OFFHAND": [
+        "woldsvaults:wicked_witch",
+        "woldsvaults:safer_spaces",
+        "woldsvaults:chonknet",
+        "woldsvaults:treasure_magnet",
+        "woldsvaults:bloodseeking_magnet",
+        "woldsvaults:trirang",
+        "woldsvaults:bamboo_fightstick"
       ]
     }
   },
@@ -63,7 +79,7 @@
             "color": "#7D520E"
           },
           {
-            "text": " has two ",
+            "text": " has three ",
             "color": "$text"
           },
           {
@@ -806,12 +822,445 @@
             "color": "$text"
           },
           {
-            "text": "The Factory",
+            "text": "The Factory and X-Mark",
             "color": "#7D520E"
           }
         ]
       },
       "uniqueId": "the_vault:pax"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Eternal Stella",
+          "color": "#98d4ce"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Make your tool last forever in the overworld with this fantastic ",
+            "color": "$text"
+          },
+          {
+            "text": "jewel",
+            "color": "#7D520E"
+          },
+          {
+            "text": ".",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFound in: ",
+            "color": "$text"
+          },
+          {
+            "text": "The Black Market",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:eternal_stella"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Wicked Witch",
+          "color": "#b898d4"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Make your effects last longer with the aid of this wickedly sick plush! ",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDrops in: ",
+            "color": "$text"
+          },
+          {
+            "text": "The Laboratory",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:wicked_witch"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Chonknet",
+          "color": "#98d49f"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Feel healthy and chonky in no time with the aid of this lovely magnet. ",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDrops in: ",
+            "color": "$text"
+          },
+          {
+            "text": "Bounties",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:chonknet"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Treasure Hunter's Magnet",
+          "color": "#98d49f"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Like to live dangerously? Boost your loot to the next level with this shiny treasure hunting magnet. ",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDrops in: ",
+            "color": "$text"
+          },
+          {
+            "text": "Treasure Pedestals",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:treasure_magnet"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Bloodfetcher",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Tired of your magnet just bringing in items? Fetch the blood of your enemies with this sharp magnet! ",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDrops in: ",
+            "color": "$text"
+          },
+          {
+            "text": "Dungeon Pedestals",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:bloodseeking_magnet"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Leviathan",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "This monstorous axe can obliterate your foes in a single sweeping swing!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDrops in: ",
+            "color": "$text"
+          },
+          {
+            "text": "Bounties",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:leviathan"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Tri-Rang",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Master the power of the number of three with this fine boomerang!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDrops in: ",
+            "color": "$text"
+          },
+          {
+            "text": "Bounties",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:trirang"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Everfrost",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Become a cold-blooded warrior and freeze your foes!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDrops in: ",
+            "color": "$text"
+          },
+          {
+            "text": "Vendor Rooms",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:everfrost"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Everflame",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Launch fireball after fireball with the power of this flaming blade!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDrops in: ",
+            "color": "$text"
+          },
+          {
+            "text": "Vendor Rooms",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:everflame"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Hexblade",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Hex and weaken your foes with this cursed blade!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDrops in: ",
+            "color": "$text"
+          },
+          {
+            "text": "Vendor Rooms",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:hexblade"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Zombie Horse Axe",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Unleash a powerful poison cloud at a breakneck pace with this spooky axe!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFound in: ",
+            "color": "$text"
+          },
+          {
+            "text": "The Black Market",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:zombie_horse_axe"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Bamboo Fightstick",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Enchanted with endless luck but as weak as any other stick, but perhaps it could be useful?",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDrops in: ",
+            "color": "$text"
+          },
+          {
+            "text": "Bounties",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:bamboo_fightstick"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Mineral Greatsword",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "An incredibly heavy sword that can stun your foes!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDrops in: ",
+            "color": "$text"
+          },
+          {
+            "text": "Vendor Rooms",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:mineral_greatsword"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Grass Sword",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "A thorny sword!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDrops in: ",
+            "color": "$text"
+          },
+          {
+            "text": "Vendor Rooms",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:grass_sword"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Grass Sword",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Cut your foes down to size, with magic!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFound in: ",
+            "color": "$text"
+          },
+          {
+            "text": "The Black Market",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:aurora_scissors"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Young Kitsune",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Execute your foes with this quick-striking blade",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFound in: ",
+            "color": "$text"
+          },
+          {
+            "text": "Vendor Rooms",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:young_kitsune"
+    },
+    {
+      "title": {
+        "description": {
+          "text": "Safer Spaces",
+          "color": "#716191"
+        }
+      },
+      "description": {
+        "description": [
+          {
+            "text": "Live forever like a tardigrade with a recharging shield!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFound in: ",
+            "color": "$text"
+          },
+          {
+            "text": "The Black Market",
+            "color": "#7D520E"
+          }
+        ]
+      },
+      "uniqueId": "woldsvaults:safer_spaces"
     }
   ]
 }
