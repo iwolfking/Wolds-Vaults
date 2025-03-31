@@ -8,6 +8,7 @@ onEvent('item.tooltip', tooltip => {
     tooltip.add('the_vault:crystal_seal_monolith', Text.red('Legacy Item'))
     tooltip.add('woldsvaults:waxing_augmenter', Text.red('Legacy Item'))
     tooltip.add('woldsvaults:waning_augmenter', Text.red('Legacy Item'))
+    tooltip.add('woldsvaults:crystal_seal_warrior', Text.red('Legacy Item'))
     tooltip.add('madolives_vault_coin_pouch:coin_compacting_pouch', Text.red('Legacy Item'))
     tooltip.add('tropicraft:bamboo_sign', Text.red('Blacklisted Item'))
     tooltip.add('tropicraft:thatch_sign', Text.red('Blacklisted Item'))
