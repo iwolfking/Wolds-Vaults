@@ -1185,7 +1185,6 @@ for jewelId, jewelName in jewels {
 JEI.hideIngredient(<item:the_vault:sugar_plum_fairy_flower>);
 JEI.hideIngredient(<item:the_vault:pylon>);
 JEI.hideIngredient(<item:the_vault:tool_vise>);
-JEI.hideIngredient(<item:the_vault:rune>);
 JEI.hideIngredient(<item:the_vault:cube_block>);
 JEI.hideIngredient(<item:the_vault:vault_crate_champion>);
 // JEI.hideIngredient(<item:the_vault:legendary_treasure_*>);

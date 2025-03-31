@@ -7,28 +7,27 @@
         "max": 26
       },
       "pool": [
-        {
-          "weight": 70,
+        { "weight": 70,
           "pool": [
             {
-              "weight": 16,
-              "item": {
+                "weight": 16,
+                "item": {
                 "id": "the_vault:living_rock",
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 2
+                  }
                 }
-              }
             },
             {
               "weight": 8,
               "item": {
-                "id": "the_vault:mossy_bone",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
+              "id": "the_vault:mossy_bone",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 1
                 }
               }
             },
@@ -40,7 +39,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 2
-                }
+                  }
               }
             },
             {
@@ -51,7 +50,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 2
-                }
+                  }
               }
             },
             {
@@ -62,7 +61,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -73,128 +72,49 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 3
-                }
+                  }
               }
             }
           ]
         },
-        {
-          "weight": 20,
-          "pool": [
-            {
-              "weight": 30,
-              "item": {
-                "id": "the_vault:burger_patty",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
+        { "weight": 20,
+        "pool": [
+          {
+            "weight": 100,
+            "item": {
+              "id": "the_vault:living_rock",
+              "count": {
+                "type": "uniform",
+                "min": 4,
+                "max": 8
                 }
-              }
-            },
-            {
-              "weight": 30,
-              "item": {
-                "id": "the_vault:burger_bun",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 120,
-              "item": {
-                "id": "the_vault:regret_nugget",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 3
-                }
-              }
-            },
-            {
-              "weight": 30,
-              "item": {
-                "id": "the_vault:burger_cheese",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 29,
-              "item": {
-                "id": "the_vault:burger_tomato",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 28,
-              "item": {
-                "id": "the_vault:burger_lettuce",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 27,
-              "item": {
-                "id": "the_vault:burger_pickles",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 26,
-              "item": {
-                "id": "the_vault:burger_sauce",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 100,
-              "item": {
-                "id": "the_vault:knowledge_star_essence",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 2
-                }
-              }
-            },
-            {
-              "weight": 120,
-              "item": {
-                "id": "the_vault:vault_meat",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 2
-                }
-              }
             }
-          ]
+          },
+          {
+            "weight": 100,
+            "item": {
+              "id": "the_vault:knowledge_star_essence",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 2
+                }
+            }
+          },
+          {
+            "weight": 220,
+            "item": {
+              "id": "the_vault:vault_meat",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 2
+                }
+            }
+          }
+        ]
         },
-        {
-          "weight": 8,
+        { "weight": 8,
           "pool": [
             {
               "weight": 60,
@@ -204,7 +124,7 @@
                   "type": "uniform",
                   "min": 4,
                   "max": 8
-                }
+                  }
               }
             },
             {
@@ -215,25 +135,13 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 2
-                }
+                  }
               }
             }
-          ]
+        ]
         },
-        {
-          "weight": 2,
+        { "weight": 2,
           "pool": [
-            {
-              "weight": 30,
-              "item": {
-                "id": "the_vault:sweet_kiwi",
-                "count": {
-                  "type": "uniform",
-                  "min": 2,
-                  "max": 3
-                }
-              }
-            },
             {
               "weight": 200,
               "item": {
@@ -242,7 +150,7 @@
                   "type": "uniform",
                   "min": 2,
                   "max": 3
-                }
+                  }
               }
             },
             {
@@ -253,7 +161,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -264,7 +172,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -275,7 +183,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -286,7 +194,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -297,7 +205,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -308,7 +216,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -319,7 +227,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -330,7 +238,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -344,7 +252,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             }
           ]

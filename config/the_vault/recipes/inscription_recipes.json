@@ -1,6 +1,81 @@
 {
   "inscriptionRecipes": [
     {
+      "id": "the_vault:inscription_chromatic",
+      "output": {
+        "AMOUNT": 1,
+        "ITEM": "the_vault:inscription",
+        "NBT": "{pool:\"the_vault:chromatic_caves\", data:{color:3118792,model:16}, display:{Name:'{\"text\":\"Chromatic Caves Inscription\",\"color\":\"#2F96C8\"}' }}"
+      },
+      "inputs": [
+        {
+          "AMOUNT": 16,
+          "ITEM": "minecraft:iron_ingot",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 2,
+          "ITEM": "the_vault:vault_gold",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 4,
+          "ITEM": "the_vault:inscription_piece",
+          "NBT": "{}"
+        }
+      ]
+    },
+    {
+      "id": "the_vault:inscription_farm",
+      "output": {
+        "AMOUNT": 1,
+        "ITEM": "the_vault:inscription",
+        "NBT": "{pool:\"the_vault:the_farm\", data:{color:3118792,model:17}, display:{Name:'{\"text\":\"The Farm Inscription\",\"color\":\"#2F96C8\"}' }}"
+      },
+      "inputs": [
+        {
+          "AMOUNT": 64,
+          "ITEM": "minecraft:dirt",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 1,
+          "ITEM": "the_vault:vault_gold",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 4,
+          "ITEM": "the_vault:inscription_piece",
+          "NBT": "{}"
+        }
+      ]
+    },
+    {
+      "id": "the_vault:inscription_emerald_caves",
+      "output": {
+        "AMOUNT": 1,
+        "ITEM": "the_vault:inscription",
+        "NBT": "{pool:\"the_vault:emerald_caves\", data:{color:3118792,model:18}, display:{Name:'{\"text\":\"Emerald Caves Inscription\",\"color\":\"#2F96C8\"}' }}"
+      },
+      "inputs": [
+        {
+          "AMOUNT": 8,
+          "ITEM": "minecraft:diamond",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 1,
+          "ITEM": "the_vault:vault_gold",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 4,
+          "ITEM": "the_vault:inscription_piece",
+          "NBT": "{}"
+        }
+      ]
+    },
+    {
       "id": "the_vault:inscription_playzone",
       "output": {
         "AMOUNT": 1,
@@ -550,6 +625,26 @@
         },
         {
           "AMOUNT": 4,
+          "ITEM": "the_vault:gem_echo",
+          "NBT": "{}"
+        }
+      ]
+    },
+    {
+      "id": "the_vault:vendor",
+      "output": {
+        "AMOUNT": 1,
+        "ITEM": "the_vault:inscription",
+        "NBT": "{pool:\"the_vault:vendor\", data:{color:7012096,model:12}, display:{Name:'{\"text\":\"Vendor Inscription\",\"color\":\"#6AFF00\"}' }}"
+      },
+      "inputs": [
+        {
+          "AMOUNT": 32,
+          "ITEM": "the_vault:inscription_piece",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 8,
           "ITEM": "the_vault:gem_echo",
           "NBT": "{}"
         }

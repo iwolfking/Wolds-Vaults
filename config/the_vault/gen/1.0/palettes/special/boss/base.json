@@ -5,8 +5,8 @@
       "target": "the_vault:placeholder[type=objective]",
       "output": [
         {
-          "block": "the_vault:offering_pillar",
-          "offering": "the_vault:offering",
+          "block": "the_vault:rune_pillar",
+          "rune": "the_vault:boss_rune",
           "count": {
             "type": "uniform",
             "min": 3,
@@ -16,38 +16,52 @@
             {
               "id": "the_vault:boogieman_boss",
               "BaseTraits": [
-                "fireball_ranged_attack",
-                "evoker_fangs",
-                "heal"
+                "boogieman_melee_attack",
+                "snowball_ranged_attack"
               ],
               "ModifierTraits": {
-                "light_ranged": "shulker_bullet"
+                "light_ranged": "blood_orb",
+                "aoe_attack": "summon_target_boogiemen"
               },
               "weight": 1
             },
             {
               "id": "the_vault:golem_boss",
               "BaseTraits": [
-                "melee_attack",
-                "summoning_vault",
-                "life_leech_on_hit",
-                "levitate_on_hit"
+                "golem_melee_attack",
+                "levitate_on_hit",
+                "golem_hand_ranged_attack"
               ],
               "ModifierTraits": {
-                "light_ranged": "blood_orb"
+                "light_melee": "spider_attack",
+                "heavy_melee": "leap_at_target",
+                "light_ranged": "golem_hand_ranged_attack",
+                "heavy_ranged": "golem_double_hand_ranged_attack",
+                "aoe_attack": "ground_slam",
+                "buff_effect": "poison_aura",
+                "on-hit_effect": "poison_on_hit",
+                "attribute_health": "health_attribute",
+                "attribute_dmg": "dmg_attribute"
               },
               "weight": 1
             },
             {
               "id": "the_vault:black_widow_boss",
               "BaseTraits": [
-                "melee_attack",
-                "life_leech_on_hit",
-                "wither_on_hit",
-                "throw_lingering_poison"
+                "place_cobwebs_around",
+                "spider_attack",
+                "leap_at_target"
               ],
               "ModifierTraits": {
-                "light_ranged": "evoker_fangs"
+                "light_melee": "spider_attack",
+                "heavy_melee": "leap_at_target",
+                "light_ranged": "cobweb_ranged_attack",
+                "heavy_ranged": "summon_target_spider",
+                "aoe_attack": "place_cobwebs_around",
+                "buff_effect": "poison_aura",
+                "on-hit_effect": "poison_on_hit",
+                "attribute_health": "health_attribute",
+                "attribute_dmg": "dmg_attribute"
               },
               "weight": 1
             }

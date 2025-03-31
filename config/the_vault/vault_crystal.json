@@ -1717,23 +1717,6 @@
         "pool": [
           {
             "value": {
-              "type": "boss",
-              "objective_probability": 0.3,
-              "target": {
-                "type": "uniform",
-                "min": 3,
-                "max": 5
-              },
-              "wave": {
-                "type": "uniform",
-                "min": 3,
-                "max": 5
-              }
-            },
-            "weight": 2
-          },
-          {
-            "value": {
               "type": "scavenger",
               "objective_probability": 0.75
             },
@@ -1765,7 +1748,7 @@
         "pool": [
           {
             "value": {
-              "type": "boss",
+              "type": "rune_boss",
               "objective_probability": 0.3,
               "target": {
                 "type": "uniform",
@@ -1778,7 +1761,7 @@
                 "max": 8
               }
             },
-            "weight": 4
+            "weight": 2
           },
           {
             "value": {
@@ -1930,7 +1913,7 @@
         "pool": [
           {
             "value": {
-              "type": "boss",
+              "type": "rune_boss",
               "objective_probability": 0.25,
               "target": {
                 "type": "uniform",
@@ -2363,8 +2346,8 @@
           "the_vault:vault_crystal"
         ],
         "objective": {
-          "type": "boss",
-          "objective_probability": 0.25,
+          "type": "rune_boss",
+          "objective_probability": 0.05,
           "target": {
             "type": "uniform",
             "min": 3,
@@ -3026,6 +3009,10 @@
           "half_length": 99,
           "rotation": "CLOCKWISE_90"
         },
+        "theme": {
+          "type": "value",
+          "id": "the_vault:classic_vault_chaos_cake"
+        },
         "modifiers": {
           "type": "default",
           "random_modifiers": false
@@ -3047,6 +3034,10 @@
           "half_length": 99,
           "rotation": "CLOCKWISE_90"
         },
+        "theme": {
+          "type": "value",
+          "id": "the_vault:classic_vault_chaos_cake"
+        },
         "modifiers": {
           "type": "default",
           "random_modifiers": false
@@ -3067,6 +3058,10 @@
           "tunnel_span": 1,
           "half_length": 99,
           "rotation": "CLOCKWISE_90"
+        },
+        "theme": {
+          "type": "value",
+          "id": "the_vault:classic_vault_chaos_cake"
         },
         "modifiers": {
           "type": "default",
@@ -3218,6 +3213,23 @@
             "type": "constant",
             "count": 12000
           }
+        }
+      }
+    ],
+    "the_vault:crystal_seal_offering_boss": [
+      {
+        "level": 0,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objective": {
+          "objective_probability": 1.0,
+          "type": "offering_boss"
+        },
+        "layout": {
+          "tunnel_span": 1,
+          "radius": 5,
+          "type": "circle"
         }
       }
     ]

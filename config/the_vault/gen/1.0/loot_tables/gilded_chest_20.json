@@ -7,105 +7,102 @@
         "max": 15
       },
       "pool": [
-        {
-          "weight": 80,
+        { "weight": 80,
           "pool": [
             {
-              "weight": 8,
-              "item": {
+                "weight": 8,
+                "item": {
                 "id": "the_vault:gilded_sconce",
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 1
+                  }
                 }
-              }
             },
             {
               "weight": 12,
               "item": {
-                "id": "the_vault:gilded_ingot",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 2
+              "id": "the_vault:gilded_ingot",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 2
                 }
               }
             },
             {
-              "weight": 8,
-              "item": {
+                "weight": 8,
+                "item": {
                 "id": "the_vault:topaz_shard",
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 1
+                  }
                 }
-              }
             },
             {
               "weight": 10,
               "item": {
-                "id": "minecraft:experience_bottle",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
+              "id": "minecraft:experience_bottle",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 1
                 }
               }
             }
           ]
         },
-        {
-          "weight": 20,
-          "pool": [
-            {
-              "weight": 16,
-              "item": {
-                "id": "the_vault:magic_silk",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
+        { "weight": 20,
+        "pool": [
+          {
+            "weight": 16,
+            "item": {
+              "id": "the_vault:magic_silk",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 1
                 }
-              }
-            },
-            {
-              "weight": 10,
-              "item": {
-                "id": "the_vault:vault_essence",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 10,
-              "item": {
-                "id": "the_vault:ancient_copper_ingot",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 2
-                }
-              }
             }
-          ]
+          },
+          {
+            "weight": 10,
+            "item": {
+              "id": "the_vault:vault_essence",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 1
+                }
+            }
+          },
+          {
+            "weight": 10,
+            "item": {
+              "id": "the_vault:ancient_copper_ingot",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 2
+                }
+            }
+          }
+        ]
         },
-        {
-          "weight": 1,
+        { "weight": 8,
           "pool": [
             {
-              "weight": 2,
+              "weight": 1,
               "item": {
                 "id": "the_vault:jewel_pouch",
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -116,7 +113,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -127,34 +124,33 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             }
           ]
         },
-        {
-          "weight": 4,
+        { "weight": 2,
           "pool": [
             {
-              "weight": 2,
+              "weight": 3,
               "item": {
                 "id": "the_vault:jewel_pouch",
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
-              "weight": 16,
+              "weight": 14,
               "item": {
                 "id": "the_vault:vault_diamond",
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -165,7 +161,21 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
+              }
+            },
+            {
+              "weight": 4,
+              "item": {
+                "id": "the_vault:magnet",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "ornate0"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
               }
             }
           ]

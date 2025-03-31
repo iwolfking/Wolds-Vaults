@@ -533,8 +533,8 @@
         "display": {
           "name": ":wild: Wild",
           "color": "#E83F24",
-          "description": "Mobs spawns Wildly inside the vault",
-          "descriptionFormatted": "+1 Set of Wildly Spawned Mobs",
+          "description": "Dwellers spawns anywhere inside the vault",
+          "descriptionFormatted": "+1 Set of dweller spawned mobs",
           "icon": "the_vault:gui/modifiers/crowded"
         }
       },
@@ -658,7 +658,7 @@
         },
         "display": {
           "name": ":boom: Explosive",
-          "color": "#ff0000",
+          "color": "#bc2525",
           "description": "This vault is explosive",
           "descriptionFormatted": "This vault is explosive",
           "icon": "the_vault:gui/modifiers/volcanic"
@@ -787,7 +787,7 @@
         "properties": {
           "filter": "",
           "ability": "hunter_lvl1",
-          "probability": 0.05
+          "probability": 0.1
         },
         "display": {
           "name": ":kill_hunter: Hunterino",
@@ -857,7 +857,7 @@
         },
         "display": {
           "name": ":bronze: Coin Explosion",
-          "color": "#FFEA00",
+          "color": "#ffba00",
           "description": "Killing a mob will have it drop bronze or silver!",
           "icon": "the_vault:gui/modifiers/kill_coin"
         }
@@ -2545,7 +2545,8 @@
           "preventsArtifact": false,
           "experienceMultiplierOnDeath": 0.0,
           "experienceMultiplierOnSuccess": 1.0,
-          "isInstantRevival": false
+          "isInstantRevival": false,
+          "durabilityPenalty": 1.0
         },
         "display": {
           "name": ":beginners_grace: Beginner's Grace",
@@ -2559,7 +2560,8 @@
           "preventsArtifact": false,
           "experienceMultiplierOnDeath": 0.0,
           "experienceMultiplierOnSuccess": 1.0,
-          "isInstantRevival": false
+          "isInstantRevival": false,
+          "durabilityPenalty": 0.0
         },
         "display": {
           "name": ":beginners_grace: Casual Mode",
@@ -2574,7 +2576,7 @@
         "properties": {},
         "display": {
           "name": ":locked: Locked",
-          "color": "#FF0000",
+          "color": "#bc2525",
           "description": "Vault can't be bailed",
           "icon": "the_vault:gui/modifiers/raffle"
         }
@@ -2583,7 +2585,7 @@
         "properties": {},
         "display": {
           "name": ":locked: Locked",
-          "color": "#FF0000",
+          "color": "#bc2525",
           "description": "This vault can not be exited without completing it.",
           "icon": "the_vault:gui/modifiers/raffle"
         }
@@ -3153,6 +3155,19 @@
           "icon": "the_vault:gui/modifiers/plentiful"
         }
       },
+      "the_vault:no_ores": {
+        "properties": {
+          "type": "ORE",
+          "chance": -100.0
+        },
+        "display": {
+          "name": "No Ores",
+          "color": "#FF85FF",
+          "description": "-100% Vault Ores",
+          "descriptionFormatted": "+%d%% Vault Ores",
+          "icon": "the_vault:gui/modifiers/chaotic"
+        }
+      },
       "the_vault:super_plentiful": {
         "properties": {
           "type": "ORE",
@@ -3299,6 +3314,22 @@
           "description": "No Jump",
           "descriptionFormatted": "No Jump",
           "icon": "the_vault:gui/modifiers/jupiter_gravity"
+        }
+      }
+    },
+    "the_vault:modifier_type/camera": {
+      "the_vault:backwards": {
+        "properties": {
+          "behindPlayer": true,
+          "xRot": 0,
+          "yRot": 0
+        },
+        "display": {
+          "name": "Backwards",
+          "color": "#7738C9",
+          "description": "See behind you!",
+          "descriptionFormatted": "See behind you!",
+          "icon": "the_vault:gui/modifiers/backwards"
         }
       }
     },
@@ -3811,7 +3842,7 @@
       },
       "the_vault:champion_paradox": {
         "properties": {
-          "chance": 0.05
+          "chance": 0.02
         },
         "display": {
           "name": ":champion_increase: More Champions",
@@ -3822,6 +3853,24 @@
       }
     },
     "the_vault:modifier_type/grouped": {
+      "the_vault:trial_chambers": {
+        "properties": {
+          "children": {
+            "the_vault:noloot_destroy": 1,
+            "the_vault:extra_reinforced": 1,
+            "the_vault:noxp": 1,
+            "the_vault:beginners_grace": 1,
+            "the_vault:no_ores": 1,
+            "the_vault:no_reward": 1
+          }
+        },
+        "display": {
+          "name": "Trial Chambers",
+          "color": "#bbf333",
+          "description": "The Trial Chambers does not contain loot, you get no experience, and you take no durability damage!",
+          "icon": "the_vault:gui/modifiers/chaotic"
+        }
+      },
       "the_vault:trial": {
         "properties": {
           "children": {
@@ -5929,7 +5978,7 @@
         "display": {
           "name": ":vendoor: Vendoor Hunter",
           "color": "#fbd93f",
-          "description": "Highlights Vendpor Doors in this vault",
+          "description": "Highlights Vendoor Doors in this vault",
           "icon": "the_vault:gui/modifiers/treasure_doors"
         }
       },
@@ -6083,7 +6132,7 @@
           "name": ":omega: Pylon Hunter",
           "color": "#58C2B1",
           "description": "Highlights Pylons in this vault",
-          "icon": "the_vault:gui/modifiers/inert"
+          "icon": "the_vault:gui/modifiers/pylon_hunter"
         }
       },
       "the_vault:velara_hunter": {
@@ -6276,6 +6325,30 @@
           "description": "No chests spawn in this vault",
           "descriptionFormatted": "No chests spawn in this vault",
           "icon": "the_vault:gui/modifiers/personalspace"
+        }
+      }
+    },
+    "the_vault:modifier_type/no_loot": {
+      "the_vault:noloot_destroy": {
+        "properties": {
+          "destroyChests": false
+        },
+        "display": {
+          "name": "No Loot",
+          "color": "#a996ca",
+          "description": "Chests have no loot in this vault.",
+          "icon": "the_vault:gui/modifiers/no_loot"
+        }
+      }
+    },
+    "the_vault:modifier_type/no_crate": {
+      "the_vault:no_reward": {
+        "properties": {},
+        "display": {
+          "name": "No Crate",
+          "color": "#a996ca",
+          "description": "You will not receive a crate on completion.",
+          "icon": "the_vault:gui/modifiers/no_crate"
         }
       }
     }

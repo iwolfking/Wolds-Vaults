@@ -1,7 +1,6 @@
 {
   "tasks": [
-    {
-      "id": "complete_5_blackout_bingo_vaults_in_15_minutes",
+    { "id": "complete_5_blackout_bingo_vaults_in_15_minutes",
       "renderer": {
         "name": "Complete Blackout Bingo Vaults using less than 15 minutes of the timer",
         "icon": "the_vault:textures/gui/modifiers/bingo.png",
@@ -64,34 +63,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "kill_1000_guardians",
-      "renderer": {
-        "name": "Kill Guardians",
-        "icon": "the_vault:textures/gui/bingo/killguardians.png",
-        "type": "team"
-      },
-      "children": [
-        {
-          "children": [],
-          "operating": false,
-          "filter": "@the_vault:guardians",
-          "counter": {
-            "variables": {},
-            "target": {
-              "count": 1000,
-              "type": "constant"
-            },
-            "type": "target"
-          },
-          "type": "kill_entity"
-        }
-      ],
-      "mode": "ALL",
-      "type": "multi_vault"
-    },
-    {
-      "id": "kill_2000_tanks",
+    { "id": "kill_2000_tanks",
       "renderer": {
         "name": "Kill Tanks",
         "icon": "the_vault:textures/gui/bingo/killtank.png",
@@ -116,8 +88,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_25000_wooden_chests",
+    { "id": "loot_25000_wooden_chests",
       "renderer": {
         "name": "Loot Wooden Chests",
         "icon": "the_vault:textures/gui/bingo/wooden.png",
@@ -142,31 +113,29 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "submit_100000_larimar",
-      "renderer": {
-        "name": "Submit Larimar",
-        "stack": {
-          "id": "the_vault:gem_larimar",
-          "count": 1
-        },
-        "type": "team"
+    { "id": "submit_100000_larimar",
+    "renderer": {
+      "name": "Submit Larimar",
+      "stack": {
+        "id": "the_vault:gem_larimar",
+        "count": 1
       },
-      "children": [],
-      "operating": false,
-      "item": "the_vault:gem_larimar",
-      "counter": {
-        "variables": {},
-        "target": {
-          "count": 100000,
-          "type": "constant"
-        },
-        "type": "target"
-      },
-      "type": "collection"
+      "type": "team"
     },
-    {
-      "id": "kill_500_champions",
+    "children": [],
+    "operating": false,
+    "item": "the_vault:gem_larimar",
+    "counter": {
+      "variables": {},
+      "target": {
+        "count": 100000,
+        "type": "constant"
+      },
+      "type": "target"
+    },
+    "type": "collection"
+    },
+    { "id": "kill_500_champions",
       "renderer": {
         "name": "Kill Champions",
         "icon": "the_vault:textures/gui/bingo/killchampion.png",
@@ -191,34 +160,33 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_10000_gilded_chests",
-      "renderer": {
-        "name": "Loot Gilded Chests",
-        "icon": "the_vault:textures/gui/bingo/gilded.png",
-        "type": "team"
-      },
-      "children": [
-        {
-          "children": [],
-          "operating": false,
-          "filter": "@the_vault:gilded",
-          "counter": {
-            "variables": {},
-            "target": {
-              "count": 10000,
-              "type": "constant"
-            },
-            "type": "target"
-          },
-          "type": "loot_chest"
-        }
-      ],
-      "mode": "ALL",
-      "type": "multi_vault"
+
+    { "id": "loot_10000_gilded_chests",
+    "renderer": {
+      "name": "Loot Gilded Chests",
+      "icon": "the_vault:textures/gui/bingo/gilded.png",
+      "type": "team"
     },
-    {
-      "id": "submit_1000_echo_gems",
+    "children": [
+      {
+        "children": [],
+        "operating": false,
+        "filter": "@the_vault:gilded",
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 10000,
+            "type": "constant"
+          },
+          "type": "target"
+        },
+        "type": "loot_chest"
+      }
+    ],
+    "mode": "ALL",
+    "type": "multi_vault"
+    },
+    { "id": "submit_1000_echo_gems",
       "renderer": {
         "name": "Submit Echo Gems",
         "stack": {
@@ -240,34 +208,32 @@
       },
       "type": "collection"
     },
-    {
-      "id": "kill_50000_horde_mobs",
-      "renderer": {
-        "name": "Kill Horde Mobs",
-        "icon": "the_vault:textures/gui/bingo/killhorde.png",
-        "type": "team"
-      },
-      "children": [
-        {
-          "children": [],
-          "operating": false,
-          "filter": "@the_vault:horde",
-          "counter": {
-            "variables": {},
-            "target": {
-              "count": 50000,
-              "type": "constant"
-            },
-            "type": "target"
-          },
-          "type": "kill_entity"
-        }
-      ],
-      "mode": "ALL",
-      "type": "multi_vault"
+    { "id": "kill_50000_horde_mobs",
+    "renderer": {
+      "name": "Kill Horde Mobs",
+      "icon": "the_vault:textures/gui/bingo/killhorde.png",
+      "type": "team"
     },
-    {
-      "id": "complete_3_vaults_killing_4000_mobs",
+    "children": [
+      {
+        "children": [],
+        "operating": false,
+        "filter": "@the_vault:horde",
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 50000,
+            "type": "constant"
+          },
+          "type": "target"
+        },
+        "type": "kill_entity"
+      }
+    ],
+    "mode": "ALL",
+    "type": "multi_vault"
+    },
+    { "id": "complete_3_vaults_killing_4000_mobs",
       "renderer": {
         "name": "Complete Vaults killing 2,500, or more, mobs",
         "icon": "the_vault:textures/gui/bingo/killmobs.png",
@@ -322,8 +288,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "submit_1000_knowledge_stars",
+    { "id": "submit_1000_knowledge_stars",
       "renderer": {
         "name": "Submit Knowledge Stars",
         "stack": {
@@ -345,8 +310,9 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_50000_vault_scrap",
+
+
+    { "id": "submit_50000_vault_scrap",
       "renderer": {
         "name": "Submit Vault Scrap",
         "stack": {
@@ -368,14 +334,13 @@
       },
       "type": "collection"
     },
-    {
-      "id": "complete_5_solo_brazier_vaults_no_damage_taken",
-      "renderer": {
-        "name": "Complete Solo Brazier Vaults without taking any damage",
-        "icon": "the_vault:textures/item/brazier_complete.png",
-        "type": "team"
-      },
-      "children": [
+    { "id": "complete_5_solo_brazier_vaults_no_damage_taken",
+    "renderer": {
+      "name": "Complete Solo Brazier Vaults without taking any damage",
+      "icon": "the_vault:textures/item/brazier_complete.png",
+      "type": "team"
+    },
+    "children": [
         {
           "children": [
             {
@@ -431,8 +396,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_cake_vault_eating_100_cakes",
+    { "id": "complete_cake_vault_eating_100_cakes",
       "renderer": {
         "name": "Complete a cake vault eating at least 100 cakes",
         "icon": "the_vault:textures/gui/bingo/cake_layer.png",
@@ -470,8 +434,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "loot_10000_living_chests",
+    { "id": "loot_10000_living_chests",
       "renderer": {
         "name": "Loot Living Chests",
         "icon": "the_vault:textures/gui/bingo/living.png",
@@ -496,8 +459,30 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_12500_coin_piles",
+    { "id": "submit_500_companion_gemstones",
+      "renderer": {
+        "name": "Submit Companion Gemstones",
+        "stack": {
+          "id": "vhsmp:mystic_gemstone",
+          "count": 1
+        },
+        "type": "team"
+      },
+      "children": [],
+      "operating": false,
+      "item": "vhsmp:mystic_gemstone",
+      "counter": {
+        "variables": {},
+        "target": {
+          "count": 500,
+          "type": "constant"
+        },
+        "type": "target"
+      },
+      "type": "collection"
+    },
+
+    { "id": "loot_12500_coin_piles",
       "renderer": {
         "name": "Loot Coin Piles in Vaults",
         "icon": "the_vault:textures/gui/bingo/lootcoins.png",
@@ -522,8 +507,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_10000_ornate_chests",
+    { "id": "loot_10000_ornate_chests",
       "renderer": {
         "name": "Loot Ornate Chests",
         "icon": "the_vault:textures/gui/bingo/ornate.png",
@@ -548,8 +532,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "submit_burgers",
+    { "id": "submit_burgers",
       "renderer": {
         "name": "Submit Salty Deluxe Cheeseburgers",
         "stack": {
@@ -571,8 +554,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_2500_pogs",
+    { "id": "submit_2500_pogs",
       "renderer": {
         "name": "Submit POGs",
         "stack": {
@@ -594,8 +576,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "complete_10_scavenger_vaults_in_10_minutes",
+    { "id": "complete_10_scavenger_vaults_in_10_minutes",
       "renderer": {
         "name": "Complete Scavenger Vaults using less than 10 minutes of the timer",
         "icon": "the_vault:textures/item/scav_complete.png",
@@ -645,8 +626,9 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_5_solo_elixir_vaults_no_damage_dealt",
+
+
+    { "id": "complete_5_solo_elixir_vaults_no_damage_dealt",
       "renderer": {
         "name": "Complete Solo Elixir Vaults without dealing any damage",
         "icon": "the_vault:textures/item/elixir_complete.png",
@@ -695,7 +677,7 @@
           "mode": "SOLO",
           "type": "single_vault"
         }
-      ],
+       ],
       "operating": false,
       "counter": {
         "variables": {},
@@ -708,8 +690,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "submit_3000_platinum",
+    { "id": "submit_3000_platinum",
       "renderer": {
         "name": "Submit Platinum",
         "stack": {
@@ -731,8 +712,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "open_100_treasure_doors",
+    { "id": "open_100_treasure_doors",
       "renderer": {
         "name": "Open Treasure Doors",
         "icon": "the_vault:textures/gui/bingo/treasure_doors.png",
@@ -752,8 +732,7 @@
       },
       "type": "interact_block"
     },
-    {
-      "id": "kill_2000_dungeon_mobs",
+    { "id": "kill_2000_dungeon_mobs",
       "renderer": {
         "name": "Kill Dungeon Mobs",
         "icon": "the_vault:textures/gui/bingo/killdungeon.png",
@@ -778,8 +757,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "complete_3_vaults_looting_2500_chests",
+    { "id": "complete_3_vaults_looting_2500_chests",
       "renderer": {
         "name": "Complete Vaults looting 2,500, or more, chests",
         "icon": "the_vault:textures/gui/bingo/wooden.png",
@@ -839,8 +817,16 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_5_blackout_bingo_vaults_in_15_minutes_reclaim_1",
+    
+    
+
+
+
+
+
+
+
+    { "id": "complete_5_blackout_bingo_vaults_in_15_minutes_reclaim_1",
       "renderer": {
         "name": "Complete Blackout Bingo Vaults using less than 15 minutes of the timer",
         "icon": "the_vault:textures/gui/modifiers/bingo.png",
@@ -903,8 +889,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_5_blackout_bingo_vaults_in_15_minutes_reclaim_2",
+    { "id": "complete_5_blackout_bingo_vaults_in_15_minutes_reclaim_2",
       "renderer": {
         "name": "Complete Blackout Bingo Vaults using less than 15 minutes of the timer",
         "icon": "the_vault:textures/gui/modifiers/bingo.png",
@@ -967,8 +952,8 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "kill_2000_tanks_reclaim_1",
+
+    { "id": "kill_2000_tanks_reclaim_1",
       "renderer": {
         "name": "Kill Tanks",
         "icon": "the_vault:textures/gui/bingo/killtank.png",
@@ -993,8 +978,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "kill_2000_tanks_reclaim_2",
+    { "id": "kill_2000_tanks_reclaim_2",
       "renderer": {
         "name": "Kill Tanks",
         "icon": "the_vault:textures/gui/bingo/killtank.png",
@@ -1019,8 +1003,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "kill_2000_tanks_reclaim_3",
+    { "id": "kill_2000_tanks_reclaim_3",
       "renderer": {
         "name": "Kill Tanks",
         "icon": "the_vault:textures/gui/bingo/killtank.png",
@@ -1045,8 +1028,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "kill_2000_tanks_reclaim_4",
+    { "id": "kill_2000_tanks_reclaim_4",
       "renderer": {
         "name": "Kill Tanks",
         "icon": "the_vault:textures/gui/bingo/killtank.png",
@@ -1071,8 +1053,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "kill_2000_tanks_reclaim_5",
+    { "id": "kill_2000_tanks_reclaim_5",
       "renderer": {
         "name": "Kill Tanks",
         "icon": "the_vault:textures/gui/bingo/killtank.png",
@@ -1097,8 +1078,8 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_25000_wooden_chests_reclaim_1",
+
+    { "id": "loot_25000_wooden_chests_reclaim_1",
       "renderer": {
         "name": "Loot Wooden Chests",
         "icon": "the_vault:textures/gui/bingo/wooden.png",
@@ -1123,8 +1104,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_25000_wooden_chests_reclaim_2",
+    { "id": "loot_25000_wooden_chests_reclaim_2",
       "renderer": {
         "name": "Loot Wooden Chests",
         "icon": "the_vault:textures/gui/bingo/wooden.png",
@@ -1149,8 +1129,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_25000_wooden_chests_reclaim_3",
+    { "id": "loot_25000_wooden_chests_reclaim_3",
       "renderer": {
         "name": "Loot Wooden Chests",
         "icon": "the_vault:textures/gui/bingo/wooden.png",
@@ -1175,8 +1154,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_25000_wooden_chests_reclaim_4",
+    { "id": "loot_25000_wooden_chests_reclaim_4",
       "renderer": {
         "name": "Loot Wooden Chests",
         "icon": "the_vault:textures/gui/bingo/wooden.png",
@@ -1201,8 +1179,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_25000_wooden_chests_reclaim_5",
+    { "id": "loot_25000_wooden_chests_reclaim_5",
       "renderer": {
         "name": "Loot Wooden Chests",
         "icon": "the_vault:textures/gui/bingo/wooden.png",
@@ -1227,8 +1204,8 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "kill_500_champions_reclaim_1",
+
+    { "id": "kill_500_champions_reclaim_1",
       "renderer": {
         "name": "Kill Champions",
         "icon": "the_vault:textures/gui/bingo/killchampion.png",
@@ -1253,8 +1230,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "kill_500_champions_reclaim_2",
+    { "id": "kill_500_champions_reclaim_2",
       "renderer": {
         "name": "Kill Champions",
         "icon": "the_vault:textures/gui/bingo/killchampion.png",
@@ -1279,8 +1255,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "kill_500_champions_reclaim_3",
+    { "id": "kill_500_champions_reclaim_3",
       "renderer": {
         "name": "Kill Champions",
         "icon": "the_vault:textures/gui/bingo/killchampion.png",
@@ -1305,256 +1280,254 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "submit_100000_larimar_reclaim_1",
-      "renderer": {
-        "name": "Submit Wutodie",
-        "stack": {
-          "id": "the_vault:gem_wutodie",
-          "count": 1
-        },
-        "type": "team"
+
+    { "id": "submit_100000_larimar_reclaim_1",
+    "renderer": {
+      "name": "Submit Wutodie",
+      "stack": {
+        "id": "the_vault:gem_wutodie",
+        "count": 1
       },
-      "children": [],
-      "operating": false,
-      "item": "the_vault:gem_wutodie",
-      "counter": {
-        "variables": {},
-        "target": {
-          "count": 20000,
-          "type": "constant"
-        },
-        "type": "target"
-      },
-      "type": "collection"
+      "type": "team"
     },
-    {
-      "id": "submit_100000_larimar_reclaim_2",
-      "renderer": {
-        "name": "Submit Painite",
-        "stack": {
-          "id": "the_vault:gem_painite",
-          "count": 1
-        },
-        "type": "team"
+    "children": [],
+    "operating": false,
+    "item": "the_vault:gem_wutodie",
+    "counter": {
+      "variables": {},
+      "target": {
+        "count": 20000,
+        "type": "constant"
       },
-      "children": [],
-      "operating": false,
-      "item": "the_vault:gem_painite",
-      "counter": {
-        "variables": {},
-        "target": {
-          "count": 15000,
-          "type": "constant"
-        },
-        "type": "target"
-      },
-      "type": "collection"
+      "type": "target"
     },
-    {
-      "id": "submit_100000_larimar_reclaim_3",
-      "renderer": {
-        "name": "Submit Alexandrite",
-        "stack": {
-          "id": "the_vault:gem_alexandrite",
-          "count": 1
-        },
-        "type": "team"
-      },
-      "children": [],
-      "operating": false,
-      "item": "the_vault:gem_alexandrite",
-      "counter": {
-        "variables": {},
-        "target": {
-          "count": 15000,
-          "type": "constant"
-        },
-        "type": "target"
-      },
-      "type": "collection"
+    "type": "collection"
     },
-    {
-      "id": "submit_100000_larimar_reclaim_4",
-      "renderer": {
-        "name": "Submit Benitoite",
-        "stack": {
-          "id": "the_vault:gem_benitoite",
-          "count": 1
-        },
-        "type": "team"
+    { "id": "submit_100000_larimar_reclaim_2",
+    "renderer": {
+      "name": "Submit Painite",
+      "stack": {
+        "id": "the_vault:gem_painite",
+        "count": 1
       },
-      "children": [],
-      "operating": false,
-      "item": "the_vault:gem_benitoite",
-      "counter": {
-        "variables": {},
-        "target": {
-          "count": 100000,
-          "type": "constant"
-        },
-        "type": "target"
-      },
-      "type": "collection"
+      "type": "team"
     },
-    {
-      "id": "loot_10000_gilded_chests_reclaim_1",
-      "renderer": {
-        "name": "Loot Gilded Chests",
-        "icon": "the_vault:textures/gui/bingo/gilded.png",
-        "type": "team"
+    "children": [],
+    "operating": false,
+    "item": "the_vault:gem_painite",
+    "counter": {
+      "variables": {},
+      "target": {
+        "count": 15000,
+        "type": "constant"
       },
-      "children": [
-        {
-          "children": [],
-          "operating": false,
-          "filter": "@the_vault:gilded",
-          "counter": {
-            "variables": {},
-            "target": {
-              "count": 11000,
-              "type": "constant"
-            },
-            "type": "target"
+      "type": "target"
+    },
+    "type": "collection"
+    },
+    { "id": "submit_100000_larimar_reclaim_3",
+    "renderer": {
+      "name": "Submit Alexandrite",
+      "stack": {
+        "id": "the_vault:gem_alexandrite",
+        "count": 1
+      },
+      "type": "team"
+    },
+    "children": [],
+    "operating": false,
+    "item": "the_vault:gem_alexandrite",
+    "counter": {
+      "variables": {},
+      "target": {
+        "count": 15000,
+        "type": "constant"
+      },
+      "type": "target"
+    },
+    "type": "collection"
+    },
+    { "id": "submit_100000_larimar_reclaim_4",
+    "renderer": {
+      "name": "Submit Benitoite",
+      "stack": {
+        "id": "the_vault:gem_benitoite",
+        "count": 1
+      },
+      "type": "team"
+    },
+    "children": [],
+    "operating": false,
+    "item": "the_vault:gem_benitoite",
+    "counter": {
+      "variables": {},
+      "target": {
+        "count": 100000,
+        "type": "constant"
+      },
+      "type": "target"
+    },
+    "type": "collection"
+    },
+
+
+
+
+
+
+    { "id": "loot_10000_gilded_chests_reclaim_1",
+    "renderer": {
+      "name": "Loot Gilded Chests",
+      "icon": "the_vault:textures/gui/bingo/gilded.png",
+      "type": "team"
+    },
+    "children": [
+      {
+        "children": [],
+        "operating": false,
+        "filter": "@the_vault:gilded",
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 11000,
+            "type": "constant"
           },
-          "type": "loot_chest"
-        }
-      ],
-      "mode": "ALL",
-      "type": "multi_vault"
+          "type": "target"
+        },
+        "type": "loot_chest"
+      }
+    ],
+    "mode": "ALL",
+    "type": "multi_vault"
     },
-    {
-      "id": "loot_10000_gilded_chests_reclaim_2",
-      "renderer": {
-        "name": "Loot Gilded Chests",
-        "icon": "the_vault:textures/gui/bingo/gilded.png",
-        "type": "team"
-      },
-      "children": [
-        {
-          "children": [],
-          "operating": false,
-          "filter": "@the_vault:gilded",
-          "counter": {
-            "variables": {},
-            "target": {
-              "count": 12000,
-              "type": "constant"
-            },
-            "type": "target"
+    { "id": "loot_10000_gilded_chests_reclaim_2",
+    "renderer": {
+      "name": "Loot Gilded Chests",
+      "icon": "the_vault:textures/gui/bingo/gilded.png",
+      "type": "team"
+    },
+    "children": [
+      {
+        "children": [],
+        "operating": false,
+        "filter": "@the_vault:gilded",
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 12000,
+            "type": "constant"
           },
-          "type": "loot_chest"
-        }
-      ],
-      "mode": "ALL",
-      "type": "multi_vault"
+          "type": "target"
+        },
+        "type": "loot_chest"
+      }
+    ],
+    "mode": "ALL",
+    "type": "multi_vault"
     },
-    {
-      "id": "loot_10000_gilded_chests_reclaim_3",
-      "renderer": {
-        "name": "Loot Gilded Chests",
-        "icon": "the_vault:textures/gui/bingo/gilded.png",
-        "type": "team"
-      },
-      "children": [
-        {
-          "children": [],
-          "operating": false,
-          "filter": "@the_vault:gilded",
-          "counter": {
-            "variables": {},
-            "target": {
-              "count": 13000,
-              "type": "constant"
-            },
-            "type": "target"
+    { "id": "loot_10000_gilded_chests_reclaim_3",
+    "renderer": {
+      "name": "Loot Gilded Chests",
+      "icon": "the_vault:textures/gui/bingo/gilded.png",
+      "type": "team"
+    },
+    "children": [
+      {
+        "children": [],
+        "operating": false,
+        "filter": "@the_vault:gilded",
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 13000,
+            "type": "constant"
           },
-          "type": "loot_chest"
-        }
-      ],
-      "mode": "ALL",
-      "type": "multi_vault"
+          "type": "target"
+        },
+        "type": "loot_chest"
+      }
+    ],
+    "mode": "ALL",
+    "type": "multi_vault"
     },
-    {
-      "id": "kill_50000_horde_mobs_reclaim_1",
-      "renderer": {
-        "name": "Kill Horde Mobs",
-        "icon": "the_vault:textures/gui/bingo/killhorde.png",
-        "type": "team"
-      },
-      "children": [
-        {
-          "children": [],
-          "operating": false,
-          "filter": "@the_vault:horde",
-          "counter": {
-            "variables": {},
-            "target": {
-              "count": 51000,
-              "type": "constant"
-            },
-            "type": "target"
+
+    { "id": "kill_50000_horde_mobs_reclaim_1",
+    "renderer": {
+      "name": "Kill Horde Mobs",
+      "icon": "the_vault:textures/gui/bingo/killhorde.png",
+      "type": "team"
+    },
+    "children": [
+      {
+        "children": [],
+        "operating": false,
+        "filter": "@the_vault:horde",
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 51000,
+            "type": "constant"
           },
-          "type": "kill_entity"
-        }
-      ],
-      "mode": "ALL",
-      "type": "multi_vault"
+          "type": "target"
+        },
+        "type": "kill_entity"
+      }
+    ],
+    "mode": "ALL",
+    "type": "multi_vault"
     },
-    {
-      "id": "kill_50000_horde_mobs_reclaim_2",
-      "renderer": {
-        "name": "Kill Horde Mobs",
-        "icon": "the_vault:textures/gui/bingo/killhorde.png",
-        "type": "team"
-      },
-      "children": [
-        {
-          "children": [],
-          "operating": false,
-          "filter": "@the_vault:horde",
-          "counter": {
-            "variables": {},
-            "target": {
-              "count": 52000,
-              "type": "constant"
-            },
-            "type": "target"
+    { "id": "kill_50000_horde_mobs_reclaim_2",
+    "renderer": {
+      "name": "Kill Horde Mobs",
+      "icon": "the_vault:textures/gui/bingo/killhorde.png",
+      "type": "team"
+    },
+    "children": [
+      {
+        "children": [],
+        "operating": false,
+        "filter": "@the_vault:horde",
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 52000,
+            "type": "constant"
           },
-          "type": "kill_entity"
-        }
-      ],
-      "mode": "ALL",
-      "type": "multi_vault"
+          "type": "target"
+        },
+        "type": "kill_entity"
+      }
+    ],
+    "mode": "ALL",
+    "type": "multi_vault"
     },
-    {
-      "id": "kill_50000_horde_mobs_reclaim_3",
-      "renderer": {
-        "name": "Kill Horde Mobs",
-        "icon": "the_vault:textures/gui/bingo/killhorde.png",
-        "type": "team"
-      },
-      "children": [
-        {
-          "children": [],
-          "operating": false,
-          "filter": "@the_vault:horde",
-          "counter": {
-            "variables": {},
-            "target": {
-              "count": 53000,
-              "type": "constant"
-            },
-            "type": "target"
+    { "id": "kill_50000_horde_mobs_reclaim_3",
+    "renderer": {
+      "name": "Kill Horde Mobs",
+      "icon": "the_vault:textures/gui/bingo/killhorde.png",
+      "type": "team"
+    },
+    "children": [
+      {
+        "children": [],
+        "operating": false,
+        "filter": "@the_vault:horde",
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 53000,
+            "type": "constant"
           },
-          "type": "kill_entity"
-        }
-      ],
-      "mode": "ALL",
-      "type": "multi_vault"
+          "type": "target"
+        },
+        "type": "kill_entity"
+      }
+    ],
+    "mode": "ALL",
+    "type": "multi_vault"
     },
-    {
-      "id": "complete_3_vaults_killing_4000_mobs_reclaim_1",
+
+    { "id": "complete_3_vaults_killing_4000_mobs_reclaim_1",
       "renderer": {
         "name": "Complete Vaults killing 2,500, or more, mobs",
         "icon": "the_vault:textures/gui/bingo/killmobs.png",
@@ -1609,8 +1582,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_3_vaults_killing_4000_mobs_reclaim_2",
+    { "id": "complete_3_vaults_killing_4000_mobs_reclaim_2",
       "renderer": {
         "name": "Complete Vaults killing 2,500, or more, mobs",
         "icon": "the_vault:textures/gui/bingo/killmobs.png",
@@ -1665,8 +1637,8 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "submit_1000_echo_gems_reclaim_1",
+
+    { "id": "submit_1000_echo_gems_reclaim_1",
       "renderer": {
         "name": "Submit Black Opal Gems",
         "stack": {
@@ -1688,8 +1660,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_1000_echo_gems_reclaim_2",
+    { "id": "submit_1000_echo_gems_reclaim_2",
       "renderer": {
         "name": "Submit Vault Diamonds",
         "stack": {
@@ -1711,8 +1682,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_1000_knowledge_stars_reclaim_1",
+    { "id": "submit_1000_knowledge_stars_reclaim_1",
       "renderer": {
         "name": "Submit Mod Box",
         "stack": {
@@ -1734,8 +1704,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_1000_knowledge_stars_reclaim_2",
+    { "id": "submit_1000_knowledge_stars_reclaim_2",
       "renderer": {
         "name": "Submit Inscription Piece",
         "stack": {
@@ -1757,14 +1726,15 @@
       },
       "type": "collection"
     },
-    {
-      "id": "complete_5_solo_brazier_vaults_no_damage_taken_reclaim_1",
-      "renderer": {
-        "name": "Complete Solo Brazier Vaults without taking any damage",
-        "icon": "the_vault:textures/item/brazier_complete.png",
-        "type": "team"
-      },
-      "children": [
+
+
+    { "id": "complete_5_solo_brazier_vaults_no_damage_taken_reclaim_1",
+    "renderer": {
+      "name": "Complete Solo Brazier Vaults without taking any damage",
+      "icon": "the_vault:textures/item/brazier_complete.png",
+      "type": "team"
+    },
+    "children": [
         {
           "children": [
             {
@@ -1820,14 +1790,13 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_5_solo_brazier_vaults_no_damage_taken_reclaim_2",
-      "renderer": {
-        "name": "Complete Solo Brazier Vaults without taking any damage",
-        "icon": "the_vault:textures/item/brazier_complete.png",
-        "type": "team"
-      },
-      "children": [
+    { "id": "complete_5_solo_brazier_vaults_no_damage_taken_reclaim_2",
+    "renderer": {
+      "name": "Complete Solo Brazier Vaults without taking any damage",
+      "icon": "the_vault:textures/item/brazier_complete.png",
+      "type": "team"
+    },
+    "children": [
         {
           "children": [
             {
@@ -1883,14 +1852,13 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_5_solo_brazier_vaults_no_damage_taken_reclaim_3",
-      "renderer": {
-        "name": "Complete Solo Brazier Vaults without taking any damage",
-        "icon": "the_vault:textures/item/brazier_complete.png",
-        "type": "team"
-      },
-      "children": [
+    { "id": "complete_5_solo_brazier_vaults_no_damage_taken_reclaim_3",
+    "renderer": {
+      "name": "Complete Solo Brazier Vaults without taking any damage",
+      "icon": "the_vault:textures/item/brazier_complete.png",
+      "type": "team"
+    },
+    "children": [
         {
           "children": [
             {
@@ -1946,14 +1914,13 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_5_solo_brazier_vaults_no_damage_taken_reclaim_4",
-      "renderer": {
-        "name": "Complete Solo Brazier Vaults without taking any damage",
-        "icon": "the_vault:textures/item/brazier_complete.png",
-        "type": "team"
-      },
-      "children": [
+    { "id": "complete_5_solo_brazier_vaults_no_damage_taken_reclaim_4",
+    "renderer": {
+      "name": "Complete Solo Brazier Vaults without taking any damage",
+      "icon": "the_vault:textures/item/brazier_complete.png",
+      "type": "team"
+    },
+    "children": [
         {
           "children": [
             {
@@ -2009,14 +1976,13 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_5_solo_brazier_vaults_no_damage_taken_reclaim_5",
-      "renderer": {
-        "name": "Complete Solo Brazier Vaults without taking any damage",
-        "icon": "the_vault:textures/item/brazier_complete.png",
-        "type": "team"
-      },
-      "children": [
+    { "id": "complete_5_solo_brazier_vaults_no_damage_taken_reclaim_5",
+    "renderer": {
+      "name": "Complete Solo Brazier Vaults without taking any damage",
+      "icon": "the_vault:textures/item/brazier_complete.png",
+      "type": "team"
+    },
+    "children": [
         {
           "children": [
             {
@@ -2072,8 +2038,8 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_cake_vault_eating_100_cakes_reclaim_1",
+
+    { "id": "complete_cake_vault_eating_100_cakes_reclaim_1",
       "renderer": {
         "name": "Complete a cake vault eating at least 105 cakes",
         "icon": "the_vault:textures/gui/bingo/cake_layer.png",
@@ -2130,8 +2096,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_cake_vault_eating_100_cakes_reclaim_2",
+    { "id": "complete_cake_vault_eating_100_cakes_reclaim_2",
       "renderer": {
         "name": "Complete a cake vault eating at least 110 cakes",
         "icon": "the_vault:textures/gui/bingo/cake_layer.png",
@@ -2188,8 +2153,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_cake_vault_eating_100_cakes_reclaim_3",
+    { "id": "complete_cake_vault_eating_100_cakes_reclaim_3",
       "renderer": {
         "name": "Complete a cake vault eating at least 115 cakes",
         "icon": "the_vault:textures/gui/bingo/cake_layer.png",
@@ -2246,8 +2210,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_cake_vault_eating_100_cakes_reclaim_4",
+    { "id": "complete_cake_vault_eating_100_cakes_reclaim_4",
       "renderer": {
         "name": "Complete a cake vault eating at least 120 cakes",
         "icon": "the_vault:textures/gui/bingo/cake_layer.png",
@@ -2304,8 +2267,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_cake_vault_eating_100_cakes_reclaim_5",
+    { "id": "complete_cake_vault_eating_100_cakes_reclaim_5",
       "renderer": {
         "name": "Complete a cake vault eating at least 125 cakes",
         "icon": "the_vault:textures/gui/bingo/cake_layer.png",
@@ -2362,8 +2324,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_cake_vault_eating_100_cakes_reclaim_6",
+    { "id": "complete_cake_vault_eating_100_cakes_reclaim_6",
       "renderer": {
         "name": "Complete a cake vault eating at least 130 cakes",
         "icon": "the_vault:textures/gui/bingo/cake_layer.png",
@@ -2420,8 +2381,8 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "loot_10000_living_chests_reclaim_1",
+
+    { "id": "loot_10000_living_chests_reclaim_1",
       "renderer": {
         "name": "Loot Living Chests",
         "icon": "the_vault:textures/gui/bingo/living.png",
@@ -2446,8 +2407,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_10000_living_chests_reclaim_2",
+    { "id": "loot_10000_living_chests_reclaim_2",
       "renderer": {
         "name": "Loot Living Chests",
         "icon": "the_vault:textures/gui/bingo/living.png",
@@ -2472,8 +2432,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_10000_living_chests_reclaim_3",
+    { "id": "loot_10000_living_chests_reclaim_3",
       "renderer": {
         "name": "Loot Living Chests",
         "icon": "the_vault:textures/gui/bingo/living.png",
@@ -2498,8 +2457,8 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "submit_50000_vault_scrap_reclaim_1",
+
+    { "id": "submit_50000_vault_scrap_reclaim_1",
       "renderer": {
         "name": "Submit Vault Plating",
         "stack": {
@@ -2521,8 +2480,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_50000_vault_scrap_reclaim_2",
+    { "id": "submit_50000_vault_scrap_reclaim_2",
       "renderer": {
         "name": "Submit Wild Focus",
         "stack": {
@@ -2544,8 +2502,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_50000_vault_scrap_reclaim_3",
+    { "id": "submit_50000_vault_scrap_reclaim_3",
       "renderer": {
         "name": "Submit Amplifying Focus",
         "stack": {
@@ -2567,8 +2524,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_50000_vault_scrap_reclaim_4",
+    { "id": "submit_50000_vault_scrap_reclaim_4",
       "renderer": {
         "name": "Submit Nullifying Focus",
         "stack": {
@@ -2590,8 +2546,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_50000_vault_scrap_reclaim_5",
+    { "id": "submit_50000_vault_scrap_reclaim_5",
       "renderer": {
         "name": "Submit Chaotic Focus",
         "stack": {
@@ -2613,8 +2568,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_500_companion_gemstones_reclaim_1",
+    { "id": "submit_500_companion_gemstones_reclaim_1",
       "renderer": {
         "name": "Submit Mystery Egg",
         "stack": {
@@ -2636,8 +2590,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_500_companion_gemstones_reclaim_2",
+    { "id": "submit_500_companion_gemstones_reclaim_2",
       "renderer": {
         "name": "Submit Lost Bounties",
         "stack": {
@@ -2659,8 +2612,10 @@
       },
       "type": "collection"
     },
-    {
-      "id": "loot_12500_coin_piles_reclaim_1",
+
+
+
+    { "id": "loot_12500_coin_piles_reclaim_1",
       "renderer": {
         "name": "Loot Coin Piles in Vaults",
         "icon": "the_vault:textures/gui/bingo/lootcoins.png",
@@ -2685,8 +2640,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_12500_coin_piles_reclaim_2",
+    { "id": "loot_12500_coin_piles_reclaim_2",
       "renderer": {
         "name": "Loot Coin Piles in Vaults",
         "icon": "the_vault:textures/gui/bingo/lootcoins.png",
@@ -2711,8 +2665,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_12500_coin_piles_reclaim_3",
+    { "id": "loot_12500_coin_piles_reclaim_3",
       "renderer": {
         "name": "Loot Coin Piles in Vaults",
         "icon": "the_vault:textures/gui/bingo/lootcoins.png",
@@ -2737,8 +2690,8 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_10000_ornate_chests_reclaim_1",
+
+    { "id": "loot_10000_ornate_chests_reclaim_1",
       "renderer": {
         "name": "Loot Ornate Chests",
         "icon": "the_vault:textures/gui/bingo/ornate.png",
@@ -2763,8 +2716,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_10000_ornate_chests_reclaim_2",
+    { "id": "loot_10000_ornate_chests_reclaim_2",
       "renderer": {
         "name": "Loot Ornate Chests",
         "icon": "the_vault:textures/gui/bingo/ornate.png",
@@ -2789,8 +2741,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "loot_10000_ornate_chests_reclaim_3",
+    { "id": "loot_10000_ornate_chests_reclaim_3",
       "renderer": {
         "name": "Loot Ornate Chests",
         "icon": "the_vault:textures/gui/bingo/ornate.png",
@@ -2815,8 +2766,8 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "complete_10_scavenger_vaults_in_10_minutes_reclaim_1",
+
+    { "id": "complete_10_scavenger_vaults_in_10_minutes_reclaim_1",
       "renderer": {
         "name": "Complete Scavenger Vaults using less than 10 minutes of the timer",
         "icon": "the_vault:textures/item/scav_complete.png",
@@ -2866,8 +2817,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_10_scavenger_vaults_in_10_minutes_reclaim_2",
+    { "id": "complete_10_scavenger_vaults_in_10_minutes_reclaim_2",
       "renderer": {
         "name": "Complete Scavenger Vaults using less than 10 minutes of the timer",
         "icon": "the_vault:textures/item/scav_complete.png",
@@ -2917,8 +2867,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_10_scavenger_vaults_in_10_minutes_reclaim_3",
+    { "id": "complete_10_scavenger_vaults_in_10_minutes_reclaim_3",
       "renderer": {
         "name": "Complete Scavenger Vaults using less than 10 minutes of the timer",
         "icon": "the_vault:textures/item/scav_complete.png",
@@ -2968,8 +2917,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_10_scavenger_vaults_in_10_minutes_reclaim_4",
+    { "id": "complete_10_scavenger_vaults_in_10_minutes_reclaim_4",
       "renderer": {
         "name": "Complete Scavenger Vaults using less than 10 minutes of the timer",
         "icon": "the_vault:textures/item/scav_complete.png",
@@ -3019,8 +2967,8 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "submit_burgers_reclaim_1",
+
+    { "id": "submit_burgers_reclaim_1",
       "renderer": {
         "name": "Submit Catalyst Fragments",
         "stack": {
@@ -3042,8 +2990,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_burgers_reclaim_2",
+    { "id": "submit_burgers_reclaim_2",
       "renderer": {
         "name": "Submit Glazed Vault Rock",
         "stack": {
@@ -3065,8 +3012,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_burgers_reclaim_3",
+    { "id": "submit_burgers_reclaim_3",
       "renderer": {
         "name": "Submit Chaotic Vault Rock",
         "stack": {
@@ -3088,8 +3034,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_2500_pogs_reclaim_1",
+    { "id": "submit_2500_pogs_reclaim_1",
       "renderer": {
         "name": "Submit Carbon",
         "stack": {
@@ -3111,8 +3056,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_2500_pogs_reclaim_2",
+    { "id": "submit_2500_pogs_reclaim_2",
       "renderer": {
         "name": "Submit Chromatic Iron",
         "stack": {
@@ -3134,8 +3078,7 @@
       },
       "type": "collection"
     },
-    {
-      "id": "submit_2500_pogs_reclaim_3",
+    { "id": "submit_2500_pogs_reclaim_3",
       "renderer": {
         "name": "Submit Wild Star Fruit",
         "stack": {
@@ -3157,8 +3100,8 @@
       },
       "type": "collection"
     },
-    {
-      "id": "complete_5_solo_elixir_vaults_no_damage_dealt_reclaim_1",
+
+    { "id": "complete_5_solo_elixir_vaults_no_damage_dealt_reclaim_1",
       "renderer": {
         "name": "Complete Solo Elixir Vaults without dealing any damage",
         "icon": "the_vault:textures/item/elixir_complete.png",
@@ -3207,7 +3150,7 @@
           "mode": "SOLO",
           "type": "single_vault"
         }
-      ],
+       ],
       "operating": false,
       "counter": {
         "variables": {},
@@ -3220,8 +3163,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_5_solo_elixir_vaults_no_damage_dealt_reclaim_2",
+    { "id": "complete_5_solo_elixir_vaults_no_damage_dealt_reclaim_2",
       "renderer": {
         "name": "Complete Solo Elixir Vaults without dealing any damage",
         "icon": "the_vault:textures/item/elixir_complete.png",
@@ -3270,7 +3212,7 @@
           "mode": "SOLO",
           "type": "single_vault"
         }
-      ],
+       ],
       "operating": false,
       "counter": {
         "variables": {},
@@ -3283,8 +3225,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_5_solo_elixir_vaults_no_damage_dealt_reclaim_3",
+    { "id": "complete_5_solo_elixir_vaults_no_damage_dealt_reclaim_3",
       "renderer": {
         "name": "Complete Solo Elixir Vaults without dealing any damage",
         "icon": "the_vault:textures/item/elixir_complete.png",
@@ -3333,7 +3274,7 @@
           "mode": "SOLO",
           "type": "single_vault"
         }
-      ],
+       ],
       "operating": false,
       "counter": {
         "variables": {},
@@ -3346,8 +3287,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_5_solo_elixir_vaults_no_damage_dealt_reclaim_4",
+    { "id": "complete_5_solo_elixir_vaults_no_damage_dealt_reclaim_4",
       "renderer": {
         "name": "Complete Solo Elixir Vaults without dealing any damage",
         "icon": "the_vault:textures/item/elixir_complete.png",
@@ -3396,7 +3336,7 @@
           "mode": "SOLO",
           "type": "single_vault"
         }
-      ],
+       ],
       "operating": false,
       "counter": {
         "variables": {},
@@ -3409,8 +3349,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_5_solo_elixir_vaults_no_damage_dealt_reclaim_5",
+    { "id": "complete_5_solo_elixir_vaults_no_damage_dealt_reclaim_5",
       "renderer": {
         "name": "Complete Solo Elixir Vaults without dealing any damage",
         "icon": "the_vault:textures/item/elixir_complete.png",
@@ -3459,7 +3398,7 @@
           "mode": "SOLO",
           "type": "single_vault"
         }
-      ],
+       ],
       "operating": false,
       "counter": {
         "variables": {},
@@ -3472,8 +3411,9 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "open_100_treasure_doors_reclaim_1",
+
+
+    { "id": "open_100_treasure_doors_reclaim_1",
       "renderer": {
         "name": "Open Vendor Doors",
         "icon": "the_vault:textures/gui/bingo/vendoor.png",
@@ -3493,8 +3433,7 @@
       },
       "type": "interact_block"
     },
-    {
-      "id": "open_100_treasure_doors_reclaim_2",
+    { "id": "open_100_treasure_doors_reclaim_2",
       "renderer": {
         "name": "Open Vendor Doors",
         "icon": "the_vault:textures/gui/bingo/vendoor.png",
@@ -3514,8 +3453,7 @@
       },
       "type": "interact_block"
     },
-    {
-      "id": "open_100_treasure_doors_reclaim_3",
+    { "id": "open_100_treasure_doors_reclaim_3",
       "renderer": {
         "name": "Open Vendor Doors",
         "icon": "the_vault:textures/gui/bingo/vendoor.png",
@@ -3535,8 +3473,7 @@
       },
       "type": "interact_block"
     },
-    {
-      "id": "open_100_treasure_doors_reclaim_4",
+    { "id": "open_100_treasure_doors_reclaim_4",
       "renderer": {
         "name": "Open Vendor Doors",
         "icon": "the_vault:textures/gui/bingo/vendoor.png",
@@ -3556,8 +3493,8 @@
       },
       "type": "interact_block"
     },
-    {
-      "id": "kill_2000_dungeon_mobs_reclaim_1",
+
+    { "id": "kill_2000_dungeon_mobs_reclaim_1",
       "renderer": {
         "name": "Kill Dungeon Mobs",
         "icon": "the_vault:textures/gui/bingo/killdungeon.png",
@@ -3582,8 +3519,7 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "kill_2000_dungeon_mobs_reclaim_2",
+    { "id": "kill_2000_dungeon_mobs_reclaim_2",
       "renderer": {
         "name": "Kill Dungeon Mobs",
         "icon": "the_vault:textures/gui/bingo/killdungeon.png",
@@ -3608,8 +3544,8 @@
       "mode": "ALL",
       "type": "multi_vault"
     },
-    {
-      "id": "complete_3_vaults_looting_2500_chests_reclaim_1",
+
+    { "id": "complete_3_vaults_looting_2500_chests_reclaim_1",
       "renderer": {
         "name": "Complete Vaults looting 2,750, or more, chests",
         "icon": "the_vault:textures/gui/bingo/wooden.png",
@@ -3669,8 +3605,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_3_vaults_looting_2500_chests_reclaim_2",
+    { "id": "complete_3_vaults_looting_2500_chests_reclaim_2",
       "renderer": {
         "name": "Complete Vaults looting 3,000, or more, chests",
         "icon": "the_vault:textures/gui/bingo/wooden.png",
@@ -3730,8 +3665,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_3_vaults_looting_2500_chests_reclaim_2",
+    { "id": "complete_3_vaults_looting_2500_chests_reclaim_2",
       "renderer": {
         "name": "Complete Vaults looting 3,250, or more, chests",
         "icon": "the_vault:textures/gui/bingo/wooden.png",
@@ -3791,8 +3725,7 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "complete_3_vaults_looting_2500_chests_reclaim_3",
+    { "id": "complete_3_vaults_looting_2500_chests_reclaim_3",
       "renderer": {
         "name": "Complete Vaults looting 3,500, or more, chests",
         "icon": "the_vault:textures/gui/bingo/wooden.png",
@@ -3852,8 +3785,9 @@
       },
       "type": "repeated"
     },
-    {
-      "id": "submit_3000_platinum_reclaim_1",
+
+
+    { "id": "submit_3000_platinum_reclaim_1",
       "renderer": {
         "name": "Submit Soul Shards",
         "stack": {
@@ -3875,6 +3809,7 @@
       },
       "type": "collection"
     }
+    
   ],
   "width": 5
 }
