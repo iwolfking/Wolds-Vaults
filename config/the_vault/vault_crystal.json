@@ -2295,7 +2295,17 @@
         ],
         "objective": {
           "type": "rune_boss",
-          "objective_probability": 0.0
+          "objective_probability": 0.05,
+          "target": {
+            "type": "uniform",
+            "min": 3,
+            "max": 6
+          },
+          "wave": {
+            "type": "uniform",
+            "min": 2,
+            "max": 5
+          }
         }
       }
     ],
