@@ -294,7 +294,7 @@ onEvent('recipes', event => {
             'SOS',
             'XSX'
         ], {
-        X: 'the_vault:regret_nugget',
+        X: 'the_vault:gem_painite',
         O: 'minecraft:pink_wool',
         S: 'the_vault:cluster_gorginite'
     }).id('woldsvaults:mercy_orb')

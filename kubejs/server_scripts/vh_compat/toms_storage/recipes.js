@@ -27,7 +27,7 @@ onEvent("recipes", event => {
         ], {
         W: 'the_vault:wooden_planks',
         E: 'the_vault:perfect_black_opal',
-        C: 'the_vault:wooden_chest',
+        C: 'the_vault:wooden_chest_placeable',
         R: 'the_vault:perfect_larimar',
         G: 'the_vault:chromatic_steel_ingot',
     })

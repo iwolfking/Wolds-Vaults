@@ -152,7 +152,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         M: 'scannable:blank_module',
-        A: 'the_vault:wooden_chest',
+        A: 'the_vault:wooden_chest_placeable',
         B: 'the_vault:pog_prism',
         X: 'the_vault:extraordinary_larimar'
     })
@@ -164,7 +164,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         M: 'scannable:blank_module',
-        A: 'the_vault:ornate_chest',
+        A: 'the_vault:ornate_chest_placeable',
         B: 'the_vault:pog_prism',
         X: 'the_vault:extraordinary_painite'
     })
@@ -176,7 +176,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         M: 'scannable:blank_module',
-        A: 'the_vault:living_chest',
+        A: 'the_vault:living_chest_placeable',
         B: 'the_vault:pog_prism',
         X: 'the_vault:extraordinary_alexandrite'
     })
@@ -188,7 +188,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         M: 'scannable:blank_module',
-        A: 'the_vault:gilded_chest',
+        A: 'the_vault:gilded_chest_placeable',
         B: 'the_vault:pog_prism',
         X: 'the_vault:vault_diamond_block'
     })
@@ -200,7 +200,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         M: 'scannable:blank_module',
-        A: 'the_vault:enigma_chest',
+        A: 'the_vault:enigma_chest_placeable',
         B: 'the_vault:pog_prism',
         X: 'the_vault:extraordinary_larimar'
     })
@@ -212,7 +212,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         M: 'scannable:blank_module',
-        A: 'the_vault:treasure_chest',
+        A: 'the_vault:treasure_chest_placeable',
         B: 'the_vault:pog_prism',
         X: 'the_vault:extraordinary_larimar'
     })
