@@ -168,6 +168,8 @@ Updated for Version 3.14.3 */
 // Vault Gear
 <tag:items:the_vault:vault_gear>.add(<item:the_vault:battlestaff>);
 <tag:items:the_vault:vault_gear>.add(<item:the_vault:trident>);
+<tag:items:the_vault:vault_gear>.add(<item:the_vault:void_stone>);
+<tag:items:the_vault:vault_gear>.add(<item:the_vault:rang>);
 <tag:items:the_vault:vault_gear>.add(<item:the_vault:loot_sack>);
 <tag:items:the_vault:vault_gear>.add(<item:the_vault:plushie>);
 <tag:items:the_vault:vault_gear>.add(<item:the_vault:card_deck>);
