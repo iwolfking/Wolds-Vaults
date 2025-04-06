@@ -1,5 +1,5 @@
 onEvent('jei.hide.items', event => {
-    //event.hide('the_vault:treasure_keyring')
+    event.hide('the_vault:treasure_keyring')
     event.hide('pneumaticcraft:jet_boots_upgrade_1')
     event.hide('pneumaticcraft:jet_boots_upgrade_2')
     event.hide('pneumaticcraft:jet_boots_upgrade_3')
