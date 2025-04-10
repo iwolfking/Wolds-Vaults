@@ -726,6 +726,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:vault_altar_misc>.add(<item:minecraft:nether_star>);
 <tag:items:the_vault:vault_altar_misc>.add(<item:minecraft:quartz>);
 <tag:items:the_vault:vault_altar_misc>.add(<item:minecraft:chorus_flower>);
+<tag:items:the_vault:vault_altar_modded>.add(<item:botanicalmachinery:mana_emerald>);
 <tag:items:the_vault:vault_altar_modded>.add(<item:create:zinc_ingot>);
 <tag:items:the_vault:vault_altar_modded>.add(<item:moremekanismprocessing:zinc_ingot>);
 <tag:items:the_vault:vault_altar_modded>.add(<item:mekanism:ingot_tin>);
