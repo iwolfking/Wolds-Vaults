@@ -1,6 +1,7 @@
 onEvent("recipes", event => {
     event.remove({ output: 'the_vault:angel_block' })
     event.remove({ id: 'the_vault:vault_catalyst_reroll' })
+    event.remove({ output: 'the_vault:treasure_keyring'})
 
     event.shaped(Item.of('the_vault:crystal_budding'),
         [
@@ -24,6 +25,19 @@ onEvent("recipes", event => {
         A: 'the_vault:dreamstone',
         B: 'the_vault:perfect_benitoite'
     })
+
+    event.shaped(Item.of('the_vault:mystery_egg'),
+        [
+            'EPE',
+            'MNM',
+            'EDE'
+        ], {
+        E: 'the_vault:vault_essence',
+        M: '#the_vault:spawnegg',
+        D: 'the_vault:vault_diamond',
+        P: 'the_vault:gem_painite',
+        N: 'the_vault:perfect_larimar'
+    }).id('the_vault:mystery_egg')
 
     event.shaped(Item.of('the_vault:angel_block'),
         [

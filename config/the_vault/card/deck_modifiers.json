@@ -1,0 +1,145 @@
+{
+    "values": {
+      "foil_boost": {
+        "modifierValue": {
+          "min": 0.1,
+          "max": 0.5,
+          "type": "uniform"
+        },
+        "requiredGroups": [
+          "Foil"
+        ],
+        "requiredColors": [],
+        "type": "global"
+      },
+      "red_boost": {
+        "modifierValue": {
+          "min": 0.25,
+          "max": 1.0,
+          "type": "uniform"
+        },
+        "requiredGroups": [],
+        "requiredColors": [
+          "RED"
+        ],
+        "type": "global"
+      },
+      "blue_boost": {
+        "modifierValue": {
+          "min": 0.25,
+          "max": 1.0,
+          "type": "uniform"
+        },
+        "requiredGroups": [],
+        "requiredColors": [
+          "BLUE"
+        ],
+        "type": "global"
+      },
+      "green_boost": {
+        "modifierValue": {
+          "min": 0.25,
+          "max": 1.0,
+          "type": "uniform"
+        },
+        "requiredGroups": [],
+        "requiredColors": [
+          "GREEN"
+        ],
+        "type": "global"
+      },
+      "yellow_boost": {
+        "modifierValue": {
+          "min": 0.25,
+          "max": 1.0,
+          "type": "uniform"
+        },
+        "requiredGroups": [],
+        "requiredColors": [
+          "YELLOW"
+        ],
+        "type": "global"
+      },
+      "all_cards_slots": {
+        "modifierValue": {
+          "min": 0.5,
+          "max": 1.0,
+          "type": "uniform"
+        },
+        "requiredGroups": [],
+        "requiredColors": [
+        ],
+        "slotRoll": {
+          "min": 1,
+          "max": 6,
+          "type": "uniform"
+        },
+        "type": "slot"
+      },
+      "foil_cards_slots": {
+        "modifierValue": {
+          "min": 1.0,
+          "max": 2.0,
+          "type": "uniform"
+        },
+        "requiredGroups": [
+          "Foil"
+        ],
+        "requiredColors": [
+        ],
+        "slotRoll": {
+          "min": 1,
+          "max": 6,
+          "type": "uniform"
+        },
+        "type": "slot"
+      },
+      "dummy": {
+        "type": "dummy"
+      }
+    },
+    "pools": {
+      "default": {
+        "modifierCount": {
+          "min": 1,
+          "max": 1,
+          "type": "uniform"
+        },
+        "pool": [
+          {
+            "value": "foil_boost",
+            "weight": 1.0
+          },
+          {
+            "value": "red_boost",
+            "weight": 1.0
+          },
+          {
+            "value": "blue_boost",
+            "weight": 1.0
+          },
+          {
+            "value": "yellow_boost",
+            "weight": 1.0
+          },
+          {
+            "value": "green_boost",
+            "weight": 1.0
+          },
+          {
+            "value": "all_cards_slots",
+            "weight": 1.0
+          },
+          {
+            "value": "foil_cards_slots",
+            "weight": 1.0
+          },
+          {
+            "value": "dummy",
+            "weight": 93.0
+          }
+        ]
+      }
+    },
+    "modifierChance": 1
+  }

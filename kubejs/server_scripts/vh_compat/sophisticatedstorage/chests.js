@@ -52,7 +52,7 @@ onEvent("recipes", event => {
             'IXI'
         ], {
         C: 'the_vault:flesh_chest',
-        X: 'the_vault:regret_chunk',
+        X: 'the_vault:gem_painite',
         I: 'the_vault:vault_meat_block'
     })
 

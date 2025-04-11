@@ -25,6 +25,18 @@ onEvent("recipes", event => {
         }
     }).id('occultism:spirit_fire/purified_ink')
 
+    event.custom({
+        "type": "occultism:spirit_fire",
+        "ingredient": [
+            {
+                "item": "minecraft:ancient_debris"
+            }
+        ],
+        "result": {
+            "item": "occultism:raw_iesnium"
+        }
+    }).id('occultism:spirit_fire/raw_iesnium')
+
 
     event.shaped(Item.of('occultism:chalk_white_impure'),
         [

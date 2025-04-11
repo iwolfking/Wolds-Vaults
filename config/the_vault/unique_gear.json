@@ -107,6 +107,28 @@
       "modifierTags": [],
       "weight": 1
     },
+    "the_vault:ivy": {
+      "name": "Rosethorn Ivy",
+      "model": "the_vault:gear/shield/glass_flower",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_thorns_damage_flat"
+        ],
+        "PREFIX": [
+          "the_vault:u_thorns_damage",
+          "the_vault:u_lucky_thorns"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_damage_increase",
+          "the_vault:u_lucky_hit_chance"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
     "the_vault:crashguards": {
       "name": "Crashguards",
       "model": "the_vault:gear/armor/crashguards/leggings",
@@ -131,6 +153,29 @@
       "modifierTags": [],
       "weight": 1
     },
+    "the_vault:iskallibur": {
+      "name": "Woldibur",
+      "model": "the_vault:gear/sword/iskallibur_sword",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_attack_damage"
+          
+        ],
+        "SUFFIX": [
+          "the_vault:u_relentless_strike",
+          "the_vault:mod_attack_speed_percent"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
     "woldsvaults:eternal_stella": {
       "name": "Eternal Stella",
       "model": "the_vault:gear/jewel/stella",
@@ -142,6 +187,27 @@
           "the_vault:u_immortality"
         ],
         "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+     "the_vault:gladiator_buckler": {
+      "name": "Gladiator's Buckler",
+      "model": "the_vault:gear/shield/gladiator_buckler",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_base_block"
+        ],
+        "PREFIX": [
+          "the_vault:mod_attack_speed_percent"
+          
+        ],
+        "SUFFIX": [
+          "the_vault:u_third_attack"
+        ]
       },
       "modifierTags": [],
       "weight": 1
@@ -256,6 +322,29 @@
       "modifierTags": [],
       "weight": 1
     },
+    "the_vault:frozen_throne": {
+      "name": "Frozen Throne",
+      "model": "the_vault:gear/armor/frozen_throne/chestplate",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:offhand_base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_armor",
+          "the_vault:u_base_crit_hit"
+        ],
+        "PREFIX": [
+          "the_vault:unique_added_ability_level_frostnova"
+        ],
+        "SUFFIX": [
+          "the_vault:u_frost_nova_on_damage"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+
+
     "the_vault:stormcrown": {
       "name": "Stormcrown",
       "model": "the_vault:gear/armor/stormcrown/helmet",
@@ -393,8 +482,12 @@
         "IMPLICIT": [
           "the_vault:u_chaining"
         ],
-        "PREFIX": [],
-        "SUFFIX": []
+        "PREFIX": [
+          "the_vault:u_chaining_damage"
+        ],
+        "SUFFIX": [
+          "the_vault:unique_area_of_effect"
+        ]
       },
       "modifierTags": [],
       "weight": 1
@@ -747,6 +840,73 @@
       "modifierTags": [],
       "weight": 1
     },
+    "woldsvaults:aurora_scissors": {
+      "name": "Aurora Scissors",
+      "model": "the_vault:gear/sword/aurora_scissors",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_ap",
+          "the_vault:mod_soul_chance_scissors"
+        ],
+        "SUFFIX": [
+          "the_vault:ap_scaling_damage_scissors",
+          "the_vault:mod_attack_speed_percent"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:pacifist_sandals": {
+      "name": "Pacifist Sandals",
+      "model": "the_vault:gear/armor/pacifistsandals/boots",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_pacifist_movement"
+        ],
+        "PREFIX": [
+          "the_vault:u_knockback_resistance"
+        ],
+        "SUFFIX": [
+          "the_vault:u_entropic_bind"
+          
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:honey_stick": {
+      "name": "Honey Stick",
+      "model": "the_vault:gear/sword/honey_wand",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_attack_speed_percent"
+        ],
+        "SUFFIX": [
+          "the_vault:u_shocking_hit",
+          "the_vault:u_stun_hit"
+          
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
     "woldsvaults:young_kitsune": {
       "name": "Young Kitsune Blade",
       "model": "the_vault:gear/sword/young_kitsune",
@@ -908,6 +1068,27 @@
     },
     "woldsvaults:safer_spaces": {
       "woldsvaults:safer_spaces": 1
+    },
+    "woldsvaults:aurora_scissors": {
+      "woldsvaults:aurora_scissors": 1
+    },
+      "the_vault:ivy": {
+      "the_vault:ivy": 1
+    },
+    "the_vault:gladiator_buckler": {
+      "the_vault:gladiator_buckler": 1
+    },
+    "the_vault:honey_stick": {
+      "the_vault:honey_stick": 1
+    },
+    "the_vault:pacifist_sandals": {
+      "the_vault:pacifist_sandals": 1
+    },
+    "the_vault:iskallibur": {
+      "the_vault:iskallibur": 1
+    },
+    "the_vault:frozen_throne": {
+      "the_vault:frozen_throne": 1
     }
   }
 }

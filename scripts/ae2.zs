@@ -271,7 +271,7 @@ craftingTable.addShaped("security_station", <item:ae2:security_station>, [
     [<item:the_vault:chromatic_iron_ingot>, <item:ae2:engineering_processor>, <item:the_vault:chromatic_iron_ingot>]
 ]);
 
-smithing.addRecipe("ae2t_disk_smithing", <item:ae2things:disk_housing>, <item:ae2:item_cell_housing>, <item:the_vault:black_chromatic_steel_ingot>);
+smithing.addRecipe("ae2t_disk_smithing", <item:ae2things:disk_housing>, <item:ae2:item_cell_housing>, <item:the_vault:wutodic_silver_ingot>);
 
 craftingTable.addShapeless("ae2t_storage_cell_1k_shapeless", <item:ae2things:disk_drive_1k>, [
     <item:ae2things:disk_housing>, <item:ae2:cell_component_1k>

@@ -659,6 +659,42 @@
       "color1": "0xFFED7B24",
       "color2": "0xFFe2a631"
     },
+     "iskallibur": {
+      "type": "floating_item_reward",
+      "textColor": -1213660,
+      "name": "Iskallibur",
+      "item": {
+        "id": "the_vault:sword",
+        "nbt": "{\"the_vault:gear_unique_pool\":\"the_vault:iskallibur\",\"the_vault:gear_roll_type\":\"Unique\"}",
+        "count": 1
+      },
+      "color1": "0xFFED7B24",
+      "color2": "0xFFe2a631"
+    },
+    "ivy": {
+      "type": "floating_item_reward",
+      "textColor": -1213660,
+      "name": "Rosethorn Ivy",
+      "item": {
+        "id": "the_vault:shield",
+        "nbt": "{\"the_vault:gear_unique_pool\":\"the_vault:ivy\",\"the_vault:gear_roll_type\":\"Unique\"}",
+        "count": 1
+      },
+      "color1": "0xFFED7B24",
+      "color2": "0xFFe2a631"
+    },
+     "pacifist_sandals": {
+      "type": "floating_item_reward",
+      "textColor": -1213660,
+      "name": "Pacifist Sandals",
+      "item": {
+        "id": "the_vault:boots",
+        "nbt": "{\"the_vault:gear_unique_pool\":\"the_vault:pacifist_sandals\",\"the_vault:gear_roll_type\":\"Unique\"}",
+        "count": 1
+      },
+      "color1": "0xFFED7B24",
+      "color2": "0xFFe2a631"
+    },
     "inferno_reach": {
       "type": "floating_item_reward",
       "textColor": -1213660,
@@ -808,7 +844,8 @@
         ],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute"
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
         ]
       },
       "count": 1,
@@ -835,7 +872,8 @@
         ],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute"
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
         ]
       },
       "count": 1,
@@ -850,7 +888,8 @@
         ],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute"
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
         ]
       },
       "count": 1,
@@ -865,7 +904,8 @@
         ],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute"
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
         ]
       },
       "count": 1,
@@ -889,7 +929,8 @@
         ],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute"
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
         ]
       },
       "count": 1,
@@ -907,7 +948,8 @@
         ],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute"
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
         ]
       },
       "count": 1,
@@ -925,7 +967,8 @@
         ],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute"
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
         ]
       },
       "count": 1,
@@ -943,7 +986,8 @@
         ],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute"
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
         ],
         "Modifiers": {
           "minecraft:generic.movement_speed": {
@@ -971,7 +1015,8 @@
         ],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute"
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
         ]
       },
       "count": 1,
@@ -1331,7 +1376,9 @@
       {
         "value": "pax",
         "weight": 3
-      }
+      },
+      { "value": "iskallibur", "weight": 4 },
+      { "value": "ivy", "weight": 4 }
     ],
     "positive_lab": [
       {
@@ -1405,7 +1452,8 @@
       {
         "value": "baguette",
         "weight": 6
-      }
+      },
+      { "value": "pacifist_sandals", "weight": 4 }
     ]
   }
 }

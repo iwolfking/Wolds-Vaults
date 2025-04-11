@@ -10,8 +10,8 @@
         "light_melee": "spider_attack",
         "heavy_melee": "leap_at_target",
         "light_ranged": "golem_hand_ranged_attack",
-        "heavy_ranged": "summon_target_spider",
-        "aoe_attack": "place_cobwebs_around",
+        "heavy_ranged": "golem_double_hand_ranged_attack",
+        "aoe_attack": "ground_slam",
         "buff_effect": "poison_aura",
         "on-hit_effect": "poison_on_hit",
         "attribute_health": "health_attribute",
@@ -42,7 +42,8 @@
         "snowball_ranged_attack"
       ],
       "ModifierTraits": {
-        "light_ranged": "blood_orb"
+        "light_ranged": "blood_orb",
+        "aoe_attack": "summon_target_boogiemen"
       }
     }
   },
@@ -91,6 +92,18 @@
         "AttackIntervalMax": 60,
         "SpeedModifier": 1.0,
         "DamageMultiplier": 0.5,
+        "StackSize": 1,
+        "AttackRadius": 25.0,
+        "AttackWhenInMeleeReach": 0
+      }
+    },
+    "golem_double_hand_ranged_attack": {
+      "Type": "golem_double_hand_ranged_attack",
+      "Attributes": {
+        "AttackIntervalMin": 120,
+        "AttackIntervalMax": 200,
+        "SpeedModifier": 1.0,
+        "DamageMultiplier": 4,
         "StackSize": 1,
         "AttackRadius": 25.0,
         "AttackWhenInMeleeReach": 0
@@ -177,6 +190,24 @@
         "MaxMobSpawnCount": 4,
         "StackSize": 1,
         "MaxMobsAliveBeforeNextSpawn": 40,
+        "MinMobSpawnCount": 3,
+        "MinDistanceFromCenter": 5
+      }
+    },
+    "summon_target_boogiemen": {
+      "Type": "summon_at_target",
+      "Attributes": {
+        "SpawnInterval": 500,
+        "EntityTypes": [
+          {
+            "EntityType": "the_vault:boogieman",
+            "Weight": 1.0
+          }
+        ],
+        "Radius": 15,
+        "MaxMobSpawnCount": 1,
+        "StackSize": 1,
+        "MaxMobsAliveBeforeNextSpawn": 4,
         "MinMobSpawnCount": 1,
         "MinDistanceFromCenter": 5
       }
@@ -411,6 +442,18 @@
         "radius": 5,
         "maxYOffset": 1,
         "placeIntervalMax": 60
+      }
+    },
+    "ground_slam": {
+      "Type": "ground_slam",
+      "Attributes": {
+        "MinAttackInterval": 0,
+        "MaxAttackInterval": 200,
+        "MinRadius": 6,
+        "MaxRadius": 15,
+        "MinDamageMultiplier": 0.1,
+        "MaxDamageMultiplier": 3.0,
+        "StackSize": 1
       }
     }
   }

@@ -21,13 +21,24 @@ onEvent("recipes", event => {
     event.shapeless('immersiveengineering:ingot_steel', ['mekanism:ingot_steel'])
 
 
-    //Steel conversions
+    //Silver conversions
     event.shapeless('thermal:silver_ingot', ['immersiveengineering:ingot_silver'])
     event.shapeless('immersiveengineering:ingot_silver', ['thermal:silver_ingot'])
+
     event.shapeless('moremekanismprocessing:silver_ingot', ['thermal:silver_ingot'])
     event.shapeless('thermal:silver_ingot', ['moremekanismprocessing:silver_ingot'])
+
     event.shapeless('immersiveengineering:ingot_silver', ['moremekanismprocessing:silver_ingot'])
     event.shapeless('moremekanismprocessing:silver_ingot', ['immersiveengineering:ingot_silver'])
+
+    event.shapeless('thermal:silver_ingot', ['occultism:silver_ingot'])
+    event.shapeless('occultism:silver_ingot', ['thermal:silver_ingot'])
+
+    event.shapeless('moremekanismprocessing:silver_ingot', ['occultism:silver_ingot'])
+    event.shapeless('occultism:silver_ingot', ['moremekanismprocessing:silver_ingot'])
+
+    event.shapeless('immersiveengineering:ingot_silver', ['occultism:silver_ingot'])
+    event.shapeless('occultism:silver_ingot', ['immersiveengineering:ingot_silver'])
 
     //Tin conversions
     event.shapeless('mekanism:ingot_tin', ['thermal:tin_ingot'])

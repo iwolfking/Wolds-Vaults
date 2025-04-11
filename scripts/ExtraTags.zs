@@ -168,6 +168,8 @@ Updated for Version 3.14.3 */
 // Vault Gear
 <tag:items:the_vault:vault_gear>.add(<item:the_vault:battlestaff>);
 <tag:items:the_vault:vault_gear>.add(<item:the_vault:trident>);
+<tag:items:the_vault:vault_gear>.add(<item:the_vault:void_stone>);
+<tag:items:the_vault:vault_gear>.add(<item:the_vault:rang>);
 <tag:items:the_vault:vault_gear>.add(<item:the_vault:loot_sack>);
 <tag:items:the_vault:vault_gear>.add(<item:the_vault:plushie>);
 <tag:items:the_vault:vault_gear>.add(<item:the_vault:card_deck>);
@@ -235,7 +237,6 @@ Updated for Version 3.14.3 */
 // Gilded Chest Loot
 <tag:items:the_vault:gilded_chest_loot>.add(<item:minecraft:experience_bottle>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:vault_diamond>);
-<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:relic_booster_pack>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:topaz_shard>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:jewel>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:magic_silk>);
@@ -244,15 +245,12 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:gilded_sconce>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:gilded_ingot>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:gilded_chest_scroll>);
-<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:regret_nugget>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:dreamstone>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:plushie>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:loot_sack>);
-<tag:items:the_vault:gilded_chest_loot>.add(<item:quark:blank_rune>);
+<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:magnet>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:ancient_copper_ingot>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:key_piece>);
-<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:plushie>);
-<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:loot_sack>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:altar_recatalyzer>);
 
 // Ornate Chest Loot
@@ -263,7 +261,6 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:sword>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:axe>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:shield>);
-<tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:magnet>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:trident>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:battlestaff>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:vault_alloy>);
@@ -729,6 +726,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:vault_altar_misc>.add(<item:minecraft:nether_star>);
 <tag:items:the_vault:vault_altar_misc>.add(<item:minecraft:quartz>);
 <tag:items:the_vault:vault_altar_misc>.add(<item:minecraft:chorus_flower>);
+<tag:items:the_vault:vault_altar_modded>.add(<item:botanicalmachinery:mana_emerald>);
 <tag:items:the_vault:vault_altar_modded>.add(<item:create:zinc_ingot>);
 <tag:items:the_vault:vault_altar_modded>.add(<item:moremekanismprocessing:zinc_ingot>);
 <tag:items:the_vault:vault_altar_modded>.add(<item:mekanism:ingot_tin>);
@@ -769,6 +767,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:vault_altar_modded>.add(<item:mekanism:ingot_uranium>);
 <tag:items:the_vault:vault_altar_modded>.add(<item:immersiveengineering:ingot_uranium>);
 <tag:items:the_vault:vault_altar_modded>.add(<item:mekanism:ingot_osmium>);
+<tag:items:the_vault:vault_altar_modded>.add(<item:occultism:silver_ingot>);
 
 // Vault Altar: All Pools
 <tag:items:the_vault:vault_altar_all>.add(<tag:items:the_vault:vault_altar_resource>);

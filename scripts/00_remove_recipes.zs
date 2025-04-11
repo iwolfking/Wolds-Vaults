@@ -451,6 +451,7 @@ craftingTable.removeByModid("pipez");
 <recipetype:mekanism:metallurgic_infusing>.removeByName("mekanism:metallurgic_infusing/alloy/reinforced");
 <recipetype:mekanism:metallurgic_infusing>.removeByName("mekanism:metallurgic_infusing/alloy/atomic");
 <recipetype:mekanism:metallurgic_infusing>.removeByName("mekanism:control_circuit/basic");
+craftingTable.remove(<item:mekanism:upgrade_stone_generator>);
 craftingTable.remove(<item:mekanism:mekasuit_helmet>);
 craftingTable.remove(<item:mekanism:mekasuit_bodyarmor>);
 craftingTable.remove(<item:mekanism:mekasuit_pants>);
@@ -469,7 +470,6 @@ craftingTable.remove(<item:mekanism:basic_pressurized_tube>);
 
 
 
-craftingTable.remove(<item:mekanism:upgrade_stone_generator>);
 craftingTable.remove(<item:mekanism:upgrade_anchor>);
 craftingTable.remove(<item:mekanism:upgrade_filter>);
 craftingTable.remove(<item:mekanism:module_base>);
@@ -533,7 +533,6 @@ craftingTable.remove(<item:refinedstorage:raw_improved_processor>);
 craftingTable.remove(<item:refinedstorage:raw_advanced_processor>);
 craftingTable.remove(<item:refinedstorage:destruction_core>);
 craftingTable.remove(<item:refinedstorage:construction_core>);
-craftingTable.remove(<item:refinedstorage:quartz_enriched_iron>);
 craftingTable.remove(<item:refinedstorage:machine_casing>);
 craftingTable.remove(<item:refinedstorage:disk_drive>);
 craftingTable.remove(<tag:items:refinedstorage:grid>);
@@ -1186,7 +1185,6 @@ for jewelId, jewelName in jewels {
 JEI.hideIngredient(<item:the_vault:sugar_plum_fairy_flower>);
 JEI.hideIngredient(<item:the_vault:pylon>);
 JEI.hideIngredient(<item:the_vault:tool_vise>);
-JEI.hideIngredient(<item:the_vault:rune>);
 JEI.hideIngredient(<item:the_vault:cube_block>);
 JEI.hideIngredient(<item:the_vault:vault_crate_champion>);
 // JEI.hideIngredient(<item:the_vault:legendary_treasure_*>);

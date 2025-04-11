@@ -331,7 +331,7 @@
       "icon": "the_vault:gui/quests/vault_stone",
       "targetId": "the_vault:vault_stone",
       "targetProgress": 16.0,
-      "unlockedBy": "find_chromatic_iron",
+      "unlockedBy": "raw_vault",
       "reward": {
         "items": [
           {
@@ -810,8 +810,8 @@
       "reward": {
         "items": [
           {
-            "item": "the_vault:gemstone",
-            "amount": 2
+            "item": "the_vault:chromatic_iron_ingot",
+            "amount": 16
           }
         ],
         "vaultExp": 0
@@ -1082,7 +1082,7 @@
       "descriptionData": {
         "description": [
           {
-            "text": "Expertises are gained by spending Expertise Points which are obtained every 5 levels. Expertises are similar to Talents providing passive buffs to the player, however these are targeted towards more specific use cases such as Fortunate which can add two additional Fortune levels to the player or Angel which allows you to craft an Angel Block which provides creative flight in a 64 block radius around it.\n\nThere are a total of twenty expertise points to be acquired through your playthrough and due to their utility they are not as easy to reset, requiring a Neuralizer rather than a regret orb.",
+            "text": "Expertises are gained by spending Expertise Points which are obtained every 5 levels. Expertises are similar to Talents providing passive buffs to the player, however these are targeted towards more specific use cases such as Fortunate which can add two additional Fortune levels to the player or Angel which allows you to craft an Angel Block which provides creative flight in a 64 block radius around it.\n\nThere are a total of twenty expertise points to be acquired through your playthrough and due to their utility they are not as easy to reset, requiring a Neuralizer rather than vault gold.",
             "color": "$text"
           },
           {
@@ -1371,43 +1371,13 @@
       }
     },
     {
-      "type": "collection",
-      "id": "burgers",
-      "name": "Gaining More Exp",
-      "descriptionData": {
-        "description": [
-          {
-            "text": "Crafting and consuming Burgers is a great way to gain additional Vault Experience. Burgers are crafted by combining burger ingredients in a Crafting Table. These progression based ingredients can be found within Living Chests and grant the player more experience based on the amount of ingredients used!",
-            "color": "$text"
-          },
-          {
-            "text": "\n\nCraft a Plain Burger",
-            "color": "$heal"
-          }
-        ]
-      },
-      "icon": "the_vault:gui/quests/burger",
-      "targetId": "the_vault:plain_burger",
-      "targetProgress": 1.0,
-      "unlockedBy": "alchemystation",
-      "reward": {
-        "items": [
-          {
-            "item": "the_vault:plain_burger",
-            "amount": 10
-          }
-        ],
-        "vaultExp": 0
-      }
-    },
-    {
       "type": "level_up",
       "id": "level_ten",
       "name": "Vault Objectives",
       "descriptionData": {
         "description": [
         {
-          "text": "As you level up, the Vault will adapt and present you with new, more challenging Objectives; these can also be added to your crystal by crafting a Seal and applying it to your crystal in an anvil. \n\nLevel 10 marks the introduction of the Light the Brazier Objective to random vaults.\nLevel 20 marks the introduction of the Scavenger Objective to random vaults.\nLevel 40 marks the introduction of the Hunt the Guardians Objective to random vaults.\nLevel 50 marks the introduction of the Bingo objective to random vaults.",
+          "text": "As you level up, the Vault will adapt and present you with new, more challenging Objectives; these can also be added to your crystal by crafting a Seal and applying it to your crystal in an anvil. \n\nLevel 10 marks the introduction of the Light the Brazier Objective to random vaults.\nLevel 20 marks the introduction of the Scavenger Objective to random vaults.\nLevel 50 marks the introduction of the Bingo and Hunt the Runes objective to random vaults.",
           "color": "$text"
         },
         {
@@ -1419,7 +1389,7 @@
       "icon": "the_vault:gui/quests/ten",
       "targetId": "the_vault:10",
       "targetProgress": 1.0,
-      "unlockedBy": "burgers",
+      "unlockedBy": "alchemystation",
       "reward": {
         "items": [
           {
@@ -1746,7 +1716,7 @@
     {
       "type": "collection",
       "id": "craft_guardian_seal",
-      "name": "Craft a Hunt the Guardians seal",
+      "name": "Craft a Hunt the Runes seal",
       "descriptionData": {
         "description": [
           {
@@ -1762,7 +1732,7 @@
             "color": "$text"
           },
           {
-            "text": "Hunt the Guardians",
+            "text": "Hunt the Runes",
             "color": "$qhighlight"
           },
           {
@@ -1770,11 +1740,15 @@
             "color": "$text"
           },
           {
-            "text": "\n\nIn Hunt the Guardians your objective is to find obelisks and activate them. Once activated they spawn guardians that you need to defeat. After clearing all obelisks the vault will automatically end!",
+            "text": "\n\nIn Hunt the Runes your objective is to find runes and apply them to a rune boss pillar. Each rune can have a different modifier, and a different reward item. Once you have inserted the correct number of runes, the room will close and the boss will spawn with the modifiers you've chosen.", 
             "color": "$text"
           },
           {
-            "text": "\n\nThis objective has a recommended level of 40+ and will randomly appear in the vaults as well after that level.",
+            "text": "\n\nEach runes reward item will be added to your completion crate. Some of these items can include gear, gear focus, and inscriptions",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nThis objective has a recommended level of 50+ and will randomly appear in the vaults as well after that level.",
             "color": "$qhighlight"
           },
           {
@@ -1798,73 +1772,89 @@
       }
     },
     {
-      "type": "collection",
+      "type": "checkmark",
       "id": "regret",
       "name": "Regretting Decisions",
       "descriptionData": {
         "description": [
           {
-            "text": "It can be rather stressful to make decisions when it comes to which abilities and what talents to take throughout your playthrough, but, don't stress!\n\nVault Hunters have a mechanic for regretting your decisions using ",
+            "text": "It can be rather stressful to make decisions when it comes to which abilities and what talents to take throughout your playthrough, but, don't stress!",
             "color": "$text"
           },
           {
-            "text": "Regret Orbs",
-            "color": "$regret"
-          },
-          {
-            "text": ". Consuming a Regret Orb will give you an unspent regret point, which can be used to unlearn talents or abilities.\n\n",
+            "text": "\n\n",
             "color": "$text"
           },
           {
-            "text": "To craft a Regret Orb you need ",
+            "text": "Vault Hunters have a mechanic for regretting your decisions using ",
             "color": "$text"
           },
           {
-            "text": "Regret Nuggets",
-            "color": "$regret"
+            "text": "Vault Gold",
+            "color": "$qhighlight"
           },
           {
-            "text": " which can be found in ",
+            "text": ". If you have sufficient ",
             "color": "$text"
           },
           {
-            "text": "Living Chests",
-            "color": "$living"
+            "text": "Vault Gold ",
+            "color": "$qhighlight"
           },
           {
-            "text": ". Fully completed Regret Orbs can also be obtained through",
+            "text": "in your inventory, you can choose ",
             "color": "$text"
           },
           {
-            "text": " bounties ",
-            "color": "$name"
+            "text": "Unlearn ",
+            "color": "$qhighlight"
           },
           {
-            "text": "and",
+            "text": "from the ",
             "color": "$text"
           },
           {
-            "text": " completion crates",
-            "color": "$name"
+            "text": "Skill tree",
+            "color": "$qhighlight"
           },
           {
             "text": ".",
             "color": "$text"
           },
           {
-            "text": "\n\nAcquire a Regret Orb",
-            "color": "$heal"
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Note that this was previously done with a ",
+            "color": "$text"
+          },
+          {
+            "text": "Regret Orb",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", that mechanism has been removed.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Regret cannot be done while inside a vault.",
+            "color": "$text"
           }
         ]
       },
       "icon": "the_vault:gui/quests/regretorb",
-      "targetId": "the_vault:regret_orb",
+      "targetId": "the_vault:any",
       "targetProgress": 1.0,
       "unlockedBy": "level_ten",
       "reward": {
         "items": [
           {
-            "item": "the_vault:regret_orb",
+            "item": "the_vault:vault_gold",
             "amount": 4
           }
         ],
@@ -2078,10 +2068,72 @@
         "items": [
           {
             "item": "the_vault:knowledge_star"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "burgers",
+      "name": "Additional Experience",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Consuming ",
+            "color": "$text"
           },
           {
-            "item": "the_vault:regret_orb",
-            "amount": 10
+            "text": "Vault Burgers",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " gives you vault experience.\nVault Burgers can be found rarely in the ",
+            "color": "$text"
+          },
+          {
+            "text": "Black Market",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " and in ",
+            "color": "$text"
+          },
+          {
+            "text": "Vendoors",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". They come in different sizes, and the more filling, the more experience they grant.\n While extra experience can sometimes be nice, use at your own risk, as you may outlevel your current gear!",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/burger",
+      "targetId": "the_vault:plain_burger",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:plain_burger",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:cheese_burger",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:deluxe_cheese_burger",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:crispy_deluxe_cheese_burger",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:cheese_burger_feast",
+            "amount": 1
           }
         ],
         "vaultExp": 0
@@ -2713,6 +2765,72 @@
       }
     },
     {
+      "type": "collection",
+      "id": "trinket_forge",
+      "name": "Trinket Forge",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Now that you have discovered a",
+            "color": "$text"
+          },
+          {
+            "text": "Trinket",
+            "color": "$name"
+          },
+          {
+            "text": ", you can craft your own in the ",
+            "color": "$text"
+          },
+          {
+            "text": "Trinket Forge",
+            "color": "$name"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "You will need ",
+            "color": "$text"
+          },
+          {
+            "text": "Trinket Scraps",
+            "color": "$name"
+          },
+          {
+            "text": " which you can get in the ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault Recycler",
+            "color": "$name"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Acquire a Trinket Forge",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/trinket_forge",
+      "targetId": "the_vault:trinket_forge",
+      "targetProgress": 1.0,
+      "unlockedBy": "trinkets",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:trinket_scrap",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
       "type": "checkmark",
       "id": "vaultrocks",
       "name": "Vault Rocks",
@@ -3260,7 +3378,7 @@
       "reward": {
         "items": [
           {
-            "item": "the_vault:regret_orb",
+            "item": "the_vault:vault_gold",
             "amount": 10
           }
         ],
@@ -3294,6 +3412,71 @@
             "amount": 64
           }
         ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "unique_codex",
+      "name": "Unique Gear",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Unique Gear ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "is an exciting element of Vault Hunters!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Unique Gear ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "pieces can not, unlike normal gear, be modified - however, it rolls with unique properties! ",
+            "color": "$text"
+          },
+          {
+            "text": "Some of them can for example give your abilities complete new uses, while others can greatly enhance a prefered playstyle.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Craft the ",
+            "color": "$text"
+          },
+          {
+            "text": "Unique Codex ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "and start browsing through where to find these exciting gear pieces, but beware, some of them are very rare!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Craft the Unique Codex",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/unique_codex",
+      "targetId": "the_vault:unique_codex",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [],
         "vaultExp": 0
       }
     },
@@ -4038,7 +4221,7 @@
       "descriptionData": {
         "description": [
           {
-            "text": "Once you have a treasure key completed, bring it with you in to the vaults and search for a corresponding door, use the key on the door to open it.\n\nTreasure Rooms contain a random amount of ",
+            "text": "Once you have a treasure key, bring it with you in to the vaults and search for a corresponding door, use the key on the door to open it.\n\nTreasure Rooms contain a random amount of ",
             "color": "$text"
           },
           {
@@ -4050,21 +4233,21 @@
             "color": "$text"
           },
           {
-            "text": "Treasure Chest",
+            "text": "Treasure Pedestal",
             "color": "$qhighlight"
           },
           {
-            "text": "!\n\nThe loot inside is random, but also the only place to find certain items!",
+            "text": "!\n\nThe loot is random, but also the only place to find certain items!",
             "color": "$text"
           },
           {
-            "text": "\n\nOpen a Treasure Chest",
+            "text": "\n\nInteract with a Treasure Pedestal",
             "color": "$heal"
           }
         ]
       },
       "icon": "the_vault:gui/quests/treasure",
-      "targetId": "the_vault:treasure_door",
+      "targetId": "the_vault:treasure_pedestal",
       "targetProgress": 1.0,
       "unlockedBy": "blank_key",
       "reward": {

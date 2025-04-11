@@ -1,5 +1,32 @@
 {
   "jewelCraftingRecipes": [
+     {
+      "jewelAttribute": "the_vault:empty",
+      "size": 20,
+      "id": "the_vault:random",
+      "output": {
+        "AMOUNT": 1,
+        "ITEM": "the_vault:jewel",
+        "NBT": "{\"the_vault:gear_roll_type_pool\": \"jewel_crafted\"}"
+      },
+      "inputs": [
+        {
+          "AMOUNT": 1,
+          "ITEM": "the_vault:gemstone",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 64,
+          "ITEM": "the_vault:silver_scrap",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 1,
+          "ITEM": "the_vault:vault_gold",
+          "NBT": "{}"
+        }
+      ]
+    },
     {
       "jewelAttribute": "the_vault:wooden_affinity",
       "size": 5,
@@ -220,33 +247,6 @@
       "jewelAttribute": "the_vault:reaping",
       "size": 5,
       "id": "the_vault:jewel_crafting_reaping",
-      "output": {
-        "AMOUNT": 1,
-        "ITEM": "the_vault:jewel",
-        "NBT": "{}"
-      },
-      "inputs": [
-        {
-          "AMOUNT": 1,
-          "ITEM": "the_vault:gemstone",
-          "NBT": "{}"
-        },
-        {
-          "AMOUNT": 32,
-          "ITEM": "the_vault:silver_scrap",
-          "NBT": "{}"
-        },
-        {
-          "AMOUNT": 1,
-          "ITEM": "the_vault:vault_gold",
-          "NBT": "{}"
-        }
-      ]
-    },
-    {
-      "jewelAttribute": "the_vault:hammering",
-      "size": 5,
-      "id": "the_vault:jewel_crafting_hammering",
       "output": {
         "AMOUNT": 1,
         "ITEM": "the_vault:jewel",

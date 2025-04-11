@@ -1,0 +1,10 @@
+onEvent('item.tags', event => {
+    event.add('ars_nouveau:whirlisprig/denied_drop', 'the_vault:driftwood_log')
+    event.add('ars_nouveau:whirlisprig/denied_drop', 'the_vault:stripped_driftwood_log')
+    event.add('ars_nouveau:whirlisprig/denied_drop', 'the_vault:wooden_log')
+    event.add('ars_nouveau:whirlisprig/denied_drop', 'the_vault:stripped_wooden_log')
+    event.add('ars_nouveau:whirlisprig/denied_drop', 'the_vault:overgrown_wooden_log')
+    event.add('ars_nouveau:whirlisprig/denied_drop', 'the_vault:stripped_overgrown_wooden_log')
+    event.add('ars_nouveau:whirlisprig/denied_drop', 'the_vault:chromatic_log')
+    event.add('ars_nouveau:whirlisprig/denied_drop', 'the_vault:stripped_chromatic_log')
+})

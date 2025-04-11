@@ -1,0 +1,24 @@
+{
+  "tile_processors": [
+    {
+      "type": "placeholder",
+      "target": "ORE",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 0.1,
+          "success": {
+            "minecraft:emerald_ore": 1
+          },
+          "failure": {
+            "minecraft:stone": 1,
+            "minecraft:andesite": 1,
+            "minecraft:mossy_cobblestone": 1,
+            "create:cut_tuff": 1,
+            "auxiliaryblocks:mossy_stone": 1
+          }
+        }
+      ]
+    }
+  ]
+}

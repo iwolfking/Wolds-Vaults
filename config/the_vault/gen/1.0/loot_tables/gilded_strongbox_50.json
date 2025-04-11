@@ -7,8 +7,7 @@
         "max": 26
       },
       "pool": [
-        {
-          "weight": 80,
+        { "weight": 70,
           "pool": [
             {
               "weight": 6,
@@ -18,17 +17,17 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
+                  }
                 }
-              }
             },
             {
               "weight": 8,
               "item": {
-                "id": "the_vault:gilded_ingot",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 2
+              "id": "the_vault:gilded_ingot",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 2
                 }
               }
             },
@@ -40,8 +39,8 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
+                  }
                 }
-              }
             },
             {
               "weight": 6,
@@ -101,15 +100,15 @@
                   "min": 2,
                   "max": 5
                 }
-              }
             }
-          ]
+          }
+        ]
         },
         {
           "weight": 6,
           "pool": [
             {
-              "weight": 6,
+              "weight": 1,
               "item": {
                 "id": "the_vault:jewel_pouch",
                 "count": {
@@ -136,6 +135,23 @@
                 "id": "the_vault:dreamstone",
                 "count": {
                   "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 3,
+              "item": {
+                "id": "the_vault:magnet",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "strong_common"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
                   "min": 2,
                   "max": 3
                 }
@@ -160,7 +176,7 @@
             {
               "weight": 2,
               "item": {
-                "id": "the_vault:gilded_chest_scroll",
+                "id": "the_vault:vault_diamond",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -171,7 +187,7 @@
             {
               "weight": 3,
               "item": {
-                "id": "the_vault:key_piece",
+                "id": "the_vault:gilded_chest_scroll",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -187,7 +203,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -195,13 +211,13 @@
               "item": {
                 "id": "the_vault:plushie",
                 "nbt": {
-                  "the_vault:gear_roll_type_pool": "ornate0"
+                  "the_vault:gear_roll_type_pool": "strong_rare"
                 },
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -209,13 +225,13 @@
               "item": {
                 "id": "the_vault:loot_sack",
                 "nbt": {
-                  "the_vault:gear_roll_type_pool": "ornate0"
+                  "the_vault:gear_roll_type_pool": "strong_rare"
                 },
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             }
           ]

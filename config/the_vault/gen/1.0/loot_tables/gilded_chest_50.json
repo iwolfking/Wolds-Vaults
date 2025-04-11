@@ -7,41 +7,40 @@
         "max": 15
       },
       "pool": [
-        {
-          "weight": 80,
+        { "weight": 70,
           "pool": [
             {
-              "weight": 8,
-              "item": {
+                "weight": 8,
+                "item": {
                 "id": "the_vault:gilded_sconce",
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 1
+                  }
                 }
-              }
             },
             {
               "weight": 12,
               "item": {
-                "id": "the_vault:gilded_ingot",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 2
+              "id": "the_vault:gilded_ingot",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 2
                 }
               }
             },
             {
-              "weight": 8,
-              "item": {
+                "weight": 8,
+                "item": {
                 "id": "the_vault:topaz_shard",
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 1
+                  }
                 }
-              }
             },
             {
               "weight": 10,
@@ -90,20 +89,20 @@
                   "min": 2,
                   "max": 3
                 }
-              }
-            },
-            {
-              "weight": 10,
-              "item": {
-                "id": "the_vault:ancient_copper_ingot",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 2
-                }
-              }
             }
-          ]
+          },
+          {
+            "weight": 10,
+            "item": {
+              "id": "the_vault:ancient_copper_ingot",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 2
+                }
+            }
+          }
+        ]
         },
         {
           "weight": 4,
@@ -116,7 +115,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -127,7 +126,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -138,10 +137,10 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             }
-          ]
+        ]
         },
         {
           "weight": 2,
@@ -158,36 +157,14 @@
               }
             },
             {
-              "weight": 1,
-              "item": {
-                "id": "the_vault:plushie",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 1,
-              "item": {
-                "id": "the_vault:loot_sack",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 21,
+              "weight": 18,
               "item": {
                 "id": "the_vault:vault_diamond",
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -198,7 +175,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -209,7 +186,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
               }
             },
             {
@@ -220,7 +197,49 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
+                  }
+              }
+            },
+            {
+              "weight": 5,
+              "item": {
+                "id": "the_vault:magnet",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "ornate0"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
+              }
+            },
+            {
+              "weight": 4,
+              "item": {
+                "id": "the_vault:plushie",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "ornate0"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+                "id": "the_vault:loot_sack",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "ornate0"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
               }
             }
           ]

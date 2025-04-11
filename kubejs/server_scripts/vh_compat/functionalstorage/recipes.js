@@ -269,15 +269,17 @@ onEvent("recipes", event => {
         X: 'the_vault:perfect_larimar'
     }).id('functionalstorage:ender_drawer')
 
-    event.shaped(Item.of(`functionalstorage:armory_cabinet`),
-        [
-            'SIS',
-            'DRD',
-            'SIS'
-        ], {
-        S: 'the_vault:polished_vault_stone',
-        D: '#functionalstorage:drawer',
-        I: 'the_vault:black_chromatic_steel_ingot',
-        R: 'the_vault:chromatic_steel_block'
-    }).id('functionalstorage:armory_cabinet')
+    // event.shaped(Item.of(`functionalstorage:armory_cabinet`),
+    //     [
+    //         'SIS',
+    //         'DRD',
+    //         'SIS'
+    //     ], {
+    //     S: 'the_vault:polished_vault_stone',
+    //     D: '#functionalstorage:drawer',
+    //     I: 'the_vault:black_chromatic_steel_ingot',
+    //     R: 'the_vault:chromatic_steel_block'
+    // }).id('functionalstorage:armory_cabinet')
+
+    event.remove({ 'output': `functionalstorage:armory_cabinet` })
 })

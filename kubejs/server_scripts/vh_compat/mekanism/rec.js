@@ -72,9 +72,9 @@ onEvent("recipes", event => {
                 'IMI',
                 'RCR'
             ], {
-            R: '#forge:dusts/redstone',
-            C: 'mekanism:basic_control_circuit',
-            I: 'the_vault:chromatic_iron_ingot',
+            R: 'mekanism:alloy_infused',
+            C: 'mekanism:advanced_control_circuit',
+            I: 'the_vault:chromatic_steel_ingot',
             M: `mekanism:basic_${machine}`
         })
 
