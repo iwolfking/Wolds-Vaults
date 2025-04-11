@@ -11,7 +11,24 @@
     },
     {
       "input": "woldsvaults:greedy_vault_rock",
-      "output": "the_vault:vault_crystal"
+      "output": {
+        "id": "the_vault:vault_crystal",
+        "nbt": {
+          "CrystalData": {
+            "Modifiers": {
+              "type": "default",
+              "RandomModifiers": 0,
+              "List": [
+                {
+                  "id": "the_vault:greedy",
+                  "size": 1
+                }
+              ]
+            },
+            "Version": 3
+          }
+        }
+      }
     },
     {
       "input": "the_vault:crystal_seal_trial_chamber",

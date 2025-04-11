@@ -45,6 +45,23 @@ onEvent("recipes", event => {
         X: 'minecraft:crossbow'
     })
 
+    event.shaped(Item.of('alexsmobs:rainbow_glass', 9),
+        [
+            'ABC',
+            'DEF',
+            'GHI'
+        ], {
+        A: 'minecraft:purple_stained_glass',
+        B: 'minecraft:red_stained_glass',
+        C: 'minecraft:blue_stained_glass',
+        D: 'minecraft:yellow_stained_glass',
+        E: 'minecraft:green_stained_glass',
+        F: 'minecraft:lime_stained_glass',
+        G: 'minecraft:orange_stained_glass',
+        H: 'minecraft:pink_stained_glass',
+        I: 'minecraft:light_blue_stained_glass',
+    })
+
 
 
 })

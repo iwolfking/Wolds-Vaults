@@ -45,37 +45,60 @@
             {
               "weight": 10,
               "item": {
-              "id": "minecraft:experience_bottle",
-              "count": {
-                "type": "uniform",
-                "min": 1,
-                "max": 1
+                "id": "minecraft:experience_bottle",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 4,
+              "item": {
+                "id": "the_vault:vault_essence",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
                 }
               }
             }
           ]
         },
-        { "weight": 20,
-        "pool": [
-          {
-            "weight": 12,
-            "item": {
-              "id": "the_vault:magic_silk",
-              "count": {
-                "type": "uniform",
-                "min": 1,
-                "max": 1
+        {
+          "weight": 20,
+          "pool": [
+            {
+              "weight": 12,
+              "item": {
+                "id": "the_vault:magic_silk",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 2
                 }
-            }
-          },
-          {
-            "weight": 8,
-            "item": {
-              "id": "the_vault:vault_essence",
-              "count": {
-                "type": "uniform",
-                "min": 1,
-                "max": 1
+              }
+            },
+            {
+              "weight": 8,
+              "item": {
+                "id": "the_vault:vault_essence",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+                "id": "the_vault:vault_diamond",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
                 }
             }
           }
@@ -84,7 +107,7 @@
         { "weight": 8,
           "pool": [
             {
-              "weight": 1,
+              "weight": 2,
               "item": {
                 "id": "the_vault:jewel_pouch",
                 "count": {
@@ -95,7 +118,7 @@
               }
             },
             {
-              "weight": 16,
+              "weight": 8,
               "item": {
                 "id": "the_vault:vault_diamond",
                 "count": {
