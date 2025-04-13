@@ -1,82 +1,73 @@
 {
-    "size": "small",
-    "color": "#bcdb64",
+    "size": "medium",
+    "color": "#b1c1c4",
     "waves": [
         {
             "entities": [
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:mushroom_t0"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t0"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t0"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t0"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t0"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t0"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t0"
+                    "entity":  "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "the_vault:mushroom_t0"
+                    "entity": "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "the_vault:mushroom_t0"
+                    "entity": "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "the_vault:mushroom_t0"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "the_vault:mushroom_t2"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "the_vault:mushroom_t2"
+                    "entity": "the_vault:dungeon_piglin"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity": "the_vault:dungeon_piglin"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
-                },
-                {
-                    "entity": "the_vault:mushroom_t4"
-                },
-                {
-                    "entity": "the_vault:mushroom_t5"
-                },
-                {
-                    "entity": "alexsmobs:bunfungus"
+                    "entity": "the_vault:dungeon_piglin"
                 }
             ],
             "modifiers": [
                 {
                     "attribute": "generic.max_health",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 1.0
+                    "value": 2.0
                 },
                 {
                     "attribute": "generic.armor",
                     "operation": "ADDITION",
-                    "value": 2.0
+                    "value": 5.0
                 },
                 {
                     "attribute": "generic.attack_damage",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 1.0
+                    "value": 1.25
                 },
                 {
                     "attribute": "generic.knockback_resistance",
@@ -93,111 +84,117 @@
                 {
                     "type": "loot_table",
                     "loot_table": "woldsvaults:gateway_basic",
-                    "rolls": 5,
+                    "rolls": 15,
                     "desc": "Basic Rewards"
                 }
             ],
-            "max_wave_time": 750,
+            "max_wave_time": 1000,
             "setup_time": 150
         },
         {
             "entities": [
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t1"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t1"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t1"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t1"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t2"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t2"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t2"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t2"
+                    "entity":  "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "the_vault:mushroom_t2"
+                    "entity": "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity": "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "the_vault:mushroom_t4"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "alexsmobs:bunfungus"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "alexsmobs:bunfungus"
+                    "entity": "the_vault:dungeon_piglin"
                 },
                 {
-                    "entity": "the_vault:deathcap"
+                    "entity": "the_vault:dungeon_piglin"
+                },
+                {
+                    "entity": "the_vault:dungeon_piglin"
+                },
+                {
+                    "entity": "the_vault:dungeon_piglin"
                 }
             ],
             "modifiers": [
                 {
                     "attribute": "generic.max_health",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 1.0
+                    "value": 2.0
                 },
                 {
                     "attribute": "generic.armor",
                     "operation": "ADDITION",
-                    "value": 3.0
+                    "value": 6.0
                 },
                 {
                     "attribute": "generic.attack_damage",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 0.75
+                    "value": 1.4
                 },
                 {
                     "attribute": "generic.knockback_resistance",
                     "operation": "ADDITION",
-                    "value": 0.1
+                    "value": 0.05
                 },
                 {
                     "attribute": "generic.movement_speed",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 0.1
+                    "value": 0.05
                 }
             ],
             "rewards": [
                 {
                     "type": "loot_table",
                     "loot_table": "woldsvaults:gateway_basic",
-                    "rolls": 10,
+                    "rolls": 15,
                     "desc": "Basic Rewards"
                 }
             ],
@@ -207,110 +204,107 @@
         {
             "entities": [
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t2"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t2"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t2"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t2"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity":  "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "the_vault:mushroom_t4"
+                    "entity": "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "the_vault:mushroom_t4"
+                    "entity": "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "alexsmobs:bunfungus"
+                    "entity": "the_vault:dungeon_black_widow_spider"
                 },
                 {
-                    "entity": "alexsmobs:bunfungus"
+                    "entity": "the_vault:dungeon_piglin"
                 },
                 {
-                    "entity": "alexsmobs:bunfungus"
+                    "entity": "the_vault:dungeon_piglin"
                 },
                 {
-                    "entity": "the_vault:deathcap"
+                    "entity": "the_vault:dungeon_piglin"
                 },
                 {
-                    "entity": "the_vault:deathcap"
-                },
-                {
-                    "entity": "the_vault:deathcap"
+                    "entity": "the_vault:dungeon_piglin_brute"
                 }
             ],
             "modifiers": [
                 {
                     "attribute": "generic.max_health",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 1.0
+                    "value": 2.0
                 },
                 {
                     "attribute": "generic.armor",
                     "operation": "ADDITION",
-                    "value": 4
+                    "value": 8
                 },
                 {
                     "attribute": "generic.attack_damage",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 0.75
+                    "value": 1.5
                 },
                 {
                     "attribute": "generic.knockback_resistance",
                     "operation": "ADDITION",
-                    "value": 0.15
+                    "value": 0.2
                 },
                 {
                     "attribute": "generic.movement_speed",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 0.15
+                    "value": 0.25
                 }
             ],
             "rewards": [
                 {
                     "type": "loot_table",
                     "loot_table": "woldsvaults:gateway_deluxe",
-                    "rolls": 5,
+                    "rolls": 8,
                     "desc": "Deluxe Rewards"
                 }
             ],
@@ -320,111 +314,111 @@
         {
             "entities": [
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t3"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity":  "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity": "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity": "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "alexsmobs:bunfungus"
+                    "entity": "the_vault:dungeon_black_widow_spider"
                 },
                 {
-                    "entity": "alexsmobs:bunfungus"
+                    "entity": "the_vault:dungeon_black_widow_spider"
                 },
                 {
-                    "entity": "alexsmobs:bunfungus"
+                    "entity": "the_vault:dungeon_piglin"
                 },
                 {
-                    "entity": "the_vault:deathcap"
+                    "entity": "the_vault:dungeon_piglin"
                 },
                 {
-                    "entity": "the_vault:deathcap"
+                    "entity": "the_vault:dungeon_piglin_brute"
                 },
                 {
-                    "entity": "the_vault:deathcap"
+                    "entity": "the_vault:dungeon_piglin_brute"
                 }
             ],
             "modifiers": [
                 {
                     "attribute": "generic.max_health",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 1.2
+                    "value": 2.2
                 },
                 {
                     "attribute": "generic.armor",
                     "operation": "ADDITION",
-                    "value": 5
+                    "value": 10
                 },
                 {
                     "attribute": "generic.attack_damage",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 0.75
+                    "value": 1.5
                 },
                 {
                     "attribute": "generic.knockback_resistance",
                     "operation": "ADDITION",
-                    "value": 0.15
+                    "value": 0.25
                 },
                 {
                     "attribute": "generic.movement_speed",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 0.15
+                    "value": 0.25
                 }
             ],
             "rewards": [
                 {
                     "type": "loot_table",
-                    "loot_table": "woldsvaults:gateway_deluxe",
-                    "rolls": 5,
-                    "desc": "Deluxe Rewards"
+                    "loot_table": "woldsvaults:gateway_rare",
+                    "rolls": 3,
+                    "desc": "Rare Rewards"
                 }
             ],
             "max_wave_time": 1250,
@@ -433,117 +427,123 @@
         {
             "entities": [
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:levishroom"
+                    "entity": "the_vault:dungeon_pillager"
                 },
                 {
-                    "entity": "the_vault:mushroom_t4"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t4"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t4"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t4"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t4"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t4"
+                    "entity": "the_vault:dungeon_witch"
                 },
                 {
-                    "entity": "the_vault:mushroom_t4"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity": "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity":  "the_vault:dungeon_vindicator"
                 },
                 {
-                    "entity": "the_vault:mushroom_t5"
+                    "entity":  "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "alexsmobs:bunfungus"
+                    "entity": "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "alexsmobs:bunfungus"
+                    "entity": "the_vault:dungeon_skeleton"
                 },
                 {
-                    "entity": "alexsmobs:bunfungus"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "the_vault:deathcap"
+                    "entity": "the_vault:dungeon_spider"
                 },
                 {
-                    "entity": "the_vault:deathcap"
+                    "entity": "the_vault:dungeon_black_widow_spider"
                 },
                 {
-                    "entity": "the_vault:deathcap"
+                    "entity": "the_vault:dungeon_black_widow_spider"
                 },
                 {
-                    "entity": "the_vault:deathcap"
+                    "entity": "the_vault:dungeon_piglin"
                 },
                 {
-                    "entity": "the_vault:deathcap"
+                    "entity": "the_vault:dungeon_piglin"
+                },
+                {
+                    "entity": "the_vault:dungeon_piglin_brute"
+                },
+                {
+                    "entity": "the_vault:dungeon_piglin_brute"
                 }
             ],
             "modifiers": [
                 {
                     "attribute": "generic.max_health",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 1.25
+                    "value": 2.5
                 },
                 {
                     "attribute": "generic.armor",
                     "operation": "ADDITION",
-                    "value": 6
+                    "value": 12
                 },
                 {
                     "attribute": "generic.attack_damage",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 0.85
+                    "value": 1.5
                 },
                 {
                     "attribute": "generic.knockback_resistance",
                     "operation": "ADDITION",
-                    "value": 0.20
+                    "value": 0.25
                 },
                 {
                     "attribute": "generic.movement_speed",
                     "operation": "MULTIPLY_TOTAL",
-                    "value": 0.20
+                    "value": 0.25
                 }
             ],
             "rewards": [
                 {
                     "type": "loot_table",
-                    "loot_table": "woldsvaults:gateway_rare",
-                    "rolls": 1,
-                    "desc": "Rare Rewards"
+                    "loot_table": "woldsvaults:gateway_deluxe",
+                    "rolls": 10,
+                    "desc": "Deluxe Rewards"
                 }
             ],
             "max_wave_time": 1250,
@@ -553,11 +553,11 @@
     "rewards": [
         {
             "type": "loot_table",
-            "loot_table": "woldsvaults:gateway_basic",
-            "rolls": 25,
-            "desc": "Basic Rewards"
+            "loot_table": "woldsvaults:gateway_rare",
+            "rolls": 5,
+            "desc": "Rare Rewards"
         }
     ],
-    "completion_xp": 750,
+    "completion_xp": 2500,
     "spawn_range": 8
 }
