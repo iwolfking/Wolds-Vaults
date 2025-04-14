@@ -1,0 +1,659 @@
+{
+    "tile_processors": [
+        {
+            "type": "reference",
+            "id": "the_vault:map/generic/treasure_door_placeholder"
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cobblestone",
+            "output": {
+                "create:cut_scorchia": 10,
+                "create:scorchia": 10,
+                "architects_palette:algal_bricks": 10,
+                "architects_palette:olivestone_bricks": 10,
+                "architects_palette:olivestone_tiles": 5,
+                "architects_palette:cracked_olivestone_tiles": 5,
+                "ecologics:walnut_fence": 5
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:stone",
+            "output": {
+                "ecologics:walnut_planks": 25,
+                "ecologics:walnut_wood": 25,
+                "everycomp:ap/ecologics/walnut_boards": 25,
+                "ecologics:stripped_walnut_wood": 25
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:gray_concrete",
+            "output": {
+                "auxiliaryblocks:blue_crystal": 50,
+                "auxiliaryblocks:cyan_gelatin": 20,
+                "minecraft:cyan_concrete": 10,
+                "auxiliaryblocks:lab_cyan": 10,
+                "auxiliaryblocks:cyan_plastic": 10
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:grass_block",
+            "output": {
+                "minecraft:sand": 40,
+                "auxiliaryblocks:dirty_sand": 30,
+                "auxiliaryblocks:rocky_sand": 30
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:coarse_dirt",
+            "output": {
+                "minecraft:spruce_planks": 25,
+                "minecraft:stripped_spruce_wood": 25,
+                "architects_palette:spruce_boards": 25,
+                "decorative_blocks:spruce_beam": 25
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:dirt",
+            "output": {
+                "everycomp:ap/ecologics/walnut_boards": 1,
+                "ecologics:walnut_planks": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:stone_slab",
+            "output": {
+                "minecraft:sandstone_slab": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cobblestone_slab",
+            "output": {
+                "ecologics:walnut_slab": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:spruce_slab",
+            "output": {
+                "minecraft:spruce_slab": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:purple_wool",
+            "output": {
+                "minecraft:moss_block": 1,
+                "quark:green_shingles": 1,
+                "quark:midori_block": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:water",
+            "output": {
+                "minecraft:water": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:birch_log",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:birch_fence",
+            "output": {
+                "twigs:stripped_bamboo_fence": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:warped_fence",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:warped_wart_block",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:shroomlight",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "architects_palette:twisted_fence",
+            "output": {
+                "minecraft:dead_tube_coral_block": 1,
+                "minecraft:dead_brain_coral_block": 1,
+                "minecraft:dead_bubble_coral_block": 1,
+                "minecraft:dead_fire_coral_block": 1,
+                "minecraft:dead_horn_coral_block": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cave_vines_plant",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cave_vines",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:spore_blossom",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:brown_wool",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:pink_wool",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:grass",
+            "output": {
+                "minecraft:dead_brain_coral[waterlogged=false]": 1,
+                "minecraft:dead_bubble_coral[waterlogged=false]": 1,
+                "minecraft:dead_fire_coral[waterlogged=false]": 1,
+                "minecraft:dead_horn_coral[waterlogged=false]": 1,
+                "minecraft:dead_tube_coral[waterlogged=false]": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:tall_grass[half=lower]",
+            "output": {
+                "ecologics:coconut_seedling": 1,
+                "ecologics:seashell[waterlogged=false]": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:tall_grass[half=upper]",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:twisting_vines_plant",
+            "output": {
+                "minecraft:cactus": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:twisting_vines",
+            "output": {
+                "minecraft:cactus": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:fern",
+            "output": {
+                "minecraft:sea_pickle[waterlogged=false,pickles=1]": 1,
+                "minecraft:sea_pickle[waterlogged=false,pickles=2]": 1,
+                "minecraft:sea_pickle[waterlogged=false,pickles=3]": 1,
+                "minecraft:sea_pickle[waterlogged=false,pickles=4]": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:lime_wool",
+            "output": {
+                "minecraft:dead_tube_coral_block": 1,
+                "minecraft:dead_brain_coral_block": 1,
+                "minecraft:dead_bubble_coral_block": 1,
+                "minecraft:dead_fire_coral_block": 1,
+                "minecraft:dead_horn_coral_block": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cyan_wool",
+            "output": {
+                "minecraft:jungle_leaves": 50,
+                "minecraft:cobweb": 25,
+                "minecraft:moss_block": 25
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_log",
+            "output": {
+                "ecologics:stripped_coconut_log": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_wood",
+            "output": {
+                "ecologics:stripped_coconut_wood": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_leaves",
+            "output": {
+                "ecologics:coconut_leaves": 95,
+                "minecraft:cobweb": 5
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_planks",
+            "output": {
+                "ecologics:coconut_planks": 35,
+                "everycomp:ap/ecologics/coconut_boards": 35,
+                "twigs:stripped_bamboo_planks": 30
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_fence",
+            "output": {
+                "ecologics:coconut_fence": 1,
+                "twigs:stripped_bamboo_fence": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_slab",
+            "output": {
+                "ecologics:coconut_slab": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_trapdoor",
+            "output": {
+                "everycomp:mct/ecologics/coconut_cottage_trapdoor": 4,
+                "everycomp:mct/ecologics/coconut_classic_trapdoor": 2,
+                "everycomp:mct/ecologics/coconut_barred_trapdoor": 2
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_stairs",
+            "output": {
+                "twigs:stripped_bamboo_stairs": 1,
+                "ecologics:coconut_stairs": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_fence_gate",
+            "output": {
+                "ecologics:coconut_fence_gate": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_door",
+            "output": {
+                "everycomp:mcd/twigs/bamboo_tropical_door": 1,
+                "everycomp:mcd/ecologics/coconut_tropical_door": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:stone_bricks",
+            "output": {
+                "architects_palette:tuff_bricks": 5,
+                "architects_palette:heavy_tuff_bricks": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:stone_brick_stairs",
+            "output": {
+                "architects_palette:tuff_brick_stairs": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "create:andesite_pillar",
+            "output": {
+                "create:tuff_pillar": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:chiseled_stone_bricks",
+            "output": {
+                "architects_palette:tuff_lamp": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:stone_brick_slab",
+            "output": {
+                "architects_palette:tuff_brick_slab": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "quark:stone_brick_vertical_slab",
+            "output": {
+                "architects_palette:tuff_brick_vertical_slab": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "quark:stone_vertical_slab",
+            "output": {
+                "twigs:tuff_vertical_slab": 30,
+                "twigs:polished_tuff_vertical_slab": 55
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:stone_brick_wall",
+            "output": {
+                "architects_palette:tuff_brick_wall": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cobblestone_wall",
+            "output": {
+                "quark:tuff_wall": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cobblestone_stairs",
+            "output": {
+                "quark:tuff_stairs": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:mossy_stone_bricks",
+            "output": {
+                "twigs:polished_tuff_bricks": 75,
+                "twigs:cracked_polished_tuff_bricks": 25
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:mossy_cobblestone",
+            "output": {
+                "architects_palette:olivestone_bricks": 20,
+                "architects_palette:cracked_olivestone_tiles":20,
+                "architects_palette:olivestone_tiles": 20,
+                "architects_palette:olivestone_brick_wall": 20,
+                "architects_palette:olivestone_tile_wall": 20
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:magma_block",
+            "output": {
+                "minecraft:magma_block": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:lava",
+            "output": {
+                "minecraft:lava": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:green_concrete",
+            "output": {
+                "minecraft:moss_block": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:moss_carpet",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "decorative_blocks:brazier",
+            "output": {
+                "decorative_blocks:brazier": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:campfire",
+            "output": {
+                "minecraft:campfire": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:lantern",
+            "output": {
+                "supplementaries:brass_lantern": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "supplementaries:wall_lantern{Lantern:{Name:\"minecraft:lantern\"}}",
+            "output": {
+                "supplementaries:wall_lantern{Lantern:{Name:\"supplementaries:brass_lantern\",Properties:{waterlogged:\"false\", hanging:\"false\"}}}": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:soul_lantern",
+            "output": {
+                "supplementaries:brass_lantern": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:glass",
+            "output": {
+                "minecraft:light[level=12]": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cyan_stained_glass",
+            "output": {
+                "minecraft:water": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:light_blue_stained_glass",
+            "output": {
+                "minecraft:water": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:bookshelf",
+            "output": {
+                "everycomp:q/twigs/bamboo_bookshelf": 1,
+                "everycomp:q/ecologics/coconut_bookshelf": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "ecologics:azalea_log",
+            "output": {
+                "create:cut_scorchia": 1,
+                "create:scorchia": 3
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "ecologics:azalea_fence",
+            "output": {
+                "architects_palette:twisted_fence": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "create:cut_crimsite_wall",
+            "output": {
+                "create:polished_cut_scorchia_wall": 1,
+                "create:cut_scorchia_wall": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "quark:azalea_log",
+            "output": {
+                "ecologics:stripped_coconut_log": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "quark:azalea_planks",
+            "output": {
+                "ecologics:coconut_planks": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "quark:azalea_planks_stairs",
+            "output": {
+                "ecologics:coconut_stairs": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "create:cut_veridium_wall",
+            "output": {
+                "create:cut_ochrum_wall": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:sand",
+            "output": {
+                "minecraft:sand": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:potted_oak_sapling",
+            "output": {
+                "ecologics:potted_coconut_seedling": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "quark:oak_hedge",
+            "output": {
+                "everycomp:q/ecologics/coconut_hedge": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "decorative_blocks:oak_support",
+            "output": {
+                "everycomp:db/ecologics/coconut_support": 1,
+                "everycomp:db/twigs/bamboo_support": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:end_stone_bricks",
+            "output": {
+                "minecraft:cut_sandstone": 3,
+                "quark:sandstone_bricks": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:end_stone_brick_stairs",
+            "output": {
+                "minecraft:sandstone_stairs": 3,
+                "quark:sandstone_bricks_stairs": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:end_stone_brick_slab",
+            "output": {
+                "minecraft:cut_sandstone_slab": 3,
+                "quark:sandstone_bricks_slab": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:end_stone",
+            "output": {
+                "auxiliaryblocks:dirty_sand": 1
+            }
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/room_base"
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/spawners/beach_mobs_map_t0"
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/common_elite_spawners"
+        },
+        {
+            "type": "template_stack_tile",
+            "target": "@the_vault:vault_lootables",
+            "stack": [
+                "THEME_FLOODED",
+                "THEME_CATEGORY_BEACH"
+            ]
+        },
+        {
+            "type": "template_stack_spawner",
+            "target": "ispawner:spawner",
+            "stack": [
+                "THEME_FLOODED",
+                "THEME_CATEGORY_BEACH"
+            ]
+        }
+    ],
+    "entity_processors": [],
+    "decorators": []
+}

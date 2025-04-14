@@ -1,0 +1,94 @@
+{
+  "tile_processors": [
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:standard}",
+          "output": {
+            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"rottencreatures:dead_beard_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_4_egg\", Count: 20}, {id: \"grimoireofgaia:cecaelia_spawn_egg\", Count: 2}, {id: \"the_vault:vault_fighter_4_egg\", Count: 8}, {id: \"tropicraft:eih_spawn_egg\", Count: 1}, {id: \"tropicraft:ashen_spawn_egg\", Count: 8}, {id: \"the_vault:t4_skeleton_pirate_egg\", Count: 8}, {id: \"the_vault:t5_skeleton_pirate_egg\", Count: 2}, {id: \"alexsmobs:spawn_egg_mantis_shrimp\", Count: 1} ] } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:tank}",
+          "output": [
+            {
+              "elements": {
+                "tropicraft:eih": 10
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:tank}",
+          "output": [
+            {
+              "elements": {
+                "tropicraft:eih": 11,
+                "rottencreatures:dead_beard": 1,
+                "grimoireofgaia:cecaelia": 1
+              },
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "tropicraft:ashen": 3,
+                "tropicraft:tropi_spider": 3,
+                "alexsmobs:mantis_shrimp": 3,
+                "grimoireofgaia:siren": 9
+              },
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "grimoireofgaia:mermaid": 4,
+                "tropicraft:tropiskelly": 9
+              },
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/spawners/group_settings"
+    }
+  ]
+}

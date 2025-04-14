@@ -1,0 +1,77 @@
+{
+    "tile_processors": [
+        {
+            "type": "leveled",
+            "levels": [
+              {
+                  "level": 0,
+                  "type": "weighted_target",
+                  "target": "ispawner:spawner{group:standard}",
+                  "output": {
+                      "ispawner:spawner{ Inventory: { Stacks: [ {id: \"grimoireofgaia:sharko_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_4_egg\", Count: 20}, {id: \"grimoireofgaia:cecaelia_spawn_egg\", Count: 2}, {id: \"grimoireofgaia:mermaid_spawn_egg\", Count: 8}, {id: \"rottencreatures:dead_beard_spawn_egg\", Count: 1}, {id: \"grimoireofgaia:siren_spawn_egg\", Count: 8}, {id: \"the_vault:t4_skeleton_pirate_egg\", Count: 8}, {id: \"the_vault:t5_skeleton_pirate_egg\", Count: 2} ] } }": 1
+                  }
+              }
+            ]
+        },
+        {
+            "type": "leveled",
+            "levels": [
+                {
+                    "level": 0,
+                    "type": "spawner",
+                    "target": "ispawner:spawner{group:tank}",
+                    "output": [
+                        {
+                          "elements": {
+                            "grimoireofgaia:sharko": 10
+                          },
+                          "weight": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "leveled",
+            "levels": [
+                {
+                    "level": 0,
+                    "type": "spawner",
+                    "target": "ispawner:spawner{group:assassin}",
+                    "output": [
+                        {
+                          "elements": {
+                            "grimoireofgaia:siren": 4,
+                            "grimoireofgaia:cecaelia": 4
+                          },
+                          "weight": 1
+                        }
+                      ]
+                }
+            ]
+        },
+        {
+            "type": "leveled",
+            "levels": [
+                {
+                    "level": 0,
+                    "type": "spawner",
+                    "target": "ispawner:spawner{group:horde}",
+                    "output": [
+                        {
+                          "elements": {
+                            "grimoireofgaia:mermaid": 5,
+                            "the_vault:t2_drowned": 20
+                          },
+                          "weight": 1
+                        }
+                      ]
+                }
+            ]
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/spawners/group_settings"
+        }
+    ]
+}

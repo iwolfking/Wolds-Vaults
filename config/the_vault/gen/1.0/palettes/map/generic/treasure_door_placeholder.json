@@ -1,0 +1,96 @@
+{
+    "tile_processors": [
+      {
+        "type": "placeholder",
+        "target": "TREASURE_DOOR",
+        "levels": [
+          {
+            "level": 0,
+            "probability": 0.0,
+            "success": {
+              "the_vault:error_block": 1
+            },
+            "failure": {
+              "minecraft:stone": 1
+            }
+          },
+          {
+            "level": 20,
+            "probability": 0.15,
+            "success": {
+              "the_vault:vendor_door": 1
+            },
+            "failure": {
+              "minecraft:stone": 1
+            }
+          },
+          {
+            "level": 50,
+            "probability": 0.15,
+            "success": {
+              "the_vault:vendor_door": 2,
+              "the_vault:treasure_door": 1
+            },
+            "failure": {
+              "minecraft:stone": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": "weighted_target",
+        "target": "the_vault:vendor_door",
+        "output": [
+          {
+            "Pool": "the_vault:map/vendor_rooms/vendor_rooms",
+            "Target": "the_vault:vendor_room",
+            "Palettes": [
+              "the_vault:vendor_rooms/vendor_rooms"
+            ],
+            "weight": 1
+          },
+          {
+            "Pool": "the_vault:map/vendor_rooms/etching_rooms",
+            "Target": "the_vault:vendor_room",
+            "Palettes": [
+              "the_vault:vendor_rooms/etching_rooms"
+            ],
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "type": "weighted_target",
+        "target": "the_vault:treasure_door",
+        "output": [
+          {
+            "Pool": "the_vault:vault/treasure_rooms/treasure_rooms",
+            "Target": "the_vault:treasure_room",
+            "Palettes": [
+              "the_vault:treasure_rooms/treasure_rooms"
+            ],
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "type": "weighted_target",
+        "target": "the_vault:treasure_door",
+        "output": {
+          "[type=iskallium]": 1,
+          "[type=xenium]": 1,
+          "[type=petzanite]": 1,
+          "[type=sparkletine]": 1,
+          "[type=upaline]": 1,
+          "[type=tubium]": 1,
+          "[type=gorginite]": 1,
+          "[type=bomignite]": 1,
+          "[type=ashium]": 1
+        }
+      },
+      {
+          "type": "reference",
+          "id": "the_vault:generic/dungeon_door_placeholder"
+      }
+    ]
+  }
