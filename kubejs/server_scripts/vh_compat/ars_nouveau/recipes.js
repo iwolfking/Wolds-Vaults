@@ -1,7 +1,7 @@
 onEvent("recipes", event => {
     event.shaped(Item.of('ars_nouveau:dull_trinket'),
         [
-            ' I',
+            ' I ',
             'IGI',
             ' I '
         ], {

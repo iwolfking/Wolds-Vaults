@@ -39,7 +39,7 @@ onEvent("recipes", event => {
     
     event.recipes.createMechanicalExtruderExtruding(Item.of('quark:limestone'), [Fluid.of('minecraft:lava'), Fluid.of('minecraft:water')]).withCatalyst('minecraft:calcite')
     event.recipes.createMechanicalExtruderExtruding(Item.of('quark:jasper'), [Fluid.of('minecraft:lava'), Fluid.of('minecraft:water')]).withCatalyst('minecraft:quartz_block')
-    event.recipes.createMechanicalExtruderExtruding(Item.of('quark:shale'), [Fluid.of('minecraft:lava'), Fluid.of('minecraft:water')]).withCatalyst('minecraft:clay_block')
+    event.recipes.createMechanicalExtruderExtruding(Item.of('quark:shale'), [Fluid.of('minecraft:lava'), Fluid.of('minecraft:water')]).withCatalyst('minecraft:clay')
     event.recipes.createMechanicalExtruderExtruding(Item.of('quark:permafrost'), [Fluid.of('minecraft:lava'), Fluid.of('minecraft:water')]).withCatalyst('minecraft:blue_ice')
     event.recipes.createMechanicalExtruderExtruding(Item.of('quark:myalite'), [Fluid.of('the_vault:void_liquid'), Fluid.of('auxiliaryblocks:purple_water')]).withCatalyst('the_vault:chromatic_gold_block')
     event.recipes.createMechanicalExtruderExtruding(Item.of('quark:dusky_myalite'), [Fluid.of('the_vault:void_liquid'), Fluid.of('auxiliaryblocks:gray_water')]).withCatalyst('the_vault:chromatic_gold_block')
