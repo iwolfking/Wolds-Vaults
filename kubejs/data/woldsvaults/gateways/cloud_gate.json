@@ -1,0 +1,87 @@
+{
+    "size": "small",
+    "color": "#DAF7A6",
+    "waves": [
+        {
+            "entities": [
+                {
+                    "entity": "cloudstorage:bloviator"
+                },
+                {
+                    "entity": "cloudstorage:bloviator"
+                },
+                {
+                    "entity": "cloudstorage:bloviator"
+                },
+                {
+                    "entity": "cloudstorage:bloviator"
+                },
+                {
+                    "entity": "cloudstorage:bloviator"
+                },
+                {
+                    "entity": "cloudstorage:bloviator"
+                },
+                {
+                    "entity": "cloudstorage:bloviator"
+                },
+                {
+                    "entity": "cloudstorage:bloviator"
+                },
+                {
+                    "entity": "cloudstorage:bloviator"
+                },
+                {
+                    "entity": "cloudstorage:bloviator"
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 1.0
+                },
+                {
+                    "attribute": "generic.armor",
+                    "operation": "ADDITION",
+                    "value": 2.0
+                },
+                {
+                    "attribute": "generic.attack_damage",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 1.0
+                },
+                {
+                    "attribute": "generic.knockback_resistance",
+                    "operation": "ADDITION",
+                    "value": 0.05
+                },
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.05
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "loot_table",
+                    "loot_table": "woldsvaults:gateway_basic",
+                    "rolls": 10,
+                    "desc": "Basic Rewards"
+                }
+            ],
+            "max_wave_time": 500,
+            "setup_time": 40
+        }
+    ],
+    "rewards": [
+        {
+            "type": "loot_table",
+            "loot_table": "woldsvaults:gateway_rare",
+            "rolls": 1,
+            "desc": "Rare Rewards"
+        }
+    ],
+    "completion_xp": 1000,
+    "spawn_range": 8
+}
