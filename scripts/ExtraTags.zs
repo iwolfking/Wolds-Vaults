@@ -205,7 +205,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:vault_plating>);
 <tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:mod_box>);
 <tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:inscription_piece>);
-<tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:vault_diamond>);
+<tag:items:the_vault:wooden_chest_loot>.add(<item:woldsvaults:vault_diamond_nugget>);
 
 // Living Chest Loot
 <tag:items:the_vault:living_chest_loot>.add(<item:the_vault:burger_patty>);
@@ -233,6 +233,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:living_chest_loot>.add(<item:the_vault:large_charm>);
 <tag:items:the_vault:living_chest_loot>.add(<item:the_vault:grand_charm>);
 <tag:items:the_vault:living_chest_loot>.add(<item:the_vault:majestic_charm>);
+<tag:items:the_vault:gilded_chest_loot>.add(<item:woldsvaults:soul_ichor>);
 
 // Gilded Chest Loot
 <tag:items:the_vault:gilded_chest_loot>.add(<item:minecraft:experience_bottle>);
@@ -266,6 +267,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:vault_alloy>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:wand>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:focus>);
+<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:rang>);
 //<tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:trinket>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:repair_core>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:wild_focus>);
@@ -291,7 +293,6 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:boots>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:fundamental_focus>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:artifact_fragment>);
-<tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:regret_orb>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:sword>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:mod_box>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:crystal_seal_empty>);
