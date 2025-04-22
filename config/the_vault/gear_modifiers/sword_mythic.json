@@ -10,12 +10,12 @@
         ],
         "tiers": [
           {
-            "minLevel": 0,
+            "minLevel": 70,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 12000,
-              "max": 24000,
+              "max": 16000,
               "step": 1
             }
           }
@@ -49,42 +49,6 @@
             "weight": 50,
             "value": {
               "flag": false
-            }
-          }
-        ]
-      }
-    ],
-    "IMPLICIT": [
-      {
-        "attribute": "the_vault:attack_damage",
-        "group": "BaseAttackDamage",
-        "identifier": "the_vault:base_attack_damage",
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min" : 80.0,
-              "max": 100.0,
-              "step": 0.5
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:attack_speed",
-        "group": "BaseAttackSpeed",
-        "identifier": "the_vault:base_attack_speed",
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": -2.9,
-              "max": -2.7,
-              "step": 0.01
             }
           }
         ]
@@ -122,164 +86,43 @@
         ]
       }
     ],
+    "IMPLICIT": [
+      {
+        "attribute": "the_vault:attack_damage",
+        "group": "BaseAttackDamage",
+        "identifier": "the_vault:base_attack_damage",
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 55.0,
+              "max": 70.0,
+              "step": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:attack_speed",
+        "group": "BaseAttackSpeed",
+        "identifier": "the_vault:base_attack_speed",
+        "tiers": [
+          {
+            "minLevel": 50,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": -2.24,
+              "max": -2.19,
+              "step": 0.01
+            }
+          }
+        ]
+      }
+    ],
     "PREFIX": [
-      {
-        "attribute": "the_vault:ap_scaling_damage",
-        "group": "ModOnHitType",
-        "identifier": "the_vault:mod_execution_damage",
-        "tags": [
-          "focusExecution"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.1,
-              "max": 0.22,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.23,
-              "max": 0.26,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.27,
-              "max": 0.35,
-              "step": 0.01
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:ap_scaling_damage",
-        "group": "ModOnHitType",
-        "identifier": "the_vault:mod_ap_scaling_damage",
-        "tags": [
-          "focusApScalingDamage"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.05,
-              "max": 0.1,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.1,
-              "max": 0.15,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.16,
-              "max": 0.2,
-              "step": 0.01
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:reaving_damage",
-        "group": "ModOnHitType",
-        "identifier": "the_vault:mod_reaving_damage",
-        "tags": [
-          "focusReavingDamage"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.2,
-              "max": 0.35,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.35,
-              "max": 0.4,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.4,
-              "max": 0.6,
-              "step": 0.01
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:on_hit_aoe",
-        "group": "ModOnHitType",
-        "identifier": "the_vault:mod_on_hit_aoe",
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 4,
-              "max": 6,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 6,
-              "max": 7,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 7,
-              "max": 8,
-              "step": 1
-            }
-          }
-        ]
-      },
       {
         "attribute": "the_vault:attack_damage",
         "group": "ModOnHitType",
@@ -293,8 +136,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 75.0,
-              "max": 100.0,
+              "min": 55.0,
+              "max": 75.0,
               "step": 0.5
             }
           },
@@ -303,8 +146,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 100.0,
-              "max": 125.0,
+              "min": 76.0,
+              "max": 100.0,
               "step": 0.5
             }
           },
@@ -313,8 +156,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 125.0,
-              "max": 155.0,
+              "min": 100.0,
+              "max": 125.0,
               "step": 0.5
             }
           }
@@ -329,7 +172,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 0,
+            "minLevel": 98,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -344,7 +187,7 @@
             "weight": 10,
             "value": {
               "min": 8,
-              "max": 10,
+              "max": 9,
               "step": 1
             }
           },
@@ -370,11 +213,11 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": 70,
+            "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.3,
-              "max": 0.6,
+              "min": 0.5,
+              "max": 0.75,
               "step": 0.01
             }
           },
@@ -383,8 +226,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.61,
-              "max": 0.9,
+              "min": 0.76,
+              "max": 1.0,
               "step": 0.01
             }
           },
@@ -393,8 +236,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.9,
-              "max": 1.2,
+              "min": 1.0,
+              "max": 1.25,
               "step": 0.01
             }
           }
@@ -815,12 +658,12 @@
         ],
         "tiers": [
           {
-            "minLevel": 0,
+            "minLevel": 89,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 1600,
-              "max": 4000,
+              "min": 4200,
+              "max": 5000,
               "step": 1
             }
           },
@@ -829,8 +672,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 4001,
-              "max": 6000,
+              "min": 5000,
+              "max": 7400,
               "step": 1
             }
           },
@@ -839,88 +682,9 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 6001,
-              "max": 9000,
+              "min": 7400,
+              "max": 10000,
               "step": 1
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:effect_cloud",
-        "group": "ModOnHitAddition",
-        "identifier": "the_vault:mod_bleed_cloud",
-        "tags": [
-          "focusBleedingCloud"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 4,
-            "value": {
-              "tooltipDisplayName": "Bleed IV",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "the_vault:bleed",
-                  "duration": 40,
-                  "amplifier": 3,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 160,
-              "radius": 5.0,
-              "color": 3080192,
-              "affectsOwner": false,
-              "triggerChance": 0.02
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 4,
-            "value": {
-              "tooltipDisplayName": "Bleed V",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "the_vault:bleed",
-                  "duration": 40,
-                  "amplifier": 4,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 200,
-              "radius": 5.0,
-              "color": 3080192,
-              "affectsOwner": true,
-              "triggerChance": 0.02
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 4,
-            "value": {
-              "tooltipDisplayName": "Bleed VI",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "the_vault:bleed",
-                  "duration": 40,
-                  "amplifier": 4,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 240,
-              "radius": 5.0,
-              "color": 3080192,
-              "affectsOwner": true,
-              "triggerChance": 0.02
             }
           }
         ]
@@ -944,12 +708,12 @@
                 {
                   "effect": "minecraft:instant_health",
                   "duration": 20,
-                  "amplifier": 3,
+                  "amplifier": 0,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 160,
+              "duration": 200,
               "radius": 5.0,
               "color": 16150747,
               "affectsOwner": true,
@@ -967,12 +731,12 @@
                 {
                   "effect": "minecraft:instant_health",
                   "duration": 20,
-                  "amplifier": 4,
+                  "amplifier": 0,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 200,
+              "duration": 240,
               "radius": 5.0,
               "color": 16150747,
               "affectsOwner": true,
@@ -990,12 +754,12 @@
                 {
                   "effect": "minecraft:instant_health",
                   "duration": 20,
-                  "amplifier": 5,
+                  "amplifier": 0,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 240,
+              "duration": 280,
               "radius": 5.0,
               "color": 16150747,
               "affectsOwner": true,
@@ -1028,7 +792,7 @@
                   "showIcon": true
                 }
               ],
-              "duration": 200,
+              "duration": 240,
               "radius": 4.0,
               "color": 4236591,
               "affectsOwner": false,
@@ -1051,7 +815,7 @@
                   "showIcon": true
                 }
               ],
-              "duration": 240,
+              "duration": 280,
               "radius": 4.0,
               "color": 4236591,
               "affectsOwner": false,
@@ -1074,7 +838,7 @@
                   "showIcon": true
                 }
               ],
-              "duration": 300,
+              "duration": 320,
               "radius": 4.0,
               "color": 4236591,
               "affectsOwner": false,
@@ -1092,7 +856,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 64,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -1102,12 +866,12 @@
                 {
                   "effect": "minecraft:slowness",
                   "duration": 140,
-                  "amplifier": 3,
+                  "amplifier": 1,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 200,
+              "duration": 240,
               "radius": 4.0,
               "color": 7400423,
               "affectsOwner": false,
@@ -1125,12 +889,12 @@
                 {
                   "effect": "minecraft:slowness",
                   "duration": 140,
-                  "amplifier": 4,
+                  "amplifier": 2,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 240,
+              "duration": 300,
               "radius": 4.0,
               "color": 7400423,
               "affectsOwner": false,
@@ -1148,7 +912,7 @@
                 {
                   "effect": "minecraft:slowness",
                   "duration": 140,
-                  "amplifier": 5,
+                  "amplifier": 2,
                   "showParticles": true,
                   "showIcon": true
                 }
@@ -1171,7 +935,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 64,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -1180,7 +944,7 @@
               "additionalEffects": [
                 {
                   "effect": "the_vault:taunt_repel_mob",
-                  "duration": 120,
+                  "duration": 60,
                   "amplifier": 0,
                   "showParticles": true,
                   "showIcon": true
@@ -1203,13 +967,13 @@
               "additionalEffects": [
                 {
                   "effect": "the_vault:taunt_repel_mob",
-                  "duration": 160,
+                  "duration": 120,
                   "amplifier": 0,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 320,
+              "duration": 300,
               "radius": 4.0,
               "color": 2818160,
               "affectsOwner": false,
@@ -1226,13 +990,13 @@
               "additionalEffects": [
                 {
                   "effect": "the_vault:taunt_repel_mob",
-                  "duration": 200,
+                  "duration": 120,
                   "amplifier": 0,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 400,
+              "duration": 340,
               "radius": 4.0,
               "color": 2818160,
               "affectsOwner": false,
@@ -1260,7 +1024,7 @@
                 {
                   "effect": "the_vault:chilled",
                   "duration": 140,
-                  "amplifier": 0,
+                  "amplifier": 1,
                   "showParticles": true,
                   "showIcon": true
                 }
@@ -1330,11 +1094,11 @@
         ],
         "tiers": [
           {
-            "minLevel": 96,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.16,
+              "min": 0.24,
               "max": 0.3,
               "step": 0.01
             }
@@ -1344,8 +1108,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.3,
-              "max": 0.35,
+              "min": 0.31,
+              "max": 0.34,
               "step": 0.01
             }
           },
@@ -1355,7 +1119,7 @@
             "weight": 10,
             "value": {
               "min": 0.35,
-              "max": 0.5,
+              "max": 0.4,
               "step": 0.01
             }
           }
@@ -1370,11 +1134,11 @@
         ],
         "tiers": [
           {
-            "minLevel": 75,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.35,
+              "min": 0.45,
               "max": 0.55,
               "step": 0.01
             }
@@ -1385,7 +1149,7 @@
             "weight": 10,
             "value": {
               "min": 0.56,
-              "max": 0.64,
+              "max": 0.7,
               "step": 0.01
             }
           },
@@ -1394,7 +1158,7 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.65,
+              "min": 0.7,
               "max": 0.9,
               "step": 0.01
             }
@@ -1410,12 +1174,12 @@
         ],
         "tiers": [
           {
-            "minLevel": 86,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.16,
-              "max": 0.3,
+              "min": 0.23,
+              "max": 0.27,
               "step": 0.01
             }
           },
@@ -1424,8 +1188,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.31,
-              "max": 0.39,
+              "min": 0.28,
+              "max": 0.4,
               "step": 0.01
             }
           },
@@ -1434,8 +1198,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.4,
-              "max": 0.65,
+              "min": 0.41,
+              "max": 0.55,
               "step": 0.01
             }
           }
@@ -1450,12 +1214,12 @@
         ],
         "tiers": [
           {
-            "minLevel": 86,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.25,
-              "max": 0.4,
+              "min": 0.23,
+              "max": 0.27,
               "step": 0.01
             }
           },
@@ -1464,8 +1228,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.41,
-              "max": 0.5,
+              "min": 0.28,
+              "max": 0.4,
               "step": 0.01
             }
           },
@@ -1474,8 +1238,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.51,
-              "max": 0.75,
+              "min": 0.41,
+              "max": 0.55,
               "step": 0.01
             }
           }
@@ -1490,12 +1254,12 @@
         ],
         "tiers": [
           {
-            "minLevel": 80,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.15,
-              "max": 0.24,
+              "min": 0.1,
+              "max": 0.12,
               "step": 0.01
             }
           },
@@ -1504,8 +1268,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.25,
-              "max": 0.3,
+              "min": 0.13,
+              "max": 0.16,
               "step": 0.01
             }
           },
@@ -1514,48 +1278,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.31,
-              "max": 0.4,
-              "step": 0.01
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:hexing_chance",
-        "group": "ModOnHitAddition",
-        "identifier": "the_vault:mod_hexing_chance",
-        "tags": [
-          "focusLuckyHitChance"
-        ],
-        "tiers": [
-          {
-            "minLevel": 80,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.25,
-              "max": 0.35,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.36,
-              "max": 0.4,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.4,
-              "max": 0.5,
+              "min": 0.17,
+              "max": 0.22,
               "step": 0.01
             }
           }
