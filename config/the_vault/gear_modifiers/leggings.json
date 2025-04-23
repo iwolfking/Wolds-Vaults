@@ -465,6 +465,79 @@
             }
           }
         ]
+      },
+      {
+        "attribute": "the_vault:movement_speed",
+        "group": "BaseBonusPool",
+        "identifier": "the_vault:base_movement",
+        "tiers": [
+          {
+            "minLevel": 20,
+            "maxLevel": 64,
+            "weight": 100,
+            "value": {
+              "min": 0.02,
+              "max": 0.06,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 40,
+            "maxLevel": 84,
+            "weight": 100,
+            "value": {
+              "min": 0.07,
+              "max": 0.1,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 65,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.11,
+              "max": 0.14,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 85,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.15,
+              "max": 0.2,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:effect",
+        "group": "BaseBonusPool",
+        "identifier": "the_vault:potion_effect_fleetfooted",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 75,
+            "maxLevel": -1,
+            "weight": 40,
+            "value": {
+              "effectKey": "alexsmobs:fleet_footed",
+              "amplifier": 0
+            }
+          },
+          {
+            "minLevel": 90,
+            "maxLevel": -1,
+            "weight": 40,
+            "value": {
+              "effectKey": "alexsmobs:fleet_footed",
+              "amplifier": 1
+            }
+          }
+        ]
       }
     ],
     "PREFIX": [
