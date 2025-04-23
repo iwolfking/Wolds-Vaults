@@ -71,17 +71,17 @@ onEvent('recipes', event => {
         X: 'the_vault:omega_pog'
     })
 
-    event.shaped(Item.of('woldsvaults:zephyr_charm'),
-        [
-            'WVT',
-            'PGV',
-            'WPW'
-        ], {
-        G: 'the_vault:omega_pog',
-        T: 'the_vault:trinket_scrap',
-        W: 'the_vault:wold_star_chunk',
-        V: 'the_vault:vault_ingot_1',
-        P: 'woldsvaults:extraordinary_pog_prism'
-    })
+    // event.shaped(Item.of('woldsvaults:zephyr_charm'),
+    //     [
+    //         'WVT',
+    //         'PGV',
+    //         'WPW'
+    //     ], {
+    //     G: 'the_vault:omega_pog',
+    //     T: 'the_vault:trinket_scrap',
+    //     W: 'the_vault:wold_star_chunk',
+    //     V: 'the_vault:vault_ingot_1',
+    //     P: 'woldsvaults:extraordinary_pog_prism'
+    // })
 
 })
