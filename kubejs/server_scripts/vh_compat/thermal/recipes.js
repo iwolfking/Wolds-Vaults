@@ -1,9 +1,6 @@
 onEvent("recipes", event => {
     let corals = ['tube', 'brain', 'bubble', 'fire', 'horn']
 
-    event.recipes.thermal.press('the_vault:bitter_lemon', ['16x the_vault:sweet_kiwi', 'thermal:press_packing_3x3_die'])
-    event.recipes.thermal.press('the_vault:sour_orange', ['9x the_vault:bitter_lemon', 'thermal:press_packing_3x3_die'])
-
     corals.forEach(coral => {
         event.custom({
             "type": "thermal:pyrolyzer",
