@@ -114,6 +114,18 @@ onEvent("recipes", event => {
     })
 
     vanillaMobTypes.forEach(mob => {
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:${mob}"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `minecraft:${mob}_spawn_egg`,
+            M: 'the_vault:vault_diamond'
+        })
+
+        
         event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:${mob}"}}`),
             [
                 ' E ',
@@ -160,6 +172,17 @@ onEvent("recipes", event => {
     })
 
     thermalMobTypes.forEach(mob => {
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:thermal/${mob}"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `thermal:${mob}_spawn_egg`,
+            M: 'the_vault:vault_diamond'
+        })
+
         event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:thermal/${mob}"}}`),
             [
                 ' E ',
@@ -206,6 +229,18 @@ onEvent("recipes", event => {
     })
 
     quarkMobTypes.forEach(mob => {
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:quark/${mob}"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `quark:${mob}_spawn_egg`,
+            M: 'the_vault:vault_diamond'
+        })
+
         event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:quark/${mob}"}}`),
             [
                 ' E ',
@@ -252,6 +287,17 @@ onEvent("recipes", event => {
     })
 
     cageriumMobTypes.forEach(mob => {
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:${mob}"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `cagerium:${mob}_spawn_egg`,
+            M: 'the_vault:vault_diamond'
+        })
+
         event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:${mob}"}}`),
             [
                 ' E ',
@@ -298,6 +344,18 @@ onEvent("recipes", event => {
     })
 
     cloudStorageMobTypes.forEach(mob => {
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:cloudstorage/${mob}"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `cloudstorage:spawn_egg_${mob}`,
+            M: 'the_vault:vault_diamond'
+        })
+
+        
         event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:cloudstorage/${mob}"}}`),
             [
                 ' E ',
@@ -344,6 +402,17 @@ onEvent("recipes", event => {
     })
 
     tropicraftMobTypes.forEach(mob => {
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:tropicraft/${mob}"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `tropicraft:${mob}_spawn_egg`,
+            M: 'the_vault:vault_diamond'
+        })
+
         event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:tropicraft/${mob}"}}`),
             [
                 ' E ',
@@ -391,6 +460,18 @@ onEvent("recipes", event => {
 
 
     alexsMobsTypes.forEach(mob => {
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:alexsmobs/${mob}"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `alexsmobs:spawn_egg_${mob}`,
+            M: 'the_vault:vault_diamond'
+        })
+
+    
         event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:alexsmobs/${mob}"}}`),
             [
                 ' E ',
