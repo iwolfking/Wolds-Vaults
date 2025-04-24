@@ -1111,6 +1111,36 @@
 				count: 8
 			}]
 		}
+		{
+			title: "Trinket Pouches"
+			x: 4.0d
+			y: 2.0d
+			subtitle: "Trinkets your way"
+			description: [
+				"In Wold's as of Update 18, to wear trinkets you now have to equip a Trinket Pouch! This will determine how many and what kind of trinkets you are able to wear. This quest gives you the standard slots you are used to, but you can craft variations of this beginner pouch as well!"
+				""
+				"There are now 3 kinds of trinkets: Blue, Green, and Red. Roughly these categories are \"Movement\", \"Utility/Loot\", and \"Buffs\"."
+				""
+				"Later on, you will be able to access more interesting Pouches, such as ones that let you hold 3 trinkets at a time, or multiple of the same kind of trinket!"
+			]
+			id: "7E430D6A67FE1002"
+			tasks: [{
+				id: "38A2FDCE2B37525D"
+				type: "item"
+				item: "the_vault:trinket"
+			}]
+			rewards: [{
+				id: "732C1C688641A923"
+				type: "item"
+				item: {
+					id: "woldsvaults:trinket_pouch"
+					Count: 1b
+					tag: {
+						id: "woldsvaults:basic_vanilla"
+					}
+				}
+			}]
+		}
 	]
 	quest_links: [ ]
 }
