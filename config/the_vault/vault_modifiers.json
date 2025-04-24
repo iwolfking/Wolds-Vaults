@@ -255,6 +255,18 @@
           "descriptionFormatted": "+%d%% Catalyst Fragments",
           "icon": "the_vault:gui/modifiers/more_catalyst"
         }
+      },
+      "the_vault:iridescent": {
+        "properties": {
+          "chance": 0.25
+        },
+        "display": {
+          "name": ":prismatic: Iridescent",
+          "color": "#FC00E3",
+          "description": "+100% Catalyst Fragments",
+          "descriptionFormatted": "+%d%% Catalyst Fragments",
+          "icon": "the_vault:gui/modifiers/more_catalyst"
+        }
       }
     },
     "the_vault:modifier_type/chance_chest_trap": {
@@ -764,7 +776,7 @@
         "display": {
           "name": ":crate_item_quantity: Super Crate Tier",
           "color": "#38C9C0",
-          "description": "Increases the reward crate tier four times per modifier",
+          "description": "+400% Crate Item Quantity",
           "descriptionFormatted": "Increases the reward crate tier once per modifier",
           "icon": "the_vault:gui/modifiers/crate_item_quantity"
         }
@@ -916,6 +928,187 @@
         }
       }
     },
+    "the_vault:modifier_type/crate_item_quantity_settable": {
+      "the_vault:map_crate_quantity": {
+        "properties": {
+        },
+        "display": {
+          "name": "Crate Quantity",
+          "color": "#38C9C0",
+          "description": "+%d%% Crate Quantity",
+          "descriptionFormatted": "+%d%% Crate Quantity",
+          "icon": "the_vault:gui/modifiers/opulent"
+        }
+      }
+    },
+    "the_vault:modifier_type/decorator_cascade_settable": {
+      "the_vault:map_gilded_cascade": {
+        "properties": {
+          "filter": "the_vault:gilded_chest"
+        },
+        "display": {
+          "name": "More Gilded",
+          "color": "#FFEC00",
+          "description": "+%d%% Gilded Chests",
+          "descriptionFormatted": "+%d%% Gilded Chests",
+          "icon": "the_vault:gui/modifiers/gilded"
+        }
+      },
+      "the_vault:map_wooden_cascade": {
+        "properties": {
+          "filter": "the_vault:wooden_chest"
+        },
+        "display": {
+          "name": "More Wooden",
+          "color": "#FFEC00",
+          "description": "+%d%% Wooden Chests",
+          "descriptionFormatted": "+%d%% Wooden Chests",
+          "icon": "the_vault:gui/modifiers/wooden"
+        }
+      },
+      "the_vault:map_ornate_cascade": {
+        "properties": {
+          "filter": "the_vault:ornate_chest"
+        },
+        "display": {
+          "name": "More Ornate",
+          "color": "#FFEC00",
+          "description": "+%d%% Ornate Chests",
+          "descriptionFormatted": "+%d%% Ornate Chests",
+          "icon": "the_vault:gui/modifiers/ornate"
+        }
+      },
+      "the_vault:map_living_cascade": {
+        "properties": {
+          "filter": "the_vault:living_chest"
+        },
+        "display": {
+          "name": "More Living",
+          "color": "#FFEC00",
+          "description": "+%d%% Living Chests",
+          "descriptionFormatted": "+%d%% Living Chests",
+          "icon": "the_vault:gui/modifiers/living"
+        }
+      },
+      "the_vault:map_coin_cascade": {
+        "properties": {
+          "filter": "the_vault:coin_pile"
+        },
+        "display": {
+          "name": "More Coins",
+          "color": "#FFEC00",
+          "description": "+%d%% Coin Piles",
+          "descriptionFormatted": "+%d%% Coin Piles",
+          "icon": "the_vault:gui/modifiers/wealthy"
+        }
+      }
+    },
+    "the_vault:modifier_type/player_attribute_settable": {
+      "the_vault:map_mana_decrease": {
+        "properties": {
+          "type": "mana_regen_additive_percentile",
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Less Mana Regeneration",
+          "color": "#849dc8",
+          "description": "-%d%% Mana Regeneration",
+          "descriptionFormatted": "-%d%% Mana Regeneration",
+          "icon": "the_vault:gui/modifiers/draining"
+        }
+      },
+      "the_vault:map_mana_increase": {
+        "properties": {
+          "type": "mana_regen_additive_percentile",
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "More Mana Regeneration",
+          "color": "#849dc8",
+          "description": "+%d%% Mana Regeneration",
+          "descriptionFormatted": "+%d%% Mana Regeneration",
+          "icon": "the_vault:gui/modifiers/draining"
+        }
+      },
+      "the_vault:map_health_increase": {
+        "properties": {
+          "type": "max_health_additive",
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "More Health",
+          "color": "#FF5555",
+          "description": "+X Hearts",
+          "descriptionFormatted": "+%d Health",
+          "icon": "the_vault:gui/modifiers/regeneration"
+        }
+      },
+      "the_vault:map_health_decrease": {
+        "properties": {
+          "type": "max_health_additive",
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Less Health",
+          "color": "#FF5555",
+          "description": "+X Hearts",
+          "descriptionFormatted": "+%d Health",
+          "icon": "the_vault:gui/modifiers/regeneration"
+        }
+      },
+      "the_vault:map_player_damage_increase": {
+        "properties": {
+          "type": "attack_damage_additive_percentile",
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Increased Damage",
+          "color": "#FF5555",
+          "description": "+%d%% Attack Damage",
+          "descriptionFormatted": "+%d%% Attack Damage",
+          "icon": "the_vault:gui/modifiers/god_token_idona"
+        }
+      },
+      "the_vault:map_player_damage_decrease": {
+        "properties": {
+          "type": "attack_damage_additive_percentile",
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Increased Damage",
+          "color": "#FF5555",
+          "description": "-%d%% Attack Damage",
+          "descriptionFormatted": "-%d%% Attack Damage",
+          "icon": "the_vault:gui/modifiers/god_token_idona"
+        }
+      },
+      "the_vault:map_player_kbr_increase": {
+        "properties": {
+          "type": "knockback_resistance_additive",
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "More Knockback Resistance",
+          "color": "#849dc8",
+          "description": "+100% Knockback Resistance",
+          "descriptionFormatted": "+%d%% Knockback Resistance",
+          "icon": "the_vault:gui/modifiers/draining"
+        }
+      },
+      "the_vault:map_player_kbr_decrease": {
+        "properties": {
+          "type": "knockback_resistance_additive",
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Less Knockback Resistance",
+          "color": "#849dc8",
+          "description": "-100% Knockback Resistance",
+          "descriptionFormatted": "-%d%% Knockback Resistance",
+          "icon": "the_vault:gui/modifiers/draining"
+        }
+      }
+    },
     "the_vault:modifier_type/mob_attribute_settable": {
       "the_vault:map_mob_health": {
         "properties": {
@@ -999,6 +1192,68 @@
           "description": "+X% Item Rarity",
           "descriptionFormatted": "+%d%% Item Rarity",
           "icon": "the_vault:gui/modifiers/item_quant_2"
+        }
+      }
+    },
+    "the_vault:modifier_type/chance_catalyst_settable": {
+      "the_vault:map_catalyst_chance": {
+        "properties": {},
+        "display": {
+          "name": "Catalyst Fragments",
+          "color": "#ffcc73",
+          "description": "+X% Catalyst Fragments",
+          "descriptionFormatted": "+%d%% Catalyst Fragments",
+          "icon": "the_vault:gui/modifiers/more_catalyst"
+        }
+      }
+    },
+    "the_vault:modifier_type/chance_chest_trap_settable": {
+      "the_vault:map_trap_chance": {
+        "properties": {},
+        "display": {
+          "name": "Trap Chance",
+          "color": "#ffcc73",
+          "description": "+X% Trapped Chests",
+          "descriptionFormatted": "+%d%% Trapped Chests",
+          "icon": "the_vault:gui/modifiers/trapped"
+        }
+      }
+    },
+    "the_vault:modifier_type/spawner_mobs_settable": {
+      "the_vault:map_more_mobs": {
+        "properties": {},
+        "display": {
+          "name": "More Mobs",
+          "color": "#ffcc73",
+          "description": "+X% More Mobs From Spawners",
+          "descriptionFormatted": "+%d%% More Mobs From Spawners",
+          "icon": "the_vault:gui/modifiers/trapped"
+        }
+      }
+    },
+    "the_vault:modifier_type/champion_chance_settable": {
+      "the_vault:map_champion_chance": {
+        "properties": {},
+        "display": {
+          "name": "More Champions",
+          "color": "#ffcc73",
+          "description": "+X% More Champions",
+          "descriptionFormatted": "+%d%% More Champions",
+          "icon": "the_vault:gui/modifiers/champion_domain"
+        }
+      }
+    },
+    "the_vault:modifier_type/vault_lootable_weight_settable": {
+      "the_vault:map_ore_increase": {
+        "properties": {
+          "type": "ORE"
+        },
+        "display": {
+          "name": "More Ores",
+          "color": "#ffcc73",
+          "description": "+X% More Ores",
+          "descriptionFormatted": "+%d%% More Ores",
+          "icon": "the_vault:gui/modifiers/plentiful"
         }
       }
     },
@@ -1689,7 +1944,7 @@
         "display": {
           "name": ":drop_of_blood: Bleeding",
           "color": "#9B3E56",
-          "description": "+10% increased chance mobs inflict Bleed on hit",
+          "description": "Mobs can inflict bleeding on hit",
           "descriptionFormatted": "+%d%% increased chance mobs inflict Bleed on hit",
           "icon": "the_vault:gui/modifiers/hex_chaining"
         }
@@ -1987,7 +2242,7 @@
         "display": {
           "name": ":black_circle: Mana Leak",
           "color": "#849dc8",
-          "description": "Players in this vault no longer regenerate mana",
+          "description": "You cannot regenerate mana in this vault",
           "descriptionFormatted": "Players in this vault no longer regenerate mana",
           "icon": "the_vault:gui/modifiers/draining"
         }
@@ -2424,7 +2679,7 @@
         "display": {
           "name": ":dash: Tailwind",
           "color": "#fbed3f",
-          "description": "Players move faster in this vault! (+2 Speed)",
+          "description": "Players move much faster in this vault!",
           "descriptionFormatted": "Players move faster in this vault! (+3 Speed)",
           "icon": "the_vault:gui/modifiers/speed"
         }
@@ -2852,7 +3107,7 @@
         "display": {
           "name": ":safezone: Safe Zone",
           "color": "#A3E2F5",
-          "description": "+1000% Trap Disarm",
+          "description": "Chests will not be trapped in this vault",
           "descriptionFormatted": "%d%% Trap Disarm",
           "icon": "the_vault:gui/modifiers/safezone"
         }
@@ -3104,6 +3359,19 @@
           "icon": "the_vault:gui/modifiers/rich"
         }
       },
+      "the_vault:perfect_ores": {
+        "properties": {
+          "stat": "copiously",
+          "addend": 1.0
+        },
+        "display": {
+          "name": "Perfect Ores",
+          "color": "#ffba00",
+          "description": "+100% Copiously",
+          "descriptionFormatted": "%d%% Copiously",
+          "icon": "the_vault:gui/modifiers/rich"
+        }
+      },
       "the_vault:leeching": {
         "properties": {
           "stat": "leech",
@@ -3167,7 +3435,7 @@
         "display": {
           "name": "No Heal",
           "color": "#849dc8",
-          "description": "You cannot heal",
+          "description": "You cannot heal in this vault.",
           "descriptionFormatted": "Healing in this vault is very inefficient",
           "icon": "the_vault:gui/modifiers/antiheal"
         }
@@ -3325,6 +3593,30 @@
       }
     },
     "the_vault:modifier_type/vault_time": {
+      "the_vault:super_unextension": {
+        "properties": {
+          "timeAddedTicks": -6000
+        },
+        "display": {
+          "name": ":clock230: Unextended",
+          "color": "#2F86AE",
+          "description": "-5 minutes of Vault Time",
+          "descriptionFormatted": "+%d minutes Vault Time",
+          "icon": "the_vault:gui/modifiers/extended"
+        }
+      },
+      "the_vault:super_extension": {
+        "properties": {
+          "timeAddedTicks": 6000
+        },
+        "display": {
+          "name": ":clock230: Extended",
+          "color": "#2F86AE",
+          "description": "+5 minutes of Vault Time",
+          "descriptionFormatted": "+%d minutes Vault Time",
+          "icon": "the_vault:gui/modifiers/extended"
+        }
+      },
       "the_vault:extended": {
         "properties": {
           "timeAddedTicks": 1200
@@ -3969,16 +4261,15 @@
       }
     },
     "the_vault:modifier_type/grouped_settable": {
-      "the_vault:map_group_test": {
+      "the_vault:map_combined_quantity_and_rarity": {
         "properties": {
           "children": {
             "the_vault:map_item_quantity": 1,
-            "the_vault:map_item_rarity": 1,
-            "the_vault:trial": 1
+            "the_vault:map_item_rarity": 1
           }
         },
         "display": {
-          "name": "Bundled Values",
+          "name": "Item Rarity and Quantity",
           "color": "#3ffbf4",
           "description": "A multitude of items",
           "descriptionFormatted": "+%d%% Item Quantity and Rarity",
@@ -4063,7 +4354,7 @@
         "display": {
           "name": ":chest: Omega Bonus",
           "color": "#3ffbf4",
-          "description": "Adds +1 Chests and Coins",
+          "description": "+1 of All Chests and Coin Piles",
           "icon": "the_vault:gui/modifiers/item_quant_4"
         }
       },
@@ -4111,7 +4402,7 @@
         "display": {
           "name": ":tiger2: Safari Bingo!",
           "color": "#4CAF50",
-          "description": "Every Challening BINGO adds 10% item rarity and quantity, and unleashes zoo animals into new rooms.",
+          "description": "Every Safari BINGO adds 10% item rarity and quantity, and unleashes zoo animals into new rooms.",
           "icon": "the_vault:gui/modifiers/bingo"
         }
       },
@@ -4576,7 +4867,7 @@
         "display": {
           "name": ":curse_voidpools: Collapsing",
           "color": "#ad2b2b",
-          "description": "This vault is cursed, it's collapsing, has less time, and wild mobs will appear",
+          "description": "This vault is cursed, it's collapsing, and wild mobs will appear",
           "icon": "the_vault:gui/modifiers/curse_collapsing"
         }
       },
@@ -4595,7 +4886,7 @@
         "display": {
           "name": ":curse_voidpools: Cursed!",
           "color": "#ad2b2b",
-          "description": "This vault is cursed, it's collapsing, void pools have appeared, some mobs are immortal & their attacks seem to have hexing effects on you!",
+          "description": "This vault is cursed!",
           "icon": "the_vault:gui/modifiers/curse_voidpools"
         }
       },
@@ -4676,7 +4967,7 @@
         "display": {
           "name": ":eyes: All Seeing Eye",
           "color": "#ad2b2b",
-          "description": "Grants all hunter modifiers.",
+          "description": "This vault grants all hunter modifiers.",
           "icon": "the_vault:gui/modifiers/beginners_grace"
         }
       },
@@ -4896,7 +5187,7 @@
       "the_vault:enchanted": {
         "properties": {
           "chance": 0.05,
-          "ticksPerCheck": 20
+          "ticksPerCheck": 100
         },
         "display": {
           "name": ":sparkles: Enchanted",

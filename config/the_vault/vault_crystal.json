@@ -592,6 +592,17 @@
         ]
       }
     ],
+    "woldsvaults:map_themes": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": "the_vault:map_beach_t0",
+            "weight": 1
+          }
+        ]
+      }
+    ],
     "the_vault:speedrun": [
       {
         "level": 0,
@@ -1641,8 +1652,8 @@
               "type": "zealot",
               "target": {
                 "type": "uniform",
-                "min": 3,
-                "max": 5
+                "min": 4,
+                "max": 6
               }
             },
             "weight": 4
@@ -1659,9 +1670,65 @@
               "type": "monolith",
               "target": {
                 "type": "uniform",
-                "min": 3,
-                "max": 5
+                "min": 6,
+                "max": 8
               }
+            },
+            "weight": 4
+          }
+        ]
+      }
+    ],
+    "the_vault:rune_boss": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "type": "rune_boss",
+              "objective_probability": 1.0
+            },
+            "weight": 2
+          }
+        ]
+      }
+    ],
+    "the_vault:ballistic_bingo": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "type": "ballistic_bingo",
+              "objective_probability": 0.75
+            },
+            "weight": 2
+          }
+        ]
+      }
+    ],
+    "the_vault:elixir": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "type": "elixir",
+              "objective_probability": 0.75
+            },
+            "weight": 4
+          }
+        ]
+      }
+    ],
+    "the_vault:scavenger": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "type": "scavenger",
+              "objective_probability": 0.75
             },
             "weight": 4
           }
@@ -1693,16 +1760,16 @@
           {
             "value": {
               "type": "boss",
-              "objective_probability": 0.3,
+              "objective_probability": 0.4,
               "target": {
                 "type": "uniform",
-                "min": 3,
-                "max": 5
+                "min": 7,
+                "max": 10
               },
               "wave": {
                 "type": "uniform",
-                "min": 3,
-                "max": 5
+                "min": 8,
+                "max": 15
               }
             },
             "weight": 2
@@ -1717,10 +1784,10 @@
           {
             "value": {
               "type": "brutal_bosses",
-              "objective_probability": 0.3,
+              "objective_probability": 0.4,
               "target": {
                 "type": "uniform",
-                "min": 3,
+                "min": 5,
                 "max": 5
               },
               "wave": {
