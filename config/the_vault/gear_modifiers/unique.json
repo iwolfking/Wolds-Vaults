@@ -2281,7 +2281,26 @@
       }
     ],
     "PREFIX": [
-      { "attribute": "the_vault:lucky_thorns",
+      { 
+        "attribute": "woldsvaults:breaching",
+        "group": "ModBreaching",
+        "identifier": "the_vault:breaching_jewel",
+        "tags": [
+          "noLegendary"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "flag": true
+            }
+          }
+        ]
+      },
+      { 
+      "attribute": "the_vault:lucky_thorns",
       "group": "ModLuckyThorns",
       "identifier": "the_vault:u_lucky_thorns",
       "tags": [
@@ -2297,7 +2316,7 @@
           }
         }
       ]
-    },
+      },
       {
         "attribute": "the_vault:on_hit_chain",
         "group": "ModChaining",
