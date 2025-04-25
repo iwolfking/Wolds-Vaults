@@ -494,6 +494,111 @@
           "descriptionFormatted": "+%d chances for Coin Piles",
           "icon": "the_vault:gui/modifiers/wealthy"
         }
+      },
+      "the_vault:map_gilded": {
+        "properties": {
+          "output": "the_vault:placeholder[type=gilded_chest]",
+          "requireConditions": true
+        },
+        "display": {
+          "name": "Bonus Gilded",
+          "color": "#FFEC00",
+          "description": "Adds chances for Gilded chests",
+          "descriptionFormatted": "+%d chances for Gilded Chests",
+          "icon": "the_vault:gui/modifiers/gilded_chests"
+        }
+      },
+      "the_vault:map_living": {
+        "properties": {
+          "output": "the_vault:placeholder[type=living_chest]",
+          "requireConditions": true
+        },
+        "display": {
+          "name": "Bonus Living",
+          "color": "#38d800",
+          "description": "Adds chances for Living Chests",
+          "descriptionFormatted": "+%d chances for Living Chests",
+          "icon": "the_vault:gui/modifiers/living_chests"
+        }
+      },
+      "the_vault:map_ornate": {
+        "properties": {
+          "output": "the_vault:placeholder[type=ornate_chest]",
+          "requireConditions": true
+        },
+        "display": {
+          "name": "Bonus Ornate",
+          "color": "#c90d73",
+          "description": "Adds chances for Ornate Chests.",
+          "descriptionFormatted": "+%d chances for Ornate Chests",
+          "icon": "the_vault:gui/modifiers/ornate_chests"
+        }
+      },
+      "the_vault:map_wooden": {
+        "properties": {
+          "output": "the_vault:placeholder[type=wooden_chest]",
+          "attemptsPerChunk": 8,
+          "requireConditions": true
+        },
+        "display": {
+          "name": "Bonus Wooden",
+          "color": "#fbcc3f",
+          "description": "+1 Set of Wooden Chests",
+          "descriptionFormatted": "+%d chances for Wooden Chests",
+          "icon": "the_vault:gui/modifiers/wooden"
+        }
+      },
+      "the_vault:map_wild": {
+        "properties": {
+          "output": "the_vault:wild_spawner",
+          "requireConditions": true
+        },
+        "display": {
+          "name": "Wild",
+          "color": "#E83F24",
+          "description": "Dwellers spawns anywhere inside the vault",
+          "descriptionFormatted": "+%d chances for Vault Dwellers",
+          "icon": "the_vault:gui/modifiers/crowded"
+        }
+      },
+      "the_vault:map_collapsing": {
+        "properties": {
+          "output": "the_vault:vault_bedrock",
+          "requireConditions": false
+        },
+        "display": {
+          "name": "Collapsing",
+          "color": "#E83F24",
+          "description": "This vault seem to be collapsing",
+          "descriptionFormatted": "+%d chances for Vault Bedrock",
+          "icon": "the_vault:gui/modifiers/chaotic"
+        }
+      },
+      "the_vault:void_pools": {
+        "properties": {
+          "output": "the_vault:void_liquid",
+          "requireConditions": false
+        },
+        "display": {
+          "name": "Void Pools",
+          "color": "#E83F24",
+          "description": "This vault has pockets of voiding",
+          "descriptionFormatted": "+%d chances for Void Liquid pools",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
+      "the_vault:volcanic": {
+        "properties": {
+          "output": "minecraft:lava",
+          "requireConditions": false
+        },
+        "display": {
+          "name": "Volcanic",
+          "color": "#E83F24",
+          "description": "This vault seem to be hot",
+          "descriptionFormatted": "+%d chances for Lava pools",
+          "icon": "the_vault:gui/modifiers/volcanic"
+        }
       }
     },
     "the_vault:modifier_type/decorator_add": {
