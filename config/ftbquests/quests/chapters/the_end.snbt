@@ -171,6 +171,64 @@
 				item: "woldsvaults:chunk_of_power"
 			}]
 		}
+		{
+			title: "Mythic Gear"
+			icon: {
+				id: "the_vault:magnet"
+				Count: 1b
+				tag: {
+					vaultGearData: [L;
+						-6335686267963661250L
+						-6091921751703918468L
+						2398589014039857177L
+						1245127937339252741L
+						5793106916787126344L
+						5059396739163019361L
+						36507222022L
+						578721348210130944L
+					]
+					clientCache: {
+						"presentthe_vault:is_legendary": 0b
+						color: [B; ]
+						gearName: [B; ]
+						rollType: "Mythic"
+						jcolors: [I; ]
+						hasModifierETCHING: 0b
+						hasModifierLEGENDARY: 0b
+						colors: [I;11184810]
+						"presentthe_vault:is_etched": 0b
+						hasModifierUNUSUAL: 0b
+						model: [B; ]
+						hasModifierGREATER: 0b
+						state: 0
+						hasModifierCORRUPTED: 0b
+						rarity: 0
+					}
+				}
+			}
+			x: 1.5d
+			y: -10.0d
+			subtitle: "Beyond Omega"
+			description: [
+				"In mapped vaults, you can rarely come upon a new rarity of gear: Mythic!"
+				""
+				"Mythic gear rolls much higher values than normal gear, has more possible slots open for modifiers, and have massively increased durability. "
+				""
+				"The only way to obtain Mythic gear is to find it in a vault. It is not possible to use a Pyretic focus to upgrade to Mythic rarity, nor is it possible to craft a piece of Mythic gear."
+			]
+			dependencies: ["59810C7F7E285E61"]
+			id: "45D33E885A8BCB39"
+			tasks: [{
+				id: "795AD2BAAA3D8441"
+				type: "checkmark"
+				title: "I Read This"
+			}]
+			rewards: [{
+				id: "6148AEEEDBE9ED91"
+				type: "item"
+				item: "the_vault:gem_pog"
+			}]
+		}
 	]
 	quest_links: [ ]
 }
