@@ -10,9 +10,9 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 20,
+            "weight": 100,
             "value": {
-              "value": "the_vault:map_themes"
+              "value": "woldsvaults:map_themes"
             }
           }
         ]
@@ -26,7 +26,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 40,
             "value": {
               "value": "elixir"
             }
@@ -42,7 +42,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 5,
             "value": {
               "value": "zealot"
             }
@@ -58,9 +58,25 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 40,
             "value": {
               "value": "monolith"
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:vault_objective",
+        "group": "ModObjective",
+        "identifier": "the_vault:haunted_b_objective",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 5,
+            "value": {
+              "value": "haunted_braziers"
             }
           }
         ]
@@ -74,7 +90,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 40,
             "value": {
               "value": "scavenger"
             }
@@ -90,7 +106,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 5,
             "value": {
               "value": "boss"
             }
@@ -106,7 +122,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 40,
             "value": {
               "value": "rune_boss"
             }
@@ -122,7 +138,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 5,
             "value": {
               "value": "enchanted_elixir"
             }
@@ -138,9 +154,25 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 5,
             "value": {
               "value": "brutal_bosses"
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:vault_objective",
+        "group": "ModObjective",
+        "identifier": "the_vault:bingo_objective",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 40,
+            "value": {
+              "value": "bingo"
             }
           }
         ]
@@ -154,7 +186,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 5,
             "value": {
               "value": "ballistic_bingo"
             }
@@ -170,7 +202,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 5,
             "value": {
               "value": "EASY"
             }
@@ -186,7 +218,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 75,
             "value": {
               "value": "NORMAL"
             }
@@ -202,7 +234,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 15,
             "value": {
               "value": "HARD"
             }
@@ -218,7 +250,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 5,
             "value": {
               "value": "IMPOSSIBLE"
             }
@@ -263,6 +295,24 @@
       }
     ],
     "PREFIX": [
+      {
+        "attribute": "the_vault:resistance",
+        "group": "MapModBonus",
+        "identifier": "the_vault:map_coin_pile",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 10000,
+            "value": {
+              "min": 8.0,
+              "max": 16.0,
+              "step": 8.0
+            }
+          }
+        ]
+      },
       {
         "attribute": "the_vault:crate_quantity",
         "group": "MapModBonus",
@@ -409,6 +459,26 @@
             "weight": 5,
             "value": {
               "value": "the_vault:overpower"
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:inscription",
+        "group": "ModInscription",
+        "identifier": "the_vault:vault/rooms/omega/arcade",
+        "tags": [
+          "noLegendary"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 16000,
+            "value": {
+              "min": 1.0,
+              "max": 2.0,
+              "step": 1.0
             }
           }
         ]

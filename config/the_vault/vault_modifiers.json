@@ -611,8 +611,8 @@
         "display": {
           "name": "Vexation",
           "color": "#237da1",
-          "description": "Endless poltergeists await you.",
-          "descriptionFormatted": "Endless poltergeists await you.",
+          "description": "Endless poltergeists await you",
+          "descriptionFormatted": "Endless poltergeists await you",
           "icon": "the_vault:gui/modifiers/vexation"
         }
       },
@@ -1797,6 +1797,20 @@
           "color": "#dc693c",
           "description": "Mobs have guaranteed critical strikes",
           "descriptionFormatted": "Mobs in this vault will always hit critical strikes",
+          "icon": "the_vault:gui/modifiers/destructive"
+        }
+      },
+      "the_vault:no_crit_mobs": {
+        "properties": {
+          "type": "crit_chance_additive",
+          "amount": -10.0,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Non-Lethal",
+          "color": "#dc693c",
+          "description": "Mobs cannot critically strike",
+          "descriptionFormatted": "Mobs cannot critically strike",
           "icon": "the_vault:gui/modifiers/destructive"
         }
       },
@@ -4507,7 +4521,7 @@
         "display": {
           "name": ":divine: Blessed",
           "color": "#3ffbf4",
-          "description": "Adds 20% of each God's affinity.",
+          "description": "20% to of each God's affinity.",
           "icon": "the_vault:gui/modifiers/god_token_wendarr"
         }
       },
