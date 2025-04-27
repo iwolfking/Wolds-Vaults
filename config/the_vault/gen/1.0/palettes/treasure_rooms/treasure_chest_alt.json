@@ -1,0 +1,25 @@
+{
+  "tile_processors": [
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "the_vault:treasure_chest",
+          "output": {
+            "the_vault:treasure_chest{Generated:0b,LootTable:\"the_vault:treasure_chest_lvl0\"}": 1
+          }
+        },
+        {
+          "level": 50,
+          "type": "weighted_target",
+          "target": "the_vault:treasure_chest",
+          "output": {
+            "the_vault:treasure_pedestal{Generated:0b,LootTable:\"the_vault:treasure_chest_stand_lvl50\"}": 1
+          }
+        }
+      ]
+    }
+  ]
+}

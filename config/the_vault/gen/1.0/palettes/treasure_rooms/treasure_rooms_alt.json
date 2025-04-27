@@ -1,0 +1,28 @@
+{
+    "tile_processors": [
+        {
+            "type": "reference",
+            "id": "the_vault:treasure_rooms/treasure_chest_alt"
+        },
+        {
+            "type": "leveled",
+            "levels": [
+                {
+                    "level": 0,
+                    "type": "weighted_target",
+                    "target": "minecraft:yellow_glazed_terracotta",
+                    "output": {
+                        "the_vault:treasure_sand{LootTable:\"the_vault:treasure_sand_lvl0\"}": 1
+                    }
+                }
+            ]
+        },
+        {
+            "type": "template_stack_tile",
+            "target": "@the_vault:vault_lootables",
+            "stack": [
+                "STRUCTURE_TREASURE_ROOM"
+            ]
+        }
+    ]
+}
