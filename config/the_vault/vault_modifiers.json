@@ -4449,7 +4449,8 @@
             "the_vault:noxp": 1,
             "the_vault:beginners_grace": 1,
             "the_vault:no_ores": 1,
-            "the_vault:no_reward": 1
+            "the_vault:no_reward": 1,
+            "the_vault:no_souls": 1
           }
         },
         "display": {
@@ -5260,6 +5261,20 @@
           "color": "#d89e01",
           "description": "No Vault Fruit can be used, and you take no durability damage.",
           "icon": "the_vault:gui/modifiers/raid"
+        }
+      },
+      "the_vault:weakened_powers": {
+        "properties": {
+          "children": {
+            "the_vault:weakened_cdr": 1,
+            "the_vault:mana_regen_down": 1
+          }
+        },
+        "display": {
+          "name": "Weakened Powers",
+          "color": "#bc2525",
+          "description": "Lose 20% Cooldown Reduction and 25% Mana Regeneration",
+          "icon": "the_vault:gui/modifiers/inert"
         }
       },
       "the_vault:wendarr_favour": {

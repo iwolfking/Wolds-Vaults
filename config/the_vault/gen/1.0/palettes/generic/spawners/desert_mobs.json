@@ -1,497 +1,682 @@
 {
-    "tile_processors": [
+  "tile_processors": [
+    {
+      "type": "leveled",
+      "levels": [
         {
-            "type": "leveled",
-            "levels": [
-                {
-                    "level": 0,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:skeleton_spawn_egg\", Count: 10}, {id: \"minecraft:creeper_spawn_egg\", Count: 6}, {id: \"the_vault:vault_fighter_0_egg\", Count: 15}, {id: \"minecraft:husk_spawn_egg\", Count: 2} ] } }": 1
-                    }
-                },
-                {
-                    "level": 20,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:skeleton_spawn_egg\", Count: 9}, {id: \"minecraft:creeper_spawn_egg\", Count: 5}, {id: \"the_vault:vault_fighter_0_egg\", Count: 14}, {id: \"the_vault:t1_skeleton_egg\", Count: 1}, {id: \"the_vault:t1_creeper_egg\", Count: 1}, {id: \"the_vault:vault_fighter_1_egg\", Count: 1}, {id: \"minecraft:husk_spawn_egg\", Count: 1}, {id: \"the_vault:t1_husk_egg\", Count: 1} ] } }": 1
-                    }
-                },
-                {
-                    "level": 25,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:skeleton_spawn_egg\", Count: 8}, {id: \"minecraft:creeper_spawn_egg\", Count: 5}, {id: \"the_vault:vault_fighter_0_egg\", Count: 10}, {id: \"the_vault:t1_skeleton_egg\", Count: 2}, {id: \"the_vault:t1_creeper_egg\", Count: 1}, {id: \"the_vault:vault_fighter_1_egg\", Count: 5}, {id: \"minecraft:husk_spawn_egg\", Count: 1}, {id: \"the_vault:t1_husk_egg\", Count: 1} ] } }": 1
-                    }
-                },
-                {
-                    "level": 30,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:skeleton_spawn_egg\", Count: 5}, {id: \"minecraft:creeper_spawn_egg\", Count: 3}, {id: \"the_vault:vault_fighter_0_egg\", Count: 7}, {id: \"the_vault:t1_skeleton_egg\", Count: 5}, {id: \"the_vault:t1_creeper_egg\", Count: 3}, {id: \"the_vault:vault_fighter_1_egg\", Count: 7}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"minecraft:husk_spawn_egg\", Count: 1}, {id: \"the_vault:t1_husk_egg\", Count: 1} ] } }": 1
-                    }
-                },
-                {
-                    "level": 40,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:skeleton_spawn_egg\", Count: 1}, {id: \"minecraft:creeper_spawn_egg\", Count: 1}, {id: \"the_vault:vault_fighter_0_egg\", Count: 1}, {id: \"the_vault:t1_skeleton_egg\", Count: 9}, {id: \"the_vault:t1_creeper_egg\", Count: 5}, {id: \"the_vault:vault_fighter_1_egg\", Count: 13}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"minecraft:husk_spawn_egg\", Count: 1}, {id: \"the_vault:t1_husk_egg\", Count: 2} ] } }": 1
-                    }
-                },
-                {
-                    "level": 50,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:t1_skeleton_egg\", Count: 9}, {id: \"the_vault:t1_creeper_egg\", Count: 5}, {id: \"the_vault:vault_fighter_1_egg\", Count: 13}, {id: \"the_vault:t2_skeleton_egg\", Count: 1}, {id: \"the_vault:t2_creeper_egg\", Count: 1}, {id: \"the_vault:vault_fighter_2_egg\", Count: 1}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"the_vault:t1_husk_egg\", Count: 2}, {id: \"the_vault:t2_husk_egg\", Count: 1} ] } }": 1
-                    }
-                },
-                {
-                    "level": 55,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:t1_skeleton_egg\", Count: 7}, {id: \"the_vault:t1_creeper_egg\", Count: 5}, {id: \"the_vault:vault_fighter_1_egg\", Count: 12}, {id: \"the_vault:t2_skeleton_egg\", Count: 3}, {id: \"the_vault:t2_creeper_egg\", Count: 1}, {id: \"the_vault:vault_fighter_2_egg\", Count: 3}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"the_vault:t1_husk_egg\", Count: 1}, {id: \"the_vault:t2_husk_egg\", Count: 1} ] } }": 1
-                    }
-                },
-                {
-                    "level": 60,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:t1_skeleton_egg\", Count: 5}, {id: \"the_vault:t1_creeper_egg\", Count: 3}, {id: \"the_vault:vault_fighter_1_egg\", Count: 7}, {id: \"the_vault:t2_skeleton_egg\", Count: 5}, {id: \"the_vault:t2_creeper_egg\", Count: 3}, {id: \"the_vault:vault_fighter_2_egg\", Count: 7}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"the_vault:t1_husk_egg\", Count: 1}, {id: \"the_vault:t2_husk_egg\", Count: 2} ] } }": 1
-                    }
-                },
-                {
-                    "level": 65,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:t1_skeleton_egg\", Count: 3}, {id: \"the_vault:t1_creeper_egg\", Count: 1}, {id: \"the_vault:t2_skeleton_egg\", Count: 7}, {id: \"the_vault:t2_creeper_egg\", Count: 5}, {id: \"the_vault:mummy_t0_egg\", Count: 3}, {id: \"the_vault:t3_skeleton_egg\", Count: 1}, {id: \"the_vault:t3_creeper_egg\", Count: 1}, {id: \"the_vault:vault_fighter_2_egg\", Count: 12}, {id: \"the_vault:vault_fighter_4_egg\", Count: 3}, {id: \"rottencreatures:mummy_spawn_egg\", Count: 1}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"the_vault:t2_husk_egg\", Count: 3} ] } }": 1
-                    }
-                },
-                {
-                    "level": 70,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:t0_mummy_egg\", Count: 6}, {id: \"the_vault:t2_skeleton_egg\", Count: 9}, {id: \"the_vault:t2_creeper_egg\", Count: 5}, {id: \"the_vault:t3_skeleton_egg\", Count: 1}, {id: \"the_vault:t3_creeper_egg\", Count: 1}, {id: \"the_vault:vault_fighter_2_egg\", Count: 20}, {id: \"the_vault:vault_fighter_4_egg\", Count: 10}, {id: \"the_vault:t3_piglin_egg\", Count: 1}, {id: \"rottencreatures:mummy_spawn_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"the_vault:t2_husk_egg\", Count: 3} ] } }": 1
-                    }
-                },
-                {
-                    "level": 80,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:t0_mummy_egg\", Count: 8}, {id: \"the_vault:t1_mummy_egg\", Count: 4}, {id: \"the_vault:t2_skeleton_egg\", Count: 8}, {id: \"the_vault:t2_creeper_egg\", Count: 4}, {id: \"the_vault:t3_skeleton_egg\", Count: 2}, {id: \"the_vault:t3_creeper_egg\", Count: 1}, {id: \"the_vault:vault_fighter_2_egg\", Count: 20}, {id: \"the_vault:vault_fighter_4_egg\", Count: 20}, {id: \"the_vault:t3_piglin_egg\", Count: 2}, {id: \"rottencreatures:mummy_spawn_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 2}, {id: \"the_vault:t2_husk_egg\", Count: 3} ] } }": 1
-                    }
-                },
-                {
-                    "level": 90,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:t0_mummy_egg\", Count: 10}, {id: \"the_vault:t1_mummy_egg\", Count: 6}, {id: \"the_vault:t2_mummy_egg\", Count: 1}, {id: \"the_vault:t2_skeleton_egg\", Count: 8}, {id: \"the_vault:t2_creeper_egg\", Count: 4}, {id: \"the_vault:t3_skeleton_egg\", Count: 2}, {id: \"the_vault:t3_creeper_egg\", Count: 1}, {id: \"the_vault:vault_fighter_2_egg\", Count: 5}, {id: \"the_vault:vault_fighter_4_egg\", Count: 10}, {id: \"the_vault:t3_piglin_egg\", Count: 3}, {id: \"rottencreatures:mummy_spawn_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 3}, {id: \"the_vault:t2_husk_egg\", Count: 3} ] } }": 1
-                    }
-                },
-                {
-                    "level": 100,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:t0_mummy_egg\", Count: 10}, {id: \"the_vault:t1_mummy_egg\", Count: 7}, {id: \"the_vault:t2_mummy_egg\", Count: 2}, {id: \"the_vault:t2_skeleton_egg\", Count: 10}, {id: \"the_vault:t2_creeper_egg\", Count: 6}, {id: \"the_vault:t3_skeleton_egg\", Count: 2}, {id: \"the_vault:t3_creeper_egg\", Count: 1}, {id: \"the_vault:vault_fighter_4_egg\", Count: 15}, {id: \"the_vault:t3_piglin_egg\", Count: 4}, {id: \"rottencreatures:mummy_spawn_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 4}, {id: \"the_vault:t2_husk_egg\", Count: 3} ] } }": 1
-                    }
-                }
-            ]
-        },
-        {
-            "type": "leveled",
-            "levels": [
-                {
-                    "level": 0,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:tank}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:t3_husk": 4
-                          },
-                          "weight": 1
-                        }
-                      ]
-                },
-                {
-                    "level": 65,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:tank}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:t3_husk": 11,
-                            "rottencreatures:mummy": 1,
-                            "the_vault:t3_piglin": 1
-                          },
-                          "weight": 1
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "leveled",
-            "levels": [
-                {
-                    "level": 0,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:assassin}",
-                    "output": [
-                        {
-                          "elements": {
-                            "minecraft:skeleton": 6,
-                            "minecraft:creeper": 2
-                          },
-                          "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "level": 20,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:assassin}",
-                    "output": [
-                        {
-                          "elements": {
-                            "minecraft:skeleton": 12,
-                            "minecraft:creeper": 3,
-                            "the_vault:t1_skeleton": 4,
-                            "the_vault:t1_creeper": 1
-                          },
-                          "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "level": 30,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:assassin}",
-                    "output": [
-                        {
-                          "elements": {
-                            "minecraft:skeleton": 8,
-                            "minecraft:creeper": 2,
-                            "the_vault:t1_skeleton": 8,
-                            "the_vault:t1_creeper": 2
-                          },
-                          "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "level": 40,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:assassin}",
-                    "output": [
-                        {
-                          "elements": {
-                            "minecraft:skeleton": 1,
-                            "minecraft:creeper": 1,
-                            "the_vault:t1_skeleton": 8,
-                            "the_vault:t1_creeper": 3
-                          },
-                          "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "level": 50,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:assassin}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:t1_skeleton": 12,
-                            "the_vault:t1_creeper": 3,
-                            "the_vault:t2_skeleton": 4,
-                            "the_vault:t2_creeper": 1
-                          },
-                          "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "level": 60,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:assassin}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:t1_skeleton": 8,
-                            "the_vault:t1_creeper": 2,
-                            "the_vault:t2_skeleton": 8,
-                            "the_vault:t2_creeper": 2
-                          },
-                          "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "level": 65,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:assassin}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:t3_skeleton": 1,
-                            "the_vault:t3_creeper": 1,
-                            "the_vault:t2_skeleton": 10,
-                            "the_vault:t2_creeper": 4
-                          },
-                          "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "level": 70,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:assassin}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:t3_skeleton": 1,
-                            "the_vault:t3_creeper": 1,
-                            "the_vault:t2_skeleton": 9,
-                            "the_vault:t2_creeper": 4
-                          },
-                          "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "level": 80,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:assassin}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:t3_skeleton": 1,
-                            "the_vault:t3_creeper": 1,
-                            "the_vault:t2_skeleton": 8,
-                            "the_vault:t2_creeper": 4
-                          },
-                          "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "level": 90,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:assassin}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:t3_skeleton": 2,
-                            "the_vault:t3_creeper": 2,
-                            "the_vault:t2_skeleton": 7,
-                            "the_vault:t2_creeper": 4
-                          },
-                          "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "level": 100,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:assassin}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:t3_skeleton": 3,
-                            "the_vault:t3_creeper": 3,
-                            "the_vault:t2_skeleton": 6,
-                            "the_vault:t2_creeper": 3
-                          },
-                          "weight": 1
-                        }
-                     ]
-                  }
-              ]
-          },
-          {
-              "type": "leveled",
-              "levels": [
-                  {
-                      "level": 0,
-                      "type": "spawner",
-                      "target": "ispawner:spawner{group:horde}",
-                      "output": [
-                          {
-                            "elements": {
-                              "minecraft:husk": 12
-                            },
-                            "weight": 1
-                          }
-                        ]
-                  },
-                  {
-                      "level": 20,
-                      "type": "spawner",
-                      "target": "ispawner:spawner{group:horde}",
-                      "output": [
-                          {
-                            "elements": {
-                              "minecraft:husk": 12
-                            },
-                            "weight": 1
-                          }
-                        ]
-                  },
-                  {
-                      "level": 25,
-                      "type": "spawner",
-                      "target": "ispawner:spawner{group:horde}",
-                      "output": [
-                          {
-                            "elements": {
-                              "minecraft:husk": 12
-                            },
-                            "weight": 1
-                          }
-                        ]
-                  },
-                  {
-                      "level": 30,
-                      "type": "spawner",
-                      "target": "ispawner:spawner{group:horde}",
-                      "output": [
-                          {
-                            "elements": {
-                              "minecraft:husk": 12
-                            },
-                            "weight": 1
-                          }
-                        ]
-                  },
-                  {
-                      "level": 40,
-                      "type": "spawner",
-                      "target": "ispawner:spawner{group:horde}",
-                      "output": [
-                          {
-                            "elements": {
-                              "minecraft:husk": 12
-                            },
-                            "weight": 1
-                          }
-                        ]
-                  },
-                  {
-                      "level": 50,
-                      "type": "spawner",
-                      "target": "ispawner:spawner{group:horde}",
-                      "output": [
-                          {
-                            "elements": {
-                              "minecraft:husk": 38,
-                              "the_vault:t1_husk": 4
-                            },
-                            "weight": 1
-                          }
-                        ]
-                  },
-                  {
-                      "level": 55,
-                      "type": "spawner",
-                      "target": "ispawner:spawner{group:horde}",
-                      "output": [
-                          {
-                            "elements": {
-                              "minecraft:husk": 30,
-                              "the_vault:t1_husk": 15
-                            },
-                            "weight": 1
-                          }
-                        ]
-                  },
-                  {
-                      "level": 60,
-                      "type": "spawner",
-                      "target": "ispawner:spawner{group:horde}",
-                      "output": [
-                          {
-                            "elements": {
-                              "minecraft:husk": 12,
-                              "the_vault:t1_husk": 34
-                            },
-                            "weight": 1
-                          }
-                        ]
-                  },
-                  {
-                      "level": 65,
-                      "type": "spawner",
-                      "target": "ispawner:spawner{group:horde}",
-                      "output": [
-                          {
-                            "elements": {
-                              "the_vault:t2_husk": 4,
-                              "the_vault:t1_husk": 38
-                            },
-                            "weight": 1
-                          }
-                        ]
-                  },
-                  {
-                      "level": 70,
-                      "type": "spawner",
-                      "target": "ispawner:spawner{group:horde}",
-                      "output": [
-                          {
-                            "elements": {
-                              "the_vault:t2_husk": 15,
-                              "the_vault:t1_husk": 30
-                            },
-                            "weight": 1
-                          }
-                        ]
-                  },
-                  {
-                      "level": 80,
-                      "type": "spawner",
-                      "target": "ispawner:spawner{group:horde}",
-                      "output": [
-                          {
-                            "elements": {
-                              "the_vault:t1_husk": 20,
-                              "the_vault:t2_husk": 20
-                            },
-                            "weight": 1
-                          }
-                        ]
-                  },
-                  {
-                      "level": 90,
-                      "type": "spawner",
-                      "target": "ispawner:spawner{group:horde}",
-                      "output": [
-                          {
-                            "elements": {
-                              "the_vault:t1_husk": 5,
-                              "the_vault:t2_husk": 20
-                            },
-                            "weight": 1
-                          }
-                        ]
-                  }
-              ]
-          },
-        {
-            "type": "reference",
-            "id": "the_vault:generic/spawners/group_settings"
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner",
+          "output": {
+            "ispawner:spawner{ group:horde }": 52,
+            "ispawner:spawner{ group:assassin }": 35,
+            "ispawner:spawner{ group:tank }": 5,
+            "ispawner:spawner{ group:dwellers }": 8
+          }
         }
-    ]
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter": 15
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter": 15,
+                "the_vault:vault_fighter_1": 15
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 40,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_1": 15,
+                "the_vault:vault_fighter_2": 15
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_2": 15,
+                "the_vault:vault_fighter_3": 15
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_3": 15,
+                "the_vault:vault_fighter_4": 15
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 100,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_4": 15
+              },
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:tank}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t3_husk": 4
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:tank}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t3_husk": 11,
+                "rottencreatures:mummy": 1
+              },
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "minecraft:skeleton": 6,
+                "minecraft:creeper": 2
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "minecraft:skeleton": 12,
+                "minecraft:creeper": 3,
+                "the_vault:t1_skeleton": 4,
+                "the_vault:t1_creeper": 1
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "minecraft:skeleton": 8,
+                "minecraft:creeper": 2,
+                "the_vault:t1_skeleton": 8,
+                "the_vault:t1_creeper": 2
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 40,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "minecraft:skeleton": 1,
+                "minecraft:creeper": 1,
+                "the_vault:t1_skeleton": 8,
+                "the_vault:t1_creeper": 3
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t1_skeleton": 12,
+                "the_vault:t1_creeper": 3,
+                "the_vault:t2_skeleton": 4,
+                "the_vault:t2_creeper": 1
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t1_skeleton": 8,
+                "the_vault:t1_creeper": 2,
+                "the_vault:t2_skeleton": 8,
+                "the_vault:t2_creeper": 2
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t3_skeleton": 1,
+                "the_vault:t3_creeper": 1,
+                "the_vault:t2_skeleton": 10,
+                "the_vault:t2_creeper": 4
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t3_skeleton": 1,
+                "the_vault:t3_creeper": 1,
+                "the_vault:t2_skeleton": 9,
+                "the_vault:t2_creeper": 4
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t3_skeleton": 1,
+                "the_vault:t3_creeper": 1,
+                "the_vault:t2_skeleton": 8,
+                "the_vault:t2_creeper": 4
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 90,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t3_skeleton": 2,
+                "the_vault:t3_creeper": 2,
+                "the_vault:t2_skeleton": 7,
+                "the_vault:t2_creeper": 4
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 100,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t3_skeleton": 3,
+                "the_vault:t3_creeper": 3,
+                "the_vault:t2_skeleton": 6,
+                "the_vault:t2_creeper": 3
+              },
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "minecraft:husk": 64
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "minecraft:husk": 64
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "minecraft:husk": 64
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "minecraft:husk": 64
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 40,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "minecraft:husk": 64
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "minecraft:husk": 38,
+                "the_vault:t1_husk": 4
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "minecraft:husk": 30,
+                "the_vault:t1_husk": 15
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "minecraft:husk": 12,
+                "the_vault:t1_husk": 34
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t2_husk": 4,
+                "the_vault:t1_husk": 38
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t2_husk": 15,
+                "the_vault:t1_husk": 30
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t1_husk": 30,
+                "the_vault:t2_husk": 30
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 90,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t1_husk": 15,
+                "the_vault:t2_husk": 60
+              },
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/spawners/group_settings"
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 40,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 60,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 80,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 100,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 40,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 10, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 60,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 12, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 7, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 80,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 7, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 9, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 100,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 9, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 10, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 40,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 60,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 80,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 100,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
+    }
+  ]
 }

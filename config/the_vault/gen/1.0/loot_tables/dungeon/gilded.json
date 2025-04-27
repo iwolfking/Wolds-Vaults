@@ -10,7 +10,7 @@
         { "weight": 1,
           "pool": [
             {
-                "weight": 50,
+                "weight": 70,
                 "item": {
                 "id": "the_vault:jewel_pouch",
                 "count": {
@@ -21,9 +21,9 @@
                 }
             },
             {
-              "weight": 45,
+              "weight": 10,
               "item": {
-              "id": "the_vault:gemstone",
+              "id": "the_vault:key_piece",
               "count": {
                 "type": "uniform",
                 "min": 1,
@@ -32,7 +32,7 @@
               }
             },
             {
-              "weight": 5,
+              "weight": 20,
               "item": {
                 "id": "the_vault:magnet",
                 "nbt": {
@@ -43,6 +43,17 @@
                   "min": 1,
                   "max": 1
                   }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+              "id": "the_vault:trinket",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 1
+                }
               }
             }
           ]

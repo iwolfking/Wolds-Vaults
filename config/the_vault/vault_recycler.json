@@ -17,6 +17,7 @@
       "maxCount": 8
     },
     "extraOutput1": {
+      "conditionalOutputs": {},
       "chance": 0.2,
       "stack": {
         "item": "minecraft:netherite_scrap"
@@ -25,6 +26,22 @@
       "maxCount": 1
     },
     "extraOutput2": {
+      "conditionalOutputs": [
+        [
+          {
+            "rarity": "OMEGA",
+            "isCrafted": false
+          },
+          {
+            "chance": 0.25,
+            "stack": {
+              "item": "the_vault:adaptive_focus"
+            },
+            "minCount": 1,
+            "maxCount": 1
+          }
+        ]
+      ],
       "chance": 0.0,
       "stack": {
         "item": "the_vault:faceted_focus"
@@ -43,6 +60,7 @@
       "maxCount": 8
     },
     "extraOutput1": {
+      "conditionalOutputs": {},
       "chance": 0.2,
       "stack": {
         "item": "minecraft:netherite_scrap"
@@ -51,6 +69,7 @@
       "maxCount": 1
     },
     "extraOutput2": {
+      "conditionalOutputs": {},
       "chance": 0.0,
       "stack": {
         "item": "the_vault:faceted_focus"
@@ -69,7 +88,8 @@
       "maxCount": 8
     },
     "extraOutput1": {
-      "chance": 0.2,
+      "conditionalOutputs": {},
+      "chance": 0.0,
       "stack": {
         "item": "minecraft:netherite_scrap"
       },
@@ -77,6 +97,7 @@
       "maxCount": 1
     },
     "extraOutput2": {
+      "conditionalOutputs": {},
       "chance": 0.0,
       "stack": {
         "item": "the_vault:faceted_focus"
@@ -95,6 +116,7 @@
       "maxCount": 8
     },
     "extraOutput1": {
+      "conditionalOutputs": {},
       "chance": 0.2,
       "stack": {
         "item": "minecraft:netherite_scrap"
@@ -103,6 +125,7 @@
       "maxCount": 1
     },
     "extraOutput2": {
+      "conditionalOutputs": {},
       "chance": 0.0,
       "stack": {
         "item": "the_vault:faceted_focus"
@@ -121,6 +144,7 @@
       "maxCount": 1
     },
     "extraOutput1": {
+      "conditionalOutputs": {},
       "chance": 0.0,
       "stack": {
         "item": "minecraft:air"
@@ -129,6 +153,7 @@
       "maxCount": 3
     },
     "extraOutput2": {
+      "conditionalOutputs": {},
       "chance": 0.0,
       "stack": {
         "item": "minecraft:air"
@@ -142,12 +167,14 @@
       "chance": 1.0,
       "stack": {
         "item": "the_vault:silver_scrap"
+        
       },
       "minCount": 5,
       "maxCount": 8
     },
     "extraOutput1": {
-      "chance": 0.75,
+      "conditionalOutputs": {},
+      "chance": 0.33,
       "stack": {
         "item": "the_vault:gemstone"
       },
@@ -169,11 +196,12 @@
       "stack": {
         "item": "the_vault:inscription_piece"
       },
-      "minCount": 4,
-      "maxCount": 8
+      "minCount": 2,
+      "maxCount": 4
     },
     "extraOutput1": {
-      "chance": 0.5,
+      "conditionalOutputs": {},
+      "chance": 0.0,
       "stack": {
         "item": "minecraft:air"
       },
@@ -181,7 +209,8 @@
       "maxCount": 1
     },
     "extraOutput2": {
-      "chance": 0.1,
+      "conditionalOutputs": {},
+      "chance": 0.0,
       "stack": {
         "item": "minecraft:air"
       },

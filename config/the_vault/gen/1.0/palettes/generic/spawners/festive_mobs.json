@@ -5,107 +5,85 @@
             "levels": [
                 {
                     "level": 0,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 20} ] } }": 1
-                    }
+                    "type": "spawner",
+                    "target": "ispawner:spawner{group:dwellers}",
+                    "output": [
+                        {
+                            "elements": {
+                                "the_vault:vault_fighter": 15
+                            },
+                            "weight": 1
+                        }
+                    ]
                 },
                 {
                     "level": 20,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 19}, {id: \"the_vault:vault_fighter_1_egg\", Count: 1} ] } }": 1
-                    }
-                },
-                {
-                    "level": 25,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 15}, {id: \"the_vault:vault_fighter_1_egg\", Count: 5} ] } }": 1
-                    }
-                },
-                {
-                    "level": 30,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [{id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 10}, {id: \"the_vault:vault_fighter_1_egg\", Count: 10} ] } }": 1
-                    }
+                    "type": "spawner",
+                    "target": "ispawner:spawner{group:dwellers}",
+                    "output": [
+                        {
+                            "elements": {
+                                "the_vault:vault_fighter": 15,
+                                "the_vault:vault_fighter_1": 15
+                            },
+                            "weight": 1
+                        }
+                    ]
                 },
                 {
                     "level": 40,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 2}, {id: \"the_vault:vault_fighter_1_egg\", Count: 18} ] } }": 1
-                    }
-                },
-                {
-                    "level": 50,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_1_egg\", Count: 19}, {id: \"the_vault:vault_fighter_2_egg\", Count: 1} ] } }": 1
-                    }
-                },
-                {
-                    "level": 55,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_1_egg\", Count: 15}, {id: \"the_vault:vault_fighter_2_egg\", Count: 5} ] } }": 1
-                    }
+                    "type": "spawner",
+                    "target": "ispawner:spawner{group:dwellers}",
+                    "output": [
+                        {
+                            "elements": {
+                                "the_vault:vault_fighter_1": 15,
+                                "the_vault:vault_fighter_2": 15
+                            },
+                            "weight": 1
+                        }
+                    ]
                 },
                 {
                     "level": 60,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_1_egg\", Count: 10}, {id: \"the_vault:vault_fighter_2_egg\", Count: 10} ] } }": 1
-                    }
-                },
-                {
-                    "level": 65,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_1_egg\", Count: 5}, {id: \"the_vault:vault_fighter_2_egg\", Count: 15}, {id: \"the_vault:vault_fighter_4_egg\", Count: 5} ] } }": 1
-                    }
-                },
-                {
-                    "level": 70,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_2_egg\", Count: 20}, {id: \"the_vault:vault_fighter_4_egg\", Count: 10}, {id: \"the_vault:t3_piglin_egg\", Count: 1} ] } }": 1
-                    }
+                    "type": "spawner",
+                    "target": "ispawner:spawner{group:dwellers}",
+                    "output": [
+                        {
+                            "elements": {
+                                "the_vault:vault_fighter_2": 15,
+                                "the_vault:vault_fighter_3": 15
+                            },
+                            "weight": 1
+                        }
+                    ]
                 },
                 {
                     "level": 80,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_2_egg\", Count: 20}, {id: \"the_vault:vault_fighter_4_egg\", Count: 20}, {id: \"the_vault:t3_piglin_egg\", Count: 2} ] } }": 1
-                    }
-                },
-                {
-                    "level": 90,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_2_egg\", Count: 10}, {id: \"the_vault:vault_fighter_4_egg\", Count: 20}, {id: \"the_vault:t3_piglin_egg\", Count: 3} ] } }": 1
-                    }
+                    "type": "spawner",
+                    "target": "ispawner:spawner{group:dwellers}",
+                    "output": [
+                        {
+                            "elements": {
+                                "the_vault:vault_fighter_3": 15,
+                                "the_vault:vault_fighter_4": 15
+                            },
+                            "weight": 1
+                        }
+                    ]
                 },
                 {
                     "level": 100,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 60}, {id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 10}, {id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_4_egg\", Count: 20}, {id: \"the_vault:t3_piglin_egg\", Count: 4} ] } }": 1
-                    }
+                    "type": "spawner",
+                    "target": "ispawner:spawner{group:dwellers}",
+                    "output": [
+                        {
+                            "elements": {
+                                "the_vault:vault_fighter_4": 15
+                            },
+                            "weight": 1
+                        }
+                    ]
                 }
             ]
         },
@@ -118,10 +96,10 @@
                     "target": "ispawner:spawner{group:tank}",
                     "output": [
                         {
-                          "elements": {
-                            "the_vault:vault_red_gummy_soldier": 1
-                          },
-                          "weight": 1
+                            "elements": {
+                                "the_vault:vault_red_gummy_soldier": 1
+                            },
+                            "weight": 1
                         }
                     ]
                 },
@@ -131,11 +109,11 @@
                     "target": "ispawner:spawner{group:tank}",
                     "output": [
                         {
-                          "elements": {
-                            "the_vault:vault_red_gummy_soldier": 10,
-                            "the_vault:t3_piglin": 1
-                          },
-                          "weight": 1
+                            "elements": {
+                                "the_vault:vault_red_gummy_soldier": 10,
+                                "the_vault:t3_piglin": 1
+                            },
+                            "weight": 1
                         }
                     ]
                 }
@@ -150,10 +128,10 @@
                     "target": "ispawner:spawner{group:assassin}",
                     "output": [
                         {
-                          "elements": {
-                            "the_vault:vault_blue_gummy_soldier": 1
-                          },
-                          "weight": 1
+                            "elements": {
+                                "the_vault:vault_blue_gummy_soldier": 1
+                            },
+                            "weight": 1
                         }
                     ]
                 }
@@ -168,10 +146,10 @@
                     "target": "ispawner:spawner{group:horde}",
                     "output": [
                         {
-                          "elements": {
-                            "the_vault:vault_yellow_gummy_soldier": 12
-                          },
-                          "weight": 1
+                            "elements": {
+                                "the_vault:vault_yellow_gummy_soldier": 12
+                            },
+                            "weight": 1
                         }
                     ]
                 }

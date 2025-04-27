@@ -1,0 +1,82 @@
+{
+  "tile_processors": [
+    {
+      "type": "placeholder",
+      "target": "COIN_STACKS",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 1.0,
+          "success": {
+            "the_vault:coin_pile[size=6,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl0\"}": 16,
+            "the_vault:coin_pile[size=7,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl0\"}": 4
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 20,
+          "probability": 1.0,
+          "success": {
+            "the_vault:coin_pile[size=6,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl0\"}": 10,
+            "the_vault:coin_pile[size=7,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl0\"}": 4
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 30,
+          "probability": 1.0,
+          "success": {
+            "the_vault:coin_pile[size=6,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl30\"}": 6,
+            "the_vault:coin_pile[size=7,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl30\"}": 4
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "placeholder",
+      "target": "COIN_STACKS_WATERLOGGED",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 1.0,
+          "success": {
+            "the_vault:coin_pile[size=6,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl0\"}": 16,
+            "the_vault:coin_pile[size=7,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl0\"}": 4
+          },
+          "failure": {
+            "minecraft:water": 1
+          }
+        },
+        {
+          "level": 20,
+          "probability": 1.0,
+          "success": {
+            "the_vault:coin_pile[size=6,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl0\"}": 10,
+            "the_vault:coin_pile[size=7,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl0\"}": 4
+          },
+          "failure": {
+            "minecraft:water": 1
+          }
+        },
+        {
+          "level": 30,
+          "probability": 1.0,
+          "success": {
+            "the_vault:coin_pile[size=6,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl30\"}": 6,
+            "the_vault:coin_pile[size=7,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl30\"}": 4
+          },
+          "failure": {
+            "minecraft:water": 1
+          }
+        }
+      ]
+    }
+  ]
+}

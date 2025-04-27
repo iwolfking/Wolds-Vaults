@@ -922,6 +922,28 @@
       "modifierTags": [],
       "weight": 1
     },
+    "the_vault:frostguards": {
+      "name": "Frostguards",
+      "model": "the_vault:gear/armor/frost_guard/boots",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_armor",
+          "the_vault:base_movement"
+        ],
+        "PREFIX": [
+          "the_vault:u_coldsnap",
+          "the_vault:u_mod_armor"
+        ],
+        "SUFFIX": [
+          "the_vault:u_chilled_effect_trail"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
     "woldsvaults:young_kitsune": {
       "name": "Young Kitsune Blade",
       "model": "the_vault:gear/sword/young_kitsune",
@@ -1107,6 +1129,9 @@
     },
     "the_vault:frozen_throne": {
       "the_vault:frozen_throne": 1
+    },
+    "the_vault:frostguards": {
+      "the_vault:frostguards": 1
     }
   }
 }

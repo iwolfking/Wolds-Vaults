@@ -46,6 +46,70 @@
                 {
                     "level": 0,
                     "type": "weighted_target",
+                    "target": "ispawner:spawner{group:dwellers}",
+                    "output": {
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 50 } } }": 1,
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 50 } } }": 1
+                    }
+                },
+                {
+                    "level": 20,
+                    "type": "weighted_target",
+                    "target": "ispawner:spawner{group:dwellers}",
+                    "output": {
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 50 } } }": 1,
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 50 } } }": 1,
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 50 } } }": 1
+                    }
+                },
+                {
+                    "level": 40,
+                    "type": "weighted_target",
+                    "target": "ispawner:spawner{group:dwellers}",
+                    "output": {
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 50 } } }": 1,
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 50 } } }": 1,
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 50 } } }": 1
+                    }
+                },
+                {
+                    "level": 60,
+                    "type": "weighted_target",
+                    "target": "ispawner:spawner{group:dwellers}",
+                    "output": {
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 50 } } }": 2,
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 50 } } }": 2,
+                        "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 2, SpawnDelay: 50 } } }": 1
+                    }
+                },
+                {
+                    "level": 80,
+                    "type": "weighted_target",
+                    "target": "ispawner:spawner{group:dwellers}",
+                    "output": {
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 50 } } }": 2,
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 50 } } }": 2,
+                        "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 2, SpawnDelay: 50 } } }": 1
+                    }
+                },
+                {
+                    "level": 100,
+                    "type": "weighted_target",
+                    "target": "ispawner:spawner{group:dwellers}",
+                    "output": {
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 50 } } }": 2,
+                        "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 50 } } }": 2,
+                        "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 2, SpawnDelay: 50 } } }": 1
+                    }
+                }
+            ]
+        },
+        {
+            "type": "leveled",
+            "levels": [
+                {
+                    "level": 0,
+                    "type": "weighted_target",
                     "target": "ispawner:spawner{group:assassin}",
                     "output": {
                         "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1

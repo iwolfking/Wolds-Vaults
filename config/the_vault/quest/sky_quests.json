@@ -205,7 +205,7 @@
           },
           {
             "text": "core metal",
-            "color": "$qhighlight"
+            "color": "$text"
           },
           {
             "text": " of Vault Hunters!\n\n",
@@ -601,7 +601,7 @@
           },
           {
             "text": " Black Market",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": ".\nHowever, all of this loot can quickly become overwhelming, and any good hunter needs good loot organisation!\n\n",
@@ -613,7 +613,7 @@
           },
           {
             "text": "Wooden Chests",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": ", however, a ",
@@ -621,7 +621,7 @@
           },
           {
             "text": "Pouch",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": " is a much better and more reliable way to collect your loot.\n",
@@ -645,7 +645,7 @@
           },
           {
             "text": "Backpack Settings",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": " tab inside it. The ",
@@ -653,7 +653,7 @@
           },
           {
             "text": "Slot Memory Settings",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": " tab allows you to set a filter for your pouch to either whitelist or blacklist certain content to go inside it. These filters can also be saved and reapplied to other pouches later on. We recommend you play around with these settings until you understand the system.\n\n",
@@ -665,7 +665,7 @@
           },
           {
             "text": "The Pickup Upgrade",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": " which will make the pouch automatically pick up items from the floor, when a chest is broken or items are thrown out of it\n",
@@ -673,7 +673,7 @@
           },
           {
             "text": "The Void Upgrade",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": " which can be configured to void (delete) any excess items that can't fit in your pouch. Voiding items may sound weird, but can be extremely useful to improve your early game looting. These are expensive to craft however, so use the one from this quest wisely!\n\n",
@@ -1069,7 +1069,11 @@
         "items": [
           {
             "item": "the_vault:silver_scrap",
-            "amount": 64
+            "amount": 512
+          },
+          {
+            "item": "the_vault:gemstone",
+            "amount": 8
           }
         ],
         "vaultExp": 0
@@ -1406,7 +1410,7 @@
       "descriptionData": {
         "description": [
         {
-          "text": "Seals are especially handy items as they let you set the objective of the vault. This way even if you are lower level you will be able to play any objective at any time. To use a seal apply it to a crystal in a anvil or in the crystal workbench",
+          "text": "Seals are especially handy items as they let you set the objective of the vault. This way even if you are lower level you will be able to play any objective at any time. To use a seal apply it to a crystal in the crystal workbench",
           "color": "$text"
         },
         {
@@ -1933,7 +1937,7 @@
           },
           {
             "text": "identify",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": " all unidentified vault gear in your inventory instantly.",
@@ -2016,7 +2020,7 @@
           },
           {
             "text": "Casual Mode",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": " dying in a vault no longer keeps your items, you will learn more about that in the ",
@@ -2024,7 +2028,7 @@
           },
           {
             "text": "Spirit Extractor",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": " quest.\n\n",
@@ -2036,7 +2040,7 @@
           },
           {
             "text": "Vendoors",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": " and ",
@@ -2044,7 +2048,7 @@
           },
           {
             "text": "Dungeon Doors",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": " inside the vault, as well as additional loot and new mobs!\n\n",
@@ -2125,14 +2129,6 @@
           },
           {
             "item": "the_vault:deluxe_cheese_burger",
-            "amount": 1
-          },
-          {
-            "item": "the_vault:crispy_deluxe_cheese_burger",
-            "amount": 1
-          },
-          {
-            "item": "the_vault:cheese_burger_feast",
             "amount": 1
           }
         ],
@@ -2512,6 +2508,68 @@
       }
     },
     {
+      "type": "mining",
+      "id": "temporal_shards",
+      "name": "Pylons & Temporal Shards",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "You may already have come across ",
+            "color": "$text"
+          },
+          {
+            "text": "Pylons",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " inside your vaults. These powerful floating crystals, when right clicked, gives you a limited buff depending on the pylon.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "You can however choose to destroy the Pylon and its power, instead of consuming it, by breaking it with your tool. It does takes a long time to break it, but when done there is a small chance you will have it yield a ",
+            "color": "$text"
+          },
+          {
+            "text": "Temporal Shard",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". This is a very powerful item that when identified, gives you a consumable item, that adds a ",
+            "color": "$text"
+          },
+          {
+            "text": "Temporal Modifier",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " to the vault it is consumed in!\n\nTemporal Modifiers are super strong, and lasts for 5 minutes, and when used correctly they can completely change the outcome of your vault or your current objective!",
+            "color": "$text"
+          },
+          {
+            "text": "!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Break a Pylon to have a chance of getting a Temporal Shard",
+            "color": "$heal"
+          }
+        ]        
+      },
+      "icon": "the_vault:gui/quests/temporal_shard",
+      "targetId": "the_vault:pylon",
+      "targetProgress": 1,
+      "unlockedBy": "crystal_workbench",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:temporal_shard",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
       "type": "collection",
       "id": "artifact",
       "name": "Artifacts",
@@ -2662,7 +2720,7 @@
           },
           {
             "text": "triple jump",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": " or ",
@@ -2670,7 +2728,7 @@
           },
           {
             "text": "climb walls",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": ".\n\n",
@@ -2726,7 +2784,7 @@
           },
           {
             "text": "Vault Forge",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": ".\nA Crafted Trinket will always have 12 uses/charges, while a looted trinket randomly rolls 20 to 30 uses/charges.",
@@ -2738,7 +2796,7 @@
           },
           {
             "text": "Trinket Scrap",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": ".\nThe chance to get a Trinket Scrap is determined by how many uses/charges the trinket have left when being scrapped; A fully charged trinket will always yield the scrap, while a completely depleted one will never yield the scrap.",
@@ -2776,7 +2834,7 @@
           },
           {
             "text": "Trinket",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": ", you can craft your own in the ",
@@ -2784,7 +2842,7 @@
           },
           {
             "text": "Trinket Forge",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": ".\n\n",
@@ -2796,7 +2854,7 @@
           },
           {
             "text": "Trinket Scraps",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": " which you can get in the ",
@@ -2804,7 +2862,7 @@
           },
           {
             "text": "Vault Recycler",
-            "color": "$name"
+            "color": "$qhighlight"
           },
           {
             "text": ".\n\n",
@@ -3573,39 +3631,63 @@
             "color": "$text"
           },
           {
-            "text": "After level 40, you can find ",
+            "text": "Now that you have reached level 40, you may, however very rarely, come across ",
             "color": "$text"
           },
           {
-            "text": "charms",
+            "text": "God Charms",
             "color": "$qhighlight"
           },
           {
-            "text": " rarely inside ",
+            "text": ". They can be found inside ",
             "color": "$text"
           },
           {
             "text": "Living Chests",
-            "color": "$living"
+            "color": "$qhighlight"
           },
           {
-            "text": ". They can not be crafted.\n\nCharms is your way to show your affinity to a specific god while inside a vault",
+            "text": " and ",
             "color": "$text"
           },
           {
-            "text": ". They can be identified by rolling them like gear, and there are four different tiers of charms; ",
+            "text": "Living Dungeon Barrels",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". They can not be crafted, nor modified, but they can be recycled for vault scrap.\n\n",
             "color": "$text"
           },
           {
-            "text": "Noble, Distinguished, Regal and Majestic.",
+            "text": "Charms can be equipped in your ",
             "color": "$text"
           },
           {
-            "text": "\nThe higher the tier, the more affinity they can have to their god.\n\nCharms have uses, and can not be unequipped or equipped during a vault. A use charge is consumed every time you interact with a God Altar inside a vault.",
+            "text": "charm slot",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " and, like Trinkets, have uses until they deplete.\n\n",
             "color": "$text"
           },
           {
-            "text": "\n\nAffinity is important to understand for your next quest, so, here is your first charm, identify it, and wear it proudly!",
+            "text": "Depending on which God the charm is tied to, they can add valuable attributes and ",
+            "color": "$text"
+          },
+          {
+            "text": " Temporal Modifiers",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nThe power of these attributes are based on your ",
+            "color": "$text"
+          },
+          {
+            "text": "reputation",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " with the god it is tied to! The higher your reputation, the more powerful the attributes become.\n\nIn the next quest you can learn about how to increase your god reputation, but for now, to get you off on the right foot, here is a free God Charm for you to identify!",
             "color": "$text"
           }
         ]
@@ -3617,7 +3699,7 @@
       "reward": {
         "items": [
           {
-            "item": "the_vault:small_charm"
+            "item": "the_vault:vault_god_charm"
           }
         ],
         "vaultExp": 0
@@ -3626,7 +3708,7 @@
     {
       "type": "block_interact",
       "id": "god_altars",
-      "name": "God Altars",
+      "name": "God Altars & Reputation",
       "descriptionData": {
         "description": [
           {
@@ -3646,7 +3728,7 @@
             "color": "$qhighlight"
           },
           {
-            "text": ", strongly buffing you in the vault and if you are lucky enough, and show enough affinity to the god, you can also gain a ",
+            "text": ", strongly buffing you in the vault and perhaps more importantly, earn you a ",
             "color": "$text"
           },
           {
@@ -3662,7 +3744,23 @@
             "color": "$qhighlight"
           },
           {
-            "text": "!\n\nNote, you can only reach 25 reptuation points in total, after that point you will lose reputation with another god, when gaining a new one.",
+            "text": "!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "You can reach ",
+            "color": "$text"
+          },
+          {
+            "text": "50",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " reputation points per each god, and you can track your progress in your statistics screen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nThe more reputation you have with each god, the more powerful their charms are!",
             "color": "$text"
           },
           {
@@ -3679,253 +3777,6 @@
         "items": [
           {
             "item": "the_vault:gem_pog"
-          }
-        ],
-        "vaultExp": 0
-      }
-    },
-    {
-      "type": "collection",
-      "id": "divine_paradox_seal",
-      "name": "Architect's Vault Rock",
-      "descriptionData": {
-        "description": [
-            {
-            "text": "Now that you know a bit about the gods and understand their altars, it's time to let you know about the ",
-            "color": "$text"
-            },
-            {
-                "text": "Divine Paradox",
-                "color": "$qhighlight"
-            },
-            {
-                "text": "!\n\nThe ",
-                "color": "$text"
-            },
-            {
-                "text": "Divine Paradox",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " is a vault designed completely by you! It can be revisited once every day, and can be ",
-                "color": "$text"
-            },
-            {
-                "text": "customized",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " to fully suit your needs.\n\nIn order to get started, you will need a ",
-                "color": "$text"
-            },
-            {
-                "text": "Architect's Vault Rock",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " which you can place on a vault altar to create a ",
-                "color": "$text"
-            },
-            {
-                "text": "Divine Paradox Architect Crystal",
-                "color": "$qhighlight"
-            },
-            {
-                "text": ", letting you buy rooms for ",
-                "color": "$text"
-            },
-            {
-                "text": "vault gold",
-                "color": "$gold"
-            },
-            {
-                "text": " to extend your vault.",
-                "color": "$text"
-            },
-            {
-                "text": "\n\nEach room is associated with a god, and will require you to have the sufficient ",
-                "color": "$text"
-            },
-            {
-                "text": "reputation",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " with that god to build. Every time you add a room of any god, the ",
-                "color": "$text"
-            },
-            {
-                "text": "reputation requirement",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " from that god goes up.\n\nThe ",
-                "color": "$text"
-            },
-            {
-                "text": "build realm",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " of the Divine Paradox is empty in terms of loot and mobs, it exists solely for you to design and extend it,",
-                "color": "$text"
-            },
-            {
-                "text": "Craft an Architect's Vault Rock",
-                "color": "$heal"
-            }
-        ]
-        
-      },
-      "icon": "the_vault:gui/quests/architectrock",
-      "targetId": "the_vault:crystal_seal_ordinator_build",
-      "targetProgress": 1.0,
-      "unlockedBy": "god_altars",
-      "reward": {
-        "items": [
-          {
-            "item": "the_vault:vault_diamond",
-            "amount": 9
-          }
-        ],
-        "vaultExp": 0
-      }
-    },
-    {
-      "type": "collection",
-      "id": "divine_paradox_seal_run",
-      "name": "Paradox's Vault Rock",
-      "descriptionData": {
-        "description": [
-            {
-                "text": "Once you have built a few rooms in your Divine Paradox, it's time to run the vault!\n\nYou can do this only once every ",
-                "color": "$text"
-            },
-            {
-                "text": "20 hours",
-                "color": "$qhighlight"
-            },
-            {
-                "text": ", and since the Divine Paradox is a personal vault, you can not bring your friends.\n\nThe Divine Paradox starts out with ",
-                "color": "$text"
-            },
-            {
-                "text": "10 minutes",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " on the timer, as opposed to the 25 minutes of a regular vault. ",
-                "color": "$text"
-            },
-            {
-                "text": "Relics",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " and ",
-                "color": "$text"
-            },
-            {
-                "text": "Extended Modifiers",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " can increase the time.\n\nThe goal of running your Divine Paradox is to collect ",
-                "color": "$text"
-            },
-            {
-                "text": "Blessings",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " from each god, they appear in chests, coin piles and ores in a room blessed by the corresponding god. Collect the required amount and return to your start room to sacrifice them to the correct god to complete the Divine Paradox!\nThis will be difficult in the beginning, as you may not have enough rooms of each god to complete the vault, however, as you extend your Divine Paradox it becomes easier and easier to complete, and completing it is good, because the gods will always bless you with an ",
-                "color": "$text"
-            },
-            {
-                "text": "Artifact",
-                "color": "$qhighlight"
-            },
-            {
-                "text": "!\n\nOnce you have built a few rooms in the build realm of the Divine Paradox, craft a ",
-                "color": "$text"
-            },
-            {
-                "text": "Paradox's Vault Rock",
-                "color": "$qhighlight"
-            },
-            {
-                "text": " and turn it in to a Paradox Vault Crystal by completing it on the Vault Altar.",
-                "color": "$text"
-            },
-            {
-              "text": "\n\nCraft a Paradox's Vault Rock",
-              "color": "$heal"
-            }
-          ]
-      
-        
-      },
-      "icon": "the_vault:gui/quests/paradoxrock",
-      "targetId": "the_vault:crystal_seal_ordinator_run",
-      "targetProgress": 1.0,
-      "unlockedBy": "divine_paradox_seal",
-      "reward": {
-        "items": [
-          {
-            "item": "the_vault:vault_gold",
-            "amount": 64
-          },
-          {
-            "item": "the_vault:vault_gold",
-            "amount": 64
-          }
-        ],
-        "vaultExp": 0
-      }
-    },
-    {
-      "type": "checkmark",
-      "id": "paradoxical_gem",
-      "name": "Resetting your Divine Paradox",
-      "descriptionData": {
-        "description": [
-              {
-                  "text": "If you ever feel like you want to ",
-                  "color": "$text"
-              },
-              {
-                  "text": "reset your progress",
-                  "color": "$qhighlight"
-              },
-              {
-                  "text": " of your Divine Paradox, and start over, you can!\n\nYou will need a pool of ",
-                  "color": "$text"
-              },
-              {
-                  "text": "Void Liquid",
-                  "color": "$qhighlight"
-              },
-              {
-                  "text": ", and then simply drop an Architect's Divine Paradox Vault Crystal in it. This will void all progress and allow you to start over!\n\n",
-                  "color": "$text"
-              },
-              {
-                "text": "BEWARE, this does not refund any gold spent to unlock rooms!",
-                "color": "$warning"
-            }
-            ] 
-      
-      
-        
-      },
-      "icon": "the_vault:gui/quests/resetdivine",
-      "targetId": "the_vault:vault_stone",
-      "targetProgress": 1.0,
-      "unlockedBy": "divine_paradox_seal_run",
-      "reward": {
-        "items": [
-          {
-            "item": "the_vault:vault_gold"
           }
         ],
         "vaultExp": 0
@@ -4229,15 +4080,27 @@
             "color": "$qhighlight"
           },
           {
-            "text": " as well as a ",
+            "text": ", which when mined yields a lot of different treasures.",
             "color": "$text"
           },
           {
-            "text": "Treasure Pedestal",
+            "text": "\nThe Treasure Room also contains ",
+            "color": "$text"
+          },
+          {
+            "text": "Three Treasure Pedestal",
             "color": "$qhighlight"
           },
           {
-            "text": "!\n\nThe loot is random, but also the only place to find certain items!",
+            "text": ", containing one vault gear item each. However, these vault gear items are guaranteed to have ",
+            "color": "$text"
+          },
+          {
+            "text": "one legendary modifier",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\nYou may only pick one of the pedestals, and the only information you have when picking is the gear type and rarity!",
             "color": "$text"
           },
           {
@@ -4253,7 +4116,7 @@
       "reward": {
         "items": [
           {
-            "item": "the_vault:lost_bounty"
+            "item": "the_vault:unidentified_treasure_key"
           }
         ],
         "vaultExp": 0

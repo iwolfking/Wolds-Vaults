@@ -1,185 +1,356 @@
 {
-    "tile_processors": [
+  "tile_processors": [
+    {
+      "type": "leveled",
+      "levels": [
         {
-            "type": "leveled",
-            "levels": [
-                {
-                    "level": 0,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16}, {id: \"the_vault:vault_fighter_0_egg\", Count: 20}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                },
-                {
-                    "level": 20,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16} , {id: \"the_vault:vault_fighter_0_egg\", Count: 19}, {id: \"the_vault:vault_fighter_1_egg\", Count: 1}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                },
-                {
-                    "level": 25,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16} , {id: \"the_vault:vault_fighter_0_egg\", Count: 15}, {id: \"the_vault:vault_fighter_1_egg\", Count: 5}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                },
-                {
-                    "level": 30,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [{id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16} , {id: \"the_vault:vault_fighter_0_egg\", Count: 10}, {id: \"the_vault:vault_fighter_1_egg\", Count: 10}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                },
-                {
-                    "level": 40,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16} , {id: \"the_vault:vault_fighter_0_egg\", Count: 2}, {id: \"the_vault:vault_fighter_1_egg\", Count: 18}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                },
-                {
-                    "level": 50,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16} , {id: \"the_vault:vault_fighter_1_egg\", Count: 19}, {id: \"the_vault:vault_fighter_2_egg\", Count: 1}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                },
-                {
-                    "level": 55,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16} , {id: \"the_vault:vault_fighter_1_egg\", Count: 15}, {id: \"the_vault:vault_fighter_2_egg\", Count: 5}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                },
-                {
-                    "level": 60,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16} , {id: \"the_vault:vault_fighter_1_egg\", Count: 10}, {id: \"the_vault:vault_fighter_2_egg\", Count: 10}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                },
-                {
-                    "level": 65,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16} , {id: \"the_vault:vault_fighter_1_egg\", Count: 5}, {id: \"the_vault:vault_fighter_2_egg\", Count: 15}, {id: \"the_vault:vault_fighter_4_egg\", Count: 5}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                },
-                {
-                    "level": 70,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16} , {id: \"the_vault:vault_fighter_2_egg\", Count: 20}, {id: \"the_vault:vault_fighter_4_egg\", Count: 10}, {id: \"the_vault:t3_piglin_egg\", Count: 1}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                },
-                {
-                    "level": 80,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16} , {id: \"the_vault:vault_fighter_2_egg\", Count: 20}, {id: \"the_vault:vault_fighter_4_egg\", Count: 20}, {id: \"the_vault:t3_piglin_egg\", Count: 2}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                },
-                {
-                    "level": 90,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16} , {id: \"the_vault:vault_fighter_2_egg\", Count: 10}, {id: \"the_vault:vault_fighter_4_egg\", Count: 20}, {id: \"the_vault:t3_piglin_egg\", Count: 3}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                },
-                {
-                    "level": 100,
-                    "type": "weighted_target",
-                    "target": "ispawner:spawner{group:standard}",
-                    "output": {
-                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:vault_green_gummy_soldier_egg\", Count: 60}, {id: \"the_vault:vault_blue_gummy_soldier_egg\", Count: 10}, {id: \"the_vault:vault_yellow_gummy_soldier_egg\", Count: 16} , {id: \"the_vault:vault_fighter_4_egg\", Count: 20}, {id: \"the_vault:t3_piglin_egg\", Count: 4}, {id: \"minecraft:rabbit_spawn_egg\", Count: 1b, tag: {EntityTag: {RabbitType: 99}}} ] } }": 1
-                    }
-                }
-            ]
-        },
-        {
-            "type": "leveled",
-            "levels": [
-                {
-                    "level": 0,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:tank}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:vault_red_gummy_soldier": 1
-                          },
-                          "weight": 1
-                        }
-                    ]
-                },
-                {
-                    "level": 65,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:tank}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:vault_red_gummy_soldier": 10,
-                            "the_vault:t3_piglin": 1
-                          },
-                          "weight": 1
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "leveled",
-            "levels": [
-                {
-                    "level": 0,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:assassin}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:vault_blue_gummy_soldier": 1
-                          },
-                          "weight": 1
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "leveled",
-            "levels": [
-                {
-                    "level": 0,
-                    "type": "spawner",
-                    "target": "ispawner:spawner{group:horde}",
-                    "output": [
-                        {
-                          "elements": {
-                            "the_vault:vault_yellow_gummy_soldier": 12
-                          },
-                          "weight": 1
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "type": "reference",
-            "id": "the_vault:generic/spawners/group_settings"
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner",
+          "output": {
+            "ispawner:spawner{ group:horde }": 55,
+            "ispawner:spawner{ group:assassin }": 30,
+            "ispawner:spawner{ group:tank }": 10,
+            "ispawner:spawner{ group:dwellers }": 5
+          }
         }
-    ]
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter": 15
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter": 15,
+                "the_vault:vault_fighter_1": 15
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 40,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_1": 15,
+                "the_vault:vault_fighter_2": 15
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_2": 15,
+                "the_vault:vault_fighter_3": 15
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 80,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_3": 15,
+                "the_vault:vault_fighter_4": 15
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 100,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_4": 15
+              },
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:tank}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_red_gummy_soldier": 10
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 65,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:tank}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_red_gummy_soldier": 10
+              },
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_blue_gummy_soldier": 49,
+                "the_vault:vault_green_gummy_soldier": 50,
+                "minecraft:rabbit{RabbitType:99}": 5
+              },
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_yellow_gummy_soldier": 64
+              },
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/spawners/group_settings"
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 40,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 60,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 80,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 100,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 40,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 10, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 60,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 7, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 80,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 10, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 100,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 9, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 10, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 40,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 60,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 7, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 80,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 7, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 100,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
+    }
+  ]
 }
