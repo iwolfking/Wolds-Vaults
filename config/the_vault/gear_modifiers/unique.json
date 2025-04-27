@@ -4526,6 +4526,34 @@
           }
         ]
       },
+
+  { "attribute": "the_vault:ability_on_damage",
+        "group": "ModOnDamageType",
+        "identifier": "the_vault:u_frost_nova_on_damage",
+        "tags": [
+          "noLegendary"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "abilityId": "Nova_Slow",
+              "chance": {
+                "min": 0.05,
+                "max": 0.2,
+                "step": 0.01
+              },
+              "level": {
+                "min": 2,
+                "max": 7,
+                "step": 1
+              }
+            }
+          }
+        ]
+      },
       {
         "attribute": "the_vault:ornate_affinity",
         "group": "ModSoulbound",

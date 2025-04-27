@@ -1,0 +1,651 @@
+{
+	"godModifiers": {
+		"IDONA": [
+			{
+				"attribute": "the_vault:damage_increase",
+				"group": "IdonaAttackDamage",
+				"identifier": "the_vault:idona_damage",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.005,
+							"max": 0.01,
+							"step": 0.001
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:ability_power_percent",
+				"group": "IdonaAbilityPower",
+				"identifier": "the_vault:idona_ability_power",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.0025,
+							"max": 0.005,
+							"step": 0.0005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:soul_chance",
+				"group": "IdonaSoulChance",
+				"identifier": "the_vault:idona_soul_chance",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.01,
+							"max": 0.03,
+							"step": 0.01
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:damage_dweller",
+				"group": "IdonaGroupDamageD",
+				"identifier": "the_vault:idona_group_damage_dweller",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 25,
+						"value": {
+							"min": 0.01,
+							"max": 0.02,
+							"step": 0.005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:damage_champion",
+				"group": "IdonaGroupDamageC",
+				"identifier": "the_vault:idona_group_damage_champion",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 25,
+						"value": {
+							"min": 0.01,
+							"max": 0.02,
+							"step": 0.005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:damage_tank",
+				"group": "IdonaGroupDamageT",
+				"identifier": "the_vault:idona_group_damage_tank",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 25,
+						"value": {
+							"min": 0.01,
+							"max": 0.02,
+							"step": 0.005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:damage_assassin",
+				"group": "IdonaGroupDamageA",
+				"identifier": "the_vault:idona_group_damage_assassin",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 25,
+						"value": {
+							"min": 0.01,
+							"max": 0.02,
+							"step": 0.005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:random_vault_god_modifier",
+				"group": "IdonaVaultModifierGroup",
+				"identifier": "the_vault:idona_overpower",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 10,
+						"value": {
+							"modifier": "the_vault:overpower",
+							"count": 1,
+							"time": {
+								"step": 1,
+								"min": 120,
+								"max": 120
+							},
+							"vaultGod": "IDONA"
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:random_vault_god_modifier",
+				"group": "IdonaVaultModifierGroup",
+				"identifier": "the_vault:idona_soul_fest",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 10,
+						"value": {
+							"modifier": "the_vault:soul_fest",
+							"count": 1,
+							"time": {
+								"step": 1,
+								"min": 120,
+								"max": 120
+							},
+							"vaultGod": "IDONA"
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:random_vault_god_modifier",
+				"group": "IdonaVaultModifierGroup",
+				"identifier": "the_vault:idona_nova",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 10,
+						"value": {
+							"modifier": "the_vault:kill_nuke",
+							"count": 1,
+							"time": {
+								"step": 1,
+								"min": 120,
+								"max": 120
+							},
+							"vaultGod": "IDONA"
+						}
+					}
+				]
+			}
+		],
+		"TENOS": [
+			{
+				"attribute": "the_vault:mana_regen",
+				"group": "TenosManaRegen",
+				"identifier": "the_vault:tenos_mana_regen",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.01,
+							"max": 0.02,
+							"step": 0.005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:mana_additive_percentile",
+				"group": "TenosMana",
+				"identifier": "the_vault:tenos_mana",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.005,
+							"max": 0.01,
+							"step": 0.001
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:area_of_effect",
+				"group": "TenosAreaOfEffect",
+				"identifier": "the_vault:tenos_aoe",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.0025,
+							"max": 0.005,
+							"step": 0.0005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:item_rarity",
+				"group": "TenosItemRarity",
+				"identifier": "the_vault:tenos_item_rarity",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 50,
+						"value": {
+							"min": 0.005,
+							"max": 0.01,
+							"step": 0.001
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:item_quantity",
+				"group": "TenosItemQ",
+				"identifier": "the_vault:tenos_item_quantity",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 50,
+						"value": {
+							"min": 0.0025,
+							"max": 0.005,
+							"step": 0.0005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:random_vault_god_modifier",
+				"group": "TenosVaultModifierGroup",
+				"identifier": "the_vault:tenos_totemic",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 10,
+						"value": {
+							"modifier": "the_vault:kill_totem",
+							"count": 1,
+							"time": {
+								"step": 1,
+								"min": 120,
+								"max": 120
+							},
+							"vaultGod": "TENOS"
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:random_vault_god_modifier",
+				"group": "TenosVaultModifierGroup",
+				"identifier": "the_vault:tenos_loot_goblin",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 10,
+						"value": {
+							"modifier": "the_vault:loot_goblin",
+							"count": 1,
+							"time": {
+								"step": 1,
+								"min": 120,
+								"max": 120
+							},
+							"vaultGod": "TENOS"
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:random_vault_god_modifier",
+				"group": "TenosVaultModifierGroup",
+				"identifier": "the_vault:tenos_door_hunter",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 10,
+						"value": {
+							"modifier": "the_vault:door_hunter",
+							"count": 1,
+							"time": {
+								"step": 1,
+								"min": 120,
+								"max": 120
+							},
+							"vaultGod": "TENOS"
+						}
+					}
+				]
+			}
+			
+		],
+		"VELARA": [
+			{
+				"attribute": "the_vault:health_percentile",
+				"group": "VelaraHealth",
+				"identifier": "the_vault:velara_health",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.0025,
+							"max": 0.005,
+							"step": 0.0005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:healing_effectiveness",
+				"group": "VelaraHealing",
+				"identifier": "the_vault:velara_healing",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.005,
+							"max": 0.01,
+							"step": 0.001
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:armor_percentile",
+				"group": "VelaraArmour",
+				"identifier": "the_vault:velara_armour",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.0025,
+							"max": 0.005,
+							"step": 0.0005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:effect_list_avoidance",
+				"group": "VelaraEffectAvoid",
+				"identifier": "the_vault:velara_effect_avoid",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"effectKeys": ["minecraft:poison", "minecraft:wither", "minecraft:levitation", "minecraft:slowness", "minecraft:blindness", "minecraft:hunger", "the_vault:bleed", "the_vault:chilled", "the_vault:corruption"],
+							"name": "the_vault.gear_attribute.effect_avoidance.avoidance.bad_effects",
+							"minChance": 0.01,
+							"maxChance": 0.02,
+							"step": 0.005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:random_vault_god_modifier",
+				"group": "VelaraVaultModifierGroup",
+				"identifier": "the_vault:velara_regen",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 10,
+						"value": {
+							"modifier": "the_vault:ultimate_regeneration",
+							"count": 1,
+							"time": {
+								"step": 1,
+								"min": 120,
+								"max": 120
+							},
+							"vaultGod": "VELARA"
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:random_vault_god_modifier",
+				"group": "VelaraVaultModifierGroup",
+				"identifier": "the_vault:velara_charm",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 10,
+						"value": {
+							"modifier": "the_vault:kill_charm",
+							"count": 1,
+							"time": {
+								"step": 1,
+								"min": 120,
+								"max": 120
+							},
+							"vaultGod": "VELARA"
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:random_vault_god_modifier",
+				"group": "VelaraVaultModifierGroup",
+				"identifier": "the_vault:velara_rock_solid",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 10,
+						"value": {
+							"modifier": "the_vault:rock_solid",
+							"count": 1,
+							"time": {
+								"step": 1,
+								"min": 120,
+								"max": 120
+							},
+							"vaultGod": "VELARA"
+						}
+					}
+				]
+			}
+		],
+		"WENDARR": [
+			{
+				"attribute": "the_vault:fruit_effectiveness",
+				"group": "wendarrFruit",
+				"identifier": "the_vault:wendarr_fruit",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.005,
+							"max": 0.01,
+							"step": 0.001
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:effect_duration",
+				"group": "WendarrEffectDuration",
+				"identifier": "the_vault:wendarr_effect_duration",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.005,
+							"max": 0.01,
+							"step": 0.001
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:cooldown_reduction",
+				"group": "WendarrCooldown",
+				"identifier": "the_vault:wendarr_cooldown_reduction",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.0025,
+							"max": 0.005,
+							"step": 0.0005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:movement_speed",
+				"group": "WendarrMovementSpeed",
+				"identifier": "the_vault:wendarr_movement_speed",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 100,
+						"value": {
+							"min": 0.0025,
+							"max": 0.005,
+							"step": 0.0005
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:random_vault_god_modifier",
+				"group": "WendarrVaultModifierGroup",
+				"identifier": "the_vault:wendarr_pylon_hunter",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 10,
+						"value": {
+							"modifier": "the_vault:pylon_hunter",
+							"count": 1,
+							"time": {
+								"step": 1,
+								"min": 120,
+								"max": 120
+							},
+							"vaultGod": "WENDARR"
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:random_vault_god_modifier",
+				"group": "WendarrVaultModifierGroup",
+				"identifier": "the_vault:wendarr_hunterino",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 10,
+						"value": {
+							"modifier": "the_vault:kill_hunter",
+							"count": 1,
+							"time": {
+								"step": 1,
+								"min": 120,
+								"max": 120
+							},
+							"vaultGod": "WENDARR"
+						}
+					}
+				]
+			},
+			{
+				"attribute": "the_vault:random_vault_god_modifier",
+				"group": "WendarrVaultModifierGroup",
+				"identifier": "the_vault:wendarr_glued",
+				"tags": [],
+				"tiers": [
+					{
+						"minLevel": 0,
+						"maxLevel": -1,
+						"weight": 10,
+						"value": {
+							"modifier": "the_vault:glued_mobs",
+							"count": 1,
+							"time": {
+								"step": 1,
+								"min": 120,
+								"max": 120
+							},
+							"vaultGod": "WENDARR"
+						}
+					}
+				]
+			}
+		]
+	}
+}
