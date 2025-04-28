@@ -19,32 +19,32 @@
 	#Specific Coin Minting Settings.
 	[server.coin_minting]
 		#Whether copper coins can be minted.
-		canMintCopper = true
+		canMintCopper = false
 		#Whether iron coins can be minted.
-		canMintIron = true
+		canMintIron = false
 		#Whether gold coins can be minted.
-		canMintGold = true
+		canMintGold = false
 		#Whether emerald coins can be minted.
-		canMintEmerald = true
+		canMintEmerald = false
 		#Whether diamond coins can be minted.
-		canMintDiamond = true
+		canMintDiamond = false
 		#Whether netherite coins can be minted.
-		canMintNetherite = true
+		canMintNetherite = false
 
 	#Specific Coin Melting Settings.
 	[server.coin_melting]
 		#Whether copper coins can be melted.
-		canMeltCopper = true
+		canMeltCopper = false
 		#Whether iron coins can be melted.
-		canMeltIron = true
+		canMeltIron = false
 		#Whether gold coins can be melted.
-		canMeltGold = true
+		canMeltGold = false
 		#Whether emerald coins can be melted.
-		canMeltEmerald = true
+		canMeltEmerald = false
 		#Whether diamond coins can be melted.
-		canMeltDiamond = true
+		canMeltDiamond = false
 		#Whether netherite coins can be melted.
-		canMeltNetherite = true
+		canMeltNetherite = false
 
 	#Wallet Settings.
 	[server.wallet]
@@ -52,11 +52,11 @@
 		#0-Copper Wallet; 1-Iron Wallet; 2-Gold Wallet; 3-Emerald Wallet; 4-Diamond Wallet; 5-Netherite Wallet
 		#Must be less than or equal to 'pickupLevel'.
 		#Range: 0 ~ 5
-		convertLevel = 1
+		convertLevel = 3
 		#The lowest level wallet capable of automatically collecting coins while equipped.
 		#0-Copper Wallet; 1-Iron Wallet; 2-Gold Wallet; 3-Emerald Wallet; 4-Diamond Wallet; 5-Netherite Wallet
 		#Range: 0 ~ 5
-		pickupLevel = 3
+		pickupLevel = 0
 		#The lowest level wallet capable of allowing transfers to/from your bank account.
 		#0-Copper Wallet; 1-Iron Wallet; 2-Gold Wallet; 3-Emerald Wallet; 4-Diamond Wallet; 5-Netherite Wallet
 		#Range: 0 ~ 5
