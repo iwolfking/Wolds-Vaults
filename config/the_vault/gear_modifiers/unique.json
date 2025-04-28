@@ -2282,6 +2282,53 @@
     ],
     "PREFIX": [
       { 
+        "attribute": "the_vault:added_ability_level",
+        "group": "ModAbility",
+        "identifier": "the_vault:u_coldsnap",
+        "tags": [
+          "focusAbilityPower",
+          "focusAbilityPowerStonefall"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "abilityKey": "Stonefall_Cold",
+              "levelChange": 1
+            }
+          },
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "abilityKey": "Stonefall_Cold",
+              "levelChange": 2
+            }
+          },
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "abilityKey": "Stonefall_Cold",
+              "levelChange": 3
+            }
+          },
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "abilityKey": "Stonefall_Cold",
+              "levelChange": 4
+            }
+          }
+        ]
+      },
+      { 
         "attribute": "woldsvaults:breaching",
         "group": "ModBreaching",
         "identifier": "the_vault:breaching_jewel",
@@ -4906,6 +4953,26 @@
       }
     ],
     "SUFFIX": [
+      { "attribute": "the_vault:effect_trail",
+        "group": "ModEnhancement",
+        "identifier": "the_vault:u_chilled_effect_trail",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "effectId": "the_vault:chilled",
+              "durationTicks": {
+                "min": 60,
+                "max": 160,
+                "step": 20
+              }
+            }
+          }
+        ]
+      },
       {
         "attribute": "the_vault:lucky_hit_chance",
         "group": "ModLuckyHit",
