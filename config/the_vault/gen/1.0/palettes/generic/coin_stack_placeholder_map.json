@@ -1,0 +1,48 @@
+{
+  "tile_processors": [
+    {
+      "type": "placeholder",
+      "target": "COIN_STACKS",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 0.9,
+          "success": {
+            "the_vault:coin_pile[size=1,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl30\"}": 2,
+            "the_vault:coin_pile[size=2,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl30\"}": 14,
+            "the_vault:coin_pile[size=3,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl30\"}": 30,
+            "the_vault:coin_pile[size=4,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl30\"}": 48,
+            "the_vault:coin_pile[size=5,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl30\"}": 26,
+            "the_vault:coin_pile[size=6,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl30\"}": 18,
+            "the_vault:coin_pile[size=7,waterlogged=false]{LootTable:\"the_vault:coin_pile_lvl30\"}": 6
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "placeholder",
+      "target": "COIN_STACKS_WATERLOGGED",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 0.9,
+          "success": {
+            "the_vault:coin_pile[size=1,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl30\"}": 2,
+            "the_vault:coin_pile[size=2,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl30\"}": 14,
+            "the_vault:coin_pile[size=3,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl30\"}": 30,
+            "the_vault:coin_pile[size=4,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl30\"}": 48,
+            "the_vault:coin_pile[size=5,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl30\"}": 26,
+            "the_vault:coin_pile[size=6,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl30\"}": 18,
+            "the_vault:coin_pile[size=7,waterlogged=true]{LootTable:\"the_vault:coin_pile_lvl30\"}": 6
+          },
+          "failure": {
+            "minecraft:water": 1
+          }
+        }
+      ]
+    }
+  ]
+}

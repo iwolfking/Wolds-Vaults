@@ -1,0 +1,38 @@
+{
+  "tile_processors": [
+    {
+      "type": "placeholder",
+      "target": "LIVING_CHEST",
+      "levels": [
+        {
+          "level": 100,
+          "probability": 1.0,
+          "success": {
+            "the_vault:living_chest{LootTable:\"the_vault:living_chest_lvl70\"}": 18,
+            "the_vault:living_strongbox{LootTable:\"the_vault:living_strongbox_lvl70\"}": 2
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "placeholder",
+      "target": "LIVING_CHEST_WATERLOGGED",
+      "levels": [
+        {
+          "level": 100,
+          "probability": 1.0,
+          "success": {
+            "the_vault:living_chest[waterlogged=true]{LootTable:\"the_vault:living_chest_100_map\"}": 18,
+            "the_vault:living_strongbox[waterlogged=true]{LootTable:\"the_vault:living_strongbox_100_map\"}": 2
+          },
+          "failure": {
+            "minecraft:water": 1
+          }
+        }
+      ]
+    }
+  ]
+}
