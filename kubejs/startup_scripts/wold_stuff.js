@@ -1,24 +1,8 @@
 
 onEvent('item.registry', event => {
-    //event.create('the_vault:vault_palladium').group('the_vault')
-    //event.create('the_vault:vault_iridium').group('the_vault')
-    //event.create('the_vault:chromatic_gold_ingot').group('the_vault')
-    //event.create('the_vault:chromatic_gold_nugget').group('the_vault')
-    //event.create('the_vault:smashed_vault_gem').group('the_vault')
-    //event.create('the_vault:smashed_vault_gem_cluster').group('the_vault').displayName('Smashed Gem Cluster')
-    //event.create('the_vault:wold_star').group('the_vault')
-    //event.create('the_vault:wold_star_chunk').group('the_vault')
     event.create('mysticalagriculture:pogging_seed_base').group('the_vault')
     event.create('mysticalagriculture:echoing_seed_base').group('the_vault')
     event.create('botania:uninfused_terrasteel_ingot').group('the_vault')
-
-    //event.create('the_vault:pog_prism').group('the_vault')
-
-    //event.create('woldsvaults:general_decor_scroll').group('the_vault').displayName('Vault Deco Scroll')
-    //event.create('woldsvaults:arcane_essence').group('the_vault').displayName('Arcane Essence')
-    //event.create('woldsvaults:arcane_shard').group('the_vault').displayName('Arcane Shard')
-    //event.create('woldsvaults:extraordinary_pog_prism').group('the_vault').displayName('Extraordinary Pog Prism')
-    //event.create('woldsvaults:heart_of_chaos').group('the_vault').displayName('Heart of Chaos')
 })
 
 onEvent('block.registry', event => {
