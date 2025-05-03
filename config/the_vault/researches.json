@@ -211,7 +211,8 @@
     {
       "modIds": [
         "mysticalagriculture",
-        "matc"
+        "matc",
+        "mysticalaggradditions"
       ],
       "restrictions": {
         "restricts": {
@@ -1204,6 +1205,38 @@
   "CUSTOM_RESEARCHES": [
     {
       "itemRestrictions": {
+        "woldsvaults:augment_assembly_pedestal": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        }
+      },
+      "blockRestrictions": {},
+      "entityRestrictions": {},
+      "name": "Augment Crafting",
+      "cost": 1,
+      "usesKnowledge": true
+    },
+    {
+      "itemRestrictions": {
+        "woldsvaults:mod_box_workstation": {
+          "restricts": {
+            "HITTABILITY": false,
+            "USABILITY": false,
+            "CRAFTABILITY": true
+          }
+        }
+      },
+      "blockRestrictions": {},
+      "entityRestrictions": {},
+      "name": "Mod Box Tinkering",
+      "cost": 1,
+      "usesKnowledge": true
+    },
+    {
+      "itemRestrictions": {
         "the_vault:angel_block": {
           "restricts": {
             "HITTABILITY": true,
@@ -1716,7 +1749,7 @@
       "blockRestrictions": {},
       "entityRestrictions": {},
       "name": "Junk Management",
-      "cost": 2,
+      "cost": 1,
       "usesKnowledge": true,
       "discoversModels": [
         "the_vault:gear/armor/dank/helmet",
@@ -2065,7 +2098,7 @@
       "blockRestrictions": {},
       "entityRestrictions": {},
       "name": "Soul Harvester",
-      "cost": 3,
+      "cost": 1,
       "usesKnowledge": true
     },
     {

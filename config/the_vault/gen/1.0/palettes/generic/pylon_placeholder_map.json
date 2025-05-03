@@ -1,0 +1,40 @@
+{
+  "tile_processors": [
+    {
+      "type": "placeholder",
+      "target": "PYLON",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 0.08,
+          "success": {
+            "the_vault:pylon{Config:{type:effect,effect:regeneration,amplifier:10,duration:60,color:69A3FF67 ,description:\"Regenerates all your health\"}}": 10,
+            "the_vault:pylon{Config:{type:effect,effect:regeneration,amplifier:1,duration:2400,color:85bdff54,description:\"Grants +1 Regeneration for 2 minutes\"}}": 20,
+            "the_vault:pylon{Config:{type:effect,effect:speed,amplifier:1,duration:3600,color:69ffe58c,description:\"Grants +1 Speed for 3 minutes\"}}": 20,
+            "the_vault:pylon{Config:{type:effect,effect:absorption,amplifier:1,duration:2400,color:6900FF00,description:\"Grants 2 absorption hearts for 2 minutes\"}}": 20,
+            "the_vault:pylon{Config:{type:potion,charges:2,color:69c28cff,description:\"Recharges 2 potion charges\"}}": 20,
+            "the_vault:pylon{Config:{type:mana,missingManaPercent:1.0,color:692F86AE,description:\"Refills your mana\"}}": 30,
+            "the_vault:pylon{Config:{type:time,ticks:900,color:8000FFFF,description:\"Adds 30 seconds to the vault timer\"}}":0,
+            "the_vault:pylon{Config:{type:time,ticks:1800,color:8020ffff,description:\"Adds 1 minute and 30 seconds to the vault timer\"}}": 0,
+            "the_vault:pylon{Config:{type:stat,stat:ITEM_RARITY,addend:0.20,duration:1200,color:69EAFF00,description:\"+20% Item Rarity for 1 minute\"}}": 10,
+            "the_vault:pylon{Config:{type:stat,stat:ITEM_QUANTITY,addend:0.20,duration:1200,color:69ff9c00,description:\"+20% Item Quantity for 1 minute\"}}": 10,
+            "the_vault:pylon{Config:{type:stat,stat:DURABILITY_WEAR_REDUCTION,addend:0.5,duration:6000,color:69b5b5b5,description:\"+50% Durability Damage Reduction for 5 minutes\"}}": 15,
+            "the_vault:pylon{Config:{type:stat,stat:ITEM_RARITY,addend:1.00,duration:6000,color:69EAFF00,description:\"+100% Item Rarity for 5 minutes\",uber:1b,uberColor:69ff8a14}}": 1,
+            "the_vault:pylon{Config:{type:stat,stat:ITEM_QUANTITY,addend:1.00,duration:6000,color:69ff9c00,description:\"+100% Item Quantity for 5 minutes\",uber:1b,uberColor:69ff9c00}}": 1,
+            "the_vault:pylon{Config:{type:time,ticks:3600,color:8000FFFF,description:\"Adds 3 minutes to the vault timer\",uber:1b,uberColor:692F86AE}}": 0,
+            "the_vault:pylon{Config:{type:effect,effect:speed,amplifier:3,duration:6000,color:69ffe58c,description:\"Grants +3 Speed for 5 minutes\",uber:1b,uberColor:69ffff87}}": 4,
+            "the_vault:pylon{Config:{type:effect,effect:strength,amplifier:10,duration:6000,color:69e21b1b,description:\"Grants +10 Strength for 5 minutes\",uber:1b,uberColor:69fa52a9}}": 4,
+            "the_vault:pylon{Config:{type:effect,effect:regeneration,amplifier:2,duration:6000,color:85bdff54,description:\"Grants +2 Regeneration for 5 minutes\",uber:1b,uberColor:695fe80d}}": 4,
+            "the_vault:pylon{Config:{type:stat,stat:LUCKY_HIT_CHANCE,addend:0.50,duration:6000,color:696df5a3,description:\"+50% Lucky Hit Chance for 5 minutes\",uber:1b,uberColor:69fff705}}": 2,
+            "the_vault:pylon{Config:{type:stat,stat:SOUL_CHANCE,addend:1.0,duration:6000,color:696900cc,description:\"+100% Soul Shard Chance for 5 minutes\",uber:1b,uberColor:69f03232}}": 2,
+            "the_vault:pylon{Config:{type:stat,stat:COPIOUSLY,addend:1.0,duration:6000,color:80ff8cc5 ,description:\"+100% Copiously Chance for 5 minutes\",uber:1b,uberColor:80ffffff}}": 4,
+            "the_vault:pylon{Config:{type:potion,charges:6,color:69c28cff,description:\"Recharges your potion fully\",uber:1b,uberColor:69ffffff}}": 2
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        }
+      ]
+    }
+  ]
+}

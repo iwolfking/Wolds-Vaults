@@ -205,6 +205,34 @@
       },
       {
         "type": "tiered",
+        "id": "ShopReroll",
+        "name": "Negotiator",
+        "tiers": [
+          {
+            "type": "negotiator",
+            "rerollTimeout": 1200,
+            "learnPointCost": 1,
+            "regretPointCost": 0,
+            "unlockLevel": 0
+          },
+          {
+            "type": "negotiator",
+            "rerollTimeout": 600,
+            "learnPointCost": 1,
+            "regretPointCost": 0,
+            "unlockLevel": 0
+          },
+          {
+            "type": "negotiator",
+            "rerollTimeout": 300,
+            "learnPointCost": 1,
+            "regretPointCost": 0,
+            "unlockLevel": 0
+          }
+        ]
+      },
+      {
+        "type": "tiered",
         "id": "Divine",
         "name": "Divine",
         "tiers": [
@@ -228,16 +256,44 @@
             "learnPointCost": 1,
             "regretPointCost": 0,
             "unlockLevel": 0
+          }
+        ]
+      },
+      {
+        "type": "tiered",
+        "id": "Blessed",
+        "name": "Blessed",
+        "tiers": [
+          {
+            "type": "blessed",
+            "affinityIncrease": 0.1,
+            "learnPointCost": 1,
+            "regretPointCost": 0,
+            "unlockLevel": 0
           },
           {
-            "type": "divine",
+            "type": "blessed",
+            "affinityIncrease": 0.2,
+            "learnPointCost": 1,
+            "regretPointCost": 0,
+            "unlockLevel": 0
+          },
+          {
+            "type": "blessed",
+            "affinityIncrease": 0.3,
+            "learnPointCost": 1,
+            "regretPointCost": 0,
+            "unlockLevel": 0
+          },
+          {
+            "type": "blessed",
             "affinityIncrease": 0.4,
             "learnPointCost": 1,
             "regretPointCost": 0,
             "unlockLevel": 50
           },
           {
-            "type": "divine",
+            "type": "blessed",
             "affinityIncrease": 0.5,
             "learnPointCost": 1,
             "regretPointCost": 0,
@@ -491,7 +547,7 @@
           {
             "type": "jeweler",
             "additionalIdentifiedJewels": 0,
-            "learnPointCost": 2,
+            "learnPointCost": 1,
             "regretPointCost": 0,
             "unlockLevel": 0
           }

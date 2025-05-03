@@ -1,0 +1,38 @@
+{
+  "tile_processors": [
+    {
+      "type": "placeholder",
+      "target": "ORNATE_CHEST",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 1.0,
+          "success": {
+            "the_vault:ornate_chest{LootTable:\"the_vault:ornate_chest_100_map\"}": 6,
+            "the_vault:ornate_strongbox{LootTable:\"the_vault:ornate_strongbox_100_map\"}": 2
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "placeholder",
+      "target": "ORNATE_CHEST_WATERLOGGED",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 1.0,
+          "success": {
+            "the_vault:ornate_chest[waterlogged=true]{LootTable:\"the_vault:ornate_chest_100_map\"}": 6,
+            "the_vault:ornate_strongbox[waterlogged=true]{LootTable:\"the_vault:ornate_strongbox_100_map\"}": 2
+          },
+          "failure": {
+            "minecraft:water": 1
+          }
+        }
+      ]
+    }
+  ]
+}
