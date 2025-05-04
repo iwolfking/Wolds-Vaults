@@ -1,5 +1,31 @@
 {
     "OUTPUTS": {
+        "woldsvaults:recipe_blueprint": {
+            "mainOutput": {
+                "chance": 1.0,
+                "stack": {
+                    "item": "the_vault:magic_silk"
+                },
+                "minCount": 0,
+                "maxCount": 4
+            },
+            "extraOutput1": {
+                "chance": 0.4,
+                "stack": {
+                    "item": "the_vault:knowledge_star_essence"
+                },
+                "minCount": 8,
+                "maxCount": 24
+            },
+            "extraOutput2": {
+                "chance": 0.0,
+                "stack": {
+                    "item": "minecraft:air"
+                },
+                "minCount": 1,
+                "maxCount": 1
+            }
+        },
         "the_vault:augment": {
             "mainOutput": {
                 "chance": 1.0,
