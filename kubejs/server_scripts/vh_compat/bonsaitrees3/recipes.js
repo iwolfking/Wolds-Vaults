@@ -13,7 +13,7 @@ onEvent("recipes", event => {
             'III'
         ], {
         B: '#forge:ingots/brick',
-        V: 'the_vault:vault_essence',
+        V: 'woldsvaults:chroma_core',
         M: 'the_vault:packed_vault_meat_block',
         I: 'the_vault:chromatic_steel_ingot'
     })

@@ -28,7 +28,7 @@ onEvent("recipes", event => {
             'XCX',
             'IXI'
         ], {
-        I: 'the_vault:chromatic_steel_block',
+        I: 'the_vault:black_chromatic_steel_block',
         X: 'the_vault:omega_pog',
         C: 'advancedperipherals:peripheral_casing',
         T: 'the_vault:wold_star'

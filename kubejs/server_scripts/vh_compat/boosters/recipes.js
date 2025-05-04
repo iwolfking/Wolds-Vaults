@@ -17,7 +17,7 @@ onEvent("recipes", event => {
         ], {
         P: 'the_vault:echo_pog',
         B: 'ae2:wireless_booster',
-        S: 'the_vault:wold_star_chunk',
+        S: 'woldsvaults:pogominium_ingot',
         L: 'the_vault:cluster_netherite'
 
     })
@@ -30,7 +30,7 @@ onEvent("recipes", event => {
         ], {
         P: 'the_vault:echo_pog',
         B: 'refinedstorage:range_upgrade',
-        S: 'the_vault:wold_star_chunk',
+        S: 'woldsvaults:pogominium_ingot',
         L: 'the_vault:cluster_netherite'
 
     })

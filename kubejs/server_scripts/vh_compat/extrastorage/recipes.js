@@ -51,20 +51,6 @@ onEvent("recipes", event => {
         E: 'refinedstorage:importer'
     })
 
-    // event.shaped(Item.of('extrastorage:raw_neural_processor'),
-    //     [
-    //         'AQI',
-    //         'QTQ',
-    //         'OPO'
-    //     ], {
-    //     A: 'refinedstorage:raw_advanced_processor',
-    //     Q: 'the_vault:gem_echo',
-    //     I: 'refinedstorage:raw_improved_processor',
-    //     T: 'minecraft:crafting_table',
-    //     O: 'minecraft:obsidian',
-    //     P: 'refinedstorage:processor_binding'
-    // })
-
     event.shaped(Item.of('extrastorage:neural_processor'),
         [
             'AXB',

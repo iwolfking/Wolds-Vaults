@@ -71,5 +71,5 @@ onEvent("recipes", event => {
         S: 'the_vault:driftwood'
     })
 
-    event.smithing('createoreexcavation:netherite_drill', 'createoreexcavation:diamond_drill', 'the_vault:echoing_ingot')
+    event.smithing('createoreexcavation:netherite_drill', 'createoreexcavation:diamond_drill', 'the_vault:black_chromatic_steel_ingot')
 })
