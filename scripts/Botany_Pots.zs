@@ -61,13 +61,13 @@ var materials = {
 
 for materialId, materialName in materials {
 craftingTable.addShaped("botanypots_" + materialName + "_hopper_botany_pot", <item:botanypots:${materialId}_hopper_botany_pot>, [
-    [<item:minecraft:air>, <item:the_vault:extraordinary_larimar>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:the_vault:gem_pog>, <item:minecraft:air>],
     [<item:the_vault:black_chromatic_steel_ingot>, <item:botanypots:${materialId}_botany_pot>, <item:the_vault:black_chromatic_steel_ingot>],
     [<item:minecraft:air>, <item:minecraft:hopper>, <item:minecraft:air>]
 ]);
 
 craftingTable.addShaped("botanypots_" + materialName + "_botany_pot", <item:botanypots:${materialId}_botany_pot>, [
-    [<item:minecraft:${materialId}>, <item:the_vault:vault_essence>, <item:minecraft:${materialId}>],
+    [<item:minecraft:${materialId}>, <item:woldsvaults:chroma_core>, <item:minecraft:${materialId}>],
     [<item:minecraft:${materialId}>, <item:the_vault:packed_vault_meat_block>, <item:minecraft:${materialId}>],
     [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>]
 ]);

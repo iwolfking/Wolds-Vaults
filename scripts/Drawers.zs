@@ -122,32 +122,32 @@ craftingTable.addShaped("storagedrawers_key", <item:storagedrawers:drawer_key>, 
 
 craftingTable.addShaped("storagedrawers_upgrade_template", <item:storagedrawers:upgrade_template> *4, [
     [<item:the_vault:magic_silk>, <item:the_vault:gem_larimar>, <item:the_vault:magic_silk>],
-    [<item:the_vault:chromatic_steel_ingot>, <tag:items:drawers:drawers>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:woldsvaults:infused_driftwood>, <tag:items:drawers:drawers>, <item:woldsvaults:infused_driftwood>],
     [<item:the_vault:magic_silk>, <item:the_vault:gem_larimar>, <item:the_vault:magic_silk>]
 ]);
 
 craftingTable.addShaped("storagedrawers_iron_storage_upgrade", <item:storagedrawers:iron_storage_upgrade>, [
-    [<item:the_vault:chromatic_iron_ingot>, <item:minecraft:iron_ingot>, <item:the_vault:chromatic_iron_ingot>],
-    [<item:minecraft:iron_ingot>, <item:storagedrawers:upgrade_template>, <item:minecraft:iron_ingot>],
-    [<item:the_vault:chromatic_iron_ingot>, <item:minecraft:iron_ingot>, <item:the_vault:chromatic_iron_ingot>]
-]);
-
-craftingTable.addShaped("storagedrawers_gold_storage_upgrade", <item:storagedrawers:gold_storage_upgrade>, [
     [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:vault_essence>, <item:the_vault:chromatic_iron_ingot>],
     [<item:the_vault:vault_essence>, <item:storagedrawers:upgrade_template>, <item:the_vault:vault_essence>],
     [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:vault_essence>, <item:the_vault:chromatic_iron_ingot>]
 ]);
 
+craftingTable.addShaped("storagedrawers_gold_storage_upgrade", <item:storagedrawers:gold_storage_upgrade>, [
+    [<item:the_vault:chromatic_gold_nugget>, <item:the_vault:vault_essence>, <item:the_vault:chromatic_gold_nugget>],
+    [<item:the_vault:vault_essence>, <item:storagedrawers:upgrade_template>, <item:the_vault:vault_essence>],
+    [<item:the_vault:chromatic_gold_nugget>, <item:the_vault:vault_essence>, <item:the_vault:chromatic_gold_nugget>]
+]);
+
 craftingTable.addShaped("storagedrawers_diamond_storage_upgrade", <item:storagedrawers:diamond_storage_upgrade>, [
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_iron_ingot>],
+    [<item:the_vault:chromatic_gold_nugget>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_gold_nugget>],
     [<item:the_vault:vault_diamond>, <item:storagedrawers:upgrade_template>, <item:the_vault:vault_diamond>],
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_iron_ingot>]
+    [<item:the_vault:chromatic_gold_nugget>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_gold_nugget>]
 ]);
 
 craftingTable.addShaped("storagedrawers_emerald_storage_upgrade", <item:storagedrawers:emerald_storage_upgrade>, [
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:chromatic_iron_ingot>],
+    [<item:woldsvaults:chroma_core>, <item:the_vault:black_chromatic_steel_ingot>, <item:woldsvaults:chroma_core>],
     [<item:the_vault:black_chromatic_steel_ingot>, <item:storagedrawers:upgrade_template>, <item:the_vault:black_chromatic_steel_ingot>],
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:chromatic_iron_ingot>]
+    [<item:woldsvaults:chroma_core>, <item:the_vault:black_chromatic_steel_ingot>, <item:woldsvaults:chroma_core>]
 ]);
 
 craftingTable.addShaped("storagedrawers_void_upgrade", <item:storagedrawers:void_upgrade>, [

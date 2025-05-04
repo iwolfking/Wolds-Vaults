@@ -38,10 +38,10 @@ craftingTable.addShapeless("ender_air", <item:botania:ender_air_bottle>, [
 ]);
 
 <recipetype:botania:mana_infusion>.addRecipe("mana_diamond", <item:botania:mana_diamond>,
- <item:the_vault:vault_diamond>, 25000);
+ <item:the_vault:vault_diamond>, 10000);
 
  <recipetype:botania:mana_infusion>.addRecipe("manasteel_ingot", <item:botania:manasteel_ingot>,
- <item:the_vault:chromatic_iron_ingot>, 17500);
+ <item:the_vault:chromatic_iron_ingot>, 5000);
 
 <recipetype:botania:terra_plate>.addRecipe("terra_plate_test", <item:botania:terrasteel_ingot>, 500000,
 <item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:botania:mana_diamond>, <item:botania:manasteel_ingot>, <item:botania:mana_pearl>, <item:the_vault:vault_essence>);

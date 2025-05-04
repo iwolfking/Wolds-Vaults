@@ -830,8 +830,6 @@ craftingTable.remove(<item:sophisticatedbackpacks:stack_upgrade_tier_2>);
 craftingTable.remove(<item:sophisticatedbackpacks:stack_upgrade_tier_3>);
 craftingTable.remove(<item:sophisticatedbackpacks:stack_upgrade_tier_4>);
 craftingTable.remove(<item:sophisticatedbackpacks:refill_upgrade>);
-//craftingTable.remove(<item:sophisticatedbackpacks:void_upgrade>);
-//craftingTable.remove(<item:sophisticatedbackpacks:advanced_void_upgrade>);
 craftingTable.remove(<item:sophisticatedbackpacks:feeding_upgrade>);
 craftingTable.remove(<item:sophisticatedbackpacks:advanced_feeding_upgrade>);
 craftingTable.remove(<item:sophisticatedbackpacks:pickup_upgrade>);
@@ -847,7 +845,6 @@ craftingTable.remove(<item:sophisticatedbackpacks:advanced_deposit_upgrade>);
 craftingTable.remove(<item:waystones:waystone>);
 craftingTable.remove(<item:waystones:mossy_waystone>);
 craftingTable.remove(<item:waystones:sandy_waystone>);
-//craftingTable.remove(<tag:items:waystones:sharestone>);
 craftingTable.remove(<item:waystones:portstone>);
 craftingTable.remove(<item:waystones:return_scroll>);
 craftingTable.remove(<item:waystones:bound_scroll>);
@@ -937,6 +934,7 @@ JEI.hideIngredient(<item:refinedstorage:processor_binding>);
 JEI.hideIngredient(<item:refinedstorage:raw_improved_processor>);
 JEI.hideIngredient(<item:refinedstorage:raw_advanced_processor>);
 JEI.hideIngredient(<item:refinedstorage:portable_grid>);
+
 // Botania
 JEI.hideIngredient(<item:botania:manasteel_helmet>);
 JEI.hideIngredient(<item:botania:manasteel_chestplate>);
@@ -971,7 +969,6 @@ JEI.hideIngredient(<item:botania:smelt_rod>);
 JEI.hideIngredient(<item:botania:star_sword>);
 JEI.hideIngredient(<item:botania:mana_gun>);
 JEI.hideIngredient(<item:botania:diva_charm>);
-JEI.hideIngredient(<item:botania:pinkinator>);
 JEI.hideIngredient(<item:botania:thunder_sword>);
 JEI.hideIngredient(<item:botania:king_key>);
 JEI.hideIngredient(<item:botania:knockback_belt>);
@@ -991,8 +988,6 @@ JEI.hideIngredient(<item:botania:cloud_pendant>);
 JEI.hideIngredient(<item:botania:super_cloud_pendant>);
 JEI.hideIngredient(<item:botania:third_eye>);
 JEI.hideIngredient(<item:botania:goddess_charm>);
-JEI.hideIngredient(<item:botania:laputa_shard>);
-JEI.hideIngredient(<item:botania:infinite_fruit>);
 JEI.hideIngredient(<item:botania:ancient_will_ahrim>);
 JEI.hideIngredient(<item:botania:ancient_will_dharok>);
 JEI.hideIngredient(<item:botania:ancient_will_torag>);
@@ -1057,9 +1052,7 @@ JEI.hideIngredient(<item:mekanism:mekasuit_helmet>);
 JEI.hideIngredient(<item:mekanism:mekasuit_bodyarmor>);
 JEI.hideIngredient(<item:mekanism:mekasuit_pants>);
 JEI.hideIngredient(<item:mekanism:mekasuit_boots>);
-JEI.hideIngredient(<item:mekanism:flamethrower>);
 JEI.hideIngredient(<item:mekanism:jetpack>);
-JEI.hideIngredient(<item:mekanism:free_runners>);
 JEI.hideIngredient(<item:mekanism:free_runners_armored>);
 JEI.hideIngredient(<item:mekanism:jetpack_armored>);
 JEI.hideIngredient(<item:mekanism:portable_teleporter>);
@@ -1098,15 +1091,15 @@ JEI.hideIngredient(<item:mekanism:module_electrolytic_breathing_unit>);
 for coin in coins{
     JEI.hideIngredient(<item:thermal:${coin}_coin>);
 }
+
 // Dark Utilities
-JEI.hideIngredient(<item:darkutils:charm_portal>);
-JEI.hideIngredient(<item:darkutils:charm_warding>);
 JEI.hideIngredient(<item:darkutils:tome_enchanting>);
 JEI.hideIngredient(<item:darkutils:tome_sga>);
 JEI.hideIngredient(<item:darkutils:tome_illager>);
 JEI.hideIngredient(<item:darkutils:tome_shadows>);
 JEI.hideIngredient(<item:darkutils:tome_runelic>);
 JEI.hideIngredient(<item:darkutils:tome_pigpen>);
+
 // Iron Generators
 JEI.hideIngredient(<item:irongenerators:obsidian_generator>);
 JEI.hideIngredient(<item:irongenerators:bronze_generator>);
@@ -1129,18 +1122,16 @@ JEI.hideIngredient(<item:irongenerators:platin_generator>);
 JEI.hideIngredient(<item:irongenerators:infinity_generator>);
 JEI.hideIngredient(<item:irongenerators:netherrack_generator>);
 JEI.hideIngredient(<item:irongenerators:invar_generator>);
+
 // Powah
 JEI.hideIngredient(<item:powah:player_aerial_pearl>);
 JEI.hideIngredient(<item:powah:aerial_pearl>);
 JEI.hideIngredient(<item:powah:binding_card_dim>);
 JEI.hideIngredient(<item:powah:blank_card>);
 JEI.hideIngredient(<item:powah:binding_card>);
+
 // Thermal
-JEI.hideIngredient(<item:thermal:redprint>);
-JEI.hideIngredient(<item:thermal:xp_crystal>);
-JEI.hideIngredient(<item:thermal:rf_potato>);
 JEI.hideIngredient(<item:thermal:drill_head>);
-JEI.hideIngredient(<item:thermal:device_potion_diffuser>);
 JEI.hideIngredient(<item:thermal:chiller_rod_cast>);
 JEI.hideIngredient(<item:thermal:chiller_ingot_cast>);
 
@@ -1291,7 +1282,6 @@ JEI.hideIngredient(<item:the_vault:crystal_bud_large>);
 JEI.hideIngredient(<item:the_vault:gemmed_ingot>);
 JEI.hideIngredient(<item:the_vault:golden_tooth>);
 JEI.hideIngredient(<item:the_vault:unknown_egg>);
-JEI.hideIngredient(<item:the_vault:abyssal_ichor>); 
 JEI.hideIngredient(<item:the_vault:archetype_star>);
 JEI.hideIngredient(<item:the_vault:archetype_star_core>);
 JEI.hideIngredient(<item:the_vault:archetype_star_essence>);
@@ -1359,8 +1349,7 @@ JEI.hideIngredient(<item:ironfurnaces:upgrade_silver2>);
 JEI.hideIngredient(<item:ironfurnaces:upgrade_obsidian2>);
 JEI.hideIngredient(<item:ironfurnaces:item_linker>);
 JEI.hideIngredient(<item:ironfurnaces:augment_xp>);
-// Rf Tools
-JEI.hideIngredient(<item:rftoolsbase:tablet_filled>);
+
 // Titanium
 JEI.hideMod("titanium");
 // Rotten Creatures

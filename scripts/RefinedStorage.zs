@@ -227,9 +227,9 @@ craftingTable.addShaped("rs_controller", <item:refinedstorage:controller>, [
 ]);
 
 craftingTable.addShaped("rs_crafter", <item:refinedstorage:crafter>, [
-    [<item:the_vault:gem_pog>, <item:refinedstorage:construction_core>, <item:the_vault:gem_pog>],
+    [<item:the_vault:pog_prism>, <item:refinedstorage:construction_core>, <item:the_vault:pog_prism>],
     [<item:refinedstorage:advanced_processor>, <item:refinedstorage:machine_casing>, <item:refinedstorage:advanced_processor>],
-    [<item:the_vault:gem_pog>,<item:refinedstorage:destruction_core>, <item:the_vault:gem_pog>]
+    [<item:the_vault:black_chromatic_steel_ingot>,<item:refinedstorage:destruction_core>, <item:the_vault:black_chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("rs_crafter_manager", <item:refinedstorage:crafter_manager>, [
@@ -240,7 +240,7 @@ craftingTable.addShaped("rs_crafter_manager", <item:refinedstorage:crafter_manag
 
 craftingTable.addShaped("rs_pattern", <item:refinedstorage:pattern>, [
     [<item:the_vault:magic_silk>, <item:the_vault:magic_silk>, <item:the_vault:magic_silk>],
-    [<item:the_vault:driftwood>, <item:the_vault:driftwood>, <item:the_vault:driftwood>],
+    [<item:woldsvaults:infused_driftwood>, <item:woldsvaults:infused_driftwood>, <item:woldsvaults:infused_driftwood>],
     [<item:refinedstorage:quartz_enriched_iron>,<item:refinedstorage:quartz_enriched_iron>, <item:refinedstorage:quartz_enriched_iron>]
 ]);
 

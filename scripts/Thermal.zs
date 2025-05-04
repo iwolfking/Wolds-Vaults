@@ -157,9 +157,9 @@ craftingTable.addShaped("thermal_compression_dynamo", <item:thermal:dynamo_compr
 ]);
 
 craftingTable.addShaped("thermal_phyto_insolator", <item:thermal:machine_insolator>, [
-    [<item:minecraft:air>, <item:the_vault:echo_pog>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:thermal:rf_coil>, <item:minecraft:air>],
     [<item:the_vault:black_chromatic_steel_ingot>, <item:thermal:machine_frame>, <item:the_vault:black_chromatic_steel_ingot>],
-    [<item:thermal:lumium_gear>, <item:thermal:rf_coil>, <item:thermal:lumium_gear>]
+    [<item:thermal:lumium_gear>, <item:the_vault:echo_pog>, <item:thermal:lumium_gear>]
 ]);
 
 craftingTable.addShaped("thermal_pulverizor", <item:thermal:machine_pulverizer>, [

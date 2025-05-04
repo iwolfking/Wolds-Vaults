@@ -52,9 +52,9 @@ craftingTable.addShaped("goldenapple", <item:minecraft:golden_apple>, [
 
 
 craftingTable.addShaped("cage_dust", <item:ispawner:cage_dust>, [
-    [<item:minecraft:air>, <item:the_vault:gem_larimar>, <item:minecraft:air>],
-    [<item:the_vault:gem_larimar>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:gem_larimar>],
-    [<item:minecraft:air>, <item:the_vault:gem_larimar>, <item:minecraft:air>]
+    [<item:minecraft:air>, <item:the_vault:gem_painite>, <item:minecraft:air>],
+    [<item:the_vault:gem_painite>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:gem_painite>],
+    [<item:minecraft:air>, <item:the_vault:gem_painite>, <item:minecraft:air>]
 ]);
 
 craftingTable.addShapeless("suspicious_weaknes_red_stew", <item:minecraft:suspicious_stew>.withTag({Effects: [{EffectId: 18 as byte, EffectDuration: 180 as int}]}), [

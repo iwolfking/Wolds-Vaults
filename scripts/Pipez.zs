@@ -5,20 +5,20 @@ for Iskall85's Vaulthunters */
 
 craftingTable.addShaped("ultimate_upgrade", <item:pipez:ultimate_upgrade>, [
     [<item:the_vault:gem_echo>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:gem_echo>], 
-    [<tag:items:forge:storage_blocks/redstone>, <item:pipez:advanced_upgrade>, <tag:items:forge:storage_blocks/redstone>], 
+    [<item:the_vault:magic_silk_block>, <item:pipez:advanced_upgrade>, <item:the_vault:magic_silk_block>], 
     [<item:the_vault:gem_echo>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:gem_echo>], 
 ]);
 
 craftingTable.addShaped("advanced_upgrade", <item:pipez:advanced_upgrade>, [
     [<item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>], 
-    [<tag:items:forge:storage_blocks/redstone>, <item:pipez:improved_upgrade>, <tag:items:forge:storage_blocks/redstone>], 
+    [<item:the_vault:magic_silk_block>, <item:pipez:improved_upgrade>, <item:the_vault:magic_silk_block>], 
     [<item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>], 
 ]);
 
 craftingTable.addShaped("improved_upgrade", <item:pipez:improved_upgrade>, [
     [<item:the_vault:chromatic_steel_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_ingot>], 
     [<item:minecraft:redstone_block>, <item:pipez:basic_upgrade>, <item:minecraft:redstone_block>], 
-    [<item:the_vault:chromatic_steel_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_ingot>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:woldsvaults:chroma_core>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("basic_upgrade", <item:pipez:basic_upgrade>, [

@@ -18,7 +18,7 @@ craftingTable.addShaped("sophisticatedbackpacks_pouch", <item:sophisticatedbackp
     "PBP",
     "MSM"],
   "key": {
-    "I": {"item": "the_vault:vault_essence"},
+    "I": {"item": "the_vault:vault_diamond"},
     "P": {"item": "the_vault:extraordinary_larimar"},
     "L": {"item": "the_vault:vault_diamond_block"},
     "S": {"item": "the_vault:magic_silk"},
@@ -34,7 +34,7 @@ craftingTable.addShaped("sophisticatedbackpacks_pouch", <item:sophisticatedbackp
     "PBP",
     "MSM"],
   "key": {
-    "I": {"item": "the_vault:vault_essence"},
+    "I": {"item": "the_vault:vault_diamond"},
     "P": {"item": "the_vault:extraordinary_larimar"},
     "L": {"item": "the_vault:gem_pog"},
     "S": {"item": "the_vault:magic_silk"},
@@ -50,11 +50,11 @@ craftingTable.addShaped("sophisticatedbackpacks_pouch", <item:sophisticatedbackp
     "PBP",
     "MSM"],
   "key": {
-    "I": {"item": "the_vault:vault_essence_1"},
-    "P": {"item": "the_vault:extraordinary_larimar"},
-    "S": {"item": "the_vault:magic_silk"},
-    "X": {"item": "the_vault:gem_pog"},
-    "M": {"item": "the_vault:magic_silk_block"},
+    "I": {"item": "the_vault:vault_diamond"},
+    "P": {"item": "woldsvaults:chroma_core"},
+    "S": {"item": "the_vault:magic_silk_block"},
+    "X": {"item": "the_vault:pog_prism"},
+    "M": {"item": "woldsvaults:prismatic_fiber"},
     "B": {"item": "sophisticatedbackpacks:gold_backpack"}},
   "result": {"item": "sophisticatedbackpacks:diamond_backpack"}
 });
@@ -66,10 +66,10 @@ craftingTable.addShaped("sophisticatedbackpacks_pouch", <item:sophisticatedbackp
     "PBP",
     "SMS"],
   "key": {
-    "I": {"item": "the_vault:vault_essence_1"},
-    "P": {"item": "the_vault:extraordinary_larimar"},
+    "I": {"item": "the_vault:magic_silk_block"},
+    "P": {"item": "woldsvaults:chroma_core"},
     "L": {"item": "the_vault:vault_diamond_block"},
-    "S": {"item": "the_vault:magic_silk_block"},
+    "S": {"item": "woldsvaults:prismatic_fiber"},
     "M": {"item": "the_vault:echo_pog"},
     "B": {"item": "sophisticatedbackpacks:diamond_backpack"}},
   "result": {"item": "sophisticatedbackpacks:netherite_backpack"}

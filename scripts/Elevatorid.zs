@@ -28,8 +28,8 @@ for dyeId, dyeName in dye {
   ]);
 
     craftingTable.addShaped("shaped_elevatorid_" + dyeName + "_elevator", <item:elevatorid:elevator_${dyeName}>, [
-    [<item:the_vault:chromatic_steel_ingot>, <item:minecraft:${dyeName}_wool>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:the_vault:magic_silk>, <item:minecraft:${dyeName}_wool>, <item:the_vault:magic_silk>],
     [<item:minecraft:${dyeName}_wool>, <item:the_vault:perfect_larimar>, <item:minecraft:${dyeName}_wool>],
-    [<item:the_vault:chromatic_steel_ingot>, <item:minecraft:${dyeName}_wool>, <item:the_vault:chromatic_steel_ingot>]
+    [<item:the_vault:magic_silk>, <item:minecraft:${dyeName}_wool>, <item:the_vault:magic_silk>]
   ]);
 }

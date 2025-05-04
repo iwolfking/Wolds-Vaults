@@ -15,14 +15,14 @@ craftingTable.addShaped("cage_piece", <item:ispawner:cage_piece>, [
 ]);
 
 craftingTable.addShaped("survival_spawner", <item:ispawner:survival_spawner>, [
-    [<item:the_vault:black_chromatic_steel_ingot>, <item:ispawner:cage_piece>, <item:the_vault:black_chromatic_steel_ingot>],
+    [<item:woldsvaults:pogominium_ingot>, <item:ispawner:cage_piece>, <item:woldsvaults:pogominium_ingot>],
     [<item:ispawner:cage_piece>, <item:the_vault:echo_pog>, <item:ispawner:cage_piece>],
     [<item:the_vault:black_chromatic_steel_ingot>, <item:ispawner:cage_piece>, <item:the_vault:black_chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("cagerium_cage", <item:cagerium:cage>, [
-    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:chromatic_steel_ingot>],
-    [<item:the_vault:chromatic_steel_ingot>, <item:cagerium:ominous_skull>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:the_vault:wutodic_silver_ingot>, <item:the_vault:wutodic_silver_ingot>, <item:the_vault:wutodic_silver_ingot>],
+    [<item:the_vault:wutodic_silver_ingot>, <item:cagerium:ominous_skull>, <item:the_vault:wutodic_silver_ingot>],
     [<item:the_vault:chromatic_steel_block>, <item:the_vault:chromatic_steel_block>, <item:the_vault:chromatic_steel_block>]
 ]);
 

@@ -108,9 +108,9 @@ craftingTable.addShaped("ae2_annihilation_core", <item:ae2:annihilation_core>, [
 ]);
 
 craftingTable.addShaped("ae2_molecular_assembler", <item:ae2:molecular_assembler>, [
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:gem_pog>, <item:the_vault:chromatic_iron_ingot>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:pog_prism>, <item:the_vault:chromatic_steel_ingot>],
     [<item:ae2:formation_core>, <item:minecraft:crafting_table>, <item:ae2:annihilation_core>],
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:gem_pog>, <item:the_vault:chromatic_iron_ingot>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:woldsvaults:chroma_core>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("ae2_interface", <item:ae2:interface>, [
@@ -237,14 +237,14 @@ craftingTable.addShaped("ae2_network_wireless_booster", <item:ae2:wireless_boost
 ]);
 
 craftingTable.addShaped("ae2_pattern_provider", <item:ae2:pattern_provider>, [
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:gem_pog>, <item:the_vault:chromatic_iron_ingot>], 
+    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:pog_prism>, <item:the_vault:chromatic_iron_ingot>], 
     [<item:ae2:formation_core>, <item:minecraft:crafting_table>, <item:ae2:annihilation_core>],
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:gem_pog>, <item:the_vault:chromatic_iron_ingot>]
+    [<item:the_vault:chromatic_iron_ingot>, <item:woldsvaults:chroma_core>, <item:the_vault:chromatic_iron_ingot>]
 ]);
 
 craftingTable.addShaped("ae2_pattern", <item:ae2:blank_pattern>, [
     [<item:the_vault:magic_silk>, <item:the_vault:magic_silk>, <item:the_vault:magic_silk>],
-    [<item:the_vault:driftwood>, <tag:items:forge:gems/certus_quartz>, <item:the_vault:driftwood>],
+    [<item:woldsvaults:infused_driftwood>, <tag:items:forge:gems/certus_quartz>, <item:woldsvaults:infused_driftwood>],
     [<item:the_vault:chromatic_iron_ingot>,<item:the_vault:chromatic_iron_ingot>, <item:the_vault:chromatic_iron_ingot>]
 ]);
 

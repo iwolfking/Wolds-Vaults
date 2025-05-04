@@ -89,18 +89,18 @@ craftingTable.addShapeless("create_large_cogwheel_shapeless2", <item:create:larg
 
 craftingTable.addShaped("create_hand_crank", <item:create:hand_crank>, [
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
-    [<item:the_vault:driftwood>, <item:the_vault:chromatic_iron_ingot>, <item:the_vault:driftwood>],
+    [<item:the_vault:driftwood>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:driftwood>],
     [<item:minecraft:air>, <item:minecraft:air>, <item:create:andesite_alloy>]
 ]);
 
 craftingTable.addShaped("create_crushing_wheel", <item:create:crushing_wheel>, [
-    [<item:create:andesite_alloy>, <item:the_vault:driftwood>, <item:create:andesite_alloy>],
-    [<item:the_vault:driftwood>, <item:the_vault:polished_vault_stone>, <item:the_vault:driftwood>],
-    [<item:create:andesite_alloy>, <item:the_vault:driftwood>, <item:create:andesite_alloy>]
+    [<item:create:andesite_alloy>, <item:woldsvaults:infused_driftwood>, <item:create:andesite_alloy>],
+    [<item:woldsvaults:infused_driftwood>, <item:woldsvaults:chroma_core>, <item:woldsvaults:infused_driftwood>],
+    [<item:create:andesite_alloy>, <item:woldsvaults:infused_driftwood>, <item:create:andesite_alloy>]
 ]);
 
 craftingTable.addShaped("create_cart_assembler", <item:create:cart_assembler>, [
-    [<item:the_vault:extraordinary_larimar>, <item:create:andesite_alloy>, <item:the_vault:extraordinary_larimar>],
+    [<item:the_vault:extraordinary_larimar>, <item:woldsvaults:pogominium_ingot>, <item:the_vault:extraordinary_larimar>],
     [<item:the_vault:vault_diamond_block>, <item:the_vault:echo_pog>, <item:the_vault:vault_diamond_block>],
     [<item:the_vault:extraordinary_larimar>, <item:create:andesite_alloy>, <item:the_vault:extraordinary_larimar>]
 ]);
@@ -124,15 +124,15 @@ craftingTable.addShaped("create_smart_chute", <item:create:smart_chute>, [
 ]);
 
 craftingTable.addShaped("create_waterwheel", <item:create:water_wheel>, [
-    [<item:the_vault:driftwood>, <item:the_vault:driftwood>, <item:the_vault:driftwood>],
+    [<item:woldsvaults:infused_driftwood>, <item:woldsvaults:infused_driftwood>, <item:woldsvaults:infused_driftwood>],
     [<item:the_vault:chromatic_steel_ingot>, <item:minecraft:water_bucket>, <item:the_vault:chromatic_steel_ingot>],
-    [<item:the_vault:driftwood>, <item:the_vault:driftwood>, <item:the_vault:driftwood>]
+    [<item:woldsvaults:infused_driftwood>, <item:woldsvaults:infused_driftwood>, <item:woldsvaults:infused_driftwood>]
 ]);
 
 craftingTable.addShaped("create_large_waterwheel", <item:create:large_water_wheel>, [
-    [<item:the_vault:driftwood>, <item:the_vault:driftwood>, <item:the_vault:driftwood>],
-    [<item:create:water_wheel>, <item:the_vault:gem_pog>, <item:create:water_wheel>],
-    [<item:the_vault:driftwood>, <item:the_vault:driftwood>, <item:the_vault:driftwood>]
+    [<item:woldsvaults:infused_driftwood>, <item:woldsvaults:infused_driftwood>, <item:woldsvaults:infused_driftwood>],
+    [<item:create:water_wheel>, <item:woldsvaults:chroma_core>, <item:create:water_wheel>],
+    [<item:woldsvaults:infused_driftwood>, <item:woldsvaults:infused_driftwood>, <item:woldsvaults:infused_driftwood>]
 ]);
 
 craftingTable.addShaped("create_basin", <item:create:basin>, [
@@ -217,8 +217,8 @@ craftingTable.addShaped("create_gantry_carriage", <item:create:gantry_carriage>,
 
 craftingTable.addShaped("create_steam_engine", <item:create:steam_engine>, [
     [<item:the_vault:black_chromatic_steel_ingot>, <tag:items:forge:plates/gold>, <item:the_vault:black_chromatic_steel_ingot>],
-    [<item:the_vault:vault_diamond>, <item:create:brass_casing>, <item:the_vault:vault_diamond>],
-    [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:gem_pog>, <item:the_vault:black_chromatic_steel_ingot>]
+    [<item:the_vault:vault_diamond_block>, <item:create:brass_casing>, <item:the_vault:vault_diamond_block>],
+    [<item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:pog_prism>, <item:the_vault:black_chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("create_vault", <item:create:item_vault> *3, [
@@ -255,8 +255,8 @@ craftingTable.addShapeless("create_limestone_shapeless", <item:create:limestone>
 
 craftingTable.addShaped("create_schematicannon", <item:create:schematicannon>, [
     [<item:minecraft:air>, <item:the_vault:chromatic_iron_block>, <item:minecraft:air>], 
-    [<item:the_vault:driftwood>, <item:the_vault:chromatic_iron_block>, <item:the_vault:driftwood>], 
-    [<item:minecraft:smooth_stone>, <item:the_vault:vault_essence>, <item:minecraft:smooth_stone>]
+    [<item:woldsvaults:infused_driftwood>, <item:the_vault:chromatic_iron_block>, <item:woldsvaults:infused_driftwood>], 
+    [<item:minecraft:smooth_stone>, <item:the_vault:vault_diamond_block>, <item:minecraft:smooth_stone>]
 ]);
 
 craftingTable.addShaped("create_schematic_table", <item:create:schematic_table>, [

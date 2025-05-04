@@ -13,17 +13,17 @@ var dyes = {
 craftingTable.addShaped("xnet_controller", <item:xnet:controller>, [
     [<item:minecraft:repeater>, <item:minecraft:comparator>, <item:minecraft:repeater>],
     [<item:the_vault:perfect_larimar>, <item:rftoolsbase:machine_frame>, <item:the_vault:perfect_larimar>],
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_iron_ingot>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("xnet_router", <item:xnet:router>, [
     [<item:minecraft:powered_rail>, <item:minecraft:comparator>, <item:minecraft:powered_rail>],
     [<item:the_vault:perfect_larimar>, <item:xnet:controller>, <item:the_vault:perfect_larimar>],
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_iron_ingot>]
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>]
 ]);
 
 craftingTable.addShaped("xnet_wireless_router", <item:xnet:wireless_router>, [
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_iron_ingot>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>],
     [<item:the_vault:extraordinary_larimar>, <item:xnet:router>, <item:the_vault:extraordinary_larimar>],
     [<item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_block>, <item:minecraft:redstone_block>]
 ]);
