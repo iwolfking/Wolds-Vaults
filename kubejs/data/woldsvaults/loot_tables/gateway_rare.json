@@ -219,7 +219,7 @@
         {
           "type": "minecraft:item",
           "name": "woldsvaults:unidentified_gateway_pearl",
-          "weight": 4,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -228,6 +228,26 @@
                 "min": 1,
                 "max": 1
               }
+            }
+          ],
+          "conditions": []
+        },
+        {
+          "type": "minecraft:item",
+          "name": "the_vault:jewel",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{\"the_vault:gear_unique_pool\":\"woldsvaults:shattering_jewel\",\"the_vault:gear_roll_type\":\"Unique\"}"
             }
           ],
           "conditions": []
