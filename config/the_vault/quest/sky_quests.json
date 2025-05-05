@@ -4255,6 +4255,36 @@
       }
     },
     {
+      "type": "level_up",
+      "id": "reach_level_70",
+      "name": "Trinket Pouches",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Now that you are approaching the later stages of the game, you can expand your trinket arsenal with bigger, better Trinket Pouches! You can find recipe blueprints for Trinket Pouches in places like Vendors and other locations...",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nReach Vault Level 70",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/level70",
+      "targetId": "the_vault:70",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "woldsvaults:trinket_pouch",
+            "nbt": "{id:\"woldsvaults:standard\"}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
       "type": "crafting",
       "id": "tbd",
       "name": "More to come!",
