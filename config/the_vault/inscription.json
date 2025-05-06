@@ -1,5 +1,34 @@
 {
   "pools": {
+    "the_vault:aquarium": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "entries": [
+                {
+                  "pool":  "the_vault:vault/rooms/challenge/aquarium",
+                  "count": 1,
+                  "color": 15769088
+                }
+              ],
+              "size": {
+                "type": "uniform",
+                "min": 10,
+                "max": 10
+              },
+              "model": {
+                "type": "uniform",
+                "min": 101,
+                "max": 101
+              }
+            },
+            "weight": 16
+          }
+        ]
+      }
+    ],
     "the_vault:gateway": [
       {
         "level": 0,
@@ -1128,6 +1157,28 @@
     ],
     "the_vault:blackmarket": [
       {
+        "value": {
+          "entries": [
+            {
+              "pool": "the_vault:vault/rooms/challenge/aquarium",
+              "count": 1,
+              "color": 15769088
+            }
+          ],
+          "size": {
+            "type": "uniform",
+            "min": 10,
+            "max": 10
+          },
+          "model": {
+            "type": "uniform",
+            "min": 102,
+            "max": 102
+          }
+        },
+        "weight": 12
+      },
+      {
         "level": 0,
         "pool": [
           {
@@ -1577,6 +1628,28 @@
       {
         "level": 0,
         "pool": [
+          {
+            "value": {
+              "entries": [
+                {
+                  "pool": "the_vault:vault/rooms/challenge/aquarium",
+                  "count": 1,
+                  "color": 15769088
+                }
+              ],
+              "size": {
+                "type": "uniform",
+                "min": 10,
+                "max": 10
+              },
+              "model": {
+                "type": "uniform",
+                "min": 102,
+                "max": 102
+              }
+            },
+            "weight": 12
+          },
           {
             "value": {
               "entries": [
@@ -2218,6 +2291,28 @@
                 "type": "uniform",
                 "min": 8,
                 "max": 8
+              }
+            },
+            "weight": 12
+          },
+          {
+            "value": {
+              "entries": [
+                {
+                  "pool": "the_vault:vault/rooms/challenge/aquarium",
+                  "count": 1,
+                  "color": 15769088
+                }
+              ],
+              "size": {
+                "type": "uniform",
+                "min": 10,
+                "max": 10
+              },
+              "model": {
+                "type": "uniform",
+                "min": 102,
+                "max": 102
               }
             },
             "weight": 12
@@ -3362,7 +3457,9 @@
     "the_vault:vault/rooms/raw/chromatic_caves": 16,
     "the_vault:vault/rooms/raw/farm": 17,
     "the_vault:vault/rooms/raw/emerald_caves": 18,
-    "the_vault:map/rooms/gateway_rooms": 101
+    "the_vault:map/rooms/gateway_rooms": 101,
+    "the_vault:vault/rooms/challenge/aquarium": 102,
+    "the_vault:vault/rooms/challenge/labyrinth": 103
   },
   "ringWeights": [
     50,
