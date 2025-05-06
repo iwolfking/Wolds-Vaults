@@ -1,0 +1,37 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"gilded_chest\"]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 5,
+        "minecraft:air": 5
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"coin_stacks\"]",
+      "output": {
+        "the_vault:placeholder[type=coin_stacks]": 5,
+        "minecraft:air": 5
+      }
+    },
+    {
+      "type": "placeholder",
+      "target": "ORE",
+      "output": {
+        "minecraft:stone": 40,
+		    "the_vault:ore_larimar[type=stone]": 30,
+        "the_vault:ore_benitoite[type=stone]": 20,
+        "the_vault:ore_wutodie[type=stone]": 9,
+		    "the_vault:ore_echo[type=stone]": 1
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}
