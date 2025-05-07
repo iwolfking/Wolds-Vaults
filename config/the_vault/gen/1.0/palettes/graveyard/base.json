@@ -1,0 +1,67 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"wooden_chest\"]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 4,
+        "the_vault:placeholder[type=living_chest]": 10,
+        "the_vault:placeholder[type=ornate_chest]": 7,
+        "the_vault:placeholder[type=wooden_chest]": 10,
+        "minecraft:air": 4
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"coin_stacks\"]",
+      "output": {
+        "the_vault:placeholder[type=coin_stacks]": 4,
+        "minecraft:air": 4
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:player_head",
+      "output": {
+          "minecraft:player_head[rotation=0]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=1]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=2]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=3]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=4]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=5]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=6]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=7]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=8]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=9]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=10]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=11]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=12]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=13]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=14]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1,
+          "minecraft:player_head[rotation=15]{display:{Name:\"{\\\"text\\\":\\\"Skull\\\"}\"},SkullOwner:{Id:[I;-967193132,-466204297,-1498950319,-1900097605],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19\"}]}}}": 1
+      }
+    },
+    {
+      "type": "placeholder",
+      "target": "VENDOR_PEDESTAL",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 0.1,
+          "success": {
+            "woldsvaults:spooky_shop_pedestal": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}
