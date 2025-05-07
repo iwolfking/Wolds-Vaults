@@ -1,0 +1,186 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"objective\"]",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"ornate_chest_guaranteed\"]",
+      "output": {
+        "the_vault:placeholder[type=ornate_chest]": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"ornate_chest\"]",
+      "output": {
+        "the_vault:placeholder[type=ornate_chest]": 7,
+        "minecraft:air": 3
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"living_chest_guaranteed\"]",
+      "output": {
+        "the_vault:placeholder[type=living_chest]": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"living_chest\"]",
+      "output": {
+        "the_vault:placeholder[type=living_chest]": 7,
+        "minecraft:air": 3
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"gilded_chest_guaranteed\"]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"gilded_chest\"]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 7,
+        "minecraft:air": 3
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"coin_stacks\"]",
+      "output": {
+        "the_vault:placeholder[type=coin_stacks]": 5,
+        "minecraft:air": 5
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"coin_stacks_guaranteed\"]",
+      "output": {
+        "the_vault:placeholder[type=coin_stacks]": 1
+      }
+    },
+    {
+      "type": "placeholder",
+      "target": "ORE",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 0.8,
+          "success": {
+            "the_vault:ore_echo[type=vault_stone,generated=true]": 1,
+            "the_vault:ore_black_opal[type=vault_stone,generated=true]": 3,
+            "the_vault:ore_iskallium[type=vault_stone,generated=true]": 5,
+            "the_vault:ore_gorginite[type=vault_stone,generated=true]": 5,
+            "the_vault:ore_ashium[type=vault_stone,generated=true]": 5,
+            "the_vault:ore_sparkletine[type=vault_stone,generated=true]": 5,
+            "the_vault:ore_bomignite[type=vault_stone,generated=true]": 5,
+            "the_vault:ore_tubium[type=vault_stone,generated=true]": 5,
+            "the_vault:ore_upaline[type=vault_stone,generated=true]": 5,
+            "the_vault:ore_xenium[type=vault_stone,generated=true]": 5,
+            "the_vault:ore_petzanite[type=vault_stone,generated=true]": 5
+          },
+          "failure": {
+            "the_vault:vault_stone": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "placeholder",
+      "target": "DUNGEON_DISCOVERABLE",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 0.4,
+          "success": {
+            "the_vault:modifier_discovery": 0,
+            "the_vault:enhancement_altar": 0,
+            "the_vault:alchemy_archive": 5
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 50,
+          "probability": 0.5,
+          "success": {
+            "the_vault:modifier_discovery": 8,
+            "the_vault:enhancement_altar": 0,
+            "the_vault:alchemy_archive": 2
+          },
+          "failure": {
+            "woldsvaults:dungeon_pedestal{Generated:0b,LootTable:\"the_vault:dungeon_pedestal_lvl50\"}": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "the_vault:treasure_sand",
+          "output": {
+            "the_vault:treasure_sand{LootTable:\"the_vault:treasure_sand_lvl0\"}": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:cube_block[color=blue]",
+      "output": {
+        "the_vault:cube_block[color=blue]{LootTable:\"the_vault:cube_block_lvl0\"}": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:cube_block[color=yellow]",
+      "output": {
+        "the_vault:cube_block[color=yellow]{LootTable:\"the_vault:cube_block_lvl0\"}": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:cube_block[color=green]",
+      "output": {
+        "the_vault:cube_block[color=green]{LootTable:\"the_vault:cube_block_lvl0\"}": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:cube_block[color=red]",
+      "output": {
+        "the_vault:cube_block[color=red]{LootTable:\"the_vault:cube_block_lvl0\"}": 1
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/dungeon_door_placeholder_comet"
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/treasure_door_placeholder"
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/comet_pedestal_placeholder"
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

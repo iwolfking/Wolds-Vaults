@@ -755,10 +755,8 @@ craftingTable.remove(<item:mcwbridges:iron_bridge>);
 
 // Create
 craftingTable.remove(<item:create:item_vault>);
-craftingTable.remove(<item:create:extendo_grip>);
 craftingTable.remove(<item:create:potato_cannon>);
 craftingTable.remove(<item:create:andesite_alloy>);
-craftingTable.remove(<item:create:extendo_grip>);
 craftingTable.remove(<item:create:hand_crank>);
 craftingTable.remove(<item:create:cogwheel>);
 craftingTable.remove(<item:create:large_cogwheel>);
@@ -803,8 +801,6 @@ craftingTable.remove(<item:create:large_water_wheel>);
 <recipetype:create:crushing>.removeByName("create:crushing/ochrum");
 <recipetype:create:crushing>.removeByName("create:crushing/asurine_recycling");
 <recipetype:create:crushing>.removeByName("create:crushing/asurine");
-<recipetype:create:mechanical_crafting>.remove(<item:create:wand_of_symmetry>);
-<recipetype:create:mechanical_crafting>.remove(<item:create:extendo_grip>);
 <recipetype:create:mixing>.remove(<item:create:andesite_alloy>);
 <recipetype:create:deploying>.remove(<item:create:cogwheel>);
 <recipetype:create:deploying>.remove(<item:create:large_cogwheel>);

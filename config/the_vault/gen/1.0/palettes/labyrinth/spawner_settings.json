@@ -1,0 +1,140 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "minecraft:deepslate_emerald_ore",
+      "output": {
+        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"grimoireofgaia:banshee_spawn_egg\", Count: 2}, {id: \"grimoireofgaia:wither_cow_spawn_egg\", Count: 2},  {id: \"grimoireofgaia:matango_spawn_egg\", Count: 2}, {id: \"the_vault:elite_witch_egg\", Count: 1}, {id: \"the_vault:elite_wither_skeleton_egg\", Count: 1}, {id: \"grimoireofgaia:naga_spawn_egg\", Count: 2}   ] } }": 2,
+        "minecraft:air": 2
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:deepslate_lapis_ore",
+      "output": {
+        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"grimoireofgaia:behender_spawn_egg\", Count: 2}  ] } }": 2,
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:deepslate_diamond_ore",
+      "output": {
+        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"ispawner:spawn_egg\", Count: 4, tag: {EntityTag:{id:\"the_vault:bruiser_guardian\"}}}  ] } }": 1,
+        "minecraft:air": 3
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:deepslate_iron_ore",
+      "output": {
+        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"grimoireofgaia:minotaur_spawn_egg\", Count: 3},{id: \"grimoireofgaia:minotaurus_spawn_egg\", Count: 2}  ] } }": 10,
+        "minecraft:air": 2
+      }
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner",
+          "output": {
+            "ispawner:spawner{ Manager:{ UsesLeft:1 } }": 1,
+            "ispawner:spawner{ Manager:{ UsesLeft:2 } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/spawners/generic_settings"
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner",
+          "output": {
+            "ispawner:spawner{ Manager: { Settings: { Attempts: 3 } } }": 1
+          }
+        },
+        {
+          "level": 50,
+          "type": "weighted_target",
+          "target": "ispawner:spawner",
+          "output": {
+            "ispawner:spawner{ Manager: { Settings: { Attempts: 4 } } }": 1
+          }
+        },
+        {
+          "level": 65,
+          "type": "weighted_target",
+          "target": "ispawner:spawner",
+          "output": {
+            "ispawner:spawner{ Manager: { Settings: { Attempts: 5 } } }": 1
+          }
+        },
+        {
+          "level": 90,
+          "type": "weighted_target",
+          "target": "ispawner:spawner",
+          "output": {
+            "ispawner:spawner{ Manager: { Settings: { Attempts: 6 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner",
+          "output": {
+            "ispawner:spawner{ Manager: { Settings: { Mode: 2, PlayerRadius: 12 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner",
+          "output": {
+            "ispawner:spawner{ Manager: { Settings: { SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 50,
+          "type": "weighted_target",
+          "target": "ispawner:spawner",
+          "output": {
+            "ispawner:spawner{ Manager: { Settings: { SpawnDelay: 40 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner",
+          "output": {
+            "ispawner:spawner{ Manager: { Actions: [{Action: {Side: 1, HitPosX: -0.5942726135253906d, Pos: -274877902849L, Directions: [I; 0, 5, 3, 2, 4, 1], Hand: 0, HitPosY: 0.0d, HitPosZ: 0.37781065702438354d}, Weight: 1}, {Action: {Side: 1, HitPosX: -1.4572412967681885d, Pos: -274877906946L, Directions: [I; 0, 3, 5, 4, 2, 1], Hand: 0, HitPosY: -1.0d, HitPosZ: -0.7659928649663925d}, Weight: 1}, {Action: {Side: 1, HitPosX: 0.44859248399734497d, Pos: 274877902847L, Directions: [I; 0, 3, 5, 4, 2, 1], Hand: 0, HitPosY: 0.0d, HitPosZ: -1.5036776065826416d}, Weight: 1}, {Action: {Side: 1, HitPosX: 0.43532565236091614d, Pos: 274877898750L, Directions: [I; 0, 3, 5, 4, 2, 1], Hand: 0, HitPosY: -1.0d, HitPosZ: -2.5827247500419617d}, Weight: 1}, {Action: {Side: 1, HitPosX: 2.6784324645996094d, Pos: 824633712638L, Directions: [I; 0, 3, 4, 5, 2, 1], Hand: 0, HitPosY: -1.0d, HitPosZ: -2.3131242394447327d}, Weight: 1}, {Action: {Side: 1, HitPosX: 2.5061299800872803d, Pos: 549755817982L, Directions: [I; 0, 3, 4, 5, 2, 1], Hand: 0, HitPosY: -1.0d, HitPosZ: 0.406134694814682d}, Weight: 1}, {Action: {Side: 1, HitPosX: 1.7443612217903137d, Pos: 274877911039L, Directions: [I; 0, 4, 3, 2, 5, 1], Hand: 0, HitPosY: 0.0d, HitPosZ: 0.6870598793029785d}, Weight: 1}, {Action: {Side: 1, HitPosX: 1.6131389141082764d, Pos: 274877915135L, Directions: [I; 0, 4, 3, 2, 5, 1], Hand: 0, HitPosY: 0.0d, HitPosZ: 1.3398105800151825d}, Weight: 1}, {Action: {Side: 1, HitPosX: 0.6483498811721802d, Pos: 16382L, Directions: [I; 0, 2, 4, 5, 3, 1], Hand: 0, HitPosY: -1.0d, HitPosZ: 3.5356494188308716d}, Weight: 1}, {Action: {Side: 1, HitPosX: 0.5678262710571289d, Pos: 12287L, Directions: [I; 0, 2, 4, 5, 3, 1], Hand: 0, HitPosY: 0.0d, HitPosZ: 2.362459033727646d}, Weight: 1}, {Action: {Side: 1, HitPosX: 0.3184104561805725d, Pos: 4096L, Directions: [I; 2, 0, 4, 5, 1, 3], Hand: 0, HitPosY: 1.0d, HitPosZ: 1.4505279660224915d}, Weight: 1}, {Action: {Side: 1, HitPosX: -0.3747124671936035d, Pos: -274877902848L, Directions: [I; 2, 0, 4, 5, 1, 3], Hand: 0, HitPosY: 1.0d, HitPosZ: 1.389132797718048d}, Weight: 1}, {Action: {Side: 1, HitPosX: 2.543282628059387d, Pos: 824633720830L, Directions: [I; 0, 4, 2, 3, 5, 1], Hand: 0, HitPosY: -1.3125d, HitPosZ: -0.5026460587978363d}, Weight: 1}, {Action: {Side: 1, HitPosX: 2.5144296288490295d, Pos: 549755822078L, Directions: [I; 0, 4, 2, 3, 5, 1], Hand: 0, HitPosY: -1.3125d, HitPosZ: 1.5917695760726929d}, Weight: 1}, {Action: {Side: 1, HitPosX: -1.5339926481246948d, Pos: -549755805698L, Directions: [I; 0, 5, 3, 2, 4, 1], Hand: 0, HitPosY: -1.3125d, HitPosZ: 1.5110796689987183d}, Weight: 1}, {Action: {Side: 1, HitPosX: -1.570476770401001d, Pos: -549755809794L, Directions: [I; 0, 5, 3, 2, 4, 1], Hand: 0, HitPosY: -1.3125d, HitPosZ: 0.49954938888549805d}, Weight: 1}, {Action: {Side: 1, HitPosX: -1.483531653881073d, Pos: -274877915138L, Directions: [I; 0, 3, 5, 4, 2, 1], Hand: 0, HitPosY: -1.3125d, HitPosZ: -2.4611846804618835d}, Weight: 1}] } }": 1
+          }
+        }
+      ]
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

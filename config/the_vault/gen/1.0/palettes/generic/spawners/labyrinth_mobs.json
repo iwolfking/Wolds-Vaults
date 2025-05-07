@@ -1,0 +1,25 @@
+{
+    "tile_processors": [
+        {
+            "type": "leveled",
+            "levels": [
+                {
+                    "level": 0,
+                    "type": "weighted_target",
+                    "target": "ispawner:spawner{ Manager: { Settings: { SpawnDelay: 32 } } }",
+                    "output": {
+                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 20}  ] } }": 1
+                    }
+                },
+                {
+                    "level": 0,
+                    "type": "weighted_target",
+                    "target": "ispawner:spawner{ Manager: { Settings: { SpawnDelay: 33 } } }",
+                    "output": {
+                        "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:pig_spawn_egg\", Count: 20}  ] } }": 1
+                    }
+                }
+            ]
+        }
+    ]
+}
