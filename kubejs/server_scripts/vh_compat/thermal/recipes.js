@@ -1,6 +1,29 @@
 onEvent("recipes", event => {
     let corals = ['tube', 'brain', 'bubble', 'fire', 'horn']
 
+    event.custom({
+        "type": "thermal:insolator",
+        "ingredient": {
+          "item": "integrateddynamics:menril_sapling"
+        },
+        "result": [
+          {
+            "item": "integrateddynamics:menril_log",
+            "chance": 6.0
+          },
+          {
+            "item": "integrateddynamics:menril_sapling",
+            "chance": 1.1
+          },
+          {
+            "item": "integrateddynamics:crystalized_menril_chunk",
+            "chance": 0.2
+          }
+        ],
+        "energy_mod": 3.0,
+        "water_mod": 3.0
+      })
+
     corals.forEach(coral => {
         event.custom({
             "type": "thermal:pyrolyzer",
