@@ -2600,6 +2600,76 @@
         ]
       },
       {
+        "attribute": "the_vault:echoing_chance",
+        "group": "ModOnHitAddition",
+        "identifier": "the_vault:mod_echoing_chance",
+        "tags": [
+          "focusEchoingChance"
+        ],
+        "tiers": [
+          {
+            "minLevel": 50,
+            "maxLevel": 85,
+            "weight": 10,
+            "value": {
+              "min": 0.8,
+              "max": 0.13,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 60,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.13,
+              "max": 0.16,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 70,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.16,
+              "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 90,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.2,
+              "max": 0.24,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.25,
+              "max": 0.3,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.3,
+              "max": 0.4,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      {
         "attribute": "the_vault:lucky_hit_chance",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:mod_lucky_hit_chance",
@@ -4165,6 +4235,56 @@
             "value": {
               "min": 0.29,
               "max": 0.35,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:echoing_chance",
+        "group": "ModOnHitAddition",
+        "identifier": "the_vault:crafted_echoing_chance",
+        "tags": [
+          "focusEchoingChance"
+        ],
+        "tiers": [
+          {
+            "minLevel": 50,
+            "maxLevel": 85,
+            "weight": 10,
+            "value": {
+              "min": 0.8,
+              "max": 0.13,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 60,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.13,
+              "max": 0.16,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 70,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.16,
+              "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 90,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.2,
+              "max": 0.24,
               "step": 0.01
             }
           }
