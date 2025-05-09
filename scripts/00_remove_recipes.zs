@@ -204,6 +204,9 @@ var materials = {
 // Alex's Mobs
 craftingTable.removeByModid("alexsmobs");
 
+// Framed Blocks
+craftingTable.removeByModid("framedblocks");
+
 // Snad
 craftingTable.remove(<item:snad:suol_snad>);
 craftingTable.remove(<item:snad:red_snad>);
@@ -919,6 +922,9 @@ JEI.addIngredient(<item:alexsmobs:dimensional_carver>);
 JEI.addIngredient(<item:alexsmobs:vine_lasso>);
 JEI.addIngredient(<item:alexsmobs:squid_grapple>);
 JEI.addIngredient(<item:alexsmobs:hemolymph_blaster>);
+
+//Framed Blocks
+JEI.hideMod("framedblocks");
 
 // Backpacks
 JEI.hideIngredient(<item:sophisticatedbackpacks:advanced_magnet_upgrade>);
