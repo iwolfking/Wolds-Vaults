@@ -1,0 +1,653 @@
+{
+  "tile_processors": [
+    {
+      "type": "reference",
+      "id": "the_vault:generic/ore_placeholder_void"
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:map/generic/treasure_door_placeholder"
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:gray_concrete",
+      "output": {
+        "auxiliaryblocks:green_crystal": 1,
+        "auxiliaryblocks:lime_gelatin": 1,
+        "auxiliaryblocks:lime_frameless_glass": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:cobblestone",
+      "output": {
+        "auxiliaryblocks:sheet_metal": 3,
+        "auxiliaryblocks:rusty_sheet_metal": 3,
+        "auxiliaryblocks:green_crystal": 2,
+        "auxiliaryblocks:lime_gelatin": 2,
+        "auxiliaryblocks:lime_frameless_glass": 2
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:stone",
+      "output": {
+        "auxiliaryblocks:lab_dark_metallic": 1,
+        "auxiliaryblocks:lab_dark_gray": 1,
+        "minecraft:gray_concrete": 1,
+        "create:polished_cut_scorchia": 1,
+        "minecraft:polished_deepslate": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:grass_block",
+      "output": {
+        "minecraft:stone": 2,
+        "minecraft:andesite": 2,
+        "create:cut_tuff": 1,
+        "minecraft:tuff": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:dirt",
+      "output": {
+        "minecraft:stone": 1,
+        "minecraft:andesite": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:coarse_dirt",
+      "output": {
+        "auxiliaryblocks:sheet_metal": 1,
+        "auxiliaryblocks:rusty_sheet_metal": 1,
+        "architects_palette:plating_block": 2
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:stone_slab",
+      "output": {
+        "minecraft:stone_slab": 2,
+        "minecraft:andesite_slab": 2,
+        "create:cut_tuff_slab": 1,
+        "quark:tuff_slab": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:cobblestone_slab",
+      "output": {
+        "create:polished_cut_scorchia_slab": 1,
+        "minecraft:polished_deepslate_slab": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:spruce_slab",
+      "output": {
+        "architects_palette:plating_slab": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:purple_wool",
+      "output": {
+        "auxiliaryblocks:lab_dark_metallic": 1,
+        "auxiliaryblocks:lab_dark_gray": 1,
+        "minecraft:gray_concrete": 1,
+        "create:polished_cut_scorchia": 1,
+        "minecraft:polished_deepslate": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:water",
+      "output": {
+        "the_vault:void_liquid": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:birch_log",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:birch_fence",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:warped_fence",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:warped_wart_block",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:shroomlight",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "architects_palette:twisted_fence",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:cave_vines_plant",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:cave_vines",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:spore_blossom",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:brown_wool",
+      "output": {
+        "quark:black_corundum_cluster": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:pink_wool",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:grass",
+      "output": {
+        "minecraft:dead_fire_coral[waterlogged=false]": 1,
+        "minecraft:dead_brain_coral[waterlogged=false]": 1,
+        "minecraft:dead_tube_coral[waterlogged=false]": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:tall_grass[half=lower]",
+      "output": {
+        "minecraft:dead_fire_coral[waterlogged=false]": 1,
+        "minecraft:dead_brain_coral[waterlogged=false]": 1,
+        "minecraft:dead_tube_coral[waterlogged=false]": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:tall_grass[half=upper]",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:twisting_vines_plant",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:twisting_vines",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:fern",
+      "output": {
+        "quark:black_corundum_cluster[facing=up]": 1,
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:lime_wool",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:cyan_wool",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:oak_log",
+      "output": {
+        "create:cut_scorchia": 1,
+        "create:scorchia": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:oak_wood",
+      "output": {
+        "create:cut_scorchia": 1,
+        "create:scorchia": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:oak_leaves",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:oak_planks",
+      "output": {
+        "create:cut_scorchia": 1,
+        "create:scorchia": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:oak_fence",
+      "output": {
+        "create:cut_scorchia_wall": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:oak_slab",
+      "output": {
+        "create:cut_scorchia_slab": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:oak_trapdoor",
+      "output": {
+        "architects_palette:twisted_trapdoor": 1,
+        "everycomp:mct/architects_palette/twisted_cottage_trapdoor": 3
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:oak_stairs",
+      "output": {
+        "create:cut_scorchia_stairs": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:oak_fence_gate",
+      "output": {
+          "architects_palette:twisted_fence_gate": 1
+      }
+  },
+  {
+      "type": "weighted_target",
+      "target": "minecraft:oak_door",
+      "output": {
+          "architects_palette:twisted_door": 1
+      }
+  },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:stone_bricks",
+      "output": {
+        "auxiliaryblocks:sheet_metal": 1,
+        "auxiliaryblocks:rusty_sheet_metal": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:stone_brick_stairs",
+      "output": {
+        "quark:iron_plate_stairs": 1,
+        "quark:rusty_iron_plate_stairs": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "create:andesite_pillar",
+      "output": {
+        "quark:iron_plate": 1,
+        "quark:rusty_iron_plate": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:chiseled_stone_bricks",
+      "output": {
+        "architects_palette:plating_block": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:stone_brick_slab",
+      "output": {
+        "quark:iron_plate_slab": 1,
+        "quark:rusty_iron_plate_slab": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "quark:stone_brick_vertical_slab",
+      "output": {
+        "quark:iron_plate_vertical_slab": 1,
+        "quark:rusty_iron_plate_vertical_slab": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "quark:stone_vertical_slab",
+      "output": {
+        "quark:polished_deepslate_vertical_slab": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:stone_brick_wall",
+      "output": {
+        "architects_palette:plating_wall": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:cobblestone_wall",
+      "output": {
+        "minecraft:polished_deepslate_wall": 1,
+        "create:polished_cut_scorchia_wall": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:cobblestone_stairs",
+      "output": {
+        "minecraft:polished_deepslate_stairs": 1,
+        "create:polished_cut_scorchia_stairs": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:mossy_stone_bricks",
+      "output": {
+        "minecraft:deepslate_tiles": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:mossy_cobblestone",
+      "output": {
+        "quark:waxed_black_corundum": 1,
+        "auxiliaryblocks:black_crystal": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:green_concrete",
+      "output": {
+        "auxiliaryblocks:green_crystal": 1,
+        "auxiliaryblocks:lime_gelatin": 1,
+        "auxiliaryblocks:lime_frameless_glass": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:magma_block",
+      "output": {
+        "quark:waxed_black_corundum": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:lava",
+      "output": {
+        "the_vault:void_liquid": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:moss_carpet",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "decorative_blocks:brazier",
+      "output": {
+        "decorative_blocks:brazier": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:campfire",
+      "output": {
+        "minecraft:campfire": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:lantern",
+      "output": {
+        "architects_palette:nether_brass_lantern": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "supplementaries:wall_lantern{Lantern:{Name:\"minecraft:lantern\"}}",
+      "output": {
+        "supplementaries:wall_lantern{Lantern:{Name:\"architects_palette:nether_brass_lantern\",Properties:{waterlogged:\"false\", hanging:\"false\"}}}": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:soul_lantern",
+      "output": {
+        "architects_palette:nether_brass_lantern": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:glass",
+      "output": {
+        "minecraft:light[level=10]": 1,
+        "minecraft:air": 3
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:cyan_stained_glass",
+      "output": {
+        "the_vault:void_liquid": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:light_blue_stained_glass",
+      "output": {
+        "the_vault:void_liquid": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:bookshelf",
+      "output": {
+        "quark:azalea_bookshelf": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "ecologics:azalea_log",
+      "output": {
+        "minecraft:polished_deepslate": 1,
+        "create:polished_cut_scorchia": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "ecologics:azalea_fence",
+      "output": {
+        "minecraft:polished_deepslate_wall": 1,
+        "create:polished_cut_scorchia_wall": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "create:cut_crimsite_wall",
+      "output": {
+        "minecraft:polished_deepslate_wall": 1,
+        "create:polished_cut_scorchia_wall": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "quark:azalea_log",
+      "output": {
+        "quark:iron_plate": 1,
+        "quark:rusty_iron_plate": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "quark:azalea_planks",
+      "output": {
+        "architects_palette:plating_block": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "quark:azalea_planks_stairs",
+      "output": {
+        "quark:iron_plate_stairs": 1,
+        "quark:rusty_iron_plate_stairs": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "create:cut_veridium_wall",
+      "output": {
+        "architects_palette:plating_wall": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:sand",
+      "output": {
+        "minecraft:lime_concrete_powder": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:potted_oak_sapling",
+      "output": {
+        "minecraft:potted_oak_sapling": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "quark:oak_hedge",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "decorative_blocks:oak_support",
+      "output": {
+        "everycomp:db/quark/azalea_support": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:end_stone_bricks",
+      "output": {
+        "auxiliaryblocks:lab_light_metallic": 1,
+        "auxiliaryblocks:lab_metallic": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:end_stone_brick_stairs",
+      "output": {
+        "quark:iron_plate_stairs": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:end_stone_brick_slab",
+      "output": {
+        "quark:iron_plate_slab": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:end_stone",
+      "output": {
+        "auxiliaryblocks:green_crystal": 1,
+        "auxiliaryblocks:lime_gelatin": 1
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base_map"
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/spawners/void_mobs_map"
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/common_elite_spawners"
+    },
+    {
+      "type": "template_stack_tile",
+      "target": "@the_vault:vault_lootables",
+      "stack": [
+          "THEME_FACTORY_VOID",
+          "THEME_CATEGORY_VOID"
+      ]
+  },
+  {
+      "type": "template_stack_spawner",
+      "target": "ispawner:spawner",
+      "stack": [
+          "THEME_FACTORY_VOID",
+          "THEME_CATEGORY_VOID"
+      ]
+  }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}
