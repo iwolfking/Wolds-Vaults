@@ -26462,6 +26462,108 @@
         "SCALE_MAX_LEVEL": -1
       }
     ],
+    "grimoireofgaia:oni": [
+      {
+        "NAME": "minecraft:generic.max_health",
+        "MIN": 90.0,
+        "MAX": 95.0,
+        "OPERATOR": "set",
+        "ROLL_CHANCE": 1.0,
+        "SCALE_PER_LEVEL": 0.065,
+        "SCALE_MAX_LEVEL": -1
+      },
+      {
+        "NAME": "minecraft:generic.attack_damage",
+        "MIN": 8.0,
+        "MAX": 8.0,
+        "OPERATOR": "set",
+        "ROLL_CHANCE": 1.0,
+        "SCALE_PER_LEVEL": 0.05,
+        "SCALE_MAX_LEVEL": -1
+      },
+      {
+        "NAME": "minecraft:generic.movement_speed",
+        "MIN": 0.9,
+        "MAX": 1.2,
+        "OPERATOR": "multiply",
+        "ROLL_CHANCE": 1.0,
+        "SCALE_PER_LEVEL": 0.0,
+        "SCALE_MAX_LEVEL": -1
+      },
+      {
+        "NAME": "the_vault:generic.crit_chance",
+        "LEVELS": [
+          {
+            "MIN_LEVEL": 0,
+            "MIN": 0.05,
+            "MAX": 0.1,
+            "OPERATOR": "set",
+            "ROLL_CHANCE": 1.0,
+            "SCALE_PER_LEVEL": 0.0,
+            "SCALE_MAX_LEVEL": 49
+          },
+          {
+            "MIN_LEVEL": 50,
+            "MIN": 0.1,
+            "MAX": 0.15,
+            "OPERATOR": "set",
+            "ROLL_CHANCE": 1.0,
+            "SCALE_PER_LEVEL": 0.0,
+            "SCALE_MAX_LEVEL": 84
+          },
+          {
+            "MIN_LEVEL": 85,
+            "MIN": 0.15,
+            "MAX": 0.2,
+            "OPERATOR": "set",
+            "ROLL_CHANCE": 1.0,
+            "SCALE_PER_LEVEL": 0.0,
+            "SCALE_MAX_LEVEL": -1
+          }
+        ]
+      },
+      {
+        "NAME": "the_vault:generic.crit_multiplier",
+        "LEVELS": [
+          {
+            "MIN_LEVEL": 0,
+            "MIN": 1.5,
+            "MAX": 1.5,
+            "OPERATOR": "set",
+            "ROLL_CHANCE": 1.0,
+            "SCALE_PER_LEVEL": 0.0,
+            "SCALE_MAX_LEVEL": 49
+          },
+          {
+            "MIN_LEVEL": 50,
+            "MIN": 1.75,
+            "MAX": 1.75,
+            "OPERATOR": "set",
+            "ROLL_CHANCE": 1.0,
+            "SCALE_PER_LEVEL": 0.0,
+            "SCALE_MAX_LEVEL": 84
+          },
+          {
+            "MIN_LEVEL": 85,
+            "MIN": 2.0,
+            "MAX": 2.0,
+            "OPERATOR": "set",
+            "ROLL_CHANCE": 1.0,
+            "SCALE_PER_LEVEL": 0.0,
+            "SCALE_MAX_LEVEL": -1
+          }
+        ]
+      },
+      {
+        "NAME": "forge:swim_speed",
+        "MIN": 5.0,
+        "MAX": 5.0,
+        "OPERATOR": "set",
+        "ROLL_CHANCE": 1.0,
+        "SCALE_PER_LEVEL": 0.0,
+        "SCALE_MAX_LEVEL": -1
+      }
+    ],
     "grimoireofgaia:toad": [
       {
         "NAME": "minecraft:generic.max_health",
@@ -26782,6 +26884,108 @@
         "NAME": "minecraft:generic.attack_damage",
         "MIN": 4.0,
         "MAX": 6.0,
+        "OPERATOR": "set",
+        "ROLL_CHANCE": 1.0,
+        "SCALE_PER_LEVEL": 0.07,
+        "SCALE_MAX_LEVEL": -1
+      },
+      {
+        "NAME": "minecraft:generic.movement_speed",
+        "MIN": 0.9,
+        "MAX": 1.1,
+        "OPERATOR": "multiply",
+        "ROLL_CHANCE": 1.0,
+        "SCALE_PER_LEVEL": 0.0,
+        "SCALE_MAX_LEVEL": -1
+      },
+      {
+        "NAME": "the_vault:generic.crit_chance",
+        "LEVELS": [
+          {
+            "MIN_LEVEL": 0,
+            "MIN": 0.2,
+            "MAX": 0.2,
+            "OPERATOR": "set",
+            "ROLL_CHANCE": 1.0,
+            "SCALE_PER_LEVEL": 0.0,
+            "SCALE_MAX_LEVEL": 49
+          },
+          {
+            "MIN_LEVEL": 50,
+            "MIN": 0.2,
+            "MAX": 0.2,
+            "OPERATOR": "set",
+            "ROLL_CHANCE": 1.0,
+            "SCALE_PER_LEVEL": 0.0,
+            "SCALE_MAX_LEVEL": 84
+          },
+          {
+            "MIN_LEVEL": 85,
+            "MIN": 0.2,
+            "MAX": 0.2,
+            "OPERATOR": "set",
+            "ROLL_CHANCE": 1.0,
+            "SCALE_PER_LEVEL": 0.0,
+            "SCALE_MAX_LEVEL": -1
+          }
+        ]
+      },
+      {
+        "NAME": "the_vault:generic.crit_multiplier",
+        "LEVELS": [
+          {
+            "MIN_LEVEL": 0,
+            "MIN": 1.3,
+            "MAX": 1.3,
+            "OPERATOR": "set",
+            "ROLL_CHANCE": 1.0,
+            "SCALE_PER_LEVEL": 0.0,
+            "SCALE_MAX_LEVEL": 49
+          },
+          {
+            "MIN_LEVEL": 50,
+            "MIN": 1.5,
+            "MAX": 1.5,
+            "OPERATOR": "set",
+            "ROLL_CHANCE": 1.0,
+            "SCALE_PER_LEVEL": 0.0,
+            "SCALE_MAX_LEVEL": 84
+          },
+          {
+            "MIN_LEVEL": 85,
+            "MIN": 1.5,
+            "MAX": 1.5,
+            "OPERATOR": "set",
+            "ROLL_CHANCE": 1.0,
+            "SCALE_PER_LEVEL": 0.0,
+            "SCALE_MAX_LEVEL": -1
+          }
+        ]
+      },
+      {
+        "NAME": "forge:swim_speed",
+        "MIN": 5.0,
+        "MAX": 5.0,
+        "OPERATOR": "set",
+        "ROLL_CHANCE": 1.0,
+        "SCALE_PER_LEVEL": 0.0,
+        "SCALE_MAX_LEVEL": -1
+      }
+    ],
+    "grimoireofgaia:succubus": [
+      {
+        "NAME": "minecraft:generic.max_health",
+        "MIN": 120.0,
+        "MAX": 140.0,
+        "OPERATOR": "set",
+        "ROLL_CHANCE": 1.0,
+        "SCALE_PER_LEVEL": 0.09,
+        "SCALE_MAX_LEVEL": -1
+      },
+      {
+        "NAME": "minecraft:generic.attack_damage",
+        "MIN": 3.0,
+        "MAX": 5.0,
         "OPERATOR": "set",
         "ROLL_CHANCE": 1.0,
         "SCALE_PER_LEVEL": 0.07,
