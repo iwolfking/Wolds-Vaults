@@ -4779,6 +4779,46 @@
         ]
       },
       {
+        "attribute": "the_vault:dodge_percent",
+        "group": "ModResistance",
+        "identifier": "the_vault:crafted_dodge_chance",
+        "tags": [
+          "focusResistance"
+        ],
+        "tiers": [
+          {
+            "minLevel": 75,
+            "maxLevel": -1,
+            "weight": 200,
+            "value": {
+              "min": 0.03,
+              "max": 0.05,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 85,
+            "maxLevel": -1,
+            "weight": 200,
+            "value": {
+              "min": 0.05,
+              "max": 0.06,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 95,
+            "maxLevel": -1,
+            "weight": 200,
+            "value": {
+              "min": 0.06,
+              "max": 0.08,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      {
         "attribute": "the_vault:knockback_resistance",
         "group": "ModKnockbackResistance",
         "identifier": "the_vault:crafted_knockback_resistance",
