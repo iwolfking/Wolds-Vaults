@@ -1,0 +1,43 @@
+{
+    "tile_processors": [
+      {
+        "type": "placeholder",
+        "target": "VENDOR_PEDESTAL",
+        "levels": [
+          {
+            "level": 0,
+            "probability": 1.0,
+            "success": {
+              "woldsvaults:card_shop_pedestal": 1
+            },
+            "failure": {
+              "minecraft:air": 1
+            }
+          }
+        ]
+      },
+      {
+        "type": "weighted_target",
+        "target": "minecraft:chest",
+        "output": {
+          "minecraft:conduit": 1,
+          "minecraft:air": 10
+        }
+      },
+      {
+        "type": "weighted_target",
+        "target": "minecraft:acacia_planks",
+        "output": {
+          "the_vault:altar_chest_placeable": 1,
+          "minecraft:air": 10
+        }
+      },
+      {
+          "type": "template_stack_tile",
+          "target": "@the_vault:vault_lootables",
+          "stack": [
+              "STRUCTURE_VENDOR_ROOM"
+          ]
+      }
+    ]
+  }

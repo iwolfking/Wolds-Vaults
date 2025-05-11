@@ -11,6 +11,7 @@ onEvent("recipes", event => {
     removedOutputsCCAE.forEach(id => {
         event.remove({ 'output': `${id}` })
     })
+    event.remove({'id': 'create:mechanical_crafting/wand_of_symmetry'})
 
     event.remove({ id: 'createaddition:mechanical_crafting/electric_motor' })
     event.remove({ id: 'createaddition:mechanical_crafting/alternator' })
@@ -156,4 +157,33 @@ onEvent("recipes", event => {
 
     //event.shapeless('create:experience_nugget', ['4x minecraft:experience_bottle'])
     event.shapeless('4x minecraft:experience_bottle', ['create:experience_nugget'])
+
+    event.custom({
+        "type": "create:mechanical_crafting",
+        "pattern": [
+          " L ",
+          " R ",
+          "SSS",
+          "SSS",
+          " H "
+        ],
+        "key": {
+          "L": {
+            "item": "the_vault:echoing_ingot"
+          },
+          "R": {
+            "item": "the_vault:omega_pog"
+          },
+          "H": {
+            "item": "create:brass_hand"
+          },
+          "S": {
+            "item": "the_vault:black_chromatic_steel_ingot"
+          }
+        },
+        "result": {
+          "item": "create:extendo_grip"
+        },
+        "acceptMirrored": false
+      }).id('create:mechanical_crafting/extendo_grip')
 })
