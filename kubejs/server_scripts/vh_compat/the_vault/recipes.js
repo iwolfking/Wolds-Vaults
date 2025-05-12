@@ -5,6 +5,7 @@ onEvent("recipes", event => {
     event.remove({id: 'the_vault:infused_eternal_soul'})
     event.remove({output: 'the_vault:coin_pouch'})
     event.remove({id: 'the_vault:echoing_ingot'})
+    event.remove({id: 'the_vault:smelt_etching'})
 
     event.shaped(Item.of('the_vault:crystal_budding'),
         [
