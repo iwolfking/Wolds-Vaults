@@ -40,6 +40,34 @@
           "weight": 1,
           "pool": [
             {
+              "weight": 10,
+              "item": {
+                "id": "woldsvaults:recipe_blueprint",
+                "nbt": {
+                  "recipe": "woldsvaults:zephyr_charm"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "roll": {
+        "type": "uniform",
+        "min": 1,
+        "max": 1
+      },
+      "pool": [
+        {
+          "weight": 1,
+          "pool": [
+            {
               "weight": 1,
               "item": {
                 "id": "woldsvaults:arcane_essence",
