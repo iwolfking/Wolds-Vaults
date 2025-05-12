@@ -28,6 +28,31 @@
     {
       "roll": {
         "type": "uniform",
+        "min": 1,
+        "max": 1
+      },
+      "pool": [
+        {
+          "weight": 1,
+          "pool": [
+            {
+              "weight": 1,
+              "item": {
+                "id": "woldsvaults:enigma_egg",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "roll": {
+        "type": "uniform",
         "min": 3,
         "max": 4
       },
@@ -60,6 +85,20 @@
         {
           "weight": 1,
           "pool": [
+            {
+              "weight": 10,
+              "item": {
+                "id": "the_vault:rang",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "gear_completion"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
             {
               "weight": 10,
               "item": {
@@ -346,8 +385,8 @@
     {
       "roll": {
         "type": "uniform",
-        "min": 3,
-        "max": 3
+        "min": 5,
+        "max": 5
       },
       "pool": [
         {
@@ -360,7 +399,7 @@
                 "count": {
                   "type": "uniform",
                   "min": 1,
-                  "max": 1
+                  "max": 2
                 }
               }
             },
@@ -370,7 +409,7 @@
                 "id": "the_vault:sweet_kiwi",
                 "count": {
                   "type": "uniform",
-                  "min": 2,
+                  "min": 3,
                   "max": 4
                 }
               }
@@ -381,8 +420,19 @@
                 "id": "the_vault:grapes",
                 "count": {
                   "type": "uniform",
+                  "min": 2,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:sour_orange",
+                "count": {
+                  "type": "uniform",
                   "min": 1,
-                  "max": 2
+                  "max": 1
                 }
               }
             }
@@ -393,8 +443,8 @@
     {
       "roll": {
         "type": "uniform",
-        "min": 3,
-        "max": 3
+        "min": 4,
+        "max": 4
       },
       "pool": [
         {
@@ -418,8 +468,8 @@
     {
       "roll": {
         "type": "uniform",
-        "min": 4,
-        "max": 5
+        "min": 5,
+        "max": 6
       },
       "pool": [
         {
@@ -572,8 +622,8 @@
     {
       "roll": {
         "type": "uniform",
-        "min": 3,
-        "max": 3
+        "min": 4,
+        "max": 4
       },
       "pool": [
         {
@@ -700,6 +750,17 @@
               }
             },
             {
+              "weight": 3,
+              "item": {
+                "id": "the_vault:capstone_pylon_hunter",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
               "weight": 1,
               "item": {
                 "id": "the_vault:capstone_treasure_hunter",
@@ -753,12 +814,37 @@
                   "max": 1
                 }
               }
+            },
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:card_deck",
+                "nbt": {
+                  "id": "wold"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
             }
           ]
         },
         {
           "weight": 1,
           "pool": [
+            {
+              "weight": 8,
+              "item": {
+                "id": "the_vault:black_chromatic_steel_ingot",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
             {
               "weight": 8,
               "item": {
