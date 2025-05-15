@@ -122,7 +122,7 @@ onEvent("recipes", event => {
                 rolls: 1,
                 chance: 0.9,
                 result: {
-                    item: 'regions_unexplored:silver_birch_log'
+                    item: 'minecraft:birch_log'
                 }
             },
             {
@@ -374,7 +374,7 @@ onEvent("recipes", event => {
                 rolls: 1,
                 chance: 0.9,
                 result: {
-                    item: 'regions_unexplored:dead_pine_log'
+                    item: 'regions_unexplored:pine_log'
                 }
             },
             {
@@ -500,7 +500,7 @@ onEvent("recipes", event => {
                 rolls: 1,
                 chance: 0.9,
                 result: {
-                    item: 'regions_unexplored:golden_larch_log'
+                    item: 'regions_unexplored:larch_log'
                 }
             },
             {
