@@ -1,5 +1,5 @@
 /* scripts made by a1qs
-for use in Vault Hunters 3rd Edition 
+for use in Vault Hunters 3rd Edition
 Updated for Version 3.14.3 */
 
 // Vault Junk
@@ -572,6 +572,32 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:vault_altar_resource>.add(<item:minecraft:end_stone>);
 <tag:items:the_vault:vault_altar_resource>.add(<item:minecraft:obsidian>);
 <tag:items:the_vault:vault_altar_resource>.add(<item:minecraft:purpur_block>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:alpha_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:silver_birch_log_base>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:baobab_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:blackwood_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:cherry_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:cypress_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:dead_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:eucalyptus_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:joshua_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:larch_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:maple_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:mauve_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:palm_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:pine_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:pine_log_transition>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:redwood_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:willow_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:sculkwood_log>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:sculkwood_log_dark>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:sculkwood_log_transition>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:minecraft:dirt>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:forest_dirt>);
+<tag:items:the_vault:vault_altar_resource>.add(<item:regions_unexplored:plains_dirt>);
+
+
+
 
 // Vault Altar Mob Pool
 <tag:items:the_vault:vault_altar_mob>.add(<item:minecraft:arrow>);
@@ -676,6 +702,33 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:vault_altar_farmable>.add(<item:minecraft:twisting_vines>);
 <tag:items:the_vault:vault_altar_farmable>.add(<item:minecraft:weeping_vines>);
 <tag:items:the_vault:vault_altar_farmable>.add(<item:minecraft:chorus_fruit>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:alpha_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:apple_oak_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:flowering_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:silver_birch_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:bamboo_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:baobab_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:blackwood_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:cherry_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:red_cherry_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:pink_cherry_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:white_cherry_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:cypress_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:dead_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:dead_pine_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:eucalyptus_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:joshua_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:golden_larch_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:larch_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:maple_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:red_maple_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:orange_maple_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:mauve_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:palm_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:pine_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:redwood_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:willow_leaves>);
+<tag:items:the_vault:vault_altar_farmable>.add(<item:regions_unexplored:sculkwood_leaves>);
 
 
 
