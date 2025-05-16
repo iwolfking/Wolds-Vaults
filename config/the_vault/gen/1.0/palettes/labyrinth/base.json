@@ -29,6 +29,21 @@
         "the_vault:placeholder[type=living_chest]": 1
       }
     },
+      {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"wooden_chest\"]",
+      "output": {
+        "the_vault:placeholder[type=wooden_chest]": 7,
+        "minecraft:air": 3
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"wooden_chest_guaranteed\"]",
+      "output": {
+        "the_vault:placeholder[type=wooden_chest]": 1
+      }
+    },
     {
       "type": "weighted_target",
       "target": "the_vault:placeholder[type=\"living_chest\"]",
