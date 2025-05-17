@@ -6,106 +6,100 @@
         {
           "level": 0,
           "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
+          "target": "ispawner:spawner",
           "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 10}, {id: \"tropicraft:tropiskelly_spawn_egg\", Count: 10} ] } }": 1
+            "ispawner:spawner{ group:horde }": 38,
+            "ispawner:spawner{ group:assassin }": 30,
+            "ispawner:spawner{ group:tank }": 12,
+            "ispawner:spawner{ group:dwellers }": 10
           }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter": 15
+              },
+              "weight": 1
+            }
+          ]
         },
         {
           "level": 20,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 9}, {id: \"the_vault:vault_fighter_1_egg\", Count: 1}, {id: \"tropicraft:tropiskelly_spawn_egg\", Count: 7}, {id: \"tropicraft:tropicreeper_spawn_egg\", Count: 3} ] } }": 1
-          }
-        },
-        {
-          "level": 25,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 8}, {id: \"the_vault:vault_fighter_1_egg\", Count: 2}, {id: \"tropicraft:tropiskelly_spawn_egg\", Count: 5}, {id: \"tropicraft:tropicreeper_spawn_egg\", Count: 5} ] } }": 1
-          }
-        },
-        {
-          "level": 30,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 5}, {id: \"the_vault:vault_fighter_1_egg\", Count: 5}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"tropicraft:tropiskelly_spawn_egg\", Count: 5}, {id: \"tropicraft:tropicreeper_spawn_egg\", Count: 5} ] } }": 1
-          }
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter": 15,
+                "the_vault:vault_fighter_1": 15
+              },
+              "weight": 1
+            }
+          ]
         },
         {
           "level": 40,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 2}, {id: \"the_vault:vault_fighter_1_egg\", Count: 8}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"tropicraft:tropiskelly_spawn_egg\", Count: 3}, {id: \"tropicraft:tropicreeper_spawn_egg\", Count: 7} ] } }": 1
-          }
-        },
-        {
-          "level": 50,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_1_egg\", Count: 8}, {id: \"the_vault:vault_fighter_2_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"tropicraft:tropicreeper_spawn_egg\", Count: 7}, {id: \"tropicraft:tropi_spider_spawn_egg\", Count: 3} ] } }": 1
-          }
-        },
-        {
-          "level": 55,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_1_egg\", Count: 7}, {id: \"the_vault:vault_fighter_2_egg\", Count: 3}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"tropicraft:tropicreeper_spawn_egg\", Count: 5}, {id: \"tropicraft:tropi_spider_spawn_egg\", Count: 5} ] } }": 1
-          }
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_1": 15,
+                "the_vault:vault_fighter_2": 15
+              },
+              "weight": 1
+            }
+          ]
         },
         {
           "level": 60,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_1_egg\", Count: 10}, {id: \"the_vault:vault_fighter_2_egg\", Count: 5}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"tropicraft:tropicreeper_spawn_egg\", Count: 3}, {id: \"tropicraft:tropi_spider_spawn_egg\", Count: 7} ] } }": 1
-          }
-        },
-        {
-          "level": 65,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_1_egg\", Count: 10}, {id: \"the_vault:vault_fighter_2_egg\", Count: 10}, {id: \"the_vault:vault_fighter_4_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 2}, {id: \"tropicraft:eih_spawn_egg\", Count: 1}, {id: \"tropicraft:tropi_spider_spawn_egg\", Count: 13}, {id: \"tropicraft:ashen_spawn_egg\", Count: 6}, {id: \"alexsmobs:spawn_egg_mantis_shrimp\", Count: 1} ] } }": 1
-          }
-        },
-        {
-          "level": 70,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_2_egg\", Count: 16}, {id: \"the_vault:vault_fighter_4_egg\", Count: 4}, {id: \"the_vault:t3_piglin_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 2}, {id: \"tropicraft:eih_spawn_egg\", Count: 1}, {id: \"tropicraft:tropi_spider_spawn_egg\", Count: 10}, {id: \"tropicraft:ashen_spawn_egg\", Count: 10}, {id: \"alexsmobs:spawn_egg_mantis_shrimp\", Count: 1} ] } }": 1
-          }
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_2": 15,
+                "the_vault:vault_fighter_3": 15
+              },
+              "weight": 1
+            }
+          ]
         },
         {
           "level": 80,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_2_egg\", Count: 14}, {id: \"the_vault:vault_fighter_4_egg\", Count: 6}, {id: \"the_vault:t3_piglin_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 2}, {id: \"tropicraft:eih_spawn_egg\", Count: 1}, {id: \"tropicraft:ashen_spawn_egg\", Count: 13}, {id: \"the_vault:t4_skeleton_pirate_egg\", Count: 6}, {id: \"alexsmobs:spawn_egg_mantis_shrimp\", Count: 1} ] } }": 1
-          }
-        },
-        {
-          "level": 90,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_2_egg\", Count: 10}, {id: \"the_vault:vault_fighter_4_egg\", Count: 10}, {id: \"the_vault:t3_piglin_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 6}, {id: \"tropicraft:eih_spawn_egg\", Count: 1}, {id: \"tropicraft:ashen_spawn_egg\", Count: 10}, {id: \"the_vault:t4_skeleton_pirate_egg\", Count: 8}, {id: \"the_vault:t5_skeleton_pirate_egg\", Count: 1}, {id: \"alexsmobs:spawn_egg_mantis_shrimp\", Count: 1} ] } }": 1
-          }
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_3": 15,
+                "the_vault:vault_fighter_4": 15
+              },
+              "weight": 1
+            }
+          ]
         },
         {
           "level": 100,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"the_vault:crab_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_4_egg\", Count: 20}, {id: \"the_vault:t3_piglin_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 8}, {id: \"tropicraft:eih_spawn_egg\", Count: 1}, {id: \"tropicraft:ashen_spawn_egg\", Count: 8}, {id: \"the_vault:t4_skeleton_pirate_egg\", Count: 8}, {id: \"the_vault:t5_skeleton_pirate_egg\", Count: 2}, {id: \"alexsmobs:spawn_egg_mantis_shrimp\", Count: 1} ] } }": 1
-          }
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_4": 15
+              },
+              "weight": 1
+            }
+          ]
         }
       ]
     },
@@ -119,22 +113,23 @@
           "output": [
             {
               "elements": {
-                "tropicraft:eih": 10
+                "the_vault:t3_drowned": 10,
+                "tropicraft:eih": 11
               },
               "weight": 1
             }
           ]
         },
         {
-          "level": 65,
+          "level": 20,
           "type": "spawner",
           "target": "ispawner:spawner{group:tank}",
           "output": [
             {
               "elements": {
-                "tropicraft:eih": 11,
+                "the_vault:t3_drowned": 11,
                 "rottencreatures:dead_beard": 1,
-                "the_vault:t3_piglin": 1
+                 "tropicraft:eih": 11
               },
               "weight": 1
             }
@@ -152,8 +147,9 @@
           "output": [
             {
               "elements": {
-                "tropicraft:tropiskelly": 2,
-                "ecologics:coconut_crab": 2
+                "tropicraft:tropiskelly": 10,
+                "the_vault:crab": 10,
+                "tropicraft:tropi_spider": 8
               },
               "weight": 1
             }
@@ -166,9 +162,9 @@
           "output": [
             {
               "elements": {
-                "tropicraft:tropiskelly": 5,
-                "ecologics:coconut_crab": 6,
-                "tropicraft:tropicreeper": 2
+                "tropicraft:tropiskelly": 10,
+                "the_vault:crab": 6,
+                "tropicraft:tropi_spider": 8
               },
               "weight": 1
             }
@@ -181,9 +177,9 @@
           "output": [
             {
               "elements": {
-                "tropicraft:tropiskelly": 3,
-                "ecologics:coconut_crab": 4,
-                "tropicraft:tropicreeper": 3
+                "tropicraft:tropiskelly": 10,
+                "the_vault:crab": 6,
+                "tropicraft:tropi_spider": 8
               },
               "weight": 1
             }
@@ -196,9 +192,9 @@
           "output": [
             {
               "elements": {
-                "tropicraft:tropiskelly": 1,
-                "ecologics:coconut_crab": 6,
-                "tropicraft:tropicreeper": 6
+                  "tropicraft:tropiskelly": 10,
+                "the_vault:crab": 6,
+                "tropicraft:tropi_spider": 8
               },
               "weight": 1
             }
@@ -211,9 +207,11 @@
           "output": [
             {
               "elements": {
-                "tropicraft:tropicreeper": 4,
-                "ecologics:coconut_crab": 4,
-                "tropicraft:ashen": 1
+                "tropicraft:tropiskelly": 10,
+                "the_vault:crab": 6,
+                "the_vault:skeleton_pirate_t2": 4,
+                "tropicraft:ashen": 5,
+                "tropicraft:tropi_spider": 8
               },
               "weight": 1
             }
@@ -226,9 +224,11 @@
           "output": [
             {
               "elements": {
-                "tropicraft:tropicreeper": 3,
-                "ecologics:coconut_crab": 4,
-                "tropicraft:ashen": 2
+                "tropicraft:tropiskelly": 10,
+                "the_vault:crab": 6,
+                "the_vault:skeleton_pirate_t2": 4,
+                "tropicraft:ashen": 5,
+                "tropicraft:tropi_spider": 8
               },
               "weight": 1
             }
@@ -241,11 +241,12 @@
           "output": [
             {
               "elements": {
-                "tropicraft:tropicreeper": 6,
-                "ecologics:coconut_crab": 21,
-                "tropicraft:ashen": 14,
-                "tropicraft:tropi_spider": 2,
-                "alexsmobs:mantis_shrimp": 1
+                "tropicraft:tropiskelly": 12,
+                "the_vault:crab": 6,
+                "the_vault:skeleton_pirate_t2": 6,
+                "the_vault:skeleton_pirate_t3": 4,
+                "tropicraft:ashen": 5,
+                "tropicraft:tropi_spider": 8
               },
               "weight": 1
             }
@@ -258,10 +259,12 @@
           "output": [
             {
               "elements": {
-                "ecologics:coconut_crab": 19,
-                "tropicraft:ashen": 18,
-                "tropicraft:tropi_spider": 2,
-                "alexsmobs:mantis_shrimp": 1
+                "tropicraft:tropiskelly": 12,
+                "the_vault:crab": 6,
+                "the_vault:skeleton_pirate_t2": 6,
+                "the_vault:skeleton_pirate_t3": 4,
+                "tropicraft:ashen": 5,
+                "tropicraft:tropi_spider": 8
               },
               "weight": 1
             }
@@ -274,11 +277,13 @@
           "output": [
             {
               "elements": {
-                "ecologics:coconut_crab": 19,
-                "tropicraft:ashen": 9,
-                "tropicraft:tropi_spider": 9,
-                "the_vault:skeleton_pirate_t4": 1,
-                "alexsmobs:mantis_shrimp": 1
+                "tropicraft:tropiskelly": 12,
+                "the_vault:crab": 6,
+                "tropicraft:ashen": 12,
+                "the_vault:skeleton_pirate_t2": 6,
+                "the_vault:skeleton_pirate_t3": 4,
+                "the_vault:skeleton_pirate_t4": 2,
+                "tropicraft:tropi_spider": 8
               },
               "weight": 1
             }
@@ -291,11 +296,14 @@
           "output": [
             {
               "elements": {
-                "ecologics:coconut_crab": 19,
-                "tropicraft:tropi_spider": 13,
-                "the_vault:skeleton_pirate_t4": 5,
-                "the_vault:skeleton_pirate_t5": 1,
-                "alexsmobs:mantis_shrimp": 1
+                "tropicraft:tropiskelly": 12,
+                "the_vault:crab": 6,
+                "the_vault:skeleton_pirate_t2": 6,
+                "the_vault:skeleton_pirate_t3": 4,
+                "the_vault:skeleton_pirate_t4": 2,
+                 "the_vault:skeleton_pirate_t5": 1,
+                 "tropicraft:ashen": 5,
+                 "tropicraft:tropi_spider": 5
               },
               "weight": 1
             }
@@ -308,11 +316,14 @@
           "output": [
             {
               "elements": {
-                "ecologics:coconut_crab": 19,
-                "tropicraft:tropi_spider": 8,
-                "the_vault:skeleton_pirate_t4": 9,
-                "the_vault:skeleton_pirate_t5": 3,
-                "alexsmobs:mantis_shrimp": 1
+              "tropicraft:tropiskelly": 9,
+                "the_vault:crab": 6,
+                "the_vault:skeleton_pirate_t2": 6,
+                "the_vault:skeleton_pirate_t3": 4,
+                "the_vault:skeleton_pirate_t4": 4,
+                 "the_vault:skeleton_pirate_t5": 3,
+                 "tropicraft:ashen": 5,
+                 "tropicraft:tropi_spider": 5
               },
               "weight": 1
             }
@@ -330,8 +341,7 @@
           "output": [
             {
               "elements": {
-                "minecraft:drowned": 12,
-                "tropicraft:tropiskelly": 3
+                "minecraft:drowned": 12
               },
               "weight": 1
             }
@@ -344,8 +354,7 @@
           "output": [
             {
               "elements": {
-                "minecraft:drowned": 12,
-                "tropicraft:tropiskelly": 3
+                "minecraft:drowned": 20
               },
               "weight": 1
             }
@@ -358,9 +367,7 @@
           "output": [
             {
               "elements": {
-                "minecraft:drowned": 12,
-                "tropicraft:tropiskelly": 4,
-                "tropicraft:tropicreeper": 2
+                "minecraft:drowned": 30
               },
               "weight": 1
             }
@@ -373,9 +380,7 @@
           "output": [
             {
               "elements": {
-                "minecraft:drowned": 12,
-                "tropicraft:tropiskelly": 4,
-                "tropicraft:tropicreeper": 2
+                "minecraft:drowned": 30
               },
               "weight": 1
             }
@@ -388,9 +393,7 @@
           "output": [
             {
               "elements": {
-                "minecraft:drowned": 12,
-                "tropicraft:tropiskelly": 4,
-                "tropicraft:tropicreeper": 2
+                "minecraft:drowned": 40
               },
               "weight": 1
             }
@@ -403,10 +406,8 @@
           "output": [
             {
               "elements": {
-                "minecraft:drowned": 8,
-                "the_vault:t1_drowned": 4,
-                "tropicraft:tropiskelly": 4,
-                "tropicraft:tropicreeper": 2
+                "minecraft:drowned": 38,
+                "the_vault:t1_drowned": 4
               },
               "weight": 1
             }
@@ -420,10 +421,7 @@
             {
               "elements": {
                 "minecraft:drowned": 30,
-                "the_vault:t1_drowned": 15,
-                "tropicraft:tropiskelly": 4,
-                "tropicraft:tropicreeper": 2,
-                "tropicraft:tropi_spider": 2
+                "the_vault:t1_drowned": 15
               },
               "weight": 1
             }
@@ -436,11 +434,8 @@
           "output": [
             {
               "elements": {
-                "minecraft:drowned": 12,
-                "the_vault:t1_drowned": 34,
-                "tropicraft:tropiskelly": 8,
-                "tropicraft:tropicreeper": 6,
-                "tropicraft:tropi_spider": 4
+                "minecraft:drowned": 24,
+                "the_vault:t1_drowned": 64
               },
               "weight": 1
             }
@@ -453,11 +448,8 @@
           "output": [
             {
               "elements": {
-                "the_vault:t2_drowned": 4,
-                "the_vault:t1_drowned": 38,
-                "tropicraft:tropiskelly": 8,
-                "tropicraft:tropicreeper": 6,
-                "tropicraft:tropi_spider": 4
+                "the_vault:t2_drowned": 8,
+                "the_vault:t1_drowned": 64
               },
               "weight": 1
             }
@@ -470,11 +462,8 @@
           "output": [
             {
               "elements": {
-                "the_vault:t2_drowned": 15,
-                "the_vault:t1_drowned": 30,
-                "tropicraft:tropiskelly": 8,
-                "tropicraft:tropicreeper": 6,
-                "tropicraft:tropi_spider": 4
+                "the_vault:t2_drowned": 30,
+                "the_vault:t1_drowned": 60
               },
               "weight": 1
             }
@@ -487,11 +476,8 @@
           "output": [
             {
               "elements": {
-                "the_vault:t1_drowned": 20,
-                "the_vault:t2_drowned": 20,
-                "tropicraft:tropiskelly": 8,
-                "tropicraft:tropicreeper": 6,
-                "tropicraft:tropi_spider": 4
+                "the_vault:t1_drowned": 40,
+                "the_vault:t2_drowned": 40
               },
               "weight": 1
             }
@@ -504,11 +490,8 @@
           "output": [
             {
               "elements": {
-                "the_vault:t1_drowned": 5,
-                "the_vault:t2_drowned": 20,
-                "tropicraft:tropiskelly": 8,
-                "tropicraft:tropicreeper": 6,
-                "tropicraft:tropi_spider": 4
+                "the_vault:t1_drowned": 15,
+                "the_vault:t2_drowned": 60
               },
               "weight": 1
             }
@@ -519,6 +502,204 @@
     {
       "type": "reference",
       "id": "the_vault:generic/spawners/group_settings"
+    },
+    
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 40,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 60,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 80,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 100,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 40,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 10, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 60,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 12, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 7, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 80,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 7, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 9, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 100,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 9, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 10, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 20,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 40,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 60,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 80,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1
+          }
+        },
+        {
+          "level": 100,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
     }
   ]
 }
