@@ -16,12 +16,26 @@
         "minecraft:air": 5
       }
     },
+     {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"gilded_chest_guaranteed\"]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 5
+      }
+    },
     {
       "type": "weighted_target",
       "target": "the_vault:placeholder[type=coin_stacks_waterlogged]",
       "output": {
         "the_vault:placeholder[type=coin_stacks_waterlogged]": 5,
         "minecraft:water": 5
+      }
+    },
+        {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=coin_stacks_guaranteed]",
+      "output": {
+        "the_vault:placeholder[type=coin_stacks]": 5
       }
     },
     {

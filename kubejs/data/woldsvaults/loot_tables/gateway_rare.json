@@ -75,7 +75,7 @@
         {
           "type": "minecraft:item",
           "name": "woldsvaults:omega_box",
-          "weight": 5,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -91,7 +91,7 @@
         {
           "type": "minecraft:item",
           "name": "the_vault:unidentified_treasure_key",
-          "weight": 5,
+          "weight": 8,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -107,7 +107,7 @@
         {
           "type": "minecraft:item",
           "name": "the_vault:vault_catalyst_chaos",
-          "weight": 10,
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -123,7 +123,7 @@
         {
           "type": "minecraft:item",
           "name": "the_vault:capstone_vendoor_hunter",
-          "weight": 4,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -139,7 +139,7 @@
         {
           "type": "minecraft:item",
           "name": "the_vault:capstone_pylon_hunter",
-          "weight": 4,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -155,7 +155,7 @@
         {
           "type": "minecraft:item",
           "name": "the_vault:capstone_dungeon_hunter",
-          "weight": 4,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -171,7 +171,7 @@
         {
           "type": "minecraft:item",
           "name": "the_vault:capstone_peaceful",
-          "weight": 2,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -187,7 +187,7 @@
         {
           "type": "minecraft:item",
           "name": "the_vault:temporal_shard",
-          "weight": 10,
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -203,7 +203,7 @@
         {
           "type": "minecraft:item",
           "name": "the_vault:soul_vortex",
-          "weight": 10,
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -219,7 +219,7 @@
         {
           "type": "minecraft:item",
           "name": "woldsvaults:unidentified_gateway_pearl",
-          "weight": 6,
+          "weight": 9,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -248,6 +248,22 @@
             {
               "function": "set_nbt",
               "tag": "{\"the_vault:gear_unique_pool\":\"woldsvaults:shattering_jewel\",\"the_vault:gear_roll_type\":\"Unique\"}"
+            }
+          ],
+          "conditions": []
+        },
+         {
+          "type": "minecraft:item",
+          "name": "woldsvaults:crystal_seal_corrupt",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 1
+              }
             }
           ],
           "conditions": []

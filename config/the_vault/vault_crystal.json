@@ -627,6 +627,17 @@
         ]
       }
     ],
+    "the_vault:corrupted": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": "the_vault:vault_lost_depths",
+            "weight": 1
+          }
+        ]
+      }
+    ],
     "the_vault:speedrun": [
       {
         "level": 0,
@@ -1703,6 +1714,29 @@
         ]
       }
     ],
+    "the_vault:corrupted": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "type": "corrupted",
+              "objective_probability": 0.95,
+              "target": {
+                "type": "uniform",
+                "min": 20,
+                "max": 35
+              },
+              "second_target": {
+                "type": "uniform",
+                "min": 20,
+                "max": 35
+              }
+            }
+          }
+        ]
+      }
+    ],
     "the_vault:rune_boss": [
       {
         "level": 0,
@@ -2517,6 +2551,36 @@
             "min": 3,
             "max": 5
           }
+        }
+      }
+    ],
+    "woldsvaults:crystal_seal_corrupt": [
+      {
+        "level": 0,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objective": {
+          "type": "corrupted",
+          "objective_probability": 0.95,
+          "target": {
+            "type": "uniform",
+            "min": 20,
+            "max": 35
+          },
+          "second_target": {
+            "type": "uniform",
+            "min": 20,
+            "max": 35
+          }
+        },
+        "layout": {
+          "type": "infinite",
+          "tunnel_span": 1
+        },
+        "theme": {
+          "type": "value",
+          "id": "the_vault:vault_lost_depths"
         }
       }
     ],

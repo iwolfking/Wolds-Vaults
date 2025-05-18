@@ -6,10 +6,31 @@
         {
           "level": 0,
           "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
+          "target": "ispawner:spawner",
           "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"rottencreatures:dead_beard_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_4_egg\", Count: 20}, {id: \"grimoireofgaia:cecaelia_spawn_egg\", Count: 2}, {id: \"the_vault:vault_fighter_4_egg\", Count: 8}, {id: \"tropicraft:eih_spawn_egg\", Count: 1}, {id: \"tropicraft:ashen_spawn_egg\", Count: 8}, {id: \"the_vault:t4_skeleton_pirate_egg\", Count: 8}, {id: \"the_vault:t5_skeleton_pirate_egg\", Count: 2}, {id: \"alexsmobs:spawn_egg_mantis_shrimp\", Count: 1} ] } }": 1
+            "ispawner:spawner{ group:horde }": 38,
+            "ispawner:spawner{ group:assassin }": 30,
+            "ispawner:spawner{ group:tank }": 12,
+            "ispawner:spawner{ group:dwellers }": 10
           }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_4": 15
+              },
+              "weight": 1
+            }
+          ]
         }
       ]
     },
@@ -23,22 +44,10 @@
           "output": [
             {
               "elements": {
-                "tropicraft:eih": 10
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 65,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:tank}",
-          "output": [
-            {
-              "elements": {
-                "tropicraft:eih": 11,
-                "rottencreatures:dead_beard": 1,
-                "grimoireofgaia:cecaelia": 1
+                "the_vault:t3_drowned": 3,
+                "rottencreatures:dead_beard": 3,
+                 "tropicraft:eih": 3,
+                 "grimoireofgaia:cecaelia": 3
               },
               "weight": 1
             }
@@ -56,10 +65,16 @@
           "output": [
             {
               "elements": {
-                "tropicraft:ashen": 3,
-                "tropicraft:tropi_spider": 3,
-                "alexsmobs:mantis_shrimp": 3,
-                "grimoireofgaia:siren": 9
+              "tropicraft:tropiskelly": 9,
+                "the_vault:crab": 6,
+                "the_vault:skeleton_pirate_t2": 6,
+                "the_vault:skeleton_pirate_t3": 4,
+                "the_vault:skeleton_pirate_t4": 4,
+                 "the_vault:skeleton_pirate_t5": 3,
+                 "tropicraft:ashen": 5,
+                 "tropicraft:tropi_spider": 5,
+                     "grimoireofgaia:siren": 9,
+                       "alexsmobs:mantis_shrimp": 9
               },
               "weight": 1
             }
@@ -77,8 +92,8 @@
           "output": [
             {
               "elements": {
-                "grimoireofgaia:mermaid": 4,
-                "tropicraft:tropiskelly": 9
+              "grimoireofgaia:mermaid": 40,
+              "tropicraft:tropiskelly": 20
               },
               "weight": 1
             }
@@ -89,6 +104,54 @@
     {
       "type": "reference",
       "id": "the_vault:generic/spawners/group_settings"
+    },
+    
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 9, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 10, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
     }
   ]
 }
