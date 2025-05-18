@@ -6,106 +6,100 @@
         {
           "level": 0,
           "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
+          "target": "ispawner:spawner",
           "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 10}, {id: \"minecraft:drowned_spawn_egg\", Count: 10} ] } }": 1
+            "ispawner:spawner{ group:horde }": 38,
+            "ispawner:spawner{ group:assassin }": 30,
+            "ispawner:spawner{ group:tank }": 12,
+            "ispawner:spawner{ group:dwellers }": 10
           }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter": 15
+              },
+              "weight": 1
+            }
+          ]
         },
         {
           "level": 20,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 9}, {id: \"the_vault:vault_fighter_1_egg\", Count: 1}, {id: \"minecraft:drowned_spawn_egg\", Count: 7}, {id: \"the_vault:t1_drowned_egg\", Count: 3} ] } }": 1
-          }
-        },
-        {
-          "level": 25,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 8}, {id: \"the_vault:vault_fighter_1_egg\", Count: 2}, {id: \"minecraft:drowned_spawn_egg\", Count: 5}, {id: \"the_vault:t1_drowned_egg\", Count: 5} ] } }": 1
-          }
-        },
-        {
-          "level": 30,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 5}, {id: \"the_vault:vault_fighter_1_egg\", Count: 5}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"minecraft:drowned_spawn_egg\", Count: 5}, {id: \"the_vault:t1_drowned_egg\", Count: 5} ] } }": 1
-          }
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter": 15,
+                "the_vault:vault_fighter_1": 15
+              },
+              "weight": 1
+            }
+          ]
         },
         {
           "level": 40,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_0_egg\", Count: 2}, {id: \"the_vault:vault_fighter_1_egg\", Count: 8}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"minecraft:drowned_spawn_egg\", Count: 3}, {id: \"the_vault:t1_drowned_egg\", Count: 7} ] } }": 1
-          }
-        },
-        {
-          "level": 50,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_1_egg\", Count: 8}, {id: \"the_vault:vault_fighter_2_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"the_vault:t1_drowned_egg\", Count: 7}, {id: \"the_vault:t2_drowned_egg\", Count: 3} ] } }": 1
-          }
-        },
-        {
-          "level": 55,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_1_egg\", Count: 7}, {id: \"the_vault:vault_fighter_2_egg\", Count: 3}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"the_vault:t1_drowned_egg\", Count: 5}, {id: \"the_vault:t2_drowned_egg\", Count: 5} ] } }": 1
-          }
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_1": 15,
+                "the_vault:vault_fighter_2": 15
+              },
+              "weight": 1
+            }
+          ]
         },
         {
           "level": 60,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 10}, {id: \"the_vault:vault_fighter_1_egg\", Count: 10}, {id: \"the_vault:vault_fighter_2_egg\", Count: 5}, {id: \"the_vault:vault_fighter_3_egg\", Count: 1}, {id: \"the_vault:t1_drowned_egg\", Count: 3}, {id: \"the_vault:t2_drowned_egg\", Count: 7} ] } }": 1
-          }
-        },
-        {
-          "level": 65,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_1_egg\", Count: 10}, {id: \"the_vault:vault_fighter_2_egg\", Count: 10}, {id: \"the_vault:vault_fighter_4_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 2}, {id: \"alexsmobs:spawn_egg_orca\", Count: 1}, {id: \"the_vault:t2_drowned_egg\", Count: 13}, {id: \"alexsmobs:spawn_egg_frilled_shark\", Count: 6}, {id: \"alexsmobs:spawn_egg_mantis_shrimp\", Count: 1} ] } }": 1
-          }
-        },
-        {
-          "level": 70,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_2_egg\", Count: 16}, {id: \"the_vault:vault_fighter_4_egg\", Count: 4}, {id: \"the_vault:t3_piglin_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 2}, {id: \"alexsmobs:spawn_egg_orca\", Count: 1}, {id: \"the_vault:t2_drowned_egg\", Count: 10}, {id: \"alexsmobs:spawn_egg_frilled_shark\", Count: 10}, {id: \"alexsmobs:spawn_egg_mantis_shrimp\", Count: 1} ] } }": 1
-          }
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_2": 15,
+                "the_vault:vault_fighter_3": 15
+              },
+              "weight": 1
+            }
+          ]
         },
         {
           "level": 80,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_2_egg\", Count: 14}, {id: \"the_vault:vault_fighter_4_egg\", Count: 6}, {id: \"the_vault:t3_piglin_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 2}, {id: \"alexsmobs:spawn_egg_orca\", Count: 1}, {id: \"alexsmobs:spawn_egg_frilled_shark\", Count: 13}, {id: \"the_vault:t4_skeleton_pirate_egg\", Count: 6}, {id: \"alexsmobs:spawn_egg_mantis_shrimp\", Count: 1} ] } }": 1
-          }
-        },
-        {
-          "level": 90,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_2_egg\", Count: 10}, {id: \"the_vault:vault_fighter_4_egg\", Count: 10}, {id: \"the_vault:t3_piglin_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 6}, {id: \"alexsmobs:spawn_egg_orca\", Count: 1}, {id: \"alexsmobs:spawn_egg_frilled_shark\", Count: 10}, {id: \"the_vault:t4_skeleton_pirate_egg\", Count: 8}, {id: \"the_vault:t5_skeleton_pirate_egg\", Count: 1}, {id: \"alexsmobs:spawn_egg_mantis_shrimp\", Count: 1} ] } }": 1
-          }
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_3": 15,
+                "the_vault:vault_fighter_4": 15
+              },
+              "weight": 1
+            }
+          ]
         },
         {
           "level": 100,
-          "type": "weighted_target",
-          "target": "ispawner:spawner{group:standard}",
-          "output": {
-            "ispawner:spawner{ Inventory: { Stacks: [ {id: \"minecraft:guardian_spawn_egg\", Count: 20}, {id: \"the_vault:vault_fighter_4_egg\", Count: 20}, {id: \"the_vault:t3_piglin_egg\", Count: 2}, {id: \"the_vault:vault_fighter_3_egg\", Count: 8}, {id: \"alexsmobs:spawn_egg_orca\", Count: 1}, {id: \"alexsmobs:spawn_egg_frilled_shark\", Count: 8}, {id: \"the_vault:t4_skeleton_pirate_egg\", Count: 8}, {id: \"the_vault:t5_skeleton_pirate_egg\", Count: 2}, {id: \"alexsmobs:spawn_egg_mantis_shrimp\", Count: 1} ] } }": 1
-          }
+          "type": "spawner",
+          "target": "ispawner:spawner{group:dwellers}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:vault_fighter_4": 15
+              },
+              "weight": 1
+            }
+          ]
         }
       ]
     },
@@ -119,22 +113,9 @@
           "output": [
             {
               "elements": {
-                "the_vault:t3_drowned": 10
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 65,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:tank}",
-          "output": [
-            {
-              "elements": {
-                "the_vault:t3_drowned": 11,
-                "alexsmobs:orca": 1,
-                "alexsmobs:cachalot_whale": 1
+                  "the_vault:t3_drowned": 3,
+                    "alexsmobs:orca": 3,
+                    "alexsmobs:cachalot_whale": 3
               },
               "weight": 1
             }
@@ -152,153 +133,10 @@
           "output": [
             {
               "elements": {
-                "minecraft:guardian": 2
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 20,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:drowned": 5,
-                "minecraft:guardian": 6,
-                "the_vault:t1_drowned": 2
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 30,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:guardian": 6,
-                "the_vault:t2_drowned": 3
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 40,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:guardian": 6,
-                "the_vault:t2_drowned": 3
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 50,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:guardian": 6,
-                "the_vault:t2_drowned": 3
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:guardian": 6,
-                "the_vault:t2_drowned": 3
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 65,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:guardian": 6,
-                "the_vault:t2_drowned": 3,
-                "alexsmobs:mantis_shrimp": 1
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 70,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:guardian": 6,
-                "the_vault:t2_drowned": 3,
-                "alexsmobs:mantis_shrimp": 1
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 80,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:guardian": 6,
-                "the_vault:t2_drowned": 3,
-                "alexsmobs:mantis_shrimp": 1
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 90,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:guardian": 6,
-                "the_vault:t2_drowned": 3,
-                "alexsmobs:mantis_shrimp": 1
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 100,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:guardian": 6,
-                "the_vault:t2_drowned": 3,
-                "alexsmobs:mantis_shrimp": 1
+                "minecraft:guardian": 8,
+                "the_vault:t1_drowned": 8,
+                "the_vault:t2_drowned": 2,
+                 "alexsmobs:mantis_shrimp": 2
               },
               "weight": 1
             }
@@ -316,157 +154,9 @@
           "output": [
             {
               "elements": {
-                "minecraft:drowned": 12
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 20,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:drowned": 12
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 25,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:drowned": 12
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 30,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:drowned": 12
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 40,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:drowned": 12
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 50,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:drowned": 38,
-                "the_vault:t1_drowned": 4
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 55,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:drowned": 30,
-                "the_vault:t1_drowned": 15
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:drowned": 12,
-                "the_vault:t1_drowned": 34
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 65,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
+                "the_vault:t1_drowned": 15,
                 "the_vault:t2_drowned": 4,
-                "the_vault:t1_drowned": 38
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 70,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "the_vault:t2_drowned": 15,
-                "the_vault:t1_drowned": 30
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 80,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "the_vault:t1_drowned": 20,
-                "the_vault:t2_drowned": 20
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 90,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "the_vault:t1_drowned": 5,
-                "the_vault:t2_drowned": 20
+                "minecraft:guardian": 9
               },
               "weight": 1
             }
@@ -477,6 +167,54 @@
     {
       "type": "reference",
       "id": "the_vault:generic/spawners/group_settings"
+    },
+    
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:tank}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 1, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 2, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:horde}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 8, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 9, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 10, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": {
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 5, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:1, Settings: { Attempts: 6, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 3, SpawnDelay: 30 } } }": 1,
+            "ispawner:spawner{ Manager: { UsesLeft:2, Settings: { Attempts: 4, SpawnDelay: 30 } } }": 1
+          }
+        }
+      ]
     }
   ]
 }
