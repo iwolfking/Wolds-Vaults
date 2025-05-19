@@ -59,7 +59,7 @@ onEvent("recipes", event => {
         ], {
         G: 'the_vault:driftwood_planks',
         X: 'the_vault:chromatic_iron_ingot',
-        D: `framedblocks:framed_cube`
+        D: '#minecraft:planks'
     }).id('functionalstorage:framed_1')
 
     event.shaped(Item.of(`functionalstorage:framed_2`),
@@ -70,7 +70,7 @@ onEvent("recipes", event => {
         ], {
         G: 'the_vault:driftwood_planks',
         X: 'the_vault:chromatic_iron_ingot',
-        D: `framedblocks:framed_slab`
+        D: '#minecraft:wooden_slabs'
     }).id('functionalstorage:framed_2')
 
     event.shaped(Item.of(`functionalstorage:framed_4`),
@@ -81,7 +81,7 @@ onEvent("recipes", event => {
         ], {
         G: 'the_vault:driftwood_planks',
         X: 'the_vault:chromatic_iron_ingot',
-        D: `framedblocks:framed_button`
+        D: '#minecraft:wooden_buttons'
     }).id('functionalstorage:framed_4')
 
     event.shaped(Item.of(`functionalstorage:compacting_drawer`),
