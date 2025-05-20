@@ -1,0 +1,1683 @@
+{
+	id: "3BD89FDA96EB215F"
+	group: "1A78C6EA3A0ABFDA"
+	order_index: 3
+	filename: "3_getting_halfway_there"
+	title: "[3] Getting Halfway There"
+	icon: "sophisticatedstorage:treasure_chest"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Hunt and Scavenge"
+			x: -8.75d
+			y: 0.25d
+			shape: "hexagon"
+			subtitle: "Digging Through the Cabinets"
+			description: [
+				"&5Now that you are Level 20, a bunch of new things have opened up for you. The first of these is a new Objective type for the vaults : Scavenger."
+				""
+				"&5Scavenger is probably one of the most difficult objectives, and its Completion Crate is the most...lucrative to match it."
+				""
+				"&5Other than a blackout in Bingo at least."
+				""
+				"&5About Scav Vaults! In these, you get a list of items you need to find in THAT vault specifically. They'll be at the top of your screen, with an icon of where to find them: from either chests, monsters, or ores."
+				""
+				"&5Get all of em, and find a Scavenger Altar (green glowing altar that spawns in most rooms). Right Click each stack to deposit it before the timer runs out."
+				""
+				"&5If you don't get enough in time, you'll want to leave via the Portal before the time runs out."
+			]
+			dependencies: ["148669A61C9EFBF4"]
+			hide: true
+			id: "1881243BF68F0FAC"
+			tasks: [{
+				id: "5E9808306C7C79CF"
+				type: "item"
+				title: "Any Scavenger Item"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "the_vault:scavenger_item"
+					}
+				}
+			}]
+			rewards: [{
+				id: "6F0925C1B31FC8B5"
+				type: "item"
+				item: "the_vault:crystal_seal_hunter"
+			}]
+		}
+		{
+			title: "A Vendor Door"
+			x: -9.25d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "Vendoor: Capitalism, Ho!"
+			description: [
+				"&5There are two kinds of doors that will start spawning in the Vaults after level 20."
+				""
+				"&5Vendoors lead to special rooms that have Vendor Pedestals in them. These doors spawn on the walls inside Vault Rooms, usually on the bottom floor."
+				""
+				"&5There's a variety of things the Vendor Pedestals can sell, some of them only findable in Vendoor rooms."
+				""
+				"&5When purchsing something, the Pedestal will pull it directly from your Wallet or Pouches."
+				""
+				"&5Also, you can get a discount on Vendor Pedestals with a certain Expertise."
+				""
+				"&5Oh! Also, keep your eyes open. Some of the Vendor rooms have some hidden loot in them, or some neat blocks to build with."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1881243BF68F0FAC"]
+			hide: true
+			id: "4905625BD3C4B3C4"
+			tasks: [{
+				id: "4947C4D29A9DB40A"
+				type: "observation"
+				title: "Find a Vendoor"
+				icon: "the_vault:vendor_door"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:vendor_door"
+			}]
+			rewards: [{
+				id: "6E187BDCF19993B3"
+				type: "item"
+				item: "the_vault:vault_gold"
+				count: 2
+			}]
+		}
+		{
+			title: "The \"True\" Hunt"
+			x: -6.75d
+			y: 0.25d
+			shape: "pentagon"
+			subtitle: "Artifacts 5 by 5"
+			description: [
+				"&5Now that you are level 20, you'll start finding Unidentified Artifacts in your Completion Crates."
+				""
+				"&5They'll also occasionally show up in the Black Market and other places."
+				""
+				"&5This is how to 'beat' Vault Hunters : Collect all 25 Artifacts, complete the 'tapestry', and defeat the final boss : The Herald."
+				""
+				"&5You can place the Artifact Tome down, and it'll project a 5x5 hologram on the wall behind it."
+				""
+				"&5When you fill in every Artifact piece, you're able to....well, I'll come to that later."
+				""
+				"&5When you identify an Artifact, you have a higher chance of finding one you have not identified yet."
+			]
+			dependencies: ["1881243BF68F0FAC"]
+			hide: true
+			id: "2EC8B80AE1A271D5"
+			tasks: [{
+				id: "0E348B08B753AA85"
+				type: "item"
+				item: "the_vault:artifact_projector_block"
+			}]
+			rewards: [{
+				id: "7C1FC6D1268131EE"
+				type: "item"
+				item: "the_vault:artifact_fragment"
+			}]
+		}
+		{
+			title: "Infusing a Path"
+			icon: "the_vault:vault_catalyst_infused"
+			x: -6.25d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "Determined Destiny"
+			description: [
+				"&5At around level 24 you'll start finding Catalyst fragments in Gilded Chests."
+				""
+				"&5Catalyst fragments can be combined, and then brought into a Catalyst Infusion Table and turned into something useful."
+				""
+				"&5Infused Catalysts can be applied to your Vault Crystal (in the Crystal Workbench, of course), and can increase the amount of chests you get, or coins, or other useful things."
+				""
+				"&5Note that you can only get Catalyst Fragments from Vaults that have 2 or less Gilded Catalysts on them."
+				""
+				"&5You can also find Catalyst Boxes, which will give you a random Catalyst."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "46082D6F0590EDD4"
+			tasks: [
+				{
+					id: "3ECECEB3891A0EE3"
+					type: "item"
+					item: "the_vault:catalyst_infusion_table"
+				}
+				{
+					id: "40B665B067EE0A96"
+					type: "item"
+					item: "the_vault:vault_catalyst_fragment"
+				}
+			]
+			rewards: [{
+				id: "2D49A7C4C483B355"
+				type: "item"
+				item: "woldsvaults:catalyst_box"
+			}]
+		}
+		{
+			title: "A Jump to 40"
+			x: -4.75d
+			y: 0.25d
+			shape: "hexagon"
+			subtitle: "The Eyes of the Gods"
+			description: [
+				"&5Not much else unlocks for you in the Vaults until you hit 40."
+				""
+				"&5It may be tempting to eat a bunch of Vault Burgers, yeh? I recommend resisting, level 50 is when things start to slow down even more."
+				""
+				"&5Plus it's a good idea to gather as much Vault Resources as you can, and get some mods 'researched' and started up"
+				""
+				"&5Once you hit 40, you'll start finding God Altars in the Vaults. You've probably seen these already : they look like giant moai statue heads. Now these will have an Altar to one of the four Vault Gods."
+				""
+				"&5You can activate one of these Altars to get a timed challenge from that 'Vault God'. If ye complete it, you get a reward! If not, a punishment..."
+			]
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "1799D40CDE8D8F82"
+			tasks: [{
+				id: "7106D78AD137F801"
+				type: "observation"
+				title: "Find a God Altar"
+				icon: {
+					id: "the_vault:god_altar"
+					Count: 1b
+					tag: {
+						god: "idona"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:god_altar"
+			}]
+			rewards: [{
+				id: "6F5E730FDA139604"
+				type: "item"
+				item: "the_vault:grand_charm"
+			}]
+		}
+		{
+			title: "Warding Your Inventory"
+			x: -6.75d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "KeepInventory=true"
+			description: [
+				"&5With death changing at level 20, you might be feeling a bit under geared, or unprepared, or just don't want to deal with losing your inventory, you can make a Warden's Vault Rock."
+				""
+				"&5Ye place these on a Vault Altar like a normal Vault Rock, and pay the price for the crystal as usual. But the Vault Crystal ye get back will be marked with Afterlife."
+				""
+				"&5The Afterlife modifier lets you keep your inventory if you die or fail the Vault, but in return you can't modify it further in a Crystal Workbench."
+				""
+				"&5Oh, be warned, it also halves the experience you get from the Vault. Slows down you leveling a bit and gives you time to upgrade your gear."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "4B2756DABC97E4C6"
+			tasks: [{
+				id: "4CC4C21A3F94DF6B"
+				type: "item"
+				item: "the_vault:wardens_pearl"
+			}]
+			rewards: [{
+				id: "5613DAA06AF75B6D"
+				type: "item"
+				item: "the_vault:wardens_pearl"
+			}]
+		}
+		{
+			title: "Bigger Modifiers"
+			x: -8.25d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "Make My Modifier Grow!"
+			description: [
+				"&5Inside Dungeons in Vaults, you have a small chance of finding a Modifier Archive"
+				""
+				"&5The Modifier Archive will present you with a bunch of new Modifiers you can put on your Vault Gear with the Modification Table."
+				""
+				"&5You can only choose one, however."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0E520C1ADD9E71DF"]
+			hide: true
+			id: "26943BB19E61CF27"
+			tasks: [{
+				id: "79772958EF616B60"
+				type: "observation"
+				icon: "the_vault:modifier_discovery"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:modifier_discovery"
+			}]
+			rewards: [{
+				id: "2E6973301EE076C8"
+				type: "item"
+				item: "the_vault:vault_gold"
+				count: 2
+			}]
+		}
+		{
+			title: "My Little Modification"
+			x: -4.25d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "I Asked For This"
+			description: [
+				"&5The Modification Table is a useful thing to make early, as it lets you add a Prefix or Suffix of your choice to a piece of gear"
+				""
+				"&5The gear has to have a slot free, and you need to have the modifier unlocked to apply it."
+				""
+				"&5There's a couple ways to unlock modifiers, I'll go over those shortly. But do note that applying or removing a modifier has a cost."
+				""
+				"&5It's usually some Vault Gold and materials. You can only add one Modifier, and remove said modifier. It'll be marked with a pickaxe in the gear stats, so you know what you've added can can remove."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "62B48188693E8FF5"
+			tasks: [{
+				id: "6B269DE4268F4E03"
+				type: "item"
+				item: "the_vault:modifier_workbench"
+			}]
+			rewards: [{
+				id: "512CEA294F3CCC29"
+				type: "item"
+				item: "the_vault:vault_gold"
+				count: 4
+			}]
+		}
+		{
+			title: "Potion Seller!"
+			x: -9.25d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "Give Me Your Strongest Potions"
+			description: [
+				"&5In the larger Dungeons in Vaults, you have a chance of finding an Alchemy Archive."
+				""
+				"&5Using one gives you the choice between three new modifiers you can put on your Vault Potions."
+				""
+				"&5These are usually fairly powerful, especially for specific builds."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0E520C1ADD9E71DF"]
+			hide: true
+			id: "13F372A316D67ABA"
+			tasks: [{
+				id: "21817CFEE523A409"
+				type: "observation"
+				icon: "the_vault:alchemy_archive"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:alchemy_archive"
+			}]
+			rewards: [{
+				id: "1008CD5F84061B6D"
+				type: "item"
+				item: "the_vault:vault_diamond"
+				count: 2
+			}]
+		}
+		{
+			title: "Inscribing For Success"
+			icon: {
+				id: "the_vault:inscription"
+				Count: 1b
+				tag: {
+					data: {
+						completion: 0.05f
+						entries: [{
+							color: 16777215
+							count: 1
+							type: 0
+						}]
+						model: 0
+						time: 400
+						size: 10
+						instability: 0.01f
+					}
+				}
+			}
+			x: -7.25d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "Got Your Quill With You?"
+			description: [
+				"&5One thing you'll start finding in Living Chests, are Inscriptions and Inscription Pieces. Full Inscriptions will either be a basic Common Room, or one of the special Vault Rooms."
+				""
+				"&5Inscriptions can be added to your Vault Crystal (using a Crystal Workbench). If it isn't a Common Room, this will guarantee the room on the Inscription spawns in that Vault."
+				""
+				"&5When you enter the Vault, the Portal Room will have a map built into the floor. The different block in the center is your Portal Room. Each block around it is a room."
+				""
+				"&5That be a treasure map, yarr! Showing ya to yer plunder, of course."
+				""
+				"&5Inscription Boxes can also be found that give you a random Inscription."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "341E8BC988FE57D3"
+			tasks: [
+				{
+					id: "295C142B8C4F1875"
+					type: "item"
+					item: "the_vault:inscription_table"
+				}
+				{
+					id: "15FA75428A81A404"
+					type: "item"
+					item: "the_vault:inscription_piece"
+				}
+			]
+			rewards: [{
+				id: "1152512474544891"
+				type: "item"
+				item: "woldsvaults:inscription_box"
+			}]
+		}
+		{
+			title: "Death In Spirit"
+			x: -2.75d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "Body Recovery"
+			description: [
+				"&5If you've died in a Vault after hitting level 20, no doubt you've found most of your inventory missing and a ghost body spawning where you respawned as well."
+				""
+				"&5That's your spirit, and if you want your inventory back, you'll be wanting to make a Spirit Extractor."
+				""
+				"&5You can put your spirit onto a Spirit Extractor, then pay the listed Vault Gold to get your items back."
+				""
+				"&5The cost is determined by a few things, including specific items and loot you are carrying, equipment, etc."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "5A04F0E50CF5F17F"
+			tasks: [{
+				id: "77F0C183D71F09FA"
+				type: "item"
+				item: "the_vault:spirit_extractor"
+			}]
+			rewards: [{
+				id: "58507980F5D94DE6"
+				type: "item"
+				item: "the_vault:vault_gold"
+				count: 10
+			}]
+		}
+		{
+			title: "Baubles n' Trinkets"
+			x: -4.75d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "Accessorize with Power"
+			description: [
+				"&5A new piece of equipment that'll start showing up, albeit very rarely, is Vault Trinkets, and you can find them usually in Gilded Chests."
+				""
+				"&5Sorta like magic rings or amulets. They give some sort of bonus or power in the Vaults when worn."
+				""
+				"&5They are sorted into three colors : Blue, Red, and Green. To equip them, you'll need a Vault Trinket Pouch."
+				""
+				"&5And note they have limited uses. Each time you enter a Vault with a trinket, it consumes a use."
+				""
+				"&5Though many of them are useful outside of the vault too. That double jump one for example, or the wall climbing one."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "59D6A7EF6A2A5123"
+			tasks: [{
+				id: "516696AB84D7ACE5"
+				type: "item"
+				item: "the_vault:trinket"
+			}]
+			rewards: [{
+				id: "275E26C3C3CB931B"
+				type: "item"
+				item: "the_vault:trinket"
+			}]
+		}
+		{
+			title: "Loot n' Plunder"
+			x: -6.75d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "An Experience All It's Own"
+			description: [
+				"&5If you are finding yourself outpacing your equipment a bit too fast, you can make a Plunderer's Vault Rock."
+				""
+				"&5Ye use it on a Vault Altar like a normal Vault Rock, and pay the price to turn it into a special Vault Crystal."
+				""
+				"&5This one can't be modified further, but the Plunder modifier changes a few things. First off, you get almost no experience in the Vault. Small things might give a bit of XP, but nowhere even close to what you would normally get."
+				""
+				"&5It also boosts the loot you can find. A bit more loot in the chests, and a bigger percentage of Vault Ores being in Mining POIs and rooms."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "731864D511892F56"
+			tasks: [{
+				id: "5274C8F1E84DE605"
+				type: "item"
+				item: "the_vault:plunderer_pearl"
+			}]
+			rewards: [{
+				id: "491A44858D117B37"
+				type: "item"
+				item: "the_vault:plunderer_pearl"
+			}]
+		}
+		{
+			title: "Creating The Divine Paradox"
+			x: -2.75d
+			y: 0.25d
+			shape: "pentagon"
+			subtitle: "Build A Vault Now Open!"
+			description: [
+				"&5Now that the Gods and their Favor is open to you, you have a new type of Vault (and resource sink) open to you : it's called The Divine Paradox."
+				""
+				"&5This is a special Vault that is tied in with the four Vault Gods. You start by making an Architect Vault Rock and paying the cost of it, as usual."
+				""
+				"&5Don't head in yet, though. Few things need explaining first. Like the Architect vault crystal has no objective or loot. It's specifically for \"Creating\" your Divine Paradox vault."
+				""
+				"&5When you first activate your Divine Vault, it's... empty. Empty except for the entrance room. You 'build' out your Divine Paradox by purchasing connecting rooms with Vault Gold and materials."
+				""
+				"&5Most rooms require a certain amount of a certain Vault God's reputation as well to purchase."
+			]
+			dependencies: ["1799D40CDE8D8F82"]
+			hide: true
+			id: "72FAD25A9DA18C65"
+			tasks: [{
+				id: "7E27744A43339606"
+				type: "item"
+				item: "the_vault:crystal_seal_ordinator_build"
+			}]
+			rewards: [{
+				id: "3250AA3794C0704A"
+				type: "item"
+				item: "the_vault:crystal_seal_ordinator_build"
+			}]
+		}
+		{
+			title: "Running the Divine Paradox"
+			x: -0.75d
+			y: 0.25d
+			shape: "pentagon"
+			subtitle: "A Limited Time Deal"
+			description: [
+				"&5So, you know how to build out your Divine Paradox. Now we'll explain how you run it."
+				""
+				"&5You can only run your Divine Paradox once every 20 real life hours."
+				""
+				"&5TTranslated to in-game time, about once every 60 Minecraft days."
+				""
+				"&5But it's understandable. When you've unlocked a lot of special rooms, the Divine Paradox ends up being so lucrative you run them as much as possible."
+				""
+				"&5To run a Paradox Vault, you just need to make and pay for a Paradox's Vault Rock."
+			]
+			dependencies: ["72FAD25A9DA18C65"]
+			hide: true
+			id: "391277708CA4B52A"
+			tasks: [{
+				id: "0791F76299B15935"
+				type: "item"
+				item: "the_vault:crystal_seal_ordinator_run"
+			}]
+			rewards: [{
+				id: "7E3CB03788993CA1"
+				type: "item"
+				item: "the_vault:crystal_seal_ordinator_run"
+			}]
+		}
+		{
+			title: "BOSS BATTLE!"
+			x: 1.25d
+			y: 0.25d
+			shape: "pentagon"
+			subtitle: "Neighborhood or a City Boss?"
+			description: [
+				"&5Paradox Vaults are the highlight of what unlocks at 40 for you, then at 50 there is another more normal Vault type that unlocks as well : Hunt the Runes."
+				""
+				"&5These ones are a bit more difficult, as you will be fighting a big Boss type enemy. But to summon this boss, you'll need to find Runes."
+				""
+				"&5Runes'll occasionally spawn in chests, and you'll need 5 of them to summon the boss. Each rune'll have a Positive and a Negative effect on them."
+				""
+				"&5The positive effect'll usually be something like a rare piece of loot. But to get that, ye'll be adding some kind of ability to the Boss. Like a special attack, or more health, etc."
+				""
+				"&5You can get a good selection of Runes to build up the Boss how you want. Just take the Runes back to the first room, put them in the Pedestal, and then kill the boss. Easy peasy."
+			]
+			dependencies: ["391277708CA4B52A"]
+			hide: true
+			id: "4D05DB966C33B676"
+			tasks: [{
+				id: "6A7EEA330205C81B"
+				type: "item"
+				title: "Loot a Boss Rune"
+				item: "the_vault:boss_rune"
+			}]
+			rewards: [{
+				id: "4E2F07D3E394D0A0"
+				type: "item"
+				item: "the_vault:crystal_seal_executioner"
+			}]
+		}
+		{
+			title: "Resetting the Paradox"
+			x: -0.75d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "Refreshing the Layout"
+			description: [
+				"&5If you've gotten unlucky with the room layout of your Divine Paradox vault, or want to choose differently, there IS a way to reset your Divine Paradox."
+				""
+				"&5Be warned, you don't get a refund on the rooms you've already unlocked."
+				""
+				"&5If you haven't come across any Void themed Vaults yet, keep searching. The water from these Vaults is actually very dangerous : touching it starts leeching time out of your Timer."
+				""
+				"&5But bring a bucket! The Void Liquid is the key to resetting the Divine Paradox. Pour it out in the overworld, and throw an Architects' Vault Rock into it!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["391277708CA4B52A"]
+			hide: true
+			id: "6B7E170787362D79"
+			tasks: [{
+				id: "2070C1F05FB87996"
+				type: "item"
+				item: "the_vault:void_liquid_bucket"
+			}]
+			rewards: [{
+				id: "3E35CF25B9730464"
+				type: "item"
+				item: "the_vault:vault_diamond"
+				count: 4
+			}]
+		}
+		{
+			title: "Zippity Zap"
+			x: -2.75d
+			y: 2.5d
+			shape: "rsquare"
+			description: [
+				"&5You've definitely noticed that when you roll a new piece of gear, if it has a model you've not seen before, you'll get notified that you've \"unlocked\" it."
+				""
+				"&5These are Transmogs, and you can change the model of a piece of gear to a different one you have unlocked."
+				""
+				"&5The neat thing is you can unlock special Transmogs in various ways : researching mods, doing cool things in the Vault, etc."
+				""
+				"&5As well, each time you roll a new piece of gear, you have a higher chance of unlocking a Transmog you haven't obtained yet."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "1F97C49BAD78BAF3"
+			tasks: [{
+				id: "39F101A3D5D010BD"
+				type: "item"
+				item: "the_vault:transmog_table"
+			}]
+			rewards: [{
+				id: "27684FCB217D75AB"
+				type: "item"
+				item: "the_vault:chromatic_steel_ingot"
+				count: 8
+			}]
+		}
+		{
+			title: "God Affinity and Reputation"
+			x: -5.25d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "The Gods are Fickle"
+			description: [
+				"&5So it's important to understand the difference between Affinity and Reputation when it comes to the Gods."
+				""
+				"&5Affinity is, hm... basicaly showing favor to one of the four Vault Gods : Idona, Wendarr, Tenos, and Velara."
+				""
+				"&5The easiest way to do that is to wear one of the God Charms. There's also an Expertise to help with this."
+				""
+				"&5Next is Reputation. You see, when you complete a God Altar's challenge, you get a buff and sometimes a reward. And a chance at a Reputation point with that God."
+				""
+				"&5The higher your Affinity, the bigger chance of gaining Reputation. Note that there's a max amount of Reputation you can have with every Vault God."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1799D40CDE8D8F82"]
+			hide: true
+			id: "7C3EC303E343D3EB"
+			tasks: [{
+				id: "068536E5AA7DD973"
+				type: "item"
+				item: {
+					id: "the_vault:vault_god_charm"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "09D807BBA4AF1C48"
+				type: "item"
+				item: {
+					id: "the_vault:vault_god_charm"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Many Builds"
+			x: -5.25d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "Swap Like Gear"
+			description: [
+				"&5If you want to play around with different builds, the Skill Altar is a must."
+				""
+				"&5It lets you save your Skill and Talents chosen and recall them later, for much less cost of Vault Gold."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "6B6D6C7C538FCDB8"
+			tasks: [{
+				id: "3BE46E270FCB9CD1"
+				type: "item"
+				item: "the_vault:skill_altar"
+			}]
+			rewards: [{
+				id: "7C1E31D169CC8E27"
+				type: "item"
+				item: "the_vault:vault_gold"
+				count: 8
+			}]
+		}
+		{
+			title: "50, Halfway Down"
+			icon: "the_vault:neuralizer"
+			x: 3.25d
+			y: 0.25d
+			shape: "pentagon"
+			subtitle: "Or Halfway Up?"
+			description: [
+				"&5Next up is level 50."
+				""
+				"&5A big stepping stone, aye. A lot opens up to ya. New vaults, new mechanics, new loot, etc."
+				""
+				"&5Especially that last one. More treasures."
+				""
+				"&5The built-in Vault Hunters quests will give you a Neuralizer. Which lets you reset your Expertise points and reallocate them. They are very expensive, so save it until you really want to re-spec your Expertise."
+			]
+			dependencies: ["4D05DB966C33B676"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "0332B6DA83347AEB"
+			tasks: [{
+				id: "47166A052A188D22"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "7AF5BD6504EA5554"
+				type: "item"
+				item: "the_vault:gem_echo"
+				count: 6
+			}]
+		}
+		{
+			title: "Challenging the Gods"
+			x: -0.75d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "And Winning"
+			description: [
+				"&5So, the objective of the Divine Paradox is to collect enough blessings from each God and submitting them in the main room."
+				""
+				"&5Blessings for a God only drop in rooms dedicated to em. Usually something of the room has that God's color to show you."
+				""
+				"&5And the Blessings come from Chests, Coin Piles, and Ores."
+				""
+				"&5At the beginning, you won't have enough rooms unlocked to complete the Vault. Don't worry, eventually you'll unlock plenty!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["391277708CA4B52A"]
+			hide: true
+			id: "36B86835B3868BB7"
+			tasks: [{
+				id: "211407D0D850422B"
+				type: "item"
+				item: "the_vault:vault_crate_paradox"
+			}]
+			rewards: [
+				{
+					id: "6A120F6DD9D467F5"
+					type: "item"
+					item: "the_vault:grand_charm"
+				}
+				{
+					id: "12293BAA2D1146AE"
+					type: "item"
+					item: {
+						id: "the_vault:vault_god_charm"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "A Suit For Every Occasion"
+			x: -2.75d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "Where's My Super Suit?!"
+			description: [
+				"&5Given you find a lot of Vault Gear, some of it is bound to be really good, but not fit into your current build."
+				""
+				"&5This Wardrobe lets you not only store a Gear loadout and instantly swap to it, it also lets you store and swap your main hotbar too."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "5E426379F71796D7"
+			tasks: [{
+				id: "233B0C117DDBDB76"
+				type: "item"
+				item: "the_vault:wardrobe"
+			}]
+			rewards: [{
+				id: "7E10FEB898938D6F"
+				type: "item"
+				item: "the_vault:vault_diamond"
+				count: 8
+			}]
+		}
+		{
+			title: "A Bit Chaotic"
+			x: -1.25d
+			y: 3.5d
+			shape: "rsquare"
+			subtitle: "My Focus is Wobbly"
+			description: [
+				"&5Each Prefix or Suffix on a piece of gear also rolls a Tier. Higher tiers effect the range that it can roll, with higher tiers being higher (of course)."
+				""
+				"&5Using a Chaotic Focus means one of them will reroll their tier only, and gives it a chance to be higher."
+				""
+				"&5Good if you got a bunch of Prefix and Suffixes you want, but some of them rolled low in their ranges."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "70C2A6B274238476"
+			tasks: [{
+				id: "6480966164AFFC88"
+				type: "item"
+				item: "the_vault:chaotic_focus"
+			}]
+			rewards: [{
+				id: "2141A3F4A1156D37"
+				type: "item"
+				item: "the_vault:chaotic_focus"
+			}]
+		}
+		{
+			title: "Fundamentally Better"
+			x: -0.25d
+			y: 3.5d
+			shape: "rsquare"
+			subtitle: "Ex Bawx"
+			description: [
+				"&5The last section of stats for a piece of gear I haven't fully explained are the Implicits."
+				""
+				"&5These are the things like Attack Damage, Range, and some special abilities only roll as implicits."
+				""
+				"&5Like Endergized for Magnets, or Channeling for Tridents."
+				""
+				"&5The Fundamental Focus rerolls all Implicits, giving you a chance at a higher roll, and some additional abilities."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "6D4ECD8F4B33AF24"
+			tasks: [{
+				id: "304008F23AC7EE79"
+				type: "item"
+				item: "the_vault:fundamental_focus"
+			}]
+			rewards: [{
+				id: "5FD1DAC426963A6C"
+				type: "item"
+				item: "the_vault:fundamental_focus"
+			}]
+		}
+		{
+			title: "Before and After"
+			x: -1.25d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "Wax On, Wax Off"
+			description: [
+				"&5You should be getting some new Focus' to use in the Vault Artisan Station. Like the Waxing and Waning Foci."
+				""
+				"&5Foci? Focuses? Can never get that straight. But yeah, while the Wild Focus lets you reroll all Prefixes AND Suffixes, these two will let you reroll one or the other."
+				""
+				"&5Really helps you narrow down a piece of gear to work with your build."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "77761C3A93EA70CC"
+			tasks: [
+				{
+					id: "6577F246310D8DCB"
+					type: "item"
+					item: "the_vault:waxing_focus"
+				}
+				{
+					id: "51B1F59286A5B865"
+					type: "item"
+					item: "the_vault:waning_focus"
+				}
+			]
+			rewards: [
+				{
+					id: "16D4BD6EA2D2FBAC"
+					type: "item"
+					item: "the_vault:waxing_focus"
+				}
+				{
+					id: "24B01E2C69837366"
+					type: "item"
+					item: "the_vault:waning_focus"
+				}
+			]
+		}
+		{
+			title: "Spooky Door"
+			x: -8.25d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "Dungeons of Dread, and More"
+			description: [
+				"&5There are two kinds of doors that will start spawning in the Vaults after level 20."
+				""
+				"&5Dungeon doors can spawn in the walls of Vault Rooms, usually on the bottom floor. They will have the symbol of a specific monster type on them."
+				""
+				"&5When you open a Dungeon Door, a popup will tell you what difficulty the creatures that spawn inside are."
+				""
+				"&5These range from Easy, Normal, Difficult, Challenging, and Impossible."
+				""
+				"&5Each Dungeon spawns one kind of Barrel, which are alternate versions of Chests, that all act like Wooden Chests. But to break them properly requires the proper tool Affinity."
+				""
+				"&5At the end of the Dungeon, it will spawn a special Champion, the boss of the dungeon. It's usually tankier than normal Champions, and drops some decent loot."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1881243BF68F0FAC"]
+			hide: true
+			id: "0E520C1ADD9E71DF"
+			tasks: [{
+				id: "3E8CDE870BD93874"
+				type: "observation"
+				title: "Find a Dungeon Door"
+				icon: {
+					id: "the_vault:dungeon_door"
+					Count: 1b
+					tag: {
+						type: "spider"
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:dungeon_door"
+			}]
+			rewards: [{
+				id: "501A4804F2EF0D7B"
+				type: "item"
+				item: "the_vault:vault_gold"
+				count: 2
+			}]
+		}
+		{
+			title: "A Vault Celebration"
+			x: -6.25d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "Obvious, It's a Lie"
+			description: [
+				"&5Keep on the lookout for one of these special Vault Rocks. It's for making a special vault called a Cake Vault."
+				""
+				"&5Cake Vaults are unique. The objective is to find as many Cakes as you can. The Rooms in this Vault only have one path : a spiral outward."
+				""
+				"&5Each room has only one Cake, somewhere. As you get closer to it, your vision will change."
+				""
+				"&5Also in each room is a Crake Pedestal. Don't interact with it until you are ready to leave!"
+				""
+				"&5See, each Cake you find adds modifiers to the Vault. Usually good and bad. More loot, but tougher enemies."
+				""
+				"&5A good strategy is to go as far as ye can before the enemies get TOO deadly, then loop back and loot before leaving."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "2E4634E02915378E"
+			tasks: [{
+				id: "4EF621A2C992EF90"
+				type: "item"
+				item: "the_vault:crystal_seal_cake"
+			}]
+			rewards: [{
+				id: "36A11AF00B3624BE"
+				type: "item"
+				item: "the_vault:crystal_seal_cake"
+			}]
+		}
+		{
+			title: "A Little Bit of Chaos"
+			x: -7.25d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "Maybe More Than a Little"
+			description: [
+				"&5If you see this Chaotic Vault Rock for sale in a Vendoor or the Black Market, I highly recommend picking it up!"
+				""
+				"&5This is a special Vault Theme where it jumbles up rooms from all the other Themes into it."
+				""
+				"&5This includes more dangerous themes like Nether or Void themes. As well as the monsters from them."
+				""
+				"&5The chests at points of interest are random too!"
+				""
+				"&5See? Chaos."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "0C0EF3E7F086CF9F"
+			tasks: [{
+				id: "68A7530BD8CA535A"
+				type: "item"
+				item: "the_vault:vault_catalyst_chaos"
+			}]
+			rewards: [{
+				id: "6267A16B1C0C7C80"
+				type: "item"
+				item: "the_vault:vault_catalyst_chaos"
+			}]
+		}
+		{
+			title: "Supremely Strong Anvil"
+			x: -2.25d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Fairly Looney, a Little Tooney"
+			description: [
+				"&5Well, this thing has seen better days. This is the Vault Anvil."
+				""
+				"&5Before some of these special workstations were added, you had to apply special items to a Crystal with an Anvil."
+				""
+				"&5You would go through Anvils like sliced bread sometimes. So the devs implemented a new item: The Vault Anvil."
+				""
+				"&5This Anvil won't take any damage when used, basically."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1881243BF68F0FAC"]
+			hide: true
+			id: "2E6BE62F1163E67B"
+			tasks: [{
+				id: "3FD8D17F27D84BBE"
+				type: "item"
+				item: "the_vault:vault_anvil"
+			}]
+			rewards: [{
+				id: "1F328B6F9A07A09B"
+				type: "item"
+				item: "the_vault:repair_core"
+			}]
+		}
+		{
+			title: "Box of Mod Goodness"
+			x: -7.25d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "What's In the Box? Well, What Do You Know?"
+			description: [
+				"&5Keep an eye out for these little blue boxes. They are called Mod Boxes, and they contain, well..."
+				""
+				"&5...different things, depending on what mods you have Researched so far."
+				""
+				"&5If you haven't Researched any Mods, the Mod Box will drop Knowledge Shards, to get you closer to Researching a mod. Once you've Researched certain mods, the Mod Box only drops certain items from those Mods."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "4258E78EC459B8E3"
+			tasks: [{
+				id: "18A04F41AA4F5B97"
+				type: "item"
+				item: "the_vault:mod_box"
+			}]
+			rewards: [{
+				id: "48825395020344FF"
+				type: "item"
+				item: "the_vault:mod_box"
+			}]
+		}
+		{
+			title: "Monsterous View"
+			x: -2.75d
+			y: 3.5d
+			shape: "rsquare"
+			subtitle: "We Got Holograms?!"
+			description: [
+				"&5The Animatrix is a fun little block. Not super useful, but a good deco block."
+				""
+				"&5You can take one of the Spawn Eggs you get from the Mystery Eggs and put it into this."
+				""
+				"&5It'll display the creature above the Animatrix. Basically a hologram. Not super useful, like I said, but nice decoratively."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "458B00C55596073B"
+			tasks: [{
+				id: "5AF228E345A48CD9"
+				type: "item"
+				item: "the_vault:animatrix_block"
+			}]
+			rewards: [{
+				id: "6585C4A5D94FDA1A"
+				type: "item"
+				item: "the_vault:mystery_egg"
+			}]
+		}
+		{
+			title: "Dungeon Vision"
+			x: -9.25d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "I See a Challenge!"
+			description: [
+				"&5The Dungeon Capstone can be added to a Vault Crystal in the Crystal Workbench."
+				""
+				"&5This'll cause Dungeon Doors to highlight while you are in that Vault. Very helpful."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "5E76F2D1629500C0"
+			tasks: [{
+				id: "7F2B8A5B868F55BC"
+				type: "item"
+				item: "the_vault:capstone_dungeon_hunter"
+			}]
+			rewards: [{
+				id: "3F59DEB025D71788"
+				type: "item"
+				item: "the_vault:capstone_dungeon_hunter"
+			}]
+		}
+		{
+			title: "Seeking Relics"
+			x: -9.25d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Guaranteed Parchment"
+			description: [
+				"&5The Prosperous Capstone can be added to a Vault Crystal to guarantee that the Completion Crate has an Artifact in it."
+				""
+				"&5Cavaet being, you know, completing the Vault in the first place."
+				""
+				"&5You could always add a Seal for an Objective you are good at completing."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "4B7A874A465F7563"
+			tasks: [{
+				id: "55E2DEEEA6095970"
+				type: "item"
+				item: "woldsvaults:capstone_prosperous"
+			}]
+			rewards: [{
+				id: "2C76B2A84E733CFC"
+				type: "item"
+				item: "woldsvaults:capstone_prosperous"
+			}]
+		}
+		{
+			title: "Phenomenal Power!"
+			x: -8.25d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "Itty Bitty Health Bar"
+			description: [
+				"&5The Frenzy Capstone adds a curse called Frenzy to your Vault."
+				""
+				"&5This is a bit of a double edged sword. The mobs get much stronger, much faster, much deadlier."
+				""
+				"&5But their health plumets to 1 HP... usually."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "1200CB57AA912FF4"
+			tasks: [{
+				id: "42A396C3E83A347A"
+				type: "item"
+				item: "woldsvaults:capstone_frenzy"
+			}]
+			rewards: [{
+				id: "5B239B4056B1F09A"
+				type: "item"
+				item: "woldsvaults:capstone_frenzy"
+			}]
+		}
+		{
+			title: "Pylon View"
+			x: -8.25d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Need Additional Pylons"
+			description: [
+				"&5The Pylon Capstone will cause all Pylons to highlight in the Vault."
+				""
+				"&5Pylons are those little buffing crystals scattered around. The ones that add strength, or vault time, etc."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "7F307FBDEDC63F14"
+			tasks: [{
+				id: "3906CE209E0117D2"
+				type: "item"
+				item: "the_vault:capstone_pylon_hunter"
+			}]
+			rewards: [{
+				id: "72F4A9A70DD03728"
+				type: "item"
+				item: "the_vault:capstone_pylon_hunter"
+			}]
+		}
+		{
+			title: "Cap of the Gods"
+			x: -5.25d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Pray to My Altar"
+			description: [
+				"&5When you complete a God Altar, you will get a bonus modifier to the rest of that Vault, and the chance at gaining reputation with that God."
+				""
+				"&5But if you remember where that God Altar was, you can return to it to get a prize as well."
+				""
+				"&5This is one of the few ways to get a God Capstone. When you add these to a Vault Crystal, they will highlight all altars of that God if you are in the same room as them."
+				""
+				"&5Quite useful if you are trying to build God reputation for certain things."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1799D40CDE8D8F82"]
+			hide: true
+			id: "4606E122BFBD99C6"
+			tasks: [{
+				id: "60F0944ABB06D46A"
+				type: "item"
+				title: "Any God Capstone"
+				item: "the_vault:god_token"
+			}]
+			rewards: [{
+				id: "09DAA2B5603F5B65"
+				type: "item"
+				item: "the_vault:grand_charm"
+			}]
+		}
+		{
+			title: "Vendoor Vision"
+			x: -8.25d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "Sale-o-vision"
+			description: [
+				"&5The Merchant Capstone can be added to Vault Crystal to get all Vendoors to highlight while you are in that Vault."
+				""
+				"&5Just be sure you bring plenty of Vault coins. Though many of the Vendoor rooms have some neat things to find without purchasing anything."
+				""
+				"&5Be sure to look around before leaving. Especially under staircases."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1881243BF68F0FAC"]
+			hide: true
+			id: "5F14F74106DDA042"
+			tasks: [{
+				id: "0CD1FD66DBB5E2EB"
+				type: "item"
+				item: "the_vault:capstone_vendoor_hunter"
+			}]
+			rewards: [{
+				id: "007F9B0876DEF74A"
+				type: "item"
+				item: "the_vault:capstone_vendoor_hunter"
+			}]
+		}
+		{
+			title: "Enchanted Testing"
+			x: -9.25d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "Magic in the Air"
+			description: [
+				"&5There is a whole range of Capstones, including some that throw a bit of fun into your Vault. Like the Enchanted Capstone."
+				""
+				"&5So, sometimes when you start a Vault, you'll see some special modifiers activate. Like the Raw Vaults always have specific modifiers, for example."
+				""
+				"&5With the Enchanted Capstone, it'll add a custom modifier: Enchanted. Every so often some sort of event will happen while you run that Vault. If this works, I have an idea brewing..."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1881243BF68F0FAC"]
+			hide: true
+			id: "08DF894A687E7AAB"
+			tasks: [{
+				id: "711CDCF51B4A2B34"
+				type: "item"
+				item: "woldsvaults:capstone_enchanted"
+			}]
+			rewards: [{
+				id: "201FC4E9071E14E4"
+				type: "item"
+				item: "woldsvaults:capstone_enchanted"
+			}]
+		}
+		{
+			title: "Wallhacks"
+			x: -8.75d
+			y: 3.5d
+			shape: "rsquare"
+			subtitle: "Sight Beyond Sight"
+			description: [
+				"&5The All-Seeing Eye Capstone adds the All Seeing Eye modifier to your Vault."
+				""
+				"&5All chests, all doors, and all Objective blocks (like the Lodestones or Braziers) will be visible in the same room. And uh....maybe further..."
+				""
+				"&5That's...a lot of things to see at once. I'm getting a headache thinking about it. I suggest being careful with this one, since the constant sparkling lights might mess with your eyes."
+				""
+				"&5Not to mention, it may be hard to pick out what you want from the visual noise."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "52CC29799F792FCB"
+			tasks: [{
+				id: "5B7FF45FE0F9B448"
+				type: "item"
+				item: "woldsvaults:capstone_all_seeing_eye"
+			}]
+			rewards: [{
+				id: "461ECB2D25A8A2E3"
+				type: "item"
+				item: "woldsvaults:capstone_all_seeing_eye"
+			}]
+		}
+		{
+			title: "Godly Shaped Rocks"
+			x: -4.25d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "One For Each God"
+			description: [
+				"&5With a God Capstone and the accomanying theme Augment, you can create a special God item that works like a Vault Rock. "
+				""
+				"&5This should help you gain Reputation with specific Gods faster, to build out your Divine Paradox better."
+				""
+				"&5So, make one of these four special God items, and put them onto your Vault Altar like any other Vault Rock. Completing the Vault Crystal will get you a special Zealot Vault."
+				""
+				"&5The whole Vault will be themed to that God, and all God Altars you find will be for that God only."
+			]
+			hide_dependency_lines: true
+			dependencies: ["4606E122BFBD99C6"]
+			hide: true
+			id: "55C6A431EBF09D21"
+			tasks: [
+				{
+					id: "472E186670369A73"
+					type: "item"
+					item: "woldsvaults:idona_dagger"
+				}
+				{
+					id: "5854BB21C8B598EE"
+					type: "item"
+					item: "woldsvaults:wendarr_gem"
+				}
+				{
+					id: "376837BCC9E6ED64"
+					type: "item"
+					item: "woldsvaults:velara_apple"
+				}
+				{
+					id: "6342EC2DA2581EC7"
+					type: "item"
+					item: "woldsvaults:tome_of_tenos"
+				}
+			]
+			rewards: [{
+				id: "293DB6E6E47E5F9A"
+				type: "item"
+				item: "the_vault:grand_charm"
+			}]
+		}
+		{
+			title: "A Little Eccentric"
+			x: -0.25d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "In Other Words : Unusual (Affectionate)"
+			description: [
+				"&5Another new kind of Focus for your Vault Artisan Station : the Eccentric Focus."
+				""
+				"&5This Focus lets you add an Unusual modifier. These are modifiers ye can't usually get on that piece of gear."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "5BBB1921175BF0C4"
+			tasks: [{
+				id: "11E251DB8CB2AF48"
+				type: "item"
+				item: "woldsvaults:eccentric_focus"
+			}]
+			rewards: [{
+				id: "4F9EF011A26B1D43"
+				type: "item"
+				item: "woldsvaults:eccentric_focus"
+			}]
+		}
+		{
+			title: "Hammering Out Some Accessories"
+			x: -4.25d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "Baubled Preferences"
+			description: [
+				"&5Once you start collecting Trinkets, you'll eventually find ones you have no use for, or duplicates of a trinket you use sparingly."
+				""
+				"&5You can recycle these Trinkets in a Vault Recycler, and you'll sometimes get back Vault Trinket Scrap."
+				""
+				"&5Bring 'em to this Vault Trinket Forge, and combined with some other materials, you can forge a new Trinket from the ones you've already unlocked."
+			]
+			hide_dependency_lines: true
+			dependencies: ["59D6A7EF6A2A5123"]
+			hide: true
+			id: "5B29F5CA1BCECFB6"
+			tasks: [{
+				id: "697130EA31CD36D6"
+				type: "item"
+				item: "the_vault:trinket_forge"
+			}]
+			rewards: [{
+				id: "2028A3994BA7EC09"
+				type: "item"
+				item: "the_vault:extraordinary_alexandrite"
+				count: 2
+			}]
+		}
+		{
+			title: "Pouch of Flair"
+			x: -5.25d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "Full of Shinies"
+			description: [
+				"&5In Wold's Vaults, Trinkets require you to wear a Trinket Pouch to equip them."
+				""
+				"&5The starter Trinket Pouch enables you to equip one Blue and one Red trinket. You can find other Trinket Pouches as loot or other ways, and they can let you equip Green color trinkets, or two of the same color Trinket, or more than 2 Trinkets."
+				""
+				"&5As well, you can remove a Trinket Pouch and it will keep the Trinkets you put into it, enabling you to swap in and out sets of Trinkets for different builds."
+			]
+			hide_dependency_lines: true
+			dependencies: ["59D6A7EF6A2A5123"]
+			hide: true
+			id: "5DA329FC1A2F69DA"
+			tasks: [{
+				id: "60B8679F1D277685"
+				type: "item"
+				title: "Any Trinket Pouch"
+				icon: {
+					id: "woldsvaults:trinket_pouch"
+					Count: 1b
+					tag: {
+						id: "woldsvaults:basic_vanilla"
+					}
+				}
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "curios:trinket_pouch"
+					}
+				}
+			}]
+			rewards: [{
+				id: "585A7298FBCD86CA"
+				type: "item"
+				item: "the_vault:magic_silk_block"
+				count: 2
+			}]
+		}
+		{
+			title: "A Powerful Weave"
+			x: -4.75d
+			y: 3.5d
+			shape: "rsquare"
+			subtitle: "Sewing Destiny"
+			description: [
+				"&5The Weaving Station is used to craft other Trinket Pouches."
+				""
+				"&5By default, you can craft one of three starting Trinket Pouches with it, which give you some combination of the three Trinket colors : Blue, Red, and Green."
+				""
+				"&5There are also special Trinket Pouch recipes you will have to find and loot!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["5DA329FC1A2F69DA"]
+			hide: true
+			id: "2FD33954095C8638"
+			tasks: [{
+				id: "215B0D7222B78010"
+				type: "item"
+				item: "woldsvaults:weaving_station"
+			}]
+			rewards: [{
+				id: "61AEFC3675C5D5FB"
+				type: "item"
+				item: "the_vault:vault_diamond"
+				count: 3
+			}]
+		}
+		{
+			title: "Modding Boxes of Mod Boxes"
+			x: -6.25d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "Boxing Boxed Boxes Box"
+			description: [
+				"&5The Mod Box Workstation is a Researchable tool that enables you to craft Targeted Mod Boxes."
+				""
+				"&5These boxes will only drop items from the listed mod."
+				""
+				"&5To craft a specific box, you must have that mod Researched."
+				""
+				"&4(RESEARCH REQUIRED)"
+			]
+			hide_dependency_lines: true
+			dependencies: ["4258E78EC459B8E3"]
+			hide: true
+			id: "3473933CA0BA9431"
+			tasks: [{
+				id: "43C5FE79B2B916BC"
+				type: "item"
+				item: "woldsvaults:mod_box_workstation"
+			}]
+			rewards: [{
+				id: "3EE72AC1589B4D24"
+				type: "item"
+				item: "the_vault:mod_box"
+				count: 2
+			}]
+		}
+		{
+			title: "A Token of Grattitude"
+			x: -4.25d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "Maybe a Bit of Attitude"
+			description: ["&5God Tokens are lootables that you can add to a Vault Crystal like a Catalyst, which will add Affinity to the listed God to that Crystal."]
+			hide_dependency_lines: true
+			dependencies: ["1799D40CDE8D8F82"]
+			hide: true
+			id: "0DA132E829339F40"
+			tasks: [{
+				id: "697982D2BB6A4CB3"
+				type: "item"
+				item: "the_vault:grand_charm"
+			}]
+			rewards: [{
+				id: "33D6EC98B8CCBD35"
+				type: "item"
+				item: "the_vault:grand_charm"
+			}]
+		}
+		{
+			title: "Fruit By The Vault"
+			x: -10.5d
+			y: 0.25d
+			shape: "rsquare"
+			subtitle: "Sweet, Sweet Time"
+			description: [
+				"&5Around level 20, you'll start finding Vault Fruit in your Completion Crates and other sources."
+				""
+				"&5Vault Fruit enables you to add time to your Vault Timer, to help eek out just a bit more loot or enough time to finish the Objective."
+				""
+				"&5Each Vault Fruit you consume takes 10% of your max HP. "
+				""
+				"&5You'll find bigger and better Fruit the higher you level up. Some of them have special side effects as well."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1881243BF68F0FAC"]
+			hide: true
+			id: "6CFEA59289784411"
+			tasks: [{
+				id: "75C92F8199751526"
+				type: "item"
+				item: "the_vault:sweet_kiwi"
+			}]
+			rewards: [{
+				id: "672D2BEE3F8597AB"
+				type: "item"
+				item: "the_vault:sweet_kiwi"
+				count: 4
+			}]
+		}
+		{
+			title: "Voiding Possibilities"
+			x: -3.25d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "Just Say No"
+			description: [
+				"&5By Researching Junk Management, you gain access to a helpful tool to keeping your backpacks and inventory clear of extra blocks, especially if you use a hammer : The Void Crucible."
+				""
+				"&5The Void Crucible will let you craft a Void Pendant in the top tab, using Vault Gold and Vault Alloy. When worn, it will automatically void and destroy any non-Vault resource related blocks (such as the blocks that make up the floor, walls, and ceilings)."
+				""
+				"&5Blocks voided this way won't take durability from your Magnet."
+				""
+				"&5In the Void Crucible UI, in the middle tab, you can look through the different themes and select blocks to blacklist and disable voiding on."
+				""
+				"&5The third tab will show you all the items you have blacklisted, and you can click to remove them."
+				""
+				"&4(RESEARCH REQUIRED)"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			hide: true
+			id: "6CA424DD23A91F38"
+			tasks: [{
+				id: "3036A2BF403D688B"
+				type: "item"
+				item: "the_vault:vault_charm_controller"
+			}]
+			rewards: [{
+				id: "15FFC8DF8ECD08FF"
+				type: "item"
+				item: "the_vault:vault_alloy"
+				count: 2
+			}]
+		}
+		{
+			title: "A Filter of the Void"
+			x: -2.25d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "More Void Power"
+			description: [
+				"&5The issue with the Void Crucible and Void Stone, as they are, is that they void all non-Vault blocks, and the blacklist function has a max of 54 blocks to save from Voiding."
+				""
+				"&5Which is an issue as, especially in Wolds, there are LOTS of great blocks you might want to keep for your own builds or resources."
+				""
+				"&5Enter the Filter Necklace! Using the power of Create's Filter and Attribute Filter, you can instead be more selective on what you want to Void."
+				""
+				"&5Hold the Filter Necklace and Right Click with it to open it up, and you can fit plenty of Filters or Attribute Filters in."
+				""
+				"&5Then when worn, the Filter Necklace will only void blocks that match the settings in any filters you have inside it."
+			]
+			hide_dependency_lines: true
+			dependencies: ["6CA424DD23A91F38"]
+			hide: true
+			id: "70300E888AB7DE9C"
+			tasks: [{
+				id: "1A6976A9603BBA7E"
+				type: "item"
+				item: "woldsvaults:filter_necklace"
+			}]
+			rewards: [{
+				id: "451198DE4FC8CF64"
+				type: "item"
+				item: "create:attribute_filter"
+				count: 2
+			}]
+		}
+		{
+			title: "Just Like New"
+			x: -3.25d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Ignore The Scuff Marks"
+			description: [
+				"&5As you level higher, you will slow down in gaining levels, but increase the amount of equipment you find in a Vault."
+				""
+				"&5Eventually you'll find a piece of equipment that should last you long enough that you wear down the Durability to the breaking point."
+				""
+				"&5If you still have a piece of Gear you want to use longer when the Durability runs out, you'll want a Repair Core."
+				""
+				"&5Combine a Repair Core with the piece of equipment in an Anvil to repair it. It will consume a Repair slot on the equipment and refill the Durability."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"29198B5EA727A867"
+				"1881243BF68F0FAC"
+			]
+			hide: true
+			id: "0CCBD4A4DBE2C736"
+			tasks: [{
+				id: "49FDF7B74CF66C95"
+				type: "item"
+				item: "the_vault:repair_core"
+			}]
+			rewards: [{
+				id: "24EDEEC339CA4223"
+				type: "item"
+				item: "the_vault:repair_core"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

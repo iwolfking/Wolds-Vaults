@@ -1,0 +1,2657 @@
+{
+	id: "63CB81CDA189AA62"
+	group: "1A78C6EA3A0ABFDA"
+	order_index: 2
+	filename: "2_gaining_a_foothold"
+	title: "[2] Gaining a Foothold"
+	icon: "woldsvaults:monolith"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Early Crunch"
+			icon: {
+				id: "minecraft:wooden_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -8.25d
+			y: -1.25d
+			shape: "hexagon"
+			subtitle: "Where to begin..."
+			description: [
+				"&5As you level up, you'll be gaining skill points every level, and Expertise points every 5 levels."
+				""
+				"&5Early on, working out a build is going to be tough, with so few points. But try a bunch of things out!"
+				""
+				"&5As you get higher level, the broader variety of things you'll have access to. More powerful equipment, more skills, etc."
+			]
+			dependencies: [
+				"232779928B96328E"
+				"50D9EFE8ABEA9779"
+				"0AF2E388B45934CC"
+				"4342B9F453AD1F1B"
+				"7543E03FC25521E7"
+				"5E574242513BE343"
+			]
+			hide: true
+			id: "69C663CDD23190A9"
+			tasks: [{
+				id: "7ACDC215732E8AD9"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Lighting the Way"
+			x: -2.0d
+			y: -1.25d
+			shape: "hexagon"
+			subtitle: "A New Objective"
+			description: [
+				"&5Looks like you're about to hit level 10. That should open up a new Objective in the Vaults."
+				""
+				"&5This is called Light the Braziers. There is a Brazier in every room. You need to activate a set amount before exiting the Vault in time."
+				""
+				"&5Each Brazier will give you one good and one bad modifier to the Vault when you light it. Usually. Sometimes its only one or the other!"
+				""
+				"&5But once you have the set number of Braziers, you can activate more to Pillage them for possible rare loot. But these will usually only have a bad Modifier as well."
+				""
+				"&5To complete the Vault properly, you'll need to exit out of the Portal."
+			]
+			dependencies: ["69C663CDD23190A9"]
+			hide: true
+			id: "76B7D44E338DC9B7"
+			tasks: [{
+				id: "574C8D2FDC6C0563"
+				type: "observation"
+				title: "Find a Brazier"
+				icon: "woldsvaults:monolith"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:monolith"
+			}]
+			rewards: [{
+				id: "433D72502DC2642E"
+				type: "item"
+				item: "the_vault:crystal_seal_scout"
+			}]
+		}
+		{
+			title: "Bare Bones Vaulting"
+			x: -7.6875d
+			y: -1.6875d
+			shape: "gear"
+			subtitle: "Raw Resources (And A Bit More)"
+			description: [
+				"&5If you want an alternate way to obtain Vault Altar resources, you can make a Budding Crystal."
+				""
+				"&5If you are on a Skyvault world, you already know what this is. But its also available to normal world gens!"
+				""
+				"&5Vault Crystals grown from Budding Crystals create Raw Vaults. "
+				""
+				"&5They contain a lot of the non-Vault resources you need to build a base and gear and machines. Like Iron, Diamonds, Stone, etc."
+			]
+			dependencies: ["69C663CDD23190A9"]
+			size: 0.75d
+			id: "3E2831A2D27654C0"
+			tasks: [{
+				id: "29A99E23734A15F1"
+				type: "item"
+				item: "the_vault:crystal_budding"
+			}]
+		}
+		{
+			title: "Recycling and Reusing"
+			x: -6.75d
+			y: -3.5d
+			shape: "rsquare"
+			subtitle: "Repurposed"
+			description: [
+				"&5You'll quickly notice that you'll start getting more and more Vault Gear, and most of it won't be useful to you... as it is right now."
+				""
+				"&5You can get more use out of this gear if you Recycle it!"
+				""
+				"&5The Vault Recycler can take Vault Gear, Jewels, and some other vault items and break them down into some resources."
+				""
+				"&5These resources can usually be used to improve or craft gear in the Vault Forge or other Vault Stations."
+				""
+				"&5The Recycler is also the only way you can get some resources. And Recycling gear with special affixes (like Chilling, or extra armor, etc) might net you a Faceted Focus you can use on a piece of Vault Gear in your Vault Artisan Station."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"7543E03FC25521E7"
+				"69C663CDD23190A9"
+			]
+			hide: true
+			id: "29198B5EA727A867"
+			tasks: [{
+				id: "6D8D9704EC9248AF"
+				type: "item"
+				item: "the_vault:vault_recycler"
+			}]
+			rewards: [{
+				id: "0628A30C8A36855E"
+				type: "item"
+				item: "the_vault:vault_scrap"
+				count: 8
+			}]
+		}
+		{
+			title: "Pocket Souls"
+			icon: {
+				id: "the_vault:shard_pouch"
+				Count: 1b
+				tag: {
+					Inventory: { }
+				}
+			}
+			x: -4.0d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "Soulful"
+			description: [
+				"&5You've probably been through a Vault or two already, and you've already gotten quite a few Soul Shards, yes?"
+				""
+				"&5Even though they stack up to the max, the better you are at fighting the Vault's monsters, the more inventory they'll fill up."
+				""
+				"&5But you can make a special storage item JUST for Soul Shards, with its own spot in your Curios : The Shard Pouch!"
+				""
+				"&5As long as this Shard Pouch is in your main inventory (not stuck in a backpack), it should collect all the Soul Shards you get."
+				""
+				"&5Seems a few recipes still need Soul Shards, so you'll need to grab them out yourself. But things like The Black Market can pull out Shards for you."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"0AF2E388B45934CC"
+				"69C663CDD23190A9"
+			]
+			hide: true
+			id: "287AFB08CA4CC848"
+			tasks: [{
+				id: "3091F35A6756D661"
+				type: "item"
+				item: "the_vault:shard_pouch"
+			}]
+			rewards: [{
+				id: "5FA79AC47E85271D"
+				type: "item"
+				item: "the_vault:soul_shard"
+				count: 32
+			}]
+		}
+		{
+			title: "Vault Death, Level 20, And You"
+			icon: "minecraft:skeleton_skull"
+			x: 4.25d
+			y: -1.25d
+			shape: "pentagon"
+			subtitle: "A Difficulty Tweak"
+			description: [
+				"&5When you hit 20, you should wait before going into another Vault!"
+				""
+				"&5Things get a bit more difficult for you now...see, now when you die in a Vault, you will lose most of the equipment you are carrying."
+				""
+				"&5Not permanently(usually...). Your Coin Pouch should stay with you at least, and any Soulbound equipment. Either at your Bed or your World Spawn should be your Ghost Body."
+				""
+				"&5To get your equipment back, you'll need to Right Click and pick this body up, and bring it to a Spirit Extractor. Then Right Click the body onto it."
+				""
+				"&5The Spirit Extractor will list how much Vault Gold it costs to get your equipment back. It's calculated off of your Vault Gear, Backpacks, and a few other things."
+				""
+				"&5It's a good idea to have a few backup sets of equipment, just in case..."
+			]
+			dependencies: ["76B7D44E338DC9B7"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "148669A61C9EFBF4"
+			tasks: [{
+				id: "5449035872332A83"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Carefully Shaped Jewels"
+			x: -7.5d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "Better Tool Power"
+			description: [
+				"&5Vault Tools start with only the type of tool they are. So Pickaxes start with +Picking, Axes with +Axing, etc."
+				""
+				"&5To add other tool types to a Vault Tool, you'll need to craft Jewels with the Jewel Crafting Table."
+				""
+				"&5Inside the Vault, usually in Gilded Chests, you can find Jewel Pouches.  These contain a random Jewel with special modifiers on it (We'll go over that next). You can take the Jewels you don't want and put them in a Vault Recycler for a chance at a Gemstone."
+				""
+				"&5Using this Jewel Crafting Table and the gemstones you get from Recycling unused Jewels, you can craft and add more Tool types and special abilities to your Vault Tools."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"5252A91CF03F9FFB"
+				"29198B5EA727A867"
+			]
+			hide: true
+			id: "5F19CA4A2A21E708"
+			tasks: [{
+				id: "0ECCE31A31699702"
+				type: "item"
+				item: "the_vault:jewel_crafting_table"
+			}]
+			rewards: [{
+				id: "33DF9312E90F983C"
+				type: "item"
+				item: "the_vault:gemstone"
+				count: 4
+			}]
+		}
+		{
+			title: "A Tool for All Occasions"
+			x: -8.25d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "There are many like it..."
+			description: [
+				"&5While Vault Gear replaces your Vanilla armor and weapons, Vault Tools replace your various vanilla Tools. "
+				""
+				"&5Vault Tools have a good amount of durabiility, even at the lower tiers. As you increase your Vault Level, you can make bigger and bigger tools."
+				""
+				"&5You can only repair them a set number of times, though. But early on you'll be upgrading your tools regularly anyways."
+				""
+				"&5They can't really be used as weapons like some other tools can, though...At least not effectively."
+				""
+				"&5Versatility makes up for that. You can augment and upgrade your tools with Jewels, which will need its own quests to explain."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"232779928B96328E"
+				"69C663CDD23190A9"
+			]
+			hide: true
+			id: "3E4FCFC9637F8B61"
+			tasks: [{
+				id: "184F0D0442BC5BC8"
+				type: "item"
+				item: "the_vault:tool_station"
+			}]
+			rewards: [{
+				id: "2B8417EB9F3192B1"
+				type: "item"
+				item: "the_vault:chromatic_iron_ingot"
+				count: 16
+			}]
+		}
+		{
+			title: "Easily Enchanting"
+			x: -9.75d
+			y: -3.5d
+			shape: "rsquare"
+			subtitle: "For just a few emeralds..."
+			description: [
+				"&5Normally in Vanilla Minecraft, you would craft by using either an Enchanting Table, or by applying Enchanted Books."
+				""
+				"&5In Vault Hunters, enchanting is much easier and straight forward."
+				""
+				"&5The Vault Enchanter is your one stop shop for almost any Enchantment. Though they don't come free..."
+				""
+				"&5 ...but are quite cheap. Usually just some Emeralds and some XP levels."
+				""
+				"&5Though it looks like there are some special high cost Enchantments you can get. Probably best saved for higher level gear."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"7543E03FC25521E7"
+				"69C663CDD23190A9"
+			]
+			hide: true
+			id: "76705D95215E5BCA"
+			tasks: [{
+				id: "469035E1A26F175F"
+				type: "item"
+				item: "the_vault:vault_enchanter"
+			}]
+			rewards: [{
+				id: "4077436D79373DEA"
+				type: "item"
+				item: "minecraft:emerald"
+				count: 32
+			}]
+		}
+		{
+			title: "In The Soul Market"
+			x: -4.0d
+			y: -3.5d
+			shape: "rsquare"
+			subtitle: "Spend Wisely"
+			description: [
+				"&5The Black Market is a way for you to obtain items and materials that can help you in the Vaults. The cost? Soul Shards, which it can pull directly from your Soul Pouch."
+				""
+				"&5It sells equipment, resources, and other such things. But only three items are available to purchase at first..."
+				""
+				"&5...well, and a Random Item option at a fixed price. You can unlock the three slots on the right with the right Expertise."
+				""
+				"&5The items vary in price, but slots highlighted in purple are considered a Good Deal almost always."
+				""
+				"&5There's also some items that will ONLY show up in this special slot, so keep an eye on it!"
+				""
+				"&5You can find or craft, with a Chromatic Iron Vault Infuser, a Soul Ichor, which lets you reroll the current Black Market offerings."
+			]
+			hide_dependency_lines: true
+			dependencies: ["287AFB08CA4CC848"]
+			hide: true
+			id: "7913E52AAC8DE521"
+			tasks: [{
+				id: "695A56A69F3C677C"
+				type: "item"
+				item: "the_vault:black_market"
+			}]
+			rewards: [{
+				id: "505147CD4CADB4C4"
+				type: "item"
+				item: "woldsvaults:soul_ichor"
+			}]
+		}
+		{
+			title: "Crystal Customization"
+			x: -2.5d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "Have It Your Way"
+			description: [
+				"&5While this might be quite expensive to start with, you'll want to get one of these up and running."
+				""
+				"&5Called a Crystal Workbench. The Black Chromatic Steel is expensive, but Pillaging those Braziers can net ya an early one. It's used to modify the Vault Crystals you make."
+				""
+				"&5One way to modify Vault Crystals is with Seals. That'll lock in what objective the Vault has."
+				""
+				"&5Your crystals at low level can't be modified too much, but will expand as you get to higher levels."
+				""
+				"&5There's a bunch of different things you can do to a Crystal. Capstones, Themes, etc. Real interesting."
+				""
+				"&5You'll notice each Vault Crystal you put in has a \"Capacity\". This is how much of certain things, primarily Catalysts, you can add to the Crystal. You CANNOT go over Capacity in Wold's."
+			]
+			hide_dependency_lines: true
+			dependencies: ["76B7D44E338DC9B7"]
+			hide: true
+			id: "4C97356EDF3283CB"
+			tasks: [{
+				id: "702B00A63120D0C8"
+				type: "item"
+				item: "the_vault:crystal_workbench"
+			}]
+			rewards: [{
+				id: "3ADBE05493AFAA99"
+				type: "item"
+				item: "the_vault:phoenix_feather"
+			}]
+		}
+		{
+			title: "Artisinal Gear"
+			icon: "the_vault:vault_artisan_station"
+			x: -4.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Rolled Perfect"
+			description: [
+				"&5Vault Gear you find in the Vault will be at that Vault's level, not your own. So jumping into your friend's level 5 Vault will only net you level 5 Gear."
+				""
+				"&5Gear found with the Market will also be at your level; and Bounties have their own level as well."
+				""
+				"&5Unidentified gear only has Level and minimum rarity stats until you roll it. These stats you can alter with the Vault Artisan Station."
+				""
+				"&5Focus like the Wild Focus, you can reroll different aspects of a gear piece for the cost of some Vault Bronze and Vault Plating."
+				""
+				"&5The type of gear determines what kind of Implicits (the set attributes of a piece), and Suffixes and Prefixes (additional attributes) it can have."
+				""
+				"&5The rarity of the gear determines how many Prefix and Suffix slots it has. The rarer, the more slots."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"7543E03FC25521E7"
+				"69C663CDD23190A9"
+			]
+			hide: true
+			id: "6473A9F33F692821"
+			tasks: [
+				{
+					id: "12D40CB9A0AFB768"
+					type: "item"
+					item: "the_vault:vault_artisan_station"
+				}
+				{
+					id: "10A57C9288A6ABCE"
+					type: "item"
+					item: "the_vault:wild_focus"
+				}
+			]
+		}
+		{
+			title: "Quite Magnetizing"
+			x: -14.0d
+			y: -1.25d
+			shape: "rsquare"
+			subtitle: "An Attractive Personality"
+			description: [
+				"&5One piece of Vault Gear you might not have yet is the Magnet."
+				""
+				"&5Quite a useful piece of gear for looting, especially. Any items dropped nearby fly right to you to pick up."
+				""
+				"&5You can make one in the Vault Forge if you haven't gotten one from looting yet. They can have some useful abilities on them."
+				""
+				"&5I especially like Endergized. Its the power of the Endermen, and just teleports the items into your inventory, no flying around or anything."
+				""
+				"&5Watch the durability though. More loot means more durability loss."
+			]
+			hide_dependency_lines: true
+			dependencies: ["075AD2D046BFE367"]
+			hide: true
+			id: "40008EC8697729A5"
+			tasks: [{
+				id: "399BE81D7BF4A49B"
+				type: "item"
+				item: {
+					id: "the_vault:magnet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Alchemy Augmented"
+			x: -8.25d
+			y: -3.5d
+			shape: "rsquare"
+			description: [
+				"&5Vault Potions (vials, mixes, brews, etc) can be further augmented by using the Alchemy Table."
+				""
+				"&5You can slap on an extra ability onto the Potion that activates when it is consumed. Such as replenshing Mana as well as your Hitpoints."
+				""
+				"&5Many of the really good potion abilities can only be found inside Vaults. But those won't be available to find until at least level 20."
+			]
+			hide_dependency_lines: true
+			dependencies: ["600061B7D508477A"]
+			hide: true
+			id: "347572D8EA734FDC"
+			tasks: [{
+				id: "20A5773E1C94635C"
+				type: "item"
+				item: "the_vault:alchemy_table"
+			}]
+			rewards: [{
+				id: "0C0AF4B1F49DF0F9"
+				type: "item"
+				item: "the_vault:vault_diamond"
+				count: 4
+			}]
+		}
+		{
+			title: "Welcome to Vault Burger"
+			x: -9.75d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "Home of the Vault Burger"
+			description: [
+				"&5Living Chests regularly contain the ingredients for Vault Burgers."
+				""
+				"&5Vault Burgers don't really feed your hunger or anything. Instead, they give you some Vault Experience."
+				""
+				"&5They are a good way to speed up leveling. The higher level you are, the more Burger ingredients you'll find, to make bigger Burgers."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"50D9EFE8ABEA9779"
+				"69C663CDD23190A9"
+			]
+			hide: true
+			id: "4D3F25E7797D88D1"
+			tasks: [{
+				id: "6E813948C224298B"
+				type: "item"
+				item: "the_vault:plain_burger"
+			}]
+			rewards: [{
+				id: "682C2E7F9D5A6781"
+				type: "item"
+				item: "the_vault:burger_cheese"
+				count: 4
+			}]
+		}
+		{
+			title: "Thematic Decisions"
+			x: -2.5d
+			y: -3.5d
+			shape: "rsquare"
+			subtitle: "Do You Like Style A, B, or C?"
+			description: [
+				"&5You might have noticed getting one of these from a Completion Crate. "
+				""
+				"&5They are called Augments, and let you lock a specific theme on a Vault Crystal."
+				""
+				"&5Themes are how the vault looks and what mobs normally spawn in it; as well, each one has some sort of perk to it. This can be a bonus to loot, or more ore spawning, etc."
+				""
+				"&5Some themes also have unique rooms... like the Pirate Cove."
+			]
+			hide_dependency_lines: true
+			dependencies: ["4C97356EDF3283CB"]
+			hide: true
+			id: "420733071145A568"
+			tasks: [{
+				id: "272ED903C6F93751"
+				type: "item"
+				title: "Any Augment"
+				item: "the_vault:augment"
+			}]
+			rewards: [{
+				id: "05ACDE7A4163765A"
+				type: "item"
+				item: "the_vault:augment_box"
+			}]
+		}
+		{
+			title: "Difficulties and Death"
+			x: 4.6875d
+			y: -1.6875d
+			shape: "gear"
+			description: [
+				"&5Dieing in a Vault is handled differently depending on what Vault Mode the server/world is set on."
+				""
+				"&5By default, your world or server is set to Normal. If you set it to Casual, you keep your inventory, but your equipment will take a durability hit."
+				""
+				"&5And if you are in Hardcore, there is no body, and no way to get your equipment back (outside of Server Commands)"
+			]
+			hide_dependency_lines: true
+			dependencies: ["148669A61C9EFBF4"]
+			size: 0.75d
+			id: "0D498B67088B2413"
+			tasks: [{
+				id: "2446F6DFF06C53B9"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Still Alive"
+			x: -1.5d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "Blazing Return"
+			description: [
+				"&5That Phoenix Capstone I gave you is an example of one of the things you can add onto a vault crystal."
+				""
+				"&5You can only add one kind of Capstone per crystal, but they tend to be pretty powerful. Like the Phoenix Capstone, which will resurrect you on the spot if you die inside the Vault."
+				""
+				"&5Gives you another chance but can be bad if you died cause you got trapped by a thousand horde mobs."
+				""
+				"&5Can only swing your weapons so fast, ya know?"
+			]
+			hide_dependency_lines: true
+			dependencies: ["4C97356EDF3283CB"]
+			hide: true
+			id: "3C78334E9B675974"
+			tasks: [{
+				id: "75977BC2DAF52BED"
+				type: "item"
+				item: "the_vault:phoenix_feather"
+			}]
+		}
+		{
+			title: "Sparkling Jewels"
+			x: -9.0d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "Adorned with Power"
+			description: [
+				"&5So I mentioned Jewels you can find in the the Vaults, or more specifically : Jewel Pouches"
+				""
+				"&5You find them in Gilded Chests usually, and holding and Right Clicking them will give you a random Jewel with an ability on it."
+				""
+				"&5Sometimes the Jewels have more than one ability on them, but all of the Jewels from Pouches will be Size 10, while Jewels from the Jewel Crafting Table can be 5 to 20, depending on what it adds."
+				""
+				"&5If you look at your Vault Tools, they have a Capacity. You put Jewels on with this Jewel Applicator by putting the Tool and all the Jewels in."
+				""
+				"&5You can see the final stats of the tool before applying all the Jewels in the table."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"4342B9F453AD1F1B"
+				"3E4FCFC9637F8B61"
+			]
+			hide: true
+			id: "5252A91CF03F9FFB"
+			tasks: [{
+				id: "3986068B1C8453DE"
+				type: "item"
+				item: "the_vault:vault_jewel_application_station"
+			}]
+			rewards: [{
+				id: "3FE57992641B4D00"
+				type: "item"
+				item: {
+					id: "the_vault:jewel_pouch"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Becoming an Expert"
+			icon: "woldsvaults:expertise_orb"
+			x: 4.25d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Smart Strength"
+			description: [
+				"&5You've most likely already hit Level 5, so you probably already noticed you gained an Expertise Point."
+				""
+				"&5Unlike Skills, these are more... indirect buffs to a User, usually involving things not directly combat or looting related."
+				""
+				"&5Things like improving your Black Market or Bounty Tables. "
+				""
+				"&5Later on, you'll be able to find Expertise Orbs, which give you bonus Expertise Points."
+			]
+			hide_dependency_lines: true
+			dependencies: ["69C663CDD23190A9"]
+			hide: true
+			id: "5BFB2FFADFE2072F"
+			tasks: [{
+				id: "731C0F983798F22B"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Breaking Down"
+			x: 0.25d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "No Tears, Only Souls"
+			description: [
+				"&5By now you've probably collected a lot of junk or trash from the Vaults. "
+				""
+				"&5Stuff like stone or wood from the POI's you can't do much with, but the stuff inside chests like Wood Chunks can be broken down into a more useful thing : Soul Dust."
+				""
+				"&5The Wood Chunks and Ornate Bricks and stuff can be used as some nice decor and building material, but using the Soul Diffusor, you can instead use them to create Soul Shards."
+				""
+				"&5Meaning, the more you loot from Vaults, the more souls you can get to use in the Black Market."
+				""
+				"&5Just know that the basic Soul Diffusor is not very fast. There are...upgrades, but those are much more expensive..."
+				""
+				"&5...and the Soul Diffusor is already a bit pricy at low level."
+			]
+			hide_dependency_lines: true
+			dependencies: ["76B7D44E338DC9B7"]
+			hide: true
+			id: "08E517D3A58B0E81"
+			tasks: [{
+				id: "67E8414855446E0C"
+				type: "item"
+				item: "the_vault:vault_diffuser"
+			}]
+			rewards: [{
+				id: "42D4274644FEE7A7"
+				type: "item"
+				item: "the_vault:soul_shard"
+				count: 64
+			}]
+		}
+		{
+			title: "Adding and Subtracting"
+			x: -3.5d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "More or Less Focused"
+			description: [
+				"&5If your piece of gear has an empty Prefix or Suffix slot or two, you can use an Amplifying Focus to add something to one of those slots."
+				""
+				"&5The flip side of that coin is the Nullifying Focus. It's a bit of a gamble, as you will remove a single Suffix or Prefix and free up the slot."
+				""
+				"&5It takes less Crafting Potential to use these, versus using a Wild Focus to reroll the entire thing."
+			]
+			hide_dependency_lines: true
+			dependencies: ["6473A9F33F692821"]
+			hide: true
+			id: "3B4C4700E242F1FB"
+			tasks: [
+				{
+					id: "6B4C0E872FC9C421"
+					type: "item"
+					item: "the_vault:amplifying_focus"
+				}
+				{
+					id: "2A8C805B305C2030"
+					type: "item"
+					item: "the_vault:nullifying_focus"
+				}
+			]
+		}
+		{
+			title: "Rolling Wildly"
+			x: -4.5d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "Let's Go Gambling!"
+			description: [
+				"&5The Wild Focus' primary use is to reroll all the Prefix and Suffix slots on a piece of gear."
+				""
+				"&5This means what prefix or suffix AND what tier they are. And also can roll an empty slot as well, keep that in mind."
+				""
+				"&5Sometimes it isn't worth rerolling a piece unless its a higher rarity."
+				""
+				"&5Or if you are wanting a specific suffix or prefix to recycle."
+				""
+				"&5A good thing to keep in mind is each time you reroll or modify a piece of Vault Gear, you lower its \"Crafting Potential\" stat."
+				""
+				"&5This makes it more and more expensive to modify!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["6473A9F33F692821"]
+			hide: true
+			id: "534D269A9450DA3C"
+			tasks: [{
+				id: "743EE50FF93AAC60"
+				type: "item"
+				item: "the_vault:wild_focus"
+			}]
+		}
+		{
+			title: "Stand and Identify"
+			x: 0.25d
+			y: -3.5d
+			shape: "rsquare"
+			subtitle: "Instant Roll of the Dice"
+			description: [
+				"&5As you level up, the amount of Vault Gear you find in the Vaults will increase. Especially if you tailor your skill and equipment to getting more loot."
+				""
+				"&5Which I always highly suggest. More loot means more chance of getting what you really want."
+				""
+				"&5\"Rolling\" every single piece of gear sounds fun to me, but most folks find it tedious after a while. So, enter the Identification Stand."
+				""
+				"&5Just keep this somewhere in your base, and when you have an inventory full of Unidentified Gear, you can Right Click that stand to auto identify all of them at once."
+			]
+			hide_dependency_lines: true
+			dependencies: ["76B7D44E338DC9B7"]
+			hide: true
+			id: "7B4E0CC53475C2C5"
+			tasks: [{
+				id: "035C593D99171247"
+				type: "item"
+				item: "the_vault:identification_stand"
+			}]
+			rewards: [{
+				id: "528C00CB553C4B96"
+				type: "item"
+				item: "the_vault:mystery_box"
+			}]
+		}
+		{
+			title: "A Bounty of Missions"
+			icon: "the_vault:bounty_block"
+			x: -6.25d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "Extra Effort, Extra Loot"
+			description: [
+				"&5See those Bounty Pearls you've been finding in Wooden Chests? They're quite useful for creating and using the Bounty Table."
+				""
+				"&5The Bounty Table is a pretty good way to get some extra resources and gear. It'll ask you to either do something, or submit something to the table for the reward."
+				""
+				"&5Doing things like killing certain types of monsters in Vaults, or looting an amount of a specific item."
+				""
+				"&5Though it only counts if the item is from an 'unlooted' chest, mind you. No gaming the system with a loophole."
+				""
+				"&5Submitting things is easy too. Just hold the item in your hand and Right Click the Bounty Table."
+				""
+				"&5Oh, and the Table has a slot to store all your Bounty Pearls. You use these to 'reroll' a bounty you don't want by selecting it, the hitting the circular arrow."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"232779928B96328E"
+				"69C663CDD23190A9"
+			]
+			hide: true
+			hide_text_until_complete: false
+			id: "1A438987A9D3D7AD"
+			tasks: [
+				{
+					id: "034F61DB02AC6A7D"
+					type: "item"
+					item: "the_vault:bounty_block"
+				}
+				{
+					id: "4B0D3D515D15D5FA"
+					type: "item"
+					item: "the_vault:bounty_pearl"
+				}
+			]
+			rewards: [{
+				id: "19CE366F2C32E6AF"
+				type: "item"
+				item: "the_vault:bounty_pearl"
+				count: 4
+			}]
+		}
+		{
+			title: "Sugary Goodness"
+			x: 2.25d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Very Crunchy"
+			description: [
+				"&5Might be a bit early, but if you start finding yourself with an excess of Vault Rocks, you can always turn them into Vault Rock Candy."
+				""
+				"&5Users were complaining that they eventually had chests full of the stuff and wanted other uses for it, so..."
+				""
+				"&5Don't think too hard about it. It's tasty, tasty candy."
+			]
+			hide_dependency_lines: true
+			dependencies: ["69C663CDD23190A9"]
+			hide: true
+			id: "5FA6AD660F7FEFD9"
+			tasks: [{
+				id: "5D94E803A3DB0DC6"
+				type: "item"
+				item: "woldsvaults:vault_rock_candy"
+			}]
+			rewards: [{
+				id: "54F5C786E798C70F"
+				type: "item"
+				item: "woldsvaults:vault_rock_candy"
+				count: 16
+			}]
+		}
+		{
+			title: "A Couple Sippies"
+			x: -8.25d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "Only Approved Drinks Allowed"
+			description: [
+				"&5So you probably haven't tried it, but I wouldn't suggest taking in normal potions like Potions of Healing or the like."
+				""
+				"&5Most outside healing is disabled in the Vaults, and either doesn't work or causes something to happen."
+				""
+				"&5Instead, you can make Vault Vials, Potions, or Brews. These have limited uses, but can regain uses on them one of three ways : "
+				""
+				"&5Pacifist recharges over time. Slaughterer recharges when you kill enough enemies. And Goblin recharges when you loot enough chests."
+				""
+				"&5They also fully recharge between Vault runs, thankfully. For now, you can only make Vials, but with the proper Research you can make bigger, better ones."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"50D9EFE8ABEA9779"
+				"69C663CDD23190A9"
+			]
+			hide: true
+			id: "600061B7D508477A"
+			tasks: [{
+				id: "356CD721DA1624B4"
+				type: "item"
+				title: "Any Vial"
+				item: "the_vault:bottle"
+			}]
+			rewards: [{
+				id: "6A767BCF51D6B70C"
+				type: "item"
+				item: "the_vault:chromatic_iron_ingot"
+				count: 16
+			}]
+		}
+		{
+			title: "Shining Knowledge"
+			x: 2.25d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "At a Price"
+			description: [
+				"&5Many mods are locked behind Research. These mods range from small, singular purpose mods; to big, wide ranging ones."
+				""
+				"&5Research mods that you don't have, you are restricted from crafting items from. Sometimes you can't even use the items, like certain machines, from the mod at all until you Research it."
+				""
+				"&5Research is simple : Craft Knowledge Stars from the Knowledge Dust you find in Living Chests, and consume them. Then in your Vault Hunters GUI, you can select a mod to Unlock."
+				""
+				"&5You don't NEED to Research mods, but it limits how fast you can make new Vaults, as the cost scales up with each crystal you make."
+				""
+				"&5Note though : Mods are divided into sections, and unlocking a mod makes that section cost more for the next mod! Choose carefully."
+			]
+			hide_dependency_lines: true
+			dependencies: ["69C663CDD23190A9"]
+			hide: true
+			id: "50203F008ADF0804"
+			tasks: [{
+				id: "78917DC8115FDEE1"
+				type: "item"
+				item: "the_vault:knowledge_star"
+			}]
+		}
+		{
+			title: "An Affinity For Loot"
+			icon: "the_vault:pogging_jewel"
+			x: -8.25d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Breaking, Slicing, and Dicing"
+			description: [
+				"&5One thing to note is that Vault Tools are able to break Vault Chests. But only if they have the Affinity for it."
+				""
+				"&5You'll want to make and apply the Affinity for every chest on your Vault Tool, as it greatly speeds up yer looting."
+				""
+				"&5Though an important thing : Wood Chests and all other chests 'break' differently. Wooden Chests have to be broken as a whole, and take time."
+				""
+				"&5Living, Ornate, and Gilded are 'sliced'. Each slice tosses out one item. But you can just hold the button down and 'slice n dice' quickly."
+				""
+				"&5Makes quite a satisfying sound, I have to say. And later on, you'll start finding Jewels with \"Dismantling\", which gives a chance of extra item dropped with each slice."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3E4FCFC9637F8B61"]
+			size: 0.75d
+			id: "6E76FC7B7537B0B8"
+			tasks: [{
+				id: "5BF11E8BDDDF8015"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Shape Indecisions"
+			x: -8.25d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "A Style All It's Own"
+			description: [
+				"&5The shape of your Vault Tool depends on which Tool abilities it has. If its just got Picking on it, its a Pickaxe."
+				""
+				"&5But that changes when you got Picking and Shoveling. Or Axing and Reaping. Or more of them."
+				""
+				"&5A cool thing happens if you remove ALL the tool abilities. No Picking, no Axing, etc. "
+				""
+				"&5The system doesn't know what to show, so it cycles through ALL of them!"
+				""
+				"&5The Stylish Focus lets you apply this cycling visual effect to any Vault Tool."
+				""
+				"&5Combine this with your Vault Tool using an Anvil, and you keep all the Tool abilities it had, but it ALSO cycles through all the visual styles!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["3E4FCFC9637F8B61"]
+			hide: true
+			id: "43A15992C3676506"
+			tasks: [{
+				id: "09831D85BA92EB29"
+				type: "item"
+				item: "woldsvaults:stylish_focus"
+			}]
+			rewards: [{
+				id: "0D2AA654C15931B3"
+				type: "item"
+				item: "woldsvaults:stylish_focus"
+			}]
+		}
+		{
+			title: "Forging a Legacy"
+			x: -6.25d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Scrappy to Legendary"
+			description: [
+				"&5The Vault Forge is both handy and quite a hog to get the most out of it."
+				""
+				"&5From it, you can craft many types Vault Gear, at your level or below."
+				""
+				"&5But to start, you'll be very unproficient at it. To increase your skill, you'll need Vault Scrap, which you can get from throwing unused Gear into the Vault Recycler."
+				""
+				"&5Then take your Vault Scrap to the Vault Forge, and put them in the slot in the upper right with the same Scrap shape. It takes more and more scrap per level to keep your proficiency up."
+				""
+				"&5But at the same time, you're ability to loot more and faster should increase too, yeah?"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"7543E03FC25521E7"
+				"69C663CDD23190A9"
+			]
+			hide: true
+			id: "075AD2D046BFE367"
+			tasks: [{
+				id: "39B3958325926455"
+				type: "item"
+				item: "the_vault:vault_forge"
+			}]
+			rewards: [{
+				id: "6A7B3EFAD9CA3060"
+				type: "item"
+				item: "the_vault:vault_alloy"
+			}]
+		}
+		{
+			title: "An Ancient Collection"
+			x: 4.25d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "Is Posting It Worth More or Less?"
+			description: [
+				"&5There's an interesting system in the game called Antiques. It's...stamp collecting."
+				""
+				"&5Each stamp has a specific drop condition: a tiny chance from a specific mob in a specific theme; or from certain actions."
+				""
+				"&5There's an Antique Stamp Collector Book you can make to hold all you find."
+				""
+				"&5When you collect enough of a certain stamp, you can get a reward. Just take the Stamps, put them on your hotbar, then select and Right Click them to get the reward."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3E2831A2D27654C0"]
+			hide: true
+			id: "5D9B2844DF7AD95C"
+			tasks: [{
+				id: "7EE674F8A8EDF519"
+				type: "item"
+				item: "the_vault:antique_collector_book"
+			}]
+			rewards: [{
+				id: "40FF6CFA3A366B49"
+				type: "item"
+				item: "the_vault:mystery_box"
+			}]
+		}
+		{
+			title: "A Spot for Animals"
+			x: -9.75d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Jarred Up"
+			description: [
+				"&5Vault Hunters has an early game tool to help gather resources from animals in a... less laggy way compared to giant farms."
+				""
+				"&5They are called Animal Pens, and are good to use early before more options open up."
+				""
+				"&5You'll need to start with some Animal Jars. You can Sneak + Right Click them onto most common animals (Cows, Pigs, Sheep, etc) to \"Jar\" them."
+				""
+				"&5This is, however, a one way process, and you can't take them back out."
+				""
+				"&5You'll need two of an animal to be useful. You can then take an Animal Jar with some animals in it, and Right Click it onto a placed Animal Pen."
+				""
+				"&5Then you can Right Click the same food you need to get animals to Breed to...well, do the same thing, just in the pen. Animals like Sheep can be Sheared, same with Bees for Honeycomb."
+			]
+			hide_dependency_lines: true
+			dependencies: ["69C663CDD23190A9"]
+			hide: true
+			id: "175A7FF1C22107B1"
+			tasks: [
+				{
+					id: "42CE2CFC109F51D7"
+					type: "item"
+					item: "the_vault:animal_pen"
+				}
+				{
+					id: "00E54450C956F2B2"
+					type: "item"
+					item: "the_vault:animal_jar"
+				}
+			]
+			rewards: [{
+				id: "6737BEFE0740ED67"
+				type: "item"
+				item: "the_vault:animal_jar"
+			}]
+		}
+		{
+			title: "Cute Doll"
+			x: 3.75d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "It's Staring At Me"
+			description: [
+				"&5If you have some friends with you, but you aren't all able to run Vaults at the same rate, you might want to look into Vault Dolls."
+				""
+				"&5You can have a friend make a Vault Doll, and it'll bear their name and character skin. "
+				""
+				"&5Equip the doll on your head Curios slot. Make sure you aren't in a Vault Party with your friend, nor should they enter the Vault either. Then run the Vault. It'll randomly 'copy' some of the loot you collect and store it in itself."
+				""
+				"&5After the Vault, give the doll back to the friend. They can Right Click the Doll onto the ground to release it. CAREFUL, do this in an enclosed area!"
+				""
+				"&5See, when you 'release' the doll, it starts to run around. To get your loot, you gotta kill it."
+			]
+			hide_dependency_lines: true
+			dependencies: ["69C663CDD23190A9"]
+			hide: true
+			id: "6A5D150DBF70C1E7"
+			tasks: [{
+				id: "4D9DD070D8342ECD"
+				type: "item"
+				item: {
+					id: "the_vault:vault_doll"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "5EE4F5E6F8AD7EA4"
+				type: "item"
+				item: "woldsvaults:vault_rock_candy"
+				count: 16
+			}]
+		}
+		{
+			title: "Box of Mystery"
+			x: -2.0d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "What Do You Hold?"
+			description: [
+				"&5A semi uncommon bit of loot to find is the Mystery Box."
+				""
+				"&5These can contain a few useful resources. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["69C663CDD23190A9"]
+			hide: true
+			id: "589513669CDDE01C"
+			tasks: [{
+				id: "1527D2FB9D7D99D5"
+				type: "item"
+				item: "the_vault:mystery_box"
+			}]
+		}
+		{
+			title: "Eggy Surprise"
+			x: -2.0d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "Is it a Kinder Creature?"
+			description: [
+				"&5Mystery Eggs are a good find if you are having trouble locating certain animals to farm for Vault Crystal costs."
+				""
+				"&5A wide variety of peaceful mobs are available from Mystery Eggs, which drop them as 'Spawn Eggs'."
+				""
+				"&5Some of the Mods you can Research will require these Spawn Eggs to use them, like Cagerium for example."
+				""
+				"&5You can also turn the Mystery Egg into a Hostile version. These ones will drop, well, hostile Spawn Eggs."
+				""
+				"&5Like it says on the tin. Zombies, Endermen, etc Spawn Eggs will drop out of these."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"50D9EFE8ABEA9779"
+				"69C663CDD23190A9"
+			]
+			hide: true
+			id: "4AD8ED2C12A8B58D"
+			tasks: [
+				{
+					id: "6BCEDFBF8F2F4C1E"
+					type: "item"
+					item: "the_vault:mystery_egg"
+				}
+				{
+					id: "4B3416C268ED843D"
+					type: "item"
+					item: "the_vault:mystery_hostile_egg"
+				}
+			]
+			rewards: [{
+				id: "3BF1BAD50F5FDC02"
+				type: "item"
+				item: "the_vault:mystery_egg"
+				count: 2
+			}]
+		}
+		{
+			title: "Trial By Plastic"
+			x: 0.25d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Testing Grounds"
+			description: [
+				"&5As you level up and get more Skill points for Abilities and Talents, you'll start coming up with builds."
+				""
+				"&5Originally, there was no real good way to test these builds, other than with Test Dummies or just going into a normal Vault. "
+				""
+				"&5Enter the Trial Chamber's Vault Rock. It's mostly like a normal Vault Rock you put onto the Vault Altar."
+				""
+				"&5Except that there is no loot. Not even Soul Shards or Vault XP. Monsters do spawn though."
+				""
+				"&5You can test your fighting builds this way. If you die in a Trial Chamber Vault, you shouldn't lose anything."
+			]
+			hide_dependency_lines: true
+			dependencies: ["69C663CDD23190A9"]
+			hide: true
+			id: "159BD132C3F6B884"
+			tasks: [{
+				id: "26635C74B4103B75"
+				type: "item"
+				item: "the_vault:crystal_seal_trial_chamber"
+			}]
+			rewards: [{
+				id: "3C529CA2E40B91BC"
+				type: "item"
+				item: "the_vault:crystal_seal_trial_chamber"
+			}]
+		}
+		{
+			title: "Assembling a Theme"
+			x: -1.5d
+			y: -3.5d
+			shape: "rsquare"
+			subtitle: "By Your Design"
+			description: [
+				"&5While expensive, the Augment Assembly Pedestal is fairly powerful as you unlock more and more Themes."
+				""
+				"&5This Augment Assembly Table will let ye craft any Themes you have unlocked."
+				""
+				"&5You can get Augment Pieces by recycling unused Augments."
+				""
+				"&4(RESEARCH REQUIRED)"
+			]
+			hide_dependency_lines: true
+			dependencies: ["420733071145A568"]
+			hide: true
+			id: "0DF63164F7EBCD97"
+			tasks: [{
+				id: "742DD8844D5AD687"
+				type: "item"
+				item: "woldsvaults:augment_crafting_table"
+			}]
+			rewards: [{
+				id: "0F234AC92C9A7BAB"
+				type: "item"
+				item: "woldsvaults:augment_piece"
+				count: 8
+			}]
+		}
+		{
+			title: "Altar Needs"
+			x: 2.25d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "Altar Greeds"
+			description: [
+				"&5There is a special box in the Raw Vault loot pools you might be interested in. It's called the Vaultar Box."
+				""
+				"&5The Vault Altar asks for a lotta things, and it only asks for even more as you level up."
+				""
+				"&5This box only contains items the Vault Altar can ask for, even items you haven't hit the level for yet."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3E2831A2D27654C0"]
+			hide: true
+			id: "72DDF12B4CD0E628"
+			tasks: [{
+				id: "797FA083B44A5E2F"
+				type: "item"
+				item: "woldsvaults:vaultar_box"
+			}]
+			rewards: [{
+				id: "6ADF765E852306A6"
+				type: "item"
+				item: "woldsvaults:vaultar_box"
+				count: 5
+			}]
+		}
+		{
+			title: "Vault Helmets"
+			x: -13.0d
+			y: -2.75d
+			shape: "square"
+			subtitle: "Protect Yer Noggin"
+			description: [
+				"&5Vault Helmets are part of your standard Vault Gear Setup."
+				""
+				"&5After level 25, they have a chance of having Lucky Hit Chance on them."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "2F3C06F1E62AF95C"
+			tasks: [{
+				id: "7B887BA947416505"
+				type: "item"
+				item: {
+					id: "the_vault:helmet"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							674648648417815678L
+							-6050163630828979421L
+							2392537302042632L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0DABE8C53DF81150"
+				type: "item"
+				item: {
+					id: "the_vault:helmet"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							7499144922595103294L
+							-9143979404463387082L
+							2392537302042635L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;11184810]
+							rarity: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Vault Chesplates"
+			x: -13.0d
+			y: -1.75d
+			shape: "square"
+			subtitle: "Protect Yer Core"
+			description: [
+				"&5Vault Chestplates are part of your standard Vault Gear Setup."
+				""
+				"&5At level 20, you start being able to have Block Chance or Mana on your Chestplates Implicits as well."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "1BD8587B6DFE1A1B"
+			tasks: [{
+				id: "657A7D2FAF19AE64"
+				type: "item"
+				item: {
+					id: "the_vault:chestplate"
+					Count: 1b
+					tag: {
+						"the_vault:gear_roll_type": "Omega"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2A9AA9FFE9E0B567"
+				type: "item"
+				item: {
+					id: "the_vault:chestplate"
+					Count: 1b
+					tag: {
+						"the_vault:gear_roll_type": "Omega"
+					}
+				}
+			}]
+		}
+		{
+			title: "Vault Leggings"
+			x: -13.0d
+			y: -0.75d
+			shape: "square"
+			subtitle: "Protect Yer Leggies"
+			description: [
+				"&5Vault Leggings are part of your standard Vault Gear Setup."
+				""
+				"&5At level 20, your Leggings can start rolling extra Mana in its Implicits."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "2E7A8C9D47FDA009"
+			tasks: [{
+				id: "11D4655253AD81A0"
+				type: "item"
+				item: {
+					id: "the_vault:leggings"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-1858462341374125762L
+							6649681659788917770L
+							2392537302042633L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "7DBC2F7817695E81"
+				type: "item"
+				item: {
+					id: "the_vault:leggings"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							2965476282188746238L
+							866320481166884620L
+							2392537302042634L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;11184810]
+							rarity: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Vault Boots"
+			x: -13.0d
+			y: 0.25d
+			shape: "square"
+			subtitle: "Protect Yer Pins"
+			description: [
+				"&5Vault Boots are part of your standard Vault Gear Setup."
+				""
+				"&5At level 20, your Boots can start rolling Movement Speed as part of its Implicits."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "3625814A8BD1CD41"
+			tasks: [{
+				id: "32C49D7C6353DFD4"
+				type: "item"
+				item: {
+					id: "the_vault:boots"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-8090804801956985106L
+							-8285789679904984097L
+							2392537302042633L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "14F9BEE352995AB8"
+				type: "item"
+				item: {
+					id: "the_vault:boots"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							5674597227358867742L
+							8788229904885742272L
+							2392537302042634L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;11184810]
+							rarity: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Vault Swords"
+			x: -12.0d
+			y: -3.25d
+			shape: "square"
+			subtitle: "Slice n Dice"
+			description: [
+				"&5Vault Swords are one of a variety of weapon types you can use. All weapons gain a broader range of Suffixes and Prefixes as you level up."
+				""
+				"&5Swords are a good balance of damage, speed, and range. Their sweeping hit strikes multiple enemies at once."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "0531AED0A46C562E"
+			tasks: [{
+				id: "44E6F19AA6192C66"
+				type: "item"
+				item: {
+					id: "the_vault:sword"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-8227976071262970258L
+							-4046922947657189632L
+							2392537302042635L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "46753E871BF0EC00"
+				type: "item"
+				item: {
+					id: "the_vault:sword"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-4323236370466944738L
+							-3119269083687429169L
+							2392537302042635L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;11184810]
+							rarity: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Vault Axes"
+			x: -12.0d
+			y: -2.25d
+			shape: "square"
+			subtitle: "Chop Chop Chop"
+			description: [
+				"&5Vault Axes are one of a variety of weapon types you can use. All weapons gain a broader range of Suffixes and Prefixes as you level up."
+				""
+				"&5Axes prioritize Damage over Speed, and are the only weapon that does Reaving, which strikes for a percentage of extra HP damage on the first hit."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "142B51D402529387"
+			tasks: [{
+				id: "331A50AC372D6941"
+				type: "item"
+				item: {
+					id: "the_vault:axe"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-8871291211930639218L
+							-3422052383963635899L
+							2392537302042634L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "010AC22FCADEF2A0"
+				type: "item"
+				item: {
+					id: "the_vault:axe"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							8639927770871560974L
+							7082286325219341786L
+							2392537302042635L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;11184810]
+							rarity: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Vault Battlestaves"
+			x: -12.0d
+			y: -1.25d
+			shape: "square"
+			subtitle: "Dip, Duck, Dodge..."
+			description: [
+				"&5Vault Battlestaves are one of a variety of weapon types you can use. All weapons gain a broader range of Suffixes and Prefixes as you level up."
+				""
+				"&5Battlestaves are the fast attacking weapon available. Each hit doesn't do as much damage, and wielding one disables anything in your Off Hand. To make up for this, the range and number of Affixes it can have is higher than other weapons."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "0208A42BA6C7203B"
+			tasks: [{
+				id: "0CCD16AC80C8D104"
+				type: "item"
+				item: {
+					id: "the_vault:battlestaff"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-1857137544543310834L
+							5765769003096880845L
+							2392537302042635L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0357BAC3AADA5658"
+				type: "item"
+				item: {
+					id: "the_vault:battlestaff"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-5029249127322212690L
+							3324477113181156500L
+							2392537302042633L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;11184810]
+							rarity: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Vault Tridents"
+			x: -12.0d
+			y: -0.25d
+			shape: "square"
+			subtitle: "Yeet!"
+			description: [
+				"&5Vault Tridents are one of a variety of weapon types you can use. All weapons gain a broader range of Suffixes and Prefixes as you level up."
+				""
+				"&5Vault Tridents have more focus on single target damage than the sweeping strikes of the Sword or Battlestaff. They also have the ability to be thrown by holding Right Click to charge it up."
+				""
+				"&5Though unless the trident has the Loyalty Implicit, you'll have to run over and pick your Trident back up."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "3865C78C8C699553"
+			tasks: [{
+				id: "3687896638A7D324"
+				type: "item"
+				item: {
+					id: "the_vault:trident"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							2435425371490119550L
+							-702803925265453867L
+							2392537302042634L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "201308D2DD0FE4FE"
+				type: "item"
+				item: {
+					id: "the_vault:trident"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-7410733934983228082L
+							5675058750218247669L
+							2392537302042634L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;11184810]
+							rarity: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Vaultarangs"
+			x: -12.0d
+			y: 0.75d
+			shape: "square"
+			subtitle: "Return to Sender"
+			description: [
+				"&5Vaultarangs are one of a variety of weapon types you can use. All weapons gain a broader range of Suffixes and Prefixes as you level up."
+				""
+				"&5Vaultarangs are a primarily ranged weapon, letting you throw them at the enemy by Right Clicking. They don't do as much damage as up and close weapons, but give you more breathing room to move and dodge."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "2F2DDEF509AAFDD1"
+			tasks: [{
+				id: "3878E43B2FE820BF"
+				type: "item"
+				item: {
+					id: "the_vault:rang"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-7831231178959720530L
+							7238128649986550874L
+							2392537302042632L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "1639C47D78DC1E58"
+				type: "item"
+				item: {
+					id: "the_vault:rang"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							61488450257560382L
+							2636020975074132085L
+							2392537302042632L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;11184810]
+							rarity: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Vault Shields"
+			x: -11.0d
+			y: -3.25d
+			shape: "square"
+			subtitle: "Can't Hit Me!"
+			description: [
+				"&dVault Shields are one of a variety of Offhand gear types you can use. Most Offhand gear gain a broader range of Suffixes and Prefixes as you level up."
+				""
+				"&5Vault Shields provide the Implicits to either have a chance at completely blocking an attack, or retaliating with Thorns damage when you are hit."
+				""
+				"&dFunny thing, the system considers ANY damage an Attack, which includes damage from Poison fields or standing on a campfire."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "485448E854C656EC"
+			tasks: [{
+				id: "033E9ADE1B0F1B72"
+				type: "item"
+				item: {
+					id: "the_vault:shield"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							879874914535110286L
+							3986875361930783308L
+							2392537302042634L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "3A2931ECC8DF2AA1"
+				type: "item"
+				item: "the_vault:shield"
+			}]
+		}
+		{
+			title: "Vault Wands"
+			x: -11.0d
+			y: -2.25d
+			shape: "square"
+			subtitle: "I Cast Fireball!"
+			description: [
+				"&dVault Wands are one of a variety of Offhand gear types you can use. Most Offhand gear gain a broader range of Suffixes and Prefixes as you level up."
+				""
+				"&5Vault Wands focus on adding Ability Power, as well as boosting more combat specific Abilities directly, like Fireball or Nova."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "0F8EECDA87360DD7"
+			tasks: [{
+				id: "692417B61F8EADE5"
+				type: "item"
+				item: {
+					id: "the_vault:wand"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-6589505928286694546L
+							5098980475739745359L
+							2392537302042635L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "381FDE30F0A80C57"
+				type: "item"
+				item: {
+					id: "the_vault:wand"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-1450851639308786114L
+							8809015951179555342L
+							2392537302042633L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;11184810]
+							rarity: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Vault Foci"
+			x: -11.0d
+			y: -1.25d
+			shape: "square"
+			subtitle: "It's In a Book"
+			description: [
+				"&dVault Foci are one of a variety of Offhand gear types you can use. Most Offhand gear gain a broader range of Suffixes and Prefixes as you level up."
+				""
+				"&5Vault Foci are usually books or tomes, and focus on boosting up Abilities in general, both combat and non-combat ones."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "51B71631681D94F5"
+			tasks: [{
+				id: "034C24A677D6E46F"
+				type: "item"
+				item: {
+					id: "the_vault:focus"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							1953964598013200686L
+							6665241368895824224L
+							2392537302042635L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "75728311D1DA4A2A"
+				type: "item"
+				item: {
+					id: "the_vault:focus"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							4321364370534999502L
+							3439893691901799201L
+							2392537302042633L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;11184810]
+							rarity: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Vault Plushies"
+			x: -11.0d
+			y: -0.25d
+			shape: "square"
+			subtitle: "Soft and Squeezable"
+			description: [
+				"&dVault Plushies are one of a variety of Offhand gear types you can use. Most Offhand gear gain a broader range of Suffixes and Prefixes as you level up."
+				""
+				"&5Vault Plushies focus on survival in a Vault. They can increase damage, give you immunity to specific damage types, boost up your movement abilities, etc."
+				""
+				"&dNormally, Vault Plushies don't start appearing until level 50, but you might be able to find an early one."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "60B3337ABCF445FA"
+			tasks: [{
+				id: "3FA66834AB417EAE"
+				type: "item"
+				item: {
+					id: "the_vault:plushie"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-3458318560066783106L
+							264030221569603699L
+							2392537302042632L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "083EE07DA8FCC89F"
+				type: "item"
+				item: {
+					id: "the_vault:plushie"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							3351985703550721742L
+							-5078956863028409088L
+							2392537302042635L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;11184810]
+							rarity: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Vault Sacks"
+			x: -11.0d
+			y: 0.75d
+			shape: "square"
+			subtitle: "Put It All In The Bag!"
+			description: [
+				"&dVault Sacks are one of a variety of Offhand gear types you can use. Most Offhand gear gain a broader range of Suffixes and Prefixes as you level up."
+				""
+				"&5Vault Sacks focus on improving your looting in the Vault. They can add more loot, better loot, faster movement, trap disarm, etc."
+				""
+				"&dVault Sacks usually don't drop until level 50, but you might be able to find an early one."
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "173ED1C0127D1BB3"
+			tasks: [{
+				id: "756EBC8ACA49AD50"
+				type: "item"
+				item: {
+					id: "the_vault:loot_sack"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							2729414146317926254L
+							6122368315693595513L
+							2392537302042633L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierLEGENDARY: 0b
+							colors: [I;11184810]
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "778E8E4675A70641"
+				type: "item"
+				item: {
+					id: "the_vault:loot_sack"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-878855642086580082L
+							-3311764175241024741L
+							2392537302042635L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;11184810]
+							rarity: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Gear Information"
+			x: -9.75d
+			y: -1.25d
+			shape: "gear"
+			subtitle: "What Is Up With It?"
+			description: [
+				"&5Okay, quick primer for you on Vault Gear and their stats."
+				""
+				"&5So all Vault Gear stats are split into three catagories of Affixes : Implicits, Prefixes, and Suffixes. Each Gear piece has a set number of each of these, usually depending on rarity."
+				""
+				"&5Implicits are the base stats of a piece. Armor always has Armor, Weapons always have Damage in their list of implicits. Some Implicit slots can be a number of things, like Block OR Thorns on shields, but usually never both at the same time... at least as an Implicit."
+				""
+				"&5Prefixes and Suffixes are the various bonus stats a piece of gear has, and are much easier to reroll than Implicits are. They can be anything from extra armor or damage, more mana, better looting, or even special abilities like causing a Poison or Frost nova to happen when you hit an enemy."
+				""
+				"&5Oh, also! If a gear piece adds to a listed ability, you need at LEAST one point in that ability to use it! "
+			]
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "739D201BBF702013"
+			tasks: [{
+				id: "66DE3B2D8804617F"
+				type: "checkmark"
+				title: "So Many Stats!"
+			}]
+		}
+		{
+			title: "Unique Field Guide"
+			x: 4.25d
+			y: -3.5d
+			shape: "rsquare"
+			subtitle: "Kind of Like VHat Can I Roll?"
+			description: [
+				"&5To help players hunt down the special 'unique' items, you can refer to the Unique Codex."
+				""
+				"&5Your Vault GUI has a section called VHat Can I Roll? Which gives you information about all sorts of Vault Gear. This is a simplified verison of that for Uniques. Might be helpful to you."
+			]
+			hide_dependency_lines: true
+			dependencies: ["76B7D44E338DC9B7"]
+			hide: true
+			id: "7C06CB39886FCC9B"
+			tasks: [{
+				id: "0E41BFBAFDE67D5D"
+				type: "item"
+				item: "the_vault:unique_codex"
+			}]
+			rewards: [{
+				id: "1905DDFDE6FD0524"
+				type: "item"
+				item: "the_vault:mystery_box"
+			}]
+		}
+		{
+			title: "Uniquely Found"
+			x: 0.25d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "Tucked Away for a Rainy Day"
+			description: [
+				"&5There's a special level of gear called a Unique. "
+				""
+				"&5Uniques are...well, you can figure out that they are Unique items, pieces of equipment mostly, with unique looks and special stats."
+				""
+				"&5You can find them in various ways, usually in specific rooms, or on the Black Market, or in Vendoors."
+				""
+				"&5And most recently they added these Unique Crates. You can find em in those big crates in Factory Rooms, or in the catacombs beneath Village Rooms in the Vaults."
+			]
+			hide_dependency_lines: true
+			dependencies: ["76B7D44E338DC9B7"]
+			hide: true
+			id: "096608AC80F2A0F0"
+			tasks: [{
+				id: "6A36F4E0B8DA3824"
+				type: "observation"
+				title: "Find a Unique Crate"
+				icon: "the_vault:unique_crate"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:unique_crate"
+			}]
+		}
+		{
+			title: "Clearing Conflicts"
+			icon: "the_vault:demagnetizer"
+			x: -6.25d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "Computer, Deactivate Lizard"
+			description: [
+				"&5As you start to get higher level and get more gear and tools, you'll probably end up with a need to...turn off some of those tools in your Base."
+				""
+				"&5Popping half your base with a super hammer isn't really fun the first time."
+				""
+				"&5Nor is always having to dig into your backpack to grab dropped items."
+				""
+				"&5So there's a few things ye can make to help out. The Debagnitizer will stop your Sophisticated Backpacks from auto picking up items in an area."
+				""
+				"&5And the Demagnetizer will disable all Vault Magnets near it."
+				""
+				"&5As for the hammer, you can use the Dehammerizer to disable the area effect of yer hammer. Save yourself a big headache."
+			]
+			hide_dependency_lines: true
+			dependencies: ["69C663CDD23190A9"]
+			hide: true
+			id: "40B3DC65625197C4"
+			tasks: [
+				{
+					id: "51E7EAEE0120B591"
+					type: "item"
+					item: "the_vault:demagnetizer"
+				}
+				{
+					id: "7FAA3F96102DBC40"
+					type: "item"
+					item: "the_vault:debagnetizer"
+				}
+				{
+					id: "2CFB49DD80033A6D"
+					type: "item"
+					item: "the_vault:dehammerizer"
+				}
+			]
+			rewards: [{
+				id: "1C60234D7161D157"
+				type: "item"
+				item: "the_vault:mystery_box"
+				count: 2
+			}]
+		}
+		{
+			title: "Adapt Or Perish"
+			x: -5.75d
+			y: -3.5d
+			shape: "rsquare"
+			subtitle: "A Worthy Sacrifice"
+			description: [
+				"&5The Adaptive Focus is a rare Focus you can only obtain by recycling Omega rarity gear. There's a 1 in 4 chance of getting an Adaptive Focus when you scrap one, but can be very powerful."
+				""
+				"&5When you apply an Adaptive Focus to a piece of gear in the Artisan Station, it will upgrade the tier of EVERY modifier on it."
+				""
+				"&5The downside is twofold, though : It is very expensive to apply, and it will consume a Repair Slot on the piece of gear."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"29198B5EA727A867"
+				"6473A9F33F692821"
+			]
+			hide: true
+			id: "66FBB145605DD232"
+			tasks: [{
+				id: "155AF24522E6CF48"
+				type: "item"
+				item: "the_vault:adaptive_focus"
+			}]
+			rewards: [{
+				id: "5C41B8163B826451"
+				type: "item"
+				item: "the_vault:adaptive_focus"
+			}]
+		}
+		{
+			title: "To Be Alike"
+			x: 4.75d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "You Equals Me"
+			description: [
+				"&5If you are playing on a server and have a friend joining your game late, you can use the Mentor's Brew to bring them up to your level."
+				""
+				"&5When you craft the Mentor's Brew, it will be set to the level you are at the time. When someone else drinks it, their level will raise up to match yours."
+				""
+				"&5Note this will ONLY work if the player drinking the Mentor's Brew is lower level than the Brew is set to!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["69C663CDD23190A9"]
+			hide: true
+			id: "2EB82342DD80197E"
+			tasks: [{
+				id: "7FB953ABB761A9DB"
+				type: "item"
+				item: {
+					id: "the_vault:mentors_brew"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0304E614AF969F30"
+				type: "item"
+				item: "the_vault:vault_platinum"
+			}]
+		}
+		{
+			title: "Sharing Knowledge"
+			x: 2.25d
+			y: -3.5d
+			shape: "rsquare"
+			subtitle: "Can I Make It? Not Yet..."
+			description: [
+				"&5If you are playing on a server and are grouping up with friends, you can use the Knowledge Brew to share what Research you have unlocked."
+				""
+				"&5When you craft the Brew, it will copy all Researches you have."
+				""
+				"&5When someone else drinks the Knowledge Brew, they will gain any Research from it they didn't have yet."
+			]
+			hide_dependency_lines: true
+			dependencies: ["50203F008ADF0804"]
+			hide: true
+			id: "74637538A0EBEA2E"
+			tasks: [{
+				id: "46C5A1FB03E02BB0"
+				type: "item"
+				item: {
+					id: "the_vault:knowledge_brew"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "2364732B31AF2A28"
+				type: "item"
+				item: "the_vault:vault_platinum"
+			}]
+		}
+		{
+			title: "Additional Pylons"
+			icon: "the_vault:pylon"
+			x: -2.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Construct? No, Break Them!"
+			description: [
+				"&5Dotted around the Vaults you can occasionally find these large floating crystals called Pylons."
+				""
+				"&5Each Pylon will give you a specific buff for a short amount of time, which will be listed above the Pylon if you are close enough."
+				""
+				"&5You can Right Click the Pylon to activate it.."
+				""
+				"&5...Or you can break the Pylon!"
+				""
+				"&5Breaking it gives you a small chance at obtaining a Temporal Shard. These roll like other Vault Gear, and can have a powerful ability."
+				""
+				"&5The Temporal Shard is consumed when used, but you collect and save Shards between Vaults."
+				""
+				"&5There is also an Expertise that gives you a higher chance to obtain a Temporal Shard when breaking a Pylon."
+			]
+			hide_dependency_lines: true
+			dependencies: ["69C663CDD23190A9"]
+			hide: true
+			id: "3F5860F8A067ED38"
+			tasks: [{
+				id: "074E58FA044A2409"
+				type: "item"
+				item: {
+					id: "the_vault:temporal_shard"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6BA46AB82BB8383D"
+				type: "item"
+				item: {
+					id: "the_vault:temporal_shard"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Steep Infusion"
+			x: -6.25d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "Let's Give It Power"
+			description: [
+				"&5Early on, recipes for both Vault Hunters items and Researched items will use basic Vault ingredients. Magic Silk, Vault Diamonds, etc."
+				""
+				"&5But soon you'll be needing more complex ingredients. Enter the Chromatic Iron Vault Infuser. With this, you can infuse various Vault ingredients together into more powerful resources."
+				""
+				"&5Recipes have a base ingredient in the left slot, and in the middle slot is the ingredient you infuse into it. The bar below this shows how many you need if you hover over it. "
+				""
+				"&5When the Choromatic Iron Vault Infuser becomes too slow, you can upgrade it into a Chromatic Steel Vault Infuser instead."
+			]
+			hide_dependency_lines: true
+			dependencies: ["76B7D44E338DC9B7"]
+			hide: true
+			id: "2A847F412902DA5B"
+			tasks: [{
+				id: "3FDF17BD0A6025A8"
+				type: "item"
+				item: "woldsvaults:chromatic_iron_vault_infuser"
+			}]
+			rewards: [{
+				id: "55FC9E8CAA562232"
+				type: "item"
+				item: "woldsvaults:infused_driftwood"
+				count: 16
+			}]
+		}
+		{
+			title: "An Empty Forge?"
+			icon: "davebuildingmod:alarm_sign"
+			x: -5.625d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Where'd Everything Go? Bingo?"
+			description: [
+				"&5If you've opened the Vault Forge and noticed that there are no items to craft, don't panic!"
+				""
+				"&5This means you are filtering the items shown using JEI Search!"
+				""
+				"&5In the lower right of your screen, when you have your inventory or a machine GUI open, you have a black text bar that is used to search JEI."
+				""
+				"&5If you have text here, it will also filter the items showing in Vault stations like the Forge."
+				""
+				"&5To quickly clear the JEI Search, you can simply Right Click on it."
+				""
+				"&5If you find this function annoying, you can disable it by going into your config files, opening wolds-client.toml, finding : "
+				"syncJEISearchForWorkstations = true"
+				""
+				"&5And change true to false."
+			]
+			dependencies: ["075AD2D046BFE367"]
+			size: 0.75d
+			id: "5CC8056094D7569C"
+			tasks: [{
+				id: "358CB059DA797C0A"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Missing Ingredients"
+			x: -4.0d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "Got a Substitute?"
+			description: [
+				"&5Sometimes the Vault Altar asks for some... difficult items to make a Crystal. Maybe you are in a Skyvault and don't have that mob egg yet. Maybe the nearest jungle is 10k blocks away."
+				""
+				"&5Whatever the case is, you can reroll the current Vault Crystal cost by using an Altar Recatalyzer."
+				""
+				"&5By Sneak + Right Clicking the Altar Recatalyzer on your Altar, it will reroll the items it asks for."
+				""
+				"&5Note that you don't get a refund if you already put stuff in!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["76B7D44E338DC9B7"]
+			hide: true
+			id: "56993A9EFAD6616F"
+			tasks: [{
+				id: "44B9D9692434EAF0"
+				type: "item"
+				item: "the_vault:altar_recatalyzer"
+			}]
+			rewards: [{
+				id: "6634EBE2B09DDECF"
+				type: "item"
+				item: "the_vault:altar_recatalyzer"
+				count: 2
+			}]
+		}
+	]
+	quest_links: [ ]
+}
