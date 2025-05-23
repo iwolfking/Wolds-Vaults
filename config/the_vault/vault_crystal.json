@@ -1678,6 +1678,20 @@
     }
   ],
   "OBJECTIVES": {
+     "the_vault:enchanted_elixir": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "type": "enchanted_elixir",
+              "objective_probability": 0.6
+            },
+            "weight": 4
+          }
+        ]
+      }
+    ],
     "the_vault:zealot": [
       {
         "level": 0,
@@ -1703,6 +1717,7 @@
           {
             "value": {
               "type": "monolith",
+              "objective_probability": 0.75,
               "target": {
                 "type": "uniform",
                 "min": 6,
@@ -1814,6 +1829,7 @@
           {
             "value": {
               "type": "haunted_braziers",
+              "objective_probability": 0.75,
               "target": {
                 "type": "uniform",
                 "min": 3,

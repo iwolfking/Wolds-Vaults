@@ -1,0 +1,542 @@
+{
+	id: "68D57AD423493AA4"
+	group: "1A78C6EA3A0ABFDA"
+	order_index: 0
+	filename: "0_salutations"
+	title: "[0] Salutations"
+	icon: {
+		id: "botania:cosmetic_questgiver_mark"
+		Count: 1b
+		tag: { }
+	}
+	subtitle: ["Getting Up to Speed"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Wold's Vaults"
+			icon: {
+				id: "botania:cosmetic_questgiver_mark"
+				Count: 1b
+				tag: { }
+			}
+			x: 1.0d
+			y: -5.5d
+			shape: "pentagon"
+			subtitle: "Presented by The Ferret Business"
+			description: [
+				"&5Greetings and hello!"
+				" "
+				"&5My name is Caigan, and I'm here to guide you through playing this modpack! Whether you are new to Wold's Vaults, or to Vault Hunters at all, these quests are to help guide you through everything."
+				""
+				"&5There's a lot to go over! You ready?"
+			]
+			id: "5DD803E2DB661B66"
+			tasks: [{
+				id: "37A8CF4751CBD764"
+				type: "checkmark"
+				title: "And Here We Go..."
+			}]
+		}
+		{
+			title: "What is Vault Hunters?"
+			icon: {
+				id: "the_vault:sword"
+				Count: 1b
+				tag: {
+					vaultGearData: [L;
+						2288987619822149566L
+						8826001573703020666L
+						2392537302042635L
+						576460752303423488L
+						2056L
+					]
+					clientCache: {
+						color: [B; ]
+						gearName: [B; ]
+						"presentthe_vault:weapon_type": 0b
+						rollType: [B; ]
+						jcolors: [I; ]
+						model: [B; ]
+						state: 0
+						colors: [I;11184810]
+						rarity: 0
+					}
+				}
+			}
+			x: 2.0d
+			y: -6.5d
+			shape: "pentagon"
+			subtitle: "In Case You Didn't Know"
+			description: [
+				"&5You probably already know the answer to this question. It's probably why you are playing this pack, or started playing Vault Hunters (Which I'll call Vanilla VH from here on). But in summary : "
+				""
+				"&5Vault Hunters is an RPG modpack where you tackle procedurally generated dungeons called Vaults."
+				""
+				"&5Inside these Vaults, you'll find swarms of monsters to fight, Vault Gear to equip, resources to craft with, and more. Level up, learn skills and talents, create a build around your preferred play style."
+				""
+				"&5As you progress, the Vaults get harder, and more costly to summon. Research new mods to help you, whether its to farm resources, sort your growing pile of loot, or just to have a break from the Vaults with some fun mods."
+				""
+				"&5Your goal? Reach level 100, find the 25 artifacts, and challenge the Herald."
+				""
+				"&5After that? Well, it's time to get Greedy..."
+			]
+			dependencies: ["5DD803E2DB661B66"]
+			hide: true
+			id: "19DD5DBBECEACA48"
+			tasks: [{
+				id: "351909F1249A7B6C"
+				type: "checkmark"
+				title: "Grind Those Levels"
+			}]
+		}
+		{
+			title: "So What Is Wold's?"
+			icon: "the_vault:wold_star"
+			x: 3.5d
+			y: -6.5d
+			shape: "pentagon"
+			subtitle: "Second Verse, Not Exactly the First"
+			description: [
+				"&5So now the question becomes : What is Wold's Vaults? Well, this is a spinoff of Vanilla VH, with tons of new features."
+				""
+				"&5There are new types of Vault Gear to find and use, like the Vault Battlestaff and Vaultarang. "
+				""
+				"&5Many new mods to play with, both available from the start and ones you can unlock via Research."
+				""
+				"&5Alternate, harder versions of Vanilla VH Vault Objectives. Scavenger not challenging enough? Try Unhinged Scavenger!"
+				""
+				"&5Lots of balancing adjustments and Quality of Life additions."
+				""
+				"&5More end game goals, including the ability to craft Creative level items. And then there's the post-Herald content, a bigger and bigger challenge..."
+			]
+			dependencies: ["19DD5DBBECEACA48"]
+			hide: true
+			id: "5136BFD11A07D7D0"
+			tasks: [{
+				id: "13656E047D8BD2BB"
+				type: "checkmark"
+				title: "So Much to Show You"
+			}]
+		}
+		{
+			title: "Major Changes"
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "patchouli:wold_pedia"
+				}
+			}
+			x: 4.5d
+			y: -5.5d
+			shape: "pentagon"
+			subtitle: "A Few Quick Things"
+			description: [
+				"&5These quests will cover most everything from both VH Vanilla and Wold's Vaults."
+				""
+				"&5There will be some things not covered, either by accident or because these quests have not been updated to match them yet. If new things are added to either VH Vanilla or Wold's Vaults, it may take a bit before quests are added or updated."
+				""
+				"&5First things first though, let me go over two major changes to the pack in the next two quests : "
+			]
+			dependencies: ["5136BFD11A07D7D0"]
+			hide: true
+			id: "1C67908469019A64"
+			tasks: [{
+				id: "6690DF0C44971A38"
+				type: "checkmark"
+				title: "Big Changes, Little Changes..."
+			}]
+		}
+		{
+			title: "Group Survival"
+			icon: "luphieclutteredmod:luphie_bunny_garland"
+			x: 2.5d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "More the Merrier"
+			description: [
+				"&5If you are playing on a server with friends, you can group up to tackle Vaults together."
+				""
+				"&5Survival in numbers, of course."
+				""
+				"To run Vaults with other players, you should form a party. You can do &6/party create&r, then &6/party invite player&r, where player is the name of the person you want to group with."
+				""
+				"To join a different party or go solo, be sure to do &6/party leave&r!"
+				""
+				"&5Normally, the experience you earn in a Vault is not shared. The mobs you fight, the chests you loot, only give YOU experience. You can change a gamerule so that parties share some amount of experience : "
+				""
+				"&6/gamerule vaultXPShare amount&r : change amount to one of the following : "
+				"     Option 1"
+				"     Option 2"
+			]
+			dependencies: ["4CA0844372B19F19"]
+			hide: true
+			id: "40E4E5113E933B44"
+			tasks: [{
+				id: "483B8AF014C584F7"
+				type: "checkmark"
+				title: "Together For...Some Time?"
+			}]
+		}
+		{
+			title: "Death and Extraction"
+			icon: "rftoolsutility:peaceful_module"
+			x: 3.0d
+			y: -0.5d
+			shape: "pentagon"
+			subtitle: "The Only Two Guarantees"
+			description: [
+				"&5Along with being able to enable or disable Better Combat or Parcool, VH Vanilla and Wold's Vaults have various commands and gamerules you can change to customize your experience."
+				""
+				"&5At it's core, this modpack is an Extraction Looter : You enter a dungeon to get loot, and to keep the loot you must survive and extract. And by default, if you are level 20 or higher, if you die you lose your inventory, which you can purchase back by spending Vault Gold."
+				""
+				"If you want death to be less punishing (or more!), you can set your world or server's Vault Mode by using the following : "
+				""
+				"&6/gamerule VaultMode Normal :&r The default mode. If you die in a Vault, you get a Spirit with your equipment, and have to pay Vault Gold to get your stuff back."
+				""
+				"&6/gamerule VaultMode Casual :&r You get your items back if you die, but they take some durability damage."
+				""
+				"&6/gamerule VaultMode Hardcore :&r You lose everything on you if you die in a Vault. No purchasing your stuff back."
+			]
+			dependencies: ["2E8B1B1D23FEAF8E"]
+			hide: true
+			id: "4CA0844372B19F19"
+			tasks: [{
+				id: "61503165E064852F"
+				type: "checkmark"
+				title: "Have It Your Style"
+			}]
+		}
+		{
+			title: "Vault Difficulty"
+			icon: "the_vault:soul_flame"
+			x: 3.0d
+			y: 0.5d
+			shape: "rsquare"
+			subtitle: "A Difficulty Tweak"
+			description: [
+				"&5Inside the Vaults, you can change how strong or weak the various mobs are. This changes their health and the damage they do to you."
+				""
+				"&5This setting effects only your Vaults, and can be different for each person on a server."
+				""
+				"&5If you are in a Vault Party, the LAST person to enter the Vault sets the Vault Difficulty to their setting."
+				""
+				"To set your local difficulty, do the following command : "
+				"&6/the_vault local_difficulty your_name difficulty :&r Replace your_name with your minecraft name, and difficulty with one of the following. Each one increases the health and damage of mobs : "
+				"    Piece of Cake"
+				"    Easy"
+				"    Normal (Default)"
+				"    Hard (Dwellers can throw bricks now)"
+				"    Impossible"
+				"    Fragged"
+			]
+			dependencies: ["4CA0844372B19F19"]
+			hide: true
+			id: "0BA78C5E27BA4351"
+			tasks: [{
+				id: "505126E565C13A73"
+				type: "checkmark"
+				title: "Pushover or Punch God?"
+			}]
+		}
+		{
+			title: "Paying for Crystals"
+			icon: {
+				id: "the_vault:vault_crystal"
+				Count: 1b
+				tag: {
+					CrystalData: {
+						Properties: {
+							size: 0b
+							exhausted: 0b
+							type: "capacity"
+						}
+						Version: 3b
+						Modifiers: {
+							List: [ ]
+							RandomModifiers: 1b
+							type: "default"
+							Clarity: 0b
+						}
+					}
+				}
+			}
+			x: 4.0d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "Entrance Fee"
+			description: [
+				"&5To get into Vaults, you need to 'pay' for crystals. The costs of crystals start out very cheap, but scale up the more you make."
+				""
+				"&5As you level, you'll unlock mods to make gathering materials for crystals easier."
+				""
+				"&5If you want to change how fast the crystal costs scale, or even remove the crystal cost, you can set the level for the entire server : "
+				""
+				"You can set the scaling of resources for Crystals with the following command : "
+				"&6/gamerule vaultCrystalMode mode :&r Replace mode with one of the following :"
+				"     INFINITY (no cost)"
+				"     NORMAL (1x)"
+				"     GRINDY (2x)"
+				"     EXTREME (3x)"
+			]
+			dependencies: ["4CA0844372B19F19"]
+			hide: true
+			id: "33C206FEA6772466"
+			tasks: [{
+				id: "31F63991B3631A9D"
+				type: "checkmark"
+				title: "Discount!"
+			}]
+		}
+		{
+			title: "Loot! Experience! Rewards!"
+			icon: "the_vault:treasure_chest"
+			x: 2.0d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "How Much or Little Would You Like?"
+			description: [
+				"&5You can change how fast or slow you level up, as well as how much loot you get in a Vault."
+				""
+				"&5These settings changes it for everyone on a server :"
+				""
+				"&6/gamerule VaultExperience amount"
+				"Replace amount with : "
+				"  POOR (10%) / HALF (50%)"
+				"  NORMAL (100%) / DOUBLE (200%)"
+				"  TRIPLE (300%)"
+				""
+				"&6/gamerule VaultLoot amount"
+				"Replace amount with :"
+				"  LEGACY (50%) / NORMAL (100%)"
+				"  PLENTY (200%) / EXTREME (300%)"
+				""
+			]
+			dependencies: ["4CA0844372B19F19"]
+			hide: true
+			id: "281380C803D15FCC"
+			tasks: [{
+				id: "567CEA37E19B68AD"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Sly Moves"
+			icon: {
+				id: "the_vault:trinket"
+				Count: 1b
+				tag: {
+					vaultGearData: [L;
+						-8527086985746807220L
+						-5867191529188746856L
+						1514722424829573161L
+						5928572538477319491L
+						2676634361676693832L
+						23103588210495013L
+						-7814214667446693802L
+						335690905683768L
+					]
+					clientCache: {
+						color: [B; ]
+						gearName: [B; ]
+						rollType: [B; ]
+						jcolors: [B; ]
+						model: [B; ]
+						state: 2
+						colors: [B; ]
+						rarity: [B; ]
+					}
+					vaultUses: 28
+				}
+			}
+			x: 3.0d
+			y: -3.5d
+			shape: "pentagon"
+			subtitle: "PARKOUR!"
+			description: [
+				"&5Along with a more fluid combat system, Wold's Vaults adds a mod called Parcool. This enables your movement to include Parkour moves."
+				""
+				"&5Parkour is... basically, you go from point a to point b, except instead of going around stuff in your way, you go over it, under it, or through it instead, using it as leverage instead of a speed bump."
+				""
+				"&5With Parcool, you can do double jumps, long jumps, climb up ledges, wall kick, tuck and roll, and more. You can see all the things you do in this book."
+				""
+				"&5Note that you have a Stamina bar, which will deplete as you use Parcool moves. Once it recharges, you can use them again."
+				""
+				"If a Parcool move is getting in the way, or you want to disable Parcool, you can simply either rebind or unbind all Parcool hotkeys in the in-game config. Search for catagory : Parcool."
+			]
+			dependencies: ["261FB6A187AC7231"]
+			hide: true
+			id: "2E8B1B1D23FEAF8E"
+			tasks: [{
+				id: "3ACC070C6FC78B9C"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Swing With Style"
+			icon: {
+				id: "ae2:fluix_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: -4.5d
+			shape: "pentagon"
+			subtitle: "Combat Improved"
+			description: [
+				"&5The moment you get into combat, you'll notice the smoother animations, and fairly different feel of it versus normal Minecraft combat."
+				""
+				"&5This is a mod called Better Combat, which adds more fluid attacks and animations."
+				""
+				"&5These animations change depending on what weapons you are using. Swinging a Sword will feel different than swinging a Battlestaff, for example."
+				""
+				"&5For those very much used to Vanilla combat, like myself, the change can feel jarring and out of place. But I suggest giving the mod a chance through a couple Vaults first. "
+				""
+				"You can disable Better Combat by going into your Config folder, and finding the woldsvaults-common.toml file. Edit it and change the following : "
+				""
+				"&6weaponsShouldntBeBetter = false"
+				""
+				"Change false to true to return to Vanilla Minecraft combat."
+			]
+			dependencies: ["1C67908469019A64"]
+			hide: true
+			id: "261FB6A187AC7231"
+			tasks: [{
+				id: "046253A0F3B88D1A"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Researchers Unite"
+			icon: {
+				id: "peripherals:magnetic_card"
+				Count: 1b
+				tag: { }
+			}
+			x: 3.5d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "A Team For Knowledge"
+			description: [
+				"&5Most mods must be unlocked via the Research System. If you don't have the Research, you cannot craft and sometimes can't even use items from a locked mod."
+				""
+				"&5If you are on a server working together with others, you can form a Research Party though."
+				""
+				"You can form a Research Team to unlock mods together. The cost of the Research goes up by 50% for each person added, but overall is cheaper for everyone on the team."
+				"&6/the_vault research_team invite player_name"
+			]
+			dependencies: ["40E4E5113E933B44"]
+			hide: true
+			id: "764D1D5E68CF8085"
+			tasks: [{
+				id: "6AC4338386819ACB"
+				type: "checkmark"
+				title: "Sharing Notes"
+			}]
+		}
+		{
+			title: "Sharing the Experience"
+			icon: "minecraft:experience_bottle"
+			x: 1.25d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "Your XP? No, Comrade, OUR XP!"
+			description: [
+				"&5If you regularly run Vaults with other players, you might notice that the XP you earn between yourselves can be pretty different between party members. The Vault XP you get depends on your own actions: looting chests, killing mobs, doing tasks, etc. Some players and builds can go much faster and thus get more XP."
+				""
+				"&5You can change how XP is shared in a Vault with a new gamerule. With the gamrule, you can change it so you combine the XP and split it evenly between all Vault runners, or you can match XP to the highest OR lowest XP gained."
+				""
+				"&6/gamerule vaultPartyExpSharing amount :&r Replace amount with one of the following :"
+				"    AVERAGE (Average of combined XP)"
+				"    HIGHEST (match highest XP gained)"
+				"    LOWEST (Match lowest XP gained)"
+				"    DISABLED (No share. Default)"
+			]
+			dependencies: [
+				"281380C803D15FCC"
+				"40E4E5113E933B44"
+			]
+			hide: true
+			id: "191249A16E7A10CB"
+			tasks: [{
+				id: "5067A383B8C390BF"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Huge Crystal Energy"
+			icon: "luphieclutteredmod:luphie_analog_kitchen_scale"
+			x: 4.75d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "It Wants HOW Many Apples?!"
+			description: [
+				"&5On top of CrystalMode, another new gamerule added lets you set the speed of the Scaling of the ingredients for a crystal."
+				""
+				"&5This means, combined with Crystal mode, you can have a crystal ask for easier or harder ingredients sooner than normal, and how many of each ingredient as well."
+				""
+				"If you want the scaling to go faster or slower : "
+				""
+				"&6 /gamerule vaultCrystalRecipeScaling scale:&r Replace scale with one of the following :"
+				"    SLOW (0.5x)"
+				"    NORMAL (1x)"
+				"    FAST (2x)"
+				"    EXTREME (3x)"
+			]
+			dependencies: ["33C206FEA6772466"]
+			hide: true
+			id: "0DD1712357709353"
+			tasks: [{
+				id: "39EC5A76B2FDDC7F"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Locking Your Level"
+			icon: "thermal:lock"
+			x: 3.0d
+			y: 3.25d
+			shape: "rsquare"
+			subtitle: "Go No Further!"
+			description: [
+				"&5Previously you could set a level cap for your game or server by editing a config file. This was a good way to limit how fast some players can go, so everyone keeps to similar levels."
+				""
+				"&5Now there is a gamerule that can be set much easier than editing a config file. This will stop all players on the server from leveling beyond that point, until you change the gamerule higher."
+			]
+			dependencies: ["4CA0844372B19F19"]
+			hide: true
+			id: "6640A7AE7E21A2B7"
+			tasks: [{
+				id: "6A4213BF1B71F096"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "An Easy Menu"
+			icon: "quarryplus:status_checker"
+			x: 3.75d
+			y: -0.75d
+			shape: "gear"
+			subtitle: "All In One Spot"
+			description: [
+				"All the Vault and Gamerule commands listed in this quest and the ones below can all be accessed from a new menu in the Options Menu!"
+				""
+				"It is called Vault Settings. It gives you easy access to changing any of these settings."
+				""
+				"Many of them require you to be OPerator or admin on the server to set though!"
+			]
+			dependencies: ["4CA0844372B19F19"]
+			hide: true
+			size: 0.75d
+			id: "497A36CA870E3B59"
+			tasks: [{
+				id: "50C32CC3FD55E35B"
+				type: "checkmark"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

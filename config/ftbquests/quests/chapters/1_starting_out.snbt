@@ -1,0 +1,644 @@
+{
+	id: "72560CE1E5BE5084"
+	group: "1A78C6EA3A0ABFDA"
+	order_index: 1
+	filename: "1_starting_out"
+	title: "[1] Starting Out"
+	icon: {
+		id: "the_vault:vault_crystal"
+		Count: 1b
+		tag: {
+			CrystalData: {
+				Properties: {
+					size: 0b
+					exhausted: 0b
+					type: "capacity"
+				}
+				Version: 3b
+				Modifiers: {
+					List: [ ]
+					RandomModifiers: 1b
+					type: "default"
+					Clarity: 0b
+				}
+			}
+		}
+	}
+	subtitle: ["The Basics"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Of Skills and Preperation"
+			icon: "minecraft:shulker_box"
+			x: 3.75d
+			y: 2.75d
+			shape: "hexagon"
+			subtitle: "Getting Ready"
+			description: [
+				"&5Be sure to follow along with the built-in Vault Hunters quests. They are somewhat out of date, but do give you some nice items to help you out."
+				""
+				"&5You'll get a Shulker Box and a free skill point before your first Vault, both of which are super helpful. The Shulker will let you extract with more loot, and you'll be able to replace them pretty soon. "
+				""
+				"&5I highly recommend you use that first skill point on some way to heal yourself. You DO NOT heal naturally in the Vault. You have to use either a Healing skill, or a special Vault Potion."
+				""
+				"&5You can read over and put your skill points in the Vault Hunters GUI (default key: H). This is also where you can find the built-in quests."
+				""
+				"&5I also recommend getting yourself some Iron or Diamond Armor to start with. But that's up to you!"
+			]
+			dependencies: ["19220F4E56CB0A0F"]
+			hide: true
+			id: "78B5BCD7C6C45779"
+			tasks: [{
+				id: "4080321A77B04EDC"
+				type: "checkmark"
+				title: "Got Enough Space?"
+			}]
+			rewards: [{
+				id: "3FF61EC07B0806E4"
+				type: "item"
+				item: "minecraft:shulker_box"
+			}]
+		}
+		{
+			title: "The Altar"
+			icon: "the_vault:vault_altar"
+			x: 1.75d
+			y: 2.25d
+			shape: "hexagon"
+			subtitle: "A Sacrifice of Material"
+			description: [
+				"&5Get yourself set up with a base, whether temporary or permanent or \"No seriously I'll move eventually!\""
+				""
+				"&5You'll need room to make the Vault Portal, as well as space for a lot of crafting stations and item storage."
+				""
+				"&5Then make yourself a Vault Altar and place it down somewhere. When you do, it will bind to you, and only you can place Vault Rocks on it."
+				""
+				"&5Right Click a Vault Rock onto the Vault Altar. It'll pop up with four items and how much of each the Vault Altar wants. This is the cost of making a Vault Crystal, which will create a Portal into a Vault."
+				""
+				"&5To pay for the crystal, just throw the items near the Altar. It will pull them in if they are needed, otherwise it just ignores them. Once the price is paid, put a Button or Lever on the Altar and activate it to create the Vault Crystal."
+			]
+			dependencies: ["13443B45E662A04C"]
+			hide: true
+			id: "19220F4E56CB0A0F"
+			tasks: [
+				{
+					id: "3889F0DFD4AD19B5"
+					type: "item"
+					item: "the_vault:vault_altar"
+				}
+				{
+					id: "749233C0BD55DFBF"
+					type: "item"
+					title: "A Ready Vault Crystal"
+					item: {
+						id: "the_vault:vault_crystal"
+						Count: 1b
+						tag: {
+							CrystalData: {
+								Properties: {
+									size: 0b
+									exhausted: 0b
+									type: "capacity"
+								}
+								Version: 3b
+								Modifiers: {
+									List: [ ]
+									RandomModifiers: 1b
+									type: "default"
+									Clarity: 0b
+								}
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1B322E192E507F6E"
+				type: "item"
+				item: "woldsvaults:vaultar_box"
+			}]
+		}
+		{
+			title: "Your First Adventure"
+			icon: {
+				id: "the_vault:sword"
+				Count: 1b
+				tag: {
+					vaultGearData: [L;
+						-3866739080951473332L
+						-2997737712658537361L
+						1514722424829610008L
+						3527585455153845571L
+						2753168875257675788L
+						2987536090647L
+						557056L
+						8830586978304L
+					]
+					clientCache: {
+						"presentthe_vault:is_legendary": 0b
+						color: [B; ]
+						gearName: [B; ]
+						rollType: "Scrappy+"
+						jcolors: [I; ]
+						model: [B; ]
+						state: 0
+						hasModifierLEGENDARY: 0b
+						colors: [I;11184810]
+						rarity: 0
+					}
+				}
+			}
+			x: 7.25d
+			y: 2.75d
+			shape: "hexagon"
+			subtitle: "And a Starting Gift"
+			description: [
+				"&5Once you have your Vault Crystal and a skill, and hopefully a Shulker Box or two or something for loot, it's time to summon the Vault Portal!"
+				""
+				"&5It's just like the Nether Portal. A 4 wide, 5 tall frame of Vault Cobblestone. Or Vault Stone. Or Polished Vault Stone. You can make the portal looking nice."
+				""
+				"&5You can make a bigger portal frame as well to better fit into your base build."
+				""
+				"&5To summon the Vault Portal, Right Click that Vault Crystal onto the base of the portal frame you just made. It'll consume the crystal and open a portal into the Vault. Don't go in yet!"
+				""
+				"&5The first room you'll enter is the Portal Room, it lets you prepare, as well as wait for other players to load. "
+				""
+				"&5If you've been following the built-in Vault Hunter's quests, you should of been given your first pieces of Vault Gear!"
+			]
+			dependencies: ["4A7F919339917ED3"]
+			id: "249CEFD98AF2D014"
+			tasks: [{
+				id: "4DB4702036EF06D7"
+				type: "checkmark"
+				title: "Treasure?!"
+			}]
+		}
+		{
+			title: "To Build the Gate"
+			icon: "the_vault:bumbo_polished_vault_stone"
+			x: 0.0d
+			y: 1.5d
+			shape: "hexagon"
+			subtitle: "Preparing to Dial"
+			description: [
+				"&5Getting started in Vault Hunters takes a little bit of work, but you can get into your first Vault in an hour or two!"
+				""
+				"&5The first thing's you'll be hunting for are Chromatic Iron and Vault Stone."
+				""
+				"&5Also keep an eye out for Diamonds, since you'll need some Obsidian as well."
+				""
+				"&5You can find Chromatic Iron and Vault Stone two ways :"
+				""
+				"&51) Underground, both spawn around Y -30. Look in caves and tunnels, especially around lava."
+				""
+				"&52) Above ground, ruined Vault Portals spawn occasionally. They are a good early source for both."
+				""
+				"&5You'll also want a handful of Vault Rocks, which you need to make Vault Crystals. Here's a couple extra."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2E8B1B1D23FEAF8E"]
+			hide: true
+			id: "13443B45E662A04C"
+			tasks: [
+				{
+					id: "389605659C17384A"
+					type: "item"
+					item: "the_vault:vault_cobblestone"
+					count: 12L
+				}
+				{
+					id: "7620201A22748C69"
+					type: "item"
+					item: "the_vault:chromatic_iron_ingot"
+					count: 5L
+				}
+				{
+					id: "150577D9C4A5F6FF"
+					type: "item"
+					item: "the_vault:vault_rock"
+				}
+			]
+			rewards: [{
+				id: "43CF6A7F7FFEFCE5"
+				type: "item"
+				item: "the_vault:vault_rock"
+				count: 5
+			}]
+		}
+		{
+			title: "The Time of Your Life"
+			icon: "botania:cosmetic_clock_eye"
+			x: 9.285714285714285d
+			y: 2.3392857142857117d
+			shape: "hexagon"
+			subtitle: "Tick Tock Tick Tock"
+			description: [
+				"&5Once you cross the arch into the first Hallway, the Vault Timer will start."
+				""
+				"&5You get 25 minutes, by default, to \"Complete\" a Vault. And by Complete, you should see a thing at the top of your view that talks about Elixir."
+				""
+				"&5Every normal Vault has an \"Objective\", a goal for you to aim for to get bonus rewards. Some stuff you can only GET by completing a Vault successfully."
+				""
+				"&5Your first available objective is called Elixir Rush, or simply Elixir. Your goal is to fill up that bar with Elixir, which are these purple orbs that 'explode' out of enemies and chests."
+				""
+				"&5Each DIFFERENT type of monster, chest, and ore will have different amounts of Elixir. And it changes every time you enter a new Elixir Rush Vault."
+				""
+				"&5So a Zombie might give you a lot of Elixir, while a Skeleton gives you little, for example. "
+			]
+			dependencies: ["249CEFD98AF2D014"]
+			hide: true
+			id: "1F2875BC889232AC"
+			tasks: [{
+				id: "01B9FE8410D5956E"
+				type: "checkmark"
+				title: "Tasty Purple"
+			}]
+		}
+		{
+			title: "Loot Loot Loot Loot"
+			icon: "supplementaries:sack"
+			x: 11.0d
+			y: 1.5d
+			shape: "hexagon"
+			subtitle: "Fight! Loot! Loot! Fight!"
+			description: [
+				"&5If you haven't already, head on in. Every Vault is sectioned off into a grid of large Rooms, all connected with hallways in each cardinal direction."
+				""
+				"&5Except the Portal Room! This room only has one entrance, and you'll want to remember where it is!"
+				""
+				"&5Some Objectives can only be completed if you exit out of the Portal here. Or, if you can't complete the Objective, you'll need to get out via this Portal to not 'fail' the Vault."
+				""
+				"&5For now, failing will only damage your equipment a little bit. After Level 19 though...but we'll cover that later. "
+				""
+				"&5In the upper right corner, you'll see a small minimap, which will fill out as you enter more rooms. This is the Vault Mapper, which will help track your path through the Vault."
+				""
+				"&5Along with the map, I like to mark my path or interesting things with blocks that stand out. Take this Unobtanium, which you can duplicate by crafting it back into ingots then into blocks again. Try it!"
+			]
+			dependencies: ["1F2875BC889232AC"]
+			hide: true
+			id: "5E574242513BE343"
+			tasks: [{
+				id: "3CF0023E538CD2C5"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "050DE05717B49BFB"
+				type: "item"
+				item: "architects_palette:unobtanium_block"
+				count: 64
+			}]
+		}
+		{
+			title: "Into a New World"
+			icon: {
+				id: "the_vault:vault_crystal"
+				Count: 1b
+				tag: {
+					CrystalData: {
+						Properties: {
+							size: 0b
+							exhausted: 0b
+							type: "capacity"
+						}
+						Version: 3b
+						Modifiers: {
+							List: [ ]
+							RandomModifiers: 1b
+							type: "default"
+							Clarity: 0b
+						}
+					}
+				}
+			}
+			x: 5.5d
+			y: 2.75d
+			shape: "hexagon"
+			subtitle: "Abilities, Talents, and Expertise"
+			description: [
+				"&5So a bit of terminology explanation, since it can be a bit confusing. There are three main things to know at the start : Abilities, Talents, and Expertise."
+				""
+				"&5Abilities are your activatable skills. Throw a fireball, teleport, etc. For example, the Veinmine skill is only active while holding down the Vault Ability button when you mine something."
+				""
+				"&5Second type is Talents. These are passive buffs. More damage with certain abilities, faster mana regeneration, more damage at low health, etc."
+				""
+				"&5Third is Expertise. These are similar to Talents, but tend to be a bit more specific. Raising your Fortune (how much you get from mining ores), or giving you a discount when buying from Vendor Pedestals."
+				""
+				"&5You only get one Expertise point every 5 levels, and it is expensive to reset them, so choose carefully!"
+			]
+			dependencies: ["78B5BCD7C6C45779"]
+			id: "4A7F919339917ED3"
+			tasks: [{
+				id: "1C84C5A5A169E1FA"
+				type: "checkmark"
+				title: "Skills to Mine By"
+			}]
+		}
+		{
+			title: "Ornately Equipped"
+			icon: "the_vault:ornate_chest"
+			x: 7.25d
+			y: 4.75d
+			shape: "rsquare"
+			subtitle: "Get Power"
+			description: [
+				"&5Ornate Chests usually contain things related to Vault Gear."
+				""
+				"&5Vault Weapons, Vault Armor... But not ALL Vault Gear..."
+				""
+				"&5Also lots of your Focuses and things related to re-rolling and customizing your Vault Gear."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "7543E03FC25521E7"
+			tasks: [{
+				id: "46553F28DFD27AB0"
+				type: "observation"
+				title: "Find an Ornate Chest"
+				icon: "sophisticatedstorage:ornate_chest"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:ornate_chest"
+			}]
+			rewards: [{
+				id: "38389100A332111A"
+				type: "item"
+				item: "the_vault:wild_focus"
+				count: 4
+			}]
+		}
+		{
+			title: "A Touch of Gilding"
+			x: 9.25d
+			y: 4.75d
+			shape: "rsquare"
+			subtitle: "Sparkling Loot"
+			description: [
+				"&5Gilded Chests contain sparkling and luxurious loot."
+				""
+				"&5It used to just be Vault Diamonds and Jewels, but luxury loot now includes Vault Plushies and Vault Sacks, but only after level 50."
+				""
+				"&5These will be your main source of Jewels for Vault Tools, and many non-low level crafts require Vault Diamonds."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "4342B9F453AD1F1B"
+			tasks: [{
+				id: "581BC33235669CC2"
+				type: "observation"
+				title: "Find a Gilded Chest"
+				icon: "the_vault:gilded_chest"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:gilded_chest"
+			}]
+			rewards: [{
+				id: "350BBACFF3006E63"
+				type: "item"
+				item: "the_vault:vault_diamond"
+				count: 2
+			}]
+		}
+		{
+			title: "Full of Purple"
+			icon: "the_vault:vault_crate_elixir"
+			x: 5.5535714285714235d
+			y: 3.767857142857146d
+			shape: "circle"
+			subtitle: "Elixir Complete!"
+			description: [
+				"&5Okay, you know the goal of the first Vault Objective. Once you've filled that bar, you'll need to find a Lodestone : A purple floating crystal. They don't spawn in every room, so if you see one try to remember where it is!"
+				""
+				"&5Also, only one person can use each Lodestone! Keep that in mind if you are running with friends!"
+				""
+				"&5You get a Completion Crate for completing the objective. These Crates contain a variety of rewards depending on what Objective it's from. You'll need to place it on the ground, then Sneak + Right Click to open it up."
+				""
+				"&5Makes a neat sound when it pops open. And some items you'll need can only be found in these Completion Crates."
+			]
+			hide_dependency_lines: true
+			dependencies: ["4342B9F453AD1F1B"]
+			hide: true
+			size: 1.1d
+			id: "38F44668E26A3013"
+			tasks: [{
+				id: "194724C69659499F"
+				type: "item"
+				item: "the_vault:vault_crate_elixir"
+			}]
+			rewards: [{
+				id: "5C835B1AEFE78AF8"
+				type: "item"
+				item: "the_vault:crystal_seal_sage"
+			}]
+		}
+		{
+			title: "Pieces of the Soul"
+			icon: "the_vault:soul_shard"
+			x: 5.5d
+			y: 4.75d
+			shape: "rsquare"
+			subtitle: "Fighting Spirit"
+			description: [
+				"&5See that purple crystal looking thing you just got? Not the Elixir orb, that other thing. That's a Soul Shard."
+				""
+				"&5You get them from defeating enemies in the Vault. It's sort of... a piece of their fighting spirit. A reward for defeating them, basically."
+				""
+				"&5You'll want to collect as many of these as you can, they are very useful. You'll get a way to store them later, but for now treat it like any other piece of loot."
+				""
+				"&5Consider it Yet Another Form of Currency."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "0AF2E388B45934CC"
+			tasks: [{
+				id: "31FB3AD1EDA5E299"
+				type: "item"
+				item: "the_vault:soul_shard"
+			}]
+			rewards: [{
+				id: "1B9BF432DDF24A69"
+				type: "item"
+				item: "the_vault:soul_shard"
+				count: 16
+			}]
+		}
+		{
+			title: "A Live Chest"
+			icon: "the_vault:living_chest"
+			x: 3.75d
+			y: 4.75d
+			shape: "rsquare"
+			subtitle: "Alive? Live? Life? Squishy!"
+			description: [
+				"&5Living Chests tend to contain a variety of things related to knowledge and research. "
+				""
+				"&5Oh, and food!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "50D9EFE8ABEA9779"
+			tasks: [{
+				id: "2E58E45C6F54C018"
+				type: "observation"
+				title: "Find a Living Chest"
+				icon: "sophisticatedstorage:living_chest"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:living_chest"
+			}]
+			rewards: [{
+				id: "1DB294298D2E9806"
+				type: "item"
+				item: "the_vault:burger_patty"
+				count: 4
+			}]
+		}
+		{
+			title: "Common As Wood"
+			x: 1.75d
+			y: 4.75d
+			shape: "rsquare"
+			subtitle: "Knock On"
+			description: [
+				"&5Wooden Chests will be the most common chest you find in the Vaults."
+				""
+				"&5They'll also contain some of your most common crafting resources."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5E574242513BE343"]
+			hide: true
+			id: "232779928B96328E"
+			tasks: [{
+				id: "08D5E2871BC8ECD2"
+				type: "observation"
+				title: "Find a Wooden Chest"
+				icon: "the_vault:wooden_chest"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:wooden_chest"
+			}]
+			rewards: [{
+				id: "00AE815B43430923"
+				type: "item"
+				item: "the_vault:bounty_pearl"
+				count: 8
+			}]
+		}
+		{
+			title: "The Price is Light"
+			icon: "the_vault:vault_rock"
+			x: 1.25d
+			y: 2.8125d
+			shape: "gear"
+			subtitle: "Crystal Costs and You"
+			description: [
+				""
+				"&5Right now, Crystals will cost you dirt. Almost literally. The price starts out really cheap, with easy to get materials."
+				""
+				"&5But as you make more and more Vault Crystals, and as you level, this cost will go up, as will the variety of materials you will need."
+				""
+				"&5As well, as you Research and unlock mods (more on that later!), certain resources may be added to the possible list of items!"
+				""
+				"&5A big tip for early game : a good source for many crops and plant items is the Farming for Blockheads Market block!"
+			]
+			dependencies: ["19220F4E56CB0A0F"]
+			size: 0.75d
+			id: "032265635198E365"
+			tasks: [{
+				id: "4D3E4B7763278CC6"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Skill Levels and Skill OverLevels"
+			icon: "rftoolsutility:speedplus_module"
+			x: 4.071428571428569d
+			y: 2.160714285714292d
+			shape: "gear"
+			subtitle: "HOW High Can We Go?!"
+			description: [
+				"&5Giving a look through the Skills and Talents, you can get a good idea of the type of builds you might want to try."
+				""
+				"&5Each Skill and Talent lists what every point spent in them will give you, but many have an extra section, or levels with a glitching icon at the start."
+				""
+				"&5These are called Overlevels. And you cannot reach Overlevels with Skill Points alone. "
+				""
+				"&5While fairly rare in the early levels, you'll eventually start finding Vault Gear with +Levels to these. With these, you can reach Overlevel in Skills and Talents."
+			]
+			hide_dependency_lines: true
+			dependencies: ["78B5BCD7C6C45779"]
+			size: 0.75d
+			id: "239811C5D36CE83E"
+			tasks: [{
+				id: "2E6ECED64CDF404A"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "All The Time or None of the Time"
+			icon: {
+				id: "the_vault:trinket"
+				Count: 1b
+				tag: {
+					vaultGearData: [L;
+						-6439719864584895362L
+						7828464262077542849L
+						2398430684365457449L
+						1518721614702010373L
+						5927863009526580560L
+						2676634361676693832L
+						23103609685331493L
+						1228943359166468182L
+						5484580942976963144L
+						19760L
+					]
+					clientCache: {
+						color: [B; ]
+						gearName: [B; ]
+						rollType: [B; ]
+						jcolors: [B; ]
+						hasModifierUNUSUAL: 0b
+						model: [B; ]
+						hasModifierGREATER: 0b
+						state: 2
+						hasModifierLEGENDARY: 0b
+						hasModifierCORRUPTED: 0b
+						colors: [B; ]
+						rarity: [B; ]
+					}
+					vaultUses: 21
+				}
+			}
+			x: 9.714285714285715d
+			y: 2.8392857142857153d
+			shape: "gear"
+			subtitle: "Go Fast or Go Slow, You Choose"
+			description: [
+				"If you are worried about the timer being a factor in how you enjoy running Vaults, you can change how much base time you have in a vault!"
+				""
+				"If you do : "
+				"/gamerule vaultTimer X"
+				"You can replace the X with the number of minutes you would like the base timer to be! This changes the base time for EVERYONE on the server, keep in mind!"
+				""
+				"The default amount of time is 25. If you set it to 30, for example, it would be 30 minutes instead."
+				""
+				"If you set it to 0, however, there is NO Vault timer anymore!"
+				""
+				"Be careful though, there's a few issues with the system. Using a Pylon to add time might just insta-kill you."
+			]
+			dependencies: ["1F2875BC889232AC"]
+			hide: true
+			size: 0.75d
+			id: "2771C2A7766E883D"
+			tasks: [{
+				id: "4D76FEB2D4FD340A"
+				type: "checkmark"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
