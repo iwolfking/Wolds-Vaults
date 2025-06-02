@@ -462,14 +462,6 @@
         "MaxDamageMultiplier": 3.0,
         "StackSize": 1
       }
-    },
-    "20_percent_health": {
-      "Type": "attribute_modifier",
-      "Attributes": {
-        "Operator": "add",
-        "Value": 0.2,
-        "Name": "minecraft:generic.max_health"
-      }
     }
   },
   "WeightedModifiers": [
@@ -508,7 +500,7 @@
   ],
   "WeightedSuffixModifiers": [
     {
-      "value": "20_percent_health",
+      "value": "attribute_health",
       "weight": 5
     }
   ]
