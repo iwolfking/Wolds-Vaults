@@ -64,7 +64,15 @@
     {
       "type": "reference",
       "id": "the_vault:generic/challenge_elite_spawners"
-  }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:black_glazed_terracotta",
+      "output": {
+        "the_vault:unique_crate{LootTable:\"the_vault:village_unique_crate\"}": 1,
+        "minecraft:air": 9
+      }
+    }
   ],
   "entity_processors": [],
   "decorators": []
