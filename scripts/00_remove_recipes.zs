@@ -1184,8 +1184,6 @@ JEI.hideIngredient(<item:the_vault:vault_crate_champion>);
 JEI.hideIngredient(<item:the_vault:rokkit_launcha>);
 JEI.hideIngredient(<item:the_vault:wild_spawner>);
 JEI.hideIngredient(<item:the_vault:pandoras_box>);
-JEI.hideIngredient(<item:the_vault:etching>);
-JEI.hideIngredient(<item:the_vault:etching_fragment>);
 JEI.hideIngredient(<item:the_vault:monolith>);
 JEI.hideIngredient(<item:the_vault:unknown_item>);
 JEI.hideIngredient(<item:the_vault:vaulterite_pickaxe>);
