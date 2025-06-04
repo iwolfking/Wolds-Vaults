@@ -189,6 +189,10 @@ craftingTable.addShapeless("vault_hunters_guide", <item:patchouli:guide_book>.wi
     <item:minecraft:book>, <item:minecraft:cobblestone>
 ]);
 
+craftingTable.addShapeless("vault_lexicon", <item:patchouli:guide_book>.withTag({"patchouli:book": "patchouli:vault_lexicon" as string}), [
+    <item:minecraft:book>, <item:minecraft:wooden_sword>
+]);
+
 craftingTable.addShaped("bundle", <item:minecraft:bundle>, [
     [<item:minecraft:rabbit_hide>, <item:the_vault:magic_silk>, <item:minecraft:rabbit_hide>],
     [<item:the_vault:magic_silk>, <item:minecraft:air>, <item:the_vault:magic_silk>],

@@ -1,0 +1,26 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=gilded_chest]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 15,
+        "quark:dark_oak_bookshelf": 85
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:gray_glazed_terracotta",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 15,
+        "minecraft:air": 85
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

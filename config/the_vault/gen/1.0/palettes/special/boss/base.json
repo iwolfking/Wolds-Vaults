@@ -20,8 +20,15 @@
                 "snowball_ranged_attack"
               ],
               "ModifierTraits": {
-                "light_ranged": "blood_orb",
-                "aoe_attack": "summon_target_boogiemen"
+                "light_melee": "boogieman_melee_attack",
+                "heavy_melee": "summon_target_boogiemen",
+                "light_ranged": "snowball_ranged_attack",
+                "heavy_ranged": "fireball_ranged_attack",
+                "buff_effect": "blood_orb",
+                "aoe_attack": "sweep_attack",
+                "on-hit_effect": "life_leech_on_hit",
+                "attribute_health": "health_attribute",
+                "attribute_dmg": "dmg_attribute"
               },
               "weight": 1
             },
@@ -38,7 +45,7 @@
                 "light_ranged": "golem_hand_ranged_attack",
                 "heavy_ranged": "golem_double_hand_ranged_attack",
                 "aoe_attack": "ground_slam",
-                "buff_effect": "poison_aura",
+                "buff_effect": "heal",
                 "on-hit_effect": "poison_on_hit",
                 "attribute_health": "health_attribute",
                 "attribute_dmg": "dmg_attribute"

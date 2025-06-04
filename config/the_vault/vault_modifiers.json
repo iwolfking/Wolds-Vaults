@@ -3947,6 +3947,18 @@
           "descriptionFormatted": "+%d%% Vault Experience",
           "icon": "the_vault:gui/modifiers/experienced"
         }
+      },
+      "the_vault:ignore_modifier_extended": {
+        "properties": {
+          "addend": -0.5
+        },
+        "display": {
+          "name": "Wendarr's Challenge",
+          "color": "#d89e01",
+          "description": "Extended will not work in this vault",
+          "descriptionFormatted": "Extended will not work in this vault",
+          "icon": "the_vault:gui/modifiers/god_token_wendarr"
+        }
       }
     },
     "the_vault:modifier_type/experience_multiplier": {
@@ -4868,6 +4880,22 @@
           "name": "Door Hunter",
           "color": "#bbf333",
           "description": "Reveals all doors inside the vault!",
+          "icon": "the_vault:gui/modifiers/door_hunter"
+        }
+      },
+      "the_vault:objective_hunter": {
+        "properties": {
+          "children": {
+            "the_vault:scavenger_altar": 1,
+            "the_vault:lodestone": 1,
+            "the_vault:monolith": 1,
+            "the_vault:grid_gateway": 1
+          }
+        },
+        "display": {
+          "name": "Objective Hunter",
+          "color": "#bbf333",
+          "description": "Reveals all objective blocks inside the vault!",
           "icon": "the_vault:gui/modifiers/door_hunter"
         }
       },
