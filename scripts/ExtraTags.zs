@@ -340,7 +340,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:phoenix_dust>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:jewel_pouch>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:empowered_chaotic_focus>);
-<tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:crystal_seal_ordiniator_run>);
+<tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:crystal_seal_ordinator_run>);
 
 // Hardened Chest Loot (Skyvaults)
 <tag:items:the_vault:hardened_chest_loot>.add(<item:minecraft:bread>);
