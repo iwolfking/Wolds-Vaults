@@ -78,6 +78,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:chest_scrolls>.add(<item:the_vault:hardened_chest_scroll>);
 <tag:items:the_vault:chest_scrolls>.add(<item:the_vault:flesh_chest_scroll>);
 <tag:items:the_vault:chest_scrolls>.add(<item:the_vault:enigma_chest_scroll>);
+<tag:items:the_vault:chest_scrolls>.add(<item:the_vault:unique_crate_scroll>);
 
 // Burger Parts
 <tag:items:the_vault:burger_parts>.add(<item:the_vault:burger_bun>);
@@ -204,6 +205,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:vault_essence>);
 <tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:vault_plating>);
 <tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:mod_box>);
+<tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:augment_box>);
 <tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:inscription_piece>);
 <tag:items:the_vault:wooden_chest_loot>.add(<item:woldsvaults:vault_diamond_nugget>);
 
@@ -233,7 +235,8 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:living_chest_loot>.add(<item:the_vault:large_charm>);
 <tag:items:the_vault:living_chest_loot>.add(<item:the_vault:grand_charm>);
 <tag:items:the_vault:living_chest_loot>.add(<item:the_vault:majestic_charm>);
-<tag:items:the_vault:gilded_chest_loot>.add(<item:woldsvaults:soul_ichor>);
+<tag:items:the_vault:living_chest_loot>.add(<item:woldsvaults:soul_ichor>);
+<tag:items:the_vault:living_chest_loot>.add(<item:the_vault:vault_god_charm>);
 
 // Gilded Chest Loot
 <tag:items:the_vault:gilded_chest_loot>.add(<item:minecraft:experience_bottle>);
@@ -253,6 +256,8 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:ancient_copper_ingot>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:key_piece>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:altar_recatalyzer>);
+<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:trinket>);
+<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:jewel_pouch>);
 
 // Ornate Chest Loot
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:boots>);
@@ -267,6 +272,8 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:vault_alloy>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:wand>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:focus>);
+<tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:carbon>);
+<tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:vault_scrap>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:rang>);
 //<tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:trinket>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:repair_core>);
@@ -329,6 +336,11 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:wold_star_chunk>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:mystic_pear>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:booster_pack>);
+<tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:mystical_powder>);
+<tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:phoenix_dust>);
+<tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:jewel_pouch>);
+<tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:empowered_chaotic_focus>);
+<tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:crystal_seal_ordinator_run>);
 
 // Hardened Chest Loot (Skyvaults)
 <tag:items:the_vault:hardened_chest_loot>.add(<item:minecraft:bread>);
@@ -441,7 +453,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:champion_loot>.add(<item:the_vault:vault_gold>);
 <tag:items:the_vault:champion_loot>.add(<item:the_vault:card_deck>);
 <tag:items:the_vault:champion_loot>.add(<item:the_vault:unidentified_treasure_key>);
-//<tag:items:the_vault:champion_loot>.add(<item:the_vault:trinket>);
+<tag:items:the_vault:champion_loot>.add(<item:the_vault:trinket>);
 
 // Treasure sand (Treasure room)
 <tag:items:the_vault:treasure_sand_treasure>.add(<item:minecraft:diamond>);
