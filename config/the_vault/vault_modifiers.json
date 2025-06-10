@@ -2205,17 +2205,17 @@
       }
     },
     "the_vault:modifier_type/mob_frenzy": {
-      "the_vault:frenzy": {
+  "the_vault:frenzy": {
         "properties": {
           "damage": 3.0,
           "movementSpeed": 0.1,
-          "maxHealth": 0.25,
+          "maxHealth": 2.0,
           "doHealthReduction": true
         },
         "display": {
           "name": "Frenzy",
           "color": "#FC7C5C",
-          "description": "+300% Mob Damage, +10% Mob Speed, Mob Health reduced to 25%",
+          "description": "+300% Mob Damage, +10% Mob Speed, Mob Health reduced to 1",
           "icon": "the_vault:gui/modifiers/frenzy"
         }
       },
@@ -2223,13 +2223,13 @@
         "properties": {
           "damage": 0.0,
           "movementSpeed": 0.0,
-          "maxHealth": 0.1,
+          "maxHealth": 2.0,
           "doHealthReduction": true
         },
         "display": {
           "name": "Overpower",
           "color": "#FC7C5C",
-          "description": "Mobs spawn with 10% health!",
+          "description": "Mobs spawn with 1 heart!",
           "icon": "the_vault:gui/modifiers/overpower"
         }
       }
