@@ -96,7 +96,7 @@ onEvent("recipes", event => {
         D: '#functionalstorage:drawer'
     }).id('functionalstorage:compacting_drawer')
 
-    event.shapeless('functionalstorage:compacting_framed_drawer', ['functionalstorage:compacting_drawer', 'framedblocks:framed_cube']).id('functionalstorage:compacting_framed_drawer')
+    event.shapeless('functionalstorage:compacting_framed_drawer', ['functionalstorage:compacting_drawer', '#minecraft:planks']).id('functionalstorage:compacting_framed_drawer')
 
     event.shapeless('functionalstorage:fluid_1', ['#functionalstorage:drawer', 'minecraft:bucket']).id('functionalstorage:fluid_1')
     event.shapeless('functionalstorage:fluid_2', ['functionalstorage:fluid_1']).id('functionalstorage:fluid_2')
