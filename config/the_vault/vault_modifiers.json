@@ -2128,6 +2128,21 @@
           "icon": "the_vault:gui/modifiers/hex_poison"
         }
       },
+      "the_vault:toxic": {
+        "properties": {
+          "effect": "minecraft:poison",
+          "effectAmplifier": 3,
+          "effectDurationTicks": 200,
+          "onHitApplyChance": 0.075
+        },
+        "display": {
+          "name": "Toxic",
+          "color": "#84BF17",
+          "description": "+7.5% increased chance mobs Poison greatly on hit",
+          "descriptionFormatted": "+%d%% increased chance mobs Poison on hit",
+          "icon": "the_vault:gui/modifiers/hex_poison"
+        }
+      },
       "the_vault:stunning": {
         "properties": {
           "effect": "alexsmobs:fear",
@@ -5165,13 +5180,16 @@
           "children": {
             "the_vault:freezing": 2,
             "the_vault:poisoning": 2,
-            "the_vault:wither": 2
+            "the_vault:wither": 2,
+            "the_vault:bleeding_mobs": 2,
+            "the_vault:dark": 1,
+            "the_vault:stunning": 1
           }
         },
         "display": {
           "name": "Chemical Bath",
           "color": "#da6d5a",
-          "description": "+2 Freezing, Poisoning, and Withering Mobs",
+          "description": "+2 Freezing, Poisoning, Bleeding and Withering Mobs",
           "icon": "the_vault:gui/modifiers/armored_mobs"
         }
       },
