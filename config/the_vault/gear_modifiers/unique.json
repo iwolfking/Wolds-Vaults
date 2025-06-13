@@ -2297,6 +2297,23 @@
       }
     ],
     "PREFIX": [
+       {
+        "attribute": "the_vault:added_talent_level",
+        "group": "ModTalent",
+        "identifier": "the_vault:u_all_talents",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 75,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "levelChange": 1,
+              "abilityKey": "all_talents"
+            }
+          }
+        ]
+      },
       { 
         "attribute": "the_vault:added_ability_level",
         "group": "ModAbility",
