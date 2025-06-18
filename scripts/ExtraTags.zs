@@ -32,6 +32,11 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:extraordinary_gems>.add(<item:the_vault:extraordinary_echo_gem>);
 <tag:items:the_vault:extraordinary_gems>.add(<item:the_vault:extraordinary_wutodie>);
 
+//Missing Wutodie tags
+<tag:items:the_vault:perfectgems>.add(<item:the_vault:perfect_wutodie>);
+<tag:items:the_vault:gems>.add(<item:the_vault:gem_wutodie>);
+<tag:items:the_vault:nonplayergems>.add(<item:the_vault:gem_wutodie>);
+
 // Vault Workstations
 <tag:items:the_vault:workstations>.add(<item:the_vault:relic_pedestal>);
 <tag:items:the_vault:workstations>.add(<item:the_vault:cryo_chamber>);
