@@ -5,11 +5,8 @@ for Iskall85's Vaulthunters */
 
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.recipe.Brewing;
-import mods.initialinventory.InvHandler;
 import mods.mekanism.recipe.Combining;
 import mods.mekanism.api.ingredient.ItemStackIngredient;
-
-InvHandler.addStartingItem("one", <item:patchouli:guide_book>.withTag({"patchouli:book": "patchouli:the_vault_main_guide" as string}), 0);
 
 var dyes = {
   "white_dye": "white",
