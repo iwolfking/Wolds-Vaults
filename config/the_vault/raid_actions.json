@@ -919,23 +919,6 @@
       "count": 1,
       "spawner": "ground"
     },
-    "add_vindicator_chef": {
-      "type": "mob_spawn",
-      "name": "Vindicator Chef",
-      "entity": {
-        "id": "dungeons_mobs:vindicator_chef",
-        "Tags": [
-          "no_champion"
-        ],
-        "modifierImmunity": [
-          "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute",
-          "#the_vault:modifier_type/entity_effect"
-        ]
-      },
-      "count": 1,
-      "spawner": "ground"
-    },
     "add_iceologer": {
       "type": "mob_spawn",
       "entity": {
@@ -1051,44 +1034,11 @@
       "count": 1,
       "spawner": "ground"
     },
-    "add_mountaineer_armored": {
-      "type": "mob_spawn",
-      "entity": {
-        "id": "dungeons_mobs:armored_mountaineer",
-        "Tags": [
-          "no_champion"
-        ],
-        "modifierImmunity": [
-          "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute",
-          "#the_vault:modifier_type/entity_effect"
-        ]
-      },
-      "count": 1,
-      "spawner": "ground"
-    },
     "add_royal_guard": {
       "type": "mob_spawn",
       "name": "Royal Guard",
       "entity": {
         "id": "dungeons_mobs:royal_guard",
-        "Tags": [
-          "no_champion"
-        ],
-        "modifierImmunity": [
-          "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute",
-          "#the_vault:modifier_type/entity_effect"
-        ]
-      },
-      "count": 1,
-      "spawner": "ground"
-    },
-    "add_vindicator_armored": {
-      "type": "mob_spawn",
-      "name": "Armored Vindicator",
-      "entity": {
-        "id": "dungeons_mobs:armored_vindicator",
         "Tags": [
           "no_champion"
         ],
@@ -1205,44 +1155,6 @@
       "count": 1,
       "spawner": "ground"
     },
-    "add_armored_vindicator_champion": {
-      "type": "mob_spawn",
-      "name": "Armored Vindicator Champion",
-      "textColor": "0xFFff7575",
-      "entity": {
-        "id": "dungeons_mobs:armored_vindicator",
-        "Tags": [
-          "vault_champion",
-          "no_drops"
-        ],
-        "modifierImmunity": [
-          "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute",
-          "#the_vault:modifier_type/entity_effect"
-        ]
-      },
-      "count": 1,
-      "spawner": "ground"
-    },
-     "add_vindicator_chef_champion": {
-      "type": "mob_spawn",
-      "name": "Vindicator Champion",
-      "textColor": "0xFFff7575",
-      "entity": {
-        "id": "dungeons_mobs:vindicator_chef",
-        "Tags": [
-          "vault_champion",
-          "no_drops"
-        ],
-        "modifierImmunity": [
-          "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute",
-          "#the_vault:modifier_type/entity_effect"
-        ]
-      },
-      "count": 1,
-      "spawner": "ground"
-    },
     "add_vex_champion": {
       "type": "mob_spawn",
       "name": "Vex Champion",
@@ -1268,35 +1180,6 @@
       "textColor": "0xFFff7575",
       "entity": {
         "id": "minecraft:pillager",
-        "Tags": [
-          "vault_champion",
-          "no_drops"
-        ],
-        "modifierImmunity": [
-          "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute",
-          "#the_vault:modifier_type/entity_effect"
-        ],
-        "Modifiers": {
-          "minecraft:generic.movement_speed": {
-            "Value": -1.0,
-            "Operation": 2
-          },
-          "minecraft:generic.knockback_resistance": {
-            "Value": 1.0,
-            "Operation": 0
-          }
-        }
-      },
-      "count": 1,
-      "spawner": "elevated"
-    },
-    "add_pillager_armored_champion": {
-      "type": "mob_spawn",
-      "name": "Armored Pillager Champion",
-      "textColor": "0xFFff7575",
-      "entity": {
-        "id": "dungeons_mobs:armored_pillager",
         "Tags": [
           "vault_champion",
           "no_drops"

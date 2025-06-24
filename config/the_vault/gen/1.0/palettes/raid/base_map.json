@@ -35,8 +35,8 @@
           ],
           "waves": {
             "type": "uniform",
-            "min": 3,
-            "max": 3
+            "min": 4,
+            "max": 4
           },
           "proxies": [
             {
@@ -56,43 +56,38 @@
                   "action": [
                     {
                       "type": "group",
-                      "add_pillager_armored": 4,
-                      "weight": 6
+                      "add_pillager": 6,
+                      "weight": 5
                     },
                     {
                       "type": "group",
-                      "add_vindicator_armored": 6,
-                      "weight": 6
+                      "add_vindicator": 8,
+                      "weight": 5
                     },
                     {
                       "type": "group",
-                      "add_vindicator_chef": 4,
-                      "weight": 6
+                      "add_ravager": 3,
+                      "weight": 5
                     },
                     {
                       "type": "group",
-                      "add_ravager": 2,
-                      "weight": 6
+                      "add_healer": 3,
+                      "weight": 5
                     },
                     {
                       "type": "group",
-                      "add_healer": 2,
-                      "weight": 6
+                      "add_evoker": 3,
+                      "weight": 5
                     },
                     {
                       "type": "group",
-                      "add_evoker": 2,
-                      "weight": 6
-                    },
-                    {
-                      "type": "group",
-                      "add_vex": 4,
-                      "weight": 6
+                      "add_vex": 5,
+                      "weight": 5
                     },
                     {
                       "type": "group",
                       "add_mage": 4,
-                      "weight": 6
+                      "weight": 5
                     },
                     {
                       "type": "group",
@@ -111,12 +106,7 @@
                     },
                     {
                       "type": "group",
-                      "add_armored_vindicator_champion": 1,
-                      "weight": 3
-                    },
-                     {
-                      "type": "group",
-                      "add_vindicator_chef_champion": 1,
+                      "add_vindicator_champion": 1,
                       "weight": 3
                     },
                     {
@@ -126,7 +116,7 @@
                     },
                     {
                       "type": "group",
-                      "add_pillager_armored_champion": 1,
+                      "add_pillager_champion": 1,
                       "weight": 3
                     },
                     {
@@ -169,11 +159,11 @@
           "actions": [
             {
               "type": "group",
-              "add_vindicator_armored": 6
+              "add_vindicator": 8
             },
             {
               "type": "group",
-              "add_pillager_armored": 2
+              "add_pillager": 4
             }
           ],
           "weight": 1
