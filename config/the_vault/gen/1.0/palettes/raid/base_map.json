@@ -1,0 +1,186 @@
+{
+  "tile_processors": [
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base"
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/challenge_elite_spawners"
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=objective]",
+      "output": [
+        {
+          "block": "the_vault:raid_controller",
+          "renderer": {
+            "coreColor": "0xCC0000",
+            "glyphColor": "0xCC0000",
+            "particleColor": "0xCC0000"
+          },
+          "zone": {
+            "min": [-23, -20, -23],
+            "max": [23, 27, 23]
+          },
+          "spawners": [
+            {
+              "pos": [0, -20, 0],
+              "groups": ["ground"]
+            },
+            {
+              "pos": [0, -19, 0],
+              "groups": ["elevated"]
+            }
+          ],
+          "waves": {
+            "type": "uniform",
+            "min": 3,
+            "max": 3
+          },
+          "proxies": [
+            {
+              "pos": [[3, 0, 0], [-3, 0, 0], [0, 0, 3]],
+              "entries": [
+                {
+                  "action": "positive_base_map",
+                  "probability": 1.0,
+                  "count": 1
+                },
+                {
+                  "action": "negative_map",
+                  "probability": 1.0,
+                  "count": 1
+                },
+                {
+                  "action": [
+                    {
+                      "type": "group",
+                      "add_pillager_armored": 4,
+                      "weight": 6
+                    },
+                    {
+                      "type": "group",
+                      "add_vindicator_armored": 6,
+                      "weight": 6
+                    },
+                    {
+                      "type": "group",
+                      "add_vindicator_chef": 4,
+                      "weight": 6
+                    },
+                    {
+                      "type": "group",
+                      "add_ravager": 2,
+                      "weight": 6
+                    },
+                    {
+                      "type": "group",
+                      "add_healer": 2,
+                      "weight": 6
+                    },
+                    {
+                      "type": "group",
+                      "add_evoker": 2,
+                      "weight": 6
+                    },
+                    {
+                      "type": "group",
+                      "add_vex": 4,
+                      "weight": 6
+                    },
+                    {
+                      "type": "group",
+                      "add_mage": 4,
+                      "weight": 6
+                    },
+                    {
+                      "type": "group",
+                      "add_illusioner": 2,
+                      "weight": 4
+                    },
+                    {
+                      "type": "group",
+                      "add_royal_guard": 2,
+                      "weight": 4
+                    },
+                     {
+                      "type": "group",
+                      "add_enchanter": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_armored_vindicator_champion": 1,
+                      "weight": 3
+                    },
+                     {
+                      "type": "group",
+                      "add_vindicator_chef_champion": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_vex_champion": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_pillager_armored_champion": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_ravager_champion": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_royal_guard_champion": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_enchanter_champion": 1,
+                      "weight": 2
+                    },
+                    {
+                      "type": "group",
+                      "add_illusioner_champion": 1,
+                      "weight": 2
+                    }
+                  ],
+                  "probability": 1.0,
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "pos": [0, 0, -3],
+              "entries": [
+                {
+                  "action": "forfeit",
+                  "probability": 1.0,
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": "group",
+              "add_vindicator_armored": 6
+            },
+            {
+              "type": "group",
+              "add_pillager_armored": 2
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

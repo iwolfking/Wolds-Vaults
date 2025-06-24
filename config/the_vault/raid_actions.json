@@ -3,11 +3,32 @@
     "forfeit": {
       "type": "forfeit"
     },
+    "mob_armor": {
+      "type": "mob_vanilla_attribute",
+      "attribute": "minecraft:generic.armor",
+      "operation": "ADDITION",
+      "amount": 1.0,
+      "textColor": "0xFFF32525"
+    },
+    "big_mob_armor": {
+      "type": "mob_vanilla_attribute",
+      "attribute": "minecraft:generic.armor",
+      "operation": "ADDITION",
+      "amount": 2.0,
+      "textColor": "0xFFF32525"
+    },
     "mob_damage": {
       "type": "mob_vanilla_attribute",
       "attribute": "minecraft:generic.attack_damage",
       "operation": "MULTIPLY_BASE",
       "amount": 0.25,
+      "textColor": "0xFFF32525"
+    },
+    "big_mob_damage": {
+      "type": "mob_vanilla_attribute",
+      "attribute": "minecraft:generic.attack_damage",
+      "operation": "MULTIPLY_BASE",
+      "amount": 0.5,
       "textColor": "0xFFF32525"
     },
     "mob_health": {
@@ -17,6 +38,13 @@
       "amount": 0.25,
       "textColor": "0xFFF32525"
     },
+    "big_mob_health": {
+      "type": "mob_vanilla_attribute",
+      "attribute": "minecraft:generic.max_health",
+      "operation": "MULTIPLY_BASE",
+      "amount": 0.5,
+      "textColor": "0xFFF32525"
+    },
     "mob_movement_speed": {
       "type": "mob_vanilla_attribute",
       "attribute": "minecraft:generic.movement_speed",
@@ -24,11 +52,25 @@
       "amount": 0.05,
       "textColor": "0xFFF32525"
     },
+    "big_mob_movement_speed": {
+      "type": "mob_vanilla_attribute",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "MULTIPLY_BASE",
+      "amount": 0.1,
+      "textColor": "0xFFF32525"
+    },
     "mob_attack_speed": {
       "type": "mob_vanilla_attribute",
       "attribute": "minecraft:generic.attack_speed",
       "operation": "MULTIPLY_BASE",
       "amount": 0.25,
+      "textColor": "0xFFF32525"
+    },
+    "big_mob_attack_speed": {
+      "type": "mob_vanilla_attribute",
+      "attribute": "minecraft:generic.attack_speed",
+      "operation": "MULTIPLY_BASE",
+      "amount": 0.5,
       "textColor": "0xFFF32525"
     },
     "diamond": {
@@ -835,10 +877,218 @@
       "count": 1,
       "spawner": "elevated"
     },
+    "add_pillager_armored": {
+      "type": "mob_spawn",
+      "name": "Armored Pillager",
+      "entity": {
+        "id": "dungeons_mobs:armored_pillager",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute"
+        ],
+        "Modifiers": {
+          "minecraft:generic.movement_speed": {
+            "Value": -1.0,
+            "Operation": 2
+          },
+          "minecraft:generic.knockback_resistance": {
+            "Value": 1.0,
+            "Operation": 0
+          }
+        }
+      },
+      "count": 1,
+      "spawner": "elevated"
+    },
     "add_vindicator": {
       "type": "mob_spawn",
       "entity": {
         "id": "minecraft:vindicator",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+    "add_vindicator_chef": {
+      "type": "mob_spawn",
+      "name": "Vindicator Chef",
+      "entity": {
+        "id": "dungeons_mobs:vindicator_chef",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+    "add_iceologer": {
+      "type": "mob_spawn",
+      "entity": {
+        "id": "dungeons_mobs:iceologer",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+    "add_enchanter": {
+      "type": "mob_spawn",
+      "name": "Enchanter",
+      "entity": {
+        "id": "enchantwithmob:enchanter",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "elevated"
+    },
+    "add_mage": {
+      "type": "mob_spawn",
+      "name": "Mage",
+      "entity": {
+        "id": "dungeons_mobs:mage",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "elevated"
+    },
+    "add_illusioner": {
+      "type": "mob_spawn",
+      "name": "Illusioner",
+      "entity": {
+        "id": "dungeons_mobs:illusioner",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+    "add_geomancer": {
+      "type": "mob_spawn",
+      "entity": {
+        "id": "dungeons_mobs:geomancer",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+    "add_windcaller": {
+      "type": "mob_spawn",
+      "entity": {
+        "id": "dungeons_mobs:windcaller",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+    "add_mountaineer": {
+      "type": "mob_spawn",
+      "entity": {
+        "id": "dungeons_mobs:mountaineer",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+    "add_mountaineer_armored": {
+      "type": "mob_spawn",
+      "entity": {
+        "id": "dungeons_mobs:armored_mountaineer",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+    "add_royal_guard": {
+      "type": "mob_spawn",
+      "name": "Royal Guard",
+      "entity": {
+        "id": "dungeons_mobs:royal_guard",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+    "add_vindicator_armored": {
+      "type": "mob_spawn",
+      "name": "Armored Vindicator",
+      "entity": {
+        "id": "dungeons_mobs:armored_vindicator",
         "Tags": [
           "no_champion"
         ],
@@ -955,6 +1205,44 @@
       "count": 1,
       "spawner": "ground"
     },
+    "add_armored_vindicator_champion": {
+      "type": "mob_spawn",
+      "name": "Armored Vindicator Champion",
+      "textColor": "0xFFff7575",
+      "entity": {
+        "id": "dungeons_mobs:armored_vindicator",
+        "Tags": [
+          "vault_champion",
+          "no_drops"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+     "add_vindicator_chef_champion": {
+      "type": "mob_spawn",
+      "name": "Vindicator Champion",
+      "textColor": "0xFFff7575",
+      "entity": {
+        "id": "dungeons_mobs:vindicator_chef",
+        "Tags": [
+          "vault_champion",
+          "no_drops"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
     "add_vex_champion": {
       "type": "mob_spawn",
       "name": "Vex Champion",
@@ -1003,6 +1291,35 @@
       "count": 1,
       "spawner": "elevated"
     },
+    "add_pillager_armored_champion": {
+      "type": "mob_spawn",
+      "name": "Armored Pillager Champion",
+      "textColor": "0xFFff7575",
+      "entity": {
+        "id": "dungeons_mobs:armored_pillager",
+        "Tags": [
+          "vault_champion",
+          "no_drops"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ],
+        "Modifiers": {
+          "minecraft:generic.movement_speed": {
+            "Value": -1.0,
+            "Operation": 2
+          },
+          "minecraft:generic.knockback_resistance": {
+            "Value": 1.0,
+            "Operation": 0
+          }
+        }
+      },
+      "count": 1,
+      "spawner": "elevated"
+    },
     "add_ravager_champion": {
       "type": "mob_spawn",
       "name": "Ravager Champion",
@@ -1022,7 +1339,72 @@
       "count": 1,
       "spawner": "ground"
     },
+    "add_illusioner_champion": {
+      "type": "mob_spawn",
+      "name": "Illusioner Champion",
+      "textColor": "0xFFff7575",
+      "entity": {
+        "id": "dungeons_mobs:illusioner",
+        "Tags": [
+          "vault_champion",
+          "no_drops"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+    "add_enchanter_champion": {
+      "type": "mob_spawn",
+      "name": "Enchanter Champion",
+      "textColor": "0xFFff7575",
+      "entity": {
+        "id": "enchantwithmob:enchanter",
+        "Tags": [
+          "vault_champion",
+          "no_drops"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+    "add_royal_guard_champion": {
+      "type": "mob_spawn",
+      "name": "Royal Guard Champion",
+      "textColor": "0xFFff7575",
+      "entity": {
+        "id": "dungeons_mobs:royal_guard",
+        "Tags": [
+          "vault_champion",
+          "no_drops"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
     "negative": [
+      {
+        "value": "mob_attack_speed",
+        "weight": 4
+      },
+      {
+        "value": "mob_armor",
+        "weight": 4
+      },
       {
         "value": "mob_damage",
         "weight": 4
@@ -1034,6 +1416,48 @@
       {
         "value": "mob_movement_speed",
         "weight": 4
+      }
+    ],
+    "negative_map": [
+      {
+        "value": "mob_attack_speed",
+        "weight": 4
+      },
+      {
+        "value": "big_mob_attack_speed",
+        "weight": 2
+      },
+      {
+        "value": "mob_armor",
+        "weight": 4
+      },
+      {
+        "value": "big_mob_armor",
+        "weight": 2
+      },
+      {
+        "value": "mob_damage",
+        "weight": 4
+      },
+      {
+        "value": "big_mob_damage",
+        "weight": 2
+      },
+      {
+        "value": "mob_health",
+        "weight": 4
+      },
+      {
+        "value": "big_mob_health",
+        "weight": 2
+      },
+      {
+        "value": "mob_movement_speed",
+        "weight": 4
+      },
+      {
+        "value": "big_mob_movement_speed",
+        "weight": 2
       }
     ],
     "positive": [
@@ -1245,6 +1669,68 @@
       },
       {
         "value": "coin_pile",
+        "weight": 120
+      },
+      {
+        "value": "coin_pile_big",
+        "weight": 120
+      },
+      {
+        "value": "rare_helmet",
+        "weight": 40
+      },
+      {
+        "value": "rare_chestplate",
+        "weight": 40
+      },
+      {
+        "value": "rare_leggings",
+        "weight": 40
+      },
+      {
+        "value": "rare_boots",
+        "weight": 40
+      },
+      {
+        "value": "rare_sword",
+        "weight": 40
+      },
+      {
+        "value": "rare_axe",
+        "weight": 40
+      },
+      {
+        "value": "rare_shield",
+        "weight": 40
+      },
+      {
+        "value": "rare_focus",
+        "weight": 40
+      },
+      {
+        "value": "rare_wand",
+        "weight": 40
+      },
+      {
+        "value": "raid_rock",
+        "weight": 90
+      }
+    ],
+    "positive_base_map": [
+      {
+        "value": "gilded_chest_big",
+        "weight": 120
+      },
+      {
+        "value": "ornate_chest_big",
+        "weight": 120
+      },
+      {
+        "value": "living_chest_big",
+        "weight": 120
+      },
+      {
+        "value": "wooden_chest_big",
         "weight": 120
       },
       {
