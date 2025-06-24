@@ -1,0 +1,188 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "the_vault:raid_controller",
+      "output": [
+        {
+          "block": "the_vault:raid_controller",
+          "proxies": [
+            {
+              "pos": [[3, 0, 0], [-3, 0, 0], [0, 0, 3]],
+              "entries": [
+                {
+                  "action": "positive_base_map",
+                  "probability": 1.0,
+                  "count": 1
+                },
+                {
+                  "action": "negative_map",
+                  "probability": 1.0,
+                  "count": 1
+                },
+                {
+                  "action": [
+                   {
+                      "type": "group",
+                      "add_pillager": 6,
+                      "weight": 5
+                    },
+                    {
+                      "type": "group",
+                      "add_vindicator": 8,
+                      "weight": 5
+                    },
+                    {
+                      "type": "group",
+                      "add_inquisitor": 6,
+                      "weight": 4
+                    },
+                    {
+                      "type": "group",
+                      "add_ravager": 3,
+                      "weight": 5
+                    },
+                    {
+                      "type": "group",
+                      "add_healer": 3,
+                      "weight": 5
+                    },
+                    {
+                      "type": "group",
+                      "add_evoker": 3,
+                      "weight": 5
+                    },
+                    {
+                      "type": "group",
+                      "add_vex": 5,
+                      "weight": 5
+                    },
+                    {
+                      "type": "group",
+                      "add_mage": 4,
+                      "weight": 5
+                    },
+                    {
+                      "type": "group",
+                      "add_illusioner": 2,
+                      "weight": 4
+                    },
+                    {
+                      "type": "group",
+                      "add_royal_guard": 2,
+                      "weight": 4
+                    },
+                     {
+                      "type": "group",
+                      "add_enchanter": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_incinerator": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_geomancer": 2,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_windcaller": 2,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_mountaineer": 3,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_iceologer": 4,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_vindicator_champion": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_vex_champion": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_pillager_champion": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_ravager_champion": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_royal_guard_champion": 1,
+                      "weight": 3
+                    },
+                    {
+                      "type": "group",
+                      "add_enchanter_champion": 1,
+                      "weight": 2
+                    },
+                    {
+                      "type": "group",
+                      "add_illusioner_champion": 1,
+                      "weight": 2
+                    }
+                  ],
+                  "probability": 1.0,
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "pos": [0, 0, -3],
+              "entries": [
+                {
+                  "action": {
+                    "type": "forfeit",
+                    "loot": false
+                  },
+                  "probability": 1.0,
+                  "maxWave": 10,
+                  "count": 1
+                },
+                {
+                  "action": {
+                    "type": "forfeit",
+                    "loot": true
+                  },
+                  "probability": 1.0,
+                  "minWave": 11,
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": "group",
+              "add_vindicator": 8
+            },
+            {
+              "type": "group",
+              "add_pillager": 4
+            }
+          ],
+          "waves": -1,
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

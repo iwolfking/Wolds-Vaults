@@ -586,6 +586,42 @@
           }
         }
       }
+    },
+    {
+      "input": "woldsvaults:crystal_seal_raid_rock_infinite_hard",
+      "output": {
+        "id": "the_vault:vault_crystal",
+        "nbt": {
+          "CrystalData": {
+            "Objective": {
+              "type": "raid"
+            },
+            "Theme": {
+              "type": "pool",
+              "id": "the_vault:infinite_raid_hard"
+            },
+            "Layout": {
+              "type": "raid"
+            },
+            "Properties": {
+              "type": "capacity",
+              "exhausted": 1,
+              "volume": 0
+            },
+            "Modifiers": {
+              "type": "default",
+              "RandomModifiers": 0,
+              "List": [
+                {
+                  "id": "the_vault:raid",
+                  "size": 1
+                }
+              ]
+            },
+            "Version": 3
+          }
+        }
+      }
     }
   ]
 }
