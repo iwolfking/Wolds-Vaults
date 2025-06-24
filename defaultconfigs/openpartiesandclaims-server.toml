@@ -122,7 +122,7 @@
 			#Prefix "anything$" is the same as no prefix but allows interaction with any item held in the hand. Please make sure that no item does anything bad when used at a block with such an exception.
 			#Add the same block/tag multiple times to use multiple prefixes. Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
 			#For example ["minecraft:lever", "minecraft:*_button", "break$minecraft:*_button", "break$minecraft:(*_|)sand"]
-			forcedBlockProtectionExceptionList = ["minecraft:crafting_table", "anything$waystones:waystone", "anything$waystones:sharestone"]
+			forcedBlockProtectionExceptionList = ["minecraft:crafting_table", "anything$waystones:(*_|)waystone", "anything$waystones:(*_|)sharestone"]
 			#Custom groups of blocks that a player/claim config should be able to make protection exceptions for. Each group can consist of multiple blocks and block tags.
 			#A group without a prefix creates a player config option for the right-click interaction with the group blocks. The format for a block group is <group ID>{<blocks/tags/wildcards separated by ,>}.
 			#The group ID should consist of at most 32 characters that are letters A-Z, numbers 0-9 or the - and _ characters, e.g. "ePiC-DIRT35{minecraft:dirt, minecraft:grass_block, minecraft:(oak|spruce)_*}".
