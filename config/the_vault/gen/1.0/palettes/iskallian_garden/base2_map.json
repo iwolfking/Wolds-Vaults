@@ -1,0 +1,21 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "tropicraft:fruit_leaves",
+      "output": {
+        "woldsvaults:iskallian_leaves{LootTable:\"the_vault:iskallian_leaves\"}": 4,
+        "quark:red_blossom_leaves": 1,
+        "quark:blue_blossom_leaves": 1,
+        "quark:yellow_blossom_leaves": 1,
+        "quark:lavender_blossom_leaves": 1
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

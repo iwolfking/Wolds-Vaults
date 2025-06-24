@@ -1,0 +1,24 @@
+{
+    "tile_processors": [
+        {
+            "type": "reference",
+            "id": "the_vault:mush_room/base_map"
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cave_vines_plant",
+            "output": {
+                "quark:pink_blossom_leaves[persistent=true]": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cave_vines",
+            "output": {
+                "quark:pink_blossom_leaves[persistent=true]": 1
+            }
+        }
+    ],
+    "entity_processors": [],
+    "decorators": []
+}

@@ -1,0 +1,62 @@
+{
+  "tile_processors": [
+    {
+      "type": "reference",
+      "id": "the_vault:crystal_caves/base_map"
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:white_wool",
+      "output": {
+        "auxiliaryblocks:purple_gelatin": 1,
+        "auxiliaryblocks:magenta_frameless_glass": 1,
+        "auxiliaryblocks:purple_frameless_glass": 1,
+        "auxiliaryblocks:indigo_crystal": 1,
+        "auxiliaryblocks:lime_gelatin": 1,
+        "auxiliaryblocks:green_crystal": 1,
+        "auxiliaryblocks:lime_frameless_glass": 1,
+        "auxiliaryblocks:pink_frameless_glass": 1,
+        "auxiliaryblocks:violet_crystal": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:white_stained_glass_pane",
+      "output": {
+        "minecraft:purple_stained_glass_pane": 1,
+        "minecraft:blue_stained_glass_pane": 1,
+        "minecraft:lime_stained_glass_pane": 1,
+        "minecraft:green_stained_glass_pane": 1,
+        "minecraft:pink_stained_glass_pane": 1,
+        "minecraft:magenta_stained_glass_pane": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:black_wool",
+      "output": {
+        "auxiliaryblocks:yellow_gelatin": 1,
+        "auxiliaryblocks:pink_frameless_glass": 1,
+        "auxiliaryblocks:orange_frameless_glass": 1,
+        "auxiliaryblocks:orange_crystal": 1,
+        "auxiliaryblocks:light_gray_frameless_glass ": 1,
+        "auxiliaryblocks:lime_gelatin": 1,
+        "auxiliaryblocks:green_crystal": 1,
+        "auxiliaryblocks:lime_frameless_glass": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:black_stained_glass_pane",
+      "output": {
+        "minecraft:yellow_stained_glass_pane": 1,
+        "minecraft:orange_stained_glass_pane": 1,
+        "minecraft:lime_stained_glass_pane": 1,
+        "minecraft:green_stained_glass_pane": 1
+      }
+    }
+    
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

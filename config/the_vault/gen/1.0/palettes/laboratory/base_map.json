@@ -1,0 +1,117 @@
+{
+    "tile_processors": [
+        {
+            "type": "weighted_target",
+            "target": "the_vault:animatrix_block",
+            "output": {
+                "the_vault:animatrix_block{inventory:{Items:[{Count:1b,Slot:0,id:\"the_vault:elite_drowned_egg\"}],Size:1},displayOnly:1b}": 1,
+                "the_vault:animatrix_block{inventory:{Items:[{Count:1b,Slot:0,id:\"the_vault:elite_husk_egg\"}],Size:1},displayOnly:1b}": 1,
+                "the_vault:animatrix_block{inventory:{Items:[{Count:1b,Slot:0,id:\"the_vault:elite_skeleton_egg\"}],Size:1},displayOnly:1b}": 1,
+                "the_vault:animatrix_block{inventory:{Items:[{Count:1b,Slot:0,id:\"the_vault:elite_witch_egg\"}],Size:1},displayOnly:1b}": 1,
+                "the_vault:animatrix_block{inventory:{Items:[{Count:1b,Slot:0,id:\"the_vault:elite_zombie_egg\"}],Size:1},displayOnly:1b}": 1,
+                "the_vault:animatrix_block{inventory:{Items:[{Count:1b,Slot:0,id:\"the_vault:elite_enderman_egg\"}],Size:1},displayOnly:1b}": 1,                "the_vault:animatrix_block{inventory:{Items:[{Count:1b,Slot:0,id:\"the_vault:elite_stray_egg\"}],Size:1},displayOnly:1b}": 1,
+                "the_vault:animatrix_block{inventory:{Items:[{Count:1b,Slot:0,id:\"the_vault:elite_wither_skeleton_egg\"}],Size:1},displayOnly:1b}": 1,
+                "the_vault:animatrix_block": 1
+            }
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/room_base_map"
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/challenge_elite_spawners"
+        },
+        {
+            "type": "weighted_target",
+            "target": "the_vault:placeholder[type=objective]",
+            "output": [
+                {
+                    "block": "the_vault:elite_controller",
+                    "renderer": {
+                        "coreColor": "0x4266F5",
+                        "glyphColor": "0x4266F5",
+                        "particleColor": "0x4266F5"
+                    },
+                    "zone": {
+                        "min": [-23, -20, -23],
+                        "max": [23, 27, 23]
+                    },
+                    "proxies": [
+                        {
+                            "pos": [[3, 0, 0], [-3, 0, 0]],
+                            "entries": [
+                                {
+                                    "action": "positive_lab",
+                                    "probability": 1.0,
+                                    "count": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "elite": [
+                        {
+                            "id": "the_vault:elite_drowned",
+                            "weight": 1,
+                            "modifierImmunity": [
+                                "#the_vault:modifier_type/mob_frenzy",
+                                "#the_vault:modifier_type/mob_attribute"
+                                ]
+                        },
+                        {
+                            "id": "the_vault:elite_husk",
+                            "weight": 1,
+                            "modifierImmunity": [
+                                "#the_vault:modifier_type/mob_frenzy",
+                                "#the_vault:modifier_type/mob_attribute"
+                                ]
+                        },
+                        {
+                            "id": "the_vault:elite_skeleton",
+                            "weight": 1,
+                            "modifierImmunity": [
+                                "#the_vault:modifier_type/mob_frenzy",
+                                "#the_vault:modifier_type/mob_attribute"
+                                ]
+                        },
+                        {
+                            "id": "the_vault:elite_stray",
+                            "weight": 1,
+                            "modifierImmunity": [
+                                "#the_vault:modifier_type/mob_frenzy",
+                                "#the_vault:modifier_type/mob_attribute"
+                                ]
+                        },
+                        {
+                            "id": "the_vault:elite_witch",
+                            "weight": 1,
+                            "modifierImmunity": [
+                                "#the_vault:modifier_type/mob_frenzy",
+                                "#the_vault:modifier_type/mob_attribute"
+                                ]
+                        },
+                        {
+                            "id": "the_vault:elite_wither_skeleton",
+                            "weight": 1,
+                            "modifierImmunity": [
+                                "#the_vault:modifier_type/mob_frenzy",
+                                "#the_vault:modifier_type/mob_attribute"
+                                ]
+                        },
+                        {
+                            "id": "the_vault:elite_zombie",
+                            "weight": 1,
+                            "modifierImmunity": [
+                                "#the_vault:modifier_type/mob_frenzy",
+                                "#the_vault:modifier_type/mob_attribute"
+                                ]
+                        }
+                    ],
+                    "weight": 1
+                }
+            ]
+        }
+    ],
+    "entity_processors": [],
+    "decorators": []
+}

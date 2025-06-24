@@ -1,0 +1,48 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"gilded_chest\"]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 4,
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"coin_stacks\"]",
+      "output": {
+        "the_vault:placeholder[type=coin_stacks]": 3,
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "chipped:gold_block_12",
+      "output": {
+        "the_vault:golden_tooth[generated=true]": 4,
+        "minecraft:gold_block": 16,
+        "minecraft:diamond_block": 12,
+        "minecraft:netherite_block": 8,
+        "minecraft:emerald_block": 12
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:iron_block",
+      "output": {
+        "minecraft:gold_block": 16,
+        "minecraft:diamond_block": 6,
+        "minecraft:netherite_block": 1,
+        "minecraft:emerald_block": 6,
+        "minecraft:iron_block": 16
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base_map"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

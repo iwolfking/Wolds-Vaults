@@ -1,0 +1,75 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"gilded_chest\"]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 7,
+        "minecraft:air": 3
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"gilded_chest_waterlogged\"]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 7,
+        "minecraft:air": 3
+      }
+    },
+     {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"gilded_chest_guaranteed\"]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 5
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=coin_stacks_waterlogged]",
+      "output": {
+        "the_vault:placeholder[type=coin_stacks_waterlogged]": 8,
+        "minecraft:water": 2
+      }
+    },
+        {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=coin_stacks_guaranteed]",
+      "output": {
+        "the_vault:placeholder[type=coin_stacks]": 5
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"coin_stacks\"]",
+      "output": {
+        "the_vault:placeholder[type=coin_stacks]": 8,
+        "minecraft:air": 2
+      }
+    },
+    {
+      "type": "placeholder",
+      "target": "ORE",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 0.8,
+          "success": {
+            "the_vault:ore_wutodie[type=stone,generated=true]": 19,
+            "the_vault:ore_benitoite[type=stone,generated=true]": 30,
+            "the_vault:ore_larimar[type=stone,generated=true]": 50,
+            "the_vault:ore_echo[type=stone,generated=true]": 1
+          },
+          "failure": {
+            "minecraft:stone": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base_map"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

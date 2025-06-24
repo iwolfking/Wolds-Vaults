@@ -1,0 +1,29 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "thermal:black_rockwool",
+      "output": {
+        "luphieclutteredmod:blue_sand_seal_plush": 8,
+        "luphieclutteredmod:red_sand_seal_plush": 6,
+        "luphieclutteredmod:green_sand_seal_plush": 2,
+        "luphieclutteredmod:scrambled_rubiks_cube": 1,
+        "luphieclutteredmod:scrambled_pastel_rubiks_cube": 4
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=wooden_chest]",
+      "output": {
+        "the_vault:placeholder[type=wooden_chest]": 8,
+        "minecraft:air": 2
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base_map"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

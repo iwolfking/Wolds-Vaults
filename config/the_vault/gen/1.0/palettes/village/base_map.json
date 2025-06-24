@@ -1,0 +1,93 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=wooden_chest]",
+      "output": {
+        "the_vault:placeholder[type=wooden_chest]": 1,
+        "minecraft:air": 2
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=gilded_chest]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 5,
+        "minecraft:air": 5
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=ornate_chest]",
+      "output": {
+        "the_vault:placeholder[type=ornate_chest]": 36,
+        "minecraft:air": 62
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=living_chest]",
+      "output": {
+        "the_vault:placeholder[type=living_chest]": 25,
+        "minecraft:air": 75
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:stone_bricks",
+      "output": {
+        "minecraft:stone_bricks": 75,
+        "minecraft:cracked_stone_bricks": 15,
+        "minecraft:mossy_stone_bricks": 15,
+        "minecraft:infested_stone_bricks": 1,
+        "minecraft:infested_cracked_stone_bricks": 1,
+        "minecraft:infested_mossy_stone_bricks": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:brown_glazed_terracotta",
+      "output": {
+        "minecraft:infested_stone_bricks": 1,
+        "minecraft:infested_cracked_stone_bricks": 1,
+        "minecraft:infested_mossy_stone_bricks": 1
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:village/silverfish_spawner_settings"
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base_map"
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/challenge_elite_spawners"
+    },
+    {
+        "type": "template_stack_tile",
+        "target": "@the_vault:vault_lootables",
+        "stack": [
+            "STRUCTURE_ROOM_VILLAGE"
+        ]
+    },
+    {
+        "type": "template_stack_spawner",
+        "target": "ispawner:spawner",
+        "stack": [
+            "STRUCTURE_ROOM_VILLAGE"
+        ]
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:black_glazed_terracotta",
+      "output": {
+        "the_vault:unique_crate{LootTable:\"the_vault:village_unique_crate\"}": 1,
+        "minecraft:air": 9
+      }
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

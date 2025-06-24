@@ -1,0 +1,148 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=\"objective\"]",
+      "output": {
+        "the_vault:block_gem_larimar": 1,
+        "the_vault:block_gem_benitoite": 1,
+        "the_vault:block_gem_wutodie": 1
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/comet_pedestal_placeholder"
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/dungeon_door_placeholder_comet"
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:mycelium",
+      "output": {
+        "the_vault:cube_block[color=blue]{LootTable:\"the_vault:cube_block_lvl0\"}": 1,
+        "the_vault:cube_block[color=yellow]{LootTable:\"the_vault:cube_block_lvl0\"}": 1,
+        "the_vault:cube_block[color=green]{LootTable:\"the_vault:cube_block_lvl0\"}": 1,
+        "the_vault:cube_block[color=red]{LootTable:\"the_vault:cube_block_lvl0\"}": 1
+      }
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "the_vault:treasure_sand",
+          "output": {
+            "the_vault:treasure_sand{LootTable:\"the_vault:treasure_sand_lvl0\"}": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "placeholder",
+      "target": "DUNGEON_DISCOVERABLE",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 0.4,
+          "success": {
+            "the_vault:modifier_discovery": 0,
+            "the_vault:enhancement_altar": 0,
+            "the_vault:alchemy_archive": 5
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 50,
+          "probability": 0.5,
+          "success": {
+            "the_vault:modifier_discovery": 8,
+            "the_vault:enhancement_altar": 0,
+            "the_vault:alchemy_archive": 2
+          },
+          "failure": {
+            "woldsvaults:dungeon_pedestal{Generated:0b,LootTable:\"the_vault:dungeon_pedestal_lvl50\"}": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "the_vault:enhancement_altar",
+          "output": {
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:15,max:25},filter:[\"WOODEN\",\"LIVING\",\"GILDED\",\"ORNATE\"],display:\"{'text':'Loot %s Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:8,max:14},filter:[\"WOODEN\"],display:\"{'text':'Loot %s Wooden Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:3,max:6},filter:[\"LIVING\"],display:\"{'text':'Loot %s Living Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:3,max:6},filter:[\"GILDED\"],display:\"{'text':'Loot %s Gilded Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:3,max:6},filter:[\"ORNATE\"],display:\"{'text':'Loot %s Ornate Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:break_blocks,range:{type:uniform,min:5,max:10},filter:[\"@the_vault:ores\"],display:\"{'text':'Mine %s Ores'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:kill_mobs,range:{type:uniform,min:10,max:25},filter:[\"@the_vault:mobs\"],display:\"{'text':'Kill %s Mobs'}\"}}": 1
+          }
+        },
+        {
+          "level": 30,
+          "type": "weighted_target",
+          "target": "the_vault:enhancement_altar",
+          "output": {
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:25,max:35},filter:[\"WOODEN\",\"LIVING\",\"GILDED\",\"ORNATE\"],display:\"{'text':'Loot %s Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:14,max:20},filter:[\"WOODEN\"],display:\"{'text':'Loot %s Wooden Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:6,max:9},filter:[\"LIVING\"],display:\"{'text':'Loot %s Living Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:6,max:9},filter:[\"GILDED\"],display:\"{'text':'Loot %s Gilded Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:6,max:9},filter:[\"ORNATE\"],display:\"{'text':'Loot %s Ornate Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:break_blocks,range:{type:uniform,min:10,max:15},filter:[\"@the_vault:ores\"],display:\"{'text':'Mine %s Ores'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:kill_mobs,range:{type:uniform,min:10,max:15},filter:[\"@the_vault:mobs\"],display:\"{'text':'Kill %s Mobs'}\"}}": 1
+          }
+        },
+        {
+          "level": 50,
+          "type": "weighted_target",
+          "target": "the_vault:enhancement_altar",
+          "output": {
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:35,max:45},filter:[\"WOODEN\",\"LIVING\",\"GILDED\",\"ORNATE\"],display:\"{'text':'Loot %s Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:20,max:26},filter:[\"WOODEN\"],display:\"{'text':'Loot %s Wooden Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:9,max:12},filter:[\"LIVING\"],display:\"{'text':'Loot %s Living Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:9,max:12},filter:[\"GILDED\"],display:\"{'text':'Loot %s Gilded Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:9,max:12},filter:[\"ORNATE\"],display:\"{'text':'Loot %s Ornate Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:break_blocks,range:{type:uniform,min:15,max:20},filter:[\"@the_vault:ores\"],display:\"{'text':'Mine %s Ores'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:kill_mobs,range:{type:uniform,min:15,max:20},filter:[\"@the_vault:mobs\"],display:\"{'text':'Kill %s Mobs'}\"}}": 1
+          }
+        },
+        {
+          "level": 65,
+          "type": "weighted_target",
+          "target": "the_vault:enhancement_altar",
+          "output": {
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:45,max:55},filter:[\"WOODEN\",\"LIVING\",\"GILDED\",\"ORNATE\"],display:\"{'text':'Loot %s Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:26,max:32},filter:[\"WOODEN\"],display:\"{'text':'Loot %s Wooden Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:12,max:15},filter:[\"LIVING\"],display:\"{'text':'Loot %s Living Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:12,max:15},filter:[\"GILDED\"],display:\"{'text':'Loot %s Gilded Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:12,max:15},filter:[\"ORNATE\"],display:\"{'text':'Loot %s Ornate Chests'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:break_blocks,range:{type:uniform,min:20,max:25},filter:[\"@the_vault:ores\"],display:\"{'text':'Mine %s Ores'}\"}}": 1,
+            "the_vault:enhancement_altar{config:{type:kill_mobs,range:{type:uniform,min:20,max:25},filter:[\"@the_vault:mobs\"],display:\"{'text':'Kill %s Mobs'}\"}}": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:command_block",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base_map"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

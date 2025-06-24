@@ -1,0 +1,67 @@
+{
+    "tile_processors": [
+        {
+            "type": "weighted_target",
+            "target": "the_vault:placeholder[type=objective]",
+            "output": [
+                {
+                    "block": "the_vault:x_mark_controller",
+                    "renderer": {
+                        "coreColor": "0x908306",
+                        "glyphColor": "0x908306",
+                        "particleColor": "0x908306"
+                    },
+                    "zone": {
+                        "min": [-23, -5, -23],
+                        "max": [23, 41, 23]
+                    },
+                    "spawners": [ [-23, -5, -23] ],
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "type": "leveled",
+            "levels": [
+                {
+                    "level": 0,
+                    "type": "weighted_target",
+                    "target": "the_vault:x_mark_controller",
+                    "output": [
+                        {
+                            "block": "the_vault:x_mark_controller",
+                            "trapChance": 0.9,
+                            "waves": 5,
+                            "spawnDelay": 300,
+                            "actions": [
+                                {
+                                    "type": "group",
+                                    "xmark": 7
+                                }
+                            ],
+                            "weight": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/hidden_placeholder"
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:x-mark/trap_spawners"
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/treasure_map"
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/challenge_elite_spawners"
+        }
+    ],
+    "entity_processors": [],
+    "decorators": []
+  }

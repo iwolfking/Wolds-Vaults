@@ -1,0 +1,18 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "minecraft:yellow_concrete_powder",
+      "output": {
+        "the_vault:treasure_sand{LootTable:\"the_vault:digsite_sand_lvl0\"}": 1,
+        "minecraft:yellow_concrete_powder": 0
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

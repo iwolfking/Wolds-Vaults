@@ -1,0 +1,29 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "minecraft:smooth_quartz",
+      "output": {
+        "the_vault:golden_tooth[generated=true]": 1,
+        "minecraft:smooth_quartz": 49
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:red_glazed_terracotta",
+      "output": {
+        "tnt[unstable=true]": 1
+      }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base_map"
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/challenge_elite_spawners"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}
