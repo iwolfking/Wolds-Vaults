@@ -82,11 +82,40 @@
       "color1": "0xFF00FFFF",
       "color2": "0xFF6600FF"
     },
+    "gateway_pearl": {
+      "type": "floating_item_reward",
+      "item": {
+        "id": "woldsvaults:unidentified_gateway_pearl",
+        "count": 3
+      },
+      "color1": "0xFF00FFFF",
+      "color2": "0xFF6600FF"
+    },
     "pyretic_focus": {
       "type": "floating_item_reward",
       "textColor": "0xFFffb400",
       "item": {
         "id": "the_vault:pyretic_focus",
+        "count": 1
+      },
+      "color1": "0xFFffc600",
+      "color2": "0xFFa8150a"
+    },
+    "blazing_focus": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "item": {
+        "id": "woldsvaults:blazing_focus",
+        "count": 1
+      },
+      "color1": "0xFFffc600",
+      "color2": "0xFFa8150a"
+    },
+    "suspension_focus": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "item": {
+        "id": "woldsvaults:suspension_focus",
         "count": 1
       },
       "color1": "0xFFffc600",
@@ -112,6 +141,16 @@
       "color1": "0xFFffc600",
       "color2": "0xFFa8150a"
     },
+    "eccentric_focus_bigger": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "item": {
+        "id": "woldsvaults:eccentric_focus",
+        "count": 4
+      },
+      "color1": "0xFFffc600",
+      "color2": "0xFFa8150a"
+    },
     "cryonic_focus": {
       "type": "floating_item_reward",
       "textColor": "0xFFffb400",
@@ -128,6 +167,16 @@
       "item": {
         "id": "the_vault:cryonic_focus",
         "count": 2
+      },
+      "color1": "0xFF8cfff0",
+      "color2": "0xFF12aa96"
+    },
+    "cryonic_focus_bigger": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "item": {
+        "id": "the_vault:cryonic_focus",
+        "count": 4
       },
       "color1": "0xFF8cfff0",
       "color2": "0xFF12aa96"
@@ -149,6 +198,16 @@
       "item": {
         "id": "the_vault:empowered_chaotic_focus",
         "count": 2
+      },
+      "color1": "0xFFc93a00",
+      "color2": "0xFFa4a3a3"
+    },
+    "empowered_chaotic_focus_big": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "item": {
+        "id": "the_vault:empowered_chaotic_focus",
+        "count": 4
       },
       "color1": "0xFFc93a00",
       "color2": "0xFFa4a3a3"
@@ -207,6 +266,18 @@
         "id": "the_vault:booster_pack",
         "nbt": "{id:\"the_vault:temporal_pack\"}",
         "count": 1
+      },
+      "color1": "0xFF2e99b3",
+      "color2": "0xFFa984bc"
+    },
+    "temporal_booster_pack_big": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Temporal Booster Pack",
+      "item": {
+        "id": "the_vault:booster_pack",
+        "nbt": "{id:\"the_vault:temporal_pack\"}",
+        "count": 3
       },
       "color1": "0xFF2e99b3",
       "color2": "0xFFa984bc"
@@ -485,6 +556,16 @@
       "color1": "0xFFff8400",
       "color2": "0xFFffcc00"
     },
+    "treasure_key_big": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "item": {
+        "id": "the_vault:unidentified_treasure_key",
+        "count": 3
+      },
+      "color1": "0xFFff8400",
+      "color2": "0xFFffcc00"
+    },
     "castle_chestplate": {
       "type": "floating_item_reward",
       "textColor": -1213660,
@@ -588,6 +669,18 @@
       "item": {
         "id": "the_vault:leggings",
         "nbt": "{\"the_vault:gear_unique_pool\":\"the_vault:swarmwalkers\",\"the_vault:gear_roll_type\":\"Unique\"}",
+        "count": 1
+      },
+      "color1": "0xFFED7B24",
+      "color2": "0xFFe2a631"
+    },
+    "shattering_jewel": {
+      "type": "floating_item_reward",
+      "textColor": -1213660,
+      "name": "Shattering Jewel",
+      "item": {
+        "id": "the_vault:jewel",
+        "nbt": "{\"the_vault:gear_unique_pool\":\"woldsvaults:shattering_jewel\",\"the_vault:gear_roll_type\":\"Unique\"}",
         "count": 1
       },
       "color1": "0xFFED7B24",
@@ -782,6 +875,17 @@
       "color1": "0xFF6b00cf",
       "color2": "0xFF10021e"
     },
+    "echo_gem_bigger": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Echo Gems",
+      "item": {
+        "id": "the_vault:gem_echo",
+        "count": 12
+      },
+      "color1": "0xFF6b00cf",
+      "color2": "0xFF10021e"
+    },
     "gilded_chest": {
       "type": "tile_reward",
       "name": "Gilded Chests",
@@ -796,6 +900,13 @@
       "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{Hidden:1b}",
       "count": 16
     },
+    "gilded_chest_bigger": {
+      "type": "tile_reward",
+      "name": "Gilded Chests",
+      "textColor": "0xFFfff0a9",
+      "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{Hidden:1b}",
+      "count": 24
+    },
     "ornate_chest": {
       "type": "tile_reward",
       "name": "Ornate Chests",
@@ -804,6 +915,13 @@
       "count": 10
     },
     "ornate_chest_big": {
+      "type": "tile_reward",
+      "name": "Ornate Chests",
+      "textColor": "0xFFfff0a9",
+      "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{Hidden:1b}",
+      "count": 16
+    },
+    "ornate_chest_bigger": {
       "type": "tile_reward",
       "name": "Ornate Chests",
       "textColor": "0xFFfff0a9",
@@ -824,6 +942,13 @@
       "tile": "the_vault:placeholder[type=coin_stacks,facing=up]{Hidden:1b}",
       "count": 16
     },
+     "coin_pile_bigger": {
+      "type": "tile_reward",
+      "name": "Coin Piles",
+      "textColor": "0xFFfff0a9",
+      "tile": "the_vault:placeholder[type=coin_stacks,facing=up]{Hidden:1b}",
+      "count": 24
+    },
     "living_chest": {
       "type": "tile_reward",
       "name": "Living Chests",
@@ -838,6 +963,13 @@
       "tile": "the_vault:placeholder[type=living_chest,facing=up]{Hidden:1b}",
       "count": 16
     },
+    "living_chest_bigger": {
+      "type": "tile_reward",
+      "name": "Living Chests",
+      "textColor": "0xFFfff0a9",
+      "tile": "the_vault:placeholder[type=living_chest,facing=up]{Hidden:1b}",
+      "count": 24
+    },
     "wooden_chest": {
       "type": "tile_reward",
       "name": "Wooden Chests",
@@ -851,6 +983,13 @@
       "textColor": "0xFFfff0a9",
       "tile": "the_vault:placeholder[type=wooden_chest,facing=up]{Hidden:1b}",
       "count": 24
+    },
+     "wooden_chest_bigger": {
+      "type": "tile_reward",
+      "name": "Wooden Chests",
+      "textColor": "0xFFfff0a9",
+      "tile": "the_vault:placeholder[type=wooden_chest,facing=up]{Hidden:1b}",
+      "count": 32
     },
     "add_pillager": {
       "type": "mob_spawn",
@@ -1006,6 +1145,38 @@
       "type": "mob_spawn",
       "entity": {
         "id": "dungeons_mobs:windcaller",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+     "add_inquisitor": {
+      "type": "mob_spawn",
+      "entity": {
+        "id": "grimoireofgaia:inquisitor",
+        "Tags": [
+          "no_champion"
+        ],
+        "modifierImmunity": [
+          "#the_vault:modifier_type/mob_frenzy",
+          "#the_vault:modifier_type/mob_attribute",
+          "#the_vault:modifier_type/entity_effect"
+        ]
+      },
+      "count": 1,
+      "spawner": "ground"
+    },
+    "add_incinerator": {
+      "type": "mob_spawn",
+      "entity": {
+        "id": "grimoireofgaia:incinerator",
         "Tags": [
           "no_champion"
         ],
@@ -1601,64 +1772,128 @@
     ],
     "positive_base_map": [
       {
-        "value": "gilded_chest_big",
+        "value": "shattering_jewel",
+        "weight": 2
+      },
+       {
+        "value": "suspension_focus",
+        "weight": 2
+      },
+      {
+        "value": "blazing_focus",
+        "weight": 6
+      },
+      {
+        "value": "gateway_pearl",
+        "weight": 8
+      },
+       {
+        "value": "eccentric_focus_big",
+        "weight": 6
+      },
+      {
+        "value": "cryonic_focus_big",
+        "weight": 6
+      },
+      {
+        "value": "gilded_chest_bigger",
+        "weight": 60
+      },
+      {
+        "value": "ornate_chest_bigger",
+        "weight": 60
+      },
+      {
+        "value": "living_chest_bigger",
+        "weight": 60
+      },
+      {
+        "value": "wooden_chest_bigger",
+        "weight": 40
+      },
+      {
+        "value": "coin_pile_bigger",
         "weight": 120
       },
       {
-        "value": "ornate_chest_big",
-        "weight": 120
+        "value": "echo_gem_bigger",
+        "weight": 18
       },
       {
-        "value": "living_chest_big",
-        "weight": 120
+        "value": "temporal_booster_pack_big",
+        "weight": 6
       },
       {
-        "value": "wooden_chest_big",
-        "weight": 120
+        "value": "leg_helmet",
+        "weight": 6
       },
       {
-        "value": "coin_pile_big",
-        "weight": 120
+        "value": "leg_chestplate",
+        "weight": 6
       },
       {
-        "value": "rare_helmet",
-        "weight": 40
+        "value": "leg_leggings",
+        "weight": 6
       },
       {
-        "value": "rare_chestplate",
-        "weight": 40
+        "value": "leg_boots",
+        "weight": 6
       },
       {
-        "value": "rare_leggings",
-        "weight": 40
+        "value": "leg_sword",
+        "weight": 6
       },
       {
-        "value": "rare_boots",
-        "weight": 40
+        "value": "leg_axe",
+        "weight": 6
       },
       {
-        "value": "rare_sword",
-        "weight": 40
+        "value": "leg_shield",
+        "weight": 6
       },
       {
-        "value": "rare_axe",
-        "weight": 40
+        "value": "leg_wand",
+        "weight": 6
       },
       {
-        "value": "rare_shield",
-        "weight": 40
+        "value": "leg_focus",
+        "weight": 6
       },
       {
-        "value": "rare_focus",
-        "weight": 40
+        "value": "castle_chestplate",
+        "weight": 6
       },
       {
-        "value": "rare_wand",
-        "weight": 40
+        "value": "warbound_helmet",
+        "weight": 6
       },
       {
-        "value": "raid_rock",
-        "weight": 90
+        "value": "inferno_reach",
+        "weight": 6
+      },
+      {
+        "value": "frozen_orb",
+        "weight": 6
+      },
+      {
+        "value": "grim_shield",
+        "weight": 6
+      },
+      {
+        "value": "swarmwalkers",
+        "weight": 6
+      },
+      {
+        "value": "stormcrown",
+        "weight": 6
+      },
+      {
+        "value": "inflated_justice",
+        "weight": 6
+      },
+      {
+        "value": "raid_rock_infinite",
+        "weight": 10
       }
     ],
     "xmark": [
