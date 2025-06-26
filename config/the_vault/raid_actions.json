@@ -7,14 +7,14 @@
       "type": "mob_vanilla_attribute",
       "attribute": "minecraft:generic.armor",
       "operation": "ADDITION",
-      "amount": 1.0,
+      "amount": 2.0,
       "textColor": "0xFFF32525"
     },
     "big_mob_armor": {
       "type": "mob_vanilla_attribute",
       "attribute": "minecraft:generic.armor",
       "operation": "ADDITION",
-      "amount": 2.0,
+      "amount": 4.0,
       "textColor": "0xFFF32525"
     },
     "mob_damage": {
@@ -859,6 +859,17 @@
       "name": "Infinite Raid Rock",
       "item": {
         "id": "the_vault:crystal_seal_raid_infinite",
+        "count": 1
+      },
+      "color1": "0xFFff381d",
+      "color2": "0xFFb51500"
+    },
+     "raid_rock_infinite_hard": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Brutal Infinite Raid Rock",
+      "item": {
+        "id": "woldsvaults:crystal_seal_raid_rock_infinite_hrad",
         "count": 1
       },
       "color1": "0xFFff381d",
@@ -1892,7 +1903,7 @@
         "weight": 6
       },
       {
-        "value": "raid_rock_infinite",
+        "value": "raid_rock_infinite_hard",
         "weight": 10
       }
     ],
