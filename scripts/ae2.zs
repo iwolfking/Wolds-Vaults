@@ -136,7 +136,7 @@ craftingTable.addShaped("ae2_quartz_fiber", <item:ae2:quartz_fiber> *4, [
 ]);
 
 craftingTable.addShapeless("ae2_shapeless_terminal", <item:ae2:terminal>, [
-    <item:ae2:annihilation_core>, <item:ae2:monitor>,
+    <item:ae2:annihilation_core>, <tag:items:ae2:illuminated_panel>,
     <item:ae2:logic_processor>, <item:ae2:formation_core>,
     <item:the_vault:gem_pog>
 ]);
