@@ -1085,23 +1085,6 @@
       "count": 1,
       "spawner": "ground"
     },
-    "add_enchanter": {
-      "type": "mob_spawn",
-      "name": "Enchanter",
-      "entity": {
-        "id": "enchantwithmob:enchanter",
-        "Tags": [
-          "no_champion"
-        ],
-        "modifierImmunity": [
-          "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute",
-          "#the_vault:modifier_type/entity_effect"
-        ]
-      },
-      "count": 1,
-      "spawner": "elevated"
-    },
     "add_mage": {
       "type": "mob_spawn",
       "name": "Mage",
@@ -1410,25 +1393,6 @@
       "textColor": "0xFFff7575",
       "entity": {
         "id": "dungeons_mobs:illusioner",
-        "Tags": [
-          "vault_champion",
-          "no_drops"
-        ],
-        "modifierImmunity": [
-          "#the_vault:modifier_type/mob_frenzy",
-          "#the_vault:modifier_type/mob_attribute",
-          "#the_vault:modifier_type/entity_effect"
-        ]
-      },
-      "count": 1,
-      "spawner": "ground"
-    },
-    "add_enchanter_champion": {
-      "type": "mob_spawn",
-      "name": "Enchanter Champion",
-      "textColor": "0xFFff7575",
-      "entity": {
-        "id": "enchantwithmob:enchanter",
         "Tags": [
           "vault_champion",
           "no_drops"
@@ -1784,11 +1748,11 @@
     "positive_base_map": [
       {
         "value": "shattering_jewel",
-        "weight": 2
+        "weight": 1
       },
        {
         "value": "suspension_focus",
-        "weight": 2
+        "weight": 1
       },
       {
         "value": "blazing_focus",
