@@ -1331,10 +1331,7 @@
       "textColor": "0xFFff7575",
       "entity": {
         "id": "minecraft:vex",
-        "Tags": [
-          "vault_champion",
-          "no_drops"
-        ],
+        "Tags": ["vault_champion","no_drops", "ethereal_immune"],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
           "#the_vault:modifier_type/mob_attribute",
@@ -1350,24 +1347,15 @@
       "textColor": "0xFFff7575",
       "entity": {
         "id": "minecraft:pillager",
-        "Tags": [
-          "vault_champion",
-          "no_drops"
-        ],
+        "Tags": ["vault_champion","no_drops", "ethereal_immune"],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
           "#the_vault:modifier_type/mob_attribute",
           "#the_vault:modifier_type/entity_effect"
         ],
         "Modifiers": {
-          "minecraft:generic.movement_speed": {
-            "Value": -1.0,
-            "Operation": 2
-          },
-          "minecraft:generic.knockback_resistance": {
-            "Value": 1.0,
-            "Operation": 0
-          }
+          "minecraft:generic.movement_speed": { "Value": -1.0, "Operation": 2 },
+          "minecraft:generic.knockback_resistance": { "Value": 1.0, "Operation": 0 }
         }
       },
       "count": 1,
@@ -1379,10 +1367,7 @@
       "textColor": "0xFFff7575",
       "entity": {
         "id": "minecraft:ravager",
-        "Tags": [
-          "vault_champion",
-          "no_drops"
-        ],
+        "Tags": ["vault_champion","no_drops", "ethereal_immune"],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
           "#the_vault:modifier_type/mob_attribute",
@@ -1400,7 +1385,8 @@
         "id": "dungeons_mobs:illusioner",
         "Tags": [
           "vault_champion",
-          "no_drops"
+          "no_drops",
+"ethereal_immune"
         ],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
@@ -1419,7 +1405,8 @@
         "id": "dungeons_mobs:royal_guard",
         "Tags": [
           "vault_champion",
-          "no_drops"
+          "no_drops",
+"ethereal_immune"
         ],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",

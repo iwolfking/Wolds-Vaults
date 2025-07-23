@@ -1182,6 +1182,8 @@
       ],
       "maxTier": 5
     },
+
+
     "amp_attack_damage": {
       "type": "gear",
       "name": {
@@ -1455,11 +1457,11 @@
     "amp_healing_effectiveness": {
       "type": "gear",
       "name": {
-        "text": "Scaling Healing Efficiency Card"
+        "text": "Evolving Healing Efficiency Card"
       },
       "model": "the_vault:card/icon/healing_efficiency#inventory",
       "groups": [
-        "Scaling",
+        "Evolution",
         "Utility"
       ],
       "attribute": "the_vault:healing_effectiveness",
@@ -2352,6 +2354,9 @@
       ],
       "maxTier": 5
     },
+
+
+
     "heal": {
       "type": "gear",
       "name": {
@@ -2415,9 +2420,9 @@
     "dash": {
       "type": "gear",
       "name": {
-        "text": "Warp Card"
+        "text": "Dash Card"
       },
-      "model": "the_vault:card/icon/dash_warp#inventory",
+      "model": "the_vault:card/icon/dash#inventory",
       "groups": [
         "Arcane",
         "Utility"
@@ -2455,9 +2460,9 @@
     "dash_warp": {
       "type": "gear",
       "name": {
-        "text": "Dash Card"
+        "text": "Warp Card"
       },
-      "model": "the_vault:card/icon/dash#inventory",
+      "model": "the_vault:card/icon/dash_warp#inventory",
       "groups": [
         "Arcane",
         "Utility"
@@ -2567,66 +2572,6 @@
         {
           "tier": 1,
           "abilityKey": "Mega_Jump_Break_Down",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "levitate": {
-      "type": "gear",
-      "name": {
-        "text": "Levitate Card"
-      },
-      "model": "vhapi:card/icon/levitate#inventory",
-      "groups": [
-        "Arcane",
-        "Utility"
-      ],
-      "attribute": "the_vault:added_ability_level",
-      "pool": [
-        {
-          "tier": 1,
-          "abilityKey": "Levitate",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "colossus": {
-      "type": "gear",
-      "name": {
-        "text": "Colossus Card"
-      },
-      "model": "vhapi:card/icon/colossus#inventory",
-      "groups": [
-        "Arcane",
-        "Defensive"
-      ],
-      "attribute": "the_vault:added_ability_level",
-      "pool": [
-        {
-          "tier": 1,
-          "abilityKey": "Colossus",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "sneaky_getaway": {
-      "type": "gear",
-      "name": {
-        "text": "Sneaky Getaway Card"
-      },
-      "model": "vhapi:card/icon/sneaky_getaway#inventory",
-      "groups": [
-        "Arcane",
-        "Utility"
-      ],
-      "attribute": "the_vault:added_ability_level",
-      "pool": [
-        {
-          "tier": 1,
-          "abilityKey": "Sneaky_Getaway",
           "levelChange": 1
         }
       ],
@@ -2832,6 +2777,7 @@
       ],
       "maxTier": 1
     },
+
     "taunt": {
       "type": "gear",
       "name": {
@@ -3312,6 +3258,269 @@
       ],
       "maxTier": 1
     },
+    "shell": {
+      "type": "gear",
+      "name": {
+        "text": "Shell Card"
+      },
+      "model": "the_vault:card/icon/shell#inventory",
+      "groups": [
+        "Arcane",
+        "Defensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Shell_Base",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "shell_porcupine": {
+      "type": "gear",
+      "name": {
+        "text": "Porcupine Card"
+      },
+      "model": "the_vault:card/icon/shell_porcupine#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Shell_Porcupine",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "shell_quill": {
+      "type": "gear",
+      "name": {
+        "text": "Quill Card"
+      },
+      "model": "the_vault:card/icon/shell_quill#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Shell_Quill",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+
+    "life_tap": {
+      "type": "gear",
+      "name": {
+        "text": "Life Tap Card"
+      },
+      "model": "the_vault:card/icon/life_tap#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Implode_Life_Tap",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "arcane": {
+      "type": "gear",
+      "name": {
+        "text": "Arcane Card"
+      },
+      "model": "the_vault:card/icon/arcane#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Arcane_Base",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "arcane_rail": {
+      "type": "gear",
+      "name": {
+        "text": "Arcane Rail Card"
+      },
+      "model": "the_vault:card/icon/arcane_rail#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Arcane_Rail",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "earthquake": {
+      "type": "gear",
+      "name": {
+        "text": "Earthquake Card"
+      },
+      "model": "the_vault:card/icon/earthquake#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Earthquake_Base",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "landmine": {
+      "type": "gear",
+      "name": {
+        "text": "Landmine Card"
+      },
+      "model": "the_vault:card/icon/landmine#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Earthquake_Landmine",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "chain_lightning": {
+      "type": "gear",
+      "name": {
+        "text": "Lightning Strike Card"
+      },
+      "model": "the_vault:card/icon/chain_lightning#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Chain_Lightning_Base",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "ball_lightning": {
+      "type": "gear",
+      "name": {
+        "text": "Ball Lightning Card"
+      },
+      "model": "the_vault:card/icon/ball_lightning#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Chain_Lightning_Orbs",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "chaos_cube": {
+      "type": "gear",
+      "name": {
+        "text": "Chaos Cube Card"
+      },
+      "model": "the_vault:card/icon/chaos_cube#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Grenade_Base",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "toxic_grenade": {
+      "type": "gear",
+      "name": {
+        "text": "Toxic Vial Card"
+      },
+      "model": "the_vault:card/icon/toxic_grenade#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Toxic_Grenade",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "mana_barrier": {
+      "type": "gear",
+      "name": {
+        "text": "Mana Barrier Card"
+      },
+      "model": "the_vault:card/icon/mana_barrier#inventory",
+      "groups": [
+        "Arcane",
+        "Defensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Mana_Barrier",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+
+
     "temporal_charm": {
       "type": "gear",
       "name": {
@@ -3330,8 +3539,8 @@
           "modifier": "the_vault:kill_charm",
           "count": 1,
           "time": {
-            "min": 200,
-            "max": 800,
+            "min": 100,
+            "max": 400,
             "step": 20
           }
         }
@@ -3356,10 +3565,10 @@
           "modifier": "the_vault:bronze_nuke",
           "count": 1,
           "time": {
-            "min": 200,
-            "max": 800,
-            "step": 20
-          }
+  "min": 100,
+  "max": 400,
+  "step": 20
+}
         }
       ],
       "maxTier": 1
@@ -3381,10 +3590,10 @@
           "modifier": "the_vault:kill_hunter",
           "count": 1,
           "time": {
-            "min": 200,
-            "max": 800,
-            "step": 20
-          }
+  "min": 100,
+  "max": 400,
+  "step": 20
+}
         }
       ],
       "maxTier": 1
@@ -3407,10 +3616,10 @@
           "modifier": "the_vault:kill_nuke",
           "count": 1,
           "time": {
-            "min": 200,
-            "max": 800,
-            "step": 20
-          }
+  "min": 100,
+  "max": 400,
+  "step": 20
+}
         }
       ],
       "maxTier": 1
@@ -3433,10 +3642,10 @@
           "modifier": "the_vault:kill_totem",
           "count": 1,
           "time": {
-            "min": 200,
-            "max": 800,
-            "step": 20
-          }
+  "min": 100,
+  "max": 400,
+  "step": 20
+}
         }
       ],
       "maxTier": 1
@@ -3458,10 +3667,10 @@
           "modifier": "the_vault:loot_goblin",
           "count": 1,
           "time": {
-            "min": 200,
-            "max": 800,
-            "step": 20
-          }
+  "min": 100,
+  "max": 400,
+  "step": 20
+}
         }
       ],
       "maxTier": 1
@@ -3483,10 +3692,10 @@
           "modifier": "the_vault:door_hunter",
           "count": 1,
           "time": {
-            "min": 200,
-            "max": 800,
-            "step": 20
-          }
+  "min": 100,
+  "max": 400,
+  "step": 20
+}
         }
       ],
       "maxTier": 1
@@ -3508,14 +3717,15 @@
           "modifier": "the_vault:overpower",
           "count": 1,
           "time": {
-            "min": 200,
-            "max": 800,
+            "min": 100,
+            "max": 400,
             "step": 20
           }
         }
       ],
       "maxTier": 1
     },
+
     "resource_blackopal": {
       "type": "task_loot",
       "name": {
@@ -3533,7 +3743,7 @@
           }
         }
       ],
-      "task": "@hard",
+      "task": "@default",
       "count": [
         {
           "tier": 1,
@@ -3593,7 +3803,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Larimar ",
+          "text":  " Larimar ",
           "color": "yellow"
         },
         {
@@ -3620,7 +3830,7 @@
           }
         }
       ],
-      "task": "@medium",
+      "task": "@easy",
       "count": [
         {
           "tier": 1,
@@ -3641,7 +3851,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Benitoite ",
+          "text":  " Benitoite ",
           "color": "yellow"
         },
         {
@@ -3668,54 +3878,6 @@
           }
         }
       ],
-      "task": "@medium",
-      "count": [
-        {
-          "tier": 1,
-          "roll": {
-            "type": "uniform",
-            "min": 1,
-            "max": 1
-          }
-        }
-      ],
-      "tooltip": [
-        {
-          "text": "+",
-          "color": "gold"
-        },
-        {
-          "text": "${count}",
-          "color": "#FFFFFF"
-        },
-        {
-          "text": " Alexandrite ",
-          "color": "yellow"
-        },
-        {
-          "text": "${task}"
-        }
-      ],
-      "highlightColor": "0x00FF00",
-      "maxTier": 1
-    },
-    "resource_gem_wutodie": {
-      "type": "task_loot",
-      "name": {
-        "text": "Wutodie Card"
-      },
-      "model": "the_vault:gem_wutodie#inventory",
-      "groups": [
-        "Resource"
-      ],
-      "loot": [
-        {
-          "weight": 1,
-          "item": {
-            "id": "the_vault:gem_wutodie"
-          }
-        }
-      ],
       "task": "@easy",
       "count": [
         {
@@ -3737,7 +3899,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Wutodie ",
+          "text":  " Alexandrite ",
           "color": "yellow"
         },
         {
@@ -3764,7 +3926,7 @@
           }
         }
       ],
-      "task": "@hard",
+      "task": "@medium",
       "count": [
         {
           "tier": 1,
@@ -3785,7 +3947,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Black Opal ",
+          "text":  " Black Opal ",
           "color": "yellow"
         },
         {
@@ -3833,7 +3995,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Echo Gem ",
+          "text":  " Echo Gem ",
           "color": "yellow"
         },
         {
@@ -3860,7 +4022,7 @@
           }
         }
       ],
-      "task": "@hard",
+      "task": "@medium",
       "count": [
         {
           "tier": 1,
@@ -3881,7 +4043,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Painite ",
+          "text":  " Painite ",
           "color": "yellow"
         },
         {
@@ -3894,7 +4056,7 @@
     "resource_gem_iskallium": {
       "type": "task_loot",
       "name": {
-        "text": "Woldium Card"
+        "text": "Iskallium Card"
       },
       "model": "the_vault:gem_iskallium#inventory",
       "groups": [
@@ -3929,7 +4091,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Woldium ",
+          "text":  " Iskallium ",
           "color": "yellow"
         },
         {
@@ -3977,7 +4139,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Gorginite ",
+          "text":  " Gorginite ",
           "color": "yellow"
         },
         {
@@ -4025,7 +4187,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Sparkletine ",
+          "text":  " Sparkletine ",
           "color": "yellow"
         },
         {
@@ -4073,7 +4235,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Ashium ",
+          "text":  " Ashium ",
           "color": "yellow"
         },
         {
@@ -4121,7 +4283,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Bomignite ",
+          "text":  " Bomignite ",
           "color": "yellow"
         },
         {
@@ -4169,7 +4331,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Tubium ",
+          "text":  " Tubium ",
           "color": "yellow"
         },
         {
@@ -4217,7 +4379,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Upaline ",
+          "text":  " Upaline ",
           "color": "yellow"
         },
         {
@@ -4230,7 +4392,7 @@
     "resource_gem_petzanite": {
       "type": "task_loot",
       "name": {
-        "text": "Petzanite Card"
+        "text": "Petezanite Card"
       },
       "model": "the_vault:gem_petzanite#inventory",
       "groups": [
@@ -4265,7 +4427,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Petzanite ",
+          "text":  " Petezanite ",
           "color": "yellow"
         },
         {
@@ -4313,7 +4475,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Xeenium ",
+          "text":  " Xeenium ",
           "color": "yellow"
         },
         {
@@ -4323,6 +4485,7 @@
       "highlightColor": "0x00FF00",
       "maxTier": 1
     },
+
     "resource_bronze": {
       "type": "task_loot",
       "name": {
@@ -4361,7 +4524,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Vault Bronze ",
+          "text":  " Vault Bronze ",
           "color": "yellow"
         },
         {
@@ -4388,7 +4551,7 @@
           }
         }
       ],
-      "task": "@medium",
+      "task": "@easy",
       "count": [
         {
           "tier": 1,
@@ -4409,7 +4572,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Vault Silver ",
+          "text":  " Vault Silver ",
           "color": "yellow"
         },
         {
@@ -4457,7 +4620,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Waning Focus ",
+          "text":  " Waning Focus ",
           "color": "yellow"
         },
         {
@@ -4505,7 +4668,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Waxing Focus ",
+          "text":  " Waxing Focus ",
           "color": "yellow"
         },
         {
@@ -4553,7 +4716,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Fundamental Focus ",
+          "text":  " Fundamental Focus ",
           "color": "yellow"
         },
         {
@@ -4580,7 +4743,7 @@
           }
         }
       ],
-      "task": "@hard",
+      "task": "@medium",
       "count": [
         {
           "tier": 1,
@@ -4601,7 +4764,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Chaotic Focus ",
+          "text":  " Chaotic Focus ",
           "color": "yellow"
         },
         {
@@ -4628,7 +4791,7 @@
           }
         }
       ],
-      "task": "@medium",
+      "task": "@easy",
       "count": [
         {
           "tier": 1,
@@ -4649,7 +4812,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Vault Diamond ",
+          "text":  " Vault Diamond ",
           "color": "yellow"
         },
         {
@@ -4697,7 +4860,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Mod Box ",
+          "text":  " Mod Box ",
           "color": "yellow"
         },
         {
@@ -4745,7 +4908,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Raw Chromatic Iron ",
+          "text":  " Raw Chromatic Iron ",
           "color": "yellow"
         },
         {
@@ -4793,7 +4956,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Carbon ",
+          "text":  " Carbon ",
           "color": "yellow"
         },
         {
@@ -4841,7 +5004,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Mystery Egg ",
+          "text":  " Mystery Egg ",
           "color": "yellow"
         },
         {
@@ -4868,7 +5031,7 @@
           }
         }
       ],
-      "task": "@hard",
+      "task": "@easy",
       "count": [
         {
           "tier": 1,
@@ -4889,7 +5052,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Vault Plating ",
+          "text":  " Vault Plating ",
           "color": "yellow"
         },
         {
@@ -4937,7 +5100,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Catalyst Fragment ",
+          "text":  " Catalyst Fragment ",
           "color": "yellow"
         },
         {
@@ -4985,7 +5148,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Juicy Grapes ",
+          "text":  " Juicy Grapes ",
           "color": "yellow"
         },
         {
@@ -5033,7 +5196,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Bitter Lemon ",
+          "text":  " Bitter Lemon ",
           "color": "yellow"
         },
         {
@@ -5081,7 +5244,103 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Ripe Mango ",
+          "text":  " Ripe Mango ",
+          "color": "yellow"
+        },
+        {
+          "text": "${task}"
+        }
+      ],
+      "highlightColor": "0x00FF00",
+      "maxTier": 1
+    },
+    "resource_orange": {
+      "type": "task_loot",
+      "name": {
+        "text": "Sour Orange Card"
+      },
+      "model": "the_vault:sour_orange#inventory",
+      "groups": [
+        "Resource"
+      ],
+      "loot": [
+        {
+          "weight": 1,
+          "item": {
+            "id": "the_vault:sour_orange"
+          }
+        }
+      ],
+      "task": "@extreme",
+      "count": [
+        {
+          "tier": 1,
+          "roll": {
+            "type": "uniform",
+            "min": 1,
+            "max": 1
+          }
+        }
+      ],
+      "tooltip": [
+        {
+          "text": "+",
+          "color": "gold"
+        },
+        {
+          "text": "${count}",
+          "color": "#FFFFFF"
+        },
+        {
+          "text":  " Sour Orange ",
+          "color": "yellow"
+        },
+        {
+          "text": "${task}"
+        }
+      ],
+      "highlightColor": "0x00FF00",
+      "maxTier": 1
+    },
+    "resource_star_fruit": {
+      "type": "task_loot",
+      "name": {
+        "text": "Wild Star Fruit Card"
+      },
+      "model": "the_vault:star_fruit#inventory",
+      "groups": [
+        "Resource"
+      ],
+      "loot": [
+        {
+          "weight": 1,
+          "item": {
+            "id": "the_vault:star_fruit"
+          }
+        }
+      ],
+      "task": "@extreme",
+      "count": [
+        {
+          "tier": 1,
+          "roll": {
+            "type": "uniform",
+            "min": 1,
+            "max": 1
+          }
+        }
+      ],
+      "tooltip": [
+        {
+          "text": "+",
+          "color": "gold"
+        },
+        {
+          "text": "${count}",
+          "color": "#FFFFFF"
+        },
+        {
+          "text":  " Star Fruit ",
           "color": "yellow"
         },
         {
@@ -5108,7 +5367,7 @@
           }
         }
       ],
-      "task": "@extreme",
+      "task": "@medium",
       "count": [
         {
           "tier": 1,
@@ -5129,7 +5388,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Inscription Piece ",
+          "text":  " Inscription Piece ",
           "color": "yellow"
         },
         {
@@ -5139,12 +5398,12 @@
       "highlightColor": "0x00FF00",
       "maxTier": 1
     },
-    "resource_augment_piece": {
+    "resource_chromatic_iron_ingot": {
       "type": "task_loot",
       "name": {
-        "text": "Augment Piece Card"
+        "text": "Chromatic Iron Ingot Card"
       },
-      "model": "woldsvaults:augment_piece#inventory",
+      "model": "the_vault:chromatic_iron_ingot#inventory",
       "groups": [
         "Resource"
       ],
@@ -5152,18 +5411,18 @@
         {
           "weight": 1,
           "item": {
-            "id": "woldsvaults:augment_piece"
+            "id": "the_vault:chromatic_iron_ingot"
           }
         }
       ],
-      "task": "@hard",
+      "task": "@easy",
       "count": [
         {
           "tier": 1,
           "roll": {
             "type": "uniform",
             "min": 1,
-            "max": 1
+            "max": 4
           }
         }
       ],
@@ -5177,7 +5436,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Augment Piece ",
+          "text":  " Chromatic Iron Ingot ",
           "color": "yellow"
         },
         {
@@ -5204,54 +5463,6 @@
           }
         }
       ],
-      "task": "@hard",
-      "count": [
-        {
-          "tier": 1,
-          "roll": {
-            "type": "uniform",
-            "min": 1,
-            "max": 1
-          }
-        }
-      ],
-      "tooltip": [
-        {
-          "text": "+",
-          "color": "gold"
-        },
-        {
-          "text": "${count}",
-          "color": "#FFFFFF"
-        },
-        {
-          "text": " Faceted Focus ",
-          "color": "yellow"
-        },
-        {
-          "text": "${task}"
-        }
-      ],
-      "highlightColor": "0x00FF00",
-      "maxTier": 1
-    },
-    "resource_smashed_gem": {
-      "type": "task_loot",
-      "name": {
-        "text": "Smashed Vault Gem Card"
-      },
-      "model": "the_vault:smashed_vault_gem#inventory",
-      "groups": [
-        "Resource"
-      ],
-      "loot": [
-        {
-          "weight": 1,
-          "item": {
-            "id": "the_vault:smashed_vault_gem"
-          }
-        }
-      ],
       "task": "@easy",
       "count": [
         {
@@ -5273,7 +5484,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text": " Smashed Vault Gem ",
+          "text":  " Faceted Focus ",
           "color": "yellow"
         },
         {
@@ -5283,150 +5494,7 @@
       "highlightColor": "0x00FF00",
       "maxTier": 1
     },
-    "resource_gem_box": {
-      "type": "task_loot",
-      "name": {
-        "text": "Gem Box Card"
-      },
-      "model": "the_vault:gem_box#inventory",
-      "groups": [
-        "Resource"
-      ],
-      "loot": [
-        {
-          "weight": 1,
-          "item": {
-            "id": "the_vault:gem_box"
-          }
-        }
-      ],
-      "task": "@hard",
-      "count": [
-        {
-          "tier": 1,
-          "roll": {
-            "type": "uniform",
-            "min": 1,
-            "max": 1
-          }
-        }
-      ],
-      "tooltip": [
-        {
-          "text": "+",
-          "color": "gold"
-        },
-        {
-          "text": "${count}",
-          "color": "#FFFFFF"
-        },
-        {
-          "text": " Gem Box ",
-          "color": "yellow"
-        },
-        {
-          "text": "${task}"
-        }
-      ],
-      "highlightColor": "0x00FF00",
-      "maxTier": 1
-    },
-    "resource_eternal_soul": {
-      "type": "task_loot",
-      "name": {
-        "text": "Eternal Soul Card"
-      },
-      "model": "the_vault:eternal_soul#inventory",
-      "groups": [
-        "Resource"
-      ],
-      "loot": [
-        {
-          "weight": 1,
-          "item": {
-            "id": "the_vault:eternal_soul"
-          }
-        }
-      ],
-      "task": "@hard",
-      "count": [
-        {
-          "tier": 1,
-          "roll": {
-            "type": "uniform",
-            "min": 1,
-            "max": 1
-          }
-        }
-      ],
-      "tooltip": [
-        {
-          "text": "+",
-          "color": "gold"
-        },
-        {
-          "text": "${count}",
-          "color": "#FFFFFF"
-        },
-        {
-          "text": " Eternal Soul ",
-          "color": "yellow"
-        },
-        {
-          "text": "${task}"
-        }
-      ],
-      "highlightColor": "0x00FF00",
-      "maxTier": 1
-    },
-    "resource_knowledge_essence": {
-      "type": "task_loot",
-      "name": {
-        "text": "Knowledge Essence Card"
-      },
-      "model": "the_vault:knowledge_star_essence#inventory",
-      "groups": [
-        "Resource"
-      ],
-      "loot": [
-        {
-          "weight": 1,
-          "item": {
-            "id": "the_vault:knowledge_star_essence"
-          }
-        }
-      ],
-      "task": "@hard",
-      "count": [
-        {
-          "tier": 1,
-          "roll": {
-            "type": "uniform",
-            "min": 1,
-            "max": 1
-          }
-        }
-      ],
-      "tooltip": [
-        {
-          "text": "+",
-          "color": "gold"
-        },
-        {
-          "text": "${count}",
-          "color": "#FFFFFF"
-        },
-        {
-          "text": " Knowledge Essence ",
-          "color": "yellow"
-        },
-        {
-          "text": "${task}"
-        }
-      ],
-      "highlightColor": "0x00FF00",
-      "maxTier": 1
-    },
+
     "wild_base": {
       "type": "dummy",
       "name": {
@@ -5485,22 +5553,22 @@
       "maxTier": 1
     },
     "wild_green": {
-      "type": "dummy",
-      "name": {
-        "text": "Green Wild Card"
-      },
-      "colors": [
-        "GREEN"
-      ],
-      "groups": [
-        "Wild",
-        "Stat",
-        "Arcane",
-        "Temporal",
-        "Resource",
-        "Evolution"
-      ],
-      "maxTier": 1
+    "type": "dummy",
+    "name": {
+      "text": "Green Wild Card"
+    },
+    "colors": [
+      "GREEN"
+    ],
+    "groups": [
+      "Wild",
+      "Stat",
+      "Arcane",
+      "Temporal",
+      "Resource",
+      "Evolution"
+    ],
+    "maxTier": 1
     },
     "wild_blue": {
       "type": "dummy",
@@ -5523,7 +5591,7 @@
     "wild_blue_red": {
       "type": "dummy",
       "name": {
-        "text": "Blue/Red Wild Card"
+        "text": "Blue Wild Card"
       },
       "colors": [
         "BLUE",
@@ -5542,7 +5610,7 @@
     "wild_blue_green": {
       "type": "dummy",
       "name": {
-        "text": "Blue/Green Wild Card"
+        "text": "Blue Wild Card"
       },
       "colors": [
         "BLUE",
@@ -5561,7 +5629,7 @@
     "wild_blue_yellow": {
       "type": "dummy",
       "name": {
-        "text": "Blue/Yellow Wild Card"
+        "text": "Blue Wild Card"
       },
       "colors": [
         "BLUE",
@@ -5580,7 +5648,7 @@
     "wild_blue_yellow_red": {
       "type": "dummy",
       "name": {
-        "text": "Blue/Yellow/Red Wild Card"
+        "text": "Blue Wild Card"
       },
       "colors": [
         "BLUE",
@@ -5600,7 +5668,7 @@
     "wild_blue_yellow_green": {
       "type": "dummy",
       "name": {
-        "text": "Blue/Yellow/Green Wild Card"
+        "text": "Blue Wild Card"
       },
       "colors": [
         "BLUE",
@@ -5620,7 +5688,7 @@
     "wild_red_yellow_green": {
       "type": "dummy",
       "name": {
-        "text": "Red/Yellow/Green Wild Card"
+        "text": "Blue Wild Card"
       },
       "colors": [
         "RED",
@@ -5640,7 +5708,7 @@
     "wild_blue_green_red": {
       "type": "dummy",
       "name": {
-        "text": "Red/Blue/Green Wild Card"
+        "text": "Blue Wild Card"
       },
       "colors": [
         "RED",
@@ -5660,7 +5728,7 @@
     "wild_green_yellow": {
       "type": "dummy",
       "name": {
-        "text": "Yellow/Green Wild Card"
+        "text": "Blue Wild Card"
       },
       "colors": [
         "YELLOW",
@@ -5679,7 +5747,7 @@
     "wild_green_red": {
       "type": "dummy",
       "name": {
-        "text": "Red/Green Wild Card"
+        "text": "Blue Wild Card"
       },
       "colors": [
         "RED",
@@ -5698,7 +5766,7 @@
     "wild_red_yellow": {
       "type": "dummy",
       "name": {
-        "text": "Red/Yellow Wild Card"
+        "text": "Blue Wild Card"
       },
       "colors": [
         "RED",
@@ -5998,6 +6066,58 @@
       {
         "value": "ice_blast",
         "weight": 1.0
+      },
+      {
+        "value": "shell",
+        "weight": 1.0
+      },
+      {
+        "value": "shell_porcupine",
+        "weight": 1.0
+      },
+      {
+        "value": "shell_quill",
+        "weight": 1.0
+      },
+      {
+        "value": "life_tap",
+        "weight": 1.0
+      },
+      {
+        "value": "arcane",
+        "weight": 1.0
+      },
+      {
+        "value": "arcane_rail",
+        "weight": 1.0
+      },
+      {
+        "value": "earthquake",
+        "weight": 1.0
+      },
+      {
+        "value": "landmine",
+        "weight": 1.0
+      },
+      {
+        "value": "chain_lightning",
+        "weight": 1.0
+      },
+      {
+        "value": "ball_lightning",
+        "weight": 1.0
+      },
+      {
+        "value": "chaos_cube",
+        "weight": 1.0
+      },
+      {
+        "value": "toxic_grenade",
+      "weight": 1.0
+      },
+      {
+        "value": "mana_barrier",
+      "weight": 1.0
       }
     ],
     "temporal": [
@@ -6037,19 +6157,15 @@
     "resource": [
       {
         "value": "resource_gem_larimar",
-        "weight": 20.0
+        "weight": 60.0
       },
       {
         "value": "resource_gem_benitoite",
-        "weight": 20.0
+        "weight": 60.0
       },
       {
         "value": "resource_gem_alexandrite",
-        "weight": 15.0
-      },
-      {
-        "value": "resource_gem_wutodie",
-        "weight": 15.0
+        "weight": 45.0
       },
       {
         "value": "resource_gem_echo",
@@ -6057,59 +6173,59 @@
       },
       {
         "value": "resource_gem_painite",
-        "weight": 10.0
+        "weight": 30.0
       },
       {
         "value": "resource_gem_iskallium",
-        "weight": 3.0
+        "weight": 9.0
       },
       {
         "value": "resource_gem_gorginite",
-        "weight": 3.0
+        "weight": 9.0
       },
       {
         "value": "resource_gem_sparkletine",
-        "weight": 3.0
+        "weight": 9.0
       },
       {
         "value": "resource_gem_ashium",
-        "weight": 3.0
+        "weight": 9.0
       },
       {
         "value": "resource_gem_upaline",
-        "weight": 3.0
+        "weight": 9.0
       },
       {
         "value": "resource_gem_tubium",
-        "weight": 3.0
+        "weight": 9.0
       },
       {
         "value": "resource_gem_bomignite",
-        "weight": 3.0
+        "weight": 9.0
       },
       {
         "value": "resource_gem_petzanite",
-        "weight": 3.0
+        "weight": 9.0
       },
       {
         "value": "resource_gem_xeenium",
-        "weight": 3.0
+        "weight": 9.0
       },
       {
         "value": "resource_bronze",
-        "weight": 28.0
+        "weight": 64.0
       },
       {
         "value": "resource_silver",
-        "weight": 16.0
+        "weight": 48.0
       },
       {
         "value": "resource_focus_waning",
-        "weight": 4.0
+        "weight": 6.0
       },
       {
         "value": "resource_focus_waxing",
-        "weight": 4.0
+        "weight": 6.0
       },
       {
         "value": "resource_focus_fundamental",
@@ -6117,31 +6233,31 @@
       },
       {
         "value": "resource_focus_chaotic",
-        "weight": 8.0
+        "weight": 18.0
       },
       {
         "value": "resource_vault_diamond",
-        "weight": 14.0
+        "weight": 42.0
       },
       {
-        "value": "resource_chromatic_iron",
-        "weight": 25.0
+        "value": "resource_chromatic_iron_ingot",
+        "weight": 66.0
       },
       {
         "value": "resource_mod_box",
-        "weight": 4.0
+        "weight": 12.0
       },
       {
         "value": "resource_carbon",
-        "weight": 32.0
+        "weight": 66.0
       },
       {
         "value": "resource_mystery_egg",
-        "weight": 10.0
+        "weight": 12.0
       },
       {
         "value": "resource_plating",
-        "weight": 44.0
+        "weight": 66.0
       },
       {
         "value": "resource_catalyst_fragment",
@@ -6160,32 +6276,20 @@
         "weight": 4.0
       },
       {
-        "value": "resource_inscription_piece",
-        "weight": 10.0
+        "value": "resource_orange",
+        "weight": 3.0
       },
       {
-        "value": "resource_augment_piece",
+        "value": "resource_star_fruit",
+        "weight": 1.0
+      },
+      {
+        "value": "resource_inscription_piece",
         "weight": 10.0
       },
       {
         "value": "resource_faceted_focus",
         "weight": 8.0
-      },
-      {
-        "value": "resource_smashed_gem",
-        "weight": 12.0
-      },
-      {
-        "value": "resource_gem_box",
-        "weight": 8.0
-      },
-      {
-        "value": "resource_eternal_soul",
-        "weight": 6.0
-      },
-      {
-        "value": "resource_knowledge_essence",
-        "weight": 5.0
       }
     ],
     "scaling": [

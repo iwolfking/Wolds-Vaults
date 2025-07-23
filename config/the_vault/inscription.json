@@ -1341,6 +1341,28 @@
               }
             },
             "weight": 16
+          },
+ {
+            "value": {
+              "entries": [
+                {
+                  "pool": "the_vault:vault/rooms/omega/pixel",
+                  "count": 1,
+                  "color": 7012096
+                }
+              ],
+              "size": {
+                "type": "uniform",
+                "min": 10,
+                "max": 10
+              },
+              "model": {
+                "type": "uniform",
+                "min": 21,
+                "max": 21
+              }
+            },
+            "weight": 4
           }
         ]
       }
@@ -1876,11 +1898,55 @@
               }
             },
             "weight": 10
+          },
+ {
+            "value": {
+              "entries": [
+                {
+                  "pool": "the_vault:vault/rooms/omega/pixel",
+                  "count": 1,
+                  "color": 7012096
+                }
+              ],
+              "size": {
+                "type": "uniform",
+                "min": 10,
+                "max": 10
+              },
+              "model": {
+                "type": "uniform",
+                "min": 21,
+                "max": 21
+              }
+            },
+            "weight": 2
           }
         ]
       }
     ],
     "the_vault:blackmarket_omega": [
+ {
+            "value": {
+              "entries": [
+                {
+                  "pool": "the_vault:vault/rooms/omega/pixel",
+                  "count": 1,
+                  "color": 7012096
+                }
+              ],
+              "size": {
+                "type": "uniform",
+                "min": 10,
+                "max": 10
+              },
+              "model": {
+                "type": "uniform",
+                "min": 21,
+                "max": 21
+              }
+            },
+            "weight": 2
+          },
       {
         "value": {
           "entries": [
@@ -3085,6 +3151,28 @@
               }
             },
             "weight": 3
+          },
+          {
+            "value": {
+              "entries": [
+                {
+                  "pool": "the_vault:vault/rooms/omega/pixel",
+                  "count": 1,
+                  "color": 7012096
+                }
+              ],
+              "size": {
+                "type": "uniform",
+                "min": 10,
+                "max": 10
+              },
+              "model": {
+                "type": "uniform",
+                "min": 21,
+                "max": 21
+              }
+            },
+            "weight": 2
           }
         ]
       }
@@ -3861,6 +3949,122 @@
           }
         ]
       }
+    ],
+    "the_vault:raid_room": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "entries": [
+                {
+                  "pool": "the_vault:vault/rooms/challenge/raid/rooms",
+                  "count": 1,
+                  "color": 15769088
+                }
+              ],
+              "size": {
+                "type": "uniform",
+                "min": 10,
+                "max": 10
+              },
+              "model": {
+                "type": "uniform",
+                "min": 19,
+                "max": 19
+              }
+            },
+            "weight": 16
+          }
+        ]
+      }
+    ],
+    "the_vault:the_lab": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "entries": [
+                {
+                  "pool": "the_vault:vault/rooms/challenge/laboratory",
+                  "count": 1,
+                  "color": 15769088
+                }
+              ],
+              "size": {
+                "type": "uniform",
+                "min": 10,
+                "max": 10
+              },
+              "model": {
+                "type": "uniform",
+                "min": 20,
+                "max": 20
+              }
+            },
+            "weight": 16
+          }
+        ]
+      }
+    ],
+    "the_vault:pixel": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "entries": [
+                {
+                  "pool": "the_vault:vault/rooms/omega/pixel",
+                  "count": 1,
+                  "color": 7012096
+                }
+              ],
+              "size": {
+                "type": "uniform",
+                "min": 10,
+                "max": 10
+              },
+              "model": {
+                "type": "uniform",
+                "min": 21,
+                "max": 21
+              }
+            },
+            "weight": 16
+          }
+        ]
+      }
+    ],
+    "the_vault:digsite": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "entries": [
+                {
+                  "pool": "the_vault:vault/rooms/omega/digsite2",
+                  "count": 1,
+                  "color": 7012096
+                }
+              ],
+              "size": {
+                "type": "uniform",
+                "min": 10,
+                "max": 10
+              },
+              "model": {
+                "type": "uniform",
+                "min": 6,
+                "max": 6
+              }
+            },
+            "weight": 0
+          }
+        ]
+      }
     ]
   },
   "poolToModel": {
@@ -3882,6 +4086,7 @@
     "the_vault:vault/rooms/raw/chromatic_caves": 16,
     "the_vault:vault/rooms/raw/farm": 17,
     "the_vault:vault/rooms/raw/emerald_caves": 18,
+ "the_vault:vault/rooms/omega/pixel": 21
     "the_vault:vault/rooms/omega/playzone": 94,
     "the_vault:vault/rooms/omega/arcade": 95,
     "the_vault:vault/rooms/omega/hellish_digsite": 96,

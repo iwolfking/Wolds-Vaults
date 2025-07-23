@@ -4,6 +4,34 @@
     "skills": [
       {
         "type": "tiered",
+        "id": "Companion_Loyalty",
+        "name": "Companion's Loyalty",
+        "tiers": [
+          {
+            "type": "companion_cooldown",
+            "cooldownReduction": 0.1,
+            "learnPointCost": 1,
+            "regretPointCost": 0,
+            "unlockLevel": 50
+          },
+          {
+            "type": "companion_cooldown",
+            "cooldownReduction": 0.2,
+            "learnPointCost": 1,
+            "regretPointCost": 0,
+            "unlockLevel": 50
+          },
+          {
+            "type": "companion_cooldown",
+            "cooldownReduction": 0.3,
+            "learnPointCost": 1,
+            "regretPointCost": 0,
+            "unlockLevel": 50
+          }
+        ]
+      },
+      {
+        "type": "tiered",
         "id": "Lucky_Altar",
         "name": "Lucky Altar",
         "tiers": [

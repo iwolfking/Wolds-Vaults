@@ -491,6 +491,36 @@
       "config": {
         "curiosSlot": "blue_trinket"
       }
+    },
+"the_vault:aether": {
+      "weight": 10,
+      "name": "Aether Spark",
+      "effectText": "Provide a boost while jumping, allowing temporary flight",
+      "color": 3304444,
+      "minCraftedUses": 12,
+      "maxCraftedUses": 12,
+      "minUses": 20,
+      "maxUses": 30,
+      "config": {
+        "durationTicks": 14,
+        "aetherStrength": -1.0,
+        "curiosSlot": "blue_trinket"
+      }
+    },
+    "the_vault:the_dice": {
+      "weight": 10,
+      "name": "The Dice",
+      "effectText": "All damage is multiplied by 1% to 300% each time it is dealt.",
+      "color": 16534066,
+      "minCraftedUses": 12,
+      "maxCraftedUses": 12,
+      "minUses": 20,
+      "maxUses": 30,
+      "config": {
+        "minimumMultiplier": 0.01,
+        "maximumMultiplier": 3.0,
+        "curiosSlot": "red_trinket"
+      }
     }
   }
 }
