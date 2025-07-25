@@ -8,6 +8,17 @@
       },
       "pool": [
         {
+          "weight": 16,
+          "item": {
+            "id": "the_vault:gem_box",
+            "count": {
+              "type": "uniform",
+              "min": 2,
+              "max": 5
+            }
+          }
+        },
+        {
           "weight": 8,
           "item": {
             "id": "the_vault:gem_black_opal",
@@ -132,8 +143,22 @@
             },
             "count": {
               "type": "uniform",
-              "min": 2,
-              "max": 3
+              "min": 1,
+              "max": 2
+            }
+          }
+        },
+         {
+          "weight": 2,
+          "item": {
+            "id": "the_vault:booster_pack",
+            "nbt": {
+              "id": "the_vault:temporal_pack"
+            },
+            "count": {
+              "type": "uniform",
+              "min": 1,
+              "max": 1
             }
           }
         }
