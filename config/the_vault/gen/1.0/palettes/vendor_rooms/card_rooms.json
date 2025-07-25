@@ -4,8 +4,18 @@
         "type": "placeholder",
         "target": "VENDOR_PEDESTAL",
         "levels": [
-          {
+            {
             "level": 0,
+            "probability": 1.0,
+            "success": {
+              "the_vault:shop_pedestal": 1
+            },
+            "failure": {
+              "minecraft:air": 1
+            }
+          },
+          {
+            "level": 50,
             "probability": 1.0,
             "success": {
               "woldsvaults:card_shop_pedestal": 1
