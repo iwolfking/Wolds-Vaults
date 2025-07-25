@@ -6,6 +6,8 @@ onEvent("recipes", event => {
     event.remove({output: 'the_vault:coin_pouch'})
     event.remove({id: 'the_vault:echoing_ingot'})
     event.remove({id: 'the_vault:smelt_etching'})
+    event.remove({id: 'the_vault:crystal_seal_ordinator_run'})
+    event.remove({id: 'the_vault:crystal_seal_ordinator_build'})
 
     event.shaped(Item.of('the_vault:crystal_budding'),
         [

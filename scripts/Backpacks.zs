@@ -137,7 +137,7 @@ craftingTable.addShaped("sophisticatedbackpacks_advanced_feeding_upgrade", <item
 ]);
 
 craftingTable.addShaped("sophisticatedbackpacks_pickup_upgrade", <item:sophisticatedbackpacks:pickup_upgrade>, [
-    [<item:the_vault:vault_diamond>, <item:minecraft:sticky_piston>, <item:the_vault:vault_diamond>],
+    [<item:the_vault:vault_diamond>, <item:minecraft:hopper>, <item:the_vault:vault_diamond>],
     [<item:the_vault:magic_silk>, <item:sophisticatedbackpacks:upgrade_base>, <item:the_vault:magic_silk>],
     [<item:the_vault:chromatic_steel_ingot>, <item:minecraft:redstone_block>, <item:the_vault:chromatic_steel_ingot>]
 ]);
