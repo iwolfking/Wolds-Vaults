@@ -335,14 +335,14 @@
 					data: {
 						completion: 0.05f
 						entries: [{
-							color: 16777215
 							count: 1
+							color: 16777215
 							type: 0
 						}]
-						model: 0
-						time: 400
 						size: 10
 						instability: 0.01f
+						model: 0
+						time: 400
 					}
 				}
 			}
@@ -477,70 +477,8 @@
 			}]
 		}
 		{
-			title: "Creating The Divine Paradox"
-			x: -2.75d
-			y: 0.25d
-			shape: "pentagon"
-			subtitle: "Build A Vault Now Open!"
-			description: [
-				"&5Now that the Gods and their Favor is open to you, you have a new type of Vault (and resource sink) open to you : it's called The Divine Paradox."
-				""
-				"&5This is a special Vault that is tied in with the four Vault Gods. You start by making an Architect Vault Rock and paying the cost of it, as usual."
-				""
-				"&5Don't head in yet, though. Few things need explaining first. Like the Architect vault crystal has no objective or loot. It's specifically for \"Creating\" your Divine Paradox vault."
-				""
-				"&5When you first activate your Divine Vault, it's... empty. Empty except for the entrance room. You 'build' out your Divine Paradox by purchasing connecting rooms with Vault Gold and materials."
-				""
-				"&5Most rooms require a certain amount of a certain Vault God's reputation as well to purchase."
-			]
-			dependencies: ["1799D40CDE8D8F82"]
-			hide: true
-			id: "72FAD25A9DA18C65"
-			tasks: [{
-				id: "7E27744A43339606"
-				type: "item"
-				item: "the_vault:crystal_seal_ordinator_build"
-			}]
-			rewards: [{
-				id: "3250AA3794C0704A"
-				type: "item"
-				item: "the_vault:crystal_seal_ordinator_build"
-			}]
-		}
-		{
-			title: "Running the Divine Paradox"
-			x: -0.75d
-			y: 0.25d
-			shape: "pentagon"
-			subtitle: "A Limited Time Deal"
-			description: [
-				"&5So, you know how to build out your Divine Paradox. Now we'll explain how you run it."
-				""
-				"&5You can only run your Divine Paradox once every 20 real life hours."
-				""
-				"&5TTranslated to in-game time, about once every 60 Minecraft days."
-				""
-				"&5But it's understandable. When you've unlocked a lot of special rooms, the Divine Paradox ends up being so lucrative you run them as much as possible."
-				""
-				"&5To run a Paradox Vault, you just need to make and pay for a Paradox's Vault Rock."
-			]
-			dependencies: ["72FAD25A9DA18C65"]
-			hide: true
-			id: "391277708CA4B52A"
-			tasks: [{
-				id: "0791F76299B15935"
-				type: "item"
-				item: "the_vault:crystal_seal_ordinator_run"
-			}]
-			rewards: [{
-				id: "7E3CB03788993CA1"
-				type: "item"
-				item: "the_vault:crystal_seal_ordinator_run"
-			}]
-		}
-		{
 			title: "BOSS BATTLE!"
-			x: 1.25d
+			x: -2.75d
 			y: 0.25d
 			shape: "pentagon"
 			subtitle: "Neighborhood or a City Boss?"
@@ -555,7 +493,7 @@
 				""
 				"&5You can get a good selection of Runes to build up the Boss how you want. Just take the Runes back to the first room, put them in the Pedestal, and then kill the boss. Easy peasy."
 			]
-			dependencies: ["391277708CA4B52A"]
+			dependencies: ["1799D40CDE8D8F82"]
 			hide: true
 			id: "4D05DB966C33B676"
 			tasks: [{
@@ -568,37 +506,6 @@
 				id: "4E2F07D3E394D0A0"
 				type: "item"
 				item: "the_vault:crystal_seal_executioner"
-			}]
-		}
-		{
-			title: "Resetting the Paradox"
-			x: -0.75d
-			y: 1.5d
-			shape: "rsquare"
-			subtitle: "Refreshing the Layout"
-			description: [
-				"&5If you've gotten unlucky with the room layout of your Divine Paradox vault, or want to choose differently, there IS a way to reset your Divine Paradox."
-				""
-				"&5Be warned, you don't get a refund on the rooms you've already unlocked."
-				""
-				"&5If you haven't come across any Void themed Vaults yet, keep searching. The water from these Vaults is actually very dangerous : touching it starts leeching time out of your Timer."
-				""
-				"&5But bring a bucket! The Void Liquid is the key to resetting the Divine Paradox. Pour it out in the overworld, and throw an Architects' Vault Rock into it!"
-			]
-			hide_dependency_lines: true
-			dependencies: ["391277708CA4B52A"]
-			hide: true
-			id: "6B7E170787362D79"
-			tasks: [{
-				id: "2070C1F05FB87996"
-				type: "item"
-				item: "the_vault:void_liquid_bucket"
-			}]
-			rewards: [{
-				id: "3E35CF25B9730464"
-				type: "item"
-				item: "the_vault:vault_diamond"
-				count: 4
 			}]
 		}
 		{
@@ -701,7 +608,7 @@
 		{
 			title: "50, Halfway Down"
 			icon: "the_vault:neuralizer"
-			x: 3.25d
+			x: -0.25d
 			y: 0.25d
 			shape: "pentagon"
 			subtitle: "Or Halfway Up?"
@@ -728,47 +635,6 @@
 				item: "the_vault:gem_echo"
 				count: 6
 			}]
-		}
-		{
-			title: "Challenging the Gods"
-			x: -0.75d
-			y: -1.0d
-			shape: "rsquare"
-			subtitle: "And Winning"
-			description: [
-				"&5So, the objective of the Divine Paradox is to collect enough blessings from each God and submitting them in the main room."
-				""
-				"&5Blessings for a God only drop in rooms dedicated to em. Usually something of the room has that God's color to show you."
-				""
-				"&5And the Blessings come from Chests, Coin Piles, and Ores."
-				""
-				"&5At the beginning, you won't have enough rooms unlocked to complete the Vault. Don't worry, eventually you'll unlock plenty!"
-			]
-			hide_dependency_lines: true
-			dependencies: ["391277708CA4B52A"]
-			hide: true
-			id: "36B86835B3868BB7"
-			tasks: [{
-				id: "211407D0D850422B"
-				type: "item"
-				item: "the_vault:vault_crate_paradox"
-			}]
-			rewards: [
-				{
-					id: "6A120F6DD9D467F5"
-					type: "item"
-					item: "the_vault:grand_charm"
-				}
-				{
-					id: "12293BAA2D1146AE"
-					type: "item"
-					item: {
-						id: "the_vault:vault_god_charm"
-						Count: 1b
-						tag: { }
-					}
-				}
-			]
 		}
 		{
 			title: "A Suit For Every Occasion"
