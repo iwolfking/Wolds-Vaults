@@ -385,86 +385,6 @@
           }
         ]
         },
-        {
-        "attribute": "the_vault:hit_hearts",
-        "group": "ModHitHearts",
-        "identifier": "the_vault:hithearts",
-        "tags": [
-          "focusHitHearts"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.04,
-              "max": 0.08,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 30,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.09,
-              "max": 0.12,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 45,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.13,
-              "max": 0.16,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 65,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.17,
-              "max": 0.2,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 86,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.21,
-              "max": 0.24,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.25,
-              "max": 0.35,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.36,
-              "max": 0.5,
-              "step": 0.01
-            }
-          }
-        ]
-      },
       {
         "attribute": "the_vault:reaving_damage",
         "group": "ModOnHitType",
@@ -1417,6 +1337,86 @@
       }
     ],
     "SUFFIX": [
+       {
+        "attribute": "the_vault:hit_hearts",
+        "group": "ModHitHearts",
+        "identifier": "the_vault:hithearts",
+        "tags": [
+          "focusHitHearts"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.04,
+              "max": 0.08,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 30,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.09,
+              "max": 0.12,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 45,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.13,
+              "max": 0.16,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 65,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.17,
+              "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 86,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.21,
+              "max": 0.24,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.25,
+              "max": 0.35,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.36,
+              "max": 0.5,
+              "step": 0.01
+            }
+          }
+        ]
+      },
         {
         "attribute": "the_vault:attack_damage",
         "group": "ModOnHitType",
@@ -3373,8 +3373,10 @@
             }
           }
         ]
-      },
-      {
+      }
+    ],
+    "CRAFTED_SUFFIX": [
+       {
         "attribute": "the_vault:hit_hearts",
         "group": "ModHitHearts",
         "identifier": "the_vault:crafted_on_hit_hearts",
@@ -3433,9 +3435,7 @@
             }
           }
         ]
-      }
-    ],
-    "CRAFTED_SUFFIX": [
+      },
       {
         "attribute": "the_vault:attack_damage",
         "group": "ModOnHitType",
