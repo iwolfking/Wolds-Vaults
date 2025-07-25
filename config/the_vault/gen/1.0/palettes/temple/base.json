@@ -1,0 +1,42 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=ornate_chest]",
+      "output": {
+        "the_vault:placeholder[type=ornate_chest]": 80,
+        "minecraft:air": 20
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=living_chest]",
+      "output": {
+        "the_vault:placeholder[type=living_chest]": 80,
+        "minecraft:air": 20
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=gilded_chest]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 80,
+        "minecraft:air": 20
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=coin_stacks]",
+      "output": {
+        "the_vault:placeholder[type=coin_stacks]": 80,
+        "minecraft:air": 20
+    }
+  },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

@@ -862,6 +862,20 @@
           "descriptionFormatted": "This vault is light weight",
           "icon": "the_vault:gui/modifiers/impossible"
         }
+      },
+      "the_vault:royale_crates": {
+        "properties": {
+          "output": "the_vault:royale_loot_crate{LootTable:\"the_vault:royale_crate\"}",
+          "attemptsPerChunk": 20,
+          "requireConditions": true
+        },
+        "display": {
+          "name": "Royale Crates",
+          "color": "#CBC3E3",
+          "description": "Royale Loot Crates will spawn",
+          "descriptionFormatted": "Royale Loot Crates will spawn",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
       }
     },
     "the_vault:modifier_type/crate_item_quantity": {
@@ -1842,6 +1856,20 @@
           "icon": "the_vault:gui/modifiers/chunky"
         }
       },
+"the_vault:brutal_chunky_mobs": {
+        "properties": {
+          "type": "max_health_additive_percentile",
+          "amount": 0.5,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Brutally Chunky Mobs",
+          "color": "#dc693c",
+          "description": "+50% Mob Health",
+          "descriptionFormatted": "+%d%% Mob Health",
+          "icon": "the_vault:gui/modifiers/chunky"
+        }
+      },
       "the_vault:chunky_mobs4": {
         "properties": {
           "type": "max_health_additive_percentile",
@@ -1934,6 +1962,20 @@
         },
         "display": {
           "name": "Ruthless Mobs",
+          "color": "#da6d5a",
+          "description": "+20% Mob Damage",
+          "descriptionFormatted": "+%d%% Mob Damage",
+          "icon": "the_vault:gui/modifiers/ruthless_mobs"
+        }
+      },
+      "the_vault:royales_challenge": {
+        "properties": {
+          "type": "attack_damage_additive_percentile",
+          "amount": 0.2,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Royale Challenge",
           "color": "#da6d5a",
           "description": "+20% Mob Damage",
           "descriptionFormatted": "+%d%% Mob Damage",
@@ -4001,6 +4043,18 @@
           "descriptionFormatted": "+%d%% Vault XP Gained",
           "icon": "the_vault:gui/modifiers/impossible"
         }
+      },
+  "the_vault:locker_debt": {
+        "properties": {
+          "addend": 0
+        },
+        "display": {
+          "name": "The Locker's Claim",
+          "color": "#76b289",
+          "description": "Owed and unpaid. Earn no XP until your debt is settled",
+          "descriptionFormatted": "Owed and unpaid. Earn no XP until your debt is settled",
+          "icon": "the_vault:gui/modifiers/curse_voidpools"
+        }
       }
     },
     "the_vault:modifier_type/inline_pool": {
@@ -4467,6 +4521,19 @@
       }
     },
     "the_vault:modifier_type/grouped": {
+      "the_vault:royale": {
+        "properties": {
+          "children": {
+            "the_vault:royale_crates": 1
+          }
+        },
+        "display": {
+          "name": "Royale",
+          "color": "#bbf333",
+          "description": "Vault Royale Objective",
+          "icon": "the_vault:gui/modifiers/royale"
+        }
+      },
       "the_vault:greedy": {
         "properties": {
           "children": {
@@ -4880,6 +4947,35 @@
           "color": "#bbf333",
           "description": "Every subsequent BINGO Increases Item Quantity & Rarity by 10%, and boosts soul chance by 25%, and boosts your crate tier by 1!",
           "icon": "the_vault:gui/modifiers/bingo"
+        }
+      },
+"the_vault:harder_mobs": {
+        "properties": {
+          "children": {
+            "the_vault:chunky_mobs2": 1,
+            "the_vault:ruthless_mobs": 1
+          }
+        },
+        "display": {
+          "name": "Harder Mobs",
+          "color": "#bc2525",
+          "description": "Mobs gain +20% Damage and +20% Health",
+          "icon": "the_vault:gui/modifiers/ruthless_mobs"
+        }
+      },
+      "the_vault:brutal_mobs_combo": {
+        "properties": {
+          "children": {
+            "the_vault:brutal_mobs": 1,
+            "the_vault:brutal_chunky_mobs": 1,
+            "the_vault:brutal_faster_mobs": 1
+          }
+        },
+        "display": {
+          "name": "Brutal Mobs",
+          "color": "#631F1F",
+          "description": "Mobs gain +50% Damage, +50% Health and +20% Movement Speed",
+          "icon": "the_vault:gui/modifiers/furious"
         }
       },
       "the_vault:loot_goblin": {
@@ -6545,6 +6641,20 @@
           "color": "#a996ca",
           "description": "Mobs in this vault can spawn in as ethereal, being immune to any damage.",
           "icon": "the_vault:gui/modifiers/haunted"
+        }
+      },
+"the_vault:lunar": {
+        "properties": {
+          "filter": "",
+          "effect": "minecraft:levitation",
+          "amplifier": 2,
+          "chance": 1
+        },
+        "display": {
+          "name": "Lunar",
+          "color": "#c823fa",
+          "description": "Mobs in this vault are out of your way, they levitate above the ground.",
+          "icon": "the_vault:gui/modifiers/levitation"
         }
       }
     },

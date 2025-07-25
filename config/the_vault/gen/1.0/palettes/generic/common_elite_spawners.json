@@ -1,26 +1,26 @@
 {
-    "tile_processors": [
-      {
-        "type": "leveled",
-        "levels": [
-          {
-            "level": 0,
-            "type": "bernoulli_weighted_target",
-            "probability": 0.0,
-            "target": "minecraft:diamond_block",
-            "success": {
-              "the_vault:elite_spawner{spawnGroupName:\"the_vault:elite_skeleton\"}": 10,
-              "the_vault:elite_spawner{spawnGroupName:\"the_vault:elite_zombie\"}": 10,
-              "the_vault:elite_spawner{spawnGroupName:\"the_vault:elite_husk\"}": 10,
-              "the_vault:elite_spawner{spawnGroupName:\"the_vault:elite_drowned\"}": 10,
-              "the_vault:elite_spawner{spawnGroupName:\"the_vault:elite_spider\"}": 10,
-              "the_vault:elite_spawner{spawnGroupName:\"the_vault:elite_troll\"}": 1
-            },
-            "failure": {
-              "minecraft:air": 1
-            }
+  "tile_processors": [
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "bernoulli_weighted_target",
+          "probability": 0.0,
+          "target": "minecraft:diamond_block",
+          "success": {
+            "the_vault:elite_spawner{spawnGroupName:\"the_vault:elite_skeleton\"}": 0,
+            "the_vault:elite_spawner{spawnGroupName:\"the_vault:elite_zombie\"}": 0,
+            "the_vault:elite_spawner{spawnGroupName:\"the_vault:elite_husk\"}": 0,
+            "the_vault:elite_spawner{spawnGroupName:\"the_vault:elite_drowned\"}": 0,
+            "the_vault:elite_spawner{spawnGroupName:\"the_vault:elite_spider\"}": 0,
+            "the_vault:elite_spawner{spawnGroupName:\"the_vault:elite_troll\"}": 0
+          },
+          "failure": {
+            "minecraft:air": 1
           }
-        ]
-      }
-    ]
+        }
+      ]
+    }
+  ]
 }

@@ -7,6 +7,14 @@
         "type": "empty"
       }
     },
+{
+      "id": "the_vault:vault/starts/start_royale",
+      "name": "Start Royale",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/starts/start_royale.nbt"
+      }
+    },
     {
       "id": "the_vault:vault/dungeon_rooms/zombie_large_jgrade",
       "name": "Zombie Large",
@@ -1872,6 +1880,14 @@
       }
     },
     {
+      "id": "the_vault:vault/rooms/challenge/villagefort",
+      "name": "Village Fort",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/challenge/villagefort.nbt"
+      }
+    },
+    {
       "id": "the_vault:vault/rooms/challenge/wildwest1",
       "name": "Wild West 1",
       "1.0": {
@@ -1917,6 +1933,22 @@
       "1.0": {
         "type": "structure",
         "path": "config/the_vault/gen/1.0/structures/vault/rooms/omega/hellish_digsite.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/rooms/omega/wardens_garden",
+      "name": "Wardens Garden 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/omega/wardens_garden.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/rooms/omega/wolds_dinner",
+      "name": "Wolds Dinner 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/omega/wolds_dinner.nbt"
       }
     },
     {
@@ -2402,54 +2434,6 @@
       "1.0": {
         "type": "structure",
         "path": "config/the_vault/gen/1.0/structures/vault/altars/altar4.nbt"
-      }
-    },
-    {
-      "id": "the_vault:vault/altars/trap1",
-      "name": "Altar Trap 1",
-      "1.0": {
-        "type": "structure",
-        "path": "config/the_vault/gen/1.0/structures/vault/altars/trap1.nbt"
-      }
-    },
-    {
-      "id": "the_vault:vault/altars/treasure1",
-      "name": "Altar Treasure 1",
-      "1.0": {
-        "type": "structure",
-        "path": "config/the_vault/gen/1.0/structures/vault/altars/treasure1.nbt"
-      }
-    },
-    {
-      "id": "the_vault:vault/altars/treasure2",
-      "name": "Altar Treasure 2",
-      "1.0": {
-        "type": "structure",
-        "path": "config/the_vault/gen/1.0/structures/vault/altars/treasure2.nbt"
-      }
-    },
-    {
-      "id": "the_vault:vault/altars/treasure3",
-      "name": "Altar Treasure 3",
-      "1.0": {
-        "type": "structure",
-        "path": "config/the_vault/gen/1.0/structures/vault/altars/treasure3.nbt"
-      }
-    },
-    {
-      "id": "the_vault:vault/altars/treasure4",
-      "name": "Altar Treasure 4",
-      "1.0": {
-        "type": "structure",
-        "path": "config/the_vault/gen/1.0/structures/vault/altars/treasure4.nbt"
-      }
-    },
-    {
-      "id": "the_vault:vault/altars/treasure5",
-      "name": "Altar Treasure 5",
-      "1.0": {
-        "type": "structure",
-        "path": "config/the_vault/gen/1.0/structures/vault/altars/treasure5.nbt"
       }
     },
     {
@@ -4496,6 +4480,22 @@
       }
     },
     {
+      "id": "the_vault:vault/decor/cove/tentacle1",
+      "name": "Omega Cove Floor Tentacle",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/cove/tentacle1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/cove/tentacle2",
+      "name": "Omega Cove Wall Tentacle",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/cove/tentacle2.nbt"
+      }
+    },
+    {
       "id": "the_vault:vault/decor/painting/droplet1",
       "name": "Omega Painting Droplet 1",
       "1.0": {
@@ -4589,6 +4589,158 @@
       "1.0": {
         "type": "structure",
         "path": "config/the_vault/gen/1.0/structures/vault/decor/painting/brush4.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/pixel/bounty_pearl",
+      "name": "Pixel Bounty Pearl",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/pixel/bounty_pearl.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/pixel/carbon",
+      "name": "Pixel Carbon",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/pixel/carbon.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/pixel/driftwood",
+      "name": "Pixel Driftwood",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/pixel/driftwood.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/pixel/essence",
+      "name": "Pixel Essence",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/pixel/essence.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/pixel/magic_silk",
+      "name": "Pixel Silk",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/pixel/magic_silk.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/pixel/mod_box",
+      "name": "Pixel Mod Box",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/pixel/mod_box.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/pixel/plating",
+      "name": "Pixel Plating",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/pixel/plating.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/pixel/sandy_rocks",
+      "name": "Pixel Sandy Rocks",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/pixel/sandy_rocks.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/pixel/shulker_shell",
+      "name": "Pixel Shulker Shell",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/pixel/shulker_shell.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/pixel/silver_scrap",
+      "name": "Pixel Silver Scrap",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/pixel/silver_scrap.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/pixel/sweets",
+      "name": "Pixel Sweets",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/pixel/sweets.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/pixel/wooden_chunk",
+      "name": "Pixel Wooden Chunk",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/pixel/wooden_chunk.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/temple/loot1",
+      "name": "Temple Loot 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/temple/loot1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/temple/loot2",
+      "name": "Temple Loot 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/temple/loot2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/temple/loot3",
+      "name": "Temple Loot 3",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/temple/loot3.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/temple/statue1",
+      "name": "Temple Statue 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/temple/statue1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/temple/statue2",
+      "name": "Temple Statue 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/temple/statue2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/temple/statue3",
+      "name": "Temple Statue 3",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/temple/statue3.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/temple/statue4",
+      "name": "Temple Statue 4",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/temple/statue4.nbt"
       }
     },
     {
@@ -5541,6 +5693,14 @@
       "1.0": {
         "type": "structure",
         "path": "config/the_vault/gen/1.0/structures/vault/rooms/omega/mush_room1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/rooms/omega/mush_room2",
+      "name": "Mush Room 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/omega/mush_room2.nbt"
       }
     },
     {
@@ -9712,6 +9872,30 @@
       }
     },
     {
+      "id": "the_vault:vault/rooms/omega/cove2",
+      "name": "Cove 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/omega/cove2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/rooms/omega/pixel1",
+      "name": "Pixel 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/omega/pixel1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/rooms/omega/temple1",
+      "name": "Temple 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/omega/temple1.nbt"
+      }
+    },
+    {
       "id": "the_vault:vault/decor/factory/bucket_loot1",
       "name": "Bucket Loot 1",
       "1.0": {
@@ -9909,6 +10093,22 @@
       "1.0": {
         "type": "structure",
         "path": "config/the_vault/gen/1.0/structures/vault/decor/village/village3/corner_se/catacomb2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/village/villagefort/cellar1",
+      "name": "Village Cellar 1",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/village/villagefort/cellar1.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/decor/village/villagefort/cellar2",
+      "name": "Village Cellar 2",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/decor/village/villagefort/cellar2.nbt"
       }
     },
     {
@@ -10549,6 +10749,22 @@
       "1.0": {
         "type": "structure",
         "path": "config/the_vault/gen/1.0/structures/vault/rooms/challenge/laboratory2.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/rooms/challenge/laboratory3",
+      "name": "Laboratory Room 3",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/challenge/laboratory3.nbt"
+      }
+    },
+    {
+      "id": "the_vault:vault/rooms/challenge/laboratory4",
+      "name": "Laboratory Room 4",
+      "1.0": {
+        "type": "structure",
+        "path": "config/the_vault/gen/1.0/structures/vault/rooms/challenge/laboratory4.nbt"
       }
     },
     {

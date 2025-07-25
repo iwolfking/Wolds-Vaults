@@ -1,0 +1,1220 @@
+{
+    "ETCHINGS": {
+        "the_vault:etching_blocking_mana": {
+            "name": "Blocking Mana",
+            "description": "Blocking restores <yellow>%dvalue <gray>mana",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_blocking_mana",
+                    "group": "BlockEtching",
+                    "identifier": "the_vault:etching_blocking_mana",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 2,
+                                "max": 8,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ],
+            "itemOverlay": "the_vault:etching/zod#inventory"
+        },
+        "the_vault:etching_chaining_penalty": {
+            "name": "Chaining Penalty",
+            "description": "<#5c5db6>Chaining Hits <gray>have their damage penalty lowered by <yellow>%.0fpvalue%",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "itemOverlay": "the_vault:etching/assassin#inventory",
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_chaining_penalty",
+                    "group": "ChainingEtching",
+                    "identifier": "the_vault:chaining_penalty",
+                    "tags": [
+                        "chaining"
+                    ],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.005,
+                                "max": 0.01,
+                                "step": 0.001
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_frost_nova_freeze": {
+            "name": "Glacial Nova",
+            "description": "<gray>Frost nova has <yellow>%.0fpvalue% <gray>chance to <#2FE1FA>freeze <gray>(glacially imprison) mobs hit for 2 seconds",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "itemOverlay": "the_vault:etching/blood#inventory",
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_frost_nova_freeze",
+                    "group": "NovaEtching",
+                    "identifier": "the_vault:etching_frost_nova_freeze",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.1,
+                                "max": 0.6,
+                                "step": 0.05
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_glacial_shatter_explosion": {
+            "name": "Glacial Shatter Explosion",
+            "description": "<gray>Frostbitten mobs when shattered will explode into ice chunks dealing <yellow>%.0fpvalueA% <#C23627>Attack damage <gray>in a <yellow>%.1fvalueB <gray>block radius",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_glacial_shatter_explosion",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_glacial_shatter_explosion",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "percentAD": {
+                                    "min": 0.1,
+                                    "max": 0.6,
+                                    "step": 0.05
+                                },
+                                "radius": {
+                                    "min": 2.0,
+                                    "max": 5.0,
+                                    "step": 0.5
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_heal_cleanse": {
+            "name": "Heal Cleanse",
+            "description": "<gray>Heal also casts a level <yellow>%dvalue <gray>Cleanse",
+            "color": 16777215,
+            "typeGroups": [
+                "Defensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_heal_cleanse",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_heal_cleanse",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 8,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_ice_bolt_chunk_damage": {
+            "name": "Glacial Damage",
+            "description": "<gray>Glacial Blast deals <yellow>%.0fpvalue% <#C23627>Attack damage",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_ice_bolt_chunk_damage",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_ice_bolt_chunk_damage",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.1,
+                                "max": 0.8,
+                                "step": 0.05
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_ice_bolt_effect": {
+            "name": "Ice Bolt Effect",
+            "description": "Ice Bolt has a <yellow>%.0fpvalueB% <gray>chance of applying Glacial Prison for <yellow>%dvalueC <gray>seconds",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_ice_bolt_effect",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_ice_bolt_effect",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "glacial_prison",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "chance": {
+                                    "min": 0.2,
+                                    "max": 0.8,
+                                    "step": 0.05
+                                },
+                                "duration": {
+                                    "min": 2,
+                                    "max": 4,
+                                    "step": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_ice_bolt_lucky": {
+            "name": "Lucky Bolt",
+            "description": "Ice Bolt can now proc <#6DF5A3>Lucky Hit",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_ice_bolt_lucky",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_ice_bolt_lucky",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 4,
+                                "max": 8,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_ice_bolt_multicast": {
+            "name": "Frozen Barrage",
+            "description": "Ice Bolt casts itself again rapidly <yellow>%dvalue <gray>times after the first cast one",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_ice_bolt_multicast",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_ice_bolt_multicast",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 4,
+                                "max": 8,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_ice_bolt_pierce": {
+            "name": "Piercing Bolt",
+            "description": "<gray>Ice Bolt pierces <yellow>%dvalue <gray>mobs",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_ice_bolt_pierce",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_ice_bolt_pierce",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 4,
+                                "max": 12,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_implode_mana_regen": {
+            "name": "Imploding Reversal",
+            "description": "<gray>Implode increases your mana regeneration by <yellow>%.0fpvalue% <gray>for each mob it kills for 10 seconds",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_implode_mana_regen",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_implode_mana_regen",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.01,
+                                "max": 0.05,
+                                "step": 0.01
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lucky_cooldown_reset": {
+            "name": "Lucky Reset",
+            "description": "<gray>Proccing <#6DF5A3>Lucky Hit <gray>will remove any remaining cooldown of <yellow>%svalue/ability",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lucky_cooldown_reset",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lucky_cooldown_reset",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "strings": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Dot",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Dash_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Dash_Damage",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Dash_Warp",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Heal_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Heal_Group",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Heal_Cleanse",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Totem",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Totem_Player_Damage",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Totem_Mana_Regen",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Totem_Mob_Damage",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Fireball_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Fireball_Volley",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Mana_Shield_Implode",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Hunter_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Javelin_Sight",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Ice_Bolt_Blast",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Ghost_Walk",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Ghost_Walk_Spirit",
+                                        "weight": 1.0
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lucky_frost_nova": {
+            "name": "Lucky Nova",
+            "description": "<gray>Proccing <#6DF5A3>Lucky Hit <gray>will cast a level <yellow>%dvalue <gray>Frost Nova",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lucky_frost_nova",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lucky_frost_nova",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 8,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lucky_low_health": {
+            "name": "Lucky Amplifier",
+            "description": "Gain <yellow>%.0fpvalueA% <#6DF5A3>Lucky Hit <gray>chance while below <yellow>%.0fpvalueB% <gray>health",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lucky_low_health",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lucky_low_health",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "chance": {
+                                    "min": 0.02,
+                                    "max": 0.1,
+                                    "step": 0.01
+                                },
+                                "healthThreshold": {
+                                    "min": 0.5,
+                                    "max": 0.5,
+                                    "step": 0
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lucky_vulnerable": {
+            "name": "Lucky Vulnerable",
+            "description": "<gray>Proccing <#6DF5A3>Lucky Hit <gray>will apply <yellow>%dvalueC <gray>stack(s) of <yellow>%svalueA <gray>for <yellow>%.1fvalueB <gray>second(s)",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lucky_vulnerable",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lucky_vulnerable",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 1,
+                                    "max": 10,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 1.0,
+                                    "max": 5.0,
+                                    "step": 0.5
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_smite_stun": {
+            "name": "Stunning Smite",
+            "description": "<gray>Smite has a <yellow>%.0fpvalue% <gray>chance of stunning mobs",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_smite_stun",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_smite_stun",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.5,
+                                "max": 1.0,
+                                "step": 0.1,
+                                "type": "uniformed_step"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_smite_echo": {
+            "name": "Echoing Smite",
+            "description": "<yellow>Smite <gray>casts an additional bolt 0.5 seconds after the first one dealing <yellow>%.0fpvalue% <gray>of the original smite damage",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_smite_echo",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_smite_echo",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.2,
+                                "max": 1.0,
+                                "step": 0.05,
+                                "type": "uniformed_step"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_nova_recast": {
+            "name": "Nova Recast",
+            "description": "<gray>Nova is cast again within <yellow>%tvalue <gray>seconds after cast",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_nova_recast",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_nova_recast",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 20,
+                                "max": 90,
+                                "step": 10
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_shield_bash_damage": {
+            "name": "Shield Bash Damage",
+            "description": "<gray>Shield Bash additionally deals <yellow>%.0fpvalue% <#C23627>Attack Damage",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_shield_bash_damage",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_shield_bash_damage",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.1,
+                                "max": 0.4,
+                                "step": 0.05
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_piercing_javelin": {
+            "name": "Scatter Pierce",
+            "description": "<gray>Piercing Javelin throws an additional 2 javelins horizontally, dealing <yellow>%.0fpvalue% <gray>of your original javelin damage",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_piercing_javelin",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_piercing_javelin",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.3,
+                                "max": 1.0,
+                                "step": 0.05
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_piercing_javelin_ricochet": {
+            "name": "Piercing Ricochet",
+            "description": "<gray>Piercing Javelin ricochets to the side when piercing, dealing <yellow>%.0fpvalue% <gray>reduced damage",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_piercing_javelin_ricochet",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_piercing_javelin_ricochet",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.2,
+                                "max": 0.6,
+                                "step": 0.05
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_poison_mana": {
+            "name": "Poison Mana",
+            "description": "<gray>Poison Damage ticks generates <yellow>%dvalue <gray>mana",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_poison_mana",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_poison_mana",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 3,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_scatter_mana": {
+            "name": "Scatter Mana",
+            "description": "<gray>Scatter Javelins restore <yellow>%dvalue <gray>mana when hitting a mob",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_scatter_mana",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_scatter_mana",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 6,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_storm_arrow_blizzard_damage": {
+            "name": "Blizzard Damage",
+            "description": "<gray>Storm Arrow Blizzard also deals <yellow>%.0fpvalue% <gray>AP damage per hit",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_storm_arrow_blizzard_damage",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_storm_arrow_blizzard_damage",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.1,
+                                "max": 0.5,
+                                "step": 0.1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_nova_low_mana_damage": {
+            "name": "Nova Damage Increase",
+            "description": "<gray>Casting Nova with less than <yellow>%.0fpvalueA% <gray>mana remaining increases its damage by <yellow>%.0fpvalueB%",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_nova_low_mana_damage",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_nova_low_mana_damage",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "damageMultiplier": {
+                                    "min": 0.4,
+                                    "max": 1.0,
+                                    "step": 0.1
+                                },
+                                "manaThreshold": {
+                                    "min": 0.5,
+                                    "max": 0.5,
+                                    "step": 0
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_stone_fall_stun": {
+            "name": "Shockwave",
+            "description": "<gray>Stonefall has a <yellow>%.0fpvalueA% <gray>chance of <yellow>%svalueC/effect <gray>mobs it knocks backs for <red>%tvalueB <red>seconds?",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_stone_fall_stun",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_stone_fall_stun",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:noai",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "chance": {
+                                    "min": 0.2,
+                                    "max": 1.0,
+                                    "step": 0.05
+                                },
+                                "duration": {
+                                    "min": 40.0,
+                                    "max": 100.0,
+                                    "step": 5.0
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_totem_mob_damage_ad": {
+            "name": "AD Totem",
+            "description": "<gray>Totem of Hatred now also scales with AD Damage",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_totem_mob_damage_ad",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_totem_mob_damage_ad",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "flag": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_totem_player_damage_ap": {
+            "name": "AP Totem",
+            "description": "<gray>Wrath totem also increases <$ability_power>Ability Power",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_totem_player_damage_ap",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_totem_player_damage_ap",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "flag": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_mana_shield_nova": {
+            "name": "Nova Shield",
+            "description": "<gray>Mana Shield casts a level <yellow>%dvalueB %svalueA/ability <gray>when expiring",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_mana_shield_nova",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_mana_shield_nova",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Dot",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 2,
+                                    "max": 16,
+                                    "step": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_rampage_lucky_hit": {
+            "name": "Rampaging Lucky Hit",
+            "description": "<gray>While active, Rampage will increase your <$luckyHit>Lucky Hit <gray>chance by <yellow>%.0fpvalue%",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_rampage_lucky_hit",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_rampage_lucky_hit",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.02,
+                                "max": 0.1,
+                                "step": 0.01
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_dash_warp_nova": {
+            "name": "Nova Dash",
+            "description": "<gray>Dash warp will cast a level <yellow>%dvalueB %svalueA/ability <gray>upon landing",
+            "color": 16777215,
+            "typeGroups": [
+                "Defensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_dash_warp_nova",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_dash_warp_nova",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Dot",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 2,
+                                    "max": 16,
+                                    "step": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_storm_arrow_blizzard_effect": {
+            "name": "Blizzard Effect",
+            "description": "<gray>Storm Arrow Blizzard applies <yellow>%dvalueC <gray>stack(s) of <yellow>%svalueA/effect <gray>for <yellow>%tvalueB <gray>second(s) to mobs it hits",
+            "color": 5476034,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_storm_arrow_blizzard_effect",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_storm_arrow_blizzard_effect",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 1,
+                                    "max": 8,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 20,
+                                    "max": 100,
+                                    "step": 10
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_spirit_walk_ability": {
+            "name": "Spirit Nova",
+            "description": "<gray>Spirit Walk will cast a level <yellow>%dvalueB %svalueA/ability <gray>when it expires",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_spirit_walk_ability",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_spirit_walk_ability",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 1,
+                                    "max": 8,
+                                    "step": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lucky_vortex": {
+            "name": "Lucky Vortex",
+            "description": "<gray>Proccing <#6DF5A3>Lucky Hit <gray>will cast a Vortex in a radius of <yellow>%dvalueA <gray>blocks for <yellow>%dvalueB <gray>second(s)",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lucky_vortex",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lucky_vortex",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "radius": {
+                                    "min": 4.0,
+                                    "max": 8.0,
+                                    "step": 1.0
+                                },
+                                "duration": {
+                                    "min": 20,
+                                    "max": 100,
+                                    "step": 10
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_totem_player_damage_effect": {
+            "name": "Vulnerable Totem",
+            "description": "<gray>Totem of Hatred applies <yellow>%dvalueC <gray>stack(s) of <yellow>%svalueA/effect <gray>to mobs hit for <yellow>%tvalueB <gray>second(s)",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_totem_player_damage_effect",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_totem_player_damage_effect",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minLevel": 0,
+                            "maxLevel": -1,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 1,
+                                    "max": 8,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 20,
+                                    "max": 100,
+                                    "step": 10
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "groups": {
+        "Defensive": [
+            "HELMET",
+            "CHESTPLATE",
+            "LEGGINGS",
+            "BOOTS"
+        ],
+        "Offensive": [
+            "SWORD",
+            "AXE"
+        ],
+        "Utility": [
+            "FOCUS",
+            "WAND",
+            "SHIELD"
+        ]
+    }
+}
