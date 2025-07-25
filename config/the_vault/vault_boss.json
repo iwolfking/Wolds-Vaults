@@ -293,8 +293,8 @@
     "heal": {
       "Type": "heal",
       "Attributes": {
-        "HealCooldown": 0,
-        "HealInterval": 40,
+        "HealCooldown": 100,
+        "HealInterval": 300,
         "StackSize": 0,
         "HealPercentage": 0.1
       }
@@ -325,7 +325,7 @@
     "health_attribute": {
       "Type": "attribute_modifier",
       "Attributes": {
-        "Operator": "add",
+        "Operator": "multiply",
         "Value": 0.2,
         "Name": "minecraft:generic.max_health"
       }

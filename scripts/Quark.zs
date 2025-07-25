@@ -5,6 +5,18 @@ for Iskall85's Vaulthunters */
 
 import crafttweaker.api.recipe.SmithingRecipeManager;
 
+var colors = {
+  "red_corundum": "red",
+  "orange_corundum": "orange",
+  "yellow_corundum": "yellow",
+  "green_corundum": "green",
+  "blue_corundum": "blue",
+  "indigo_corundum": "indigo",
+  "violet_corundum": "violet",
+  "white_corundum": "white",
+  "black_corundum": "black"
+};
+
 <recipetype:minecraft:smithing>.addJsonRecipe("quark_flamerang", { 
   "base": {"item":"quark:pickarang"},
   "addition": {"item":"the_vault:black_chromatic_steel_ingot"},
@@ -34,3 +46,23 @@ craftingTable.addShaped("quark_blank_rune", <item:quark:blank_rune>, [
     [<item:the_vault:vault_essence>, <item:the_vault:vault_essence>, <item:the_vault:vault_essence>],
     [<item:minecraft:stone>, <item:minecraft:stone>, <item:minecraft:stone>]
 ]);
+
+craftingTable.addShapeless("quark_uncraft_carrot_crate", <item:minecraft:carrot> *9, [
+    <item:quark:carrot_crate>
+]);
+
+for colorId, colorName in colors {
+  craftingTable.addShapeless("quark_" + colorName + "_corundum", <item:quark:${colorId}>, [
+    <item:quark:${colorId}_cluster>, <item:quark:${colorId}_cluster>,
+    <item:quark:${colorId}_cluster>, <item:quark:${colorId}_cluster>
+  ]);
+
+  craftingTable.addShapeless("quark_" + colorId + "_sheet", <item:quark:${colorId}_pane>, [
+    <item:quark:${colorId}>, <item:quark:${colorId}>, <item:quark:${colorId}>,
+    <item:quark:${colorId}>, <item:quark:${colorId}>, <item:quark:${colorId}>
+  ]);
+
+  craftingTable.addShapeless("quark_waxed_" + colorId, <item:quark:waxed_${colorId}>, [
+    <item:quark:${colorId}>, <item:minecraft:honeycomb>
+  ]);
+}

@@ -189,3 +189,23 @@ craftingTable.addShaped("botania_alchemy_catalyst", <item:botania:alchemy_cataly
     10000,
     <block:botania:alchemy_catalyst>
 );
+
+// <recipetype:botania:mana_infusion>.addRecipe("mana_infusion_vault_stone",  <item:the_vault:chipped_vault_rock>,
+//  <item:the_vault:vault_stone> *2, 10000, <block:botania:alchemy_catalyst>);
+
+var clusters = {
+  "cluster_bomignite": "bomignite",
+  "cluster_tubium": "tubium",
+  "cluster_ashium": "ashium",
+  "cluster_upaline": "upaline",
+  "cluster_xenium": "xenium",
+  "cluster_gorginite": "gorginite",
+  "cluster_petzanite": "petzanite",
+  "cluster_iskallium": "iskallium",
+  "cluster_sparkletine": "sparkletine"
+};
+
+for clusterId, clusterName in clusters {
+    <recipetype:botania:terra_plate>.addRecipe("terra_plate_" + clusterName +"_key", <item:the_vault:key_${clusterName}>, 5000,
+<item:the_vault:cluster_${clusterName}>, <item:the_vault:blank_key>);
+}

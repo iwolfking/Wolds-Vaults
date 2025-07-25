@@ -291,7 +291,7 @@
           "color": "$text"
         },
         {
-          "text": "\u25cf Hold Ability ",
+          "text": "\u25cf Toggle Ability ",
           "color": "$castType"
         }
       ],
@@ -583,7 +583,7 @@
     "Heal_Cleanse": {
       "description": [
         {
-          "text": "Changes Heal to Cleanse any negative effect affecting you, heal is reduced by 50%.\n\n",
+          "text": "Changes Heal to instead Cleanse any negative effect affecting you.\n\n",
           "color": "$text"
         },
         {
@@ -1037,6 +1037,57 @@
         "manaCost",
         "cooldown",
         "healthPoints"
+      ]
+    },
+    "Mana_Barrier": {
+      "description": [
+        {
+          "text": "Summon a magical ",
+          "color": "$text"
+        },
+        {
+          "text": "Mana Cube",
+          "color": "$absorb"
+        },
+        {
+          "text": " around you for a ",
+          "color": "$text"
+        },
+        {
+          "text": "duration of time",
+          "color": "$duration"
+        },
+        {
+          "text": ". Mobs can not pass through these ",
+          "color": "$text"
+        },
+        {
+          "text": "blocks",
+          "color": "$absorb"
+        },
+        {
+          "text": " but you can!",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Cast Ability",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "duration",
+        "manaCost",
+        "cooldown"
+
+      ],
+      "next": [
+        "duration",
+        "manaCost",
+        "cooldown"
       ]
     },
     "Retribution_Base": {
@@ -1541,6 +1592,63 @@
         "cooldown",
         "manaCostPerSecond",
         "leech"
+      ]
+    },
+    "Earthquake_Landmine": {
+      "description": [
+        {
+          "text": "Summon a ",
+          "color": "$text"
+        },
+        {
+          "text": "Landmine",
+          "color": "$name"
+        },
+        {
+          "text": " where you are standing, which explodes in a ",
+          "color": "$text"
+        },
+        {
+          "text": "radius",
+          "color": "$radius"
+        },
+        {
+          "text": " dealing damage based on your ",
+          "color": "$text"
+        },
+        {
+          "text": "Attack Damage",
+          "color": "$damage"
+        },
+        {
+          "text": ", and ",
+          "color": "$text"
+        },
+        {
+          "text": "knocking back",
+          "color": "$knockback"
+        },
+        {
+          "text": " any hostiles if stepped on by any mob.\n\nLandmines can also trigger themselves by exploding in each other's radius.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Cast Ability ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "damage",
+        "knockback"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "damage",
+        "knockback"
       ]
     },
     "Stonefall_Base": {
@@ -3441,6 +3549,446 @@
         "glacialChance",
         "cooldown",
         "manaCost"
+      ]
+    },
+    "Arcane_Base": {
+      "description": [
+        {
+          "text": "Channel a magical beam to melt mobs quickly by dealing a percentage of your ",
+          "color": "$text"
+        },
+        {
+          "text": "ability power",
+          "color": "$ability_power"
+        },
+        {
+          "text": " every half second in its ",
+          "color": "$text"
+        },
+        {
+          "text": "distance",
+          "color": "$distance"
+        },
+        {
+          "text": ".\n\nArcane drains the ",
+          "color": "$text"
+        },
+        {
+          "text": "mana cost",
+          "color": "$manaCost"
+        },
+        {
+          "text": " each second while being channeled.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25cf Hold Ability",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "distance",
+        "manaCost"
+
+      ],
+      "next": [
+        "ability_power",
+        "distance",
+        "manaCost"
+      ]
+    },
+    "Arcane_Rail": {
+      "description": [
+        {
+          "text": "Summon a magical Arcane Rail to hit a single mob with incredible power",
+          "color": "$text"
+        },
+        {
+          "text": ", dealing a percentage of your ",
+          "color": "$text"
+        },
+        {
+          "text": "ability power",
+          "color": "$ability_power"
+        },
+        {
+          "text": " in damage, and triggering on-hit effects like ",
+          "color": "$text"
+        },
+        {
+          "text": "Clouds",
+          "color": "$name"
+        },
+        {
+          "text": " and ",
+          "color": "$text"
+        },
+        {
+          "text": "Chaining",
+          "color": "$chaining"
+        },
+        {
+          "text": "\n\n\u2734 Cast Ability ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "abilityRange",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Earthquake_Base": {
+      "description": [
+        {
+          "text": "Call forth a massive blast where you stand, dealing damage based on your ",
+          "color": "$text"
+        },
+        {
+          "text": "attack damage",
+          "color": "$damage"
+        },
+        {
+          "text": " and ",
+          "color": "$text"
+        },
+        {
+          "text": "knocking back",
+          "color": "$knockback"
+        },
+        {
+          "text": " any hostile mobs in a ",
+          "color": "$text"
+        },
+        {
+          "text": "radius",
+          "color": "$radius"
+        },
+        {
+          "text": " after a ",
+          "color": "$text"
+        },
+        {
+          "text": "delay of time\nThe Damage dealt decreases the further away from the center the mobs are hit.",
+          "color": "$duration"
+        },
+        {
+          "text": "\n\nEarthquake also has a chance to destroy blocks in its path.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Cast Ability ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damage",
+        "knockback",
+        "radius",
+        "duration",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "damage",
+        "knockback",
+        "radius",
+        "duration",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Implode_Life_Tap": {
+      "description": [
+        {
+          "text": "Drain 80% of your ",
+          "color": "$text"
+        },
+        {
+          "text": "remaining health",
+          "color": "$health"
+        },
+        {
+          "text": " dealing damage per ",
+          "color": "$text"
+        },
+        {
+          "text": "hitpoint drained",
+          "color": "$damage"
+        },
+        {
+          "text": " to all mobs in a ",
+          "color": "$text"
+        },
+        {
+          "text": "radius",
+          "color": "$radius"
+        },
+        {
+          "text": " around you.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Note, 1 heart is 2 hitpoints.",
+          "color": "$darkgray"
+        },
+        {
+          "text": "\n\n\u2734 Cast Ability ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "radius",
+        "damagePerHealth",
+        "cooldown"
+      ],
+      "next": [
+        "radius",
+        "damagePerHealth",
+        "cooldown"
+      ]
+    },
+    "Chain_Lightning_Base": {
+      "description": [
+        {
+          "text": "Conjure a lightning arrow that calls a ",
+          "color": "$text"
+        },
+        {
+          "text": "lightning strike",
+          "color": "$name"
+        },
+        {
+          "text": " on impact, dealing ",
+          "color": "$text"
+        },
+        {
+          "text": "lightning damage",
+          "color": "$lightning"
+        },
+        {
+          "text": " based on your ",
+          "color": "$text"
+        },
+        {
+          "text": "Ability Power",
+          "color": "$ability_power"
+        },
+        {
+          "text": " and spreads to mobs in a ",
+          "color": "$text"
+        },
+        {
+          "text": "range",
+          "color": "$range"
+        },
+        {
+          "text": " around the impact.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Cast Ability ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "distance",
+        "chainRange",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "abilityRange",
+        "distance",
+        "chainRange",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Chain_Lightning_Orbs": {
+      "description": [
+        {
+          "text": "Summons a powerful ",
+          "color": "$text"
+        },
+        {
+          "text": "Ball of Lightning",
+          "color": "$name"
+        },
+        {
+          "text": " that travels slowly, following your crosshair and zaps every mob it hits with ",
+          "color": "$text"
+        },
+        {
+          "text": "Lightning Damage",
+          "color": "$lightning"
+        },
+        {
+          "text": " based on your ",
+          "color": "$text"
+        },
+        {
+          "text": "Ability Power",
+          "color": "$ability_power"
+        },
+        {
+          "text": ".",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n✦ Cast Ability ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "duration",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "abilityRange",
+        "duration",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Grenade_Base": {
+      "description": [
+        {
+          "text": "Throw a mysterious, powerful ",
+          "color": "$text"
+        },
+        {
+          "text": "Chaos Cube",
+          "color": "$qhighlight"
+        },
+        {
+          "text": " that explodes after a little while, dealing ",
+          "color": "$text"
+        },
+        {
+          "text": "Attack Damage",
+          "color": "$damage"
+        },
+        {
+          "text": " scaled damage in a ",
+          "color": "$text"
+        },
+        {
+          "text": "radius",
+          "color": "$radius"
+        },
+        {
+          "text": ".",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Cast Ability",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damage",
+        "radius",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "damage",
+        "radius",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Toxic_Grenade": {
+      "description": [
+        {
+          "text": "Throw a ",
+          "color": "$text"
+        },
+        {
+          "text": "Toxic",
+          "color": "$poison"
+        },
+        {
+          "text": ", ",
+          "color": "$text"
+        },
+        {
+          "text": "poison",
+          "color": "$poison"
+        },
+        {
+          "text": "-infused, vial that when it shatters explodes into a ",
+          "color": "$text"
+        },
+        {
+          "text": "poison cloud",
+          "color": "$poison"
+        },
+        {
+          "text": ", dealing ",
+          "color": "$text"
+        },
+        {
+          "text": "Ability Power",
+          "color": "$ability_power"
+        },
+        {
+          "text": " scaled damage in a ",
+          "color": "$text"
+        },
+        {
+          "text": "radius",
+          "color": "$radius"
+        },
+        {
+          "text": " over a certain ",
+          "color": "$text"
+        },
+        {
+          "text": "amount of time",
+          "color": "$duration"
+        },
+        {
+          "text": ".",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Cast Ability",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "radius",
+        "duration",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "ability_power",
+        "radius",
+        "duration",
+        "manaCost",
+        "cooldown"
       ]
     }
   }

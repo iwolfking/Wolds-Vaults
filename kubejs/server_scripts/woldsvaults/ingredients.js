@@ -184,41 +184,51 @@ onEvent('recipes', event => {
 
 
     //Gem Blocks
-    event.shapeless('the_vault:block_gem_larimar', ['8x the_vault:gem_larimar'])
-    event.shapeless('the_vault:block_gem_benitoite', ['8x the_vault:gem_benitoite'])
-    event.shapeless('the_vault:block_gem_painite', ['8x the_vault:gem_painite'])
-    event.shapeless('the_vault:block_gem_alexandrite', ['8x the_vault:gem_alexandrite'])
-    event.shapeless('the_vault:block_gem_wutodie', ['8x the_vault:gem_wutodie'])
-    event.shapeless('the_vault:block_gem_black_opal', ['8x the_vault:gem_black_opal'])
-    event.shapeless('the_vault:block_gem_echo', ['8x the_vault:gem_echo'])
+    //event.shapeless('the_vault:block_gem_larimar', ['8x the_vault:gem_larimar'])
+    //event.shapeless('the_vault:block_gem_benitoite', ['8x the_vault:gem_benitoite'])
+    //event.shapeless('the_vault:block_gem_painite', ['8x the_vault:gem_painite'])
+    //event.shapeless('the_vault:block_gem_alexandrite', ['8x the_vault:gem_alexandrite'])
+    //event.shapeless('the_vault:block_gem_wutodie', ['8x the_vault:gem_wutodie'])
+    //event.shapeless('the_vault:block_gem_black_opal', ['8x the_vault:gem_black_opal'])
+    //event.shapeless('the_vault:block_gem_echo', ['8x the_vault:gem_echo'])
 
-    event.shapeless('the_vault:block_gem_sparkletine', ['8x the_vault:gem_sparkletine'])
-    event.shapeless('the_vault:block_gem_iskallium', ['8x the_vault:gem_iskallium'])
-    event.shapeless('the_vault:block_gem_ashium', ['8x the_vault:gem_ashium'])
-    event.shapeless('the_vault:block_gem_xenium', ['8x the_vault:gem_xenium'])
-    event.shapeless('the_vault:block_gem_upaline', ['8x the_vault:gem_upaline'])
-    event.shapeless('the_vault:block_gem_gorginite', ['8x the_vault:gem_gorginite'])
-    event.shapeless('the_vault:block_gem_petzanite', ['8x the_vault:gem_petzanite'])
-    event.shapeless('the_vault:block_gem_tubium', ['8x the_vault:gem_tubium'])
-    event.shapeless('the_vault:block_gem_bomignite', ['8x the_vault:gem_bomignite'])
+    //event.shapeless('the_vault:block_gem_sparkletine', ['8x the_vault:gem_sparkletine'])
+    //event.shapeless('the_vault:block_gem_iskallium', ['8x the_vault:gem_iskallium'])
+    //event.shapeless('the_vault:block_gem_ashium', ['8x the_vault:gem_ashium'])
+    //event.shapeless('the_vault:block_gem_xenium', ['8x the_vault:gem_xenium'])
+    //event.shapeless('the_vault:block_gem_upaline', ['8x the_vault:gem_upaline'])
+    //event.shapeless('the_vault:block_gem_gorginite', ['8x the_vault:gem_gorginite'])
+    //event.shapeless('the_vault:block_gem_petzanite', ['8x the_vault:gem_petzanite'])
+    //event.shapeless('the_vault:block_gem_tubium', ['8x the_vault:gem_tubium'])
+    //event.shapeless('the_vault:block_gem_bomignite', ['8x the_vault:gem_bomignite'])
 
-    event.shapeless('8x the_vault:gem_larimar', ['the_vault:block_gem_larimar'])
-    event.shapeless('8x the_vault:gem_benitoite', ['the_vault:block_gem_benitoite'])
-    event.shapeless('8x the_vault:gem_alexandrite', ['the_vault:block_gem_alexandrite'])
-    event.shapeless('8x the_vault:gem_painite', ['the_vault:block_gem_painite'])
-    event.shapeless('8x the_vault:gem_wutodie', ['the_vault:block_gem_wutodie'])
-    event.shapeless('8x the_vault:gem_black_opal', ['the_vault:block_gem_black_opal'])
-    event.shapeless('8x the_vault:gem_echo', ['the_vault:block_gem_echo'])
+    //event.shapeless('8x the_vault:gem_larimar', ['the_vault:block_gem_larimar'])
+    //event.shapeless('8x the_vault:gem_benitoite', ['the_vault:block_gem_benitoite'])
+    //event.shapeless('8x the_vault:gem_alexandrite', ['the_vault:block_gem_alexandrite'])
+    //event.shapeless('8x the_vault:gem_painite', ['the_vault:block_gem_painite'])
+    //event.shapeless('8x the_vault:gem_wutodie', ['the_vault:block_gem_wutodie'])
+    //event.shapeless('8x the_vault:gem_black_opal', ['the_vault:block_gem_black_opal'])
+    //event.shapeless('8x the_vault:gem_echo', ['the_vault:block_gem_echo'])
 
-    event.shapeless('8x the_vault:gem_sparkletine', ['the_vault:block_gem_sparkletine'])
-    event.shapeless('8x the_vault:gem_iskallium', ['the_vault:block_gem_iskallium'])
-    event.shapeless('8x the_vault:gem_ashium', ['the_vault:block_gem_ashium'])
-    event.shapeless('8x the_vault:gem_xenium', ['the_vault:block_gem_xenium'])
-    event.shapeless('8x the_vault:gem_upaline', ['the_vault:block_gem_upaline'])
-    event.shapeless('8x the_vault:gem_gorginite', ['the_vault:block_gem_gorginite'])
-    event.shapeless('8x the_vault:gem_petzanite', ['the_vault:block_gem_petzanite'])
-    event.shapeless('8x the_vault:gem_tubium', ['the_vault:block_gem_tubium'])
-    event.shapeless('8x the_vault:gem_bomignite', ['the_vault:block_gem_bomignite'])
+    //event.shapeless('8x the_vault:gem_sparkletine', ['the_vault:block_gem_sparkletine'])
+    //event.shapeless('8x the_vault:gem_iskallium', ['the_vault:block_gem_iskallium'])
+    //event.shapeless('8x the_vault:gem_ashium', ['the_vault:block_gem_ashium'])
+    //event.shapeless('8x the_vault:gem_xenium', ['the_vault:block_gem_xenium'])
+    //event.shapeless('8x the_vault:gem_upaline', ['the_vault:block_gem_upaline'])
+    //event.shapeless('8x the_vault:gem_gorginite', ['the_vault:block_gem_gorginite'])
+    //event.shapeless('8x the_vault:gem_petzanite', ['the_vault:block_gem_petzanite'])
+    //event.shapeless('8x the_vault:gem_tubium', ['the_vault:block_gem_tubium'])
+    //event.shapeless('8x the_vault:gem_bomignite', ['the_vault:block_gem_bomignite'])
+
+    event.shaped(Item.of('the_vault:block_gem_wutodie'),
+        [
+            ' X ',
+            'XOX',
+            ' X '
+        ], {
+        X: 'the_vault:gem_wutodie',
+        O: 'the_vault:chromatic_iron_block'
+    }).id('the_vault:block_gem_wutodie')
 
 
     //Chromatic Gold
@@ -301,14 +311,14 @@ onEvent('recipes', event => {
 
     event.shaped(Item.of('woldsvaults:crystal_reinforcement'),
         [
-            'SXS',
-            'YOY',
-            'SXS'
+            'YXY',
+            'OOO',
+            'YSY'
         ], {
-        X: 'the_vault:omega_pog',
+        X: 'the_vault:omega_pog_1',
+        S: 'the_vault:echo_pog_1',
         Y: 'woldsvaults:extraordinary_pog_prism',
         O: 'the_vault:wold_star_chunk',
-        S: 'the_vault:chromatic_gold_block'
     }).id('woldsvaults:crystal_reinforcement')
 
     event.shaped(Item.of('woldsvaults:resonating_reinforcement'),

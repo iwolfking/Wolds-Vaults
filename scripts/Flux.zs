@@ -8,7 +8,7 @@ import mods.jei.JEI;
 // JEI.addDescription(<item:fluxnetworks:flux_dust>,["right click raw chromatic iron with obsidian"]);
 
 craftingTable.addShaped("flux_flux_dust", <item:fluxnetworks:flux_dust>, [
-    [<item:the_vault:chromatic_iron_ingot>, <item:minecraft:redstone_block>]
+    [<item:the_vault:chromatic_iron_ingot>, <item:minecraft:redstone>]
 ]);
 
 craftingTable.addShaped("flux_flux_core", <item:fluxnetworks:flux_core> *2, [
