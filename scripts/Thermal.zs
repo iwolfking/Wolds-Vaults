@@ -214,3 +214,19 @@ craftingTable.addShaped("thermal_satchel", <item:thermal:satchel>, [
 <recipetype:thermal:insolator>.addRecipe("insolator_smalldrip", [<item:minecraft:small_dripleaf> % 200], <item:minecraft:small_dripleaf>, 1000, 10000);
 
 <recipetype:thermal:pulverizer>.addRecipe("buildinggadgets_block_to_paste_thermal", [<item:buildinggadgets:construction_paste> % 411], <item:buildinggadgets:construction_block_dense>, 3, 2000);
+
+var clusters = {
+  "cluster_bomignite": "bomignite",
+  "cluster_tubium": "tubium",
+  "cluster_ashium": "ashium",
+  "cluster_upaline": "upaline",
+  "cluster_xenium": "xenium",
+  "cluster_gorginite": "gorginite",
+  "cluster_petzanite": "petzanite",
+  "cluster_iskallium": "iskallium",
+  "cluster_sparkletine": "sparkletine"
+};
+
+for clusterId, clusterName in clusters {
+    <recipetype:thermal:press>.addRecipe("press_" + clusterName +"_key", [<item:the_vault:key_${clusterName}>], <fluid:minecraft:empty>, [<item:the_vault:cluster_${clusterName}>, <item:the_vault:blank_key>], 500);
+}

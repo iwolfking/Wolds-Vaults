@@ -1,0 +1,18 @@
+{
+  "tile_processors": [
+    {
+        "type": "weighted_target",
+        "target": "the_vault:placeholder[type=ornate_chest]",
+        "output": {
+            "the_vault:placeholder[type=ornate_chest]": 60,
+            "minecraft:air": 40
+        }
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

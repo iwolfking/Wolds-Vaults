@@ -725,6 +725,152 @@
     },
     {
       "type": "collection",
+      "id": "coin_pouch",
+      "name": "Coin Pouch",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "The best way to store your ",
+            "color": "$text"
+          },
+          {
+            "text": "bronze",
+            "color": "$bronze"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "silver",
+            "color": "$common"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "gold",
+            "color": "$gold"
+          },
+          {
+            "text": " and ",
+            "color": "$text"
+          },
+          {
+            "text": "platinum",
+            "color": "$platinum"
+          },
+          {
+            "text": ", is by acquiring a ",
+            "color": "$text"
+          },
+          {
+            "text": "Coin Pouch",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\nThe ",
+            "color": "$text"
+          },
+          {
+            "text": "Coin Pouch",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " is a ",
+            "color": "$text"
+          },
+          {
+            "text": "soulbound",
+            "color": "$soulchance"
+          },
+          {
+            "text": " item that you keep in your inventory. It will be kept there even if you die, and it can contain an unlimited amount of ",
+            "color": "$text"
+          },
+          {
+            "text": "bronze",
+            "color": "$bronze"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "silver",
+            "color": "$common"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "gold",
+            "color": "$gold"
+          },
+          {
+            "text": " and ",
+            "color": "$text"
+          },
+          {
+            "text": "platinum",
+            "color": "$platinum"
+          },
+          {
+            "text": ". It auto-converts between them, and all the workstations in ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault Hunters",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " can read directly from it — no need to micro-manage your items!\n\nAnother brilliant feature of the ",
+            "color": "$text"
+          },
+          {
+            "text": "Coin Pouch",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " is that it will automatically pick up any currency you collect, as long as it's not positioned after a ",
+            "color": "$text"
+          },
+          {
+            "text": "backpack",
+            "color": "$blocks"
+          },
+          {
+            "text": " allowing currency in its whitelist.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAcquire a Coin Pouch",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/coin_pouch",
+      "targetId": "the_vault:coin_pouch",
+      "targetProgress": 1.0,
+      "unlockedBy": "shard_pouch",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_platinum",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:chromatic_steel_ingot",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
       "id": "complete_bounty",
       "name": "Bounty Hunting",
       "descriptionData": {
@@ -778,6 +924,144 @@
           {
             "item": "the_vault:chromatic_iron_ingot",
             "amount": 32
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "animal_pens",
+      "name": "Animal Pens",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Animals can be hard to manage on a large scale, and can cause a lot of lag in ",
+            "color": "$text"
+          },
+          {
+            "text": "Minecraft",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". This is solved by the use of ",
+            "color": "$text"
+          },
+          {
+            "text": "Animal Pens",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". These can be crafted, and with the use of an ",
+            "color": "$text"
+          },
+          {
+            "text": "Animal Jar",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", an infinite amount of one type of animal can be kept and bred in a single pen! This reduces lag massively, and makes animals not just cute to keep on your shelf, but easy to manage!\n\nAfter placing down an ",
+            "color": "$text"
+          },
+          {
+            "text": "Animal Pen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", collect as many of a single type of animal as you want in an ",
+            "color": "$text"
+          },
+          {
+            "text": "Animal Jar",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". All passive, breedable animals in the game can be collected. Then simply right-click your jar on the pen to make it their home.\n\nYou can breed the animals if you have at least 2, by using their breed item — for example ",
+            "color": "$text"
+          },
+          {
+            "text": "Wheat",
+            "color": "$gold"
+          },
+          {
+            "text": " for a cow.\n\nFinally, the animals can be killed with your ",
+            "color": "$text"
+          },
+          {
+            "text": "sword",
+            "color": "$damage"
+          },
+          {
+            "text": " to gain their loot drops. The ",
+            "color": "$text"
+          },
+          {
+            "text": "Looting",
+            "color": "$fortune"
+          },
+          {
+            "text": " enchantment works here too, increasing your yield. Some animals have special features — for example, you can ",
+            "color": "$text"
+          },
+          {
+            "text": "milk a Cow",
+            "color": "$heal"
+          },
+          {
+            "text": " in a pen by using a ",
+            "color": "$text"
+          },
+          {
+            "text": "bucket",
+            "color": "$blocks"
+          },
+          {
+            "text": ", or ",
+            "color": "$text"
+          },
+          {
+            "text": "shear a Bee",
+            "color": "$yellow"
+          },
+          {
+            "text": " for honeycombs. By holding ",
+            "color": "$text"
+          },
+          {
+            "text": "shift",
+            "color": "$cooldown"
+          },
+          {
+            "text": " while looking at an ",
+            "color": "$text"
+          },
+          {
+            "text": "Animal Pen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", you can see more information about the specific pen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAcquire an Animal Pen",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/animal_pen",
+      "targetId": "the_vault:animal_pen",
+      "targetProgress": 1.0,
+      "unlockedBy": "enter_vault",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:animal_jar",
+            "amount": 2
+          },
+          {
+            "item": "the_vault:animal_pen",
+            "amount": 1
           }
         ],
         "vaultExp": 0
@@ -949,23 +1233,23 @@
         "items": [
           {
             "item": "the_vault:jewel",
-            "nbt": "{vaultGearData:[L;971376693723047437L,-168107611866396186L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,2196334573319662592L,-6834473908914065246L,1099511627698L,32768L,65536L]}"
+            "nbt": "{vaultGearData:[L;3591402060363627150L,2130563721701514760L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,2196334573319662592L,-6834473908914065246L,1099511627698L,32768L,65536L]}"
           },
           {
             "item": "the_vault:jewel",
-            "nbt": "{vaultGearData:[L;-5409796860451422771L,7603660194345864875L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-7164678727146624000L,-6834473908914083200L,1099511627698L,32768L,65536L]}"
+            "nbt": "{vaultGearData:[L;8807676962843960878L,-1018090581902778908L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-7164678727146624000L,-6834473908914083200L,1099511627698L,32768L,65536L]}"
           },
           {
             "item": "the_vault:jewel",
-            "nbt": "{vaultGearData:[L;-2915353807708431011L,4285152979133458645L,2398483460923590698L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,1749915260256562176L,-6834473908914085726L,1099511627698L,32768L,65536L]}"
+            "nbt": "{vaultGearData:[L;-4246674546207997586L,469804410667479720L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,1749915260256562176L,-6834473908914085726L,1099511627698L,32768L,65536L]}"
           },
           {
             "item": "the_vault:jewel",
-            "nbt": "{vaultGearData:[L;-1576843100873769395L,-2976429644939743046L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-6032128973979210752L,-6834473908914079292L,1099511627698L,32768L,65536L]}"
+            "nbt": "{vaultGearData:[L;9040600318283653614L,-2646425694881105473L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-6032128973979210752L,-6834473908914079292L,1099511627698L,32768L,65536L]}"
           },
           {
             "item": "the_vault:jewel",
-            "nbt": "{vaultGearData:[L;-5794345560873588563L,6759959357241824319L,2398483460923590698L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617707599909354749L,1330939757422750720L,-348445744039196665L,268435455L,8L,16L]}"
+            "nbt": "{vaultGearData:[L;1437378485525153694L,-4161882800610591095L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617707599909354749L,1330939757422750720L,-348445744039196665L,268435455L,8L,16L]}"
           }
         ],
         "vaultExp": 0
@@ -1079,6 +1363,7 @@
         "vaultExp": 0
       }
     },
+
     {
       "type": "level_up",
       "id": "level_five",
@@ -1158,7 +1443,7 @@
         ],
         "vaultExp": 0
       }
-    },  
+    },
     {
       "type": "forge_gear",
       "id": "gear_forge",
@@ -1272,7 +1557,7 @@
       "icon": "the_vault:gui/quests/recycler",
       "targetId": "the_vault:vault_recycler",
       "targetProgress": 1.0,
-      "unlockedBy": "wild_focus",
+      "unlockedBy": "level_five",
       "reward": {
         "items": [
           {
@@ -1354,12 +1639,12 @@
             "color": "$heal"
           }
         ]
-        
+
       },
       "icon": "the_vault:gui/quests/alchemytable",
       "targetId": "the_vault:alchemy_table",
       "targetProgress": 1.0,
-      "unlockedBy": "craft_recycler",
+      "unlockedBy": "level_five",
       "reward": {
         "items": [
           {
@@ -1374,6 +1659,7 @@
         "vaultExp": 0
       }
     },
+
     {
       "type": "level_up",
       "id": "level_ten",
@@ -1393,7 +1679,7 @@
       "icon": "the_vault:gui/quests/ten",
       "targetId": "the_vault:10",
       "targetProgress": 1.0,
-      "unlockedBy": "alchemystation",
+      "unlockedBy": "level_five",
       "reward": {
         "items": [
           {
@@ -1417,7 +1703,7 @@
           "text": "\n\nAcquire a blank seal",
           "color": "$heal"
         }
-        
+
         ]
       },
       "icon": "the_vault:gui/quests/empty_seal",
@@ -1576,15 +1862,15 @@
             "color": "$qhighlight"
           },
           {
-            "text": ". This will make organising your scav items a lot easier! Another good thing to know is that when you exit the vaults the scav items become",
+            "text": ". This will make organising your scav items a lot easier! Another good thing to know is that when you exit the vaults the scav items get",
             "color": "$text"
           },
           {
-            "text": "rotten",
+            "text": "removed",
             "color": "$qhighlight"
           },
           {
-            "text": ". Rotten scav items can't be used in another scav vault. They can be however smelted down into soul dust in the soul harvester.",
+            "text": ". Scavenger items are locked to that vault only!",
             "color": "$text"
           },
           {
@@ -1744,7 +2030,7 @@
             "color": "$text"
           },
           {
-            "text": "\n\nIn Hunt the Runes your objective is to find runes and apply them to a rune boss pillar. Each rune can have a different modifier, and a different reward item. Once you have inserted the correct number of runes, the room will close and the boss will spawn with the modifiers you've chosen.", 
+            "text": "\n\nIn Hunt the Runes your objective is to find runes and apply them to a rune boss pillar. Each rune can have a different modifier, and a different reward item. Once you have inserted the correct number of runes, the room will close and the boss will spawn with the modifiers you've chosen.",
             "color": "$text"
           },
           {
@@ -2004,6 +2290,7 @@
         "vaultExp": 0
       }
     },
+
     {
       "type": "level_up",
       "id": "reach_level_20",
@@ -2154,14 +2441,6 @@
               "color": "$text"
             },
             {
-              "text": "Seals",
-              "color": "$titleLine"
-            },
-            {
-              "text": " sets the objective of the crystal to that of the seal, allowing you to chose how to complete the vault, they are craftable.\n\n",
-              "color": "$text"
-            },
-            {
               "text": "Augments",
               "color": "$titleLine"
             },
@@ -2236,7 +2515,7 @@
             {
               "text": "!",
               "color": "$text"
-            },          
+            },
         {
           "text": "\n\nCraft a Crystal Workbench",
           "color": "$heal"
@@ -2249,14 +2528,6 @@
       "unlockedBy": "reach_level_20",
       "reward": {
         "items": [
-            {
-              "item": "the_vault:crystal_seal_scout",
-              "amount": 1
-            },
-            {
-              "item": "the_vault:crystal_seal_sage",
-              "amount": 1
-            },
             {
               "item": "the_vault:augment",
               "nbt": "{\"theme\":\"the_vault:classic_vault_cave_geode\"}",
@@ -2380,7 +2651,7 @@
               "text": "Craft a Catalyst Infusion Table",
               "color": "$heal"
             }
-          
+
         ]
       },
       "icon": "the_vault:gui/quests/catalyst",
@@ -2491,7 +2762,7 @@
             "text": "Craft an Inscription Table",
             "color": "$heal"
           }
-        ]        
+        ]
       },
       "icon": "the_vault:gui/quests/inscriptiontable",
       "targetId": "the_vault:inscription_table",
@@ -2510,7 +2781,7 @@
     {
       "type": "mining",
       "id": "temporal_shards",
-      "name": "Pylons & Temporal Shards",
+      "name": "Pylons & Temporal Relics",
       "descriptionData": {
         "description": [
           {
@@ -2530,7 +2801,7 @@
             "color": "$text"
           },
           {
-            "text": "Temporal Shard",
+            "text": "Temporal Relic",
             "color": "$qhighlight"
           },
           {
@@ -2550,10 +2821,10 @@
             "color": "$text"
           },
           {
-            "text": "Break a Pylon to have a chance of getting a Temporal Shard",
+            "text": "Break a Pylon to have a chance of getting a Temporal Relic",
             "color": "$heal"
           }
-        ]        
+        ]
       },
       "icon": "the_vault:gui/quests/temporal_shard",
       "targetId": "the_vault:pylon",
@@ -2657,7 +2928,7 @@
     {
       "type": "collection",
       "id": "spirit_extractor",
-      "name": "The Spirit Extractor",
+      "name": "Revival",
       "descriptionData": {
         "description": [
           {
@@ -2930,7 +3201,7 @@
             "text": ".\n\n",
             "color": "$text"
           }
-        ]        
+        ]
       },
       "icon": "the_vault:gui/quests/vaultrock",
       "targetId": "the_vault:none",
@@ -2946,7 +3217,6 @@
         "vaultExp": 0
       }
     },
-
     {
       "type": "collection",
       "id": "warden",
@@ -2985,7 +3255,7 @@
             "text": "Craft a Warden's Vault Rock",
             "color": "$heal"
           }
-        ]        
+        ]
       },
       "icon": "the_vault:gui/quests/wardenrock",
       "targetId": "the_vault:wardens_pearl",
@@ -3040,7 +3310,7 @@
             "color": "$heal"
           }
         ]
-        
+
       },
       "icon": "the_vault:gui/quests/plunderrock",
       "targetId": "the_vault:plunderer_pearl",
@@ -3334,7 +3604,7 @@
             "color": "$heal"
           }
         ]
-        
+
       },
       "icon": "the_vault:gui/quests/archives",
       "targetId": "the_vault:alchemy_archive",
@@ -3349,7 +3619,6 @@
         "vaultExp": 0
       }
     },
-    
     {
       "type": "collection",
       "id": "modifier_workbench",
@@ -3538,6 +3807,7 @@
         "vaultExp": 0
       }
     },
+
     {
       "type": "level_up",
       "id": "reach_level_40",
@@ -3740,7 +4010,7 @@
             "color": "$text"
           },
           {
-            "text": "curse your vault",
+            "text": "revoke a reputation point",
             "color": "$qhighlight"
           },
           {
@@ -3764,7 +4034,7 @@
             "color": "$text"
           },
           {
-            "text": "\n\nComplete a God Altar",
+            "text": "\n\nInteract with a God Altar",
             "color": "$heal"
           }
         ]
@@ -3782,6 +4052,7 @@
         "vaultExp": 0
       }
     },
+
     {
       "type": "level_up",
       "id": "reach_level_50",
@@ -3905,7 +4176,7 @@
     {
       "type": "collection",
       "id": "obtain_deck",
-      "name": "Obtain a card deck",
+      "name": "Obtain a Card Deck",
       "descriptionData": {
         "description": [
           {
@@ -3956,7 +4227,7 @@
     {
       "type": "collection",
       "id": "obtain_juicer",
-      "name": "Upgrading cards",
+      "name": "Upgrading Cards",
       "descriptionData": {
         "description": [
           {
@@ -4124,6 +4395,320 @@
     },
     {
       "type": "collection",
+      "id": "royale",
+      "name": "Royale Vaults",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Royale vaults are a completely optional part of Vault Hunters, but a nice change of pace if your road to level 100 gets stale and grindy, and the rewards can be incredible!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "When you enter a Royale vault you will be completely bare; all your gear and skill point allocation will be stored for when you return. The first thing you do is meet ",
+            "color": "$text"
+          },
+          {
+            "text": "Tommy",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tommy",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " will provide you with 3 loadouts. You can pick whichever one you feel comfortable with—or none, if you want an extreme challenge.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Next, ",
+            "color": "$text"
+          },
+          {
+            "text": "Tommy",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " will offer you one of three blue trinkets, and then one of three red trinkets. Finally, you will pick your reward—should you win.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "One of the rewards will always be the ",
+            "color": "$text"
+          },
+          {
+            "text": "Royale Crown",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". The crown is a loot multiplier, which increases your reward multiplier each time it’s attached to the ",
+            "color": "$text"
+          },
+          {
+            "text": "Royale Crystal",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", which you do in an anvil between Royale runs.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Now, neither ",
+            "color": "$text"
+          },
+          {
+            "text": "Potions",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " nor the ",
+            "color": "$text"
+          },
+          {
+            "text": "Heal",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " spell will be offered inside Royale vaults. Instead, your healing will have to rely on other sources—the most common being ",
+            "color": "$text"
+          },
+          {
+            "text": "Hearty Apples",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "As you leave ",
+            "color": "$text"
+          },
+          {
+            "text": "Tommy",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", you will have some skill points allocated—but still be naked. Gear and further skill point scrolls can be found in the glowing ",
+            "color": "$text"
+          },
+          {
+            "text": "Royale Barrels",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " scattered across the vault. Make sure to loot up before fighting!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "One last thing: a Royale vault is locked and cannot be exited the way you came in. You must complete the random objective to get out!\n\nGood luck, hunter—you’ll either love or hate it!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Obtain a Royale Rock",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/royale",
+      "targetId": "the_vault:crystal_seal_vault_royale",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_vault_royale"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "antiques",
+      "name": "Antiques",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Antiques are ancient stamps, carried by the realm of the vault. These ancient stamps can be collected and combined to give you a reward tied to that specific antique collection.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Antiques appear after level 50, but only if the hunter is carrying the ",
+            "color": "$text"
+          },
+          {
+            "text": "Antique Stamp Collector book",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", which can be crafted and left in your inventory. It will automatically pick up, sort, and organise all of your antiques. Once you have the required amount of any one antique, you can take them out and right-click them to trade them in for their reward.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Where and how to find antiques will reveal itself the more of one you find. Pay attention when hovering an antique to try and figure out where it came from!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Craft an Antique Stamp Collector book",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/antique_collector_book",
+      "targetId": "the_vault:antique_collector_book",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "companions",
+      "name": "Companions!",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "After level 50 you can start finding ",
+            "color": "$text"
+          },
+          {
+            "text": "Companions",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "! They are quite shy, but their nests can be found inside a vault, in any room, at any time! If you find one, gently break it open with your tool in order to retrieve its egg.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "The egg can be hatched inside an ",
+            "color": "$text"
+          },
+          {
+            "text": "Incubator",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", and every companion will be personally bound to its owner after this stage.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Equip your companion in the Head Slot in your curious inventory to equip it. As long as its state is ready, it will join you when you enter a vault.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Companions",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " come with one ",
+            "color": "$text"
+          },
+          {
+            "text": "Temporal Modifier",
+            "color": "$titleLine"
+          },
+          {
+            "text": ". This modifier can be activated at any time by pressing the hotkey for it, which you can bind in keybinds. The length of the ",
+            "color": "$text"
+          },
+          {
+            "text": "Temporal Modifier",
+            "color": "$titleLine"
+          },
+          {
+            "text": " is determined by the level of your companion, it lasts 1 minute at level 1, 3 minutes at level 3, etc. The ",
+            "color": "$text"
+          },
+          {
+            "text": "Temporal Modifier",
+            "color": "$titleLine"
+          },
+          {
+            "text": " cannot be changed or altered. It is kind of like the soul of your companion.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Companions",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " can also equip ",
+            "color": "$text"
+          },
+          {
+            "text": "Companion Relics",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". These rare items can be found inside any ",
+            "color": "$text"
+          },
+          {
+            "text": "chest",
+            "color": "$yellow"
+          },
+          {
+            "text": ", or in ",
+            "color": "$text"
+          },
+          {
+            "text": "Treasure Sand",
+            "color": "$yellow"
+          },
+          {
+            "text": ", as long as you have a companion with you in the vault.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Companion Relics",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " carry vault modifiers, and can be equipped inside a ",
+            "color": "$text"
+          },
+          {
+            "text": "Companion Home",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". However, the companion grows quite fond of their relics, and attempting to de-equip one will cost you a lot of gold!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "If cared for correctly, your companions can become very powerful, and aid you in your journey throughout the vaults!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Craft an Incubator",
+            "color": "$heal"
+          }
+        ]
+      },
+
+      "icon": "the_vault:gui/quests/companion",
+      "targetId": "the_vault:companion_incubator",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:companion_egg",
+            "nbt": "{HatchTime:20,Series:\"PET\"}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
       "id": "soul_flame",
       "name": "Challenger's Vault Rock",
       "descriptionData": {
@@ -4211,7 +4796,7 @@
               "color": "$text"
           },
           {
-              "text": "special transmorgs",
+              "text": "special transmogs",
               "color": "$qhighlight"
           },
           {
@@ -4254,31 +4839,243 @@
         "vaultExp": 0
       }
     },
+
     {
       "type": "level_up",
-      "id": "reach_level_70",
-      "name": "Trinket Pouches",
+      "id": "reach_level_100",
+      "name": "Reaching Max Level",
       "descriptionData": {
         "description": [
           {
-            "text": "Now that you are approaching the later stages of the game, you can expand your trinket arsenal with bigger, better Trinket Pouches! You can find recipe blueprints for Trinket Pouches in places like Vendors and other locations...",
+            "text": "Level 100 marks the end of ordinary levels in Vault Hunters, once here you have conquered all skill points available, and unlocked all possible gear tier groups!\n\nMost importantly, you have now unlocked the ability to enter The Arena, and to face the Herald.",
             "color": "$text"
           },
           {
-            "text": "\n\nReach Vault Level 75",
+            "text": "\n\nReach Vault Level 100",
             "color": "$heal"
           }
         ]
       },
-      "icon": "the_vault:gui/quests/level70",
-      "targetId": "the_vault:75",
+      "icon": "the_vault:gui/quests/100",
+      "targetId": "the_vault:100",
       "targetProgress": 1.0,
       "unlockedBy": "reach_level_50",
       "reward": {
         "items": [
           {
-            "item": "woldsvaults:recipe_blueprint",
-            "nbt": "{recipe:\"woldsvaults:standard_trinket_pouch\"}"
+            "item": "the_vault:modifier_scroll"
+          },
+          {
+            "item": "the_vault:companion_egg",
+            "nbt": "{HatchTime:20,Series:\"PET\"}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "complete_vault",
+      "id": "herald",
+      "name": "The Herald",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "It is time for you to prove your worth!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "In order to face the ultimate challenge, the ",
+            "color": "$text"
+          },
+          {
+            "text": "Herald",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", you must have reached level 100 and completed your ",
+            "color": "$text"
+          },
+          {
+            "text": "Artifact Puzzle",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Only once both of those things have been completed will you be able to enter ",
+            "color": "$text"
+          },
+          {
+            "text": "The Arena",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Retrieve the ",
+            "color": "$text"
+          },
+          {
+            "text": "Herald's Rock",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " by right-clicking on your completed ",
+            "color": "$text"
+          },
+          {
+            "text": "Artifact Tome",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "; you can retrieve as many as you want. Crafting this rock on your altar gives you the ",
+            "color": "$text"
+          },
+          {
+            "text": "Herald's Crystal",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Beware, this is a very difficult boss with different phases, and all your previous knowledge will be evaluated in order to beat this challenge.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Good Luck Hunter\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Beat the Herald",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/herald",
+      "targetId": "the_vault:herald",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_100",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:omega_pog",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "spend_prestige_point",
+      "id": "prestige",
+      "name": "Prestige Powers",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Well done! After defeating the ",
+            "color": "$text"
+          },
+          {
+            "text": "Herald ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "and reaching level 100, you have unlocked the final chapter of Vault Hunters: ",
+            "color": "$text"
+          },
+          {
+            "text": "Prestige Powers",
+            "color": "$omega"
+          },
+          {
+            "text": ".\n\nEach level gained beyond 100 becomes a ",
+            "color": "$text"
+          },
+          {
+            "text": "Prestige Level",
+            "color": "$white"
+          },
+          {
+            "text": ", granting you 1 ",
+            "color": "$text"
+          },
+          {
+            "text": "Prestige Point",
+            "color": "$prestige_points"
+          },
+          {
+            "text": ".You can spend ",
+            "color": "$text"
+          },
+          {
+            "text": "Prestige Points ",
+            "color": "$prestige_points"
+          },
+          {
+            "text": "alongside Knowledge Points in the ",
+            "color": "$text"
+          },
+          {
+            "text": "Prestige Powers ",
+            "color": "$omega"
+          },
+          {
+            "text": "tab (accessible through the Vault Hunters menu).\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Prestige Powers ",
+            "color": "$omega"
+          },
+          {
+            "text": "follow an intuitive tier system with each row representing a different tier. ",
+            "color": "text"
+          },
+          {
+            "text": "Higher-tier powers require investment in lower-tier powers, with each row building naturally upon the previous one to ensure meaningful and satisfying progression.\n\n",
+            "color": "text"
+          },
+          {
+            "text": "Some Prestige Powers can be activated or deactivated once the ",
+            "color": "text"
+          },
+          {
+            "text": "Prestige Activation Screen ",
+            "color": "$white"
+          },
+          {
+            "text": "keybind is bound.\n\n",
+            "color": "text"
+          },
+          {
+            "text": "With an extensive collection of ",
+            "color": "text"
+          },
+          {
+            "text": "Prestige Powers ",
+            "color": "$omega"
+          },
+          {
+            "text": "available to unlock, the ultimate question remains:\n\nWill you obtain them all?\n\n",
+            "color": "text"
+          },
+          {
+            "text": "Spend a Prestige Point",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/prestige_powers",
+      "targetId": "the_vault:1",
+      "targetProgress": 1.0,
+      "unlockedBy": "herald",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:knowledge_star",
+            "amount": 25
           }
         ],
         "vaultExp": 0

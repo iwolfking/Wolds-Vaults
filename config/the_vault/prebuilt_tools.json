@@ -1,0 +1,271 @@
+{
+  "tools": {
+    "royale_plain_paxel": {
+      "tool_material": {
+        "value": "ROYALE"
+      },
+      "IMPLICIT": {
+        "the_vault:picking": true
+      },
+      "PREFIX": {
+        "the_vault:axing": true,
+        "the_vault:shovelling": true,
+        "the_vault:mining_speed": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 1.0,
+          "max": 120.0,
+          "step": 0.1
+        },
+        "the_vault:reach": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 0.1,
+          "max": 2.0,
+          "step": 0.1
+        },
+        "the_vault:durability": {
+          "roll_type": "int_roll",
+          "type": "uniformed_step",
+          "min": 50,
+          "max": 1500,
+          "step": 10
+        }
+      }
+    },
+    "royale_plain_pickaxe": {
+      "tool_material": {
+        "value": "ROYALE"
+      },
+      "IMPLICIT": {
+        "the_vault:picking": true
+      },
+      "PREFIX": {
+        "the_vault:mining_speed": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 1.0,
+          "max": 30.0,
+          "step": 0.1
+        }
+       
+      }
+    },
+    "royale_hammer": {
+      "tool_material": {
+        "value": "ROYALE"
+      },
+      "IMPLICIT": {
+        "the_vault:hammering": true
+      },
+      "PREFIX": {
+        "the_vault:picking": true,
+        "the_vault:axing": true,
+        "the_vault:shovelling": true,
+        "the_vault:mining_speed": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 1.0,
+          "max": 120.0,
+          "step": 0.1
+        },
+        "the_vault:reach": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 0.1,
+          "max": 2.0,
+          "step": 0.1
+        },
+        "the_vault:durability": {
+          "roll_type": "int_roll",
+          "type": "uniformed_step",
+          "min": 50,
+          "max": 1500,
+          "step": 10
+        },
+        "the_vault:hammer_size": {
+          "roll_type": "int_roll",
+          "type": "uniformed_step",
+          "min": 1,
+          "max": 7,
+          "step": 1
+        }
+      }
+    },
+    "royale_rubber_hammer": {
+      "tool_material": {
+        "value": "ROYALE"
+      },
+      "IMPLICIT": {
+        "the_vault:hammering": true
+      },
+      "PREFIX": {
+        "the_vault:gilded_affinity": true,
+        "the_vault:living_affinity": true,
+        "the_vault:ornate_affinity": true,
+        "the_vault:wooden_affinity": true,
+        "the_vault:coin_affinity": true,
+        "the_vault:mining_speed": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 1.0,
+          "max": 120.0,
+          "step": 0.1
+        },
+        "the_vault:reach": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 0.1,
+          "max": 2.0,
+          "step": 0.1
+        },
+        "the_vault:durability": {
+          "roll_type": "int_roll",
+          "type": "uniformed_step",
+          "min": 50,
+          "max": 1500,
+          "step": 10
+        },
+        "the_vault:hammer_size": {
+          "roll_type": "int_roll",
+          "type": "uniformed_step",
+          "min": 1,
+          "max": 7,
+          "step": 1
+        }
+      }
+    },
+    "royale_ore_breaker": {
+      "tool_material": {
+        "value": "ROYALE"
+      },
+      "IMPLICIT": {
+        "the_vault:picking": true
+      },
+      "PREFIX": {
+        "the_vault:axing": true,
+        "the_vault:shovelling": true,
+        "the_vault:mining_speed": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 50.0,
+          "max": 62.0,
+          "step": 0.1
+        },
+        "the_vault:reach": 2.1,
+        "the_vault:durability": {
+          "roll_type": "int_roll",
+          "type": "uniformed_step",
+          "min": 1000,
+          "max": 1200,
+          "step": 10
+        },
+        "the_vault:copiously": 0.05
+      }
+    },
+    "royale_chest_breaker": {
+      "tool_material": {
+        "value": "ROYALE"
+      },
+      "IMPLICIT": {
+        "the_vault:reaping": true
+      },
+      "PREFIX": {
+        "the_vault:mining_speed": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 1.0,
+          "max": 120.0,
+          "step": 0.1
+        },
+        "the_vault:gilded_affinity": true,
+        "the_vault:living_affinity": true,
+        "the_vault:ornate_affinity": true,
+        "the_vault:wooden_affinity": true,
+        "the_vault:coin_affinity": true,
+        "the_vault:item_rarity": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 0.01,
+          "max": 0.5,
+          "step": 0.01
+        },
+        "the_vault:item_quantity": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 0.01,
+          "max": 0.5,
+          "step": 0.01
+        },
+        "the_vault:reach": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 0.1,
+          "max": 2.0,
+          "step": 0.1
+        },
+        "the_vault:trap_disarming": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 0.01,
+          "max": 1.0,
+          "step": 0.01
+        },
+        "the_vault:durability": {
+          "roll_type": "int_roll",
+          "type": "uniformed_step",
+          "min": 50,
+          "max": 1500,
+          "step": 10
+        }
+      }
+    },
+    "royale_chest_breaker_weak": {
+      "tool_material": {
+        "value": "ROYALE"
+      },
+      "IMPLICIT": {
+        "the_vault:reaping": true,
+        "the_vault:picking": true,
+        "the_vault:shovelling": true
+      },
+      "PREFIX": {
+        "the_vault:mining_speed": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 1.0,
+          "max": 15.0,
+          "step": 0.1
+        },
+        "the_vault:gilded_affinity": true,
+        "the_vault:living_affinity": true,
+        "the_vault:ornate_affinity": true,
+        "the_vault:wooden_affinity": true,
+        "the_vault:coin_affinity": true
+      }
+    },
+    "royale_chest_breaker_weak2": {
+      "tool_material": {
+        "value": "ROYALE"
+      },
+      "IMPLICIT": {
+        "the_vault:reaping": true,
+        "the_vault:shovelling": true
+      },
+      "PREFIX": {
+        "the_vault:mining_speed": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 1.0,
+          "max": 15.0,
+          "step": 0.1
+        },
+        "the_vault:gilded_affinity": true,
+        "the_vault:living_affinity": true,
+        "the_vault:ornate_affinity": true,
+        "the_vault:wooden_affinity": true,
+        "the_vault:coin_affinity": true
+      }
+    }
+  }
+}

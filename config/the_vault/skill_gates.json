@@ -939,6 +939,14 @@
           }
         ],
         "dependsOn": []
+      },
+"Lightning_Damage": {
+        "lockedBy": [{ "type": "constant", "id": "Lightning_Stun" }],
+        "dependsOn": []
+      },
+      "Lightning_Stun": {
+        "lockedBy": [{ "type": "constant", "id": "Lightning_Damage" }],
+        "dependsOn": []
       }
     }
   }

@@ -1,0 +1,550 @@
+{
+	"tree": {
+		"type": "prestige",
+		"skills": [
+			{
+				"type": "tiered",
+				"id": "BlackMarketRerolls",
+				"name": "Whispers of the Market",
+				"tiers": [
+					{
+						"type": "black_market_rerolls_power",
+						"extraRerolls": 5,
+						"learnPointCost": 1,
+						"learnKnowledgeCost": 50,
+						"regretPointCost": 1,
+						"unlockLevel": 50,
+						"id": "black_market_rerolls_1",
+						"tier": 1,
+						"tierLock": 0
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "BountyCooldownReduction",
+				"name": "Relentless Pursuit",
+				"tiers": [
+					{
+						"type": "no_bounties_cooldown_power",
+						"minutesReduction": 1000,
+						"learnPointCost": 1,
+						"learnKnowledgeCost": 50,
+						"regretPointCost": 2,
+						"unlockLevel": 50,
+						"id": "bounty_cooldown_1",
+						"tier": 1,
+						"tierLock": 0
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "PickupRange",
+				"name": "Gravitic Reach",
+				"tiers": [
+					{
+						"type": "magnet_mastery",
+						"attribute": "the_vault:range",
+						"value": 1.0,
+						"learnPointCost": 2,
+						"learnKnowledgeCost": 125,
+						"regretPointCost": 1,
+						"unlockLevel": 125,
+						"id": "pickup_range_1",
+						"tier": 2,
+						"tierLock": 1
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "Shielded",
+				"name": "Shielded",
+				"tiers": [
+					{
+						"type": "shielded_power",
+						"learnPointCost": 1,
+						"learnKnowledgeCost": 125,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"percentageOfHearts": 1,
+						"id": "shielded_power_1",
+						"tier": 2,
+						"tierLock": 1
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "ChampionsDamage",
+				"name": "Victor's Edge",
+				"tiers": [
+					{
+						"type": "champion_damage_power",
+						"attribute": "the_vault:damage_champion",
+						"value": 0.5,
+						"learnPointCost": 5,
+						"learnKnowledgeCost": 500,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "champions_damage_1",
+						"tier": 5,
+						"tierLock": 4
+					}
+				]
+			},
+
+			{
+				"type": "tiered",
+				"id": "GluttonyPower",
+				"name": "Mark of Gluttony",
+				"tiers": [
+					{
+						"type": "instant_item_use_power",
+						"learnPointCost": 1,
+						"learnKnowledgeCost": 50,
+						"tier": 1,
+						"tierLock": 0,
+						"unlockLevel": 100,
+						"regretPointCost": 1
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "EnderAnchorPower",
+				"name": "Echo of the Anchor",
+				"tiers": [
+					{
+						"type": "activatable_trinket_power",
+						"trinketEffectId": "the_vault:ender_anchor",
+						"learnPointCost": 1,
+						"learnKnowledgeCost": 50,
+						"tier": 1,
+						"tierLock": 0,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "ender_anchor_1"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "Fruity",
+				"name": "Bloom of Time",
+				"tiers": [
+					{
+						"type": "gear_attribute_power",
+						"attribute": "the_vault:fruit_effectiveness",
+						"value": 1,
+						"learnPointCost": 4,
+						"learnKnowledgeCost": 300,
+						"tier": 4,
+						"tierLock": 3,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "fruity_1"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "CatDodge",
+				"name": "Grace of the Cat",
+				"tiers": [
+					{
+						"type": "trinket_power",
+						"trinketEffectId": "the_vault:cat_in_a_jar",
+						"learnPointCost": 2,
+						"learnKnowledgeCost": 125,
+						"tier": 2,
+						"tierLock": 1,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "cat_dodge_1"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "FallImmunity",
+				"name": "Blessing of Elvish Air",
+				"tiers": [
+					{
+						"type": "trinket_power",
+						"trinketEffectId": "the_vault:elven_socks",
+						"learnPointCost": 3,
+						"learnKnowledgeCost": 250,
+						"tier": 3,
+						"tierLock": 2,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "fall_immunity_1"
+					}
+				]
+			},
+
+			{
+				"type": "tiered",
+				"id": "RegenerationPower",
+				"name": "Gift of the Petal",
+				"tiers": [
+					{
+						"type": "trinket_power",
+						"trinketEffectId": "the_vault:velaras_petal",
+						"learnPointCost": 3,
+						"learnKnowledgeCost": 250,
+						"tier": 3,
+						"tierLock": 2,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "regeneration_1"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "ShadowCloakPower",
+				"name": "Veil of the Shadow Cloak",
+				"tiers": [
+					{
+						"type": "trinket_power",
+						"trinketEffectId": "the_vault:shadow_cloak",
+						"learnPointCost": 3,
+						"learnKnowledgeCost": 250,
+						"tier": 3,
+						"tierLock": 2,
+						"regretPointCost": 1,
+						"unlockLevel": 100
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "TheCarapace",
+				"name": "Shell of the Carapace",
+				"tiers": [
+					{
+						"type": "activatable_trinket_power",
+						"trinketEffectId": "the_vault:carapace",
+						"learnPointCost": 3,
+						"learnKnowledgeCost": 250,
+						"tier": 3,
+						"tierLock": 2,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "carapace"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "KineticImmunity",
+				"name": "Impactless",
+				"tiers": [
+					{
+						"type": "gear_attribute_boolean_power",
+						"attribute": "the_vault:kinetic_immunity",
+						"value": true,
+						"learnPointCost": 3,
+						"learnKnowledgeCost": 125,
+						"tier": 2,
+						"tierLock": 1,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "kinetic_immunity_1"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "SuperCrystals",
+				"name": "Crystalweaver's Gift",
+				"tiers": [
+					{
+						"type": "super_crystals_power",
+						"extraCapacity": 100,
+						"learnPointCost": 5,
+						"learnKnowledgeCost": 500,
+						"tier": 5,
+						"tierLock": 4,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "super_crystals_1"
+					}
+				]
+			},
+
+			{
+				"type": "tiered",
+				"id": "TripleJump",
+				"name": "Dance of the Prismatic Feather",
+				"tiers": [
+					{
+						"type": "triplejump_power",
+						"learnPointCost": 4,
+						"learnKnowledgeCost": 300,
+						"tier": 4,
+						"tierLock": 3,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "triple_jump_power_1"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "ElytraWings",
+				"name": "Wings of Ascension",
+				"tiers": [
+					{
+						"type": "wings_power",
+						"learnPointCost": 4,
+						"learnKnowledgeCost": 300,
+						"tier": 4,
+						"tierLock": 3,
+						"regretPointCost": 1,
+						"unlockLevel": 100
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "AetherSparkTrinket",
+				"name": "Burst of the Aether",
+				"tiers": [
+					{
+						"type": "activatable_trinket_power",
+						"trinketEffectId": "the_vault:aether",
+						"learnPointCost": 4,
+						"learnKnowledgeCost": 300,
+						"tier": 4,
+						"tierLock": 3,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "aether_spark_1"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "StepUpPower",
+				"name": "Stride of the Frog",
+				"tiers": [
+					{
+						"type": "activatable_trinket_power",
+						"trinketEffectId": "the_vault:high_heels",
+						"learnPointCost": 4,
+						"learnKnowledgeCost": 300,
+						"tier": 4,
+						"tierLock": 3,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "step_up_1"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "TemporalShardChance",
+				"name": "Trace of Eternal",
+				"tiers": [
+					{
+						"type": "temporal_shard_chance_power",
+						"chance": 0.3,
+						"learnPointCost": 2,
+						"learnKnowledgeCost": 125,
+						"tier": 2,
+						"tierLock": 1,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "temporal_shard_chance_1"
+					}
+				]
+			},
+
+			
+			{
+				"type": "tiered",
+				"id": "NoTrinketUses",
+				"name": "Immortal Trinkets",
+				"tiers": [
+					{
+						"type": "no_uses_power",
+						"itemId": "the_vault:trinket",
+						"learnPointCost": 5,
+						"learnKnowledgeCost": 500,
+						"tier": 5,
+						"tierLock": 4,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "trinket_uses_1"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "NoCharmsUses",
+				"name": "Immortal Charms",
+				"tiers": [
+					{
+						"type": "no_uses_power",
+						"itemId": "the_vault:vault_god_charm",
+						"learnPointCost": 3,
+						"learnKnowledgeCost": 250,
+						"tier": 3,
+						"tierLock": 2,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "charm_uses_1"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "GearDurabilityPower",
+				"name": "Immortal Gear",
+				"tiers": [
+					{
+						"type": "gear_durability_power",
+						"damageReduction": 1.0,
+						"learnPointCost": 5,
+						"learnKnowledgeCost": 500,
+						"tier": 5,
+						"tierLock": 4,
+						"regretPointCost": 2,
+						"unlockLevel": 100,
+						"id": "gear_immortality_1"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "ToolDurabilityPower",
+				"name": "Immortal Tools",
+				"tiers": [
+					{
+						"type": "tool_durability_power",
+						"damageReduction": 1.0,
+						"learnPointCost": 5,
+						"learnKnowledgeCost": 500,
+						"tier": 5,
+						"tierLock": 4,
+						"regretPointCost": 2,
+						"unlockLevel": 100,
+						"id": "tool_immunity_1"
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "NoVoidUses",
+				"name": "Immortal Voidstones",
+				"tiers": [
+					{
+						"type": "no_uses_power",
+						"itemId": "the_vault:void_stone",
+						"learnPointCost": 1,
+						"learnKnowledgeCost": 50,
+						"tier": 1,
+						"tierLock": 0,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "void_stone_uses_1"
+					}
+				]
+			},
+
+			{
+				"type": "tiered",
+				"id": "BerserkPower",
+				"name": "Aspect of Berserk",
+				"tiers": [
+					{
+						"type": "berserk_power",
+						"learnPointCost": 10,
+						"learnKnowledgeCost": 750,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "berserk_power_1",
+						"tier": 6,
+						"tierLock": 5
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "OriginalWardPower",
+				"name": "Aspect of Ward",
+				"tiers": [
+					{
+						"type": "original_ward_power",
+						"thresholdTicks": 1200,
+						"learnPointCost": 10,
+						"learnKnowledgeCost": 750,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "original_ward_power_1",
+						"tier": 6,
+						"tierLock": 5
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "TreasureHunterPower",
+				"name": "Aspect of Treasure",
+				"tiers": [
+					{
+						"type": "treasure_hunter_power",
+						"bonusPerStack": 0.05,
+						"maxStacks": 20,
+						"learnPointCost": 10,
+						"learnKnowledgeCost": 750,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "treasure_hunter_power_1",
+						"tier": 6,
+						"tierLock": 5
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "CommanderPower",
+				"name": "Aspect of the Commander",
+				"tiers": [
+					{
+						"type": "commander_power",
+						"durationMultiplier": 2.0,
+						"learnPointCost": 10,
+						"learnKnowledgeCost": 750,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "commander_power_1",
+						"tier": 6,
+						"tierLock": 5
+					}
+				]
+			},
+			{
+				"type": "tiered",
+				"id": "MasterfulPower",
+				"name": "Aspect of Mastery",
+				"tiers": [
+					{
+						"type": "masterful_power",
+						"learnPointCost": 10,
+						"learnKnowledgeCost": 750,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "masterful_power_1",
+						"tier": 6,
+						"tierLock": 5
+					}
+				]
+			}
+		]
+	}
+}

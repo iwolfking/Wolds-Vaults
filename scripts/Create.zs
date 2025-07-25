@@ -3,7 +3,7 @@ for Iskall85's Vaulthunters */
 
 // adding recipes
 
-<recipetype:create:crushing>.addRecipe("crushed_vaultstone_to_rock", [<item:the_vault:vault_rock> % 50, <item:the_vault:vault_cobblestone>], <item:the_vault:vault_stone>, 350);
+<recipetype:create:crushing>.addRecipe("crushed_vaultstone_to_rock", [<item:the_vault:vault_rock> % 12, <item:the_vault:vault_cobblestone>], <item:the_vault:vault_stone>, 350);
 
 <recipetype:create:crushing>.addRecipe("chromatic_ore_to_dust", [<item:the_vault:chromatic_iron_dust> *2], <item:the_vault:chromatic_iron_ore>, 350);
 <recipetype:create:crushing>.addRecipe("chromatic_raw_to_dust", [<item:the_vault:chromatic_iron_dust> *2], <item:the_vault:raw_chromatic_iron>, 350);
@@ -266,3 +266,30 @@ craftingTable.addShaped("create_schematic_table", <item:create:schematic_table>,
 ]);
 
 craftingTable.addShapeless("create_empty_schematic", <item:create:empty_schematic>, [<item:the_vault:magic_silk>, <tag:items:forge:dyes/light_blue>]);
+
+craftingTable.addShapeless("create_andesite_alloy_unpack", <item:create:andesite_alloy> *9, [
+    <item:create:andesite_alloy_block>
+]);
+
+var clusters = {
+  "cluster_bomignite": "bomignite",
+  "cluster_tubium": "tubium",
+  "cluster_ashium": "ashium",
+  "cluster_upaline": "upaline",
+  "cluster_xenium": "xenium",
+  "cluster_gorginite": "gorginite",
+  "cluster_petzanite": "petzanite",
+  "cluster_iskallium": "iskallium",
+  "cluster_sparkletine": "sparkletine"
+};
+
+for clusterId, clusterName in clusters {
+    <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_" + clusterName + "_key")
+                                                      .transitionTo(<item:create:incomplete_track>)
+                                                      .require(<item:the_vault:cluster_${clusterName}>)
+                                                      .loops(0)
+                                                      .addOutput(<item:the_vault:key_${clusterName}> * 1, 32)
+                                                      .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:the_vault:blank_key>))
+                                                      .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(500)));
+
+}
