@@ -159,6 +159,9 @@ onEvent("recipes", event => {
         L: 'the_vault:perfect_larimar',
     })
 
-
+    event.shapeless('laserio:card_item', ['laserio:card_item'])
+    event.shapeless('laserio:card_fluid', ['laserio:card_fluid'])
+    event.shapeless('laserio:card_energy', ['laserio:card_energy'])
+    event.shapeless('laserio:card_redstone', ['laserio:card_redstone'])
 
 })
