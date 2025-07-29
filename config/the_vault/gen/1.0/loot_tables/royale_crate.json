@@ -6,6 +6,17 @@
         "count": 1
       },
       "pool": [
+         {
+          "weight": 30,
+          "item": {
+            "id": "the_vault:bottle",
+            "nbt": "{\"VaultRoyaleVial\": true}",
+            "count": {
+              "type": "constant",
+              "count": 1
+            }
+          }
+        },
         {
           "weight": 100,
           "item": {
@@ -168,6 +179,17 @@
         "count": 1
       },
       "pool": [
+         {
+          "weight": 25,
+          "item": {
+            "id": "the_vault:bottle",
+            "nbt": "{\"VaultRoyaleVial\": true}",
+            "count": {
+              "type": "constant",
+              "count": 1
+            }
+          }
+        },
         {
           "weight": 100,
           "item": {
@@ -512,13 +534,13 @@
           }
         },
         {
-          "weight": 700,
+          "weight": 400,
           "item": {
             "id": "the_vault:hearty_apple",
             "count": {
               "type": "uniform",
               "min": 1,
-              "max": 4
+              "max": 2
               
             }
           }
