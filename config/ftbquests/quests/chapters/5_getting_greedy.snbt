@@ -195,7 +195,7 @@
 			shape: "hexagon"
 			subtitle: "Your Guide to Greed"
 			description: [
-				"&5Once you've defeated the Herald, you should get a brand new piece of Vault Gear : a Vault Map. Vault Maps are the key to a new post-Herald challenge called Mapped Vaults."
+				"&5Once you've defeated the Herald, you gain access to a brand new piece of Vault Gear : a Vault Map. Vault Maps are the key to a new post-Herald challenge called Mapped Vaults. They can be crafted in the Vault Forge."
 				""
 				"&5When you identify a Vault Map, it will roll a set Objective, Theme, as well as set Modifiers like bonus Item Quantity and similar. There are multiple tiers of Maps to keep a look out for as well!"
 				""
@@ -327,7 +327,7 @@
 				""
 				"&5You get Nullite from two sources : Ore POIs and the Completion Crate."
 				""
-				"&5Nullite crafts into a new tier of tools with higher capacity and repairs."
+				"&5Nullite Fragements craft into Nullite Crystals, which are used in a new tier of tools with higher capacity and repairs called Nullite Tools."
 			]
 			hide_dependency_lines: true
 			dependencies: ["041C09029AA797E9"]
@@ -354,7 +354,7 @@
 			description: [
 				"&5Gateway Pearls are a special piece of loot that are only obtainable in Mapped Vaults."
 				""
-				"&5Using an Unidentified Gateway Pearl will get you a random Gateway Pearl. These Pearls can be used to summmon a wave-based challenge."
+				"&5Using an Unidentified Gateway Pearl will get you a random Gateway Pearl. These Pearls can be used to summmon a wave-based challenge. If you don't have a Vault Pearl, you can still Right Click the Gateway block to start a random Gateway instead!"
 				""
 				"&5Monsters will spawn in waves, and to win you must kill every monster within a time limit."
 				""
@@ -382,7 +382,7 @@
 			shape: "rsquare"
 			subtitle: "...Wait, Are We God Now?"
 			description: [
-				"&5Defeating the Herald will give you a recipe in the Vault Forge for a Zephyr Charm."
+				"&5Defeating the Herald unlocks a recipe in the Vault Forge for a Zephyr Charm."
 				""
 				"&5The Zephyr Charm is a powerful charm that boosts your ground speed a bit, but also boosts your air speed by much, much more! "
 				""
@@ -403,6 +403,34 @@
 				id: "382E96D6654F74CC"
 				type: "item"
 				item: "woldsvaults:omega_box"
+			}]
+		}
+		{
+			title: "Prestigous Ascent"
+			icon: "woldsvaults:chromatic_gold_angel_ring"
+			x: -5.0d
+			y: -1.0d
+			shape: "hexagon"
+			subtitle: "Grinding to Godhood"
+			description: [
+				"&5Upon defeating the Herald, you unlock one of the major end-game systems : Prestige."
+				""
+				"&5Prestige enables you to continue running Vaults, earning XP and loot. When you gain a level above 100, you earn a Prestige Point."
+				""
+				"&5Prestige Points can be used in the new Prestige Power tab in your VH GUI. They are set into tiers, and each power in a tier you unlock requires a power unlocked in a previous tier (Example : to unlock a 3rd Tier3 Power, you must have 3 Tier2 powers and 3 Tier1 Powers unlocked!)"
+				""
+				"&5Note that Prestige Powers not only require Prestige Points, but also Knowledge Points to unlock!"
+			]
+			dependencies: ["1E1457C794B6792E"]
+			id: "52C9C1DA4A72E836"
+			tasks: [{
+				id: "5279E3208D0B915D"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "24181625F6C079DC"
+				type: "item"
+				item: "the_vault:knowledge_star"
 			}]
 		}
 	]

@@ -1,0 +1,466 @@
+{
+	id: "047B50BE2AA920C6"
+	group: ""
+	order_index: 0
+	filename: "welcome"
+	title: "Welcome!"
+	icon: {
+		id: "the_vault:vault_crystal"
+		Count: 1b
+		tag: {
+			CrystalData: {
+				Instability: 0b
+				Level: 0b
+				Exhausted: 0b
+				Version: 2b
+				Modifiers: {
+					List: [ ]
+					RandomModifiers: 1b
+					type: "default"
+					Clarity: 0b
+				}
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 0.5d
+		y: -2.0d
+		width: 6.0d
+		height: 6.0d
+		rotation: 0.0d
+		image: "wolds_vaults:textures/gui/pack_image.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: 0.5d
+			y: 1.0d
+			subtitle: "New Vault Hunters Experience"
+			description: ["Hello, and welcome to Wold's Vaults! This is a custom pack based on the popular Vault Hunters 3 modpack with new mods, replaced mods, and configuration changes. These quests will help walk you through some of the changes while picking up a few freebies and introduce you to nice QoL items you may not know about that were added!"]
+			id: "24C17F90F40C5207"
+			tasks: [{
+				id: "0005A4F9908A8F8A"
+				type: "checkmark"
+				title: "Welcome to Wold's Vaults!"
+			}]
+			rewards: [{
+				id: "2F7272F0FDAAADE6"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "A Book of Books"
+			icon: {
+				id: "eccentrictome:tome"
+				Count: 1b
+				tag: {
+					"eccentrictome:mods": {
+						blockcarpentry: {
+							0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "blockcarpentry:carpentering_manual"
+								}
+							}
+						}
+						industrialforegoing: {
+							0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "industrialforegoing:industrial_foregoing"
+								}
+							}
+						}
+						sebastrnlib: {
+							0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "sebastrnlib:sebastrn_mods_guide_book"
+								}
+							}
+						}
+						pneumaticcraft: {
+							0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "pneumaticcraft:book"
+								}
+							}
+						}
+						modularrouters: {
+							0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "modularrouters:book"
+								}
+							}
+						}
+						botania: {
+							0: {
+								Count: 1b
+								id: "botania:lexicon"
+							}
+						}
+						cloudstorage: {
+							0: {
+								Count: 1b
+								id: "cloudstorage:guide_book"
+							}
+						}
+						hexcasting: {
+							0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "hexcasting:thehexbook"
+								}
+							}
+						}
+						thermal: {
+							0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "thermal:guidebook"
+								}
+							}
+						}
+						patchouli: {
+							0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "patchouli:the_vault_main_guide"
+								}
+							}
+						}
+						rftoolsbase: {
+							0: {
+								Count: 1b
+								id: "rftoolsbase:manual"
+							}
+						}
+						integrateddynamics: {
+							0: {
+								Count: 1b
+								id: "integrateddynamics:on_the_dynamics_of_integration"
+							}
+						}
+						laserio: {
+							0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "laserio:laseriobook"
+								}
+							}
+						}
+						the_vault: {
+							0: {
+								Count: 1b
+								id: "the_vault:quest_book"
+							}
+						}
+						parcool: {
+							0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "parcool:parcool_guide"
+								}
+							}
+						}
+					}
+					"eccentrictome:version": 1
+				}
+			}
+			x: 1.5d
+			y: 2.0d
+			subtitle: "Your all-encompassing guide"
+			description: [
+				"When you first spawn, you should get a nifty item called the Eccentric Tome. This book contains all of the guide-books for mods in the pack, as well as both the Vault Hunters Guide and Quest books. I highly recommend following the Vault Hunters quest book as it will help you figure out how to progress, as well as pick up some rewards along the way."
+				"Left-click with the Tome to reset it to it's default state, and then you can right-click to open the menu of books."
+				"You can use this quest to re-claim this book in case you ever lose it!"
+			]
+			dependencies: ["24C17F90F40C5207"]
+			can_repeat: true
+			id: "74B80862B9479809"
+			tasks: [{
+				id: "67E81629AFEAC7F5"
+				type: "checkmark"
+				title: "A Book of Books"
+			}]
+			rewards: [{
+				id: "7FD1899C4198E665"
+				type: "item"
+				item: {
+					id: "the_vault:quest_book"
+					Count: 1b
+					tag: {
+						"eccentrictome:version": 1
+						"eccentrictome:is_tome": 1b
+						"eccentrictome:mods": {
+							blockcarpentry: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "blockcarpentry:carpentering_manual"
+									}
+								}
+							}
+							industrialforegoing: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "industrialforegoing:industrial_foregoing"
+									}
+								}
+							}
+							powah: {
+								0: {
+									id: "powah:book"
+									Count: 1b
+								}
+							}
+							sebastrnlib: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "sebastrnlib:sebastrn_mods_guide_book"
+									}
+								}
+							}
+							pneumaticcraft: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "pneumaticcraft:book"
+									}
+								}
+							}
+							ftbquests: {
+								0: {
+									id: "ftbquests:book"
+									Count: 1b
+								}
+							}
+							littlelogistics: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "littlelogistics:guide"
+									}
+								}
+							}
+							modularrouters: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "modularrouters:book"
+									}
+								}
+							}
+							botania: {
+								0: {
+									id: "botania:lexicon"
+									Count: 1b
+								}
+							}
+							cloudstorage: {
+								0: {
+									id: "cloudstorage:guide_book"
+									Count: 1b
+								}
+							}
+							hexcasting: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "hexcasting:thehexbook"
+									}
+								}
+							}
+							thermal: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "thermal:guidebook"
+									}
+								}
+							}
+							patchouli: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "patchouli:the_vault_main_guide"
+									}
+								}
+							}
+							rftoolsbase: {
+								0: {
+									id: "rftoolsbase:manual"
+									Count: 1b
+								}
+							}
+							integrateddynamics: {
+								0: {
+									id: "integrateddynamics:on_the_dynamics_of_integration"
+									Count: 1b
+								}
+							}
+							laserio: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "laserio:laseriobook"
+									}
+								}
+							}
+							parcool: {
+								0: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "parcool:parcool_guide"
+									}
+								}
+							}
+						}
+						display: {
+							Name: "{\"translate\":\"eccentrictome.name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.the_vault.quest_book\"}]}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "lightmanscurrency:wallet_copper"
+				Count: 1b
+				tag: { }
+			}
+			x: -1.0d
+			y: 3.0d
+			subtitle: "Money, money, money"
+			description: [
+				"You'll notice you start with a wallet, this contains some free Vault Silver, enjoy! This wallet is part of a mod called Lightman's Currency. It adds a TON of shop blocks ranging from simple shelves, armor stands, and display cases to network traders, slot machines, and ticket gates."
+				""
+				"I highly recommend using @lightmanscurrency in JEI to check out all the different items and blocks! Build the shop of your dreams!"
+				""
+				"As a bonus, here's some things to get you started. You can store money in your ATM account and retrieve it from any other ATM!"
+			]
+			dependencies: ["24C17F90F40C5207"]
+			id: "554BF3C92607DD51"
+			tasks: [{
+				id: "55923FA8C38D6993"
+				type: "checkmark"
+				title: "Wallets and ATMs!?"
+			}]
+			rewards: [
+				{
+					id: "010C828B26AD74AC"
+					type: "item"
+					item: "lightmanscurrency:atm"
+				}
+				{
+					id: "7CC4D687F0937C41"
+					type: "item"
+					item: "lightmanscurrency:terminal"
+				}
+				{
+					id: "5E84346CB681CABA"
+					type: "item"
+					item: "lightmanscurrency:card_display_oak"
+					count: 8
+				}
+				{
+					id: "05C4960E5E94803E"
+					type: "item"
+					item: "lightmanscurrency:item_trader_server_sml"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "Parkour!?"
+			icon: {
+				id: "minecraft:leather_boots"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.5d
+			y: 4.5d
+			subtitle: "Parkour."
+			description: [
+				"One of the bigger changes to Vault Hunters includes the addition of a mod called Parcool! This mod adds lots of new Parkour moves you can do that make traversing the world easier."
+				""
+				"I highly recommend reading the Parcool guide in the Eccentric Tome that you start with if you want to know more!"
+			]
+			dependencies: ["24C17F90F40C5207"]
+			id: "4048761FE05BBE53"
+			tasks: [{
+				id: "19EB452483B17537"
+				type: "checkmark"
+				title: "I'm a Certified Parkour Pro"
+			}]
+			rewards: [{
+				id: "2E78585151EB388F"
+				type: "item"
+				item: "the_vault:cooked_vault_steak"
+				count: 16
+			}]
+		}
+		{
+			icon: {
+				id: "minecraft:diamond_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.5d
+			y: 1.0d
+			subtitle: "Combo your enemies!"
+			description: [
+				"Another big change is the addition of the Better Combat mod. Your weapon will have a combo with 3 different swings. Get used to the timing and take down your foes!"
+				""
+			]
+			dependencies: ["24C17F90F40C5207"]
+			id: "0603B3E2C3B2DA0D"
+			tasks: [{
+				id: "5098344D7A2AB52E"
+				type: "checkmark"
+				title: "Better Combat"
+			}]
+			rewards: [{
+				id: "0F2C9F1078BB2E83"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+	]
+	quest_links: [ ]
+}

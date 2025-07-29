@@ -127,7 +127,7 @@
 		}
 		{
 			title: "The Challenge"
-			x: 9.0d
+			x: 11.5d
 			y: -2.0d
 			shape: "pentagon"
 			subtitle: "Win Streak"
@@ -255,7 +255,7 @@
 		{
 			title: "A Bigger Challenge"
 			icon: "davebuildingmod:skeleton_5"
-			x: 6.25d
+			x: 8.75d
 			y: -2.0d
 			shape: "hexagon"
 			subtitle: "New Vault+"
@@ -264,7 +264,7 @@
 				""
 				"&5Wolds adds alternate versions of most of the Vanilla VH Vault Objectives. These provide a bigger challenge, but give a bigger reward."
 			]
-			dependencies: ["504DC166104A8063"]
+			dependencies: ["455AD3A818283D5E"]
 			hide: true
 			id: "73F19D407DDBD157"
 			tasks: [{
@@ -280,7 +280,7 @@
 		}
 		{
 			title: "Elixir : Enchanted!"
-			x: 5.75d
+			x: 8.25d
 			y: -4.25d
 			shape: "rsquare"
 			subtitle: "An Enchanted Adventure"
@@ -312,7 +312,7 @@
 		}
 		{
 			title: "Braziers : Spirited!"
-			x: 6.75d
+			x: 9.25d
 			y: -4.25d
 			shape: "rsquare"
 			subtitle: "A Ghost of a Time"
@@ -345,7 +345,7 @@
 		}
 		{
 			title: "Scavenger : Unhinged!"
-			x: 6.214285714285715d
+			x: 8.714285714285715d
 			y: -3.2321428571428577d
 			shape: "rsquare"
 			subtitle: "Looting Dreams and Nightmares"
@@ -439,7 +439,7 @@
 		}
 		{
 			title: "Runes : Brutal!"
-			x: 6.25d
+			x: 8.75d
 			y: -0.75d
 			shape: "rsquare"
 			subtitle: "Just a Mid Boss, Right?"
@@ -469,7 +469,7 @@
 		}
 		{
 			title: "The Main Boss"
-			x: 11.5d
+			x: 14.0d
 			y: -2.0d
 			shape: "pentagon"
 			subtitle: "Are You Ready?"
@@ -563,7 +563,7 @@
 		}
 		{
 			title: "Bingo : Ballistic!"
-			x: 6.25d
+			x: 8.75d
 			y: 0.25d
 			shape: "rsquare"
 			subtitle: "Dab For Mercy"
@@ -733,7 +733,7 @@
 				""
 				"&5This will let you reroll the gear, but keep the frozen modifier as it is."
 				""
-				"&5To unfreeze modifiers, using a Blazing Focus."
+				"&5To unfreeze modifiers, use a Blazing Focus."
 			]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
@@ -907,7 +907,7 @@
 		}
 		{
 			title: "The Toughest Battle"
-			x: 14.0d
+			x: 16.5d
 			y: -2.0d
 			shape: "hexagon"
 			subtitle: "Wish We Had the Sword of the Cosmos..."
@@ -924,7 +924,7 @@
 				""
 				"&5Then the lootin phase. You need to find the Inhibitors in the Chests and throw em at the floating orbs."
 				""
-				"&5Might be a phase we're forgetting... but the faster you beat the Herald, the better Trophy you get."
+				"&5Might be a phase I'm forgetting... but the faster you beat the Herald, the better Trophy you get."
 			]
 			dependencies: ["6CF74503417AAC2D"]
 			hide: true
@@ -970,7 +970,7 @@
 		}
 		{
 			title: "Egg of Surprises"
-			x: 9.0d
+			x: 11.5d
 			y: -0.75d
 			shape: "rsquare"
 			subtitle: "What Lay Inside?"
@@ -993,6 +993,247 @@
 				type: "item"
 				item: "woldsvaults:enigma_egg"
 			}]
+		}
+		{
+			title: "Number One Royale"
+			icon: {
+				id: "the_vault:boost_modification_stone"
+				Count: 1b
+				tag: { }
+			}
+			x: 6.0d
+			y: -2.0d
+			shape: "hexagon"
+			subtitle: "Bout to Get Down"
+			description: [
+				"&5Another new type of Vault that opens up at level 50 is called the Vault Royale, a take on Battle Royale style games. You need to use a Royale Rock to create the crystal."
+				""
+				"&5The Royale Vault will roll a random objective to complete. All loot from chests, mobs, etc will go into a Royale Crate in your inventory, which you only get when you complete the Vault. You cannot exit the portal early, so it is either all or nothing."
+				""
+				"&5Objectives that require items, such as Scavenger, will drop into your Inventory like normal however."
+				""
+				"&5When you enter a Royale Vault, you arrive with no skills or items (You'll get them back when you leave!), and you must gear and skill up while in the Vault."
+			]
+			dependencies: ["504DC166104A8063"]
+			hide: true
+			id: "455AD3A818283D5E"
+			tasks: [{
+				id: "01975E630A018989"
+				type: "item"
+				item: "the_vault:crystal_seal_vault_royale"
+			}]
+			rewards: [{
+				id: "6FC1FD81FE8CD355"
+				type: "item"
+				item: "the_vault:crystal_seal_vault_royale"
+			}]
+		}
+		{
+			title: "A Little Buddy"
+			icon: "the_vault:companion_egg"
+			x: 6.0d
+			y: -3.25d
+			shape: "rsquare"
+			subtitle: "You Got a Friend in Me"
+			description: [
+				"&5Starting at Level 50, you have a small chance of getting a Companion Egg to spawn as you run normal Vaults."
+				""
+				"&5Companions are little creatures you can catch and bring with you into Vaults. They can provide powerful benefits, and level up to become even more powerful."
+				""
+				"&5The Companion Egg will send a message in your chat when it spawns, where it will either spawn in a room you've already been in, OR in a room you added yourself with an Inscription. Look around, it will be giving off particles, but might be a bit hard to spot at first."
+				""
+				"&5Once you have an egg, you'll need a Companion Incubator to hatch it! It can either be an animal, a mob, or another player. You can rename them (and change the player skin) with a Nametag!"
+				""
+				"&5To bring a Companion into a Vault, you'll need to put it on your Head Curios Slot."
+			]
+			hide_dependency_lines: true
+			dependencies: ["504DC166104A8063"]
+			hide: true
+			id: "4EA298FC76637A03"
+			tasks: [{
+				id: "759070394562795D"
+				type: "item"
+				item: "the_vault:companion_incubator"
+			}]
+			rewards: [{
+				id: "1DFBC20C134370BF"
+				type: "item"
+				item: "the_vault:companion_egg"
+			}]
+		}
+		{
+			title: "Winner Winner Crate Dinner"
+			x: 6.0d
+			y: -0.75d
+			shape: "rsquare"
+			subtitle: "A Tough Fought Reward"
+			description: [
+				"&5In the Entrance, you'll find an NPC called Tommy. This NPC will offer you 3 Skill loadouts, randomly chosen from over a couple dozen. Any skill points not used with the loadouts can be used with Skill Scrolls. You can also go in 'skillless', but this is VERY difficult!"
+				""
+				"&5After the loadout, Tommy will offer you two sets of Trinkets, which you can select one from each group. And finally, a choice of reward for completing the Royale Vault."
+				""
+				"&5You'll also have at least one Royale Loot Crate in the main room, containing up to 5 items from the following list : "
+				"&5 -Vault Gear, Skill Scrolls, Vault Modifiers, Vault Fruit, Food, and Blocks"
+				""
+				"&5These Royale Loot Crates are also scattered in the Vault, looting them will help you gear up to complete the Vault."
+			]
+			hide_dependency_lines: true
+			dependencies: ["455AD3A818283D5E"]
+			hide: true
+			id: "6BBA294D34AA81D7"
+			tasks: [{
+				id: "1E4849390C85217F"
+				type: "item"
+				item: "the_vault:royale_crate"
+			}]
+			rewards: [{
+				id: "028B889F4C4D7544"
+				type: "item"
+				item: {
+					id: "the_vault:boost_modification_stone"
+					Count: 1b
+					tag: {
+						LootBoost: 2
+					}
+				}
+			}]
+		}
+		{
+			title: "Companion Care"
+			icon: "the_vault:companion_heal"
+			x: 6.0d
+			y: -4.25d
+			shape: "rsquare"
+			subtitle: "Headpats and Snacks"
+			description: [
+				"&5Companions start out rolling a Temporal Modifier, a powerful ability that you can activate once per Vault (Check your keybinds, it may not be set!). This ability levels up and becomes stronger as the Companion levels up!"
+				""
+				"&5Making a Companion Home gives you a place to put your Companion, and also see its stats and change its equipment!"
+				""
+				"&5You can also dye the Companion Home the same way you dye Leather Armor (put any number of dyes + the home in a crafting table)."
+				""
+				"&5Companions can equip Companion Relics and Particles, which can be found as loot in Vault Chests and Treasure Sand."
+				""
+				"&5Companions also have Hearts. If you die in a Vault, your equipped Companion will lose a Heart as well. When a Companion has no hearts left, it will retire and can no longer help in a Vault."
+				""
+				"&5You can regenerate a Heart on a Companion by feeding it a Companion Snack. HOWEVER, you cannot heal a Companion that is RETIRED!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["4EA298FC76637A03"]
+			hide: true
+			id: "3E0E4E62B5E7E5D7"
+			tasks: [
+				{
+					id: "2ED0C4069358013D"
+					type: "item"
+					item: "the_vault:companion_home"
+				}
+				{
+					id: "5AFE1659281D1201"
+					type: "item"
+					item: "the_vault:companion_heal"
+				}
+			]
+			rewards: [{
+				id: "4331159A4EC68F13"
+				type: "item"
+				item: "the_vault:companion_heal"
+			}]
+		}
+		{
+			title: "A True Royale"
+			x: 6.0d
+			y: 0.25d
+			shape: "rsquare"
+			subtitle: "No Bathrooms to Camp Though"
+			description: [
+				"&5If you are wanting to try the true Battle Royale experience on a server with other Players, you can use the PVP Royale Rock."
+				""
+				"&5Like the normal PVP Rock, the second person to enter will start a 2 minute timer, then everyone will be scattered around the Vault. So choosing your Loadout in time is important!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["455AD3A818283D5E"]
+			hide: true
+			id: "07833B9543B39AD1"
+			tasks: [{
+				id: "6522F50CDF6EDEA7"
+				type: "item"
+				item: "the_vault:crystal_seal_vault_royale_pvp"
+			}]
+			rewards: [{
+				id: "4CCD50B958AC0E63"
+				type: "item"
+				item: "the_vault:crystal_seal_vault_royale_pvp"
+			}]
+		}
+		{
+			title: "A Wild Star"
+			x: 11.5d
+			y: -3.25d
+			shape: "rsquare"
+			subtitle: "Er, I mean Wold Star"
+			description: [
+				"&5The Wold Star is a late game/end game crafting material that is primarily used to make super powerful items, such as Creative tier items."
+				""
+				"&5You will need Wold Star Chunks, which are only found in Treasure Chests, Treasure Pedestals, Omega Vendor Pedestals, and Omega Boxes."
+			]
+			hide_dependency_lines: true
+			dependencies: ["504DC166104A8063"]
+			hide: true
+			id: "2A21CDB97384E036"
+			tasks: [{
+				id: "08360BB844A9ED32"
+				type: "item"
+				item: "the_vault:wold_star"
+			}]
+			rewards: [{
+				id: "6D6B9F4B04BAD284"
+				type: "item"
+				item: "the_vault:wold_star_chunk"
+			}]
+		}
+		{
+			title: "Big Reinforcements"
+			icon: "woldsvaults:resonating_reinforcement"
+			x: 11.5d
+			y: -4.25d
+			shape: "rsquare"
+			subtitle: "I Didn't Forget Picking, Honest!"
+			description: [
+				"&5If you are finding your Vault Tool could use just a little more room for Jewels on them, then the Resonating Reinforcement and Prismatic Reinforcement are two items that can really help out."
+				""
+				"&5By combining either of these with a Tool in an Anvil, you can add 10 more capacity to the tool."
+				""
+				"&5Note that you can only fit two Resonating Reinforcements on a tool, but the much rarer Prismatic Reinforcement has no maximum."
+			]
+			hide_dependency_lines: true
+			dependencies: ["504DC166104A8063"]
+			hide: true
+			id: "22BBD41021744D5D"
+			tasks: [
+				{
+					id: "56FE29F3137D3F66"
+					type: "item"
+					item: "woldsvaults:resonating_reinforcement"
+				}
+				{
+					id: "44B5B5D8F6907ED3"
+					type: "item"
+					item: "woldsvaults:crystal_reinforcement"
+				}
+			]
+			rewards: [
+				{
+					id: "4A470598BF482848"
+					type: "item"
+					item: "woldsvaults:resonating_reinforcement"
+				}
+				{
+					id: "42A2B79D5B75EED4"
+					type: "item"
+					item: "woldsvaults:crystal_reinforcement"
+				}
+			]
 		}
 	]
 	quest_links: [ ]
