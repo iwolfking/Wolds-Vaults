@@ -154,12 +154,16 @@ onEvent('recipes', event => {
 
     event.shaped(Item.of('the_vault:orb_frame'),
         [
-            ' X ',
+            'SXE',
             'XRX',
-            ' X '
+            'VXM'
         ], {
-        X: 'the_vault:perfect_black_opal',
-        R: 'woldsvaults:extraordinary_pog_prism'
+        X: 'the_vault:extraordinary_black_opal',
+        R: 'the_vault:omega_pog',
+        S: 'the_vault:sublime_vault_substance',
+        E: 'the_vault:sublime_vault_elixir',
+        M: 'the_vault:memory_crystal',
+        V: 'the_vault:sublime_vault_vision'
     }).id('woldsvaults:orb_frame')
 
 
