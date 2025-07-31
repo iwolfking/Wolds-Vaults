@@ -125,6 +125,7 @@ onEvent('item.tags', event => {
     event.add('the_vault:crystal_seals', 'the_vault:crystal_seal_enchanter')
     event.add('the_vault:crystal_seals', 'the_vault:crystal_seal_doomsayer')
     event.add('the_vault:crystal_seals', 'woldsvaults:crystal_seal_corrupt')
+    event.add('the_vault:crystal_seals', 'woldsvaults:crystal_seal_alchemy')
 
     event.add('the_vault:crystal_capstones', 'woldsvaults:capstone_frenzy')
     event.add('the_vault:crystal_capstones', 'woldsvaults:capstone_prosperous')
