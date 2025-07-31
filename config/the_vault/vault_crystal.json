@@ -1794,6 +1794,68 @@
         ]
       }
     ],
+    "the_vault:alchemy": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "type": "alchemy",
+              "objective_probability": 1.0,
+              "required_progress": 1.0
+            }
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "pool": [
+          {
+            "value": {
+              "type": "alchemy",
+              "objective_probability": 0.80,
+              "required_progress": 1.5
+            }
+          }
+        ]
+      },
+      {
+        "level": 50,
+        "pool": [
+          {
+            "value": {
+              "type": "alchemy",
+              "objective_probability": 0.60,
+              "required_progress": 2.0
+            }
+          }
+        ]
+      },
+      {
+        "level": 65,
+        "pool": [
+          {
+            "value": {
+              "type": "alchemy",
+              "objective_probability": 0.40,
+              "required_progress": 2.5
+            }
+          }
+        ]
+      },
+      {
+        "level": 80,
+        "pool": [
+          {
+            "value": {
+              "type": "alchemy",
+              "objective_probability": 0.30,
+              "required_progress": 3.0
+            }
+          }
+        ]
+      }
+    ],
     "the_vault:rune_boss": [
       {
         "level": 0,
@@ -2713,6 +2775,52 @@
         "theme": {
           "type": "value",
           "id": "the_vault:vault_lost_depths"
+        }
+      }
+    ],
+    "woldsvaults:crystal_seal_alchemy": [
+      {
+        "level": 0,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objective": {
+          "type": "alchemy",
+          "objective_probability": 1.0,
+          "required_progress": 1.0
+        }
+      },
+      {
+        "level": 20,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objective": {
+          "type": "alchemy",
+          "objective_probability": 0.80,
+          "required_progress": 1.5
+        }
+      },
+      {
+        "level": 50,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objective": {
+          "type": "alchemy",
+          "objective_probability": 0.60,
+          "required_progress": 2.0
+        }
+      },
+      {
+        "level": 80,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objective": {
+          "type": "alchemy",
+          "objective_probability": 0.40,
+          "required_progress": 2.5
         }
       }
     ],
