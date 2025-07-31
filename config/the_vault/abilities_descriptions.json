@@ -3451,10 +3451,18 @@
         "manaCost"
       ]
     },
-    "Ice_Bolt_Base": {
+     "Ice_Bolt_Base": {
       "description": [
         {
-          "text": "Summon a small Ice Bolt, dealing no damage but ",
+          "text": "Summon a small Ice Bolt, dealing ",
+          "color": "$text"
+        },
+        {
+          "text": "flat damage",
+          "color": "$damage"
+        },
+        {
+          "text": " and ",
           "color": "$text"
         },
         {
@@ -3479,12 +3487,15 @@
         }
       ],
       "current": [
+        "setDamage",
         "throwPower",
         "duration",
         "cooldown",
         "manaCost"
+
       ],
       "next": [
+        "setDamage",
         "throwPower",
         "duration",
         "cooldown",
@@ -3535,14 +3546,17 @@
         }
       ],
       "current": [
+        "setDamage",
         "throwPower",
         "duration",
         "radius",
         "glacialChance",
         "cooldown",
         "manaCost"
+
       ],
       "next": [
+        "setDamage",
         "throwPower",
         "duration",
         "radius",
