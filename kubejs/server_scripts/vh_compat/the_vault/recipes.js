@@ -29,7 +29,7 @@ onEvent("recipes", event => {
         E: 'the_vault:vault_essence',
         D: 'the_vault:vault_diamond',
         A: 'the_vault:dreamstone',
-        B: 'the_vault:perfect_benitoite'
+        B: 'the_vault:extraordinary_benitoite'
     })
 
     event.shaped(Item.of('the_vault:mystery_egg'),
