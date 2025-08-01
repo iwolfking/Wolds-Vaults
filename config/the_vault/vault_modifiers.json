@@ -1910,6 +1910,20 @@
           "icon": "the_vault:gui/modifiers/chunky"
         }
       },
+      "the_vault:baby_mobs4": {
+        "properties": {
+          "type": "max_health_additive_percentile",
+          "amount": -0.5,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Leaner Mobs",
+          "color": "#D4E157",
+          "description": "-50% Mob Health",
+          "descriptionFormatted": "-%d%% Mob Health",
+          "icon": "the_vault:gui/modifiers/chunky"
+        }
+      },
       "the_vault:cake_chunky_mobs": {
         "properties": {
           "type": "max_health_additive_percentile",
@@ -2274,7 +2288,7 @@
       }
     },
     "the_vault:modifier_type/mob_frenzy": {
-  "the_vault:frenzy": {
+      "the_vault:frenzy": {
         "properties": {
           "damage": 3.0,
           "movementSpeed": 0.1,
@@ -2285,6 +2299,20 @@
           "name": "Frenzy",
           "color": "#FC7C5C",
           "description": "+300% Mob Damage, +10% Mob Speed, Mob Health reduced to 1",
+          "icon": "the_vault:gui/modifiers/frenzy"
+        }
+      },
+      "the_vault:catastrophic_brew": {
+        "properties": {
+          "damage": 2.0,
+          "movementSpeed": 0.25,
+          "maxHealth": 2.0,
+          "doHealthReduction": false
+        },
+        "display": {
+          "name": "Catastrophic Brew",
+          "color": "#FC7C5C",
+          "description": "Yikes! +200% Mob Damage, +25% Mob Speed",
           "icon": "the_vault:gui/modifiers/frenzy"
         }
       },
@@ -2324,6 +2352,18 @@
           "name": "More Mobs",
           "color": "#bc2525",
           "description": "+25% Mob Spawns",
+          "descriptionFormatted": "+%d%% increased amount of mob spawns",
+          "icon": "the_vault:gui/modifiers/mob_increase"
+        }
+      },
+      "the_vault:more_mobs2": {
+        "properties": {
+          "increase": 0.5
+        },
+        "display": {
+          "name": "More Mobs",
+          "color": "#bc2525",
+          "description": "+50% Mob Spawns",
           "descriptionFormatted": "+%d%% increased amount of mob spawns",
           "icon": "the_vault:gui/modifiers/mob_increase"
         }
@@ -3315,6 +3355,19 @@
           "icon": "the_vault:gui/modifiers/safezone"
         }
       },
+      "the_vault:looters_lair": {
+        "properties": {
+          "stat": "trap_disarm_chance",
+          "addend": 0.4
+        },
+        "display": {
+          "name": "Safer Zone",
+          "color": "#A3E2F5",
+          "description": "+40% Trap Disarm",
+          "descriptionFormatted": "%d%% Trap Disarm",
+          "icon": "the_vault:gui/modifiers/safezone"
+        }
+      },
       "the_vault:disarming": {
         "properties": {
           "stat": "trap_disarm_chance",
@@ -3480,6 +3533,19 @@
           "name": "Tanky",
           "color": "#CA9A5B",
           "description": "+50% Resistance",
+          "descriptionFormatted": "%d%% Resistance",
+          "icon": "the_vault:gui/modifiers/vulnerable"
+        }
+      },
+      "the_vault:protected": {
+        "properties": {
+          "stat": "resistance",
+          "addend": 0.1
+        },
+        "display": {
+          "name": "Protected",
+          "color": "#CA9A5B",
+          "description": "+10% Resistance",
           "descriptionFormatted": "%d%% Resistance",
           "icon": "the_vault:gui/modifiers/vulnerable"
         }
@@ -4002,6 +4068,18 @@
           "name": "Accustomed",
           "color": "#DB7C00",
           "description": "+20% Vault Experience",
+          "descriptionFormatted": "+%d%% Vault Experience",
+          "icon": "the_vault:gui/modifiers/experienced"
+        }
+      },
+       "the_vault:refined_experience": {
+        "properties": {
+          "addend": 0.50
+        },
+        "display": {
+          "name": "Refined Experience",
+          "color": "#DB7C00",
+          "description": "+50% Vault Experience",
           "descriptionFormatted": "+%d%% Vault Experience",
           "icon": "the_vault:gui/modifiers/experienced"
         }
@@ -5285,6 +5363,108 @@
           "color": "#da6d5a",
           "description": "+2 Freezing, Poisoning, Bleeding and Withering Mobs",
           "icon": "the_vault:gui/modifiers/armored_mobs"
+        }
+      },
+      "the_vault:bubbling_trouble": {
+        "properties": {
+          "children": {
+            "the_vault:ruthless_mobs": 1,
+            "the_vault:chunky_mobs2": 1,
+            "the_vault:freezing": 1,
+            "the_vault:poisoning": 1,
+            "the_vault:wither": 1,
+            "the_vault:bleeding_mobs":1   
+          }
+        },
+        "display": {
+          "name": "Bubble, Toil, and Trouble",
+          "color": "#da6d5a",
+          "description": "+20% Mob Health and Damage, Mobs gain chances to apply a myriad of effects to you!",
+          "icon": "the_vault:gui/modifiers/armored_mobs"
+        }
+      },
+      "the_vault:ice_cold_essence": {
+        "properties": {
+          "children": {
+            "the_vault:freezing": 4,
+            "the_vault:ruthless_mobs": 1
+          }
+        },
+        "display": {
+          "name": "Ice Cold Essence",
+          "color": "#da6d5a",
+          "description": "Mobs gain a significant chance to freeze you!",
+          "icon": "the_vault:gui/modifiers/hex_chilling"
+        }
+      },
+      "the_vault:spicy_chili_speed": {
+        "properties": {
+          "children": {
+            "the_vault:enraged_mobs": 3,
+            "the_vault:critical_mobs": 1
+          }
+        },
+        "display": {
+          "name": "Spicy Chili Mobs",
+          "color": "#da6d5a",
+          "description": "Mobs gain 15% speed and 15% critical chance!",
+          "icon": "the_vault:gui/modifiers/armored_mobs"
+        }
+      },
+      "the_vault:hearty_mobs": {
+        "properties": {
+          "children": {
+            "the_vault:brutal_chunky_mobs": 2
+          }
+        },
+        "display": {
+          "name": "Hearty Mobs",
+          "color": "#da6d5a",
+          "description": "Mobs are significantly beefier!",
+          "icon": "the_vault:gui/modifiers/armored_mobs"
+        }
+      },
+     "the_vault:weak_heart": {
+        "properties": {
+          "children": {
+            "the_vault:antiheal": 1,
+            "the_vault:weakened_cdr": 1,
+            "the_vault:mana_regen_down": 1
+          }
+        },
+        "display": {
+          "name": "Weak Heart",
+          "color": "#d52424",
+          "description": "Your healing is 20% less effective, Cooldowns are 20% greater,and your Mana Regen is reduced by 25%",
+          "icon": "the_vault:gui/modifiers/curse_freezing"
+        }
+      },
+      "the_vault:weak_limbs": {
+        "properties": {
+          "children": {
+            "the_vault:weakened": 1,
+            "the_vault:slowed": 1
+          }
+        },
+        "display": {
+          "name": "Weak Limbs",
+          "color": "#d52424",
+          "description": "You are weaker and slower.",
+          "icon": "the_vault:gui/modifiers/curse_freezing"
+        }
+      },
+      "the_vault:ticking_clock": {
+        "properties": {
+          "children": {
+            "the_vault:haunting": 4,
+            "the_vault:enraged_mobs": 3
+          }
+        },
+        "display": {
+          "name": "Ticking Clock",
+          "color": "#d52424",
+          "description": "The clock ticks, mobs move faster and have a chance to take time away!",
+          "icon": "the_vault:gui/modifiers/curse_freezing"
         }
       },
       "the_vault:harder_mobs": {
