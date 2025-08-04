@@ -316,13 +316,14 @@ onEvent('recipes', event => {
     event.shaped(Item.of('woldsvaults:crystal_reinforcement'),
         [
             'YXY',
-            'OOO',
+            'BOB',
             'YSY'
         ], {
         X: 'the_vault:omega_pog_1',
         S: 'the_vault:echo_pog_1',
-        Y: 'woldsvaults:extraordinary_pog_prism',
+        Y: 'woldsvaults:chroma_core',
         O: 'the_vault:wold_star_chunk',
+        B: 'the_vault:black_chromatic_steel_block'
     }).id('woldsvaults:crystal_reinforcement')
 
     event.shaped(Item.of('woldsvaults:resonating_reinforcement'),
