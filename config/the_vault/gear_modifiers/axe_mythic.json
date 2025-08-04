@@ -802,6 +802,85 @@
       }
     ],
     "SUFFIX": [
+       { "attribute": "the_vault:ability_power",
+        "group": "ModOnHitAddition",
+        "identifier": "the_vault:mod_ability_power",
+        "tags": [
+          "focusAbilityPower"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": 49,
+            "weight": 10,
+            "value": {
+              "min": 1.0,
+              "max": 4.0,
+              "step": 0.5
+            }
+          },
+          {
+            "minLevel": 25,
+            "maxLevel": 74,
+            "weight": 10,
+            "value": {
+              "min": 5.0,
+              "max": 8.0,
+              "step": 0.5
+            }
+          },
+          {
+            "minLevel": 50,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 9.0,
+              "max": 12.0,
+              "step": 0.5
+            }
+          },
+          {
+            "minLevel": 75,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 13.0,
+              "max": 16.0,
+              "step": 0.5
+            }
+          },
+          {
+            "minLevel": 100,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 17.0,
+              "max": 20.0,
+              "step": 0.5
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 21.0,
+              "max": 24.0,
+              "step": 0.5
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 25.0,
+              "max": 50.0,
+              "step": 0.5
+            }
+          }
+        ]
+      },
         {
         "attribute": "the_vault:hit_hearts",
         "group": "ModHitHearts",
