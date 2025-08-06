@@ -2354,9 +2354,866 @@
       ],
       "maxTier": 5
     },
-
-
-
+    "intelligence": {
+      "type": "gear",
+      "name": {
+        "text": "Intelligence Card"
+      },
+      "model": "the_vault:skills/intelligence#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Intelligence",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "haste": {
+      "type": "gear",
+      "name": {
+        "text": "Haste Card"
+      },
+      "model": "the_vault:skills/haste#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Haste",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "strength": {
+      "type": "gear",
+      "name": {
+        "text": "Strength Card"
+      },
+      "model": "the_vault:skills/strength#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Strength",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "speed_talent": {
+      "type": "gear",
+      "name": {
+        "text": "Speed Card"
+      },
+      "model": "the_vault:skills/speed#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Speed",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "purist": {
+      "type": "gear",
+      "name": {
+        "text": "Purist Card"
+      },
+      "model": "the_vault:skills/purist#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Purist",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "stone_skin": {
+      "type": "gear",
+      "name": {
+        "text": "Stone Skin Card"
+      },
+      "model": "the_vault:skills/stone_skin#inventory",
+      "groups": [
+        "Knack",
+        "Defensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Stone_Skin",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "dungeon_mastery": {
+      "type": "gear",
+      "name": {
+        "text": "Dungeon Mastery Card"
+      },
+      "model": "the_vault:skills/dungeon_mastery#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Nether_Mastery",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "horde_mastery": {
+      "type": "gear",
+      "name": {
+        "text": "Horde Mastery Card"
+      },
+      "model": "the_vault:skills/horde_mastery#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Undead_Mastery",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "assassin_mastery": {
+      "type": "gear",
+      "name": {
+        "text": "Assassin Mastery Card"
+      },
+      "model": "the_vault:skills/assassin_mastery#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Arthropod_Mastery",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "dweller_mastery": {
+      "type": "gear",
+      "name": {
+        "text": "Dweller Mastery Card"
+      },
+      "model": "the_vault:skills/champion_mastery#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Illager_Mastery",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "champion_mastery": {
+      "type": "gear",
+      "name": {
+        "text": "Champion Mastery Card"
+      },
+      "model": "the_vault:skills/champion_mastery#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Champion_Mastery",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "tank_mastery": {
+      "type": "gear",
+      "name": {
+        "text": "Tank Mastery Card"
+      },
+      "model": "the_vault:skills/illager_mastery#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Tank_Mastery",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "last_stand": {
+      "type": "gear",
+      "name": {
+        "text": "Last Stand Card"
+      },
+      "model": "the_vault:skills/last_stand#inventory",
+      "groups": [
+        "Knack",
+        "Defensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Last_Stand",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+      "berserking": {
+      "type": "gear",
+      "name": {
+        "text": "Berserking Card"
+      },
+      "model": "the_vault:skills/berserking#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Berserking",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+      "sorcery": {
+      "type": "gear",
+      "name": {
+        "text": "Sorcery Card"
+      },
+      "model": "the_vault:skills/sorcery#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Sorcery",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+      "prime_amplification": {
+      "type": "gear",
+      "name": {
+        "text": "Prime Amplification Card"
+      },
+      "model": "the_vault:skills/prime_amplification#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Prime_Amplification",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+      "bountiful_harvest": {
+      "type": "gear",
+      "name": {
+        "text": "Bountiful Harvest Card"
+      },
+      "model": "the_vault:skills/bountiful_harvest#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Bountiful_Harvest",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "lightning_damage": {
+      "type": "gear",
+      "name": {
+        "text": "Lightning Damage Card"
+      },
+      "model": "the_vault:skills/lightning_damage#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Lightning_Damage",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "lightning_stun": {
+      "type": "gear",
+      "name": {
+        "text": "Lightning Stun Card"
+      },
+      "model": "the_vault:skills/lightning_stun#inventory",
+      "groups": [
+        "Knack",
+        "Defensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Lightning_Stun",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "treasure_seeker": {
+      "type": "gear",
+      "name": {
+        "text": "Treasure Seeker Card"
+      },
+      "model": "the_vault:skills/treasure_seeker#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Treasure_Seeker",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "witchery": {
+      "type": "gear",
+      "name": {
+        "text": "Witchery Card"
+      },
+      "model": "the_vault:skills/witchery#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Witchery",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "methodical": {
+      "type": "gear",
+      "name": {
+        "text": "Methodical Card"
+      },
+      "model": "the_vault:skills/methodical#inventory",
+      "groups": [
+        "Knack",
+        "Defensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Methodical",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "depleted": {
+      "type": "gear",
+      "name": {
+        "text": "Depleted Card"
+      },
+      "model": "the_vault:skills/depleted#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Depleted",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "lucky_hit_fatal": {
+      "type": "gear",
+      "name": {
+        "text": "Fatal Strike Card"
+      },
+      "model": "the_vault:skills/fatal_strike#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Fatal_Strike",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+      "lucky_hit_mana": {
+      "type": "gear",
+      "name": {
+        "text": "Mana Steal Card"
+      },
+      "model": "the_vault:skills/mana_steal#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Mana_Steal",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "life_leech": {
+      "type": "gear",
+      "name": {
+        "text": "Life Leech Card"
+      },
+      "model": "the_vault:skills/life_steal#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Life_Steal",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "cleave_talent": {
+      "type": "gear",
+      "name": {
+        "text": "Cleave Card"
+      },
+      "model": "the_vault:skills/cleave#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Cleave",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "prudent": {
+      "type": "gear",
+      "name": {
+        "text": "Prudent Card"
+      },
+      "model": "the_vault:skills/potion_amount#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Prudent",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "alchemist": {
+      "type": "gear",
+      "name": {
+        "text": "Prudent Card"
+      },
+      "model": "the_vault:skills/potion_time#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Alchemist",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "frozen_impact": {
+      "type": "gear",
+      "name": {
+        "text": "Frozen Impact Card"
+      },
+      "model": "the_vault:skills/blizzard#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Blizzard",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "frostbite": {
+      "type": "gear",
+      "name": {
+        "text": "Frostbite Card"
+      },
+      "model": "the_vault:skills/frostbite#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Frostbite",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "daze": {
+      "type": "gear",
+      "name": {
+        "text": "Frostbite Card"
+      },
+      "model": "the_vault:skills/daze#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Daze",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "nucleus": {
+      "type": "gear",
+      "name": {
+        "text": "Nucleus Card"
+      },
+      "model": "the_vault:skills/nucleus#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Nucleus",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "blight": {
+      "type": "gear",
+      "name": {
+        "text": "Blight Card"
+      },
+      "model": "the_vault:skills/blight#inventory",
+      "groups": [
+        "Knack",
+        "Defensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Blight",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "hunters_instinct": {
+      "type": "gear",
+      "name": {
+        "text": "Hunter's Instinct Card"
+      },
+      "model": "the_vault:skills/hunters_instinct#inventory",
+      "groups": [
+        "Knack",
+        "Defensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Hunters_Instinct",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "arcana": {
+      "type": "gear",
+      "name": {
+        "text": "Arcana Card"
+      },
+      "model": "the_vault:skills/arcana#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Arcana",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "blazing": {
+      "type": "gear",
+      "name": {
+        "text": "Blazing Card"
+      },
+      "model": "the_vault:skills/blazing#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Blazing",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "lucky_momentum": {
+      "type": "gear",
+      "name": {
+        "text": "Lucky Momentum Card"
+      },
+      "model": "the_vault:skills/lucky_momentum#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Lucky_Momentum",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "frenzy": {
+      "type": "gear",
+      "name": {
+        "text": "Frenzy Card"
+      },
+      "model": "the_vault:skills/frenzy#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Frenzy",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "Toxic_Reaction": {
+      "type": "gear",
+      "name": {
+        "text": "Toxic Reaction Card"
+      },
+      "model": "the_vault:skills/toxic_reaction#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Toxic_Reaction",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "javelin_throw_power": {
+      "type": "gear",
+      "name": {
+        "text": "Javelin Throw Power Card"
+      },
+      "model": "the_vault:skills/javelin_throw_power#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Javelin_Throw_Power",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "javelin_damage": {
+      "type": "gear",
+      "name": {
+        "text": "Javelin Damage Card"
+      },
+      "model": "the_vault:skills/javelin_damage#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Javelin_Damage",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "javelin_frugal": {
+      "type": "gear",
+      "name": {
+        "text": "Ethereal Javelin Card"
+      },
+      "model": "the_vault:skills/javelin_damage#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Javelin_Frugal",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "heal": {
       "type": "gear",
       "name": {
@@ -5512,7 +6369,8 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
@@ -5530,7 +6388,8 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
@@ -5548,7 +6407,8 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
@@ -5566,7 +6426,8 @@
       "Arcane",
       "Temporal",
       "Resource",
-      "Evolution"
+      "Evolution",
+      "Knack"
     ],
     "maxTier": 1
     },
@@ -5584,14 +6445,15 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
     "wild_blue_red": {
       "type": "dummy",
       "name": {
-        "text": "Blue Wild Card"
+        "text": "Blue/Red Wild Card"
       },
       "colors": [
         "BLUE",
@@ -5603,14 +6465,15 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
     "wild_blue_green": {
       "type": "dummy",
       "name": {
-        "text": "Blue Wild Card"
+        "text": "Blue/Green Wild Card"
       },
       "colors": [
         "BLUE",
@@ -5622,14 +6485,15 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
     "wild_blue_yellow": {
       "type": "dummy",
       "name": {
-        "text": "Blue Wild Card"
+        "text": "Blue/Yellow Wild Card"
       },
       "colors": [
         "BLUE",
@@ -5641,14 +6505,15 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
     "wild_blue_yellow_red": {
       "type": "dummy",
       "name": {
-        "text": "Blue Wild Card"
+        "text": "Blue/Yellow Wild Card"
       },
       "colors": [
         "BLUE",
@@ -5661,14 +6526,15 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
     "wild_blue_yellow_green": {
       "type": "dummy",
       "name": {
-        "text": "Blue Wild Card"
+        "text": "Blue/Yellow/Green Wild Card"
       },
       "colors": [
         "BLUE",
@@ -5681,14 +6547,15 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
     "wild_red_yellow_green": {
       "type": "dummy",
       "name": {
-        "text": "Blue Wild Card"
+        "text": "Red/Yellow/Green Wild Card"
       },
       "colors": [
         "RED",
@@ -5701,14 +6568,15 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
     "wild_blue_green_red": {
       "type": "dummy",
       "name": {
-        "text": "Blue Wild Card"
+        "text": "Red/Blue/Green Wild Card"
       },
       "colors": [
         "RED",
@@ -5721,14 +6589,15 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
     "wild_green_yellow": {
       "type": "dummy",
       "name": {
-        "text": "Blue Wild Card"
+        "text": "Green/Yellow Wild Card"
       },
       "colors": [
         "YELLOW",
@@ -5740,7 +6609,8 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
@@ -5759,14 +6629,15 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     },
     "wild_red_yellow": {
       "type": "dummy",
       "name": {
-        "text": "Blue Wild Card"
+        "text": "Red/Yellow Wild Card"
       },
       "colors": [
         "RED",
@@ -5778,7 +6649,8 @@
         "Arcane",
         "Temporal",
         "Resource",
-        "Evolution"
+        "Evolution",
+        "Knack"
       ],
       "maxTier": 1
     }
@@ -5884,6 +6756,156 @@
       {
         "value": "copiously",
         "weight": 1.0
+      }
+    ],
+    "knack": [
+      {
+        "value": "intelligence",
+        "weight": 6.0
+      },
+      {
+        "value": "strength",
+        "weight": 6.0
+      },
+      {
+        "value": "purist",
+        "weight": 3.0
+      },
+      {
+        "value": "stone_skin",
+        "weight": 6.0
+      },
+      {
+        "value": "dungeon_mastery",
+        "weight": 4.0
+      },
+      {
+        "value": "horde_mastery",
+        "weight": 4.0
+      },
+      {
+        "value": "assassin_mastery",
+        "weight": 4.0
+      },
+      {
+        "value": "dweller_mastery",
+        "weight": 3.0
+      },
+      {
+        "value": "champion_mastery",
+        "weight": 2.0
+      },
+      {
+        "value": "tank_mastery",
+        "weight": 4.0
+      },
+      {
+        "value": "last_stand",
+        "weight": 6.0
+      },
+      {
+        "value": "berserking",
+        "weight": 6.0
+      },
+      {
+        "value": "sorcery",
+        "weight": 6.0
+      },
+      {
+        "value": "prime_amplification",
+        "weight": 6.0
+      },
+      {
+        "value": "bountiful_harvest",
+        "weight": 6.0
+      },
+      {
+        "value": "lightning_damage",
+        "weight": 4.0
+      },
+      {
+        "value": "lightning_stun",
+        "weight": 4.0
+      },
+      {
+        "value": "treasure_seeker",
+        "weight": 6.0
+      },
+      {
+        "value": "witchery",
+        "weight": 5.0
+      },
+      {
+        "value": "methodical",
+        "weight": 4.0
+      },
+      {
+        "value": "depleted",
+        "weight": 4.0
+      },
+      {
+        "value": "prudent",
+        "weight": 4.0
+      },
+      {
+        "value": "alchemist",
+        "weight": 4.0
+      },
+      {
+        "value": "frozen_impact",
+        "weight": 4.0
+      },
+      {
+        "value": "frostbite",
+        "weight": 4.0
+      },
+      {
+        "value": "daze",
+        "weight": 6.0
+      },
+       {
+        "value": "nucleus",
+        "weight": 4.0
+      },
+       {
+        "value": "blight",
+        "weight": 4.0
+      },
+       {
+        "value": "hunters_instinct",
+        "weight": 3.0
+      },
+       {
+        "value": "arcana",
+        "weight": 3.0
+      },
+       {
+        "value": "blazing",
+        "weight": 3.0
+      },
+       {
+        "value": "lucky_momentum",
+        "weight": 3.0
+      },
+      {
+        "value": "frenzy",
+        "weight": 3.0
+      },
+       {
+        "value": "toxic_reaction",
+        "weight": 3.0
+      },
+       {
+        "value": "javelin_throw_power",
+        "weight": 6.0
+      },
+       {
+        "value": "javelin_damage",
+        "weight": 4.0
+      },
+      {
+        "value": "javelin_frugal",
+        "weight": 4.0
       }
     ],
     "arcane": [

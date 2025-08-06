@@ -166,6 +166,108 @@
         }
       ]
     },
+    "the_vault:knack_pack": {
+      "name": {
+        "text": "Knack Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/knack_pack#inventory",
+        "opened": "the_vault:booster_pack/knack_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@knack",
+              "probability": 1.0,
+              "condition": "@knack"
+            }
+          ],
+          "weight": 9
+        }
+      ]
+    },
+    "the_vault:mega_knack_pack": {
+      "name": {
+        "text": "Mega Knack Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/mega_knack_pack#inventory",
+        "opened": "the_vault:booster_pack/mega_knack_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 5,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@knack",
+              "probability": 1.0,
+              "condition": "@knack"
+            }
+          ],
+          "weight": 9
+        }
+      ]
+    },
     "the_vault:shiny_pack": {
       "name": {
         "text": "Shiny Stat Booster Pack"
@@ -701,6 +803,16 @@
               "modifier": "@arcane",
               "probability": 1.0,
               "condition": "@default"
+            }
+          ],
+          "weight": 9
+        },
+         {
+          "value": [
+            {
+              "modifier": "@knack",
+              "probability": 1.0,
+              "condition": "@knack"
             }
           ],
           "weight": 9
