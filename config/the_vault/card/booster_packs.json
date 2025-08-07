@@ -64,6 +64,71 @@
         }
       ]
     },
+    "the_vault:deluxe_stat": {
+      "name": {
+        "text": "Deluxe Stat Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/deluxe_stat_pack#inventory",
+        "opened": "the_vault:booster_pack/stat_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_stat",
+              "probability": 1.0,
+              "condition": "@deluxe_stat"
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_stat",
+              "groups": [
+                "Foil"
+              ],
+              "scaler": "",
+              "condition": "@deluxe_stat",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
     "the_vault:arcane_pack": {
       "name": {
         "text": "Arcane Booster Pack"
@@ -568,7 +633,7 @@
         "text": "Deluxe Resource Booster Pack"
       },
       "model": {
-        "unopened": "the_vault:booster_pack/deluxe_resource_pack#inventory",
+        "unopened": "vhapi:booster_pack/deluxe_resource_pack#inventory",
         "opened": "the_vault:booster_pack/resource_pack_ripped#inventory"
       },
       "roll": [

@@ -45,6 +45,28 @@
       ],
       "maxTier": 5
     },
+    "deluxe_attack_damage": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Attack Damage Card"
+      },
+      "model": "the_vault:card/icon/attack_damage#inventory",
+      "groups": [
+        "Offensive",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:attack_damage",
+      "pool": [
+        {
+          "min": 10.0,
+          "max": 10.0,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "health": {
       "type": "gear",
       "name": {
@@ -86,6 +108,28 @@
           "max": 5.0,
           "step": 1.0,
           "tier": 5
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_health": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Health Card"
+      },
+      "model": "the_vault:card/icon/health#inventory",
+      "groups": [
+        "Defensive",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:health",
+      "pool": [
+        {
+          "min": 10.0,
+          "max": 10.0,
+          "step": 0.0,
+          "tier": 1
         }
       ],
       "maxTier": 1
@@ -136,6 +180,29 @@
       ],
       "maxTier": 5
     },
+     "deluxe_apflat": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Ability Power Card"
+      },
+      "model": "the_vault:card/icon/ability_power#inventory",
+      "groups": [
+        "Offensive",
+        "Stat",
+        "Magical",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:ability_power",
+      "pool": [
+        {
+          "min": 12.5,
+          "max": 12.5,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "attack_speed": {
       "type": "gear",
       "name": {
@@ -180,6 +247,28 @@
         }
       ],
       "maxTier": 5
+    },
+    "deluxe_attack_speed": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Attack Speed Card"
+      },
+      "model": "the_vault:card/icon/attack_speed#inventory",
+      "groups": [
+        "Offensive",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:attack_speed_percent",
+      "pool": [
+        {
+          "min": 0.075,
+          "max": 0.075,
+          "step": 1.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
     },
     "cooldown_reduction": {
       "type": "gear",
@@ -226,6 +315,28 @@
       ],
       "maxTier": 5
     },
+     "deluxe_cooldown_reduction": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Cooldown Reduction Card"
+      },
+      "model": "the_vault:card/icon/cooldown_reduction#inventory",
+      "groups": [
+        "Utility",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:cooldown_reduction",
+      "pool": [
+        {
+          "min": 0.04,
+          "max": 0.04,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "crit_hit_resistance": {
       "type": "gear",
       "name": {
@@ -270,6 +381,28 @@
         }
       ],
       "maxTier": 5
+    },
+    "deluxe_crit_hit_resistance": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Crit Hit Resistance Card"
+      },
+      "model": "the_vault:card/icon/crit_hit_resistance#inventory",
+      "groups": [
+        "Defensive",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:critical_hit_mitigation",
+      "pool": [
+        {
+          "min": 0.05,
+          "max": 0.05,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
     },
     "healing_effectiveness": {
       "type": "gear",
@@ -318,6 +451,30 @@
       ],
       "maxTier": 5
     },
+    "deluxe_healing_effectiveness": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Healing Efficiency Card"
+      },
+      "model": "the_vault:card/icon/healing_efficiency#inventory",
+      "groups": [
+        "Utility",
+        "Stat",
+        "Essence",
+        "Defensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:healing_effectiveness",
+      "pool": [
+        {
+          "min": 0.035,
+          "max": 0.035,
+          "step": 1.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "item_quantity": {
       "type": "gear",
       "name": {
@@ -362,6 +519,28 @@
         }
       ],
       "maxTier": 5
+    },
+     "deluxe_item_quantity": {
+      "type": "gear",
+      "name": {
+        "text": "Item Quantity Card"
+      },
+      "model": "the_vault:card/icon/item_quantity#inventory",
+      "groups": [
+        "Utility",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:item_quantity",
+      "pool": [
+        {
+          "min": 0.03,
+          "max": 0.03,
+          "step": 1.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
     },
     "item_rarity": {
       "type": "gear",
@@ -408,6 +587,28 @@
       ],
       "maxTier": 5
     },
+    "deluxe_item_rarity": {
+      "type": "gear",
+      "name": {
+        "text": "Item Rarity Card"
+      },
+      "model": "the_vault:card/icon/item_rarity#inventory",
+      "groups": [
+        "Utility",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:item_rarity",
+      "pool": [
+        {
+          "min": 0.05,
+          "max": 0.05,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "knockback_resistance": {
       "type": "gear",
       "name": {
@@ -452,6 +653,28 @@
         }
       ],
       "maxTier": 5
+    },
+     "deluxe_knockback_resistance": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Knockback Resistance Card"
+      },
+      "model": "the_vault:card/icon/knockback_resistance#inventory",
+      "groups": [
+        "Defensive",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:knockback_resistance",
+      "pool": [
+        {
+          "min": 0.075,
+          "max": 0.075,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
     },
     "lucky_hit_chance": {
       "type": "gear",
@@ -500,6 +723,30 @@
       ],
       "maxTier": 5
     },
+     "deluxe_lucky_hit_chance": {
+      "type": "gear",
+      "name": {
+        "text": "Lucky Hit Chance Card"
+      },
+      "model": "the_vault:card/icon/lucky_hit#inventory",
+      "groups": [
+        "Defensive",
+        "Offensive",
+        "Utility",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:lucky_hit_chance",
+      "pool": [
+        {
+          "min": 0.015,
+          "max": 0.015,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "mana_flat": {
       "type": "gear",
       "name": {
@@ -545,6 +792,29 @@
         }
       ],
       "maxTier": 5
+    },
+    "deluxe_mana_flat": {
+      "type": "gear",
+      "name": {
+        "text": "Mana Card"
+      },
+      "model": "the_vault:card/icon/mana#inventory",
+      "groups": [
+        "Utility",
+        "Essence",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:mana_additive",
+      "pool": [
+        {
+          "min": 15.0,
+          "max": 15.0,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
     },
     "mana_regeneration": {
       "type": "gear",
@@ -592,6 +862,29 @@
       ],
       "maxTier": 5
     },
+      "deluxe_mana_regeneration": {
+      "type": "gear",
+      "name": {
+        "text": "Mana Regeneration Card"
+      },
+      "model": "the_vault:card/icon/mana_regeneration#inventory",
+      "groups": [
+        "Utility",
+        "Essence",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:mana_regen",
+      "pool": [
+        {
+          "min": 0.15,
+          "max": 0.15,
+          "step": 0.01,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "mining_speed_flat": {
       "type": "gear",
       "name": {
@@ -637,6 +930,28 @@
       ],
       "maxTier": 5
     },
+      "deluxe_mining_speed_flat": {
+      "type": "gear",
+      "name": {
+        "text": "Mining Speed Card"
+      },
+      "model": "the_vault:card/icon/mining_speed#inventory",
+      "groups": [
+        "Utility",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:mining_speed",
+      "pool": [
+        {
+          "min": 12.5,
+          "max": 12.5,
+          "step": 1.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "resistance": {
       "type": "gear",
       "name": {
@@ -681,6 +996,28 @@
         }
       ],
       "maxTier": 5
+    },
+     "deluxe_resistance": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Resistance Card"
+      },
+      "model": "the_vault:card/icon/resistance#inventory",
+      "groups": [
+        "Defensive",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:resistance",
+      "pool": [
+        {
+          "min": 0.025,
+          "max": 0.025,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
     },
     "soul_chance": {
       "type": "gear",
@@ -728,6 +1065,29 @@
       ],
       "maxTier": 5
     },
+      "deluxe_soul_chance": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Soul Quantity Card"
+      },
+      "model": "the_vault:card/icon/soul_chance#inventory",
+      "groups": [
+        "Utility",
+        "Magical",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:soul_chance",
+      "pool": [
+        {
+          "min": 0.2,
+          "max": 0.2,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "thorns_flat": {
       "type": "gear",
       "name": {
@@ -774,6 +1134,29 @@
       ],
       "maxTier": 5
     },
+      "deluxe_thorns_flat": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Thorns Card"
+      },
+      "model": "the_vault:card/icon/thorns#inventory",
+      "groups": [
+        "Offensive",
+        "Defensive",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:thorns_damage_flat",
+      "pool": [
+        {
+          "min": 10.0,
+          "max": 10.0,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "trap_disarm": {
       "type": "gear",
       "name": {
@@ -818,6 +1201,28 @@
         }
       ],
       "maxTier": 5
+    },
+     "deluxe_trap_disarm": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Trap Disarm Card"
+      },
+      "model": "the_vault:card/icon/trap_disarm#inventory",
+      "groups": [
+        "Utility",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:trap_disarming",
+      "pool": [
+        {
+          "min": 0.075,
+          "max": 0.075,
+          "step": 1.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
     },
     "mana_additive_percentile": {
       "type": "gear",
@@ -865,6 +1270,29 @@
       ],
       "maxTier": 5
     },
+    "deluxe_mana_additive_percentile": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Scaling Mana Card"
+      },
+      "model": "the_vault:card/icon/mana_percentile#inventory",
+      "groups": [
+        "Utility",
+        "Essence",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:mana_additive_percentile",
+      "pool": [
+        {
+          "min": 0.05,
+          "max": 0.05,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "damage_increase": {
       "type": "gear",
       "name": {
@@ -909,6 +1337,28 @@
         }
       ],
       "maxTier": 5
+    },
+     "deluxe_damage_increase": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Scaling Attack Damage Card"
+      },
+      "model": "the_vault:card/icon/attack_damage_percentile#inventory",
+      "groups": [
+        "Offensive",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:damage_increase",
+      "pool": [
+        {
+          "min": 0.05,
+          "max": 0.05,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
     },
     "ability_power_percent": {
       "type": "gear",
@@ -956,6 +1406,29 @@
       ],
       "maxTier": 5
     },
+    "deluxe_ability_power_percent": {
+      "type": "gear",
+      "name": {
+        "text": "Scaling Ability Power Card"
+      },
+      "model": "the_vault:card/icon/ability_power_percentile#inventory",
+      "groups": [
+        "Offensive",
+        "Magical",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:ability_power_percent",
+      "pool": [
+        {
+          "min": 0.03,
+          "max": 0.03,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "armor_percent": {
       "type": "gear",
       "name": {
@@ -1000,6 +1473,28 @@
         }
       ],
       "maxTier": 5
+    },
+    "deluxe_armor_percent": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Scaling Armor Card"
+      },
+      "model": "the_vault:card/icon/armor#inventory",
+      "groups": [
+        "Defensive",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:armor_percentile",
+      "pool": [
+        {
+          "min": 0.075,
+          "max": 0.075,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
     },
     "health_percentile": {
       "type": "gear",
@@ -1047,6 +1542,29 @@
       ],
       "maxTier": 5
     },
+    "deluxe_health_percentile": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Scaling Health Card"
+      },
+      "model": "the_vault:card/icon/health#inventory",
+      "groups": [
+        "Utility",
+        "Defensive",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:health_percentile",
+      "pool": [
+        {
+          "min": 0.075,
+          "max": 0.075,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "area_of_effect": {
       "type": "gear",
       "name": {
@@ -1091,6 +1609,28 @@
         }
       ],
       "maxTier": 5
+    },
+     "deluxe_area_of_effect": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Area of Effect Card"
+      },
+      "model": "the_vault:card/icon/area_of_effect#inventory",
+      "groups": [
+        "Utility",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:area_of_effect",
+      "pool": [
+        {
+          "min": 0.03,
+          "max": 0.03,
+          "step": 1.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
     },
     "movement_speed": {
       "type": "gear",
@@ -1137,6 +1677,28 @@
       ],
       "maxTier": 5
     },
+    "deluxe_movement_speed": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Movement Speed Card"
+      },
+      "model": "the_vault:card/icon/movement_speed#inventory",
+      "groups": [
+        "Utility",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:movement_speed",
+      "pool": [
+        {
+          "min": 0.02,
+          "max": 0.02,
+          "step": 0.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "copiously": {
       "type": "gear",
       "name": {
@@ -1182,7 +1744,28 @@
       ],
       "maxTier": 5
     },
-
+    "deluxe_copiously": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Copiously Card"
+      },
+      "model": "the_vault:card/icon/copiously#inventory",
+      "groups": [
+        "Utility",
+        "Stat",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:copiously",
+      "pool": [
+        {
+          "min": 0.035,
+          "max": 0.035,
+          "step": 1.0,
+          "tier": 1
+        }
+      ],
+      "maxTier": 1
+    },
 
     "amp_attack_damage": {
       "type": "gear",
@@ -7054,6 +7637,108 @@
       },
       {
         "value": "copiously",
+        "weight": 1.0
+      }
+    ],
+     "deluxe_stat": [
+      {
+        "value": "deluxe_attack_damage",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_health_percentile",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_apflat",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_attack_speed",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_cooldown_reduction",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_crit_hit_resistance",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_healing_effectiveness",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_item_quantity",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_item_rarity",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_knockback_resistance",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_lucky_hit_chance",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_mana_flat",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_mana_regeneration",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_mining_speed_flat",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_resistance",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_soul_chance",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_thorns_flat",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_trap_disarm",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_mana_additive_percentile",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_damage_increase",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_ability_power_percent",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_armor_percent",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_area_of_effect",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_movement_speed",
+        "weight": 1.0
+      },
+      {
+        "value": "deluxe_copiously",
         "weight": 1.0
       }
     ],

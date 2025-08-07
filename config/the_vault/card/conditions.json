@@ -96,6 +96,102 @@
         }
       ]
     },
+    "stat_conditions": {
+      "tiers": [
+        {
+          "tier": 1,
+          "pool": [
+            {
+              "filters": [
+                {
+                  "neighborFilter": [
+                    {
+                      "weight": 3.0
+                    },
+                    {
+                      "value": [ "ROW" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "COLUMN" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "DIAGONAL" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "ADJACENT" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "SURROUNDING" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "tierFilter": [
+                    {
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [
+                        2
+                      ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "colorFilter": [
+                    {
+                      "weight": 2.0
+                    },
+                    {
+                      "value": [ "GREEN" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "BLUE" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "YELLOW" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "RED" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "groupFilter": [
+                    {
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Foil" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Deluxe" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "minCount": {
+                    "min": 1,
+                    "max": 2,
+                    "type": "uniform"
+                  },
+                  "maxCount": {
+                    "min": 5,
+                    "max": 6,
+                    "type": "uniform"
+                  }
+                }
+              ],
+              "weight": 1.0
+            }
+          ]
+        }
+      ]
+    },
     "arcane_conditions": {
       "tiers": [
         {
@@ -1006,6 +1102,12 @@
     "knack": [
       {
         "value": "knack_conditions",
+        "weight": 1.0
+      }
+    ],
+    "deluxe_stat": [
+      {
+        "value": "stat_conditions",
         "weight": 1.0
       }
     ],
