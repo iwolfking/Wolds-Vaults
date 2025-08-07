@@ -217,6 +217,57 @@
         }
       ]
     },
+     "the_vault:deluxe_knack_pack": {
+      "name": {
+        "text": "Deluxe Knack Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/deluxe_knack_pack#inventory",
+        "opened": "vhapi:booster_pack/knack_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_knack",
+              "probability": 1.0,
+              "condition": "@deluxe_knack"
+            }
+          ],
+          "weight": 9
+        }
+      ]
+    },
     "the_vault:mega_knack_pack": {
       "name": {
         "text": "Mega Knack Booster Pack"
@@ -501,6 +552,69 @@
           "value": [
             {
               "modifier": "@resource",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }, 
+    "the_vault:deluxe_resource_pack": {
+      "name": {
+        "text": "Deluxe Resource Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/deluxe_resource_pack#inventory",
+        "opened": "the_vault:booster_pack/resource_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_resource",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_resource",
               "groups": [
                 "Foil"
               ],

@@ -2374,6 +2374,27 @@
       ],
       "maxTier": 1
     },
+    "deluxe_intelligence": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Intelligence Card"
+      },
+      "model": "the_vault:skills/intelligence#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Intelligence",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
     "haste": {
       "type": "gear",
       "name": {
@@ -2382,7 +2403,8 @@
       "model": "the_vault:skills/haste#inventory",
       "groups": [
         "Knack",
-        "Utility"
+        "Utility",
+        "Deluxe"
       ],
       "attribute": "the_vault:added_talent_level",
       "pool": [
@@ -2414,6 +2436,27 @@
       ],
       "maxTier": 1
     },
+    "deluxe_strength": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Strength Card"
+      },
+      "model": "the_vault:skills/strength#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Strength",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
     "speed_talent": {
       "type": "gear",
       "name": {
@@ -2422,7 +2465,8 @@
       "model": "the_vault:skills/speed#inventory",
       "groups": [
         "Knack",
-        "Utility"
+        "Utility",
+        "Deluxe"
       ],
       "attribute": "the_vault:added_talent_level",
       "pool": [
@@ -2450,6 +2494,27 @@
           "tier": 1,
           "talentKey": "Purist",
           "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_purist": {
+      "type": "gear",
+      "name": {
+        "text": "Purist Card"
+      },
+      "model": "the_vault:skills/purist#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Purist",
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -2614,6 +2679,27 @@
       ],
       "maxTier": 1
     },
+     "deluxe_last_stand": {
+      "type": "gear",
+      "name": {
+        "text": "Last Stand Card"
+      },
+      "model": "the_vault:skills/last_stand#inventory",
+      "groups": [
+        "Knack",
+        "Defensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Last_Stand",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
       "berserking": {
       "type": "gear",
       "name": {
@@ -2634,6 +2720,27 @@
       ],
       "maxTier": 1
     },
+     "deluxe_berserking": {
+      "type": "gear",
+      "name": {
+        "text": "Berserking Card"
+      },
+      "model": "the_vault:skills/berserking#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Berserking",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
       "sorcery": {
       "type": "gear",
       "name": {
@@ -2650,6 +2757,27 @@
           "tier": 1,
           "talentKey": "Sorcery",
           "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_sorcery": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Sorcery Card"
+      },
+      "model": "the_vault:skills/sorcery#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Sorcery",
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -2690,6 +2818,27 @@
           "tier": 1,
           "talentKey": "Bountiful_Harvest",
           "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "deluxe_bountiful_harvest": {
+      "type": "gear",
+      "name": {
+        "text": "Bountiful Harvest Card"
+      },
+      "model": "the_vault:skills/bountiful_harvest#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Deluxe_Bountiful_Harvest",
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -2750,6 +2899,27 @@
           "tier": 1,
           "talentKey": "Treasure_Seeker",
           "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_treasure_seeker": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Treasure Seeker Card"
+      },
+      "model": "the_vault:skills/treasure_seeker#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Treasure_Seeker",
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -2822,7 +2992,8 @@
       "model": "the_vault:skills/fatal_strike#inventory",
       "groups": [
         "Knack",
-        "Offensive"
+        "Offensive",
+        "Deluxe"
       ],
       "attribute": "the_vault:added_talent_level",
       "pool": [
@@ -2842,7 +3013,8 @@
       "model": "the_vault:skills/mana_steal#inventory",
       "groups": [
         "Knack",
-        "Utility"
+        "Utility",
+        "Deluxe"
       ],
       "attribute": "the_vault:added_talent_level",
       "pool": [
@@ -2862,7 +3034,8 @@
       "model": "the_vault:skills/life_steal#inventory",
       "groups": [
         "Knack",
-        "Utility"
+        "Utility",
+        "Deluxe"
       ],
       "attribute": "the_vault:added_talent_level",
       "pool": [
@@ -2882,7 +3055,8 @@
       "model": "the_vault:skills/cleave#inventory",
       "groups": [
         "Knack",
-        "Offensive"
+        "Offensive",
+        "Deluxe"
       ],
       "attribute": "the_vault:added_talent_level",
       "pool": [
@@ -2977,7 +3151,7 @@
      "daze": {
       "type": "gear",
       "name": {
-        "text": "Frostbite Card"
+        "text": "Daze Card"
       },
       "model": "the_vault:skills/daze#inventory",
       "groups": [
@@ -2990,6 +3164,26 @@
           "tier": 1,
           "talentKey": "Daze",
           "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "deluxe_daze": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Daze Card"
+      },
+      "model": "the_vault:skills/daze#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Daze",
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -3010,6 +3204,27 @@
           "tier": 1,
           "talentKey": "Nucleus",
           "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_nucleus": {
+      "type": "gear",
+      "name": {
+        "text": "Nucleus Card"
+      },
+      "model": "the_vault:skills/nucleus#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Nucleus",
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -3050,6 +3265,27 @@
           "tier": 1,
           "talentKey": "Hunters_Instinct",
           "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_hunters_instinct": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Hunter's Instinct Card"
+      },
+      "model": "the_vault:skills/hunters_instinct#inventory",
+      "groups": [
+        "Knack",
+        "Defensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Hunters_Instinct",
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -3174,6 +3410,27 @@
       ],
       "maxTier": 1
     },
+    "deluxe_javelin_throw_power": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Javelin Throw Power Card"
+      },
+      "model": "the_vault:skills/javelin_throw_power#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Javelin_Throw_Power",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
      "javelin_damage": {
       "type": "gear",
       "name": {
@@ -3194,12 +3451,33 @@
       ],
       "maxTier": 1
     },
+    "deluxe_javelin_damage": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Javelin Damage Card"
+      },
+      "model": "the_vault:skills/javelin_damage#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Javelin_Damage",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
     "javelin_frugal": {
       "type": "gear",
       "name": {
         "text": "Ethereal Javelin Card"
       },
-      "model": "the_vault:skills/javelin_damage#inventory",
+      "model": "the_vault:skills/javelin_ethereal#inventory",
       "groups": [
         "Knack",
         "Utility"
@@ -3210,6 +3488,27 @@
           "tier": 1,
           "talentKey": "Javelin_Frugal",
           "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "deluxe_javelin_frugal": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Ethereal Javelin Card"
+      },
+      "model": "the_vault:skills/javelin_ethereal#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Javelin_Frugal",
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -6758,6 +7057,84 @@
         "weight": 1.0
       }
     ],
+    "deluxe_knack": [
+      {    
+        "value": "haste",
+        "weight": 3.0
+      },
+      {    
+        "value": "speed_talent",
+        "weight": 1.0
+      },
+      {    
+        "value": "deluxe_strength",
+        "weight": 4.0
+      },
+       {    
+        "value": "deluxe_purist",
+        "weight": 6.0
+      },
+      {    
+        "value": "lucky_hit_fatal",
+        "weight": 4.0
+      },
+      {    
+        "value": "lucky_hit_mana",
+        "weight": 4.0
+      },
+      {    
+        "value": "life_leech",
+        "weight": 4.0
+      },
+      {    
+        "value": "cleave_talent",
+        "weight": 4.0
+      },
+      {    
+        "value": "deluxe_bountiful_harvest",
+        "weight": 6.0
+      },
+      {    
+        "value": "deluxe_treasure_seeker",
+        "weight": 6.0
+      },
+      {    
+        "value": "deluxe_daze",
+        "weight": 6.0
+      },
+      {    
+        "value": "deluxe_nucleus",
+        "weight": 6.0
+      },
+      {    
+        "value": "deluxe_hunters_instinct",
+        "weight": 6.0
+      },
+      {    
+        "value": "deluxe_javelin_throw_power",
+        "weight": 3.0
+      },
+      {    
+        "value": "deluxe_javelin_damage",
+        "weight": 3.0
+      },
+      {    
+        "value": "deluxe_javelin_frugal",
+        "weight": 3.0
+      },
+      {    
+        "value": "deluxe_last_stand",
+        "weight": 6.0
+      },
+       {    
+        "value": "deluxe_berserking",
+        "weight": 6.0
+      },
+      {    
+        "value": "deluxe_sorcery",
+        "weight": 6.0
+      }
+    ],
     "knack": [
       {
         "value": "intelligence",
@@ -7176,6 +7553,56 @@
         "weight": 1.0
       }
     ],
+    "deluxe_resource": [
+      {
+        "value": "resource_star_fruit",
+        "weight": 1.0
+      },
+      {
+        "value": "resource_inscription_piece",
+        "weight": 10.0
+      },
+      {
+        "value": "resource_gem_echo",
+        "weight": 1.0
+      },
+      {
+        "value": "resource_silver",
+        "weight": 48.0
+      },
+      {
+        "value": "resource_focus_fundamental",
+        "weight": 3.0
+      },
+      {
+        "value": "resource_mod_box",
+        "weight": 12.0
+      },
+      {
+        "value": "resource_catalyst_fragment",
+        "weight": 12.0
+      },
+      {
+        "value": "resource_faceted_focus",
+        "weight": 8.0
+      },
+      {
+        "value": "resource_focus_waning",
+        "weight": 6.0
+      },
+      {
+        "value": "resource_focus_waxing",
+        "weight": 6.0
+      },
+            {
+        "value": "resource_mango",
+        "weight": 4.0
+      },
+      {
+        "value": "resource_orange",
+        "weight": 3.0
+      }
+    ],
     "resource": [
       {
         "value": "resource_gem_larimar",
@@ -7188,10 +7615,6 @@
       {
         "value": "resource_gem_alexandrite",
         "weight": 45.0
-      },
-      {
-        "value": "resource_gem_echo",
-        "weight": 1.0
       },
       {
         "value": "resource_gem_painite",
@@ -7238,22 +7661,6 @@
         "weight": 64.0
       },
       {
-        "value": "resource_silver",
-        "weight": 48.0
-      },
-      {
-        "value": "resource_focus_waning",
-        "weight": 6.0
-      },
-      {
-        "value": "resource_focus_waxing",
-        "weight": 6.0
-      },
-      {
-        "value": "resource_focus_fundamental",
-        "weight": 3.0
-      },
-      {
         "value": "resource_focus_chaotic",
         "weight": 18.0
       },
@@ -7264,10 +7671,6 @@
       {
         "value": "resource_chromatic_iron_ingot",
         "weight": 66.0
-      },
-      {
-        "value": "resource_mod_box",
-        "weight": 12.0
       },
       {
         "value": "resource_carbon",
@@ -7282,36 +7685,12 @@
         "weight": 66.0
       },
       {
-        "value": "resource_catalyst_fragment",
-        "weight": 12.0
-      },
-      {
         "value": "resource_grapes",
         "weight": 12.0
       },
       {
         "value": "resource_lemon",
         "weight": 5.0
-      },
-      {
-        "value": "resource_mango",
-        "weight": 4.0
-      },
-      {
-        "value": "resource_orange",
-        "weight": 3.0
-      },
-      {
-        "value": "resource_star_fruit",
-        "weight": 1.0
-      },
-      {
-        "value": "resource_inscription_piece",
-        "weight": 10.0
-      },
-      {
-        "value": "resource_faceted_focus",
-        "weight": 8.0
       }
     ],
     "scaling": [
@@ -7431,6 +7810,10 @@
       },
       {
         "value": "wild_red_yellow_green",
+        "weight": 5.0
+      },
+      {
+        "value": "wild_blue_red_green",
         "weight": 5.0
       }
     ]
