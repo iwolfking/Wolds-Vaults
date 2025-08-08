@@ -129,15 +129,128 @@
                       "weight": 1.0
                     }
                   ],
-                  "tierFilter": [
+                  "colorFilter": [
                     {
+                      "weight": 2.0
+                    },
+                    {
+                      "value": [ "GREEN" ],
                       "weight": 1.0
                     },
                     {
-                      "value": [
-                        2
-                      ],
+                      "value": [ "BLUE" ],
                       "weight": 1.0
+                    },
+                    {
+                      "value": [ "YELLOW" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "RED" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "groupFilter": [
+                    {
+                      "value": [ "Physical" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Magical" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Defensive" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Utility" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "minCount": {
+                    "min": 2,
+                    "max": 4,
+                    "type": "uniform"
+                  },
+                  "maxCount": {
+                    "min": 5,
+                    "max": 6,
+                    "type": "uniform"
+                  }
+                }
+              ],
+              "weight": 1.0
+            },
+            {
+              "filters": [
+                {
+                  "neighborFilter": [
+                    {
+                      "weight": 3.0
+                    }
+                  ],
+                  "groupFilter": [
+                    {
+                      "value": [ "Deluxe" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "minCount": {
+                    "min": 1,
+                    "max": 1,
+                    "type": "uniform"
+                  },
+                  "maxCount": {
+                    "min": 3,
+                    "max": 3,
+                    "type": "uniform"
+                  }
+                }
+              ],
+              "weight": 1.0
+            },
+            {
+              "filters": [
+                {
+                  "neighborFilter": [
+                    {
+                      "weight": 3.0
+                    }
+                  ],
+                  "groupFilter": [
+                     {
+                      "value": [ "Physical" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Magical" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Defensive" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Utility" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "minCount": {
+                    "min": 7,
+                    "max": 11,
+                    "type": "uniform"
+                  }
+                }
+              ],
+              "weight": 1.0
+            },
+             {
+              "filters": [
+                {
+                  "neighborFilter": [
+                    {
+                      "weight": 3.0
                     }
                   ],
                   "colorFilter": [
@@ -163,25 +276,89 @@
                   ],
                   "groupFilter": [
                     {
-                      "weight": 1.0
-                    },
-                    {
-                      "value": [ "Foil" ],
-                      "weight": 1.0
-                    },
-                    {
-                      "value": [ "Deluxe" ],
+                      "value": [ "Stat" ],
                       "weight": 1.0
                     }
                   ],
                   "minCount": {
-                    "min": 1,
-                    "max": 2,
+                    "min": 7,
+                    "max": 10,
                     "type": "uniform"
-                  },
+                  }
+                }
+              ],
+              "weight": 1.0
+            },
+            {
+              "filters": [
+                {
+                  "neighborFilter": [
+                    {
+                      "value": [ "ROW" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "COLUMN" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "DIAGONAL" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "colorFilter": [
+                    {
+                      "value": [ "GREEN" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "BLUE" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "YELLOW" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "RED" ],
+                      "weight": 1.0
+                    }
+                  ],
                   "maxCount": {
-                    "min": 5,
-                    "max": 6,
+                    "min": 1,
+                    "max": 1,
+                    "type": "uniform"
+                  }
+                }
+              ],
+              "weight": 1.0
+            },
+             {
+              "filters": [
+                {
+                  "neighborFilter": [
+                    {
+                      "value": [ "ROW" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "COLUMN" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "DIAGONAL" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "groupFilter": [
+                    {
+                      "value": [ "Foil" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "minCount": {
+                    "min": 2,
+                    "max": 4,
                     "type": "uniform"
                   }
                 }
