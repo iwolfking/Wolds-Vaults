@@ -1261,7 +1261,8 @@
           "value": [
             {
               "modifier": "@deluxe_stat",
-              "probability": 1.0
+              "probability": 1.0,
+              "condition": "@deluxe_stat"
             }
           ],
           "weight": 25
@@ -1279,7 +1280,8 @@
           "value": [
             {
               "modifier": "@deluxe_knack",
-              "probability": 1.0
+              "probability": 1.0,
+              "condition": "@deluxe_knack"
             }
           ],
           "weight": 25
@@ -1291,6 +1293,7 @@
               "groups": [
                 "Foil"
               ],
+              "condition": "@deluxe_stat",
               "probability": 1.0
             }
           ],
@@ -1315,6 +1318,7 @@
               "groups": [
                 "Foil"
               ],
+              "condition": "@deluxe_knack",
               "probability": 1.0
             }
           ],
@@ -1445,7 +1449,20 @@
               "probability": 1.0
             }
           ],
-          "weight": 4
+          "weight": 3
+        },
+           {
+          "value": [
+            {
+              "modifier": "@deluxe_resource",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
         }
       ]
     },
