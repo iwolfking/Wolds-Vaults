@@ -951,59 +951,6 @@
                 {
                   "neighborFilter": [
                     {
-                      "weight": 100.0
-                    }
-                  ],
-                  "colorFilter": [
-                    {
-                      "value": [ "GREEN" ],
-                      "weight": 1.0
-                    },
-                    {
-                      "value": [ "BLUE" ],
-                      "weight": 1.0
-                    },
-                    {
-                      "value": [ "YELLOW" ],
-                      "weight": 1.0
-                    },
-                    {
-                      "value": [ "RED" ],
-                      "weight": 1.0
-                    }
-                  ],
-                  "groupFilter": [
-                    {
-                      "value": [ "Stat" ],
-                      "weight": 1.0
-                    },
-                    {
-                      "value": [ "Arcane" ],
-                      "weight": 1.0
-                    },
-                    {
-                      "value": [ "Resource" ],
-                      "weight": 1.0
-                    },
-                    {
-                      "value": [ "Evolution" ],
-                      "weight": 1.0
-                    }
-                  ],
-                  "minCount": {
-                    "min": 9,
-                    "max": 14,
-                    "type": "uniform"
-                  }
-                }
-              ],
-              "weight": 1.0
-            },
-            {
-              "filters": [
-                {
-                  "neighborFilter": [
-                    {
                       "value": [ "ROW" ],
                       "weight": 1.0
                     },
@@ -1018,6 +965,10 @@
                     {
                       "value": [ "ADJACENT" ],
                       "weight": 1.0
+                    },
+                    {
+                      "value": [ "SURROUNDING" ],
+                      "weight": 1.0
                     }
                   ],
                   "colorFilter": [
@@ -1043,8 +994,12 @@
                       "value": [ "Stat" ],
                       "weight": 1.0
                     },
-                     {
+                    {
                       "value": [ "Arcane" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Wild" ],
                       "weight": 1.0
                     },
                     {
@@ -1054,16 +1009,20 @@
                     {
                       "value": [ "Evolution" ],
                       "weight": 1.0
+                    },
+                    {
+                      "value": [ "Deluxe" ],
+                      "weight": 1.0
                     }
                   ],
                   "minCount": {
-                    "min": 4,
+                    "min": 3,
                     "max": 5,
                     "type": "uniform"
                   }
                 }
               ],
-              "weight": 1.0
+              "weight": 3.0
             },
             {
               "filters": [
@@ -1091,7 +1050,7 @@
                   }
                 }
               ],
-              "weight": 1.0
+              "weight": 2.0
             },
             {
               "filters": [
@@ -1126,11 +1085,15 @@
                     {
                       "value": [ "Deluxe" ],
                       "weight": 1.0
+                    },
+                    {
+                      "value": [ "Wild" ],
+                      "weight": 1.0
                     }
                   ],
                   "minCount": {
                     "min": 1,
-                    "max": 2,
+                    "max": 3,
                     "type": "uniform"
                   },
                   "maxCount": {
@@ -1173,19 +1136,14 @@
                       "weight": 1.0
                     }
                   ],
-                  "minCount": {
-                    "min": 1,
-                    "max": 2,
-                    "type": "uniform"
-                  },
                   "maxCount": {
-                    "min": 3,
+                    "min": 1,
                     "max": 4,
                     "type": "uniform"
                   }
                 }
               ],
-              "weight": 1.0
+              "weight": 3.0
             },
             {
               "filters": [
@@ -1220,7 +1178,7 @@
                   ],
                   "maxCount": {
                     "min": 1,
-                    "max": 2,
+                    "max": 1,
                     "type": "uniform"
                   }
                 }
