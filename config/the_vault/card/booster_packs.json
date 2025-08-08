@@ -947,14 +947,6 @@
         {
           "value": 1,
           "weight": 3.0
-        },
-        {
-          "value": 2,
-          "weight": 2.0
-        },
-        {
-          "value": 3,
-          "weight": 1.0
         }
       ],
       "color": [
@@ -984,7 +976,7 @@
               "condition": "@default"
             }
           ],
-          "weight": 9
+          "weight": 50
         },
          {
           "value": [
@@ -994,7 +986,17 @@
               "condition": "@knack"
             }
           ],
-          "weight": 9
+          "weight": 40
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_knack",
+              "probability": 1.0,
+              "condition": "@deluxe_knack"
+            }
+          ],
+          "weight": 10
         }
       ]
     },
@@ -1258,66 +1260,77 @@
         {
           "value": [
             {
-              "modifier": "@default",
+              "modifier": "@deluxe_stat",
               "probability": 1.0
             }
           ],
-          "weight": 70
+          "weight": 25
         },
         {
           "value": [
             {
-              "modifier": "@scaling",
-              "probability": 1.0,
-              "scaler": "@default"
-            }
-          ],
-          "weight": 20
-        },
-        {
-          "value": [
-            {
-              "modifier": "@resource",
+              "modifier": "@deluxe_resource",
               "probability": 1.0
             }
           ],
-          "weight": 7
+          "weight": 25
         },
         {
           "value": [
             {
-              "modifier": "@default",
+              "modifier": "@deluxe_knack",
+              "probability": 1.0
+            }
+          ],
+          "weight": 25
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_stat",
               "groups": [
                 "Foil"
               ],
               "probability": 1.0
             }
           ],
-          "weight": 6
+          "weight": 5
         },
         {
           "value": [
             {
-              "modifier": "@scaling",
+              "modifier": "@deluxe_resource",
               "groups": [
                 "Foil"
               ],
               "probability": 1.0
             }
           ],
-          "weight": 4
+          "weight": 5
         },
         {
           "value": [
             {
-              "modifier": "@resource",
+              "modifier": "@deluxe_knack",
               "groups": [
                 "Foil"
               ],
               "probability": 1.0
             }
           ],
-          "weight": 4
+          "weight": 5
+        },
+              {
+          "value": [
+            {
+              "modifier": "@temporal",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 10
         }
       ]
     },
@@ -1343,18 +1356,6 @@
       ],
       "color": [
         {
-          "value": "GREEN",
-          "weight": 0.0
-        },
-        {
-          "value": "BLUE",
-          "weight": 0.0
-        },
-        {
-          "value": "YELLOW",
-          "weight": 0.0
-        },
-        {
           "value": "RED",
           "weight": 1.0
         }
@@ -1367,7 +1368,7 @@
               "probability": 1.0
             }
           ],
-          "weight": 6
+          "weight": 7
         },
         {
           "value": [
@@ -1443,7 +1444,7 @@
               "probability": 1.0
             }
           ],
-          "weight": 3
+          "weight": 4
         }
       ]
     },
@@ -1469,19 +1470,7 @@
       ],
       "color": [
         {
-          "value": "GREEN",
-          "weight": 1.0
-        },
-        {
           "value": "BLUE",
-          "weight": 1.0
-        },
-        {
-          "value": "YELLOW",
-          "weight": 1.0
-        },
-        {
-          "value": "RED",
           "weight": 1.0
         }
       ],
