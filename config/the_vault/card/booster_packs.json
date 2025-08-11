@@ -757,6 +757,72 @@
         }
       ]
     },
+     "the_vault:deluxe_temporal_pack": {
+      "name": {
+        "text": "Deluxe Temporal Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/deluxe_temporal_pack#inventory",
+        "opened": "the_vault:booster_pack/temporal_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 2,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_temporal",
+              "scaler": "@temporal",
+              "condition": "@temporal",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_temporal",
+              "groups": [
+                "Foil"
+              ],
+              "scaler": "@temporal",
+              "condition": "temporal",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
     "the_vault:mega_temporal_pack": {
       "name": {
         "text": "Mega Temporal Booster Pack"
