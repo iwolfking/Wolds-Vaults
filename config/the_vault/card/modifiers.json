@@ -4176,6 +4176,46 @@
       ],
       "maxTier": 1
     },
+     "ghost_walk": {
+      "type": "gear",
+      "name": {
+        "text": "Ghost Walk Card"
+      },
+      "model": "the_vault:skills/ghost_walk#inventory",
+      "groups": [
+        "Arcane",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Ghost_Walk_Base",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "ghost_walk_spirit": {
+      "type": "gear",
+      "name": {
+        "text": "Spirit Walk Card"
+      },
+      "model": "the_vault:skills/ghost_walk_spirit_walk#inventory",
+      "groups": [
+        "Arcane",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Ghost_Walk_Spirit",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "dash_damage": {
       "type": "gear",
       "name": {
@@ -8243,6 +8283,14 @@
       }
     ],
     "arcane": [
+      {
+        "value": "ghost_walk",
+        "weight": 1.0
+      },
+      {
+        "value": "spirit_walk",
+        "weight": 1.0
+      },
       {
         "value": "heal",
         "weight": 1.0
