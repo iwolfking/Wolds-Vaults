@@ -1390,7 +1390,7 @@
           ],
           "weight": 5
         },
-              {
+        {
           "value": [
             {
               "modifier": "@temporal",
@@ -1402,6 +1402,19 @@
             }
           ],
           "weight": 10
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_temporal",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "@temporal",
+              "probability": 1.0
+            }
+          ],
+          "weight": 4
         }
       ]
     },

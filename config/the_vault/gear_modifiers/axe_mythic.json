@@ -52,6 +52,38 @@
             }
           }
         ]
+      },
+            {
+        "attribute": "the_vault:divine",
+        "group": "BaseDivine",
+        "identifier": "the_vault:base_divine",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 80,
+            "maxLevel": -1,
+            "weight": 25,
+            "value": {
+              "flag": true
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:divine",
+        "group": "BaseDivine",
+        "identifier": "the_vault:base_no_divine",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 80,
+            "maxLevel": -1,
+            "weight": 75,
+            "value": {
+              "flag": false
+            }
+          }
+        ]
       }
     ],
     "IMPLICIT": [
@@ -85,38 +117,6 @@
               "min": -2.9,
               "max": -2.7,
               "step": 0.01
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:divine",
-        "group": "BaseDivine",
-        "identifier": "the_vault:base_divine",
-        "tags": [],
-        "tiers": [
-          {
-            "minLevel": 80,
-            "maxLevel": -1,
-            "weight": 25,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:divine",
-        "group": "BaseDivine",
-        "identifier": "the_vault:base_no_divine",
-        "tags": [],
-        "tiers": [
-          {
-            "minLevel": 80,
-            "maxLevel": -1,
-            "weight": 75,
-            "value": {
-              "flag": false
             }
           }
         ]
