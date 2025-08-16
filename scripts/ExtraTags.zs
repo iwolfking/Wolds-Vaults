@@ -171,30 +171,6 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:trinkets>.add(<item:the_vault:trinket>);
 <tag:items:the_vault:trinkets>.add(<item:the_vault:trinket_scrap>);
 
-// Vault Gear
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:battlestaff>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:trident>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:void_stone>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:rang>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:loot_sack>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:plushie>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:card_deck>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:boots>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:leggings>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:chestplate>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:helmet>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:sword>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:axe>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:shield>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:magnet>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:wand>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:focus>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:magnet>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:small_charm>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:large_charm>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:grand_charm>);
-<tag:items:the_vault:vault_gear>.add(<item:the_vault:majestic_charm>);
-
 // Wooden Chest Loot
 <tag:items:the_vault:wooden_chest_loot>.add(<item:minecraft:shulker_shell>);
 <tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:carbon_nugget>);
