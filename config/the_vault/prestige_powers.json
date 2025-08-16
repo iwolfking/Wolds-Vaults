@@ -9,12 +9,34 @@
 				"tiers": [
 					{
 						"type": "black_market_rerolls_power",
-						"extraRerolls": 5,
+						"extraRerolls": 1,
 						"learnPointCost": 1,
 						"learnKnowledgeCost": 50,
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "black_market_rerolls_1",
+						"tier": 1,
+						"tierLock": 0
+					},
+					{
+						"type": "black_market_rerolls_power",
+						"extraRerolls": 2,
+						"learnPointCost": 2,
+						"learnKnowledgeCost": 100,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "black_market_rerolls_2",
+						"tier": 1,
+						"tierLock": 0
+					},
+					{
+						"type": "black_market_rerolls_power",
+						"extraRerolls": 3,
+						"learnPointCost": 3,
+						"learnKnowledgeCost": 200,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "black_market_rerolls_3",
 						"tier": 1,
 						"tierLock": 0
 					}
@@ -46,12 +68,36 @@
 					{
 						"type": "magnet_mastery",
 						"attribute": "the_vault:range",
-						"value": 1.0,
+						"value": 0.5,
 						"learnPointCost": 2,
 						"learnKnowledgeCost": 125,
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "pickup_range_1",
+						"tier": 2,
+						"tierLock": 1
+					},
+					{
+						"type": "magnet_mastery",
+						"attribute": "the_vault:range",
+						"value": 0.75,
+						"learnPointCost": 4,
+						"learnKnowledgeCost": 250,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "pickup_range_2",
+						"tier": 2,
+						"tierLock": 1
+					},
+					{
+						"type": "magnet_mastery",
+						"attribute": "the_vault:range",
+						"value": 1.0,
+						"learnPointCost": 8,
+						"learnKnowledgeCost": 500,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "pickup_range_3",
 						"tier": 2,
 						"tierLock": 1
 					}
@@ -64,12 +110,34 @@
 				"tiers": [
 					{
 						"type": "shielded_power",
-						"learnPointCost": 1,
+						"learnPointCost": 2,
 						"learnKnowledgeCost": 125,
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"percentageOfHearts": 1,
 						"id": "shielded_power_1",
+						"tier": 2,
+						"tierLock": 1
+					},
+					{
+						"type": "shielded_power",
+						"learnPointCost": 4,
+						"learnKnowledgeCost": 250,
+						"regretPointCost": 1,
+						"unlockLevel": 250,
+						"percentageOfHearts": 1.5,
+						"id": "shielded_power_2",
+						"tier": 2,
+						"tierLock": 1
+					},
+					{
+						"type": "shielded_power",
+						"learnPointCost": 8,
+						"learnKnowledgeCost": 500,
+						"regretPointCost": 1,
+						"unlockLevel": 500,
+						"percentageOfHearts": 2,
+						"id": "shielded_power_3",
 						"tier": 2,
 						"tierLock": 1
 					}
@@ -83,12 +151,24 @@
 					{
 						"type": "champion_damage_power",
 						"attribute": "the_vault:damage_champion",
-						"value": 0.5,
+						"value": 0.25,
 						"learnPointCost": 5,
 						"learnKnowledgeCost": 500,
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "champions_damage_1",
+						"tier": 5,
+						"tierLock": 4
+					},
+					{
+						"type": "champion_damage_power",
+						"attribute": "the_vault:damage_champion",
+						"value": 0.5,
+						"learnPointCost": 10,
+						"learnKnowledgeCost": 1000,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "champions_damage_2",
 						"tier": 5,
 						"tierLock": 4
 					}
@@ -137,7 +217,7 @@
 					{
 						"type": "gear_attribute_power",
 						"attribute": "the_vault:fruit_effectiveness",
-						"value": 1,
+						"value": 0.25,
 						"learnPointCost": 4,
 						"learnKnowledgeCost": 300,
 						"tier": 4,
@@ -145,6 +225,30 @@
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "fruity_1"
+					},
+					{
+						"type": "gear_attribute_power",
+						"attribute": "the_vault:fruit_effectiveness",
+						"value": 0.5,
+						"learnPointCost": 8,
+						"learnKnowledgeCost": 600,
+						"tier": 4,
+						"tierLock": 3,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "fruity_2"
+					},
+					{
+						"type": "gear_attribute_power",
+						"attribute": "the_vault:fruit_effectiveness",
+						"value": 1.0,
+						"learnPointCost": 16,
+						"learnKnowledgeCost": 1200,
+						"tier": 4,
+						"tierLock": 3,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "fruity_3"
 					}
 				]
 			},
@@ -267,7 +371,7 @@
 				"tiers": [
 					{
 						"type": "super_crystals_power",
-						"extraCapacity": 100,
+						"extraCapacity": 25,
 						"learnPointCost": 5,
 						"learnKnowledgeCost": 500,
 						"tier": 5,
@@ -275,6 +379,28 @@
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "super_crystals_1"
+					},
+					{
+						"type": "super_crystals_power",
+						"extraCapacity": 50,
+						"learnPointCost": 10,
+						"learnKnowledgeCost": 1000,
+						"tier": 5,
+						"tierLock": 4,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "super_crystals_2"
+					},
+					{
+						"type": "super_crystals_power",
+						"extraCapacity": 100,
+						"learnPointCost": 20,
+						"learnKnowledgeCost": 2000,
+						"tier": 5,
+						"tierLock": 4,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "super_crystals_3"
 					}
 				]
 			},
@@ -355,7 +481,7 @@
 				"tiers": [
 					{
 						"type": "temporal_shard_chance_power",
-						"chance": 0.3,
+						"chance": 0.15,
 						"learnPointCost": 2,
 						"learnKnowledgeCost": 125,
 						"tier": 2,
@@ -363,6 +489,28 @@
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "temporal_shard_chance_1"
+					},
+					{
+						"type": "temporal_shard_chance_power",
+						"chance": 0.3,
+						"learnPointCost": 4,
+						"learnKnowledgeCost": 250,
+						"tier": 2,
+						"tierLock": 1,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "temporal_shard_chance_2"
+					},
+					{
+						"type": "temporal_shard_chance_power",
+						"chance": 0.45,
+						"learnPointCost": 8,
+						"learnKnowledgeCost": 500,
+						"tier": 2,
+						"tierLock": 1,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "temporal_shard_chance_3"
 					}
 				]
 			},
@@ -483,12 +631,34 @@
 				"tiers": [
 					{
 						"type": "original_ward_power",
-						"thresholdTicks": 1200,
+						"thresholdTicks": 3600,
 						"learnPointCost": 10,
 						"learnKnowledgeCost": 750,
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "original_ward_power_1",
+						"tier": 6,
+						"tierLock": 5
+					},
+					{
+						"type": "original_ward_power",
+						"thresholdTicks": 2400,
+						"learnPointCost": 20,
+						"learnKnowledgeCost": 1500,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "original_ward_power_2",
+						"tier": 6,
+						"tierLock": 5
+					},
+					{
+						"type": "original_ward_power",
+						"thresholdTicks": 1200,
+						"learnPointCost": 30,
+						"learnKnowledgeCost": 3000,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "original_ward_power_3",
 						"tier": 6,
 						"tierLock": 5
 					}
@@ -501,13 +671,37 @@
 				"tiers": [
 					{
 						"type": "treasure_hunter_power",
-						"bonusPerStack": 0.05,
+						"bonusPerStack": 0.025,
 						"maxStacks": 20,
 						"learnPointCost": 10,
 						"learnKnowledgeCost": 750,
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "treasure_hunter_power_1",
+						"tier": 6,
+						"tierLock": 5
+					},
+					{
+						"type": "treasure_hunter_power",
+						"bonusPerStack": 0.05,
+						"maxStacks": 20,
+						"learnPointCost": 20,
+						"learnKnowledgeCost": 1500,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "treasure_hunter_power_2",
+						"tier": 6,
+						"tierLock": 5
+					},
+					{
+						"type": "treasure_hunter_power",
+						"bonusPerStack": 0.1,
+						"maxStacks": 20,
+						"learnPointCost": 30,
+						"learnKnowledgeCost": 3000,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "treasure_hunter_power_3",
 						"tier": 6,
 						"tierLock": 5
 					}
@@ -520,12 +714,34 @@
 				"tiers": [
 					{
 						"type": "commander_power",
-						"durationMultiplier": 2.0,
+						"durationMultiplier": 1.25,
 						"learnPointCost": 10,
 						"learnKnowledgeCost": 750,
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "commander_power_1",
+						"tier": 6,
+						"tierLock": 5
+					},
+					{
+						"type": "commander_power",
+						"durationMultiplier": 1.5,
+						"learnPointCost": 20,
+						"learnKnowledgeCost": 1500,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "commander_power_2",
+						"tier": 6,
+						"tierLock": 5
+					},
+					{
+						"type": "commander_power",
+						"durationMultiplier": 2.0,
+						"learnPointCost": 30,
+						"learnKnowledgeCost": 3000,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "commander_power_3",
 						"tier": 6,
 						"tierLock": 5
 					}
@@ -556,12 +772,36 @@
 					{
 						"type": "gear_attribute_power",
 						"attribute": "the_vault:cooldown_reduction_cap",
-						"value": 0.1,
+						"value": 0.05,
 						"learnPointCost": 50,
 						"learnKnowledgeCost": 1250,
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "weaver_of_time_1",
+						"tier": 7,
+						"tierLock": 6
+					},
+					{
+						"type": "gear_attribute_power",
+						"attribute": "the_vault:cooldown_reduction_cap",
+						"value": 0.075,
+						"learnPointCost": 75,
+						"learnKnowledgeCost": 2500,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "weaver_of_time_2",
+						"tier": 7,
+						"tierLock": 6
+					},
+					{
+						"type": "gear_attribute_power",
+						"attribute": "the_vault:cooldown_reduction_cap",
+						"value": 0.1,
+						"learnPointCost": 100,
+						"learnKnowledgeCost": 5000,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "weaver_of_time_3",
 						"tier": 7,
 						"tierLock": 6
 					}
@@ -575,9 +815,33 @@
 					{
 						"type": "gear_attribute_power",
 						"attribute": "the_vault:block_cap",
-						"value": 0.10,
+						"value": 0.05,
 						"learnPointCost": 50,
 						"learnKnowledgeCost": 1250,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "shield_of_lasting_guard_1",
+						"tier": 7,
+						"tierLock": 6
+					},
+					{
+						"type": "gear_attribute_power",
+						"attribute": "the_vault:block_cap",
+						"value": 0.075,
+						"learnPointCost": 75,
+						"learnKnowledgeCost": 2500,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "shield_of_lasting_guard_1",
+						"tier": 7,
+						"tierLock": 6
+					},
+					{
+						"type": "gear_attribute_power",
+						"attribute": "the_vault:block_cap",
+						"value": 0.10,
+						"learnPointCost": 100,
+						"learnKnowledgeCost": 5000,
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "shield_of_lasting_guard_1",
@@ -594,12 +858,36 @@
 					{
 						"type": "gear_attribute_power",
 						"attribute": "the_vault:resistance_cap",
-						"value": 0.10,
+						"value": 0.05,
 						"learnPointCost": 50,
 						"learnKnowledgeCost": 1250,
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "barrier_of_resilience_1",
+						"tier": 7,
+						"tierLock": 6
+					},
+					{
+						"type": "gear_attribute_power",
+						"attribute": "the_vault:resistance_cap",
+						"value": 0.075,
+						"learnPointCost": 75,
+						"learnKnowledgeCost": 2500,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "barrier_of_resilience_2",
+						"tier": 7,
+						"tierLock": 6
+					},
+					{
+						"type": "gear_attribute_power",
+						"attribute": "the_vault:resistance_cap",
+						"value": 0.10,
+						"learnPointCost": 100,
+						"learnKnowledgeCost": 5000,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "barrier_of_resilience_3",
 						"tier": 7,
 						"tierLock": 6
 					}
@@ -612,12 +900,34 @@
 				"tiers": [
 					{
 						"type": "reach_cap_power",
-						"reachIncrease": 0.50,
+						"reachIncrease": 0.25,
 						"learnPointCost": 50,
 						"learnKnowledgeCost": 1250,
 						"regretPointCost": 1,
 						"unlockLevel": 100,
 						"id": "spirits_hand_1",
+						"tier": 7,
+						"tierLock": 6
+					},
+					{
+						"type": "reach_cap_power",
+						"reachIncrease": 0.50,
+						"learnPointCost": 75,
+						"learnKnowledgeCost": 2500,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "spirits_hand_2",
+						"tier": 7,
+						"tierLock": 6
+					},
+					{
+						"type": "reach_cap_power",
+						"reachIncrease": 0.75,
+						"learnPointCost": 100,
+						"learnKnowledgeCost": 5000,
+						"regretPointCost": 1,
+						"unlockLevel": 100,
+						"id": "spirits_hand_3",
 						"tier": 7,
 						"tierLock": 6
 					}
