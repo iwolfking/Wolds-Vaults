@@ -6536,8 +6536,7 @@
       },
       "model": "the_vault:vault_silver#inventory",
       "groups": [
-        "Resource",
-        "Deluxe"
+        "Resource"
       ],
       "loot": [
         {
@@ -6547,7 +6546,7 @@
           }
         }
       ],
-      "task": "@easy",
+      "task": "@medium",
       "count": [
         {
           "tier": 1,
@@ -6578,6 +6577,55 @@
       "highlightColor": "0x00FF00",
       "maxTier": 1
     },
+    "resource_gold": {
+      "type": "task_loot",
+      "name": {
+        "text": "Vault Gold Card"
+      },
+      "model": "the_vault:vault_gold#inventory",
+      "groups": [
+        "Resource",
+        "Deluxe"
+      ],
+      "loot": [
+        {
+          "weight": 1,
+          "item": {
+            "id": "the_vault:vault_silver"
+          }
+        }
+      ],
+      "task": "@hard",
+      "count": [
+        {
+          "tier": 1,
+          "roll": {
+            "type": "uniform",
+            "min": 1,
+            "max": 1
+          }
+        }
+      ],
+      "tooltip": [
+        {
+          "text": "+",
+          "color": "gold"
+        },
+        {
+          "text": "${count}",
+          "color": "#FFFFFF"
+        },
+        {
+          "text":  " Vault Gold ",
+          "color": "yellow"
+        },
+        {
+          "text": "${task}"
+        }
+      ],
+      "highlightColor": "0x00FF00",
+      "maxTier": 1
+    },
     "resource_focus_waning": {
       "type": "task_loot",
       "name": {
@@ -6596,7 +6644,7 @@
           }
         }
       ],
-      "task": "@hard",
+      "task": "@extreme",
       "count": [
         {
           "tier": 1,
@@ -6645,7 +6693,7 @@
           }
         }
       ],
-      "task": "@hard",
+      "task": "@extreme",
       "count": [
         {
           "tier": 1,
@@ -6742,7 +6790,7 @@
           }
         }
       ],
-      "task": "@medium",
+      "task": "@hard",
       "count": [
         {
           "tier": 1,
@@ -6861,6 +6909,153 @@
         },
         {
           "text":  " Mod Box ",
+          "color": "yellow"
+        },
+        {
+          "text": "${task}"
+        }
+      ],
+      "highlightColor": "0x00FF00",
+      "maxTier": 1
+    },
+    "resource_gem_box": {
+      "type": "task_loot",
+      "name": {
+        "text": "Gem Box Card"
+      },
+      "model": "the_vault:gem_box#inventory",
+      "groups": [
+        "Resource",
+        "Deluxe"
+      ],
+      "loot": [
+        {
+          "weight": 1,
+          "item": {
+            "id": "the_vault:gem_box"
+          }
+        }
+      ],
+      "task": "@medium",
+      "count": [
+        {
+          "tier": 1,
+          "roll": {
+            "type": "uniform",
+            "min": 1,
+            "max": 1
+          }
+        }
+      ],
+      "tooltip": [
+        {
+          "text": "+",
+          "color": "gold"
+        },
+        {
+          "text": "${count}",
+          "color": "#FFFFFF"
+        },
+        {
+          "text":  " Gem Box ",
+          "color": "yellow"
+        },
+        {
+          "text": "${task}"
+        }
+      ],
+      "highlightColor": "0x00FF00",
+      "maxTier": 1
+    },
+    "resource_supply_box": {
+      "type": "task_loot",
+      "name": {
+        "text": "Supply Box Card"
+      },
+      "model": "the_vault:supply_box#inventory",
+      "groups": [
+        "Resource",
+        "Deluxe"
+      ],
+      "loot": [
+        {
+          "weight": 1,
+          "item": {
+            "id": "the_vault:supply_box"
+          }
+        }
+      ],
+      "task": "@medium",
+      "count": [
+        {
+          "tier": 1,
+          "roll": {
+            "type": "uniform",
+            "min": 1,
+            "max": 1
+          }
+        }
+      ],
+      "tooltip": [
+        {
+          "text": "+",
+          "color": "gold"
+        },
+        {
+          "text": "${count}",
+          "color": "#FFFFFF"
+        },
+        {
+          "text":  " Supply Box ",
+          "color": "yellow"
+        },
+        {
+          "text": "${task}"
+        }
+      ],
+      "highlightColor": "0x00FF00",
+      "maxTier": 1
+    },
+    "resource_soul_ichor": {
+      "type": "task_loot",
+      "name": {
+        "text": "Soul Ichor Card"
+      },
+      "model": "woldsvaults:soul_ichor#inventory",
+      "groups": [
+        "Resource",
+        "Deluxe"
+      ],
+      "loot": [
+        {
+          "weight": 1,
+          "item": {
+            "id": "woldsvaults:soul_ichor"
+          }
+        }
+      ],
+      "task": "@hard",
+      "count": [
+        {
+          "tier": 1,
+          "roll": {
+            "type": "uniform",
+            "min": 1,
+            "max": 1
+          }
+        }
+      ],
+      "tooltip": [
+        {
+          "text": "+",
+          "color": "gold"
+        },
+        {
+          "text": "${count}",
+          "color": "#FFFFFF"
+        },
+        {
+          "text":  " Supply Box ",
           "color": "yellow"
         },
         {
@@ -7080,7 +7275,7 @@
           }
         }
       ],
-      "task": "@medium",
+      "task": "@hard",
       "count": [
         {
           "tier": 1,
@@ -7225,7 +7420,7 @@
           }
         }
       ],
-      "task": "@hard",
+      "task": "@extreme",
       "count": [
         {
           "tier": 1,
@@ -7305,12 +7500,12 @@
       "highlightColor": "0x00FF00",
       "maxTier": 1
     },
-    "resource_star_fruit": {
+    "resource_inscription_piece": {
       "type": "task_loot",
       "name": {
-        "text": "Wild Star Fruit Card"
+        "text": "Inscription Piece Card"
       },
-      "model": "the_vault:star_fruit#inventory",
+      "model": "the_vault:inscription_piece#inventory",
       "groups": [
         "Resource",
         "Deluxe"
@@ -7319,7 +7514,7 @@
         {
           "weight": 1,
           "item": {
-            "id": "the_vault:star_fruit"
+            "id": "the_vault:inscription_piece"
           }
         }
       ],
@@ -7344,7 +7539,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text":  " Star Fruit ",
+          "text":  " Inscription Piece ",
           "color": "yellow"
         },
         {
@@ -7354,12 +7549,12 @@
       "highlightColor": "0x00FF00",
       "maxTier": 1
     },
-    "resource_inscription_piece": {
+    "resource_augment_piece": {
       "type": "task_loot",
       "name": {
-        "text": "Inscription Piece Card"
+        "text": "Augment Piece Card"
       },
-      "model": "the_vault:inscription_piece#inventory",
+      "model": "woldsvaults:augment_piece#inventory",
       "groups": [
         "Resource",
         "Deluxe"
@@ -7368,11 +7563,11 @@
         {
           "weight": 1,
           "item": {
-            "id": "the_vault:inscription_piece"
+            "id": "woldsvaults:augment_piece"
           }
         }
       ],
-      "task": "@medium",
+      "task": "@hard",
       "count": [
         {
           "tier": 1,
@@ -7393,7 +7588,7 @@
           "color": "#FFFFFF"
         },
         {
-          "text":  " Inscription Piece ",
+          "text":  " Augment Piece ",
           "color": "yellow"
         },
         {
@@ -7469,7 +7664,7 @@
           }
         }
       ],
-      "task": "@easy",
+      "task": "@extreme",
       "count": [
         {
           "tier": 1,
@@ -8454,20 +8649,20 @@
     ],
     "deluxe_resource": [
       {
-        "value": "resource_star_fruit",
-        "weight": 1.0
-      },
-      {
         "value": "resource_inscription_piece",
-        "weight": 10.0
+        "weight": 6.0
+      },
+       {
+        "value": "resource_augment_piece",
+        "weight": 8.0
       },
       {
         "value": "resource_gem_echo",
         "weight": 1.0
       },
       {
-        "value": "resource_silver",
-        "weight": 48.0
+        "value": "resource_gold",
+        "weight": 24.0
       },
       {
         "value": "resource_focus_fundamental",
@@ -8476,6 +8671,18 @@
       {
         "value": "resource_mod_box",
         "weight": 12.0
+      },
+      {
+        "value": "resource_gem_box",
+        "weight": 12.0
+      },
+      {
+        "value": "resource_supply_box",
+        "weight": 12.0
+      },
+      {
+        "value": "resource_soul_ichor",
+        "weight": 6.0
       },
       {
         "value": "resource_catalyst_fragment",
