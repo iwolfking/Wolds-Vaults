@@ -320,7 +320,7 @@ onEvent('recipes', event => {
             'YSY'
         ], {
         X: 'the_vault:omega_pog_1',
-        S: 'the_vault:echo_pog_1',
+        S: 'woldsvaults:chunk_of_power',
         Y: 'woldsvaults:chroma_core',
         O: 'the_vault:wold_star_chunk',
         B: 'the_vault:black_chromatic_steel_block'
