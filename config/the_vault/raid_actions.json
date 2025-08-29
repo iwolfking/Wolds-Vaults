@@ -187,7 +187,40 @@
       "item": {
         "id": "the_vault:card_deck",
         "nbt": "{id:bishop}",
-        "count": 2
+        "count": 1
+      },
+      "color1": "0xFF8cfff0",
+      "color2": "0xFF12aa96"
+    },
+    "wall_deck": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "item": {
+        "id": "the_vault:card_deck",
+        "nbt": "{id:wall}",
+        "count": 1
+      },
+      "color1": "0xFF8cfff0",
+      "color2": "0xFF12aa96"
+    },
+    "fairy_deck": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "item": {
+        "id": "the_vault:card_deck",
+        "nbt": "{id:fairy}",
+        "count": 1
+      },
+      "color1": "0xFF8cfff0",
+      "color2": "0xFF12aa96"
+    },
+    "snake_deck": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "item": {
+        "id": "the_vault:card_deck",
+        "nbt": "{id:snake}",
+        "count": 1
       },
       "color1": "0xFF8cfff0",
       "color2": "0xFF12aa96"
@@ -1946,7 +1979,11 @@
       },
       {
         "value": "bishop_deck",
-        "weight": 6
+        "weight": 4
+      },
+      {
+        "value": "wall_deck",
+        "weight": 3
       },
       {
         "value": "cryonic_focus",
@@ -2044,6 +2081,14 @@
       {
         "value": "baguette",
         "weight": 6
+      },
+      {
+        "value": "fairy_deck",
+        "weight": 2
+      },
+      {
+        "value": "snake_deck",
+        "weight": 2
       },
       { "value": "pacifist_sandals", "weight": 4 }
     ]

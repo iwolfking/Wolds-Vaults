@@ -189,6 +189,89 @@
         }
       ]
     },
+    "snake": {
+      "model": "the_vault:deck/snake#inventory",
+      "name": "The Snake Deck",
+      "essence": {
+        "min": 4,
+        "max": 4
+      },
+      "layout": [
+        {
+          "value": [
+            "XXXXXXXXO",
+            "OOOOOOOOO",
+            "OXXXXXXXX",
+            "OOOOOOOOO",
+            "XXXXXXXXO",
+            "OOOOOOOOO"
+          ],
+          "weight": 1.0
+        }
+      ]
+    },
+    "fairy": {
+      "model": "the_vault:deck/fairy#inventory",
+      "name": "The Fairy Deck",
+      "essence": {
+        "min": 4,
+        "max": 4
+      },
+      "layout": [
+        {
+          "value": [
+            "OXXOXOXXO",
+            "XOXXOXXOX",
+            "XXOOXOOXX",
+            "XXOXXXOXX",
+            "XOXOXOXOX",
+            "OXXXOXXXO"
+          ],
+          "weight": 1.0
+        }
+      ]
+    },
+    "wall": {
+      "model": "the_vault:deck/wall#inventory",
+      "name": "The Wall Deck",
+      "essence": {
+        "min": 4,
+        "max": 4
+      },
+      "layout": [
+        {
+          "value": [
+            "OXOXOXOXO",
+            "OXOXOXOXO",
+            "OXOXOXOXO",
+            "OXOXOXOXO",
+            "OXOXOXOXO",
+            "OXOXOXOXO"
+          ],
+          "weight": 1.0
+        }
+      ]
+    },
+     "crate": {
+      "model": "the_vault:deck/crate#inventory",
+      "name": "The Crate Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+            "OOOOOOOO",
+            "OXOXXOXO",
+            "OOOOOOOO",
+            "OXOXXOXO",
+            "OOOOOOOO"
+          ],
+          "weight": 1.0
+        }
+      ]
+    },
     "black": {
       "model": "the_vault:deck/black#inventory",
       "name": "The Black Deck",
