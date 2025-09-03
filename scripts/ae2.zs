@@ -202,6 +202,12 @@ craftingTable.addShapeless("ae2_shapeless_wireless_crafting_terminal", <item:ae2
 <item:ae2:wireless_terminal>, <item:ae2:calculation_processor>, <item:the_vault:echo_pog>, <item:minecraft:crafting_table>
 ]);
 
+craftingTable.addShaped("ae2_wireless_crafting_terminal", <item:ae2:wireless_crafting_terminal>, [
+    [<item:minecraft:air>, <item:ae2:wireless_receiver>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:ae2:crafting_terminal>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:the_vault:perfect_echo>, <item:minecraft:air>]
+]);
+
 craftingTable.addShaped("ae2_energy_acceptor", <item:ae2:energy_acceptor>, [
     [<item:the_vault:chromatic_iron_ingot>, <item:ae2:quartz_vibrant_glass>, <item:the_vault:chromatic_iron_ingot>],
     [<item:ae2:quartz_vibrant_glass>, <item:the_vault:chromatic_iron_ingot>, <item:ae2:quartz_vibrant_glass>],
