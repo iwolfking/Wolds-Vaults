@@ -205,7 +205,7 @@ craftingTable.addShapeless("ae2_shapeless_wireless_crafting_terminal", <item:ae2
 craftingTable.addShaped("ae2_wireless_crafting_terminal", <item:ae2:wireless_crafting_terminal>, [
     [<item:minecraft:air>, <item:ae2:wireless_receiver>, <item:minecraft:air>],
     [<item:minecraft:air>, <item:ae2:crafting_terminal>, <item:minecraft:air>],
-    [<item:minecraft:air>, <item:the_vault:perfect_echo>, <item:minecraft:air>]
+    [<item:minecraft:air>, <item:the_vault:perfect_echo_gem>, <item:minecraft:air>]
 ]);
 
 craftingTable.addShaped("ae2_energy_acceptor", <item:ae2:energy_acceptor>, [
