@@ -142,19 +142,6 @@ onEvent("recipes", event => {
         F: 'the_vault:chromatic_steel_ingot'
     })
 
-    event.shaped(Item.of('rftoolsutility:flight_module'),
-        [
-            'RTR',
-            'CFC',
-            'RXR'
-        ], {
-        R: 'the_vault:extraordinary_black_opal',
-        C: 'the_vault:phoenix_feather',
-        F: 'rftoolsutility:moduleplus_template',
-        X: 'the_vault:echo_pog',
-        T: 'minecraft:elytra'
-    })
-
     event.shaped(Item.of('rftoolsbase:machine_infuser'),
         [
             'RCR',
