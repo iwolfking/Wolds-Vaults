@@ -134,5 +134,31 @@
         }
       }
     }
-  ]
+  ],
+  "Shield": {
+    "Enabled": true,
+    "RequiredRunes": 20,
+    "CooldownTicks": 400,
+    "DurationTicks": 100,
+    "BossBarColor": "WHITE",
+    "ParticleRadius": 2.5,
+    "CooldownReductionPerHaste": 0
+  },
+  "WaveBlast": {
+    "Enabled": true,
+    "RequiredRunes": 40,
+    "CooldownTicks": 800,
+    "Radius": 30.0,
+    "DamageMultiplier": 1.0,
+    "CooldownReductionPerHaste": 0,
+    "KnockbackStrength": 1.0
+  },
+  "Revive": {
+    "Enabled": true,
+    "RequiredRunes": 60,
+    "AdditionalRunesPerStack": 20,
+    "MaxStacks": 0,
+    "HealthPercent": 1.0,
+    "InvulnerabilityTicks": 60
+  }
 }

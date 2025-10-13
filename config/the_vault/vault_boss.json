@@ -4,7 +4,12 @@
       "BaseTraits": [
         "golem_melee_attack",
         "levitate_on_hit",
-        "golem_hand_ranged_attack"
+        "golem_hand_ranged_attack",
+        "golem_double_hand_ranged_attack",
+        "ground_slam",
+        "heal",
+        "health_attribute",
+        "dmg_attribute"
       ],
       "ModifierTraits": {
         "light_melee": "spider_attack",
@@ -22,7 +27,15 @@
       "BaseTraits": [
         "place_cobwebs_around",
         "spider_attack",
-        "leap_at_target"
+        "leap_at_target",
+        "cobweb_ranged_attack",
+        "summon_target_spider",
+        "place_cobwebs_around",
+        "poison_aura",
+        "poison_on_hit",
+        "health_attribute",
+        "dmg_attribute"
+
       ],
       "ModifierTraits": {
         "light_melee": "spider_attack",
@@ -39,7 +52,13 @@
     "the_vault:boogieman_boss": {
       "BaseTraits": [
         "boogieman_melee_attack",
-        "snowball_ranged_attack"
+        "snowball_ranged_attack",
+        "summon_target_boogiemen",
+        "blood_orb",
+        "sweep_attack",
+        "life_leech_on_hit",
+        "health_attribute",
+        "dmg_attribute"
       ],
       "ModifierTraits": {
         "light_melee": "boogieman_melee_attack",
@@ -293,10 +312,10 @@
     "heal": {
       "Type": "heal",
       "Attributes": {
-        "HealCooldown": 100,
-        "HealInterval": 300,
+        "HealCooldown": 800,
+        "HealInterval": 1000,
         "StackSize": 0,
-        "HealPercentage": 0.1
+        "HealPercentage": 0.05
       }
     },
     "blood_orb": {
@@ -326,7 +345,7 @@
       "Type": "attribute_modifier",
       "Attributes": {
         "Operator": "multiply",
-        "Value": 0.2,
+        "Value": 0.5,
         "Name": "minecraft:generic.max_health"
       }
     },
@@ -349,7 +368,7 @@
     "life_leech_on_hit": {
       "Type": "life_leech_on_hit",
       "Attributes": {
-        "LeechPercentage": 0.5
+        "LeechPercentage": 0.02
       }
     },
     "wither_on_hit": {
@@ -466,42 +485,37 @@
   },
   "WeightedModifiers": [
     {
-      "value": "light_melee",
+      "value": "damage",
       "weight": 1
     },
     {
-      "value": "heavy_melee",
+      "value": "health",
       "weight": 1
     },
     {
-      "value": "light_ranged",
+      "value": "ability_haste",
       "weight": 1
-    },
-    {
-      "value": "heavy_ranged",
-      "weight": 1
-    },
-    {
-      "value": "aoe_attack",
-      "weight": 1
-    },
-    {
-      "value": "buff_effect",
-      "weight": 1
-    },
-    {
-      "value": "on-hit_effect",
-      "weight": 1
-    },
-    {
-      "value": "attribute_dmg",
-      "weight": 5
     }
   ],
   "WeightedSuffixModifiers": [
-    {
-      "value": "attribute_health",
-      "weight": 5
+  ],
+  "RuneModifierRolls": {
+    "Health": {
+      "min": 0.25,
+      "max": 0.5,
+      "type": "uniformed_step",
+      "step": 0.01
+    },
+    "Damage": {
+      "min": 0.05,
+      "max": 0.25,
+      "type": "uniformed_step",
+      "step": 0.01
+    },
+    "AbilityHaste": {
+      "min": 0,
+      "max": 2,
+      "type": "uniform"
     }
   ]
 }
