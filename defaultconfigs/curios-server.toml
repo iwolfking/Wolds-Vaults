@@ -91,9 +91,16 @@
 	cosmetic = false
 
 [[curiosSettings]]
+	identifier = "necklace"
+	priority = 10
+	visible = true
+	override = true
+	size = 1
+
+[[curiosSettings]]
 	identifier = "wireless_terminal"
 	size = 1
-	priority = 10
+	priority = 11
 	visible = true
 	cosmetic = false
 	icon = "curios:slot/wireless_terminal"
@@ -104,7 +111,14 @@
 	size = 1
 	cosmetic = false
 	override = true
-	priority = 11
+	priority = 12
+
+[[curiosSettings]]
+	identifier = "compass"
+	visible = true
+	override = true
+	size = 1
+	priority = 13
 
 [[curiosSettings]]
 	identifier = "trinket"
@@ -125,10 +139,8 @@
 	override = true
 
 
-[[curiosSettings]]
-	identifier = "necklace"
-	visible = true
-	override = true
+
+
 
 [[curiosSettings]]
 	identifier = "coin_pouch"
@@ -138,6 +150,13 @@
 
 [[curiosSettings]]
 	identifier = "artifact"
+	visible = false
+	override = true
+	size = 0
+
+
+[[curiosSettings]]
+	identifier = "vault_compass"
 	visible = false
 	override = true
 	size = 0
