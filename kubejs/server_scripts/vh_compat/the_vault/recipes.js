@@ -8,6 +8,7 @@ onEvent("recipes", event => {
     event.remove({id: 'the_vault:smelt_etching'})
     event.remove({id: 'the_vault:crystal_seal_ordinator_run'})
     event.remove({id: 'the_vault:crystal_seal_ordinator_build'})
+    event.remove({id: 'the_vault:vault_compass'})
 
     event.shaped(Item.of('the_vault:crystal_budding'),
         [
@@ -18,7 +19,7 @@ onEvent("recipes", event => {
         C: 'the_vault:living_rock_block_cobble',
         E: 'the_vault:gem_larimar',
         A: 'minecraft:amethyst_block'
-    })
+    }).id('the_vault:crystal_budding')
 
     event.shaped(Item.of('the_vault:mystical_powder'),
         [
@@ -30,7 +31,7 @@ onEvent("recipes", event => {
         D: 'the_vault:vault_diamond',
         A: 'the_vault:dreamstone',
         B: 'the_vault:extraordinary_benitoite'
-    })
+    }).id('the_vault:mystical_powder')
 
     event.shaped(Item.of('the_vault:mystery_egg'),
         [
@@ -55,9 +56,21 @@ onEvent("recipes", event => {
         X: 'the_vault:black_chromatic_steel_ingot',
         B: 'the_vault:phoenix_feather',
         E: 'the_vault:knowledge_star'
-    })
+    }).id('the_vault:angel_block')
 
-    event.shapeless('the_vault:capstone_vendoor_hunter', ['woldsvaults:capstone_vendoors'])
+    event.shaped(Item.of('the_vault:vault_compass'),
+        [
+            'DID',
+            'ICI',
+            'DID'
+        ], {
+        D: 'the_vault:vault_diamond',
+        I: 'the_vault:black_chromatic_steel_ingot',
+        C: 'minecraft:compass'
+    }).id('the_vault:vault_compass')
+
+
+    event.shapeless('the_vault:capstone_vendoor_hunter', ['woldsvaults:capstone_vendoors']).id('woldsvaults:vendoor_capstone_conversion')
 
     event.shapeless('9x the_vault:vault_diamond', ['the_vault:vault_diamond_block'])
 
