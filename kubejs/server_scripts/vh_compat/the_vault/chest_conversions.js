@@ -1,0 +1,12 @@
+onEvent("recipes", event => {
+    event.shapeless('the_vault:wooden_chest_scroll', ['the_vault:wooden_chest']).id('woldsvaults:wooden_chest_to_scroll')
+    event.shapeless('the_vault:altar_chest_scroll', ['the_vault:altar_chest']).id('woldsvaults:altar_chest_to_scroll')
+    event.shapeless('the_vault:hardened_chest_scroll', ['the_vault:hardened_chest']).id('woldsvaults:hardened_chest_to_scroll')
+    event.shapeless('the_vault:enigma_chest_scroll', ['the_vault:enigma_chest']).id('woldsvaults:enigma_chest_to_scroll')
+    event.shapeless('the_vault:enigma_chest_scroll', ['the_vault:enigma_chest']).id('woldsvaults:enigma_chest_to_scroll')
+    event.shapeless('the_vault:flesh_chest_scroll', ['the_vault:flesh_chest']).id('woldsvaults:flesh_chest_to_scroll')
+    event.shapeless('the_vault:gilded_chest_scroll', ['the_vault:gilded_chest']).id('woldsvaults:gilded_chest_to_scroll')
+    event.shapeless('the_vault:ornate_chest_scroll', ['the_vault:ornate_chest']).id('woldsvaults:ornate_chest_to_scroll')
+    event.shapeless('the_vault:treasure_chest_scroll', ['the_vault:treasure_chest']).id('woldsvaults:treasure_chest_to_scroll')
+    event.shapeless('the_vault:living_chest_scroll', ['the_vault:living_chest']).id('woldsvaults:living_chest_to_scroll')
+})
