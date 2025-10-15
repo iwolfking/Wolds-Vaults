@@ -201,21 +201,6 @@
                           "minCount": 1,
                           "maxCount": 1
                       }
-                  ],
-                  [
-                      {
-                          "rarity": null,
-                          "isCrafted": null,
-                          "isLegendary": true
-                      },
-                      {
-                          "chance": 1,
-                          "stack": {
-                              "item": "the_vault:faceted_focus"
-                          },
-                          "minCount": 1,
-                          "maxCount": 1
-                      }
                   ]
               ],
               "chance": 0.2,
@@ -226,13 +211,27 @@
               "maxCount": 1
           },
           "extraOutput2": {
-              "conditionalOutputs": {},
-              "chance": 0.0,
+              "conditionalOutputs": [
+                [
+                    {
+                        "isLegendary": true
+                    },
+                    {
+                        "chance": 1,
+                        "stack": {
+                            "item": "the_vault:faceted_focus"
+                        },
+                        "minCount": 1,
+                        "maxCount": 1
+                    }
+                ]
+            ],
+              "chance": 0,
               "stack": {
                   "item": "the_vault:faceted_focus"
               },
-              "minCount": 1,
-              "maxCount": 1
+              "minCount": 0,
+              "maxCount": 0
           }
       }
   }
