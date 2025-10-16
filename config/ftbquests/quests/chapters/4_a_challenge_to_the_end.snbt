@@ -127,7 +127,7 @@
 		}
 		{
 			title: "The Challenge"
-			x: 11.5d
+			x: 13.25d
 			y: -2.0d
 			shape: "pentagon"
 			subtitle: "Win Streak"
@@ -255,7 +255,7 @@
 		{
 			title: "A Bigger Challenge"
 			icon: "davebuildingmod:skeleton_5"
-			x: 8.75d
+			x: 10.5d
 			y: -2.0d
 			shape: "hexagon"
 			subtitle: "New Vault+"
@@ -280,8 +280,8 @@
 		}
 		{
 			title: "Elixir : Enchanted!"
-			x: 8.25d
-			y: -4.25d
+			x: 10.0d
+			y: -4.0d
 			shape: "rsquare"
 			subtitle: "An Enchanted Adventure"
 			description: [
@@ -312,8 +312,8 @@
 		}
 		{
 			title: "Braziers : Spirited!"
-			x: 9.25d
-			y: -4.25d
+			x: 11.0d
+			y: -4.0d
 			shape: "rsquare"
 			subtitle: "A Ghost of a Time"
 			description: [
@@ -345,8 +345,8 @@
 		}
 		{
 			title: "Scavenger : Unhinged!"
-			x: 8.714285714285715d
-			y: -3.2321428571428577d
+			x: 10.5d
+			y: -3.0d
 			shape: "rsquare"
 			subtitle: "Looting Dreams and Nightmares"
 			description: [
@@ -439,7 +439,7 @@
 		}
 		{
 			title: "Runes : Brutal!"
-			x: 8.75d
+			x: 10.5d
 			y: -0.75d
 			shape: "rsquare"
 			subtitle: "Just a Mid Boss, Right?"
@@ -469,7 +469,7 @@
 		}
 		{
 			title: "The Main Boss"
-			x: 14.0d
+			x: 15.5d
 			y: -2.0d
 			shape: "pentagon"
 			subtitle: "Are You Ready?"
@@ -563,7 +563,7 @@
 		}
 		{
 			title: "Bingo : Ballistic!"
-			x: 8.75d
+			x: 10.5d
 			y: 0.25d
 			shape: "rsquare"
 			subtitle: "Dab For Mercy"
@@ -907,7 +907,7 @@
 		}
 		{
 			title: "The Toughest Battle"
-			x: 16.5d
+			x: 18.25d
 			y: -2.0d
 			shape: "hexagon"
 			subtitle: "Wish We Had the Sword of the Cosmos..."
@@ -970,7 +970,7 @@
 		}
 		{
 			title: "Egg of Surprises"
-			x: 11.5d
+			x: 13.25d
 			y: -0.75d
 			shape: "rsquare"
 			subtitle: "What Lay Inside?"
@@ -1001,7 +1001,7 @@
 				Count: 1b
 				tag: { }
 			}
-			x: 6.0d
+			x: 8.25d
 			y: -2.0d
 			shape: "hexagon"
 			subtitle: "Bout to Get Down"
@@ -1014,7 +1014,7 @@
 				""
 				"&5When you enter a Royale Vault, you arrive with no skills or items (You'll get them back when you leave!), and you must gear and skill up while in the Vault."
 			]
-			dependencies: ["504DC166104A8063"]
+			dependencies: ["479A00BDE6E0257F"]
 			hide: true
 			id: "455AD3A818283D5E"
 			tasks: [{
@@ -1031,8 +1031,8 @@
 		{
 			title: "A Little Buddy"
 			icon: "the_vault:companion_egg"
-			x: 6.0d
-			y: -3.25d
+			x: 8.25d
+			y: -3.0d
 			shape: "rsquare"
 			subtitle: "You Got a Friend in Me"
 			description: [
@@ -1063,7 +1063,7 @@
 		}
 		{
 			title: "Winner Winner Crate Dinner"
-			x: 6.0d
+			x: 8.25d
 			y: -0.75d
 			shape: "rsquare"
 			subtitle: "A Tough Fought Reward"
@@ -1101,8 +1101,8 @@
 		{
 			title: "Companion Care"
 			icon: "the_vault:companion_heal"
-			x: 6.0d
-			y: -4.25d
+			x: 8.25d
+			y: -4.0d
 			shape: "rsquare"
 			subtitle: "Headpats and Snacks"
 			description: [
@@ -1142,7 +1142,7 @@
 		}
 		{
 			title: "A True Royale"
-			x: 6.0d
+			x: 8.25d
 			y: 0.25d
 			shape: "rsquare"
 			subtitle: "No Bathrooms to Camp Though"
@@ -1168,8 +1168,8 @@
 		}
 		{
 			title: "A Wild Star"
-			x: 11.5d
-			y: -3.25d
+			x: 13.25d
+			y: -3.0d
 			shape: "rsquare"
 			subtitle: "Er, I mean Wold Star"
 			description: [
@@ -1195,7 +1195,7 @@
 		{
 			title: "Big Reinforcements"
 			icon: "woldsvaults:resonating_reinforcement"
-			x: 11.5d
+			x: 13.25d
 			y: -4.25d
 			shape: "rsquare"
 			subtitle: "I Didn't Forget Picking, Honest!"
@@ -1234,6 +1234,35 @@
 					item: "woldsvaults:crystal_reinforcement"
 				}
 			]
+		}
+		{
+			title: "Bubble, Bubble... Toil and Trouble"
+			x: 5.75d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Brewing with the boys"
+			description: [
+				"&5A brand new objective, Alchemy, this one is a fun little twist on Scavenger Vaults!"
+				"&5While you kill mobs and open chests, you'll find alchemical ingredients sometimes! You can combine 3 of these at an Alchemy Table!"
+				"&5Mix and match different ingredients together to add good and bad modifiers to your vault and progress the completion bar!"
+				"&5If you are feeling greedy, you can even overfill the completion bar to add Crate Tiers, giving you a better reward crate! Eventually you'll be limited from adding any further."
+			]
+			dependencies: ["504DC166104A8063"]
+			id: "479A00BDE6E0257F"
+			tasks: [{
+				id: "48E1CCA130D230DE"
+				type: "observation"
+				title: "Find a Alchemy Table"
+				icon: "the_vault:alchemy_table"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:alchemy_table"
+			}]
+			rewards: [{
+				id: "1D62E69D099D60A0"
+				type: "item"
+				item: "woldsvaults:crystal_seal_alchemy"
+			}]
 		}
 	]
 	quest_links: [ ]
