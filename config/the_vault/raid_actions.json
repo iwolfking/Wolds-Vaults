@@ -291,6 +291,18 @@
       "color1": "0xFF2e99b3",
       "color2": "0xFFa984bc"
     },
+    "knack_pack": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Knack Booster Pack",
+      "item": {
+        "id": "the_vault:booster_pack",
+        "nbt": "{id:\"the_vault:knack_pack\"}",
+        "count": 1
+      },
+      "color1": "0xFF2e99b3",
+      "color2": "0xFFa984bc"
+    },
     "temporal_booster_pack": {
       "type": "floating_item_reward",
       "textColor": "0xFFffb400",
@@ -450,6 +462,81 @@
       "color1": "0xFFffb400",
       "color2": "0xFFffe04e"
     },
+    "leg_plushie": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Legendary Plushie",
+      "item": {
+        "id": "the_vault:plushie",
+        "nbt": {
+          "the_vault:is_legendary": "true",
+          "the_vault:gear_roll_type_pool": "gear_treasure"
+        },
+        "count": 1
+      },
+      "color1": "0xFFffb400",
+      "color2": "0xFFffe04e"
+    },
+    "leg_loot_sack": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Legendary Loot Sack",
+      "item": {
+        "id": "the_vault:loot_sack",
+        "nbt": {
+          "the_vault:is_legendary": "true",
+          "the_vault:gear_roll_type_pool": "gear_treasure"
+        },
+        "count": 1
+      },
+      "color1": "0xFFffb400",
+      "color2": "0xFFffe04e"
+    },
+    "leg_trident": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Legendary Trident",
+      "item": {
+        "id": "the_vault:trident",
+        "nbt": {
+          "the_vault:is_legendary": "true",
+          "the_vault:gear_roll_type_pool": "gear_treasure"
+        },
+        "count": 1
+      },
+      "color1": "0xFFffb400",
+      "color2": "0xFFffe04e"
+    },
+    "leg_rang": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Legendary Vaultarang",
+      "item": {
+        "id": "the_vault:rang",
+        "nbt": {
+          "the_vault:is_legendary": "true",
+          "the_vault:gear_roll_type_pool": "gear_treasure"
+        },
+        "count": 1
+      },
+      "color1": "0xFFffb400",
+      "color2": "0xFFffe04e"
+    },
+    "leg_battlestaff": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Legendary Battlestaff",
+      "item": {
+        "id": "the_vault:battlestaff",
+        "nbt": {
+          "the_vault:is_legendary": "true",
+          "the_vault:gear_roll_type_pool": "gear_treasure"
+        },
+        "count": 1
+      },
+      "color1": "0xFFffb400",
+      "color2": "0xFFffe04e"
+    },
     "rare_helmet": {
       "type": "floating_item_reward",
       "textColor": "0xFFfff0a9",
@@ -552,6 +639,66 @@
       "name": "Wand",
       "item": {
         "id": "the_vault:wand",
+        "nbt": "{\"the_vault:gear_roll_type\":\"Rare+\"}",
+        "count": 1
+      },
+      "color1": "0xFFffea00",
+      "color2": "0xFFffd200"
+    },
+    "rare_plushie": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFfff0a9",
+      "name": "Plushie",
+      "item": {
+        "id": "the_vault:plushie",
+        "nbt": "{\"the_vault:gear_roll_type\":\"Rare+\"}",
+        "count": 1
+      },
+      "color1": "0xFFffea00",
+      "color2": "0xFFffd200"
+    },
+    "rare_loot_sack": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFfff0a9",
+      "name": "Loot Sack",
+      "item": {
+        "id": "the_vault:loot_sack",
+        "nbt": "{\"the_vault:gear_roll_type\":\"Rare+\"}",
+        "count": 1
+      },
+      "color1": "0xFFffea00",
+      "color2": "0xFFffd200"
+    },
+    "rare_trident": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFfff0a9",
+      "name": "Trident",
+      "item": {
+        "id": "the_vault:trident",
+        "nbt": "{\"the_vault:gear_roll_type\":\"Rare+\"}",
+        "count": 1
+      },
+      "color1": "0xFFffea00",
+      "color2": "0xFFffd200"
+    },
+    "rare_battlestaff": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFfff0a9",
+      "name": "Battlestaff",
+      "item": {
+        "id": "the_vault:battlestaff",
+        "nbt": "{\"the_vault:gear_roll_type\":\"Rare+\"}",
+        "count": 1
+      },
+      "color1": "0xFFffea00",
+      "color2": "0xFFffd200"
+    },
+    "rare_rang": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFfff0a9",
+      "name": "Vaultarang",
+      "item": {
+        "id": "the_vault:rang",
         "nbt": "{\"the_vault:gear_roll_type\":\"Rare+\"}",
         "count": 1
       },
@@ -1527,7 +1674,7 @@
       }
     ],
     "positive": [
-      {
+       {
         "value": "gilded_chest",
         "weight": 120
       },
@@ -1604,16 +1751,36 @@
         "weight": 40
       },
       {
-        "value": "jewel_pouch",
-        "weight": 100
+        "value": "rare_plushie",
+        "weight": 20
       },
       {
-        "value": "pyretic_focus",
+        "value": "rare_rang",
+        "weight": 10
+      },
+      {
+        "value": "rare_trident",
+        "weight": 20
+      },
+      {
+        "value": "rare_loot_sack",
+        "weight": 20
+      },
+      {
+        "value": "rare_battlestaff",
+        "weight": 20
+      },
+      {
+        "value": "jewel_pouch",
         "weight": 50
       },
       {
+        "value": "pyretic_focus",
+        "weight": 20
+      },
+      {
         "value": "empowered_chaotic_focus",
-        "weight": 70
+        "weight": 30
       },
       {
         "value": "resource_booster_pack",
@@ -1623,9 +1790,13 @@
         "value": "arcane_booster_pack",
         "weight": 30
       },
+       {
+        "value": "knack_pack",
+        "weight": 15
+      },
       {
         "value": "temporal_booster_pack",
-        "weight": 1
+        "weight": 2
       },
       {
         "value": "leg_helmet",
@@ -1664,6 +1835,26 @@
         "weight": 2
       },
       {
+        "value": "leg_plushie",
+        "weight": 2
+      },
+      {
+        "value": "leg_loot_sack",
+        "weight": 2
+      },
+      {
+        "value": "leg_trident",
+        "weight": 2
+      },
+      {
+        "value": "leg_rang",
+        "weight": 2
+      },
+      {
+        "value": "leg_battlestaff",
+        "weight": 2
+      },
+      {
         "value": "castle_chestplate",
         "weight": 2
       },
@@ -1695,13 +1886,17 @@
         "value": "inflated_justice",
         "weight": 2
       },
+       {
+        "value": "raid_rock",
+        "weight": 10
+      },
       {
         "value": "raid_rock_infinite",
-        "weight": 10
+        "weight": 6
       }
     ],
     "positive_base": [
-      {
+     {
         "value": "gilded_chest",
         "weight": 120
       },
@@ -1778,8 +1973,148 @@
         "weight": 40
       },
       {
+        "value": "rare_plushie",
+        "weight": 20
+      },
+      {
+        "value": "rare_rang",
+        "weight": 10
+      },
+      {
+        "value": "rare_trident",
+        "weight": 20
+      },
+      {
+        "value": "rare_loot_sack",
+        "weight": 20
+      },
+      {
+        "value": "rare_battlestaff",
+        "weight": 20
+      },
+      {
+        "value": "jewel_pouch",
+        "weight": 50
+      },
+      {
+        "value": "pyretic_focus",
+        "weight": 20
+      },
+      {
+        "value": "empowered_chaotic_focus",
+        "weight": 30
+      },
+      {
+        "value": "resource_booster_pack",
+        "weight": 50
+      },
+      {
+        "value": "arcane_booster_pack",
+        "weight": 30
+      },
+       {
+        "value": "knack_pack",
+        "weight": 15
+      },
+      {
+        "value": "temporal_booster_pack",
+        "weight": 2
+      },
+      {
+        "value": "leg_helmet",
+        "weight": 2
+      },
+      {
+        "value": "leg_chestplate",
+        "weight": 2
+      },
+      {
+        "value": "leg_leggings",
+        "weight": 2
+      },
+      {
+        "value": "leg_boots",
+        "weight": 2
+      },
+      {
+        "value": "leg_sword",
+        "weight": 2
+      },
+      {
+        "value": "leg_axe",
+        "weight": 2
+      },
+      {
+        "value": "leg_shield",
+        "weight": 2
+      },
+      {
+        "value": "leg_wand",
+        "weight": 2
+      },
+      {
+        "value": "leg_focus",
+        "weight": 2
+      },
+      {
+        "value": "leg_plushie",
+        "weight": 2
+      },
+      {
+        "value": "leg_loot_sack",
+        "weight": 2
+      },
+      {
+        "value": "leg_trident",
+        "weight": 2
+      },
+      {
+        "value": "leg_rang",
+        "weight": 2
+      },
+      {
+        "value": "leg_battlestaff",
+        "weight": 2
+      },
+      {
+        "value": "castle_chestplate",
+        "weight": 2
+      },
+      {
+        "value": "warbound_helmet",
+        "weight": 2
+      },
+      {
+        "value": "inferno_reach",
+        "weight": 2
+      },
+      {
+        "value": "frozen_orb",
+        "weight": 2
+      },
+      {
+        "value": "grim_shield",
+        "weight": 2
+      },
+      {
+        "value": "swarmwalkers",
+        "weight": 2
+      },
+      {
+        "value": "stormcrown",
+        "weight": 2
+      },
+      {
+        "value": "inflated_justice",
+        "weight": 2
+      },
+       {
         "value": "raid_rock",
-        "weight": 90
+        "weight": 10
+      },
+      {
+        "value": "raid_rock_infinite",
+        "weight": 6
       }
     ],
     "positive_base_map": [
@@ -1880,36 +2215,56 @@
         "weight": 6
       },
       {
+        "value": "leg_plushie",
+        "weight": 6
+      },
+      {
+        "value": "leg_loot_sack",
+        "weight": 6
+      },
+      {
+        "value": "leg_trident",
+        "weight": 6
+      },
+      {
+        "value": "leg_rang",
+        "weight": 6
+      },
+      {
+        "value": "leg_battlestaff",
+        "weight": 6
+      },
+      {
         "value": "castle_chestplate",
         "weight": 6
       },
       {
         "value": "warbound_helmet",
-        "weight": 6
+        "weight": 4
       },
       {
         "value": "inferno_reach",
-        "weight": 6
+        "weight": 4
       },
       {
         "value": "frozen_orb",
-        "weight": 6
+        "weight": 4
       },
       {
         "value": "grim_shield",
-        "weight": 6
+        "weight": 4
       },
       {
         "value": "swarmwalkers",
-        "weight": 6
+        "weight": 4
       },
       {
         "value": "stormcrown",
-        "weight": 6
+        "weight": 4
       },
       {
         "value": "inflated_justice",
-        "weight": 6
+        "weight": 4
       },
       {
         "value": "raid_rock_infinite_hard",
