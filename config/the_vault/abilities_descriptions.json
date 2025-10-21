@@ -1388,7 +1388,7 @@
       "current": [
         "cooldown",
         "manaCost",
-        "radius",
+        "adjustedRadius",
         "ability_power"
       ],
       "next": [
@@ -3026,7 +3026,7 @@
           "color": "$ability_power"
         },
         {
-          "text": "based of your ability power.",
+          "text": "based off your ability power.",
           "color": "$text"
         },
         {
@@ -3058,7 +3058,7 @@
           "color": "$ability_power"
         },
         {
-          "text": "mobs in its path and deals an amount of ",
+          "text": "mobs in its path and explodes in a small radius - dealing an amount of ",
           "color": "$text"
         },
         {
@@ -3066,7 +3066,7 @@
           "color": "$ability_power"
         },
         {
-          "text": "based of your ability power.\nAfter a ",
+          "text": "based off your ability power.\nAfter a ",
           "color": "$text"
         },
         {
@@ -3074,7 +3074,7 @@
           "color": "$duration"
         },
         {
-          "text": " of time, it explodes in a ",
+          "text": " of time, it will also explode in a ",
           "color": "$text"
         },
         {
@@ -3120,7 +3120,7 @@
           "color": "$ability_power"
         },
         {
-          "text": "based of your ",
+          "text": "based off your ",
           "color": "$text"
         },
         {
@@ -3170,7 +3170,7 @@
           "color": "$ability_power"
         },
         {
-          "text": "based of your ability power. The storm cloud stays for a ",
+          "text": "based off your ability power. The storm cloud stays for a ",
           "color": "$text"
         },
         {
@@ -3910,6 +3910,22 @@
         },
         {
           "text": ".",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Additionally, procs any ",
+          "color": "$text"
+        },
+        {
+          "text": "Effect Cloud ",
+          "color": "$heal"
+        },
+         {
+          "text": "attributes you possess at the explosion location. ",
           "color": "$text"
         },
         {
