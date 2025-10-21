@@ -16,8 +16,8 @@ onEvent("recipes", event => {
             'L L',
             'LLL'
         ], {
-            P: 'the_vault:wooden_planks',
-            O: 'the_vault:perfect_painite',
+            P: 'the_vault:driftwood',
+            O: 'the_vault:extraordinary_painite',
             L: 'the_vault:driftwood_planks'
         })
 
