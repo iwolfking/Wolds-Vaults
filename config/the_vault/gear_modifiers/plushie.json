@@ -1534,195 +1534,130 @@
           }
         ]
       },
-      {
+       {
         "attribute": "the_vault:effect_cloud_when_hit",
         "group": "ModOnHit",
-        "identifier": "the_vault:mod_wither_cloud",
+        "identifier": "the_vault:mod_vulnerable_cloud",
+        "tags": [
+          "focusVulnerableCloud"
+        ],
         "tiers": [
           {
-            "minLevel": 0,
+            "minLevel": 25,
             "maxLevel": -1,
-            "weight": 0,
+            "weight": 6,
             "value": {
-              "tooltipDisplayName": "Wither",
+              "tooltipDisplayName": "Vulnerability",
               "potion": "minecraft:empty",
               "additionalEffects": [
                 {
-                  "effect": "minecraft:wither",
+                  "effect": "the_vault:vulnerable",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 120,
+              "radius": 4.0,
+              "color": 12809569,
+              "affectsOwner": false,
+              "triggerChance": 0.02
+            }
+          },
+          {
+            "minLevel": 40,
+            "maxLevel": -1,
+            "weight": 6,
+            "value": {
+              "tooltipDisplayName": "Vulnerability II",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:vulnerable",
                   "duration": 140,
                   "amplifier": 1,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 60,
+              "duration": 160,
               "radius": 4.0,
-              "color": 3812162,
+              "color": 12809569,
               "affectsOwner": false,
-              "triggerChance": 0.05
+              "triggerChance": 0.02
             }
           },
-          {
-            "minLevel": 6,
+            {
+            "minLevel": 65,
             "maxLevel": -1,
-            "weight": 0,
+            "weight": 6,
             "value": {
-              "tooltipDisplayName": "Wither+",
+              "tooltipDisplayName": "Vulnerability III",
               "potion": "minecraft:empty",
               "additionalEffects": [
                 {
-                  "effect": "minecraft:wither",
-                  "duration": 80,
-                  "amplifier": 4,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 5,
-              "radius": 24.0,
-              "color": 3812162,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          },
-          {
-            "minLevel": 32,
-            "maxLevel": -1,
-            "weight": 0,
-            "value": {
-              "tooltipDisplayName": "Wither II",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "minecraft:wither",
+                  "effect": "the_vault:vulnerable",
                   "duration": 140,
                   "amplifier": 2,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 60,
+              "duration": 200,
               "radius": 4.0,
-              "color": 3812162,
+              "color": 12809569,
               "affectsOwner": false,
-              "triggerChance": 0.05
+              "triggerChance": 0.02
             }
           },
-          {
-            "minLevel": 38,
+            {
+            "minLevel": 101,
             "maxLevel": -1,
-            "weight": 0,
+            "weight": 6,
             "value": {
-              "tooltipDisplayName": "Wither II+",
+              "tooltipDisplayName": "Vulnerability IV",
               "potion": "minecraft:empty",
               "additionalEffects": [
                 {
-                  "effect": "minecraft:wither",
-                  "duration": 80,
-                  "amplifier": 8,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 5,
-              "radius": 24.0,
-              "color": 3812162,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          },
-          {
-            "minLevel": 64,
-            "maxLevel": -1,
-            "weight": 0,
-            "value": {
-              "tooltipDisplayName": "Wither III",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "minecraft:wither",
+                  "effect": "the_vault:vulnerable",
                   "duration": 140,
                   "amplifier": 3,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 60,
+              "duration": 240,
               "radius": 4.0,
-              "color": 3812162,
+              "color": 12809569,
               "affectsOwner": false,
-              "triggerChance": 0.05
+              "triggerChance": 0.02
             }
           },
-          {
-            "minLevel": 72,
+            {
+            "minLevel": 102,
             "maxLevel": -1,
-            "weight": 0,
+            "weight": 6,
             "value": {
-              "tooltipDisplayName": "Wither III+",
+              "tooltipDisplayName": "Vulnerability V",
               "potion": "minecraft:empty",
               "additionalEffects": [
                 {
-                  "effect": "minecraft:wither",
-                  "duration": 80,
-                  "amplifier": 12,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 5,
-              "radius": 24.0,
-              "color": 3812162,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 0,
-            "value": {
-              "tooltipDisplayName": "Wither IV",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "minecraft:wither",
+                  "effect": "the_vault:vulnerable",
                   "duration": 140,
                   "amplifier": 4,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 60,
+              "duration": 300,
               "radius": 4.0,
-              "color": 3812162,
+              "color": 12809569,
               "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 0,
-            "value": {
-              "tooltipDisplayName": "Wither IV+",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "minecraft:wither",
-                  "duration": 80,
-                  "amplifier": 16,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 5,
-              "radius": 24.0,
-              "color": 3812162,
-              "affectsOwner": false,
-              "triggerChance": 0.05
+              "triggerChance": 0.02
             }
           }
+ 
         ]
       },
       {

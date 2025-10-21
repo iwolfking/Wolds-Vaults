@@ -417,7 +417,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 4,
+            "weight": 80,
             "value": {
               "tooltipDisplayName": "Healing IV",
               "potion": "minecraft:empty",
@@ -440,7 +440,7 @@
           {
             "minLevel": 101,
             "maxLevel": -1,
-            "weight": 4,
+            "weight": 80,
             "value": {
               "tooltipDisplayName": "Healing V",
               "potion": "minecraft:empty",
@@ -463,7 +463,7 @@
           {
             "minLevel": 102,
             "maxLevel": -1,
-            "weight": 4,
+            "weight": 80,
             "value": {
               "tooltipDisplayName": "Healing VI",
               "potion": "minecraft:empty",
@@ -488,82 +488,6 @@
       {
         "attribute": "the_vault:effect_cloud_when_hit",
         "group": "ModOnHit",
-        "identifier": "the_vault:mod_wither_cloud",
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 0,
-            "value": {
-              "tooltipDisplayName": "Wither III+",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "minecraft:wither",
-                  "duration": 80,
-                  "amplifier": 12,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 5,
-              "radius": 24.0,
-              "color": 3812162,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 0,
-            "value": {
-              "tooltipDisplayName": "Wither IV",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "minecraft:wither",
-                  "duration": 140,
-                  "amplifier": 4,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 60,
-              "radius": 4.0,
-              "color": 3812162,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 0,
-            "value": {
-              "tooltipDisplayName": "Wither IV+",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "minecraft:wither",
-                  "duration": 80,
-                  "amplifier": 16,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 5,
-              "radius": 24.0,
-              "color": 3812162,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:effect_cloud_when_hit",
-        "group": "ModOnHit",
         "identifier": "the_vault:mod_slowness_cloud",
         "tags": [
           "focusSlownessCloud"
@@ -572,7 +496,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 60,
             "value": {
               "tooltipDisplayName": "Slowness IV",
               "potion": "minecraft:empty",
@@ -595,7 +519,7 @@
           {
             "minLevel": 101,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 60,
             "value": {
               "tooltipDisplayName": "Slowness V",
               "potion": "minecraft:empty",
@@ -618,7 +542,7 @@
           {
             "minLevel": 102,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 60,
             "value": {
               "tooltipDisplayName": "Slowness VI",
               "potion": "minecraft:empty",
@@ -651,7 +575,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 60,
             "value": {
               "tooltipDisplayName": "Chilling IV",
               "potion": "minecraft:empty",
@@ -674,7 +598,7 @@
           {
             "minLevel": 101,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 60,
             "value": {
               "tooltipDisplayName": "Chilling V",
               "potion": "minecraft:empty",
@@ -697,7 +621,7 @@
           {
             "minLevel": 102,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 60,
             "value": {
               "tooltipDisplayName": "Chilling VI",
               "potion": "minecraft:empty",
@@ -730,7 +654,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 0,
+            "weight": 40,
             "value": {
               "tooltipDisplayName": "Weakness IV",
               "potion": "minecraft:empty",
@@ -738,12 +662,12 @@
                 {
                   "effect": "minecraft:weakness",
                   "duration": 140,
-                  "amplifier": 5,
+                  "amplifier": 3,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 60,
+              "duration": 120,
               "radius": 4.0,
               "color": 10906908,
               "affectsOwner": false,
@@ -751,34 +675,11 @@
             }
           },
           {
-            "minLevel": 72,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 0,
             "value": {
-              "tooltipDisplayName": "Weakness III+",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "minecraft:weakness",
-                  "duration": 80,
-                  "amplifier": 5,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 5,
-              "radius": 24.0,
-              "color": 10906908,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 0,
-            "value": {
-              "tooltipDisplayName": "Weakness IV",
+              "tooltipDisplayName": "Weakness V",
               "potion": "minecraft:empty",
               "additionalEffects": [
                 {
@@ -789,7 +690,30 @@
                   "showIcon": true
                 }
               ],
-              "duration": 60,
+              "duration": 240,
+              "radius": 4.0,
+              "color": 10906908,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 0,
+            "value": {
+              "tooltipDisplayName": "Weakness VI",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "minecraft:weakness",
+                  "duration": 140,
+                  "amplifier": 5,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 300,
               "radius": 4.0,
               "color": 10906908,
               "affectsOwner": false,
@@ -801,19 +725,19 @@
             "maxLevel": -1,
             "weight": 0,
             "value": {
-              "tooltipDisplayName": "Weakness IV+",
+              "tooltipDisplayName": "Weakness VII",
               "potion": "minecraft:empty",
               "additionalEffects": [
                 {
                   "effect": "minecraft:weakness",
-                  "duration": 80,
+                  "duration": 140,
                   "amplifier": 6,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 5,
-              "radius": 24.0,
+              "duration": 360,
+              "radius": 4.0,
               "color": 10906908,
               "affectsOwner": false,
               "triggerChance": 0.05
