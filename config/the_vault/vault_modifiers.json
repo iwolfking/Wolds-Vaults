@@ -6904,33 +6904,33 @@
               "filter": "the_vault:vendor_door[open=false]",
               "radius": 64.0,
               "target": "vendoors",
-              "color": 9945247
+              "color": 16472397
             }
           ]
         },
         "display": {
-          "name": "Vendoor Hunter",
-          "color": "#fbd93f",
-          "description": "Highlights Vendoor Doors in this vault",
-          "icon": "the_vault:gui/modifiers/treasure_doors"
+          "name": "Merchant Hunter",
+          "color": "#ffba00",
+          "description": "Highlights Vendoors in this vault",
+          "icon": "the_vault:gui/modifiers/vendoor_doors"
         }
       },
-      "the_vault:vendoor_doors": {
+     "the_vault:vendoor_doors": {
         "properties": {
           "entries": [
             {
               "filter": "the_vault:vendor_door[open=false]",
               "radius": 64.0,
               "target": "vendoors",
-              "color": 9945247
+              "color": 16472397
             }
           ]
         },
         "display": {
-          "name": "Vendoor Hunter",
-          "color": "#fbd93f",
-          "description": "Highlights Vendoor Doors in this vault",
-          "icon": "the_vault:gui/modifiers/treasure_doors"
+          "name": "Merchant Hunter",
+          "color": "#ffba00",
+          "description": "Highlights Vendoors in this vault",
+          "icon": "the_vault:gui/modifiers/vendoor_doors"
         }
       },
       "the_vault:treasure_doors": {
@@ -6939,14 +6939,14 @@
             {
               "filter": "the_vault:treasure_door[open=false]",
               "radius": 64.0,
-               "target": "treasure_doors",
-              "color": 16771584
+              "color": 16771584,
+              "target": "treasure_doors"
             }
           ]
         },
         "display": {
           "name": "Treasure Hunter",
-          "color": "#FFEA00",
+          "color": "#ffba00",
           "description": "Highlights Treasure Doors in this vault",
           "icon": "the_vault:gui/modifiers/treasure_doors"
         }
@@ -6956,15 +6956,15 @@
           "entries": [
             {
               "filter": "the_vault:dungeon_door[open=false]",
-               "target": "dungeons",
               "radius": 64.0,
+              "target": "dungeons",
               "color": 6836358
             }
           ]
         },
         "display": {
           "name": "Dungeon Hunter",
-          "color": "#685086",
+          "color": "#ffba00",
           "description": "Highlights Dungeon Doors in this vault",
           "icon": "the_vault:gui/modifiers/dungeon_doors"
         }
@@ -6974,8 +6974,8 @@
           "entries": [
             {
               "filter": "the_vault:living_chest",
-               "target": "living",
               "radius": 64.0,
+              "target": "living",
               "color": 65280
             }
           ]
@@ -6993,7 +6993,7 @@
             {
               "filter": "the_vault:coin_pile",
               "radius": 64.0,
-               "target": "coins",
+              "target": "coins",
               "color": 16750592
             }
           ]
@@ -7011,7 +7011,7 @@
             {
               "filter": "the_vault:ornate_chest",
               "radius": 64.0,
-               "target": "ornate",
+              "target": "ornate",
               "color": 16721408
             }
           ]
@@ -7029,7 +7029,7 @@
             {
               "filter": "the_vault:gilded_chest",
               "radius": 64.0,
-               "target": "gilded",
+              "target": "gilded",
               "color": 16776960
             }
           ]
@@ -7046,7 +7046,7 @@
           "entries": [
             {
               "filter": "the_vault:wooden_chest",
-               "target": "wooden",
+              "target": "wooden",
               "radius": 64.0,
               "color": 16738560
             }
@@ -7065,7 +7065,7 @@
             {
               "filter": "the_vault:god_altar",
               "radius": 64.0,
-               "target": "god_altars",
+              "target": "god_altars",
               "color": 5817009
             }
           ]
@@ -7083,7 +7083,7 @@
             {
               "filter": "the_vault:pylon",
               "radius": 64.0,
-               "target": "pylons",
+              "target": "pylons",
               "color": 5817009
             }
           ]
@@ -7100,8 +7100,8 @@
           "entries": [
             {
               "filter": "the_vault:god_altar[god=velara]",
-               "target": "god_altars",
               "radius": 64.0,
+              "target": "god_altars",
               "color": 65280
             }
           ]
@@ -7118,8 +7118,8 @@
           "entries": [
             {
               "filter": "the_vault:god_altar[god=tenos]",
-               "target": "god_altars",
               "radius": 64.0,
+              "target": "god_altars",
               "color": 197
             }
           ]
@@ -7136,8 +7136,8 @@
           "entries": [
             {
               "filter": "the_vault:god_altar[god=idona]",
-               "target": "god_altars",
               "radius": 64.0,
+              "target": "god_altars",
               "color": 16711680
             }
           ]
@@ -7154,8 +7154,8 @@
           "entries": [
             {
               "filter": "the_vault:god_altar[god=wendarr]",
-               "target": "god_altars",
               "radius": 64.0,
+              "target": "god_altars",
               "color": 16748800
             }
           ]
