@@ -496,7 +496,23 @@
             "value": "the_vault:classic_vault_season_winter",
             "weight": 38
           }
-        ]
+        ],
+        "seasonalWeights": {
+          "the_vault:classic_vault_gloom": {
+            "ranges": [
+              {
+                "from": "10-01",
+                "to": "10-31",
+                "weight": 50
+              },
+              {
+                "from": "10-30",
+                "to": "10-31",
+                "weight": 5000
+              }
+            ]
+          }
+        }
       },
       {
         "level": 50,
@@ -665,21 +681,6 @@
             "value": "the_vault:classic_vault_aurora_cave",
             "weight": 9
           }
-        ]
-      }
-    ],
-    "woldsvaults:map_themes": [
-      {
-        "level": 0,
-        "pool": [
-          {
-            "value": "the_vault:map_beach_t0",
-            "weight": 2
-          },
-          {
-            "value": "the_vault:classic_vault_gloom",
-            "weight": 0
-          }
         ],
         "seasonalWeights": {
           "the_vault:classic_vault_gloom": {
@@ -696,6 +697,35 @@
               }
             ]
           }
+        }
+      }
+    ],
+    "woldsvaults:map_themes": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": "the_vault:map_beach_t0",
+            "weight": 2
+          },
+          {
+            "value": "the_vault:map_cave_t0",
+            "weight": 2
+          },
+          {
+            "value": "the_vault:map_desert_t0",
+            "weight": 2
+          },
+          {
+            "value": "the_vault:map_void_t0",
+            "weight": 1
+          },
+          {
+            "value": "the_vault:map_nether_t0",
+            "weight": 1
+          }
+        ],
+        "seasonalWeights": {
         }
       }
     ],
