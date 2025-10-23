@@ -4597,7 +4597,26 @@
       ],
       "maxTier": 1
     },
-
+    "expunge": {
+      "type": "gear",
+      "name": {
+        "text": "Expunge Card"
+      },
+      "model": "the_vault:card/icon/expunge#inventory",
+      "groups": [
+        "Arcane",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Expunge",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "taunt": {
       "type": "gear",
       "name": {
@@ -8618,6 +8637,10 @@
       {
         "value": "mana_barrier",
       "weight": 1.0
+      },
+      {
+        "value": "expunge",
+        "weight": 1.0
       }
     ],
     "temporal": [

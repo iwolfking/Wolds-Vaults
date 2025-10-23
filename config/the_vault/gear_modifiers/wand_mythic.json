@@ -184,6 +184,34 @@
           }
         ]
       },
+       { "attribute": "the_vault:added_ability_level",
+        "group": "ModAPLvl",
+        "identifier": "the_vault:mod_added_ability_level_expunge",
+        "tags": [
+          "focusAbilityPower",
+          "focusAbilityPowerExpunge"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 60,
+            "value": {
+              "abilityKey": "Expunge_Base",
+              "levelChange": 2
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 60,
+            "value": {
+              "abilityKey": "Expunge_Base",
+              "levelChange": 3
+            }
+          }
+        ]
+      },
       { "attribute": "the_vault:added_ability_level",
         "group": "ModAPLvl",
         "identifier": "the_vault:mod_added_ability_level_nova",
