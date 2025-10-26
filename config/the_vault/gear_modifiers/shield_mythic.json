@@ -643,7 +643,7 @@
           }
         ]
       },
-      {
+       {
         "attribute": "the_vault:effect_cloud_when_hit",
         "group": "ModOnHit",
         "identifier": "the_vault:mod_weakness_cloud",
@@ -654,7 +654,7 @@
           {
             "minLevel": 0,
             "maxLevel": -1,
-            "weight": 40,
+            "weight": 60,
             "value": {
               "tooltipDisplayName": "Weakness IV",
               "potion": "minecraft:empty",
@@ -667,7 +667,7 @@
                   "showIcon": true
                 }
               ],
-              "duration": 120,
+              "duration": 200,
               "radius": 4.0,
               "color": 10906908,
               "affectsOwner": false,
@@ -675,9 +675,9 @@
             }
           },
           {
-            "minLevel": 0,
+            "minLevel": 101,
             "maxLevel": -1,
-            "weight": 0,
+            "weight": 10,
             "value": {
               "tooltipDisplayName": "Weakness V",
               "potion": "minecraft:empty",
@@ -698,9 +698,9 @@
             }
           },
           {
-            "minLevel": 101,
+            "minLevel": 102,
             "maxLevel": -1,
-            "weight": 0,
+            "weight": 10,
             "value": {
               "tooltipDisplayName": "Weakness VI",
               "potion": "minecraft:empty",
@@ -714,29 +714,6 @@
                 }
               ],
               "duration": 300,
-              "radius": 4.0,
-              "color": 10906908,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 0,
-            "value": {
-              "tooltipDisplayName": "Weakness VII",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "minecraft:weakness",
-                  "duration": 140,
-                  "amplifier": 6,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 360,
               "radius": 4.0,
               "color": 10906908,
               "affectsOwner": false,
