@@ -60,11 +60,12 @@ onEvent("recipes", event => {
 
     event.shaped(Item.of('the_vault:vault_compass'),
         [
-            'DID',
+            'DPD',
             'ICI',
             'DID'
         ], {
-        D: 'the_vault:vault_diamond',
+        D: 'the_vault:vault_diamond_block',
+        P: 'the_vault:echo_pog',
         I: 'the_vault:black_chromatic_steel_ingot',
         C: 'minecraft:compass'
     }).id('the_vault:vault_compass')
