@@ -101,6 +101,76 @@
         {
           "tier": 1,
           "pool": [
+             {
+              "filters": [
+                {
+                  "neighborFilter": [
+                    {
+                      "value": [ "ADJACENT" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "colorFilter": [
+                    {
+                      "weight": 2.0
+                    },
+                    {
+                      "value": [ "GREEN" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "BLUE" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "YELLOW" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "RED" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "groupFilter": [
+                    {
+                      "value": [ "Physical" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Magical" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Defensive" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Offensive" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Essence" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Utility" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "minCount": {
+                    "min": 3,
+                    "max": 3,
+                    "type": "uniform"
+                  },
+                  "maxCount": {
+                    "min": 4,
+                    "max": 4,
+                    "type": "uniform"
+                  }
+                }
+              ],
+              "weight": 1.0
+            },
             {
               "filters": [
                 {
@@ -118,10 +188,6 @@
                     },
                     {
                       "value": [ "DIAGONAL" ],
-                      "weight": 1.0
-                    },
-                    {
-                      "value": [ "ADJACENT" ],
                       "weight": 1.0
                     },
                     {
@@ -164,12 +230,20 @@
                       "weight": 1.0
                     },
                     {
+                      "value": [ "Offensive" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "Essence" ],
+                      "weight": 1.0
+                    },
+                    {
                       "value": [ "Utility" ],
                       "weight": 1.0
                     }
                   ],
                   "minCount": {
-                    "min": 2,
+                    "min": 3,
                     "max": 4,
                     "type": "uniform"
                   },
