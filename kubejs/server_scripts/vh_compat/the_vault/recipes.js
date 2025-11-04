@@ -69,7 +69,17 @@ onEvent("recipes", event => {
         I: 'the_vault:black_chromatic_steel_ingot',
         C: 'minecraft:compass'
     }).id('the_vault:vault_compass')
-
+    
+    event.shaped(Item.of('the_vault:vault_charm_controller'),
+        [
+            'DDD',
+            'IPI',
+            ' I '
+        ], {
+        D: 'the_vault:magic_silk_block',
+        P: 'woldsvaults:chroma_core',
+        I: 'the_vault:chromatic_steel_ingot'
+    }).id('the_vault:vault_charm_controller')
 
     event.shapeless('the_vault:capstone_vendoor_hunter', ['woldsvaults:capstone_vendoors']).id('woldsvaults:vendoor_capstone_conversion')
 
