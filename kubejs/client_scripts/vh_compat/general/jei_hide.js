@@ -98,6 +98,8 @@ onEvent('jei.hide.items', event => {
     event.hide(/tropicraft:.*_sign/)
     event.hide(/twigs:.*_sign/)
     event.hide(/dungeons_mobs:.*/)
+    event.hide('sophisticatedbackpacks:copper_backpack')
+    event.hide('sophisticatedbackpacks:stack_upgrade_starter_tier')
 })
 
 

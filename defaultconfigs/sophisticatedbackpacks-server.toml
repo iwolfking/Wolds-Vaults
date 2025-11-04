@@ -5,8 +5,6 @@
 	disallowedItems = ["the_vault:vault_compass", "minecraft:bundle", "minecraft:shulker_box", "minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box", "minecraft:enchanted_golden_apple", "minecraft:chorus_fruit", "supplementaries:sack", "supplementaries:safe"]
 	#List of blocks that inventory interaction upgrades can't interact with - e.g. "minecraft:shulker_box"
 	noInteractionBlocks = ["the_vault:wooden_chest", "the_vault:altar_chest", "the_vault:gilded_chest", "the_vault:ornate_chest", "the_vault:treasure_chest", "the_vault:living_chest"]
-	#Turns on/off loot added to various vanilla chest loot tables
-	chestLootEnabled = false
 	#Turns on/off item fluid handler of backpack in its item form. There are some dupe bugs caused by default fluid handling implementation that manifest when backpack is drained / filled in its item form in another mod's tank and the only way to prevent them is disallowing drain/fill in item form altogether
 	itemFluidHandlerEnabled = true
 	#Determines whether player can right click on backpack that another player is wearing to open it. If off will turn off that capability for everyone and remove related settings from backpack.
@@ -15,6 +13,14 @@
 	itemDisplayDisabled = false
 	#Allows disabling logic that dedupes backpacks with the same UUID in players' inventory. This is here to allow turning off the logic just in case it would be causing performance issues.
 	tickDedupeLogicDisabled = false
+	#Determines if container items (those that override canFitInsideContainerItems to false) are able to fit in backpacks
+	containerItemsDisallowed = false
+	#List of blocks that are not allowed to connect to backpacks - e.g. "refinedstorage:external_storage"
+	noConnectionBlocks = []
+	#Determines if backpacks can be placed in container items (those that check for return value of canFitInsideContainerItems)
+	canBePlacedInContainerItems = false
+	#Maximum number of upgrades of type per backpack in format of "UpgradeRegistryName[or UpgradeGroup]|MaxNumber"
+	maxUpgradesPerStorage = ["jukebox_upgrade|1", "stack_upgrades|8", "furnace_upgrades|1"]
 
 	#Leather Backpack Settings
 	[server.leatherBackpack]
@@ -407,7 +413,7 @@
 		#Range: 0.0 ~ 1.0
 		backpackDropChance = 0.0
 		#Chance increase per looting level of mob dropping backpack
-		#Range: 0.0 ~ 0.2
+		#Range: 0.0 ~ 0.3
 		lootingChanceIncreasePerLevel = 0.0
 
 	[server.nerfs]
@@ -421,4 +427,13 @@
 		slownessLevelsPerAdditionalBackpack = 1.0
 		#Determines if active upgrades will only work in the backpack that's worn by the player. Active upgrades are for example magnet, pickup, cooking, feeding upgrades.
 		onlyWornBackpackTriggersUpgrades = false
+
+	#Copper Backpack Settings
+	[server.copperBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 45
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
 

@@ -7,7 +7,9 @@ let removedOutputsBBB = [
     'sophisticatedbackpacks:smoking_upgrade',
     'sophisticatedbackpacks:auto_smoking_upgrade',
     'sophisticatedbackpacks:blasting_upgrade',
-    'sophisticatedbackpacks:auto_blasting_upgrade'
+    'sophisticatedbackpacks:auto_blasting_upgrade',
+    'sophisticatedbackpacks:copper_backpack',
+    'sophisticatedbackpacks:stack_upgrade_starter_tier'
 ];
 onEvent("recipes", event => {
     removedOutputsBBB.forEach(id => {
