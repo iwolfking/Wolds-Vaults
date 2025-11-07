@@ -78,6 +78,46 @@
         "manaCost"
       ]
     },
+     "Concentrate_Base": {
+      "description": [
+        {
+          "text": "Drains all Mob Effects from nearby enemies in a radius. ",
+          "color": "$text"
+        },
+        {
+          "text": "Negative effects are converted into positive ones, and the same effect will always correspond with up to a couple of different effects.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "If you would receive multiple of the same effect, the base duration will be added onto the existing duration for each.",
+          "color": "$text"
+        },
+         {
+          "text": "Depending on your ability level, the level of the effect will also randomly be boosted, making it more potent.",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Cast Ability ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "radius",
+        "baseEffectDuration",
+        "baseAmplitude",
+        "amplitudeScaleChance",
+        "cooldown",
+        "manaCost"
+      ],
+      "next": [
+        "radius",
+        "baseEffectDuration",
+        "baseAmplitude",
+        "amplitudeScaleChance",
+        "cooldown",
+        "manaCost"
+      ]
+    },
     "Sneaky_Getaway": {
       "description": [
         {
