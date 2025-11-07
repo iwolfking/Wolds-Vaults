@@ -345,6 +345,44 @@
                 "id": "expunge_30"
               }
             ]
+          },
+           {
+            "type": "tiered",
+            "id": "Concentrate_Base",
+            "name": "Concentrate",
+            "maxLearnableTier": 1,
+            "tiers": [
+              {
+                "type": "concentrate",
+                "manaCost": 1.0,
+                "learnPointCost": 1,
+                "regretPointCost": 1,
+                "cooldownTicks": 60,
+                "unlockLevel": 0,
+                "radius": 8.0,
+                "baseEffectDuration": 200,
+                "baseAmplitude": 0,
+                "amplitudeScaleChance": 0.25,
+                "particleSteps": 30,
+                "particleDelay": 2,
+                "id": "concentrate_1"
+              },
+               {
+                "type": "concentrate",
+                "manaCost": 2.0,
+                "learnPointCost": 1,
+                "regretPointCost": 1,
+                "cooldownTicks": 60,
+                "unlockLevel": 0,
+                "radius": 8.0,
+                "baseEffectDuration": 200,
+                "baseAmplitude": 0,
+                "amplitudeScaleChance": 0.25,
+                "particleSteps": 30,
+                "particleDelay": 2,
+                "id": "concentrate_2"
+              }
+            ]
           }
         ]
       },
