@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sophisticatedstorage:upgrade_base"
+    ]
+  },
+  "criteria": {
+    "has_larimar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_vault:gem_larimar"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sophisticatedstorage:upgrade_base"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_larimar",
+      "has_the_recipe"
+    ]
+  ]
+}

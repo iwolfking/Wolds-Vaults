@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sophisticatedstorage:tenos_barrel"
+    ]
+  },
+  "criteria": {
+    "has_tenos_plank": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_vault:tenos_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sophisticatedstorage:tenos_barrel"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_tenos_plank",
+      "has_the_recipe"
+    ]
+  ]
+}

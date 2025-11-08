@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sophisticatedstorage:vault_wooden_planks_chest"
+    ]
+  },
+  "criteria": {
+    "has_vault_wooden_planks_plank": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_vault:wooden_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sophisticatedstorage:vault_wooden_planks_chest"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_vault_wooden_planks_plank",
+      "has_the_recipe"
+    ]
+  ]
+}

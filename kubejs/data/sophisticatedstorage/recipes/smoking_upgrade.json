@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "itemRegistryName": "sophisticatedstorage:smoking_upgrade",
+      "type": "sophisticatedcore:item_enabled"
+    }
+  ],
+  "pattern": [
+    "RIR",
+    "IBI",
+    "RSR"
+  ],
+  "key": {
+    "B": {
+      "item": "sophisticatedstorage:upgrade_base"
+    },
+    "R": {
+      "item": "the_vault:vault_essence"
+    },
+    "I": {
+      "item": "the_vault:chromatic_iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:smoker"
+    }
+  },
+  "result": {
+    "item": "sophisticatedstorage:smoking_upgrade"
+  }
+}

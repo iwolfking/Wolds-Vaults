@@ -1,0 +1,31 @@
+{
+  "type": "sophisticatedstorage:storage_tier_upgrade",
+  "conditions": [
+    {
+      "itemRegistryName": "sophisticatedstorage:limited_gold_barrel_3",
+      "type": "sophisticatedcore:item_enabled"
+    }
+  ],
+  "pattern": [
+    "VLV",
+    "GSG",
+    "VLV"
+  ],
+  "key": {
+    "G": {
+      "item": "the_vault:chromatic_gold_ingot"
+    },
+    "L": {
+      "item": "the_vault:perfect_larimar"
+    },
+    "V": {
+      "item": "the_vault:chromatic_steel_ingot"
+    },
+    "S": {
+      "item": "sophisticatedstorage:limited_iron_barrel_3"
+    }
+  },
+  "result": {
+    "item": "sophisticatedstorage:limited_gold_barrel_3"
+  }
+}

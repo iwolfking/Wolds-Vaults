@@ -1,0 +1,31 @@
+{
+  "type": "sophisticatedcore:upgrade_next_tier",
+  "conditions": [
+    {
+      "itemRegistryName": "sophisticatedstorage:advanced_pickup_upgrade",
+      "type": "sophisticatedcore:item_enabled"
+    }
+  ],
+  "pattern": [
+    " D ",
+    "GPG",
+    "RRR"
+  ],
+  "key": {
+    "D": {
+      "item": "the_vault:vault_diamond"
+    },
+    "G": {
+      "item": "the_vault:chromatic_steel_ingot"
+    },
+    "R": {
+      "item": "the_vault:vault_essence"
+    },
+    "P": {
+      "item": "sophisticatedstorage:pickup_upgrade"
+    }
+  },
+  "result": {
+    "item": "sophisticatedstorage:advanced_pickup_upgrade"
+  }
+}

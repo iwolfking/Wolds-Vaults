@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sophisticatedstorage:overgrown_limited_barrel_3"
+    ]
+  },
+  "criteria": {
+    "has_overgrown_plank": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_vault:overgrown_wooden_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sophisticatedstorage:overgrown_limited_barrel_3"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_overgrown_plank",
+      "has_the_recipe"
+    ]
+  ]
+}

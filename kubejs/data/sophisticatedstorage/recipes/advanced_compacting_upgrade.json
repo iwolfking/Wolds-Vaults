@@ -1,0 +1,31 @@
+{
+  "type": "sophisticatedcore:upgrade_next_tier",
+  "conditions": [
+    {
+      "itemRegistryName": "sophisticatedstorage:advanced_compacting_upgrade",
+      "type": "sophisticatedcore:item_enabled"
+    }
+  ],
+  "pattern": [
+    " D ",
+    "GCG",
+    "RRR"
+  ],
+  "key": {
+    "D": {
+      "item": "the_vault:vault_diamond"
+    },
+    "G": {
+      "item": "the_vault:black_chromatic_steel_ingot"
+    },
+    "R": {
+      "item": "the_vault:vault_essence"
+    },
+    "C": {
+      "item": "sophisticatedstorage:compacting_upgrade"
+    }
+  },
+  "result": {
+    "item": "sophisticatedstorage:advanced_compacting_upgrade"
+  }
+}

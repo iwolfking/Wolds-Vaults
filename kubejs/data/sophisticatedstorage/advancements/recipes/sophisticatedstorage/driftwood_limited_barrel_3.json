@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sophisticatedstorage:driftwood_limited_barrel_3"
+    ]
+  },
+  "criteria": {
+    "has_driftwood_plank": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_vault:driftwood_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sophisticatedstorage:driftwood_limited_barrel_3"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_driftwood_plank",
+      "has_the_recipe"
+    ]
+  ]
+}

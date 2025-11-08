@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "itemRegistryName": "sophisticatedstorage:pickup_upgrade",
+      "type": "sophisticatedcore:item_enabled"
+    }
+  ],
+  "pattern": [
+    " P ",
+    "LBL",
+    "RRR"
+  ],
+  "key": {
+    "B": {
+      "item": "sophisticatedstorage:upgrade_base"
+    },
+    "R": {
+      "item": "the_vault:vault_essence"
+    },
+    "L": {
+      "item": "the_vault:driftwood"
+    },
+    "P": {
+      "item": "minecraft:hopper"
+    }
+  },
+  "result": {
+    "item": "sophisticatedstorage:pickup_upgrade"
+  }
+}

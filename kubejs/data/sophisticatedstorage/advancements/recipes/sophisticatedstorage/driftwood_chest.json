@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sophisticatedstorage:driftwood_chest"
+    ]
+  },
+  "criteria": {
+    "has_driftwood_plank": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_vault:driftwood_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sophisticatedstorage:driftwood_chest"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_driftwood_plank",
+      "has_the_recipe"
+    ]
+  ]
+}

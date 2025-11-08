@@ -1,0 +1,28 @@
+{
+  "type": "sophisticatedstorage:storage_tier_upgrade",
+  "conditions": [
+    {
+      "itemRegistryName": "sophisticatedstorage:diamond_chest",
+      "type": "sophisticatedcore:item_enabled"
+    }
+  ],
+  "pattern": [
+    "LDL",
+    "DSD",
+    "LDL"
+  ],
+  "key": {
+    "D": {
+      "item": "the_vault:vault_diamond"
+    },
+     "L": {
+      "item": "the_vault:perfect_larimar"
+    },
+    "S": {
+      "item": "sophisticatedstorage:gold_chest"
+    }
+  },
+  "result": {
+    "item": "sophisticatedstorage:diamond_chest"
+  }
+}
