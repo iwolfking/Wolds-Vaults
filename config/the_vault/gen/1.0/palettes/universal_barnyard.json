@@ -1,0 +1,635 @@
+{
+    "tile_processors": [
+        {
+            "type": "reference",
+            "id": "the_vault:generic/treasure_door_placeholder"
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:stone",
+            "output": {
+                "chipped:stripped_dark_oak_log_2": 1,
+                "chipped:stripped_spruce_log_7": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cobblestone",
+            "output": {
+                "minecraft:podzol": 35,
+                "regions_unexplored:alpha_leaves": 35,
+                "auxiliaryblocks:mossy_dirt": 30
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:gray_concrete",
+            "output": {
+                "chipped:dark_oak_planks_8": 1,
+                "chipped:stripped_dark_oak_log_4": 1,
+                "architects_palette:spruce_boards": 3,
+                "minecraft:rooted_dirt": 5
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:grass_block",
+            "output": {
+                "regions_unexplored:alpha_grass_block": 65,
+                "minecraft:moss_block": 5
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:dirt",
+            "output": {
+                "auxiliaryblocks:mossy_dirt": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:coarse_dirt",
+            "output": {
+                "chipped:dirt_21": 35,
+                "minecraft:dirt": 30,
+                "chipped:dirt_7": 35
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:stone_slab",
+            "output": {
+                "quark:midori_block_slab": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cobblestone_slab",
+            "output": {
+                "minecraft:spruce_slab": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:spruce_slab",
+            "output": {
+                "minecraft:dark_oak_slab": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:purple_wool",
+            "output": {
+                "chipped:dark_oak_leaves_1": 35,
+                "minecraft:dark_oak_leaves": 35,
+                "minecraft:spruce_fence": 30
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:water",
+            "output": {
+                "auxiliaryblocks:brown_water": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:birch_log",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:birch_fence",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:warped_fence",
+            "output": {
+                "minecraft:dark_oak_fence": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:warped_wart_block",
+            "output": {
+                "chipped:dark_oak_leaves_3": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:shroomlight",
+            "output": {
+                "regions_unexplored:alpha_leaves": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "architects_palette:twisted_fence",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cave_vines_plant",
+            "output": {
+                "minecraft:air": 5
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cave_vines",
+            "output": {
+                "minecraft:air": 5
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:spore_blossom",
+            "output": {
+                "mcwlights:covered_lantern": 1,
+                "minecraft:air": 2
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:brown_wool",
+            "output": {
+                "minecraft:hanging_roots": 1,
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:pink_wool",
+            "output": {
+                "regions_unexplored:alpha_leaves": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:grass",
+            "output": {
+                "minecraft:cornflower": 3,
+                "minecraft:poppy": 3,
+                "minecraft:grass": 2
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:tall_grass[half=lower]",
+            "output": {
+                "minecraft:rose_bush[half=lower]": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:tall_grass[half=upper]",
+            "output": {
+                "minecraft:rose_bush[half=upper]": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:twisting_vines_plant",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:twisting_vines",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:fern",
+            "output": {
+                "quark:dark_oak_leaf_carpet": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:lime_wool",
+            "output": {
+                "minecraft:spruce_leaves": 1,
+                "chipped:spruce_leaves_5": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cyan_wool",
+            "output": {
+                 "regions_unexplored:alpha_leaves": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_log",
+            "output": {
+                "minecraft:stripped_dark_oak_log": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_wood",
+            "output": {
+                "minecraft:stripped_dark_oak_wood": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_leaves",
+            "output": {
+                "minecraft:spruce_leaves": 1,
+                "chipped:spruce_leaves_5": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_planks",
+            "output": {
+                "minecraft:spruce_planks": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_fence",
+            "output": {
+                "minecraft:spruce_fence": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_slab",
+            "output": {
+                "minecraft:spruce_slab": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_trapdoor",
+            "output": {
+                "mcwtrpdoors:dark_oak_barn_trapdoor": 30,
+                "mcwtrpdoors:dark_oak_cottage_trapdoor": 35,
+                "minecraft:dark_oak_trapdoor": 35
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_stairs",
+            "output": {
+                "minecraft:dark_oak_stairs": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_fence_gate",
+            "output": {
+                "minecraft:dark_oak_fence_gate": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_door",
+            "output": {
+                "mcwdoors:dark_oak_barn_door": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:stone_bricks",
+            "output": {
+                "minecraft:stone_bricks": 4,
+                "architects_palette:heavy_mossy_stone_bricks": 2,
+                "minecraft:mossy_stone_bricks": 2,
+                "architects_palette:heavy_stone_bricks": 2
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:stone_brick_stairs",
+            "output": {
+                "minecraft:stone_brick_stairs": 3,
+                "minecraft:mossy_stone_brick_stairs": 2
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "create:andesite_pillar",
+            "output": {
+                "create:andesite_pillar": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:chiseled_stone_bricks",
+            "output": {
+                "minecraft:chiseled_stone_bricks": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:stone_brick_slab",
+            "output": {
+                "minecraft:mossy_stone_brick_slab": 2,
+                "minecraft:stone_brick_slab": 3
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "quark:stone_brick_vertical_slab",
+            "output": {
+                "quark:mossy_stone_brick_vertical_slab": 2,
+                "quark:stone_brick_vertical_slab": 3
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "quark:stone_vertical_slab",
+            "output": {
+                "quark:stone_vertical_slab": 3,
+                "quark:cobblestone_vertical_slab": 1,
+                "quark:mossy_cobblestone_vertical_slab": 2
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:stone_brick_wall",
+            "output": {
+                "minecraft:mossy_stone_brick_wall": 2,
+                "minecraft:stone_brick_wall": 3
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cobblestone_wall",
+            "output": {
+                "minecraft:cobblestone_wall": 3,
+                "minecraft:mossy_cobblestone_wall": 2
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cobblestone_stairs",
+            "output": {
+                "minecraft:cobblestone_stairs": 3,
+                "minecraft:mossy_cobblestone_stairs": 2
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:mossy_stone_bricks",
+            "output": {
+                "minecraft:mossy_stone_bricks": 3,
+                "architects_palette:heavy_mossy_stone_bricks": 2
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:mossy_cobblestone",
+            "output": {
+                "minecraft:mossy_cobblestone": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:green_concrete",
+            "output": {
+                "minecraft:moss_block": 30,
+                "minecraft:azalea_leaves": 35,
+                "minecraft:flowering_azalea_leaves": 35
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:magma_block",
+            "output": {
+                "minecraft:magma_block": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:lava",
+            "output": {
+                "minecraft:lava": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:moss_carpet",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "decorative_blocks:brazier",
+            "output": {
+                "decorative_blocks:brazier": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:campfire",
+            "output": {
+                "minecraft:campfire": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:lantern",
+            "output": {
+                "minecraft:lantern": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "supplementaries:wall_lantern{Lantern:{Name:\"minecraft:lantern\"}}",
+            "output": {
+                "supplementaries:wall_lantern{Lantern:{Name:\"minecraft:lantern\",Properties:{waterlogged:\"false\", hanging:\"false\"}}}": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:soul_lantern",
+            "output": {
+                "minecraft:lantern": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:glass",
+            "output": {
+                "minecraft:light[level=15]": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:cyan_stained_glass",
+            "output": {
+                "minecraft:water": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:light_blue_stained_glass",
+            "output": {
+                "minecraft:water": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:bookshelf",
+            "output": {
+                "quark:dark_oak_bookshelf": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "ecologics:azalea_log",
+            "output": {
+                "minecraft:stripped_dark_oak_log": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "ecologics:azalea_fence",
+            "output": {
+                "minecraft:dark_oak_fence": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "create:cut_crimsite_wall",
+            "output": {
+                "minecraft:spruce_leaves": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "quark:azalea_log",
+            "output": {
+                "create:andesite_pillar": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "quark:azalea_planks",
+            "output": {
+                "minecraft:chiseled_stone_bricks": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "quark:azalea_planks_stairs",
+            "output": {
+                "minecraft:stone_brick_stairs": 3,
+                "minecraft:mossy_stone_brick_stairs": 2
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "create:cut_veridium_wall",
+            "output": {
+                "minecraft:mossy_stone_brick_wall": 2,
+                "minecraft:stone_brick_wall": 3
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:sand",
+            "output": {
+                "minecraft:sand": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:potted_oak_sapling",
+            "output": {
+                "minecraft:potted_flowering_azalea_bush": 1,
+                "ecologics:potted_azalea_flower": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "quark:oak_hedge",
+            "output": {
+                "quark:spruce_hedge": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "decorative_blocks:oak_support",
+            "output": {
+                "everycomp:db/quark/azalea_support": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:end_stone_bricks",
+            "output": {
+                "auxiliaryblocks:gray_pastel": 1,
+                "auxiliaryblocks:smooth_gray_pastel": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:end_stone_brick_stairs",
+            "output": {
+                "minecraft:quartz_stairs": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:end_stone_brick_slab",
+            "output": {
+                "minecraft:quartz_slab": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:end_stone",
+            "output": {
+                "minecraft:spruce_leaves": 1
+            }
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/room_base"
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/spawners/barnyard_mobs"
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/common_elite_spawners"
+        },
+        {
+            "type": "template_stack_tile",
+            "target": "@the_vault:vault_lootables",
+            "stack": [
+                "THEME_BARNYARD",
+                "THEME_CATEGORY_BARNYARD"
+            ]
+        },
+        {
+            "type": "template_stack_spawner",
+            "target": "ispawner:spawner",
+            "stack": [
+                "THEME_BARNYARD",
+                "THEME_CATEGORY_BARNYARD"
+            ]
+        }
+    ],
+    "entity_processors": [],
+    "decorators": []
+}
