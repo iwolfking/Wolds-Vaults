@@ -1,0 +1,126 @@
+{
+  "entries": [
+    {
+      "roll": {
+        "type": "uniform",
+        "min": 1,
+        "max": 1
+      },
+      "pool": [
+        {
+          "weight": 25,
+          "pool": [
+            {
+              "weight": 25,
+              "item": {
+                "id": "the_vault:soul_shard",
+                "count": {
+                  "type": "uniform",
+                  "min": 32,
+                  "max": 128
+                }
+              }
+            }
+          ]
+        },
+        {
+          "weight": 25,
+          "pool": [
+            {
+              "weight": 25,
+              "item": {
+                "id": "the_vault:vault_bronze",
+                "count": {
+                  "type": "uniform",
+                  "min": 16,
+                  "max": 42
+                }
+              }
+            }
+          ]
+        },
+        {
+          "weight": 10,
+          "pool": [
+            {
+              "weight": 8,
+              "item": {
+                "id": "the_vault:vault_bronze",
+                "count": {
+                  "type": "uniform",
+                  "min": 8,
+                  "max": 16
+                }
+              }
+            },
+            {
+              "weight": 8,
+              "item": {
+                "id": "the_vault:vault_silver",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "weight": 5,
+          "pool": [
+            {
+              "weight": 20,
+              "item": {
+                "id": "the_vault:vault_gold",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "weight": 8,
+              "item": {
+                "id": "the_vault:vault_silver",
+                "count": {
+                  "type": "uniform",
+                  "min": 3,
+                  "max": 6
+                }
+              }
+            }
+          ]
+        },
+        {
+          "weight": 5,
+          "pool": [
+            {
+              "weight": 2,
+              "item": {
+                "id": "the_vault:phoenix_dust",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+                "id": "the_vault:lost_bounty",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
