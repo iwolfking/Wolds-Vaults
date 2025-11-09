@@ -51,6 +51,10 @@ craftingTable.addShapeless("quark_uncraft_carrot_crate", <item:minecraft:carrot>
     <item:quark:carrot_crate>
 ]);
 
+craftingTable.addShapeless("quark_uncraft_potato_crate", <item:minecraft:potato> *9, [
+    <item:quark:potato_crate>
+]);
+
 for colorId, colorName in colors {
   craftingTable.addShapeless("quark_" + colorName + "_corundum", <item:quark:${colorId}>, [
     <item:quark:${colorId}_cluster>, <item:quark:${colorId}_cluster>,
