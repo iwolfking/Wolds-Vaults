@@ -1,276 +1,328 @@
-let removedOutputsBBB = [
-    'sophisticatedbackpacks:crafting_upgrade',
-    'sophisticatedbackpacks:compacting_upgrade',
-    'sophisticatedbackpacks:advanced_compacting_upgrade',
-    'sophisticatedbackpacks:smelting_upgrade',
-    'sophisticatedbackpacks:auto_smelting_upgrade',
-    'sophisticatedbackpacks:smoking_upgrade',
-    'sophisticatedbackpacks:auto_smoking_upgrade',
-    'sophisticatedbackpacks:blasting_upgrade',
-    'sophisticatedbackpacks:auto_blasting_upgrade',
-    'sophisticatedbackpacks:copper_backpack',
-    'sophisticatedbackpacks:stack_upgrade_starter_tier'
-];
-onEvent("recipes", event => {
-    removedOutputsBBB.forEach(id => {
-        event.remove({ 'output': `${id}` })
-    })
+onEvent('recipes', event => {
 
-    event.remove({ id: 'sophisticatedbackpacks:void_upgrade' })
-    event.remove({ id: 'sophisticatedbackpacks:advanced_void_upgrade' })
+    // --- Standard Shaped Recipes ---
 
-    event.shaped(Item.of('sophisticatedbackpacks:crafting_upgrade'),
-        [
-            'ITI',
-            'XCX',
-            'IGI'
-        ], {
-        C: 'sophisticatedbackpacks:upgrade_base',
-        I: 'the_vault:chromatic_steel_ingot',
-        T: 'craftingstation:crafting_station',
-        G: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence'
-    })
+    // Basic Backpack
+    event.shaped('sophisticatedbackpacks:backpack', [
+        'SDS',
+        'PMP',
+        'SDS'
+    ], {
+        S: 'minecraft:shulker_shell',
+        D: 'the_vault:vault_diamond',
+        P: 'the_vault:perfect_larimar',
+        M: 'the_vault:magic_silk_block'
+    }).id('sophisticatedbackpacks:backpack');
 
-    event.shaped(Item.of('sophisticatedbackpacks:everlasting_upgrade'),
-        [
-            'XOX',
-            'OCO',
-            'XOX'
-        ], {
-        C: 'sophisticatedbackpacks:upgrade_base',
-        O: 'minecraft:nether_star',
-        X: 'the_vault:pog_prism'
-    }).id('sophisticatedbackpacks:everlasting_upgrade')
+    // Upgrade Base
+    event.shaped('sophisticatedbackpacks:upgrade_base', [
+        'CVC',
+        'PMP',
+        'CVC'
+    ], {
+        C: 'the_vault:chromatic_iron_ingot',
+        V: 'the_vault:vault_essence',
+        P: 'the_vault:perfect_larimar',
+        M: 'the_vault:magic_silk_block'
+    }).id('sophisticatedbackpacks:upgrade_base');
 
-    event.shaped(Item.of('sophisticatedbackpacks:xp_pump_upgrade'),
-        [
-            'XAX',
-            'BCB',
-            'XAX'
-        ], {
-        C: 'sophisticatedbackpacks:pump_upgrade',
-        A: 'the_vault:gem_pog',
-        B: 'minecraft:experience_bottle',
-        X: 'the_vault:vault_diamond'
-    }).id('sophisticatedbackpacks:xp_pump_upgrade')
+    // Stack Upgrades
+    event.shaped('sophisticatedbackpacks:stack_upgrade_tier_1', [
+        'CVC',
+        'PBP',
+        'CVC'
+    ], {
+        C: 'the_vault:chromatic_iron_ingot',
+        V: 'the_vault:vault_diamond',
+        P: 'the_vault:perfect_larimar',
+        B: 'sophisticatedbackpacks:upgrade_base'
+    }).id('sophisticatedbackpacks:stack_upgrade_tier_1');
 
-    event.shaped(Item.of('sophisticatedbackpacks:tank_upgrade'),
-        [
-            'XOX',
-            'OCO',
-            'XOX'
-        ], {
-        C: 'sophisticatedbackpacks:upgrade_base',
-        O: '#forge:glass',
-        X: 'the_vault:chromatic_gold_ingot'
-    }).id('sophisticatedbackpacks:tank_upgrade')
+    event.shaped('sophisticatedbackpacks:stack_upgrade_tier_2', [
+        'CVC',
+        'PBP',
+        'CVC'
+    ], {
+        C: 'the_vault:chromatic_iron_block',
+        V: 'the_vault:vault_diamond',
+        P: 'the_vault:extraordinary_larimar',
+        B: 'sophisticatedbackpacks:stack_upgrade_tier_1'
+    }).id('sophisticatedbackpacks:stack_upgrade_tier_2');
 
-    event.shaped(Item.of('sophisticatedbackpacks:pump_upgrade'),
-        [
-            'XBX',
-            'ACD',
-            'XBX'
-        ], {
-        C: 'sophisticatedbackpacks:upgrade_base',
-        X: '#forge:glass',
-        B: 'minecraft:bucket',
-        A: 'the_vault:chromatic_steel_block',
-        D: 'the_vault:vault_diamond_block'
-    }).id('sophisticatedbackpacks:pump_upgrade')
+    event.shaped('sophisticatedbackpacks:stack_upgrade_tier_3', [
+        'CEC',
+        'PBP',
+        'CEC'
+    ], {
+        C: 'the_vault:chromatic_steel_ingot',
+        E: 'the_vault:gem_pog',
+        P: 'the_vault:extraordinary_larimar',
+        B: 'sophisticatedbackpacks:stack_upgrade_tier_2'
+    }).id('sophisticatedbackpacks:stack_upgrade_tier_3');
 
-    event.shaped(Item.of('sophisticatedbackpacks:advanced_pump_upgrade'),
-        [
-            'ADA',
-            'GCG',
-            'RRR'
-        ], {
-        C: 'sophisticatedbackpacks:pump_upgrade',
-        A: 'the_vault:vault_diamond',
-        G: 'the_vault:chromatic_gold_ingot',
-        R: 'the_vault:vault_essence',
-        D: 'minecraft:dispenser'
-    }).id('sophisticatedbackpacks:advanced_pump_upgrade')
+    event.shaped('sophisticatedbackpacks:stack_upgrade_tier_4', [
+        'CBC',
+        'PBP',
+        'CEC'
+    ], {
+        C: 'the_vault:black_chromatic_steel_ingot',
+        B: 'sophisticatedbackpacks:stack_upgrade_tier_3',
+        P: 'the_vault:extraordinary_larimar',
+        E: 'the_vault:vault_diamond_block'
+    }).id('sophisticatedbackpacks:stack_upgrade_tier_4');
 
-    event.shaped(Item.of('sophisticatedbackpacks:battery_upgrade'),
-        [
-            'XOX',
-            'OCO',
-            'XOX'
-        ], {
-        C: 'sophisticatedbackpacks:upgrade_base',
-        O: 'the_vault:vault_essence_1',
-        X: 'the_vault:chromatic_gold_block'
-    }).id('sophisticatedbackpacks:battery_upgrade')
+    // Refill Upgrade
+    event.shaped('sophisticatedbackpacks:refill_upgrade', [
+        'SMS',
+        'CPC',
+        'RVR'
+    ], {
+        S: 'the_vault:magic_silk',
+        M: 'the_vault:gem_pog',
+        C: 'the_vault:chromatic_steel_ingot',
+        P: 'sophisticatedbackpacks:upgrade_base',
+        R: 'minecraft:redstone_block',
+        V: 'the_vault:vault_diamond_block'
+    }).id('sophisticatedbackpacks:refill_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:tool_swapper_upgrade'),
-        [
-            'YAY',
-            'BCE',
-            'XDX'
-        ], {
-        C: 'sophisticatedbackpacks:upgrade_base',
-        A: 'minecraft:netherite_sword',
-        B: 'minecraft:netherite_pickaxe',
-        E: 'minecraft:netherite_axe',
-        D: 'minecraft:netherite_shovel',
-        X: 'the_vault:chromatic_steel_block',
-        Y: 'the_vault:gem_pog'
-    }).id('sophisticatedbackpacks:tool_swapper_upgrade')
+    // Void Upgrade
+    event.shaped('sophisticatedbackpacks:void_upgrade', [
+        'CDC',
+        'BVB',
+        'CVC'
+    ], {
+        C: 'the_vault:chromatic_steel_ingot',
+        D: 'the_vault:gem_echo',
+        B: 'sophisticatedbackpacks:upgrade_base',
+        V: 'the_vault:vault_diamond'
+    }).id('sophisticatedbackpacks:void_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:advanced_tool_swapper_upgrade'),
-        [
-            ' T ',
-            'XCX',
-            'III'
-        ], {
-        C: 'sophisticatedbackpacks:tool_swapper_upgrade',
-        I: 'the_vault:vault_diamond_block',
-        T: 'the_vault:gem_pog',
-        X: 'the_vault:chromatic_gold_block'
-    }).id('sophisticatedbackpacks:advanced_tool_swapper_upgrade')
+    // Advanced Void Upgrade
+    event.shaped('sophisticatedbackpacks:advanced_void_upgrade', [
+        'CBC',
+        'BVB',
+        'RDR'
+    ], {
+        C: 'the_vault:black_chromatic_steel_ingot',
+        B: 'sophisticatedbackpacks:void_upgrade',
+        V: 'the_vault:chromatic_steel_block',
+        D: 'the_vault:gem_echo',
+        R: 'minecraft:redstone_block'
+    }).id('sophisticatedbackpacks:advanced_void_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:compacting_upgrade'),
-        [
-            'ITI',
-            'XCX',
-            'IGI'
-        ], {
-        C: 'sophisticatedbackpacks:upgrade_base',
-        I: 'the_vault:vault_diamond_block',
-        T: 'minecraft:piston',
-        G: 'the_vault:pog_prism',
-        X: 'the_vault:vault_essence_2'
-    })
+    // Feeding Upgrade
+    event.shaped('sophisticatedbackpacks:feeding_upgrade', [
+        'CMC',
+        'PBP',
+        'CEC'
+    ], {
+        C: 'the_vault:chromatic_steel_ingot',
+        M: 'minecraft:golden_carrot',
+        P: 'sophisticatedbackpacks:upgrade_base',
+        B: 'the_vault:chromatic_steel_ingot',
+        E: 'minecraft:golden_apple'
+    }).id('sophisticatedbackpacks:feeding_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:advanced_compacting_upgrade'),
-        [
-            'ITI',
-            'XCX',
-            'IGI'
-        ], {
-        C: 'sophisticatedbackpacks:compacting_upgrade',
-        I: 'minecraft:piston',
-        T: 'the_vault:omega_pog',
-        G: 'the_vault:black_chromatic_steel_block',
-        X: 'the_vault:vault_essence_2'
-    })
+    // Advanced Feeding Upgrade
+    event.shaped('sophisticatedbackpacks:advanced_feeding_upgrade', [
+        'CMC',
+        'PBP',
+        'CEC'
+    ], {
+        C: 'the_vault:chromatic_steel_ingot',
+        M: 'the_vault:vault_diamond',
+        P: 'sophisticatedbackpacks:feeding_upgrade',
+        B: 'the_vault:chromatic_steel_ingot',
+        E: 'minecraft:gold_block'
+    }).id('sophisticatedbackpacks:advanced_feeding_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:smelting_upgrade'),
-        [
-            'ITI',
-            'XCX',
-            'IGI'
-        ], {
-        C: 'sophisticatedbackpacks:upgrade_base',
-        I: 'the_vault:chromatic_iron_ingot',
-        T: 'minecraft:furnace',
-        G: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence'
-    })
+    // Pickup Upgrade
+    event.shaped('sophisticatedbackpacks:pickup_upgrade', [
+        'DHD',
+        'PBP',
+        'CEC'
+    ], {
+        D: 'the_vault:vault_diamond',
+        H: 'minecraft:hopper',
+        P: 'sophisticatedbackpacks:upgrade_base',
+        B: 'the_vault:chromatic_steel_ingot',
+        C: 'the_vault:magic_silk',
+        E: 'minecraft:redstone_block'
+    }).id('sophisticatedbackpacks:pickup_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:auto_smelting_upgrade'),
-        [
-            'ITI',
-            'XCX',
-            'IGI'
-        ], {
-        C: 'sophisticatedbackpacks:smelting_upgrade',
-        I: 'the_vault:vault_essence_1',
-        T: 'minecraft:hopper',
-        G: 'the_vault:pog_prism',
-        X: 'the_vault:chromatic_steel_block'
-    })
+    // Advanced Pickup Upgrade
+    event.shaped('sophisticatedbackpacks:advanced_pickup_upgrade', [
+        'DHD',
+        'PBP',
+        'CEC'
+    ], {
+        D: 'the_vault:chromatic_steel_ingot',
+        H: 'the_vault:vault_diamond',
+        P: 'sophisticatedbackpacks:pickup_upgrade',
+        B: 'the_vault:chromatic_steel_ingot',
+        C: 'minecraft:gold_block',
+        E: 'minecraft:redstone_block'
+    }).id('sophisticatedbackpacks:advanced_pickup_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:smoking_upgrade'),
-        [
-            'ITI',
-            'XCX',
-            'IGI'
-        ], {
-        C: 'sophisticatedbackpacks:upgrade_base',
-        I: 'the_vault:chromatic_iron_ingot',
-        T: 'minecraft:smoker',
-        G: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence'
-    })
+    // Filter Upgrade
+    event.shaped('sophisticatedbackpacks:filter_upgrade', [
+        'CMC',
+        'PBP',
+        'CEC'
+    ], {
+        C: 'the_vault:perfect_larimar',
+        M: 'the_vault:magic_silk',
+        P: 'sophisticatedbackpacks:upgrade_base',
+        B: 'the_vault:perfect_larimar',
+        E: 'minecraft:redstone_block'
+    }).id('sophisticatedbackpacks:filter_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:auto_smoking_upgrade'),
-        [
-            'ITI',
-            'XCX',
-            'IGI'
-        ], {
-        C: 'sophisticatedbackpacks:smoking_upgrade',
-        I: 'the_vault:vault_essence_1',
-        T: 'minecraft:hopper',
-        G: 'the_vault:pog_prism',
-        X: 'the_vault:chromatic_steel_block'
-    })
+    // Advanced Filter Upgrade
+    event.shaped('sophisticatedbackpacks:advanced_filter_upgrade', [
+        'DHD',
+        'PBP',
+        'CEC'
+    ], {
+        D: 'the_vault:chromatic_steel_ingot',
+        H: 'the_vault:vault_diamond',
+        P: 'sophisticatedbackpacks:filter_upgrade',
+        B: 'the_vault:chromatic_steel_ingot',
+        C: 'minecraft:gold_block',
+        E: 'minecraft:redstone_block'
+    }).id('sophisticatedbackpacks:advanced_filter_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:blasting_upgrade'),
-        [
-            'ITI',
-            'XCX',
-            'IGI'
-        ], {
-        C: 'sophisticatedbackpacks:upgrade_base',
-        I: 'the_vault:chromatic_iron_ingot',
-        T: 'minecraft:blast_furnace',
-        G: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence'
-    })
+    // Restock Upgrade
+    event.shaped('sophisticatedbackpacks:restock_upgrade', [
+        'CEC',
+        'PBP',
+        'CEC'
+    ], {
+        C: 'the_vault:chromatic_iron_block',
+        E: 'the_vault:gem_echo',
+        P: 'sophisticatedbackpacks:upgrade_base',
+        B: 'the_vault:magic_silk'
+    }).id('sophisticatedbackpacks:restock_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:auto_blasting_upgrade'),
-        [
-            'ITI',
-            'XCX',
-            'IGI'
-        ], {
-        C: 'sophisticatedbackpacks:blasting_upgrade',
-        I: 'the_vault:vault_essence_1',
-        T: 'minecraft:hopper',
-        G: 'the_vault:pog_prism',
-        X: 'the_vault:chromatic_steel_block'
-    })
+    // Advanced Restock Upgrade
+    event.shaped('sophisticatedbackpacks:advanced_restock_upgrade', [
+        'DHD',
+        'PBP',
+        'CEC'
+    ], {
+        D: 'the_vault:chromatic_steel_ingot',
+        H: 'the_vault:vault_diamond',
+        P: 'sophisticatedbackpacks:restock_upgrade',
+        B: 'the_vault:chromatic_steel_ingot',
+        C: 'minecraft:gold_block',
+        E: 'minecraft:redstone_block'
+    }).id('sophisticatedbackpacks:advanced_restock_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:inception_upgrade'),
-        [
-            'IXI',
-            'ICI',
-            'IGI'
-        ], {
-        C: 'sophisticatedbackpacks:stack_upgrade_tier_4',
-        I: 'the_vault:echo_pog_1',
-        G: 'the_vault:wold_star',
-        X: 'the_vault:omega_pog_1'
-    }).id('sophisticatedbackpacks:inception_upgrade')
+    // Deposit Upgrade
+    event.shaped('sophisticatedbackpacks:deposit_upgrade', [
+        'CEC',
+        'PBP',
+        'CEC'
+    ], {
+        C: 'the_vault:chromatic_iron_block',
+        E: 'the_vault:black_chromatic_steel_ingot',
+        P: 'sophisticatedbackpacks:upgrade_base',
+        B: 'the_vault:magic_silk'
+    }).id('sophisticatedbackpacks:deposit_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:void_upgrade'),
-        [
-            'SXS',
-            'BCB',
-            'ABA'
-        ], {
-        C: 'sophisticatedbackpacks:upgrade_base',
-        S: 'the_vault:chromatic_steel_ingot',
-        B: 'the_vault:vault_diamond',
-        A: 'the_vault:chromatic_steel_block',
-        X: 'the_vault:void_liquid_bucket'
-    }).id('sophisticatedbackpacks:void_upgrade_alt')
+    // Advanced Deposit Upgrade
+    event.shaped('sophisticatedbackpacks:advanced_deposit_upgrade', [
+        'DHD',
+        'PBP',
+        'CEC'
+    ], {
+        D: 'the_vault:chromatic_steel_ingot',
+        H: 'the_vault:vault_diamond',
+        P: 'sophisticatedbackpacks:deposit_upgrade',
+        B: 'the_vault:chromatic_steel_ingot',
+        C: 'minecraft:gold_block',
+        E: 'minecraft:redstone_block'
+    }).id('sophisticatedbackpacks:advanced_deposit_upgrade');
 
-    event.shaped(Item.of('sophisticatedbackpacks:advanced_void_upgrade'),
-        [
-            'SXS',
-            'BCB',
-            'ALA'
-        ], {
-        C: 'sophisticatedbackpacks:void_upgrade',
-        S: 'the_vault:black_chromatic_steel_ingot',
-        B: 'the_vault:vault_diamond',
-        A: 'minecraft:redstone_block',
-        X: 'the_vault:void_liquid_bucket',
-        L: 'the_vault:carbon'
-    }).id('sophisticatedbackpacks:advanced_void_upgrade_alt')
+    // Advanced Refill Upgrade
+    event.shaped('sophisticatedbackpacks:advanced_refill_upgrade', [
+        'DHD',
+        'PBP',
+        'CEC'
+    ], {
+        D: 'the_vault:chromatic_steel_ingot',
+        H: 'the_vault:vault_diamond_block',
+        P: 'sophisticatedbackpacks:refill_upgrade',
+        B: 'sophisticatedbackpacks:refill_upgrade',
+        C: 'the_vault:chromatic_steel_ingot',
+        E: 'the_vault:chromatic_steel_ingot'
+    }).id('sophisticatedbackpacks:advanced_refill_upgrade');
 
-})
+    // --- Backpack Upgrade Recipes ---
+    // These require event.custom() because of the SophisticatedBackpacks upgrade type
+
+    function backpackUpgrade(id, pattern, key, result) {
+        event.custom({
+            type: 'sophisticatedbackpacks:backpack_upgrade',
+            pattern: pattern,
+            key: key,
+            result: { item: result }
+        }).id(id);
+    }
+
+    // Iron Backpack
+    backpackUpgrade('sophisticatedbackpacks:iron_backpack', 
+        ['ILI','PBP','MSM'], 
+        {
+            I: {item: 'the_vault:vault_diamond'},
+            L: {item: 'the_vault:vault_diamond_block'},
+            P: {item: 'the_vault:extraordinary_larimar'},
+            M: {item: 'the_vault:magic_silk_block'},
+            S: {item: 'the_vault:magic_silk'},
+            B: {item: 'sophisticatedbackpacks:backpack'}
+        },
+        'sophisticatedbackpacks:iron_backpack'
+    );
+
+    // Gold Backpack
+    backpackUpgrade('sophisticatedbackpacks:gold_backpack', 
+        ['ILI','PBP','MSM'], 
+        {
+            I: {item: 'the_vault:vault_diamond'},
+            L: {item: 'the_vault:gem_pog'},
+            P: {item: 'the_vault:extraordinary_larimar'},
+            M: {item: 'the_vault:magic_silk_block'},
+            S: {item: 'the_vault:magic_silk'},
+            B: {item: 'sophisticatedbackpacks:iron_backpack'}
+        },
+        'sophisticatedbackpacks:gold_backpack'
+    );
+
+    // Diamond Backpack
+    backpackUpgrade('sophisticatedbackpacks:diamond_backpack', 
+        ['IXI','PBP','MSM'], 
+        {
+            I: {item: 'the_vault:vault_diamond'},
+            X: {item: 'the_vault:pog_prism'},
+            P: {item: 'woldsvaults:chroma_core'},
+            M: {item: 'woldsvaults:prismatic_fiber'},
+            S: {item: 'the_vault:magic_silk_block'},
+            B: {item: 'sophisticatedbackpacks:gold_backpack'}
+        },
+        'sophisticatedbackpacks:diamond_backpack'
+    );
+
+    // Netherite Backpack
+    backpackUpgrade('sophisticatedbackpacks:netherite_backpack', 
+        ['ILI','PBP','SMS'], 
+        {
+            I: {item: 'the_vault:magic_silk_block'},
+            L: {item: 'the_vault:vault_diamond_block'},
+            P: {item: 'woldsvaults:chroma_core'},
+            S: {item: 'woldsvaults:prismatic_fiber'},
+            M: {item: 'the_vault:echo_pog'},
+            B: {item: 'sophisticatedbackpacks:diamond_backpack'}
+        },
+        'sophisticatedbackpacks:netherite_backpack'
+    );
+
+});

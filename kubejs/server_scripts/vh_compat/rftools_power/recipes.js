@@ -12,6 +12,18 @@ onEvent("recipes", event => {
     event.replaceInput({ id: 'rftoolspower:cell3' }, 'minecraft:redstone', 'the_vault:gem_black_opal')
     event.replaceInput({ id: 'rftoolspower:dimensionalcell_simple' }, 'minecraft:diamond', 'the_vault:perfect_larimar')
 
+
+    event.shaped('rftoolsbase:machine_frame', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        A: 'the_vault:chromatic_steel_ingot',
+        B: 'the_vault:vault_essence',
+        C: 'the_vault:perfect_larimar',
+        D: 'the_vault:vault_diamond'
+    }).id('rftoolsbase:machine_frame')
+
     event.shaped(Item.of('rftoolspower:blazing_agitator'),
         [
             'GGG',
