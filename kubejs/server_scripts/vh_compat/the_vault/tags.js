@@ -118,23 +118,6 @@ onEvent('item.tags', event => {
     event.add('the_vault:spawnegg', 'thermal:blitz_spawn_egg')
     event.add('the_vault:spawnegg', 'thermal:basalz_spawn_egg')
     event.add('the_vault:spawnegg', 'tropicraft:iguana_spawn_egg')
-
-    event.add('the_vault:crystal_seals', 'the_vault:crystal_seal_spirits')
-    event.add('the_vault:crystal_seals', 'the_vault:crystal_seal_unhinged')
-    event.add('the_vault:crystal_seals', 'the_vault:crystal_seal_titan')
-    event.add('the_vault:crystal_seals', 'the_vault:crystal_seal_enchanter')
-    event.add('the_vault:crystal_seals', 'the_vault:crystal_seal_doomsayer')
-    event.add('the_vault:crystal_seals', 'woldsvaults:crystal_seal_corrupt')
-    event.add('the_vault:crystal_seals', 'woldsvaults:crystal_seal_alchemy')
-
-    event.add('the_vault:crystal_capstones', 'woldsvaults:capstone_frenzy')
-    event.add('the_vault:crystal_capstones', 'woldsvaults:capstone_prosperous')
-    event.add('the_vault:crystal_capstones', 'woldsvaults:capstone_all_seeing_eye')
-    event.add('the_vault:crystal_capstones', 'woldsvaults:capstone_enchanted')
-    event.add('the_vault:crystal_capstones', 'woldsvaults:capstone_vendoors')
-    event.add('the_vault:crystal_capstones', 'the_vault:mote_purity')
-    event.add('the_vault:crystal_capstones', 'the_vault:mote_clarity')
-    event.add('the_vault:crystal_capstones', 'the_vault:mote_sanctity')
 })
 
 onEvent('block.tags', event => {
