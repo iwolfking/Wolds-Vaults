@@ -102,7 +102,7 @@ onEvent("recipes", event => {
                 }
             ]
         }
-    ).id('botanypots:minecraft/potato')
+    ).id('botanypots:minecraft/crop/potato')
 })
 
 

@@ -50,23 +50,19 @@ function makeTrackRecipe(event, output, base) {
         ],
         "results": [
             { "item": output,
-              "count": 64,
-              "chance": 87.0
+                "count": 64,
+              "chance": 89.0
             },
             { "item": "minecraft:andesite",
-              "count": 1,
               "chance": 3.0
             },
             { "item": "create:andesite_alloy",
-              "count": 1,
-              "chance": 2.0
+              "chance": 1.0
             },
             { "item": "create:shaft",
-              "count": 1,
-              "chance": 4.0
+              "chance": 3.0
             },
             { "item": "create:cogwheel",
-              "count": 1,
               "chance": 4.0
             }
         ],
