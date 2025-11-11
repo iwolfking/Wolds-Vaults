@@ -7,11 +7,79 @@ let removedOutputsCCAE = [
     'createaddition:spool',
     'bobberdetector:bobber_detector'
 ];
+
+function makeTrackRecipe(event, output, base) {
+    event.custom({
+        "type": "create:sequenced_assembly",
+        "ingredient": { "item": base },
+        "transitionalItem": { "item": "create:incomplete_track" },
+        "sequence": [
+            {
+                "type": "create:deploying",
+                "ingredients": [
+                    { "item": "create:incomplete_track" },
+                    [
+                        { "item": "the_vault:perfect_larimar" }
+                    ]
+                ],
+                "results": [
+                    { "item": "create:incomplete_track" }
+                ]
+            },
+             {
+                "type": "create:deploying",
+                "ingredients": [
+                    { "item": "create:incomplete_track" },
+                    [
+                        { "item": "the_vault:chromatic_iron_ingot" }
+                    ]
+                ],
+                "results": [
+                    { "item": "create:incomplete_track" }
+                ]
+            },
+            {
+                "type": "create:pressing",
+                "ingredients": [
+                    { "item": "create:incomplete_track" }
+                ],
+                "results": [
+                    { "item": "create:incomplete_track" }
+                ]
+            }
+        ],
+        "results": [
+            { "item": output,
+              "count": 64,
+              "chance": 87.0
+            },
+            { "item": "minecraft:andesite",
+              "count": 1,
+              "chance": 3.0
+            },
+            { "item": "create:andesite_alloy",
+              "count": 1,
+              "chance": 2.0
+            },
+            { "item": "create:shaft",
+              "count": 1,
+              "chance": 4.0
+            },
+            { "item": "create:cogwheel",
+              "count": 1,
+              "chance": 4.0
+            }
+        ],
+        "loops": 2
+    }).id(`railways:sequenced_assembly/${output.split(':')[1]}`)
+}
+
+
 onEvent("recipes", event => {
     removedOutputsCCAE.forEach(id => {
         event.remove({ 'output': `${id}` })
     })
-    event.remove({'id': 'create:mechanical_crafting/wand_of_symmetry'})
+    event.remove({ 'id': 'create:mechanical_crafting/wand_of_symmetry' })
 
     event.remove({ id: 'createaddition:mechanical_crafting/electric_motor' })
     event.remove({ id: 'createaddition:mechanical_crafting/alternator' })
@@ -161,29 +229,53 @@ onEvent("recipes", event => {
     event.custom({
         "type": "create:mechanical_crafting",
         "pattern": [
-          " L ",
-          " R ",
-          "SSS",
-          "SSS",
-          " H "
+            " L ",
+            " R ",
+            "SSS",
+            "SSS",
+            " H "
         ],
         "key": {
-          "L": {
-            "item": "the_vault:echoing_ingot"
-          },
-          "R": {
-            "item": "the_vault:omega_pog"
-          },
-          "H": {
-            "item": "create:brass_hand"
-          },
-          "S": {
-            "item": "the_vault:black_chromatic_steel_ingot"
-          }
+            "L": {
+                "item": "the_vault:echoing_ingot"
+            },
+            "R": {
+                "item": "the_vault:omega_pog"
+            },
+            "H": {
+                "item": "create:brass_hand"
+            },
+            "S": {
+                "item": "the_vault:black_chromatic_steel_ingot"
+            }
         },
         "result": {
-          "item": "create:extendo_grip"
+            "item": "create:extendo_grip"
         },
         "acceptMirrored": false
-      }).id('create:mechanical_crafting/extendo_grip')
+    }).id('create:mechanical_crafting/extendo_grip')
+
+
+    const trackMap = {
+        "railways:track_acacia": "minecraft:acacia_slab",
+        "railways:track_birch": "minecraft:birch_slab",
+        "railways:track_blackstone": "minecraft:blackstone_slab",
+        "railways:track_oak": "minecraft:oak_slab",
+        "railways:track_spruce": "minecraft:spruce_slab",
+        "railways:track_dark_oak": "minecraft:dark_oak_slab",
+        "railways:track_crimson": "minecraft:crimson_slab",
+        "railways:track_warped": "minecraft:warped_slab",
+        "railways:track_ender": "minecraft:end_stone_brick_slab",
+        "railways:track_hexcasting_edified": "hexcasting:akashic_slab",
+        "railways:track_monorail": "create:metal_girder",
+        "railways:track_tieless": "minecraft:glass_pane",
+        "railways:track_jungle": "minecraft:jungle_slab",
+        "railways:track_phantom": "minecraft:phantom_membrane",
+    }
+
+
+    for (const [output, base] of Object.entries(trackMap)) {
+        makeTrackRecipe(event,output, base)
+    }
+
 })
