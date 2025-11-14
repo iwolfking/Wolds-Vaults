@@ -4617,6 +4617,26 @@
       ],
       "maxTier": 1
     },
+    "retribution": {
+      "type": "gear",
+      "name": {
+        "text": "Retribution Card"
+      },
+      "model": "the_vault:card/icon/retribution#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Retribution",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "taunt": {
       "type": "gear",
       "name": {
@@ -8620,6 +8640,10 @@
       },
       {
         "value": "arcane",
+        "weight": 1.0
+      },
+         {
+        "value": "retribution",
         "weight": 1.0
       },
       {
