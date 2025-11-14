@@ -13,13 +13,31 @@
           "modifierFailurePool": "the_vault:altar_curses",
           "lootPool": [
             {
-              "weight": 18,
+              "weight": 4,
+              "item": {
+                "id": "the_vault:vault_catalyst_infused",
+                "nbt": {
+                  "pool": "the_vault:velara_bonus"
+                }
+              }
+            },
+            {
+              "weight": 4,
+              "item": {
+                "id": "the_vault:inscription",
+                "nbt": {
+                  "pool": "the_vault:velara"
+                }
+              }
+            },
+            {
+              "weight": 10,
               "item": {
                 "id": "the_vault:bitter_lemon"
               }
             },
             {
-              "weight": 10,
+              "weight": 8,
               "item": {
                 "id": "the_vault:mango"
               }
@@ -31,7 +49,7 @@
               }
             },
             {
-              "weight": 2,
+              "weight": 3,
               "item": {
                 "id": "the_vault:star_fruit"
               }
@@ -70,13 +88,31 @@
           "weight": 1,
           "lootPool": [
             {
-              "weight": 18,
+              "weight": 4,
+              "item": {
+                "id": "the_vault:vault_catalyst_infused",
+                "nbt": {
+                  "pool": "the_vault:tenos_bonus"
+                }
+              }
+            },
+            {
+              "weight": 4,
+              "item": {
+                "id": "the_vault:inscription",
+                "nbt": {
+                  "pool": "the_vault:tenos"
+                }
+              }
+            },
+            {
+              "weight": 10,
               "item": {
                 "id": "the_vault:bitter_lemon"
               }
             },
             {
-              "weight": 10,
+              "weight": 8,
               "item": {
                 "id": "the_vault:mango"
               }
@@ -88,7 +124,7 @@
               }
             },
             {
-              "weight": 2,
+              "weight": 3,
               "item": {
                 "id": "the_vault:star_fruit"
               }
@@ -126,13 +162,31 @@
           "weight": 1,
           "lootPool": [
             {
-              "weight": 18,
+              "weight": 4,
+              "item": {
+                "id": "the_vault:vault_catalyst_infused",
+                "nbt": {
+                  "pool": "the_vault:wendarr_bonus"
+                }
+              }
+            },
+              {
+              "weight": 4,
+              "item": {
+                "id": "the_vault:inscription",
+                "nbt": {
+                  "pool": "the_vault:wendarr"
+                }
+              }
+            },
+            {
+              "weight": 10,
               "item": {
                 "id": "the_vault:bitter_lemon"
               }
             },
             {
-              "weight": 10,
+              "weight": 8,
               "item": {
                 "id": "the_vault:mango"
               }
@@ -144,7 +198,7 @@
               }
             },
             {
-              "weight": 2,
+              "weight": 3,
               "item": {
                 "id": "the_vault:star_fruit"
               }
@@ -182,13 +236,31 @@
           "weight": 1,
           "lootPool": [
             {
-              "weight": 18,
+              "weight": 4,
+              "item": {
+                "id": "the_vault:vault_catalyst_infused",
+                "nbt": {
+                  "pool": "the_vault:idona_bonus"
+                }
+              }
+            },
+            {
+              "weight": 4,
+              "item": {
+                "id": "the_vault:inscription",
+                "nbt": {
+                  "pool": "the_vault:idona"
+                }
+              }
+            },
+            {
+              "weight": 10,
               "item": {
                 "id": "the_vault:bitter_lemon"
               }
             },
             {
-              "weight": 10,
+              "weight": 8,
               "item": {
                 "id": "the_vault:mango"
               }
@@ -200,7 +272,7 @@
               }
             },
             {
-              "weight": 2,
+              "weight": 3,
               "item": {
                 "id": "the_vault:star_fruit"
               }
@@ -232,18 +304,18 @@
           "timePool": {
             "FRAGGED": {
               "type": "uniform",
-              "min": 3000,
-              "max": 6000
+              "min": 12000,
+              "max": 15000
             },
             "IMPOSSIBLE": {
               "type": "uniform",
-              "min": 6000,
-              "max": 9000
+              "min": 12000,
+              "max": 15000
             },
             "HARD": {
               "type": "uniform",
-              "min": 9000,
-              "max": 12000
+              "min": 12000,
+              "max": 15000
             },
             "NORMAL": {
               "type": "uniform",
@@ -252,13 +324,13 @@
             },
             "EASY": {
               "type": "uniform",
-              "min": 15000,
-              "max": 18000
+              "min": 12000,
+              "max": 15000
             },
             "PIECE_OF_CAKE": {
               "type": "uniform",
-              "min": 18000,
-              "max": 30000
+              "min": 12000,
+              "max": 15000
             }
           },
           "weight": 1
@@ -533,8 +605,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 70,
-                    "max": 140
+                    "min": 100,
+                    "max": 200
                   }
                 },
                 "renderer": {
@@ -553,8 +625,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 20,
-                    "max": 36
+                    "min": 40,
+                    "max": 60
                   }
                 },
                 "renderer": {
@@ -593,8 +665,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 4,
-                    "max": 8
+                    "min": 8,
+                    "max": 16
                   }
                 },
                 "renderer": {
@@ -613,8 +685,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 3,
-                    "max": 6
+                    "min": 6,
+                    "max": 12
                   }
                 },
                 "renderer": {
@@ -653,8 +725,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 11,
-                    "max": 16
+                    "min": 15,
+                    "max": 20
                   }
                 },
                 "renderer": {
@@ -673,8 +745,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 11,
-                    "max": 16
+                    "min": 15,
+                    "max": 20
                   }
                 },
                 "renderer": {
@@ -693,8 +765,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 11,
-                    "max": 16
+                    "min": 15,
+                    "max": 20
                   }
                 },
                 "renderer": {
@@ -713,8 +785,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 24,
-                    "max": 40
+                    "min": 30,
+                    "max": 60
                   }
                 },
                 "renderer": {
@@ -733,8 +805,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 16,
-                    "max": 34
+                    "min": 30,
+                    "max": 60
                   }
                 },
                 "renderer": {
@@ -753,260 +825,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 2,
-                    "max": 4
-                  }
-                },
-                "renderer": {
-                  "type": "god_altar",
-                  "title": "Mine Unique Vault Ores",
-                  "hint": "${current}/${target}"
-                }
-              },
-              "weight": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "leveled",
-      "levels": [
-        {
-          "level": 60,
-          "type": "weighted_target",
-          "target": "the_vault:god_altar",
-          "output": [
-            {
-              "taskPool": {
-                "type": "kill_entity",
-                "filter": "@the_vault:horde",
-                "counter": {
-                  "type": "target",
-                  "target": {
-                    "type": "uniform",
-                    "min": 90,
-                    "max": 160
-                  }
-                },
-                "renderer": {
-                  "type": "god_altar",
-                  "title": "Kill Horde Mobs",
-                  "hint": "${current}/${target}"
-                }
-              },
-              "weight": 1
-            },
-            {
-              "taskPool": {
-                "type": "kill_entity",
-                "filter": "@the_vault:assassin",
-                "counter": {
-                  "type": "target",
-                  "target": {
-                    "type": "uniform",
-                    "min": 28,
-                    "max": 50
-                  }
-                },
-                "renderer": {
-                  "type": "god_altar",
-                  "title": "Kill Assassin Mobs",
-                  "hint": "${current}/${target}"
-                }
-              },
-              "weight": 1
-            },
-            {
-              "taskPool": {
-                "type": "kill_entity",
-                "filter": "@the_vault:tank",
-                "counter": {
-                  "type": "target",
-                  "target": {
-                    "type": "uniform",
-                    "min": 6,
-                    "max": 12
-                  }
-                },
-                "renderer": {
-                  "type": "god_altar",
-                  "title": "Kill Tank Mobs",
-                  "hint": "${current}/${target}"
-                }
-              },
-              "weight": 1
-            },
-            {
-              "taskPool": {
-                "type": "kill_entity",
-                "filter": "@the_vault:fighter",
-                "counter": {
-                  "type": "target",
-                  "target": {
-                    "type": "uniform",
-                    "min": 6,
-                    "max": 12
-                  }
-                },
-                "renderer": {
-                  "type": "god_altar",
-                  "title": "Kill Dweller Mobs",
-                  "hint": "${current}/${target}"
-                }
-              },
-              "weight": 1
-            },
-            {
-              "taskPool": {
-                "type": "kill_entity",
-                "filter": "@the_vault:dungeon",
-                "counter": {
-                  "type": "target",
-                  "target": {
-                    "type": "uniform",
-                    "min": 4,
-                    "max": 9
-                  }
-                },
-                "renderer": {
-                  "type": "god_altar",
-                  "title": "Kill Dungeon Mobs",
-                  "hint": "${current}/${target}"
-                }
-              },
-              "weight": 1
-            },
-            {
-              "taskPool": {
-                "type": "kill_entity",
-                "filter": "{Tags:[\"vault_champion\"]}",
-                "counter": {
-                  "type": "target",
-                  "target": {
-                    "type": "uniform",
-                    "min": 1,
-                    "max": 3
-                  }
-                },
-                "renderer": {
-                  "type": "god_altar",
-                  "title": "Kill Champions",
-                  "hint": "${current}/${target}"
-                }
-              },
-              "weight": 1
-            },
-            {
-              "taskPool": {
-                "type": "loot_chest",
-                "filter": "@the_vault:gilded",
-                "counter": {
-                  "type": "target",
-                  "target": {
-                    "type": "uniform",
-                    "min": 12,
-                    "max": 21
-                  }
-                },
-                "renderer": {
-                  "type": "god_altar",
-                  "title": "Loot Gilded Chests",
-                  "hint": "${current}/${target}"
-                }
-              },
-              "weight": 1
-            },
-            {
-              "taskPool": {
-                "type": "loot_chest",
-                "filter": "@the_vault:living",
-                "counter": {
-                  "type": "target",
-                  "target": {
-                    "type": "uniform",
-                    "min": 12,
-                    "max": 21
-                  }
-                },
-                "renderer": {
-                  "type": "god_altar",
-                  "title": "Loot Living Chests",
-                  "hint": "${current}/${target}"
-                }
-              },
-              "weight": 1
-            },
-            {
-              "taskPool": {
-                "type": "loot_chest",
-                "filter": "@the_vault:ornate",
-                "counter": {
-                  "type": "target",
-                  "target": {
-                    "type": "uniform",
-                    "min": 12,
-                    "max": 21
-                  }
-                },
-                "renderer": {
-                  "type": "god_altar",
-                  "title": "Loot Ornate Chests",
-                  "hint": "${current}/${target}"
-                }
-              },
-              "weight": 1
-            },
-            {
-              "taskPool": {
-                "type": "loot_chest",
-                "filter": "@the_vault:wooden",
-                "counter": {
-                  "type": "target",
-                  "target": {
-                    "type": "uniform",
-                    "min": 32,
-                    "max": 55
-                  }
-                },
-                "renderer": {
-                  "type": "god_altar",
-                  "title": "Loot Wooden Chests",
-                  "hint": "${current}/${target}"
-                }
-              },
-              "weight": 1
-            },
-            {
-              "taskPool": {
-                "type": "mine_block",
-                "filter": "@the_vault:ores[generated=true]",
-                "counter": {
-                  "type": "target",
-                  "target": {
-                    "type": "uniform",
-                    "min": 20,
-                    "max": 38
-                  }
-                },
-                "renderer": {
-                  "type": "god_altar",
-                  "title": "Mine Vault Ores",
-                  "hint": "${current}/${target}"
-                }
-              },
-              "weight": 1
-            },
-            {
-              "taskPool": {
-                "type": "mine_block",
-                "filter": "@the_vault:player_ores[generated=true]",
-                "counter": {
-                  "type": "target",
-                  "target": {
-                    "type": "uniform",
-                    "min": 2,
-                    "max": 7
+                    "min": 3,
+                    "max": 6
                   }
                 },
                 "renderer": {
@@ -1097,8 +917,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 6,
-                    "max": 10
+                    "min": 8,
+                    "max": 19
                   }
                 },
                 "renderer": {
@@ -1117,8 +937,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 6,
-                    "max": 10
+                    "min": 9,
+                    "max": 15
                   }
                 },
                 "renderer": {
@@ -1237,8 +1057,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 34,
-                    "max": 50
+                    "min": 40,
+                    "max": 80
                   }
                 },
                 "renderer": {
@@ -1257,7 +1077,7 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 2,
+                    "min": 4,
                     "max": 9
                   }
                 },
@@ -1349,8 +1169,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 8,
-                    "max": 12
+                    "min": 10,
+                    "max": 20
                   }
                 },
                 "renderer": {
@@ -1369,8 +1189,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 6,
-                    "max": 12
+                    "min": 10,
+                    "max": 20
                   }
                 },
                 "renderer": {
@@ -1489,8 +1309,8 @@
                   "type": "target",
                   "target": {
                     "type": "uniform",
-                    "min": 34,
-                    "max": 54
+                    "min": 45,
+                    "max": 90
                   }
                 },
                 "renderer": {

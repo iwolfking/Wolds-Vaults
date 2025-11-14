@@ -5202,6 +5202,66 @@
           "icon": "the_vault:gui/modifiers/challenging"
         }
       },
+       "the_vault:velara_challenge": {
+        "properties": {
+          "children": {
+            "the_vault:furious_mobs": 4,
+            "the_vault:chunky_mobs": 4,
+            "woldsvaults:regenerating_mobs": 1
+          }
+        },
+        "display": {
+          "name": "Velara's Challenge",
+          "color": "#ba0000",
+          "description": "Increases mob damage, mob health and mob spawns by 20% per stack, mobs can spawn with Regeneration",
+          "icon": "the_vault:gui/modifiers/challenging"
+        }
+      },
+       "the_vault:tenos_challenge": {
+        "properties": {
+          "children": {
+            "the_vault:furious_mobs": 4,
+            "the_vault:chunky_mobs": 4,
+            "the_vault:rending": 1
+          }
+        },
+        "display": {
+          "name": "Tenos's Challenge",
+          "color": "#ba0000",
+          "description": "Increases mob damage and mob health 20% per stack, cooldowns reduced by 25%",
+          "icon": "the_vault:gui/modifiers/challenging"
+        }
+      },
+       "the_vault:wendarr_challenge": {
+        "properties": {
+          "children": {
+            "the_vault:furious_mobs": 4,
+            "the_vault:chunky_mobs": 4,
+            "the_vault:voiding": 1
+          }
+        },
+        "display": {
+          "name": "Wendarr's Challenge",
+          "color": "#ba0000",
+          "description": "Increases mob damage, mob health by 10% per stack, mobs can steal time on hit",
+          "icon": "the_vault:gui/modifiers/challenging"
+        }
+      },
+       "the_vault:idona_challenge": {
+        "properties": {
+          "children": {
+            "the_vault:furious_mobs": 8,
+            "the_vault:chunky_mobs": 8,
+            "the_vault:cake_layer_mobspeed": 4
+          }
+        },
+        "display": {
+          "name": "Idona's Challenge",
+          "color": "#ba0000",
+          "description": "Increases mob damage, mob health by 40% per stack, increases mob speed by 6.0% per stack",
+          "icon": "the_vault:gui/modifiers/challenging"
+        }
+      },
       "the_vault:companion_challenge": {
         "properties": {
           "children": {
@@ -6706,6 +6766,20 @@
       }
     },
     "the_vault:modifier_type/entity_effect": {
+      "woldsvaults:regenerating_mobs": {
+        "properties": {
+          "filter": "",
+          "effect": "minecraft:regeneration",
+          "amplifier": 5,
+          "chance": 0.15
+        },
+        "display": {
+          "name": "Regenerating Mobs",
+          "color": "#a996ca",
+          "description": "Mobs in this vault gain regeneration sometimes.",
+          "icon": "the_vault:gui/modifiers/chunky"
+        }
+      },
       "woldsvaults:resistant_mobs": {
         "properties": {
           "filter": "",
