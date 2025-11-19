@@ -16,8 +16,8 @@
                 "id": "the_vault:eternal_soul",
                 "count": {
                   "type": "uniform",
-                  "min": 5,
-                  "max": 8
+                  "min": 3,
+                  "max": 4
                 }
               }
             }
@@ -42,7 +42,7 @@
                 "count": {
                   "type": "uniform",
                   "min": 1,
-                  "max": 4
+                  "max": 1
                 }
               }
             }
@@ -66,8 +66,8 @@
                 "id": "woldsvaults:arcane_essence",
                 "count": {
                   "type": "uniform",
-                  "min": 4,
-                  "max": 10
+                  "min": 2,
+                  "max": 3
                 }
               }
             }
@@ -78,8 +78,8 @@
     {
       "roll": {
         "type": "uniform",
-        "min": 3,
-        "max": 4
+        "min": 1,
+        "max": 3
       },
       "pool": [
         {
@@ -103,8 +103,8 @@
     {
       "roll": {
         "type": "uniform",
-        "min": 3,
-        "max": 5
+        "min": 1,
+        "max": 2
       },
       "pool": [
         {
@@ -313,8 +313,8 @@
     {
       "roll": {
         "type": "uniform",
-        "min": 3,
-        "max": 5
+        "min": 4,
+        "max": 4
       },
       "pool": [
         {
@@ -343,7 +343,7 @@
               }
             },
             {
-              "weight": 3,
+              "weight": 9,
               "item": {
                 "id": "the_vault:chaotic_focus",
                 "count": {
@@ -360,8 +360,8 @@
     {
       "roll": {
         "type": "uniform",
-        "min": 3,
-        "max": 3
+        "min": 2,
+        "max": 2
       },
       "pool": [
         {
@@ -398,8 +398,8 @@
                 "id": "the_vault:vault_gold",
                 "count": {
                   "type": "uniform",
-                  "min": 7,
-                  "max": 10
+                  "min": 1,
+                  "max": 2
                 }
               }
             }
@@ -410,12 +410,75 @@
     {
       "roll": {
         "type": "uniform",
-        "min": 5,
-        "max": 5
+        "min": 4,
+        "max": 4
       },
       "pool": [
         {
           "weight": 1,
+          "pool": [
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:crystal_seal_empty",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "roll": {
+        "type": "uniform",
+        "min": 4,
+        "max": 6
+      },
+      "pool": [
+        {
+          "weight": 6,
+          "pool": [
+            {
+              "weight": 2,
+              "item": {
+                "id": "the_vault:vault_gold",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:vault_platinum",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+             {
+              "weight": 4,
+              "item": {
+                "id": "the_vault:gem_pog",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        },
+         {
+          "weight": 8,
           "pool": [
             {
               "weight": 1,
@@ -462,43 +525,9 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "roll": {
-        "type": "uniform",
-        "min": 4,
-        "max": 4
-      },
-      "pool": [
+        },
         {
-          "weight": 1,
-          "pool": [
-            {
-              "weight": 1,
-              "item": {
-                "id": "the_vault:crystal_seal_empty",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "roll": {
-        "type": "uniform",
-        "min": 5,
-        "max": 6
-      },
-      "pool": [
-        {
-          "weight": 1,
+          "weight": 6,
           "pool": [
             {
               "weight": 36,
@@ -529,11 +558,39 @@
               }
             },
             {
+              "weight": 4,
+              "item": {
+                "id": "the_vault:booster_pack",
+                "nbt": {
+                  "id": "the_vault:knack_pack"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
               "weight": 1,
               "item": {
                 "id": "the_vault:booster_pack",
                 "nbt": {
                   "id": "the_vault:mega_arcane_pack"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:booster_pack",
+                "nbt": {
+                  "id": "the_vault:mega_knack_pack"
                 },
                 "count": {
                   "type": "uniform",
@@ -641,18 +698,9 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "roll": {
-        "type": "uniform",
-        "min": 4,
-        "max": 4
-      },
-      "pool": [
+        },
         {
-          "weight": 6,
+          "weight": 8,
           "pool": [
             {
               "weight": 4,
@@ -677,13 +725,35 @@
               }
             },
             {
-              "weight": 25,
+              "weight": 50,
               "item": {
                 "id": "the_vault:gem_box",
                 "count": {
                   "type": "uniform",
-                  "min": 4,
-                  "max": 4
+                  "min": 2,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "weight": 25,
+              "item": {
+                "id": "the_vault:mod_box",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+             {
+              "weight": 15,
+              "item": {
+                "id": "the_vault:supply_box",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 2
                 }
               }
             },
@@ -728,6 +798,17 @@
         {
           "weight": 8,
           "pool": [
+             {
+              "weight": 22,
+              "item": {
+                "id": "the_vault:bitter_lemon",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
             {
               "weight": 18,
               "item": {
@@ -775,10 +856,21 @@
           ]
         },
         {
-          "weight": 8,
+          "weight": 1,
           "pool": [
             {
-              "weight": 6,
+              "weight": 12,
+              "item": {
+                "id": "the_vault:vault_gold",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "weight": 2,
               "item": {
                 "id": "the_vault:capstone_dungeon_hunter",
                 "count": {
@@ -789,7 +881,7 @@
               }
             },
             {
-              "weight": 3,
+              "weight": 2,
               "item": {
                 "id": "the_vault:capstone_pylon_hunter",
                 "count": {
@@ -811,7 +903,7 @@
               }
             },
             {
-              "weight": 12,
+              "weight": 6,
               "item": {
                 "id": "the_vault:eye_of_avarice",
                 "count": {
@@ -824,8 +916,19 @@
           ]
         },
         {
-          "weight": 2,
+          "weight": 1,
           "pool": [
+             {
+              "weight": 10,
+              "item": {
+                "id": "the_vault:black_chromatic_steel_ingot",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
             {
               "weight": 8,
               "item": {
@@ -855,7 +958,7 @@
               }
             },
             {
-              "weight": 4,
+              "weight": 1,
               "item": {
                 "id": "the_vault:card_deck",
                 "nbt": {
@@ -869,7 +972,7 @@
               }
             },
             {
-              "weight": 1,
+              "weight": 4,
               "item": {
                 "id": "the_vault:card_deck",
                 "nbt": {
@@ -923,7 +1026,7 @@
                 }
               }
             },
-               {
+            {
               "weight": 2,
               "item": {
                 "id": "the_vault:booster_pack",
@@ -962,6 +1065,44 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "weight": 4,
+          "pool": [
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:waning_focus",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:waxing_focus",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 9,
+              "item": {
+                "id": "the_vault:chaotic_focus",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 3
                 }
               }
             }
