@@ -26,7 +26,7 @@ function makeTrackRecipe(event, output, base) {
                     { "item": "create:incomplete_track" }
                 ]
             },
-             {
+            {
                 "type": "create:deploying",
                 "ingredients": [
                     { "item": "create:incomplete_track" },
@@ -49,21 +49,26 @@ function makeTrackRecipe(event, output, base) {
             }
         ],
         "results": [
-            { "item": output,
+            {
+                "item": output,
                 "count": 64,
-              "chance": 89.0
+                "chance": 89.0
             },
-            { "item": "minecraft:andesite",
-              "chance": 3.0
+            {
+                "item": "minecraft:andesite",
+                "chance": 3.0
             },
-            { "item": "create:andesite_alloy",
-              "chance": 1.0
+            {
+                "item": "create:andesite_alloy",
+                "chance": 1.0
             },
-            { "item": "create:shaft",
-              "chance": 3.0
+            {
+                "item": "create:shaft",
+                "chance": 3.0
             },
-            { "item": "create:cogwheel",
-              "chance": 4.0
+            {
+                "item": "create:cogwheel",
+                "chance": 4.0
             }
         ],
         "loops": 2
@@ -271,7 +276,24 @@ onEvent("recipes", event => {
 
 
     for (const [output, base] of Object.entries(trackMap)) {
-        makeTrackRecipe(event,output, base)
+        makeTrackRecipe(event, output, base)
     }
+
+    event.custom({
+        "type": "create:mixing",
+        "ingredients": [
+            {
+                "item": "minecraft:andesite"
+            },
+            {
+                "item": "the_vault:chromatic_iron_ingot"
+            }
+        ],
+        "results": [
+            {
+                "item": "create:andesite_alloy"
+            }
+        ]
+    }).id('create:mixing/andesite_alloy')
 
 })
