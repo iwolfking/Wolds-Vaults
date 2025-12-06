@@ -247,71 +247,49 @@ onEvent('recipes', event => {
 
     event.shapeless('woldsvaults:arcane_shard', ['9x woldsvaults:arcane_essence']).id('woldsvaults:arcane_shard')
 
-    event.shaped(Item.of('woldsvaults:expertise_orb'),
-        [
-            'XXX',
-            'XOX',
-            'XXX'
-        ], {
-        X: 'woldsvaults:arcane_shard',
-        O: 'the_vault:orb_frame'
-    }).id('woldsvaults:expertise_orb')
+    // event.shaped(Item.of('woldsvaults:expertise_orb'),
+    //     [
+    //         'XXX',
+    //         'XOX',
+    //         'XXX'
+    //     ], {
+    //     X: 'woldsvaults:arcane_shard',
+    //     O: 'the_vault:orb_frame'
+    // }).id('woldsvaults:expertise_orb')
 
-    // event.shaped(Item.of('woldsvaults:waning_augmenter'),
+    // event.shaped(Item.of('woldsvaults:repair_augmenter'),
     //     [
     //         'XTX',
     //         'TOT',
     //         'XTX'
     //     ], {
-    //     X: 'the_vault:waning_focus',
+    //     X: 'the_vault:resilient_focus',
     //     O: 'the_vault:pog_prism',
     //     T: 'the_vault:black_chromatic_steel_ingot'
-    // })
+    // }).id('woldsvaults:repair_augmenter')
 
-    // event.shaped(Item.of('woldsvaults:waxing_augmenter'),
+
+    // event.shaped(Item.of('woldsvaults:vault_rock_candy'),
     //     [
-    //         'XTX',
-    //         'TOT',
-    //         'XTX'
+    //         'XSX',
+    //         'XOX',
+    //         'XSX'
     //     ], {
-    //     X: 'the_vault:waxing_focus',
-    //     O: 'the_vault:pog_prism',
-    //     T: 'the_vault:black_chromatic_steel_ingot'
-    // })
+    //     X: 'the_vault:vault_rock',
+    //     O: 'the_vault:vault_sweets',
+    //     S: 'minecraft:sugar'
+    // }).id('woldsvaults:vault_rock_candy')
 
-    event.shaped(Item.of('woldsvaults:repair_augmenter'),
-        [
-            'XTX',
-            'TOT',
-            'XTX'
-        ], {
-        X: 'the_vault:resilient_focus',
-        O: 'the_vault:pog_prism',
-        T: 'the_vault:black_chromatic_steel_ingot'
-    }).id('woldsvaults:repair_augmenter')
-
-
-    event.shaped(Item.of('woldsvaults:vault_rock_candy'),
-        [
-            'XSX',
-            'XOX',
-            'XSX'
-        ], {
-        X: 'the_vault:vault_rock',
-        O: 'the_vault:vault_sweets',
-        S: 'minecraft:sugar'
-    }).id('woldsvaults:vault_rock_candy')
-
-    event.shaped(Item.of('woldsvaults:mercy_orb'),
-        [
-            'XSX',
-            'SOS',
-            'XSX'
-        ], {
-        X: 'the_vault:gem_painite',
-        O: 'minecraft:pink_wool',
-        S: 'the_vault:cluster_gorginite'
-    }).id('woldsvaults:mercy_orb')
+    // event.shaped(Item.of('woldsvaults:mercy_orb'),
+    //     [
+    //         'XSX',
+    //         'SOS',
+    //         'XSX'
+    //     ], {
+    //     X: 'the_vault:gem_painite',
+    //     O: 'minecraft:pink_wool',
+    //     S: 'the_vault:cluster_gorginite'
+    // }).id('woldsvaults:mercy_orb')
 
     event.shaped(Item.of('woldsvaults:crystal_reinforcement'),
         [
