@@ -30,7 +30,7 @@ onEvent('recipes', event => {
             'ARA',
             'GGG'
         ], {
-        G: 'the_vault:chromatic_gold_block',
+        G: 'woldsvaults:chromatic_gold_block',
         A: 'the_vault:angel_block',
         R: 'woldsvaults:chromatic_iron_angel_ring'
     })
@@ -65,23 +65,10 @@ onEvent('recipes', event => {
             'ARA',
             'GXG'
         ], {
-        G: 'the_vault:pog_prism',
+        G: 'woldsvaults:pog_prism',
         A: 'the_vault:angel_block',
         R: 'woldsvaults:black_chromatic_steel_angel_ring',
         X: 'the_vault:omega_pog'
     })
-
-    // event.shaped(Item.of('woldsvaults:zephyr_charm'),
-    //     [
-    //         'WVT',
-    //         'PGV',
-    //         'WPW'
-    //     ], {
-    //     G: 'the_vault:omega_pog',
-    //     T: 'the_vault:trinket_scrap',
-    //     W: 'the_vault:wold_star_chunk',
-    //     V: 'the_vault:vault_ingot_1',
-    //     P: 'woldsvaults:extraordinary_pog_prism'
-    // })
 
 })
