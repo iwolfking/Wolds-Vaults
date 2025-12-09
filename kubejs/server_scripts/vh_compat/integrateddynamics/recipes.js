@@ -470,9 +470,9 @@ onEvent("recipes", event => {
             'OCI',
             'VBV'
         ], {
-        V: 'the_vault:vault_essence_1',
+        V: 'woldvaults:vault_essence_block',
         C: 'integrateddynamics:part_display_panel',
-        B: 'the_vault:pog_prism',
+        B: 'woldvaults:pog_prism',
         O: 'integrateddynamics:variable_transformer_output',
         I: 'integrateddynamics:variable_transformer_input',
         S: 'the_vault:chromatic_steel_block'
@@ -484,7 +484,7 @@ onEvent("recipes", event => {
             ' C ',
             'VBV'
         ], {
-        V: 'the_vault:vault_essence_1',
+        V: 'woldvaults:vault_essence_block',
         C: 'integrateddynamics:part_display_panel',
         B: 'minecraft:crafting_table',
         S: 'integratedterminals:menril_glass'
@@ -574,7 +574,7 @@ onEvent("recipes", event => {
         C: 'the_vault:wooden_planks',
         O: 'integrateddynamics:variable_transformer_output',
         I: 'integrateddynamics:variable_transformer_input',
-        M: 'the_vault:pog_prism'
+        M: 'woldvaults:pog_prism'
     })
 
     event.shaped(Item.of('integratedcrafting:part_crafting_writer'),

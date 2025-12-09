@@ -24,7 +24,7 @@ onEvent("recipes", event => {
         ], {
         V: 'mysticalagriculture:supremium_farmland',
         X: 'mysticalagriculture:supremium_essence',
-        E: 'the_vault:vault_essence_2'
+        E: 'compressium:vault_essence_block_1'
     })
 
     event.shaped(Item.of('mysticalagradditions:nether_star_crux'),

@@ -46,16 +46,16 @@ onEvent("recipes", event => {
                 "item": "lightmanscurrency:wallet_iron"
             },
             {
-                "item": "the_vault:chromatic_gold_ingot"
+                "item": "woldvaults:chromatic_gold_ingot"
             },
             {
-                "item": "the_vault:chromatic_gold_ingot"
+                "item": "woldvaults:chromatic_gold_ingot"
             },
             {
-                "item": "the_vault:chromatic_gold_ingot"
+                "item": "woldvaults:chromatic_gold_ingot"
             },
             {
-                "item": "the_vault:chromatic_gold_ingot"
+                "item": "woldvaults:chromatic_gold_ingot"
             },
             {
                 "item": "the_vault:magic_silk_block"

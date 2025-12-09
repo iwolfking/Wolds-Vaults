@@ -5,7 +5,7 @@ for Iskall85's Vaulthunters */
 
 craftingTable.addShaped("torchmaster_feral_flare_lantern", <item:torchmaster:feral_flare_lantern>, [
     [<item:the_vault:gem_larimar>, <tag:items:forge:glass>, <item:the_vault:gem_larimar>],
-    [<item:the_vault:chromatic_gold_ingot>, <item:minecraft:lantern>, <item:the_vault:chromatic_gold_ingot>],
+    [<item:woldvaults:chromatic_gold_ingot>, <item:minecraft:lantern>, <item:woldvaults:chromatic_gold_ingot>],
     [<item:the_vault:gem_larimar>, <tag:items:forge:glass>, <item:the_vault:gem_larimar>]
 ]);
 

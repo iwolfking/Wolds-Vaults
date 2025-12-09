@@ -843,7 +843,7 @@ onEvent("recipes", event => {
     //     'BIB'
     // ], {
     //     I: 'the_vault:black_chromatic_steel_ingot',
-    //     P: 'the_vault:pog_prism',
+    //     P: 'woldvaults:pog_prism',
     //     B: 'the_vault:chromatic_iron_block',
     //     L: 'the_vault:extraordinary_larimar'
     // }

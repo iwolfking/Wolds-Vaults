@@ -53,7 +53,7 @@ craftingTable.addShaped("sophisticatedbackpacks_pouch", <item:sophisticatedbackp
     "I": {"item": "the_vault:vault_diamond"},
     "P": {"item": "woldsvaults:chroma_core"},
     "S": {"item": "the_vault:magic_silk_block"},
-    "X": {"item": "the_vault:pog_prism"},
+    "X": {"item": "woldvaults:pog_prism"},
     "M": {"item": "woldsvaults:prismatic_fiber"},
     "B": {"item": "sophisticatedbackpacks:gold_backpack"}},
   "result": {"item": "sophisticatedbackpacks:diamond_backpack"}

@@ -19,7 +19,7 @@ onEvent("recipes", event => {
         ], {
         A: 'minecraft:dark_prismarine',
         X: 'the_vault:black_chromatic_steel_ingot',
-        B: 'the_vault:pog_prism'
+        B: 'woldvaults:pog_prism'
     }).id('weather_control:rm_recipe_sensor')
 
     event.shaped(Item.of('weather_control:rm_core'),

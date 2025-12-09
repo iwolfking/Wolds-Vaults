@@ -12,7 +12,7 @@ onEvent("recipes", event => {
             'DCD',
             'LBL'
         ], {
-        G: 'the_vault:pog_prism',
+        G: 'woldvaults:pog_prism',
         D: 'the_vault:vault_diamond_block',
         C: 'minecraft:clock',
         L: 'the_vault:perfect_echo_gem',

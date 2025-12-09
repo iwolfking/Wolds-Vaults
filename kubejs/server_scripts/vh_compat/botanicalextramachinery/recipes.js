@@ -29,7 +29,7 @@ onEvent("recipes", event => {
                 "item": "botania:gaia_ingot"
             },
             {
-                "item": "the_vault:chromatic_gold_block"
+                "item": "woldsvaults:chromatic_gold_block"
             }
         ],
         "mana": 1000000,
@@ -95,7 +95,7 @@ onEvent("recipes", event => {
                 "item": "botania:dragonstone"
             },
             {
-                "item": "the_vault:vault_essence_1"
+                "item": "woldvaults:vault_essence_block"
             }
         ],
         "output": [
@@ -115,7 +115,7 @@ onEvent("recipes", event => {
                 "item": "botanicalextramachinery:malachite_dragonstone"
             },
             {
-                "item": "the_vault:vault_essence_1"
+                "item": "woldvaults:vault_essence_block"
             }
         ],
         "output": [
@@ -316,7 +316,7 @@ onEvent("recipes", event => {
             'IPI',
             'BBB'
         ], {
-        R: 'the_vault:pog_prism',
+        R: 'woldvaults:pog_prism',
         I: 'botanicalextramachinery:malachite_ingot',
         B: 'botanicalextramachinery:malachite_dragonstone_block',
         P: 'botania:orechid'
@@ -328,7 +328,7 @@ onEvent("recipes", event => {
             'IPI',
             'BBB'
         ], {
-        R: 'the_vault:pog_prism',
+        R: 'woldvaults:pog_prism',
         I: 'botanicalextramachinery:saffron_ingot',
         B: 'botanicalextramachinery:saffron_dragonstone_block',
         P: 'botanicalextramachinery:base_orechid'
@@ -364,7 +364,7 @@ onEvent("recipes", event => {
             'IFI',
             'BBB'
         ], {
-        R: 'the_vault:pog_prism',
+        R: 'woldvaults:pog_prism',
         I: 'botanicalextramachinery:crystal_ingot',
         F: 'botania:jaded_amaranthus',
         B: 'botanicalextramachinery:crystal_dragonstone_block'
@@ -378,7 +378,7 @@ onEvent("recipes", event => {
         ], {
         B: 'botanicalextramachinery:crimson_dragonstone_block',
         P: 'botanicalextramachinery:ultimate_mana_pool',
-        W: 'the_vault:wold_star'
+        W: 'woldvaults:wold_star'
     }).id('botanicalextramachinery:catalyst_mana_infinity')
 
 

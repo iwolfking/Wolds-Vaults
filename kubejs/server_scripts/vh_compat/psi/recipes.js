@@ -18,7 +18,7 @@ onEvent("recipes", event => {
             "item": "psi:cad_assembly_iron"
         },
         "input": {
-            "item": "the_vault:chromatic_gold_ingot"
+            "item": "woldvaults:chromatic_gold_ingot"
         },
         "output": {
             "item": "psi:psimetal"
@@ -86,7 +86,7 @@ onEvent("recipes", event => {
             'III',
             'IL '
         ], {
-        I: 'the_vault:chromatic_gold_ingot',
+        I: 'woldvaults:chromatic_gold_ingot',
         L: 'the_vault:extraordinary_larimar'
     }).id('psi:cad_assembly_gold')
 
@@ -107,7 +107,7 @@ onEvent("recipes", event => {
             'IL '
         ], {
         I: 'psi:ivory_psimetal',
-        L: 'the_vault:pog_prism'
+        L: 'woldvaults:pog_prism'
     }).id('psi:cad_assembly_ivory')
 
     event.shaped(Item.of('psi:cad_assembly_ebony_psimetal'),
@@ -117,7 +117,7 @@ onEvent("recipes", event => {
             'IL '
         ], {
         I: 'psi:ebony_psimetal',
-        L: 'the_vault:pog_prism'
+        L: 'woldvaults:pog_prism'
     }).id('psi:cad_assembly_ebony')
 
     event.shaped(Item.of('psi:cad_core_basic'),
@@ -147,7 +147,7 @@ onEvent("recipes", event => {
             ' I '
         ], {
         I: 'psi:psimetal',
-        D: 'the_vault:vault_essence_1'
+        D: 'woldvaults:vault_essence_block'
     }).id('psi:cad_core_conductive')
 
     event.shaped(Item.of('psi:cad_core_hyperclocked'),
@@ -168,7 +168,7 @@ onEvent("recipes", event => {
             ' G '
         ], {
         I: 'psi:psimetal',
-        D: 'the_vault:vault_essence_1',
+        D: 'woldvaults:vault_essence_block',
         G: 'psi:psigem'
     }).id('psi:cad_core_radiative')
 
@@ -188,7 +188,7 @@ onEvent("recipes", event => {
             'I  ',
             '   '
         ], {
-        D: 'the_vault:vault_essence_1',
+        D: 'woldvaults:vault_essence_block',
         I: 'psi:psimetal'
     }).id('psi:cad_socket_signaling')
 
@@ -208,7 +208,7 @@ onEvent("recipes", event => {
             'IG ',
             '   '
         ], {
-        D: 'the_vault:vault_essence_1',
+        D: 'woldvaults:vault_essence_block',
         I: 'psi:psimetal',
         G: 'psi:psigem'
     }).id('psi:cad_socket_transmissive')
@@ -232,7 +232,7 @@ onEvent("recipes", event => {
         ], {
         I: 'the_vault:chromatic_steel_ingot',
         D: 'psi:psidust',
-        G: 'the_vault:chromatic_gold_ingot'
+        G: 'woldvaults:chromatic_gold_ingot'
     }).id('psi:cad_battery_basic')
 
     event.shaped(Item.of('psi:cad_battery_extended'),
@@ -243,7 +243,7 @@ onEvent("recipes", event => {
         ], {
         I: 'the_vault:chromatic_steel_ingot',
         D: 'psi:psimetal',
-        G: 'the_vault:chromatic_gold_ingot'
+        G: 'woldvaults:chromatic_gold_ingot'
     }).id('psi:cad_assembly_extended')
 
     event.shaped(Item.of('psi:cad_battery_ultradense'),
@@ -254,7 +254,7 @@ onEvent("recipes", event => {
         ], {
         I: 'the_vault:chromatic_steel_ingot',
         D: 'psi:psigem',
-        G: 'the_vault:chromatic_gold_ingot'
+        G: 'woldvaults:chromatic_gold_ingot'
     }).id('psi:cad_battery_ultradense')
 
     event.shaped(Item.of('psi:cad_assembler'),
@@ -275,7 +275,7 @@ onEvent("recipes", event => {
             ' I '
         ], {
         I: 'the_vault:chromatic_steel_ingot',
-        X: 'the_vault:pog_prism',
+        X: 'woldvaults:pog_prism',
         P: 'psi:psidust'
     }).id('psi:programmer')
 

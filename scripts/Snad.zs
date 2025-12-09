@@ -10,19 +10,19 @@ import crafttweaker.api.loot.modifier.CommonLootModifiers;
 <block:snad:suol_snad>.addLootModifier("suolsnad",CommonLootModifiers.clearing(CommonLootModifiers.add(<item:snad:suol_snad>)));
 
 craftingTable.addShaped("snad_snad", <item:snad:snad>, [
-    [<tag:items:forge:sand/colorless>, <item:the_vault:vault_essence_1>, <tag:items:forge:sand/colorless>],
-    [<item:the_vault:vault_essence_1>, <item:the_vault:extraordinary_larimar>, <item:the_vault:vault_essence_1>],
-    [<tag:items:forge:sand/colorless>, <item:the_vault:vault_essence_1>, <tag:items:forge:sand/colorless>]
+    [<tag:items:forge:sand/colorless>, <item:woldvaults:vault_essence_block>, <tag:items:forge:sand/colorless>],
+    [<item:woldvaults:vault_essence_block>, <item:the_vault:extraordinary_larimar>, <item:woldvaults:vault_essence_block>],
+    [<tag:items:forge:sand/colorless>, <item:woldvaults:vault_essence_block>, <tag:items:forge:sand/colorless>]
 ]);
 
 craftingTable.addShaped("snad_red_snad", <item:snad:red_snad>, [
-     [<tag:items:forge:sand/red>, <item:the_vault:vault_essence_1>, <tag:items:forge:sand/red>],
-    [<item:the_vault:vault_essence_1>, <item:the_vault:extraordinary_larimar>, <item:the_vault:vault_essence_1>],
-    [<tag:items:forge:sand/red>, <item:the_vault:vault_essence_1>, <tag:items:forge:sand/red>]
+     [<tag:items:forge:sand/red>, <item:woldvaults:vault_essence_block>, <tag:items:forge:sand/red>],
+    [<item:woldvaults:vault_essence_block>, <item:the_vault:extraordinary_larimar>, <item:woldvaults:vault_essence_block>],
+    [<tag:items:forge:sand/red>, <item:woldvaults:vault_essence_block>, <tag:items:forge:sand/red>]
 ]);
 
 craftingTable.addShaped("snad_soul_snad", <item:snad:suol_snad>, [
-    [<item:minecraft:soul_sand>, <item:the_vault:vault_essence_1>, <item:minecraft:soul_sand>],
-    [<item:the_vault:vault_essence_1>, <item:the_vault:extraordinary_larimar>, <item:the_vault:vault_essence_1>],
-    [<item:minecraft:soul_sand>, <item:the_vault:vault_essence_1>, <item:minecraft:soul_sand>]
+    [<item:minecraft:soul_sand>, <item:woldvaults:vault_essence_block>, <item:minecraft:soul_sand>],
+    [<item:woldvaults:vault_essence_block>, <item:the_vault:extraordinary_larimar>, <item:woldvaults:vault_essence_block>],
+    [<item:minecraft:soul_sand>, <item:woldvaults:vault_essence_block>, <item:minecraft:soul_sand>]
 ]);

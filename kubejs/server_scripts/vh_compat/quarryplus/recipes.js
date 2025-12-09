@@ -32,7 +32,7 @@ onEvent("recipes", event => {
                 "count": 9
             },
             {
-                "item": "the_vault:chromatic_gold_ingot",
+                "item": "woldvaults:chromatic_gold_ingot",
                 "count": 32
             },
             {
@@ -68,7 +68,7 @@ onEvent("recipes", event => {
         ], {
         G: 'ironfurnaces:netherite_furnace',
         D: 'the_vault:vault_diamond_block',
-        C: 'the_vault:vault_essence_2',
+        C: 'compressium:vault_essence_block_1',
         L: 'the_vault:chromatic_steel_block'
 
     })
@@ -101,7 +101,7 @@ onEvent("recipes", event => {
                 "count": 8
             },
             {
-                "item": "the_vault:chromatic_gold_ingot",
+                "item": "woldvaults:chromatic_gold_ingot",
                 "count": 8
             },
             {
@@ -148,7 +148,7 @@ onEvent("recipes", event => {
                 "count": 4
             },
             {
-                "item": "the_vault:chromatic_gold_ingot",
+                "item": "woldvaults:chromatic_gold_ingot",
                 "count": 8
             },
             {
@@ -187,7 +187,7 @@ onEvent("recipes", event => {
                 "count": 4
             },
             {
-                "item": "the_vault:chromatic_gold_ingot",
+                "item": "woldvaults:chromatic_gold_ingot",
                 "count": 16
             },
             {
@@ -293,7 +293,7 @@ onEvent("recipes", event => {
                 "count": 1
             },
             {
-                "item": "the_vault:chromatic_gold_ingot",
+                "item": "woldvaults:chromatic_gold_ingot",
                 "count": 16
             },
             {
@@ -332,7 +332,7 @@ onEvent("recipes", event => {
         "showInJEI": true,
         "ingredients": [
             {
-                "item": "the_vault:chromatic_gold_ingot",
+                "item": "woldvaults:chromatic_gold_ingot",
                 "count": 7
             },
             {
@@ -371,7 +371,7 @@ onEvent("recipes", event => {
         "showInJEI": true,
         "ingredients": [
             {
-                "item": "the_vault:chromatic_gold_ingot",
+                "item": "woldvaults:chromatic_gold_ingot",
                 "count": 16
             },
             {

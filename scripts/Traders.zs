@@ -5,7 +5,7 @@ for Iskall85's Vaulthunters */
 
 craftingTable.addShaped("easy_piglin_barterer", <item:easy_piglins:barterer>, [
     [<item:minecraft:glass>, <item:minecraft:glass>, <item:minecraft:glass>],
-    [<item:minecraft:glass>, <item:the_vault:chromatic_gold_block>, <item:minecraft:glass>],
+    [<item:minecraft:glass>, <item:woldsvaults:chromatic_gold_block>, <item:minecraft:glass>],
     [<item:the_vault:wutodic_silver_ingot>, <item:minecraft:red_nether_bricks>, <item:the_vault:wutodic_silver_ingot>]
 ]);
 

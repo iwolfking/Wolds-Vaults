@@ -38,7 +38,7 @@ onEvent("recipes", event => {
                 "tag": "forge:wires/copper"
             },
             {
-                "item": "the_vault:vault_essence_1"
+                "item": "woldvaults:vault_essence_block"
             },
             {
                 "item": "the_vault:vault_diamond"
@@ -67,7 +67,7 @@ onEvent("recipes", event => {
                 "tag": "forge:wires/aluminum"
             },
             {
-                "item": "the_vault:chromatic_gold_ingot"
+                "item": "woldvaults:chromatic_gold_ingot"
             },
             {
                 "item": "the_vault:vault_diamond"

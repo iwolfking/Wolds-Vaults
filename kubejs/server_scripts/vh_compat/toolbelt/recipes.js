@@ -9,7 +9,7 @@ onEvent("recipes", event => {
         ], {
         S: 'the_vault:magic_silk_block',
         L: 'minecraft:leather',
-        I: 'the_vault:pog_prism'
+        I: 'woldvaults:pog_prism'
     }).id('toolbelt:belt')
 
     event.shaped(Item.of('toolbelt:pouch', 1),
@@ -20,7 +20,7 @@ onEvent("recipes", event => {
         ], {
         S: 'the_vault:magic_silk_block',
         L: 'minecraft:leather',
-        I: 'the_vault:chromatic_gold_block',
+        I: 'woldsvaults:chromatic_gold_block',
         O: 'the_vault:gem_pog'
     }).id('toolbelt:pouch')
 

@@ -99,7 +99,7 @@ onEvent("recipes", event => {
             'DCD',
             'PDP'
         ], {
-        P: 'the_vault:chromatic_gold_ingot',
+        P: 'woldvaults:chromatic_gold_ingot',
         D: 'thermal_extra:soul_infused_gear',
         C: 'thermal:area_radius_augment'
     })
@@ -143,7 +143,7 @@ onEvent("recipes", event => {
             'DCD',
             'PDP'
         ], {
-        P: 'the_vault:chromatic_gold_ingot',
+        P: 'woldvaults:chromatic_gold_ingot',
         D: 'thermal_extra:soul_infused_gear',
         C: 'thermal:rf_coil_augment'
     })
@@ -187,7 +187,7 @@ onEvent("recipes", event => {
             'DCD',
             'PDP'
         ], {
-        P: 'the_vault:pog_prism',
+        P: 'woldvaults:pog_prism',
         D: 'thermal_extra:dragonsteel_gear',
         C: 'thermal_extra:rf_coil_augment_4'
     })
@@ -198,7 +198,7 @@ onEvent("recipes", event => {
             'DCD',
             'PDP'
         ], {
-        P: 'the_vault:chromatic_gold_ingot',
+        P: 'woldvaults:chromatic_gold_ingot',
         D: 'thermal_extra:soul_infused_gear',
         C: 'thermal:rf_coil_storage_augment'
     })
@@ -242,7 +242,7 @@ onEvent("recipes", event => {
             'DCD',
             'PDP'
         ], {
-        P: 'the_vault:pog_prism',
+        P: 'woldvaults:pog_prism',
         D: 'thermal_extra:dragonsteel_gear',
         C: 'thermal_extra:rf_coil_storage_augment_4'
     })
@@ -253,7 +253,7 @@ onEvent("recipes", event => {
             'DCD',
             'PDP'
         ], {
-        P: 'the_vault:chromatic_gold_ingot',
+        P: 'woldvaults:chromatic_gold_ingot',
         D: 'thermal_extra:soul_infused_gear',
         C: 'thermal:rf_coil_xfer_augment'
     })
@@ -297,7 +297,7 @@ onEvent("recipes", event => {
             'DCD',
             'PDP'
         ], {
-        P: 'the_vault:pog_prism',
+        P: 'woldvaults:pog_prism',
         D: 'thermal_extra:dragonsteel_gear',
         C: 'thermal_extra:rf_coil_xfer_augment_4'
     })
@@ -308,7 +308,7 @@ onEvent("recipes", event => {
             'DCD',
             'PDP'
         ], {
-        P: 'the_vault:chromatic_gold_ingot',
+        P: 'woldvaults:chromatic_gold_ingot',
         D: 'thermal_extra:soul_infused_gear',
         C: 'thermal:fluid_tank_augment'
     })
@@ -352,7 +352,7 @@ onEvent("recipes", event => {
             'DCD',
             'PDP'
         ], {
-        P: 'the_vault:pog_prism',
+        P: 'woldvaults:pog_prism',
         D: 'thermal_extra:dragonsteel_gear',
         C: 'thermal_extra:fluid_tank_augment_4'
     })
@@ -363,7 +363,7 @@ onEvent("recipes", event => {
             'DCD',
             'PDP'
         ], {
-        P: 'the_vault:vault_essence_2',
+        P: 'compressium:vault_essence_block_1',
         D: 'thermal_extra:soul_infused_gear',
         C: 'thermal:machine_speed_augment'
     })
@@ -396,7 +396,7 @@ onEvent("recipes", event => {
             'DCD',
             'PDP'
         ], {
-        P: 'the_vault:pog_prism',
+        P: 'woldvaults:pog_prism',
         D: 'thermal_extra:twinite_gear',
         C: 'thermal_extra:machine_speed_augment_3'
     })

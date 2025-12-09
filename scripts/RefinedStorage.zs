@@ -227,7 +227,7 @@ craftingTable.addShaped("rs_controller", <item:refinedstorage:controller>, [
 ]);
 
 craftingTable.addShaped("rs_crafter", <item:refinedstorage:crafter>, [
-    [<item:the_vault:pog_prism>, <item:refinedstorage:construction_core>, <item:the_vault:pog_prism>],
+    [<item:woldvaults:pog_prism>, <item:refinedstorage:construction_core>, <item:woldvaults:pog_prism>],
     [<item:refinedstorage:advanced_processor>, <item:refinedstorage:machine_casing>, <item:refinedstorage:advanced_processor>],
     [<item:the_vault:black_chromatic_steel_ingot>,<item:refinedstorage:destruction_core>, <item:the_vault:black_chromatic_steel_ingot>]
 ]);

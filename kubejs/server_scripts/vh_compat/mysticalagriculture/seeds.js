@@ -40,7 +40,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('botania:manasteel_ingot').toJson(),
             Item.of('mysticalagriculture:tertium_essence').toJson(),
@@ -56,7 +56,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('#forge:gems/certus_quartz').toJson(),
             Item.of('mysticalagriculture:tertium_essence').toJson(),
@@ -72,7 +72,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('botania:elementium_ingot').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
@@ -88,7 +88,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('mekanism:ingot_uranium').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
@@ -104,7 +104,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('mekanism:ingot_osmium').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
@@ -120,7 +120,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('mekanism:fluorite_gem').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
@@ -136,7 +136,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('powah:crystal_blazing').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
@@ -152,7 +152,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('the_vault:vault_diamond_block').toJson(),
             Item.of('mysticalagriculture:supremium_essence').toJson(),
@@ -168,7 +168,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:echoing_seed_base'),
+        input: Ingredient.of('woldvaults:echoing_seed_base'),
         ingredients: [
             Item.of('the_vault:chromatic_iron_block').toJson(),
             Item.of('mysticalagriculture:supremium_essence').toJson(),
@@ -184,7 +184,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('botanicalmachinery:mana_emerald_block').toJson(),
             Item.of('mysticalagriculture:supremium_essence').toJson(),
@@ -201,7 +201,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:echoing_seed_base'),
+        input: Ingredient.of('woldvaults:echoing_seed_base'),
         ingredients: [
             Item.of('the_vault:cluster_netherite').toJson(),
             Item.of('mysticalagriculture:supremium_essence').toJson(),
@@ -217,7 +217,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:echoing_seed_base'),
+        input: Ingredient.of('woldvaults:echoing_seed_base'),
         ingredients: [
             Item.of('botania:terrasteel_ingot').toJson(),
             Item.of('mysticalagriculture:supremium_essence').toJson(),
@@ -233,7 +233,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('powah:crystal_niotic').toJson(),
             Item.of('mysticalagriculture:supremium_essence').toJson(),
@@ -249,7 +249,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('powah:crystal_spirited').toJson(),
             Item.of('mysticalagriculture:supremium_essence').toJson(),
@@ -265,7 +265,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:echoing_seed_base'),
+        input: Ingredient.of('woldvaults:echoing_seed_base'),
         ingredients: [
             Item.of('thermal:enderium_ingot').toJson(),
             Item.of('mysticalagriculture:supremium_essence').toJson(),
@@ -281,7 +281,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('thermal:signalum_ingot').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
@@ -297,7 +297,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('thermal:lumium_ingot').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
@@ -313,7 +313,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('thermal:invar_ingot').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
@@ -329,7 +329,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('ae2:fluix_crystal').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
@@ -347,7 +347,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('mekanism:ingot_steel').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
@@ -363,7 +363,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('minecraft:lapis_block').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
@@ -379,15 +379,15 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
-            Item.of('the_vault:chromatic_gold_ingot').toJson(),
+            Item.of('woldvaults:chromatic_gold_ingot').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
-            Item.of('the_vault:chromatic_gold_ingot').toJson(),
+            Item.of('woldvaults:chromatic_gold_ingot').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
-            Item.of('the_vault:chromatic_gold_ingot').toJson(),
+            Item.of('woldvaults:chromatic_gold_ingot').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
-            Item.of('the_vault:chromatic_gold_ingot').toJson(),
+            Item.of('woldvaults:chromatic_gold_ingot').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson()
         ],
         result: Item.of('mysticalagriculture:gold_seeds').toResultJson()
@@ -395,7 +395,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('powah:uraninite').toJson(),
             Item.of('mysticalagriculture:supremium_essence').toJson(),
@@ -411,7 +411,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('powah:steel_energized').toJson(),
             Item.of('mysticalagriculture:imperium_essence').toJson(),
@@ -427,7 +427,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('minecraft:obsidian').toJson(),
             Item.of('mysticalagriculture:tertium_essence').toJson(),
@@ -443,7 +443,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('minecraft:redstone_block').toJson(),
             Item.of('mysticalagriculture:tertium_essence').toJson(),
@@ -459,7 +459,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('industrialforegoing:dryrubber').toJson(),
             Item.of('mysticalagriculture:inferium_essence').toJson(),
@@ -475,7 +475,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:pogging_seed_base'),
+        input: Ingredient.of('woldvaults:pogging_seed_base'),
         ingredients: [
             Item.of('thermal:rubber').toJson(),
             Item.of('mysticalagriculture:inferium_essence').toJson(),
@@ -492,7 +492,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:echoing_seed_base'),
+        input: Ingredient.of('woldvaults:echoing_seed_base'),
         ingredients: [
             Item.of('mysticalagradditions:dragon_scale').toJson(),
             Item.of('mysticalagradditions:insanium_essence').toJson(),
@@ -508,7 +508,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:echoing_seed_base'),
+        input: Ingredient.of('woldvaults:echoing_seed_base'),
         ingredients: [
             Item.of('powah:nitro_crystal_block').toJson(),
             Item.of('mysticalagradditions:insanium_essence').toJson(),
@@ -524,7 +524,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:echoing_seed_base'),
+        input: Ingredient.of('woldvaults:echoing_seed_base'),
         ingredients: [
             Item.of('botania:life_essence').toJson(),
             Item.of('mysticalagradditions:insanium_essence').toJson(),
@@ -540,7 +540,7 @@ onEvent("recipes", event => {
 
     event.custom({
         type: 'mysticalagriculture:infusion',
-        input: Ingredient.of('mysticalagriculture:echoing_seed_base'),
+        input: Ingredient.of('woldvaults:echoing_seed_base'),
         ingredients: [
             Item.of('minecraft:nether_star').toJson(),
             Item.of('mysticalagradditions:insanium_essence').toJson(),
