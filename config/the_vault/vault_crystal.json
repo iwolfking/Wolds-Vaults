@@ -151,6 +151,20 @@
                 "weight": 5000
               }
             ]
+          },
+          "the_vault:classic_vault_festive": {
+            "ranges": [
+              {
+                "from": "12-01",
+                "to": "12-30",
+                "weight": 50
+              },
+              {
+                "from": "12-24",
+                "to": "12-26",
+                "weight": 5000
+              }
+            ]
           }
         }
       },
@@ -356,20 +370,6 @@
             ]
           },
           "the_vault:classic_vault_festive": {
-            "ranges": [
-              {
-                "from": "12-01",
-                "to": "12-31",
-                "weight": 50
-              },
-              {
-                "from": "12-24",
-                "to": "12-26",
-                "weight": 5000
-              }
-            ]
-          },
-          "the_vault:classic_vault_gingerbread": {
             "ranges": [
               {
                 "from": "12-01",
@@ -874,20 +874,6 @@
             ]
           },
            "the_vault:classic_vault_festive": {
-            "ranges": [
-              {
-                "from": "12-01",
-                "to": "12-31",
-                "weight": 50
-              },
-              {
-                "from": "12-24",
-                "to": "12-26",
-                "weight": 5000
-              }
-            ]
-          },
-          "the_vault:classic_vault_gingerbread": {
             "ranges": [
               {
                 "from": "12-01",
@@ -2885,7 +2871,7 @@
               "type": "bingo",
               "objective_probability": 1.0
             },
-            "weight": 1
+            "weight": 2
           }
         ]
       }
@@ -3204,7 +3190,7 @@
         }
       }
     ],
-    "the_vault:crystal_seal_prophet": [
+     "the_vault:crystal_seal_prophet": [
       {
         "level": 0,
         "input": [
@@ -3212,7 +3198,23 @@
         ],
         "objective": {
           "type": "bingo",
-          "objective_probability": 0.5
+          "objective_probability": 1.0,
+          "width": 4,
+          "height": 4
+        }
+      }
+    ],
+    "the_vault:crystal_seal_big_prophet": [
+      {
+        "level": 0,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objective": {
+          "type": "bingo",
+          "objective_probability": 1.0,
+          "width": 5,
+          "height": 5
         }
       }
     ],

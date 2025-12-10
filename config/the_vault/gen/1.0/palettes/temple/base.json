@@ -30,8 +30,39 @@
       "output": {
         "the_vault:placeholder[type=coin_stacks]": 80,
         "minecraft:air": 20
-    }
-  },
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=objective]",
+      "output": [
+        {
+          "block": "the_vault:temple_controller",
+          "renderer": {
+            "coreColor": "0x069022",
+            "glyphColor": "0x069022",
+            "particleColor": "0x069022"
+          },
+          "zone": {
+            "min": [
+              -23,
+              -5,
+              -23
+            ],
+            "max": [
+              23,
+              41,
+              23
+            ]
+          },
+          "action": {
+            "type": "reference",
+            "path": "add_a_modifier"
+          },
+          "weight": 1
+        }
+      ]
+    },
     {
       "type": "reference",
       "id": "the_vault:generic/room_base"

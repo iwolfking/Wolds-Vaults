@@ -113,7 +113,35 @@
           "output": [
             {
               "elements": {
-                "the_vault:t3_husk": 4
+                "the_vault:t3_husk": 11
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:tank}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t3_husk": 11,
+                "the_vault:mummy_t0": 1
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:tank}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t3_husk": 11,
+                "the_vault:mummy_t1": 1
               },
               "weight": 1
             }
@@ -127,7 +155,7 @@
             {
               "elements": {
                 "the_vault:t3_husk": 11,
-                "rottencreatures:mummy": 1
+                "the_vault:mummy_t2": 1
               },
               "weight": 1
             }
@@ -169,38 +197,6 @@
           ]
         },
         {
-          "level": 30,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:skeleton": 8,
-                "minecraft:creeper": 2,
-                "the_vault:t1_skeleton": 8,
-                "the_vault:t1_creeper": 2
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 40,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:skeleton": 1,
-                "minecraft:creeper": 1,
-                "the_vault:t1_skeleton": 8,
-                "the_vault:t1_creeper": 3
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
           "level": 50,
           "type": "spawner",
           "target": "ispawner:spawner{group:assassin}",
@@ -217,61 +213,15 @@
           ]
         },
         {
-          "level": 60,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "the_vault:t1_skeleton": 8,
-                "the_vault:t1_creeper": 2,
-                "the_vault:t2_skeleton": 8,
-                "the_vault:t2_creeper": 2
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
           "level": 65,
           "type": "spawner",
           "target": "ispawner:spawner{group:assassin}",
           "output": [
             {
               "elements": {
-                "the_vault:t3_creeper": 1,
                 "the_vault:t2_skeleton": 10,
-                "the_vault:t2_creeper": 4
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 70,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "the_vault:t3_creeper": 1,
-                "the_vault:t2_skeleton": 9,
-                "the_vault:t2_creeper": 4
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 80,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "the_vault:t3_creeper": 1,
-                "the_vault:t2_skeleton": 8,
-                "the_vault:t2_creeper": 4
+                "the_vault:t2_creeper": 4,
+                "the_vault:t3_creeper": 1
               },
               "weight": 1
             }
@@ -291,21 +241,6 @@
               "weight": 1
             }
           ]
-        },
-        {
-          "level": 100,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "the_vault:t3_creeper": 3,
-                "the_vault:t2_skeleton": 8,
-                "the_vault:t2_creeper": 3
-              },
-              "weight": 1
-            }
-          ]
         }
       ]
     },
@@ -319,7 +254,7 @@
           "output": [
             {
               "elements": {
-                "minecraft:husk": 64
+                "minecraft:husk": 1
               },
               "weight": 1
             }
@@ -332,46 +267,8 @@
           "output": [
             {
               "elements": {
-                "minecraft:husk": 64
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 25,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:husk": 64
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 30,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:husk": 64
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 40,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:husk": 64
+                "minecraft:husk": 3,
+                "the_vault:t1_husk": 1
               },
               "weight": 1
             }
@@ -384,36 +281,9 @@
           "output": [
             {
               "elements": {
-                "minecraft:husk": 38,
-                "the_vault:t1_husk": 4
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 55,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:husk": 30,
-                "the_vault:t1_husk": 15
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 60,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "minecraft:husk": 12,
-                "the_vault:t1_husk": 34
+                "minecraft:husk": 1,
+                "the_vault:t1_husk": 3,
+                "the_vault:t2_husk": 2
               },
               "weight": 1
             }
@@ -426,36 +296,8 @@
           "output": [
             {
               "elements": {
-                "the_vault:t2_husk": 4,
-                "the_vault:t1_husk": 38
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 70,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "the_vault:t2_husk": 15,
-                "the_vault:t1_husk": 30
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 80,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:horde}",
-          "output": [
-            {
-              "elements": {
-                "the_vault:t1_husk": 30,
-                "the_vault:t2_husk": 30
+                "the_vault:t2_husk": 1,
+                "the_vault:t1_husk": 1
               },
               "weight": 1
             }
@@ -468,8 +310,8 @@
           "output": [
             {
               "elements": {
-                "the_vault:t1_husk": 15,
-                "the_vault:t2_husk": 60
+                "the_vault:t1_husk": 1,
+                "the_vault:t2_husk": 4
               },
               "weight": 1
             }

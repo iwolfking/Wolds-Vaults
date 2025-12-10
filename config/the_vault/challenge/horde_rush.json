@@ -1,0 +1,109 @@
+{
+    "pools": {
+        "one": [
+            {
+                "value": {
+                    "config": {
+                        "id": "the_vault:example",
+                        "cost": {
+                            "min": 10,
+                            "max": 20,
+                            "type": "uniform"
+                        },
+                        "stack": {
+                            "id": "the_vault:vault_diamond",
+                            "count": 1
+                        }
+                    },
+                    "type": "item"
+                },
+                "weight": 1.0
+            }
+        ],
+        "two": [
+            {
+                "value": {
+                    "config": {
+                        "id": "the_vault:example",
+                        "cost": {
+                            "min": 10,
+                            "max": 20,
+                            "type": "uniform"
+                        },
+                        "stack": {
+                            "id": "the_vault:vault_diamond",
+                            "count": 1
+                        }
+                    },
+                    "type": "item"
+                },
+                "weight": 1.0
+            }
+        ],
+        "three": [
+            {
+                "value": {
+                    "config": {
+                        "id": "the_vault:example",
+                        "cost": {
+                            "min": 10,
+                            "max": 20,
+                            "type": "uniform"
+                        },
+                        "stack": {
+                            "id": "the_vault:vault_diamond",
+                            "count": 1
+                        }
+                    },
+                    "type": "item"
+                },
+                "weight": 1.0
+            }
+        ],
+        "four": [
+            {
+                "value": {
+                    "config": {
+                        "id": "the_vault:example",
+                        "cost": {
+                            "min": 10,
+                            "max": 20,
+                            "type": "uniform"
+                        },
+                        "stack": {
+                            "id": "the_vault:vault_diamond",
+                            "count": 1
+                        }
+                    },
+                    "type": "item"
+                },
+                "weight": 1.0
+            }
+        ]
+    },
+    "imposterTextures": [
+        {
+            "value": {
+                "entityId": "minecraft:zombie",
+                "textures": [
+                    {
+                        "value": "the_vault:textures/entity/tier2/zombie.png",
+                        "weight": 1.0
+                    }
+                ]
+            },
+            "weight": 1.0
+        }
+    ],
+    "imposterShardCount": {
+        "min": 1,
+        "max": 5,
+        "type": "uniform"
+    },
+    "incorrectNegativeShardLoss": {
+        "min": 1,
+        "max": 3,
+        "type": "uniform"
+    },
+    "durationTicks": 2400
+}

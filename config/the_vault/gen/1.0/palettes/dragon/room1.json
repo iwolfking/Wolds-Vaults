@@ -1,0 +1,33 @@
+{
+    "tile_processors": [
+        {
+            "type": "weighted_target",
+            "target": "the_vault:placeholder[type=objective]",
+            "output": [
+                {
+                    "spawnPositions": [
+                        {
+                            "position": [-22, -1, 0],
+                            "key": "uno"
+                        },
+                        {
+                            "position": [22, -1, 0],
+                            "key": "thry"
+                        },
+                        {
+                            "position": [0, -1, -22],
+                            "key": "two"
+                        },
+                        {
+                            "position": [0, -1, 22],
+                            "key": "four"
+                        }
+                    ],
+                    "weight": 1
+                }
+            ]
+        }
+    ],
+    "entity_processors": [],
+    "decorators": []
+}

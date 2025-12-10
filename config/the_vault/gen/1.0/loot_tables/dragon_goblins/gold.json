@@ -1,0 +1,51 @@
+{
+    "entries": [
+        {
+            "roll": {
+                "type": "uniform",
+                "min": 4,
+                "max": 8
+            },
+            "pool": [
+                {
+                    "weight": 1,
+                    "pool": [
+                        {
+                            "weight": 40,
+                            "item": {
+                                "id": "the_vault:vault_bronze",
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 32,
+                                    "max": 64
+                                }
+                            }
+                        },
+                        {
+                            "weight": 20,
+                            "item": {
+                                "id": "the_vault:vault_silver",
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 32,
+                                    "max": 64
+                                }
+                            }
+                        },
+                        {
+                            "weight": 5,
+                            "item": {
+                                "id": "the_vault:vault_gold",
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 5,
+                                    "max": 10
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

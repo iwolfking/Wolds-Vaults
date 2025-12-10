@@ -217,9 +217,16 @@
     },
     {
       "type": "weighted_target",
+      "target": "minecraft:fern",
+      "output": {
+        "minecraft:air": 1
+      }
+    },
+    {
+      "type": "weighted_target",
       "target": "minecraft:tall_grass[half=lower]",
       "output": {
-        "minecraft:sweet_berry_bush[age=3]": 1,
+        "minecraft:fern": 1,
         "minecraft:air": 1
       }
     },
@@ -233,13 +240,6 @@
     {
       "type": "weighted_target",
       "target": "minecraft:twisting_vines_plant",
-      "output": {
-        "minecraft:air": 1
-      }
-    },
-    {
-      "type": "weighted_target",
-      "target": "minecraft:twisting_vines",
       "output": {
         "minecraft:air": 1
       }

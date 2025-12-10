@@ -3,40 +3,41 @@
     "artifact_boss": {
       "name": "artifact_boss",
       "stages": [
-        
-        { "stageName": "generic",
-        "stageType": "melee",
-        "attributes": {
-          "Speed": 0.27,
-          "AttackDamage": 28,
-          "Health": 14000,
-          "MeleeAttacks": [
-            {
-              "Multiplier": 1.5,
-              "Weight": 1.0,
-              "Name": "hammersmash"
-            },
-            {
-              "Multiplier": 1.0,
-              "Weight": 2.0,
-              "Name": "uppercut"
-            },
-            {
-              "Multiplier": 0.9,
-              "Weight": 4.0,
-              "Name": "groundslam"
-            }
-          ],
-          "RageAttacks": [
-            {
-              "Multiplier": 0.9,
-              "Weight": 2.0,
-              "Name": "aoeclose"
-            }
-          ]
-        }
+        {
+          "stageName": "generic",
+          "stageType": "melee",
+          "attributes": {
+            "Speed": 0.27,
+            "AttackDamage": 28,
+            "Health": 14000,
+            "MeleeAttacks": [
+              {
+                "Multiplier": 1.5,
+                "Weight": 1.0,
+                "Name": "hammersmash"
+              },
+              {
+                "Multiplier": 1.0,
+                "Weight": 2.0,
+                "Name": "uppercut"
+              },
+              {
+                "Multiplier": 0.9,
+                "Weight": 4.0,
+                "Name": "groundslam"
+              }
+            ],
+            "RageAttacks": [
+              {
+                "Multiplier": 0.9,
+                "Weight": 2.0,
+                "Name": "aoeclose"
+              }
+            ]
+          }
         },
-        { "stageName": "wendarr",
+        {
+          "stageName": "wendarr",
           "stageType": "spark",
           "attributes": {
             "Radius": 40,
@@ -49,181 +50,390 @@
             "MinSparkCount": 12
           }
         },
-        { "stageName": "generic2",
-        "stageType": "melee",
-        "attributes": {
-          "Speed": 0.27,
-          "AttackDamage": 32,
-          "Health": 15000,
-          "MeleeAttacks": [
-            {
-              "Multiplier": 1.5,
-              "Weight": 1.0,
-              "Name": "hammersmash"
-            },
-            {
-              "Multiplier": 1.0,
-              "Weight": 2.0,
-              "Name": "uppercut"
-            },
-            {
-              "Multiplier": 0.9,
-              "Weight": 4.0,
-              "Name": "groundslam"
-            }
-          ],
-          "RageAttacks": [
-            {
-              "Multiplier": 0.9,
-              "Weight": 2.0,
-              "Name": "aoeclose"
-            }
-          ]
-        }
-        },
-        { "stageName": "velara",
-          "stageType": "summoning",
+        {
+          "stageName": "generic2",
+          "stageType": "melee",
           "attributes": {
-            "EntityTypes": [
+            "Speed": 0.27,
+            "AttackDamage": 32,
+            "Health": 15000,
+            "MeleeAttacks": [
               {
-                "EntityType": "the_vault:t3_zombie",
-                "Weight": 5.0
+                "Multiplier": 1.5,
+                "Weight": 1.0,
+                "Name": "hammersmash"
               },
               {
-                "EntityType": "the_vault:t3_husk",
-                "Weight": 5.0
+                "Multiplier": 1.0,
+                "Weight": 2.0,
+                "Name": "uppercut"
               },
               {
-                "EntityType": "the_vault:t3_piglin",
-                "Weight": 8.0
-              },
-              {
-                "EntityType": "the_vault:t3_skeleton",
-                "Weight": 5.0
-              },
-              {
-                "EntityType": "the_vault:t3_drowned",
-                "Weight": 5.0
-              },
-              {
-                "EntityType": "the_vault:t3_stray",
-                "Weight": 5.0
-              },
-              {
-                "EntityType": "the_vault:deep_dark_horror",
-                "Weight": 5.0
-              },
-              {
-                "EntityType": "the_vault:t2_zombie",
-                "Weight": 8.0
-              },
-              {
-                "EntityType": "the_vault:t2_husk",
-                "Weight": 8.0
-              },
-              {
-                "EntityType": "the_vault:vault_fighter_2",
-                "Weight": 10.0
-              },
-              {
-                "EntityType": "the_vault:vault_fighter_3",
-                "Weight": 10.0
-              },
-              {
-                "EntityType": "the_vault:vault_fighter_4",
-                "Weight": 10.0
-              },
-              {
-                "EntityType": "the_vault:miner_zombie_t5",
-                "Weight": 10.0
-              },
-              {
-                "EntityType": "the_vault:mummy_t2",
-                "Weight": 10.0
-              },
-              {
-                "EntityType": "the_vault:mushroom_t5",
-                "Weight": 10.0
-              },
-              {
-                "EntityType": "the_vault:overgrown_zombie_t5",
-                "Weight": 10.0
-              },
-              {
-                "EntityType": "the_vault:skeleton_pirate_t5",
-                "Weight": 10.0
-              },
-              {
-                "EntityType": "the_vault:winterwalker_t5",
-                "Weight": 10.0
-              },
-              {
-                "EntityType": "the_vault:dungeon_black_widow_spider",
-                "Weight": 6.0
-              },
-              {
-                "EntityType": "the_vault:dungeon_piglin_brute",
-                "Weight": 4.0
-              },
-              {
-                "EntityType": "the_vault:dungeon_vindicator",
-                "Weight": 4.0
-              },
-              {
-                "EntityType": "the_vault:dungeon_pillager",
-                "Weight": 4.0
-              },
-              {
-                "EntityType": "the_vault:dungeon_witch",
-                "Weight": 4.0
-              },
-              {
-                "EntityType": "the_vault:mushroom_t4",
-                "Weight": 10.0
+                "Multiplier": 0.9,
+                "Weight": 4.0,
+                "Name": "groundslam"
               }
             ],
-            "Radius": 34,
-            "SpawnDelay": 220,
-            "MinGroupCount": 28,
-            "MaxGroupCount": 28,
-            "MaxMobCount": 16,
-            "MinMobCount": 14,
-            "maxMobsAliveBeforeNextSpawn": 32
+            "RageAttacks": [
+              {
+                "Multiplier": 0.9,
+                "Weight": 2.0,
+                "Name": "aoeclose"
+              }
+            ]
           }
         },
-        { "stageName": "generic3",
-        "stageType": "melee",
-        "attributes": {
-          "Speed": 0.27,
-          "AttackDamage": 36,
-          "Health": 16000,
-          "MeleeAttacks": [
-            {
-              "Multiplier": 1.5,
-              "Weight": 1.0,
-              "Name": "hammersmash"
-            },
-            {
-              "Multiplier": 1.0,
-              "Weight": 2.0,
-              "Name": "uppercut"
-            },
-            {
-              "Multiplier": 0.9,
-              "Weight": 4.0,
-              "Name": "groundslam"
-            }
-          ],
-          "RageAttacks": [
-            {
-              "Multiplier": 0.9,
-              "Weight": 2.0,
-              "Name": "aoeclose"
-            }
-          ]
-        }
+        {
+          "stageName": "velara",
+          "stageType": "summoning",
+          "attributes": {
+            "Waves": [
+              [
+                {
+                  "EntityType": "the_vault:deep_dark_zombie",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:t1_drowned",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:t2_drowned",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "minecraft:husk",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:t1_husk",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:t2_husk",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:t1_piglin",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:t2_piglin",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:deep_dark_piglin",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:blood_horde_t1",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:blood_horde_t2",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:blood_horde_t3",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:blood_horde_t4",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:blood_horde_t5",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:miner_zombie_t0",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:miner_zombie_t1",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:miner_zombie_t2",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:miner_zombie_t3",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:miner_zombie_t4",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:mushroom_t0",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:mushroom_t1",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:mushroom_t2",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:mushroom_t3",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:mushroom_t4",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:mushroom_t5",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:overgrown_zombie_t0",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:overgrown_zombie_t1",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:overgrown_zombie_t2",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:overgrown_zombie_t3",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:overgrown_zombie_t4",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:overgrown_zombie_t5",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:t1_plastic_zombie",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:t2_plastic_zombie",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:t3_plastic_zombie",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:t4_plastic_zombie",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:winterwalker_t0",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:winterwalker_t1",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:winterwalker_t2",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:winterwalker_t3",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:winterwalker_t4",
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:vault_yellow_gummy_soldier",
+                  "Weight": 1.0
+                }
+              ],
+              [
+                {"EntityType": "the_vault:t1_skeleton", "Weight": 1.0},
+                {"EntityType": "the_vault:t2_skeleton", "Weight": 1.0},
+                {"EntityType": "the_vault:t3_skeleton", "Weight": 1.0},
+          
+                {"EntityType": "the_vault:t1_stray", "Weight": 1.0},
+                {"EntityType": "the_vault:t2_stray", "Weight": 1.0},
+                {"EntityType": "the_vault:t3_stray", "Weight": 1.0},
+          
+                {"EntityType": "the_vault:t1_wither_skeleton", "Weight": 1.0},
+                {"EntityType": "the_vault:t2_wither_skeleton", "Weight": 1.0},
+                {"EntityType": "the_vault:t3_wither_skeleton", "Weight": 1.0},
+          
+                {"EntityType": "the_vault:vault_spider", "Weight": 1.0},
+          
+
+          
+                {"EntityType": "the_vault:skeleton_pirate_t3", "Weight": 1.0},
+                {"EntityType": "the_vault:skeleton_pirate_t4", "Weight": 1.0},
+                {"EntityType": "the_vault:skeleton_pirate_t5", "Weight": 1.0},
+          
+                {"EntityType": "the_vault:blood_skeleton_t3", "Weight": 1.0},
+                {"EntityType": "the_vault:blood_skeleton_t4", "Weight": 1.0},
+                {"EntityType": "the_vault:blood_skeleton_t5", "Weight": 1.0},
+          
+                {"EntityType": "the_vault:t3_plastic_skeleton", "Weight": 1.0},
+                {"EntityType": "the_vault:t4_plastic_skeleton", "Weight": 1.0},
+          
+                {"EntityType": "the_vault:t3_cave_skeleton", "Weight": 1.0},
+                {"EntityType": "the_vault:t4_cave_skeleton", "Weight": 1.0},
+                {"EntityType": "the_vault:t5_cave_skeleton", "Weight": 1.0},
+          
+                {"EntityType": "the_vault:deep_dark_piglin", "Weight": 1.0},
+                {"EntityType": "the_vault:deep_dark_skeleton", "Weight": 1.0},
+          
+                {"EntityType": "the_vault:vault_blue_gummy_soldier", "Weight": 1.0},
+                {"EntityType": "the_vault:vault_green_gummy_soldier", "Weight": 1.0},
+          
+                {"EntityType": "the_vault:overgrown_woodman_t1", "Weight": 1.0},
+                {"EntityType": "the_vault:overgrown_woodman_t2", "Weight": 1.0},
+          
+                {"EntityType": "the_vault:t3_piglin", "Weight": 1.0},
+          
+                {"EntityType": "the_vault:vault_wraith_white", "Weight": 1.0},
+                {"EntityType": "the_vault:swamp_zombie", "Weight": 1.0},
+          
+                {"EntityType": "the_vault:levishroom", "Weight": 1.0},
+                {"EntityType": "the_vault:winter_wolf", "Weight": 1.0}
+              ],
+              [
+                {
+                  "EntityType": "the_vault:vault_fighter",
+                  "EntityNbt": {
+                    "HandItems": [
+                      {
+                        "id": "minecraft:netherite_sword",
+                        "Count": 1,
+                        "tag": {
+                          "Damage": 0
+                        }
+                      }
+                    ]
+                  },
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:vault_fighter_1",
+                  "EntityNbt": {
+                    "HandItems": [
+                      {
+                        "id": "minecraft:netherite_sword",
+                        "Count": 1,
+                        "tag": {
+                          "Damage": 0
+                        }
+                      }
+                    ]
+                  },
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:vault_fighter_2",
+                  "EntityNbt": {
+                    "HandItems": [
+                      {
+                        "id": "minecraft:netherite_sword",
+                        "Count": 1,
+                        "tag": {
+                          "Damage": 0
+                        }
+                      }
+                    ]
+                  },
+                  "Weight": 1.0
+                },
+                {
+                  "EntityType": "the_vault:vault_fighter_3",
+                  "EntityNbt": {
+                    "HandItems": [
+                      {
+                        "id": "minecraft:netherite_sword",
+                        "Count": 1,
+                        "tag": {
+                          "Damage": 0
+                        }
+                      }
+                    ]
+                  },
+                  "Weight": 1.0
+                }
+              ],
+              [
+                {"EntityType": "the_vault:t3_zombie", "Weight": 1.0},
+                {"EntityType": "the_vault:t3_drowned", "Weight": 1.0},
+                {"EntityType": "the_vault:t3_husk", "Weight": 1.0},
+                {"EntityType": "minecraft:piglin_brute", "Weight": 1.0},
+                {"EntityType": "the_vault:deep_dark_horror", "Weight": 1.0},
+                {"EntityType": "the_vault:blood_tank", "Weight": 1.0},
+                {"EntityType": "the_vault:overgrown_tank", "Weight": 1.0},
+                {"EntityType": "the_vault:shiver", "Weight": 1.0},
+                {"EntityType": "the_vault:deathcap", "Weight": 1.0},
+                {"EntityType": "the_vault:vault_red_gummy_soldier", "Weight": 1.0},
+                {"EntityType": "the_vault:pirate_guardian_tank", "Weight": 1.0}
+              ],
+              [
+                {"EntityType": "the_vault:dungeon_piglin_brute", "Weight": 1.0},
+                {"EntityType": "the_vault:dungeon_piglin", "Weight": 1.0},
+                {"EntityType": "the_vault:t1_zombie", "Weight": 1.0},
+                {"EntityType": "the_vault:t2_zombie", "Weight": 1.0},
+                {"EntityType": "the_vault:dungeon_spider", "Weight": 1.0},
+                {"EntityType": "the_vault:dungeon_black_widow_spider", "Weight": 1.0},
+                {"EntityType": "the_vault:dungeon_pillager", "Weight": 1.0},
+                {"EntityType": "the_vault:dungeon_vindicator", "Weight": 1.0},
+                {"EntityType": "the_vault:dungeon_skeleton", "Weight": 1.0}
+              ]
+            ],
+            "Radius": 40,
+            "ZonesEnabled": true,
+            "MinGroupCount": 28,
+            "MaxGroupCount": 64,
+            "MaxMobsAliveBeforeNextSpawn": 64,
+            "MinMobCount": 18,
+            "MaxMobCount": 24
+          }
         },
-        { "stageName": "tenos",
+        {
+          "stageName": "generic3",
+          "stageType": "melee",
+          "attributes": {
+            "Speed": 0.27,
+            "AttackDamage": 36,
+            "Health": 16000,
+            "MeleeAttacks": [
+              {
+                "Multiplier": 1.5,
+                "Weight": 1.0,
+                "Name": "hammersmash"
+              },
+              {
+                "Multiplier": 1.0,
+                "Weight": 2.0,
+                "Name": "uppercut"
+              },
+              {
+                "Multiplier": 0.9,
+                "Weight": 4.0,
+                "Name": "groundslam"
+              }
+            ],
+            "RageAttacks": [
+              {
+                "Multiplier": 0.9,
+                "Weight": 2.0,
+                "Name": "aoeclose"
+              }
+            ]
+          }
+        },
+        {
+          "stageName": "tenos",
           "stageType": "catalyst",
           "attributes": {
             "CatalystWaves": [
@@ -238,10 +448,6 @@
               {
                 "MinCatalysts": 7,
                 "MaxCatalysts": 7
-              },
-              {
-                "MinCatalysts": 11,
-                "MaxCatalysts": 11
               }
             ],
             "ChestChance": 0.2,
@@ -289,39 +495,41 @@
             }
           }
         },
-        { "stageName": "generic4",
-        "stageType": "melee",
-        "attributes": {
-          "Speed": 0.27,
-          "AttackDamage": 40,
-          "Health": 24000,
-          "MeleeAttacks": [
-            {
-              "Multiplier": 1.5,
-              "Weight": 1.0,
-              "Name": "hammersmash"
-            },
-            {
-              "Multiplier": 1.0,
-              "Weight": 2.0,
-              "Name": "uppercut"
-            },
-            {
-              "Multiplier": 0.9,
-              "Weight": 4.0,
-              "Name": "groundslam"
-            }
-          ],
-          "RageAttacks": [
+        {
+          "stageName": "generic4",
+          "stageType": "melee",
+          "attributes": {
+            "Speed": 0.27,
+            "AttackDamage": 40,
+            "Health": 24000,
+            "MeleeAttacks": [
+              {
+                "Multiplier": 1.5,
+                "Weight": 1.0,
+                "Name": "hammersmash"
+              },
+              {
+                "Multiplier": 1.0,
+                "Weight": 2.0,
+                "Name": "uppercut"
+              },
+              {
+                "Multiplier": 0.9,
+                "Weight": 4.0,
+                "Name": "groundslam"
+              }
+            ],
+            "RageAttacks": [
               {
                 "Multiplier": 0.9,
                 "Weight": 2.0,
                 "Name": "aoeclose"
               }
-          ]
-        }
+            ]
+          }
         },
-        { "stageName": "idona",
+        {
+          "stageName": "idona",
           "stageType": "berserk",
           "attributes": {
             "Speed": 0.3,
@@ -362,15 +570,22 @@
             "MaxBaseDamageMultiplier": 3.3
           }
         }
-      
-        
-        
-        
-        
-        
-       
-        
       ]
     }
+  },
+  "zoneRadiusByDifficulty": {
+    "normal": 5,
+    "piece_of_cake": 9,
+    "impossible": 3,
+    "hard": 4,
+    "easy": 7,
+    "fragged": 2
+  },
+  "zoneProgressPerGroup": {
+    "the_vault:assassin": 0.03,
+    "the_vault:horde": 0.02,
+    "the_vault:tank": 0.05,
+    "the_vault:fighter": 0.04,
+    "the_vault:dungeon": 0.05
   }
 }

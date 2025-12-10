@@ -10,16 +10,21 @@
       "layout": [
         {
           "value": [
-            "OOO",
-            "OOO",
-            "OOO"
+            "OOOOO",
+            "XOAOX",
+            "XOOOX"
           ],
           "weight": 1.0
         }
-      ]
+      ],
+      "socketCount": {
+        "min": 1,
+        "max": 1
+      }
+
     },
     "large": {
-      "model": "the_vault:deck/large#inventory",
+      "model": "the_vault:deck/large_deck#inventory",
       "name": "Large Deck",
       "essence": {
         "min": 1,
@@ -34,10 +39,14 @@
           ],
           "weight": 1.0
         }
-      ]
+      ],
+      "socketCount": {
+        "min": 1,
+        "max": 1
+      }
     },
     "double": {
-      "model": "the_vault:deck/double#inventory",
+      "model": "the_vault:deck/double_deck#inventory",
       "name": "Double Deck",
       "essence": {
         "min": 1,
@@ -47,15 +56,19 @@
         {
           "value": [
             "OOXXXOO",
-            "OOXOXOO",
+            "OOXAXOO",
             "OOXXXOO"
           ],
           "weight": 1.0
         }
-      ]
+      ],
+      "socketCount": {
+        "min": 1,
+        "max": 1
+      }
     },
     "merchant": {
-      "model": "the_vault:deck/merchant#inventory",
+      "model": "the_vault:deck/merchant_deck#inventory",
       "name": "Merchant's Deck",
       "essence": {
         "min": 2,
@@ -64,18 +77,23 @@
       "layout": [
         {
           "value": [
-            "XXOOXX",
-            "XOOOOX",
-            "OOOOOO",
-            "XOOOOX",
-            "XXOOXX"
-          ],
+            "OXOXOX",
+            "OXOOOX",
+            "AOOXOO",
+            "XOXOOA",
+            "OOXOXO",
+            "AXOOXO"
+        ],
           "weight": 1.0
         }
-      ]
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
     },
     "expanded": {
-      "model": "the_vault:deck/expanded#inventory",
+      "model": "the_vault:deck/expanded_deck#inventory",
       "name": "Expanded Deck",
       "essence": {
         "min": 2,
@@ -84,17 +102,42 @@
       "layout": [
         {
           "value": [
-            "OOOO",
-            "OOOO",
-            "OOOO",
-            "OOOO"
+            "OOOOOOOOO",
+            "OXXXAXXXO",
+            "OOOOOOOOO"
+          ],
+          "weight": 0.0
+        }
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    "extended": {
+      "model": "the_vault:deck/expanded_deck#inventory",
+      "name": "Extended Deck",
+      "essence": {
+        "min": 2,
+        "max": 2
+      },
+      "layout": [
+        {
+          "value": [
+            "OOOOOOOOO",
+            "OXXXAXXXO",
+            "OOOOOOOOO"
           ],
           "weight": 1.0
         }
-      ]
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
     },
     "gdungeon": {
-      "model": "the_vault:deck/edge#inventory",
+      "model": "the_vault:deck/edge_deck#inventory",
       "name": "The Edge Deck",
       "essence": {
         "min": 3,
@@ -108,12 +151,35 @@
             "OOOOOOO",
             "XOXOXOX"
           ],
-          "weight": 1.0
+          "weight": 0.0
         }
       ]
     },
+    "gilded": {
+      "model": "the_vault:deck/edge_deck#inventory",
+      "name": "The Gilded Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+              "AOOOOOA",
+              "OOOXOOO",
+              "OOOXOOO",
+              "AOOOOOA"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
+    },
     "ldungeon": {
-      "model": "the_vault:deck/mushroom#inventory",
+      "model": "the_vault:deck/mushroom_deck#inventory",
       "name": "The Shroom Deck",
       "essence": {
         "min": 3,
@@ -127,12 +193,60 @@
             "XXOOOXX",
             "XXOOOXX"
           ],
-          "weight": 1.0
+          "weight": 0.0
         }
       ]
     },
+    "living": {
+      "model": "the_vault:deck/mushroom_deck#inventory",
+      "name": "The Living Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+              "XOOOXOX",
+              "OOOXOOO",
+              "OOOXOOO",
+              "XOXOXXX",
+              "XOOAOOX",
+              "XXOAOXX"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    "anvil": {
+      "model": "the_vault:deck/anvil_deck#inventory",
+      "name": "The Anvil Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+              "OOOOOOOOO",
+              "XXOOOOOXX",
+              "XXXOOOXXX",
+              "XOOOOOOOX"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
+    },
     "odungeon": {
-      "model": "the_vault:deck/anvil#inventory",
+      "model": "the_vault:deck/anvil_deck#inventory",
       "name": "The Anvil Deck",
       "essence": {
         "min": 3,
@@ -146,12 +260,12 @@
             "XXOOOXX",
             "XOOOOOX"
           ],
-          "weight": 1.0
+          "weight": 0.0
         }
       ]
     },
     "treasure": {
-      "model": "the_vault:deck/treasure#inventory",
+      "model": "the_vault:deck/treasure_deck#inventory",
       "name": "The Treasure Deck",
       "essence": {
         "min": 4,
@@ -160,120 +274,22 @@
       "layout": [
         {
           "value": [
-            "OOOOOOO",
-            "OOOOOOO",
-            "OOOOOOO",
-            "OOXXXOO"
+              "XOOOOOX",
+              "OOOXOOO",
+              "OOXAXOO",
+              "OOOXOOO",
+              "XOOOOOX"
           ],
           "weight": 1.0
         }
-      ]
-    },
-    "wold": {
-      "model": "the_vault:deck/wold#inventory",
-      "name": "The Wold Deck",
-      "essence": {
-        "min": 4,
-        "max": 4
-      },
-      "layout": [
-        {
-          "value": [
-            "OXOOOXO",
-            "OXOOOXO",
-            "OXOOOXO",
-            "OXOOOXO",
-            "OOOOOOO"
-          ],
-          "weight": 1.0
-        }
-      ]
-    },
-    "snake": {
-      "model": "the_vault:deck/snake#inventory",
-      "name": "The Snake Deck",
-      "essence": {
-        "min": 4,
-        "max": 4
-      },
-      "layout": [
-        {
-          "value": [
-            "XXXXXXXXO",
-            "OOOOOOOOO",
-            "OXXXXXXXX",
-            "OOOOOOOOO",
-            "XXXXXXXXO",
-            "OOOOOOOOO"
-          ],
-          "weight": 1.0
-        }
-      ]
-    },
-    "fairy": {
-      "model": "the_vault:deck/fairy#inventory",
-      "name": "The Fairy Deck",
-      "essence": {
-        "min": 4,
-        "max": 4
-      },
-      "layout": [
-        {
-          "value": [
-            "OXXOXOXXO",
-            "XOXXOXXOX",
-            "XXOOXOOXX",
-            "XXOXXXOXX",
-            "XOXOXOXOX",
-            "OXXXOXXXO"
-          ],
-          "weight": 1.0
-        }
-      ]
-    },
-    "wall": {
-      "model": "the_vault:deck/wall#inventory",
-      "name": "The Wall Deck",
-      "essence": {
-        "min": 4,
-        "max": 4
-      },
-      "layout": [
-        {
-          "value": [
-            "OXOXOXOXO",
-            "OXOXOXOXO",
-            "OXOXOXOXO",
-            "OXOXOXOXO",
-            "OXOXOXOXO",
-            "OXOXOXOXO"
-          ],
-          "weight": 1.0
-        }
-      ]
-    },
-     "crate": {
-      "model": "the_vault:deck/crate#inventory",
-      "name": "The Crate Deck",
-      "essence": {
-        "min": 3,
-        "max": 3
-      },
-      "layout": [
-        {
-          "value": [
-            "OOOOOOOO",
-            "OXOXXOXO",
-            "OOOOOOOO",
-            "OXOXXOXO",
-            "OOOOOOOO"
-          ],
-          "weight": 1.0
-        }
-      ]
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
     },
     "black": {
-      "model": "the_vault:deck/black#inventory",
+      "model": "the_vault:deck/black_deck#inventory",
       "name": "The Black Deck",
       "essence": {
         "min": 3,
@@ -283,15 +299,41 @@
         {
           "value": [
             "OXOOOOOXO",
+            "OOOOAOOOO",
+            "OXOOOOOXO"
+          ],
+          "weight": 0.0
+        }
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    "shadow": {
+      "model": "the_vault:deck/black_deck#inventory",
+      "name": "The Shadow Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
             "OXOOOOOXO",
+            "OOOOAOOOO",
             "OXOOOOOXO"
           ],
           "weight": 1.0
         }
-      ]
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
     },
     "lost": {
-      "model": "the_vault:deck/lost#inventory",
+      "model": "the_vault:deck/lost_deck#inventory",
       "name": "The Lost Deck",
       "essence": {
         "min": 4,
@@ -300,16 +342,39 @@
       "layout": [
         {
           "value": [
-            "OOOOOOXOO",
-            "OOOOOOXXO",
+            "OOOOOOXAA",
+            "OOOOOOXXA",
             "OOXOOOOOX"
           ],
-          "weight": 1.0
+          "weight": 0.0
         }
       ]
+    },
+    "relic": {
+      "model": "the_vault:deck/lost_deck#inventory",
+      "name": "The Relic Deck",
+      "essence": {
+        "min": 4,
+        "max": 4
+      },
+      "layout": [
+        {
+          "value": [
+              "OOOOOOO",
+              "OOOXOOO",
+              "OOOXOOO",
+              "OOOXXOO"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
     },
     "champion": {
-      "model": "the_vault:deck/champion#inventory",
+      "model": "the_vault:deck/champion_deck#inventory",
       "name": "The Champion Deck",
       "essence": {
         "min": 2,
@@ -318,38 +383,23 @@
       "layout": [
         {
           "value": [
-            "OOOO",
-            "OOOO",
-            "OOOO",
-            "OOOO",
-            "XOOX"
+              "XOOOOOX",
+              "OXOOOXO",
+              "OXOOOXO",
+              "XOOXOOX",
+              "XXOXOXX",
+              "XXOOOXX"
           ],
           "weight": 1.0
         }
-      ]
-    },
-    "extended": {
-      "model": "the_vault:deck/champion#inventory",
-      "name": "The Champion Deck",
-      "essence": {
-        "min": 2,
-        "max": 2
-      },
-      "layout": [
-        {
-          "value": [
-            "X",
-            "X",
-            "X",
-            "XOOO",
-            "XOOX"
-          ],
-          "weight": 1.0
-        }
-      ]
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
     },
     "runic": {
-      "model": "the_vault:deck/runic#inventory",
+      "model": "the_vault:deck/runic_deck#inventory",
       "name": "The Runic Deck",
       "essence": {
         "min": 3,
@@ -358,19 +408,22 @@
       "layout": [
         {
           "value": [
-            "OOOXOXOOO",
-            "XXOXOXOXX",
-            "XXOXOXOXX",
-            "XXOXOXOXX",
-            "XXOXOXOXX",
-            "OXOXOXOXO"
-          ],
+            "OOXOXOO",
+            "OXXAXXO",
+            "OOOXOOO",
+            "OOXAXOO",
+            "OOXOXOO"
+        ],
           "weight": 1.0
         }
-      ]
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
     },
     "bishop": {
-      "model": "the_vault:deck/bishop#inventory",
+      "model": "the_vault:deck/bishop_deck#inventory",
       "name": "The Bishop Deck",
       "essence": {
         "min": 3,
@@ -387,10 +440,14 @@
           ],
           "weight": 1.0
         }
-      ]
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
     },
     "belt": {
-      "model": "the_vault:deck/belt#inventory",
+      "model": "the_vault:deck/belt_deck#inventory",
       "name": "The Belt Deck",
       "essence": {
         "min": 3,
@@ -399,41 +456,24 @@
       "layout": [
         {
           "value": [
-            "OOOOOOOOO",
-            "OXXXXXXXO",
-            "OXXXXXXXO",
-            "OXXXXXXXO",
-            "OXXXXXXXO",
-            "OOOOOOOOO"
+            "OOOOOOO",
+            "OXXXXXO",
+            "OXXXXXO",
+            "OXXXXXO",
+            "OXXXXXO",
+            "OOOOOOO"
           ],
           "weight": 1.0
         }
-      ]
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
     },
-    "skull": {
-      "model": "the_vault:deck/skull#inventory",
-      "name": "The Skull Deck",
-      "essence": {
-        "min": 4,
-        "max": 4
-      },
-      "layout": [
-        {
-          "value": [
-            "XXOOOXXX",
-            "XOXXXOXX",
-            "OXOXOXOX",
-            "OXXOXXOX",
-            "XOXXXOXX",
-            "XXOOOXXX"
-          ],
-          "weight": 1.0
-        }
-      ]
-    },
-    "scam": {
-      "model": "the_vault:deck/mystery#inventory",
-      "name": "The ?",
+    "mystery": {
+      "model": "the_vault:deck/mystery_deck#inventory",
+      "name": "The Mystery Deck",
       "essence": {
         "min": 5,
         "max": 5
@@ -441,16 +481,330 @@
       "layout": [
         {
           "value": [
-            "OXXXXXXXX",
-            "XXXXXXXXX",
-            "XXXXXXXXX",
-            "XXXOXXXXX",
-            "XXXXXXXXX",
-            "XXXXXXXXO"
+            "OOOOOOO",
+            "XOOXOOX",
+            "OOXAXOO",
+            "XOOXOOX",
+            "OOOOOOO"
           ],
           "weight": 1.0
         }
-      ]
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    "idona": {
+      "model": "the_vault:deck/idona_deck#inventory",
+      "name": "Idona's Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },  
+      "layout": [
+        {
+          "value": [
+              "AOOXOOO",
+              "OAOOOAO",
+              "OAOOOAO",
+              "AOOXOOO"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    "velara": {
+      "model": "the_vault:deck/velara_deck#inventory",
+      "name": "The Velara Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+              "OXOOXOO",
+              "OOOOOOO",
+              "OOXOXOO",
+              "OOOXOOO",
+              "OXXXOOO",
+              "XOOOXXX"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    "wendarr": {
+      "model": "the_vault:deck/wendarr_deck#inventory",
+      "name": "The Wendarr Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+              "OOOOOO",
+              "XOOOOX",
+              "AXOOXA",
+              "XOOOOX",
+              "OOOOOO"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    "tenos": {
+      "model": "the_vault:deck/tenos_deck#inventory",
+      "name": "The Tenos Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+              "OOOOOO",
+              "AOOOOA",
+              "XOOOOX",
+              "XOOOOX",
+              "XOOXOX"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    "cake": {
+      "model": "the_vault:deck/cake_deck#inventory",
+      "name": "The Cake Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+            "XXAXAXAXX",
+            "XOOOOOOOX",
+            "XOOOOOOOX",
+            "OOOOOOOOO"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    "pillager": {
+      "model": "the_vault:deck/pillager_deck#inventory",
+      "name": "The Pillager Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+            "OOOOO",
+            "AOOOA",
+            "OOOOO",
+            "OOOOO",
+            "OXOXO",
+            "XXOXX"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    "arcane": {
+      "model": "the_vault:deck/arcane_deck#inventory",
+      "name": "The Arcane Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+            "XAAAX",
+            "AOAOA",
+            "XAAAX"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    "skull": {
+      "model": "the_vault:deck/skull_deck#inventory",
+      "name": "The Skull Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+            "XOOOOOX",
+            "OOXOXOO",
+            "OOOOOOO",
+            "XOOOOOX",
+            "XXOXOXX"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    "mutant": {
+      "model": "the_vault:deck/mutant_deck#inventory",
+      "name": "The Mutant Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+            "OOAXOOO",
+            "XXOOOXX",
+            "OAOOOXO",
+            "OOOXOOO",
+            "AOXXXXO"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    "puzzle": {
+      "model": "the_vault:deck/puzzle_deck#inventory",
+      "name": "The Puzzle Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+            "XXXOXX",
+            "XOOOOO",
+            "XOOOOO",
+            "OOOOOX",
+            "XOOOOO",
+            "XOOXOO"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
+    },
+    "cactus": {
+      "model": "the_vault:deck/cactus_deck#inventory",
+      "name": "The Cactus Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+            "XXOOOXX",
+            "XXOOOXO",
+            "OXOOOOO",
+            "OOOOOXX",
+            "XXOOOXX",
+            "XXOOOXX"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    "ornate": {
+      "model": "the_vault:deck/ornate_deck#inventory",
+      "name": "The Ornate Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+            "XOOXOOX",
+            "OOAOAOO",
+            "OOOOOOO",
+            "XOOOOOX"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    "villager": {
+      "model": "the_vault:deck/villager_deck#inventory",
+      "name": "The Villager Deck",
+      "essence": {
+        "min": 3,
+        "max": 3
+      },
+      "layout": [
+        {
+          "value": [
+            "XOOOOOX",
+            "OOOOOOO",
+            "XOAOAOX",  
+            "XOXOXOX",
+            "XOOOOOX"
+          ],
+          "weight": 1.0
+        }
+      ],
+      "socketCount": {
+        "min": 2,
+        "max": 2
+      }
     }
   }
 }

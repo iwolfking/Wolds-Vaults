@@ -1,0 +1,20 @@
+{
+    "tile_processors": [
+        {
+          "type": "reference",
+          "id": "the_vault:generic/room_base"
+        },
+        {
+            "type": "weighted_target",
+            "target": "the_vault:placeholder[type=objective]",
+            "output": [
+                {
+                    "block": "the_vault:etching_vendor_controller",
+                    "weight": 1
+                }
+            ]
+        }
+    ],
+    "entity_processors": [],
+    "decorators": []
+}

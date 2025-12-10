@@ -9,6 +9,21 @@
       "input": "the_vault:vault_rock",
       "output": "the_vault:vault_crystal"
     },
+     {
+      "input": "the_vault:crystal_seal_time_trial",
+      "output": {
+        "id": "the_vault:vault_crystal",
+        "nbt": {
+          "CrystalData": {
+            "Objective": {
+              "type": "time_trial",
+              "objective_probability": 1.0
+            },
+            "Version": 3
+          }
+        }
+      }
+    },
     {
       "input": "woldsvaults:greedy_vault_rock",
       "output": {

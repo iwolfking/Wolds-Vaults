@@ -1,0 +1,39 @@
+{
+  "entries": [
+    {
+      "roll": {
+        "type": "uniform",
+        "min": 1,
+        "max": 3
+      },
+      "pool": [
+        { "weight": 1,
+          "pool": [
+          {
+          "weight": 127,
+          "item": {
+            "id": "minecraft:paper",
+            "count": {
+              "type": "uniform",
+              "min": 1,
+              "max": 1
+            }
+            }
+          },
+          {
+          "weight": 80,
+          "item": {
+            "id": "the_vault:soot",
+            "count": {
+              "type": "uniform",
+              "min": 1,
+              "max": 1
+            }
+          }
+          }
+        ]
+        }
+      ]
+    }
+  ]
+}

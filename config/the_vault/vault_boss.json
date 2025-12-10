@@ -30,7 +30,6 @@
         "leap_at_target",
         "cobweb_ranged_attack",
         "summon_target_spider",
-        "place_cobwebs_around",
         "poison_aura",
         "poison_on_hit",
         "health_attribute",
@@ -96,7 +95,8 @@
         "StackSize": 1,
         "Inaccuracy": 12.0,
         "AttackRadius": 25.0,
-        "AttackWhenInMeleeReach": 0
+        "AttackWhenInMeleeReach": 0,
+        "abilityHasteStacks": 5
       }
     },
     "cobweb_ranged_attack": {
@@ -104,11 +104,12 @@
       "Attributes": {
         "AttackIntervalMin": 20,
         "AttackIntervalMax": 60,
-        "SpeedModifier": 1.0,
+        "SpeedModifier": 0.1,
         "StackSize": 1,
         "Inaccuracy": 12.0,
         "AttackRadius": 25.0,
-        "AttackWhenInMeleeReach": 1
+        "AttackWhenInMeleeReach": 0,
+        "abilityHasteStacks": 5
       }
     },
     "golem_hand_ranged_attack": {
@@ -126,10 +127,10 @@
     "golem_double_hand_ranged_attack": {
       "Type": "golem_double_hand_ranged_attack",
       "Attributes": {
-        "AttackIntervalMin": 120,
-        "AttackIntervalMax": 200,
+        "AttackIntervalMin": 200,
+        "AttackIntervalMax": 400,
         "SpeedModifier": 1.0,
-        "DamageMultiplier": 4,
+        "DamageMultiplier": 4.0,
         "StackSize": 1,
         "AttackRadius": 25.0,
         "AttackWhenInMeleeReach": 0
@@ -205,7 +206,7 @@
     "summon_target_spider": {
       "Type": "summon_at_target",
       "Attributes": {
-        "SpawnInterval": 100,
+        "SpawnInterval": 200,
         "EntityTypes": [
           {
             "EntityType": "the_vault:vault_spider_baby",
@@ -213,10 +214,10 @@
           }
         ],
         "Radius": 15,
-        "MaxMobSpawnCount": 4,
+        "MaxMobSpawnCount": 2,
         "StackSize": 1,
-        "MaxMobsAliveBeforeNextSpawn": 40,
-        "MinMobSpawnCount": 3,
+        "MaxMobsAliveBeforeNextSpawn": 10,
+        "MinMobSpawnCount": 1,
         "MinDistanceFromCenter": 5
       }
     },
@@ -235,7 +236,8 @@
         "StackSize": 1,
         "MaxMobsAliveBeforeNextSpawn": 4,
         "MinMobSpawnCount": 1,
-        "MinDistanceFromCenter": 5
+        "MinDistanceFromCenter": 5,
+        "abilityHasteStacks": 5
       }
     },
     "summon_vanilla_at_target": {
@@ -312,10 +314,10 @@
     "heal": {
       "Type": "heal",
       "Attributes": {
-        "HealCooldown": 800,
-        "HealInterval": 1000,
+        "HealCooldown": 1000,
+        "HealInterval": 1200,
         "StackSize": 0,
-        "HealPercentage": 0.05
+        "HealPercentage": 0.02
       }
     },
     "blood_orb": {
@@ -368,7 +370,7 @@
     "life_leech_on_hit": {
       "Type": "life_leech_on_hit",
       "Attributes": {
-        "LeechPercentage": 0.02
+        "LeechPercentage": 0.01
       }
     },
     "wither_on_hit": {
@@ -454,8 +456,16 @@
       "Attributes": {}
     },
     "spider_attack": {
-      "Type": "spider_attack",
-      "Attributes": {}
+      "Type": "melee_attack",
+      "Attributes": {
+        "Attacks": [
+          {
+            "Multiplier": 1.0,
+            "Weight": 1.0,
+            "Name": "bite"
+          }
+        ]
+      }
     },
     "place_cobwebs_around": {
       "Type": "place_block_around",
@@ -501,20 +511,20 @@
   ],
   "RuneModifierRolls": {
     "Health": {
-      "min": 0.05,
-      "max": 0.2,
+      "min": 0.25,
+      "max": 0.5,
       "type": "uniformed_step",
       "step": 0.01
     },
     "Damage": {
-      "min": 0.05,
-      "max": 0.2,
+      "min": 0.15,
+      "max": 0.6,
       "type": "uniformed_step",
       "step": 0.01
     },
     "AbilityHaste": {
       "min": 0,
-      "max": 1,
+      "max": 2,
       "type": "uniform"
     }
   }

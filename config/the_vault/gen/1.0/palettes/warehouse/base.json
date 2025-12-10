@@ -1,0 +1,135 @@
+{
+    "tile_processors": [
+        {
+            "type": "reference",
+            "id": "the_vault:generic/room_base"
+        },
+        {
+          "type": "weighted_target",
+          "target": "minecraft:glass",
+          "output": {
+            "minecraft:light[level=15]": 1
+          }
+        },
+        {
+          "type": "weighted_target",
+          "target": "buildersdelight:spruce_planks_2",
+          "output": {
+            "the_vault:cardboard_box[facing=east,color=1,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=2,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=3,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=4,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=1,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=2,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=3,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=4,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=1,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=2,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=3,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=4,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=1,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=2,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=3,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=4,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            
+            "the_vault:cardboard_box[facing=east,color=1,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=2,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=3,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=4,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=1,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=2,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=3,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=4,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=1,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=2,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=3,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=4,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=1,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=2,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=3,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=4,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1
+          }
+        },
+        {
+          "type": "weighted_target",
+          "target": "buildersdelight:oak_planks_2",
+          "output": {
+            "the_vault:cardboard_box[facing=east,color=1,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=2,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=3,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=4,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=1,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=2,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=3,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=4,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=1,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=2,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=3,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=4,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=1,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=2,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=3,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=4,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+
+            "the_vault:cardboard_box[facing=east,color=1,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=2,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=3,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=4,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=1,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=2,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=3,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=4,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=1,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=2,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=3,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=4,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=1,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=2,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=3,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=4,open=true]{LootTable:\"the_vault:cardboard_box_dull\"}": 1
+          }
+        },
+        {
+          "type": "weighted_target",
+          "target": "buildersdelight:dark_oak_planks_2",
+          "output": {
+            "the_vault:cardboard_box[facing=east,color=1,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=2,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=3,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=4,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=1,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=2,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=3,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=4,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=1,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=2,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=3,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=4,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=1,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=2,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=3,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=4,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+
+            "the_vault:cardboard_box[facing=east,color=1,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=2,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=3,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=east,color=4,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=1,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=2,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=3,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=west,color=4,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=1,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=2,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=3,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=north,color=4,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=1,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=2,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=3,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "the_vault:cardboard_box[facing=south,color=4,open=false]{LootTable:\"the_vault:cardboard_box_dull\"}": 1,
+            "minecraft:air": 20
+          }
+        }
+    ],
+    "entity_processors": [],
+    "decorators": []
+}

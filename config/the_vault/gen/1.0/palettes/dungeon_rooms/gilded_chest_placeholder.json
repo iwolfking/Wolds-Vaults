@@ -19,9 +19,23 @@
       "levels": [
         {
           "level": 0,
-          "probability": 0.3,
+          "probability": 0.75,
           "success": {
-            "the_vault:gilded_barrel{LootTable:\"the_vault:gilded_dungeon_barrel\"}": 1
+            "the_vault:gilded_barrel{LootTable:\"the_vault:gilded_dungeon_barrel\"}": 1,
+            "the_vault:living_barrel{LootTable:\"the_vault:living_dungeon_barrel\"}": 1,
+            "the_vault:ornate_barrel{LootTable:\"the_vault:ornate_dungeon_barrel\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 40,
+          "probability": 0.75,
+          "success": {
+            "the_vault:gilded_barrel{LootTable:\"the_vault:gilded_dungeon_barrel\"}": 1,
+            "the_vault:living_barrel{LootTable:\"the_vault:living_dungeon_barrel_lvl40\"}": 1,
+            "the_vault:ornate_barrel{LootTable:\"the_vault:ornate_dungeon_barrel\"}": 1
           },
           "failure": {
             "minecraft:air": 1
@@ -29,9 +43,11 @@
         },
         {
           "level": 50,
-          "probability": 0.3,
+          "probability": 0.75,
           "success": {
-            "the_vault:gilded_barrel{LootTable:\"the_vault:gilded_dungeon_barrel_lvl50\"}": 1
+            "the_vault:gilded_barrel{LootTable:\"the_vault:gilded_dungeon_barrel_lvl50\"}": 1,
+            "the_vault:living_barrel{LootTable:\"the_vault:living_dungeon_barrel_lvl50\"}": 1,
+            "the_vault:ornate_barrel{LootTable:\"the_vault:ornate_dungeon_barrel_lvl50\"}": 1
           },
           "failure": {
             "minecraft:air": 1
@@ -47,7 +63,33 @@
           "level": 0,
           "probability": 1.0,
           "success": {
+            "the_vault:gilded_barrel{LootTable:\"the_vault:gilded_dungeon_barrel\"}": 1,
+            "the_vault:living_barrel{LootTable:\"the_vault:living_dungeon_barrel\"}": 1,
+            "the_vault:ornate_barrel{LootTable:\"the_vault:ornate_dungeon_barrel\"}": 1
+          },
+          "failure": {
             "minecraft:air": 1
+          }
+        },
+        {
+          "level": 40,
+          "probability": 1.0,
+          "success": {
+            "the_vault:gilded_barrel{LootTable:\"the_vault:gilded_dungeon_barrel\"}": 1,
+            "the_vault:living_barrel{LootTable:\"the_vault:living_dungeon_barrel_lvl40\"}": 1,
+            "the_vault:ornate_barrel{LootTable:\"the_vault:ornate_dungeon_barrel\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 50,
+          "probability": 1.0,
+          "success": {
+            "the_vault:gilded_barrel{LootTable:\"the_vault:gilded_dungeon_barrel_lvl50\"}": 1,
+            "the_vault:ornate_barrel{LootTable:\"the_vault:ornate_dungeon_barrel_lvl50\"}": 1,
+            "the_vault:living_barrel{LootTable:\"the_vault:living_dungeon_barrel_lvl50\"}": 1
           },
           "failure": {
             "minecraft:air": 1

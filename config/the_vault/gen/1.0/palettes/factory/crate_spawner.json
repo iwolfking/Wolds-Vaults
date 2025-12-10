@@ -25,7 +25,15 @@
             "type": "weighted_target",
             "target": "ispawner:spawner",
             "output": {
-              "ispawner:spawner{ Manager: { Settings: { Attempts: 3 } } }": 1
+              "ispawner:spawner{ Manager: { UsesLeft: 1, Settings: { Attempts: 1, PlayerRadius: 8, SpawnDelay: 20 } } }": 1
+            }
+          },
+          {
+            "level": 30,
+            "type": "weighted_target",
+            "target": "ispawner:spawner",
+            "output": {
+              "ispawner:spawner{ Manager: { UsesLeft: 2, Settings: { Attempts: 1, PlayerRadius: 8, SpawnDelay: 20 } } }": 1
             }
           },
           {
@@ -33,15 +41,7 @@
             "type": "weighted_target",
             "target": "ispawner:spawner",
             "output": {
-              "ispawner:spawner{ Manager: { Settings: { Attempts: 4 } } }": 1
-            }
-          },
-          {
-            "level": 90,
-            "type": "weighted_target",
-            "target": "ispawner:spawner",
-            "output": {
-              "ispawner:spawner{ Manager: { Settings: { Attempts: 5 } } }": 1
+              "ispawner:spawner{ Manager: { UsesLeft: 3, Settings: { Attempts: 1, PlayerRadius: 8, SpawnDelay: 20 } } }": 1
             }
           }
         ]

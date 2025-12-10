@@ -1,0 +1,102 @@
+{
+  "sigils": {
+    "adept": {
+      "displayName": "Adept",
+      "color": "#FF00FF",
+      "modelId": "the_vault:sigil/adept_sigil#inventory",
+      "difficulty": 0.5
+    },
+    "expert": {
+      "displayName": "Expert",
+      "color": "#4FC3F7",
+      "modelId": "the_vault:sigil/expert_sigil#inventory",
+      "difficulty": 1.0
+    },
+    "master": {
+      "displayName": "Master",
+      "color": "#ffda2c",
+      "modelId": "the_vault:sigil/master_sigil#inventory",
+      "difficulty": 1.5
+    },
+    "veteran": {
+      "displayName": "Veteran",
+      "color": "#FFB74D",
+      "modelId": "the_vault:sigil/veteran_sigil#inventory",
+      "difficulty": 3.0
+    },
+    "legend": {
+      "displayName": "Legend",
+      "color": "#cb3900",
+      "modelId": "the_vault:sigil/legend_sigil#inventory",
+      "difficulty": 5.0
+    }
+  },
+  "pools": {
+    "default": [
+      {
+        "value": "adept",
+        "weight": 4.0
+      },
+      {
+        "value": "expert",
+        "weight": 2.0
+      },
+      {
+        "value": "master",
+        "weight": 1.0
+      },
+      {
+        "value": "veteran",
+        "weight": 1.0
+      },
+      {
+        "value": "legend",
+        "weight": 1.0
+      }
+    ],
+    "treasure": [
+      {
+        "value": "master",
+        "weight": 5.0
+      },
+      {
+        "value": "veteran",
+        "weight": 3.0
+      },
+      {
+        "value": "legend",
+        "weight": 1.0
+      }
+    ],
+    "adept": [
+      {
+        "value": "adept",
+        "weight": 1.0
+      }
+    ],
+    "expert": [
+      {
+        "value": "expert",
+        "weight": 1.0
+      }
+    ],
+    "master": [
+      {
+        "value": "master",
+        "weight": 1.0
+      }
+    ],
+    "veteran": [
+      {
+        "value": "veteran",
+        "weight": 1.0
+      }
+    ],
+    "legend": [
+      {
+        "value": "legend",
+        "weight": 1.0
+      }
+    ]
+  }
+}

@@ -1,182 +1,553 @@
 {
-    "values": {
-      "foil_boost": {
-        "modifierValue": {
-          "min": 0.1,
-          "max": 0.5,
-          "type": "uniform"
-        },
-        "requiredGroups": [
-          "Foil"
-        ],
-        "requiredColors": [],
-        "type": "global"
+  "values": {
+    "equilibrium": {
+      "modifierValue": {
+        "min": 0.15,
+        "max": 0.3,
+        "type": "uniform"
       },
-      "red_boost": {
-        "modifierValue": {
-          "min": 0.25,
-          "max": 1.0,
-          "type": "uniform"
+      "modifierValues": {
+        "lesser": {
+          "value": {
+            "min": 0.08,
+            "max": 0.08,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/lesser_equilibrium_deck_core#inventory",
+          "name": "Lesser Equilibrium Core",
+          "colour": 13618375
         },
-        "requiredGroups": [],
-        "requiredColors": [
-          "RED"
-        ],
-        "type": "global"
+        "greater": {
+          "value": {
+            "min": 0.3,
+            "max": 0.5,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/greater_equilibrium_deck_core#inventory",
+          "name": "Greater Equilibrium Core",
+          "colour": 16769382
+        }
       },
-      "blue_boost": {
-        "modifierValue": {
-          "min": 0.25,
-          "max": 1.0,
-          "type": "uniform"
-        },
-        "requiredGroups": [],
-        "requiredColors": [
-          "BLUE"
-        ],
-        "type": "global"
-      },
-      "green_boost": {
-        "modifierValue": {
-          "min": 0.25,
-          "max": 1.0,
-          "type": "uniform"
-        },
-        "requiredGroups": [],
-        "requiredColors": [
-          "GREEN"
-        ],
-        "type": "global"
-      },
-      "yellow_boost": {
-        "modifierValue": {
-          "min": 0.25,
-          "max": 1.0,
-          "type": "uniform"
-        },
-        "requiredGroups": [],
-        "requiredColors": [
-          "YELLOW"
-        ],
-        "type": "global"
-      },
-      "all_cards_slots": {
-        "modifierValue": {
-          "min": 0.5,
-          "max": 1.0,
-          "type": "uniform"
-        },
-        "requiredGroups": [],
-        "requiredColors": [
-        ],
-        "slotRoll": {
-          "min": 1,
-          "max": 6,
-          "type": "uniform"
-        },
-        "type": "slot"
-      },
-      "foil_cards_slots": {
-        "modifierValue": {
-          "min": 1.0,
-          "max": 2.0,
-          "type": "uniform"
-        },
-        "requiredGroups": [
-          "Foil"
-        ],
-        "requiredColors": [
-        ],
-        "slotRoll": {
-          "min": 1,
-          "max": 6,
-          "type": "uniform"
-        },
-        "type": "slot"
-      },
-      "dummy": {
-        "type": "dummy"
-      }
+      "type": "stat_efficiency",
+      "modelId": "the_vault:deck_cores/equilibrium_deck_core#inventory",
+      "name": "Equilibrium Core",
+      "colour": 13618375
     },
-    "pools": {
-      "default": {
-        "modifierCount": {
-          "min": 1,
-          "max": 1,
-          "type": "uniform"
-        },
-        "pool": [
-          {
-            "value": "foil_boost",
-            "weight": 1.0
-          },
-          {
-            "value": "red_boost",
-            "weight": 1.0
-          },
-          {
-            "value": "blue_boost",
-            "weight": 1.0
-          },
-          {
-            "value": "yellow_boost",
-            "weight": 1.0
-          },
-          {
-            "value": "green_boost",
-            "weight": 1.0
-          },
-          {
-            "value": "all_cards_slots",
-            "weight": 1.0
-          },
-          {
-            "value": "foil_cards_slots",
-            "weight": 1.0
-          },
-          {
-            "value": "dummy",
-            "weight": 93.0
-          }
-        ]
+    "harvest": {
+      "modifierValue": {
+        "min": 0.1,
+        "max": 0.3,
+        "type": "uniform"
       },
-      "random": {
-        "modifierCount": {
-          "min": 1,
-          "max": 3,
-          "type": "uniform"
+      "modifierValues": {
+        "lesser": {
+          "value": {
+            "min": 0.05,
+            "max": 0.05,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/lesser_harvest_deck_core#inventory",
+          "name": "Lesser Harvest Core",
+          "colour": 13618375
         },
-        "pool": [
-          {
-            "value": "foil_boost",
-            "weight": 1.0
+        "greater": {
+          "value": {
+            "min": 0.3,
+            "max": 0.5,
+            "type": "uniform"
           },
-          {
-            "value": "red_boost",
-            "weight": 1.0
-          },
-          {
-            "value": "blue_boost",
-            "weight": 1.0
-          },
-          {
-            "value": "yellow_boost",
-            "weight": 1.0
-          },
-          {
-            "value": "green_boost",
-            "weight": 1.0
-          },
-          {
-            "value": "all_cards_slots",
-            "weight": 1.0
-          },
-          {
-            "value": "foil_cards_slots",
-            "weight": 1.0
-          }
-        ]
-      }
+          "modelId": "the_vault:deck_cores/greater_harvest_deck_core#inventory",
+          "name": "Greater Harvest Core",
+          "colour": 16769382
+        }
+      },
+      "type": "resource_requirement",
+      "modelId": "the_vault:deck_cores/harvest_deck_core#inventory",
+      "name": "Harvest Core",
+      "colour": 13618375
     },
-    "modifierChance": 1
+    "fortune": {
+      "modifierValue": {
+        "min": 0.05,
+        "max": 0.15,
+        "type": "uniform"
+      },
+      "modifierValues": {
+        "lesser": {
+          "value": {
+            "min": 0.03,
+            "max": 0.03,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/lesser_fortune_deck_core#inventory",
+          "name": "Lesser Fortune Core",
+          "colour": 13618375
+        },
+        "greater": {
+          "value": {
+            "min": 0.3,
+            "max": 0.5,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/greater_fortune_deck_core#inventory",
+          "name": "Greater Fortune Core",
+          "colour": 16769382
+        }
+      },
+      "type": "resource_double",
+      "modelId": "the_vault:deck_cores/fortune_deck_core#inventory",
+      "name": "Fortune Core",
+      "colour": 13618375
+    },
+    "bounty": {
+      "modifierValue": {
+        "min": 0,
+        "max": 0,
+        "type": "uniform"
+      },
+      "tierIncrease": {
+        "min": 2,
+        "max": 4,
+        "type": "uniform"
+      },
+      "resourceCardsRequired": {
+        "min": 8,
+        "max": 16,
+        "type": "uniform"
+      },
+      "bountyRolls": {
+        "lesser": {
+          "value": {
+            "min": 1.0,
+            "max": 1.0,
+            "type": "uniform"
+          },
+          "crateTierIncrease": {
+            "min": 1,
+            "max": 1,
+            "type": "uniform"
+          },
+          "resourceCardsRequired": {
+            "min": 12,
+            "max": 12,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/lesser_bounty_deck_core#inventory",
+          "name": "Lesser Bounty Core",
+          "colour": 13618375
+        }
+      },
+      "type": "bounty",
+      "modelId": "the_vault:deck_cores/bounty_deck_core#inventory",
+      "name": "Bounty Core",
+      "colour": 13618375
+    },
+    "shiny": {
+      "modifierValue": {
+        "min": 0.5,
+        "max": 1.5,
+        "type": "uniform"
+      },
+      "modifierValues": {
+        "lesser": {
+          "value": {
+            "min": 0.3,
+            "max": 0.3,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/lesser_shiny_deck_core#inventory",
+          "name": "Lesser Shiny Core",
+          "colour": 13618375
+        },
+        "greater": {
+          "value": {
+            "min": 0.3,
+            "max": 0.5,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/greater_shiny_deck_core#inventory",
+          "name": "Greater Shiny Core",
+          "colour": 16769382
+        }
+      },
+      "requiredGroups": [
+        "Foil"
+      ],
+      "requiredColors": [],
+      "type": "global",
+      "modelId": "the_vault:deck_cores/shiny_deck_core#inventory",
+      "name": "Shiny Core",
+      "colour": 13618375
+    },
+    "steadfast": {
+      "modifierValue": {
+        "min": 0.6,
+        "max": 1.2,
+        "type": "uniform"
+      },
+      "modifierValues": {
+        "lesser": {
+          "value": {
+            "min": 0.3,
+            "max": 0.3,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/lesser_steadfast_deck_core#inventory",
+          "name": "Lesser Steadfast Core",
+          "colour": 13618375
+        },
+        "greater": {
+          "value": {
+            "min": 0.3,
+            "max": 0.5,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/greater_steadfast_deck_core#inventory",
+          "name": "Greater Steadfast Core",
+          "colour": 16769382
+        }
+      },
+      "requiredGroups": [
+        "Stat"
+      ],
+      "requiredColors": [],
+      "type": "global",
+      "modelId": "the_vault:deck_cores/steadfast_deck_core#inventory",
+      "name": "Steadfast Core",
+      "colour": 13618375
+    },
+    "crimson": {
+      "modifierValue": {
+        "min": 0.1,
+        "max": 0.4,
+        "type": "uniform"
+      },
+      "modifierValues": {
+        "lesser": {
+          "value": {
+            "min": 0.05,
+            "max": 0.05,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/lesser_crimson_deck_core#inventory",
+          "name": "Lesser Crimson Core",
+          "colour": 13618375
+        },
+        "greater": {
+          "value": {
+            "min": 0.3,
+            "max": 0.5,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/greater_crimson_deck_core#inventory",
+          "name": "Greater Crimson Core",
+          "colour": 16769382
+        }
+      },
+      "requiredGroups": [],
+      "requiredColors": [
+        "RED"
+      ],
+      "type": "global",
+      "modelId": "the_vault:deck_cores/crimson_deck_core#inventory",
+      "name": "Crimson Core",
+      "colour": 13618375
+    },
+    "azure": {
+      "modifierValue": {
+        "min": 0.1,
+        "max": 0.4,
+        "type": "uniform"
+      },
+      "modifierValues": {
+        "lesser": {
+          "value": {
+            "min": 0.05,
+            "max": 0.05,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/lesser_azure_deck_core#inventory",
+          "name": "Lesser Azure Core",
+          "colour": 13618375
+        },
+        "greater": {
+          "value": {
+            "min": 0.3,
+            "max": 0.5,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/greater_azure_deck_core#inventory",
+          "name": "Greater Azure Core",
+          "colour": 16769382
+        }
+      },
+      "requiredGroups": [],
+      "requiredColors": [
+        "BLUE"
+      ],
+      "type": "global",
+      "modelId": "the_vault:deck_cores/azure_deck_core#inventory",
+      "name": "Azure Core",
+      "colour": 13618375
+    },
+    "viridian": {
+      "modifierValue": {
+        "min": 0.1,
+        "max": 0.4,
+        "type": "uniform"
+      },
+      "modifierValues": {
+        "lesser": {
+          "value": {
+            "min": 0.05,
+            "max": 0.05,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/lesser_viridian_deck_core#inventory",
+          "name": "Lesser Viridian Core",
+          "colour": 13618375
+        },
+        "greater": {
+          "value": {
+            "min": 0.3,
+            "max": 0.5,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/greater_viridian_deck_core#inventory",
+          "name": "Greater Viridian Core",
+          "colour": 16769382
+        }
+      },
+      "requiredGroups": [],
+      "requiredColors": [
+        "GREEN"
+      ],
+      "type": "global",
+      "modelId": "the_vault:deck_cores/viridian_deck_core#inventory",
+      "name": "Viridian Core",
+      "colour": 13618375
+    },
+    "golden": {
+      "modifierValue": {
+        "min": 0.1,
+        "max": 0.4,
+        "type": "uniform"
+      },
+      "modifierValues": {
+        "lesser": {
+          "value": {
+            "min": 0.05,
+            "max": 0.05,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/lesser_golden_deck_core#inventory",
+          "name": "Lesser Golden Core",
+          "colour": 13618375
+        },
+        "greater": {
+          "value": {
+            "min": 0.3,
+            "max": 0.5,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/greater_golden_deck_core#inventory",
+          "name": "Greater Golden Core",
+          "colour": 16769382
+        }
+      },
+      "requiredGroups": [],
+      "requiredColors": [
+        "YELLOW"
+      ],
+      "type": "global",
+      "modelId": "the_vault:deck_cores/golden_deck_core#inventory",
+      "name": "Golden Core",
+      "colour": 13618375
+    },
+    "empyreal": {
+      "modifierValue": {
+        "min": 1.0,
+        "max": 1.0,
+        "type": "uniform"
+      },
+      "requiredGroups": [
+        "Stat",
+        "Evolution"
+      ],
+      "requiredColors": [],
+      "slotRoll": {
+        "min": 2,
+        "max": 5,
+        "type": "uniform"
+      },
+      "slotRolls": {
+        "lesser": {
+          "value": {
+            "min": 0.8,
+            "max": 0.8,
+            "type": "uniform"
+          },
+          "requiredGroups": [
+            "Stat",
+            "Evolution"
+          ],
+          "requiredColors": [],
+          "slotRoll": {
+            "min": 1,
+            "max": 1,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/lesser_empyreal_deck_core#inventory",
+          "name": "Lesser Empyreal Core",
+          "colour": 13618375
+        }
+      },
+      "type": "slot",
+      "modelId": "the_vault:deck_cores/empyreal_deck_core#inventory",
+      "name": "Empyreal Core",
+      "colour": 13618375
+    },
+    "pure": {
+      "modifierValue": {
+        "min": 0.02,
+        "max": 0.05,
+        "type": "uniform"
+      },
+      "modifierValues": {
+        "lesser": {
+          "value": {
+            "min": 0.01,
+            "max": 0.01,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/lesser_pure_deck_core#inventory",
+          "name": "Lesser Pure Core",
+          "colour": 13618375
+        },
+        "greater": {
+          "value": {
+            "min": 0.3,
+            "max": 0.5,
+            "type": "uniform"
+          },
+          "modelId": "the_vault:deck_cores/greater_pure_deck_core#inventory",
+          "name": "Greater Pure Core",
+          "colour": 16769382
+        }
+      },
+      "type": "non_foil_efficiency",
+      "modelId": "the_vault:deck_cores/pure_deck_core#inventory",
+      "name": "Pure Core",
+      "colour": 13618375
+    },
+    "dummy": {
+      "type": "dummy"
+    }
+  },
+  "pools": {
+    "default": [
+      {
+        "value": "equilibrium",
+        "weight": 1.0
+      },
+      {
+        "value": "harvest",
+        "weight": 1.0
+      },
+      {
+        "value": "fortune",
+        "weight": 1.0
+      },
+      {
+        "value": "bounty",
+        "weight": 1.0
+      },
+      {
+        "value": "shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "steadfast",
+        "weight": 1.0
+      },
+      {
+        "value": "crimson",
+        "weight": 1.0
+      },
+      {
+        "value": "azure",
+        "weight": 1.0
+      },
+      {
+        "value": "viridian",
+        "weight": 1.0
+      },
+      {
+        "value": "golden",
+        "weight": 1.0
+      },
+      {
+        "value": "empyreal",
+        "weight": 1.0
+      }
+    ],
+    "treasure_sand": [
+      {
+        "value": "equilibrium",
+        "weight": 3.0
+      },
+      {
+        "value": "harvest",
+        "weight": 4.0
+      },
+      {
+        "value": "pure",
+        "weight": 1.0
+      }
+    ],
+    "champions": [
+      {
+        "value": "fortune",
+        "weight": 4.0
+      },
+      {
+        "value": "shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "empyreal",
+        "weight": 3.0
+      }
+    ],
+    "colour_cores": [
+      {
+        "value": "crimson",
+        "weight": 1.0
+      },
+      {
+        "value": "azure",
+        "weight": 1.0
+      },
+      {
+        "value": "viridian",
+        "weight": 1.0
+      },
+      {
+        "value": "golden",
+        "weight": 1.0
+      }
+    ],
+    "dungeon_boss": [
+      {
+        "value": "steadfast",
+        "weight": 1.0
+      }
+    ],
+    "completion_crate": [
+      {
+        "value": "bounty",
+        "weight": 1.0
+      }
+    ]
   }
+}

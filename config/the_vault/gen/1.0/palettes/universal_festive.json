@@ -20,8 +20,7 @@
           "type": "weighted_target",
           "target": "minecraft:stone",
           "output": {
-            "minecraft:snow_block": 9,
-            "minecraft:powder_snow": 1
+            "minecraft:snow_block": 9
           }
         }
       ]
@@ -50,7 +49,7 @@
       "target": "minecraft:grass_block",
       "output": {
         "auxiliaryblocks:gingerbread_candied_block": 1,
-        "auxiliaryblocks:gingerbread_icing_block": 1
+        "auxiliaryblocks:gingerbread_icing_block": 4
       }
     },
     {
@@ -194,9 +193,21 @@
       "type": "weighted_target",
       "target": "minecraft:grass",
       "output": {
-        "auxiliaryblocks:gumdrop_red": 1,
-        "auxiliaryblocks:gumdrop_green": 1,
-        "auxiliaryblocks:gumdrop_purple": 1
+        "auxiliaryblocks:pink_present": 4,
+        "auxiliaryblocks:orange_present": 4,
+        "auxiliaryblocks:magenta_present": 4,
+        "auxiliaryblocks:blue_present": 4,
+        "auxiliaryblocks:lime_present": 4,
+        "auxiliaryblocks:red_present": 4,
+        "auxiliaryblocks:pink_big_present": 1,
+        "auxiliaryblocks:orange_big_present": 1,
+        "auxiliaryblocks:magenta_big_present": 1,
+        "auxiliaryblocks:blue_big_present": 1,
+        "auxiliaryblocks:lime_big_present": 1,
+        "auxiliaryblocks:red_big_present": 1,
+        "minecraft:snow[layers=1]": 25,
+        "minecraft:snow[layers=2]": 15,
+        "minecraft:snow[layers=3]": 8
       }
     },
     {
@@ -204,15 +215,19 @@
       "target": "minecraft:tall_grass[half=lower]",
       "output": {
         "supplementaries:trapped_present_purple[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 1,
+        "supplementaries:trapped_present_purple[packed=true]{Items: [{Slot: 0b, id: \"the_vault:block_gem_puffium\", Count: 1b}]}": 1,
         "supplementaries:trapped_present_blue[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 1,
         "supplementaries:trapped_present_light_blue[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 1,
         "supplementaries:trapped_present_magenta[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 1,
         "supplementaries:trapped_present_green[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 1,
         "supplementaries:trapped_present_yellow[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 1,
+        "supplementaries:trapped_present_yellow[packed=true]{Items: [{Slot: 0b, id: \"the_vault:block_gem_puffium\", Count: 1b}]}": 1,
         "supplementaries:trapped_present_red[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 1,
         "supplementaries:trapped_present_lime[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 1,
         "supplementaries:trapped_present_black[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 1,
+        "supplementaries:trapped_present_black[packed=true]{Items: [{Slot: 0b, id: \"the_vault:block_gem_puffium\", Count: 1b}]}": 1,
         "supplementaries:trapped_present_pink[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 1,
+        "supplementaries:trapped_present_pink[packed=true]{Items: [{Slot: 0b, id: \"the_vault:block_gem_puffium\", Count: 1b}]}": 1,
         "minecraft:air": 20
       }
     },
@@ -227,22 +242,27 @@
       "type": "weighted_target",
       "target": "minecraft:twisting_vines_plant",
       "output": {
-        "auxiliaryblocks:lollipop_stick": 1
+        "minecraft:air": 1,
+        "auxiliaryblocks:lollipop_stick": 0
       }
     },
     {
       "type": "weighted_target",
       "target": "minecraft:twisting_vines",
       "output": {
-        "auxiliaryblocks:lollipop_pink[face=down]": 1,
-        "auxiliaryblocks:lollipop_blue[face=down]": 1,
-        "auxiliaryblocks:lollipop_green[face=down]": 1
+        "minecraft:air": 1,
+        "auxiliaryblocks:lollipop_pink[face=down]": 0,
+        "auxiliaryblocks:lollipop_blue[face=down]": 0,
+        "auxiliaryblocks:lollipop_green[face=down]": 0
       }
     },
     {
       "type": "weighted_target",
       "target": "minecraft:fern",
       "output": {
+        "minecraft:snow[layers=1]": 10,
+        "minecraft:snow[layers=2]": 8,
+        "minecraft:snow[layers=3]": 4,
         "auxiliaryblocks:ornament_blue[face=down]": 1,
         "auxiliaryblocks:ornament_cyan[face=down]": 1,
         "auxiliaryblocks:ornament_green[face=down]": 1,
@@ -260,6 +280,34 @@
       "target": "minecraft:lime_wool",
       "output": {
         "minecraft:spruce_leaves": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:deepslate_bricks",
+      "output": {
+        "auxiliaryblocks:aurora_bricks": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:deepslate_brick_slab",
+      "output": {
+        "auxiliaryblocks:aurora_bricks_slab": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:deepslate_brick_wall",
+      "output": {
+        "auxiliaryblocks:aurora_bricks_wall": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:deepslate_brick_stairs",
+      "output": {
+        "auxiliaryblocks:aurora_bricks_stairs": 1
       }
     },
     {
@@ -591,7 +639,7 @@
       "type": "weighted_target",
       "target": "minecraft:end_stone_bricks",
       "output": {
-        "create:cut_crimsite": 1
+        "auxiliaryblocks:polished_gingerbread": 1
       }
     },
     {
@@ -612,7 +660,7 @@
       "type": "weighted_target",
       "target": "minecraft:end_stone",
       "output": {
-        "auxiliaryblocks:candy_cane_block": 1
+        "auxiliaryblocks:polished_gingerbread": 1
       }
     },
     {
@@ -631,35 +679,35 @@
       "type": "weighted_target",
       "target": "the_vault:wooden_chest",
       "output": {
-        "the_vault:wooden_chest[variant=present]": 1
+        "the_vault:wooden_chest[variant=bow]": 1
       }
     },
     {
       "type": "weighted_target",
       "target": "the_vault:gilded_chest",
       "output": {
-        "the_vault:gilded_chest[variant=present]": 1
+        "the_vault:gilded_chest[variant=bow]": 1
       }
     },
     {
       "type": "weighted_target",
       "target": "the_vault:ornate_chest",
       "output": {
-        "the_vault:ornate_chest[variant=present]": 1
+        "the_vault:ornate_chest[variant=bow]": 1
       }
     },
     {
       "type": "weighted_target",
       "target": "the_vault:living_chest",
       "output": {
-        "the_vault:living_chest[variant=present]": 1
+        "the_vault:living_chest[variant=bow]": 1
       }
     },
     {
       "type": "weighted_target",
       "target": "the_vault:treasure_chest",
       "output": {
-        "the_vault:treasure_chest[variant=present]": 1
+        "the_vault:treasure_chest[variant=bow]": 1
       }
     },
     {
