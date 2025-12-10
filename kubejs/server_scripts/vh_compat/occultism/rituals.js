@@ -22,7 +22,7 @@ onEvent("recipes", event => {
                 "item": "the_vault:extraordinary_wutodie"
             },
             {
-                "item": "woldvaults:chromatic_gold_ingot"
+                "item": "woldsvaults:chromatic_gold_ingot"
             }
         ],
         "result": {
@@ -145,7 +145,7 @@ onEvent("recipes", event => {
                 "tag": "forge:ingots/silver"
             },
             {
-                "item": "woldvaults:chromatic_gold_ingot"
+                "item": "woldsvaults:chromatic_gold_ingot"
             },
             {
                 "item": "the_vault:eternal_soul"
@@ -214,10 +214,10 @@ onEvent("recipes", event => {
                 "item": "occultism:soul_gem"
             },
             {
-                "item": "woldvaults:chromatic_gold_ingot"
+                "item": "woldsvaults:chromatic_gold_ingot"
             },
             {
-                "item": "woldvaults:chromatic_gold_ingot"
+                "item": "woldsvaults:chromatic_gold_ingot"
             },
             {
                 "tag": "forge:ingots/silver"
@@ -247,13 +247,13 @@ onEvent("recipes", event => {
                 "item": "occultism:otherstone_pedestal"
             },
             {
-                "item": "woldvaults:chromatic_gold_ingot"
+                "item": "woldsvaults:chromatic_gold_ingot"
             },
             {
                 "item": "woldsvaults:chromatic_gold_block"
             },
             {
-                "item": "woldvaults:chromatic_gold_ingot"
+                "item": "woldsvaults:chromatic_gold_ingot"
             }
         ],
         "result": {
@@ -310,7 +310,7 @@ onEvent("recipes", event => {
                 "item": "occultism:iesnium_pickaxe"
             },
             {
-                "item": "woldvaults:pog_prism"
+                "item": "woldsvaults:pog_prism"
             },
             {
                 "tag": "forge:storage_blocks/iesnium"
@@ -481,7 +481,7 @@ onEvent("recipes", event => {
                 "item": "woldsvaults:chromatic_gold_block"
             },
             {
-                "item": "woldvaults:pog_prism"
+                "item": "woldsvaults:pog_prism"
             },
             {
                 "item": "occultism:spirit_attuned_crystal"
@@ -550,7 +550,7 @@ onEvent("recipes", event => {
                 "item": "occultism:otherstone"
             },
             {
-                "item": "woldvaults:pog_prism"
+                "item": "woldsvaults:pog_prism"
             },
             {
                 "tag": "forge:storage_blocks/iesnium"
@@ -656,7 +656,7 @@ onEvent("recipes", event => {
                 "tag": "forge:dusts/iesnium"
             },
             {
-                "item": "woldvaults:pog_prism"
+                "item": "woldsvaults:pog_prism"
             }
         ],
         "result": {
@@ -716,7 +716,7 @@ onEvent("recipes", event => {
                 "item": "the_vault:extraordinary_painite"
             },
             {
-                "item": "woldvaults:chromatic_gold_ingot"
+                "item": "woldsvaults:chromatic_gold_ingot"
             },
             {
                 "item": "the_vault:wutodic_silver_ingot"

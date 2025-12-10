@@ -102,7 +102,7 @@ onEvent("recipes", event => {
             },
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_ingot"
+                    "item": "woldsvaults:chromatic_gold_ingot"
                 }
             }
         ],
@@ -123,27 +123,27 @@ onEvent("recipes", event => {
         "pedestalItems": [
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_nugget"
+                    "item": "woldsvaults:chromatic_gold_nugget"
                 }
             },
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_nugget"
+                    "item": "woldsvaults:chromatic_gold_nugget"
                 }
             },
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_nugget"
+                    "item": "woldsvaults:chromatic_gold_nugget"
                 }
             },
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_nugget"
+                    "item": "woldsvaults:chromatic_gold_nugget"
                 }
             },
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_nugget"
+                    "item": "woldsvaults:chromatic_gold_nugget"
                 }
             },
             {
@@ -301,12 +301,12 @@ onEvent("recipes", event => {
             },
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_ingot"
+                    "item": "woldsvaults:chromatic_gold_ingot"
                 }
             },
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_ingot"
+                    "item": "woldsvaults:chromatic_gold_ingot"
                 }
             },
             {
@@ -479,12 +479,12 @@ onEvent("recipes", event => {
             },
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_ingot"
+                    "item": "woldsvaults:chromatic_gold_ingot"
                 }
             },
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_ingot"
+                    "item": "woldsvaults:chromatic_gold_ingot"
                 }
             },
             {
@@ -706,7 +706,7 @@ onEvent("recipes", event => {
             },
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_ingot"
+                    "item": "woldsvaults:chromatic_gold_ingot"
                 }
             }
         ],
@@ -758,12 +758,12 @@ onEvent("recipes", event => {
             },
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_ingot"
+                    "item": "woldsvaults:chromatic_gold_ingot"
                 }
             },
             {
                 "item": {
-                    "item": "woldvaults:chromatic_gold_ingot"
+                    "item": "woldsvaults:chromatic_gold_ingot"
                 }
             },
             {

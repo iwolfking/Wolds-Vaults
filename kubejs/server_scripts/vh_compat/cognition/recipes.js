@@ -37,7 +37,7 @@ onEvent("recipes", event => {
         ], {
         C: 'experienceobelisk:cognitive_amalgam',
         I: 'the_vault:vault_diamond',
-        G: 'woldvaults:chromatic_gold_ingot'
+        G: 'woldsvaults:chromatic_gold_ingot'
 
     }).id('experienceobelisk:astute_assembly')
 

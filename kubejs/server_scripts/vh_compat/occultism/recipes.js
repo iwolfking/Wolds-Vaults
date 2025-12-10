@@ -97,7 +97,7 @@ onEvent("recipes", event => {
             'GBG',
             'GGG'
         ], {
-        G: 'woldvaults:chromatic_gold_ingot',
+        G: 'woldsvaults:chromatic_gold_ingot',
         B: 'occultism:sacrificial_bowl'
     }).id('occultism:crafting/golden_sacrificial_bowl')
 
@@ -107,7 +107,7 @@ onEvent("recipes", event => {
             'GBG',
             ' G '
         ], {
-        G: 'woldvaults:chromatic_gold_ingot',
+        G: 'woldsvaults:chromatic_gold_ingot',
         B: 'occultism:otherstone_frame'
     }).id('occultism:crafting/wormhole_frame')
 
@@ -117,7 +117,7 @@ onEvent("recipes", event => {
             'LGL',
             'BBB'
         ], {
-        G: 'woldvaults:chromatic_gold_ingot',
+        G: 'woldsvaults:chromatic_gold_ingot',
         T: 'occultism:otherstone_tablet',
         L: 'the_vault:extraordinary_larimar',
         B: 'minecraft:stone_button'
@@ -166,6 +166,6 @@ onEvent("recipes", event => {
     }).id('occultism:crafting/candle_white')
 
     event.shapeless('occultism:chalk_red_impure', ['occultism:chalk_white_impure', 'occultism:afrit_essence', 'minecraft:blaze_powder', 'the_vault:perfect_painite']).id('occultism:crafting/chalk_red_impure')
-    event.shapeless('occultism:chalk_gold_impure', ['occultism:chalk_white_impure', '#forge:dusts/gold', 'minecraft:glowstone_dust', 'woldvaults:chromatic_gold_ingot']).id('occultism:crafting/chalk_gold_impure')
+    event.shapeless('occultism:chalk_gold_impure', ['occultism:chalk_white_impure', '#forge:dusts/gold', 'minecraft:glowstone_dust', 'woldsvaults:chromatic_gold_ingot']).id('occultism:crafting/chalk_gold_impure')
     event.shapeless('occultism:chalk_purple_impure', ['occultism:chalk_white_impure', '2x #forge:dusts/obsidian', 'occultism:crushed_end_stone', 'the_vault:gem_echo']).id('occultism:crafting/chalk_purple_impure')
 })

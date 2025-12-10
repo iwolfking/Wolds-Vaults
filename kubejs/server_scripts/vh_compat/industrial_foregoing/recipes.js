@@ -209,7 +209,7 @@ onEvent("recipes", event => {
             'ILI',
             ' I '
         ], {
-            I: 'woldvaults:chromatic_gold_ingot',
+            I: 'woldsvaults:chromatic_gold_ingot',
             L: 'the_vault:perfect_larimar'
         })
 

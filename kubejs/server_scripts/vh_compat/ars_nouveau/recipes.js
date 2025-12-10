@@ -5,7 +5,7 @@ onEvent("recipes", event => {
             'IGI',
             ' I '
         ], {
-        I: 'woldvaults:chromatic_gold_nugget',
+        I: 'woldsvaults:chromatic_gold_nugget',
         G: 'ars_nouveau:source_gem'
     }).id('ars_nouveau:dull_trinket')
 
@@ -15,7 +15,7 @@ onEvent("recipes", event => {
             'IGI',
             'III'
         ], {
-        I: 'woldvaults:chromatic_gold_nugget',
+        I: 'woldsvaults:chromatic_gold_nugget',
         G: 'ars_nouveau:source_gem'
     }).id('ars_nouveau:ring_of_potential')
 
@@ -77,7 +77,7 @@ onEvent("recipes", event => {
             ' I ',
             'D D'
         ], {
-        I: 'woldvaults:chromatic_gold_ingot',
+        I: 'woldsvaults:chromatic_gold_ingot',
         D: 'ars_nouveau:archwood_planks'
     }).id('ars_nouveau:dowsing_rod')
 
@@ -88,7 +88,7 @@ onEvent("recipes", event => {
             'LGL'
         ], {
         L: 'the_vault:perfect_larimar',
-        D: 'woldvaults:chromatic_gold_ingot',
+        D: 'woldsvaults:chromatic_gold_ingot',
         W: 'minecraft:wheat',
         G: 'ars_nouveau:source_gem'
     }).id('ars_nouveau:agronomic_sourcelink')
@@ -100,7 +100,7 @@ onEvent("recipes", event => {
             'LGL'
         ], {
         L: 'the_vault:perfect_larimar',
-        D: 'woldvaults:chromatic_gold_ingot',
+        D: 'woldsvaults:chromatic_gold_ingot',
         W: 'minecraft:lava_bucket',
         G: 'ars_nouveau:source_gem'
     }).id('ars_nouveau:volcanic_sourcelink')
@@ -112,7 +112,7 @@ onEvent("recipes", event => {
             'LGL'
         ], {
         L: 'the_vault:perfect_larimar',
-        D: 'woldvaults:chromatic_gold_ingot',
+        D: 'woldsvaults:chromatic_gold_ingot',
         W: 'minecraft:brewing_stand',
         G: 'ars_nouveau:source_gem'
     }).id('ars_nouveau:alchemical_sourcelink')
@@ -124,7 +124,7 @@ onEvent("recipes", event => {
             'LGL'
         ], {
         L: 'the_vault:perfect_larimar',
-        D: 'woldvaults:chromatic_gold_ingot',
+        D: 'woldsvaults:chromatic_gold_ingot',
         W: 'minecraft:mushroom_stew',
         G: 'ars_nouveau:source_gem'
     }).id('ars_nouveau:mycelial_sourcelink')
@@ -136,7 +136,7 @@ onEvent("recipes", event => {
             'LGL'
         ], {
         L: 'the_vault:perfect_larimar',
-        D: 'woldvaults:chromatic_gold_ingot',
+        D: 'woldsvaults:chromatic_gold_ingot',
         W: 'minecraft:glistering_melon_slice',
         G: 'ars_nouveau:source_gem'
     }).id('ars_nouveau:vitalic_sourcelink')
@@ -158,7 +158,7 @@ onEvent("recipes", event => {
             'S S',
             'BBB'
         ], {
-        S: 'woldvaults:chromatic_gold_ingot',
+        S: 'woldsvaults:chromatic_gold_ingot',
         D: 'the_vault:perfect_wutodie',
         B: 'ars_nouveau:arcane_stone'
     }).id('ars_nouveau:enchanting_apparatus')
@@ -180,7 +180,7 @@ onEvent("recipes", event => {
             'GLG',
             'G G'
         ], {
-        G: 'woldvaults:chromatic_gold_ingot',
+        G: 'woldsvaults:chromatic_gold_ingot',
         L: 'ars_nouveau:source_gem_block'
     }).id('ars_nouveau:relay')
 
@@ -193,7 +193,7 @@ onEvent("recipes", event => {
         ], {
         G: 'ars_nouveau:archwood_planks',
         L: 'the_vault:perfect_larimar',
-        I: 'woldvaults:chromatic_gold_ingot'
+        I: 'woldsvaults:chromatic_gold_ingot'
     }).id('ars_nouveau:imbuement_chamber')
 
     event.shaped(Item.of('ars_nouveau:arcane_core'),
@@ -204,7 +204,7 @@ onEvent("recipes", event => {
         ], {
         G: 'ars_nouveau:arcane_stone',
         L: 'the_vault:perfect_larimar',
-        I: 'woldvaults:chromatic_gold_ingot'
+        I: 'woldsvaults:chromatic_gold_ingot'
     }).id('ars_nouveau:arcane_core')
 
 
@@ -216,7 +216,7 @@ onEvent("recipes", event => {
         ], {
         G: 'ars_nouveau:source_gem',
         L: 'the_vault:chromatic_steel_block',
-        I: 'woldvaults:chromatic_gold_ingot'
+        I: 'woldsvaults:chromatic_gold_ingot'
     }).id('ars_nouveau:basic_spell_turret')
 
 
@@ -225,6 +225,6 @@ onEvent("recipes", event => {
     event.remove({ id: 'ars_nouveau:belt_of_levitation' })
     event.remove({ id: 'ars_nouveau:wixie_charm' })
     event.shapeless('ars_nouveau:runic_chalk', ['ars_nouveau:manipulation_essence', 'ars_nouveau:magebloom_fiber', 'the_vault:magic_silk']).id('ars_nouveau:runic_chalk')
-    event.shapeless('ars_nouveau:ritual_brazier', ['ars_nouveau:arcane_pedestal', 'ars_nouveau:source_gem_block', '3x woldvaults:chromatic_gold_ingot', 'the_vault:hardened_wutodic_mass']).id('ars_nouveau:ritual_brazier')
+    event.shapeless('ars_nouveau:ritual_brazier', ['ars_nouveau:arcane_pedestal', 'ars_nouveau:source_gem_block', '3x woldsvaults:chromatic_gold_ingot', 'the_vault:hardened_wutodic_mass']).id('ars_nouveau:ritual_brazier')
     event.shapeless('ars_creo:starbuncle_wheel', ['ars_nouveau:starbuncle_charm', 'create:water_wheel', 'the_vault:vault_diamond_block']).id('ars_creo:starbuncle_wheel')
 })

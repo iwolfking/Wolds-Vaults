@@ -130,7 +130,7 @@ onEvent("recipes", event => {
             'KTK',
             'XPX'
         ], {
-        P: 'woldvaults:vault_essence_block',
+        P: 'woldsvaults:vault_essence_block',
         T: '#c:glass_blocks',
         K: 'the_vault:chromatic_steel_nugget',
         X: 'the_vault:chromatic_iron_ingot'

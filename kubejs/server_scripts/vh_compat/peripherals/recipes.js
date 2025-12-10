@@ -8,7 +8,7 @@ onEvent("recipes", event => {
             'IRI',
             'XIX'
         ], {
-        R: 'woldvaults:pog_prism',
+        R: 'woldsvaults:pog_prism',
         I: 'minecraft:emerald_block',
         X: 'the_vault:chromatic_steel_ingot'
 
@@ -20,7 +20,7 @@ onEvent("recipes", event => {
             'IGI',
             'XRX'
         ], {
-        R: 'woldvaults:pog_prism',
+        R: 'woldsvaults:pog_prism',
         I: 'minecraft:lapis_block',
         X: 'the_vault:chromatic_steel_ingot',
         H: 'minecraft:hopper',
@@ -34,7 +34,7 @@ onEvent("recipes", event => {
             'IGI',
             'XRX'
         ], {
-        R: 'woldvaults:pog_prism',
+        R: 'woldsvaults:pog_prism',
         I: 'minecraft:lapis_block',
         X: 'the_vault:chromatic_steel_ingot',
         H: 'minecraft:redstone',
@@ -61,7 +61,7 @@ onEvent("recipes", event => {
             'IRI',
             'XBX'
         ], {
-        R: 'woldvaults:pog_prism',
+        R: 'woldsvaults:pog_prism',
         I: 'the_vault:perfect_black_opal',
         X: 'the_vault:chromatic_steel_ingot',
         L: 'minecraft:netherite_sword',
@@ -114,7 +114,7 @@ onEvent("recipes", event => {
             'IRI',
             'XIX'
         ], {
-        R: 'woldvaults:pog_prism',
+        R: 'woldsvaults:pog_prism',
         I: 'the_vault:black_chromatic_steel_ingot',
         X: 'the_vault:chromatic_steel_ingot',
         L: 'minecraft:nether_star'

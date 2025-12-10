@@ -40,7 +40,7 @@ onEvent("recipes", event => {
         ], {
         P: 'the_vault:extraordinary_benitoite',
         X: 'the_vault:extraordinary_larimar',
-        T: 'woldvaults:pog_prism'
+        T: 'woldsvaults:pog_prism'
     })
 
 

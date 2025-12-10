@@ -11,7 +11,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         C: 'createaddition:electric_motor',
-        B: 'woldvaults:wold_star',
+        B: 'woldsvaults:wold_star',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
         X: 'the_vault:black_chromatic_steel_block'
@@ -24,7 +24,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         C: 'create:blaze_cake',
-        B: 'woldvaults:wold_star',
+        B: 'woldsvaults:wold_star',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
         X: 'the_vault:packed_vault_meat_block'
@@ -38,7 +38,7 @@ onEvent("recipes", event => {
         ], {
         C: 'botania:fabulous_pool',
         B: 'the_vault:echo_pog',
-        E: 'woldvaults:wold_star',
+        E: 'woldsvaults:wold_star',
         V: 'compressium:vault_diamond_block_1',
         X: 'botania:gaia_ingot'
     })
@@ -50,7 +50,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         C: 'thermal:rf_coil_augment',
-        B: 'woldvaults:wold_star',
+        B: 'woldsvaults:wold_star',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
         X: 'thermal:signalum_ingot'
@@ -63,7 +63,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         C: 'thermal:fluid_tank_augment',
-        B: 'woldvaults:wold_star',
+        B: 'woldsvaults:wold_star',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
         X: 'thermal:signalum_ingot'
@@ -76,7 +76,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         C: 'thermal:machine_efficiency_augment',
-        B: 'woldvaults:wold_star',
+        B: 'woldsvaults:wold_star',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
         X: 'thermal:signalum_ingot'
@@ -89,7 +89,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         C: 'thermal:machine_catalyst_augment',
-        B: 'woldvaults:wold_star',
+        B: 'woldsvaults:wold_star',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
         X: 'thermal:signalum_ingot'
@@ -102,7 +102,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         C: 'refinedstorage:controller',
-        B: 'woldvaults:wold_star',
+        B: 'woldsvaults:wold_star',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
         X: 'refinedstorage:silicon'
@@ -118,7 +118,7 @@ onEvent("recipes", event => {
         B: 'compressium:vault_essence_block_1',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
-        X: 'woldvaults:wold_star_chunk'
+        X: 'woldsvaults:wold_star_chunk'
     })
 
     event.shaped(Item.of('refinedstorageaddons:creative_wireless_crafting_grid'),
@@ -131,7 +131,7 @@ onEvent("recipes", event => {
         B: 'compressium:vault_essence_block_1',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
-        X: 'woldvaults:wold_star_chunk'
+        X: 'woldsvaults:wold_star_chunk'
     })
 
     event.shaped(Item.of('refinedstorage:creative_wireless_fluid_grid'),
@@ -144,7 +144,7 @@ onEvent("recipes", event => {
         B: 'compressium:vault_essence_block_1',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
-        X: 'woldvaults:wold_star_chunk'
+        X: 'woldsvaults:wold_star_chunk'
     })
 
     event.shaped(Item.of('refinedstorage:creative_wireless_crafting_monitor'),
@@ -157,7 +157,7 @@ onEvent("recipes", event => {
         B: 'compressium:vault_essence_block_1',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
-        X: 'woldvaults:wold_star_chunk'
+        X: 'woldsvaults:wold_star_chunk'
     })
 
     event.shaped(Item.of('rftoolsutility:creative_screen'),
@@ -170,7 +170,7 @@ onEvent("recipes", event => {
         B: 'compressium:vault_essence_block_1',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
-        X: 'woldvaults:wold_star_chunk'
+        X: 'woldsvaults:wold_star_chunk'
     })
 
     event.shaped(Item.of('botanicalmachinery:mana_battery_creative'),
@@ -181,7 +181,7 @@ onEvent("recipes", event => {
         ], {
         C: 'botanicalmachinery:mana_battery',
         B: 'the_vault:echo_pog',
-        E: 'woldvaults:wold_star',
+        E: 'woldsvaults:wold_star',
         V: 'compressium:vault_diamond_block_1',
         X: 'botania:gaia_ingot'
     })
@@ -193,7 +193,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         C: 'pneumaticcraft:compressed_iron_block',
-        B: 'woldvaults:wold_star',
+        B: 'woldsvaults:wold_star',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
         X: 'pneumaticcraft:plastic'
@@ -206,7 +206,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         C: 'pneumaticcraft:advanced_air_compressor',
-        B: 'woldvaults:wold_star',
+        B: 'woldsvaults:wold_star',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
         X: 'pneumaticcraft:compressed_iron_block'
@@ -219,7 +219,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         C: 'create:fluid_tank',
-        B: 'woldvaults:wold_star',
+        B: 'woldsvaults:wold_star',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
         X: 'the_vault:infinite_water_bucket'
@@ -232,7 +232,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         C: 'extrastorage:disk_16384k',
-        B: 'woldvaults:wold_star',
+        B: 'woldsvaults:wold_star',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
         X: 'extrastorage:neural_processor'
@@ -245,7 +245,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
         C: 'extrastorage:disk_1048576k_fluid',
-        B: 'woldvaults:wold_star',
+        B: 'woldsvaults:wold_star',
         E: 'the_vault:echo_pog',
         V: 'compressium:vault_diamond_block_1',
         X: 'extrastorage:neural_processor'
@@ -255,8 +255,8 @@ onEvent("recipes", event => {
         "type": "powah:energizing",
         "ingredients": [
             { "item": "ae2:dense_energy_cell" },
-            { "item": "woldvaults:wold_star" },
-            { "item": "woldvaults:wold_star" },
+            { "item": "woldsvaults:wold_star" },
+            { "item": "woldsvaults:wold_star" },
             { "item": "the_vault:omega_pog" },
             { "item": "compressium:vault_diamond_block_1" },
             { "item": "ae2:singularity" }
@@ -271,8 +271,8 @@ onEvent("recipes", event => {
         "type": "powah:energizing",
         "ingredients": [
             { "item": "powah:energy_cell_nitro" },
-            { "item": "woldvaults:wold_star" },
-            { "item": "woldvaults:wold_star" },
+            { "item": "woldsvaults:wold_star" },
+            { "item": "woldsvaults:wold_star" },
             { "item": "the_vault:omega_pog" },
             { "item": "compressium:vault_diamond_block_1" },
             { "item": "powah:capacitor_nitro" }
@@ -287,8 +287,8 @@ onEvent("recipes", event => {
         "type": "powah:energizing",
         "ingredients": [
             { "item": "mekanism:ultimate_energy_cube" },
-            { "item": "woldvaults:wold_star" },
-            { "item": "woldvaults:wold_star" },
+            { "item": "woldsvaults:wold_star" },
+            { "item": "woldsvaults:wold_star" },
             { "item": "the_vault:echo_pog" },
             { "item": "compressium:vault_diamond_block_1" },
             { "item": "mekanism:alloy_atomic" }
@@ -301,7 +301,7 @@ onEvent("recipes", event => {
         "type": "powah:energizing",
         "ingredients": [
             { "item": "integrateddynamics:energy_battery" },
-            { "item": "woldvaults:wold_star" },
+            { "item": "woldsvaults:wold_star" },
             { "item": "the_vault:echo_pog" },
             { "item": "the_vault:echo_pog" },
             { "item": "compressium:vault_diamond_block_1" },
@@ -317,8 +317,8 @@ onEvent("recipes", event => {
         "type": "powah:energizing",
         "ingredients": [
             { "item": "createaddition:alternator" },
-            { "item": "woldvaults:wold_star" },
-            { "item": "woldvaults:wold_star" },
+            { "item": "woldsvaults:wold_star" },
+            { "item": "woldsvaults:wold_star" },
             { "item": "the_vault:omega_pog" },
             { "item": "compressium:vault_diamond_block_1" },
             { "item": "createaddition:modular_accumulator" }

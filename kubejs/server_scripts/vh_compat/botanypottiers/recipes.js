@@ -26,7 +26,7 @@ onEvent("recipes", event => {
                     'XGX'
                 ], {
                 P: `botanypots:${color}_${type}_botany_pot`,
-                G: 'woldvaults:pog_prism',
+                G: 'woldsvaults:pog_prism',
                 I: 'the_vault:black_chromatic_steel_ingot',
                 X: 'the_vault:packed_vault_meat_block'
             })
@@ -51,7 +51,7 @@ onEvent("recipes", event => {
                     'XGX'
                 ], {
                 P: `botanypotstiers:ultra_${color}_${type}_botany_pot`,
-                G: 'woldvaults:wold_star_chunk',
+                G: 'woldsvaults:wold_star_chunk',
                 I: 'the_vault:echo_pog',
                 X: 'the_vault:black_chromatic_steel_block'
             })
@@ -64,7 +64,7 @@ onEvent("recipes", event => {
                     'XGX'
                 ], {
                 P: `botanypots:${color}_${type}_hopper_botany_pot`,
-                G: 'woldvaults:pog_prism',
+                G: 'woldsvaults:pog_prism',
                 I: 'the_vault:black_chromatic_steel_ingot',
                 X: 'the_vault:packed_vault_meat_block'
             })
@@ -89,7 +89,7 @@ onEvent("recipes", event => {
                     'XGX'
                 ], {
                 P: `botanypotstiers:ultra_${color}_${type}_hopper_botany_pot`,
-                G: 'woldvaults:wold_star_chunk',
+                G: 'woldsvaults:wold_star_chunk',
                 I: 'the_vault:echo_pog',
                 X: 'the_vault:black_chromatic_steel_block'
             })
@@ -115,7 +115,7 @@ onEvent("recipes", event => {
             'XGX'
         ], {
         P: 'botanypots:terracotta_hopper_botany_pot',
-        G: 'woldvaults:pog_prism',
+        G: 'woldsvaults:pog_prism',
         I: 'the_vault:black_chromatic_steel_ingot',
         X: 'the_vault:packed_vault_meat_block'
     })
@@ -140,7 +140,7 @@ onEvent("recipes", event => {
             'XGX'
         ], {
         P: 'botanypotstiers:ultra_terracotta_hopper_botany_pot',
-        G: 'woldvaults:wold_star_chunk',
+        G: 'woldsvaults:wold_star_chunk',
         I: 'the_vault:echo_pog',
         X: 'the_vault:black_chromatic_steel_block'
     })
@@ -152,7 +152,7 @@ onEvent("recipes", event => {
             'XGX'
         ], {
         P: 'botanypots:terracotta_hopper_botany_pot',
-        G: 'woldvaults:pog_prism',
+        G: 'woldsvaults:pog_prism',
         I: 'the_vault:black_chromatic_steel_ingot',
         X: 'the_vault:packed_vault_meat_block'
     })
@@ -164,7 +164,7 @@ onEvent("recipes", event => {
             'XLX'
         ], {
         P: 'botanypotstiers:elite_terracotta_hopper_botany_pot',
-        G: 'woldvaults:pog_prism',
+        G: 'woldsvaults:pog_prism',
         I: 'the_vault:infused_eternal_soul',
         X: 'the_vault:chromatic_steel_block',
         L: 'the_vault:extraordinary_black_opal'
@@ -177,7 +177,7 @@ onEvent("recipes", event => {
             'XGX'
         ], {
         P: 'botanypotstiers:ultra_terracotta_hopper_botany_pot',
-        G: 'woldvaults:wold_star_chunk',
+        G: 'woldsvaults:wold_star_chunk',
         I: 'the_vault:echo_pog',
         X: 'the_vault:black_chromatic_steel_block'
     })

@@ -12,7 +12,7 @@ onEvent("recipes", event => {
             'DHD',
             ' R '
         ], {
-        D: 'woldvaults:chromatic_gold_ingot',
+        D: 'woldsvaults:chromatic_gold_ingot',
         H: 'minecraft:hopper',
         R: 'minecraft:redstone_block'
     }).id('littlelogistics:rapid_hopper')
@@ -192,7 +192,7 @@ onEvent("recipes", event => {
             'ERE',
             ' S '
         ], {
-        E: 'woldvaults:wold_star_chunk',
+        E: 'woldsvaults:wold_star_chunk',
         R: 'the_vault:extraordinary_black_opal',
         S: 'minecraft:polished_deepslate_slab'
     }).id('littlelogistics:creative_capacitor')
@@ -203,7 +203,7 @@ onEvent("recipes", event => {
             'XRX',
             'LRL'
         ], {
-        E: 'woldvaults:chromatic_gold_ingot',
+        E: 'woldsvaults:chromatic_gold_ingot',
         R: 'the_vault:chromatic_steel_ingot',
         L: 'minecraft:redstone_block',
         X: 'the_vault:perfect_larimar'

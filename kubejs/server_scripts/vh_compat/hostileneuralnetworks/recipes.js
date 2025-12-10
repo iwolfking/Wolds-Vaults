@@ -82,7 +82,7 @@ onEvent("recipes", event => {
         P: 'the_vault:perfect_larimar',
         R: 'the_vault:carbon',
         X: 'the_vault:vault_essence',
-        I: 'woldvaults:chromatic_gold_ingot',
+        I: 'woldsvaults:chromatic_gold_ingot',
         T: 'minecraft:smooth_stone'
     })
 

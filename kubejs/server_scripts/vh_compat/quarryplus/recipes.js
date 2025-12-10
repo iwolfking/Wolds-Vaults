@@ -32,7 +32,7 @@ onEvent("recipes", event => {
                 "count": 9
             },
             {
-                "item": "woldvaults:chromatic_gold_ingot",
+                "item": "woldsvaults:chromatic_gold_ingot",
                 "count": 32
             },
             {
@@ -101,7 +101,7 @@ onEvent("recipes", event => {
                 "count": 8
             },
             {
-                "item": "woldvaults:chromatic_gold_ingot",
+                "item": "woldsvaults:chromatic_gold_ingot",
                 "count": 8
             },
             {
@@ -148,7 +148,7 @@ onEvent("recipes", event => {
                 "count": 4
             },
             {
-                "item": "woldvaults:chromatic_gold_ingot",
+                "item": "woldsvaults:chromatic_gold_ingot",
                 "count": 8
             },
             {
@@ -187,7 +187,7 @@ onEvent("recipes", event => {
                 "count": 4
             },
             {
-                "item": "woldvaults:chromatic_gold_ingot",
+                "item": "woldsvaults:chromatic_gold_ingot",
                 "count": 16
             },
             {
@@ -293,7 +293,7 @@ onEvent("recipes", event => {
                 "count": 1
             },
             {
-                "item": "woldvaults:chromatic_gold_ingot",
+                "item": "woldsvaults:chromatic_gold_ingot",
                 "count": 16
             },
             {
@@ -332,7 +332,7 @@ onEvent("recipes", event => {
         "showInJEI": true,
         "ingredients": [
             {
-                "item": "woldvaults:chromatic_gold_ingot",
+                "item": "woldsvaults:chromatic_gold_ingot",
                 "count": 7
             },
             {
@@ -371,7 +371,7 @@ onEvent("recipes", event => {
         "showInJEI": true,
         "ingredients": [
             {
-                "item": "woldvaults:chromatic_gold_ingot",
+                "item": "woldsvaults:chromatic_gold_ingot",
                 "count": 16
             },
             {

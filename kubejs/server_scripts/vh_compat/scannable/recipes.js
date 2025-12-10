@@ -33,7 +33,7 @@ onEvent("recipes", event => {
             'DCD',
             'DBD'
         ], {
-            G: 'woldvaults:vault_essence_block',
+            G: 'woldsvaults:vault_essence_block',
             D: 'the_vault:perfect_larimar',
             C: 'the_vault:magic_silk_block',
             B: 'the_vault:gem_pog'
@@ -91,7 +91,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             X: 'woldsvaults:pog_block',
-            B: 'woldvaults:wold_star'
+            B: 'woldsvaults:wold_star'
         })
 
     event.shaped(Item.of('scannable:common_ores_module'),
@@ -125,7 +125,7 @@ onEvent("recipes", event => {
             M: 'scannable:blank_module',
             R: '#the_vault:vault_ores',
             X: 'the_vault:gem_pog',
-            V: 'woldvaults:pog_prism',
+            V: 'woldsvaults:pog_prism',
             B: 'the_vault:black_chromatic_steel_block'
         })
 
@@ -153,7 +153,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             A: 'the_vault:wooden_chest_scroll',
-            B: 'woldvaults:pog_prism',
+            B: 'woldsvaults:pog_prism',
             X: 'the_vault:extraordinary_larimar'
         })
 
@@ -165,7 +165,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             A: 'the_vault:ornate_chest_scroll',
-            B: 'woldvaults:pog_prism',
+            B: 'woldsvaults:pog_prism',
             X: 'the_vault:extraordinary_painite'
         })
 
@@ -177,7 +177,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             A: 'the_vault:living_chest_scroll',
-            B: 'woldvaults:pog_prism',
+            B: 'woldsvaults:pog_prism',
             X: 'the_vault:extraordinary_alexandrite'
         })
 
@@ -189,7 +189,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             A: 'the_vault:gilded_chest_scroll',
-            B: 'woldvaults:pog_prism',
+            B: 'woldsvaults:pog_prism',
             X: 'the_vault:vault_diamond_block'
         })
 
@@ -201,7 +201,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             A: 'the_vault:enigma_chest_scroll',
-            B: 'woldvaults:pog_prism',
+            B: 'woldsvaults:pog_prism',
             X: 'the_vault:extraordinary_larimar'
         })
 
@@ -213,7 +213,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             A: 'the_vault:treasure_chest_scroll',
-            B: 'woldvaults:pog_prism',
+            B: 'woldsvaults:pog_prism',
             X: 'the_vault:extraordinary_larimar'
         })
 
@@ -225,7 +225,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             A: 'the_vault:vault_palladium',
-            B: 'woldvaults:pog_prism',
+            B: 'woldsvaults:pog_prism',
             X: 'the_vault:vault_diamond_block'
         })
 
@@ -237,7 +237,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             A: 'the_vault:eternal_soul',
-            B: 'woldvaults:pog_prism',
+            B: 'woldsvaults:pog_prism',
             X: 'the_vault:compressed_soot_block'
         })
 
@@ -249,7 +249,7 @@ onEvent("recipes", event => {
             'XBX'
         ], {
             M: 'scannable:blank_module',
-            A: 'woldvaults:wold_star',
+            A: 'woldsvaults:wold_star',
             B: 'the_vault:omega_pog',
             X: 'the_vault:vault_sweets_block'
         })
@@ -289,7 +289,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             A: 'the_vault:capstone_treasure_hunter',
-            B: 'woldvaults:wold_star_chunk',
+            B: 'woldsvaults:wold_star_chunk',
             X: 'the_vault:black_chromatic_steel_block',
             P: 'the_vault:omega_pog'
         })
@@ -302,7 +302,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             A: 'the_vault:capstone_dungeon_hunter',
-            B: 'woldvaults:wold_star_chunk',
+            B: 'woldsvaults:wold_star_chunk',
             X: 'the_vault:black_chromatic_steel_block',
             P: 'the_vault:omega_pog'
         })
@@ -315,7 +315,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             A: 'the_vault:capstone_vendoor_hunter',
-            B: 'woldvaults:wold_star_chunk',
+            B: 'woldsvaults:wold_star_chunk',
             X: 'the_vault:black_chromatic_steel_block',
             P: 'the_vault:omega_pog'
         })
@@ -328,7 +328,7 @@ onEvent("recipes", event => {
         ], {
             M: 'scannable:blank_module',
             A: 'the_vault:capstone_pylon_hunter',
-            B: 'woldvaults:wold_star_chunk',
+            B: 'woldsvaults:wold_star_chunk',
             X: 'the_vault:black_chromatic_steel_block',
             P: 'the_vault:omega_pog'
         })

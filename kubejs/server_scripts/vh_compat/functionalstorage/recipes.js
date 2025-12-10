@@ -134,7 +134,7 @@ onEvent("recipes", event => {
         ], {
         G: 'the_vault:magic_silk',
         O: 'the_vault:vault_diamond',
-        D: 'woldvaults:chromatic_gold_ingot',
+        D: 'woldsvaults:chromatic_gold_ingot',
         X: '#functionalstorage:drawer'
     }).id('functionalstorage:linking_tool')
 
@@ -156,7 +156,7 @@ onEvent("recipes", event => {
             'SDS',
             'cCc'
         ], {
-        c: 'woldvaults:chromatic_gold_ingot',
+        c: 'woldsvaults:chromatic_gold_ingot',
         S: 'the_vault:perfect_larimar',
         D: 'functionalstorage:copper_upgrade',
         C: 'woldsvaults:chromatic_gold_block'
@@ -253,7 +253,7 @@ onEvent("recipes", event => {
         ], {
         G: 'the_vault:magic_silk',
         O: 'minecraft:emerald',
-        D: 'woldvaults:chromatic_gold_ingot',
+        D: 'woldsvaults:chromatic_gold_ingot',
         X: '#functionalstorage:drawer'
     }).id('functionalstorage:configuration_tool')
 

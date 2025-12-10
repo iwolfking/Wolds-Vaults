@@ -32,7 +32,7 @@ onEvent("recipes", event => {
     //     ], {
     //     C: 'the_vault:treasure_chest_scroll',
     //     X: 'the_vault:vault_diamond_block',
-    //     I: 'woldvaults:pog_prism',
+    //     I: 'woldsvaults:pog_prism',
     //     T: 'the_vault:extraordinary_larimar'
     // }).id('sophisticatedstorage:treasure_chest')
 
@@ -158,7 +158,7 @@ onEvent("recipes", event => {
     //     ], {
     //     C: 'the_vault:gilded_chest_scroll',
     //     X: 'woldsvaults:chroma_core',
-    //     I: 'woldvaults:chromatic_gold_ingot'
+    //     I: 'woldsvaults:chromatic_gold_ingot'
     // }).id('sophisticatedstorage:gilded_chest')
 
     // event.shaped(Item.of('sophisticatedstorage:gilded_barrel'),
@@ -169,7 +169,7 @@ onEvent("recipes", event => {
     //     ], {
     //     C: 'the_vault:gilded_chest_scroll',
     //     X: 'woldsvaults:chroma_core',
-    //     I: 'woldvaults:chromatic_gold_ingot',
+    //     I: 'woldsvaults:chromatic_gold_ingot',
     //     P: 'the_vault:black_chromatic_steel_ingot'
     // }).id('sophisticatedstorage:gilded_barrel')
 
@@ -183,7 +183,7 @@ onEvent("recipes", event => {
     // strongboxUpgrade(Item.of('sophisticatedstorage:gilded_strongbox'),
     //     {
     //         C: Item.of('sophisticatedstorage:gilded_chest'),
-    //         X: Item.of('woldvaults:chromatic_gold_ingot'),
+    //         X: Item.of('woldsvaults:chromatic_gold_ingot'),
     //         I: Item.of('the_vault:gilded_chest_scroll')
     //     })
 

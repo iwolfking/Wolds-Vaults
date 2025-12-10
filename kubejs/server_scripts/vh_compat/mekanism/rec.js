@@ -86,7 +86,7 @@ onEvent("recipes", event => {
             ], {
             R: 'mekanism:alloy_reinforced',
             C: 'mekanism:elite_control_circuit',
-            I: 'woldvaults:chromatic_gold_ingot',
+            I: 'woldsvaults:chromatic_gold_ingot',
             M: `mekanism:advanced_${machine}`
         })
 
@@ -141,7 +141,7 @@ onEvent("recipes", event => {
             'AOA'
         ], {
         C: 'mekanism:ultimate_control_circuit',
-        W: 'woldvaults:wold_star_chunk',
+        W: 'woldsvaults:wold_star_chunk',
         E: 'mekanism:energy_tablet',
         P: 'minecraft:netherite_pickaxe',
         A: 'mekanism:alloy_atomic',
@@ -177,7 +177,7 @@ onEvent("recipes", event => {
             'DPD',
             'SDS'
         ], {
-        S: 'woldvaults:chromatic_gold_ingot',
+        S: 'woldsvaults:chromatic_gold_ingot',
         C: 'mekanism:elite_control_circuit',
         D: 'mekanism:qio_drive_base',
         P: 'the_vault:gem_pog'
@@ -348,7 +348,7 @@ onEvent("recipes", event => {
         R: '#forge:dusts/redstone',
         G: '#forge:ingots/gold',
         A: 'mekanism:alloy_infused',
-        C: 'woldvaults:chromatic_gold_ingot'
+        C: 'woldsvaults:chromatic_gold_ingot'
     })
 
     event.shaped(Item.of('mekanism:energy_tablet'),
@@ -360,7 +360,7 @@ onEvent("recipes", event => {
         R: '#forge:dusts/redstone',
         G: '#forge:ingots/gold',
         A: 'mekanism:alloy_infused',
-        C: 'woldvaults:chromatic_gold_ingot'
+        C: 'woldsvaults:chromatic_gold_ingot'
     })
 
     event.shaped(Item.of('mekanism:basic_universal_cable', 4),
@@ -421,7 +421,7 @@ onEvent("recipes", event => {
             'RSR'
         ], {
         R: 'mekanism:alloy_reinforced',
-        S: 'woldvaults:chromatic_gold_ingot',
+        S: 'woldsvaults:chromatic_gold_ingot',
         T: 'mekanism:advanced_fluid_tank'
     })
 
@@ -468,7 +468,7 @@ onEvent("recipes", event => {
         ], {
         R: 'mekanism:alloy_reinforced',
         C: 'mekanism:elite_control_circuit',
-        I: 'woldvaults:chromatic_gold_ingot',
+        I: 'woldsvaults:chromatic_gold_ingot',
         W: 'the_vault:driftwood_planks'
     })
 
@@ -491,7 +491,7 @@ onEvent("recipes", event => {
             'APA'
         ], {
         A: 'mekanism:alloy_reinforced',
-        P: 'woldvaults:pog_prism',
+        P: 'woldsvaults:pog_prism',
         E: 'mekanism:electrolytic_core',
         C: 'mekanism:steel_casing'
     })
@@ -548,7 +548,7 @@ onEvent("recipes", event => {
             }
         },
         "output": {
-            "item": "woldvaults:wold_star",
+            "item": "woldsvaults:wold_star",
             "nbt": "{RepairCost:0,display:{Name:'{\"text\":\":)\"}'}}"
         }
     })

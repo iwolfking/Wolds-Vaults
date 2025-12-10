@@ -30,7 +30,7 @@ onEvent("recipes", event => {
         C: 'the_vault:chromatic_steel_ingot',
         B: 'the_vault:perfect_larimar',
         R: '#forge:chests',
-        G: 'woldvaults:chromatic_gold_ingot'
+        G: 'woldsvaults:chromatic_gold_ingot'
     })
 
     event.shaped(Item.of('sfm:disk'),

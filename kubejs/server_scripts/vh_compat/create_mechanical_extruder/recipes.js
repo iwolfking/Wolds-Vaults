@@ -14,7 +14,7 @@ onEvent("recipes", event => {
         ], {
         P: 'create:shaft',
         G: '#forge:glass',
-        X: 'woldvaults:pog_prism',
+        X: 'woldsvaults:pog_prism',
         E: 'create:andesite_casing'
     })
     event.recipes.createMechanicalExtruderExtruding(Item.of('minecraft:obsidian'), [Fluid.of('minecraft:lava'), Fluid.of('minecraft:water')]).withCatalyst('quark:blaze_lantern')

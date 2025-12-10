@@ -3,7 +3,7 @@ onEvent('recipes', event => {
 
 
     //Seals
-    // event.shaped(Item.of('woldvaults:crystal_seal_unhinged'),
+    // event.shaped(Item.of('woldsvaults:crystal_seal_unhinged'),
     //     [
     //         'XGX',
     //         'XRX',
@@ -15,7 +15,7 @@ onEvent('recipes', event => {
     //     B: 'the_vault:extraordinary_painite'
     // }).id('woldsvaults:crystal_seal_unhinged')
 
-    // event.shaped(Item.of('woldvaults:crystal_seal_spirits'),
+    // event.shaped(Item.of('woldsvaults:crystal_seal_spirits'),
     //     [
     //         'XGX',
     //         'XRX',
@@ -40,38 +40,38 @@ onEvent('recipes', event => {
     //     L: 'the_vault:vault_essence'
     // }).id('woldsvaults:crystal_seal_architect')
 
-    // event.shaped(Item.of('woldvaults:crystal_seal_enchanter'),
+    // event.shaped(Item.of('woldsvaults:crystal_seal_enchanter'),
     //     [
     //         'XGX',
     //         'XRX',
     //         'XBX'
     //     ], {
     //     G: 'minecraft:enchanting_table',
-    //     X: 'woldvaults:vault_essence_block',
+    //     X: 'woldsvaults:vault_essence_block',
     //     R: 'the_vault:crystal_seal_sage',
     //     B: 'the_vault:extraordinary_alexandrite'
     // }).id('woldsvaults:crystal_seal_enchanter')
 
-    // event.shaped(Item.of('woldvaults:crystal_seal_titan'),
+    // event.shaped(Item.of('woldsvaults:crystal_seal_titan'),
     //     [
     //         'XGX',
     //         'XRX',
     //         'XBX'
     //     ], {
     //     G: 'minecraft:diamond_sword',
-    //     X: 'woldvaults:vault_essence_block',
+    //     X: 'woldsvaults:vault_essence_block',
     //     R: 'the_vault:crystal_seal_executioner',
     //     B: 'the_vault:vault_diamond_block'
     // }).id('woldsvaults:crystal_seal_titan')
 
-    // event.shaped(Item.of('woldvaults:crystal_seal_doomsayer'),
+    // event.shaped(Item.of('woldsvaults:crystal_seal_doomsayer'),
     //     [
     //         'XGX',
     //         'XRX',
     //         'XBX'
     //     ], {
     //     G: 'minecraft:soul_campfire',
-    //     X: 'woldvaults:vault_essence_block',
+    //     X: 'woldsvaults:vault_essence_block',
     //     R: 'the_vault:crystal_seal_prophet',
     //     B: 'the_vault:extraordinary_alexandrite'
     // }).id('woldsvaults:crystal_seal_doomsayer')
@@ -88,14 +88,14 @@ onEvent('recipes', event => {
     //     B: 'minecraft:copper_ingot'
     // }).id('woldsvaults:crystal_seal_trial_chamber')
 
-    // event.shaped(Item.of('woldvaults:augment_box'),
+    // event.shaped(Item.of('woldsvaults:augment_box'),
     //     [
     //         'GXG',
     //         'XRX',
     //         'GXG'
     //     ], {
     //     G: 'the_vault:gem_larimar',
-    //     R: 'woldvaults:vault_essence_block',
+    //     R: 'woldsvaults:vault_essence_block',
     //     X: 'the_vault:augment'
     // }).id('woldsvaults:augment_box')
 
@@ -121,7 +121,7 @@ onEvent('recipes', event => {
     //     X: 'the_vault:faceted_focus'
     // })
 
-    // event.shaped(Item.of('woldvaults:pog_prism'),
+    // event.shaped(Item.of('woldsvaults:pog_prism'),
     //     [
     //         'ABC',
     //         'XRX',
@@ -149,7 +149,7 @@ onEvent('recipes', event => {
     //     E: 'the_vault:extraordinary_wutodie',
     //     F: 'the_vault:extraordinary_black_opal',
     //     R: 'the_vault:extraordinary_echo_gem',
-    //     X: 'woldvaults:pog_prism'
+    //     X: 'woldsvaults:pog_prism'
     // }).id('woldsvaults:extraordinary_pog_prism')
 
     // event.shaped(Item.of('the_vault:orb_frame'),
@@ -167,7 +167,7 @@ onEvent('recipes', event => {
     // }).id('woldsvaults:orb_frame')
 
 
-    // event.shapeless('woldvaults:uninfused_terrasteel_ingot', ['botania:manasteel_ingot', 'botania:mana_pearl', 'botania:mana_diamond', 'the_vault:vault_essence', 'the_vault:vault_diamond', 'the_vault:chromatic_steel_ingot'])
+    // event.shapeless('woldsvaults:uninfused_terrasteel_ingot', ['botania:manasteel_ingot', 'botania:mana_pearl', 'botania:mana_diamond', 'the_vault:vault_essence', 'the_vault:vault_diamond', 'the_vault:chromatic_steel_ingot'])
 
     // event.shaped(Item.of('woldsvaults:vault_salvager'),
     //     [
@@ -183,8 +183,8 @@ onEvent('recipes', event => {
 
 
     // //Smashed Vault Gem
-    // event.shapeless('woldvaults:smashed_vault_gem_cluster', ['4x woldvaults:smashed_vault_gem']).id('woldsvaults:smashed_gem_cluster')
-    // event.shapeless('4x woldvaults:smashed_vault_gem', ['woldvaults:smashed_vault_gem_cluster']).id('woldsvaults:smashed_vault_gem')
+    // event.shapeless('woldsvaults:smashed_vault_gem_cluster', ['4x woldsvaults:smashed_vault_gem']).id('woldsvaults:smashed_gem_cluster')
+    // event.shapeless('4x woldsvaults:smashed_vault_gem', ['woldsvaults:smashed_vault_gem_cluster']).id('woldsvaults:smashed_vault_gem')
 
 
     //Gem Blocks
@@ -236,14 +236,14 @@ onEvent('recipes', event => {
 
 
     //Chromatic Gold
-    //event.shapeless('woldvaults:chromatic_gold_ingot', ['2x minecraft:gold_ingot', 'woldvaults:vault_essence_block', 'the_vault:magic_silk']).id('woldsvaults:chromatic_gold_ingot')
-   // event.shapeless('9x woldvaults:chromatic_gold_nugget', ['woldvaults:chromatic_gold_ingot']).id('woldsvaults:chromatic_gold_nugget')
-    //event.shapeless('woldvaults:chromatic_gold_ingot', ['9x woldvaults:chromatic_gold_nugget']).id('woldsvaults:chromatic_gold_from_nugget')
-    //event.shapeless('9x woldvaults:chromatic_gold_ingot', ['woldsvaults:chromatic_gold_block']).id('woldsvaults:chromatic_gold_from_block')
-    //event.shapeless('woldsvaults:chromatic_gold_block', ['9x woldvaults:chromatic_gold_ingot']).id('woldsvaults:chromatic_gold_block')
+    //event.shapeless('woldsvaults:chromatic_gold_ingot', ['2x minecraft:gold_ingot', 'woldsvaults:vault_essence_block', 'the_vault:magic_silk']).id('woldsvaults:chromatic_gold_ingot')
+   // event.shapeless('9x woldsvaults:chromatic_gold_nugget', ['woldsvaults:chromatic_gold_ingot']).id('woldsvaults:chromatic_gold_nugget')
+    //event.shapeless('woldsvaults:chromatic_gold_ingot', ['9x woldsvaults:chromatic_gold_nugget']).id('woldsvaults:chromatic_gold_from_nugget')
+    //event.shapeless('9x woldsvaults:chromatic_gold_ingot', ['woldsvaults:chromatic_gold_block']).id('woldsvaults:chromatic_gold_from_block')
+    //event.shapeless('woldsvaults:chromatic_gold_block', ['9x woldsvaults:chromatic_gold_ingot']).id('woldsvaults:chromatic_gold_block')
 
     //Vault Ingot Stuff
-    //event.shapeless('the_vault:vault_ingot', ['the_vault:chromatic_iron_ingot', 'the_vault:chromatic_steel_ingot', 'woldvaults:chromatic_gold_ingot', 'woldvaults:smashed_vault_gem_cluster']).id('woldsvaults:vault_ingot')
+    //event.shapeless('the_vault:vault_ingot', ['the_vault:chromatic_iron_ingot', 'the_vault:chromatic_steel_ingot', 'woldsvaults:chromatic_gold_ingot', 'woldsvaults:smashed_vault_gem_cluster']).id('woldsvaults:vault_ingot')
 
     //event.shapeless('woldsvaults:arcane_shard', ['9x woldsvaults:arcane_essence']).id('woldsvaults:arcane_shard')
 
@@ -264,7 +264,7 @@ onEvent('recipes', event => {
     //         'XTX'
     //     ], {
     //     X: 'the_vault:resilient_focus',
-    //     O: 'woldvaults:pog_prism',
+    //     O: 'woldsvaults:pog_prism',
     //     T: 'the_vault:black_chromatic_steel_ingot'
     // }).id('woldsvaults:repair_augmenter')
 
@@ -300,7 +300,7 @@ onEvent('recipes', event => {
     //     X: 'woldsvaults:omega_pog_block',
     //     S: 'woldsvaults:chunk_of_power',
     //     Y: 'woldsvaults:chroma_core',
-    //     O: 'woldvaults:wold_star_chunk',
+    //     O: 'woldsvaults:wold_star_chunk',
     //     B: 'the_vault:black_chromatic_steel_block'
     // }).id('woldsvaults:crystal_reinforcement')
 
@@ -310,7 +310,7 @@ onEvent('recipes', event => {
     //         'YOY',
     //         'SXS'
     //     ], {
-    //     X: 'woldvaults:pog_prism',
+    //     X: 'woldsvaults:pog_prism',
     //     Y: 'the_vault:chromatic_steel_block',
     //     O: 'the_vault:hardened_wutodic_mass',
     //     S: 'the_vault:black_chromatic_steel_ingot'
@@ -364,7 +364,7 @@ onEvent('recipes', event => {
     //     ], {
     //     C: 'the_vault:extraordinary_painite',
     //     A: 'the_vault:extraordinary_alexandrite',
-    //     D: 'woldvaults:vault_essence_block',
+    //     D: 'woldsvaults:vault_essence_block',
     //     O: 'the_vault:packed_vault_meat_block'
     // }).id('the_vault:sublime_vault_substance')
 
@@ -376,7 +376,7 @@ onEvent('recipes', event => {
     //     ], {
     //     C: 'the_vault:mystical_powder',
     //     D: 'the_vault:dreamstone',
-    //     O: 'woldvaults:pog_prism'
+    //     O: 'woldsvaults:pog_prism'
     // }).id('the_vault:sublime_vault_vision')
 
     // event.shaped(Item.of('the_vault:sublime_vault_elixir'),
@@ -399,7 +399,7 @@ onEvent('recipes', event => {
     //     X: 'the_vault:sublime_vault_substance',
     //     E: 'the_vault:sublime_vault_elixir',
     //     M: 'the_vault:memory_crystal',
-    //     U: 'woldvaults:pog_prism',
+    //     U: 'woldsvaults:pog_prism',
     //     B: 'the_vault:black_chromatic_steel_ingot'
     // }).id('woldsvaults:heart_of_chaos')
 

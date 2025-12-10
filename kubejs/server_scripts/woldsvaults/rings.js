@@ -10,7 +10,7 @@ onEvent('recipes', event => {
         ], {
         G: 'compressium:vault_essence_block_1',
         X: 'compressium:vault_diamond_block_1',
-        R: 'woldvaults:pog_prism'
+        R: 'woldsvaults:pog_prism'
     })
 
     event.shaped(Item.of('woldsvaults:chromatic_iron_angel_ring'),
@@ -44,7 +44,7 @@ onEvent('recipes', event => {
         G: 'the_vault:chromatic_steel_block',
         A: 'the_vault:angel_block',
         R: 'woldsvaults:chromatic_gold_angel_ring',
-        X: 'woldvaults:pog_prism'
+        X: 'woldsvaults:pog_prism'
     })
 
     event.shaped(Item.of('woldsvaults:black_chromatic_steel_angel_ring'),

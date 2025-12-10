@@ -9,7 +9,7 @@ onEvent("recipes", event => {
         X: 'the_vault:vault_diamond_block',
         O: 'woldsvaults:vault_salvager',
         B: 'the_vault:black_chromatic_steel_ingot',
-        P: 'woldvaults:pog_prism',
+        P: 'woldsvaults:pog_prism',
         U: 'sophisticatedbackpacks:upgrade_base'
     }).id('sophisticatedvaultstorage:sophisticatedbackpacks/recycler_upgrade')
 
@@ -22,7 +22,7 @@ onEvent("recipes", event => {
         X: 'the_vault:vault_diamond_block',
         O: 'compressium:vault_essence_block_1',
         B: 'the_vault:black_chromatic_steel_ingot',
-        P: 'woldvaults:pog_prism',
+        P: 'woldsvaults:pog_prism',
         U: 'sophisticatedbackpacks:recycler_upgrade'
     }).id('sophisticatedvaultstorage:sophisticatedbackpacks/recycler_upgrade_advanced')
 
@@ -60,7 +60,7 @@ onEvent("recipes", event => {
         ], {
         X: 'the_vault:magic_silk_block',
         O: 'the_vault:blank_key',
-        B: 'woldvaults:pog_prism',
+        B: 'woldsvaults:pog_prism',
         P: 'the_vault:extraordinary_black_opal',
         U: 'sophisticatedbackpacks:upgrade_base'
     }).id('sophisticatedvaultstorage:sophisticatedbackpacks/activator_upgrade')
@@ -74,7 +74,7 @@ onEvent("recipes", event => {
         X: 'the_vault:magic_silk_block',
         O: 'woldsvaults:vault_salvager',
         B: 'the_vault:chromatic_steel_block',
-        P: 'woldvaults:pog_prism',
+        P: 'woldsvaults:pog_prism',
         U: 'sophisticatedstorage:upgrade_base'
     }).id('sophisticatedvaultstorage:sophisticatedstorage/recycler_upgrade')
 

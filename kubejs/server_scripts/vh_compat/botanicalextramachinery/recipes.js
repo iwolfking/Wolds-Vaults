@@ -95,7 +95,7 @@ onEvent("recipes", event => {
                 "item": "botania:dragonstone"
             },
             {
-                "item": "woldvaults:vault_essence_block"
+                "item": "woldsvaults:vault_essence_block"
             }
         ],
         "output": [
@@ -115,7 +115,7 @@ onEvent("recipes", event => {
                 "item": "botanicalextramachinery:malachite_dragonstone"
             },
             {
-                "item": "woldvaults:vault_essence_block"
+                "item": "woldsvaults:vault_essence_block"
             }
         ],
         "output": [
@@ -316,7 +316,7 @@ onEvent("recipes", event => {
             'IPI',
             'BBB'
         ], {
-        R: 'woldvaults:pog_prism',
+        R: 'woldsvaults:pog_prism',
         I: 'botanicalextramachinery:malachite_ingot',
         B: 'botanicalextramachinery:malachite_dragonstone_block',
         P: 'botania:orechid'
@@ -328,7 +328,7 @@ onEvent("recipes", event => {
             'IPI',
             'BBB'
         ], {
-        R: 'woldvaults:pog_prism',
+        R: 'woldsvaults:pog_prism',
         I: 'botanicalextramachinery:saffron_ingot',
         B: 'botanicalextramachinery:saffron_dragonstone_block',
         P: 'botanicalextramachinery:base_orechid'
@@ -364,7 +364,7 @@ onEvent("recipes", event => {
             'IFI',
             'BBB'
         ], {
-        R: 'woldvaults:pog_prism',
+        R: 'woldsvaults:pog_prism',
         I: 'botanicalextramachinery:crystal_ingot',
         F: 'botania:jaded_amaranthus',
         B: 'botanicalextramachinery:crystal_dragonstone_block'
@@ -378,7 +378,7 @@ onEvent("recipes", event => {
         ], {
         B: 'botanicalextramachinery:crimson_dragonstone_block',
         P: 'botanicalextramachinery:ultimate_mana_pool',
-        W: 'woldvaults:wold_star'
+        W: 'woldsvaults:wold_star'
     }).id('botanicalextramachinery:catalyst_mana_infinity')
 
 

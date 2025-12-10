@@ -373,7 +373,7 @@ onEvent("recipes", event => {
         ], {
         C: '#forge:ingots/electrum',
         B: '#immersiveengineering:connector_insulator',
-        X: 'woldvaults:chromatic_gold_ingot'
+        X: 'woldsvaults:chromatic_gold_ingot'
     }).id('immersiveengineering:crafting/connector_mv')
 
     event.shaped(Item.of('immersiveengineering:connector_hv', 4),
