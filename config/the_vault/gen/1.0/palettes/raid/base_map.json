@@ -19,17 +19,26 @@
             "glyphColor": "0xCC0000",
             "particleColor": "0xCC0000"
           },
+         "curses": [
+              "the_vault:nullify_area_of_effect"
+          ],
           "zone": {
             "min": [-23, -20, -23],
             "max": [23, 27, 23]
           },
           "spawners": [
             {
-              "pos": [0, -20, 0],
+              "pos": {
+                "min": [-22, -1, -22],
+                "max": [22, 3, 22]
+              },
               "groups": ["ground"]
             },
             {
-              "pos": [0, -19, 0],
+              "pos": {
+                "min": [-22, 6, -22],
+                "max": [22, 27, 22]
+              },
               "groups": ["elevated"]
             }
           ],
