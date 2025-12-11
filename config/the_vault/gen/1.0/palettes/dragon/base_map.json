@@ -1,12 +1,272 @@
 {
     "tile_processors": [
-        {
+         {
             "type": "weighted_target",
-            "target": "minecraft:petrified_oak_slab",
-            "output": {
-                "the_vault:placeholder[type=coin_stacks]": 1,
-                "minecraft:air": 7
-            }
+            "target": "the_vault:placeholder[type=objective]",
+            "output": [
+                {
+                    "block": "the_vault:dragon_room_controller",
+                    "renderer": {
+                        "coreColor": "0xd6940f",
+                        "glyphColor": "0xd6940f",
+                        "particleColor": "0xd6940f"
+                    },
+                    "zone": {
+                        "min": [-23, -5, -23],
+                        "max": [23, 41, 23]
+                    },
+                    "curses": [
+                        "the_vault:nullify_area_of_effect"
+                    ],
+                    "maxWaves": 4,
+                    "goblinVariants": [
+                        {
+                            "variant": {
+                                "entityNbt": {
+                                    "GoblinType": "GOLD"
+                                },
+                                "dropLootTable": "the_vault:dragon_goblin/gold",
+                                "attributeOverrides": [
+                                    {
+                                        "name": "minecraft:generic.max_health",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 1.0,
+                                            "max": 1.0,
+                                            "step": 0.1
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    },
+                                    {
+                                        "name": "minecraft:generic.movement_speed",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 0.2,
+                                            "max": 0.3,
+                                            "step": 0.01
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    }
+                                ]
+                            },
+                            "weight": 100
+                        },
+                        {
+                            "variant": {
+                                "entityNbt": {
+                                    "GoblinType": "GEAR"
+                                },
+                                "dropLootTable": "the_vault:dragon_goblin/gear",
+                                "attributeOverrides": [
+                                    {
+                                        "name": "minecraft:generic.max_health",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 0.2,
+                                            "max": 0.3,
+                                            "step": 0.1
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    },
+                                    {
+                                        "name": "minecraft:generic.movement_speed",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 0.25,
+                                            "max": 0.35,
+                                            "step": 0.01
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    }
+                                ]
+                            },
+                            "weight": 50
+                        },
+                        {
+                            "variant": {
+                                "entityNbt": {
+                                    "GoblinType": "JEWEL"
+                                },
+                                "dropLootTable": "the_vault:dragon_goblin/jewel",
+                                "attributeOverrides": [
+                                    {
+                                        "name": "minecraft:generic.max_health",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 1.0,
+                                            "max": 1.2,
+                                            "step": 0.1
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    },
+                                    {
+                                        "name": "minecraft:generic.movement_speed",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 0.4,
+                                            "max": 0.5,
+                                            "step": 0.01
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    }
+                                ]
+                            },
+                            "weight": 50
+                        },
+                        {
+                            "variant": {
+                                "entityNbt": {
+                                    "GoblinType": "SOUL"
+                                },
+                                "dropLootTable": "the_vault:dragon_goblin/soul",
+                                "attributeOverrides": [
+                                    {
+                                        "name": "minecraft:generic.max_health",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 0.8,
+                                            "max": 1.0,
+                                            "step": 0.1
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    },
+                                    {
+                                        "name": "minecraft:generic.movement_speed",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 0.4,
+                                            "max": 0.6,
+                                            "step": 0.1
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    }
+                                ]
+                            },
+                            "weight": 25
+                        },
+                        {
+                            "variant": {
+                                "entityNbt": {
+                                    "GoblinType": "CARDS"
+                                },
+                                "dropLootTable": "the_vault:dragon_goblin/cards",
+                                "attributeOverrides": [
+                                    {
+                                        "name": "minecraft:generic.max_health",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 2.0,
+                                            "max": 3.0,
+                                            "step": 0.1
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    },
+                                    {
+                                        "name": "minecraft:generic.movement_speed",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 0.4,
+                                            "max": 0.6,
+                                            "step": 0.1
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    }
+                                ]
+                            },
+                            "weight": 25
+                        },
+                        {
+                            "variant": {
+                                "entityNbt": {
+                                    "GoblinType": "UNIQUE"
+                                },
+                                "dropLootTable": "the_vault:dragon_goblin/unique",
+                                "attributeOverrides": [
+                                    {
+                                        "name": "minecraft:generic.max_health",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 10.0,
+                                            "max": 20.0,
+                                            "step": 0.1
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    },
+                                    {
+                                        "name": "minecraft:generic.movement_speed",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 0.7,
+                                            "max": 1.0,
+                                            "step": 0.1
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    }
+                                ]
+                            },
+                            "weight": 1
+                        },
+                        {
+                            "variant": {
+                                "entityNbt": {
+                                    "GoblinType": "FRUIT"
+                                },
+                                "dropLootTable": "the_vault:dragon_goblin/fruit",
+                                "attributeOverrides": [
+                                    {
+                                        "name": "minecraft:generic.max_health",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 2.5,
+                                            "max": 3.5,
+                                            "step": 0.1
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    },
+                                    {
+                                        "name": "minecraft:generic.movement_speed",
+                                        "roll": {
+                                            "type": "uniformed_step",
+                                            "min": 0.6,
+                                            "max": 0.8,
+                                            "step": 0.1
+                                        },
+                                        "operator": "MULTIPLY_TOTAL"
+                                    }
+                                ]
+                            },
+                            "weight": 10
+                        }
+                    ],
+                    "completionAction": "dragon_success",
+                    "breathOrigins": [
+                        [-22, 22, 0],
+                        [22, 22, 0],
+                        [0, 22, -22],
+                        [0, 22, 22]
+                    ],
+                    "spawnPositions": [
+                        {
+                            "position": [-22, -1, 0],
+                            "key": "uno"
+                        },
+                        {
+                            "position": [22, -1, 0],
+                            "key": "thry"
+                        },
+                        {
+                            "position": [0, -1, -22],
+                            "key": "two"
+                        },
+                        {
+                            "position": [0, -1, 22],
+                            "key": "four"
+                        }
+                    ],
+                    "ticksLeft": 3600,
+                    "weight": 1
+                }
+            ]
         },
         {
             "type": "reference",
