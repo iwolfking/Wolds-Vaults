@@ -11,13 +11,13 @@
                     "weight": 1,
                     "pool": [
                         {
-                            "weight": 45,
+                            "weight": 80,
                             "item": {
                                 "id": "minecraft:air",
                                 "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
                         },
@@ -26,12 +26,12 @@
                             "item": {
                                 "id": "the_vault:helmet",
                                 "nbt": {
-                                "the_vault:gear_roll_type_pool": "Chaotic"
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
                                 },
                                 "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
                         },
@@ -40,12 +40,12 @@
                             "item": {
                                 "id": "the_vault:chestplate",
                                 "nbt": {
-                                "the_vault:gear_roll_type_pool": "Chaotic"
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
                                 },
                                 "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
                         },
@@ -54,96 +54,166 @@
                             "item": {
                                 "id": "the_vault:leggings",
                                 "nbt": {
-                                "the_vault:gear_roll_type_pool": "Chaotic"
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
                                 },
                                 "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
-                            },
-                            {
+                        },
+                        {
                             "weight": 5,
                             "item": {
                                 "id": "the_vault:boots",
                                 "nbt": {
-                                "the_vault:gear_roll_type_pool": "Chaotic"
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
                                 },
                                 "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
-                            },
-                            {
+                        },
+                        {
                             "weight": 5,
                             "item": {
                                 "id": "the_vault:sword",
                                 "nbt": {
-                                "the_vault:gear_roll_type_pool": "Chaotic"
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
                                 },
                                 "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
-                            },
-                            {
+                        },
+                        {
                             "weight": 5,
                             "item": {
                                 "id": "the_vault:axe",
                                 "nbt": {
-                                "the_vault:gear_roll_type_pool": "Chaotic"
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
                                 },
                                 "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
-                            },
-                            {
+                        },
+                        {
                             "weight": 5,
                             "item": {
                                 "id": "the_vault:shield",
                                 "nbt": {
-                                "the_vault:gear_roll_type_pool": "Chaotic"
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
                                 },
                                 "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
-                            },
-                            {
+                        },
+                        {
                             "weight": 5,
                             "item": {
                                 "id": "the_vault:focus",
                                 "nbt": {
-                                "the_vault:gear_roll_type_pool": "Chaotic"
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
                                 },
                                 "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
-                            },
-                            {
+                        },
+                        {
                             "weight": 5,
                             "item": {
                                 "id": "the_vault:wand",
                                 "nbt": {
-                                "the_vault:gear_roll_type_pool": "Chaotic"
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
                                 },
                                 "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
+                                }
+                            }
+                        },
+                        {
+                            "weight": 5,
+                            "item": {
+                                "id": "the_vault:trident",
+                                "nbt": {
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
+                                },
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
+                                }
+                            }
+                        },
+                        {
+                            "weight": 5,
+                            "item": {
+                                "id": "the_vault:battlestaff",
+                                "nbt": {
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
+                                },
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
+                                }
+                            }
+                        },
+                         {
+                            "weight": 5,
+                            "item": {
+                                "id": "the_vault:plushie",
+                                "nbt": {
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
+                                },
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
+                                }
+                            }
+                        },
+                         {
+                            "weight": 5,
+                            "item": {
+                                "id": "the_vault:loot_sack",
+                                "nbt": {
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
+                                },
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
+                                }
+                            }
+                        },
+                         {
+                            "weight": 5,
+                            "item": {
+                                "id": "the_vault:rang",
+                                "nbt": {
+                                    "the_vault:gear_roll_type_pool": "Chaotic"
+                                },
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
                         },
@@ -152,12 +222,12 @@
                             "item": {
                                 "id": "the_vault:deck_socket",
                                 "nbt": {
-                                "Modifier": "@dungeon_boss"
+                                    "Modifier": "@dungeon_boss"
                                 },
                                 "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
                         }
