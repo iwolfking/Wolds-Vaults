@@ -35,7 +35,6 @@ onEvent('jei.hide.items', event => {
     event.hide('the_vault:mote_purity')
     event.hide('the_vault:mote_clarity')
     event.hide('the_vault:paradoxical_gem')
-    event.hide('the_vault:treasure_keyring')
     event.hide('woldsvaults:accoutre_focus')
     event.hide('pneumaticcraft:jet_boots_upgrade_1')
     event.hide('pneumaticcraft:jet_boots_upgrade_2')
