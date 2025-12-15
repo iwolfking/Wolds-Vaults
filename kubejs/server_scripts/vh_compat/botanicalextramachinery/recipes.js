@@ -184,7 +184,7 @@ onEvent("recipes", event => {
             'IPI',
             'BBB'
         ], {
-        R: 'the_vault:woldsvaults:vault_ingot_block',
+        R: 'woldsvaults:vault_ingot_block',
         I: 'botanicalextramachinery:saffron_ingot',
         B: 'botanicalextramachinery:saffron_dragonstone_block',
         P: 'botanicalextramachinery:base_mana_pool'
@@ -208,7 +208,7 @@ onEvent("recipes", event => {
             'IPI',
             'BBB'
         ], {
-        R: 'the_vault:woldsvaults:vault_ingot_block',
+        R: 'woldsvaults:vault_ingot_block',
         I: 'botanicalextramachinery:saffron_ingot',
         B: 'botanicalextramachinery:saffron_dragonstone_block',
         P: 'botanicalextramachinery:base_runic_altar'
@@ -232,7 +232,7 @@ onEvent("recipes", event => {
             'IPI',
             'BBB'
         ], {
-        R: 'the_vault:woldsvaults:vault_ingot_block',
+        R: 'woldsvaults:vault_ingot_block',
         I: 'botanicalextramachinery:saffron_ingot',
         B: 'botanicalextramachinery:saffron_dragonstone_block',
         P: 'botanicalextramachinery:base_daisy'
@@ -256,7 +256,7 @@ onEvent("recipes", event => {
             'IPI',
             'BBB'
         ], {
-        R: 'the_vault:woldsvaults:vault_ingot_block',
+        R: 'woldsvaults:vault_ingot_block',
         I: 'botanicalextramachinery:saffron_ingot',
         B: 'botanicalextramachinery:saffron_dragonstone_block',
         P: 'botanicalextramachinery:base_apothecary'
@@ -280,7 +280,7 @@ onEvent("recipes", event => {
             'IPI',
             'BBB'
         ], {
-        R: 'the_vault:woldsvaults:vault_ingot_block',
+        R: 'woldsvaults:vault_ingot_block',
         I: 'botanicalextramachinery:saffron_ingot',
         B: 'botanicalextramachinery:saffron_dragonstone_block',
         P: 'botanicalextramachinery:base_industrial_agglomeration_factory'
@@ -304,7 +304,7 @@ onEvent("recipes", event => {
             'IPI',
             'BBB'
         ], {
-        R: 'the_vault:woldsvaults:vault_ingot_block',
+        R: 'woldsvaults:vault_ingot_block',
         I: 'botanicalextramachinery:saffron_ingot',
         B: 'botanicalextramachinery:saffron_dragonstone_block',
         P: 'botanicalextramachinery:base_alfheim_market'
