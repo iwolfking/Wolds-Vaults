@@ -274,7 +274,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:ornate_chain>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:magnetite>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:ornate_ingot>);
-<tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:supply_box>);
+<tag:items:the_vault:ornate_chest_loot>.add(<item:woldsvaults:supply_box>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:vault_alloy>);
 
 // Treasure Chest Loot
