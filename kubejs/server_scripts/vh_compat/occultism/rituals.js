@@ -49,7 +49,7 @@ onEvent("recipes", event => {
                 "item": "compressium:magic_silk_block_1"
             },
             {
-                "item": "the_vault:vault_ingot_1"
+                "item": "the_vault:woldsvaults:vault_ingot_block"
             },
             {
                 "tag": "forge:ender_pearls"
@@ -689,7 +689,7 @@ onEvent("recipes", event => {
                 "tag": "forge:storage_blocks/iesnium"
             },
             {
-                "item": "the_vault:vault_ingot_1"
+                "item": "the_vault:woldsvaults:vault_ingot_block"
             }
         ],
         "result": {
