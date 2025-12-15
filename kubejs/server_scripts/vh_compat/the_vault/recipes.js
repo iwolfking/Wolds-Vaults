@@ -1,7 +1,6 @@
 onEvent("recipes", event => {
     event.remove({ output: 'the_vault:angel_block' })
     event.remove({ id: 'the_vault:vault_catalyst_reroll' })
-    event.remove({ output: 'the_vault:treasure_keyring'})
     event.remove({id: 'the_vault:infused_eternal_soul'})
     event.remove({output: 'the_vault:coin_pouch'})
     event.remove({id: 'the_vault:echoing_ingot'})

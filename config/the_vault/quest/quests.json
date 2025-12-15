@@ -664,152 +664,6 @@
     },
     {
       "type": "collection",
-      "id": "coin_pouch",
-      "name": "Coin Pouch",
-      "descriptionData": {
-        "description": [
-          {
-            "text": "The best way to store your ",
-            "color": "$text"
-          },
-          {
-            "text": "bronze",
-            "color": "$bronze"
-          },
-          {
-            "text": ", ",
-            "color": "$text"
-          },
-          {
-            "text": "silver",
-            "color": "$common"
-          },
-          {
-            "text": ", ",
-            "color": "$text"
-          },
-          {
-            "text": "gold",
-            "color": "$gold"
-          },
-          {
-            "text": " and ",
-            "color": "$text"
-          },
-          {
-            "text": "platinum",
-            "color": "$platinum"
-          },
-          {
-            "text": ", is by acquiring a ",
-            "color": "$text"
-          },
-          {
-            "text": "Coin Pouch",
-            "color": "$qhighlight"
-          },
-          {
-            "text": "!\n\nThe ",
-            "color": "$text"
-          },
-          {
-            "text": "Coin Pouch",
-            "color": "$qhighlight"
-          },
-          {
-            "text": " is a ",
-            "color": "$text"
-          },
-          {
-            "text": "soulbound",
-            "color": "$soulchance"
-          },
-          {
-            "text": " item that you keep in your inventory. It will be kept there even if you die, and it can contain an unlimited amount of ",
-            "color": "$text"
-          },
-          {
-            "text": "bronze",
-            "color": "$bronze"
-          },
-          {
-            "text": ", ",
-            "color": "$text"
-          },
-          {
-            "text": "silver",
-            "color": "$common"
-          },
-          {
-            "text": ", ",
-            "color": "$text"
-          },
-          {
-            "text": "gold",
-            "color": "$gold"
-          },
-          {
-            "text": " and ",
-            "color": "$text"
-          },
-          {
-            "text": "platinum",
-            "color": "$platinum"
-          },
-          {
-            "text": ". It auto-converts between them, and all the workstations in ",
-            "color": "$text"
-          },
-          {
-            "text": "Vault Hunters",
-            "color": "$qhighlight"
-          },
-          {
-            "text": " can read directly from it - no need to micro-manage your items!\n\nAnother brilliant feature of the ",
-            "color": "$text"
-          },
-          {
-            "text": "Coin Pouch",
-            "color": "$qhighlight"
-          },
-          {
-            "text": " is that it will automatically pick up any currency you collect, as long as it's not positioned after a ",
-            "color": "$text"
-          },
-          {
-            "text": "backpack",
-            "color": "$blocks"
-          },
-          {
-            "text": " allowing currency in its whitelist.",
-            "color": "$text"
-          },
-          {
-            "text": "\n\nAcquire a Coin Pouch",
-            "color": "$heal"
-          }
-        ]
-      },
-      "icon": "the_vault:gui/quests/coin_pouch",
-      "targetId": "the_vault:coin_pouch",
-      "targetProgress": 1.0,
-      "unlockedBy": "shard_pouch",
-      "reward": {
-        "items": [
-          {
-            "item": "the_vault:vault_platinum",
-            "amount": 1
-          },
-          {
-            "item": "the_vault:chromatic_steel_ingot",
-            "amount": 4
-          }
-        ],
-        "vaultExp": 0
-      }
-    },
-    {
-      "type": "collection",
       "id": "complete_bounty",
       "name": "Bounty Hunting",
       "descriptionData": {
@@ -3398,7 +3252,7 @@
               "color": "$text"
             },
             {
-              "text": "Archive",
+              "text": "Alchemy Archive",
               "color": "$qhighlight"
             },
             {
@@ -3410,7 +3264,39 @@
               "color": "$qhighlight"
             },
             {
-              "text": "!\n\nDungeons also contain",
+              "text": "!\n\nIf you get lucky, you may find a ",
+              "color": "$text"
+            },
+            {
+              "text": "Vault Globe",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " inside the dungeon, guarded by a ",
+              "color": "$text"
+            },
+            {
+              "text": "dungeon boss",
+              "color": "$qhighlight"
+            },
+            {
+              "text": ". The larger the dungeon is, the more likely it is that you will find a globe. There are several different globes to find, but any one dungeon can maximum have one in them. When clicked, a ",
+              "color": "$text"
+            },
+            {
+              "text": "globe",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " will ",
+              "color": "$text"
+            },
+            {
+              "text": "reveal all rooms",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " of the given globe type, to all players inside the current vault.\n\nDungeons also contain",
               "color": "$text"
             },
             {
@@ -3443,116 +3329,6 @@
       "targetId": "the_vault:dungeon_door",
       "targetProgress": 1.0,
       "unlockedBy": "reach_level_20",
-      "reward": {
-        "items": [
-          {
-            "item": "the_vault:gem_pog"
-          }
-        ],
-        "vaultExp": 0
-      }
-    },
-    {
-      "type": "block_interact",
-      "id": "archives",
-      "name": "Archives",
-      "descriptionData": {
-        "description": [
-          {
-            "text": "Deep inside the dungeons you may find an ",
-            "color": "$text"
-          },
-          {
-            "text": "Archive",
-            "color": "$qhighlight"
-          },
-          {
-            "text": "! The bigger the dungeon, the more likely you are to find one.\n\nThere are two types of archives, the ",
-            "color": "$text"
-          },
-          {
-            "text": "Alchemy Archive",
-            "color": "$qhighlight"
-          },
-          {
-            "text": " and the ",
-            "color": "$text"
-          },
-          {
-            "text": "Modifier Archive",
-            "color": "$qhighlight"
-          },
-          {
-            "text": ".\n\nThese contain the ancient wisdom of ",
-            "color": "$text"
-          },
-          {
-            "text": "item modification",
-            "color": "$qhighlight"
-          },
-          {
-            "text": "! When interacted with they will teach you a new modifier for either ",
-            "color": "$text"
-          },
-          {
-            "text": "Potions",
-            "color": "$qhighlight"
-          },
-          {
-            "text": " (the ",
-            "color": "$text"
-          },
-          {
-            "text": "Alchemy Archives",
-            "color": "$text"
-          },
-          {
-            "text": ") or ",
-            "color": "$text"
-          },
-          {
-            "text": "Vault Gear",
-            "color": "$qhighlight"
-          },
-          {
-            "text": " (the ",
-            "color": "$text"
-          },
-          {
-            "text": "Modifier Archives",
-            "color": "$text"
-          },
-          {
-            "text": "). This wisdom is ",
-            "color": "$text"
-          },
-          {
-            "text": "permanent",
-            "color": "$qhighlight"
-          },
-          {
-            "text": " and will allow you to modify your ",
-            "color": "$text"
-          },
-          {
-            "text": "potions",
-            "color": "$qhighlight"
-          },
-          {
-            "text": " or gear with more control and options!",
-            "color": "$text"
-          },
-          {
-            "text": "\n\nInteract with an Alchemy Archive",
-            "color": "$heal"
-          }
-        ]
-
-      },
-      "icon": "the_vault:gui/quests/archives",
-      "targetId": "the_vault:alchemy_archive",
-      "targetProgress": 1.0,
-      "unlockedBy": "dungeons",
       "reward": {
         "items": [
           {
@@ -4392,6 +4168,116 @@
       }
     },
     {
+      "type": "collection",
+      "id": "gear_sealer",
+      "name": "Sealing Gear",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Sealing your best vault gear is a very powerful way to maximise it, but beware, you could also get unlucky.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "You need to find ",
+            "color": "$text"
+          },
+          {
+            "text": "Ascendant Marks",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", which can be found in ",
+            "color": "$text"
+          },
+          {
+            "text": "Vendoors",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "Black Market",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " and a few other places. These rare marks are used to seal your gear.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "When sealing a gear piece, there is a ",
+            "color": "$text"
+          },
+          {
+            "text": "1 in 10 chance",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " for your gear piece to get an additional powerful sealed modifier, the other outcome is to ",
+            "color": "$text"
+          },
+          {
+            "text": "replace a random, non frozen modifier",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", on your gear with a powerful sealed modifier.\n\nThe powerful sealed modifier includes gaining ",
+            "color": "$text"
+          },
+          {
+            "text": "extra skill levels",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", or gaining a ",
+            "color": "$text"
+          },
+          {
+            "text": "unique effect",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". The cost for sealing a gear piece depends on the ",
+            "color": "$text"
+          },
+          {
+            "text": "level of your gear",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", and the ",
+            "color": "$text"
+          },
+          {
+            "text": "rarity of your gear",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nFinally, once a gear piece is sealed you can not modify it further.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Craft a Gear Sealer",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/modifier",
+      "targetId": "the_vault:vault_sealer",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vorpal_focus",
+            "amount": 3
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
       "type": "block_interact",
       "id": "treasure",
       "name": "Treasure Rooms",
@@ -4889,6 +4775,128 @@
           {
             "item": "the_vault:ember",
             "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "imbuement_altar",
+      "name": "Imbuement Altars",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "After level 60 you have a rare chance of finding an ",
+            "color": "$text"
+          },
+          {
+            "text": "Imbuement Altar",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " inside ",
+            "color": "$text"
+          },
+          {
+            "text": "Dungeons",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". The larger the dungeon, the more likely you will find one.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "When interacting with an ",
+            "color": "$text"
+          },
+          {
+            "text": "Imbuement Altar",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", it will ask you to confirm a gear piece for imbuement, once a gear piece is confirmed it can not be undone.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "The imbuement altar will then present you with up to 3 options of imbuement, imbuing a modifier has a ",
+            "color": "$text"
+          },
+          {
+            "text": "success chance",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " to make it stronger, upgrading its values. If the imbuement ",
+            "color": "$text"
+          },
+          {
+            "text": "fails",
+            "color": "$red"
+          },
+          {
+            "text": ", the gear becomes ",
+            "color": "$text"
+          },
+          {
+            "text": "corrupted",
+            "color": "$red"
+          },
+          {
+            "text": " and the modifier will instead be downgraded.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Both ",
+            "color": "$text"
+          },
+          {
+            "text": "imbued",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " and ",
+            "color": "$text"
+          },
+          {
+            "text": "corrupted",
+            "color": "$red"
+          },
+          {
+            "text": " gear can no longer be modified in the ",
+            "color": "$text"
+          },
+          {
+            "text": "Artisan Station",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", however, ",
+            "color": "$text"
+          },
+          {
+            "text": "imbued gear",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " can still be sealed.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Interact with an Imbuement Altar",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/imbuement_altar",
+      "targetId": "the_vault:imbuement_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_echo",
+            "amount": 10
           }
         ],
         "vaultExp": 0
