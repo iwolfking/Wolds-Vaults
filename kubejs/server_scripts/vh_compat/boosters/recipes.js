@@ -41,7 +41,7 @@ onEvent("recipes", event => {
             'SXS',
             'PSP'
         ], {
-        S: 'the_vault:wold_star',
+        S: 'woldsvaults:wold_star',
         P: 'rsinfinitybooster:infinity_card',
         X: 'the_vault:echo_pog'
     })
@@ -52,7 +52,7 @@ onEvent("recipes", event => {
             'SXS',
             'PSP'
         ], {
-        S: 'the_vault:wold_star',
+        S: 'woldsvaults:wold_star',
         P: 'aeinfinitybooster:infinity_card',
         X: 'the_vault:echo_pog'
     })

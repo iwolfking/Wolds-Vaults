@@ -1,0 +1,40 @@
+{
+    "tile_processors": [
+        {
+            "type": "reference",
+            "id": "the_vault:generic/room_base"
+        },
+        {
+            "type": "weighted_target",
+            "target": "the_vault:placeholder[type=objective]",
+            "output": [
+                {
+                    "block": "vhsmp:companion_rush_controller",
+                    "zone": {
+                        "min": [
+                            -23,
+                            -1,
+                            -23
+                        ],
+                        "max": [
+                            23,
+                            41,
+                            23
+                        ]
+                    },
+                    "renderer": {
+                        "coreColor": "0x069022",
+                        "glyphColor": "0x069022",
+                        "particleColor": "0x069022"
+                    },
+                    "spawnCount": 20,
+                    "spawnRadius": 5,
+                    "spawningPhaseDuration": 100,
+                    "weight": 1
+                }
+            ]
+        }
+    ],
+    "entity_processors": [],
+    "decorators": []
+}

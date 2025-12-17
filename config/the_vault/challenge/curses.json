@@ -1,0 +1,40 @@
+{
+    "curses": {
+        "the_vault:weakening_aura": {
+            "effect": "weakness",
+            "duration": 100,
+            "amplifier": 1,
+            "ambient": false,
+            "showParticles": false,
+            "renderer": {
+                "texture": "the_vault:textures/gui/vignette.png",
+                "color": 3809098,
+                "alpha": 0.6,
+                "type": "vignette"
+            },
+            "type": "mob_effect"
+        },
+        "the_vault:nullify_area_of_effect": {
+            "effect": "the_vault:nullify_area_of_effect",
+            "duration": 100,
+            "amplifier": 0,
+            "ambient": false,
+            "showParticles": false,
+            "renderer": {
+                "texture": "the_vault:textures/gui/vignette.png",
+                "color": 3809098,
+                "alpha": 0,
+                "type": "vignette"
+            },
+            "type": "mob_effect"
+        }
+    },
+    "curseWeights": {
+        "raid": [
+            {
+                "value": "the_vault:weakening_aura",
+                "weight": 1
+            }
+        ]
+    }
+}

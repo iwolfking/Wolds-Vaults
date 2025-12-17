@@ -1,0 +1,1186 @@
+{
+  "registry": {
+    "the_vault:jester": {
+      "name": "Jester Hat",
+      "model": "the_vault:gear/armor/jester/helmet",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_armor",
+          "the_vault:jester_lucky_hit",
+          "the_vault:base_lucky_hit_chance",
+          "the_vault:base_lucky_hit_chance"
+        ],
+        "PREFIX": [],
+        "SUFFIX": [
+          "the_vault:u_item_rarity"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    
+    "the_vault:annmari": {
+      "name": "Ann-Mari",
+      "model": "the_vault:gear/armor/phoenix_chestplate/chestplate",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_armor",
+          "the_vault:u_base_crit_hit",
+          "the_vault:base_ap"
+        ],
+        "PREFIX": [
+          "the_vault:u_mod_armor",
+          "the_vault:mod_health",
+          "the_vault:mod_added_ability_level_groupheal"
+        ],
+        "SUFFIX": [
+          "the_vault:heal_cooldown",
+          "the_vault:u_phoenix"
+          
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:castle": {
+      "name": "The Castle",
+      "model": "the_vault:gear/armor/castle/chestplate",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_armor",
+          "the_vault:u_critical_hit_mitigation",
+          "the_vault:u_resistance_effect"
+        ],
+        "PREFIX": [
+          "the_vault:u_mod_armor",
+          "the_vault:mod_resistance",
+          "the_vault:mod_resistance"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_knockback_resistance",
+          "the_vault:mod_knockback_resistance",
+          "the_vault:mod_knockback_resistance"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:sweetheart": {
+      "name": "The Sweetheart",
+      "model": "the_vault:gear/armor/sweetheart/chestplate",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_armor",
+          "the_vault:base_health"
+        ],
+        "PREFIX": [
+          "the_vault:mod_health",
+          "the_vault:mod_health"
+        ],
+        "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 10
+    },
+    "the_vault:crystalplate": {
+      "name": "Crystal Plate",
+      "model": "the_vault:gear/armor/crystalplate/chestplate",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_all_skills",
+          "the_vault:u_all_talents",
+          "the_vault:base_ap"
+        ],
+        "PREFIX": [
+          "the_vault:mod_ap"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_mana_regen",
+          "the_vault:mod_area_of_effect"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 10
+    },
+    "the_vault:grim": {
+      "name": "Grim Shield",
+      "model": "the_vault:gear/shield/grim",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [],
+        "PREFIX": [
+          "the_vault:mod_fear"
+        ],
+        "SUFFIX": [
+          "the_vault:fear_effect_increase"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:ivy": {
+      "name": "Rosethorn Ivy",
+      "model": "the_vault:gear/shield/glass_flower",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_thorns_damage_flat"
+        ],
+        "PREFIX": [
+          "the_vault:u_thorns_damage",
+          "the_vault:u_lucky_thorns"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_damage_increase",
+          "the_vault:u_lucky_hit_chance"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:crashguards": {
+      "name": "Crashguards",
+      "model": "the_vault:gear/armor/crashguards/leggings",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_armor",
+          "the_vault:base_mana_additive"
+        ],
+        "PREFIX": [
+          "the_vault:u_mod_armor",
+          "the_vault:mod_resistance",
+          "the_vault:u_knockback_resistance"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_kinetic_immunity",
+          "the_vault:u_item_rarity"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:iskallibur": {
+      "name": "Woldibur",
+      "model": "the_vault:gear/sword/iskallibur_sword",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_attack_damage"
+          
+        ],
+        "SUFFIX": [
+          "the_vault:u_relentless_strike",
+          "the_vault:mod_attack_speed_percent"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:shattering_jewel": {
+      "name": "Shatterer",
+      "model": "the_vault:gear/jewel/treasure",
+      "modifierIdentifiers": {
+        "IMPLICIT": [
+          "the_vault:u_jewel_size_stella"
+        ],
+        "PREFIX": [
+          "the_vault:breaching_jewel"
+        ],
+        "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:eternal_stella": {
+      "name": "Eternal Stella",
+      "model": "the_vault:gear/jewel/stella",
+      "modifierIdentifiers": {
+        "IMPLICIT": [
+          "the_vault:u_jewel_size_stella"
+        ],
+        "PREFIX": [
+          "the_vault:u_immortality"
+        ],
+        "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+     "the_vault:gladiator_buckler": {
+      "name": "Gladiator's Buckler",
+      "model": "the_vault:gear/shield/gladiator_buckler",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_base_block"
+        ],
+        "PREFIX": [
+          "the_vault:mod_attack_speed_percent"
+          
+        ],
+        "SUFFIX": [
+          "the_vault:u_third_attack"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:treasure_jewel": {
+      "name": "Treasured Jewel",
+      "model": "the_vault:gear/jewel/treasure",
+      "modifierIdentifiers": {
+        "IMPLICIT": [
+          "the_vault:u_jewel_size_treasure"
+        ],
+        "PREFIX": [
+          "the_vault:u_treasure_affinity"
+        ],
+        "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:kaleidoscope": {
+      "name": "Kaleidoscope",
+      "model": "the_vault:gear/jewel/kaleidoscope",
+      "modifierIdentifiers": {
+        "IMPLICIT": [
+          "the_vault:u_jewel_size"
+        ],
+        "PREFIX": [
+          "the_vault:u_wooden_affinity",
+          "the_vault:u_coin_affinity",
+          "the_vault:u_gilded_affinity",
+          "the_vault:u_ornate_affinity",
+          "the_vault:u_living_affinity"
+        ],
+        "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:manabloom": {
+      "name": "Manabloom",
+      "model": "the_vault:gear/jewel/manabloom",
+      "modifierIdentifiers": {
+        "IMPLICIT": [
+          "the_vault:u_jewel_size_manabloom"
+        ],
+        "PREFIX": [
+          "the_vault:u_mana_looting"
+        ],
+        "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:pax": {
+      "name": "Pax",
+      "model": "the_vault:gear/jewel/pax",
+      "modifierIdentifiers": {
+        "IMPLICIT": [
+          "the_vault:u_jewel_size"
+        ],
+        "PREFIX": [
+          "the_vault:u_picking",
+          "the_vault:u_axing",
+          "the_vault:u_shovelling",
+          "the_vault:u_reaping"
+        ],
+        "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:inflated_justice": {
+      "name": "Inflated Justice",
+      "model": "the_vault:gear/sword/inflatedjustice",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_attack_damage",
+          "the_vault:mod_damage_baby"
+        ],
+        "SUFFIX": [
+          "the_vault:u_on_hit_aoe"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:frozen_orb": {
+      "name": "Frozen Orb",
+      "model": "the_vault:gear/focus/frozenorb",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:offhand_base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_offhand_mana_additive"
+        ],
+        "PREFIX": [
+          "the_vault:unique_added_ability_level_frostnova",
+          "the_vault:unique_frost_nova_vulnerability"
+        ],
+        "SUFFIX": [
+          "the_vault:unique_lucky_hit_chance"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:frozen_throne": {
+      "name": "Frozen Throne",
+      "model": "the_vault:gear/armor/frozen_throne/chestplate",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:offhand_base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_armor",
+          "the_vault:u_base_crit_hit"
+        ],
+        "PREFIX": [
+          "the_vault:unique_added_ability_level_frostnova"
+        ],
+        "SUFFIX": [
+          "the_vault:u_frost_nova_on_damage"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+
+
+    "the_vault:stormcrown": {
+      "name": "Stormcrown",
+      "model": "the_vault:gear/armor/stormcrown/helmet",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_ap"
+        ],
+        "PREFIX": [
+          "the_vault:unique_storm_arrow_level",
+          "the_vault:storm_aoe_reduce",
+          "the_vault:storm_cooldown"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_mana_regen"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:inferno_reach": {
+      "name": "Inferno's Reach",
+      "model": "the_vault:gear/wand/infernos_reach",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:offhand_base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_ap"
+        ],
+        "PREFIX": [
+          "the_vault:mod_ability_increase",
+          "the_vault:mod_added_ability_level_fireball"
+        ],
+        "SUFFIX": [
+          "the_vault:fireball_aoe_increase",
+          "the_vault:mod_cooldown_reduction",
+          "the_vault:unique_area_of_effect"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:warbound_helmet": {
+      "name": "Helm of the Warbound",
+      "model": "the_vault:gear/armor/spiral_guardian/helmet",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_armor"
+        ],
+        "PREFIX": [
+          "the_vault:mod_jav_scatter",
+          "the_vault:mod_damage_increase"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_cooldown_reduction",
+          "the_vault:mod_mana_regen"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:swarmwalkers": {
+      "name": "Swarmwalkers",
+      "model": "the_vault:gear/armor/bee_knight/leggings",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_armor"
+        ],
+        "PREFIX": [
+          "the_vault:u_movement",
+          "the_vault:u_knockback_resistance"
+        ],
+        "SUFFIX": [
+          "the_vault:u_effect_avoidance",
+          "the_vault:mod_mana_regen"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:wicked_witch": {
+      "name": "The Wicked Witch",
+      "model": "the_vault:gear/plushie/witch",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [],
+        "PREFIX": [
+          "the_vault:u_witch_effect_duration",
+          "the_vault:u_witch_cooldown_reduction"
+        ],
+        "SUFFIX": [
+          "the_vault:u_witch_effect_avoidance"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:baguette": {
+      "name": "The Baguette",
+      "model": "the_vault:gear/wand/baguette",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_saturation",
+          "the_vault:u_regeneration"
+        ],
+        "PREFIX": [],
+        "SUFFIX": [
+          "the_vault:u_baguette_healingeff"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:chainlash": {
+      "name": "Chainlash",
+      "model": "the_vault:gear/wand/chaining_wand",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:offhand_base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_chaining"
+        ],
+        "PREFIX": [
+          "the_vault:u_chaining_damage"
+        ],
+        "SUFFIX": [
+          "the_vault:unique_area_of_effect"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:chonknet": {
+      "name": "Chonknet",
+      "model": "the_vault:magnets/heart_magnet",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_magnet_durability",
+           "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_base_magnet_range",
+          "the_vault:base_endergized"
+        ],
+        "PREFIX": [
+          "the_vault:u_chunky_magnet_health",
+          "the_vault:u_chunky_magnet_healing"
+        ],
+        "SUFFIX": [
+          "the_vault:u_chunky_magnet_item_quantity",
+          "the_vault:u_chunky_magnet_item_rarity"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:treasure_magnet": {
+      "name": "Treasure Hunter's Magnet",
+      "model": "the_vault:magnets/treasure_magnet",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_magnet_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_base_magnet_range",
+          "the_vault:base_endergized"
+        ],
+        "PREFIX": [
+          "the_vault:u_treasure_magnet_item_rarity",
+          "the_vault:u_treasure_magnet_item_quantity"
+        ],
+        "SUFFIX": [
+          "the_vault:u_treasure_magnet_health",
+          "the_vault:u_treasure_magnet_mana"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:bloodseeking_magnet": {
+      "name": "Bloodfetcher",
+      "model": "the_vault:magnets/bloody_magnet",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_magnet_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_base_magnet_range",
+          "the_vault:base_endergized"
+        ],
+        "PREFIX": [
+          "the_vault:u_bloody_magnet_increase",
+          "the_vault:u_bloody_magnet_leech"
+        ],
+        "SUFFIX": [
+          "the_vault:u_bloody_magnet_trap_disarm",
+          "the_vault:u_bloody_magnet_mana_regen"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:ender_magnet": {
+      "name": "Otherworldly Receiver",
+      "model": "the_vault:magnets/ender_magnet",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_endergized",
+          "the_vault:base_magnet_durability"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_base_magnet_range",
+          "the_vault:base_endergized"
+        ],
+        "PREFIX": [],
+        "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:crystal_double_blade": {
+      "name": "Crystal Double Blade",
+      "model": "the_vault:gear/sword/crystalblade",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_ap"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_attack_range",
+          "the_vault:mod_attack_speed_percent"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:pestilence_wall": {
+      "name": "Pestilence Wall",
+      "model": "the_vault:gear/shield/slab",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living",
+          "the_vault:u_base_block"
+        ],
+        "IMPLICIT": [],
+        "PREFIX": [
+          "the_vault:u_knockback_resistance"
+        ],
+        "SUFFIX": [
+          "the_vault:unique_entropic_poison"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:leviathan": {
+      "name": "Leviathan",
+      "model": "the_vault:gear/axe/leviathan",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_leviathan_attack_damage",
+          "the_vault:u_leviathan_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:u_leviathan_reaving_damage"
+        ],
+        "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:trirang": {
+      "name": "Tri-Rang",
+      "model": "the_vault:gear/rang/trirang",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:rang_standard_attack_speed",
+          "the_vault:rang_standard_attack_damage",
+          "the_vault:rang_standard_range",
+          "the_vault:rang_standard_velocity"
+        ],
+        "PREFIX": [
+          "the_vault:trirang_chaining",
+          "the_vault:trirang_piercing",
+          "the_vault:trirang_returning"
+        ],
+        "SUFFIX": [
+          "the_vault:trirang_lucky_hit",
+          "the_vault:trirang_stun",
+          "the_vault:trirang_shock"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:everfrost": {
+      "name": "Everfrost",
+      "model": "the_vault:gear/sword/everfrost",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_attack_damage",
+          "the_vault:mod_everfrost_blast"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_area_of_effect",
+          "the_vault:unique_glacial_hypothermia"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:everflame": {
+      "name": "Everflame",
+      "model": "the_vault:gear/sword/everflame",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_attack_damage",
+          "the_vault:mod_everflame_fireball"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_area_of_effect",
+          "the_vault:unique_everflame_modification"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:hexblade": {
+      "name": "Hexblade",
+      "model": "the_vault:gear/sword/hexblade",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_hexing_chance",
+          "the_vault:mod_ability_increase"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_attack_speed_percent",
+          "the_vault:mod_attack_range"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:zombie_horse_axe": {
+      "name": "Zombie Horse Axe",
+      "model": "the_vault:gear/axe/zombie_horse",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_leviathan_attack_damage",
+          "the_vault:base_attack_speed_axe"
+        ],
+        "PREFIX": [
+          "the_vault:u_movement_horse",
+          "the_vault:mod_attack_range"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_poison_cloud_zombie_horse"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:bamboo_fightstick": {
+      "name": "Bamboo Fightstick",
+      "model": "the_vault:gear/battlestaff/bamboo_fightstick",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage_battlestaff_stick",
+          "the_vault:base_lucky_hit_battlestaff_stick",
+          "the_vault:base_attack_speed_battlestaff_stick",
+          "the_vault:base_attack_range_battlestaff_stick"
+        ],
+        "PREFIX": [
+        ],
+        "SUFFIX": [
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:mineral_greatsword": {
+      "name": "Mineral Greatsword",
+      "model": "the_vault:gear/sword/mineral_greatsword",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed_greatsword"
+        ],
+        "PREFIX": [
+          "the_vault:mod_attack_damage_mineral_greatsword"
+        ],
+        "SUFFIX": [
+          "the_vault:mineral_greatsword_stun",
+          "the_vault:mod_attack_range"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:grass_sword": {
+      "name": "Grass Sword",
+      "model": "the_vault:gear/sword/grass_blade",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:base_thorns_damage_flat_sword",
+          "the_vault:u_grass_sword_healing_eff"
+        ],
+        "SUFFIX": [
+          "the_vault:thorns_scaling_damage_grass_sword"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:aurora_scissors": {
+      "name": "Aurora Scissors",
+      "model": "the_vault:gear/sword/aurora_scissors",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_ap",
+          "the_vault:mod_soul_chance_scissors"
+        ],
+        "SUFFIX": [
+          "the_vault:ap_scaling_damage_scissors",
+          "the_vault:mod_attack_speed_percent"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:pacifist_sandals": {
+      "name": "Pacifist Sandals",
+      "model": "the_vault:gear/armor/pacifistsandals/boots",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:u_pacifist_movement"
+        ],
+        "PREFIX": [
+          "the_vault:u_knockback_resistance"
+        ],
+        "SUFFIX": [
+          "the_vault:u_entropic_bind"
+          
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:honey_stick": {
+      "name": "Honey Stick",
+      "model": "the_vault:gear/sword/honey_wand",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_attack_speed_percent"
+        ],
+        "SUFFIX": [
+          "the_vault:u_shocking_hit",
+          "the_vault:u_stun_hit"
+          
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "the_vault:frostguards": {
+      "name": "Frostguards",
+      "model": "the_vault:gear/armor/frost_guard/boots",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_armor",
+          "the_vault:base_movement"
+        ],
+        "PREFIX": [
+          "the_vault:u_coldsnap",
+          "the_vault:u_mod_armor"
+        ],
+        "SUFFIX": [
+          "the_vault:u_chilled_effect_trail"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:young_kitsune": {
+      "name": "Young Kitsune Blade",
+      "model": "the_vault:gear/sword/young_kitsune",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:base_attack_damage",
+          "the_vault:base_attack_speed"
+        ],
+        "PREFIX": [
+          "the_vault:mod_execution_young_kitsune"
+        ],
+        "SUFFIX": [
+          "the_vault:mod_attack_speed_percent"
+        ]
+      },
+      "modifierTags": [],
+      "weight": 1
+    },
+    "woldsvaults:safer_spaces": {
+      "name": "Safer Spaces",
+      "model": "the_vault:gear/plushie/safer_spaces",
+      "modifierIdentifiers": {
+        "BASE_ATTRIBUTE": [
+          "the_vault:base_durability",
+          "the_vault:u_living"
+        ],
+        "IMPLICIT": [
+          "the_vault:saferspaceeffect",
+          "the_vault:u_safer_block",
+          "the_vault:u_safer_block"
+        ],
+        "PREFIX": [],
+        "SUFFIX": []
+      },
+      "modifierTags": [],
+      "weight": 1
+    }
+  },
+  "pools": {
+    "the_vault:default_or": {
+      "the_vault:jester": 1,
+      "the_vault:sweetheart": 1,
+      "the_vault:castle": 1,
+      "the_vault:grim": 1,
+      "the_vault:crystalplate": 1
+    },
+    "the_vault:default": {
+      "the_vault:kaleidoscope": 1
+    },
+    "the_vault:testers": {
+      "the_vault:grim": 1
+    },
+    "the_vault:castle_chestplate": {
+      "the_vault:castle": 1
+    },
+    "the_vault:chainlash": {
+      "the_vault:chainlash": 1
+    },
+    "the_vault:grim_shield": {
+      "the_vault:grim": 1
+    },
+    "the_vault:stormcrown": {
+      "the_vault:stormcrown": 1
+    },
+    "the_vault:inflated_justice": {
+      "the_vault:inflated_justice": 1
+    },
+    "the_vault:warbound_helmet": {
+      "the_vault:warbound_helmet": 1
+    },
+    "the_vault:frozen_orb": {
+      "the_vault:frozen_orb": 1
+    },
+    "the_vault:inferno_reach": {
+      "the_vault:inferno_reach": 1
+    },
+    "the_vault:swarmwalkers": {
+      "the_vault:swarmwalkers": 1
+    },
+    "the_vault:pestilence_wall": {
+      "the_vault:pestilence_wall": 1
+    },
+    "the_vault:jester": {
+      "the_vault:jester": 1
+    },
+    "the_vault:crystalplate": {
+      "the_vault:crystalplate": 1
+    },
+    "the_vault:manabloom": {
+      "the_vault:manabloom": 1
+    },
+    "the_vault:crashguards": {
+      "the_vault:crashguards": 1
+    },
+    "the_vault:kaleidoscope": {
+      "the_vault:kaleidoscope": 1
+    },
+    "the_vault:baguette": {
+      "the_vault:baguette": 1
+    },
+    "woldsvaults:eternal_stella": {
+      "woldsvaults:eternal_stella": 1
+    },
+    "woldsvaults:wicked_witch": {
+      "woldsvaults:wicked_witch": 1
+    },
+    "woldsvaults:leviathan": {
+      "woldsvaults:leviathan": 1
+    },
+    "woldsvaults:chonknet": {
+      "woldsvaults:chonknet": 1
+    },
+    "woldsvaults:treasure_magnet": {
+      "woldsvaults:treasure_magnet": 1
+    },
+    "woldsvaults:bloodfetcher": {
+      "woldsvaults:bloodseeking_magnet": 1
+    },
+    "woldsvaults:ender_magnet": {
+      "woldsvaults:ender_magnet": 1
+    },
+    "woldsvaults:trirang": {
+      "woldsvaults:trirang": 1
+    },
+    "woldsvaults:everfrost": {
+      "woldsvaults:everfrost": 1
+    },
+    "woldsvaults:everflame": {
+      "woldsvaults:everflame": 1
+    },
+    "woldsvaults:hexblade": {
+      "woldsvaults:hexblade": 1
+    },
+    "woldsvaults:zombie_horse_axe": {
+      "woldsvaults:zombie_horse_axe": 1
+    },
+    "woldsvaults:bamboo_fightstick": {
+      "woldsvaults:bamboo_fightstick": 1
+    },
+    "woldsvaults:mineral_greatsword": {
+      "woldsvaults:mineral_greatsword": 1
+    },
+    "woldsvaults:grass_sword": {
+      "woldsvaults:grass_sword": 1
+    },
+    "woldsvaults:young_kitsune": {
+      "woldsvaults:young_kitsune": 1
+    },
+    "woldsvaults:treasure_jewel": {
+      "woldsvaults:treasure_jewel": 1
+    },
+    "the_vault:pax": {
+      "the_vault:pax": 1
+    },
+    "woldsvaults:shattering_jewel": {
+      "woldsvaults:shattering_jewel": 1
+    },
+    "woldsvaults:safer_spaces": {
+      "woldsvaults:safer_spaces": 1
+    },
+    "woldsvaults:aurora_scissors": {
+      "woldsvaults:aurora_scissors": 1
+    },
+      "the_vault:ivy": {
+      "the_vault:ivy": 1
+    },
+    "the_vault:gladiator_buckler": {
+      "the_vault:gladiator_buckler": 1
+    },
+    "the_vault:honey_stick": {
+      "the_vault:honey_stick": 1
+    },
+    "the_vault:pacifist_sandals": {
+      "the_vault:pacifist_sandals": 1
+    },
+    "the_vault:iskallibur": {
+      "the_vault:iskallibur": 1
+    },
+    "the_vault:frozen_throne": {
+      "the_vault:frozen_throne": 1
+    },
+    "the_vault:frostguards": {
+      "the_vault:frostguards": 1
+    },
+    "the_vault:annmari": {
+      "the_vault:annmari": 1
+    }
+  }
+}

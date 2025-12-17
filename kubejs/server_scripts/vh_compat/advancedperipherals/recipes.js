@@ -31,7 +31,7 @@ onEvent("recipes", event => {
         I: 'the_vault:black_chromatic_steel_block',
         X: 'the_vault:omega_pog',
         C: 'advancedperipherals:peripheral_casing',
-        T: 'the_vault:wold_star'
+        T: 'woldsvaults:wold_star'
     }).id('advancedperipherals:inventory_manager')
 
 

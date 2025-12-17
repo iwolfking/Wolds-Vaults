@@ -53,7 +53,7 @@ onEvent("recipes", event => {
             'GCG',
             'GXG'
         ], {
-        G: 'the_vault:chromatic_gold_ingot',
+        G: 'woldsvaults:chromatic_gold_ingot',
         C: 'minecraft:cauldron',
         X: 'the_vault:gem_pog'
     }).id('davespotioneering:potioneer_gauntlet')

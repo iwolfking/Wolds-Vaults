@@ -56,7 +56,7 @@ onEvent("recipes", event => {
         ], {
         G: 'minecraft:redstone',
         D: 'the_vault:vault_diamond',
-        C: 'the_vault:vault_essence_1'
+        C: 'woldsvaults:vault_essence_block'
     }).id('rftoolspower:power_core1')
 
     event.shaped(Item.of('rftoolspower:power_core2'),
@@ -67,7 +67,7 @@ onEvent("recipes", event => {
         ], {
         G: 'minecraft:redstone',
         D: 'the_vault:perfect_larimar',
-        C: 'the_vault:vault_essence_1',
+        C: 'woldsvaults:vault_essence_block',
         X: 'the_vault:vault_essence'
     }).id('rftoolspower:power_core2')
 
@@ -79,8 +79,8 @@ onEvent("recipes", event => {
         ], {
         G: 'the_vault:chromatic_steel_ingot',
         D: 'the_vault:extraordinary_larimar',
-        C: 'the_vault:vault_essence_1',
-        X: 'the_vault:vault_essence_1'
+        C: 'woldsvaults:vault_essence_block',
+        X: 'woldsvaults:vault_essence_block'
     }).id('rftoolspower:power_core3')
 
     event.shaped(Item.of('rftoolspower:dimensionalcell'),
@@ -92,7 +92,7 @@ onEvent("recipes", event => {
         G: 'the_vault:vault_diamond',
         D: 'the_vault:vault_diamond_block',
         C: 'rftoolspower:dimensionalcell_simple',
-        X: 'the_vault:vault_essence_1'
+        X: 'woldsvaults:vault_essence_block'
     }).id('rftoolspower:dimensionalcell')
 
 

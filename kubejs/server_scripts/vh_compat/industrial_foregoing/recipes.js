@@ -209,7 +209,7 @@ onEvent("recipes", event => {
             'ILI',
             ' I '
         ], {
-            I: 'the_vault:chromatic_gold_ingot',
+            I: 'woldsvaults:chromatic_gold_ingot',
             L: 'the_vault:perfect_larimar'
         })
 
@@ -1049,8 +1049,8 @@ onEvent("recipes", event => {
             N: 'the_vault:omega_pog',
             B: 'woldsvaults:extraordinary_pog_prism',
             M: 'industrialforegoing:machine_frame_supreme',
-            I: 'the_vault:vault_diamond_block_1',
-            T: 'the_vault:chromatic_gold_block'
+            I: 'compressium:vault_diamond_block_1',
+            T: 'woldsvaults:chromatic_gold_block'
         }).id('industrialforegoing:enchantment_extractor')
 
     event.shaped(Item.of('industrialforegoing:enchantment_applicator'),

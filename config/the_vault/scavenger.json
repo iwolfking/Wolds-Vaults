@@ -2,7 +2,7 @@
   "tasks": [
     {
       "type": "chest",
-      "target": "@the_vault:wooden",
+      "target": "the_vault:wooden_chest",
       "probability": 0.5,
       "icon": "the_vault:textures/gui/scavenger/wooden_chest.png",
       "entries": {
@@ -174,95 +174,1700 @@
       "color": 16777215,
       "entries": {
         "the_vault:scavenger_mob_black": {
-          "multiplier": 3.25,
+          "multiplier": 2.0,
           "mobs": [
             "@the_vault:assassin"
           ],
           "icon": "the_vault:textures/gui/scavenger/assassin.png"
         },
         "the_vault:scavenger_mob_purple": {
-          "multiplier": 0.4,
+          "multiplier": 0.3,
           "mobs": [
-            "@the_vault:fighter",
             "@the_vault:tank"
           ],
-          "icon": "the_vault:textures/gui/scavenger/tank-dweller.png"
+          "icon": "the_vault:textures/gui/scavenger/tank.png"
         },
         "the_vault:scavenger_mob_green": {
-          "multiplier": 5.5,
+          "multiplier": 5.0,
           "mobs": [
-           "@the_vault:horde"
+            "@the_vault:horde"
           ],
           "icon": "the_vault:textures/gui/scavenger/horde.png"
         }
       }
     }
   ],
-  "levels": [
-    {
-      "level": 0,
-      "goalCount": {
-        "type": "uniform",
-        "min": 2,
-        "max": 4
+  "levelPools": {
+    "the_vault:default": [
+      {
+        "level": 0,
+        "goalCount": {
+          "type": "uniform",
+          "min": 2,
+          "max": 4
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 1,
+          "max": 4
+        },
+        "display": {
+          "displayName": "Default",
+          "shouldDisplay": false
+        }
       },
-      "itemCount": {
-        "type": "uniform",
-        "min": 1,
-        "max": 4
-      }
-    },
-    {
-      "level": 10,
-      "goalCount": {
-        "type": "uniform",
-        "min": 3,
-        "max": 4
+      {
+        "level": 10,
+        "goalCount": {
+          "type": "uniform",
+          "min": 3,
+          "max": 4
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 1,
+          "max": 6
+        },
+        "display": {
+          "displayName": "Default",
+          "shouldDisplay": false
+        }
       },
-      "itemCount": {
-        "type": "uniform",
-        "min": 1,
-        "max": 6
-      }
-    },
-    {
-      "level": 20,
-      "goalCount": {
-        "type": "uniform",
-        "min": 3,
-        "max": 4
+      {
+        "level": 20,
+        "goalCount": {
+          "type": "uniform",
+          "min": 3,
+          "max": 4
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 2,
+          "max": 8
+        },
+        "display": {
+          "displayName": "Default",
+          "shouldDisplay": false
+        }
       },
-      "itemCount": {
-        "type": "uniform",
-        "min": 2,
-        "max": 8
-      }
-    },
-    {
-      "level": 50,
-      "goalCount": {
-        "type": "uniform",
-        "min": 4,
-        "max": 5
+      {
+        "level": 50,
+        "goalCount": {
+          "type": "uniform",
+          "min": 4,
+          "max": 5
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 3,
+          "max": 12
+        },
+        "display": {
+          "displayName": "Default",
+          "shouldDisplay": false
+        }
       },
-      "itemCount": {
-        "type": "uniform",
-        "min": 3,
-        "max": 12
+      {
+        "level": 75,
+        "goalCount": {
+          "type": "uniform",
+          "min": 4,
+          "max": 5
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 4,
+          "max": 16
+        },
+        "display": {
+          "displayName": "Default",
+          "shouldDisplay": false
+        }
       }
-    },
-    {
-      "level": 75,
-      "goalCount": {
-        "type": "uniform",
-        "min": 4,
-        "max": 5
+    ],
+    "the_vault:adept": [
+      {
+        "level": 0,
+        "goalCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 5
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 2,
+          "max": 4
+        },
+        "display": {
+          "displayName": "Adept",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 3,
+          "the_vault:scavenger_old_book": 1.5,
+          "the_vault:scavenger_pottery_shard": 1.2,
+          "the_vault:scavenger_spider_webbing_spool": 0.375,
+
+          "the_vault:scavenger_red_scroll": 0.75,
+          "the_vault:scavenger_spider_soul_charm": 0.45,
+          "the_vault:scavenger_goblet": 0.225,
+          "the_vault:scavenger_earrings": 0.15,
+
+          "the_vault:scavenger_empty_jar": 0.75,
+          "the_vault:scavenger_sack": 0.45,
+          "the_vault:scavenger_saddle_bag": 0.225,
+          "the_vault:scavenger_wizard_wand": 0.15,
+
+          "the_vault:scavenger_drowned_hide": 0.75,
+          "the_vault:scavenger_zombie_arm": 0.45,
+          "the_vault:scavenger_zombie_brain": 0.225,
+          "the_vault:scavenger_creeper_eye": 0.15,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.05,
+          "the_vault:scavenger_cracked_script": 0.75,
+          "the_vault:scavenger_green_bangle": 0.45,
+          "the_vault:scavenger_cracked_pearl": 0.225,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.05,
+          "the_vault:scavenger_skeleton_wishbone": 0.75,
+          "the_vault:scavenger_skeleton_ribcage": 0.45,
+          "the_vault:scavenger_skeleton_skull": 0.225,
+
+          "the_vault:scavenger_mob_black": 3.0,
+          "the_vault:scavenger_mob_purple": 0.45,
+          "the_vault:scavenger_mob_green": 7.5
+        }
       },
-      "itemCount": {
-        "type": "uniform",
-        "min": 4,
-        "max": 16
+      {
+        "level": 10,
+        "goalCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 5
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 3,
+          "max": 6
+        },
+        "display": {
+          "displayName": "Adept",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 3,
+          "the_vault:scavenger_old_book": 1.5,
+          "the_vault:scavenger_pottery_shard": 1.2,
+          "the_vault:scavenger_spider_webbing_spool": 0.375,
+
+          "the_vault:scavenger_red_scroll": 0.75,
+          "the_vault:scavenger_spider_soul_charm": 0.45,
+          "the_vault:scavenger_goblet": 0.225,
+          "the_vault:scavenger_earrings": 0.15,
+
+          "the_vault:scavenger_empty_jar": 0.75,
+          "the_vault:scavenger_sack": 0.45,
+          "the_vault:scavenger_saddle_bag": 0.225,
+          "the_vault:scavenger_wizard_wand": 0.15,
+
+          "the_vault:scavenger_drowned_hide": 0.75,
+          "the_vault:scavenger_zombie_arm": 0.45,
+          "the_vault:scavenger_zombie_brain": 0.225,
+          "the_vault:scavenger_creeper_eye": 0.15,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.05,
+          "the_vault:scavenger_cracked_script": 0.75,
+          "the_vault:scavenger_green_bangle": 0.45,
+          "the_vault:scavenger_cracked_pearl": 0.225,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.05,
+          "the_vault:scavenger_skeleton_wishbone": 0.75,
+          "the_vault:scavenger_skeleton_ribcage": 0.45,
+          "the_vault:scavenger_skeleton_skull": 0.225,
+
+          "the_vault:scavenger_mob_black": 3.0,
+          "the_vault:scavenger_mob_purple": 0.45,
+          "the_vault:scavenger_mob_green": 7.5
+        }
+      },
+      {
+        "level": 20,
+        "goalCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 4,
+          "max": 8
+        },
+        "display": {
+          "displayName": "Adept",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 3,
+          "the_vault:scavenger_old_book": 1.5,
+          "the_vault:scavenger_pottery_shard": 1.2,
+          "the_vault:scavenger_spider_webbing_spool": 0.375,
+
+          "the_vault:scavenger_red_scroll": 0.75,
+          "the_vault:scavenger_spider_soul_charm": 0.45,
+          "the_vault:scavenger_goblet": 0.225,
+          "the_vault:scavenger_earrings": 0.15,
+
+          "the_vault:scavenger_empty_jar": 0.75,
+          "the_vault:scavenger_sack": 0.45,
+          "the_vault:scavenger_saddle_bag": 0.225,
+          "the_vault:scavenger_wizard_wand": 0.15,
+
+          "the_vault:scavenger_drowned_hide": 0.75,
+          "the_vault:scavenger_zombie_arm": 0.45,
+          "the_vault:scavenger_zombie_brain": 0.225,
+          "the_vault:scavenger_creeper_eye": 0.15,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.05,
+          "the_vault:scavenger_cracked_script": 0.75,
+          "the_vault:scavenger_green_bangle": 0.45,
+          "the_vault:scavenger_cracked_pearl": 0.225,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.05,
+          "the_vault:scavenger_skeleton_wishbone": 0.75,
+          "the_vault:scavenger_skeleton_ribcage": 0.45,
+          "the_vault:scavenger_skeleton_skull": 0.225,
+
+          "the_vault:scavenger_mob_black": 3.0,
+          "the_vault:scavenger_mob_purple": 0.45,
+          "the_vault:scavenger_mob_green": 7.5
+        }
+      },
+      {
+        "level": 50,
+        "goalCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 10
+        },
+        "display": {
+          "displayName": "Adept",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 3,
+          "the_vault:scavenger_old_book": 1.5,
+          "the_vault:scavenger_pottery_shard": 1.2,
+          "the_vault:scavenger_spider_webbing_spool": 0.375,
+
+          "the_vault:scavenger_red_scroll": 0.75,
+          "the_vault:scavenger_spider_soul_charm": 0.45,
+          "the_vault:scavenger_goblet": 0.225,
+          "the_vault:scavenger_earrings": 0.15,
+
+          "the_vault:scavenger_empty_jar": 0.75,
+          "the_vault:scavenger_sack": 0.45,
+          "the_vault:scavenger_saddle_bag": 0.225,
+          "the_vault:scavenger_wizard_wand": 0.15,
+
+          "the_vault:scavenger_drowned_hide": 0.75,
+          "the_vault:scavenger_zombie_arm": 0.45,
+          "the_vault:scavenger_zombie_brain": 0.225,
+          "the_vault:scavenger_creeper_eye": 0.15,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.05,
+          "the_vault:scavenger_cracked_script": 0.75,
+          "the_vault:scavenger_green_bangle": 0.45,
+          "the_vault:scavenger_cracked_pearl": 0.225,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.05,
+          "the_vault:scavenger_skeleton_wishbone": 0.75,
+          "the_vault:scavenger_skeleton_ribcage": 0.45,
+          "the_vault:scavenger_skeleton_skull": 0.225,
+
+          "the_vault:scavenger_mob_black": 3.0,
+          "the_vault:scavenger_mob_purple": 0.45,
+          "the_vault:scavenger_mob_green": 7.5
+        }
+      },
+      {
+        "level": 75,
+        "goalCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 12
+        },
+        "display": {
+          "displayName": "Adept",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 3,
+          "the_vault:scavenger_old_book": 1.5,
+          "the_vault:scavenger_pottery_shard": 1.2,
+          "the_vault:scavenger_spider_webbing_spool": 0.375,
+
+          "the_vault:scavenger_red_scroll": 0.75,
+          "the_vault:scavenger_spider_soul_charm": 0.45,
+          "the_vault:scavenger_goblet": 0.225,
+          "the_vault:scavenger_earrings": 0.15,
+
+          "the_vault:scavenger_empty_jar": 0.75,
+          "the_vault:scavenger_sack": 0.45,
+          "the_vault:scavenger_saddle_bag": 0.225,
+          "the_vault:scavenger_wizard_wand": 0.15,
+
+          "the_vault:scavenger_drowned_hide": 0.75,
+          "the_vault:scavenger_zombie_arm": 0.45,
+          "the_vault:scavenger_zombie_brain": 0.225,
+          "the_vault:scavenger_creeper_eye": 0.15,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.05,
+          "the_vault:scavenger_cracked_script": 0.75,
+          "the_vault:scavenger_green_bangle": 0.45,
+          "the_vault:scavenger_cracked_pearl": 0.225,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.05,
+          "the_vault:scavenger_skeleton_wishbone": 0.75,
+          "the_vault:scavenger_skeleton_ribcage": 0.45,
+          "the_vault:scavenger_skeleton_skull": 0.225,
+
+          "the_vault:scavenger_mob_black": 3.0,
+          "the_vault:scavenger_mob_purple": 0.45,
+          "the_vault:scavenger_mob_green": 7.5
+        }
       }
-    }
-  ]
+    ],
+    "the_vault:expert": [
+      {
+        "level": 0,
+        "goalCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 2,
+          "max": 4
+        },
+        "display": {
+          "displayName": "Expert",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 4.0,
+          "the_vault:scavenger_old_book": 2.0,
+          "the_vault:scavenger_pottery_shard": 1.6,
+          "the_vault:scavenger_spider_webbing_spool": 0.5,
+
+          "the_vault:scavenger_red_scroll": 1.0,
+          "the_vault:scavenger_spider_soul_charm": 0.6,
+          "the_vault:scavenger_goblet": 0.3,
+          "the_vault:scavenger_earrings": 0.2,
+
+          "the_vault:scavenger_empty_jar": 1.0,
+          "the_vault:scavenger_sack": 0.6,
+          "the_vault:scavenger_saddle_bag": 0.3,
+          "the_vault:scavenger_wizard_wand": 0.2,
+
+          "the_vault:scavenger_drowned_hide": 1.0,
+          "the_vault:scavenger_zombie_arm": 0.6,
+          "the_vault:scavenger_zombie_brain": 0.3,
+          "the_vault:scavenger_creeper_eye": 0.2,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.4,
+          "the_vault:scavenger_cracked_script": 1.0,
+          "the_vault:scavenger_green_bangle": 0.6,
+          "the_vault:scavenger_cracked_pearl": 0.3,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.4,
+          "the_vault:scavenger_skeleton_wishbone": 1.0,
+          "the_vault:scavenger_skeleton_ribcage": 0.6,
+          "the_vault:scavenger_skeleton_skull": 0.3,
+
+          "the_vault:scavenger_mob_black": 4.0,
+          "the_vault:scavenger_mob_purple": 0.6,
+          "the_vault:scavenger_mob_green": 10.0
+        }
+      },
+      {
+        "level": 10,
+        "goalCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 3,
+          "max": 6
+        },
+        "display": {
+          "displayName": "Expert",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 4.0,
+          "the_vault:scavenger_old_book": 2.0,
+          "the_vault:scavenger_pottery_shard": 1.6,
+          "the_vault:scavenger_spider_webbing_spool": 0.5,
+
+          "the_vault:scavenger_red_scroll": 1.0,
+          "the_vault:scavenger_spider_soul_charm": 0.6,
+          "the_vault:scavenger_goblet": 0.3,
+          "the_vault:scavenger_earrings": 0.2,
+
+          "the_vault:scavenger_empty_jar": 1.0,
+          "the_vault:scavenger_sack": 0.6,
+          "the_vault:scavenger_saddle_bag": 0.3,
+          "the_vault:scavenger_wizard_wand": 0.2,
+
+          "the_vault:scavenger_drowned_hide": 1.0,
+          "the_vault:scavenger_zombie_arm": 0.6,
+          "the_vault:scavenger_zombie_brain": 0.3,
+          "the_vault:scavenger_creeper_eye": 0.2,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.4,
+          "the_vault:scavenger_cracked_script": 1.0,
+          "the_vault:scavenger_green_bangle": 0.6,
+          "the_vault:scavenger_cracked_pearl": 0.3,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.4,
+          "the_vault:scavenger_skeleton_wishbone": 1.0,
+          "the_vault:scavenger_skeleton_ribcage": 0.6,
+          "the_vault:scavenger_skeleton_skull": 0.3,
+
+          "the_vault:scavenger_mob_black": 4.0,
+          "the_vault:scavenger_mob_purple": 0.6,
+          "the_vault:scavenger_mob_green": 10.0
+        }
+      },
+      {
+        "level": 20,
+        "goalCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 4,
+          "max": 8
+        },
+        "display": {
+          "displayName": "Expert",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 4.0,
+          "the_vault:scavenger_old_book": 2.0,
+          "the_vault:scavenger_pottery_shard": 1.6,
+          "the_vault:scavenger_spider_webbing_spool": 0.5,
+
+          "the_vault:scavenger_red_scroll": 1.0,
+          "the_vault:scavenger_spider_soul_charm": 0.6,
+          "the_vault:scavenger_goblet": 0.3,
+          "the_vault:scavenger_earrings": 0.2,
+
+          "the_vault:scavenger_empty_jar": 1.0,
+          "the_vault:scavenger_sack": 0.6,
+          "the_vault:scavenger_saddle_bag": 0.3,
+          "the_vault:scavenger_wizard_wand": 0.2,
+
+          "the_vault:scavenger_drowned_hide": 1.0,
+          "the_vault:scavenger_zombie_arm": 0.6,
+          "the_vault:scavenger_zombie_brain": 0.3,
+          "the_vault:scavenger_creeper_eye": 0.2,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.4,
+          "the_vault:scavenger_cracked_script": 1.0,
+          "the_vault:scavenger_green_bangle": 0.6,
+          "the_vault:scavenger_cracked_pearl": 0.3,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.4,
+          "the_vault:scavenger_skeleton_wishbone": 1.0,
+          "the_vault:scavenger_skeleton_ribcage": 0.6,
+          "the_vault:scavenger_skeleton_skull": 0.3,
+
+          "the_vault:scavenger_mob_black": 4.0,
+          "the_vault:scavenger_mob_purple": 0.6,
+          "the_vault:scavenger_mob_green": 10.0
+        }
+      },
+      {
+        "level": 50,
+        "goalCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 10
+        },
+        "display": {
+          "displayName": "Expert",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 4.0,
+          "the_vault:scavenger_old_book": 2.0,
+          "the_vault:scavenger_pottery_shard": 1.6,
+          "the_vault:scavenger_spider_webbing_spool": 0.5,
+
+          "the_vault:scavenger_red_scroll": 1.0,
+          "the_vault:scavenger_spider_soul_charm": 0.6,
+          "the_vault:scavenger_goblet": 0.3,
+          "the_vault:scavenger_earrings": 0.2,
+
+          "the_vault:scavenger_empty_jar": 1.0,
+          "the_vault:scavenger_sack": 0.6,
+          "the_vault:scavenger_saddle_bag": 0.3,
+          "the_vault:scavenger_wizard_wand": 0.2,
+
+          "the_vault:scavenger_drowned_hide": 1.0,
+          "the_vault:scavenger_zombie_arm": 0.6,
+          "the_vault:scavenger_zombie_brain": 0.3,
+          "the_vault:scavenger_creeper_eye": 0.2,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.4,
+          "the_vault:scavenger_cracked_script": 1.0,
+          "the_vault:scavenger_green_bangle": 0.6,
+          "the_vault:scavenger_cracked_pearl": 0.3,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.4,
+          "the_vault:scavenger_skeleton_wishbone": 1.0,
+          "the_vault:scavenger_skeleton_ribcage": 0.6,
+          "the_vault:scavenger_skeleton_skull": 0.3,
+
+          "the_vault:scavenger_mob_black": 4.0,
+          "the_vault:scavenger_mob_purple": 0.6,
+          "the_vault:scavenger_mob_green": 10.0
+        }
+      },
+      {
+        "level": 75,
+        "goalCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 12
+        },
+        "display": {
+          "displayName": "Expert",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 4.0,
+          "the_vault:scavenger_old_book": 2.0,
+          "the_vault:scavenger_pottery_shard": 1.6,
+          "the_vault:scavenger_spider_webbing_spool": 0.5,
+
+          "the_vault:scavenger_red_scroll": 1.0,
+          "the_vault:scavenger_spider_soul_charm": 0.6,
+          "the_vault:scavenger_goblet": 0.3,
+          "the_vault:scavenger_earrings": 0.2,
+
+          "the_vault:scavenger_empty_jar": 1.0,
+          "the_vault:scavenger_sack": 0.6,
+          "the_vault:scavenger_saddle_bag": 0.3,
+          "the_vault:scavenger_wizard_wand": 0.2,
+
+          "the_vault:scavenger_drowned_hide": 1.0,
+          "the_vault:scavenger_zombie_arm": 0.6,
+          "the_vault:scavenger_zombie_brain": 0.3,
+          "the_vault:scavenger_creeper_eye": 0.2,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.4,
+          "the_vault:scavenger_cracked_script": 1.0,
+          "the_vault:scavenger_green_bangle": 0.6,
+          "the_vault:scavenger_cracked_pearl": 0.3,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.4,
+          "the_vault:scavenger_skeleton_wishbone": 1.0,
+          "the_vault:scavenger_skeleton_ribcage": 0.6,
+          "the_vault:scavenger_skeleton_skull": 0.3,
+
+          "the_vault:scavenger_mob_black": 4.0,
+          "the_vault:scavenger_mob_purple": 0.6,
+          "the_vault:scavenger_mob_green": 10.0
+        }
+      }
+    ],
+    "the_vault:master": [
+      {
+        "level": 0,
+        "goalCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 2,
+          "max": 4
+        },
+        "display": {
+          "displayName": "Master",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 5.0,
+          "the_vault:scavenger_old_book": 2.5,
+          "the_vault:scavenger_pottery_shard": 2.0,
+          "the_vault:scavenger_spider_webbing_spool": 0.625,
+
+          "the_vault:scavenger_red_scroll": 1.25,
+          "the_vault:scavenger_spider_soul_charm": 0.75,
+          "the_vault:scavenger_goblet": 0.375,
+          "the_vault:scavenger_earrings": 0.25,
+
+          "the_vault:scavenger_empty_jar": 1.25,
+          "the_vault:scavenger_sack": 0.75,
+          "the_vault:scavenger_saddle_bag": 0.375,
+          "the_vault:scavenger_wizard_wand": 0.25,
+
+          "the_vault:scavenger_drowned_hide": 1.25,
+          "the_vault:scavenger_zombie_arm": 0.75,
+          "the_vault:scavenger_zombie_brain": 0.375,
+          "the_vault:scavenger_creeper_eye": 0.25,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.75,
+          "the_vault:scavenger_cracked_script": 1.25,
+          "the_vault:scavenger_green_bangle": 0.75,
+          "the_vault:scavenger_cracked_pearl": 0.375,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.75,
+          "the_vault:scavenger_skeleton_wishbone": 1.25,
+          "the_vault:scavenger_skeleton_ribcage": 0.75,
+          "the_vault:scavenger_skeleton_skull": 0.375,
+
+          "the_vault:scavenger_mob_black": 5.0,
+          "the_vault:scavenger_mob_purple": 0.75,
+          "the_vault:scavenger_mob_green": 12.5
+        }
+      },
+      {
+        "level": 10,
+        "goalCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 3,
+          "max": 6
+        },
+        "display": {
+          "displayName": "Master",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 5.0,
+          "the_vault:scavenger_old_book": 2.5,
+          "the_vault:scavenger_pottery_shard": 2.0,
+          "the_vault:scavenger_spider_webbing_spool": 0.625,
+
+          "the_vault:scavenger_red_scroll": 1.25,
+          "the_vault:scavenger_spider_soul_charm": 0.75,
+          "the_vault:scavenger_goblet": 0.375,
+          "the_vault:scavenger_earrings": 0.25,
+
+          "the_vault:scavenger_empty_jar": 1.25,
+          "the_vault:scavenger_sack": 0.75,
+          "the_vault:scavenger_saddle_bag": 0.375,
+          "the_vault:scavenger_wizard_wand": 0.25,
+
+          "the_vault:scavenger_drowned_hide": 1.25,
+          "the_vault:scavenger_zombie_arm": 0.75,
+          "the_vault:scavenger_zombie_brain": 0.375,
+          "the_vault:scavenger_creeper_eye": 0.25,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.75,
+          "the_vault:scavenger_cracked_script": 1.25,
+          "the_vault:scavenger_green_bangle": 0.75,
+          "the_vault:scavenger_cracked_pearl": 0.375,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.75,
+          "the_vault:scavenger_skeleton_wishbone": 1.25,
+          "the_vault:scavenger_skeleton_ribcage": 0.75,
+          "the_vault:scavenger_skeleton_skull": 0.375,
+
+          "the_vault:scavenger_mob_black": 5.0,
+          "the_vault:scavenger_mob_purple": 0.75,
+          "the_vault:scavenger_mob_green": 12.5
+        }
+      },
+      {
+        "level": 20,
+        "goalCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 7
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 4,
+          "max": 8
+        },
+        "display": {
+          "displayName": "Master",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 5.0,
+          "the_vault:scavenger_old_book": 2.5,
+          "the_vault:scavenger_pottery_shard": 2.0,
+          "the_vault:scavenger_spider_webbing_spool": 0.625,
+
+          "the_vault:scavenger_red_scroll": 1.25,
+          "the_vault:scavenger_spider_soul_charm": 0.75,
+          "the_vault:scavenger_goblet": 0.375,
+          "the_vault:scavenger_earrings": 0.25,
+
+          "the_vault:scavenger_empty_jar": 1.25,
+          "the_vault:scavenger_sack": 0.75,
+          "the_vault:scavenger_saddle_bag": 0.375,
+          "the_vault:scavenger_wizard_wand": 0.25,
+
+          "the_vault:scavenger_drowned_hide": 1.25,
+          "the_vault:scavenger_zombie_arm": 0.75,
+          "the_vault:scavenger_zombie_brain": 0.375,
+          "the_vault:scavenger_creeper_eye": 0.25,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.75,
+          "the_vault:scavenger_cracked_script": 1.25,
+          "the_vault:scavenger_green_bangle": 0.75,
+          "the_vault:scavenger_cracked_pearl": 0.375,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.75,
+          "the_vault:scavenger_skeleton_wishbone": 1.25,
+          "the_vault:scavenger_skeleton_ribcage": 0.75,
+          "the_vault:scavenger_skeleton_skull": 0.375,
+
+          "the_vault:scavenger_mob_black": 5.0,
+          "the_vault:scavenger_mob_purple": 0.75,
+          "the_vault:scavenger_mob_green": 12.5
+        }
+      },
+      {
+        "level": 50,
+        "goalCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 7
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 10
+        },
+        "display": {
+          "displayName": "Master",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 5.0,
+          "the_vault:scavenger_old_book": 2.5,
+          "the_vault:scavenger_pottery_shard": 2.0,
+          "the_vault:scavenger_spider_webbing_spool": 0.625,
+
+          "the_vault:scavenger_red_scroll": 1.25,
+          "the_vault:scavenger_spider_soul_charm": 0.75,
+          "the_vault:scavenger_goblet": 0.375,
+          "the_vault:scavenger_earrings": 0.25,
+
+          "the_vault:scavenger_empty_jar": 1.25,
+          "the_vault:scavenger_sack": 0.75,
+          "the_vault:scavenger_saddle_bag": 0.375,
+          "the_vault:scavenger_wizard_wand": 0.25,
+
+          "the_vault:scavenger_drowned_hide": 1.25,
+          "the_vault:scavenger_zombie_arm": 0.75,
+          "the_vault:scavenger_zombie_brain": 0.375,
+          "the_vault:scavenger_creeper_eye": 0.25,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.75,
+          "the_vault:scavenger_cracked_script": 1.25,
+          "the_vault:scavenger_green_bangle": 0.75,
+          "the_vault:scavenger_cracked_pearl": 0.375,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.75,
+          "the_vault:scavenger_skeleton_wishbone": 1.25,
+          "the_vault:scavenger_skeleton_ribcage": 0.75,
+          "the_vault:scavenger_skeleton_skull": 0.375,
+
+          "the_vault:scavenger_mob_black": 5.0,
+          "the_vault:scavenger_mob_purple": 0.75,
+          "the_vault:scavenger_mob_green": 12.5
+        }
+      },
+      {
+        "level": 75,
+        "goalCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 7
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 12
+        },
+        "display": {
+          "displayName": "Master",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 5.0,
+          "the_vault:scavenger_old_book": 2.5,
+          "the_vault:scavenger_pottery_shard": 2.0,
+          "the_vault:scavenger_spider_webbing_spool": 0.625,
+
+          "the_vault:scavenger_red_scroll": 1.25,
+          "the_vault:scavenger_spider_soul_charm": 0.75,
+          "the_vault:scavenger_goblet": 0.375,
+          "the_vault:scavenger_earrings": 0.25,
+
+          "the_vault:scavenger_empty_jar": 1.25,
+          "the_vault:scavenger_sack": 0.75,
+          "the_vault:scavenger_saddle_bag": 0.375,
+          "the_vault:scavenger_wizard_wand": 0.25,
+
+          "the_vault:scavenger_drowned_hide": 1.25,
+          "the_vault:scavenger_zombie_arm": 0.75,
+          "the_vault:scavenger_zombie_brain": 0.375,
+          "the_vault:scavenger_creeper_eye": 0.25,
+
+          "the_vault:scavenger_zombie_blood_vial": 1.75,
+          "the_vault:scavenger_cracked_script": 1.25,
+          "the_vault:scavenger_green_bangle": 0.75,
+          "the_vault:scavenger_cracked_pearl": 0.375,
+
+          "the_vault:scavenger_skeleton_bone_shard": 1.75,
+          "the_vault:scavenger_skeleton_wishbone": 1.25,
+          "the_vault:scavenger_skeleton_ribcage": 0.75,
+          "the_vault:scavenger_skeleton_skull": 0.375,
+
+          "the_vault:scavenger_mob_black": 5.0,
+          "the_vault:scavenger_mob_purple": 0.75,
+          "the_vault:scavenger_mob_green": 12.5
+        }
+      }
+    ],
+    "the_vault:veteran": [
+      {
+        "level": 0,
+        "goalCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 2,
+          "max": 4
+        },
+        "display": {
+          "displayName": "Veteran",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 8.0,
+          "the_vault:scavenger_old_book": 4.0,
+          "the_vault:scavenger_pottery_shard": 3.2,
+          "the_vault:scavenger_spider_webbing_spool": 1,
+
+          "the_vault:scavenger_red_scroll": 2.0,
+          "the_vault:scavenger_spider_soul_charm": 1.2,
+          "the_vault:scavenger_goblet": 0.6,
+          "the_vault:scavenger_earrings": 0.4,
+
+          "the_vault:scavenger_empty_jar": 2.0,
+          "the_vault:scavenger_sack": 1.2,
+          "the_vault:scavenger_saddle_bag": 0.6,
+          "the_vault:scavenger_wizard_wand": 0.4,
+
+          "the_vault:scavenger_drowned_hide": 2.0,
+          "the_vault:scavenger_zombie_arm": 1.2,
+          "the_vault:scavenger_zombie_brain": 0.6,
+          "the_vault:scavenger_creeper_eye": 0.4,
+
+          "the_vault:scavenger_zombie_blood_vial": 2.8,
+          "the_vault:scavenger_cracked_script": 2.0,
+          "the_vault:scavenger_green_bangle": 1.2,
+          "the_vault:scavenger_cracked_pearl": 0.6,
+
+          "the_vault:scavenger_skeleton_bone_shard": 2.8,
+          "the_vault:scavenger_skeleton_wishbone": 2.0,
+          "the_vault:scavenger_skeleton_ribcage": 1.2,
+          "the_vault:scavenger_skeleton_skull": 0.6,
+
+          "the_vault:scavenger_mob_black": 8.0,
+          "the_vault:scavenger_mob_purple": 1.2,
+          "the_vault:scavenger_mob_green": 20.0
+        }
+      },
+      {
+        "level": 10,
+        "goalCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 3,
+          "max": 6
+        },
+        "display": {
+          "displayName": "Veteran",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 8.0,
+          "the_vault:scavenger_old_book": 4.0,
+          "the_vault:scavenger_pottery_shard": 3.2,
+          "the_vault:scavenger_spider_webbing_spool": 1,
+
+          "the_vault:scavenger_red_scroll": 2.0,
+          "the_vault:scavenger_spider_soul_charm": 1.2,
+          "the_vault:scavenger_goblet": 0.6,
+          "the_vault:scavenger_earrings": 0.4,
+
+          "the_vault:scavenger_empty_jar": 2.0,
+          "the_vault:scavenger_sack": 1.2,
+          "the_vault:scavenger_saddle_bag": 0.6,
+          "the_vault:scavenger_wizard_wand": 0.4,
+
+          "the_vault:scavenger_drowned_hide": 2.0,
+          "the_vault:scavenger_zombie_arm": 1.2,
+          "the_vault:scavenger_zombie_brain": 0.6,
+          "the_vault:scavenger_creeper_eye": 0.4,
+
+          "the_vault:scavenger_zombie_blood_vial": 2.8,
+          "the_vault:scavenger_cracked_script": 2.0,
+          "the_vault:scavenger_green_bangle": 1.2,
+          "the_vault:scavenger_cracked_pearl": 0.6,
+
+          "the_vault:scavenger_skeleton_bone_shard": 2.8,
+          "the_vault:scavenger_skeleton_wishbone": 2.0,
+          "the_vault:scavenger_skeleton_ribcage": 1.2,
+          "the_vault:scavenger_skeleton_skull": 0.6,
+
+          "the_vault:scavenger_mob_black": 8.0,
+          "the_vault:scavenger_mob_purple": 1.2,
+          "the_vault:scavenger_mob_green": 20.0
+        }
+      },
+      {
+        "level": 20,
+        "goalCount": {
+          "type": "uniform",
+          "min": 7,
+          "max": 7
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 4,
+          "max": 8
+        },
+        "display": {
+          "displayName": "Veteran",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 8.0,
+          "the_vault:scavenger_old_book": 4.0,
+          "the_vault:scavenger_pottery_shard": 3.2,
+          "the_vault:scavenger_spider_webbing_spool": 1,
+
+          "the_vault:scavenger_red_scroll": 2.0,
+          "the_vault:scavenger_spider_soul_charm": 1.2,
+          "the_vault:scavenger_goblet": 0.6,
+          "the_vault:scavenger_earrings": 0.4,
+
+          "the_vault:scavenger_empty_jar": 2.0,
+          "the_vault:scavenger_sack": 1.2,
+          "the_vault:scavenger_saddle_bag": 0.6,
+          "the_vault:scavenger_wizard_wand": 0.4,
+
+          "the_vault:scavenger_drowned_hide": 2.0,
+          "the_vault:scavenger_zombie_arm": 1.2,
+          "the_vault:scavenger_zombie_brain": 0.6,
+          "the_vault:scavenger_creeper_eye": 0.4,
+
+          "the_vault:scavenger_zombie_blood_vial": 2.8,
+          "the_vault:scavenger_cracked_script": 2.0,
+          "the_vault:scavenger_green_bangle": 1.2,
+          "the_vault:scavenger_cracked_pearl": 0.6,
+
+          "the_vault:scavenger_skeleton_bone_shard": 2.8,
+          "the_vault:scavenger_skeleton_wishbone": 2.0,
+          "the_vault:scavenger_skeleton_ribcage": 1.2,
+          "the_vault:scavenger_skeleton_skull": 0.6,
+
+          "the_vault:scavenger_mob_black": 8.0,
+          "the_vault:scavenger_mob_purple": 1.2,
+          "the_vault:scavenger_mob_green": 20.0
+        }
+      },
+      {
+        "level": 50,
+        "goalCount": {
+          "type": "uniform",
+          "min": 7,
+          "max": 7
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 10
+        },
+        "display": {
+          "displayName": "Veteran",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 8.0,
+          "the_vault:scavenger_old_book": 4.0,
+          "the_vault:scavenger_pottery_shard": 3.2,
+          "the_vault:scavenger_spider_webbing_spool": 1,
+
+          "the_vault:scavenger_red_scroll": 2.0,
+          "the_vault:scavenger_spider_soul_charm": 1.2,
+          "the_vault:scavenger_goblet": 0.6,
+          "the_vault:scavenger_earrings": 0.4,
+
+          "the_vault:scavenger_empty_jar": 2.0,
+          "the_vault:scavenger_sack": 1.2,
+          "the_vault:scavenger_saddle_bag": 0.6,
+          "the_vault:scavenger_wizard_wand": 0.4,
+
+          "the_vault:scavenger_drowned_hide": 2.0,
+          "the_vault:scavenger_zombie_arm": 1.2,
+          "the_vault:scavenger_zombie_brain": 0.6,
+          "the_vault:scavenger_creeper_eye": 0.4,
+
+          "the_vault:scavenger_zombie_blood_vial": 2.8,
+          "the_vault:scavenger_cracked_script": 2.0,
+          "the_vault:scavenger_green_bangle": 1.2,
+          "the_vault:scavenger_cracked_pearl": 0.6,
+
+          "the_vault:scavenger_skeleton_bone_shard": 2.8,
+          "the_vault:scavenger_skeleton_wishbone": 2.0,
+          "the_vault:scavenger_skeleton_ribcage": 1.2,
+          "the_vault:scavenger_skeleton_skull": 0.6,
+
+          "the_vault:scavenger_mob_black": 8.0,
+          "the_vault:scavenger_mob_purple": 1.2,
+          "the_vault:scavenger_mob_green": 20.0
+        }
+      },
+      {
+        "level": 75,
+        "goalCount": {
+          "type": "uniform",
+          "min": 7,
+          "max": 7
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 12
+        },
+        "display": {
+          "displayName": "Veteran",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 8.0,
+          "the_vault:scavenger_old_book": 4.0,
+          "the_vault:scavenger_pottery_shard": 3.2,
+          "the_vault:scavenger_spider_webbing_spool": 1,
+
+          "the_vault:scavenger_red_scroll": 2.0,
+          "the_vault:scavenger_spider_soul_charm": 1.2,
+          "the_vault:scavenger_goblet": 0.6,
+          "the_vault:scavenger_earrings": 0.4,
+
+          "the_vault:scavenger_empty_jar": 2.0,
+          "the_vault:scavenger_sack": 1.2,
+          "the_vault:scavenger_saddle_bag": 0.6,
+          "the_vault:scavenger_wizard_wand": 0.4,
+
+          "the_vault:scavenger_drowned_hide": 2.0,
+          "the_vault:scavenger_zombie_arm": 1.2,
+          "the_vault:scavenger_zombie_brain": 0.6,
+          "the_vault:scavenger_creeper_eye": 0.4,
+
+          "the_vault:scavenger_zombie_blood_vial": 2.8,
+          "the_vault:scavenger_cracked_script": 2.0,
+          "the_vault:scavenger_green_bangle": 1.2,
+          "the_vault:scavenger_cracked_pearl": 0.6,
+
+          "the_vault:scavenger_skeleton_bone_shard": 2.8,
+          "the_vault:scavenger_skeleton_wishbone": 2.0,
+          "the_vault:scavenger_skeleton_ribcage": 1.2,
+          "the_vault:scavenger_skeleton_skull": 0.6,
+
+          "the_vault:scavenger_mob_black": 8.0,
+          "the_vault:scavenger_mob_purple": 1.2,
+          "the_vault:scavenger_mob_green": 20.0
+        }
+      }
+    ],
+    "the_vault:legend": [
+      {
+        "level": 0,
+        "goalCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 2,
+          "max": 4
+        },
+        "display": {
+          "displayName": "Legend",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 12.0,
+          "the_vault:scavenger_old_book": 6.0,
+          "the_vault:scavenger_pottery_shard": 4.8,
+          "the_vault:scavenger_spider_webbing_spool": 1.5,
+
+          "the_vault:scavenger_red_scroll": 3.0,
+          "the_vault:scavenger_spider_soul_charm": 1.8,
+          "the_vault:scavenger_goblet": 0.9,
+          "the_vault:scavenger_earrings": 0.6,
+
+          "the_vault:scavenger_empty_jar": 3.0,
+          "the_vault:scavenger_sack": 1.8,
+          "the_vault:scavenger_saddle_bag": 0.9,
+          "the_vault:scavenger_wizard_wand": 0.6,
+
+          "the_vault:scavenger_drowned_hide": 3.0,
+          "the_vault:scavenger_zombie_arm": 1.8,
+          "the_vault:scavenger_zombie_brain": 0.9,
+          "the_vault:scavenger_creeper_eye": 0.6,
+
+          "the_vault:scavenger_zombie_blood_vial": 4.2,
+          "the_vault:scavenger_cracked_script": 3.0,
+          "the_vault:scavenger_green_bangle": 1.8,
+          "the_vault:scavenger_cracked_pearl": 0.9,
+
+          "the_vault:scavenger_skeleton_bone_shard": 4.2,
+          "the_vault:scavenger_skeleton_wishbone": 3.0,
+          "the_vault:scavenger_skeleton_ribcage": 1.8,
+          "the_vault:scavenger_skeleton_skull": 0.9,
+
+          "the_vault:scavenger_mob_black": 12.0,
+          "the_vault:scavenger_mob_purple": 1.8,
+          "the_vault:scavenger_mob_green": 30.0
+        }
+      },
+      {
+        "level": 10,
+        "goalCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 6
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 3,
+          "max": 6
+        },
+        "display": {
+          "displayName": "Legend",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 12.0,
+          "the_vault:scavenger_old_book": 6.0,
+          "the_vault:scavenger_pottery_shard": 4.8,
+          "the_vault:scavenger_spider_webbing_spool": 1.5,
+
+          "the_vault:scavenger_red_scroll": 3.0,
+          "the_vault:scavenger_spider_soul_charm": 1.8,
+          "the_vault:scavenger_goblet": 0.9,
+          "the_vault:scavenger_earrings": 0.6,
+
+          "the_vault:scavenger_empty_jar": 3.0,
+          "the_vault:scavenger_sack": 1.8,
+          "the_vault:scavenger_saddle_bag": 0.9,
+          "the_vault:scavenger_wizard_wand": 0.6,
+
+          "the_vault:scavenger_drowned_hide": 3.0,
+          "the_vault:scavenger_zombie_arm": 1.8,
+          "the_vault:scavenger_zombie_brain": 0.9,
+          "the_vault:scavenger_creeper_eye": 0.6,
+
+          "the_vault:scavenger_zombie_blood_vial": 4.2,
+          "the_vault:scavenger_cracked_script": 3.0,
+          "the_vault:scavenger_green_bangle": 1.8,
+          "the_vault:scavenger_cracked_pearl": 0.9,
+
+          "the_vault:scavenger_skeleton_bone_shard": 4.2,
+          "the_vault:scavenger_skeleton_wishbone": 3.0,
+          "the_vault:scavenger_skeleton_ribcage": 1.8,
+          "the_vault:scavenger_skeleton_skull": 0.9,
+
+          "the_vault:scavenger_mob_black": 12.0,
+          "the_vault:scavenger_mob_purple": 1.8,
+          "the_vault:scavenger_mob_green": 30.0
+        }
+      },
+      {
+        "level": 20,
+        "goalCount": {
+          "type": "uniform",
+          "min": 7,
+          "max": 7
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 4,
+          "max": 8
+        },
+        "display": {
+          "displayName": "Legend",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 12.0,
+          "the_vault:scavenger_old_book": 6.0,
+          "the_vault:scavenger_pottery_shard": 4.8,
+          "the_vault:scavenger_spider_webbing_spool": 1.5,
+
+          "the_vault:scavenger_red_scroll": 3.0,
+          "the_vault:scavenger_spider_soul_charm": 1.8,
+          "the_vault:scavenger_goblet": 0.9,
+          "the_vault:scavenger_earrings": 0.6,
+
+          "the_vault:scavenger_empty_jar": 3.0,
+          "the_vault:scavenger_sack": 1.8,
+          "the_vault:scavenger_saddle_bag": 0.9,
+          "the_vault:scavenger_wizard_wand": 0.6,
+
+          "the_vault:scavenger_drowned_hide": 3.0,
+          "the_vault:scavenger_zombie_arm": 1.8,
+          "the_vault:scavenger_zombie_brain": 0.9,
+          "the_vault:scavenger_creeper_eye": 0.6,
+
+          "the_vault:scavenger_zombie_blood_vial": 4.2,
+          "the_vault:scavenger_cracked_script": 3.0,
+          "the_vault:scavenger_green_bangle": 1.8,
+          "the_vault:scavenger_cracked_pearl": 0.9,
+
+          "the_vault:scavenger_skeleton_bone_shard": 4.2,
+          "the_vault:scavenger_skeleton_wishbone": 3.0,
+          "the_vault:scavenger_skeleton_ribcage": 1.8,
+          "the_vault:scavenger_skeleton_skull": 0.9,
+
+          "the_vault:scavenger_mob_black": 12.0,
+          "the_vault:scavenger_mob_purple": 1.8,
+          "the_vault:scavenger_mob_green": 30.0
+        }
+      },
+      {
+        "level": 50,
+        "goalCount": {
+          "type": "uniform",
+          "min": 7,
+          "max": 7
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 5,
+          "max": 10
+        },
+        "display": {
+          "displayName": "Legend",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 12.0,
+          "the_vault:scavenger_old_book": 6.0,
+          "the_vault:scavenger_pottery_shard": 4.8,
+          "the_vault:scavenger_spider_webbing_spool": 1.5,
+
+          "the_vault:scavenger_red_scroll": 3.0,
+          "the_vault:scavenger_spider_soul_charm": 1.8,
+          "the_vault:scavenger_goblet": 0.9,
+          "the_vault:scavenger_earrings": 0.6,
+
+          "the_vault:scavenger_empty_jar": 3.0,
+          "the_vault:scavenger_sack": 1.8,
+          "the_vault:scavenger_saddle_bag": 0.9,
+          "the_vault:scavenger_wizard_wand": 0.6,
+
+          "the_vault:scavenger_drowned_hide": 3.0,
+          "the_vault:scavenger_zombie_arm": 1.8,
+          "the_vault:scavenger_zombie_brain": 0.9,
+          "the_vault:scavenger_creeper_eye": 0.6,
+
+          "the_vault:scavenger_zombie_blood_vial": 4.2,
+          "the_vault:scavenger_cracked_script": 3.0,
+          "the_vault:scavenger_green_bangle": 1.8,
+          "the_vault:scavenger_cracked_pearl": 0.9,
+
+          "the_vault:scavenger_skeleton_bone_shard": 4.2,
+          "the_vault:scavenger_skeleton_wishbone": 3.0,
+          "the_vault:scavenger_skeleton_ribcage": 1.8,
+          "the_vault:scavenger_skeleton_skull": 0.9,
+
+          "the_vault:scavenger_mob_black": 12.0,
+          "the_vault:scavenger_mob_purple": 1.8,
+          "the_vault:scavenger_mob_green": 30.0
+        }
+      },
+      {
+        "level": 75,
+        "goalCount": {
+          "type": "uniform",
+          "min": 7,
+          "max": 7
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 12
+        },
+        "display": {
+          "displayName": "Legend",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 12.0,
+          "the_vault:scavenger_old_book": 6.0,
+          "the_vault:scavenger_pottery_shard": 4.8,
+          "the_vault:scavenger_spider_webbing_spool": 1.5,
+
+          "the_vault:scavenger_red_scroll": 3.0,
+          "the_vault:scavenger_spider_soul_charm": 1.8,
+          "the_vault:scavenger_goblet": 0.9,
+          "the_vault:scavenger_earrings": 0.6,
+
+          "the_vault:scavenger_empty_jar": 3.0,
+          "the_vault:scavenger_sack": 1.8,
+          "the_vault:scavenger_saddle_bag": 0.9,
+          "the_vault:scavenger_wizard_wand": 0.6,
+
+          "the_vault:scavenger_drowned_hide": 3.0,
+          "the_vault:scavenger_zombie_arm": 1.8,
+          "the_vault:scavenger_zombie_brain": 0.9,
+          "the_vault:scavenger_creeper_eye": 0.6,
+
+          "the_vault:scavenger_zombie_blood_vial": 4.2,
+          "the_vault:scavenger_cracked_script": 3.0,
+          "the_vault:scavenger_green_bangle": 1.8,
+          "the_vault:scavenger_cracked_pearl": 0.9,
+
+          "the_vault:scavenger_skeleton_bone_shard": 4.2,
+          "the_vault:scavenger_skeleton_wishbone": 3.0,
+          "the_vault:scavenger_skeleton_ribcage": 1.8,
+          "the_vault:scavenger_skeleton_skull": 0.9,
+
+          "the_vault:scavenger_mob_black": 12.0,
+          "the_vault:scavenger_mob_purple": 1.8,
+          "the_vault:scavenger_mob_green": 30.0
+        }
+      }
+    ],
+    "the_vault:big": [
+      {
+        "level": 0,
+        "goalCount": {
+          "type": "uniform",
+          "min": 4,
+          "max": 8
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 4,
+          "max": 16
+        },
+        "display": {
+          "displayName": "Big Boi",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 10,
+          "the_vault:scavenger_old_book": 2.5,
+          "the_vault:scavenger_pottery_shard": 1,
+          "the_vault:scavenger_spider_webbing_spool": 0.5,
+
+          "the_vault:scavenger_red_scroll": 10,
+          "the_vault:scavenger_spider_soul_charm": 2.5,
+          "the_vault:scavenger_goblet": 1,
+          "the_vault:scavenger_earrings": 0.5,
+
+          "the_vault:scavenger_empty_jar": 10,
+          "the_vault:scavenger_sack": 2.5,
+          "the_vault:scavenger_saddle_bag": 1,
+          "the_vault:scavenger_wizard_wand": 0.5,
+
+          "the_vault:scavenger_drowned_hide": 10,
+          "the_vault:scavenger_zombie_arm": 2.5,
+          "the_vault:scavenger_zombie_brain": 1,
+          "the_vault:scavenger_creeper_eye": 0.5,
+
+          "the_vault:scavenger_zombie_blood_vial": 10,
+          "the_vault:scavenger_cracked_script": 2.5,
+          "the_vault:scavenger_green_bangle": 1,
+          "the_vault:scavenger_cracked_pearl": 0.5,
+
+          "the_vault:scavenger_skeleton_bone_shard": 10,
+          "the_vault:scavenger_skeleton_wishbone": 2.5,
+          "the_vault:scavenger_skeleton_ribcage": 1,
+          "the_vault:scavenger_skeleton_skull": 0.5,
+
+          "the_vault:scavenger_mob_black": 5,
+          "the_vault:scavenger_mob_purple": 1,
+          "the_vault:scavenger_mob_green": 10
+        },
+        "crateLootTable": "the_vault:completion_scav_lvl0"
+      },
+      {
+        "level": 10,
+        "goalCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 8
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 12
+        },
+        "display": {
+          "displayName": "Big Boi",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 10,
+          "the_vault:scavenger_old_book": 2.5,
+          "the_vault:scavenger_pottery_shard": 1,
+          "the_vault:scavenger_spider_webbing_spool": 0.5,
+
+          "the_vault:scavenger_red_scroll": 10,
+          "the_vault:scavenger_spider_soul_charm": 2.5,
+          "the_vault:scavenger_goblet": 1,
+          "the_vault:scavenger_earrings": 0.5,
+
+          "the_vault:scavenger_empty_jar": 10,
+          "the_vault:scavenger_sack": 2.5,
+          "the_vault:scavenger_saddle_bag": 1,
+          "the_vault:scavenger_wizard_wand": 0.5,
+
+          "the_vault:scavenger_drowned_hide": 10,
+          "the_vault:scavenger_zombie_arm": 2.5,
+          "the_vault:scavenger_zombie_brain": 1,
+          "the_vault:scavenger_creeper_eye": 0.5,
+
+          "the_vault:scavenger_zombie_blood_vial": 10,
+          "the_vault:scavenger_cracked_script": 2.5,
+          "the_vault:scavenger_green_bangle": 1,
+          "the_vault:scavenger_cracked_pearl": 0.5,
+
+          "the_vault:scavenger_skeleton_bone_shard": 10,
+          "the_vault:scavenger_skeleton_wishbone": 2.5,
+          "the_vault:scavenger_skeleton_ribcage": 1,
+          "the_vault:scavenger_skeleton_skull": 0.5,
+
+          "the_vault:scavenger_mob_black": 5,
+          "the_vault:scavenger_mob_purple": 1,
+          "the_vault:scavenger_mob_green": 10
+        },
+        "crateLootTable": "the_vault:completion_scav_lvl20"
+      },
+      {
+        "level": 20,
+        "goalCount": {
+          "type": "uniform",
+          "min": 6,
+          "max": 8
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 8,
+          "max": 16
+        },
+        "display": {
+          "displayName": "Big Boi",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 20,
+          "the_vault:scavenger_old_book": 5,
+          "the_vault:scavenger_pottery_shard": 2,
+          "the_vault:scavenger_spider_webbing_spool": 1,
+
+          "the_vault:scavenger_red_scroll": 20,
+          "the_vault:scavenger_spider_soul_charm": 5,
+          "the_vault:scavenger_goblet": 2,
+          "the_vault:scavenger_earrings": 1,
+
+          "the_vault:scavenger_empty_jar": 20,
+          "the_vault:scavenger_sack": 5,
+          "the_vault:scavenger_saddle_bag": 2,
+          "the_vault:scavenger_wizard_wand": 1,
+
+          "the_vault:scavenger_drowned_hide": 20,
+          "the_vault:scavenger_zombie_arm": 5,
+          "the_vault:scavenger_zombie_brain": 2,
+          "the_vault:scavenger_creeper_eye": 1,
+
+          "the_vault:scavenger_zombie_blood_vial": 20,
+          "the_vault:scavenger_cracked_script": 5,
+          "the_vault:scavenger_green_bangle": 2,
+          "the_vault:scavenger_cracked_pearl": 1,
+
+          "the_vault:scavenger_skeleton_bone_shard": 30,
+          "the_vault:scavenger_skeleton_wishbone": 5,
+          "the_vault:scavenger_skeleton_ribcage": 2,
+          "the_vault:scavenger_skeleton_skull": 1,
+
+          "the_vault:scavenger_mob_black": 5,
+          "the_vault:scavenger_mob_purple": 1,
+          "the_vault:scavenger_mob_green": 10
+        },
+        "crateLootTable": "the_vault:completion_scav_lvl20"
+      },
+      {
+        "level": 50,
+        "goalCount": {
+          "type": "uniform",
+          "min": 8,
+          "max": 9
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 8,
+          "max": 24
+        },
+        "display": {
+          "displayName": "Big Boi",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 30,
+          "the_vault:scavenger_old_book": 10,
+          "the_vault:scavenger_pottery_shard": 5,
+          "the_vault:scavenger_spider_webbing_spool": 2,
+
+          "the_vault:scavenger_red_scroll": 30,
+          "the_vault:scavenger_spider_soul_charm": 10,
+          "the_vault:scavenger_goblet": 5,
+          "the_vault:scavenger_earrings": 2,
+
+          "the_vault:scavenger_empty_jar": 30,
+          "the_vault:scavenger_sack": 10,
+          "the_vault:scavenger_saddle_bag": 5,
+          "the_vault:scavenger_wizard_wand": 2,
+
+          "the_vault:scavenger_drowned_hide": 30,
+          "the_vault:scavenger_zombie_arm": 10,
+          "the_vault:scavenger_zombie_brain": 5,
+          "the_vault:scavenger_creeper_eye": 2,
+
+          "the_vault:scavenger_zombie_blood_vial": 30,
+          "the_vault:scavenger_cracked_script": 10,
+          "the_vault:scavenger_green_bangle": 5,
+          "the_vault:scavenger_cracked_pearl": 2,
+
+          "the_vault:scavenger_skeleton_bone_shard": 30,
+          "the_vault:scavenger_skeleton_wishbone": 10,
+          "the_vault:scavenger_skeleton_ribcage": 5,
+          "the_vault:scavenger_skeleton_skull": 2,
+
+          "the_vault:scavenger_mob_black": 5,
+          "the_vault:scavenger_mob_purple": 1,
+          "the_vault:scavenger_mob_green": 10
+        },
+        "crateLootTable": "the_vault:completion_scav_lvl20"
+      },
+      {
+        "level": 75,
+        "goalCount": {
+          "type": "uniform",
+          "min": 8,
+          "max": 10
+        },
+        "itemCount": {
+          "type": "uniform",
+          "min": 20,
+          "max": 40
+        },
+        "display": {
+          "displayName": "Big Boi",
+          "shouldDisplay": true
+        },
+        "multiplierOverrides": {
+          "the_vault:scavenger_ripped_page": 4,
+          "the_vault:scavenger_old_book": 2,
+          "the_vault:scavenger_pottery_shard": 0.8,
+          "the_vault:scavenger_spider_webbing_spool": 0.25,
+
+          "the_vault:scavenger_red_scroll": 0.5,
+          "the_vault:scavenger_spider_soul_charm": 0.3,
+          "the_vault:scavenger_goblet": 0.15,
+          "the_vault:scavenger_earrings": 0.1,
+
+          "the_vault:scavenger_empty_jar": 0.5,
+          "the_vault:scavenger_sack": 0.3,
+          "the_vault:scavenger_saddle_bag": 0.15,
+          "the_vault:scavenger_wizard_wand": 0.1,
+
+          "the_vault:scavenger_drowned_hide": 0.5,
+          "the_vault:scavenger_zombie_arm": 0.3,
+          "the_vault:scavenger_zombie_brain": 0.15,
+          "the_vault:scavenger_creeper_eye": 0.1,
+
+          "the_vault:scavenger_zombie_blood_vial": 0.7,
+          "the_vault:scavenger_cracked_script": 0.5,
+          "the_vault:scavenger_green_bangle": 0.3,
+          "the_vault:scavenger_cracked_pearl": 0.15,
+
+          "the_vault:scavenger_skeleton_bone_shard": 0.7,
+          "the_vault:scavenger_skeleton_wishbone": 0.5,
+          "the_vault:scavenger_skeleton_ribcage": 0.3,
+          "the_vault:scavenger_skeleton_skull": 0.15,
+
+          "the_vault:scavenger_mob_black": 3.0,
+          "the_vault:scavenger_mob_purple": 0.3,
+          "the_vault:scavenger_mob_green": 5.0
+        },
+        "crateLootTable": "the_vault:base_crate_8_50"
+      }
+    ]
+  }
 }
+
+
+
+
+
+
+

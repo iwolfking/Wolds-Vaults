@@ -1,358 +1,101 @@
 {
-  "POOL": [
-    {
-      "value": {
-        "id": "the_vault:helmet",
-        "nbt": "{Vault:{Attributes:[{Id:\"the_vault:gear_roll_pool\",BaseValue:\"special\"}]}}",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 3
+  "values": {
+    "completion_crate": {
+      "lootTable": "the_vault:base_crate_8_50",
+      "type": "loot_table"
     },
-    {
-      "value": {
-        "id": "the_vault:chestplate",
-        "nbt": "{Vault:{Attributes:[{Id:\"the_vault:gear_roll_pool\",BaseValue:\"special\"}]}}",
-        "amountMin": 1,
-        "amountMax": 1
+    "aggro_cows": {
+      "entity": {
+        "nbt": "{id:\"the_vault:aggressive_cow\"}"
       },
-      "weight": 3
+      "count": {
+        "min": 5,
+        "max": 7,
+        "type": "uniform"
+      },
+      "type": "spawn_mobs"
     },
-    {
-      "value": {
-        "id": "the_vault:leggings",
-        "nbt": "{Vault:{Attributes:[{Id:\"the_vault:gear_roll_pool\",BaseValue:\"special\"}]}}",
-        "amountMin": 1,
-        "amountMax": 1
+    "guardians": {
+      "entity": {
+        "nbt": "{id:\"the_vault:bruiser_guardian\"}"
       },
-      "weight": 3
+      "count": {
+        "min": 15,
+        "max": 25,
+        "type": "uniform"
+      },
+      "type": "spawn_mobs"
     },
-    {
-      "value": {
-        "id": "the_vault:boots",
-        "nbt": "{Vault:{Attributes:[{Id:\"the_vault:gear_roll_pool\",BaseValue:\"special\"}]}}",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 3
+    "frenzy": {
+      "type": "add_modifier",
+      "modifierId": "the_vault:frenzy"
     },
-    {
-      "value": {
-        "id": "the_vault:sword",
-        "nbt": "{Vault:{Attributes:[{Id:\"the_vault:gear_roll_pool\",BaseValue:\"special\"}]}}",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 3
+    "hoard": {
+      "type": "add_modifier",
+      "modifierId": "the_vault:hoard"
     },
-    {
-      "value": {
-        "id": "the_vault:axe",
-        "nbt": "{Vault:{Attributes:[{Id:\"the_vault:gear_roll_pool\",BaseValue:\"special\"}]}}",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 3
+    "treasure": {
+      "type": "add_modifier",
+      "modifierId": "the_vault:treasure"
     },
-    {
-      "value": {
-        "id": "the_vault:idol_benevolent",
-        "nbt": "{Vault:{Attributes:[{Id:\"the_vault:gear_roll_pool\",BaseValue:\"special\"}]}}",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 3
+    "fading": {
+      "type": "add_modifier",
+      "modifierId": "the_vault:fading"
     },
-    {
-      "value": {
-        "id": "the_vault:idol_omniscient",
-        "nbt": "{Vault:{Attributes:[{Id:\"the_vault:gear_roll_pool\",BaseValue:\"special\"}]}}",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 3
+    "ethereal_mobs": {
+      "type": "add_modifier",
+      "modifierId": "the_vault:ethereal_mobs"
     },
-    {
-      "value": {
-        "id": "the_vault:idol_timekeeper",
-        "nbt": "{Vault:{Attributes:[{Id:\"the_vault:gear_roll_pool\",BaseValue:\"special\"}]}}",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 3
+    "brutal_mobs_combo": {
+      "type": "add_modifier",
+      "modifierId": "the_vault:brutal_mobs_combo"
     },
-    {
-      "value": {
-        "id": "the_vault:idol_malevolence",
-        "nbt": "{Vault:{Attributes:[{Id:\"the_vault:gear_roll_pool\",BaseValue:\"special\"}]}}",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 3
+    "crit_mobs": {
+      "type": "add_modifier",
+      "modifierId": "the_vault:crit_mobs"
     },
-    {
-      "value": {
-        "id": "the_vault:gem_pog",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 1
+    "cake": {
+      "type": "tile_replace",
+      "tile": "minecraft:cake"
     },
-    {
-      "value": {
-        "id": "the_vault:vault_crystal",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 1
+    "discover_common": {
+      "type": "discover_map",
+      "roomType": "COMMON"
     },
-    {
-      "value": {
-        "id": "the_vault:vault_catalyst_fragment",
-        "amountMin": 1,
-        "amountMax": 8
-      },
-      "weight": 3
+    "discover_ore": {
+      "type": "discover_map",
+      "roomType": "ORE"
     },
-    {
-      "value": {
-        "id": "the_vault:vault_catalyst",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 1
+    "discover_omega": {
+      "type": "discover_map",
+      "roomType": "OMEGA"
     },
-    {
-      "value": {
-        "id": "the_vault:vault_burger",
-        "amountMin": 1,
-        "amountMax": 12
-      },
-      "weight": 10
+    "discover_challenge": {
+      "type": "discover_map",
+      "roomType": "CHALLENGE"
     },
-    {
-      "value": {
-        "id": "the_vault:crystal_burger",
-        "amountMin": 1,
-        "amountMax": 6
-      },
-      "weight": 6
-    },
-    {
-      "value": {
-        "id": "the_vault:full_pizza",
-        "amountMin": 1,
-        "amountMax": 6
-      },
-      "weight": 6
-    },
-    {
-      "value": {
-        "id": "the_vault:mod_box",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 5
-    },
-    {
-      "value": {
-        "id": "the_vault:oozing_pizza",
-        "amountMin": 6,
-        "amountMax": 12
-      },
-      "weight": 10
-    },
-    {
-      "value": {
-        "id": "the_vault:life_scroll",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 4
-    },
-    {
-      "value": {
-        "id": "the_vault:hunter_eye",
-        "amountMin": 1,
-        "amountMax": 2
-      },
-      "weight": 1
-    },
-    {
-      "value": {
-        "id": "the_vault:poisonous_mushroom",
-        "amountMin": 2,
-        "amountMax": 6
-      },
-      "weight": 3
-    },
-    {
-      "value": {
-        "id": "the_vault:vault_diamond",
-        "amountMin": 1,
-        "amountMax": 3
-      },
-      "weight": 4
-    },
-    {
-      "value": {
-        "id": "the_vault:drill_arrow",
-        "amountMin": 4,
-        "amountMax": 16
-      },
-      "weight": 8
-    },
-    {
-      "value": {
-        "id": "the_vault:respec_flask",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 5
-    },
-    {
-      "value": {
-        "id": "the_vault:wutax_shard",
-        "amountMin": 2,
-        "amountMax": 6
-      },
-      "weight": 8
-    },
-    {
-      "value": {
-        "id": "the_vault:vault_bronze",
-        "amountMin": 32,
-        "amountMax": 64
-      },
-      "weight": 12
-    },
-    {
-      "value": {
-        "id": "the_vault:vault_plating",
-        "amountMin": 4,
-        "amountMax": 8
-      },
-      "weight": 12
-    },
-    {
-      "value": {
-        "id": "the_vault:vault_dust",
-        "amountMin": 2,
-        "amountMax": 6
-      },
-      "weight": 8
-    },
-    {
-      "value": {
-        "id": "minecraft:netherite_ingot",
-        "amountMin": 2,
-        "amountMax": 8
-      },
-      "weight": 4
-    },
-    {
-      "value": {
-        "id": "minecraft:netherite_block",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 3
-    },
-    {
-      "value": {
-        "id": "the_vault:candy_bar",
-        "amountMin": 2,
-        "amountMax": 4
-      },
-      "weight": 8
-    },
-    {
-      "value": {
-        "id": "the_vault:power_bar",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 8
-    },
-    {
-      "value": {
-        "id": "the_vault:lucky_apple",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 1
-    },
-    {
-      "value": {
-        "id": "the_vault:golem_apple",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 2
-    },
-    {
-      "value": {
-        "id": "the_vault:ghost_apple",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 2
-    },
-    {
-      "value": {
-        "id": "the_vault:vault_apple",
-        "amountMin": 8,
-        "amountMax": 16
-      },
-      "weight": 8
-    },
-    {
-      "value": {
-        "id": "the_vault:hearty_apple",
-        "amountMin": 8,
-        "amountMax": 16
-      },
-      "weight": 8
-    },
-    {
-      "value": {
-        "id": "minecraft:golden_apple",
-        "amountMin": 8,
-        "amountMax": 16
-      },
-      "weight": 10
-    },
-    {
-      "value": {
-        "id": "the_vault:vault_essence",
-        "amountMin": 1,
-        "amountMax": 5
-      },
-      "weight": 2
-    },
-    {
-      "value": {
-        "id": "the_vault:vault_scrap",
-        "amountMin": 2,
-        "amountMax": 4
-      },
-      "weight": 7
-    },
-    {
-      "value": {
-        "id": "minecraft:kelp",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 57
-    },
-    {
-      "value": {
-        "id": "minecraft:horn_coral_block",
-        "amountMin": 1,
-        "amountMax": 1
-      },
-      "weight": 12
+    "success_memory": {
+      "type": "pool",
+      "levels": [
+        {
+          "level": 0,
+          "pool": [
+            { "value": "aggro_cows", "weight": 20 },
+            { "value": "guardians", "weight": 80 },
+            { "value": "cake", "weight": 80 },
+            { "value": "completion_crate", "weight": 2 },
+            { "value": "ethereal_mobs", "weight": 1 },
+            { "value": "treasure", "weight": 5 },
+            { "value": "hoard", "weight": 5 },
+            { "value": "brutal_mobs_combo", "weight": 20 },
+            { "value": "crit_mobs", "weight": 20 },
+            { "value": "discover_common", "weight": 8 },
+            { "value": "discover_ore", "weight": 8 },
+            { "value": "discover_omega", "weight": 1 },
+            { "value": "discover_challenge", "weight": 5 }
+          ]
+        }
+      ]
     }
-  ]
+  }
 }

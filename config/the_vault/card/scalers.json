@@ -84,6 +84,111 @@
         }
       ]
     },
+    "scaling": {
+      "tiers": [
+        {
+          "tier": 1,
+          "pool": [
+            {
+              "filters": [
+                {
+                  "neighborFilter": [
+                    {
+                      "value": [ "ROW" ],
+                      "weight": 5.0
+                    },
+                    {
+                      "value": [ "COLUMN" ],
+                      "weight": 5.0
+                    },
+                    {
+                      "value": [ "DIAGONAL" ],
+                      "weight": 3.0
+                    },
+                    {
+                      "value": [ "ADJACENT" ],
+                      "weight": 5.0
+                    },
+                    {
+                      "value": [ "SURROUNDING" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "colorFilter": [
+                    {
+                      "value": [ "GREEN" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "BLUE" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "YELLOW" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "RED" ],
+                      "weight": 1.0
+                    }
+                  ]
+                }
+              ],
+              "weight": 1.0
+            },
+            {
+              "filters": [
+                {
+                  "neighborFilter": [
+                    {
+                      "value": [ "ROW" ],
+                      "weight": 5.0
+                    },
+                    {
+                      "value": [ "COLUMN" ],
+                      "weight": 5.0
+                    },
+                    {
+                      "value": [ "DIAGONAL" ],
+                      "weight": 3.0
+                    },
+                    {
+                      "value": [ "ADJACENT" ],
+                      "weight": 5.0
+                    },
+                    {
+                      "value": [ "SURROUNDING" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "colorFilter": [
+                    {
+                      "value": [ "GREEN" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "BLUE" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "YELLOW" ],
+                      "weight": 1.0
+                    },
+                    {
+                      "value": [ "RED" ],
+                      "weight": 1.0
+                    }
+                  ],
+                  "groupFilter": [ 
+                  ]
+                }
+              ],
+              "weight": 1.0
+            }
+          ]
+        }
+      ]
+    },
     "test": {
       "tiers": [
         {
@@ -441,6 +546,12 @@
     "temporal": [
       {
         "value": "temporal",
+        "weight": 1.0
+      }
+    ],
+    "scaling": [
+      {
+        "value": "scaling",
         "weight": 1.0
       }
     ]

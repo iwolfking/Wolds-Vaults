@@ -85,33 +85,7 @@ let botaniaCompressed = [
 
 
 
-let vaultCompressed = [
-    "vault_ingot_1",
-    "omega_pog_1",
-    "echo_pog_1",
-    "gem_pog_1",
-    "velvet_block_1",
-    "ancient_copper_block_1",
-    "vault_stone_1",
-    "vault_stone_2",
-    "vault_cobblestone_1",
-    "vault_cobblestone_2",
-    "ornate_block_1",
-    "gilded_block_1",
-    "living_rock_block_cobble_1",
-    "sandy_block_1",
-    "rotten_meat_block_1",
-    "magic_silk_block_1",
-    "vault_diamond_block_1",
-    "vault_essence_1",
-    "vault_essence_2",
-    "vault_plating_block_1"
-]
-
-
 onEvent('block.registry', event => {
-    event.create('the_vault:vault_plating_block').displayName('Block of Vault Plating').tagBlock('minecraft:mineable/pickaxe')
-    event.create('the_vault:carbon_block').displayName('Block of Carbon').tagBlock('minecraft:mineable/pickaxe')
     vanillaStandardCompressed.forEach(block => {
         let splitId = block.split("_")
         var integerOfCompression = 0;
@@ -125,21 +99,6 @@ onEvent('block.registry', event => {
         let finalizedDisplayName = `${integerOfCompression}x Compressed ${splitId.join(' ').slice(0, -2)}`;
 
         event.create(`minecraft:${block}`).tagBlock('minecraft:mineable/pickaxe').displayName(finalizedDisplayName)
-    })
-
-    vaultCompressed.forEach(block => {
-        let splitId = block.split("_")
-        var integerOfCompression = 0;
-        for (var i = 0; i < splitId.length; i++) {
-            if (splitId[i] == "1" || splitId[i] == "2") {
-                integerOfCompression = parseInt(splitId[i])
-                continue;
-            }
-            splitId[i] = splitId[i][0].toUpperCase() + splitId[i].substr(1);
-        }
-        let finalizedDisplayName = `${integerOfCompression}x Compressed ${splitId.join(' ').slice(0, -2)}`;
-
-        event.create(`the_vault:${block}`).tagBlock('minecraft:mineable/pickaxe').displayName(finalizedDisplayName)
     })
 
     botaniaCompressed.forEach(block => {

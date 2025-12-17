@@ -1,0 +1,103 @@
+{
+  "entries": [
+    {
+      "roll": {
+        "type": "uniform",
+        "min": 1,
+        "max": 1
+      },
+      "pool": [
+        { "weight": 1,
+          "pool": [
+             {
+              "weight": 15,
+              "item": {
+                "id": "the_vault:knowledge_star_essence",
+                "count": {
+                  "type": "uniform",
+                  "min": 6,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+                "id": "the_vault:inscription",
+                "nbt": {
+                  "pool": "the_vault:random"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
+              }
+            },
+            {
+              "weight": 15,
+              "item": {
+              "id": "the_vault:mystery_egg",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 1
+                }
+              }
+            },
+            {
+              "weight": 5,
+              "item": {
+              "id": "woldsvaults:soul_ichor",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 1
+                }
+              }
+            },
+            {
+              "weight": 80,
+              "item": {
+              "id": "the_vault:inscription_piece",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 1
+                }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+                "id": "the_vault:vault_god_charm",
+                "nbt": {
+                    "the_vault:gear_roll_type_pool": "charms_dungeons"
+                  },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+                "id": "the_vault:deck_socket",
+                "nbt": {
+                  "Modifier": "@colour_cores"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

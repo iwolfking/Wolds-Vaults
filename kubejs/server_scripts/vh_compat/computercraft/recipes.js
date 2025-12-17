@@ -5,7 +5,7 @@ onEvent("recipes", event => {
         event.remove({ 'output': `${id}` })
     })
 
-    event.replaceInput({ id: 'computercraft:computer_normal' }, 'the_vault:echo_pog', 'the_vault:pog_prism')
+    event.replaceInput({ id: 'computercraft:computer_normal' }, 'the_vault:echo_pog', 'woldsvaults:pog_prism')
 
 
 

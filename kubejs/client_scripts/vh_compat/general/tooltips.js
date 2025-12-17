@@ -5,7 +5,6 @@ onEvent('item.tooltip', tooltip => {
     tooltip.add('lightmanscurrency:wallet_emerald', Text.green('Soulbound'))
     tooltip.add('lightmanscurrency:wallet_diamond', Text.green('Soulbound'))
     tooltip.add('lightmanscurrency:wallet_netherite', [Text.green('Soulbound')])
-    tooltip.add('the_vault:crystal_seal_monolith', Text.red('Legacy Item'))
     tooltip.add('woldsvaults:waxing_augmenter', Text.red('Legacy Item'))
     tooltip.add('woldsvaults:waning_augmenter', Text.red('Legacy Item'))
     tooltip.add('woldsvaults:crystal_seal_warrior', Text.red('Legacy Item'))

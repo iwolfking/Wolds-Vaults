@@ -121,7 +121,7 @@ onEvent('item.tags', event => {
 })
 
 onEvent('block.tags', event => {
-    event.add('minecraft:mineable/pickaxe', 'the_vault:vault_salvager')
+    event.add('minecraft:mineable/pickaxe', 'woldsvaults:vault_salvager')
 
     event.add('minecraft:mineable/axe', 'sophisticatedstorage:treasure_chest')
     event.add('minecraft:mineable/axe', 'sophisticatedstorage:ornate_chest')

@@ -69,7 +69,7 @@ craftingTable.addShapeless("ae2_storage_cell_64k_shapeless", <item:ae2:item_stor
 
 craftingTable.addShaped("ae2_256k_component", <item:ae2:cell_component_256k>, [
     [<item:the_vault:black_chromatic_steel_ingot>, <item:ae2:calculation_processor>, <item:the_vault:black_chromatic_steel_ingot>],
-    [<item:ae2:cell_component_64k>, <item:the_vault:pog_prism>, <item:ae2:cell_component_64k>],
+    [<item:ae2:cell_component_64k>, <item:woldsvaults:pog_prism>, <item:ae2:cell_component_64k>],
     [<item:the_vault:black_chromatic_steel_ingot>, <item:ae2:cell_component_64k>, <item:the_vault:black_chromatic_steel_ingot>]
 ]);
 
@@ -108,7 +108,7 @@ craftingTable.addShaped("ae2_annihilation_core", <item:ae2:annihilation_core>, [
 ]);
 
 craftingTable.addShaped("ae2_molecular_assembler", <item:ae2:molecular_assembler>, [
-    [<item:the_vault:chromatic_steel_ingot>, <item:the_vault:pog_prism>, <item:the_vault:chromatic_steel_ingot>],
+    [<item:the_vault:chromatic_steel_ingot>, <item:woldsvaults:pog_prism>, <item:the_vault:chromatic_steel_ingot>],
     [<item:ae2:formation_core>, <item:minecraft:crafting_table>, <item:ae2:annihilation_core>],
     [<item:the_vault:chromatic_steel_ingot>, <item:woldsvaults:chroma_core>, <item:the_vault:chromatic_steel_ingot>]
 ]);
@@ -243,7 +243,7 @@ craftingTable.addShaped("ae2_network_wireless_booster", <item:ae2:wireless_boost
 ]);
 
 craftingTable.addShaped("ae2_pattern_provider", <item:ae2:pattern_provider>, [
-    [<item:the_vault:chromatic_iron_ingot>, <item:the_vault:pog_prism>, <item:the_vault:chromatic_iron_ingot>], 
+    [<item:the_vault:chromatic_iron_ingot>, <item:woldsvaults:pog_prism>, <item:the_vault:chromatic_iron_ingot>], 
     [<item:ae2:formation_core>, <item:minecraft:crafting_table>, <item:ae2:annihilation_core>],
     [<item:the_vault:chromatic_iron_ingot>, <item:woldsvaults:chroma_core>, <item:the_vault:chromatic_iron_ingot>]
 ]);

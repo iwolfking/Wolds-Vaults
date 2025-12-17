@@ -2,22 +2,20 @@
     "tile_processors": [
       {
         "type": "weighted_target",
-        "target": "the_vault:placeholder",
-        "output": {
-          "the_vault:placeholder": 1,
-          "minecraft:air": 1
-        }
-      },
-      {
-        "type": "weighted_target",
         "target": "minecraft:stone",
         "output": {
-          "supplementaries:trapped_present_red[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 25,
-          "supplementaries:trapped_present_green[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 25,
-          "supplementaries:trapped_present_yellow[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 25,
-          "supplementaries:trapped_present_red[packed=true]{Items: [{Slot: 0b, id: \"the_vault:rokkit_launcha\", Count: 1b}]}": 1,
-          "supplementaries:trapped_present_green[packed=true]{Items: [{Slot: 0b, id: \"the_vault:rokkit_launcha\", Count: 1b}]}": 1,
-          "supplementaries:trapped_present_yellow[packed=true]{Items: [{Slot: 0b, id: \"the_vault:rokkit_launcha\", Count: 1b}]}": 1
+          "supplementaries:trapped_present_purple[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 20,
+          "supplementaries:trapped_present_blue[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 20,
+          "supplementaries:trapped_present_pink[packed=true]{Items: [{Slot: 0b, id: \"minecraft:firework_rocket\", Count: 1b}]}": 20,
+          "supplementaries:trapped_present_yellow[packed=true]{Items: [{Slot: 0b, id: \"minecraft:coal\", Count: 1b}]}": 20,
+          "supplementaries:trapped_present_red[packed=true]{Items: [{Slot: 0b, id: \"the_vault:santa_egg\", Count: 1b}]}": 3,
+          "supplementaries:trapped_present_brown[packed=true]{Items: [{Slot: 0b, id: \"auxiliaryblocks:gingerbread_man_spawn_egg\", Count: 1b}]}": 5,
+          "supplementaries:trapped_present_brown[packed=true]{Items: [{Slot: 0b, id: \"auxiliaryblocks:gingerbread_man_small_spawn_egg\", Count: 1b}]}": 5,
+          "supplementaries:trapped_present_brown[packed=true]{Items: [{Slot: 0b, id: \"auxiliaryblocks:gingerbread_man_giant_spawn_egg\", Count: 1b}]}": 5,
+          "supplementaries:trapped_present_lime[packed=true]{Items: [{Slot: 0b, id: \"the_vault:grinch_egg\", Count: 1b}]}": 15,
+          "supplementaries:trapped_present_light_gray[packed=true]{Items: [{Slot: 0b, id: \"auxiliaryblocks:snowdood_spawn_egg\", Count: 1b}]}": 8,
+          "supplementaries:trapped_present_white[packed=true]{Items: [{Slot: 0b, id: \"auxiliaryblocks:yeti_egg\", Count: 1b}]}": 4,
+          "supplementaries:trapped_present_green[packed=true]{Items: [{Slot: 0b, id: \"the_vault:rokkit_launcha\", Count: 1b}]}": 1
         }
       },
       {
@@ -28,28 +26,47 @@
         "type": "weighted_target",
         "target": "the_vault:wooden_chest",
         "output": {
-          "the_vault:wooden_chest[variant=present]": 1
+          "the_vault:wooden_chest[variant=bow]": 1
+        }
+      },
+      {
+        "type": "weighted_target",
+        "target": "auxiliaryblocks:gumdrop_purple",
+        "output": {
+          "auxiliaryblocks:pink_present": 1,
+          "auxiliaryblocks:orange_present": 1,
+          "auxiliaryblocks:magenta_present": 1,
+          "auxiliaryblocks:blue_present": 1,
+          "auxiliaryblocks:lime_present": 1,
+          "auxiliaryblocks:red_present": 1
         }
       },
       {
         "type": "weighted_target",
         "target": "the_vault:gilded_chest",
         "output": {
-          "the_vault:gilded_chest[variant=present]": 1
+          "the_vault:gilded_chest[variant=bow]": 1
         }
       },
       {
         "type": "weighted_target",
         "target": "the_vault:ornate_chest",
         "output": {
-          "the_vault:ornate_chest[variant=present]": 1
+          "the_vault:ornate_chest[variant=bow]": 1
         }
       },
       {
         "type": "weighted_target",
         "target": "the_vault:living_chest",
         "output": {
-          "the_vault:living_chest[variant=present]": 1
+          "the_vault:living_chest[variant=bow]": 1
+        }
+      },
+      {
+        "type": "weighted_target",
+        "target": "minecraft:sponge",
+        "output": {
+          "minecraft:air": 1
         }
       }
     ],

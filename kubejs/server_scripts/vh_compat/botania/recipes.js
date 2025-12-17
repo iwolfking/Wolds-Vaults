@@ -34,7 +34,7 @@ onEvent("recipes", event => {
         "type": "botania:terra_plate",
         "ingredients": [
             {
-                "item": "botania:uninfused_terrasteel_ingot"
+                "item": "woldsvaults:uninfused_terrasteel_ingot"
             }
         ],
         "mana": 500000,

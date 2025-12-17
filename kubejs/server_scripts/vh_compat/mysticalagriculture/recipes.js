@@ -73,7 +73,7 @@ onEvent("recipes", event => {
             'XVX',
             'EXE'
         ], {
-        V: 'the_vault:vault_essence_1',
+        V: 'woldsvaults:vault_essence_block',
         X: 'the_vault:vault_diamond',
         E: 'the_vault:gem_larimar'
     })
@@ -97,7 +97,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         V: 'mysticalagriculture:prosperity_gemstone',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         E: 'the_vault:extraordinary_larimar',
         T: 'mysticalagriculture:inferium_essence'
     })
@@ -109,7 +109,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         V: 'mysticalagriculture:prosperity_gemstone',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         E: 'the_vault:extraordinary_larimar',
         T: 'mysticalagriculture:prudentium_essence'
     })
@@ -121,7 +121,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         V: 'mysticalagriculture:prosperity_gemstone',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         E: 'the_vault:extraordinary_larimar',
         T: 'mysticalagriculture:tertium_essence'
     })
@@ -133,7 +133,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         V: 'mysticalagriculture:prosperity_gemstone',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         E: 'the_vault:extraordinary_larimar',
         T: 'mysticalagriculture:tertium_essence'
     })
@@ -145,7 +145,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         V: 'mysticalagriculture:prosperity_gemstone',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         E: 'the_vault:extraordinary_larimar',
         T: 'mysticalagriculture:imperium_essence'
     })
@@ -157,7 +157,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         V: 'mysticalagriculture:prosperity_gemstone',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         E: 'the_vault:extraordinary_larimar',
         T: 'mysticalagriculture:supremium_essence'
     })
@@ -169,7 +169,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         V: 'mysticalagriculture:prosperity_gemstone',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         E: 'the_vault:extraordinary_larimar',
         T: 'mysticalagriculture:soulium_dust'
     })
@@ -203,7 +203,7 @@ onEvent("recipes", event => {
         ], {
         V: 'minecraft:farmland',
         X: 'mysticalagriculture:inferium_essence',
-        E: 'the_vault:vault_essence_1'
+        E: 'woldsvaults:vault_essence_block'
     })
 
 
@@ -215,7 +215,7 @@ onEvent("recipes", event => {
         ], {
         V: 'mysticalagriculture:inferium_farmland',
         X: 'mysticalagriculture:prudentium_essence',
-        E: 'the_vault:vault_essence_1'
+        E: 'woldsvaults:vault_essence_block'
     })
 
     event.shaped(Item.of('mysticalagriculture:tertium_farmland'),
@@ -226,7 +226,7 @@ onEvent("recipes", event => {
         ], {
         V: 'mysticalagriculture:prudentium_farmland',
         X: 'mysticalagriculture:tertium_essence',
-        E: 'the_vault:vault_essence_1'
+        E: 'woldsvaults:vault_essence_block'
     })
 
     event.shaped(Item.of('mysticalagriculture:imperium_farmland'),
@@ -237,7 +237,7 @@ onEvent("recipes", event => {
         ], {
         V: 'mysticalagriculture:tertium_farmland',
         X: 'mysticalagriculture:imperium_essence',
-        E: 'the_vault:vault_essence_1'
+        E: 'woldsvaults:vault_essence_block'
     })
 
     event.shaped(Item.of('mysticalagriculture:supremium_farmland'),
@@ -248,7 +248,7 @@ onEvent("recipes", event => {
         ], {
         V: 'mysticalagriculture:imperium_farmland',
         X: 'mysticalagriculture:supremium_essence',
-        E: 'the_vault:vault_essence_1'
+        E: 'woldsvaults:vault_essence_block'
     })
 
     event.shaped(Item.of('mysticalagriculture:inferium_furnace'),
@@ -320,7 +320,7 @@ onEvent("recipes", event => {
             'IVI'
         ], {
         V: 'the_vault:chromatic_steel_block',
-        I: 'the_vault:chromatic_gold_ingot',
+        I: 'woldsvaults:chromatic_gold_ingot',
         E: 'the_vault:extraordinary_painite'
     })
 
@@ -331,7 +331,7 @@ onEvent("recipes", event => {
             'BVB'
         ], {
         V: 'the_vault:chromatic_steel_block',
-        I: 'the_vault:chromatic_gold_ingot',
+        I: 'woldsvaults:chromatic_gold_ingot',
         E: 'the_vault:extraordinary_painite',
         B: 'the_vault:chromatic_iron_block'
     })
@@ -453,7 +453,7 @@ onEvent("recipes", event => {
         B: 'minecraft:bone_meal'
     })
 
-    event.shaped(Item.of('mysticalagriculture:pogging_seed_base'),
+    event.shaped(Item.of('woldsvaults:pogging_seed_base'),
         [
             'EXE',
             'XVX',
@@ -464,15 +464,15 @@ onEvent("recipes", event => {
         E: 'the_vault:extraordinary_black_opal'
     })
 
-    event.shaped(Item.of('mysticalagriculture:echoing_seed_base'),
+    event.shaped(Item.of('woldsvaults:echoing_seed_base'),
         [
             'EXE',
             'XVX',
             'EXE'
         ], {
-        V: 'mysticalagriculture:pogging_seed_base',
+        V: 'woldsvaults:pogging_seed_base',
         X: 'the_vault:echo_pog',
-        E: 'the_vault:pog_prism'
+        E: 'woldsvaults:pog_prism'
     })
 
     event.shaped(Item.of('cloudstorage:cloud', 16),
@@ -499,7 +499,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: 'botania:world_seed'
     })
 
@@ -510,7 +510,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: 'botania:rune_air'
     })
 
@@ -521,7 +521,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: 'botania:rune_earth'
     })
 
@@ -532,7 +532,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: 'botania:rune_water'
     })
 
@@ -543,7 +543,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: 'botania:rune_fire'
     })
 
@@ -554,7 +554,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: 'botania:rune_air'
     })
 
@@ -565,7 +565,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: '#forge:dyes'
     })
 
@@ -576,7 +576,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: 'botania:rune_wrath'
     })
 
@@ -587,7 +587,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: 'botania:rune_envy'
     })
 
@@ -598,7 +598,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: '#botania:mystical_flowers'
     })
 
@@ -609,7 +609,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: 'botania:rune_greed'
     })
 
@@ -620,7 +620,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: 'botania:rune_autumn'
     })
 
@@ -631,7 +631,7 @@ onEvent("recipes", event => {
             'EXE'
         ], {
         E: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence_1',
+        X: 'woldsvaults:vault_essence_block',
         C: 'botania:rune_summer'
     })
 

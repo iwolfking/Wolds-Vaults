@@ -1,0 +1,124 @@
+{
+    "tile_processors": [
+        {
+          "type": "reference",
+          "id": "the_vault:generic/room_base"
+        },
+        {
+            "type": "weighted_target",
+            "target": "the_vault:placeholder[type=objective]",
+            "output": [
+                {
+                    "block": "the_vault:memory_room_controller",
+                    "renderer": {
+                        "coreColor": "0x069022",
+                        "glyphColor": "0x069022",
+                        "particleColor": "0x069022"
+                    },
+                    "zone": {
+                        "min": [-23, -5, -23],
+                        "max": [23, 41, 23]
+                    },
+                    "cubePositions": [
+                        [18, 13, 8],
+                        [-18, 13, 8],
+                        [-18, 13, -8],
+                        [18, 13, -8],
+                        [8, 13, 18],
+                        [-8, 13, 18],
+                        [8, 13, -18],
+                        [-8, 13, -18],
+                        [18, 13, 14],
+                        [-18, 13, 14],
+                        [-18, 13, -14],
+                        [18, 13, -14],
+                        [14, 13, 18],
+                        [-14, 13, 18],
+                        [-14, 13, -18],
+                        [14, 13, -18]
+                    ],
+                    "floorPositions": [
+                        [8, -2, 8],
+                        [8, -2, 14],
+                        [14, -2, 14],
+                        [14, -2, 8],
+
+                        [-8, -2, 8],
+                        [-8, -2, 14],
+                        [-14, -2, 14],
+                        [-14, -2, 8],
+
+                        [8, -2, -8],
+                        [8, -2, -14],
+                        [14, -2, -14],
+                        [14, -2, -8],
+
+                        [-8, -2, -8],
+                        [-8, -2, -14],
+                        [-14, -2, -14],
+                        [-14, -2, -8]
+                    ],
+                    "successActions": [
+                        {
+                            "type": "group",
+                            "success_memory": 3
+                        }
+                    ],
+                    "failureActions": [
+                        {
+                            "type": "group",
+                            "add_puzzle_guardians": 1,
+                            "add_puzzle_arbalist_guardians": 1
+                        }
+                    ],
+                    "memoryTimeSeconds": 8,
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:red_wool",
+            "output": {
+                "the_vault:cube_block[color=red]": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:light_blue_wool",
+            "output": {
+                "the_vault:cube_block[color=blue]": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:lime_wool",
+            "output": {
+                "the_vault:cube_block[color=green]": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:yellow_wool",
+            "output": {
+                "the_vault:cube_block[color=yellow]": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:oak_planks",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:black_glazed_terracotta",
+            "output": {
+                "minecraft:air": 1
+            }
+        }
+    ],
+    "entity_processors": [],
+    "decorators": []
+}

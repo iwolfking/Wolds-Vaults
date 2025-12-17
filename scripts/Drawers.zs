@@ -133,15 +133,15 @@ craftingTable.addShaped("storagedrawers_iron_storage_upgrade", <item:storagedraw
 ]);
 
 craftingTable.addShaped("storagedrawers_gold_storage_upgrade", <item:storagedrawers:gold_storage_upgrade>, [
-    [<item:the_vault:chromatic_gold_nugget>, <item:the_vault:vault_essence>, <item:the_vault:chromatic_gold_nugget>],
+    [<item:woldsvaults:chromatic_gold_nugget>, <item:the_vault:vault_essence>, <item:woldsvaults:chromatic_gold_nugget>],
     [<item:the_vault:vault_essence>, <item:storagedrawers:upgrade_template>, <item:the_vault:vault_essence>],
-    [<item:the_vault:chromatic_gold_nugget>, <item:the_vault:vault_essence>, <item:the_vault:chromatic_gold_nugget>]
+    [<item:woldsvaults:chromatic_gold_nugget>, <item:the_vault:vault_essence>, <item:woldsvaults:chromatic_gold_nugget>]
 ]);
 
 craftingTable.addShaped("storagedrawers_diamond_storage_upgrade", <item:storagedrawers:diamond_storage_upgrade>, [
-    [<item:the_vault:chromatic_gold_nugget>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_gold_nugget>],
+    [<item:woldsvaults:chromatic_gold_nugget>, <item:the_vault:vault_diamond>, <item:woldsvaults:chromatic_gold_nugget>],
     [<item:the_vault:vault_diamond>, <item:storagedrawers:upgrade_template>, <item:the_vault:vault_diamond>],
-    [<item:the_vault:chromatic_gold_nugget>, <item:the_vault:vault_diamond>, <item:the_vault:chromatic_gold_nugget>]
+    [<item:woldsvaults:chromatic_gold_nugget>, <item:the_vault:vault_diamond>, <item:woldsvaults:chromatic_gold_nugget>]
 ]);
 
 craftingTable.addShaped("storagedrawers_emerald_storage_upgrade", <item:storagedrawers:emerald_storage_upgrade>, [

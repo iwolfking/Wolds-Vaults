@@ -82,7 +82,7 @@ onEvent("recipes", event => {
         P: 'the_vault:perfect_larimar',
         R: 'the_vault:carbon',
         X: 'the_vault:vault_essence',
-        I: 'the_vault:chromatic_gold_ingot',
+        I: 'woldsvaults:chromatic_gold_ingot',
         T: 'minecraft:smooth_stone'
     })
 
@@ -109,7 +109,7 @@ onEvent("recipes", event => {
         G: 'the_vault:extraordinary_black_opal',
         P: 'the_vault:vault_diamond_block',
         O: 'minecraft:obsidian',
-        L: 'the_vault:chromatic_gold_block',
+        L: 'woldsvaults:chromatic_gold_block',
         R: 'minecraft:comparator'
     })
 

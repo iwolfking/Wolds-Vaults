@@ -17,7 +17,7 @@ onEvent("recipes", event => {
         ], {
         P: 'the_vault:extraordinary_painite',
         X: 'the_vault:black_chromatic_steel_ingot',
-        T: 'the_vault:pog_prism'
+        T: 'woldsvaults:pog_prism'
     })
 
     event.shaped(Item.of('entangled:item'),

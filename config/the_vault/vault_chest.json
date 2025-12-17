@@ -38,6 +38,21 @@
     }
     
   ],
+  "TELEPORT_TRAP_EFFECTS": [
+    {
+      "range": 6,
+      "attempts": 18,
+      "name": "Teleport Trap"
+    }
+  ],
+  "MANA_STEALER_TRAP_EFFECTS": [
+    {
+      "radius": 6.0,
+      "manaDrainPerTick": 1.0,
+      "duration": 200,
+      "name": "Mana Stealer"
+    }
+  ],
   "LEVELS": [
     {
       "level": 0,
@@ -53,6 +68,14 @@
         },
         {
           "value": "Poison",
+          "weight": 4
+        },
+        {
+          "value": "Teleport Trap",
+          "weight": 0
+        },
+        {
+          "value": "Mana Stealer",
           "weight": 4
         }
       ]

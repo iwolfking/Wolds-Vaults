@@ -24,7 +24,7 @@ var colors = {
 });
 
 craftingTable.addShaped("quark_pickarang", <item:quark:pickarang>, [
-    [<item:the_vault:vault_diamond>, <item:the_vault:driftwood>, <item:the_vault:pog_prism>],
+    [<item:the_vault:vault_diamond>, <item:the_vault:driftwood>, <item:woldsvaults:pog_prism>],
     [<item:minecraft:air>, <item:minecraft:air>, <item:the_vault:driftwood>],
     [<item:minecraft:air>, <item:minecraft:air>, <item:the_vault:vault_diamond>]
 ]);

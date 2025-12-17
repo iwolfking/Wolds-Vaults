@@ -1,0 +1,1917 @@
+{
+  "values": {
+    "the_vault:default": {
+      "name": {
+        "text": "Stat Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/stat_pack#inventory",
+        "opened": "the_vault:booster_pack/stat_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "groups": [
+                "Foil"
+              ],
+              "scaler": "",
+              "condition": "",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1000
+        }
+      ]
+    },
+    "the_vault:deluxe_stat_pack": {
+      "name": {
+        "text": "Deluxe Stat Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/deluxe_stat_pack#inventory",
+        "opened": "the_vault:booster_pack/stat_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_stat",
+              "probability": 1.0,
+              "condition": "@deluxe_stat"
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_stat",
+              "groups": [
+                "Foil"
+              ],
+              "scaler": "",
+              "condition": "@deluxe_stat",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    "the_vault:arcane_pack": {
+      "name": {
+        "text": "Arcane Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/arcane_pack#inventory",
+        "opened": "the_vault:booster_pack/arcane_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@arcane",
+              "probability": 1.0,
+              "condition": "@default"
+            }
+          ],
+          "weight": 9
+        }
+      ]
+    },
+    "the_vault:mega_arcane_pack": {
+      "name": {
+        "text": "Mega Arcane Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/mega_arcane_pack#inventory",
+        "opened": "the_vault:booster_pack/mega_arcane_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 5,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@arcane",
+              "probability": 1.0,
+              "condition": "@default"
+            }
+          ],
+          "weight": 9
+        }
+      ]
+    },
+    "the_vault:knack_pack": {
+      "name": {
+        "text": "Knack Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/knack_pack#inventory",
+        "opened": "vhapi:booster_pack/knack_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@knack",
+              "probability": 1.0,
+              "condition": "@knack"
+            }
+          ],
+          "weight": 9
+        }
+      ]
+    },
+     "the_vault:deluxe_knack_pack": {
+      "name": {
+        "text": "Deluxe Knack Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/deluxe_knack_pack#inventory",
+        "opened": "vhapi:booster_pack/knack_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_knack",
+              "probability": 1.0,
+              "condition": "@deluxe_knack"
+            }
+          ],
+          "weight": 9
+        }
+      ]
+    },
+    "the_vault:mega_knack_pack": {
+      "name": {
+        "text": "Mega Knack Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/mega_knack_pack#inventory",
+        "opened": "vhapi:booster_pack/mega_knack_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 5,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@knack",
+              "probability": 1.0,
+              "condition": "@knack"
+            }
+          ],
+          "weight": 9
+        }
+      ]
+    },
+    "the_vault:shiny_pack": {
+      "name": {
+        "text": "Shiny Stat Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/shiny_pack#inventory",
+        "opened": "the_vault:booster_pack/shiny_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "groups": [
+                "Foil"
+              ],
+              "scaler": "@default",
+              "condition": "",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    "the_vault:stat_pack": {
+      "name": {
+        "text": "Stat Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/stat_pack#inventory",
+        "opened": "the_vault:booster_pack/stat_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    "the_vault:mega_stat_pack": {
+      "name": {
+        "text": "Mega Stat Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/mega_stat_pack#inventory",
+        "opened": "the_vault:booster_pack/mega_stat_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 5,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    "the_vault:resource_pack": {
+      "name": {
+        "text": "Resource Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/resource_pack#inventory",
+        "opened": "the_vault:booster_pack/resource_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }, 
+    "the_vault:deluxe_resource_pack": {
+      "name": {
+        "text": "Deluxe Resource Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/deluxe_resource_pack#inventory",
+        "opened": "the_vault:booster_pack/resource_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_resource",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_resource",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    "the_vault:temporal_pack": {
+      "name": {
+        "text": "Temporal Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/temporal_pack#inventory",
+        "opened": "the_vault:booster_pack/temporal_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 2,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@temporal",
+              "scaler": "@temporal",
+              "condition": "@temporal",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@temporal",
+              "groups": [
+                "Foil"
+              ],
+              "scaler": "@temporal",
+              "condition": "temporal",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+     "the_vault:deluxe_temporal_pack": {
+      "name": {
+        "text": "Deluxe Temporal Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/deluxe_temporal_pack#inventory",
+        "opened": "the_vault:booster_pack/temporal_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 2,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_temporal",
+              "scaler": "@temporal",
+              "condition": "@temporal",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_temporal",
+              "groups": [
+                "Foil"
+              ],
+              "scaler": "@temporal",
+              "condition": "temporal",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    "the_vault:mega_temporal_pack": {
+      "name": {
+        "text": "Mega Temporal Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/temporal_pack#inventory",
+        "opened": "the_vault:booster_pack/temporal_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 5,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@temporal",
+              "scaler": "@temporal",
+              "condition": "@temporal",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@temporal",
+              "groups": [
+                "Foil"
+              ],
+              "scaler": "@temporal",
+              "condition": "temporal",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    "the_vault:mix_pack": {
+      "name": {
+        "text": "Mixed Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/mix_pack#inventory",
+        "opened": "the_vault:booster_pack/mix_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "probability": 1.0
+            }
+          ],
+          "weight": 70
+        },
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "probability": 1.0,
+              "scaler": "@default"
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "probability": 1.0
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 6
+        },
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "groups": [
+                "Foil"
+              ],
+              "scaler": "@default",
+              "probability": 1.0
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 4
+        }
+      ]
+    },
+    "the_vault:black_pack": {
+      "name": {
+        "text": "Black Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/black_pack#inventory",
+        "opened": "vhapi:booster_pack/black_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 5,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 3.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@arcane",
+              "probability": 1.0,
+              "condition": "@default"
+            }
+          ],
+          "weight": 50
+        },
+         {
+          "value": [
+            {
+              "modifier": "@knack",
+              "probability": 1.0,
+              "condition": "@knack"
+            }
+          ],
+          "weight": 40
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_knack",
+              "probability": 1.0,
+              "condition": "@deluxe_knack"
+            }
+          ],
+          "weight": 10
+        }
+      ]
+    },
+    "the_vault:dungeon_pack": {
+      "name": {
+        "text": "Dungeon Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/dungeon_pack#inventory",
+        "opened": "vhapi:booster_pack/dungeon_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 4,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "probability": 1.0
+            }
+          ],
+          "weight": 70
+        },
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "probability": 1.0,
+              "scaler": "@default"
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "probability": 1.0
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 6
+        },
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "scaler": "@default",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 4
+        }
+      ]
+    },
+    "the_vault:champion_pack": {
+      "name": {
+        "text": "Champion Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/champion_pack#inventory",
+        "opened": "vhapi:booster_pack/champion_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 3.0
+        },
+        {
+          "value": 4,
+          "weight": 2.0
+        },
+        {
+          "value": 5,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 16.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "probability": 1.0
+            }
+          ],
+          "weight": 70
+        },
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "probability": 1.0,
+              "scaler": "@default"
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "probability": 1.0
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 6
+        },
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "scaler": "@default",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 4
+        }
+      ]
+    },
+    "the_vault:treasure_pack": {
+      "name": {
+        "text": "Treasure Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/treasure_pack#inventory",
+        "opened": "vhapi:booster_pack/treasure_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 5,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 3.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_stat",
+              "probability": 1.0,
+              "condition": "@deluxe_stat"
+            }
+          ],
+          "weight": 25
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_resource",
+              "probability": 1.0
+            }
+          ],
+          "weight": 25
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_knack",
+              "probability": 1.0,
+              "condition": "@deluxe_knack"
+            }
+          ],
+          "weight": 25
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_stat",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "@deluxe_stat",
+              "probability": 1.0
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_resource",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_knack",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "@deluxe_knack",
+              "probability": 1.0
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "value": [
+            {
+              "modifier": "@temporal",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "@temporal",
+              "probability": 1.0
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "value": [
+            {
+              "modifier": "@deluxe_temporal",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "@temporal",
+              "probability": 1.0
+            }
+          ],
+          "weight": 4
+        }
+      ]
+    },
+    "the_vault:hellish_pack": {
+      "name": {
+        "text": "Hellish Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/merchant_pack#inventory",
+        "opened": "vhapi:booster_pack/merchant_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 4,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 9.0
+        }
+      ],
+      "color": [
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "probability": 1.0
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "",
+              "probability": 1.0
+            }
+          ],
+          "weight": 3
+        }
+      ]
+    },
+    "the_vault:merchant_pack": {
+      "name": {
+        "text": "Merchant Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/merchant_pack#inventory",
+        "opened": "vhapi:booster_pack/merchant_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 4,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 9.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "probability": 1.0
+            }
+          ],
+          "weight": 6
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "",
+              "probability": 1.0
+            }
+          ],
+          "weight": 3
+        },
+           {
+          "value": [
+            {
+              "modifier": "@deluxe_resource",
+              "groups": [
+                "Foil"
+              ],
+              "condition": "",
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    "the_vault:lost_pack": {
+      "name": {
+        "text": "Lost Booster Pack"
+      },
+      "model": {
+        "unopened": "vhapi:booster_pack/lost_pack#inventory",
+        "opened": "vhapi:booster_pack/lost_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 4,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 16.0
+        }
+      ],
+      "color": [
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "probability": 1.0
+            }
+          ],
+          "weight": 70
+        },
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "probability": 1.0,
+              "scaler": "@default"
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "probability": 1.0
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 6
+        },
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "scaler": "@default",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 4
+        }
+      ]
+    },
+    "the_vault:mega_mix_pack": {
+      "name": {
+        "text": "Mega Mixed Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/mega_mix_pack#inventory",
+        "opened": "the_vault:booster_pack/mega_mix_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 5,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "probability": 1.0
+            }
+          ],
+          "weight": 70
+        },
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "probability": 1.0,
+              "scaler": "@default"
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "probability": 1.0
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "value": [
+            {
+              "modifier": "@default",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 6
+        },
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "groups": [ "Foil" ],
+              "scaler": "@default",
+              "probability": 1.0
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "value": [
+            {
+              "modifier": "@resource",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 4
+        }
+      ]
+    },
+    "the_vault:wild_pack": {
+      "name": {
+        "text": "Wild Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/wild_pack#inventory",
+        "opened": "the_vault:booster_pack/wild_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@wild",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@wild",
+              "groups": [
+                "Foil"
+              ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    "the_vault:evolution_pack": {
+      "name": {
+        "text": "Evolution Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/evolution_pack#inventory",
+        "opened": "the_vault:booster_pack/evolution_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "probability": 1.0,
+              "scaler": "@default"
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "groups": [ "Foil" ],
+              "probability": 1.0,
+              "scaler": "@default"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    "the_vault:mega_evolution_pack": {
+      "name": {
+        "text": "Mega Evolution Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/mega_evolution_pack#inventory",
+        "opened": "the_vault:booster_pack/mega_evolution_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 5,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "probability": 1.0,
+              "scaler": "@default"
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@scaling",
+              "groups": [ "Foil" ],
+              "probability": 1.0,
+              "scaler": "@default"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  }
+}

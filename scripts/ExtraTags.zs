@@ -51,7 +51,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:workstations>.add(<item:the_vault:vault_recycler>);
 <tag:items:the_vault:workstations>.add(<item:the_vault:vault_diffuser>);
 <tag:items:the_vault:workstations>.add(<item:the_vault:vault_harvester>);
-<tag:items:the_vault:workstations>.add(<item:the_vault:vault_salvager>);
+<tag:items:the_vault:workstations>.add(<item:woldsvaults:vault_salvager>);
 <tag:items:the_vault:workstations>.add(<item:the_vault:modifier_workbench>);
 <tag:items:the_vault:workstations>.add(<item:the_vault:alchemy_table>);
 <tag:items:the_vault:workstations>.add(<item:the_vault:vault_enchanter>);
@@ -141,10 +141,10 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:seals>.add(<item:the_vault:crystal_seal_sage>);
 <tag:items:the_vault:seals>.add(<item:the_vault:crystal_seal_scout>);
 <tag:items:the_vault:seals>.add(<item:the_vault:crystal_seal_prophet>);
-<tag:items:the_vault:seals>.add(<item:the_vault:crystal_seal_enchanter>);
-<tag:items:the_vault:seals>.add(<item:the_vault:crystal_seal_titan>);
-<tag:items:the_vault:seals>.add(<item:the_vault:crystal_seal_spirits>);
-<tag:items:the_vault:seals>.add(<item:the_vault:crystal_seal_unhinged>);
+<tag:items:the_vault:seals>.add(<item:woldsvaults:crystal_seal_enchanter>);
+<tag:items:the_vault:seals>.add(<item:woldsvaults:crystal_seal_titan>);
+<tag:items:the_vault:seals>.add(<item:woldsvaults:crystal_seal_spirits>);
+<tag:items:the_vault:seals>.add(<item:woldsvaults:crystal_seal_unhinged>);
 
 // Capstones
 <tag:items:the_vault:capstones>.add(<item:the_vault:god_token>);
@@ -186,7 +186,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:vault_essence>);
 <tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:vault_plating>);
 <tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:mod_box>);
-<tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:augment_box>);
+<tag:items:the_vault:wooden_chest_loot>.add(<item:woldsvaults:augment_box>);
 <tag:items:the_vault:wooden_chest_loot>.add(<item:the_vault:inscription_piece>);
 <tag:items:the_vault:wooden_chest_loot>.add(<item:woldsvaults:vault_diamond_nugget>);
 
@@ -236,7 +236,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:magnet>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:ancient_copper_ingot>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:key_piece>);
-<tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:altar_recatalyzer>);
+<tag:items:the_vault:gilded_chest_loot>.add(<item:woldsvaults:altar_recatalyzer>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:trinket>);
 <tag:items:the_vault:gilded_chest_loot>.add(<item:the_vault:jewel_pouch>);
 
@@ -274,7 +274,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:ornate_chain>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:magnetite>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:ornate_ingot>);
-<tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:supply_box>);
+<tag:items:the_vault:ornate_chest_loot>.add(<item:woldsvaults:supply_box>);
 <tag:items:the_vault:ornate_chest_loot>.add(<item:the_vault:vault_alloy>);
 
 // Treasure Chest Loot
@@ -314,7 +314,7 @@ Updated for Version 3.14.3 */
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:crystal_seal_cake>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:vault_palladium>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:vault_iridium>);
-<tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:wold_star_chunk>);
+<tag:items:the_vault:treasure_chest_loot>.add(<item:woldsvaults:wold_star_chunk>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:mystic_pear>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:booster_pack>);
 <tag:items:the_vault:treasure_chest_loot>.add(<item:the_vault:mystical_powder>);

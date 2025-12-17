@@ -221,7 +221,7 @@ onEvent("recipes", event => {
         ], {
         X: 'immersiveengineering:sheetmetal_steel',
         T: 'immersiveengineering:component_steel',
-        B: 'the_vault:chromatic_gold_block'
+        B: 'woldsvaults:chromatic_gold_block'
 
     }).id('immersiveengineering:crafting/heavy_engineering')
 
@@ -318,7 +318,7 @@ onEvent("recipes", event => {
             'WWW'
         ], {
         W: 'immersiveengineering:wirecoil_electrum',
-        L: 'the_vault:chromatic_gold_block'
+        L: 'woldsvaults:chromatic_gold_block'
     }).id('immersiveengineering:crafting/coil_mv')
 
     event.shaped(Item.of('immersiveengineering:coil_hv', 1),
@@ -373,7 +373,7 @@ onEvent("recipes", event => {
         ], {
         C: '#forge:ingots/electrum',
         B: '#immersiveengineering:connector_insulator',
-        X: 'the_vault:chromatic_gold_ingot'
+        X: 'woldsvaults:chromatic_gold_ingot'
     }).id('immersiveengineering:crafting/connector_mv')
 
     event.shaped(Item.of('immersiveengineering:connector_hv', 4),

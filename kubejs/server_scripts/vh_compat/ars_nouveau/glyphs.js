@@ -55,12 +55,12 @@ onEvent("recipes", event => {
             },
             {
                 "item": {
-                    "item": "the_vault:carbon_block"
+                    "item": "woldsvaults:carbon_block"
                 }
             },
             {
                 "item": {
-                    "item": "the_vault:carbon_block"
+                    "item": "woldsvaults:carbon_block"
                 }
             }
         ],
