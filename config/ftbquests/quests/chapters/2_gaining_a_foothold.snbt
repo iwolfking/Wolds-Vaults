@@ -37,6 +37,7 @@
 				"5E574242513BE343"
 			]
 			hide: true
+			dependency_requirement: "one_completed"
 			id: "69C663CDD23190A9"
 			tasks: [{
 				id: "7ACDC215732E8AD9"
@@ -64,13 +65,11 @@
 			hide: true
 			id: "76B7D44E338DC9B7"
 			tasks: [{
-				id: "574C8D2FDC6C0563"
-				type: "observation"
-				title: "Find a Brazier"
+				id: "7412F948DB85C8F1"
+				type: "woldsvaults:vault_level"
+				title: "Reach Level 10"
 				icon: "woldsvaults:monolith"
-				timer: 0L
-				observe_type: 0
-				to_observe: "the_vault:monolith"
+				value: 10
 			}]
 			rewards: [{
 				id: "433D72502DC2642E"
@@ -80,12 +79,13 @@
 		}
 		{
 			title: "Bare Bones Vaulting"
+			icon: "the_vault:crystal_budding"
 			x: -7.6875d
 			y: -1.6875d
 			shape: "gear"
 			subtitle: "Raw Resources (And A Bit More)"
 			description: [
-				"&5If you want an alternate way to obtain Vault Altar resources, you can make a Budding Crystal."
+				"&5If you want an alternate way to obtain Vault Altar resources, you can either craft or find a &lBudding Crystal &r&5underground in the Overworld!"
 				""
 				"&5If you are on a Skyvault world, you already know what this is. But its also available to normal world gens!"
 				""
@@ -97,14 +97,13 @@
 			size: 0.75d
 			id: "3E2831A2D27654C0"
 			tasks: [{
-				id: "29A99E23734A15F1"
-				type: "item"
-				item: "the_vault:crystal_budding"
+				id: "21FB7FEA35046E9A"
+				type: "checkmark"
 			}]
 		}
 		{
 			title: "Recycling and Reusing"
-			x: -6.75d
+			x: -6.5d
 			y: -3.5d
 			shape: "rsquare"
 			subtitle: "Repurposed"
@@ -197,17 +196,18 @@
 				""
 				"&5To get your equipment back, you'll need to Right Click and pick this body up, and bring it to a Spirit Extractor. Then Right Click the body onto it."
 				""
-				"&5The Spirit Extractor will list how much Vault Gold it costs to get your equipment back. It's calculated off of your Vault Gear, Backpacks, and a few other things."
-				""
-				"&5It's a good idea to have a few backup sets of equipment, just in case..."
+				"&5The Spirit Extractor will list how much Vault Gold it costs to get your equipment back. If you don't have enough, you may have the option to get your items back in exchange for going into debt with The Locker. See the Spirit Extractor quest in the next section."
 			]
 			dependencies: ["76B7D44E338DC9B7"]
 			hide: true
 			dependency_requirement: "one_completed"
 			id: "148669A61C9EFBF4"
 			tasks: [{
-				id: "5449035872332A83"
-				type: "checkmark"
+				id: "28F8815C1FC7D9A9"
+				type: "woldsvaults:vault_level"
+				title: "Reach Level 20"
+				icon: "woldsvaults:tombstone"
+				value: 20
 			}]
 		}
 		{
@@ -435,11 +435,13 @@
 				""
 				"&5Quite a useful piece of gear for looting, especially. Any items dropped nearby fly right to you to pick up."
 				""
-				"&5You can make one in the Vault Forge if you haven't gotten one from looting yet. They can have some useful abilities on them."
+				"&5You can make one in the Vault Forge if you haven't gotten one from looting."
 				""
-				"&5I especially like Endergized. Its the power of the Endermen, and just teleports the items into your inventory, no flying around or anything."
+				"&5Magnets have a mode that can be toggled with a hotkey. By default, you start in Pickup Only mode, which will pick up all items nearby."
 				""
-				"&5Watch the durability though. More loot means more durability loss."
+				"&5The second mode is Pickup + Void. This will pick up all items around you, but delete anything blocks that are registered as part of the Vault's design (dirt, bricks, etc)."
+				""
+				"&5The last mode is Off, which disables your Magnet completely."
 			]
 			hide_dependency_lines: true
 			dependencies: ["075AD2D046BFE367"]
@@ -452,6 +454,33 @@
 					id: "the_vault:magnet"
 					Count: 1b
 					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1C8C76010EBCCCA3"
+				type: "item"
+				item: {
+					id: "the_vault:magnet"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-8266451470597690145L
+							-5342229571147975363L
+							2392537302042632L
+							576460752303423488L
+							2056L
+						]
+						clientCache: {
+							color: [B; ]
+							gearName: [B; ]
+							rollType: [B; ]
+							jcolors: [I; ]
+							model: [B; ]
+							state: 0
+							colors: [I;12369084]
+							rarity: 0
+						}
+					}
 				}
 			}]
 		}
@@ -785,7 +814,7 @@
 		{
 			title: "A Bounty of Missions"
 			icon: "the_vault:bounty_block"
-			x: -6.25d
+			x: -6.0d
 			y: -2.5d
 			shape: "rsquare"
 			subtitle: "Extra Effort, Extra Loot"
@@ -926,7 +955,7 @@
 			title: "An Affinity For Loot"
 			icon: "the_vault:pogging_jewel"
 			x: -8.25d
-			y: 1.0d
+			y: 0.75d
 			shape: "gear"
 			subtitle: "Breaking, Slicing, and Dicing"
 			description: [
@@ -985,8 +1014,8 @@
 		}
 		{
 			title: "Forging a Legacy"
-			x: -6.25d
-			y: 0.0d
+			x: -6.5d
+			y: 1.0d
 			shape: "rsquare"
 			subtitle: "Scrappy to Legendary"
 			description: [
@@ -1016,36 +1045,6 @@
 				id: "6A7B3EFAD9CA3060"
 				type: "item"
 				item: "the_vault:vault_alloy"
-			}]
-		}
-		{
-			title: "An Ancient Collection"
-			x: 4.25d
-			y: -2.5d
-			shape: "rsquare"
-			subtitle: "Is Posting It Worth More or Less?"
-			description: [
-				"&5There's an interesting system in the game called Antiques. It's...stamp collecting."
-				""
-				"&5Each stamp has a specific drop condition: a tiny chance from a specific mob in a specific theme; or from certain actions."
-				""
-				"&5There's an Antique Stamp Collector Book you can make to hold all you find. You can even store it in a special Curios slot just for the Stamp Book!"
-				""
-				"&5When you collect enough of a certain stamp, you can get a reward. Just take the Stamps, put them on your hotbar, then select and Right Click them to get the reward."
-			]
-			hide_dependency_lines: true
-			dependencies: ["3E2831A2D27654C0"]
-			hide: true
-			id: "5D9B2844DF7AD95C"
-			tasks: [{
-				id: "7EE674F8A8EDF519"
-				type: "item"
-				item: "the_vault:antique_collector_book"
-			}]
-			rewards: [{
-				id: "40FF6CFA3A366B49"
-				type: "item"
-				item: "the_vault:mystery_box"
 			}]
 		}
 		{
@@ -1091,12 +1090,17 @@
 		}
 		{
 			title: "Cute Doll"
+			icon: {
+				id: "the_vault:vault_doll"
+				Count: 1b
+				tag: { }
+			}
 			x: 3.75d
 			y: 1.0d
 			shape: "rsquare"
 			subtitle: "It's Staring At Me"
 			description: [
-				"&5If you have some friends with you, but you aren't all able to run Vaults at the same rate, you might want to look into Vault Dolls."
+				"&5If you have some friends with you, but you aren't all able to run Vaults at the same rate, you might want to look into &lVault Dolls."
 				""
 				"&5You can have a friend make a Vault Doll, and it'll bear their name and character skin. "
 				""
@@ -1105,25 +1109,16 @@
 				"&5After the Vault, give the doll back to the friend. They can Right Click the Doll onto the ground to release it. CAREFUL, do this in an enclosed area!"
 				""
 				"&5See, when you 'release' the doll, it starts to run around. To get your loot, you gotta kill it."
+				""
+				"&5&lServers can disable placing Vault Dolls and require using Doll Blenders, as Vault Dolls with high amounts of loot can crash servers. Change the gamerule enablePlacingVaultDolls to false!"
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
 			hide: true
 			id: "6A5D150DBF70C1E7"
 			tasks: [{
-				id: "4D9DD070D8342ECD"
-				type: "item"
-				item: {
-					id: "the_vault:vault_doll"
-					Count: 1b
-					tag: { }
-				}
-			}]
-			rewards: [{
-				id: "5EE4F5E6F8AD7EA4"
-				type: "item"
-				item: "woldsvaults:vault_rock_candy"
-				count: 16
+				id: "4A4FC759292A8025"
+				type: "checkmark"
 			}]
 		}
 		{
@@ -1255,9 +1250,10 @@
 		}
 		{
 			title: "Altar Needs"
-			x: 2.25d
-			y: 1.0d
-			shape: "rsquare"
+			icon: "woldsvaults:vaultar_box"
+			x: -7.125d
+			y: -1.6875d
+			shape: "gear"
 			subtitle: "Altar Greeds"
 			description: [
 				"&5There is a special box in the Raw Vault loot pools you might be interested in. It's called the Vaultar Box."
@@ -1269,17 +1265,11 @@
 			hide_dependency_lines: true
 			dependencies: ["3E2831A2D27654C0"]
 			hide: true
+			size: 0.75d
 			id: "72DDF12B4CD0E628"
 			tasks: [{
-				id: "797FA083B44A5E2F"
-				type: "item"
-				item: "woldsvaults:vaultar_box"
-			}]
-			rewards: [{
-				id: "6ADF765E852306A6"
-				type: "item"
-				item: "woldsvaults:vaultar_box"
-				count: 5
+				id: "1697F37C219ABF75"
+				type: "checkmark"
 			}]
 		}
 		{
@@ -1359,7 +1349,7 @@
 			}]
 		}
 		{
-			title: "Vault Chesplates"
+			title: "Vault Chestplates"
 			x: -13.0d
 			y: -1.75d
 			shape: "square"
@@ -2320,8 +2310,8 @@
 		}
 		{
 			title: "Unique Field Guide"
-			x: 4.75d
-			y: -3.5d
+			x: 1.75d
+			y: 1.0d
 			shape: "rsquare"
 			subtitle: "Kind of Like VHat Can I Roll?"
 			description: [
@@ -2376,8 +2366,8 @@
 		{
 			title: "Clearing Conflicts"
 			icon: "the_vault:demagnetizer"
-			x: -6.25d
-			y: 1.0d
+			x: -6.0d
+			y: 2.0d
 			shape: "rsquare"
 			subtitle: "Computer, Deactivate Lizard"
 			description: [
@@ -2423,7 +2413,7 @@
 		}
 		{
 			title: "Adapt Or Perish"
-			x: -5.75d
+			x: -5.5d
 			y: -3.5d
 			shape: "rsquare"
 			subtitle: "A Worthy Sacrifice"
@@ -2454,12 +2444,17 @@
 		}
 		{
 			title: "To Be Alike"
-			x: 4.75d
-			y: 1.0d
+			icon: {
+				id: "the_vault:mentors_brew"
+				Count: 1b
+				tag: { }
+			}
+			x: 3.75d
+			y: 2.0d
 			shape: "rsquare"
 			subtitle: "You Equals Me"
 			description: [
-				"&5If you are playing on a server and have a friend joining your game late, you can use the Mentor's Brew to bring them up to your level."
+				"&5If you are playing on a server and have a friend joining your game late, you can use the &lMentor's Brew &r&5to bring them up to your level."
 				""
 				"&5When you craft the Mentor's Brew, it will be set to the level you are at the time. When someone else drinks it, their level will raise up to match yours."
 				""
@@ -2470,22 +2465,17 @@
 			hide: true
 			id: "2EB82342DD80197E"
 			tasks: [{
-				id: "7FB953ABB761A9DB"
-				type: "item"
-				item: {
-					id: "the_vault:mentors_brew"
-					Count: 1b
-					tag: { }
-				}
-			}]
-			rewards: [{
-				id: "0304E614AF969F30"
-				type: "item"
-				item: "the_vault:vault_platinum"
+				id: "75F2D64C16EA2A45"
+				type: "checkmark"
 			}]
 		}
 		{
 			title: "Sharing Knowledge"
+			icon: {
+				id: "the_vault:knowledge_brew"
+				Count: 1b
+				tag: { }
+			}
 			x: 2.25d
 			y: -3.5d
 			shape: "rsquare"
@@ -2502,18 +2492,8 @@
 			hide: true
 			id: "74637538A0EBEA2E"
 			tasks: [{
-				id: "46C5A1FB03E02BB0"
-				type: "item"
-				item: {
-					id: "the_vault:knowledge_brew"
-					Count: 1b
-					tag: { }
-				}
-			}]
-			rewards: [{
-				id: "2364732B31AF2A28"
-				type: "item"
-				item: "the_vault:vault_platinum"
+				id: "3EF5F614F1B0D63C"
+				type: "checkmark"
 			}]
 		}
 		{
@@ -2563,8 +2543,8 @@
 		}
 		{
 			title: "Steep Infusion"
-			x: -6.25d
-			y: 2.0d
+			x: -5.5d
+			y: 1.0d
 			shape: "rsquare"
 			subtitle: "Let's Give It Power"
 			description: [
@@ -2625,12 +2605,13 @@
 		}
 		{
 			title: "Player Versus Player"
+			icon: "the_vault:crystal_seal_pvp"
 			x: 0.25d
 			y: 1.0d
 			shape: "rsquare"
 			subtitle: "A Fight for the Top"
 			description: [
-				"&5If you are playing on a Server and want a bit of competition between yourself and other Players, you can use the Vault PVP Rock."
+				"&5If you are playing on a Server and want a bit of competition between yourself and other Players, you can use the &lVault PVP Rock."
 				""
 				"&5When a second player enters the Vault, a two minute timer will start up and lock the Vault so you cannot leave. Once the two minutes are up, all players are teleported to random positions in the Vault."
 				""
@@ -2643,19 +2624,19 @@
 			hide: true
 			id: "65BD291636819F4D"
 			tasks: [{
-				id: "0ECBA94CF8FFEE95"
-				type: "item"
-				item: "the_vault:crystal_seal_pvp"
+				id: "76789CC9FF9B9EB3"
+				type: "checkmark"
 			}]
 		}
 		{
 			title: "A Vault with a View"
+			icon: "the_vault:spectator_terminal"
 			x: 0.25d
 			y: 2.0d
 			shape: "rsquare"
 			subtitle: "Peeking In"
 			description: [
-				"&5If you are on a Server with other players, you can use this Spectator Terminal to spectate any currently running Vault."
+				"&5If you are on a Server with other players, you can use this &lSpectator Terminal &r&5to spectate any currently running Vault."
 				""
 				"&5You cannot effect anything in this mode, and the server can change settings to allow you to freely roam around or keep you locked to a player."
 			]
@@ -2664,14 +2645,8 @@
 			hide: true
 			id: "26EA3C18DFFEE0D2"
 			tasks: [{
-				id: "2CD51B96E6BFD6FB"
-				type: "item"
-				item: "the_vault:spectator_terminal"
-			}]
-			rewards: [{
-				id: "4433C0679FF245B3"
-				type: "item"
-				item: "woldsvaults:gem_box"
+				id: "1D0FF69CA4265638"
+				type: "checkmark"
 			}]
 		}
 		{
@@ -2683,7 +2658,7 @@
 					"patchouli:book": "patchouli:vault_lexicon"
 				}
 			}
-			x: 3.75d
+			x: 4.25d
 			y: -3.5d
 			shape: "rsquare"
 			subtitle: "The Affix Atlas, The Modifier Manual"
@@ -2710,6 +2685,199 @@
 						"patchouli:book": "patchouli:vault_lexicon"
 					}
 				}
+			}]
+		}
+		{
+			title: "Slightly Forgetful"
+			icon: {
+				id: "the_vault:respec_flask"
+				Count: 1b
+				tag: { }
+			}
+			x: 4.75d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "Choosing Anew"
+			description: [
+				"&5Many skills have specializations you can select. Nova has Toxic or Frost Nova, Earthquake has Landmine, etc."
+				""
+				"&5Forgetting these specializations isn't as easy as spending a bit of gold to unlearn spent skill points, however. Even if you remove all the skill points spent in a skill, the Specialization will still be selected."
+				""
+				"&5Instead you must craft a Choice Flask that matches the base skill of the specialization you want to unlearn."
+			]
+			hide_dependency_lines: true
+			dependencies: ["76B7D44E338DC9B7"]
+			id: "5F1769A5225837C4"
+			tasks: [{
+				id: "3DA6BBF80165F690"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Unnecessary Additions"
+			icon: {
+				id: "woldsvaults:chiseling_focus"
+				Count: 1b
+				tag: { }
+			}
+			x: -8.25d
+			y: 1.3125d
+			shape: "gear"
+			subtitle: "Removing the Cruft"
+			description: [
+				"&5As you collect Jewels, you'll find rarer ones that have multiple attributes on them. And sometimes, one of those attributes you just don't want, while everything else is great."
+				""
+				"&5The extra attribute could ruin an otherwise perfect tool. Having a Wooden Chestbreaker that slices through stone like butter creates more problems, for example."
+				""
+				"&5To fix this, you can craft and apply a Chiseling Focus. There are many different Chiseling Focus, and each one removes a specific tool attribute."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3E4FCFC9637F8B61"]
+			size: 0.75d
+			id: "0557F37AD25CCAA1"
+			tasks: [{
+				id: "407004F7D4493071"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Safe Doll Extraction"
+			icon: "woldsvaults:doll_dismantler"
+			x: 4.75d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "Will It Blend?"
+			description: [
+				"&5To retrieve the goods gathered by Vault Dolls, you need to deploy and then kill the doll as it tries to run away."
+				""
+				"&5This can cause issues, however, if the doll contains tons of items, or if the player lags and the doll escapes."
+				""
+				"&5The Doll Blender is simple. Set it down, insert Vault Doll, Blend Vault Doll, and the Blender holds the loot so you can retrieve it at a safer pace."
+			]
+			hide_dependency_lines: true
+			dependencies: ["6A5D150DBF70C1E7"]
+			id: "6743650841FAEBBF"
+			tasks: [{
+				id: "3EF7D07DCE248323"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Hit A Little Too Hard"
+			x: -6.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "PLAYER SMASH!"
+			description: [
+				"&5All Vault Ores have a small chance of dropping Smashed Vault Gems instead of their respective gem."
+				""
+				"&5These Smashed Vault Gems can be used to increase the amount of another Vault Gem you are low on."
+			]
+			hide_dependency_lines: true
+			dependencies: ["69C663CDD23190A9"]
+			id: "127050D51FD2BBA0"
+			tasks: [{
+				id: "6BD3762820CA3CF7"
+				type: "item"
+				item: "woldsvaults:smashed_vault_gem"
+			}]
+			rewards: [{
+				id: "0539CCCA0DF8B8B3"
+				type: "item"
+				item: "woldsvaults:smashed_vault_gem"
+				count: 4
+			}]
+		}
+		{
+			title: "A Guiding Hand"
+			icon: "the_vault:vault_compass"
+			x: 4.25d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "This Thing Says To Go North Left?"
+			description: [
+				"&5An helpful tool for navigating Vaults you can Research is the Vault Compass."
+				""
+				"&5Not just a simple Compass that points to the Vault Portal anymore, the Vault Compass is a much more powerful tool. It can point to a variety of things, from special doors to objectives to other things."
+				""
+				"&5At first, the Compass can only point to the Vault Portal, but as you explore more Vaults, you'll unlock the ability to point the Compass  at other things."
+				""
+				"&5You can set the target of the Compass outside the Vault for free, but changing it in the middle of a Vault will cost 10% of your Health. (You'll get this back after the Vault, of course)"
+			]
+			hide_dependency_lines: true
+			id: "7E096FAD85D4E603"
+			tasks: [{
+				id: "7CB5049E602B4593"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "A Warm Drink"
+			icon: "the_vault:cafe_vienne"
+			x: -9.75d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "...And Not Much Else"
+			description: [
+				"&5Want a warm drink, especially one with a bit of caffeine in it? "
+				""
+				"&5Make yourself a Vault Drink Machine! And an Empty Glass to hold the drink, of course."
+				""
+				"&5Place down the Vault Drink Machine, and Right Click an Empty Glass onto it to get one of a couple different drinks."
+				""
+				"&5All of them will give you a bit of a Speed boost for a couple minutes."
+				""
+				"&5Unfortunately, you can't drink these inside the Vault."
+			]
+			hide_dependency_lines: true
+			dependencies: ["69C663CDD23190A9"]
+			id: "3CAEEB3DC7ECA662"
+			tasks: [
+				{
+					id: "73A0097A24DA04BF"
+					type: "item"
+					item: "the_vault:vault_coffee_machine"
+				}
+				{
+					id: "395685447992D283"
+					type: "item"
+					item: "the_vault:empty_glass_cup"
+				}
+			]
+			rewards: [{
+				id: "010B2CAAE4020DC3"
+				type: "item"
+				item: "woldsvaults:gem_box"
+			}]
+		}
+		{
+			title: "Uniquely Chunked"
+			x: 2.75d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "Break the Unique to Make the Unique"
+			description: [
+				"&5There are a wide variety of Uniques that you can find, and each has a special location you can find them."
+				""
+				"&5But sometimes you get a bad roll on a unique, or you upgrade past a unique and now have no use for it."
+				""
+				"&5Now when you Recycle a unique, you get Unique Shards, which can be used in the Vault Forge to craft a random Unique."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"29198B5EA727A867"
+				"7C06CB39886FCC9B"
+			]
+			id: "34CD1C1D79D7DB0E"
+			tasks: [{
+				id: "03F041D8BABE779E"
+				type: "item"
+				item: "the_vault:unique_shard"
+			}]
+			rewards: [{
+				id: "7C0DE356EE7E9DF8"
+				type: "item"
+				item: "the_vault:unique_shard"
 			}]
 		}
 	]

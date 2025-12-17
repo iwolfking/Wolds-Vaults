@@ -338,7 +338,7 @@
 			title: "Ornately Equipped"
 			icon: "the_vault:ornate_chest"
 			x: 7.25d
-			y: 4.75d
+			y: 5.25d
 			shape: "rsquare"
 			subtitle: "Get Power"
 			description: [
@@ -371,7 +371,7 @@
 		{
 			title: "A Touch of Gilding"
 			x: 9.25d
-			y: 4.75d
+			y: 5.25d
 			shape: "rsquare"
 			subtitle: "Sparkling Loot"
 			description: [
@@ -404,8 +404,8 @@
 		{
 			title: "Full of Purple"
 			icon: "the_vault:vault_crate_elixir"
-			x: 5.5535714285714235d
-			y: 3.767857142857146d
+			x: 5.535714285714285d
+			y: 3.75d
 			shape: "circle"
 			subtitle: "Elixir Complete!"
 			description: [
@@ -437,7 +437,7 @@
 			title: "Pieces of the Soul"
 			icon: "the_vault:soul_shard"
 			x: 5.5d
-			y: 4.75d
+			y: 6.0d
 			shape: "rsquare"
 			subtitle: "Fighting Spirit"
 			description: [
@@ -469,7 +469,7 @@
 			title: "A Live Chest"
 			icon: "the_vault:living_chest"
 			x: 3.75d
-			y: 4.75d
+			y: 5.25d
 			shape: "rsquare"
 			subtitle: "Alive? Live? Life? Squishy!"
 			description: [
@@ -500,7 +500,7 @@
 		{
 			title: "Common As Wood"
 			x: 1.75d
-			y: 4.75d
+			y: 5.25d
 			shape: "rsquare"
 			subtitle: "Knock On"
 			description: [
@@ -584,7 +584,6 @@
 				id: "the_vault:trinket"
 				Count: 1b
 				tag: {
-					vaultUses: 21
 					vaultGearData: [L;
 						-6439719864584895362L
 						7828464262077542849L
@@ -602,15 +601,16 @@
 						gearName: [B; ]
 						rollType: [B; ]
 						jcolors: [B; ]
-						hasModifierLEGENDARY: 0b
-						colors: [B; ]
 						hasModifierUNUSUAL: 0b
 						model: [B; ]
 						hasModifierGREATER: 0b
+						hasModifierLEGENDARY: 0b
 						state: 2
 						hasModifierCORRUPTED: 0b
+						colors: [B; ]
 						rarity: [B; ]
 					}
+					vaultUses: 21
 				}
 			}
 			x: 9.714285714285715d
@@ -637,6 +637,35 @@
 			tasks: [{
 				id: "4D76FEB2D4FD340A"
 				type: "checkmark"
+			}]
+		}
+		{
+			title: "Cash Only"
+			x: 5.5d
+			y: 4.75d
+			shape: "rsquare"
+			subtitle: "Toss a Coin to Your Vaulter"
+			description: [
+				"&5Coin piles contain, well, what it says on the tin : coins!"
+				""
+				"&5Vault coins are needed for a lot of things : rerolling gear, crafting items, buying back equipment, etc. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["5E574242513BE343"]
+			id: "4B14B1799E6DCDC0"
+			tasks: [{
+				id: "23272624EE1A3EE3"
+				type: "observation"
+				title: "Find a Coin Pile"
+				icon: "the_vault:coin_pile"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:coin_pile"
+			}]
+			rewards: [{
+				id: "47F0FD9AC5309AD0"
+				type: "item"
+				item: "the_vault:vault_silver"
 			}]
 		}
 	]

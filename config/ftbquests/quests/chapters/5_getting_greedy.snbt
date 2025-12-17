@@ -251,38 +251,6 @@
 			}]
 		}
 		{
-			title: "Etched in Power"
-			icon: "woldsvaults:etching_shop_pedestal"
-			x: -3.25d
-			y: 0.25d
-			shape: "rsquare"
-			subtitle: "What's That Rune Mean?"
-			description: [
-				"&5Etchings are a special type of Vault Gear Modification that provides extremely powerful benefits. NOTE: THIS QUEST IS NOT COMPLETEABLE AS ETCHINGS ARE BROKEN CURRENTLY!"
-				""
-				"&5Etchings can only be found in Mapped Vaults, usually from special Vendoor rooms, but they can be found rarely in other ways."
-				""
-				"&5To take advantage of an Etching bonus, ALL FOUR pieces of your Vault Armor (Head, Chest, Legs, Boots) must have the same Etching applied."
-				""
-				"&5To Apply an Etching to your Vault Gear, combine them in an Anvil."
-			]
-			hide_dependency_lines: true
-			dependencies: ["1BB69DE20D9F42F7"]
-			hide: true
-			id: "6556C010EE88A783"
-			tasks: [{
-				id: "54747EB88762EB56"
-				type: "item"
-				item: "the_vault:etching"
-				count: 2L
-			}]
-			rewards: [{
-				id: "0AAF471D9BB8475B"
-				type: "item"
-				item: "the_vault:etching"
-			}]
-		}
-		{
 			title: "Task Corrupted Succesfully "
 			x: -1.75d
 			y: -2.25d
@@ -431,6 +399,33 @@
 				id: "24181625F6C079DC"
 				type: "item"
 				item: "the_vault:knowledge_star"
+			}]
+		}
+		{
+			title: "More Expertly"
+			x: -3.25d
+			y: 0.25d
+			shape: "rsquare"
+			subtitle: "Think Smarter"
+			description: [
+				"&5When you hit Level 100, you can start finding Arcane Essence in completion crates."
+				""
+				"&5Arcane Essence is used to craft Expertise Orbs, which let you increase your Expertise points beyond level 100."
+				""
+				"&5With enough time and work, you can unlock ALL of the Expertises!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["1E1457C794B6792E"]
+			id: "1EC3CEA99FF94A5B"
+			tasks: [{
+				id: "0C2363D0E796D908"
+				type: "item"
+				item: "woldsvaults:arcane_essence"
+			}]
+			rewards: [{
+				id: "69D0C3B91BDCC05A"
+				type: "item"
+				item: "woldsvaults:arcane_essence"
 			}]
 		}
 	]

@@ -10,7 +10,7 @@
 	quests: [
 		{
 			title: "Hunt and Scavenge"
-			x: -8.75d
+			x: -9.75d
 			y: 0.25d
 			shape: "hexagon"
 			subtitle: "Digging Through the Cabinets"
@@ -50,7 +50,7 @@
 		}
 		{
 			title: "A Vendor Door"
-			x: -9.25d
+			x: -10.25d
 			y: 1.5d
 			shape: "rsquare"
 			subtitle: "Vendoor: Capitalism, Ho!"
@@ -89,7 +89,7 @@
 		}
 		{
 			title: "The \"True\" Hunt"
-			x: -6.75d
+			x: -7.25d
 			y: 0.25d
 			shape: "pentagon"
 			subtitle: "Artifacts 5 by 5"
@@ -123,7 +123,7 @@
 		{
 			title: "Infusing a Path"
 			icon: "the_vault:vault_catalyst_infused"
-			x: -6.25d
+			x: -6.75d
 			y: 2.5d
 			shape: "rsquare"
 			subtitle: "Determined Destiny"
@@ -181,29 +181,28 @@
 			hide: true
 			id: "1799D40CDE8D8F82"
 			tasks: [{
-				id: "7106D78AD137F801"
-				type: "observation"
-				title: "Find a God Altar"
+				id: "48DCF78AE0944A03"
+				type: "woldsvaults:vault_level"
+				title: "Reach Level 40"
 				icon: {
 					id: "the_vault:god_altar"
 					Count: 1b
 					tag: {
-						god: "idona"
+						god: "tenos"
 					}
 				}
-				timer: 0L
-				observe_type: 0
-				to_observe: "the_vault:god_altar"
+				value: 40
 			}]
 			rewards: [{
 				id: "6F5E730FDA139604"
 				type: "item"
 				item: "the_vault:vault_diamond"
+				count: 8
 			}]
 		}
 		{
 			title: "Warding Your Inventory"
-			x: -6.75d
+			x: -7.25d
 			y: -1.0d
 			shape: "rsquare"
 			subtitle: "KeepInventory=true"
@@ -233,7 +232,7 @@
 		}
 		{
 			title: "Bigger Modifiers"
-			x: -8.25d
+			x: -9.25d
 			y: 2.5d
 			shape: "rsquare"
 			subtitle: "Make My Modifier Grow!"
@@ -251,6 +250,7 @@
 			tasks: [{
 				id: "79772958EF616B60"
 				type: "observation"
+				title: "Find a Modifier Archive"
 				icon: "the_vault:modifier_discovery"
 				timer: 0L
 				observe_type: 0
@@ -265,7 +265,7 @@
 		}
 		{
 			title: "Potion Seller!"
-			x: -9.25d
+			x: -10.25d
 			y: 2.5d
 			shape: "rsquare"
 			subtitle: "Give Me Your Strongest Potions"
@@ -283,6 +283,7 @@
 			tasks: [{
 				id: "21817CFEE523A409"
 				type: "observation"
+				title: "Find an Alchemy Archive"
 				icon: "the_vault:alchemy_archive"
 				timer: 0L
 				observe_type: 0
@@ -308,14 +309,14 @@
 							color: 16777215
 							type: 0
 						}]
-						size: 10
-						instability: 0.01f
 						model: 0
 						time: 400
+						size: 10
+						instability: 0.01f
 					}
 				}
 			}
-			x: -7.25d
+			x: -7.75d
 			y: 2.5d
 			shape: "rsquare"
 			subtitle: "Got Your Quill With You?"
@@ -354,8 +355,8 @@
 		}
 		{
 			title: "Death In Spirit"
-			x: -2.75d
-			y: -1.0d
+			x: -11.25d
+			y: 0.25d
 			shape: "rsquare"
 			subtitle: "Body Recovery"
 			description: [
@@ -372,7 +373,7 @@
 				"&5The Locker will apply to all future Vaults you make until the Debt is paid. You will not gain any experience in Vaults with The Locker."
 			]
 			hide_dependency_lines: true
-			dependencies: ["2EC8B80AE1A271D5"]
+			dependencies: ["148669A61C9EFBF4"]
 			hide: true
 			id: "5A04F0E50CF5F17F"
 			tasks: [{
@@ -421,7 +422,7 @@
 		}
 		{
 			title: "Loot n' Plunder"
-			x: -6.75d
+			x: -7.25d
 			y: -2.0d
 			shape: "rsquare"
 			subtitle: "An Experience All It's Own"
@@ -451,7 +452,7 @@
 		}
 		{
 			title: "BOSS BATTLE!"
-			x: -2.75d
+			x: -2.25d
 			y: 0.25d
 			shape: "pentagon"
 			subtitle: "Neighborhood or a City Boss?"
@@ -460,9 +461,9 @@
 				""
 				"&5These ones are a bit more difficult, as you will be fighting a big Boss type enemy. But to summon this boss, you'll need to find Runes."
 				""
-				"&5Runes'll occasionally spawn in chests, and you'll need 5 of them to summon the boss. Each rune'll have a Positive and a Negative effect on them."
+				"&5Runes'll occasionally spawn in chests, and you'll need at least 5 of them to summon the boss. Each rune will modify the boss's health, damage, and how often they use their abilities; as well as adding a reward."
 				""
-				"&5The positive effect'll usually be something like a rare piece of loot. But to get that, ye'll be adding some kind of ability to the Boss. Like a special attack, or more health, etc."
+				"&5You can add more than 5 runes to increase the rewards, but keep in mind that at 20, 40, and 60 runes the Boss will get extra special abilities."
 				""
 				"&5You can get a good selection of Runes to build up the Boss how you want. Just take the Runes back to the first room, put them in the Pedestal, and then kill the boss. Easy peasy."
 			]
@@ -470,10 +471,15 @@
 			hide: true
 			id: "4D05DB966C33B676"
 			tasks: [{
-				id: "6A7EEA330205C81B"
-				type: "item"
-				title: "Loot a Boss Rune"
-				item: "the_vault:boss_rune"
+				id: "0D87FC063527AFA3"
+				type: "woldsvaults:vault_level"
+				title: "Reach Level 50"
+				icon: {
+					id: "the_vault:boss_rune"
+					Count: 1b
+					tag: { }
+				}
+				value: 50
 			}]
 			rewards: [{
 				id: "4E2F07D3E394D0A0"
@@ -513,8 +519,8 @@
 		}
 		{
 			title: "God Affinity and Reputation"
-			x: -5.25d
-			y: -1.0d
+			x: -4.25d
+			y: -2.0d
 			shape: "rsquare"
 			subtitle: "The Gods are Fickle"
 			description: [
@@ -553,35 +559,31 @@
 		}
 		{
 			title: "Many Builds"
-			x: -5.25d
-			y: -3.0d
+			icon: "the_vault:skill_altar"
+			x: -4.75d
+			y: -1.0d
 			shape: "rsquare"
 			subtitle: "Swap Like Gear"
 			description: [
-				"&5If you want to play around with different builds, the Skill Altar is a must."
+				"&5If you want to play around with different builds, the &lSkill Altar &l&5is a must."
 				""
 				"&5It lets you save your Skill and Talents chosen and recall them later, for much less cost of Vault Gold."
+				""
+				"&5&lDue to a bug, skill altars are disabled by default. They can be re-enabled via a gamerule."
 			]
 			hide_dependency_lines: true
 			dependencies: ["2EC8B80AE1A271D5"]
 			hide: true
 			id: "6B6D6C7C538FCDB8"
 			tasks: [{
-				id: "3BE46E270FCB9CD1"
-				type: "item"
-				item: "the_vault:skill_altar"
-			}]
-			rewards: [{
-				id: "7C1E31D169CC8E27"
-				type: "item"
-				item: "the_vault:vault_gold"
-				count: 8
+				id: "5FCAB34EF968843E"
+				type: "checkmark"
 			}]
 		}
 		{
 			title: "50, Halfway Down"
 			icon: "the_vault:neuralizer"
-			x: -0.25d
+			x: 0.25d
 			y: 0.25d
 			shape: "pentagon"
 			subtitle: "Or Halfway Up?"
@@ -599,8 +601,11 @@
 			dependency_requirement: "one_completed"
 			id: "0332B6DA83347AEB"
 			tasks: [{
-				id: "47166A052A188D22"
-				type: "checkmark"
+				id: "525AA8F25F196DCC"
+				type: "woldsvaults:vault_level"
+				title: "Reach Level 50"
+				icon: "the_vault:neuralizer"
+				value: 50
 			}]
 			rewards: [{
 				id: "7AF5BD6504EA5554"
@@ -611,7 +616,7 @@
 		}
 		{
 			title: "A Suit For Every Occasion"
-			x: -2.75d
+			x: -2.25d
 			y: 1.5d
 			shape: "rsquare"
 			subtitle: "Where's My Super Suit?!"
@@ -638,8 +643,8 @@
 		}
 		{
 			title: "A Bit Chaotic"
-			x: -1.25d
-			y: 3.5d
+			x: -0.25d
+			y: -1.0d
 			shape: "rsquare"
 			subtitle: "My Focus is Wobbly"
 			description: [
@@ -650,7 +655,7 @@
 				"&5Good if you got a bunch of Prefix and Suffixes you want, but some of them rolled low in their ranges."
 			]
 			hide_dependency_lines: true
-			dependencies: ["2EC8B80AE1A271D5"]
+			dependencies: ["0332B6DA83347AEB"]
 			hide: true
 			id: "70C2A6B274238476"
 			tasks: [{
@@ -665,39 +670,9 @@
 			}]
 		}
 		{
-			title: "Fundamentally Better"
-			x: -0.25d
-			y: 3.5d
-			shape: "rsquare"
-			subtitle: "Ex Bawx"
-			description: [
-				"&5The last section of stats for a piece of gear I haven't fully explained are the Implicits."
-				""
-				"&5These are the things like Attack Damage, Range, and some special abilities only roll as implicits."
-				""
-				"&5Like Endergized for Magnets, or Channeling for Tridents."
-				""
-				"&5The Fundamental Focus rerolls all Implicits, giving you a chance at a higher roll, and some additional abilities."
-			]
-			hide_dependency_lines: true
-			dependencies: ["2EC8B80AE1A271D5"]
-			hide: true
-			id: "6D4ECD8F4B33AF24"
-			tasks: [{
-				id: "304008F23AC7EE79"
-				type: "item"
-				item: "the_vault:fundamental_focus"
-			}]
-			rewards: [{
-				id: "5FD1DAC426963A6C"
-				type: "item"
-				item: "the_vault:fundamental_focus"
-			}]
-		}
-		{
 			title: "Before and After"
-			x: -1.25d
-			y: 2.5d
+			x: 0.75d
+			y: 1.5d
 			shape: "rsquare"
 			subtitle: "Wax On, Wax Off"
 			description: [
@@ -708,7 +683,7 @@
 				"&5Really helps you narrow down a piece of gear to work with your build."
 			]
 			hide_dependency_lines: true
-			dependencies: ["2EC8B80AE1A271D5"]
+			dependencies: ["0E520C1ADD9E71DF"]
 			hide: true
 			id: "77761C3A93EA70CC"
 			tasks: [
@@ -737,8 +712,8 @@
 			]
 		}
 		{
-			title: "Spooky Door"
-			x: -8.25d
+			title: "A Spooky Door"
+			x: -9.25d
 			y: 1.5d
 			shape: "rsquare"
 			subtitle: "Dungeons of Dread, and More"
@@ -783,7 +758,7 @@
 		}
 		{
 			title: "A Vault Celebration"
-			x: -6.25d
+			x: -6.75d
 			y: -3.0d
 			shape: "rsquare"
 			subtitle: "Obvious, It's a Lie"
@@ -817,7 +792,7 @@
 		}
 		{
 			title: "A Little Bit of Chaos"
-			x: -7.25d
+			x: -7.75d
 			y: -3.0d
 			shape: "rsquare"
 			subtitle: "Maybe More Than a Little"
@@ -850,7 +825,7 @@
 		{
 			title: "Supremely Strong Anvil"
 			x: -2.25d
-			y: -2.0d
+			y: -1.0d
 			shape: "rsquare"
 			subtitle: "Fairly Looney, a Little Tooney"
 			description: [
@@ -879,8 +854,8 @@
 		}
 		{
 			title: "Box of Mod Goodness"
-			x: -7.25d
-			y: 1.5d
+			x: -7.75d
+			y: 3.5d
 			shape: "rsquare"
 			subtitle: "What's In the Box? Well, What Do You Know?"
 			description: [
@@ -907,7 +882,7 @@
 		}
 		{
 			title: "Monsterous View"
-			x: -2.75d
+			x: -2.25d
 			y: 3.5d
 			shape: "rsquare"
 			subtitle: "We Got Holograms?!"
@@ -935,7 +910,7 @@
 		}
 		{
 			title: "Dungeon Vision"
-			x: -9.25d
+			x: -10.25d
 			y: -1.0d
 			shape: "rsquare"
 			subtitle: "I See a Challenge!"
@@ -945,7 +920,7 @@
 				"&5This'll cause Dungeon Doors to highlight while you are in that Vault. Very helpful."
 			]
 			hide_dependency_lines: true
-			dependencies: ["2EC8B80AE1A271D5"]
+			dependencies: ["1881243BF68F0FAC"]
 			hide: true
 			id: "5E76F2D1629500C0"
 			tasks: [{
@@ -961,7 +936,7 @@
 		}
 		{
 			title: "Seeking Relics"
-			x: -9.25d
+			x: -10.25d
 			y: -2.0d
 			shape: "rsquare"
 			subtitle: "Guaranteed Parchment"
@@ -989,7 +964,7 @@
 		}
 		{
 			title: "Phenomenal Power!"
-			x: -8.25d
+			x: -9.25d
 			y: -3.0d
 			shape: "rsquare"
 			subtitle: "Itty Bitty Health Bar"
@@ -1001,8 +976,12 @@
 				"&5But their health plumets to 1 HP... usually."
 			]
 			hide_dependency_lines: true
-			dependencies: ["2EC8B80AE1A271D5"]
+			dependencies: [
+				"4905625BD3C4B3C4"
+				"0E520C1ADD9E71DF"
+			]
 			hide: true
+			dependency_requirement: "one_completed"
 			id: "1200CB57AA912FF4"
 			tasks: [{
 				id: "42A396C3E83A347A"
@@ -1017,7 +996,7 @@
 		}
 		{
 			title: "Pylon View"
-			x: -8.25d
+			x: -9.25d
 			y: -2.0d
 			shape: "rsquare"
 			subtitle: "Need Additional Pylons"
@@ -1027,8 +1006,12 @@
 				"&5Pylons are those little buffing crystals scattered around. The ones that add strength, or vault time, etc."
 			]
 			hide_dependency_lines: true
-			dependencies: ["2EC8B80AE1A271D5"]
+			dependencies: [
+				"0E520C1ADD9E71DF"
+				"4905625BD3C4B3C4"
+			]
 			hide: true
+			dependency_requirement: "one_completed"
 			id: "7F307FBDEDC63F14"
 			tasks: [{
 				id: "3906CE209E0117D2"
@@ -1043,8 +1026,8 @@
 		}
 		{
 			title: "Cap of the Gods"
-			x: -5.25d
-			y: -2.0d
+			x: -4.75d
+			y: -3.0d
 			shape: "rsquare"
 			subtitle: "Pray to My Altar"
 			description: [
@@ -1059,8 +1042,8 @@
 			tasks: [{
 				id: "60F0944ABB06D46A"
 				type: "item"
-				title: "Any God Offering"
-				item: "the_vault:god_offering"
+				title: "Any God Capstone"
+				item: "the_vault:god_token"
 			}]
 			rewards: [{
 				id: "09DAA2B5603F5B65"
@@ -1070,7 +1053,7 @@
 		}
 		{
 			title: "Vendoor Vision"
-			x: -8.25d
+			x: -9.25d
 			y: -1.0d
 			shape: "rsquare"
 			subtitle: "Sale-o-vision"
@@ -1098,7 +1081,7 @@
 		}
 		{
 			title: "Enchanted Testing"
-			x: -9.25d
+			x: -10.25d
 			y: -3.0d
 			shape: "rsquare"
 			subtitle: "Magic in the Air"
@@ -1110,8 +1093,12 @@
 				"&5With the Enchanted Capstone, it'll add a custom modifier: Enchanted. Every so often some sort of event will happen while you run that Vault. If this works, I have an idea brewing..."
 			]
 			hide_dependency_lines: true
-			dependencies: ["1881243BF68F0FAC"]
+			dependencies: [
+				"4905625BD3C4B3C4"
+				"0E520C1ADD9E71DF"
+			]
 			hide: true
+			dependency_requirement: "one_completed"
 			id: "08DF894A687E7AAB"
 			tasks: [{
 				id: "711CDCF51B4A2B34"
@@ -1126,7 +1113,7 @@
 		}
 		{
 			title: "Wallhacks"
-			x: -8.75d
+			x: -9.25d
 			y: 3.5d
 			shape: "rsquare"
 			subtitle: "Sight Beyond Sight"
@@ -1140,7 +1127,10 @@
 				"&5Not to mention, it may be hard to pick out what you want from the visual noise."
 			]
 			hide_dependency_lines: true
-			dependencies: ["2EC8B80AE1A271D5"]
+			dependencies: [
+				"4905625BD3C4B3C4"
+				"0E520C1ADD9E71DF"
+			]
 			hide: true
 			id: "52CC29799F792FCB"
 			tasks: [{
@@ -1156,14 +1146,14 @@
 		}
 		{
 			title: "Godly Shaped Rocks"
-			x: -4.25d
+			x: -5.25d
 			y: -2.0d
 			shape: "rsquare"
 			subtitle: "One For Each God"
 			description: [
 				"&5With a God Offering and the accompanying theme Augment, you can create a special God item that works like a Vault Rock. "
 				""
-				"&5This should help you gain Reputation with specific Gods faster, to build out your Divine Paradox better."
+				"&5This should help you gain Reputation with specific Gods faster."
 				""
 				"&5So, make one of these four special God items, and put them onto your Vault Altar like any other Vault Rock. Completing the Vault Crystal will get you a special Zealot Vault."
 				""
@@ -1199,12 +1189,13 @@
 				id: "293DB6E6E47E5F9A"
 				type: "item"
 				item: "the_vault:vault_diamond"
+				count: 8
 			}]
 		}
 		{
 			title: "A Little Eccentric"
-			x: -0.25d
-			y: 2.5d
+			x: 0.75d
+			y: -1.0d
 			shape: "rsquare"
 			subtitle: "In Other Words : Unusual (Affectionate)"
 			description: [
@@ -1213,7 +1204,7 @@
 				"&5This Focus lets you add an Unusual modifier. These are modifiers ye can't usually get on that piece of gear."
 			]
 			hide_dependency_lines: true
-			dependencies: ["2EC8B80AE1A271D5"]
+			dependencies: ["0332B6DA83347AEB"]
 			hide: true
 			id: "5BBB1921175BF0C4"
 			tasks: [{
@@ -1229,8 +1220,8 @@
 		}
 		{
 			title: "Hammering Out Some Accessories"
-			x: -4.25d
-			y: 2.5d
+			x: -4.75d
+			y: 3.5d
 			shape: "rsquare"
 			subtitle: "Baubled Preferences"
 			description: [
@@ -1301,19 +1292,19 @@
 		}
 		{
 			title: "A Powerful Weave"
-			x: -4.75d
-			y: 3.5d
+			x: -4.25d
+			y: 2.5d
 			shape: "rsquare"
 			subtitle: "Sewing Destiny"
 			description: [
-				"&5The Weaving Station is used to craft other Trinket Pouches."
+				"&5The Weaving Station is used to craft Trinket Pouches."
 				""
 				"&5By default, you can craft one of three starting Trinket Pouches with it, which give you some combination of the three Trinket colors : Blue, Red, and Green."
 				""
 				"&5There are also special Trinket Pouch recipes you will have to find and loot!"
 			]
 			hide_dependency_lines: true
-			dependencies: ["5DA329FC1A2F69DA"]
+			dependencies: ["59D6A7EF6A2A5123"]
 			hide: true
 			id: "2FD33954095C8638"
 			tasks: [{
@@ -1330,8 +1321,8 @@
 		}
 		{
 			title: "Modding Boxes of Mod Boxes"
-			x: -6.25d
-			y: 1.5d
+			x: -6.75d
+			y: 3.5d
 			shape: "rsquare"
 			subtitle: "Boxing Boxed Boxes Box"
 			description: [
@@ -1341,7 +1332,7 @@
 				""
 				"&5To craft a specific box, you must have that mod Researched."
 				""
-				"&4(RESEARCH REQUIRED)"
+				"&4&lThis workstation requires Research!"
 			]
 			hide_dependency_lines: true
 			dependencies: ["4258E78EC459B8E3"]
@@ -1361,8 +1352,8 @@
 		}
 		{
 			title: "Fruit By The Vault"
-			x: -10.5d
-			y: 0.25d
+			x: -7.75d
+			y: 1.5d
 			shape: "rsquare"
 			subtitle: "Sweet, Sweet Time"
 			description: [
@@ -1392,22 +1383,22 @@
 		}
 		{
 			title: "Voiding Possibilities"
-			x: -3.25d
+			x: -2.75d
 			y: -3.0d
 			shape: "rsquare"
 			subtitle: "Just Say No"
 			description: [
 				"&5By Researching Junk Management, you gain access to a helpful tool to keeping your backpacks and inventory clear of extra blocks, especially if you use a hammer : The Void Crucible."
 				""
-				"&5The Void Crucible will let you craft a Void Pendant in the top tab, using Vault Gold and Vault Alloy. When worn, it will automatically void and destroy any non-Vault resource related blocks (such as the blocks that make up the floor, walls, and ceilings)."
+				"&5The Void Crucible lets you choose which blocks to void or keep when you have your magnet in Pickup + Void mode."
 				""
 				"&5Blocks voided this way won't take durability from your Magnet."
 				""
-				"&5In the Void Crucible UI, in the middle tab, you can look through the different themes and select blocks to blacklist and disable voiding on."
+				"&5In the Void Crucible UI, in the top tab, you can look through the different themes and select blocks to blacklist and disable voiding on."
 				""
-				"&5The third tab will show you all the items you have blacklisted, and you can click to remove them."
+				"&5The bottom tab will show you all the items you have blacklisted, and you can click to remove them."
 				""
-				"&4(RESEARCH REQUIRED)"
+				"&5&lVOID CRUCIBLE REQUIRES RESEARCH."
 			]
 			hide_dependency_lines: true
 			dependencies: ["2EC8B80AE1A271D5"]
@@ -1427,12 +1418,12 @@
 		}
 		{
 			title: "A Filter of the Void"
-			x: -2.25d
+			x: -1.75d
 			y: -3.0d
 			shape: "rsquare"
 			subtitle: "More Void Power"
 			description: [
-				"&5The issue with the Void Crucible and Void Stone, as they are, is that they void all non-Vault blocks, and the blacklist function has a max of 54 blocks to save from Voiding."
+				"&5The issue with the Void Crucible and Voiding pickup mode, as they are, is that they void all non-Vault blocks, and the blacklist function has a max of 54 blocks to save from Voiding."
 				""
 				"&5Which is an issue as, especially in Wolds, there are LOTS of great blocks you might want to keep for your own builds or resources."
 				""
@@ -1440,7 +1431,9 @@
 				""
 				"&5Hold the Filter Necklace and Right Click with it to open it up, and you can fit plenty of Filters or Attribute Filters in."
 				""
-				"&5Then when worn, the Filter Necklace will only void blocks that match the settings in any filters you have inside it."
+				"&5When worn, the Filter Necklace will only void blocks that match the settings in any filters you have inside it."
+				""
+				"&5&lThe Filter Necklace unlocks with the Void Crucible research!"
 			]
 			hide_dependency_lines: true
 			dependencies: ["6CA424DD23A91F38"]
@@ -1460,7 +1453,7 @@
 		}
 		{
 			title: "Just Like New"
-			x: -3.25d
+			x: -2.25d
 			y: -2.0d
 			shape: "rsquare"
 			subtitle: "Ignore The Scuff Marks"
@@ -1489,6 +1482,141 @@
 				id: "24EDEEC339CA4223"
 				type: "item"
 				item: "the_vault:repair_core"
+			}]
+		}
+		{
+			title: "A Stylish Drink"
+			icon: {
+				id: "the_vault:transmog_brew"
+				Count: 1b
+				tag: { }
+			}
+			x: -1.75d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "Mi Armario Su Armario"
+			description: [
+				"&5Are you playing on a server with other players? Have one of you found that ultra rare transmog that everyone else wants?"
+				""
+				"&5Then you want to make the &lTransmog Brew! &r&5With this, the person who crafts it can share the Transmogs they've unlocked with someone else!"
+				""
+				"&5Keep in mind, this does not include special transmogs, such as those unlocked for God Reputation, special unlock conditions, etc."
+			]
+			hide_dependency_lines: true
+			id: "27746D27BE9B318F"
+			tasks: [{
+				id: "46F171754575D94B"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Fundamentally Better"
+			x: -0.25d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "Ex Bawx"
+			description: [
+				"&5The last section of stats for a piece of gear I haven't fully explained are the Implicits."
+				""
+				"&5These are the things like Attack Damage, Range, and some special abilities only roll as implicits."
+				""
+				"&5Like Endergized for Magnets, or Channeling for Tridents."
+				""
+				"&5The Fundamental Focus rerolls all Implicits, giving you a chance at a higher roll, and some additional abilities."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0E520C1ADD9E71DF"]
+			hide: true
+			id: "6D4ECD8F4B33AF24"
+			tasks: [{
+				id: "304008F23AC7EE79"
+				type: "item"
+				item: "the_vault:fundamental_focus"
+			}]
+			rewards: [{
+				id: "5FD1DAC426963A6C"
+				type: "item"
+				item: "the_vault:fundamental_focus"
+			}]
+		}
+		{
+			title: "It's (Not) A Trap"
+			x: -10.25d
+			y: 3.5d
+			shape: "rsquare"
+			subtitle: "Trap Disarm (100)"
+			description: [
+				"&5If you are sick and tired of finding so many trapped chests, but don't have enough Jewels to slap Trap Disarm on your Vault Tool, then the Avarice Capstone may be helpful to you."
+				""
+				"&5Applying this Capstone to a Vault Crystal will negate almost all Trap chances."
+			]
+			hide_dependency_lines: true
+			dependencies: ["148669A61C9EFBF4"]
+			id: "732406F174C9C52D"
+			tasks: [{
+				id: "00BAA2BCF0B9E49E"
+				type: "item"
+				item: "the_vault:eye_of_avarice"
+			}]
+			rewards: [{
+				id: "5D05E6B9F9AD95FC"
+				type: "item"
+				item: "the_vault:eye_of_avarice"
+			}]
+		}
+		{
+			title: "A Bigger Challenge"
+			icon: {
+				id: "the_vault:sigil"
+				Count: 1b
+				tag: {
+					SigilId: "adept"
+					SigilModel: "the_vault:sigil/adept_sigil#inventory"
+				}
+			}
+			x: -6.75d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "More Risk, More Reward"
+			description: [
+				"&5If you are wanting a tougher challenge and better rewards, then you can apply a Sigil to your Vault Crystal."
+				""
+				"&5Sigils come in 5 tiers, each tier adding more difficulty to the Vault, but also increasing the Crate tier, which increases the rewards inside it if you complete the Objective."
+				""
+				"&5The first four tiers are craftable, but the 5th their can only be found in Treasure Sand."
+			]
+			hide_dependency_lines: true
+			dependencies: ["2EC8B80AE1A271D5"]
+			id: "40501DEB1228E048"
+			tasks: [{
+				id: "50B69AE2FDB65D6F"
+				type: "item"
+				title: "Any Sigil"
+				icon: {
+					id: "the_vault:sigil"
+					Count: 1b
+					tag: {
+						SigilId: "adept"
+						SigilModel: "the_vault:sigil/adept_sigil#inventory"
+					}
+				}
+				item: {
+					id: "the_vault:sigil"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "163810DECBDA01CA"
+				type: "item"
+				item: {
+					id: "the_vault:sigil"
+					Count: 1b
+					tag: {
+						SigilId: "adept"
+						SigilModel: "the_vault:sigil/adept_sigil#inventory"
+					}
+				}
 			}]
 		}
 	]

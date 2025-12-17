@@ -163,12 +163,6 @@
 				"To run Vaults with other players, you should form a party. You can do &6/party create&r, then &6/party invite player&r, where player is the name of the person you want to group with."
 				""
 				"To join a different party or go solo, be sure to do &6/party leave&r!"
-				""
-				"&5Normally, the experience you earn in a Vault is not shared. The mobs you fight, the chests you loot, only give YOU experience. You can change a gamerule so that parties share some amount of experience : "
-				""
-				"&6/gamerule vaultXPShare amount&r : change amount to one of the following : "
-				"     Option 1"
-				"     Option 2"
 			]
 			dependencies: ["4CA0844372B19F19"]
 			hide: true
@@ -198,6 +192,8 @@
 				"&6/gamerule VaultMode Casual :&r You get your items back if you die, but they take some durability damage."
 				""
 				"&6/gamerule VaultMode Hardcore :&r You lose everything on you if you die in a Vault. No purchasing your stuff back."
+				""
+				"&6/gamerule VaultMode Royale :&r All Vault Crystals that come from basic Vault Rocks become Royale Vaults, a roguelike/battle royale style of Vault."
 			]
 			dependencies: ["2E8B1B1D23FEAF8E"]
 			hide: true
@@ -327,7 +323,6 @@
 				id: "the_vault:trinket"
 				Count: 1b
 				tag: {
-					vaultUses: 28
 					vaultGearData: [L;
 						-8527086985746807220L
 						-5867191529188746856L
@@ -348,6 +343,7 @@
 						colors: [B; ]
 						rarity: [B; ]
 					}
+					vaultUses: 28
 				}
 			}
 			x: 3.0d

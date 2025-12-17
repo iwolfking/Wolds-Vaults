@@ -10,36 +10,50 @@
 	quests: [
 		{
 			title: "Decked Again"
+			icon: {
+				id: "the_vault:card_deck"
+				Count: 1b
+				tag: {
+					id: "starter"
+				}
+			}
 			x: -1.25d
 			y: -2.0d
 			shape: "hexagon"
 			subtitle: "Gut of the Cards"
 			description: [
-				"&5Cards and Card Decks are a new mechanic that starts at level 50. You open Card Packs and get a couple cards to choose from."
+				"&5Cards and Card Decks are a new mechanic that starts at level 50. When you open a card pack, you get a couple cards to choose from."
 				""
 				"&5These cards can be as simple as +1% Item Quantity, or +3 Attack, etc. They can also give you loot, like +2 Vault Gold per 15 Dwellers Killed."
 				""
 				"&5Cards can have special restrictions such as \"only one Temporal card\" or \"for each diagonal Red card\"."
 				""
-				"&5Then you will need a Card Deck. This is a special Curio you place cards into, then equip to apply the bonuses from the cards next time you enter a Vault."
+				"&5To utilize cards, you'll need to start with the Deck Station, and craft yourself a Starter Deck. Right Click to open the deck and place cards into it, then place the deck in it's Curio slot."
+				""
+				"&5Notice that some slots in your Deck have a glowing outline. These are slots that can ONLY hold Arcane cards!"
 				""
 				"&5It's important to note : Resources you gain from cards are only obtained IF you get the Completion Crate!"
-				""
-				"&5Oh, you should make the Starter deck real quick. It's a small but servicable starting Card Deck."
 			]
 			dependencies: ["0332B6DA83347AEB"]
 			id: "24E1C6762864AEC6"
-			tasks: [{
-				id: "4A4412C26112AAC3"
-				type: "item"
-				item: {
-					id: "the_vault:card_deck"
-					Count: 1b
-					tag: {
-						id: "starter"
+			tasks: [
+				{
+					id: "4A4412C26112AAC3"
+					type: "item"
+					item: "the_vault:deck_station"
+				}
+				{
+					id: "7768B57140E22C43"
+					type: "item"
+					item: {
+						id: "the_vault:card_deck"
+						Count: 1b
+						tag: {
+							id: "starter"
+						}
 					}
 				}
-			}]
+			]
 			rewards: [{
 				id: "33E3116058C5A4CC"
 				type: "item"
@@ -88,6 +102,7 @@
 		}
 		{
 			title: "G...50..."
+			icon: "the_vault:grid_gateway"
 			x: 3.25d
 			y: -2.0d
 			shape: "hexagon"
@@ -111,13 +126,8 @@
 			hide: true
 			id: "504DC166104A8063"
 			tasks: [{
-				id: "7640B9D7A9C3A4A7"
-				type: "observation"
-				title: "Find a Grid Gateway"
-				icon: "the_vault:grid_gateway"
-				timer: 0L
-				observe_type: 0
-				to_observe: "the_vault:grid_gateway"
+				id: "619D08C220484EAD"
+				type: "checkmark"
 			}]
 			rewards: [{
 				id: "4C27AFB370438803"
@@ -127,14 +137,15 @@
 		}
 		{
 			title: "The Challenge"
-			x: 13.25d
+			icon: "the_vault:soul_flame"
+			x: 12.5d
 			y: -2.0d
 			shape: "pentagon"
 			subtitle: "Win Streak"
 			description: [
 				"&5Okay, Level 65 is around where the new mechanics stop for the current version of Vanilla VH. Though you already have your hands full with enhanced vaults."
 				""
-				"&5You might as well know : other than the final boss fight with the Herald, you also open up the Challenger's Vault Rock."
+				"&5You might as well know : other than the final boss fight with the Herald, you also open up the &lChallenger's Vault Rock."
 				""
 				"&5This is a special Vault Rock that, well...challenges you to complete as many Vaults as you can in a row."
 				""
@@ -142,34 +153,28 @@
 				""
 				"&5Eventually the Vaults will become too difficult to complete, and you'll lose the Challenger Vault Rock. But you'll get a thing called Embers depending on how many Vaults you completed."
 				""
-				"&5Aye, and you can make an Ascension Forge to spend your Embers on. Ye can buy special Transmogs, or Titles that'll show up with your name in Chat."
+				"&5You can make an &lAscension Forge &r&5to spend your Embers on. Ye can buy special Transmogs, or Titles that'll show up with your name in Chat."
 			]
 			dependencies: ["73F19D407DDBD157"]
 			hide: true
 			dependency_requirement: "one_completed"
 			id: "783B07D340595603"
-			tasks: [
-				{
-					id: "6FF9408C6988EE37"
-					type: "item"
-					item: "the_vault:soul_flame"
-				}
-				{
-					id: "325FA51F997643C5"
-					type: "item"
-					item: "the_vault:ascension_forge"
-				}
-			]
+			tasks: [{
+				id: "55A7B143D76A1571"
+				type: "woldsvaults:vault_level"
+				title: "Reach Level 65"
+				icon: "the_vault:ascension_forge"
+				value: 65
+			}]
 			rewards: [{
-				id: "7130D40081ED3288"
+				id: "18216CECAFDE1257"
 				type: "item"
-				item: "the_vault:black_chromatic_steel_ingot"
-				count: 2
+				item: "the_vault:soul_flame"
 			}]
 		}
 		{
 			title: "Strong Like Box"
-			x: -1.25d
+			x: 1.5d
 			y: -0.75d
 			shape: "rsquare"
 			subtitle: "So Full of Loot"
@@ -222,7 +227,7 @@
 		}
 		{
 			title: "BINGO!"
-			x: 3.75d
+			x: 2.75d
 			y: -3.25d
 			shape: "rsquare"
 			subtitle: "No, Four Corners Doesn't Count!"
@@ -255,7 +260,7 @@
 		{
 			title: "A Bigger Challenge"
 			icon: "davebuildingmod:skeleton_5"
-			x: 10.5d
+			x: 10.25d
 			y: -2.0d
 			shape: "hexagon"
 			subtitle: "New Vault+"
@@ -280,8 +285,8 @@
 		}
 		{
 			title: "Elixir : Enchanted!"
-			x: 10.0d
-			y: -4.0d
+			x: 9.75d
+			y: -3.25d
 			shape: "rsquare"
 			subtitle: "An Enchanted Adventure"
 			description: [
@@ -312,8 +317,8 @@
 		}
 		{
 			title: "Braziers : Spirited!"
-			x: 11.0d
-			y: -4.0d
+			x: 10.75d
+			y: -3.25d
 			shape: "rsquare"
 			subtitle: "A Ghost of a Time"
 			description: [
@@ -345,8 +350,8 @@
 		}
 		{
 			title: "Scavenger : Unhinged!"
-			x: 10.5d
-			y: -3.0d
+			x: 10.25d
+			y: -4.25d
 			shape: "rsquare"
 			subtitle: "Looting Dreams and Nightmares"
 			description: [
@@ -379,7 +384,7 @@
 		}
 		{
 			title: "Bin? Bing? Bingo? Bingoo? Bingooooo?"
-			x: 2.75d
+			x: 3.75d
 			y: -3.25d
 			shape: "rsquare"
 			subtitle: "My Board's Bigger!"
@@ -389,6 +394,8 @@
 				"&5The Seal of the Architect is Bingo, but...expanded. The first Architect seal you add to a crystal makes it a 3x3 Bingo grid."
 				""
 				"&5And each additional one expands your board. 4x4, 5x5, 6x6, etc."
+				""
+				"&5There is also the Big Prophet Seal, which sets it to specifically a 5x5 grid."
 			]
 			hide_dependency_lines: true
 			dependencies: ["504DC166104A8063"]
@@ -407,8 +414,8 @@
 		}
 		{
 			title: "Charting the Limit"
-			x: 1.0d
-			y: -0.75d
+			x: 0.5d
+			y: 0.25d
 			shape: "rsquare"
 			subtitle: "Shape of : A Vault!"
 			description: [
@@ -439,7 +446,7 @@
 		}
 		{
 			title: "Runes : Brutal!"
-			x: 10.5d
+			x: 9.75d
 			y: -0.75d
 			shape: "rsquare"
 			subtitle: "Just a Mid Boss, Right?"
@@ -469,7 +476,7 @@
 		}
 		{
 			title: "The Main Boss"
-			x: 15.5d
+			x: 14.5d
 			y: -2.0d
 			shape: "pentagon"
 			subtitle: "Are You Ready?"
@@ -487,9 +494,11 @@
 			dependencies: ["783B07D340595603"]
 			id: "6CF74503417AAC2D"
 			tasks: [{
-				id: "2053BF07E0E265B2"
-				type: "item"
-				item: "the_vault:crystal_seal_herald"
+				id: "0D86E041CE2BD1FE"
+				type: "woldsvaults:vault_level"
+				title: "Reach Level 100"
+				icon: "the_vault:crystal_seal_herald"
+				value: 100
 			}]
 			rewards: [{
 				id: "705EC640EAE30F70"
@@ -499,7 +508,7 @@
 		}
 		{
 			title: "Bounty Posted"
-			x: 1.0d
+			x: 1.5d
 			y: 0.25d
 			shape: "rsquare"
 			subtitle: "Reward : A Gold Vaulter Box!"
@@ -563,8 +572,8 @@
 		}
 		{
 			title: "Bingo : Ballistic!"
-			x: 10.5d
-			y: 0.25d
+			x: 10.75d
+			y: -0.75d
 			shape: "rsquare"
 			subtitle: "Dab For Mercy"
 			description: [
@@ -595,8 +604,9 @@
 		}
 		{
 			title: "Liquid Cards"
-			x: -1.25d
-			y: -3.25d
+			icon: "the_vault:card_essence_extractor"
+			x: -2.25d
+			y: -2.5d
 			shape: "rsquare"
 			subtitle: "Squeezing Juice From Cardboard"
 			description: [
@@ -606,50 +616,44 @@
 				""
 				"&5You'll start collecting tons of useless commons. Well, they aren't useless, but they are taking up room."
 				""
-				"&5Enter the Card Essence Extractor. Put a card in the left side, apply a Redstone Signal, and the card gets 'juiced' into Essence."
+				"&5You can get some value out of these cards by throwing them into your Vault Recycler, turning them into Card Juice."
 				""
-				"&5This essence is needed to Upgrade certain types of cards. This improves them, but can be very costly."
+				"&5Card Juice can be used to upgrade more useful cards by using the Card Upgrade Station."
 				""
-				"&5The slot in the center holds any Card that can be upgraded with Essence. Usually Evolving or similar cards."
+				"&5Just insert some Card Juice, an upgradeable card you want to upgrade, and if you have enough Juice it'll power up the card!"
 			]
 			hide_dependency_lines: true
 			dependencies: ["24E1C6762864AEC6"]
 			hide: true
 			id: "6BD38C7D2E0BE866"
-			tasks: [{
-				id: "4BB709A7F36B1153"
-				type: "item"
-				item: "the_vault:card_essence_extractor"
-			}]
-			rewards: [
+			tasks: [
 				{
-					id: "6AD964F0C9E7AD56"
+					id: "4BB709A7F36B1153"
 					type: "item"
-					item: {
-						id: "the_vault:booster_pack"
-						Count: 1b
-						tag: {
-							id: "the_vault:default"
-						}
-					}
+					item: "the_vault:card_essence_extractor"
 				}
 				{
-					id: "6C91C1BF678C272B"
+					id: "3CE6267D3F4248CD"
 					type: "item"
-					item: {
-						id: "the_vault:booster_pack"
-						Count: 1b
-						tag: {
-							id: "the_vault:wild_pack"
-						}
-					}
+					item: "the_vault:card_juice"
 				}
 			]
+			rewards: [{
+				id: "6AD964F0C9E7AD56"
+				type: "item"
+				item: {
+					id: "the_vault:booster_pack"
+					Count: 1b
+					tag: {
+						id: "the_vault:default"
+					}
+				}
+			}]
 		}
 		{
 			title: "A Chest of Wonder"
-			x: 1.5d
-			y: -4.25d
+			x: 0.5d
+			y: -5.25d
 			shape: "rsquare"
 			subtitle: "Treasure!"
 			description: [
@@ -765,27 +769,41 @@
 			]
 		}
 		{
-			title: "Just a Little Corrupted"
-			x: 3.25d
+			title: "Sealed For Freshness"
+			icon: "the_vault:vorpal_focus"
+			x: 2.75d
 			y: -0.75d
 			shape: "rsquare"
-			subtitle: "Snicker Snack?"
+			subtitle: "Locking In Perfection"
 			description: [
-				"&5One of the new Foci you can find is called the Vorpal Focus."
+				"&5Have you found the perfect piece of gear?"
 				""
-				"&5It lets you add a \"Corrupted\" modifier to the Gear."
+				"&5Do you want a chance to make it even better?"
 				""
-				"&5Mostly, Corrupted is just another version of \"Greater\" or \"Legendary\" modifier. Higher tier, better."
+				"&5Then look no further than the Gear Sealer. Take your piece of Gear, place it into the Gear Sealer, add some Ascendant Marks, Gold, and Painite, and hit the button."
+				""
+				"&5When you seal a piece of gear, it will lock all stats on it, as well as the transmog, preventing you from changing them."
+				""
+				"&5It will also either add, or replace, one of the modifiers with a special modifier. The pool of modifiers includes + skill modifiers, as well as unique affixes."
+				""
+				"&5Sealing gear will not replace Frozen modifiers, however."
 			]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
 			hide: true
 			id: "13FDC7CE5E066C90"
-			tasks: [{
-				id: "6F812E7BC8B76BD9"
-				type: "item"
-				item: "the_vault:vorpal_focus"
-			}]
+			tasks: [
+				{
+					id: "6F812E7BC8B76BD9"
+					type: "item"
+					item: "the_vault:vorpal_focus"
+				}
+				{
+					id: "3C2ABD3CFFE5D3B9"
+					type: "item"
+					item: "the_vault:vault_sealer"
+				}
+			]
 			rewards: [{
 				id: "635B9CBC3536AE40"
 				type: "item"
@@ -794,7 +812,7 @@
 		}
 		{
 			title: "Treasure Vision"
-			x: 1.0d
+			x: 0.5d
 			y: -3.25d
 			shape: "rsquare"
 			subtitle: "I Smell Loot!"
@@ -820,8 +838,8 @@
 		}
 		{
 			title: "Peace and Quiet"
-			x: 2.75d
-			y: -4.25d
+			x: 1.5d
+			y: -3.25d
 			shape: "rsquare"
 			subtitle: "No Cap, For Real?"
 			description: [
@@ -852,8 +870,8 @@
 		}
 		{
 			title: "Big Box of Fun"
-			x: -2.5d
-			y: -2.0d
+			x: 0.5d
+			y: -0.75d
 			shape: "rsquare"
 			subtitle: "We're Beyond Mega Now"
 			description: [
@@ -880,7 +898,7 @@
 		{
 			title: "Hanging In There"
 			x: 3.75d
-			y: -4.25d
+			y: 0.25d
 			shape: "rsquare"
 			subtitle: "Come On Baby, Hold Together..."
 			description: [
@@ -907,7 +925,7 @@
 		}
 		{
 			title: "The Toughest Battle"
-			x: 18.25d
+			x: 16.5d
 			y: -2.0d
 			shape: "hexagon"
 			subtitle: "Wish We Had the Sword of the Cosmos..."
@@ -920,7 +938,7 @@
 				""
 				"&5Another is a charge up attack. You'll see glasses full of Time Sand or something in them. Run around and hit these before the charge up finishes!"
 				""
-				"&5Then there's what I call the Monster Mash phase. A lot of monsters will spawn in each wave, don't get bogged down!"
+				"&5Then there's what I call the Monster Mash phase. Five waves of monsters will spawn, and to get to the next stage you need to kill the mobs in the gray zone that shows up."
 				""
 				"&5Then the lootin phase. You need to find the Inhibitors in the Chests and throw em at the floating orbs."
 				""
@@ -949,7 +967,7 @@
 		{
 			title: "Suspending Belief"
 			x: 3.75d
-			y: 0.25d
+			y: -0.75d
 			shape: "rsquare"
 			subtitle: "Highlighting the Unique"
 			description: ["&5The Suspension Focus enables you to freeze specifically a Legendary, Corrupted, Greater, or Unusual modifier."]
@@ -970,8 +988,8 @@
 		}
 		{
 			title: "Egg of Surprises"
-			x: 13.25d
-			y: -0.75d
+			x: 10.25d
+			y: 0.25d
 			shape: "rsquare"
 			subtitle: "What Lay Inside?"
 			description: [
@@ -1001,7 +1019,7 @@
 				Count: 1b
 				tag: { }
 			}
-			x: 8.25d
+			x: 8.0d
 			y: -2.0d
 			shape: "hexagon"
 			subtitle: "Bout to Get Down"
@@ -1018,9 +1036,8 @@
 			hide: true
 			id: "455AD3A818283D5E"
 			tasks: [{
-				id: "01975E630A018989"
-				type: "item"
-				item: "the_vault:crystal_seal_vault_royale"
+				id: "56F2F4291DFBF181"
+				type: "checkmark"
 			}]
 			rewards: [{
 				id: "6FC1FD81FE8CD355"
@@ -1031,8 +1048,8 @@
 		{
 			title: "A Little Buddy"
 			icon: "the_vault:companion_egg"
-			x: 8.25d
-			y: -3.0d
+			x: 5.5d
+			y: -3.25d
 			shape: "rsquare"
 			subtitle: "You Got a Friend in Me"
 			description: [
@@ -1063,8 +1080,8 @@
 		}
 		{
 			title: "Winner Winner Crate Dinner"
-			x: 8.25d
-			y: -0.75d
+			x: 8.0d
+			y: -3.25d
 			shape: "rsquare"
 			subtitle: "A Tough Fought Reward"
 			description: [
@@ -1101,8 +1118,8 @@
 		{
 			title: "Companion Care"
 			icon: "the_vault:companion_heal"
-			x: 8.25d
-			y: -4.0d
+			x: 5.0d
+			y: -4.25d
 			shape: "rsquare"
 			subtitle: "Headpats and Snacks"
 			description: [
@@ -1142,12 +1159,13 @@
 		}
 		{
 			title: "A True Royale"
-			x: 8.25d
-			y: 0.25d
+			icon: "the_vault:crystal_seal_vault_royale_pvp"
+			x: 8.0d
+			y: -0.75d
 			shape: "rsquare"
 			subtitle: "No Bathrooms to Camp Though"
 			description: [
-				"&5If you are wanting to try the true Battle Royale experience on a server with other Players, you can use the PVP Royale Rock."
+				"&5If you are wanting to try the true Battle Royale experience on a server with other Players, you can use the &lPVP Royale Rock."
 				""
 				"&5Like the normal PVP Rock, the second person to enter will start a 2 minute timer, then everyone will be scattered around the Vault. So choosing your Loadout in time is important!"
 			]
@@ -1156,20 +1174,14 @@
 			hide: true
 			id: "07833B9543B39AD1"
 			tasks: [{
-				id: "6522F50CDF6EDEA7"
-				type: "item"
-				item: "the_vault:crystal_seal_vault_royale_pvp"
-			}]
-			rewards: [{
-				id: "4CCD50B958AC0E63"
-				type: "item"
-				item: "the_vault:crystal_seal_vault_royale_pvp"
+				id: "538D9D668B61EF3D"
+				type: "checkmark"
 			}]
 		}
 		{
 			title: "A Wild Star"
-			x: 13.25d
-			y: -3.0d
+			x: 5.5d
+			y: -0.75d
 			shape: "rsquare"
 			subtitle: "Er, I mean Wold Star"
 			description: [
@@ -1195,8 +1207,8 @@
 		{
 			title: "Big Reinforcements"
 			icon: "woldsvaults:resonating_reinforcement"
-			x: 13.25d
-			y: -4.25d
+			x: 5.5d
+			y: 0.25d
 			shape: "rsquare"
 			subtitle: "I Didn't Forget Picking, Honest!"
 			description: [
@@ -1236,32 +1248,383 @@
 			]
 		}
 		{
-			title: "Bubble, Bubble... Toil and Trouble"
-			x: 5.75d
+			title: "Double, Double, Toil and Trouble"
+			icon: "woldsvaults:brewing_altar"
+			x: 5.5d
 			y: -2.0d
 			shape: "rsquare"
-			subtitle: "Brewing with the boys"
+			subtitle: "Nova Burn and Vaulter Bubble"
 			description: [
-				"&5A brand new objective, Alchemy, this one is a fun little twist on Scavenger Vaults!"
-				"&5While you kill mobs and open chests, you'll find alchemical ingredients sometimes! You can combine 3 of these at an Alchemy Table!"
-				"&5Mix and match different ingredients together to add good and bad modifiers to your vault and progress the completion bar!"
-				"&5If you are feeling greedy, you can even overfill the completion bar to add Crate Tiers, giving you a better reward crate! Eventually you'll be limited from adding any further."
+				"&5Level 50 brings you a wide variety of new Objectives, including the newest one : Alchemy Vaults."
+				""
+				"&5Alchemy is a twist on Scavenger Vaults : Looting chests and killing monsters will occasionally get you Alchemy ingredients, which you use to brew potions that add to a Completion Bar and add effects to the Vault."
+				""
+				"&5Each ingredient either adds or subtracts from the completion bar. They also may have a positive or negative modifier attached to them."
+				""
+				"&5You'll need 3 Ingredients before you can put them into a Brewing Altar. If an ingredient has a modifier attached, it'll have a chance of being added when you brew it unless you add 3 of the same ingredient! "
+				""
+				"&5Reach 100% completion bar and exit the vault to Complete it! If you want to push your luck, you can keep brewing potions, and you'll be rewarded with higher Crate tiers! Though note that you can only overfill by the Completion bar by so much before you can't brew any more."
 			]
 			dependencies: ["504DC166104A8063"]
 			id: "479A00BDE6E0257F"
 			tasks: [{
-				id: "48E1CCA130D230DE"
-				type: "observation"
-				title: "Find a Alchemy Table"
-				icon: "the_vault:alchemy_table"
-				timer: 0L
-				observe_type: 0
-				to_observe: "the_vault:alchemy_table"
+				id: "376CE55123737C90"
+				type: "checkmark"
 			}]
 			rewards: [{
 				id: "1D62E69D099D60A0"
 				type: "item"
 				item: "woldsvaults:crystal_seal_alchemy"
+			}]
+		}
+		{
+			title: "Cracking 'em Open"
+			x: -1.25d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "Welcome to my Unboxing Video!"
+			description: [
+				"&5Tired of opening Jewel Pouches and Card Booster Packs one by one?"
+				""
+				"&5Want a faster way of crushing bad cards into Card Juice and bad Jewels into Silver Scrap?"
+				""
+				"&5Then use the Unboxing Station! You can Right Click or Hopper your Booster Packs and Jewel Pouches into it, and then Right Click it to start opening them one after another."
+				""
+				"&5You'll get the full array of options to choose from, but with an extra option to recycle the pack or pouch immediately."
+			]
+			hide_dependency_lines: true
+			dependencies: ["24E1C6762864AEC6"]
+			id: "7E8686AD708EE163"
+			tasks: [{
+				id: "7D4F27E359E0E102"
+				type: "item"
+				item: "the_vault:unboxing_station"
+			}]
+			rewards: [
+				{
+					id: "0174DB44F875CA93"
+					type: "item"
+					item: {
+						id: "the_vault:jewel_pouch"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "08D68E7D3BE68C8F"
+					type: "item"
+					item: {
+						id: "the_vault:booster_pack"
+						Count: 1b
+						tag: {
+							id: "the_vault:arcane_pack"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Storing Your Collection"
+			x: -2.25d
+			y: -1.5d
+			shape: "rsquare"
+			subtitle: "Is This Theorycrafting?"
+			description: [
+				"&5You'll start collecting lots of cards in due time, especially if you are lucky enough to find certain Vault rooms."
+				""
+				"&5Keeping track of all your cards and building a deck with them can be quite daunting, which is where the Card Binder comes in handy!"
+				""
+				"&5This block can hold tons of cards, and has tabs and a search function to help sort your cards and find specific ones."
+				""
+				"&5There is also a slot for a Deck, so you can build your deck and see all the changes on the left!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["24E1C6762864AEC6"]
+			id: "5F6A6741417B04C5"
+			tasks: [{
+				id: "6ED37F833E18ACA3"
+				type: "item"
+				item: {
+					id: "the_vault:card_binder"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "2ED5F437ADF9AD15"
+				type: "item"
+				item: {
+					id: "the_vault:booster_pack"
+					Count: 1b
+					tag: {
+						id: "the_vault:arcane_pack"
+					}
+				}
+			}]
+		}
+		{
+			title: "Deck Power Up"
+			x: -1.25d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "Put a Little Bling On It"
+			description: [
+				"&5Every deck can be customized beyond what cards are placed into, but placing Deck Cores onto them!"
+				""
+				"&5The Deck Station has a variety of basic cores you can craft to add a bonus to your Deck. More advanced cores can be found while Vaulting. Look in places like Dungeons and special Omega rooms for them!"
+				""
+				"&5Each deck has a certain number of Sockets, which is what Cores are placed into, by combining the Deck and the Core in an Anvil."
+			]
+			hide_dependency_lines: true
+			dependencies: ["24E1C6762864AEC6"]
+			id: "555655179AE8CA32"
+			tasks: [{
+				id: "7C88B529A3CAF2B2"
+				type: "item"
+				title: "Any Deck Core"
+				icon: {
+					id: "the_vault:deck_socket"
+					Count: 1b
+					tag: {
+						ModifierModel: "the_vault:deck_cores/equilibrium_deck_core#inventory"
+					}
+				}
+				item: "the_vault:deck_socket"
+			}]
+			rewards: [{
+				id: "474DA1185D807114"
+				type: "item"
+				item: "the_vault:gem_pog"
+			}]
+		}
+		{
+			title: "Respec Your Companions"
+			x: 6.0d
+			y: -4.25d
+			shape: "rsquare"
+			subtitle: "No No No, Something Different!"
+			description: [
+				"&5Companions, when hatched, roll a Temporal Modifier. And sometimes, you don't want that Modifier, or you already have multiple companions with it!"
+				""
+				"&5For these situations, you can use a Companion Temporalizer! Place your Companion in a Companion Home, then Sneak + Right Click the Companion Temporalizer on the Home to reroll the Temporal Modifier."
+			]
+			hide_dependency_lines: true
+			dependencies: ["4EA298FC76637A03"]
+			id: "3511EC07F8F53E5C"
+			tasks: [{
+				id: "2E3BB6481FBD281A"
+				type: "item"
+				item: "woldsvaults:companion_reroller"
+			}]
+			rewards: [{
+				id: "53AF170EBF8B7963"
+				type: "item"
+				item: "woldsvaults:companion_reroller"
+			}]
+		}
+		{
+			title: "Jingling Keys"
+			x: 1.5d
+			y: -5.25d
+			shape: "rsquare"
+			subtitle: "Rattle Rattle"
+			description: [
+				"&5As you level up beyond 50, you'll start getting more and more resources, and start collecting Treasure Room Keys."
+				""
+				"&5Since there are lots of different keys, you may want to utilize the Treasure Keyring. You can store all your Treasure Room Keys in this, and use it on Treasure Doors to open them if you have the matching key."
+				""
+				"&5(Alternately, having the keys in a Backpack with an Activator Upgrade is another option...)"
+			]
+			hide_dependency_lines: true
+			dependencies: ["59965C1CF354E4CE"]
+			id: "043D50390FAFF99C"
+			tasks: [{
+				id: "707F9F0724CE0B3A"
+				type: "item"
+				item: {
+					id: "the_vault:treasure_keyring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1D7619C33F86F826"
+				type: "item"
+				item: "the_vault:key_piece"
+				count: 4
+			}]
+		}
+		{
+			title: "Fast Track to Fast Scrap"
+			x: 1.5d
+			y: -4.25d
+			shape: "rsquare"
+			subtitle: "Reverse That. Wait. Don't!"
+			description: [
+				"&5If you are on the hunt for Vault Scrap more than you are new Vault Gear, then the Blacksmith's Capstone is your friend."
+				""
+				"&5Instead of finding Vault Gear in Ornate and other chests, this Capstone will instead turn the gear into the Recycled result!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["0332B6DA83347AEB"]
+			id: "204DB517E4B6D994"
+			tasks: [{
+				id: "39ED0BD414188F04"
+				type: "item"
+				item: "the_vault:capstone_blacksmith"
+			}]
+			rewards: [{
+				id: "737757DF715A81E4"
+				type: "item"
+				item: "the_vault:capstone_blacksmith"
+			}]
+		}
+		{
+			title: "You're My Friend Now"
+			x: 5.5d
+			y: -5.25d
+			shape: "rsquare"
+			subtitle: "We're Getting Vault Burgers Later!"
+			description: [
+				"&5When running Vaults, Companions have a chance of spawning once you hit a certain XP threshold."
+				""
+				"&5This is only a chance, so if you want to guarantee a Companion egg spawning when you hit that Threshold, you'll want to apply a Companion Capstone."
+			]
+			hide_dependency_lines: true
+			dependencies: ["4EA298FC76637A03"]
+			id: "7E6EC42197C1E254"
+			tasks: [{
+				id: "6397065A5379D99F"
+				type: "item"
+				item: "the_vault:capstone_companion_hunt"
+			}]
+			rewards: [{
+				id: "488DE1BC20D3EBE7"
+				type: "item"
+				item: "the_vault:capstone_companion_hunt"
+			}]
+		}
+		{
+			title: "A Roll of the Dungeon Dice"
+			x: 12.5d
+			y: -3.25d
+			shape: "rsquare"
+			subtitle: "Is This Gamblecore?"
+			description: [
+				"&5Starting at level 60, you have a chance of finding Imbuement Altars inside Dungeons. The larger the Dungeon, the higher the chance."
+				""
+				"&5You can place one piece of Vault Gear into the Imbuement Altar to gamble on upgrading a modifier on it."
+				""
+				"&5Once you accept which Vault Gear you want to risk, you'll be presented with up to three options, and the chance of each succeeding."
+				""
+				"&5If you win, the modifier you chose becomes stronger and the Gear becomes Imbued!"
+				""
+				"&5If you lose, the chosen modifier becomes weaker or is removed, and the Gear becomes Corrupted."
+				""
+				"&5Both Imbued and Corrupted gear cannot be further modified in the Artisan Station."
+			]
+			hide_dependency_lines: true
+			dependencies: ["73F19D407DDBD157"]
+			id: "767C4299112367EE"
+			tasks: [{
+				id: "2AF0C06A70E9BC07"
+				type: "observation"
+				title: "Find an Imbuement Altar"
+				icon: "the_vault:imbuement_altar"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:imbuement_altar"
+			}]
+			rewards: [{
+				id: "67847C91359D6381"
+				type: "item"
+				item: "the_vault:gem_pog"
+			}]
+		}
+		{
+			title: "An Ancient Collection"
+			x: 1.0d
+			y: 1.25d
+			shape: "rsquare"
+			subtitle: "Is Posting It Worth More or Less?"
+			description: [
+				"&5There's an interesting system in the game called Antiques. It's...stamp collecting."
+				""
+				"&5Each stamp has a specific drop condition: a tiny chance from a specific mob in a specific theme; or from certain actions."
+				""
+				"&5There's an Antique Stamp Collector Book you can make to hold all you find. You can even store it in a special Curios slot just for the Stamp Book!"
+				""
+				"&5&lNOTE: Antique stamps will not drop unless you have this Book equipped in your Curios!"
+				""
+				"&5When you collect enough of a certain stamp, you can get a reward. Just take the Stamps, put them on your hotbar, then select and Right Click them to get the reward."
+			]
+			hide_dependency_lines: true
+			dependencies: ["24E1C6762864AEC6"]
+			hide: true
+			id: "5D9B2844DF7AD95C"
+			tasks: [{
+				id: "7EE674F8A8EDF519"
+				type: "item"
+				item: "the_vault:antique_collector_book"
+			}]
+			rewards: [{
+				id: "40FF6CFA3A366B49"
+				type: "item"
+				item: "the_vault:mystery_box"
+			}]
+		}
+		{
+			title: "Stylish Jewelry"
+			x: 12.5d
+			y: -0.75d
+			shape: "rsquare"
+			subtitle: "Fancy and Functional"
+			description: [
+				"&5At Level 65, you can start finding Vault Pendants in Ornate Chests and Barrels."
+				""
+				"&5Vault Pendants can roll bonus levels to Skills, which can help you reach Overlevels."
+			]
+			hide_dependency_lines: true
+			dependencies: ["783B07D340595603"]
+			id: "30AEF59E7AB9D31F"
+			tasks: [{
+				id: "057460EA0D2CD793"
+				type: "item"
+				item: "the_vault:vault_necklace"
+			}]
+			rewards: [{
+				id: "3FDEF4E447F4B001"
+				type: "item"
+				item: {
+					id: "the_vault:vault_necklace"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-4093097507564503777L
+							-2801886763867695012L
+							2392537302042632L
+							576460752303423488L
+							578712552117110792L
+						]
+						clientCache: {
+							"presentthe_vault:is_legendary": 0b
+							color: [B; ]
+							gearName: [B; ]
+							rollType: [B; ]
+							jcolors: [I; ]
+							hasModifierETCHING: 0b
+							hasModifierLEGENDARY: 0b
+							colors: [I;12369084]
+							"presentthe_vault:is_etched": 0b
+							hasModifierUNUSUAL: 0b
+							model: [B; ]
+							hasModifierGREATER: 0b
+							state: 0
+							hasModifierCORRUPTED: 0b
+							rarity: 0
+						}
+					}
+				}
 			}]
 		}
 	]
