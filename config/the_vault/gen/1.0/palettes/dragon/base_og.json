@@ -1,0 +1,22 @@
+{
+    "tile_processors": [
+        {
+            "type": "weighted_target",
+            "target": "minecraft:petrified_oak_slab",
+            "output": {
+                "the_vault:placeholder[type=coin_stacks]": 1,
+                "minecraft:air": 7
+            }
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/room_base"
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/challenge_elite_spawners"
+        }
+    ],
+    "entity_processors": [],
+    "decorators": []
+}
