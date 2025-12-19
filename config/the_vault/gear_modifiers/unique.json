@@ -190,6 +190,36 @@
       {
         "attribute": "the_vault:durability",
         "group": "BaseDurability",
+        "identifier": "the_vault:magnet_base_durability",
+        "tags": [
+          "resilientFocusTarget"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 15000,
+              "max": 23400,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 50,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 23401,
+              "max": 30000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:durability",
+        "group": "BaseDurability",
         "identifier": "the_vault:base_durability",
         "tags": [
           "resilientFocusTarget"

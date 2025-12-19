@@ -342,7 +342,7 @@
         "id": "repair_25_items_inside_a_vault",
         "renderer": {
           "title": {
-            "text": "Repaired items inside a Vault"
+            "text": "Items repaired in a vault"
           },
           "type": "named"
         },
@@ -527,27 +527,24 @@
     {
       "tab": "advanced",
       "discoveryTask": {
-        "id": "loot_gilded_chests",
+        "id": "complete_25_bounties",
         "renderer": {
           "title": {
-            "text": "Loot Gilded Chests"
+            "text": "Bounties Completed"
           },
           "type": "named"
         },
         "children": [],
         "operating": false,
-        "filter": "the_vault:gilded_chest",
         "counter": {
           "variables": {},
           "target": {
-            "min": 20,
-            "max": 50,
-            "type": "uniform"
+            "count": 50,
+            "type": "constant"
           },
-          "predicate": "GREATER_OR_EQUAL_TO",
           "type": "target"
         },
-        "type": "loot_chest"
+        "type": "complete_bounty"
       },
       "id": "the_vault:relic_deck",
       "output": {
@@ -625,7 +622,7 @@
         "id": "complete_15_xmark_rooms",
         "renderer": {
           "title": {
-            "text": "Complete 15 X-Mark Rooms"
+            "text": "X-Mark Rooms completed"
           },
           "type": "named"
         },
@@ -668,27 +665,27 @@
     {
       "tab": "advanced",
       "discoveryTask": {
-        "id": "loot_gilded_chests",
+        "id": "discover_5_warehouse_rooms",
         "renderer": {
           "title": {
-            "text": "Loot Gilded Chests"
+            "text": "Discover Warehouse Rooms"
           },
           "type": "named"
         },
         "children": [],
         "operating": false,
-        "filter": "the_vault:gilded_chest",
+        "filter": [
+          "the_vault:vault/rooms/omega/warehouse"
+        ],
         "counter": {
           "variables": {},
           "target": {
-            "min": 20,
-            "max": 50,
-            "type": "uniform"
+            "count": 5,
+            "type": "constant"
           },
-          "predicate": "GREATER_OR_EQUAL_TO",
           "type": "target"
         },
-        "type": "loot_chest"
+        "type": "find_vault_room"
       },
       "id": "the_vault:belt_deck",
       "output": {
@@ -721,7 +718,7 @@
         "id": "gamble_with_black_market_50_times",
         "renderer": {
           "title": {
-            "text": "Gamble with the Black Market 50 times"
+            "text": "Black Market Purchases"
           },
           "type": "named"
         },
@@ -769,7 +766,7 @@
         "id": "reach_idona",
         "renderer": {
           "title": {
-            "text": "Reach Idona Reputation 50+"
+            "text": "Idona Reputation"
           },
           "type": "named"
         },
@@ -818,7 +815,7 @@
         "id": "reach_velara",
         "renderer": {
           "title": {
-            "text": "Reach Velara Reputation 50+"
+            "text": "Velara Reputation"
           },
           "type": "named"
         },
@@ -867,7 +864,7 @@
         "id": "reach_wendarr",
         "renderer": {
           "title": {
-            "text": "Reach Wendarr Reputation 50+"
+            "text": "Wendarr Reputation"
           },
           "type": "named"
         },
@@ -916,7 +913,7 @@
         "id": "reach_tenos",
         "renderer": {
           "title": {
-            "text": "Reach Tenos Reputation 50+"
+            "text": "Tenos Reputation"
           },
           "type": "named"
         },
@@ -1015,7 +1012,7 @@
         "id": "complete_15_raid_rooms",
         "renderer": {
           "title": {
-            "text": "Complete 15 Raid Rooms"
+            "text": "Raid Rooms completed"
           },
           "type": "named"
         },
@@ -1057,6 +1054,61 @@
     },
     {
       "tab": "advanced",
+      "discoveryTask": {
+        "id": "kill_15_dungeon_bosses_one_vault",
+        "renderer": {
+          "title": {
+            "text": "Kill 15 Dungeon Bosses in one vault"
+          },
+          "type": "named"
+        },
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "operating": false,
+                "filter": "@the_vault:mob_type/dungeon_boss",
+                "counter": {
+                  "variables": {},
+                  "target": {
+                    "count": 15,
+                    "type": "constant"
+                  },
+                  "type": "target"
+                },
+                "type": "kill_entity"
+              },
+              {
+                "children": [],
+                "operating": false,
+                "completion": ["COMPLETED"],
+                "counter": {
+                  "variables": {},
+                  "target": {
+                    "count": 1,
+                    "type": "constant"
+                  },
+                  "type": "target"
+                },
+                "type": "finish_vault"
+              }
+            ],
+            "mode": "OWNER",
+            "type": "single_vault"
+          }
+        ],
+        "operating": false,
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 1,
+            "type": "constant"
+          },
+          "type": "target"
+        },
+        "type": "repeated"
+      },
       "id": "the_vault:arcane",
       "output": {
         "AMOUNT": 1,
@@ -1264,6 +1316,13 @@
     {
       "tab": "advanced",
       "discoveryTask": {
+        "id": "free_villager",
+        "renderer": {
+          "title": {
+            "text": "Villagers Freed"
+          },
+          "type": "named"
+        },
         "type": "mine_block",
         "filter": "the_vault:barred_door[generated=true]",
         "counter": {
@@ -1272,8 +1331,7 @@
             "type": "constant",
             "count": 10
           }
-        },
-        "id": "free_villager"
+        }
       },
       "id": "the_vault:villager_deck",
       "output": {

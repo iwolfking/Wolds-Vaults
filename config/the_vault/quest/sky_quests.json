@@ -3831,7 +3831,15 @@
       "descriptionData": {
         "description": [
           {
-            "text": "The Card System lets you enhance your stats and abilities using a variety of card types. Cards are equipped through decks ",
+            "text": "The Card System lets you enhance your stats and abilities using ",
+            "color": "$text"
+          },
+          {
+            "text": "cards",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Cards come in many different types and are equipped through ",
             "color": "$text"
           },
           {
@@ -3839,15 +3847,15 @@
             "color": "$qhighlight"
           },
           {
-            "text": ", each with its own layout and socket limits, while ",
+            "text": ". Each deck has its own layout and socket limits. ",
             "color": "$text"
           },
           {
-            "text": "cores ",
+            "text": "Cores ",
             "color": "$qhighlight"
           },
           {
-            "text": "provide extra strength and customization.\n\nThe ",
+            "text": "provide extra strength and customization.\n\nAlong with cards, decks, and cores, there are several new workstations associated with this system.\n\nThe ",
             "color": "$text"
           },
           {
@@ -3855,7 +3863,7 @@
             "color": "$qhighlight"
           },
           {
-            "text": "is used to craft decks and lower tiered cores while the ",
+            "text": "is used to craft decks and lower tiered cores.\n\nThe ",
             "color": "$text"
           },
           {
@@ -3863,24 +3871,31 @@
             "color": "$qhighlight"
           },
           {
-            "text": "can be used to store cards and build decks.",
+            "text": "can be used to store cards and build decks.\n\nThe ",
             "color": "$text"
           },
           {
-            "text": "\n\nFor more information on decks, cores, and cards, check out the next few quests.",
+            "text": "Card Upgrade Station ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "can be used to upgrade tiered cards to make them stronger.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTo learn more about each part of the Card System, check out the other card-related quests.",
             "color": "$text"
           }
         ]
       },
       "icon": "the_vault:gui/quests/card_table",
-      "targetId": "the_vault:booster_pack",
+      "targetId": "the_vault:deck_station",
       "targetProgress": 1.0,
       "unlockedBy": "reach_level_50",
       "reward": {
         "items": [
           {
-            "item": "the_vault:booster_pack",
-            "nbt": "{id:\"the_vault:stat_pack\"}",
+            "item": "the_vault:gem_pog",
             "amount": 1
           }
         ],
@@ -3894,7 +3909,7 @@
       "descriptionData": {
         "description": [
           {
-            "text": "Cards are obtained from booster packs, which can be found in completion crates or purchased from the black market. They come in four colors, and each card's purpose depends on the specific card you receive.",
+            "text": "Cards are obtained from booster packs, which can be found in completion crates or purchased from the black market.\n\nThey come in four colors, and each card's purpose depends on the specific card you receive.",
             "color": "$text"
           },
           {
@@ -3902,7 +3917,7 @@
             "color": "$qhighlight"
           },
           {
-            "text": "This pack provides stat cards. They improve player based stats such as ",
+            "text": "This pack contains stat cards. They improve player based stats such as ",
             "color": "$text"
           },
           {
@@ -3934,7 +3949,7 @@
             "color": "$qhighlight"
           },
           {
-            "text": "This pack provides resource cards that grant additional resources to your completion crate upon successfully completing a vault and fulfilling the card's requirements.",
+            "text": "This pack contains resource cards. Each card has a resource and a requirement. Upon vault completion and meeting the requirement, that resource will be added to your completion crate.",
             "color": "$text"
           },
           {
@@ -3942,7 +3957,7 @@
             "color": "$qhighlight"
           },
           {
-            "text": "This pack provides arcane cards that add extra levels to your current abilities.",
+            "text": "This pack contains arcane cards that add extra levels to your current abilities.",
             "color": "$text"
           },
           {
@@ -3974,6 +3989,22 @@
             "color": "$qhighlight"
           },
           {
+            "text": ", recycled in the ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault Recycler",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", and upgraded in the ",
+            "color": "$text"
+          },
+          {
+            "text": "Card Upgrade Station",
+            "color": "$qhighlight"
+          },
+          {
             "text": ".",
             "color": "$text"
           },
@@ -3991,6 +4022,21 @@
         "items": [
           {
             "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:arcane_pack\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:evolution_pack\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:resource_pack\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:booster_pack",
             "nbt": "{id:\"the_vault:stat_pack\"}",
             "amount": 1
           }
@@ -4005,7 +4051,15 @@
       "descriptionData": {
         "description": [
           {
-            "text": "Decks let you store and bring cards into the vault so you can benefit from their special effects. They're crafted at the ",
+            "text": "Decks let you store and bring cards into the vault so you can benefit from their special effects. Decks must be placed in the ",
+            "color": "$text"
+          },
+          {
+            "text": "Card Deck ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "curios slot in order for a player to gain the deck effects.\n\nDecks are crafted in the ",
             "color": "$text"
           },
           {
@@ -4013,7 +4067,15 @@
             "color": "$qhighlight"
           },
           {
-            "text": ", with basic decks aviilable immediately and advanced decks unlocked through the ",
+            "text": ", with basic decks aviilable immediately. To access the ",
+            "color": "$text"
+          },
+          {
+            "text": "Advanced Decks ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "tab within the deck station, you must first learn the ",
             "color": "$text"
           },
           {
@@ -4021,11 +4083,11 @@
             "color": "$yellow"
           },
           {
-            "text": "research and meeting their respective unlock requirement.\n\nEach deck has a unique layout and number of sockets. Be sure to check out all the decks to find the combination that best fits the deck you want.",
+            "text": "research and then fulfill each decks unlock requirement. \n\nEach deck has a unique layout and number of sockets. Be sure to check out all the decks to find the combination that best fits the deck you want.",
             "color": "$text"
           },
           {
-            "text": "\n\nDecks can be modified and built inside the ",
+            "text": "\n\nDecks can be built and modified inside the ",
             "color": "$text"
           },
           {
@@ -4049,8 +4111,7 @@
       "reward": {
         "items": [
           {
-            "item": "the_vault:booster_pack",
-            "nbt": "{id:\"the_vault:stat_pack\"}",
+            "item": "the_vault:card_binder",
             "amount": 1
           }
         ],
@@ -4100,9 +4161,20 @@
       "reward": {
         "items": [
           {
-            "item": "the_vault:booster_pack",
-            "nbt": "{id:\"the_vault:stat_pack\"}",
+            "item": "the_vault:silver_scrap",
+            "amount": 256
+          },
+          {
+            "item": "the_vault:gem_black_opal",
+            "amount": 16
+          },
+          {
+            "item": "the_vault:gem_pog",
             "amount": 1
+          },
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 16
           }
         ],
         "vaultExp": 0
@@ -4115,37 +4187,41 @@
       "descriptionData": {
         "description": [
           {
-            "text": "You might wonder, What can I do with the cards that I don't like? Well wait no more. \n\nIntroducing the ",
+            "text": "Unwanted cards can be recycled in a Vault Recycler to obtain ",
             "color": "$text"
           },
           {
-            "text": "Card Extractor!",
+            "text": "Card Juice",
             "color": "$qhighlight"
           },
           {
-            "text": ". Any card you don't like can be ground down to its essence. A tier 1 card can be upgraded to tier 2 with 10 essence. Watch out though. The higher the tier the more expensive the cost!",
+            "text": ".\n\nUsing the ",
             "color": "$text"
           },
           {
-            "text": "\n\nIn order to use the machine, it needs a redstone signal. The card on the left will be juiced into essence. This essence can then be used to upgrade the card on the right.",
-            "color": "$text"
+            "text": "Card Upgrade Station",
+            "color": "$qhighlight"
           },
           {
-            "text": "\n\nCraft a Card Extractor",
+            "text": ", cards with tiers can be combined with the required amount of card juice to upgrade the tier.\n\nUpgrading from tier 1 to tier 2 requires 10 card juice, and higher tiers will require significantly more.",
+            "color": "$text"
+          },
+
+          {
+            "text": "\n\nCraft a Card Upgrade Station",
             "color": "$heal"
           }
         ]
       },
-      "icon": "the_vault:gui/quests/juicer",
+      "icon": "the_vault:gui/quests/card_upgrade_table",
       "targetId": "the_vault:card_essence_extractor",
       "targetProgress": 1.0,
-      "unlockedBy": "reach_level_50",
+      "unlockedBy": "card_system",
       "reward": {
         "items": [
           {
-            "item": "the_vault:booster_pack",
-            "nbt": "{id:\"the_vault:resource_pack\"}",
-            "amount": 1
+            "item": "the_vault:card_juice",
+            "amount": 5
           }
         ],
         "vaultExp": 0
