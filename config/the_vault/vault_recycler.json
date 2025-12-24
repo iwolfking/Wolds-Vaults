@@ -189,21 +189,6 @@
                 "conditionalOutputs": [
                     [
                         {
-                            "rarity": "OMEGA",
-                            "isCrafted": false,
-                            "isLegendary": null
-                        },
-                        {
-                            "chance": 0.2,
-                            "stack": {
-                                "item": "the_vault:adaptive_focus"
-                            },
-                            "minCount": 1,
-                            "maxCount": 1
-                        }
-                    ],
-                    [
-                        {
                             "rarity": null,
                             "isCrafted": null,
                             "isLegendary": true
@@ -226,13 +211,29 @@
                 "maxCount": 1
             },
             "extraOutput2": {
-                "conditionalOutputs": {},
+                "conditionalOutputs": [
+                    [
+                        {
+                            "rarity": "OMEGA",
+                            "isCrafted": false,
+                            "isLegendary": null
+                        },
+                        {
+                            "chance": 0.2,
+                            "stack": {
+                                "item": "the_vault:adaptive_focus"
+                            },
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    ]
+                ],
                 "chance": 0.0,
                 "stack": {
                     "item": "the_vault:faceted_focus"
                 },
-                "minCount": 1,
-                "maxCount": 1
+                "minCount": 0,
+                "maxCount": 0
             }
         }
     }
