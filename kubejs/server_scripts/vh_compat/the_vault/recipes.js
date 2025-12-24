@@ -82,8 +82,6 @@ onEvent("recipes", event => {
 
     event.shapeless('the_vault:capstone_vendoor_hunter', ['woldsvaults:capstone_vendoors']).id('woldsvaults:vendoor_capstone_conversion')
 
-    event.shapeless('9x the_vault:vault_diamond', ['the_vault:vault_diamond_block'])
-
     event.shapeless('the_vault:vault_palladium', ['9x the_vault:vault_platinum'])
     event.shapeless('the_vault:vault_iridium', ['9x the_vault:vault_palladium'])
     event.shapeless('9x the_vault:vault_platinum', ['the_vault:vault_palladium'])
