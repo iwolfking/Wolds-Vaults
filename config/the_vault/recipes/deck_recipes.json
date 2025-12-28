@@ -1730,6 +1730,297 @@
           "ITEM": "the_vault:echo_pog"
         }
       ]
+    },
+        {
+      "discoveryTask": {
+        "id": "fairy_deck_task",
+        "renderer": {
+          "title": {
+            "text": "Loot Living Strongboxes"
+          },
+          "type": "named"
+        },
+        "children": [],
+        "operating": false,
+        "filter": "the_vault:living_strongbox",
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 500,
+            "type": "constant"
+          },
+          "predicate": "GREATER_OR_EQUAL_TO",
+          "type": "target"
+        },
+        "type": "loot_chest"
+      },
+      "tab": "advanced",
+      "id": "woldsvaults:fairy_deck",
+      "output": {
+        "AMOUNT": 1,
+        "ITEM": "the_vault:card_deck",
+        "NBT": "{id:\"fairy\"}"
+      },
+      "inputs": [
+        {
+          "AMOUNT": 1,
+          "ITEM": "the_vault:omega_pog",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 16,
+          "ITEM": "the_vault:extraordinary_black_opal",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 1,
+          "ITEM": "woldsvaults:prismatic_fiber",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 16,
+          "ITEM": "the_vault:vault_platinum",
+          "NBT": "{}"
+        }
+      ]
+    },
+    {
+      "discoveryTask": {
+        "id": "snake_deck_task",
+        "renderer": {
+          "title": {
+            "text": "Discover Dragon Rooms"
+          },
+          "type": "named"
+        },
+        "children": [],
+        "operating": false,
+        "filter": [
+          "the_vault:vault/rooms/challenge/dragon1",
+          "the_vault:vault/rooms/challenge/dragon2"
+        ],
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 10,
+            "type": "constant"
+          },
+          "predicate": "GREATER_OR_EQUAL_TO",
+          "type": "target"
+        },
+        "condition": {
+          "filter": [
+            "the_vault:vault/rooms/challenge/dragon1",
+            "the_vault:vault/rooms/challenge/dragon2"
+          ],
+          "type": "room_generation"
+        },
+        "found": [],
+        "type": "find_vault_room"
+      },
+      "tab": "advanced",
+      "id": "woldsvaults:snake_deck",
+      "output": {
+        "AMOUNT": 1,
+        "ITEM": "the_vault:card_deck",
+        "NBT": "{id:\"snake\"}"
+      },
+      "inputs": [
+        {
+          "AMOUNT": 1,
+          "ITEM": "the_vault:omega_pog",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 16,
+          "ITEM": "the_vault:extraordinary_black_opal",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 1,
+          "ITEM": "woldsvaults:prismatic_fiber",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 16,
+          "ITEM": "the_vault:vault_platinum",
+          "NBT": "{}"
+        }
+      ]
+    },
+    {
+      "discoveryTask": {
+        "id": "crate_deck_task",
+        "renderer": {
+          "title": {
+            "text": "Complete Vaults"
+          },
+          "type": "named"
+        },
+        "children": [],
+        "operating": false,
+        "completion": [
+          "COMPLETED"
+        ],
+        "objective": [
+          "elixir",
+          "bingo",
+          "monolith",
+          "scavenger",
+          "rune_boss",
+          "alchemy",
+          "enchanted_elixir",
+          "brutal_bosses",
+          "haunted_braziers",
+          "ballistic_bingo"
+        ],
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 100,
+            "type": "constant"
+          },
+          "predicate": "GREATER_OR_EQUAL_TO",
+          "type": "target"
+        },
+        "type": "finish_vault"
+      },
+      "tab": "advanced",
+      "id": "woldsvaults:crate_deck",
+      "output": {
+        "AMOUNT": 1,
+        "ITEM": "the_vault:card_deck",
+        "NBT": "{id:\"crate\"}"
+      },
+      "inputs": [
+        {
+          "AMOUNT": 1,
+          "ITEM": "the_vault:omega_pog",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 16,
+          "ITEM": "the_vault:extraordinary_black_opal",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 1,
+          "ITEM": "woldsvaults:prismatic_fiber",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 16,
+          "ITEM": "the_vault:vault_platinum",
+          "NBT": "{}"
+        }
+      ]
+    },
+    {
+      "discoveryTask": {
+        "id": "wall_deck_task",
+        "renderer": {
+          "title": {
+            "text": "Take Damage From Horde Mobs"
+          },
+          "type": "named"
+        },
+        "children": [],
+        "operating": false,
+        "filter": "@the_vault:horde",
+        "phase": "PRE_MITIGATION",
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 25000.0,
+            "type": "constant"
+          },
+          "predicate": "GREATER_OR_EQUAL_TO",
+          "type": "target"
+        },
+        "type": "take_damage"
+      },
+      "tab": "advanced",
+      "id": "woldsvaults:wall_deck",
+      "output": {
+        "AMOUNT": 1,
+        "ITEM": "the_vault:card_deck",
+        "NBT": "{id:\"wall\"}"
+      },
+      "inputs": [
+        {
+          "AMOUNT": 1,
+          "ITEM": "the_vault:omega_pog",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 16,
+          "ITEM": "the_vault:extraordinary_black_opal",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 1,
+          "ITEM": "woldsvaults:prismatic_fiber",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 16,
+          "ITEM": "the_vault:vault_platinum",
+          "NBT": "{}"
+        }
+      ]
+    },
+    {
+      "discoveryTask": {
+        "id": "wold_deck_task",
+        "renderer": {
+          "title": {
+            "text": "Kill Elite Mobs"
+          },
+          "type": "named"
+        },
+        "children": [],
+        "operating": false,
+        "filter": "@the_vault:elite",
+        "counter": {
+          "variables": {},
+          "target": {
+            "count": 150,
+            "type": "constant"
+          },
+          "predicate": "GREATER_OR_EQUAL_TO",
+          "type": "target"
+        },
+        "type": "kill_entity"
+      },
+      "tab": "advanced",
+      "id": "woldsvaults:wold_deck",
+      "output": {
+        "AMOUNT": 1,
+        "ITEM": "the_vault:card_deck",
+        "NBT": "{id:\"wold\"}"
+      },
+      "inputs": [
+        {
+          "AMOUNT": 1,
+          "ITEM": "the_vault:echo_pog",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 1,
+          "ITEM": "woldsvaults:wold_star_chunk",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 8,
+          "ITEM": "woldsvaults:prismatic_fiber",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 32,
+          "ITEM": "the_vault:vault_platinum",
+          "NBT": "{}"
+        }
+      ]
     }
   ],
   "tabs": [
