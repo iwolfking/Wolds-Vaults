@@ -1,118 +1,6 @@
 {
   "tile_processors": [
     {
-      "type": "placeholder",
-      "target": "DUNGEON_DISCOVERABLE",
-      "levels": [
-        {
-          "level": 0,
-          "probability": 0.2,
-          "success": {
-             "the_vault:imbuement_altar[locked=true]": 0,
-              "the_vault:vault_globe[type=common]": 6,
-              "the_vault:vault_globe[type=ore]": 6,
-              "the_vault:vault_globe[type=challenge]": 4,
-              "the_vault:vault_globe[type=omega]": 1,
-              "the_vault:alchemy_archive": 12
-          },
-          "failure": {
-            "minecraft:air": 1
-          }
-        },
-        {
-          "level": 50,
-          "probability": 0.25,
-          "success": {
-              "the_vault:imbuement_altar[locked=true]": 8,
-              "the_vault:vault_globe[type=common]": 6,
-              "the_vault:vault_globe[type=ore]": 6,
-              "the_vault:vault_globe[type=challenge]": 4,
-              "the_vault:vault_globe[type=omega]": 1,
-              "the_vault:alchemy_archive": 6
-          },
-          "failure": {
-            "woldsvaults:dungeon_pedestal{Generated:0b,LootTable:\"the_vault:dungeon_pedestal_lvl50\"}": 1
-          }
-        },
-        {
-          "level": 75,
-          "probability": 0.25,
-          "success": {
-             "the_vault:imbuement_altar[locked=true]": 8,
-              "the_vault:vault_globe[type=common]": 6,
-              "the_vault:vault_globe[type=ore]": 6,
-              "the_vault:vault_globe[type=challenge]": 4,
-              "the_vault:vault_globe[type=omega]": 1,
-              "the_vault:alchemy_archive": 6
-          },
-          "failure": {
-            "woldsvaults:dungeon_pedestal{Generated:0b,LootTable:\"the_vault:dungeon_pedestal_lvl75\"}": 1
-          }
-        }
-      ]
-    },
-    {
-      "type": "leveled",
-      "levels": [
-        {
-          "level": 0,
-          "type": "weighted_target",
-          "target": "the_vault:enhancement_altar",
-          "output": {
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:15,max:25},filter:[\"WOODEN\",\"LIVING\",\"GILDED\",\"ORNATE\"],display:\"{'text':'Loot %s Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:8,max:14},filter:[\"WOODEN\"],display:\"{'text':'Loot %s Wooden Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:3,max:6},filter:[\"LIVING\"],display:\"{'text':'Loot %s Living Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:3,max:6},filter:[\"GILDED\"],display:\"{'text':'Loot %s Gilded Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:3,max:6},filter:[\"ORNATE\"],display:\"{'text':'Loot %s Ornate Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:break_blocks,range:{type:uniform,min:5,max:10},filter:[\"@the_vault:ores\"],display:\"{'text':'Mine %s Ores'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:kill_mobs,range:{type:uniform,min:10,max:25},filter:[\"@the_vault:mobs\"],display:\"{'text':'Kill %s Mobs'}\"}}": 1
-          }
-        },
-        {
-          "level": 30,
-          "type": "weighted_target",
-          "target": "the_vault:enhancement_altar",
-          "output": {
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:25,max:35},filter:[\"WOODEN\",\"LIVING\",\"GILDED\",\"ORNATE\"],display:\"{'text':'Loot %s Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:14,max:20},filter:[\"WOODEN\"],display:\"{'text':'Loot %s Wooden Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:6,max:9},filter:[\"LIVING\"],display:\"{'text':'Loot %s Living Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:6,max:9},filter:[\"GILDED\"],display:\"{'text':'Loot %s Gilded Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:6,max:9},filter:[\"ORNATE\"],display:\"{'text':'Loot %s Ornate Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:break_blocks,range:{type:uniform,min:10,max:15},filter:[\"@the_vault:ores\"],display:\"{'text':'Mine %s Ores'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:kill_mobs,range:{type:uniform,min:10,max:15},filter:[\"@the_vault:mobs\"],display:\"{'text':'Kill %s Mobs'}\"}}": 1
-          }
-        },
-        {
-          "level": 50,
-          "type": "weighted_target",
-          "target": "the_vault:enhancement_altar",
-          "output": {
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:35,max:45},filter:[\"WOODEN\",\"LIVING\",\"GILDED\",\"ORNATE\"],display:\"{'text':'Loot %s Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:20,max:26},filter:[\"WOODEN\"],display:\"{'text':'Loot %s Wooden Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:9,max:12},filter:[\"LIVING\"],display:\"{'text':'Loot %s Living Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:9,max:12},filter:[\"GILDED\"],display:\"{'text':'Loot %s Gilded Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:9,max:12},filter:[\"ORNATE\"],display:\"{'text':'Loot %s Ornate Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:break_blocks,range:{type:uniform,min:15,max:20},filter:[\"@the_vault:ores\"],display:\"{'text':'Mine %s Ores'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:kill_mobs,range:{type:uniform,min:15,max:20},filter:[\"@the_vault:mobs\"],display:\"{'text':'Kill %s Mobs'}\"}}": 1
-          }
-        },
-        {
-          "level": 65,
-          "type": "weighted_target",
-          "target": "the_vault:enhancement_altar",
-          "output": {
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:45,max:55},filter:[\"WOODEN\",\"LIVING\",\"GILDED\",\"ORNATE\"],display:\"{'text':'Loot %s Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:26,max:32},filter:[\"WOODEN\"],display:\"{'text':'Loot %s Wooden Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:12,max:15},filter:[\"LIVING\"],display:\"{'text':'Loot %s Living Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:12,max:15},filter:[\"GILDED\"],display:\"{'text':'Loot %s Gilded Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:loot_chests,range:{type:uniform,min:12,max:15},filter:[\"ORNATE\"],display:\"{'text':'Loot %s Ornate Chests'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:break_blocks,range:{type:uniform,min:20,max:25},filter:[\"@the_vault:ores\"],display:\"{'text':'Mine %s Ores'}\"}}": 1,
-            "the_vault:enhancement_altar{config:{type:kill_mobs,range:{type:uniform,min:20,max:25},filter:[\"@the_vault:mobs\"],display:\"{'text':'Kill %s Mobs'}\"}}": 1
-          }
-        }
-      ]
-    },
-    {
       "type": "template_stack_tile",
       "target": "@the_vault:vault_lootables",
       "stack": [
@@ -126,5 +14,89 @@
         "STRUCTURE_DUNGEON_MEDIUM"
       ]
     }
+  ],
+  "conditional_palettes": [
+      {
+        "conditions": [
+          {
+            "type": "objective",
+            "objectiveId": "the_vault:cake"
+          }
+        ],
+        "palette": {
+          "tile_processors": [
+            {
+              "type": "placeholder",
+              "target": "DUNGEON_DISCOVERABLE",
+              "levels": [
+                {
+                  "level": 0,
+                  "probability": 0.3,
+                  "success": {
+                    "the_vault:imbuement_altar[locked=true]": 0,
+                    "minecraft:air": 17,
+                    "the_vault:alchemy_archive": 12
+                  },
+                  "failure": {
+                    "woldsvaults:dungeon_pedestal{Generated:0b,LootTable:\"the_vault:dungeon_pedestal_lvl50\"}": 1
+                  }
+                },
+                {
+                  "level": 60,
+                  "probability": 0.35,
+                  "success": {
+                    "the_vault:imbuement_altar[locked=true]": 8,
+                    "minecraft:air": 17,
+                    "the_vault:alchemy_archive": 6
+                  },
+                  "failure": {
+                    "woldsvaults:dungeon_pedestal{Generated:0b,LootTable:\"the_vault:dungeon_pedestal_lvl75\"}": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "else": {
+          "tile_processors": [
+            {
+              "type": "placeholder",
+              "target": "DUNGEON_DISCOVERABLE",
+              "levels": [
+                {
+                  "level": 0,
+                  "probability": 0.3,
+                  "success": {
+                    "the_vault:imbuement_altar[locked=true]": 0,
+                    "the_vault:vault_globe[type=common]": 6,
+                    "the_vault:vault_globe[type=ore]": 6,
+                    "the_vault:vault_globe[type=challenge]": 4,
+                    "the_vault:vault_globe[type=omega]": 1,
+                    "the_vault:alchemy_archive": 12
+                  },
+                  "failure": {
+                    "woldsvaults:dungeon_pedestal{Generated:0b,LootTable:\"the_vault:dungeon_pedestal_lvl50\"}": 1
+                  }
+                },
+                {
+                  "level": 60,
+                  "probability": 0.35,
+                  "success": {
+                    "the_vault:imbuement_altar[locked=true]": 8,
+                    "the_vault:vault_globe[type=common]": 6,
+                    "the_vault:vault_globe[type=ore]": 6,
+                    "the_vault:vault_globe[type=challenge]": 4,
+                    "the_vault:vault_globe[type=omega]": 1,
+                    "the_vault:alchemy_archive": 6
+                  },
+                  "failure": {
+                    "woldsvaults:dungeon_pedestal{Generated:0b,LootTable:\"the_vault:dungeon_pedestal_lvl75\"}": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
   ]
 }
