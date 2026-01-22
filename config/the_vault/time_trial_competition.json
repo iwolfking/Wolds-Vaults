@@ -1,0 +1,106 @@
+{
+  "OBJECTIVE_WEIGHTS": [
+    {
+      "value": "elixir",
+      "weight": 15.0
+    },
+    {
+      "value": "enchanted_elixir",
+      "weight": 5.0
+    },
+    {
+      "value": "bingo",
+      "weight": 10.0
+    },
+    {
+      "value": "ballistic_bingo",
+      "weight": 5.0
+    },
+    {
+      "value": "brutal_bosses",
+      "weight": 5.0
+    },
+    {
+      "value": "zealot",
+      "weight": 10.0
+    },
+    {
+      "value": "alchemy",
+      "weight": 10.0
+    },
+    {
+      "value": "scavenger",
+      "weight": 10.0
+    },
+    {
+      "value": "unhinged_scavenger",
+      "weight": 5.0
+    },
+    {
+      "value": "rune_boss",
+      "weight": 10.0
+    }
+  ],
+  "OBJECTIVE_ENTRIES": {
+    "elixir": {
+      "type": "elixir",
+      "objective_probability": 0.75
+    },
+    "enchanted_elixir": {
+      "objective_probability": 0.6,
+      "type": "enchanted_elixir"
+    },
+    "bingo": {
+      "type": "bingo",
+      "objective_probability": 0.75,
+      "width": 5,
+      "height": 5
+    },
+    "ballistic_bingo": {
+      "type": "ballistic_bingo",
+      "objective_probability": 0.5
+    },
+    "brutal_bosses": {
+      "type": "brutal_bosses",
+      "objective_probability": 0.4,
+      "target": {
+        "type": "uniform",
+        "min": 5,
+        "max": 5
+      },
+      "wave": {
+        "type": "uniform",
+        "min": 3,
+        "max": 5
+      }
+    },
+    "zealot": {
+      "type": "zealot",
+      "target": {
+        "type": "uniform",
+        "min": 4,
+        "max": 6
+      }
+    },
+    "alchemy": {
+      "objective_probability": 0.30,
+      "required_progress": 3.0,
+      "type": "alchemy"
+    },
+    "scavenger": {
+      "type": "scavenger",
+      "objective_probability": 0.75
+    },
+    "unhinged_scavenger": {
+      "objective_probability": 0.5,
+      "type": "unhinged_scavenger"
+    },
+    "rune_boss": {
+      "type": "rune_boss",
+      "objective_probability": 0.0
+    }
+  },
+  "RESET_DAY_OF_WEEK": "MONDAY",
+  "REWARD_CRATE_LOOT_TABLE": "the_vault:time_trial_reward_crate",
+  "enabled": true
+}
