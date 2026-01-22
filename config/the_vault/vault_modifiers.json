@@ -2347,6 +2347,20 @@
           "color": "#f66868",
           "description": "+15% Mob Speed",
           "descriptionFormatted": "+%d%% Mob Speed",
+          "icon": "the_vault:gui/modifiers/glued_mobs"
+        }
+      },
+       "the_vault:slower_mobs": {
+        "properties": {
+          "type": "speed_additive_percentile",
+          "amount": -0.15,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Slower Mobs",
+          "color": "#f66868",
+          "description": "-15% Mob Speed",
+          "descriptionFormatted": "-%d%% Mob Speed",
           "icon": "the_vault:gui/modifiers/rapid_mobs"
         }
       },
@@ -5539,6 +5553,21 @@
           "name": "Challenge Stack",
           "color": "#ba0000",
           "description": "Increases mob damage, mob health and mob spawns by 10% per stack, increases mob speed by 1.5% per stack",
+          "icon": "the_vault:gui/modifiers/challenging"
+        }
+      },
+      "the_vault:unchallenge_stack": {
+        "properties": {
+          "children": {
+            "the_vault:lower_damage": 1,
+            "the_vault:baby_mobs2": 2,
+            "the_vault:slower_mobs": 1
+          }
+        },
+        "display": {
+          "name": "Unchallenge Stack",
+          "color": "#ba0000",
+          "description": "Decreases mob damage, mob health and mob speed.",
           "icon": "the_vault:gui/modifiers/challenging"
         }
       },
