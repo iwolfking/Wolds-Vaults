@@ -746,6 +746,30 @@
       "color1": "0xFFff8400",
       "color2": "0xFFffcc00"
     },
+    "pocket_penguin": {
+      "type": "floating_item_reward",
+      "textColor": -1213660,
+      "name": "Pocket Penguin",
+      "item": {
+        "id": "the_vault:plushie",
+        "nbt": "{\"the_vault:gear_unique_pool\":\"woldsvaults:pocket_penguin\",\"the_vault:gear_roll_type\":\"Unique\"}",
+        "count": 1
+      },
+      "color1": "0xFFED7B24",
+      "color2": "0xFFe2a631"
+    },
+     "chroma_brew": {
+      "type": "floating_item_reward",
+      "textColor": -1213660,
+      "name": "Chroma Brew",
+      "item": {
+        "id": "the_vault:focus",
+        "nbt": "{\"the_vault:gear_unique_pool\":\"woldsvaults:chroma_brew\",\"the_vault:gear_roll_type\":\"Unique\"}",
+        "count": 1
+      },
+      "color1": "0xFFED7B24",
+      "color2": "0xFFe2a631"
+    },
     "castle_chestplate": {
       "type": "floating_item_reward",
       "textColor": -1213660,
@@ -2896,6 +2920,14 @@
             {
               "value": "baguette",
               "weight": 20
+            },
+            {
+              "value": "pocket_penguin",
+              "weight": 6
+            },
+            {
+              "value": "chroma_brew",
+              "weight": 8
             }
           ]
         }
