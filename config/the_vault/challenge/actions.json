@@ -746,6 +746,30 @@
       "color1": "0xFFff8400",
       "color2": "0xFFffcc00"
     },
+    "pocket_penguin": {
+      "type": "floating_item_reward",
+      "textColor": -1213660,
+      "name": "Pocket Penguin",
+      "item": {
+        "id": "the_vault:plushie",
+        "nbt": "{\"the_vault:gear_unique_pool\":\"woldsvaults:pocket_penguin\",\"the_vault:gear_roll_type\":\"Unique\"}",
+        "count": 1
+      },
+      "color1": "0xFFED7B24",
+      "color2": "0xFFe2a631"
+    },
+     "chroma_brew": {
+      "type": "floating_item_reward",
+      "textColor": -1213660,
+      "name": "Chroma Brew",
+      "item": {
+        "id": "the_vault:focus",
+        "nbt": "{\"the_vault:gear_unique_pool\":\"woldsvaults:chroma_brew\",\"the_vault:gear_roll_type\":\"Unique\"}",
+        "count": 1
+      },
+      "color1": "0xFFED7B24",
+      "color2": "0xFFe2a631"
+    },
     "castle_chestplate": {
       "type": "floating_item_reward",
       "textColor": -1213660,
@@ -2169,6 +2193,200 @@
         }
       ]
     },
+    "positive_base_map": {
+      "type": "pool",
+      "levels": [
+        {
+          "level": 0,
+          "pool": [
+            {
+              "value": "gilded_chest_big",
+              "weight": 100
+            },
+            {
+              "value": "gilded_chest_bigger",
+              "weight": 100
+            },
+            {
+              "value": "ornate_chest_big",
+              "weight": 100
+            },
+            {
+              "value": "ornate_chest_bigger",
+              "weight": 100
+            },
+            {
+              "value": "living_chest_big",
+              "weight": 100
+            },
+            {
+              "value": "living_chest_bigger",
+              "weight": 100
+            },
+            {
+              "value": "wooden_chest_big",
+              "weight": 100
+            },
+            {
+              "value": "wooden_chest_bigger",
+              "weight": 100
+            },
+            {
+              "value": "coin_pile_big",
+              "weight": 100
+            },
+            {
+              "value": "coin_pile_bigger",
+              "weight": 100
+            },
+            {
+              "value": "jewel_pouch",
+              "weight": 100
+            },
+            {
+              "value": "pyretic_focus",
+              "weight": 50
+            },
+            {
+              "value": "empowered_chaotic_focus",
+              "weight": 70
+            },
+            {
+              "value": "resource_booster_pack",
+              "weight": 50
+            },
+            {
+              "value": "arcane_booster_pack",
+              "weight": 30
+            },
+            {
+              "value": "leg_helmet",
+              "weight": 2
+            },
+            {
+              "value": "leg_chestplate",
+              "weight": 2
+            },
+            {
+              "value": "leg_leggings",
+              "weight": 2
+            },
+            {
+              "value": "leg_boots",
+              "weight": 2
+            },
+            {
+              "value": "leg_sword",
+              "weight": 2
+            },
+            {
+              "value": "leg_axe",
+              "weight": 2
+            },
+            {
+              "value": "leg_shield",
+              "weight": 2
+            },
+            {
+              "value": "leg_wand",
+              "weight": 2
+            },
+            {
+              "value": "leg_focus",
+              "weight": 2
+            },
+            {
+              "value": "castle_chestplate",
+              "weight": 2
+            },
+            {
+              "value": "warbound_helmet",
+              "weight": 2
+            },
+            {
+              "value": "inferno_reach",
+              "weight": 2
+            },
+            {
+              "value": "frozen_orb",
+              "weight": 2
+            },
+            {
+              "value": "grim_shield",
+              "weight": 2
+            },
+            {
+              "value": "swarmwalkers",
+              "weight": 2
+            },
+            {
+              "value": "starforge",
+              "weight": 2
+            },
+            {
+              "value": "stormcrown",
+              "weight": 2
+            },
+            {
+              "value": "inflated_justice",
+              "weight": 2
+            },
+            {
+              "value": "raid_rock",
+              "weight": 40
+            },
+            {
+              "value": "rare_plushie",
+              "weight": 20
+            },
+            {
+              "value": "rare_rang",
+              "weight": 10
+            },
+            {
+              "value": "rare_trident",
+              "weight": 20
+            },
+            {
+              "value": "rare_loot_sack",
+              "weight": 20
+            },
+            {
+              "value": "rare_battlestaff",
+              "weight": 20
+            },
+            {
+              "value": "knack_pack",
+              "weight": 15
+            },
+            {
+              "value": "temporal_booster_pack",
+              "weight": 2
+            },
+            {
+              "value": "leg_plushie",
+              "weight": 2
+            },
+            {
+              "value": "leg_loot_sack",
+              "weight": 2
+            },
+            {
+              "value": "leg_trident",
+              "weight": 2
+            },
+            {
+              "value": "leg_rang",
+              "weight": 2
+            },
+            {
+              "value": "leg_battlestaff",
+              "weight": 2
+            }
+          ]
+        }
+      ]
+    },
     "positive_base": {
       "type": "pool",
       "levels": [
@@ -2896,6 +3114,14 @@
             {
               "value": "baguette",
               "weight": 20
+            },
+            {
+              "value": "pocket_penguin",
+              "weight": 6
+            },
+            {
+              "value": "chroma_brew",
+              "weight": 8
             }
           ]
         }
