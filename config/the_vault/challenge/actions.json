@@ -255,6 +255,29 @@
       "color1": "0xFF49d64f",
       "color2": "0xFF5b23b0"
     },
+    "deck_core": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "item": {
+        "id": "the_vault:deck_socket",
+        "nbt": "{Modifier:\"@default\"}",
+        "count": 1
+      },
+      "color1": "0xFF49d64f",
+      "color2": "0xFF5b23b0"
+    },
+     "shiny_pack": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Shiny Booster Pack",
+      "item": {
+        "id": "the_vault:booster_pack",
+        "nbt": "{id:\"the_vault:shiny_pack\"}",
+        "count": 1
+      },
+      "color1": "0xFFf45832",
+      "color2": "0xFFfb8ffc"
+    },
     "arcane_booster_pack": {
       "type": "floating_item_reward",
       "textColor": "0xFFffb400",
@@ -758,7 +781,7 @@
       "color1": "0xFFED7B24",
       "color2": "0xFFe2a631"
     },
-     "chroma_brew": {
+    "chroma_brew": {
       "type": "floating_item_reward",
       "textColor": -1213660,
       "name": "Chroma Brew",
@@ -2200,188 +2223,164 @@
           "level": 0,
           "pool": [
             {
-              "value": "gilded_chest_big",
-              "weight": 100
+              "value": "treasure_key_big",
+              "weight": 1
+            },
+            {
+              "value": "treasure_key",
+              "weight": 2
+            },
+            {
+              "value": "shattering_jewel",
+              "weight": 1
+            },
+            {
+              "value": "suspension_focus",
+              "weight": 1
+            },
+            {
+              "value": "blazing_focus",
+              "weight": 4
+            },
+            {
+              "value": "gateway_pearl",
+              "weight": 6
+            },
+            {
+              "value": "deck_core",
+              "weight": 4
+            },
+            {
+              "value": "eccentric_focus_big",
+              "weight": 6
+            },
+            {
+              "value": "cryonic_focus_big",
+              "weight": 6
             },
             {
               "value": "gilded_chest_bigger",
-              "weight": 100
-            },
-            {
-              "value": "ornate_chest_big",
-              "weight": 100
+              "weight": 60
             },
             {
               "value": "ornate_chest_bigger",
-              "weight": 100
-            },
-            {
-              "value": "living_chest_big",
-              "weight": 100
+              "weight": 60
             },
             {
               "value": "living_chest_bigger",
-              "weight": 100
-            },
-            {
-              "value": "wooden_chest_big",
-              "weight": 100
+              "weight": 60
             },
             {
               "value": "wooden_chest_bigger",
-              "weight": 100
-            },
-            {
-              "value": "coin_pile_big",
-              "weight": 100
-            },
-            {
-              "value": "coin_pile_bigger",
-              "weight": 100
-            },
-            {
-              "value": "jewel_pouch",
-              "weight": 100
-            },
-            {
-              "value": "pyretic_focus",
-              "weight": 50
-            },
-            {
-              "value": "empowered_chaotic_focus",
-              "weight": 70
-            },
-            {
-              "value": "resource_booster_pack",
-              "weight": 50
-            },
-            {
-              "value": "arcane_booster_pack",
-              "weight": 30
-            },
-            {
-              "value": "leg_helmet",
-              "weight": 2
-            },
-            {
-              "value": "leg_chestplate",
-              "weight": 2
-            },
-            {
-              "value": "leg_leggings",
-              "weight": 2
-            },
-            {
-              "value": "leg_boots",
-              "weight": 2
-            },
-            {
-              "value": "leg_sword",
-              "weight": 2
-            },
-            {
-              "value": "leg_axe",
-              "weight": 2
-            },
-            {
-              "value": "leg_shield",
-              "weight": 2
-            },
-            {
-              "value": "leg_wand",
-              "weight": 2
-            },
-            {
-              "value": "leg_focus",
-              "weight": 2
-            },
-            {
-              "value": "castle_chestplate",
-              "weight": 2
-            },
-            {
-              "value": "warbound_helmet",
-              "weight": 2
-            },
-            {
-              "value": "inferno_reach",
-              "weight": 2
-            },
-            {
-              "value": "frozen_orb",
-              "weight": 2
-            },
-            {
-              "value": "grim_shield",
-              "weight": 2
-            },
-            {
-              "value": "swarmwalkers",
-              "weight": 2
-            },
-            {
-              "value": "starforge",
-              "weight": 2
-            },
-            {
-              "value": "stormcrown",
-              "weight": 2
-            },
-            {
-              "value": "inflated_justice",
-              "weight": 2
-            },
-            {
-              "value": "raid_rock",
               "weight": 40
             },
             {
-              "value": "rare_plushie",
-              "weight": 20
+              "value": "coin_pile_bigger",
+              "weight": 120
             },
             {
-              "value": "rare_rang",
-              "weight": 10
+              "value": "echo_gem_bigger",
+              "weight": 18
             },
             {
-              "value": "rare_trident",
-              "weight": 20
+              "value": "temporal_booster_pack_big",
+              "weight": 6
             },
-            {
-              "value": "rare_loot_sack",
-              "weight": 20
-            },
-            {
-              "value": "rare_battlestaff",
-              "weight": 20
-            },
-            {
-              "value": "knack_pack",
-              "weight": 15
-            },
-            {
-              "value": "temporal_booster_pack",
+             {
+              "value": "shiny_pack",
               "weight": 2
+            },
+            {
+              "value": "leg_helmet",
+              "weight": 6
+            },
+            {
+              "value": "leg_chestplate",
+              "weight": 6
+            },
+            {
+              "value": "leg_leggings",
+              "weight": 6
+            },
+            {
+              "value": "leg_boots",
+              "weight": 6
+            },
+            {
+              "value": "leg_sword",
+              "weight": 6
+            },
+            {
+              "value": "leg_axe",
+              "weight": 6
+            },
+            {
+              "value": "leg_shield",
+              "weight": 6
+            },
+            {
+              "value": "leg_wand",
+              "weight": 6
+            },
+            {
+              "value": "leg_focus",
+              "weight": 6
             },
             {
               "value": "leg_plushie",
-              "weight": 2
+              "weight": 6
             },
             {
               "value": "leg_loot_sack",
-              "weight": 2
+              "weight": 6
             },
             {
               "value": "leg_trident",
-              "weight": 2
+              "weight": 6
             },
             {
               "value": "leg_rang",
-              "weight": 2
+              "weight": 6
             },
             {
               "value": "leg_battlestaff",
-              "weight": 2
+              "weight": 6
+            },
+            {
+              "value": "castle_chestplate",
+              "weight": 6
+            },
+            {
+              "value": "warbound_helmet",
+              "weight": 4
+            },
+            {
+              "value": "inferno_reach",
+              "weight": 4
+            },
+            {
+              "value": "frozen_orb",
+              "weight": 4
+            },
+            {
+              "value": "grim_shield",
+              "weight": 4
+            },
+            {
+              "value": "swarmwalkers",
+              "weight": 4
+            },
+            {
+              "value": "stormcrown",
+              "weight": 4
+            },
+            {
+              "value": "inflated_justice",
+              "weight": 4
+            },
+            {
+              "value": "raid_rock_infinite_hard",
+              "weight": 10
             }
           ]
         }
