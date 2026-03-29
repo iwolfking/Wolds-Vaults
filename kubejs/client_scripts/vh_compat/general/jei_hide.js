@@ -89,6 +89,17 @@ onEvent('jei.hide.items', event => {
     event.hide('ars_nouveau:belt_of_levitation')
     event.hide('ars_nouveau:wixie_charm')
     event.hide('ars_nouveau:enchanters_shield')
+    event.hide('draconicevolution:stabilized_spawner')
+    event.hide('draconicevolution:draconic_sword')
+    event.hide(/draconicevolution:.*_sword/)
+    event.hide(/draconicevolution:.*_magnet/)
+    event.hide(/draconicevolution:.*_spawner/)
+    event.hide(/draconicevolution:.*_grinder/)
+    event.hide(/draconicevolution:.*_pickaxe/)
+    event.hide(/draconicevolution:.*_necklace/)
+    event.hide(/draconicevolution:.*_chestpiece/)
+
+
     //Blocks with rendering/crashing issues
     event.hide('blockcarpentry:frame_sign')
     event.hide('blockcarpentry:illusion_sign')
