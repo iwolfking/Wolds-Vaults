@@ -113,6 +113,12 @@ onEvent('jei.hide.items', event => {
     event.hide(/draconicevolution:.*_capacity_module/)
     event.hide(/draconicevolution:.*_control_module/)
     event.hide(/draconicevolution:.*_immune_module/)
+    event.hide(/draconicevolution:.*_comp_module/)
+    event.hide(/draconicevolution:.*_damage_module/)
+    event.hide(/draconicevolution:.*_collection_module/)
+    event.hide(/draconicevolution:.*_filter_module/)
+    event.hide(/draconicevolution:.*c_aoe_module/)
+    event.hide(/draconicevolution:.*_speed_module/)
 
 
     //Blocks with rendering/crashing issues
