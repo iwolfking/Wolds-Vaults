@@ -95,7 +95,9 @@ onEvent('jei.hide.items', event => {
     event.hide('draconicevolution:mob_soul')
     event.hide('draconicevolution:creative_capacitor')
     event.hide('draconicevolution:info_tablet')
-
+    event.hide(/draconicadditions:.*_harness/)
+    event.hide(/draconicadditions:.chaos_*/)
+    event.hide(/draconicadditions:.*_necklace/)
     event.hide(/draconicevolution:.*dislocator/)
     event.hide(/draconicevolution:.*_sword/)
     event.hide(/draconicevolution:.*_staff/)
