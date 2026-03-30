@@ -98,7 +98,6 @@ onEvent('jei.hide.items', event => {
 
     event.hide(/draconicevolution:.*dislocator/)
     event.hide(/draconicevolution:.*_sword/)
-    event.hide(/draconicevolution:.*_bow/)
     event.hide(/draconicevolution:.*_staff/)
     event.hide(/draconicevolution:.*magnet/)
     event.hide(/draconicevolution:.*_pickaxe/)
@@ -117,7 +116,7 @@ onEvent('jei.hide.items', event => {
     event.hide(/draconicevolution:.*_damage_module/)
     event.hide(/draconicevolution:.*_collection_module/)
     event.hide(/draconicevolution:.*_filter_module/)
-    event.hide(/draconicevolution:.*c_aoe_module/)
+    event.hide(/draconicevolution:.*_aoe_module/)
     event.hide(/draconicevolution:.*_speed_module/)
 
 
