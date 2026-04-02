@@ -1,0 +1,3973 @@
+{
+  "data": {
+    "Dash_Base": {
+      "description": [
+        {
+          "text": "向你面朝的方向推进一段",
+          "color": "$text"
+        },
+        {
+          "text": "距离",
+          "color": "$distance"
+        },
+        {
+          "text": "！\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "distance"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "distance"
+      ]
+    },
+    "Dash_Damage": {
+      "description": [
+        {
+          "text": "将你的冲刺变为子弹，使你对冲刺命中的任何怪物造成一定比例的",
+          "color": "$text"
+        },
+        {
+          "text": "物理伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "distance",
+        "damage"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "distance",
+        "damage"
+      ]
+    },
+    "Dash_Warp": {
+      "description": [
+        {
+          "text": "射出一支",
+          "color": "$text"
+        },
+        {
+          "text": "魔法箭矢",
+          "color": "$force"
+        },
+        {
+          "text": "，在",
+          "color": "$text"
+        },
+        {
+          "text": "命中时",
+          "color": "$name"
+        },
+        {
+          "text": "将你传送到箭矢所在位置",
+          "color": "$text"
+        },
+        {
+          "text": "。\n如果你击中了一个怪物或另一个玩家，你会与他们交换位置",
+          "color": "$text"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "force"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "force"
+      ]
+    },
+    "Execute_Base": {
+      "description": [
+        {
+          "text": "对目标总生命值造成",
+          "color": "$text"
+        },
+        {
+          "text": "一定比例",
+          "color": "$damage"
+        },
+        {
+          "text": "的",
+          "color": "$text"
+        },
+        {
+          "text": "伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "（在你的下一次攻击时触发）。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2297 下次命中技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "duration",
+        "damage"
+      ],
+      "next": [
+
+        "cooldown",
+        "duration",
+        "damage"
+      ]
+    },
+    "Farmer_Base": {
+      "description": [
+        {
+          "text": "在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内以一定",
+          "color": "$text"
+        },
+        {
+          "text": "间隔",
+          "color": "$delay"
+        },
+        {
+          "text": "加速作物生长。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "农夫目标：\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 种子\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 马铃薯\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 胡萝卜（太棒了）\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 甜菜根\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 亚麻种子\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical"
+      ],
+      "next": [
+
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical"
+      ]
+    },
+    "Farmer_Animal": {
+      "description": [
+        {
+          "text": "改变农夫技能，使其还能促使",
+          "color": "$text"
+        },
+        {
+          "text": "幼年动物",
+          "color": "$baby"
+        },
+        {
+          "text": "更快成长！（太棒了）\n",
+          "color": "$text"
+        },
+        {
+          "text": "它以一定",
+          "color": "$text"
+        },
+        {
+          "text": "间隔",
+          "color": "$delay"
+        },
+        {
+          "text": "在你周围一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内生效。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "牧场主目标包含所有基础技能目标，以及：\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 幼年动物\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 幼年村民\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical",
+        "chance"
+      ],
+      "next": [
+
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical",
+        "chance"
+      ]
+    },
+    "Farmer_Cactus": {
+      "description": [
+        {
+          "text": "在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内以一定",
+          "color": "$text"
+        },
+        {
+          "text": "间隔",
+          "color": "$delay"
+        },
+        {
+          "text": "加速作物生长。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "园丁目标包含所有基础技能目标，以及：\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 仙人掌\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 甘蔗\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 地狱疣\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical"
+      ],
+      "next": [
+
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical"
+      ]
+    },
+    "Farmer_Melon": {
+      "description": [
+        {
+          "text": "在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内以一定",
+          "color": "$text"
+        },
+        {
+          "text": "间隔",
+          "color": "$delay"
+        },
+        {
+          "text": "加速作物生长。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "耕作者目标包含所有基础技能目标，以及：\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 西瓜\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 南瓜\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical"
+      ],
+      "next": [
+
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical"
+      ]
+    },
+    "Ghost_Walk_Base": {
+      "description": [
+        {
+          "text": "使你隐身一段",
+          "color": "$text"
+        },
+        {
+          "text": "持续时间",
+          "color": "$duration"
+        },
+        {
+          "text": "。在幽灵行走期间攻击任何东西将取消该效果。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedDuration"
+      ]
+    },
+    "Ghost_Walk_Spirit": {
+      "description": [
+        {
+          "text": "使你隐身一段",
+          "color": "$text"
+        },
+        {
+          "text": "持续时间",
+          "color": "$duration"
+        },
+        {
+          "text": "。在",
+          "color": "$text"
+        },
+        {
+          "text": "灵魂行走",
+          "color": "$name"
+        },
+        {
+          "text": "期间攻击任何东西、破坏方块或打开容器将取消该效果。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration"
+      ],
+      "next": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration"
+      ]
+    },
+    "Heal_Base": {
+      "description": [
+        {
+          "text": "恢复一定量的",
+          "color": "$text"
+        },
+        {
+          "text": "生命值",
+          "color": "$heal"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "heal"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "heal"
+      ]
+    },
+    "Heal_Cleanse": {
+      "description": [
+        {
+          "text": "将治疗改为净化，清除你身上的所有负面效果。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Heal_Group": {
+      "description": [
+        {
+          "text": "使你的治疗能够影响你的宝库队伍中的所有成员。\n\n在治疗",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$heal"
+        },
+        {
+          "text": "内的队伍成员将获得全额",
+          "color": "$text"
+        },
+        {
+          "text": "生命值",
+          "color": "$heal"
+        },
+        {
+          "text": "恢复，而在半径之外的队伍成员只恢复一半的",
+          "color": "$text"
+        },
+        {
+          "text": "生命值",
+          "color": "$heal"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "heal",
+        "adjustedRadius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "heal",
+        "adjustedRadius"
+      ]
+    },
+    "Hunter_Base": {
+      "description": [
+        {
+          "text": "在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内高亮显示所有",
+          "color": "$text"
+        },
+        {
+          "text": "兴趣点",
+          "color": "$qhighlight"
+        },
+        {
+          "text": "，持续一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "兴趣点包括",
+          "color": "$text"
+        },
+        {
+          "text": "所有宝箱",
+          "color": "$chance"
+        },
+        {
+          "text": "、",
+          "color": "$text"
+        },
+        {
+          "text": "金币",
+          "color": "$chance"
+        },
+        {
+          "text": "、",
+          "color": "$text"
+        },
+        {
+          "text": "神坛",
+          "color": "$chance"
+        },
+        {
+          "text": "和",
+          "color": "$text"
+        },
+        {
+          "text": "目标点",
+          "color": "$chance"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius"
+      ],
+      "next": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius"
+      ]
+    },
+    "Hunter_Blocks": {
+      "description": [
+        {
+          "text": "改变猎人技能，转而在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内显示目标物，持续一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ]
+    },
+    "Hunter_Wooden": {
+      "description": [
+        {
+          "text": "改变猎人技能，转而在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内显示木质宝箱，持续一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ]
+    },
+    "Hunter_Gilded": {
+      "description": [
+        {
+          "text": "改变猎人技能，转而在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内显示镀金宝箱，持续一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ]
+    },
+    "Hunter_Living": {
+      "description": [
+        {
+          "text": "改变猎人技能，转而在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内显示活体宝箱，持续一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ]
+    },
+    "Hunter_Ornate": {
+      "description": [
+        {
+          "text": "改变猎人技能，转而在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内显示华丽宝箱，持续一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ]
+    },
+    "Hunter_Coins": {
+      "description": [
+        {
+          "text": "改变猎人技能，转而在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内显示金币堆，持续一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ]
+    },
+    "Shield_Bash": {
+      "description": [
+        {
+          "text": "向前冲刺并用盾牌猛击怪物，在你前方的",
+          "color": "$text"
+        },
+        {
+          "text": "锥形范围",
+          "color": "$radius"
+        },
+        {
+          "text": "内造成",
+          "color": "$text"
+        },
+        {
+          "text": "格挡概率伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "，并附带",
+          "color": "$text"
+        },
+        {
+          "text": "击退",
+          "color": "$knockback"
+        },
+        {
+          "text": "效果。有几率",
+          "color": "$text"
+        },
+        {
+          "text": "眩晕",
+          "color": "$stunChance"
+        },
+        {
+          "text": "命中的敌人。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaCost",
+        "cooldown",
+        "damage",
+        "adjustedRadius",
+        "knockback",
+        "stunChance"
+      ],
+      "next": [
+        "manaCost",
+        "cooldown",
+        "damage",
+        "adjustedRadius",
+        "knockback",
+        "stunChance"
+      ]
+    },
+    "Mana_Shield_Base": {
+      "description": [
+        {
+          "text": "获得一个",
+          "color": "$text"
+        },
+        {
+          "text": "防护屏障",
+          "color": "$absorb"
+        },
+        {
+          "text": "，持续",
+          "color": "$text"
+        },
+        {
+          "text": "有限时间",
+          "color": "$duration"
+        },
+        {
+          "text": "，吸收所有传入伤害直到护盾耗尽或时间结束。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaCost",
+        "cooldown",
+        "healthPoints"
+
+      ],
+      "next": [
+        "manaCost",
+        "cooldown",
+        "healthPoints"
+      ]
+    },
+    "Mana_Barrier": {
+      "description": [
+        {
+          "text": "在你周围召唤一个魔法",
+          "color": "$text"
+        },
+        {
+          "text": "法力方块",
+          "color": "$absorb"
+        },
+        {
+          "text": "，持续一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "。怪物无法穿过这些",
+          "color": "$text"
+        },
+        {
+          "text": "方块",
+          "color": "$absorb"
+        },
+        {
+          "text": "，但你可以！",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "duration",
+        "manaCost",
+        "cooldown",
+        "adjustedRadius"
+      ],
+      "next": [
+        "duration",
+        "manaCost",
+        "cooldown",
+        "adjustedRadius"
+      ]
+    },
+    "Retribution_Base": {
+      "description": [
+        {
+          "text": "给予你一个法力护盾，将一定",
+          "color": "$text"
+        },
+        {
+          "text": "比例的传入伤害",
+          "color": "$absorb"
+        },
+        {
+          "text": "转移到你的",
+          "color": "$text"
+        },
+        {
+          "text": "法力池",
+          "color": "$manaCost"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "吸收伤害后，你的下一次攻击伤害将增加",
+          "color": "$text"
+        },
+        {
+          "text": "吸收伤害的一定比例",
+          "color": "$damage"
+        },
+        {
+          "text": "，并对目标周围一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内的所有怪物造成伤害。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "thornsDamage",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "thornsDamage",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Mana_Shield_Retribution": {
+      "description": [
+        {
+          "text": "给予你一个强大的复仇光环。激活后，来自怪物的任何传入伤害都会积累",
+          "color": "$text"
+        },
+        {
+          "text": "报应层数",
+          "color": "$qhighlight"
+        },
+        {
+          "text": "，当光环",
+          "color": "$text"
+        },
+        {
+          "text": "到期",
+          "color": "$duration"
+        },
+        {
+          "text": "时，将在球形",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内释放强力爆破，对你周围所有怪物造成每层",
+          "color": "$text"
+        },
+        {
+          "text": "荆棘伤害",
+          "color": "$thornsDamage"
+        },
+        {
+          "text": "。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "thornsDamage",
+        "adjustedRadius",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "thornsDamage",
+        "adjustedRadius",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Mana_Shield_Implode": {
+      "description": [
+        {
+          "text": "消耗你所有的法力，将消耗法力的一定",
+          "color": "$text"
+        },
+        {
+          "text": "比例",
+          "color": "$damage"
+        },
+        {
+          "text": "转化为伤害，对一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内的所有敌人造成伤害。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaDamage",
+        "adjustedRadius",
+        "cooldown"
+
+      ],
+      "next": [
+        "manaDamage",
+        "adjustedRadius",
+        "cooldown"
+      ]
+    },
+    "Mega_Jump_Base": {
+      "description": [
+        {
+          "text": "赋予你",
+          "color": "$text"
+        },
+        {
+          "text": "超级跳跃",
+          "color": "$range"
+        },
+        {
+          "text": "到空中的能力。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "rangeVertical"
+      ],
+      "next": [
+        "cooldown",
+        "manaCost",
+        "rangeVertical"
+      ]
+    },
+    "Mega_Jump_Break_Down": {
+      "description": [
+        {
+          "text": "将超级跳跃改为超级挖掘！不再将你弹射到空中，而是向下钻入方块，沿途破坏它们。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "此技能不在主世界中生效。\n\n",
+          "color": "$chance"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "rangeVertical",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "rangeVertical",
+        "radius"
+      ]
+    },
+    "Mega_Jump_Break_Up": {
+      "description": [
+        {
+          "text": "改变你的超级跳跃，使其破坏你跳入的方块。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "此技能不在主世界中生效。\n\n",
+          "color": "$chance"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "rangeVertical"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "rangeVertical"
+      ]
+    },
+    "Nova_Base": {
+      "description": [
+        {
+          "text": "对你周围一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内的敌人造成一定比例的",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "伤害。\n",
+          "color": "$text"
+        },
+        {
+          "text": "新星",
+          "color": "$name"
+        },
+        {
+          "text": "的伤害随目标距离增加而降低。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "ability_power"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "ability_power"
+      ]
+    },
+    "Nova_Dot": {
+      "description": [
+        {
+          "text": "改变新星，转而通过",
+          "color": "$text"
+        },
+        {
+          "text": "中毒",
+          "color": "$poison"
+        },
+        {
+          "text": "造成一定比例的",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "伤害。伤害将在一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "内持续造成。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "ability_power",
+        "adjustedDuration"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "ability_power",
+        "adjustedDuration"
+      ]
+    },
+    "Nova_Slow": {
+      "description": [
+        {
+          "text": "改变新星，冻结你周围一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内的怪物。怪物将保持冻结一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "，然后获得",
+          "color": "$text"
+        },
+        {
+          "text": "低温症",
+          "color": "$slowness"
+        },
+        {
+          "text": "，使它们永久",
+          "color": "$text"
+        },
+        {
+          "text": "寒冷",
+          "color": "$chilled"
+        },
+        {
+          "text": "并每3秒受到伤害\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration"
+      ]
+    },
+    "Rampage_Base": {
+      "description": [
+        {
+          "text": "使你进入狂暴状态，在激活期间获得额外的",
+          "color": "$text"
+        },
+        {
+          "text": "物理伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "加成。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCostPerSecond",
+        "damage"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCostPerSecond",
+        "damage"
+      ]
+    },
+    "Rampage_Chain": {
+      "description": [
+        {
+          "text": "改变狂暴技能，使你的攻击获得",
+          "color": "$text"
+        },
+        {
+          "text": "连锁效果",
+          "color": "$chains"
+        },
+        {
+          "text": "，击中第一个目标之后的多个怪物，而非增加狂暴期间的伤害。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCostPerSecond",
+        "chains"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCostPerSecond",
+        "chains"
+      ]
+    },
+    "Rampage_Leech": {
+      "description": [
+        {
+          "text": "改变狂暴技能，给予你",
+          "color": "$text"
+        },
+        {
+          "text": "生命偷取",
+          "color": "$leech"
+        },
+        {
+          "text": "，而非增加狂暴期间的伤害。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCostPerSecond",
+        "leech"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCostPerSecond",
+        "leech"
+      ]
+    },
+    "Earthquake_Landmine": {
+      "description": [
+        {
+          "text": "在你站立的位置召唤一颗",
+          "color": "$text"
+        },
+        {
+          "text": "地雷",
+          "color": "$name"
+        },
+        {
+          "text": "，当任何怪物踩上时在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内爆炸，根据你的",
+          "color": "$text"
+        },
+        {
+          "text": "攻击伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "造成伤害，并",
+          "color": "$text"
+        },
+        {
+          "text": "击退",
+          "color": "$knockback"
+        },
+        {
+          "text": "任何敌对生物。\n\n地雷也可以通过在彼此的半径范围内爆炸来触发连锁反应。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "damage",
+        "adjustedRadius",
+        "knockback"
+      ],
+      "next": [
+        "cooldown",
+        "manaCost",
+        "damage",
+        "adjustedRadius",
+        "knockback"
+      ]
+    },
+    "Stonefall_Base": {
+      "description": [
+        {
+          "text": "在",
+          "color": "$text"
+        },
+        {
+          "text": "激活",
+          "color": "$duration"
+        },
+        {
+          "text": "时减少",
+          "color": "$text"
+        },
+        {
+          "text": "摔落伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "，着地时",
+          "color": "$text"
+        },
+        {
+          "text": "击退",
+          "color": "$radius"
+        },
+        {
+          "text": "一定半径内的怪物",
+          "color": "$text"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "damageReduction",
+        "adjustedRadius",
+        "knockback",
+        "adjustedDuration"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "damageReduction",
+        "adjustedRadius",
+        "knockback",
+        "adjustedDuration"
+      ]
+    },
+    "Stonefall_Cold": {
+      "description": [
+        {
+          "text": "在",
+          "color": "$text"
+        },
+        {
+          "text": "激活",
+          "color": "$duration"
+        },
+        {
+          "text": "时减少",
+          "color": "$text"
+        },
+        {
+          "text": "摔落伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "，着地时",
+          "color": "$text"
+        },
+        {
+          "text": "冰冻",
+          "color": "$chilled"
+        },
+        {
+          "text": "并创建",
+          "color": "$text"
+        },
+        {
+          "text": "冰牢",
+          "color": "$maxGlacialPrison"
+        },
+        {
+          "text": "困住一定半径内的怪物。\n",
+          "color": "$text"
+        },
+        {
+          "text": "半径受坠落距离影响。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damageReduction",
+        "maxGlacialPrison",
+        "adjustedRadius",
+        "freezeDuration",
+        "adjustedDuration",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "damageReduction",
+        "maxGlacialPrison",
+        "adjustedRadius",
+        "freezeDuration",
+        "adjustedDuration",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Stonefall_Snow": {
+      "description": [
+        {
+          "text": "在",
+          "color": "$text"
+        },
+        {
+          "text": "激活",
+          "color": "$duration"
+        },
+        {
+          "text": "时减少",
+          "color": "$text"
+        },
+        {
+          "text": "摔落伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "，着地时根据",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "对一定半径内的附近怪物造成伤害。\n半径随你的坠落距离增加。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "damageReduction",
+        "adjustedRadius",
+        "ability_power",
+        "adjustedDuration"
+      ],
+      "next": [
+        "cooldown",
+        "manaCost",
+        "damageReduction",
+        "adjustedRadius",
+        "ability_power",
+        "adjustedDuration"
+      ]
+    },
+    "Summon_Eternal_Base": {
+      "description": [
+        {
+          "text": "召唤你的",
+          "color": "$text"
+        },
+        {
+          "text": "永恒者",
+          "color": "$eternals"
+        },
+        {
+          "text": "！此技能需要你在永恒基座上至少有一个存活的永恒者，否则不会生效。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "eternals",
+        "duration"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "eternals",
+        "duration"
+      ]
+    },
+    "Empower_Base": {
+      "description": [
+        {
+          "text": "给予你一个",
+          "color": "$text"
+        },
+        {
+          "text": "移动速度",
+          "color": "$speed"
+        },
+        {
+          "text": "光环。在激活期间影响你和",
+          "color": "$text"
+        },
+        {
+          "text": "范围",
+          "color": "$radius"
+        },
+        {
+          "text": "内的其他玩家\n\n\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "speed",
+        "adjustedRadius",
+        "cooldown",
+        "manaCostPerSecond"
+
+      ],
+      "next": [
+
+        "speed",
+        "adjustedRadius",
+        "cooldown",
+        "manaCostPerSecond"
+
+      ]
+    },
+    "Empower_Ice_Armor": {
+      "description": [
+        {
+          "text": "将自己包裹在冰霜屏障中，在激活期间使任何攻击你的怪物被",
+          "color": "$text"
+        },
+        {
+          "text": "寒冷",
+          "color": "$chilled"
+        },
+        {
+          "text": "一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "chilled",
+        "adjustedDuration",
+        "manaCostPerSecond",
+        "cooldown"
+
+
+      ],
+      "next": [
+        "chilled",
+        "adjustedDuration",
+        "manaCostPerSecond",
+        "cooldown"
+      ]
+    },
+    "Empower_Slowness_Aura": {
+      "description": [
+        {
+          "text": "给予你一个熵光环，在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内",
+          "color": "$text"
+        },
+        {
+          "text": "减速",
+          "color": "$slowness"
+        },
+        {
+          "text": "你周围的怪物（激活期间生效）\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "manaCostPerSecond",
+        "cooldown"
+
+
+      ],
+      "next": [
+        "adjustedRadius",
+        "manaCostPerSecond",
+        "cooldown"
+      ]
+    },
+    "Taunt_Base": {
+      "description": [
+        {
+          "text": "嘲讽你周围一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内的怪物，激怒它们攻击你，并使它们",
+          "color": "$text"
+        },
+        {
+          "text": "易伤",
+          "color": "$vulnerable"
+        },
+        {
+          "text": "一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "每",
+          "color": "$text"
+        },
+        {
+          "text": "一层易伤",
+          "color": "$vulnerable"
+        },
+        {
+          "text": "使该怪物受到的伤害增加",
+          "color": "$text"
+        },
+        {
+          "text": "10%",
+          "color": "$vulnerable"
+        },
+        {
+          "text": "。\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration",
+        "vulnerable"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration",
+        "vulnerable"
+      ]
+    },
+    "Taunt_Repel": {
+      "description": [
+        {
+          "text": "不再嘲讽你周围的怪物，而是使它们在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内恐惧你。被恐惧的怪物将被",
+          "color": "$text"
+        },
+        {
+          "text": "推开",
+          "color": "$distance"
+        },
+        {
+          "text": "并在一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "内拒绝攻击你。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration",
+        "distance"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration",
+        "distance"
+      ]
+    },
+    "Taunt_Charm": {
+      "description": [
+        {
+          "text": "魅惑你周围一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内的一个",
+          "color": "$text"
+        },
+        {
+          "text": "随机怪物",
+          "color": "$maxTargets"
+        },
+        {
+          "text": "为你而战。被魅惑的怪物造成你",
+          "color": "$text"
+        },
+        {
+          "text": "攻击伤害的一定比例",
+          "color": "$damage"
+        },
+        {
+          "text": "，并可触发",
+          "color": "$text"
+        },
+        {
+          "text": "命中效果。",
+          "color": "$name"
+        },
+        {
+          "text": " 被魅惑的怪物还具有",
+          "color": "$text"
+        },
+        {
+          "text": "增加的速度",
+          "color": "$speed"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration",
+        "maxTargets",
+        "damage",
+        "speed"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration",
+        "maxTargets",
+        "damage",
+        "speed"
+      ]
+    },
+    "Totem_Base": {
+      "description": [
+        {
+          "text": "在你附近创建一个图腾，每秒",
+          "color": "$text"
+        },
+        {
+          "text": "治疗",
+          "color": "$heal"
+        },
+        {
+          "text": "一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内的所有玩家。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "heal"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "heal"
+      ]
+    },
+    "Totem_Mana_Regen": {
+      "description": [
+        {
+          "text": "在你附近创建一个图腾，每秒恢复一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内所有玩家的",
+          "color": "$text"
+        },
+        {
+          "text": "法力",
+          "color": "$manaCost"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "manaRegen"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "manaRegen"
+      ]
+    },
+    "Totem_Mob_Damage": {
+      "description": [
+        {
+          "text": "在你附近创建一个图腾，以一定",
+          "color": "$text"
+        },
+        {
+          "text": "间隔",
+          "color": "$delay"
+        },
+        {
+          "text": "对一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内的所有怪物造成少量",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "比例的伤害。这些攻击会应用你拥有的任何",
+          "color": "$text"
+        },
+        {
+          "text": "命中效果",
+          "color": "$name"
+        },
+        {
+          "text": "，但幸运一击除外",
+          "color": "$text"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "ability_power",
+        "delay"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "ability_power",
+        "delay"
+      ]
+    },
+    "Totem_Player_Damage": {
+      "description": [
+        {
+          "text": "在你附近创建一个图腾，增加一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内所有玩家的",
+          "color": "$text"
+        },
+        {
+          "text": "物理伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "damage"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "damage"
+      ]
+    },
+    "Vein_Miner_Base": {
+      "description": [
+        {
+          "text": "允许你同时挖掘多个",
+          "color": "$text"
+        },
+        {
+          "text": "方块",
+          "color": "$blocks"
+        },
+        {
+          "text": "！\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf 按住技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "blocks"
+      ],
+      "next": [
+
+        "blocks"
+      ]
+    },
+    "Vein_Miner_Durability": {
+      "description": [
+        {
+          "text": "改变矿脉采掘，使其在挖掘方块时有几率忽略",
+          "color": "$text"
+        },
+        {
+          "text": "耐久消耗",
+          "color": "$unbreaking"
+        },
+        {
+          "text": "。但是，可挖掘的",
+          "color": "$text"
+        },
+        {
+          "text": "方块数量",
+          "color": "$blocks"
+        },
+        {
+          "text": "会减少。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf 按住技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "blocks",
+        "unbreaking"
+      ],
+      "next": [
+
+        "blocks",
+        "unbreaking"
+      ]
+    },
+    "Vein_Miner_Fortune": {
+      "description": [
+        {
+          "text": "改变矿脉采掘，在挖掘方块时增加一级",
+          "color": "$text"
+        },
+        {
+          "text": "时运",
+          "color": "$fortune"
+        },
+        {
+          "text": "。但是，可挖掘的",
+          "color": "$text"
+        },
+        {
+          "text": "方块数量",
+          "color": "$blocks"
+        },
+        {
+          "text": "会减少。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf 按住技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "blocks",
+        "fortune"
+      ],
+      "next": [
+
+        "blocks",
+        "fortune"
+      ]
+    },
+    "Vein_Miner_Void": {
+      "description": [
+        {
+          "text": "改变矿脉采掘，在",
+          "color": "$text"
+        },
+        {
+          "text": "宝库内",
+          "color": "$chance"
+        },
+        {
+          "text": "虚空化其挖掘的任何方块（宝库矿石除外）。但是，可挖掘的",
+          "color": "$text"
+        },
+        {
+          "text": "方块数量",
+          "color": "$blocks"
+        },
+        {
+          "text": "会减少。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf 按住技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "blocks"
+      ],
+      "next": [
+
+        "blocks"
+      ]
+    },
+    "Javelin_Base": {
+      "description": [
+        {
+          "text": "召唤一支魔法标枪远程打击你的敌人\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "根据你的武器伤害造成一定量的",
+          "color": "$text"
+        },
+        {
+          "text": "伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "，命中时",
+          "color": "$text"
+        },
+        {
+          "text": "击退怪物",
+          "color": "$knockback"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damage",
+        "knockback",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+
+        "damage",
+        "knockback",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Javelin_Piercing": {
+      "description": [
+        {
+          "text": "召唤一支魔法标枪远程打击你的敌人\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "根据你的武器伤害造成一定量的",
+          "color": "$text"
+        },
+        {
+          "text": "伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "，命中时",
+          "color": "$text"
+        },
+        {
+          "text": "穿透一定数量的怪物",
+          "color": "$piercing"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damage",
+        "piercing",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+
+        "damage",
+        "piercing",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Javelin_Scatter": {
+      "description": [
+        {
+          "text": "召唤一支魔法标枪远程打击你的敌人\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "根据你的武器伤害造成一定量的",
+          "color": "$text"
+        },
+        {
+          "text": "伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "，命中时",
+          "color": "$text"
+        },
+        {
+          "text": "散射出一定数量的标枪",
+          "color": "$numberOfJavelins"
+        },
+        {
+          "text": "并",
+          "color": "$text"
+        },
+        {
+          "text": "弹射数次\n\n",
+          "color": "$numberOfBounces"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damage",
+        "numberOfJavelins",
+        "numberOfBounces",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+
+        "damage",
+        "numberOfJavelins",
+        "numberOfBounces",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Javelin_Sight": {
+      "description": [
+        {
+          "text": "射出一支魔法",
+          "color": "$text"
+        },
+        {
+          "text": "标枪",
+          "color": "$qhighlight"
+        },
+        {
+          "text": "，命中时在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内扫描该区域，揭示所有",
+          "color": "$text"
+        },
+        {
+          "text": "宝箱",
+          "color": "$qhighlight"
+        },
+        {
+          "text": "和",
+          "color": "$text"
+        },
+        {
+          "text": "怪物",
+          "color": "$qhighlight"
+        },
+        {
+          "text": "，持续一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间\n\n",
+          "color": "$duration"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Smite_Base": {
+      "description": [
+        {
+          "text": "激活时，",
+          "color": "$text"
+        },
+        {
+          "text": "神罚",
+          "color": "$name"
+        },
+        {
+          "text": "将",
+          "color": "$text"
+        },
+        {
+          "text": "周期性地",
+          "color": "$damageInterval"
+        },
+        {
+          "text": "打击",
+          "color": "$text"
+        },
+        {
+          "text": "范围",
+          "color": "$radius"
+        },
+        {
+          "text": "内的一个怪物，造成你",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "的随机比例伤害，并将任何",
+          "color": "$text"
+        },
+        {
+          "text": "命中效果",
+          "color": "$name"
+        },
+        {
+          "text": "转移给目标（幸运一击除外）。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+
+        "abilityRange",
+        "damageInterval",
+        "adjustedRadius",
+        "additionalManaPerBolt",
+        "manaCostPerSecond",
+        "cooldown"
+      ],
+      "next": [
+
+
+        "abilityRange",
+        "damageInterval",
+        "adjustedRadius",
+        "additionalManaPerBolt",
+        "manaCostPerSecond",
+        "cooldown"
+      ]
+    },
+    "Smite_Thunderstorm": {
+      "description": [
+        {
+          "text": "激活时，",
+          "color": "$text"
+        },
+        {
+          "text": "神罚雷暴",
+          "color": "$name"
+        },
+        {
+          "text": "将",
+          "color": "$text"
+        },
+        {
+          "text": "降下闪电",
+          "color": "$damageInterval"
+        },
+        {
+          "text": "打击一定",
+          "color": "$text"
+        },
+        {
+          "text": "范围",
+          "color": "$radius"
+        },
+        {
+          "text": "内的怪物，造成你",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "的随机比例伤害。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "damageInterval",
+        "adjustedRadius",
+        "manaCostPerSecond",
+        "cooldown"
+      ],
+      "next": [
+        "abilityRange",
+        "damageInterval",
+        "adjustedRadius",
+        "manaCostPerSecond",
+        "cooldown"
+      ]
+    },
+    "Smite_Archon": {
+      "description": [
+        {
+          "text": "激活时，",
+          "color": "$text"
+        },
+        {
+          "text": "神罚大天使",
+          "color": "$name"
+        },
+        {
+          "text": "将你变为一道电火花。你物理接触的任何怪物将受到你",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "随机比例的雷击伤害。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "additionalManaPerBolt",
+        "manaCostPerSecond",
+        "cooldown"
+      ],
+      "next": [
+        "abilityRange",
+        "additionalManaPerBolt",
+        "manaCostPerSecond",
+        "cooldown"
+      ]
+    },
+    "Shell_Base": {
+      "description": [
+        {
+          "text": "激活时，",
+          "color": "$text"
+        },
+        {
+          "text": "甲壳",
+          "color": "$name"
+        },
+        {
+          "text": "将给予你硬化皮肤，受到攻击时有",
+          "color": "$text"
+        },
+        {
+          "text": "几率眩晕怪物",
+          "color": "$chance"
+        },
+        {
+          "text": "。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+
+        "stunChance",
+        "manaCostPerSecond",
+        "additionalManaPerHit",
+        "cooldown"
+      ],
+      "next": [
+
+        "stunChance",
+        "manaCostPerSecond",
+        "additionalManaPerHit",
+        "cooldown"
+      ]
+    },
+    "Shell_Porcupine": {
+      "description": [
+        {
+          "text": "激活时，",
+          "color": "$text"
+        },
+        {
+          "text": "豪猪",
+          "color": "$name"
+        },
+        {
+          "text": "将增加你的",
+          "color": "$text"
+        },
+        {
+          "text": "荆棘伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "additionalThornsDamage",
+        "manaCostPerSecond",
+        "cooldown"
+      ],
+      "next": [
+        "additionalThornsDamage",
+        "manaCostPerSecond",
+        "cooldown"
+      ]
+    },
+    "Shell_Quill": {
+      "description": [
+        {
+          "text": "激活时，",
+          "color": "$text"
+        },
+        {
+          "text": "羽刺",
+          "color": "$name"
+        },
+        {
+          "text": "将增加你的",
+          "color": "$text"
+        },
+        {
+          "text": "荆棘伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "并",
+          "color": "$text"
+        },
+        {
+          "text": "连锁你的荆棘",
+          "color": "$chains"
+        },
+        {
+          "text": "以命中额外目标。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25d0 切换技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "additionalThornsDamage",
+        "quillCount",
+        "manaCostPerSecond",
+        "additionalManaPerHit",
+        "cooldown"
+      ],
+      "next": [
+        "additionalThornsDamage",
+        "quillCount",
+        "manaCostPerSecond",
+        "additionalManaPerHit",
+        "cooldown"
+      ]
+    },
+    "Fireball_Base": {
+      "description": [
+        {
+          "text": "召唤一个魔法火球远程打击你的敌人\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "根据你的技能强度造成一定量的",
+          "color": "$text"
+        },
+        {
+          "text": "伤害",
+          "color": "$ability_power"
+        },
+        {
+          "text": "。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "adjustedRadius",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "ability_power",
+        "adjustedRadius",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Fireball_Volley": {
+      "description": [
+        {
+          "text": "召唤一个会弹跳的魔法火球，",
+          "color": "$text"
+        },
+        {
+          "text": "灼烧",
+          "color": "$ability_power"
+        },
+        {
+          "text": "路径上的怪物，并根据你的技能强度造成一定量的",
+          "color": "$text"
+        },
+        {
+          "text": "伤害",
+          "color": "$ability_power"
+        },
+        {
+          "text": "。\n经过一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "后，火球在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内爆炸，造成全额伤害。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "adjustedRadius",
+        "duration",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "ability_power",
+        "adjustedRadius",
+        "duration",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Fireball_Fireshot": {
+      "description": [
+        {
+          "text": "召唤一个小型魔法火弹远程打击怪物\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "根据你的",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "造成一定量的",
+          "color": "$text"
+        },
+        {
+          "text": "伤害",
+          "color": "$ability_power"
+        },
+        {
+          "text": "，并转移你的任何",
+          "color": "$text"
+        },
+        {
+          "text": "命中效果",
+          "color": "$name"
+        },
+        {
+          "text": "（幸运一击除外）。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "cooldown",
+        "manaCost"
+      ],
+      "next": [
+        "ability_power",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Storm_Arrow_Base": {
+      "description": [
+        {
+          "text": "射出一支箭矢，命中时在撞击点上方产生一场风暴\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "根据你的技能强度造成随机量的",
+          "color": "$text"
+        },
+        {
+          "text": "伤害",
+          "color": "$ability_power"
+        },
+        {
+          "text": "。风暴云持续一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "，每隔一段时间",
+          "color": "$text"
+        },
+        {
+          "text": "打击",
+          "color": "$duration"
+        },
+        {
+          "text": "一次。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "adjustedRadius",
+        "adjustedDuration",
+        "stormInterval",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "abilityRange",
+        "adjustedRadius",
+        "adjustedDuration",
+        "stormInterval",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Storm_Arrow_Blizzard": {
+      "description": [
+        {
+          "text": "射出一支箭矢，命中时在撞击点上方产生一场冰暴\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "每块冰碎片命中时冻结怪物一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间。",
+          "color": "$duration"
+        },
+        {
+          "text": "还有一定",
+          "color": "$text"
+        },
+        {
+          "text": "几率",
+          "color": "$chance"
+        },
+        {
+          "text": "使怪物冻伤一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "，每隔一段时间触发。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "stormInterval",
+        "slowDuration",
+        "frostbiteChance",
+        "frostbiteDuration",
+        "cooldown",
+        "manaCost"
+      ],
+      "next": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "stormInterval",
+        "slowDuration",
+        "frostbiteChance",
+        "frostbiteDuration",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Battle_Cry_Base": {
+      "description": [
+        {
+          "text": "汲取周围怪物的精华，积累",
+          "color": "$text"
+        },
+        {
+          "text": "战吼层数",
+          "color": "$maxStacks"
+        },
+        {
+          "text": "，然后释放一定",
+          "color": "$text"
+        },
+        {
+          "text": "数量",
+          "color": "$stacksUsedPerHit"
+        },
+        {
+          "text": "的层数，在你的下一次直接命中攻击时给予你",
+          "color": "$text"
+        },
+        {
+          "text": "额外攻击伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "。\n层数在一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "后如未使用将消散。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "attackDamagePerStack",
+        "maxStacks",
+        "stacksUsedPerHit",
+        "cooldown",
+        "manaCost"
+      ],
+      "next": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "attackDamagePerStack",
+        "maxStacks",
+        "stacksUsedPerHit",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Battle_Cry_Spectral_Strike": {
+      "description": [
+        {
+          "text": "汲取周围怪物的精华，积累",
+          "color": "$text"
+        },
+        {
+          "text": "战吼层数",
+          "color": "$maxStacks"
+        },
+        {
+          "text": "，然后释放一定",
+          "color": "$text"
+        },
+        {
+          "text": "数量",
+          "color": "$stacksUsedPerHit"
+        },
+        {
+          "text": "的层数，在你的下一次直接命中攻击时增加",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$abilityPowerPerStack"
+        },
+        {
+          "text": "作为伤害。\n层数在一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "后如未使用将消散。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "abilityPowerPerStack",
+        "maxStacks",
+        "stacksUsedPerHit",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "abilityPowerPerStack",
+        "maxStacks",
+        "stacksUsedPerHit",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Battle_Cry_Lucky_Strike": {
+      "description": [
+        {
+          "text": "汲取周围怪物的精华，积累",
+          "color": "$text"
+        },
+        {
+          "text": "战吼层数",
+          "color": "$maxStacks"
+        },
+        {
+          "text": "，然后释放一定",
+          "color": "$text"
+        },
+        {
+          "text": "数量",
+          "color": "$stacksUsedPerHit"
+        },
+        {
+          "text": "的层数，在你的下一次直接命中攻击时给予你",
+          "color": "$text"
+        },
+        {
+          "text": "额外幸运一击几率",
+          "color": "$luckyHit"
+        },
+        {
+          "text": "。\n层数在一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "后如未使用将消散。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "luckyHitPerStack",
+        "maxStacks",
+        "stacksUsedPerHit",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "luckyHitPerStack",
+        "maxStacks",
+        "stacksUsedPerHit",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Ice_Bolt_Base": {
+      "description": [
+        {
+          "text": "召唤一个小型冰矢，造成",
+          "color": "$text"
+        },
+        {
+          "text": "固定伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "并",
+          "color": "$text"
+        },
+        {
+          "text": "冰冻",
+          "color": "$chilled"
+        },
+        {
+          "text": "命中的怪物一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "setDamage",
+        "throwPower",
+        "adjustedDuration",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "setDamage",
+        "throwPower",
+        "adjustedDuration",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Ice_Bolt_Blast": {
+      "description": [
+        {
+          "text": "召唤一个大型冰河冲击，命中时爆炸，",
+          "color": "$text"
+        },
+        {
+          "text": "冰冻",
+          "color": "$chilled"
+        },
+        {
+          "text": "并有可能",
+          "color": "$text"
+        },
+        {
+          "text": "冰牢禁锢",
+          "color": "$maxGlacialPrison"
+        },
+        {
+          "text": "其",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内的怪物，持续一段",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": " ",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "throwPower",
+        "adjustedDuration",
+        "adjustedRadius",
+        "glacialChance",
+        "cooldown",
+        "manaCost"
+      ],
+      "next": [
+        "throwPower",
+        "adjustedDuration",
+        "adjustedRadius",
+        "glacialChance",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Arcane_Base": {
+      "description": [
+        {
+          "text": "引导一道魔法光束快速融化怪物，在其",
+          "color": "$text"
+        },
+        {
+          "text": "距离",
+          "color": "$distance"
+        },
+        {
+          "text": "内每半秒造成一定比例的",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "伤害。\n\n奥术在引导期间每秒消耗",
+          "color": "$text"
+        },
+        {
+          "text": "法力值",
+          "color": "$manaCost"
+        },
+        {
+          "text": "。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25cf 按住技能",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "distance",
+        "manaCost"
+
+      ],
+      "next": [
+        "ability_power",
+        "distance",
+        "manaCost"
+      ]
+    },
+    "Arcane_Rail": {
+      "description": [
+        {
+          "text": "召唤一道魔法奥术轨道以惊人的力量打击单个怪物",
+          "color": "$text"
+        },
+        {
+          "text": "，造成一定比例的",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "伤害，并触发",
+          "color": "$text"
+        },
+        {
+          "text": "命中效果",
+          "color": "$name"
+        },
+        {
+          "text": "，如",
+          "color": "$text"
+        },
+        {
+          "text": "毒云",
+          "color": "$name"
+        },
+        {
+          "text": "和",
+          "color": "$text"
+        },
+        {
+          "text": "连锁",
+          "color": "$chaining"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "abilityRange",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Earthquake_Base": {
+      "description": [
+        {
+          "text": "在你站立的位置召唤一次巨大的冲击波，根据你的",
+          "color": "$text"
+        },
+        {
+          "text": "攻击伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "造成伤害，并",
+          "color": "$text"
+        },
+        {
+          "text": "击退",
+          "color": "$knockback"
+        },
+        {
+          "text": "一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内的任何敌对怪物，有一段",
+          "color": "$text"
+        },
+        {
+          "text": "延迟。\n伤害随怪物距中心越远而降低。",
+          "color": "$delay"
+        },
+        {
+          "text": "\n\n地震还有几率破坏路径上的方块。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damage",
+        "knockback",
+        "adjustedRadius",
+        "delay",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "damage",
+        "knockback",
+        "adjustedRadius",
+        "delay",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Implode_Life_Tap": {
+      "description": [
+        {
+          "text": "消耗你80%的",
+          "color": "$text"
+        },
+        {
+          "text": "剩余生命值",
+          "color": "$health"
+        },
+        {
+          "text": "，根据每",
+          "color": "$text"
+        },
+        {
+          "text": "消耗的生命点",
+          "color": "$damage"
+        },
+        {
+          "text": "对你周围一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内的所有怪物造成伤害。\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "注意：1颗心等于2点生命值。",
+          "color": "$darkgray"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "damagePerHealth",
+        "cooldown"
+      ],
+      "next": [
+        "adjustedRadius",
+        "damagePerHealth",
+        "cooldown"
+      ]
+    },
+    "Chain_Lightning_Base": {
+      "description": [
+        {
+          "text": "召唤一支闪电箭，命中时召唤",
+          "color": "$text"
+        },
+        {
+          "text": "闪电打击",
+          "color": "$name"
+        },
+        {
+          "text": "，根据你的",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "造成",
+          "color": "$text"
+        },
+        {
+          "text": "闪电伤害",
+          "color": "$lightning"
+        },
+        {
+          "text": "，并扩散到撞击点周围一定",
+          "color": "$text"
+        },
+        {
+          "text": "范围",
+          "color": "$range"
+        },
+        {
+          "text": "内的怪物。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "distance",
+        "chainRange",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "abilityRange",
+        "distance",
+        "chainRange",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Chain_Lightning_Orbs": {
+      "description": [
+        {
+          "text": "召唤一个强大的",
+          "color": "$text"
+        },
+        {
+          "text": "闪电球",
+          "color": "$name"
+        },
+        {
+          "text": "，它缓慢移动，跟随你的准星，并用",
+          "color": "$text"
+        },
+        {
+          "text": "闪电伤害",
+          "color": "$lightning"
+        },
+        {
+          "text": "电击它命中的每个怪物，伤害基于你的",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 施法技能 ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "adjustedDuration",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "abilityRange",
+        "adjustedDuration",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Grenade_Base": {
+      "description": [
+        {
+          "text": "投掷一个神秘而强大的",
+          "color": "$text"
+        },
+        {
+          "text": "混沌方块",
+          "color": "$qhighlight"
+        },
+        {
+          "text": "，它会在短时间后爆炸，在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内造成基于",
+          "color": "$text"
+        },
+        {
+          "text": "攻击伤害",
+          "color": "$damage"
+        },
+        {
+          "text": "的伤害。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damage",
+        "adjustedRadius",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "damage",
+        "adjustedRadius",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Toxic_Grenade": {
+      "description": [
+        {
+          "text": "投掷一瓶",
+          "color": "$text"
+        },
+        {
+          "text": "剧毒",
+          "color": "$poison"
+        },
+        {
+          "text": "的、注入",
+          "color": "$text"
+        },
+        {
+          "text": "毒素",
+          "color": "$poison"
+        },
+        {
+          "text": "的药瓶，碎裂时爆发为一片",
+          "color": "$text"
+        },
+        {
+          "text": "毒云",
+          "color": "$poison"
+        },
+        {
+          "text": "，在一定",
+          "color": "$text"
+        },
+        {
+          "text": "半径",
+          "color": "$radius"
+        },
+        {
+          "text": "内持续一定",
+          "color": "$text"
+        },
+        {
+          "text": "时间",
+          "color": "$duration"
+        },
+        {
+          "text": "造成基于",
+          "color": "$text"
+        },
+        {
+          "text": "技能强度",
+          "color": "$ability_power"
+        },
+        {
+          "text": "的伤害。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 施法技能",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "adjustedRadius",
+        "adjustedDuration",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "ability_power",
+        "adjustedRadius",
+        "adjustedDuration",
+        "manaCost",
+        "cooldown"
+      ]
+    }
+  }
+}

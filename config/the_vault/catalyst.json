@@ -1,5 +1,27 @@
 {
   "pools": {
+    "the_vault:craft_mobs": [
+      {
+        "level": 0,
+        "pool": [
+          {
+            "value": {
+              "size": {
+                "min": 10,
+                "max": 10,
+                "type": "uniform"
+              },
+              "modifiers": [
+                "the_vault:more_mobs_cata",
+                "the_vault:challenge_stack"
+              ],
+              "model": 15
+            },
+            "weight": 9.0
+          }
+        ]
+      }
+    ],
     "the_vault:craft_random_positive": [
       {
         "level": 0,

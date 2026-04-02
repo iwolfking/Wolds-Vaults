@@ -1,0 +1,468 @@
+{
+  "challenges": {
+    "t1_shuffle_grounds": {
+      "layout": {
+        "type": "polygon",
+        "tunnel_span": 1,
+        "vertices": [
+          {
+            "x": -12,
+            "z": 0
+          },
+          {
+            "x": 0,
+            "z": 12
+          },
+          {
+            "x": 12,
+            "z": 0
+          },
+          {
+            "x": 0,
+            "z": -12
+          }
+        ]
+      },
+      "objective": {
+        "type": "bingo",
+        "objective_probability": 1.0,
+        "width": 5,
+        "height": 5
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:shuffle",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:locked",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "hazards": {
+        "hazards": [
+          {
+            "type": "unstable_ground",
+            "id": "the_vault:collapsing_floor",
+            "name": "Collapsing Floor",
+            "description": "Standing still crumbles the ground"
+          }
+        ]
+      },
+      "exhausted": true
+    },
+    "scav_rolled": {
+      "objective": {
+        "type": "scavenger",
+        "objective_probability": 1.0
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 30000
+        }
+      },
+      "sigil": "expert",
+      "exhausted": true,
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:trapped",
+            "count": 4
+          }
+        ]
+      }
+    },
+    "speed_blackout_bingo": {
+      "objective": {
+        "type": "bingo",
+        "objective_probability": 1.0,
+        "width": 5,
+        "height": 5,
+        "blackout": true
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 30000
+        }
+      },
+      "exhausted": true,
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:shortened",
+            "count": 10
+          },
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      }
+    },
+    "rune_master": {
+      "objective": {
+        "type": "rune_boss",
+        "objective_probability": 1.0,
+        "minimum_runes": {
+          "type": "constant",
+          "count": 50
+        }
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 30000
+        }
+      },
+      "exhausted": true,
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:shortened",
+            "count": 5
+          },
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      }
+    },
+    "royale_king": {
+      "objective": {
+        "type": "vault_royale",
+        "min_level": 50,
+        "start_crate_loot_table": "the_vault:royale_start_crate",
+        "objective_probability": 0.2,
+        "dust_target": {
+          "min": 80,
+          "max": 120,
+          "type": "uniform"
+        },
+        "required_multiplier_amount": 100
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 30000
+        }
+      },
+      "exhausted": true,
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:shortened",
+            "count": 10
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      }
+    },
+    "one_shot_frenzy": {
+      "objective": {
+        "type": "elixir",
+        "objective_probability": 0.5
+      },
+      "sigil": "expert",
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 30000
+        }
+      },
+      "exhausted": true,
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:one_hit",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      }
+    },
+    "time_you_say": {
+      "objective": {
+        "type": "elixir",
+        "objective_probability": 0.5
+      },
+      "sigil": "legend",
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 30000
+        }
+      },
+      "exhausted": true,
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:extended",
+            "count": 25
+          },
+          {
+            "modifier": "the_vault:creeping_doom",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      }
+    },
+    "gone_in_60_seconds": {
+      "objective": {
+        "type": "elixir",
+        "objective_probability": 0.5
+      },
+      "sigil": "expert",
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 1200
+        }
+      },
+      "exhausted": true,
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:extended",
+            "count": 25
+          },
+          {
+            "modifier": "the_vault:creeping_doom",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      }
+    },
+    "celebrations": {
+      "objective": {
+        "type": "cake",
+        "objective_probability": 1.0,
+        "target": {
+          "type": "constant",
+          "count": 100
+        }
+      },
+      "layout": {
+        "type": "spiral",
+        "tunnel_span": 1,
+        "half_length": 99,
+        "rotation": "CLOCKWISE_90"
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 30000
+        }
+      },
+      "exhausted": true,
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      }
+    },
+    "luckiest_win": {
+      "objective": {
+        "type": "scavenger_bingo",
+        "objective_probability": 1.0,
+        "width": 5,
+        "height": 5
+      },
+      "sigil": "veteran",
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 30000
+        }
+      },
+      "exhausted": true,
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:wooden_cascade",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:living_cascade",
+            "count": 2
+          },
+          {
+            "modifier": "the_vault:gilded_cascade",
+            "count": 3
+          },
+          {
+            "modifier": "the_vault:ornate_cascade",
+            "count": 4
+          },
+          {
+            "modifier": "the_vault:coin_cascade",
+            "count": 5
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      }
+    },
+    "the_speedrunner": {
+      "objective": {
+        "type": "monolith",
+        "objective_probability": 1.0,
+        "target": {
+          "type": "constant",
+          "count": 25
+        }
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 30000
+        }
+      },
+      "exhausted": true,
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:shortened",
+            "count": 15
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      }
+    },
+    "the_pacifist": {
+      "objective": {
+        "type": "bingo",
+        "objective_probability": 1.0,
+        "width": 5,
+        "height": 5
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 30000
+        }
+      },
+      "sigil": "expert",
+      "exhausted": true,
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:fading",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      }
+    }
+  }
+}

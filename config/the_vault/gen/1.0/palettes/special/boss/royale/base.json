@@ -1,0 +1,36 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=objective]",
+      "output": [
+        {
+          "block": "the_vault:royale_pillar",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:glass",
+      "output": {
+        "minecraft:light[level=12]": 1,
+        "minecraft:light[level=13]": 1,
+        "minecraft:light[level=14]": 1,
+        "minecraft:light[level=15]": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=gate]",
+      "output": [
+        {
+          "block": "minecraft:air",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

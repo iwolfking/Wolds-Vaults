@@ -1,0 +1,5493 @@
+{
+  "quests": [
+    {
+      "type": "checkmark",
+      "id": "welcome_quest",
+      "name": "Introducci\u00f3n a Vault Hunters",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Bienvenido a Vault Hunters Tercera Edici\u00f3n!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEste modpack convierte tu experiencia de Minecraft en un juego RPG de acci\u00f3n basado en progresi\u00f3n. Est\u00e1 dise\u00f1ado para ser jugado durante un largo per\u00edodo de tiempo y tiene muchas opciones de accesibilidad para personalizar tu partida seg\u00fan tu estilo de juego.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEn esta l\u00ednea de misiones te ense\u00f1amos los fundamentos b\u00e1sicos del juego y te ayudamos a comenzar tu aventura.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAntes de empezar a jugar, aseg\u00farate de establecer la dificultad que mejor se adapte a ti, esto se puede hacer en el men\u00fa de pausa, y ofrecemos 5 dificultades diferentes. Estas configuraciones afectan la salud y el da\u00f1o de los mobs dentro de las b\u00f3vedas.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAdem\u00e1s de las diferentes dificultades, tambi\u00e9n puedes seleccionar tu modo de juego. Vault Hunters cuenta con tres modos de juego; Normal, Casual y Extremo, siendo Normal el modo predeterminado. Tu modo de juego se puede configurar usando /gamerule vaultMode.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nNormal",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - morir despu\u00e9s del nivel veinte hace que aparezca un esp\u00edritu en tu punto de aparici\u00f3n, usando un extractor de esp\u00edritus puedes recuperar tus objetos perdidos",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCasual",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - morir despu\u00e9s del nivel veinte no causa p\u00e9rdida de objetos, solo recibes algo de da\u00f1o de durabilidad",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nExtremo",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - morir despu\u00e9s del nivel veinte causa p\u00e9rdida permanente de objetos e inventario",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n/party invite nombrejugador ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "invitar\u00e1 a amigos a tu grupo para que puedan explorar b\u00f3vedas juntos y ver la salud de los dem\u00e1s.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n/the_vault research_team invite nombrejugador ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "agrupar\u00e1 a los jugadores en un equipo para que puedan trabajar en sus investigaciones juntos.",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/welcome",
+      "targetId": "the_vault:raw_chromatic_iron",
+      "targetProgress": 1.0,
+      "unlockedBy": "",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:cooked_vault_steak",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      },
+      "questTypes": ["SKY", "NORMAL"]
+    },
+    {
+      "type": "collection",
+      "id": "find_chromatic_iron",
+      "name": "Hierro Crom\u00e1tico",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El primer paso en tu viaje como Cazador de B\u00f3vedas es encontrar el ",
+            "color": "$text"
+          },
+          {
+            "text": "metal principal",
+            "color": "$text"
+          },
+          {
+            "text": " de Vault Hunters, ",
+            "color": "$text"
+          },
+          {
+            "text": "Hierro Crom\u00e1tico",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Hierro Crom\u00e1tico",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " se encuentra en la parte m\u00e1s profunda de tu mundo, por debajo de ",
+            "color": "$text"
+          },
+          {
+            "text": "Y-30",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Se puede minar con un ",
+            "color": "$text"
+          },
+          {
+            "text": "Pico de Hierro",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " y se puede usar fortuna para aumentar tu rendimiento!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue 16x Hierro Crom\u00e1tico Crudo",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/find_chromatic_iron",
+      "targetId": "the_vault:raw_chromatic_iron",
+      "targetProgress": 16.0,
+      "unlockedBy": "welcome_quest",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_iron_ingot",
+            "amount": 24
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "mining",
+      "id": "mine_vault_stone",
+      "name": "Piedra de B\u00f3veda",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El siguiente paso en tu aventura es encontrar ",
+            "color": "$text"
+          },
+          {
+            "text": "Piedra de B\u00f3veda",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Puede que ya te hayas encontrado con esta piedra muy oscura mientras buscabas Hierro Crom\u00e1tico, ya que se puede encontrar en cualquier lugar por debajo de ",
+            "color": "$text"
+          },
+          {
+            "text": "Y-5",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nAl minar ",
+            "color": "$text"
+          },
+          {
+            "text": "Piedra de B\u00f3veda",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " sin toque de seda, hay una probabilidad de obtener ",
+            "color": "$text"
+          },
+          {
+            "text": "una Roca de B\u00f3veda",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", aseg\u00farate de no tirarlas ya que son la clave para entrar a una b\u00f3veda!",
+            "color": "$text"
+          },
+          {
+            "text": ".\n",
+            "color": "$text"
+          },
+          {
+            "text": "Piedra de B\u00f3veda",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " en s\u00ed es un material muy resistente usado para muchas cosas diferentes, pero quiz\u00e1s lo m\u00e1s importante es que se usa para hacer tus portales de b\u00f3veda!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nMina 10x Piedra de B\u00f3veda",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/vault_stone",
+      "targetId": "the_vault:vault_stone",
+      "targetProgress": 10,
+      "unlockedBy": "welcome_quest",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_rock",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_vault_altar",
+      "name": "El Altar de B\u00f3veda",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Ahora es momento de fabricar tu Altar de B\u00f3veda, colocar tu roca de b\u00f3veda en tu Altar de B\u00f3veda es c\u00f3mo obtienes la receta para fabricar un Cristal de B\u00f3veda",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue un Altar de B\u00f3veda",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/altar",
+      "targetId": "the_vault:vault_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "mine_vault_stone",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:stone_button"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "craft_crystal",
+      "id": "complete_vault_crystal",
+      "name": "Cristales de B\u00f3veda",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Ha llegado el momento de forjar tu primer Cristal de B\u00f3veda! Cada receta es diferente y la cantidad de ingredientes requeridos aumentar\u00e1 lentamente a medida que fabriques m\u00e1s cristales.\n\nUsar una Roca de B\u00f3veda en un Altar de B\u00f3veda identificar\u00e1 los objetos necesarios para completar la receta del cristal. Puedes entregar objetos al altar lanz\u00e1ndolos de tu inventario cerca del altar. Una vez que la receta del altar est\u00e9 terminada, aplicar una se\u00f1al de redstone completa el proceso de fabricaci\u00f3n.\n\nSi te cuesta distinguir qu\u00e9 es un objeto puedes agacharte para ver su nombre.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCompleta un Cristal de B\u00f3veda",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/crystal",
+      "targetId": "the_vault:vault_crystal",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_vault_altar",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:shulker_box"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "learning_skills",
+      "name": "Habilidades y Talentos",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Antes de entrar a tu primera b\u00f3veda, queremos informarte sobre algunas partes importantes de Vault Hunters. Vault Hunters tiene un sistema detallado de Habilidades y Talentos que utilizar\u00e1s para hacer tu experiencia en la B\u00f3veda mucho m\u00e1s agradable.\n\nLas Habilidades suelen enfocarse en darte poderosas habilidades activas que cambian significativamente c\u00f3mo juegas; desde habilidades de da\u00f1o como Nova o Rampage, habilidades de curaci\u00f3n como Heal y Totem, y habilidades de supervivencia como Dash y Ghost Walk.\n\nLos Talentos proporcionan al jugador mejoras pasivas. Hay una gran variedad de Talentos para explorar, cada uno dise\u00f1ado para mejorar aspectos espec\u00edficos de tu experiencia.\n\nRevisa la UI de la B\u00f3veda presionando 'H' por defecto y haz clic en la segunda y tercera pesta\u00f1a en la parte superior para ver Habilidades y Talentos respectivamente.\n\nTu recompensa por esta misi\u00f3n es ",
+            "color": "$text"
+          },
+          {
+            "text": "1 Punto de Habilidad",
+            "color": "$manaCost"
+          },
+          {
+            "text": ", se recomienda encarecidamente tomar la ",
+            "color": "$text"
+          },
+          {
+            "text": "Habilidad de Curaci\u00f3n",
+            "color": "$heal"
+          },
+          {
+            "text": " si es tu primera vez jugando ya que no hay regeneraci\u00f3n natural de salud en las b\u00f3vedas",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/skills",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "complete_vault_crystal",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:cooked_vault_steak",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0,
+        "skillPoints": 1
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_enchanter",
+      "name": "Mejor Encantamiento",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "En Vault Hunters, los Encantamientos son un poco diferentes a los de Minecraft Vanilla. Los encantamientos de Protecci\u00f3n y Ofensivos han sido desactivados, para permitir una mayor escalabilidad de atributos defensivos y ofensivos m\u00e1s adelante. Sin embargo, hay algunos encantamientos que funcionan tanto en herramientas y equipo vanilla como en herramientas y equipo de b\u00f3veda.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEl Encantador de B\u00f3veda es tu mesa principal para encantar cualquier equipo o herramienta, siempre ofrecer\u00e1 el encantamiento m\u00e1ximo disponible por el costo de algunas esmeraldas y experiencia, fabrica uno e intenta poner cualquier objeto encantable en \u00e9l.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue un Encantador de B\u00f3veda",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/enchanter",
+      "targetId": "the_vault:vault_enchanter",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:experience_bottle",
+            "amount": 20
+          },
+          {
+            "item": "minecraft:emerald",
+            "amount": 50
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_potions",
+      "name": "Pociones de B\u00f3veda",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Las pociones de b\u00f3veda son una alternativa fuera de combate a las ",
+            "color": "$text"
+          },
+          {
+            "text": "Habilidades de Curaci\u00f3n",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\nSon el \u00fanico tipo de poci\u00f3n que no enfurece a ",
+            "color": "$text"
+          },
+          {
+            "text": "Velara",
+            "color": "$velara"
+          },
+          {
+            "text": " dentro de las b\u00f3vedas!\n\nLas Pociones de B\u00f3veda tienen una cantidad fija de ",
+            "color": "$text"
+          },
+          {
+            "text": "cargas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " para usar en cada b\u00f3veda, recarg\u00e1ndose completamente una vez que hayas salido de una b\u00f3veda.\nAl comenzar tienes acceso al nivel de pociones ",
+            "color": "$text"
+          },
+          {
+            "text": "Vial",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", m\u00e1s adelante en tu aventura tendr\u00e1s la posibilidad de investigar mejores niveles, otorg\u00e1ndote mayores curaciones con cada carga.\nCuando fabriques tu primera Poci\u00f3n (",
+            "color": "$text"
+          },
+          {
+            "text": "Vial",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ") podr\u00e1s elegir entre 3 mec\u00e1nicas de recarga diferentes;\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Masacre",
+            "color": "$red"
+          },
+          {
+            "text": ", que recarga tu vial al matar cierta cantidad de mobs\n",
+            "color": "$text"
+          },
+          {
+            "text": "Goblin",
+            "color": "$yellow"
+          },
+          {
+            "text": ", que recarga tu vial al saquear cierta cantidad de cofres\n",
+            "color": "$text"
+          },
+          {
+            "text": "Pacifista",
+            "color": "$blue"
+          },
+          {
+            "text": ", que recarga tu vial pasivamente con el tiempo\n\nNo te preocupes, puedes fabricarlos todos y ver cu\u00e1l te conviene m\u00e1s, \u00a1pero solo puedes usar uno por b\u00f3veda!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFabrica un Vial",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/potion",
+      "targetId": "the_vault:bottle",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:ender_pearl"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "enter_vault",
+      "id": "enter_vault",
+      "name": "Cazando B\u00f3vedas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Constr\u00fayete un Portal de B\u00f3veda con cualquier combinaci\u00f3n de bloques de Piedra de B\u00f3veda de manera similar al Portal del Nether. Una vez construido el portal, puedes hacer clic derecho con tu Cristal de B\u00f3veda en el marco para abrir un Portal.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nHay un l\u00edmite de tiempo dentro de la B\u00f3veda, que requiere que la completes antes de que llegue a 0. Marcar tu camino con bloques te permitir\u00e1 encontrar f\u00e1cilmente el camino de regreso a tu portal.\n\nSi mueres volver\u00e1s al overworld y si est\u00e1s por debajo del nivel 20 de b\u00f3veda se te otorgar\u00e1 'Gracia de Principiante' que te permitir\u00e1 conservar todo tu bot\u00edn independientemente de si mueres o escapas.\n\nSi logras completar la B\u00f3veda se te otorgar\u00e1 una Caja que puedes colocar y luego Agacharte+Clic Derecho para abrir!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEntra a una B\u00f3veda",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/enter_vault",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:sword",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:shield",
+            "nbt": ""
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "shard_pouch",
+      "name": "\u00a1Saqueando!",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Saquear en las b\u00f3vedas es divertido, y hay muchas cosas emocionantes que encontrar!\nEstad\u00edsticas de equipo como",
+            "color": "$text"
+          },
+          {
+            "text": " cantidad de objetos ",
+            "color": "$itemquantity"
+          },
+          {
+            "text": "aumenta la cantidad de bot\u00edn que encuentras mientras que",
+            "color": "$text"
+          },
+          {
+            "text": " rareza de objetos ",
+            "color": "$itemrarity"
+          },
+          {
+            "text": "hace que encuentres bot\u00edn de mayor nivel.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Adem\u00e1s de que los cofres tienen bot\u00edn, matar mobs producir\u00e1",
+            "color": "$text"
+          },
+          {
+            "text": " fragmentos de alma",
+            "color": "$soulchance"
+          },
+          {
+            "text": ", que se pueden usar para comprar objetos raros en el",
+            "color": "$text"
+          },
+          {
+            "text": " Mercado Negro",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\nSin embargo, todo este bot\u00edn puede volverse abrumador r\u00e1pidamente, \u00a1y todo buen cazador necesita buena organizaci\u00f3n de bot\u00edn!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Las Cajas Shulker pueden ser muy \u00fatiles al principio, y sus caparazones se pueden encontrar dentro de ",
+            "color": "$text"
+          },
+          {
+            "text": "Cofres de Madera",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", sin embargo, una ",
+            "color": "$text"
+          },
+          {
+            "text": "Bolsa",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " es una forma mucho mejor y m\u00e1s confiable de recolectar tu bot\u00edn.\n",
+            "color": "$text"
+          },
+          {
+            "text": "La primera bolsa de tu viaje corre por nuestra cuenta, pero te recomendamos fabricar m\u00e1s a medida que progreses. Bolsas m\u00e1s grandes, cinturones y mochilas pueden investigarse m\u00e1s adelante para obtener ",
+            "color": "$text"
+          },
+          {
+            "text": "conocimiento\n\n",
+            "color": "$knowledge"
+          },
+          {
+            "text": "\u00a1Las bolsas se pueden mejorar con tarjetas de mejora para que lleven m\u00e1s bot\u00edn, recojan autom\u00e1ticamente el bot\u00edn cuando rompas un cofre, eliminen el bot\u00edn sobrante e incluso te alimenten!\n",
+            "color": "$text"
+          },
+          {
+            "text": "La bolsa tambi\u00e9n se puede configurar con un filtro, o dejarse vac\u00eda para aceptar cualquier objeto.\nPara configurar un filtro, abre tu bolsa y navega a la pesta\u00f1a de ",
+            "color": "$text"
+          },
+          {
+            "text": "Configuraci\u00f3n de Mochila",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " dentro de ella. La pesta\u00f1a de ",
+            "color": "$text"
+          },
+          {
+            "text": "Configuraci\u00f3n de Memoria de Ranuras",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " te permite establecer un filtro para tu bolsa ya sea para lista blanca o lista negra de cierto contenido. Estos filtros tambi\u00e9n se pueden guardar y reaplicar a otras bolsas m\u00e1s adelante. Te recomendamos que juegues con estas configuraciones hasta que entiendas el sistema.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Completar esta misi\u00f3n te recompensar\u00e1 con dos mejoras b\u00e1sicas, que pueden instalarse en tu bolsa:\n",
+            "color": "$text"
+          },
+          {
+            "text": "La Mejora de Recogida",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " que har\u00e1 que la bolsa recoja autom\u00e1ticamente objetos del suelo, cuando un cofre se rompa o los objetos sean lanzados fuera de \u00e9l\n",
+            "color": "$text"
+          },
+          {
+            "text": "La Mejora de Eliminaci\u00f3n",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " que se puede configurar para eliminar (borrar) cualquier objeto sobrante que no quepa en tu bolsa. Eliminar objetos puede sonar raro, pero puede ser extremadamente \u00fatil para mejorar tu saqueo en las primeras etapas. Sin embargo, son caras de fabricar, \u00a1as\u00ed que usa la de esta misi\u00f3n sabiamente!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Fragmentos de Alma",
+            "color": "$soulchance"
+          },
+          {
+            "text": ", los objetos que sueltan los mobs, es mejor guardarlos en una ",
+            "color": "$text"
+          },
+          {
+            "text": "Bolsa de Fragmentos",
+            "color": "$soulchance"
+          },
+          {
+            "text": ". La Bolsa de Fragmentos solo puede guardar Fragmentos de Alma, pero una cantidad infinita de ellos mientras est\u00e9 en tu inventario. Tambi\u00e9n se puede dejar en tu inventario al comprar cosas del Mercado Negro, sin que tengas que contar manualmente los Fragmentos de Alma, \u00a1es imprescindible para cualquier cazador!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFabrica una Bolsa de Fragmentos",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/black_market2",
+      "targetId": "the_vault:shard_pouch",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "sophisticatedbackpacks:backpack",
+            "amount": 1
+          },
+          {
+            "item": "sophisticatedbackpacks:pickup_upgrade",
+            "amount": 1
+          },
+          {
+            "item": "sophisticatedbackpacks:void_upgrade",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "coin_pouch",
+      "name": "Bolsa de Monedas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "La mejor forma de almacenar tu ",
+            "color": "$text"
+          },
+          {
+            "text": "bronce",
+            "color": "$bronze"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "plata",
+            "color": "$common"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "oro",
+            "color": "$gold"
+          },
+          {
+            "text": " y ",
+            "color": "$text"
+          },
+          {
+            "text": "platino",
+            "color": "$platinum"
+          },
+          {
+            "text": ", es consiguiendo una ",
+            "color": "$text"
+          },
+          {
+            "text": "Bolsa de Monedas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\nLa ",
+            "color": "$text"
+          },
+          {
+            "text": "Bolsa de Monedas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " es un objeto ",
+            "color": "$text"
+          },
+          {
+            "text": "vinculado al alma",
+            "color": "$soulchance"
+          },
+          {
+            "text": " que mantienes en tu inventario. Se mantendr\u00e1 ah\u00ed incluso si mueres, y puede contener una cantidad ilimitada de ",
+            "color": "$text"
+          },
+          {
+            "text": "bronce",
+            "color": "$bronze"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "plata",
+            "color": "$common"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "oro",
+            "color": "$gold"
+          },
+          {
+            "text": " y ",
+            "color": "$text"
+          },
+          {
+            "text": "platino",
+            "color": "$platinum"
+          },
+          {
+            "text": ". Auto-convierte entre ellas, y todas las estaciones de trabajo en ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault Hunters",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " pueden leer directamente de ella - \u00a1no necesitas micro-gestionar tus objetos!\n\nOtra caracter\u00edstica brillante de la ",
+            "color": "$text"
+          },
+          {
+            "text": "Bolsa de Monedas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " es que recoger\u00e1 autom\u00e1ticamente cualquier moneda que recolectes, siempre que no est\u00e9 posicionada despu\u00e9s de una ",
+            "color": "$text"
+          },
+          {
+            "text": "mochila",
+            "color": "$blocks"
+          },
+          {
+            "text": " que permita monedas en su lista blanca.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue una Bolsa de Monedas",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/coin_pouch",
+      "targetId": "the_vault:coin_pouch",
+      "targetProgress": 1.0,
+      "unlockedBy": "shard_pouch",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_platinum",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:chromatic_steel_ingot",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "complete_bounty",
+      "name": "Cazarrecompensas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Completar recompensas es una excelente forma de asegurarte algo de bot\u00edn extra y darte un objetivo s\u00f3lido hacia el cual trabajar. Primero necesitar\u00e1s fabricar una Mesa de Recompensas y luego interactuar con ella haciendo clic derecho.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFabrica una Mesa de Recompensas",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/bounty_table",
+      "targetId": "the_vault:bounty_block",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:bounty_pearl",
+            "amount": 10
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "bounty_complete",
+      "id": "complete_bounty2",
+      "name": "Recompensas y Premios",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Dentro de la Mesa de Recompensas puedes seleccionar una recompensa haciendo clic en una de las recompensas disponibles y pulsando activar. Una vez que completes una recompensa puedes volver a la mesa y recoger tus premios.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCompleta una Recompensa",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/bounty",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "complete_bounty",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_iron_ingot",
+            "amount": 32
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "animal_pens",
+      "name": "Corrales de Animales",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Los animales pueden ser dif\u00edciles de manejar a gran escala, y pueden causar mucho lag en ",
+            "color": "$text"
+          },
+          {
+            "text": "Minecraft",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Esto se resuelve con el uso de ",
+            "color": "$text"
+          },
+          {
+            "text": "Corrales de Animales",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Estos se pueden fabricar, y con el uso de un ",
+            "color": "$text"
+          },
+          {
+            "text": "Frasco de Animales",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", \u00a1se puede mantener y criar una cantidad infinita de un tipo de animal en un solo corral! Esto reduce el lag enormemente, y hace que los animales no solo sean lindos para tener en tu estante, \u00a1sino f\u00e1ciles de manejar!\n\nDespu\u00e9s de colocar un ",
+            "color": "$text"
+          },
+          {
+            "text": "Corral de Animales",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", recoge tantos de un solo tipo de animal como quieras en un ",
+            "color": "$text"
+          },
+          {
+            "text": "Frasco de Animales",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Todos los animales pasivos y reproducibles del juego pueden ser recolectados. Luego simplemente haz clic derecho con tu frasco en el corral para convertirlo en su hogar.\n\nPuedes criar los animales si tienes al menos 2, usando su objeto de cr\u00eda - por ejemplo ",
+            "color": "$text"
+          },
+          {
+            "text": "Trigo",
+            "color": "$gold"
+          },
+          {
+            "text": " para una vaca.\n\nFinalmente, los animales pueden ser sacrificados con tu ",
+            "color": "$text"
+          },
+          {
+            "text": "espada",
+            "color": "$damage"
+          },
+          {
+            "text": " para obtener sus drops de bot\u00edn. El encantamiento de ",
+            "color": "$text"
+          },
+          {
+            "text": "Saqueo",
+            "color": "$fortune"
+          },
+          {
+            "text": " tambi\u00e9n funciona aqu\u00ed, aumentando tu rendimiento. Algunos animales tienen caracter\u00edsticas especiales - por ejemplo, puedes ",
+            "color": "$text"
+          },
+          {
+            "text": "orde\u00f1ar una Vaca",
+            "color": "$heal"
+          },
+          {
+            "text": " en un corral usando un ",
+            "color": "$text"
+          },
+          {
+            "text": "cubo",
+            "color": "$blocks"
+          },
+          {
+            "text": ", o ",
+            "color": "$text"
+          },
+          {
+            "text": "esquilar una Abeja",
+            "color": "$yellow"
+          },
+          {
+            "text": " para obtener panales. Al mantener ",
+            "color": "$text"
+          },
+          {
+            "text": "shift",
+            "color": "$cooldown"
+          },
+          {
+            "text": " mientras miras un ",
+            "color": "$text"
+          },
+          {
+            "text": "Corral de Animales",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", puedes ver m\u00e1s informaci\u00f3n sobre el corral espec\u00edfico.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue un Corral de Animales",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/animal_pen",
+      "targetId": "the_vault:animal_pen",
+      "targetProgress": 1.0,
+      "unlockedBy": "enter_vault",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:animal_jar",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:animal_jar",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:animal_pen",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "tool_station",
+      "name": "Estaci\u00f3n de Herramientas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "La Estaci\u00f3n de Herramientas se puede usar para fabricar herramientas que mejoran significativamente tu experiencia en las b\u00f3vedas.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n(La mayor\u00eda de las estaciones de b\u00f3veda ahora conservan su inventario al romperse)",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue una Estaci\u00f3n de Herramientas",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/station",
+      "targetId": "the_vault:tool_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "enter_vault",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gemstone",
+            "amount": 2
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "forge_gear",
+      "id": "craft_tool",
+      "name": "Herramientas de B\u00f3veda",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Las Herramientas de B\u00f3veda son la sucesora de las herramientas vanilla. Estas pueden ser modificadas con joyas para aplicar nuevas afinidades y rasgos a la herramienta.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nLas afinidades te permiten romper cofres/monedas a una velocidad significativamente mayor, permiti\u00e9ndote minar instant\u00e1neamente todas las monedas y cofres aparte de los de madera.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTambi\u00e9n hay joyas que pueden cambiar la funcionalidad de la herramienta para incluir la de otra. \u00a1Por ejemplo, podr\u00edas poner una joya de Excavaci\u00f3n en un Pico para crear un Azad\u00f3n que pueda minar tan r\u00e1pido como un pico y cavar tan r\u00e1pido como una pala!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTambi\u00e9n hay m\u00e1s modificadores que mejoran tu herramienta significativamente:",
+            "color": "$text"
+          },
+          {
+            "text": "\nRareza de Objetos",
+            "color": "#E5B819"
+          },
+          {
+            "text": " y ",
+            "color": "$text"
+          },
+          {
+            "text": "Cantidad de Objetos ",
+            "color": "#E88A12"
+          },
+          {
+            "text": " ambos mejoran tu herramienta con mayores capacidades de bot\u00edn.",
+            "color": "$text"
+          },
+          {
+            "text": "\nProbabilidad de Desarmar Trampa",
+            "color": "#8143FF"
+          },
+          {
+            "text": " tiene una probabilidad de desarmar un cofre trampa dentro de las B\u00f3vedas.",
+            "color": "$text"
+          },
+          {
+            "text": "\nVelocidad de Miner\u00eda",
+            "color": "#48BAF8"
+          },
+          {
+            "text": " \u00a1aumenta la velocidad base de miner\u00eda de tu herramienta!",
+            "color": "$text"
+          },
+          {
+            "text": "\nCopiosamente",
+            "color": "#F74780"
+          },
+          {
+            "text": " \u00a1a\u00f1ade una probabilidad de duplicar la salida de un Mineral de B\u00f3veda minado dentro de las b\u00f3vedas! Funciona con Toque de Seda y Fortuna.",
+            "color": "$text"
+          },
+          {
+            "text": "\nDurabilidad",
+            "color": "#DFD0FE"
+          },
+          {
+            "text": " aumenta la Durabilidad base de la herramienta",
+            "color": "$text"
+          },
+          {
+            "text": "\nPulverizaci\u00f3n",
+            "color": "#73B373"
+          },
+          {
+            "text": " y ",
+            "color": "$text"
+          },
+          {
+            "text": "Fundici\u00f3n ",
+            "color": "#FF4500"
+          },
+          {
+            "text": "ambos cambian la herramienta para tener interacciones especiales. Pulverizaci\u00f3n act\u00faa como un reemplazo b\u00e1sico de procesamiento de pulverizado/triturado de la salida del bloque minado. \u00a1Fundici\u00f3n fundir\u00e1 la salida del bloque minado!",
+            "color": "$text"
+          },
+          {
+            "text": "\nMartilleo ",
+            "color": "#25d4A5"
+          },
+          {
+            "text": "se puede aplicar a Martillos para aumentar su \u00e1rea de miner\u00eda",
+            "color": "$text"
+          },
+          {
+            "text": "\nVinculado al Alma ",
+            "color": "#9664FD"
+          },
+          {
+            "text": "\u00a1hace que una herramienta permanezca en tu inventario incluso despu\u00e9s de morir!",
+            "color": "$text"
+          },
+          {
+            "text": "\nInmortalidad Vanilla ",
+            "color": "#AF8DC3"
+          },
+          {
+            "text": "\u00a1aplica una probabilidad de que tu herramienta no reciba da\u00f1o de durabilidad fuera de las b\u00f3vedas. Al 100% har\u00e1 tu herramienta irrompible!",
+            "color": "$text"
+          },
+          {
+            "text": "\nAlcance ",
+            "color": "#F9B37F"
+          },
+          {
+            "text": "aumenta el rango al que el jugador puede interactuar con bloques.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFabrica un Pico de Hierro Crom\u00e1tico",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/tool",
+      "targetId": "the_vault:tool/pick/chromatic_iron_ingot",
+      "targetProgress": 1.0,
+      "unlockedBy": "tool_station",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;3591402060363627150L,2130563721701514760L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,2196334573319662592L,-6834473908914065246L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;8807676962843960878L,-1018090581902778908L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-7164678727146624000L,-6834473908914083200L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;-4246674546207997586L,469804410667479720L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,1749915260256562176L,-6834473908914085726L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;9040600318283653614L,-2646425694881105473L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-6032128973979210752L,-6834473908914079292L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;1437378485525153694L,-4161882800610591095L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617707599909354749L,1330939757422750720L,-348445744039196665L,268435455L,8L,16L]}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "apply_jewel",
+      "name": "Joyas en Herramientas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El Aplicador de Joyas hace que aplicar joyas a tus herramientas sea m\u00e1s f\u00e1cil que nunca, proporcion\u00e1ndote los medios para ver f\u00e1cilmente el resultado de tu Herramienta.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEl Aplicador de Joyas tiene tres partes en su inventario; \nEl",
+            "color": "$text"
+          },
+          {
+            "text": " Lado Izquierdo ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "es donde puedes poner tus joyas, mostr\u00e1ndote el resultado total si se colocaran en tu herramienta. \nEl ",
+            "color": "$text"
+          },
+          {
+            "text": "Centro ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "es donde colocas tu herramienta y tambi\u00e9n puedes ver la salida visual de combinar joyas de tipo herramienta como excavaci\u00f3n o hachar, por ejemplo. \nPor \u00faltimo, el ",
+            "color": "$text"
+          },
+          {
+            "text": "Lado Derecho ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "te mostrar\u00e1 las estad\u00edsticas actualizadas usando las joyas colocadas en el lado izquierdo, calculando autom\u00e1ticamente la capacidad y todos tus prefijos y sufijos a medida que colocas joyas en el Aplicador",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCada joya se genera con un ",
+            "color": "$text"
+          },
+          {
+            "text": "tama\u00f1o consistente de 10",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", asegurando que use solo una peque\u00f1a porci\u00f3n de la ",
+            "color": "$text"
+          },
+          {
+            "text": "capacidad.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " de tu Herramienta",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue un Aplicador de Joyas",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/apply_jewel",
+      "targetId": "the_vault:vault_jewel_application_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_tool",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_steel_ingot",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "jewel_crafting",
+      "name": "Fabricaci\u00f3n de Joyas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "La Mesa de Fabricaci\u00f3n de Joyas te permite fabricar una amplia variedad de joyas que se pueden aplicar a tus herramientas para mejorar sus capacidades. Estas joyas tienen tama\u00f1os fijos. No todos los afijos est\u00e1n disponibles para fabricaci\u00f3n, \u00a1as\u00ed que a\u00fan tendr\u00e1s que encontrar el resto!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue una Mesa de Fabricaci\u00f3n de Joyas",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/jewel_cutting",
+      "targetId": "the_vault:jewel_crafting_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_tool",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:silver_scrap",
+            "amount": 512
+          },
+          {
+            "item": "the_vault:gemstone",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+
+    {
+      "type": "level_up",
+      "id": "level_five",
+      "name": "Especializaciones",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Las Especializaciones se obtienen gastando Puntos de Especializaci\u00f3n que se obtienen cada 5 niveles. Las Especializaciones son similares a los Talentos proporcionando mejoras pasivas al jugador, sin embargo, est\u00e1n orientadas hacia casos de uso m\u00e1s espec\u00edficos como Afortunado que puede a\u00f1adir dos niveles adicionales de Fortuna al jugador o \u00c1ngel que te permite fabricar un Bloque \u00c1ngel que proporciona vuelo creativo en un radio de 64 bloques alrededor de \u00e9l.\n\nHay un total de veinte puntos de especializaci\u00f3n para adquirir durante tu partida y debido a su utilidad no son tan f\u00e1ciles de resetear, requiriendo un Neuralizador en lugar de oro de b\u00f3veda.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAlcanza el Nivel de B\u00f3veda 5",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/expertises",
+      "targetId": "the_vault:5",
+      "targetProgress": 1.0,
+      "unlockedBy": "apply_jewel",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_forge",
+      "name": "Forjando Equipo",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "La Forja de B\u00f3veda te permite fabricar equipo poderoso usando competencia, que est\u00e1 vinculada a tu nivel de jugador.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nLa competencia aumenta al sacrificar Chatarra de B\u00f3veda en la forja, y afecta el Potencial de Fabricaci\u00f3n, Rareza, Durabilidad, Ranuras de Reparaci\u00f3n, Probabilidad de Vinculaci\u00f3n al Alma y probabilidad de Modificador Superior. Un modificador superior es un modificador un nivel por encima del modificador m\u00e1ximo para ese nivel de equipo.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFabricar equipo no consume competencia, as\u00ed que puedes continuar fabricando sin perder tu progreso.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEl costo principal de fabricaci\u00f3n es Aleaci\u00f3n de B\u00f3veda, y el sistema est\u00e1 equilibrado para mantener la fabricaci\u00f3n de equipo poderosa, especialmente en las primeras etapas.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nPara fabricar en masa, mant\u00e9n presionado Shift mientras fabricas para enviar los objetos fabricados directamente a tu inventario.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue una Forja de B\u00f3veda",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/forge",
+      "targetId": "the_vault:vault_forge",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_alloy",
+            "amount": 9
+          },
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 3
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "forge_gear",
+      "id": "gear_forge",
+      "name": "Imanes",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Los Imanes absorben bot\u00edn dentro de un radio del jugador! Sinergizan excepcionalmente con las Afinidades/Romper cofres dentro de la b\u00f3veda y pueden acelerar significativamente tu saqueo. Los Imanes tambi\u00e9n tienen modificadores que se pueden aplicar para mejorar sus fortalezas.\n\n\u00a1Para equipar un Im\u00e1n, presiona el bot\u00f3n de Curios que est\u00e1 junto a la ranura de tu casco dentro de tu inventario y coloca el im\u00e1n en la ranura de Cintur\u00f3n!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nForja un Im\u00e1n en la Forja de B\u00f3veda",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/magnet",
+      "targetId": "the_vault:magnet",
+      "targetProgress": 1.0,
+      "unlockedBy": "vault_forge",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_alloy",
+            "amount": 9
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "artisan_table",
+      "name": "Modificaci\u00f3n en Estaci\u00f3n Artesanal",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "La Estaci\u00f3n Artesanal se puede usar para modificar y crear equipo adaptado a un cierto estilo de construcci\u00f3n. La interfaz tiene ranuras para Blindaje de B\u00f3veda, Bronce de B\u00f3veda, una amplia variedad de enfoques con diferentes funciones y tu Equipo de B\u00f3veda.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue una Estaci\u00f3n Artesanal",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/artisan",
+      "targetId": "the_vault:vault_artisan_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "gear_forge",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:wild_focus",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "modify_gear",
+      "id": "wild_focus",
+      "name": "Rerollear Modificadores de Equipo",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Colocar Bronce de B\u00f3veda, Blindaje de B\u00f3veda y un Enfoque Salvaje en la Estaci\u00f3n Artesanal te permitir\u00e1 rerollear todos los modificadores de tu equipo. Hacer clic en el bot\u00f3n de Reforjar aplicar\u00e1 nuevos modificadores a tu equipo/arma. Este es el paso inicial para crear equipo adecuado para tu estilo de construcci\u00f3n.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nRerollea una Pieza de Equipo con un Enfoque Salvaje",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/reroll",
+      "targetId": "the_vault:reforge_all",
+      "targetProgress": 1.0,
+      "unlockedBy": "artisan_table",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_plating",
+            "amount": 12
+          },
+          {
+            "item": "the_vault:vault_bronze",
+            "amount": 32
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_recycler",
+      "name": "Desguazando Equipo de B\u00f3veda",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1El Reciclador de B\u00f3veda se usa para descomponer equipo viejo y no deseado en Chatarra de B\u00f3veda, Enfoques Salvajes y Enfoques Facetados. Tambi\u00e9n se puede usar para descomponer y reciclar Joyas, Imanes e Inscripciones!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue un Reciclador de B\u00f3veda",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/recycler",
+      "targetId": "the_vault:vault_recycler",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_scrap",
+            "amount": 16
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "alchemystation",
+      "name": "Mesa de Alquimia",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "La ",
+            "color": "$text"
+          },
+          {
+            "text": "Mesa de Alquimia",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " es una mesa muy \u00fatil. Te permite modificar tus ",
+            "color": "$text"
+          },
+          {
+            "text": "Pociones de B\u00f3veda",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " para a\u00f1adir un ",
+            "color": "$text"
+          },
+          {
+            "text": "efecto secundario",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " a tus cargas!\n\nAlgunos de estos ",
+            "color": "$text"
+          },
+          {
+            "text": "efectos secundarios",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " tienen que ser desbloqueados, lo cual aprender\u00e1s m\u00e1s adelante, pero un pu\u00f1ado ya son ",
+            "color": "$text"
+          },
+          {
+            "text": "accesibles",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ahora mismo. \nSe puede a\u00f1adir un efecto por poci\u00f3n, y su fuerza ",
+            "color": "$text"
+          },
+          {
+            "text": "escala",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " con el ",
+            "color": "$text"
+          },
+          {
+            "text": "nivel",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " base de tu poci\u00f3n.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue una Mesa de Alquimia",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/alchemytable",
+      "targetId": "the_vault:alchemy_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 8
+          },
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+
+    {
+      "type": "level_up",
+      "id": "level_ten",
+      "name": "Objetivos de B\u00f3veda",
+      "descriptionData": {
+        "description": [
+        {
+          "text": "A medida que subes de nivel, la B\u00f3veda se adaptar\u00e1 y te presentar\u00e1 nuevos Objetivos m\u00e1s desafiantes; estos tambi\u00e9n se pueden a\u00f1adir a tu cristal fabricando un Sello y aplic\u00e1ndolo a tu cristal en un yunque. \n\nEl nivel 10 marca la introducci\u00f3n del Objetivo de Encender el Brasero en b\u00f3vedas aleatorias.\nEl nivel 20 marca la introducci\u00f3n del Objetivo de Carroñero en b\u00f3vedas aleatorias.\nEl nivel 50 marca la introducci\u00f3n del Objetivo de Bingo y Caza de Runas en b\u00f3vedas aleatorias.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\nAlcanza el Nivel de B\u00f3veda 10",
+          "color": "$heal"
+        }
+        ]
+      },
+      "icon": "the_vault:gui/quests/ten",
+      "targetId": "the_vault:10",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_scout"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "seals",
+      "name": "Eligiendo tu propio objetivo",
+      "descriptionData": {
+        "description": [
+        {
+          "text": "Los Sellos son objetos especialmente \u00fatiles ya que te permiten establecer el objetivo de la b\u00f3veda. De esta forma, incluso si eres de menor nivel podr\u00e1s jugar cualquier objetivo en cualquier momento. Para usar un sello, apl\u00edcalo a un cristal en el banco de trabajo de cristales",
+          "color": "$text"
+        },
+        {
+          "text": "\n\nConsigue un sello en blanco",
+          "color": "$heal"
+        }
+
+        ]
+      },
+      "icon": "the_vault:gui/quests/empty_seal",
+      "targetId": "the_vault:crystal_seal_empty",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_empty"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_sage_seal",
+      "name": "Fabrica un sello de Elixir",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El Sello del ",
+            "color": "$text"
+          },
+          {
+            "text": "Sabio",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " aplica el objetivo de ",
+            "color": "$text"
+          },
+          {
+            "text": "Elixir",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " a un cristal. Para fabricarlo necesitar\u00e1s un sello en blanco y algunos ingredientes de b\u00f3veda",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEl objetivo de Elixir requiere que obtengas cierta cantidad de elixir saqueando cofres, matando mobs o minando mineral. Una vez que llenes tu barra de elixir, encuentra un magnetita para salir de la b\u00f3veda",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEste objetivo tiene un nivel recomendado de 0 y tambi\u00e9n aparecer\u00e1 aleatoriamente en las b\u00f3vedas despu\u00e9s de ese nivel.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\nConsigue un Sello del Sabio",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/sage",
+      "targetId": "the_vault:crystal_seal_sage",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_sage",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_brazier_seal",
+      "name": "Fabrica un sello de Brasero",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El Sello del ",
+            "color": "$text"
+          },
+          {
+            "text": "Explorador",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " aplica el objetivo de ",
+            "color": "$text"
+          },
+          {
+            "text": "Encender el Brasero",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " a un cristal. Para fabricarlo necesitar\u00e1s un sello en blanco y algunos ingredientes de b\u00f3veda",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEl objetivo de Encender el Brasero requiere que encuentres braseros y los enciendas. Estos braseros tendr\u00e1n efectos positivos y negativos adjuntos, as\u00ed que elige cuidadosamente. Despu\u00e9s de haber encendido todos los braseros puedes elegir salir por el portal de b\u00f3veda o saquear m\u00e1s braseros para bot\u00edn adicional!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEste objetivo tiene un nivel recomendado de 10+ y tambi\u00e9n aparecer\u00e1 aleatoriamente en las b\u00f3vedas despu\u00e9s de ese nivel.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\nConsigue un Sello del Explorador",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/scout",
+      "targetId": "the_vault:crystal_seal_scout",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_scout",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_hunter_seal",
+      "name": "Fabrica un sello de Carro\u00f1ero",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El Sello del ",
+            "color": "$text"
+          },
+          {
+            "text": "Cazador",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " aplica el objetivo de ",
+            "color": "$text"
+          },
+          {
+            "text": "Carro\u00f1ero",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " a un cristal. Para fabricarlo necesitar\u00e1s un sello en blanco y algunos ingredientes de b\u00f3veda",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTambi\u00e9n te recomendamos hacer una bolsa extra solo para objetos de carro\u00f1ero, com\u00fanmente llamada ",
+            "color": "$text"
+          },
+          {
+            "text": "Bolsa de Carro\u00f1ero",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". \u00a1Esto har\u00e1 que organizar tus objetos de carro\u00f1ero sea mucho m\u00e1s f\u00e1cil! Otra cosa buena que debes saber es que cuando sales de las b\u00f3vedas los objetos de carro\u00f1ero se",
+            "color": "$text"
+          },
+          {
+            "text": "eliminan",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". \u00a1Los objetos de carro\u00f1ero est\u00e1n bloqueados solo para esa b\u00f3veda!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEl objetivo de Carro\u00f1ero requiere que encuentres una cierta lista de objetos mostrados en la parte superior de tu pantalla. Puedes ver d\u00f3nde obtener los objetos mirando los iconos debajo de ellos. \u00a1Una vez que hayas recolectado todos los objetos, dep\u00f3sitalos en un altar de carro\u00f1ero!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEste objetivo tiene un nivel recomendado de 20+ y tambi\u00e9n aparecer\u00e1 aleatoriamente en las b\u00f3vedas despu\u00e9s de ese nivel.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\nConsigue un Sello del Cazador",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/hunter",
+      "targetId": "the_vault:crystal_seal_hunter",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_hunter",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_Prophet_seal",
+      "name": "Fabrica un sello de Bingo",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El Sello del ",
+            "color": "$text"
+          },
+          {
+            "text": "Profeta",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " aplica el objetivo de ",
+            "color": "$text"
+          },
+          {
+            "text": "Bingo",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " a un cristal. Para fabricarlo necesitar\u00e1s un sello en blanco y algunos ingredientes de b\u00f3veda",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEl objetivo de Bingo requiere que ejecutes tareas en el tablero de bingo e intentes completar una l\u00ednea. Las recompensas de este objetivo escalan con la cantidad de l\u00edneas completadas.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nLos jugadores de nivel 90 o superior tendr\u00e1n una cuadr\u00edcula de 5x5 en lugar de la cuadr\u00edcula de 4x4.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\nModificadores del objetivo de Bingo:",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nR\u00e1pidamente: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Realiza la tarea muy r\u00e1pidamente o se reiniciar\u00e1. Por ejemplo: Saquea r\u00e1pidamente 10 cofres de madera en 6 segundos",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nImpecablemente: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Realiza la tarea sin recibir ning\u00fan da\u00f1o (incluyendo veneno y da\u00f1o por ca\u00edda)",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSigilosamente: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "No hagas da\u00f1o a ning\u00fan mob mientras realizas la tarea",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nPrimitivamente: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "No uses man\u00e1 mientras realizas la tarea",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCombo: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Realiza una serie de tareas dentro de un plazo, cuando completes la primera tarea cambiar\u00e1 a la siguiente",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEste objetivo tiene un nivel recomendado de 50+ y tambi\u00e9n aparecer\u00e1 aleatoriamente en las b\u00f3vedas despu\u00e9s de ese nivel.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\nConsigue un Sello del Profeta",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/prophet",
+      "targetId": "the_vault:crystal_seal_prophet",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_prophet",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_guardian_seal",
+      "name": "Fabrica un sello de Caza de Runas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El Sello del ",
+            "color": "$text"
+          },
+          {
+            "text": "Ejecutor",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " aplica el objetivo de ",
+            "color": "$text"
+          },
+          {
+            "text": "Caza de Runas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " a un cristal. Para fabricarlo necesitar\u00e1s un sello en blanco y algunos ingredientes de b\u00f3veda",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEn Caza de Runas tu objetivo es encontrar runas y aplicarlas a un pilar de jefe de runas. Cada runa puede tener un modificador diferente y un objeto de recompensa diferente. Una vez que hayas insertado el n\u00famero correcto de runas, la sala se cerrar\u00e1 y el jefe aparecer\u00e1 con los modificadores que hayas elegido.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEl objeto de recompensa de cada runa se a\u00f1adir\u00e1 a tu caja de completaci\u00f3n. Algunos de estos objetos pueden incluir equipo, enfoques de equipo e inscripciones",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEste objetivo tiene un nivel recomendado de 50+ y tambi\u00e9n aparecer\u00e1 aleatoriamente en las b\u00f3vedas despu\u00e9s de ese nivel.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\nConsigue un Sello del Ejecutor",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/executioner",
+      "targetId": "the_vault:crystal_seal_executioner",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_executioner",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "regret",
+      "name": "Arrepinti\u00e9ndose de Decisiones",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Puede ser bastante estresante tomar decisiones sobre qu\u00e9 habilidades y qu\u00e9 talentos elegir a lo largo de tu partida, pero no te preocupes!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Vault Hunters tiene un mecanismo para arrepentirse de tus decisiones usando ",
+            "color": "$text"
+          },
+          {
+            "text": "Oro de B\u00f3veda",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Si tienes suficiente ",
+            "color": "$text"
+          },
+          {
+            "text": "Oro de B\u00f3veda ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "en tu inventario, puedes elegir ",
+            "color": "$text"
+          },
+          {
+            "text": "Desaprender ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "desde el ",
+            "color": "$text"
+          },
+          {
+            "text": "\u00c1rbol de Habilidades",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Ten en cuenta que esto se hac\u00eda anteriormente con un ",
+            "color": "$text"
+          },
+          {
+            "text": "Orbe de Arrepentimiento",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", ese mecanismo ha sido eliminado.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "El arrepentimiento no se puede hacer mientras est\u00e1s dentro de una b\u00f3veda.",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/regretorb",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "craft_black_market",
+      "name": "Productos del Mercado Negro",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Con el mercado negro puedes usar fragmentos de alma para comprar de un grupo de objetos que se actualizan cada 2 horas o de un grupo aleatorio de todos los objetos que se pueden obtener mediante compra. Hay una variedad de objetos raros que puedes obtener en el Mercado Negro, \u00a1as\u00ed que aseg\u00farate de revisarlo a menudo!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteract\u00faa con un Mercado Negro",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/black_market",
+      "targetId": "the_vault:black_market",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:soul_shard",
+            "amount": 256
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "soul_diffuser",
+      "name": "El Difusor de Almas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1El Difusor de Almas descompone objetos de b\u00f3veda en polvo de alma que luego se puede convertir en Fragmentos de Alma para usar como moneda en el Mercado Negro. Esto te da la opci\u00f3n de decidir qu\u00e9 consideras valioso y qu\u00e9 consideras digno de difundir!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue un Difusor de Almas de B\u00f3veda",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/diffuser",
+      "targetId": "the_vault:vault_diffuser",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:soul_shard",
+            "amount": 256
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "identification_stand",
+      "name": "Soporte de Identificaci\u00f3n",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El Soporte de Identificaci\u00f3n es un bloque que al hacer clic derecho ",
+            "color": "$text"
+          },
+          {
+            "text": "identificar\u00e1",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " todo el equipo de b\u00f3veda sin identificar en tu inventario instant\u00e1neamente.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue un Soporte de Identificaci\u00f3n",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/identificationstand",
+      "targetId": "the_vault:identification_stand",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:helmet",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:chestplate",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:leggings",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:boots",
+            "nbt": ""
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_knowledge_star",
+      "name": "Usando Conocimiento",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Obtener y usar Estrellas de Conocimiento es uno de los aspectos clave de la progresi\u00f3n de Vault Hunters ya que es el componente principal para desbloquear nuevos mods. Presionar la tecla 'H' y seleccionar la pesta\u00f1a de Investigaciones en la parte superior te mostrar\u00e1 todo lo que puedes desbloquear. Ten en cuenta que comprar algunos de estos aumentar\u00e1 el precio de los desbloqueos posteriores dentro de ese grupo.\n\nTu recompensa por esta misi\u00f3n es una Caja de Mod! Cuando se usa, la Caja de Mod otorga un objeto aleatorio de tus mods desbloqueados",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFabrica una Estrella de Conocimiento",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/knowledge",
+      "targetId": "the_vault:knowledge_star",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:mod_box"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+
+    {
+      "type": "level_up",
+      "id": "reach_level_20",
+      "name": "Cambios en el Nivel 20",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Alcanzar el nivel 20 marca el final de la etapa tutorial de Vault Hunters!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "A menos que est\u00e9s jugando en ",
+            "color": "$text"
+          },
+          {
+            "text": "Modo Casual",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " morir en una b\u00f3veda ya no conserva tus objetos, aprender\u00e1s m\u00e1s sobre eso en la misi\u00f3n del ",
+            "color": "$text"
+          },
+          {
+            "text": "Extractor de Esp\u00edritus",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Muchas cosas nuevas suceden a este nivel, ahora encontrar\u00e1s ",
+            "color": "$text"
+          },
+          {
+            "text": "Vendoors",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " y ",
+            "color": "$text"
+          },
+          {
+            "text": "Puertas de Mazmorra",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " dentro de la b\u00f3veda, \u00a1as\u00ed como bot\u00edn adicional y nuevos mobs!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "\u00a1No te preocupes, apenas has comenzado!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAlcanza el Nivel de B\u00f3veda 20",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/twenty",
+      "targetId": "the_vault:20",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_knowledge_star",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:knowledge_star"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "burgers",
+      "name": "Experiencia Adicional",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Consumir ",
+            "color": "$text"
+          },
+          {
+            "text": "Hamburguesas de B\u00f3veda",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " te da experiencia de b\u00f3veda.\nLas Hamburguesas de B\u00f3veda se pueden encontrar raramente en el ",
+            "color": "$text"
+          },
+          {
+            "text": "Mercado Negro",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " y en ",
+            "color": "$text"
+          },
+          {
+            "text": "Vendoors",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Vienen en diferentes tama\u00f1os, y cuanto m\u00e1s abundante, m\u00e1s experiencia otorgan.\n Aunque la experiencia extra a veces puede ser agradable, \u00a1\u00fasala bajo tu propio riesgo, ya que podr\u00edas superar el nivel de tu equipo actual!",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/burger",
+      "targetId": "the_vault:plain_burger",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:plain_burger",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:cheese_burger",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:deluxe_cheese_burger",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "crystal_workbench",
+      "name": "Modificando Cristales de B\u00f3veda",
+      "descriptionData": {
+        "description": [
+            {
+              "text": "Los Cristales de B\u00f3veda pueden ser ",
+              "color": "$text"
+            },
+            {
+              "text": "modificados",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " para adaptarse a tus necesidades actuales o preferencias. Hay varias modificaciones diferentes que se pueden hacer a un cristal.\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "Aumentos",
+              "color": "$titleLine"
+            },
+            {
+              "text": " establecen el tema de la b\u00f3veda, estos se encuentran de vez en cuando en cajas de completaci\u00f3n.\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "Piedras Angulares",
+              "color": "$titleLine"
+            },
+            {
+              "text": " dan a la b\u00f3veda una mejora, dependiendo de qu\u00e9 piedra angular se use, y luego hace la b\u00f3veda no modificable\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "Catalizadores",
+              "color": "$titleLine"
+            },
+            {
+              "text": " a\u00f1ade modificadores a la b\u00f3veda, los modificadores pueden por ejemplo aumentar la cantidad de un cofre espec\u00edfico, mientras tambi\u00e9n hacen la b\u00f3veda un poco m\u00e1s dif\u00edcil al a\u00f1adir un modificador negativo aleatorio, por ejemplo uno que mejora a los mobs dentro de la b\u00f3veda.\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "Inscripciones",
+              "color": "$titleLine"
+            },
+            {
+              "text": " a\u00f1ade una sala espec\u00edfica en alg\u00fan lugar dentro de la b\u00f3veda, por cada inscripci\u00f3n a\u00f1adida.\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "Al ",
+              "color": "$text"
+            },
+            {
+              "text": "modificar",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " cristales puedes ",
+              "color": "$text"
+            },
+            {
+              "text": "personalizar",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " la b\u00f3veda a tu gusto. Cada cristal tiene un ",
+              "color": "$text"
+            },
+            {
+              "text": "indicador de capacidad",
+              "color": "$qhighlight"
+            },
+            {
+              "text": ", cuanto mayor sea tu nivel, mayor capacidad tendr\u00e1 el cristal. Puedes exceder la capacidad de un cristal, pero cada vez que lo hagas, \u00a1a\u00f1adir\u00e1s una ",
+              "color": "$text"
+            },
+            {
+              "text": "maldici\u00f3n",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " a la b\u00f3veda!\n\nTodas las modificaciones a un cristal se hacen en el ",
+              "color": "$text"
+            },
+            {
+              "text": "Banco de Trabajo de Cristales",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "!",
+              "color": "$text"
+            },
+        {
+          "text": "\n\nFabrica un Banco de Trabajo de Cristales",
+          "color": "$heal"
+        }
+        ]
+      },
+      "icon": "the_vault:gui/quests/crystalworkbench",
+      "targetId": "the_vault:crystal_workbench",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+            {
+              "item": "the_vault:augment",
+              "nbt": "{\"theme\":\"the_vault:classic_vault_cave_geode\"}",
+              "amount": 1
+            },
+            {
+              "item": "the_vault:phoenix_feather",
+              "amount": 1
+            }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "apply_catalyst",
+      "name": "Catalizadores",
+      "descriptionData": {
+        "description": [
+            {
+              "text": "\u00a1Usar ",
+              "color": "$text"
+            },
+            {
+              "text": "Catalizadores",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " en tus cristales de b\u00f3veda puede mejorar enormemente el bot\u00edn que buscas!\n",
+              "color": "$text"
+            },
+            {
+              "text": "Catalizadores",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " a\u00f1ade ",
+              "color": "$text"
+            },
+            {
+              "text": "modificadores",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " a la b\u00f3veda, ",
+              "color": "$text"
+            },
+            {
+              "text": "modificadores",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " pueden por ejemplo aumentar la cantidad de un cofre espec\u00edfico, mientras tambi\u00e9n hacen la b\u00f3veda un poco m\u00e1s dif\u00edcil al a\u00f1adir un modificador negativo aleatorio, por ejemplo uno que mejora la fuerza de los mobs dentro de la b\u00f3veda.\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "Catalizadores",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " se fabrican en la ",
+              "color": "$text"
+            },
+            {
+              "text": "Mesa de Infusi\u00f3n de Catalizadores",
+              "color": "$titleLine"
+            },
+            {
+              "text": ", usando la materia prima ",
+              "color": "$text"
+            },
+            {
+              "text": "Fragmentos de Catalizador",
+              "color": "$qhighlight"
+            },
+            {
+              "text": ", que se pueden encontrar dentro de ",
+              "color": "$text"
+            },
+            {
+              "text": "b\u00f3vedas sin modificar",
+              "color": "$qhighlight"
+            },
+            {
+              "text": ", en ",
+              "color": "$text"
+            },
+            {
+              "text": "Cofres de Madera",
+              "color": "$qhighlight"
+            },
+            {
+              "text": ".\nTodos los catalizadores fabricados ocupan ",
+              "color": "$text"
+            },
+            {
+              "text": "10 de capacidad",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " en un cristal de b\u00f3veda, catalizadores con menor requisito de tama\u00f1o se pueden encontrar raramente en salas de tesoro y cajas de completaci\u00f3n.\n",
+              "color": "$text"
+            },
+            {
+              "text": "Catalizadores",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " se pueden aplicar a un cristal en el ",
+              "color": "$text"
+            },
+            {
+              "text": "Banco de Trabajo de Cristales",
+              "color": "$titleLine"
+            },
+            {
+              "text": "\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "Fabrica una Mesa de Infusi\u00f3n de Catalizadores",
+              "color": "$heal"
+            }
+
+        ]
+      },
+      "icon": "the_vault:gui/quests/catalyst",
+      "targetId": "the_vault:catalyst_infusion_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "crystal_workbench",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_catalyst_fragment",
+            "amount": 9
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "inscription_table",
+      "name": "Inscripciones",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Usar ",
+            "color": "$text"
+          },
+          {
+            "text": "Inscripciones",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " en tus cristales de b\u00f3veda puede darte muchas ventajas, ya que te permite crear una b\u00f3veda ",
+            "color": "$text"
+          },
+          {
+            "text": "que contenga salas espec\u00edficas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Inscripciones",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " se pueden fabricar en la ",
+            "color": "$text"
+          },
+          {
+            "text": "Mesa de Inscripciones",
+            "color": "$titleLine"
+          },
+          {
+            "text": ", usando la materia prima ",
+            "color": "$text"
+          },
+          {
+            "text": "Piezas de Inscripci\u00f3n",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", que se pueden encontrar en ",
+            "color": "$text"
+          },
+          {
+            "text": "Cofres de Madera",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\nLas inscripciones fabricadas ocupan ",
+            "color": "$text"
+          },
+          {
+            "text": "10 de capacidad",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " de un cristal, inscripciones con menor requisito de tama\u00f1o se pueden encontrar raramente en Cofres Vivientes, Salas de Tesoro y Cajas de Completaci\u00f3n.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Inscripciones",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " se pueden aplicar a un cristal en el ",
+            "color": "$text"
+          },
+          {
+            "text": "Banco de Trabajo de Cristales",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", cuando un cristal tiene al menos 1 inscripci\u00f3n inscrita en \u00e9l, la b\u00f3veda ",
+            "color": "$text"
+          },
+          {
+            "text": "renderizar\u00e1 un mapa",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " de d\u00f3nde encontrar esa sala en la sala de inicio. \u00a1T\u00f3mate tu tiempo para memorizar el camino a la(s) sala(s) y luego sal a encontrarlas!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Fabrica una Mesa de Inscripciones",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/inscriptiontable",
+      "targetId": "the_vault:inscription_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "crystal_workbench",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:inscription_piece",
+            "amount": 32
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "mining",
+      "id": "temporal_shards",
+      "name": "Pilones y Reliquias Temporales",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Puede que ya te hayas encontrado con ",
+            "color": "$text"
+          },
+          {
+            "text": "Pilones",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " dentro de tus b\u00f3vedas. Estos poderosos cristales flotantes, al hacer clic derecho, te dan una mejora limitada dependiendo del pil\u00f3n.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Sin embargo, puedes elegir destruir el Pil\u00f3n y su poder, en lugar de consumirlo, rompi\u00e9ndolo con tu herramienta (con piqueta). Toma mucho tiempo romperlo, pero cuando lo hagas hay una peque\u00f1a probabilidad de que produzca una ",
+            "color": "$text"
+          },
+          {
+            "text": "Reliquia Temporal",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Este es un objeto muy poderoso que cuando se identifica, te da un objeto consumible que a\u00f1ade un ",
+            "color": "$text"
+          },
+          {
+            "text": "Modificador Temporal",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " a la b\u00f3veda en la que se consume!\n\n\u00a1Los Modificadores Temporales son super fuertes, duran 5 minutos, y cuando se usan correctamente pueden cambiar completamente el resultado de tu b\u00f3veda o tu objetivo actual!",
+            "color": "$text"
+          },
+          {
+            "text": "!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Rompe un Pil\u00f3n para tener la oportunidad de obtener una Reliquia Temporal",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/temporal_shard",
+      "targetId": "the_vault:pylon",
+      "targetProgress": 1,
+      "unlockedBy": "crystal_workbench",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:temporal_shard",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "artifact",
+      "name": "Artefactos",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1El objetivo de todo cazador es completar el infame Rompecabezas de Artefactos, y luchar contra el legendario Heraldo!\n",
+            "color": "$text"
+          },
+          {
+            "text": "Los Artefactos se encuentran raramente en ",
+            "color": "$text"
+          },
+          {
+            "text": "Cajas de Completaci\u00f3n",
+            "color": "$yellow"
+          },
+          {
+            "text": ", despu\u00e9s del nivel 20. La probabilidad de encontrar un Artefacto aumenta cuanto mayor sea el nivel de tu b\u00f3veda cuando la completes.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Hay 25 artefactos \u00fanicos para recolectar, y para obtener acceso a ",
+            "color": "$text"
+          },
+          {
+            "text": "el Heraldo",
+            "color": "$herald"
+          },
+          {
+            "text": " \u00a1necesitas recolectarlos todos!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "El ",
+            "color": "$text"
+          },
+          {
+            "text": "Tomo de Artefactos",
+            "color": "$yellow"
+          },
+          {
+            "text": " mostrar\u00e1 el rompecabezas sobre \u00e9l, y los artefactos se pueden colocar en su lugar correcto para completar el rompecabezas.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Mientras cazas Artefactos probablemente encontrar\u00e1s duplicados. Estos se pueden ",
+            "color": "$text"
+          },
+          {
+            "text": "lanzar al fuego",
+            "color": "$orange"
+          },
+          {
+            "text": " para quemarse y convertirse en un ",
+            "color": "$text"
+          },
+          {
+            "text": "Fragmento de Artefacto",
+            "color": "$fragment"
+          },
+          {
+            "text": " que se puede usar para fabricar un nuevo Artefacto.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue un Tomo de Artefactos",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/artifact",
+      "targetId": "the_vault:artifact_projector_block",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:unidentified_artifact"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "spirit_extractor",
+      "name": "Resurrecci\u00f3n",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El Extractor de Esp\u00edritus se usa para recuperar bot\u00edn perdido dentro de las b\u00f3vedas. Si mueres, recoge tu esp\u00edritu con Agacharte+Clic Derecho y col\u00f3calo en el Extractor con Clic Derecho. Esto te dar\u00e1 un precio en Oro de B\u00f3veda que tendr\u00e1s que pagar para recibir tus objetos.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsigue un Extractor de Esp\u00edritus",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/extractor",
+      "targetId": "the_vault:spirit_extractor",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "trinkets",
+      "name": "Abalorios",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Otro gran cambio despu\u00e9s del nivel 20 es la capacidad de encontrar Abalorios!\nEstos son objetos poderosos que se pueden equipar en tus ranuras de baratijas. Vienen en dos colores diferentes, ",
+            "color": "$text"
+          },
+          {
+            "text": "azul",
+            "color": "$blue"
+          },
+          {
+            "text": " y ",
+            "color": "$text"
+          },
+          {
+            "text": "rojo",
+            "color": "$red"
+          },
+          {
+            "text": ". Puedes equipar uno de cada color en cualquier momento para un total de dos abalorios.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Azul",
+            "color": "$blue"
+          },
+          {
+            "text": " los abalorios te dan una caracter\u00edstica que no se puede adquirir en otro lugar, por ejemplo la capacidad de ",
+            "color": "$text"
+          },
+          {
+            "text": "triple salto",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " o ",
+            "color": "$text"
+          },
+          {
+            "text": "escalar paredes",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Rojo",
+            "color": "$red"
+          },
+          {
+            "text": " los abalorios mejoran estad\u00edsticas, como ",
+            "color": "$text"
+          },
+          {
+            "text": "regeneraci\u00f3n de man\u00e1",
+            "color": "$manaCost"
+          },
+          {
+            "text": " o ",
+            "color": "$text"
+          },
+          {
+            "text": "salud",
+            "color": "$heal"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Los abalorios no tienen durabilidad, en su lugar tienen usos o cargas. Se pueden usar permanentemente fuera de las b\u00f3vedas sin ning\u00fan costo, pero gastar\u00e1n una carga cada vez que entres a una b\u00f3veda con uno equipado. Tampoco se pueden desequipar dentro de una b\u00f3veda.\nHay una ",
+            "color": "$text"
+          },
+          {
+            "text": "especializaci\u00f3n",
+            "color": "$expertise"
+          },
+          {
+            "text": " llamada ",
+            "color": "$text"
+          },
+          {
+            "text": "Abaloriador",
+            "color": "$expertise"
+          },
+          {
+            "text": " que te da una probabilidad aleatoria de no usar una carga de abalorio al entrar a una b\u00f3veda.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Una vez que hayas encontrado un abalorio, ser\u00e1 descubierto permanentemente y podr\u00e1 fabricarse en la ",
+            "color": "$text"
+          },
+          {
+            "text": "Forja de Abalorios",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nUn Abalorio Fabricado siempre tendr\u00e1 12 usos/cargas, mientras que un abalorio saqueado genera aleatoriamente de 20 a 30 usos/cargas.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTu primer abalorio es una recompensa por leer esta misi\u00f3n, \u00a1esperamos que consigas algo que te guste! Si no es as\u00ed, los abalorios se pueden desguazar en el Reciclador de B\u00f3veda, lo que produce su ingrediente principal: ",
+            "color": "$text"
+          },
+          {
+            "text": "Chatarra de Abalorio",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\nLa probabilidad de obtener una Chatarra de Abalorio est\u00e1 determinada por cu\u00e1ntos usos/cargas le quedan al abalorio al ser desguazado; Un abalorio completamente cargado siempre producir\u00e1 la chatarra, mientras que uno completamente agotado nunca la producir\u00e1.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/trinket",
+      "targetId": "the_vault:trinket",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:trinket",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "trinket_forge",
+      "name": "Forja de Abalorios",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Ahora que has descubierto un ",
+            "color": "$text"
+          },
+          {
+            "text": "Abalorio",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", puedes fabricar los tuyos en la ",
+            "color": "$text"
+          },
+          {
+            "text": "Forja de Abalorios",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Necesitar\u00e1s ",
+            "color": "$text"
+          },
+          {
+            "text": "Chatarra de Abalorios",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " que puedes obtener en el ",
+            "color": "$text"
+          },
+          {
+            "text": "Reciclador de B\u00f3veda",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Consigue una Forja de Abalorios",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/trinket_forge",
+      "targetId": "the_vault:trinket_forge",
+      "targetProgress": 1.0,
+      "unlockedBy": "trinkets",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:trinket_scrap",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "vaultrocks",
+      "name": "Rocas de B\u00f3veda",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El mundo de Vault Hunters tambi\u00e9n alberga m\u00edsticas ",
+            "color": "$text"
+          },
+          {
+            "text": "Rocas de B\u00f3veda especiales",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", algunas de ellas fabricables, otras solo encontrables.\n\nEstas ",
+            "color": "$text"
+          },
+          {
+            "text": "Rocas de B\u00f3veda especiales",
+            "color": "$text"
+          },
+          {
+            "text": " se pueden usar en el ",
+            "color": "$text"
+          },
+          {
+            "text": "Altar de B\u00f3veda",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " para crear un, ",
+            "color": "$text"
+          },
+          {
+            "text": "cristal de b\u00f3veda especial no modificable",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/vaultrock",
+      "targetId": "the_vault:none",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "warden",
+      "name": "Roca de B\u00f3veda del Guardi\u00e1n",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Despu\u00e9s del nivel 20, mientras no juegues en Modo Casual, morir en una b\u00f3veda significa que o pierdes oro por tener que recuperar tu esp\u00edritu, o pierdes objetos si no recuperas tu esp\u00edritu.\n\nEsto a veces puede ser aterrador y frustrante, sin embargo, si alguna vez te encuentras en una situaci\u00f3n donde te gustar\u00eda un seguro contra la muerte antes de entrar a una b\u00f3veda, fabr\u00edcate una ",
+            "color": "$text"
+          },
+          {
+            "text": "Roca de B\u00f3veda del Guardi\u00e1n",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nUn Cristal creado con esta roca especial te otorga el ",
+            "color": "$text"
+          },
+          {
+            "text": "modificador de Otra Vida",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", asegurando la seguridad de tus objetos en caso de muerte. La desventaja es que tambi\u00e9n ",
+            "color": "$text"
+          },
+          {
+            "text": "reducir\u00e1 a la mitad toda la experiencia",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ganada dentro de la b\u00f3veda, \u00a1lo cual puede ser potencialmente positivo en caso de que necesites ponerte al d\u00eda!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Fabrica una Roca de B\u00f3veda del Guardi\u00e1n",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/wardenrock",
+      "targetId": "the_vault:wardens_pearl",
+      "targetProgress": 1.0,
+      "unlockedBy": "vaultrocks",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "plunderer",
+      "name": "Roca de B\u00f3veda del Saqueador",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "La ",
+            "color": "$text"
+          },
+          {
+            "text": "Roca de B\u00f3veda del Saqueador",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " es una gran roca de b\u00f3veda especial en caso de que sientas que est\u00e1s detr\u00e1s de la curva de escalado de las b\u00f3vedas. ",
+            "color": "$text"
+          },
+          {
+            "text": "Aumenta la cantidad de bot\u00edn",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " que obtienes, incluyendo minerales de b\u00f3veda, pero ",
+            "color": "$text"
+          },
+          {
+            "text": "elimina cualquier ganancia de experiencia",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " de la b\u00f3veda.\n\n\u00a1Esto puede ser genial de usar en caso de que no quieras subir de nivel, sino solo saquear m\u00e1s!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Fabrica una Roca de B\u00f3veda del Saqueador",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/plunderrock",
+      "targetId": "the_vault:plunderer_pearl",
+      "targetProgress": 1.0,
+      "unlockedBy": "vaultrocks",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "vendoors",
+      "name": "Vendoors",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Ahora que has alcanzado el nivel 20 podr\u00e1s encontrar ",
+            "color": "$text"
+          },
+          {
+            "text": "Vendoors",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " dentro de la b\u00f3veda!\n\nEstas ",
+            "color": "$text"
+          },
+          {
+            "text": "puertas rojo oscuro",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " se abren haciendo clic derecho con la mano vac\u00eda, y tienen 3 ",
+            "color": "$text"
+          },
+          {
+            "text": "pedestales de compra",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " dentro.\n\nLos precios est\u00e1n en ",
+            "color": "$text"
+          },
+          {
+            "text": "oro de b\u00f3veda",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", as\u00ed que aseg\u00farate de llevar algo cuando entres a las b\u00f3vedas. El juego combinar\u00e1 autom\u00e1ticamente bronce y plata en tu inventario o en mochilas si es necesario para realizar la compra. La especializaci\u00f3n de ",
+            "color": "$text"
+          },
+          {
+            "text": "Regateo",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " puede ayudar a bajar los precios.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Abre un Vendoor dentro de una b\u00f3veda",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/vendoor",
+      "targetId": "the_vault:vendor_door",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 20
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "dungeons",
+      "name": "Mazmorras",
+      "descriptionData": {
+        "description": [
+            {
+              "text": "\u00a1Las mazmorras son lugares aterradores dentro de la b\u00f3veda, que contienen un desaf\u00edo y bot\u00edn!\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "Las Puertas de Mazmorra, encontradas aleatoriamente dentro de la b\u00f3veda, se abren ",
+              "color": "$text"
+            },
+            {
+              "text": "haciendo clic derecho",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " en ellas. Una vez abiertas, la mazmorra anunciar\u00e1 qu\u00e9 ",
+              "color": "$text"
+            },
+            {
+              "text": "dificultad",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " tiene, variando entre ",
+              "color": "$text"
+            },
+            {
+              "text": "Normal",
+              "color": "$normal"
+            },
+            {
+              "text": " e ",
+              "color": "$text"
+            },
+            {
+              "text": "Imposible",
+              "color": "$impossible"
+            },
+            {
+              "text": ".\n\nLa cabeza de mob en la puerta misma te dice qu\u00e9 tipo de mobs est\u00e1n custodiando la mazmorra.",
+              "color": "$text"
+            },
+            {
+              "text": " Las mazmorras tienen diferentes ",
+              "color": "$text"
+            },
+            {
+              "text": "tama\u00f1os",
+              "color": "$qhighlight"
+            },
+            {
+              "text": ", cuanto m\u00e1s grande la mazmorra, m\u00e1s bot\u00edn y mayor la probabilidad de un ",
+              "color": "$text"
+            },
+            {
+              "text": "Archivo de Alquimia",
+              "color": "$qhighlight"
+            },
+            {
+              "text": ", \u00a1despu\u00e9s de que derrotes al ",
+              "color": "$text"
+            },
+            {
+              "text": "Campe\u00f3n de la Mazmorra",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "!\n\nSi tienes suerte, puedes encontrar un ",
+              "color": "$text"
+            },
+            {
+              "text": "Globo de B\u00f3veda",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " dentro de la mazmorra, custodiado por un ",
+              "color": "$text"
+            },
+            {
+              "text": "jefe de mazmorra",
+              "color": "$qhighlight"
+            },
+            {
+              "text": ". Cuanto m\u00e1s grande sea la mazmorra, m\u00e1s probable es que encuentres un globo. Hay varios globos diferentes para encontrar, pero cualquier mazmorra puede tener m\u00e1ximo uno. Al hacer clic, un ",
+              "color": "$text"
+            },
+            {
+              "text": "globo",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " ",
+              "color": "$text"
+            },
+            {
+              "text": "revelar\u00e1 todas las salas",
+              "color": "$qhighlight"
+            },
+            {
+              "text": " del tipo de globo dado, a todos los jugadores dentro de la b\u00f3veda actual.\n\nLas mazmorras tambi\u00e9n contienen",
+              "color": "$text"
+            },
+            {
+              "text": " una ",
+              "color": "$text"
+            },
+            {
+              "text": "barrera",
+              "color": "$qhighlight"
+            },
+            {
+              "text": ", haciendo que los monstruos de la mazmorra no puedan salir de ella, pero no te preocupes, t\u00fa puedes atravesar esta ",
+              "color": "$text"
+            },
+            {
+              "text": "barrera",
+              "color": "$qhighlight"
+            },
+            {
+              "text": ".\n\u00a1Camina con cuidado, y respeta la dificultad! \u00a1Buena suerte cazador!",
+              "color": "$text"
+            },
+            {
+              "text": "\n\nAbre una Puerta de Mazmorra",
+              "color": "$heal"
+            }
+        ]
+      },
+      "icon": "the_vault:gui/quests/dungeon_quest",
+      "targetId": "the_vault:dungeon_door",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_pog"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "storing_gear",
+      "name": "Almacenando Equipo",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El Armario te permite almacenar un conjunto de equipo y una barra de acceso r\u00e1pido entre los que puedes cambiar r\u00e1pidamente usando la interfaz. Esto permite tener muchos conjuntos de builds diferentes mientras ofrece una mayor facilidad de acceso.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteract\u00faa con un Armario",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/wardrobe",
+      "targetId": "the_vault:wardrobe",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:wardrobe"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "skill_altar",
+      "name": "M\u00faltiples Builds",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1As\u00ed como el Armario permite almacenar equipo, el Altar de Habilidades permite almacenar Habilidades y Talentos para que puedas cambiar r\u00e1pidamente entre diferentes builds! Esto sinergiza excepcionalmente bien con el Armario.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteract\u00faa con un Altar de Habilidades",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/skill_altar",
+      "targetId": "the_vault:skill_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 10
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "transmog",
+      "name": "Transmogrificaci\u00f3n",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1La Mesa de Transmogrificaci\u00f3n te permite transmogear piezas de equipo a cualquier transmog desbloqueado que hayas adquirido. Coloca una pieza de equipo y algo de bronce para comenzar a ver los transmogs!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteract\u00faa con una Mesa de Transmogrificaci\u00f3n",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/transmog",
+      "targetId": "the_vault:transmog_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_bronze",
+            "amount": 64
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "unique_codex",
+      "name": "Equipo \u00danico",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Equipo \u00danico ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\u00a1es un elemento emocionante de Vault Hunters!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Equipo \u00danico ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "las piezas no pueden, a diferencia del equipo normal, ser modificadas - \u00a1sin embargo, generan con propiedades \u00fanicas! ",
+            "color": "$text"
+          },
+          {
+            "text": "Algunas de ellas pueden, por ejemplo, dar a tus habilidades usos completamente nuevos, mientras que otras pueden mejorar enormemente un estilo de juego preferido.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Fabrica el ",
+            "color": "$text"
+          },
+          {
+            "text": "C\u00f3dice \u00danico ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "y comienza a navegar d\u00f3nde encontrar estas emocionantes piezas de equipo, \u00a1pero cuidado, algunas de ellas son muy raras!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nUna vez que hayas comenzado a descubrir \u00fanicos, fabrica el ",
+            "color": "$text"
+          },
+          {
+            "text": "Armario \u00danico",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " para mostrarlos! Este bloque de exhibici\u00f3n renderiza un jugador usando cualquier \u00fanico que hayas descubierto, permiti\u00e9ndote admirar tu colecci\u00f3n con estilo.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Fabrica el C\u00f3dice \u00danico",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/unique_codex",
+      "targetId": "the_vault:unique_codex",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [],
+        "vaultExp": 0
+      }
+    },
+
+    {
+      "type": "level_up",
+      "id": "reach_level_40",
+      "name": "\u00a1Nivel 40!",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Al alcanzar el nivel 40 has hecho que los Dioses de la B\u00f3veda se percaten de ti!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Los Dioses no son ni buenos ni malos, y puedes elegir ignorarlos completamente. Sin embargo, \u00a1podr\u00edan valer la pena tu tiempo!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAlcanza el Nivel de B\u00f3veda 40",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/level40",
+      "targetId": "the_vault:40",
+      "targetProgress": 1.0,
+      "unlockedBy": "transmog",
+      "reward": {
+        "items": [
+            {
+              "item": "the_vault:gem_echo",
+              "amount": 4
+            },
+            {
+              "item": "the_vault:mod_box",
+              "amount": 2
+            },
+            {
+              "item": "the_vault:sour_orange",
+              "amount": 1
+            },
+            {
+              "item": "minecraft:bamboo",
+              "amount": 12
+            }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "charms",
+      "name": "Los Dioses",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Es hora de que te familiarices con los Dioses de la B\u00f3veda!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Ni buenos ni malos, ellos son;\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Idona",
+            "color": "$idona"
+          },
+          {
+            "text": "\nLa Diosa de la Batalla\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tenos",
+            "color": "$tenos"
+          },
+          {
+            "text": "\nEl Dios del Conocimiento\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Velara",
+            "color": "$velara"
+          },
+          {
+            "text": "\nLa Diosa de la Vida\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Wendarr",
+            "color": "$wendarr"
+          },
+          {
+            "text": "\nEl Dios del Tiempo\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Ahora que has alcanzado el nivel 40, puede que, aunque muy raramente, te encuentres con ",
+            "color": "$text"
+          },
+          {
+            "text": "Amuletos de Dioses",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Se pueden encontrar dentro de ",
+            "color": "$text"
+          },
+          {
+            "text": "Cofres Vivientes",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " y ",
+            "color": "$text"
+          },
+          {
+            "text": "Barriles Vivientes de Mazmorra",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". No se pueden fabricar ni modificar, pero se pueden reciclar para chatarra de b\u00f3veda.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Los amuletos se pueden equipar en tu ",
+            "color": "$text"
+          },
+          {
+            "text": "ranura de amuleto",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " y, como los Abalorios, tienen usos hasta que se agotan.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Dependiendo de qu\u00e9 Dios est\u00e9 vinculado el amuleto, pueden a\u00f1adir atributos valiosos y ",
+            "color": "$text"
+          },
+          {
+            "text": " Modificadores Temporales",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n\u00a1El poder de estos atributos se basa en tu ",
+            "color": "$text"
+          },
+          {
+            "text": "reputaci\u00f3n",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " con el dios al que est\u00e1 vinculado! Cuanto mayor sea tu reputaci\u00f3n, m\u00e1s poderosos se vuelven los atributos.\n\nEn la pr\u00f3xima misi\u00f3n puedes aprender c\u00f3mo aumentar tu reputaci\u00f3n con los dioses, pero por ahora, para que empieces con buen pie, \u00a1aqu\u00ed tienes un Amuleto de Dios gratis para que lo identifiques!",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/gods_quest_x",
+      "targetId": "the_vault:charms",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_40",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_god_charm"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "god_altars",
+      "name": "Altares de Dioses y Reputaci\u00f3n",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Los Altares de Dioses comenzar\u00e1n a aparecer en las b\u00f3vedas despu\u00e9s del nivel 40.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Los Altares representan a uno de los cuatro dioses.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Interactuar con uno de estos altares dentro de la b\u00f3veda te dar\u00e1 un desaf\u00edo del dios. Completar la tarea te dar\u00e1 un ",
+            "color": "$text"
+          },
+          {
+            "text": "favor",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", mejor\u00e1ndote fuertemente en la b\u00f3veda y quiz\u00e1s m\u00e1s importante, te har\u00e1 ganar un ",
+            "color": "$text"
+          },
+          {
+            "text": "punto de reputaci\u00f3n",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " con ese Dios. Pero, \u00a1cuidado! Fallar el desaf\u00edo ",
+            "color": "$text"
+          },
+          {
+            "text": "revocar\u00e1 un punto de reputaci\u00f3n",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Puedes alcanzar ",
+            "color": "$text"
+          },
+          {
+            "text": "50",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " puntos de reputaci\u00f3n por cada dios, y puedes rastrear tu progreso en tu pantalla de estad\u00edsticas.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n\u00a1Cuanta m\u00e1s reputaci\u00f3n tengas con cada dios, m\u00e1s poderosos son sus amuletos!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteract\u00faa con un Altar de Dios",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/god_altar",
+      "targetId": "the_vault:god_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "charms",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_pog"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+
+    {
+      "type": "level_up",
+      "id": "reach_level_50",
+      "name": "Olvidando Especializaciones",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Alcanzar el Nivel de B\u00f3veda 50 marca el punto medio en t\u00e9rminos de niveles, esto significa que actualmente tienes la mitad de tus puntos de especializaci\u00f3n totales. \u00a1El Neuralizador te permite resetear completamente tus puntos de especializaci\u00f3n asignados en caso de que cambies de opini\u00f3n y decidas que otra especializaci\u00f3n se adapta mejor a tus necesidades!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAlcanza el Nivel de B\u00f3veda 50",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/level50",
+      "targetId": "the_vault:50",
+      "targetProgress": 1.0,
+      "unlockedBy": "god_altars",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:neuralizer"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "card_system",
+      "name": "Sistema de Cartas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El Sistema de Cartas te permite mejorar tus estad\u00edsticas y habilidades usando ",
+            "color": "$text"
+          },
+          {
+            "text": "cartas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Las cartas vienen en muchos tipos diferentes y se equipan a trav\u00e9s de ",
+            "color": "$text"
+          },
+          {
+            "text": "mazos",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Cada mazo tiene su propio dise\u00f1o y l\u00edmites de ranuras. ",
+            "color": "$text"
+          },
+          {
+            "text": "N\u00facleos ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "proporcionan fuerza extra y personalizaci\u00f3n.\n\nJunto con cartas, mazos y n\u00facleos, hay varias nuevas estaciones de trabajo asociadas con este sistema.\n\nLa ",
+            "color": "$text"
+          },
+          {
+            "text": "Estaci\u00f3n de Mazos ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "se usa para fabricar mazos y n\u00facleos de nivel inferior.\n\nEl ",
+            "color": "$text"
+          },
+          {
+            "text": "Carpeta de Cartas ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "se puede usar para almacenar cartas y construir mazos.\n\nLa ",
+            "color": "$text"
+          },
+          {
+            "text": "Estaci\u00f3n de Mejora de Cartas ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "se puede usar para mejorar cartas con niveles para hacerlas m\u00e1s fuertes.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nPara aprender m\u00e1s sobre cada parte del Sistema de Cartas, revisa las otras misiones relacionadas con cartas.",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/card_table",
+      "targetId": "the_vault:deck_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_pog",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "obtain_card",
+      "name": "Tipos de Cartas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Las cartas se obtienen de paquetes de refuerzo, que se pueden encontrar en cajas de completaci\u00f3n o comprar en el mercado negro.\n\nVienen en cuatro colores, y el prop\u00f3sito de cada carta depende de la carta espec\u00edfica que recibas.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nPaquete de Estad\u00edsticas: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Este paquete contiene cartas de estad\u00edsticas. Mejoran estad\u00edsticas basadas en el jugador como ",
+            "color": "$text"
+          },
+          {
+            "text": "salud",
+            "color": "$health"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "armadura",
+            "color": "$armor"
+          },
+          {
+            "text": ", o ",
+            "color": "$text"
+          },
+          {
+            "text": "da\u00f1o de ataque",
+            "color": "$damage"
+          },
+          {
+            "text": ".",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nPaquete de Recursos: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Este paquete contiene cartas de recursos. Cada carta tiene un recurso y un requisito. Al completar la b\u00f3veda y cumplir el requisito, ese recurso se a\u00f1adir\u00e1 a tu caja de completaci\u00f3n.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nPaquete Arcano: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Este paquete contiene cartas arcanas que a\u00f1aden niveles extra a tus habilidades actuales.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nPaquete de Evoluci\u00f3n: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Este paquete proporciona cartas de evoluci\u00f3n. Estas cartas son similares en funci\u00f3n a las cartas de estad\u00edsticas pero se vuelven m\u00e1s poderosas cuando se colocan y emparejan con otras cartas.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nPaquete Mixto: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Este paquete proporciona a los jugadores una carta aleatoria de uno de los paquetes anteriores.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTodos estos paquetes se pueden encontrar en una variante Mega que dar\u00e1 al jugador m\u00e1s cartas para elegir al abrir.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nLas cartas se pueden almacenar dentro del ",
+            "color": "$text"
+          },
+          {
+            "text": "Carpeta de Cartas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", reciclarse en el ",
+            "color": "$text"
+          },
+          {
+            "text": "Reciclador de B\u00f3veda",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", y mejorarse en la ",
+            "color": "$text"
+          },
+          {
+            "text": "Estaci\u00f3n de Mejora de Cartas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nObt\u00e9n un paquete de refuerzo",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/booster",
+      "targetId": "the_vault:booster_pack",
+      "targetProgress": 1.0,
+      "unlockedBy": "card_system",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:arcane_pack\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:evolution_pack\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:resource_pack\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:stat_pack\"}",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "decks",
+      "name": "Mazos",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Los mazos te permiten almacenar y llevar cartas a la b\u00f3veda para que puedas beneficiarte de sus efectos especiales. Los mazos deben colocarse en la ranura de curios ",
+            "color": "$text"
+          },
+          {
+            "text": "Mazo de Cartas ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "para que un jugador obtenga los efectos del mazo.\n\nLos mazos se fabrican en la ",
+            "color": "$text"
+          },
+          {
+            "text": "Estaci\u00f3n de Mazos",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", con mazos b\u00e1sicos disponibles inmediatamente. Para acceder a la pesta\u00f1a de ",
+            "color": "$text"
+          },
+          {
+            "text": "Mazos Avanzados ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "dentro de la estaci\u00f3n de mazos, primero debes aprender la investigaci\u00f3n de ",
+            "color": "$text"
+          },
+          {
+            "text": "Mazos de B\u00f3veda ",
+            "color": "$yellow"
+          },
+          {
+            "text": "y luego cumplir el requisito de desbloqueo de cada mazo. \n\nCada mazo tiene un dise\u00f1o \u00fanico y n\u00famero de ranuras. Aseg\u00farate de revisar todos los mazos para encontrar la combinaci\u00f3n que mejor se adapte al mazo que deseas.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nLos mazos se pueden construir y modificar dentro del ",
+            "color": "$text"
+          },
+          {
+            "text": "Carpeta de Cartas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFabrica un Mazo de Cartas",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/deck",
+      "targetId": "the_vault:card_deck",
+      "targetProgress": 1.0,
+      "unlockedBy": "card_system",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:card_binder",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "cores",
+      "name": "N\u00facleos de Mazo",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Los n\u00facleos son aumentos que se pueden aplicar a los mazos en un ",
+            "color": "$text"
+          },
+          {
+            "text": "yunque",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nLos n\u00facleos menores se pueden fabricar en la ",
+            "color": "$text"
+          },
+          {
+            "text": "Estaci\u00f3n de Mazos",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", pero n\u00facleos m\u00e1s poderosos se pueden encontrar a lo largo de tus aventuras en las b\u00f3vedas.\n\nLos n\u00facleos juegan un papel crucial en la creaci\u00f3n de mazos poderosos, as\u00ed que el\u00edgelos cuidadosamente. ",
+            "color": "$text"
+          },
+          {
+            "text": "Se pueden mejorar de n\u00facleos menores a normales, pero una vez insertados, un n\u00facleo nunca puede ser reemplazado por uno diferente.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFabrica un N\u00facleo Menor",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/lesser_deck_core",
+      "targetId": "the_vault:deck_socket",
+      "targetProgress": 1.0,
+      "unlockedBy": "card_system",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:silver_scrap",
+            "amount": 256
+          },
+          {
+            "item": "the_vault:gem_black_opal",
+            "amount": 16
+          },
+          {
+            "item": "the_vault:gem_pog",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 16
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "obtain_juicer",
+      "name": "Mejorando Cartas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Las cartas no deseadas se pueden reciclar en un Reciclador de B\u00f3veda para obtener ",
+            "color": "$text"
+          },
+          {
+            "text": "Jugo de Cartas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nUsando la ",
+            "color": "$text"
+          },
+          {
+            "text": "Estaci\u00f3n de Mejora de Cartas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", las cartas con niveles se pueden combinar con la cantidad requerida de jugo de cartas para mejorar el nivel.\n\nMejorar del nivel 1 al nivel 2 requiere 10 de jugo de cartas, y niveles m\u00e1s altos requerir\u00e1n significativamente m\u00e1s.",
+            "color": "$text"
+          },
+
+          {
+            "text": "\n\nFabrica una Estaci\u00f3n de Mejora de Cartas",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/card_upgrade_table",
+      "targetId": "the_vault:card_essence_extractor",
+      "targetProgress": 1.0,
+      "unlockedBy": "card_system",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:card_juice",
+            "amount": 5
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "blank_key",
+      "name": "Llaves del Tesoro",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Despu\u00e9s del nivel 50, puertas extra\u00f1as y coloridas comenzar\u00e1n a aparecer en las b\u00f3vedas, \u00a1estas son ",
+            "color": "$text"
+          },
+          {
+            "text": "Puertas del Tesoro",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\nSe pueden abrir usando una ",
+            "color": "$text"
+          },
+          {
+            "text": "Llave del Tesoro",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " del mismo tipo de gema de la que est\u00e1 hecha la puerta.\nEstas llaves son caras y requieren ",
+            "color": "$text"
+          },
+          {
+            "text": "piezas de llave",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " as\u00ed como gemas eco, \u00a1pero puede valer mucho la pena hacerlas!\n\nComienzas haciendo una ",
+            "color": "$text"
+          },
+          {
+            "text": "llave en blanco",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " que luego combinas con cualquier ",
+            "color": "$text"
+          },
+          {
+            "text": "racimo",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " de gema legendaria en un yunque.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFabrica una Llave en Blanco",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/blank_key",
+      "targetId": "the_vault:blank_key",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:perfect_echo_gem"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "gear_sealer",
+      "name": "Sellando Equipo",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Sellar tu mejor equipo de b\u00f3veda es una forma muy poderosa de maximizarlo, pero cuidado, tambi\u00e9n podr\u00edas tener mala suerte.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Necesitas encontrar ",
+            "color": "$text"
+          },
+          {
+            "text": "Marcas Ascendentes",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", que se pueden encontrar en ",
+            "color": "$text"
+          },
+          {
+            "text": "Vendoors",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "Mercado Negro",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " y algunos otros lugares. Estas marcas raras se usan para sellar tu equipo.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Al sellar una pieza de equipo, hay una ",
+            "color": "$text"
+          },
+          {
+            "text": "probabilidad de 1 en 10",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " de que tu pieza de equipo obtenga un modificador sellado poderoso adicional, el otro resultado es ",
+            "color": "$text"
+          },
+          {
+            "text": "reemplazar un modificador aleatorio, no congelado",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", en tu equipo con un modificador sellado poderoso.\n\nEl poderoso modificador sellado incluye ganar ",
+            "color": "$text"
+          },
+          {
+            "text": "niveles de habilidad extra",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", o ganar un ",
+            "color": "$text"
+          },
+          {
+            "text": "efecto \u00fanico",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". El costo de sellar una pieza de equipo depende del ",
+            "color": "$text"
+          },
+          {
+            "text": "nivel de tu equipo",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", y la ",
+            "color": "$text"
+          },
+          {
+            "text": "rareza de tu equipo",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nFinalmente, una vez que una pieza de equipo est\u00e1 sellada no puedes modificarla m\u00e1s.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Fabrica un Sellador de Equipo",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/modifier",
+      "targetId": "the_vault:vault_sealer",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vorpal_focus",
+            "amount": 3
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "treasure",
+      "name": "Salas del Tesoro",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Una vez que tengas una llave del tesoro, ll\u00e9vala contigo a las b\u00f3vedas y busca una puerta correspondiente, usa la llave en la puerta para abrirla.\n\nLas Salas del Tesoro contienen una cantidad aleatoria de ",
+            "color": "$text"
+          },
+          {
+            "text": "arena del tesoro",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", que al ser minada produce muchos tesoros diferentes.",
+            "color": "$text"
+          },
+          {
+            "text": "\nLa Sala del Tesoro tambi\u00e9n contiene ",
+            "color": "$text"
+          },
+          {
+            "text": "Tres Pedestales del Tesoro",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", conteniendo un objeto de equipo de b\u00f3veda cada uno. Sin embargo, estos objetos de equipo de b\u00f3veda est\u00e1n garantizados de tener ",
+            "color": "$text"
+          },
+          {
+            "text": "un modificador legendario",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\n\u00a1Solo puedes elegir uno de los pedestales, y la \u00fanica informaci\u00f3n que tienes al elegir es el tipo de equipo y la rareza!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteract\u00faa con un Pedestal del Tesoro",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/treasure",
+      "targetId": "the_vault:treasure_pedestal",
+      "targetProgress": 1.0,
+      "unlockedBy": "blank_key",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:unidentified_treasure_key"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "royale",
+      "name": "B\u00f3vedas Royale",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Las b\u00f3vedas Royale son una parte completamente opcional de Vault Hunters, pero un agradable cambio de ritmo si tu camino al nivel 100 se vuelve aburrido y repetitivo, y las recompensas pueden ser incre\u00edbles!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Cuando entras a una b\u00f3veda Royale estar\u00e1s completamente desnudo; todo tu equipo y asignaci\u00f3n de puntos de habilidad se almacenar\u00e1n para cuando regreses. Lo primero que haces es conocer a ",
+            "color": "$text"
+          },
+          {
+            "text": "Tommy",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tommy",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " te proporcionar\u00e1 3 equipamientos. Puedes elegir el que te resulte m\u00e1s c\u00f3modo, o ninguno si quieres un desaf\u00edo extremo.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Despu\u00e9s, ",
+            "color": "$text"
+          },
+          {
+            "text": "Tommy",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " te ofrecer\u00e1 uno de tres abalorios azules, y luego uno de tres abalorios rojos. Finalmente, elegir\u00e1s tu recompensa, si ganas.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Una de las recompensas siempre ser\u00e1 la ",
+            "color": "$text"
+          },
+          {
+            "text": "Corona Royale",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". La corona es un multiplicador de bot\u00edn, que aumenta tu multiplicador de recompensa cada vez que se adjunta al ",
+            "color": "$text"
+          },
+          {
+            "text": "Cristal Royale",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", lo cual haces en un yunque entre partidas Royale.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Ahora, ni las ",
+            "color": "$text"
+          },
+          {
+            "text": "Pociones",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ni el hechizo de ",
+            "color": "$text"
+          },
+          {
+            "text": "Curaci\u00f3n",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ser\u00e1n ofrecidos dentro de las b\u00f3vedas Royale. En su lugar, tu curaci\u00f3n tendr\u00e1 que depender de otras fuentes - la m\u00e1s com\u00fan siendo las ",
+            "color": "$text"
+          },
+          {
+            "text": "Manzanas Abundantes",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Al dejar a ",
+            "color": "$text"
+          },
+          {
+            "text": "Tommy",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", tendr\u00e1s algunos puntos de habilidad asignados, pero seguir\u00e1s desnudo. El equipo y pergaminos de puntos de habilidad adicionales se pueden encontrar en los brillantes ",
+            "color": "$text"
+          },
+          {
+            "text": "Barriles Royale",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " esparcidos por la b\u00f3veda. \u00a1Aseg\u00farate de equiparte antes de luchar!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "\u00a1Una \u00faltima cosa: una b\u00f3veda Royale est\u00e1 bloqueada y no se puede salir por donde entraste. \u00a1Debes completar el objetivo aleatorio para salir!\n\n\u00a1Buena suerte, cazador - la amar\u00e1s o la odiar\u00e1s!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Obt\u00e9n una Roca Royale",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/royale",
+      "targetId": "the_vault:crystal_seal_vault_royale",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_vault_royale"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "antiques",
+      "name": "Antig\u00fcedades",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Las antig\u00fcedades son sellos antiguos, llevados por el reino de la b\u00f3veda. Estos sellos antiguos se pueden recolectar y combinar para darte una recompensa vinculada a esa colecci\u00f3n espec\u00edfica de antig\u00fcedades.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Las antig\u00fcedades aparecen despu\u00e9s del nivel 50, pero solo si el cazador lleva el ",
+            "color": "$text"
+          },
+          {
+            "text": "libro Coleccionista de Sellos Antiguos",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", que se puede fabricar y dejar en tu inventario. Recoger\u00e1, clasificar\u00e1 y organizar\u00e1 autom\u00e1ticamente todas tus antig\u00fcedades. Una vez que tengas la cantidad requerida de cualquier antig\u00fcedad, puedes sacarlas y hacer clic derecho para canjearlas por su recompensa.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "\u00a1D\u00f3nde y c\u00f3mo encontrar antig\u00fcedades se revelar\u00e1 cuanto m\u00e1s encuentres de una. Presta atenci\u00f3n al pasar el cursor sobre una antig\u00fcedad para intentar descubrir de d\u00f3nde vino!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Fabrica un libro Coleccionista de Sellos Antiguos",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/antique_collector_book",
+      "targetId": "the_vault:antique_collector_book",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "companions",
+      "name": "\u00a1Compa\u00f1eros!",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Despu\u00e9s del nivel 50 puedes comenzar a encontrar ",
+            "color": "$text"
+          },
+          {
+            "text": "Compa\u00f1eros",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "! Son bastante t\u00edmidos, pero si lo haces bien, \u00a1tienes la oportunidad de generar un huevo de compa\u00f1ero! Puede aparecer en cualquier sala descubierta y tendr\u00e1 part\u00edculas a su alrededor.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "El huevo puede ser incubado dentro de un ",
+            "color": "$text"
+          },
+          {
+            "text": "Incubador",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", y cada compa\u00f1ero estar\u00e1 personalmente vinculado a su due\u00f1o despu\u00e9s de esta etapa.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Equipa tu compa\u00f1ero en la Ranura de Cabeza en tu inventario de curios para equiparlo. Mientras su estado sea listo, te acompa\u00f1ar\u00e1 cuando entres a una b\u00f3veda.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Compa\u00f1eros",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " vienen con un ",
+            "color": "$text"
+          },
+          {
+            "text": "Modificador Temporal",
+            "color": "$titleLine"
+          },
+          {
+            "text": ". Este modificador se puede activar en cualquier momento presionando la tecla de acceso r\u00e1pido, que puedes configurar en controles. La duraci\u00f3n del ",
+            "color": "$text"
+          },
+          {
+            "text": "Modificador Temporal",
+            "color": "$titleLine"
+          },
+          {
+            "text": " est\u00e1 determinada por el nivel de tu compa\u00f1ero, dura 1 minuto al nivel 1, 3 minutos al nivel 3, etc. El ",
+            "color": "$text"
+          },
+          {
+            "text": "Modificador Temporal",
+            "color": "$titleLine"
+          },
+          {
+            "text": " no se puede cambiar ni alterar. Es algo as\u00ed como el alma de tu compa\u00f1ero.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Compa\u00f1eros",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " tambi\u00e9n pueden equipar ",
+            "color": "$text"
+          },
+          {
+            "text": "Reliquias de Compa\u00f1ero",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Estos objetos raros se pueden encontrar dentro de cualquier ",
+            "color": "$text"
+          },
+          {
+            "text": "cofre",
+            "color": "$yellow"
+          },
+          {
+            "text": ", o en ",
+            "color": "$text"
+          },
+          {
+            "text": "Arena del Tesoro",
+            "color": "$yellow"
+          },
+          {
+            "text": ", siempre que tengas un compa\u00f1ero contigo en la b\u00f3veda.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Reliquias de Compa\u00f1ero",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " llevan modificadores de b\u00f3veda, y se pueden equipar dentro de un ",
+            "color": "$text"
+          },
+          {
+            "text": "Hogar de Compa\u00f1ero",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Sin embargo, el compa\u00f1ero se encari\u00f1a mucho con sus reliquias, \u00a1y intentar desequipar una te costar\u00e1 mucho oro!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "\u00a1Si se cuidan correctamente, tus compa\u00f1eros pueden volverse muy poderosos, y ayudarte en tu viaje a trav\u00e9s de las b\u00f3vedas!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Fabrica un Incubador de Compa\u00f1eros",
+            "color": "$heal"
+          }
+        ]
+      },
+
+      "icon": "the_vault:gui/quests/companion",
+      "targetId": "the_vault:companion_incubator",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:companion_egg",
+            "nbt": "{HatchTime:20,Series:\"PET\"}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "soul_flame",
+      "name": "Roca de B\u00f3veda del Desafiante",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Al alcanzar el nivel 65 desbloqueas la posibilidad de fabricar un ",
+            "color": "$text"
+          },
+          {
+              "text": "Cristal de B\u00f3veda del Desafiante",
+              "color": "$qhighlight"
+          },
+          {
+              "text": ".\n\nEste cristal no se puede modificar, y lleva un registro de tu racha de victorias (ascensi\u00f3n). \u00a1Cada vez que completes exitosamente un ",
+              "color": "$text"
+          },
+          {
+              "text": "Cristal de B\u00f3veda del Desafiante",
+              "color": "$qhighlight"
+          },
+          {
+              "text": ", aumentas la dificultad del pr\u00f3ximo Cristal del Desafiante que ejecutes!\n\nCuando eventualmente falles (y lo har\u00e1s), recibir\u00e1s ",
+              "color": "$text"
+          },
+          {
+              "text": "Brasas",
+              "color": "$qhighlight"
+          },
+          {
+              "text": ", dependiendo de qu\u00e9 tan lejos llegaste.\nLas Brasas son un objeto de moneda usado en la ",
+              "color": "$text"
+          },
+          {
+              "text": "Forja de Ascensi\u00f3n",
+              "color": "$qhighlight"
+          },
+          {
+              "text": ".\n\n\u00bfEst\u00e1s listo para tu Ascensi\u00f3n?",
+              "color": "$text"
+          },
+          {
+            "text": "\n\nFabrica una Roca de B\u00f3veda del Desafiante",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/flame",
+      "targetId": "the_vault:soul_flame",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 64
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "ascension_forge",
+      "name": "Forja de Ascensi\u00f3n",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "La ",
+            "color": "$text"
+          },
+          {
+              "text": "Forja de Ascensi\u00f3n",
+              "color": "$qhighlight"
+          },
+          {
+              "text": " es donde puedes gastar tus ",
+              "color": "$text"
+          },
+          {
+              "text": "Brasas",
+              "color": "$qhighlight"
+          },
+          {
+              "text": ".\nContiene algunos ",
+              "color": "$text"
+          },
+          {
+              "text": "transmogs especiales",
+              "color": "$qhighlight"
+          },
+          {
+              "text": " para tu equipo, \u00a1haci\u00e9ndote destacar como el Desafiante en que te has convertido!\nTambi\u00e9n puedes comprar t\u00edtulos de ",
+              "color": "$text"
+          },
+          {
+              "text": "prefijo",
+              "color": "$qhighlight"
+          },
+          {
+              "text": " y ",
+              "color": "$text"
+          },
+          {
+              "text": "sufijo",
+              "color": "$qhighlight"
+          },
+          {
+              "text": " para tu etiqueta de nombre.\n\n\u00a1Haz que el mundo sepa que sabes c\u00f3mo ganar!\n\n",
+              "color": "$text"
+          },
+          {
+              "text": "Fabrica una Forja de Ascensi\u00f3n",
+              "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/ascensionforge",
+      "targetId": "the_vault:ascension_forge",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:ember",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "imbuement_altar",
+      "name": "Altares de Imbuimiento",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Despu\u00e9s del nivel 60 tienes una rara probabilidad de encontrar un ",
+            "color": "$text"
+          },
+          {
+            "text": "Altar de Imbuimiento",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " dentro de ",
+            "color": "$text"
+          },
+          {
+            "text": "Mazmorras",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Cuanto m\u00e1s grande la mazmorra, m\u00e1s probable es que encuentres uno.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Al interactuar con un ",
+            "color": "$text"
+          },
+          {
+            "text": "Altar de Imbuimiento",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", te pedir\u00e1 que confirmes una pieza de equipo para imbuimiento, una vez que una pieza de equipo sea confirmada no se puede deshacer.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "El altar de imbuimiento te presentar\u00e1 hasta 3 opciones de imbuimiento, imbuir un modificador tiene una ",
+            "color": "$text"
+          },
+          {
+            "text": "probabilidad de \u00e9xito",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " para hacerlo m\u00e1s fuerte, mejorando sus valores.\n\nDespu\u00e9s de un imbuimiento exitoso, si el equipo originalmente ten\u00eda el modificador ",
+            "color": "$text"
+          },
+          {
+            "text": "Viviente ",
+            "color": "$living"
+          },
+          {
+            "text": ", el modificador viviente ser\u00e1 eliminado de la pieza de equipo.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSi el imbuimiento ",
+            "color": "$text"
+          },
+          {
+            "text": "falla",
+            "color": "$red"
+          },
+          {
+            "text": ", el equipo se vuelve ",
+            "color": "$text"
+          },
+          {
+            "text": "corrupto",
+            "color": "$red"
+          },
+          {
+            "text": " y el modificador ser\u00e1 degradado en su lugar.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tanto el equipo ",
+            "color": "$text"
+          },
+          {
+            "text": "imbuido",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " como el ",
+            "color": "$text"
+          },
+          {
+            "text": "corrupto",
+            "color": "$red"
+          },
+          {
+            "text": " ya no se pueden modificar en la ",
+            "color": "$text"
+          },
+          {
+            "text": "Estaci\u00f3n Artesanal",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", sin embargo, el ",
+            "color": "$text"
+          },
+          {
+            "text": "equipo imbuido",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " a\u00fan puede ser sellado.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Interact\u00faa con un Altar de Imbuimiento",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/imbuement_altar",
+      "targetId": "the_vault:imbuement_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_echo",
+            "amount": 10
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+
+    {
+      "type": "level_up",
+      "id": "reach_level_100",
+      "name": "Alcanzando el Nivel M\u00e1ximo",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1El nivel 100 marca el final de los niveles ordinarios en Vault Hunters, una vez aqu\u00ed has conquistado todos los puntos de habilidad disponibles, y desbloqueado todos los posibles grupos de nivel de equipo!\n\nLo m\u00e1s importante, ahora has desbloqueado la capacidad de entrar a La Arena, y enfrentar al Heraldo.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAlcanza el Nivel de B\u00f3veda 100",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/100",
+      "targetId": "the_vault:100",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:companion_egg",
+            "nbt": "{HatchTime:20,Series:\"PET\"}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "complete_vault",
+      "id": "herald",
+      "name": "El Heraldo",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Es hora de demostrar tu val\u00eda!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Para enfrentar el desaf\u00edo definitivo, el ",
+            "color": "$text"
+          },
+          {
+            "text": "Heraldo",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", debes haber alcanzado el nivel 100 y completado tu ",
+            "color": "$text"
+          },
+          {
+            "text": "Rompecabezas de Artefactos",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Solo una vez que ambas cosas se hayan completado podr\u00e1s entrar a ",
+            "color": "$text"
+          },
+          {
+            "text": "La Arena",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Recupera la ",
+            "color": "$text"
+          },
+          {
+            "text": "Roca del Heraldo",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " haciendo clic derecho en tu ",
+            "color": "$text"
+          },
+          {
+            "text": "Tomo de Artefactos",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " completado; puedes recuperar tantas como quieras. Fabricar esta roca en tu altar te da el ",
+            "color": "$text"
+          },
+          {
+            "text": "Cristal del Heraldo",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Cuidado, este es un jefe muy dif\u00edcil con diferentes fases, y todo tu conocimiento previo ser\u00e1 evaluado para superar este desaf\u00edo.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Buena Suerte Cazador\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Derrota al Heraldo",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/herald",
+      "targetId": "the_vault:herald",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_100",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:omega_pog",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "complete_vault",
+      "id": "greed",
+      "name": "Avaricia",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00a1Bien hecho! Despu\u00e9s de derrotar al ",
+            "color": "$text"
+          },
+          {
+            "text": "Heraldo",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", has desbloqueado el cap\u00edtulo final de Vault Hunters: ",
+            "color": "$text"
+          },
+          {
+            "text": "Avaricia",
+            "color": "$omega"
+          },
+          {
+            "text": ".\n\nAhora tienes acceso a la ",
+            "color": "$text"
+          },
+          {
+            "text": "Prueba de Avaricia",
+            "color": "$omega"
+          },
+          {
+            "text": ", una b\u00f3veda de duraci\u00f3n infinita que te llevar\u00e1 al l\u00edmite. Cuando finalmente caigas, tu progreso aumentar\u00e1 tu ",
+            "color": "$text"
+          },
+          {
+            "text": "Nivel de Avaricia",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", desbloqueando poderosos nuevos ",
+            "color": "$text"
+          },
+          {
+            "text": "Nodos de Avaricia",
+            "color": "$omega"
+          },
+          {
+            "text": ".\n\nAl alcanzar tu primer Nivel de Avaricia, recibir\u00e1s un ",
+            "color": "$text"
+          },
+          {
+            "text": "Ancla de Avaricia",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Col\u00f3cala para invocar a ",
+            "color": "$text"
+          },
+          {
+            "text": "Sr. Codicioso",
+            "color": "$omega"
+          },
+          {
+            "text": ", un misterioso comerciante que ofrece una ",
+            "color": "$text"
+          },
+          {
+            "text": "Tienda",
+            "color": "$white"
+          },
+          {
+            "text": " para comprar objetos de Avaricia con ",
+            "color": "$text"
+          },
+          {
+            "text": "Monedas de Avaricia",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "Misiones",
+            "color": "$white"
+          },
+          {
+            "text": " que recompensan reputaci\u00f3n a trav\u00e9s de desaf\u00edos de b\u00f3veda, y ",
+            "color": "$text"
+          },
+          {
+            "text": "Cristales de Desaf\u00edo",
+            "color": "$white"
+          },
+          {
+            "text": " con un nuevo sistema de ",
+            "color": "$text"
+          },
+          {
+            "text": "Peligro",
+            "color": "$omega"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Cuidado con los Asesinos de Avaricia...",
+            "color": "$omega"
+          },
+          {
+            "text": " \u00bfhasta d\u00f3nde te atrever\u00e1s a escalar? \u00bfQu\u00e9 tan Codicioso te volver\u00e1s?\n\n\u00bfNecesitas m\u00e1s monedas? El ",
+            "color": "$text"
+          },
+          {
+            "text": "Caldero de Avaricia",
+            "color": "$omega"
+          },
+          {
+            "text": " tiene hambre de materiales de b\u00f3veda. Al\u00edmentalo con lo que demanda, y te recompensar\u00e1 con ",
+            "color": "$text"
+          },
+          {
+            "text": "Monedas de Avaricia",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " a cambio.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Completa la Prueba de Avaricia",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/greed",
+      "targetId": "the_vault:rebirth",
+      "targetProgress": 1.0,
+      "unlockedBy": "herald",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:stick",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "crafting",
+      "id": "greed_cauldron",
+      "name": "Crisol de Avaricia",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "El ",
+            "color": "$text"
+          },
+          {
+            "text": "Crisol de Avaricia",
+            "color": "$omega"
+          },
+          {
+            "text": " es un dispositivo poderoso que tiene hambre de materiales de b\u00f3veda. Fabrica uno y col\u00f3calo para comenzar a alimentar su apetito insaciable.\n\nEl ",
+            "color": "$text"
+          },
+          {
+            "text": "Crisol",
+            "color": "$omega"
+          },
+          {
+            "text": " demandar\u00e1 grandes cantidades de recursos de b\u00f3veda. Por cada solicitud que cumplas, recibir\u00e1s ",
+            "color": "$text"
+          },
+          {
+            "text": "Monedas de Avaricia",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Pero aqu\u00ed est\u00e1 el truco: cada solicitud completada aumenta tu ",
+            "color": "$text"
+          },
+          {
+            "text": "multiplicador",
+            "color": "$white"
+          },
+          {
+            "text": ", causando que las completaciones subsiguientes recompensen a\u00fan m\u00e1s ",
+            "color": "$text"
+          },
+          {
+            "text": "Monedas de Avaricia",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nSigue alimentando al Crisol para maximizar tus ganancias.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Fabrica un Crisol de Avaricia",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/greed_cauldron",
+      "targetId": "the_vault:greed_cauldron",
+      "targetProgress": 1.0,
+      "unlockedBy": "greed",
+      "reward": {
+        "items": [
+        ],
+        "vaultExp": 0
+      }
+    }
+  ]
+}

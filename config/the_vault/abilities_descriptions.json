@@ -1028,26 +1028,42 @@
         "radius"
       ]
     },
-    "Shield_Bash": {
+   "Shield_Bash": {
       "description": [
         {
-          "text": "Bash mobs with your shield, dealing ",
+          "text": "Dash forward and bash mobs with your shield, dealing ",
           "color": "$text"
         },
         {
-          "text": "Thorns Damage",
-          "color": "$thornsDamage"
+          "text": "Block Chance Damage",
+          "color": "$damage"
         },
         {
-          "text": " in front of you in a ",
+          "text": " in a ",
           "color": "$text"
         },
         {
-          "text": "line",
+          "text": "cone",
           "color": "$radius"
         },
         {
-          "text": ".",
+          "text": " in front of you with ",
+          "color": "$text"
+        },
+        {
+          "text": "knockback",
+          "color": "$knockback"
+        },
+        {
+          "text": ". Has a chance to ",
+          "color": "$text"
+        },
+        {
+          "text": "stun",
+          "color": "$stunChance"
+        },
+        {
+          "text": " hit enemies.",
           "color": "$text"
         },
         {
@@ -1062,14 +1078,18 @@
       "current": [
         "manaCost",
         "cooldown",
-        "thornsDamage",
-        "adjustedRadius"
+        "damage",
+        "adjustedRadius",
+        "knockback",
+        "stunChance"
       ],
       "next": [
         "manaCost",
         "cooldown",
-        "thornsDamage",
-        "adjustedRadius"
+        "damage",
+        "adjustedRadius",
+        "knockback",
+        "stunChance"
       ]
     },
     "Mana_Shield_Base": {

@@ -44,21 +44,17 @@
             "particleColor": "0x069022"
           },
           "zone": {
-            "min": [
-              -23,
-              -5,
-              -23
-            ],
-            "max": [
-              23,
-              41,
-              23
-            ]
+            "min": [-23, -12, -23],
+            "max": [23, 27, 23]
           },
-          "action": {
-            "type": "reference",
-            "path": "add_a_modifier"
-          },
+          "proxyPositions": [
+            [15, -2, 15],
+            [-15, -2, 15],
+            [15, -2, -15],
+            [-15, -2, -15]
+          ],
+          "positivePool": "positive_temple",
+          "negativePool": "negative_temple",
           "weight": 1
         }
       ]

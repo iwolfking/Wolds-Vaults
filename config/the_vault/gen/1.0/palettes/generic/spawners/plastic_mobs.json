@@ -8,10 +8,10 @@
           "type": "weighted_target",
           "target": "ispawner:spawner",
           "output": {
-            "ispawner:spawner{ group:horde }": 60,
-            "ispawner:spawner{ group:assassin }": 27,
-            "ispawner:spawner{ group:tank }": 10,
-            "ispawner:spawner{ group:dwellers }": 3
+            "ispawner:spawner{ group:horde }": 39,
+            "ispawner:spawner{ group:assassin }": 18,
+            "ispawner:spawner{ group:tank }": 18,
+            "ispawner:spawner{ group:dwellers }": 25
           }
         }
       ]
@@ -113,8 +113,8 @@
           "output": [
             {
               "elements": {
-                "the_vault:t4_plastic_zombie": 3,
-                "the_vault:t4_plastic_skeleton": 2
+                "the_vault:plastic_tank": 1,
+                "the_vault:plastic_villager_tank": 1
               },
               "weight": 1
             }
@@ -127,29 +127,28 @@
       "levels": [
         {
           "level": 0,
-          "type": "spawner",
-          "target": "ispawner:spawner{group:assassin}",
-          "output": [
-            {
-              "elements": {
-                "the_vault:t1_plastic_skeleton": 2,
-                "the_vault:t1_plastic_slime": 1
-              },
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "level": 20,
           "type": "spawner",
           "target": "ispawner:spawner{group:assassin}",
           "output": [
             {
               "elements": {
                 "the_vault:t1_plastic_skeleton": 8,
+                "the_vault:plastic_creeper": 2
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:assassin}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t1_plastic_skeleton": 6,
                 "the_vault:t2_plastic_skeleton": 2,
-                "the_vault:t1_plastic_slime": 4,
-                "the_vault:t2_plastic_slime": 1
+                "the_vault:plastic_creeper": 2
               },
               "weight": 1
             }
@@ -162,10 +161,9 @@
           "output": [
             {
               "elements": {
-                "the_vault:t1_plastic_skeleton": 4,
-                "the_vault:t2_plastic_skeleton": 9,
-                "the_vault:t1_plastic_slime": 3,
-                "the_vault:t2_plastic_slime": 3
+                "the_vault:t1_plastic_skeleton": 2,
+                "the_vault:t2_plastic_skeleton": 6,
+                "the_vault:plastic_creeper": 2
               },
               "weight": 1
             }
@@ -178,10 +176,9 @@
           "output": [
             {
               "elements": {
-                "the_vault:t2_plastic_skeleton": 8,
+                "the_vault:t2_plastic_skeleton": 6,
                 "the_vault:t3_plastic_skeleton": 2,
-                "the_vault:t2_plastic_slime": 4,
-                "the_vault:t3_plastic_slime": 1
+                "the_vault:plastic_creeper": 2
               },
               "weight": 1
             }
@@ -194,10 +191,9 @@
           "output": [
             {
               "elements": {
-                "the_vault:t2_plastic_skeleton": 4,
-                "the_vault:t3_plastic_skeleton": 9,
-                "the_vault:t3_plastic_slime": 3,
-                "the_vault:t4_plastic_slime": 3
+                "the_vault:t2_plastic_skeleton": 2,
+                "the_vault:t3_plastic_skeleton": 6,
+                "the_vault:plastic_creeper": 2
               },
               "weight": 1
             }
@@ -215,7 +211,7 @@
           "output": [
             {
               "elements": {
-                "the_vault:t1_plastic_zombie": 1
+                "the_vault:t1_plastic_horde": 1
               },
               "weight": 1
             }
@@ -228,50 +224,67 @@
           "output": [
             {
               "elements": {
-                "the_vault:t1_plastic_zombie": 5,
-                "the_vault:t2_plastic_zombie": 2
+                "the_vault:t1_plastic_horde": 5,
+                "the_vault:t2_plastic_horde": 2
               },
               "weight": 1
             }
           ]
         },
         {
-          "level": 50,
+          "level": 40,
           "type": "spawner",
           "target": "ispawner:spawner{group:horde}",
           "output": [
             {
               "elements": {
-                "the_vault:t1_plastic_zombie": 2,
-                "the_vault:t2_plastic_zombie": 5
+                "the_vault:t1_plastic_horde": 2,
+                "the_vault:t2_plastic_horde": 5,
+                "the_vault:t3_plastic_horde": 1
               },
               "weight": 1
             }
           ]
         },
         {
-          "level": 65,
+          "level": 60,
           "type": "spawner",
           "target": "ispawner:spawner{group:horde}",
           "output": [
             {
               "elements": {
-                "the_vault:t2_plastic_zombie": 5,
-                "the_vault:t3_plastic_zombie": 2
+                "the_vault:t2_plastic_horde": 4,
+                "the_vault:t3_plastic_horde": 5,
+                "the_vault:t4_plastic_horde": 1
               },
               "weight": 1
             }
           ]
         },
         {
-          "level": 90,
+          "level": 80,
           "type": "spawner",
           "target": "ispawner:spawner{group:horde}",
           "output": [
             {
               "elements": {
-                "the_vault:t2_plastic_zombie": 2,
-                "the_vault:t3_plastic_zombie": 5
+                "the_vault:t3_plastic_horde": 3,
+                "the_vault:t4_plastic_horde": 5,
+                "the_vault:t5_plastic_horde": 2
+              },
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "level": 100,
+          "type": "spawner",
+          "target": "ispawner:spawner{group:horde}",
+          "output": [
+            {
+              "elements": {
+                "the_vault:t4_plastic_horde": 2,
+                "the_vault:t5_plastic_horde": 5
               },
               "weight": 1
             }

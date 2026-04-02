@@ -1,0 +1,201 @@
+{
+  "tile_processors": [
+    {
+      "type": "reference",
+      "id": "the_vault:special/boss/royale/base"
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:royale_pillar",
+      "output": [
+        {
+          "block": "the_vault:royale_pillar",
+          "zone": {
+            "min": [
+              -23,
+              -20,
+              -23
+            ],
+            "max": [
+              23,
+              26,
+              23
+            ]
+          },
+          "roomStyle": "BOSS_1",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:smooth_sandstone",
+      "output": {
+        "minecraft:honeycomb_block": 1,
+        "auxiliaryblocks:smooth_yellow_pastel": 1,
+        "minecraft:yellow_concrete_powder": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:stone",
+      "output": {
+        "auxiliaryblocks:yellow_pastel": 1,
+        "auxiliaryblocks:smooth_orange_pastel": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:andesite",
+      "output": {
+        "minecraft:yellow_glazed_terracotta": 1,
+        "auxiliaryblocks:orange_pastel": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:light_gray_concrete",
+      "output": {
+        "minecraft:honey_block": 1,
+        "auxiliaryblocks:yellow_gelatin": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:cyan_terracotta",
+      "output": {
+        "minecraft:bee_nest": 1,
+        "minecraft:honeycomb_block": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:gray_concrete",
+      "output": {
+        "minecraft:yellow_concrete": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:slime_block",
+      "output": {
+        "auxiliaryblocks:yellow_crystal": 1,
+        "auxiliaryblocks:orange_gelatin": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:iron_block",
+      "output": {
+        "minecraft:honey_block": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:black_concrete",
+      "output": {
+        "minecraft:orange_terracotta": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:bricks",
+      "output": {
+        "quark:yellow_shingles": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:brick_slab",
+      "output": {
+        "quark:yellow_shingles_slab": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:dark_oak_fence",
+      "output": {
+        "minecraft:birch_fence": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:dark_oak_slab",
+      "output": {
+        "minecraft:birch_slab": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:stripped_spruce_wood",
+      "output": {
+        "minecraft:stripped_birch_wood": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:acacia_wood",
+      "output": {
+        "minecraft:honeycomb_block": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:black_stained_glass",
+      "output": {
+        "quark:orange_corundum": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:blackstone_slab",
+      "output": {
+        "minecraft:birch_slab": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:stone_bricks",
+      "output": {
+        "minecraft:honeycomb_block": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:stone_brick_stairs",
+      "output": {
+        "minecraft:birch_stairs": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:sea_lantern",
+      "output": {
+        "minecraft:shroomlight": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:gray_stained_glass",
+      "output": {
+        "auxiliaryblocks:orange_frameless_glass": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:netherite_block",
+      "output": {
+        "auxiliaryblocks:yellow_crystal": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "minecraft:iron_bars",
+      "output": {
+        "auxiliaryblocks:yellow_frameless_glass": 1
+      }
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

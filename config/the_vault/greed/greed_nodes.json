@@ -1,0 +1,1550 @@
+{
+  "tree": {
+    "id": "greed",
+    "present": false,
+    "unlockLevel": 0,
+    "learnPointCost": 0,
+    "regretPointCost": 0,
+    "skills": [
+      {
+        "id": "greed_root",
+        "name": "Greed",
+        "present": true,
+        "tier": 0,
+        "type": "greed_root"
+      },
+      {
+        "id": "offensive_root",
+        "name": "Offensive",
+        "present": true,
+        "parent": "greed_root",
+        "tier": 0,
+        "type": "greed_root"
+      },
+      {
+        "id": "off_t1_atk_ap_1",
+        "name": "+6% Inc Atk Dmg & 4% Ability Power",
+        "present": false,
+        "parent": "offensive_root",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_increase",
+            "value": 0.06
+          },
+          {
+            "attribute": "the_vault:ability_power_percent",
+            "value": 0.04
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_dmg_dweller_1",
+        "name": "+10% Inc Dweller Dmg",
+        "present": false,
+        "parent": "offensive_root",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_dweller",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_dmg_tank_1",
+        "name": "+10% Inc Tank Dmg",
+        "present": false,
+        "parent": "offensive_root",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_tank",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t2_dmg_dungeon_1",
+        "name": "+10% Inc Dungeon Dmg",
+        "present": false,
+        "parent": "off_t1_atk_ap_2",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_dungeon",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_double_hit_1",
+        "name": "+1% Double Hit Chance",
+        "present": false,
+        "parent": "off_t1_atk_ap_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:double_hit_chance",
+            "value": 0.01
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_dmg_horde_1",
+        "name": "+10% Inc Horde Dmg",
+        "present": false,
+        "parent": "off_t1_double_hit_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_horde",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_atk_ap_2",
+        "name": "+6% Inc Atk Dmg & 4% Ability Power",
+        "present": false,
+        "parent": "off_t2_dmg_champion_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_increase",
+            "value": 0.06
+          },
+          {
+            "attribute": "the_vault:ability_power_percent",
+            "value": 0.04
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_aoe_1",
+        "name": "+5% Area of Effect",
+        "present": false,
+        "parent": "off_t1_dmg_dweller_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:area_of_effect",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_dmg_toddler_1",
+        "name": "+10% Inc Toddler Dmg",
+        "present": false,
+        "parent": "off_t1_dmg_dweller_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_baby",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_atk_ap_3",
+        "name": "+6% Inc Atk Dmg & 4% Ability Power",
+        "present": false,
+        "parent": "off_t1_dmg_tank_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_increase",
+            "value": 0.06
+          },
+          {
+            "attribute": "the_vault:ability_power_percent",
+            "value": 0.04
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_double_hit_2",
+        "name": "+1% Double Hit Chance",
+        "present": false,
+        "parent": "off_t1_dmg_tank_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:double_hit_chance",
+            "value": 0.01
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_dmg_assassin_1",
+        "name": "+10% Inc Assassin Dmg",
+        "present": false,
+        "parent": "off_t2_stun_2",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_assassin",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_double_hit_3",
+        "name": "+1% Double Hit Chance",
+        "present": false,
+        "parent": "off_t2_dmg_dungeon_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:double_hit_chance",
+            "value": 0.01
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t2_flat_atk_ap_1",
+        "name": "+10 Attack Damage & +5 Ability Power",
+        "present": false,
+        "parent": "off_t2_lucky_hit_1",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:attack_damage",
+            "value": 10.0
+          },
+          {
+            "attribute": "the_vault:ability_power",
+            "value": 5.0
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t2_lucky_hit_1",
+        "name": "+2% Lucky Hit Chance",
+        "present": false,
+        "parents": [
+          "off_t1_double_hit_1",
+          "off_t1_aoe_1"
+        ],
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:lucky_hit_chance",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_atk_ap_4",
+        "name": "+6% Inc Atk Dmg & 4% Ability Power",
+        "present": false,
+        "parent": "off_t1_dmg_horde_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_increase",
+            "value": 0.06
+          },
+          {
+            "attribute": "the_vault:ability_power_percent",
+            "value": 0.04
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t2_stun_1",
+        "name": "+5% Stun Chance",
+        "present": false,
+        "parent": "off_t1_aoe_1",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:on_hit_stun",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t2_lucky_hit_2",
+        "name": "+2% Lucky Hit Chance",
+        "present": false,
+        "parent": "off_t1_aoe_1",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:lucky_hit_chance",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t2_chain_1",
+        "name": "+1 Attack Chain",
+        "present": false,
+        "parents": [
+          "off_t1_atk_ap_3",
+          "off_t2_stun_1"
+        ],
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:on_hit_chain",
+            "value": 1.0
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_atk_ap_5",
+        "name": "+6% Inc Atk Dmg & 4% Ability Power",
+        "present": false,
+        "parent": "off_t1_atk_ap_3",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_increase",
+            "value": 0.06
+          },
+          {
+            "attribute": "the_vault:ability_power_percent",
+            "value": 0.04
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t2_stun_2",
+        "name": "+5% Stun Chance",
+        "present": false,
+        "parent": "off_t1_lucky_hit_2",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:on_hit_stun",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_dmg_horde_2",
+        "name": "+10% Inc Horde Dmg",
+        "present": false,
+        "parent": "off_t1_dmg_assassin_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_horde",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_atk_ap_6",
+        "name": "+6% Inc Atk Dmg & 4% Ability Power",
+        "present": false,
+        "parent": "off_t2_flat_atk_ap_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_increase",
+            "value": 0.06
+          },
+          {
+            "attribute": "the_vault:ability_power_percent",
+            "value": 0.04
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t2_lucky_hit_3",
+        "name": "+2% Lucky Hit Chance",
+        "present": false,
+        "parent": "off_t1_atk_ap_6",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:lucky_hit_chance",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_atk_ap_7",
+        "name": "+6% Inc Atk Dmg & 4% Ability Power",
+        "present": false,
+        "parent": "off_t2_lucky_hit_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_increase",
+            "value": 0.06
+          },
+          {
+            "attribute": "the_vault:ability_power_percent",
+            "value": 0.04
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_atk_ap_8",
+        "name": "+6% Inc Atk Dmg & 4% Ability Power",
+        "present": false,
+        "parent": "off_t2_flat_atk_ap_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_increase",
+            "value": 0.06
+          },
+          {
+            "attribute": "the_vault:ability_power_percent",
+            "value": 0.04
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t2_dmg_champion_1",
+        "name": "+10% Inc Champion Dmg",
+        "present": false,
+        "parent": "off_t2_stun_1",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_champion",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_aoe_2",
+        "name": "+5% Area of Effect",
+        "present": false,
+        "parent": "off_t2_stun_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:area_of_effect",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_lucky_hit_1",
+        "name": "+1% Lucky Hit Chance",
+        "present": false,
+        "parent": "off_t2_chain_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:lucky_hit_chance",
+            "value": 0.01
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_lucky_hit_2",
+        "name": "+1% Lucky Hit Chance",
+        "present": false,
+        "parent": "off_t2_chain_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:lucky_hit_chance",
+            "value": 0.01
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t1_atk_ap_9",
+        "name": "+6% Inc Atk Dmg & 4% Ability Power",
+        "present": false,
+        "parent": "off_t2_stun_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_increase",
+            "value": 0.06
+          },
+          {
+            "attribute": "the_vault:ability_power_percent",
+            "value": 0.04
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t3_skillpoint_1",
+        "name": "+1 Skillpoint",
+        "present": false,
+        "parent": "off_t2_lucky_hit_3",
+        "tier": 3,
+        "skillPoints": 1,
+        "type": "greed_skill_point"
+      },
+      {
+        "id": "off_t3_unique_1",
+        "name": "Unique Effect",
+        "present": false,
+        "parent": "off_t1_dmg_horde_2",
+        "tier": 3,
+        "type": "greed_gear_attribute",
+        "entries": [
+          {
+            "attribute": "the_vault:relentless_strike",
+            "value": 0.08
+          }
+        ]
+      },
+      {
+        "id": "off_t3_dmg_assassin_1",
+        "name": "+25% Dmg to Greed Assassins",
+        "present": false,
+        "parent": "off_t1_atk_ap_9",
+        "tier": 3,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_assassin",
+            "value": 0.25
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t2_greed_reputation",
+        "name": "+25% Greed Reputation",
+        "present": false,
+        "parent": "off_t3_skillpoint_1",
+        "tier": 2,
+        "reputationMultiplier": 0.25,
+        "type": "greed_reputation"
+      },
+      {
+        "id": "defensive_root",
+        "name": "Defensive",
+        "present": true,
+        "parent": "greed_root",
+        "tier": 0,
+        "type": "greed_root"
+      },
+      {
+        "id": "def_t1_health_1",
+        "name": "+2% Increased Health",
+        "present": false,
+        "parent": "defensive_root",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:health_percentile",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_armor_1",
+        "name": "+2% Armour",
+        "present": false,
+        "parent": "defensive_root",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:armor_percentile",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_knockback_res_1",
+        "name": "+20% Knockback Resistance",
+        "present": false,
+        "parent": "defensive_root",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:knockback_resistance",
+            "value": 0.2
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_resistance_1",
+        "name": "+2% Resistance",
+        "present": false,
+        "parent": "def_t1_knockback_res_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:resistance",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_health_2",
+        "name": "+2% Increased Health",
+        "present": false,
+        "parent": "def_t1_health_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:health_percentile",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_heal_eff_1",
+        "name": "+5% Healing Effectiveness",
+        "present": false,
+        "parent": "def_t1_health_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:healing_effectiveness",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_knockback_res_2",
+        "name": "+20% Knockback Resistance",
+        "present": false,
+        "parent": "def_t1_armor_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:knockback_resistance",
+            "value": 0.2
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_armor_2",
+        "name": "+2% Armour",
+        "present": false,
+        "parent": "def_t1_armor_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:armor_percentile",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_knockback_res_3",
+        "name": "+20% Knockback Resistance",
+        "present": false,
+        "parent": "def_t1_durability_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:knockback_resistance",
+            "value": 0.2
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_durability_1",
+        "name": "+10% Durability Wear Reduction",
+        "present": false,
+        "parent": "def_t1_knockback_res_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:durability_wear_reduction",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_resistance_2",
+        "name": "+2% Resistance",
+        "present": false,
+        "parent": "def_t1_resistance_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:resistance",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_durability_2",
+        "name": "+10% Durability Wear Reduction",
+        "present": false,
+        "parent": "def_t1_knockback_res_2",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:durability_wear_reduction",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t2_flat_health_1",
+        "name": "+2 Hitpoints",
+        "present": false,
+        "parents": [
+          "def_t1_health_2",
+          "def_t1_resistance_1"
+        ],
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:health",
+            "value": 2.0
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_heal_eff_2",
+        "name": "+5% Healing Effectiveness",
+        "present": false,
+        "parent": "def_t1_health_3",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:healing_effectiveness",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t2_health_1",
+        "name": "+4% Increased Health",
+        "present": false,
+        "parents": [
+          "def_t1_knockback_res_2",
+          "def_t2_crit_mitigation_1"
+        ],
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:health_percentile",
+            "value": 0.04
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_durability_3",
+        "name": "+10% Durability Wear Reduction",
+        "present": false,
+        "parent": "def_t1_knockback_res_4",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:durability_wear_reduction",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t2_armor_1",
+        "name": "+4% Armour",
+        "present": false,
+        "parent": "def_t1_armor_3",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:armor_percentile",
+            "value": 0.04
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t2_crit_mitigation_1",
+        "name": "+20% Crit Hit Mitigation",
+        "present": false,
+        "parent": "def_t1_resistance_1",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:critical_hit_mitigation",
+            "value": 0.2
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t2_resistance_1",
+        "name": "+4% Resistance",
+        "present": false,
+        "parent": "def_t1_durability_2",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:resistance",
+            "value": 0.04
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_health_3",
+        "name": "+2% Increased Health",
+        "present": false,
+        "parent": "def_t2_flat_health_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:health_percentile",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_resistance_3",
+        "name": "+2% Resistance",
+        "present": false,
+        "parent": "def_t2_flat_health_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:resistance",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t2_heal_eff_1",
+        "name": "+20% Healing Effectiveness",
+        "present": false,
+        "parent": "def_t1_heal_eff_2",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:healing_effectiveness",
+            "value": 0.2
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_heal_eff_3",
+        "name": "+5% Healing Effectiveness",
+        "present": false,
+        "parent": "def_t1_heal_eff_2",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:healing_effectiveness",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_knockback_res_4",
+        "name": "+20% Knockback Resistance",
+        "present": false,
+        "parent": "def_t2_health_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:knockback_resistance",
+            "value": 0.2
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_heal_eff_4",
+        "name": "+5% Healing Effectiveness",
+        "present": false,
+        "parent": "def_t2_health_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:healing_effectiveness",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t2_flat_armor_1",
+        "name": "+10 Armour",
+        "present": false,
+        "parent": "def_t1_durability_3",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:armor",
+            "value": 10.0
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_armor_3",
+        "name": "+2% Armour",
+        "present": false,
+        "parent": "def_t1_durability_3",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:armor_percentile",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_knockback_res_5",
+        "name": "+20% Knockback Resistance",
+        "present": false,
+        "parent": "def_t1_armor_3",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:knockback_resistance",
+            "value": 0.2
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_durability_4",
+        "name": "+10% Durability Wear Reduction",
+        "present": false,
+        "parent": "def_t2_armor_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:durability_wear_reduction",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_assassin_res_1",
+        "name": "+10% Dmg Reduction from Greed Assassins",
+        "present": false,
+        "parent": "def_t2_crit_mitigation_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:resistance_greed_assassin",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_resistance_4",
+        "name": "+2% Resistance",
+        "present": false,
+        "parent": "def_t2_crit_mitigation_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:resistance",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t1_health_4",
+        "name": "+2% Increased Health",
+        "present": false,
+        "parent": "def_t2_heal_eff_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:health_percentile",
+            "value": 0.02
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t3_skillpoint_1",
+        "name": "+1 Skillpoint",
+        "present": false,
+        "parent": "def_t1_health_4",
+        "tier": 3,
+        "skillPoints": 1,
+        "type": "greed_skill_point"
+      },
+      {
+        "id": "def_t3_unique_1",
+        "name": "Unique Effect",
+        "present": false,
+        "parent": "def_t1_knockback_res_5",
+        "tier": 3,
+        "type": "greed_gear_attribute",
+        "entries": [
+          {
+            "attribute": "the_vault:phoenix",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "def_t3_assassin_res_1",
+        "name": "+25% Dmg Reduction from Greed Assassins",
+        "present": false,
+        "parent": "def_t1_assassin_res_1",
+        "tier": 3,
+        "entries": [
+          {
+            "attribute": "the_vault:resistance_greed_assassin",
+            "value": 0.25
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t2_greed_reputation",
+        "name": "+25% Greed Reputation",
+        "present": false,
+        "parent": "def_t3_skillpoint_1",
+        "tier": 2,
+        "reputationMultiplier": 0.25,
+        "type": "greed_reputation"
+      },
+      {
+        "id": "utility_root",
+        "name": "Utility",
+        "present": true,
+        "parent": "greed_root",
+        "tier": 0,
+        "type": "greed_root"
+      },
+      {
+        "id": "util_t1_mana_regen_1",
+        "name": "+10% Mana Regeneration",
+        "present": false,
+        "parent": "utility_root",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:mana_regen",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_effect_dur_1",
+        "name": "+10% Increased Effect Duration",
+        "present": false,
+        "parent": "util_t1_cooldown_2",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:effect_duration",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_cooldown_1",
+        "name": "+1% Cooldown Reduction",
+        "present": false,
+        "parent": "utility_root",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:cooldown_reduction",
+            "value": 0.01
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_movement_1",
+        "name": "+3% Movement Speed",
+        "present": false,
+        "parent": "utility_root",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:movement_speed",
+            "value": 0.03
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_mana_regen_2",
+        "name": "+10% Mana Regeneration",
+        "present": false,
+        "parent": "util_t1_mana_regen_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:mana_regen",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_max_mana_1",
+        "name": "+5% Max Mana",
+        "present": false,
+        "parent": "util_t1_mana_regen_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:mana_additive_percentile",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_item_quantity_1",
+        "name": "+5% Item Quantity",
+        "present": false,
+        "parent": "util_t2_item_rarity_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:item_quantity",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_effect_dur_2",
+        "name": "+10% Increased Effect Duration",
+        "present": false,
+        "parent": "util_t1_effect_dur_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:effect_duration",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_cooldown_2",
+        "name": "+1% Cooldown Reduction",
+        "present": false,
+        "parent": "util_t1_cooldown_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:cooldown_reduction",
+            "value": 0.01
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_movement_2",
+        "name": "+3% Movement Speed",
+        "present": false,
+        "parent": "util_t1_cooldown_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:movement_speed",
+            "value": 0.03
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_soul_quantity_1",
+        "name": "+10% Soul Quantity",
+        "present": false,
+        "parent": "util_t1_movement_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:soul_chance",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_mining_speed_1",
+        "name": "+5% Mining Speed",
+        "present": false,
+        "parent": "util_t1_movement_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:mining_speed_percent",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t2_max_mana_1",
+        "name": "+5% Max Mana",
+        "present": false,
+        "parents": [
+          "util_t1_mana_regen_2",
+          "util_t1_cooldown_2"
+        ],
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:mana_additive_percentile",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t2_xp_gain_1",
+        "name": "+10% XP Gain",
+        "present": false,
+        "parent": "util_t1_mana_regen_3",
+        "tier": 2,
+        "type": "greed_xp_gain",
+        "xpMultiplier": 0.1
+      },
+      {
+        "id": "util_t2_item_rarity_1",
+        "name": "+25% Item Rarity",
+        "present": false,
+        "parent": "util_t1_soul_quantity_1",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:item_rarity",
+            "value": 0.25
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t2_xp_gain_2",
+        "name": "+10% XP Gain",
+        "present": false,
+        "parent": "util_t1_cooldown_2",
+        "tier": 2,
+        "type": "greed_xp_gain",
+        "xpMultiplier": 0.1
+      },
+      {
+        "id": "util_t2_fruit_eff_1",
+        "name": "+10% Fruit Effectiveness",
+        "present": false,
+        "parent": "util_t1_effect_dur_4",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:fruit_effectiveness",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t2_imbuement_1",
+        "name": "+15% Imbuement Chance",
+        "present": false,
+        "parent": "util_t2_fruit_eff_1",
+        "tier": 2,
+        "imbuementChance": 0.15,
+        "type": "greed_imbuement_chance"
+      },
+      {
+        "id": "util_t2_fruit_eff_2",
+        "name": "+10% Fruit Effectiveness",
+        "present": false,
+        "parents": [
+          "util_t1_soul_quantity_1",
+          "util_t2_xp_gain_2"
+        ],
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:fruit_effectiveness",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t2_mining_speed_1",
+        "name": "+8% Mining Speed",
+        "present": false,
+        "parent": "util_t1_movement_4",
+        "tier": 2,
+        "entries": [
+          {
+            "attribute": "the_vault:mining_speed_percent",
+            "value": 0.08
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_mana_regen_3",
+        "name": "+10% Mana Regeneration",
+        "present": false,
+        "parent": "util_t2_max_mana_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:mana_regen",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_cooldown_3",
+        "name": "+1% Cooldown Reduction",
+        "present": false,
+        "parent": "util_t2_max_mana_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:cooldown_reduction",
+            "value": 0.01
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_movement_3",
+        "name": "+3% Movement Speed",
+        "present": false,
+        "parent": "util_t2_xp_gain_1",
+        "tier": 1,
+        "type": "greed_gear_attribute",
+        "entries": [
+          {
+            "attribute": "the_vault:movement_speed",
+            "value": 0.03
+          }
+        ]
+      },
+      {
+        "id": "util_t1_max_mana_2",
+        "name": "+5% Max Mana",
+        "present": false,
+        "parent": "util_t1_movement_3",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:mana_additive_percentile",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_item_quantity_2",
+        "name": "+5% Item Quantity",
+        "present": false,
+        "parent": "util_t1_item_quantity_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:item_quantity",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_effect_dur_3",
+        "name": "+10% Increased Effect Duration",
+        "present": false,
+        "parent": "util_t2_fruit_eff_2",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:effect_duration",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_mana_regen_4",
+        "name": "+10% Mana Regeneration",
+        "present": false,
+        "parent": "util_t2_xp_gain_2",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:mana_regen",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_effect_dur_4",
+        "name": "+10% Increased Effect Duration",
+        "present": false,
+        "parent": "util_t1_mana_regen_4",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:effect_duration",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_mana_regen_5",
+        "name": "+10% Mana Regeneration",
+        "present": false,
+        "parent": "util_t2_xp_gain_2",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:mana_regen",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_soul_quantity_2",
+        "name": "+10% Soul Quantity",
+        "present": false,
+        "parent": "util_t2_fruit_eff_2",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:soul_chance",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_movement_4",
+        "name": "+3% Movement Speed",
+        "present": false,
+        "parent": "util_t1_soul_quantity_2",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:movement_speed",
+            "value": 0.03
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t1_mining_speed_2",
+        "name": "+5% Mining Speed",
+        "present": false,
+        "parent": "util_t2_mining_speed_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:mining_speed_percent",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t3_skillpoint_1",
+        "name": "+1 Skillpoint",
+        "present": false,
+        "parent": "util_t1_mana_regen_4",
+        "tier": 3,
+        "skillPoints": 1,
+        "type": "greed_skill_point"
+      },
+      {
+        "id": "util_t3_unique_1",
+        "name": "Unique Effect",
+        "present": false,
+        "parent": "util_t1_max_mana_2",
+        "tier": 3,
+        "entries": [
+          {
+            "attribute": "the_vault:ability_cooldown_skip",
+            "value": 0.1
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t3_cryonic_1",
+        "name": "Cryonic Focus always freezes a Legendary Modifier",
+        "present": false,
+        "parent": "util_t1_mining_speed_2",
+        "tier": 3,
+        "type": "greed_cryonic_focus"
+      },
+      {
+        "id": "util_t2_greed_reputation",
+        "name": "+25% Greed Reputation",
+        "present": false,
+        "parent": "util_t3_skillpoint_1",
+        "tier": 2,
+        "reputationMultiplier": 0.25,
+        "type": "greed_reputation"
+      }
+    ],
+    "greedTier": 0,
+    "greedReputation": 0,
+    "type": "greed_tree"
+  }
+}

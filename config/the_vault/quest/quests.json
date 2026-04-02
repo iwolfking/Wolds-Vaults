@@ -664,6 +664,152 @@
     },
     {
       "type": "collection",
+      "id": "coin_pouch",
+      "name": "Coin Pouch",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "The best way to store your ",
+            "color": "$text"
+          },
+          {
+            "text": "bronze",
+            "color": "$bronze"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "silver",
+            "color": "$common"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "gold",
+            "color": "$gold"
+          },
+          {
+            "text": " and ",
+            "color": "$text"
+          },
+          {
+            "text": "platinum",
+            "color": "$platinum"
+          },
+          {
+            "text": ", is by acquiring a ",
+            "color": "$text"
+          },
+          {
+            "text": "Coin Pouch",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\nThe ",
+            "color": "$text"
+          },
+          {
+            "text": "Coin Pouch",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " is a ",
+            "color": "$text"
+          },
+          {
+            "text": "soulbound",
+            "color": "$soulchance"
+          },
+          {
+            "text": " item that you keep in your inventory. It will be kept there even if you die, and it can contain an unlimited amount of ",
+            "color": "$text"
+          },
+          {
+            "text": "bronze",
+            "color": "$bronze"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "silver",
+            "color": "$common"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "gold",
+            "color": "$gold"
+          },
+          {
+            "text": " and ",
+            "color": "$text"
+          },
+          {
+            "text": "platinum",
+            "color": "$platinum"
+          },
+          {
+            "text": ". It auto-converts between them, and all the workstations in ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault Hunters",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " can read directly from it - no need to micro-manage your items!\n\nAnother brilliant feature of the ",
+            "color": "$text"
+          },
+          {
+            "text": "Coin Pouch",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " is that it will automatically pick up any currency you collect, as long as it's not positioned after a ",
+            "color": "$text"
+          },
+          {
+            "text": "backpack",
+            "color": "$blocks"
+          },
+          {
+            "text": " allowing currency in its whitelist.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAcquire a Coin Pouch",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/coin_pouch",
+      "targetId": "the_vault:coin_pouch",
+      "targetProgress": 1.0,
+      "unlockedBy": "shard_pouch",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_platinum",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:chromatic_steel_ingot",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
       "id": "complete_bounty",
       "name": "Bounty Hunting",
       "descriptionData": {
@@ -3474,6 +3620,18 @@
             "color": "$text"
           },
           {
+            "text": "\n\nOnce you've started discovering uniques, craft the ",
+            "color": "$text"
+          },
+          {
+            "text": "Unique Wardrobe",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " to show them off! This display block renders a player wearing any unique you've discovered, letting you admire your collection in style.",
+            "color": "$text"
+          },
+          {
             "text": "\n\n",
             "color": "$text"
           },
@@ -4010,7 +4168,7 @@
             "color": "$qhighlight"
           },
           {
-            "text": ", with basic decks aviilable immediately. To access the ",
+            "text": ", with basic decks available immediately. To access the ",
             "color": "$text"
           },
           {
@@ -4899,7 +5057,19 @@
             "color": "$qhighlight"
           },
           {
-            "text": " to make it stronger, upgrading its values. If the imbuement ",
+            "text": " to make it stronger, upgrading its values.\n\nAfter a successful imbuement, if the gear originally had the ",
+            "color": "$text"
+          },
+          {
+            "text": "Living ",
+            "color": "$living"
+          },
+          {
+            "text": "modifier, the living modifier will be removed from the gear piece.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nIf the imbuement ",
             "color": "$text"
           },
           {
@@ -5100,9 +5270,9 @@
       }
     },
     {
-      "type": "spend_prestige_point",
-      "id": "prestige",
-      "name": "Prestige Powers",
+      "type": "complete_vault",
+      "id": "greed",
+      "name": "Greed",
       "descriptionData": {
         "description": [
           {
@@ -5110,104 +5280,140 @@
             "color": "$text"
           },
           {
-            "text": "Herald ",
+            "text": "Herald",
             "color": "$qhighlight"
           },
           {
-            "text": "and reaching level 100, you have unlocked the final chapter of Vault Hunters: ",
+            "text": ", you have unlocked the final chapter of Vault Hunters: ",
             "color": "$text"
           },
           {
-            "text": "Prestige Powers",
+            "text": "Greed",
             "color": "$omega"
           },
           {
-            "text": ".\n\nEach level gained beyond 100 becomes a ",
+            "text": ".\n\nYou now have access to the ",
             "color": "$text"
           },
           {
-            "text": "Prestige Level",
+            "text": "Greed Trial",
+            "color": "$omega"
+          },
+          {
+            "text": ", an infinite-length vault that will push you to your limits. When you eventually fall, your progress will increase your ",
+            "color": "$text"
+          },
+          {
+            "text": "Greed Tier",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", unlocking powerful new ",
+            "color": "$text"
+          },
+          {
+            "text": "Greed Nodes",
+            "color": "$omega"
+          },
+          {
+            "text": ".\n\nUpon reaching your first Greed Tier, you will receive a ",
+            "color": "$text"
+          },
+          {
+            "text": "Greed Anchor",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Place it to summon ",
+            "color": "$text"
+          },
+          {
+            "text": "Mr Greedy",
+            "color": "$omega"
+          },
+          {
+            "text": ", a mysterious merchant who offers a ",
+            "color": "$text"
+          },
+          {
+            "text": "Shop",
             "color": "$white"
           },
           {
-            "text": ", granting you 1 ",
+            "text": " for purchasing Greed items with ",
             "color": "$text"
           },
           {
-            "text": "Prestige Point",
-            "color": "$prestige_points"
+            "text": "Greed Coins",
+            "color": "$qhighlight"
           },
           {
-            "text": ". You can spend ",
+            "text": ", ",
             "color": "$text"
           },
           {
-            "text": "Prestige Points ",
-            "color": "$prestige_points"
-          },
-          {
-            "text": "alongside Knowledge Points in the ",
-            "color": "$text"
-          },
-          {
-            "text": "Prestige Powers ",
-            "color": "$omega"
-          },
-          {
-            "text": "tab (accessible through the Vault Hunters menu).\n\n",
-            "color": "$text"
-          },
-          {
-            "text": "Prestige Powers ",
-            "color": "$omega"
-          },
-          {
-            "text": "follow an intuitive tier system with each row representing a different tier. ",
-            "color": "text"
-          },
-          {
-            "text": "Higher-tier powers require investment in lower-tier powers, with each row building naturally upon the previous one to ensure meaningful and satisfying progression.\n\n",
-            "color": "text"
-          },
-          {
-            "text": "Some Prestige Powers can be activated or deactivated once the ",
-            "color": "text"
-          },
-          {
-            "text": "Prestige Activation Screen ",
+            "text": "Quests",
             "color": "$white"
           },
           {
-            "text": "keybind is bound.\n\n",
-            "color": "text"
+            "text": " that reward reputation through vault challenges, and ",
+            "color": "$text"
           },
           {
-            "text": "With an extensive collection of ",
-            "color": "text"
+            "text": "Challenge Crystals",
+            "color": "$white"
           },
           {
-            "text": "Prestige Powers ",
+            "text": " with an all-new ",
+            "color": "$text"
+          },
+          {
+            "text": "Hazard",
             "color": "$omega"
           },
           {
-            "text": "available to unlock, the ultimate question remains:\n\nWill you obtain them all?\n\n",
-            "color": "text"
+            "text": " system.\n\n",
+            "color": "$text"
           },
           {
-            "text": "Spend a Prestige Point",
+            "text": "Beware of Greed Assassins...",
+            "color": "$omega"
+          },
+          {
+            "text": " how far will you dare to climb? How Greedy will you become?\n\nNeed more coins? The ",
+            "color": "$text"
+          },
+          {
+            "text": "Greed Cauldron",
+            "color": "$omega"
+          },
+          {
+            "text": " hungers for vault materials. Feed it what it demands, and it will reward you with ",
+            "color": "$text"
+          },
+          {
+            "text": "Greed Coins",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " in return.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Complete the Greed Trial",
             "color": "$heal"
           }
         ]
       },
-      "icon": "the_vault:gui/quests/prestige_powers",
-      "targetId": "the_vault:1",
+      "icon": "the_vault:gui/quests/greed",
+      "targetId": "the_vault:rebirth",
       "targetProgress": 1.0,
       "unlockedBy": "herald",
       "reward": {
         "items": [
           {
-            "item": "the_vault:knowledge_star",
-            "amount": 25
+            "item": "minecraft:stick",
+            "amount": 1
           }
         ],
         "vaultExp": 0
@@ -5215,29 +5421,66 @@
     },
     {
       "type": "crafting",
-      "id": "tbd",
-      "name": "More to come!",
+      "id": "greed_cauldron",
+      "name": "Greed Crucible",
       "descriptionData": {
         "description": [
           {
-            "text": "You have completed all current available quests in Vault Hunters! More may be added in the future, so keep checking back here whenever you update your game!",
+            "text": "The ",
             "color": "$text"
           },
           {
-            "text": "\n\nRemember though, this questline is only the beginning, the overall goal of the game is to collect 25 unique artifacts, found very rarely in completion crates, as well as reaching level 100 and experiencing all the in-depth systems the game has to offer!",
+            "text": "Greed Crucible",
+            "color": "$omega"
+          },
+          {
+            "text": " is a powerful device that hungers for vault materials. Craft one and place it down to begin feeding its insatiable appetite.\n\nThe ",
             "color": "$text"
+          },
+          {
+            "text": "Crucible",
+            "color": "$omega"
+          },
+          {
+            "text": " will demand large quantities of vault resources. For each request you fulfil, you will receive ",
+            "color": "$text"
+          },
+          {
+            "text": "Greed Coins",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". But here's the trick: every completed request increases your ",
+            "color": "$text"
+          },
+          {
+            "text": "multiplier",
+            "color": "$white"
+          },
+          {
+            "text": ", causing subsequent completions to reward even more ",
+            "color": "$text"
+          },
+          {
+            "text": "Greed Coins",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nKeep feeding the Crucible to maximise your returns.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Craft a Greed Crucible",
+            "color": "$heal"
           }
         ]
       },
-      "icon": "the_vault:gui/quests/tbd",
-      "targetId": "minecraft:bedrock",
-      "targetProgress": 100.0,
-      "unlockedBy": "reach_level_50",
+      "icon": "the_vault:gui/quests/greed_cauldron",
+      "targetId": "the_vault:greed_cauldron",
+      "targetProgress": 1.0,
+      "unlockedBy": "greed",
       "reward": {
         "items": [
-          {
-            "item": "the_vault:omega_pog"
-          }
         ],
         "vaultExp": 0
       }

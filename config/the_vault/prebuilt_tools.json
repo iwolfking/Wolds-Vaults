@@ -33,6 +33,36 @@
         }
       }
     },
+    "royale_start_paxel": {
+      "tool_material": {
+        "value": "ROYALE"
+      },
+      "IMPLICIT": {
+        "the_vault:picking": true,
+        "the_vault:axing": true,
+        "the_vault:shovelling": true
+      },
+      "PREFIX": {
+        "the_vault:mining_speed": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 10.0,
+          "max": 30.0,
+          "step": 0.1
+        }
+       
+      },
+      "SUFFIX": {
+        "the_vault:durability": {
+          "roll_type": "float_roll",
+          "type": "uniformed_step",
+          "min": 500.0,
+          "max": 3000.0,
+          "step": 5.0
+        }
+       
+      }
+    },
     "royale_plain_pickaxe": {
       "tool_material": {
         "value": "ROYALE"

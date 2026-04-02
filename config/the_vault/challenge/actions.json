@@ -1532,6 +1532,36 @@
       "count": 10,
       "spawner": "elevated"
     },
+    "add_low_level_guardians": {
+      "type": "mob_spawn",
+      "name": "Guardians",
+      "entity": {
+        "id": "the_vault:bruiser_guardian",
+        "Tags": ["no_champion", "ethereal_immune", "no_drops"]
+      },
+      "count": 4,
+      "spawner": "elevated"
+    },
+    "add_low_2_level_guardians": {
+      "type": "mob_spawn",
+      "name": "Guardians",
+      "entity": {
+        "id": "the_vault:bruiser_guardian",
+        "Tags": ["no_champion", "ethereal_immune", "no_drops"]
+      },
+      "count": 8,
+      "spawner": "elevated"
+    },
+    "add_high_level_guardians": {
+      "type": "mob_spawn",
+      "name": "Guardians",
+      "entity": {
+        "id": "the_vault:bruiser_guardian",
+        "Tags": ["no_champion", "ethereal_immune", "no_drops"]
+      },
+      "count": 12,
+      "spawner": "elevated"
+    },
     "add_puzzle_guardians": {
       "type": "mob_spawn",
       "name": "Puzzle Guardians",
@@ -1712,6 +1742,11 @@
       },
       "count": 1,
       "spawner": "ground"
+    },
+    "double_everything": {
+      "type": "multiply_actions",
+      "name": "Double Rewards & Modifiers",
+      "textColor": "0xFFFF78DD"
     },
     "add_ravager_champion": {
       "type": "mob_spawn",
@@ -3237,6 +3272,45 @@
             }
           ]
         }
+      ]
+    },
+    "positive_wildwest": {
+      "type": "pool",
+      "levels": [
+        { "level": 0, "pool": [
+          { "value": "gilded_chest_big", "weight": 100 },
+          { "value": "ornate_chest_big", "weight": 100 },
+          { "value": "living_chest_big", "weight": 100 },
+          { "value": "coin_pile_big", "weight": 100 }
+        ] }
+      ]
+    },
+    "positive_temple": {
+      "type": "pool",
+      "levels": [
+        { "level": 0, "pool": [
+          { "value": "gilded_chest_big", "weight": 100 },
+          { "value": "ornate_chest_big", "weight": 100 },
+          { "value": "living_chest_big", "weight": 100 },
+          { "value": "coin_pile_big", "weight": 100 }
+        ] }
+      ]
+    },
+    "negative_temple": {
+      "type": "pool",
+      "levels": [
+        { "level": 0, "pool": [
+          { "value": "add_low_level_guardians", "weight": 100 }
+        ] },
+        { "level": 20, "pool": [
+          { "value": "add_low_2_level_guardians", "weight": 100 }
+        ] },
+        { "level": 50, "pool": [
+          { "value": "add_guardians", "weight": 100 }
+        ] },
+        { "level": 90, "pool": [
+          { "value": "add_high_level_guardians", "weight": 100 }
+        ] }
       ]
     }
   }

@@ -23,11 +23,60 @@
     {
       "value": "the_vault:royale_loot_treasure_key",
       "weight": 2.0
-    },
-    {
-      "value": "the_vault:royale_loot_multiplier",
-      "weight": 1000.0
     }
   ],
-  "numberOfSelections": 3
+  "numberOfSelections": 3,
+  "lootRemapper": {
+    "the_vault:wooden_chest": "the_vault:royale_wooden",
+    "the_vault:gilded_chest": "the_vault:royale_special",
+    "the_vault:ornate_chest": "the_vault:royale_special",
+    "the_vault:living_chest": "the_vault:royale_special"
+  },
+  "oreChance": 0.25,
+  "oreDropSize": {
+    "min": 1,
+    "max": 1,
+    "type": "uniform"
+  },
+  "mobLoot": {
+   "@the_vault:tank": {
+      "stackSize": {
+        "min": 1,
+        "max": 2,
+        "type": "uniform"
+      },
+      "chance": 0.01
+   },
+   "@the_vault:horde": {
+      "stackSize": {
+        "min": 1,
+        "max": 1,
+        "type": "uniform"
+      },
+      "chance": 0.001
+   },
+   "@the_vault:fighter": {
+      "stackSize": {
+        "min": 1,
+        "max": 1,
+        "type": "uniform"
+      },
+      "chance": 0.01
+   },
+   "@the_vault:assassin": {
+      "stackSize": {
+        "min": 1,
+        "max": 1,
+        "type": "uniform"
+      },
+      "chance": 0.005
+   }
+  },
+  "infusionChances": {
+    "@the_vault:assassin": 0.01,
+    "@the_vault:fighter": 1,
+    "@the_vault:tank": 0.6,
+    "@the_vault:horde": 0.4
+  },
+  "negativeModifier": "the_vault:buffed"
 }

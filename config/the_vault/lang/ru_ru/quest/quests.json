@@ -1,0 +1,722 @@
+{
+  "quests": [
+    {
+      "type": "checkmark",
+      "id": "welcome_quest",
+      "name": "Введение в Охотники за Хранилищем",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Добро пожаловать в Охотники за Хранилищем, Третье издание!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nЭтот модпак превращает ваш опыт Minecraft в прогрессионную Action RPG. Он рассчитан на длительное прохождение и имеет множество настроек для адаптации игрового процесса под ваш стиль!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nВ этой цепочке заданий мы научим вас основам игры и поможем начать путешествие.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nПеред началом игры убедитесь, что вы установили подходящую сложность в меню паузы. Мы предлагаем 5 уровней сложности. Эти настройки влияют на здоровье и урон мобов внутри хранилищ.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nПомимо сложности, вы можете выбрать игровой режим. Охотники за Хранилищем предлагают три режима: Обычный, Казуальный и Хардкор, где Обычный используется по умолчанию. Режим устанавливается командой /gamerule vaultMode.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nОбычный",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - смерть после двадцатого уровня создаёт дух в точке возрождения, с помощью экстрактора духов можно выкупить потерянные предметы",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nКазуальный",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - смерть после двадцатого уровня не вызывает потери предметов, вы лишь получаете урон по прочности",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nХардкор",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - смерть после двадцатого уровня вызывает безвозвратную потерю предметов и инвентаря",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n/party invite имяигрока ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "пригласит друзей в группу, чтобы вы могли исследовать хранилища вместе и видеть здоровье друг друга.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n/the_vault research_team invite имяигрока ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "объединит игроков в команду для совместной работы над исследованиями.",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/welcome",
+      "targetId": "the_vault:raw_chromatic_iron",
+      "targetProgress": 1.0,
+      "unlockedBy": "",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:cooked_vault_steak",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      },
+      "questTypes": ["SKY", "NORMAL"]
+    },
+    {
+      "type": "collection",
+      "id": "find_chromatic_iron",
+      "name": "Хроматическое железо",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Первый шаг на пути Охотника за Хранилищем — найти ",
+            "color": "$text"
+          },
+          {
+            "text": "основной металл",
+            "color": "$text"
+          },
+          {
+            "text": " Охотников за Хранилищем, ",
+            "color": "$text"
+          },
+          {
+            "text": "Хроматическое железо",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Хроматическое железо",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " находится в самой глубокой части мира, ниже ",
+            "color": "$text"
+          },
+          {
+            "text": "Y-30",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Его можно добыть ",
+            "color": "$text"
+          },
+          {
+            "text": "железной киркой",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", а чары удачи увеличивают добычу!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nСоберите 16 сырого хроматического железа",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/find_chromatic_iron",
+      "targetId": "the_vault:raw_chromatic_iron",
+      "targetProgress": 16.0,
+      "unlockedBy": "welcome_quest",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_iron_ingot",
+            "amount": 24
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "mining",
+      "id": "mine_vault_stone",
+      "name": "Камень Хранилища",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Следующий шаг вашего приключения — найти ",
+            "color": "$text"
+          },
+          {
+            "text": "Камень Хранилища",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Возможно, вы уже встречали этот очень тёмный камень при поиске хроматического железа, так как он встречается повсюду ниже ",
+            "color": "$text"
+          },
+          {
+            "text": "Y-5",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nПри добыче ",
+            "color": "$text"
+          },
+          {
+            "text": "Камня Хранилища",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " без шёлкового касания есть шанс получить ",
+            "color": "$text"
+          },
+          {
+            "text": "Камешек Хранилища",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", не выбрасывайте их — это ключ для входа в хранилище!",
+            "color": "$text"
+          },
+          {
+            "text": ".\n",
+            "color": "$text"
+          },
+          {
+            "text": "Камень Хранилища",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " сам по себе очень прочный материал, используемый для многих целей, но самое важное — для создания порталов Хранилища!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nДобудьте 10 Камней Хранилища",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/vault_stone",
+      "targetId": "the_vault:vault_stone",
+      "targetProgress": 10,
+      "unlockedBy": "welcome_quest",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_rock",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_vault_altar",
+      "name": "Алтарь Хранилища",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Теперь пора создать Алтарь Хранилища. Положив камешек Хранилища на алтарь, вы получите рецепт для создания Кристалла Хранилища",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nПолучите Алтарь Хранилища",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/altar",
+      "targetId": "the_vault:vault_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "mine_vault_stone",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:stone_button"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "craft_crystal",
+      "id": "complete_vault_crystal",
+      "name": "Кристаллы Хранилища",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Пришло время выковать первый Кристалл Хранилища! Каждый рецепт уникален, а количество необходимых ингредиентов постепенно растёт с каждым созданным кристаллом.\n\nИспользование камешка Хранилища на алтаре определит предметы, необходимые для завершения рецепта кристалла. Вы можете отправить предметы на алтарь, выбросив их из инвентаря рядом с алтарём. Когда рецепт завершён, подайте сигнал красного камня для завершения.\n\nЕсли вам сложно определить предмет, присядьте, чтобы увидеть его название.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nЗавершите Кристалл Хранилища",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/crystal",
+      "targetId": "the_vault:vault_crystal",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_vault_altar",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:shulker_box"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "learning_skills",
+      "name": "Навыки и таланты",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Перед входом в первое хранилище мы хотим рассказать о важных частях игры. Охотники за Хранилищем имеют глубокую систему навыков и талантов, которая сделает ваш опыт значительно приятнее.\n\nНавыки дают мощные активные умения, значительно меняющие стиль игры: от урона (Нова, Ярость), лечения (Исцеление, Тотем) до выживания (Рывок, Призрачный шаг).\n\nТаланты дают пассивные бонусы. Существует широкий выбор талантов, каждый нацелен на улучшение определённых аспектов игры.\n\nОткройте интерфейс Хранилища клавишей 'H' и нажмите на вторую и третью вкладки вверху для просмотра навыков и талантов.\n\nНаграда за это задание — ",
+            "color": "$text"
+          },
+          {
+            "text": "1 очко навыков",
+            "color": "$manaCost"
+          },
+          {
+            "text": ". Настоятельно рекомендуется взять ",
+            "color": "$text"
+          },
+          {
+            "text": "Навык исцеления",
+            "color": "$heal"
+          },
+          {
+            "text": ", если вы играете впервые, так как в хранилищах нет естественного восстановления здоровья",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/skills",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "complete_vault_crystal",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:cooked_vault_steak",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0,
+        "skillPoints": 1
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_enchanter",
+      "name": "Улучшенное зачарование",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "В Охотниках за Хранилищем зачарования немного отличаются от ванильного Minecraft. Защитные и атакующие чары отключены для более высокого масштабирования оборонительных и атакующих атрибутов в дальнейшем. Однако некоторые чары работают как на обычных, так и на инструментах Хранилища.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nЗачарователь Хранилища — ваш лучший стол для зачарования любого снаряжения или инструментов. Он всегда предлагает максимально доступное зачарование за изумруды и опыт. Создайте его и попробуйте положить любой зачаровываемый предмет.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nПолучите Зачарователь Хранилища",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/enchanter",
+      "targetId": "the_vault:vault_enchanter",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:experience_bottle",
+            "amount": 20
+          },
+          {
+            "item": "minecraft:emerald",
+            "amount": 50
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_potions",
+      "name": "Зелья Хранилища",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Зелья Хранилища — это альтернатива ",
+            "color": "$text"
+          },
+          {
+            "text": "навыкам исцеления",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " вне боя.\nОни единственные зелья, которые не злят ",
+            "color": "$text"
+          },
+          {
+            "text": "Велару",
+            "color": "$velara"
+          },
+          {
+            "text": " внутри хранилищ!\n\nЗелья Хранилища имеют фиксированное количество ",
+            "color": "$text"
+          },
+          {
+            "text": "зарядов",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " на каждое хранилище и полностью восполняются после выхода.\nВначале доступен уровень ",
+            "color": "$text"
+          },
+          {
+            "text": "Пузырёк",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Позже вы сможете исследовать лучшие уровни с более мощным исцелением.\nПри создании первого зелья (",
+            "color": "$text"
+          },
+          {
+            "text": "Пузырёк",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ") вы выбираете одну из 3 механик перезарядки:\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Бойня",
+            "color": "$red"
+          },
+          {
+            "text": " — перезарядка при убийстве определённого количества мобов\n",
+            "color": "$text"
+          },
+          {
+            "text": "Гоблин",
+            "color": "$yellow"
+          },
+          {
+            "text": " — перезарядка при открытии определённого количества сундуков\n",
+            "color": "$text"
+          },
+          {
+            "text": "Пацифист",
+            "color": "$blue"
+          },
+          {
+            "text": " — пассивная перезарядка со временем\n\nНе волнуйтесь, вы можете создать все и посмотреть, какой подходит лучше, но использовать можно только один за хранилище!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nСоздайте Пузырёк",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/potion",
+      "targetId": "the_vault:bottle",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:ender_pearl"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "enter_vault",
+      "id": "enter_vault",
+      "name": "Охота за Хранилищем",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Постройте портал Хранилища из любой комбинации блоков Камня Хранилища аналогично порталу Нижнего мира. Затем щёлкните правой кнопкой мыши Кристаллом Хранилища по раме, чтобы открыть портал.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nВ Хранилище есть ограничение по времени. Отмечайте путь блоками, чтобы легко найти дорогу к порталу.\n\nПри смерти вы вернётесь в обычный мир. Если ваш уровень ниже 20, вы получите 'Благодать новичка' — сохранение всей добычи.\n\nПри успешном завершении Хранилища вы получите ящик, который можно поставить и открыть нажатием Shift+ПКМ!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nВойдите в Хранилище",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/enter_vault",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:sword",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:shield",
+            "nbt": ""
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "shard_pouch",
+      "name": "Добыча!",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Собирать добычу в хранилищах весело, и есть много интересного!\nХарактеристики снаряжения вроде",
+            "color": "$text"
+          },
+          {
+            "text": " количества предметов ",
+            "color": "$itemquantity"
+          },
+          {
+            "text": "увеличивают количество найденной добычи, а",
+            "color": "$text"
+          },
+          {
+            "text": " редкость предметов ",
+            "color": "$itemrarity"
+          },
+          {
+            "text": "позволяет находить добычу более высокого уровня.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Помимо сундуков, убийство мобов даёт",
+            "color": "$text"
+          },
+          {
+            "text": " осколки душ",
+            "color": "$soulchance"
+          },
+          {
+            "text": ", которые можно потратить на редкие предметы на",
+            "color": "$text"
+          },
+          {
+            "text": " Чёрном рынке",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\nОднако вся эта добыча быстро накапливается, и хорошему охотнику нужна хорошая организация!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Шалкеровые ящики полезны в начале, их оболочки можно найти в ",
+            "color": "$text"
+          },
+          {
+            "text": "Деревянных сундуках",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", однако ",
+            "color": "$text"
+          },
+          {
+            "text": "Мешочек",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " — намного лучший и надёжный способ собирать добычу.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Первый мешочек — подарок от нас, но рекомендуем создавать больше по мере продвижения. Большие мешочки, ремни и рюкзаки можно исследовать за ",
+            "color": "$text"
+          },
+          {
+            "text": "знания\n\n",
+            "color": "$knowledge"
+          },
+          {
+            "text": "Мешочки можно улучшать картами для переноски большего количества добычи, автоматического подбора, удаления лишнего и даже кормления!\n",
+            "color": "$text"
+          },
+          {
+            "text": "Мешочек можно настроить с фильтром или оставить пустым для любых предметов.\nДля настройки фильтра откройте мешочек и перейдите во вкладку ",
+            "color": "$text"
+          },
+          {
+            "text": "Настройки рюкзака",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Вкладка ",
+            "color": "$text"
+          },
+          {
+            "text": "Настройки памяти слотов",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " позволяет настроить белый или чёрный список содержимого. Фильтры можно сохранять и применять к другим мешочкам. Рекомендуем поэкспериментировать с настройками.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "За выполнение задания вы получите два базовых улучшения для мешочка:\n",
+            "color": "$text"
+          },
+          {
+            "text": "Улучшение подбора",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " — автоматический подбор предметов с земли\n",
+            "color": "$text"
+          },
+          {
+            "text": "Улучшение уничтожения",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " — удаление лишних предметов, не помещающихся в мешочек. Звучит странно, но очень полезно в начале. Они дорогие в создании!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Осколки душ",
+            "color": "$soulchance"
+          },
+          {
+            "text": ", падающие с мобов, лучше хранить в ",
+            "color": "$text"
+          },
+          {
+            "text": "Мешочке для осколков",
+            "color": "$soulchance"
+          },
+          {
+            "text": ". Он хранит только осколки душ, но неограниченное количество, пока находится в инвентаре. На Чёрном рынке не нужно вручную считать осколки — это обязательный предмет для любого охотника!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nСоздайте Мешочек для осколков",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/black_market2",
+      "targetId": "the_vault:shard_pouch",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          { "item": "sophisticatedbackpacks:backpack", "amount": 1 },
+          { "item": "sophisticatedbackpacks:pickup_upgrade", "amount": 1 },
+          { "item": "sophisticatedbackpacks:void_upgrade", "amount": 1 }
+        ],
+        "vaultExp": 0
+      }
+    },
+    { "type": "collection", "id": "coin_pouch", "name": "Кошелёк для монет", "descriptionData": { "description": [ { "text": "Лучший способ хранить ", "color": "$text" }, { "text": "бронзу", "color": "$bronze" }, { "text": ", ", "color": "$text" }, { "text": "серебро", "color": "$common" }, { "text": ", ", "color": "$text" }, { "text": "золото", "color": "$gold" }, { "text": " и ", "color": "$text" }, { "text": "платину", "color": "$platinum" }, { "text": " — это получить ", "color": "$text" }, { "text": "Кошелёк для монет", "color": "$qhighlight" }, { "text": "!\n\nОн ", "color": "$text" }, { "text": "привязан к душе", "color": "$soulchance" }, { "text": " и остаётся даже после смерти. Вмещает неограниченное количество монет. Все рабочие станции ", "color": "$text" }, { "text": "Охотников за Хранилищем", "color": "$qhighlight" }, { "text": " могут читать прямо из него!\n\nОн автоматически подбирает валюту, пока не расположен после ", "color": "$text" }, { "text": "рюкзака", "color": "$blocks" }, { "text": " с валютой в белом списке.", "color": "$text" }, { "text": "\n\nПолучите Кошелёк для монет", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/coin_pouch", "targetId": "the_vault:coin_pouch", "targetProgress": 1.0, "unlockedBy": "shard_pouch", "reward": { "items": [ { "item": "the_vault:vault_platinum", "amount": 1 }, { "item": "the_vault:chromatic_steel_ingot", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "complete_bounty", "name": "Охота за наградами", "descriptionData": { "description": [ { "text": "Выполнение наград — отличный способ получить дополнительную добычу и поставить цель. Создайте Стол наград и взаимодействуйте с ним правым кликом.", "color": "$text" }, { "text": "\n\nСоздайте Стол наград", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/bounty_table", "targetId": "the_vault:bounty_block", "targetProgress": 1.0, "unlockedBy": "learning_skills", "reward": { "items": [ { "item": "the_vault:bounty_pearl", "amount": 10 } ], "vaultExp": 0 } },
+    { "type": "bounty_complete", "id": "complete_bounty2", "name": "Награды и вознаграждения", "descriptionData": { "description": [ { "text": "В Столе наград выберите награду, нажав на одну из доступных и кликнув активировать. После завершения вернитесь к столу за вознаграждением.", "color": "$text" }, { "text": "\n\nЗавершите награду", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/bounty", "targetId": "the_vault:any", "targetProgress": 1.0, "unlockedBy": "complete_bounty", "reward": { "items": [ { "item": "the_vault:chromatic_iron_ingot", "amount": 32 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "animal_pens", "name": "Загоны для животных", "descriptionData": { "description": [ { "text": "Управлять большим количеством животных сложно, они создают много лагов в ", "color": "$text" }, { "text": "Minecraft", "color": "$qhighlight" }, { "text": ". Это решается с помощью ", "color": "$text" }, { "text": "Загонов для животных", "color": "$qhighlight" }, { "text": ". С помощью ", "color": "$text" }, { "text": "Банки для животных", "color": "$qhighlight" }, { "text": " можно содержать неограниченное количество одного вида в одном загоне!\n\nПоставив загон, соберите животных в банку и щёлкните правой кнопкой по загону. Можно разводить, убивать мечом для добычи. ", "color": "$text" }, { "text": "Зачарование грабёж", "color": "$fortune" }, { "text": " работает и здесь.", "color": "$text" }, { "text": "\n\nПолучите Загон для животных", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/animal_pen", "targetId": "the_vault:animal_pen", "targetProgress": 1.0, "unlockedBy": "enter_vault", "reward": { "items": [ { "item": "the_vault:animal_jar", "amount": 1 }, { "item": "the_vault:animal_jar", "amount": 1 }, { "item": "the_vault:animal_pen", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "tool_station", "name": "Станция инструментов", "descriptionData": { "description": [ { "text": "Станция инструментов позволяет создавать инструменты, значительно улучшающие ваш опыт в хранилищах.", "color": "$text" }, { "text": "\n\n(Большинство станций Хранилища сохраняют инвентарь при разрушении)", "color": "$text" }, { "text": "\n\nПолучите Станцию инструментов", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/station", "targetId": "the_vault:tool_station", "targetProgress": 1.0, "unlockedBy": "enter_vault", "reward": { "items": [ { "item": "the_vault:gemstone", "amount": 2 } ], "vaultExp": 0 } },
+    { "type": "forge_gear", "id": "craft_tool", "name": "Инструменты Хранилища", "descriptionData": { "description": [ { "text": "Инструменты Хранилища — преемники обычных инструментов. Их можно модифицировать самоцветами для добавления новых свойств и аффинити.\n\nАффинити позволяют мгновенно ломать сундуки и монеты. Самоцветы могут менять функцию инструмента — например, самоцвет лопаты на кирку создаёт мотыгу!\n\nДополнительные модификаторы: Редкость предметов, Количество предметов, Шанс обезвреживания ловушек, Скорость добычи, Изобильность, Прочность, Дробление, Плавка, Ковка, Привязка к душе, Ванильное бессмертие, Досягаемость.", "color": "$text" }, { "text": "\n\nСоздайте кирку из хроматического железа", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/tool", "targetId": "the_vault:tool/pick/chromatic_iron_ingot", "targetProgress": 1.0, "unlockedBy": "tool_station", "reward": { "items": [ { "item": "the_vault:jewel", "nbt": "{vaultGearData:[L;3591402060363627150L,2130563721701514760L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,2196334573319662592L,-6834473908914065246L,1099511627698L,32768L,65536L]}" }, { "item": "the_vault:jewel", "nbt": "{vaultGearData:[L;8807676962843960878L,-1018090581902778908L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-7164678727146624000L,-6834473908914083200L,1099511627698L,32768L,65536L]}" }, { "item": "the_vault:jewel", "nbt": "{vaultGearData:[L;-4246674546207997586L,469804410667479720L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,1749915260256562176L,-6834473908914085726L,1099511627698L,32768L,65536L]}" }, { "item": "the_vault:jewel", "nbt": "{vaultGearData:[L;9040600318283653614L,-2646425694881105473L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-6032128973979210752L,-6834473908914079292L,1099511627698L,32768L,65536L]}" }, { "item": "the_vault:jewel", "nbt": "{vaultGearData:[L;1437378485525153694L,-4161882800610591095L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617707599909354749L,1330939757422750720L,-348445744039196665L,268435455L,8L,16L]}" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "apply_jewel", "name": "Самоцветы на инструментах", "descriptionData": { "description": [ { "text": "Аппликатор самоцветов позволяет легко применять самоцветы к инструментам и видеть результат. Он имеет три секции: левая — для самоцветов, центр — для инструмента, правая — для предпросмотра результата.", "color": "$text" }, { "text": "\n\nПолучите Аппликатор самоцветов", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/apply_jewel", "targetId": "the_vault:vault_jewel_application_station", "targetProgress": 1.0, "unlockedBy": "craft_tool", "reward": { "items": [ { "item": "the_vault:chromatic_steel_ingot", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "jewel_crafting", "name": "Создание самоцветов", "descriptionData": { "description": [ { "text": "Стол создания самоцветов позволяет создавать различные самоцветы для улучшения инструментов. Не все аффиксы доступны для создания — остальные нужно находить!", "color": "$text" }, { "text": "\n\nПолучите Стол создания самоцветов", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/jewel_cutting", "targetId": "the_vault:jewel_crafting_table", "targetProgress": 1.0, "unlockedBy": "craft_tool", "reward": { "items": [ { "item": "the_vault:silver_scrap", "amount": 512 }, { "item": "the_vault:gemstone", "amount": 8 } ], "vaultExp": 0 } },
+    { "type": "level_up", "id": "level_five", "name": "Экспертизы", "descriptionData": { "description": [ { "text": "Экспертизы приобретаются за очки экспертизы, получаемые каждые 5 уровней. Они похожи на таланты, но нацелены на специфические случаи: например, Удачливый добавляет два уровня удачи, а Ангел позволяет создать блок ангела для полёта.\n\nВсего 20 очков экспертиз. Для сброса требуется Нейрализатор, а не золото Хранилища.", "color": "$text" }, { "text": "\n\nДостигните уровня 5 Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/expertises", "targetId": "the_vault:5", "targetProgress": 1.0, "unlockedBy": "apply_jewel", "reward": { "items": [ { "item": "the_vault:vault_gold", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "vault_forge", "name": "Ковка снаряжения", "descriptionData": { "description": [ { "text": "Кузница Хранилища позволяет создавать мощное снаряжение с использованием мастерства, привязанного к вашему уровню.\n\nМастерство повышается жертвованием лома Хранилища. Создание снаряжения не расходует мастерство.\n\nОсновной ресурс — Сплав Хранилища. Для массового создания удерживайте Shift.", "color": "$text" }, { "text": "\n\nПолучите Кузницу Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/forge", "targetId": "the_vault:vault_forge", "targetProgress": 1.0, "unlockedBy": "level_five", "reward": { "items": [ { "item": "the_vault:vault_alloy", "amount": 9 }, { "item": "the_vault:vault_gold", "amount": 3 } ], "vaultExp": 0 } },
+    { "type": "forge_gear", "id": "gear_forge", "name": "Магниты", "descriptionData": { "description": [ { "text": "Магниты притягивают добычу вокруг игрока! Они отлично сочетаются с аффинити и разбиванием сундуков. Для экипировки используйте слот Curios — Пояс.", "color": "$text" }, { "text": "\n\nВыкуйте Магнит в Кузнице Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/magnet", "targetId": "the_vault:magnet", "targetProgress": 1.0, "unlockedBy": "vault_forge", "reward": { "items": [ { "item": "the_vault:vault_alloy", "amount": 9 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "artisan_table", "name": "Модификация на станции ремесленника", "descriptionData": { "description": [ { "text": "Станция ремесленника используется для дальнейшей модификации снаряжения под определённый стиль игры.", "color": "$text" }, { "text": "\n\nПолучите Станцию ремесленника", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/artisan", "targetId": "the_vault:vault_artisan_station", "targetProgress": 1.0, "unlockedBy": "gear_forge", "reward": { "items": [ { "item": "the_vault:wild_focus", "amount": 8 } ], "vaultExp": 0 } },
+    { "type": "modify_gear", "id": "wild_focus", "name": "Перебрасывание модификаторов", "descriptionData": { "description": [ { "text": "Поместите Бронзу Хранилища, Пластины Хранилища и Дикий фокус в Станцию ремесленника, чтобы перебросить все модификаторы снаряжения.", "color": "$text" }, { "text": "\n\nПеребросьте модификаторы с помощью Дикого фокуса", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/reroll", "targetId": "the_vault:reforge_all", "targetProgress": 1.0, "unlockedBy": "artisan_table", "reward": { "items": [ { "item": "the_vault:vault_plating", "amount": 12 }, { "item": "the_vault:vault_bronze", "amount": 32 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_recycler", "name": "Разборка снаряжения Хранилища", "descriptionData": { "description": [ { "text": "Переработчик Хранилища разбирает ненужное снаряжение на лом, фокусы. Также перерабатывает самоцветы, магниты и надписи!", "color": "$text" }, { "text": "\n\nПолучите Переработчик Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/recycler", "targetId": "the_vault:vault_recycler", "targetProgress": 1.0, "unlockedBy": "level_five", "reward": { "items": [ { "item": "the_vault:vault_scrap", "amount": 16 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "alchemystation", "name": "Алхимический стол", "descriptionData": { "description": [ { "text": "", "color": "$text" }, { "text": "Алхимический стол", "color": "$qhighlight" }, { "text": " позволяет модифицировать ", "color": "$text" }, { "text": "Зелья Хранилища", "color": "$qhighlight" }, { "text": ", добавляя ", "color": "$text" }, { "text": "вторичный эффект", "color": "$qhighlight" }, { "text": " к зарядам! Сила эффекта зависит от базового уровня зелья.", "color": "$text" }, { "text": "\n\nПолучите Алхимический стол", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/alchemytable", "targetId": "the_vault:alchemy_table", "targetProgress": 1.0, "unlockedBy": "level_five", "reward": { "items": [ { "item": "the_vault:vault_gold", "amount": 8 }, { "item": "the_vault:vault_diamond", "amount": 8 } ], "vaultExp": 0 } },
+    { "type": "level_up", "id": "level_ten", "name": "Цели Хранилища", "descriptionData": { "description": [ { "text": "С повышением уровня Хранилище представляет новые цели. Их также можно добавить печатями на кристалл.\n\nУровень 10 — появляется цель Зажги жаровню.\nУровень 20 — появляется цель Собиратель.\nУровень 50 — появляются цели Бинго и Охота за рунами.", "color": "$text" }, { "text": "\n\nДостигните уровня 10 Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/ten", "targetId": "the_vault:10", "targetProgress": 1.0, "unlockedBy": "level_five", "reward": { "items": [ { "item": "the_vault:crystal_seal_scout" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "seals", "name": "Выбор собственной цели", "descriptionData": { "description": [ { "text": "Печати позволяют выбирать цель хранилища. Примените печать к кристаллу в Верстаке кристаллов.", "color": "$text" }, { "text": "\n\nПолучите пустую печать", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/empty_seal", "targetId": "the_vault:crystal_seal_empty", "targetProgress": 1.0, "unlockedBy": "level_ten", "reward": { "items": [ { "item": "the_vault:crystal_seal_empty" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_sage_seal", "name": "Создание печати Эликсира", "descriptionData": { "description": [ { "text": "Печать ", "color": "$text" }, { "text": "Мудреца", "color": "$qhighlight" }, { "text": " применяет цель ", "color": "$text" }, { "text": "Эликсир", "color": "$qhighlight" }, { "text": " к кристаллу. Соберите эликсир из сундуков, мобов или руды, затем найдите магнитный камень для выхода.", "color": "$text" }, { "text": "\n\nРекомендуемый уровень: 0+", "color": "$qhighlight" }, { "text": "\n\nПолучите Печать Мудреца", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/sage", "targetId": "the_vault:crystal_seal_sage", "targetProgress": 1.0, "unlockedBy": "seals", "reward": { "items": [ { "item": "the_vault:crystal_seal_sage", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_brazier_seal", "name": "Создание печати Жаровни", "descriptionData": { "description": [ { "text": "Печать ", "color": "$text" }, { "text": "Разведчика", "color": "$qhighlight" }, { "text": " применяет цель ", "color": "$text" }, { "text": "Зажги жаровню", "color": "$qhighlight" }, { "text": ". Найдите жаровни и зажгите их. У каждой есть положительные и отрицательные эффекты.", "color": "$text" }, { "text": "\n\nРекомендуемый уровень: 10+", "color": "$qhighlight" }, { "text": "\n\nПолучите Печать Разведчика", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/scout", "targetId": "the_vault:crystal_seal_scout", "targetProgress": 1.0, "unlockedBy": "seals", "reward": { "items": [ { "item": "the_vault:crystal_seal_scout", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_hunter_seal", "name": "Создание печати Собирателя", "descriptionData": { "description": [ { "text": "Печать ", "color": "$text" }, { "text": "Охотника", "color": "$qhighlight" }, { "text": " применяет цель ", "color": "$text" }, { "text": "Собиратель", "color": "$qhighlight" }, { "text": ". Найдите список предметов вверху экрана и сдайте их на алтарь собирателя.", "color": "$text" }, { "text": "\n\nРекомендуемый уровень: 20+", "color": "$qhighlight" }, { "text": "\n\nПолучите Печать Охотника", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/hunter", "targetId": "the_vault:crystal_seal_hunter", "targetProgress": 1.0, "unlockedBy": "seals", "reward": { "items": [ { "item": "the_vault:crystal_seal_hunter", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_Prophet_seal", "name": "Создание печати Бинго", "descriptionData": { "description": [ { "text": "Печать ", "color": "$text" }, { "text": "Пророка", "color": "$qhighlight" }, { "text": " применяет цель ", "color": "$text" }, { "text": "Бинго", "color": "$qhighlight" }, { "text": ". Выполняйте задания на доске бинго и завершайте линии. Награды масштабируются.", "color": "$text" }, { "text": "\n\nРекомендуемый уровень: 50+", "color": "$qhighlight" }, { "text": "\n\nПолучите Печать Пророка", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/prophet", "targetId": "the_vault:crystal_seal_prophet", "targetProgress": 1.0, "unlockedBy": "seals", "reward": { "items": [ { "item": "the_vault:crystal_seal_prophet", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_guardian_seal", "name": "Создание печати Охоты за рунами", "descriptionData": { "description": [ { "text": "Печать ", "color": "$text" }, { "text": "Палача", "color": "$qhighlight" }, { "text": " применяет цель ", "color": "$text" }, { "text": "Охота за рунами", "color": "$qhighlight" }, { "text": ". Найдите руны и вставьте их в столб босса. Каждая руна имеет модификатор и награду.", "color": "$text" }, { "text": "\n\nРекомендуемый уровень: 50+", "color": "$qhighlight" }, { "text": "\n\nПолучите Печать Палача", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/executioner", "targetId": "the_vault:crystal_seal_executioner", "targetProgress": 1.0, "unlockedBy": "seals", "reward": { "items": [ { "item": "the_vault:crystal_seal_executioner", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "checkmark", "id": "regret", "name": "Сожаление о решениях", "descriptionData": { "description": [ { "text": "Выбор навыков и талантов может быть стрессовым, но не волнуйтесь! Вы можете отменять решения с помощью ", "color": "$text" }, { "text": "Золота Хранилища", "color": "$qhighlight" }, { "text": " через функцию Разучить в дереве навыков. Это нельзя сделать внутри хранилища.", "color": "$text" } ] }, "icon": "the_vault:gui/quests/regretorb", "targetId": "the_vault:any", "targetProgress": 1.0, "unlockedBy": "level_ten", "reward": { "items": [ { "item": "the_vault:vault_gold", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "craft_black_market", "name": "Товары Чёрного рынка", "descriptionData": { "description": [ { "text": "На Чёрном рынке можно тратить осколки душ на предметы, обновляющиеся каждые 2 часа. Проверяйте регулярно!", "color": "$text" }, { "text": "\n\nВзаимодействуйте с Чёрным рынком", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/black_market", "targetId": "the_vault:black_market", "targetProgress": 1.0, "unlockedBy": "level_ten", "reward": { "items": [ { "item": "the_vault:soul_shard", "amount": 256 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "soul_diffuser", "name": "Рассеиватель душ", "descriptionData": { "description": [ { "text": "Рассеиватель душ разбирает предметы Хранилища в пыль душ, которую можно превратить в Осколки душ для Чёрного рынка.", "color": "$text" }, { "text": "\n\nПолучите Рассеиватель душ Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/diffuser", "targetId": "the_vault:vault_diffuser", "targetProgress": 1.0, "unlockedBy": "level_ten", "reward": { "items": [ { "item": "the_vault:soul_shard", "amount": 256 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "identification_stand", "name": "Стойка идентификации", "descriptionData": { "description": [ { "text": "Стойка идентификации при нажатии ПКМ мгновенно ", "color": "$text" }, { "text": "идентифицирует", "color": "$qhighlight" }, { "text": " всё неопознанное снаряжение Хранилища в инвентаре.", "color": "$text" }, { "text": "\n\nПолучите Стойку идентификации", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/identificationstand", "targetId": "the_vault:identification_stand", "targetProgress": 1.0, "unlockedBy": "level_ten", "reward": { "items": [ { "item": "the_vault:helmet", "nbt": "" }, { "item": "the_vault:chestplate", "nbt": "" }, { "item": "the_vault:leggings", "nbt": "" }, { "item": "the_vault:boots", "nbt": "" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_knowledge_star", "name": "Использование знаний", "descriptionData": { "description": [ { "text": "Звёзды знаний — ключ к разблокировке новых модов. Нажмите 'H' и перейдите во вкладку Исследования. Награда — Мод-коробка с случайным предметом из разблокированных модов.", "color": "$text" }, { "text": "\n\nСоздайте Звезду знаний", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/knowledge", "targetId": "the_vault:knowledge_star", "targetProgress": 1.0, "unlockedBy": "level_ten", "reward": { "items": [ { "item": "the_vault:mod_box" } ], "vaultExp": 0 } },
+    { "type": "level_up", "id": "reach_level_20", "name": "Изменения на уровне 20", "descriptionData": { "description": [ { "text": "Уровень 20 — конец обучения! Смерть в хранилище больше не сохраняет предметы (кроме Казуального режима). Появляются Торговые двери, Двери подземелий, новая добыча и мобы!", "color": "$text" }, { "text": "\n\nДостигните уровня 20 Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/twenty", "targetId": "the_vault:20", "targetProgress": 1.0, "unlockedBy": "craft_knowledge_star", "reward": { "items": [ { "item": "the_vault:knowledge_star" } ], "vaultExp": 0 } },
+    { "type": "checkmark", "id": "burgers", "name": "Дополнительный опыт", "descriptionData": { "description": [ { "text": "Употребление ", "color": "$text" }, { "text": "Бургеров Хранилища", "color": "$qhighlight" }, { "text": " даёт опыт Хранилища. Их можно найти на Чёрном рынке и в Торговых дверях. Осторожно — можете перерасти своё снаряжение!", "color": "$text" } ] }, "icon": "the_vault:gui/quests/burger", "targetId": "the_vault:plain_burger", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:plain_burger", "amount": 1 }, { "item": "the_vault:cheese_burger", "amount": 1 }, { "item": "the_vault:deluxe_cheese_burger", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "crystal_workbench", "name": "Модификация кристаллов Хранилища", "descriptionData": { "description": [ { "text": "Кристаллы Хранилища можно модифицировать: Аугменты задают тему, Капстоуны дают бафф, Катализаторы добавляют модификаторы, Надписи добавляют определённые комнаты. Каждый кристалл имеет ёмкость, при превышении которой добавляется проклятие!", "color": "$text" }, { "text": "\n\nСоздайте Верстак кристаллов", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/crystalworkbench", "targetId": "the_vault:crystal_workbench", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:augment", "nbt": "{\"theme\":\"the_vault:classic_vault_cave_geode\"}", "amount": 1 }, { "item": "the_vault:phoenix_feather", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "apply_catalyst", "name": "Катализаторы", "descriptionData": { "description": [ { "text": "Катализаторы улучшают добычу! Они добавляют модификаторы (больше сундуков, но и сильнее мобы). Создаются в Столе инфузии катализаторов из Фрагментов катализаторов (из Деревянных сундуков). Занимают 10 ёмкости кристалла.", "color": "$text" }, { "text": "\n\nСоздайте Стол инфузии катализаторов", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/catalyst", "targetId": "the_vault:catalyst_infusion_table", "targetProgress": 1.0, "unlockedBy": "crystal_workbench", "reward": { "items": [ { "item": "the_vault:vault_catalyst_fragment", "amount": 9 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "inscription_table", "name": "Надписи", "descriptionData": { "description": [ { "text": "Надписи позволяют добавлять определённые комнаты в хранилище! Создаются в Столе надписей из Фрагментов надписей. Занимают 10 ёмкости. При наличии надписи в стартовой комнате отображается карта!", "color": "$text" }, { "text": "\n\nСоздайте Стол надписей", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/inscriptiontable", "targetId": "the_vault:inscription_table", "targetProgress": 1.0, "unlockedBy": "crystal_workbench", "reward": { "items": [ { "item": "the_vault:inscription_piece", "amount": 32 } ], "vaultExp": 0 } },
+    { "type": "mining", "id": "temporal_shards", "name": "Пилоны и Временные реликвии", "descriptionData": { "description": [ { "text": "Пилоны — мощные парящие кристаллы, дающие временный бафф при ПКМ. Можно разрушить пилон киркой для шанса получить Временную реликвию — мощный расходник, добавляющий Временной модификатор на 5 минут!", "color": "$text" }, { "text": "\n\nРазрушьте Пилон для шанса получить Временную реликвию", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/temporal_shard", "targetId": "the_vault:pylon", "targetProgress": 1, "unlockedBy": "crystal_workbench", "reward": { "items": [ { "item": "the_vault:temporal_shard", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "artifact", "name": "Артефакты", "descriptionData": { "description": [ { "text": "Цель каждого охотника — собрать все 25 уникальных артефактов для доступа к Вестнику! Артефакты редко находятся в ящиках завершения после 20 уровня. Дубликаты можно бросить в огонь для получения фрагментов.", "color": "$text" }, { "text": "\n\nПолучите Книгу артефактов", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/artifact", "targetId": "the_vault:artifact_projector_block", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:unidentified_artifact" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "spirit_extractor", "name": "Возрождение", "descriptionData": { "description": [ { "text": "Экстрактор духов восстанавливает добычу, потерянную в хранилищах. При смерти подберите дух (Shift+ПКМ) и поставьте на экстрактор. Оплатите Золотом Хранилища для возврата предметов.", "color": "$text" }, { "text": "\n\nПолучите Экстрактор духов", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/extractor", "targetId": "the_vault:spirit_extractor", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:vault_gold", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "checkmark", "id": "trinkets", "name": "Брелоки", "descriptionData": { "description": [ { "text": "После 20 уровня можно находить Брелоки! Синие дают уникальные способности (тройной прыжок, карабканье). Красные усиливают характеристики. Имеют заряды. Первый брелок — награда за это задание!", "color": "$text" }, { "text": "\n\n", "color": "$text" } ] }, "icon": "the_vault:gui/quests/trinket", "targetId": "the_vault:trinket", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:trinket", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "trinket_forge", "name": "Кузница брелоков", "descriptionData": { "description": [ { "text": "Обнаружив брелок, вы можете создавать свои в Кузнице брелоков. Нужен Лом брелоков из Переработчика.", "color": "$text" }, { "text": "\n\nПолучите Кузницу брелоков", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/trinket_forge", "targetId": "the_vault:trinket_forge", "targetProgress": 1.0, "unlockedBy": "trinkets", "reward": { "items": [ { "item": "the_vault:trinket_scrap", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "checkmark", "id": "vaultrocks", "name": "Камни Хранилища", "descriptionData": { "description": [ { "text": "Существуют мистические особые камни Хранилища! Используйте их на Алтаре для создания немодифицируемых особых кристаллов.", "color": "$text" } ] }, "icon": "the_vault:gui/quests/vaultrock", "targetId": "the_vault:none", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:vault_diamond", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "warden", "name": "Камень стража Хранилища", "descriptionData": { "description": [ { "text": "Камень стража даёт модификатор Загробная жизнь — страховка предметов при смерти, но уполовинивает опыт.", "color": "$text" }, { "text": "\n\nСоздайте Камень стража Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/wardenrock", "targetId": "the_vault:wardens_pearl", "targetProgress": 1.0, "unlockedBy": "vaultrocks", "reward": { "items": [ { "item": "the_vault:vault_diamond", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "plunderer", "name": "Камень грабителя Хранилища", "descriptionData": { "description": [ { "text": "Камень грабителя увеличивает добычу, включая руды, но убирает весь опыт. Отлично подходит для фарма без повышения уровня!", "color": "$text" }, { "text": "\n\nСоздайте Камень грабителя Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/plunderrock", "targetId": "the_vault:plunderer_pearl", "targetProgress": 1.0, "unlockedBy": "vaultrocks", "reward": { "items": [ { "item": "the_vault:vault_diamond", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "vendoors", "name": "Торговые двери", "descriptionData": { "description": [ { "text": "После 20 уровня появляются Торговые двери! Тёмно-красные двери открываются ПКМ пустой рукой. Внутри 3 пьедестала с товарами за Золото Хранилища.", "color": "$text" }, { "text": "\n\nОткройте Торговую дверь в хранилище", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/vendoor", "targetId": "the_vault:vendor_door", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:vault_gold", "amount": 20 } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "dungeons", "name": "Подземелья", "descriptionData": { "description": [ { "text": "Подземелья — опасные места с испытаниями и добычей! Двери подземелий открываются ПКМ. Сложность от Обычной до Невозможной. Чем больше подземелье, тем больше добычи и шанс на Глобус Хранилища и Алхимический архив!", "color": "$text" }, { "text": "\n\nОткройте Дверь подземелья", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/dungeon_quest", "targetId": "the_vault:dungeon_door", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:gem_pog" } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "storing_gear", "name": "Хранение снаряжения", "descriptionData": { "description": [ { "text": "Гардероб позволяет сохранять набор снаряжения и быстро переключаться между сборками.", "color": "$text" }, { "text": "\n\nВзаимодействуйте с Гардеробом", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/wardrobe", "targetId": "the_vault:wardrobe", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:wardrobe" } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "skill_altar", "name": "Несколько сборок", "descriptionData": { "description": [ { "text": "Алтарь навыков сохраняет навыки и таланты для быстрого переключения между сборками!", "color": "$text" }, { "text": "\n\nВзаимодействуйте с Алтарём навыков", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/skill_altar", "targetId": "the_vault:skill_altar", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:vault_gold", "amount": 10 } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "transmog", "name": "Трансмогрификация", "descriptionData": { "description": [ { "text": "Стол трансмогрификации позволяет менять внешний вид снаряжения на любой разблокированный вариант. Положите снаряжение и бронзу!", "color": "$text" }, { "text": "\n\nВзаимодействуйте со Столом трансмогрификации", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/transmog", "targetId": "the_vault:transmog_table", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:vault_bronze", "amount": 64 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "unique_codex", "name": "Уникальное снаряжение", "descriptionData": { "description": [ { "text": "Уникальное снаряжение нельзя модифицировать, но оно имеет уникальные свойства! Создайте Кодекс уникальных и просматривайте, где их найти.", "color": "$text" }, { "text": "\n\nСоздайте Кодекс уникальных", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/unique_codex", "targetId": "the_vault:unique_codex", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [], "vaultExp": 0 } },
+    { "type": "level_up", "id": "reach_level_40", "name": "Уровень 40!", "descriptionData": { "description": [ { "text": "Достигнув 40 уровня, вы привлекли внимание Богов Хранилища! Они ни добрые, ни злые, но могут оказаться полезными!", "color": "$text" }, { "text": "\n\nДостигните уровня 40 Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/level40", "targetId": "the_vault:40", "targetProgress": 1.0, "unlockedBy": "transmog", "reward": { "items": [ { "item": "the_vault:gem_echo", "amount": 4 }, { "item": "the_vault:mod_box", "amount": 2 }, { "item": "the_vault:sour_orange", "amount": 1 }, { "item": "minecraft:bamboo", "amount": 12 } ], "vaultExp": 0 } },
+    { "type": "checkmark", "id": "charms", "name": "Боги", "descriptionData": { "description": [ { "text": "Познакомьтесь с Богами Хранилища!\n\n", "color": "$text" }, { "text": "Идона", "color": "$idona" }, { "text": " — Богиня битвы\n\n", "color": "$text" }, { "text": "Тенос", "color": "$tenos" }, { "text": " — Бог знаний\n\n", "color": "$text" }, { "text": "Велара", "color": "$velara" }, { "text": " — Богиня жизни\n\n", "color": "$text" }, { "text": "Вендарр", "color": "$wendarr" }, { "text": " — Бог времени\n\nПосле 40 уровня можно находить Амулеты богов в Живых сундуках. Их сила зависит от вашей репутации с богом!", "color": "$text" } ] }, "icon": "the_vault:gui/quests/gods_quest_x", "targetId": "the_vault:charms", "targetProgress": 1.0, "unlockedBy": "reach_level_40", "reward": { "items": [ { "item": "the_vault:vault_god_charm" } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "god_altars", "name": "Алтари богов и репутация", "descriptionData": { "description": [ { "text": "Алтари богов появляются после 40 уровня. Взаимодействие даёт испытание — успех приносит благосклонность и очко репутации, провал отнимает очко! Максимум 50 очков на бога.", "color": "$text" }, { "text": "\n\nВзаимодействуйте с Алтарём бога", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/god_altar", "targetId": "the_vault:god_altar", "targetProgress": 1.0, "unlockedBy": "charms", "reward": { "items": [ { "item": "the_vault:gem_pog" } ], "vaultExp": 0 } },
+    { "type": "level_up", "id": "reach_level_50", "name": "Сброс экспертиз", "descriptionData": { "description": [ { "text": "Уровень 50 — середина пути. Нейрализатор полностью сбрасывает распределённые очки экспертиз!", "color": "$text" }, { "text": "\n\nДостигните уровня 50 Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/level50", "targetId": "the_vault:50", "targetProgress": 1.0, "unlockedBy": "god_altars", "reward": { "items": [ { "item": "the_vault:neuralizer" } ], "vaultExp": 0 } },
+    { "type": "checkmark", "id": "card_system", "name": "Система карт", "descriptionData": { "description": [ { "text": "Система карт усиливает характеристики и навыки. Карты экипируются через колоды. Ядра добавляют дополнительную мощь. Станция колод, Подшивка карт и Станция улучшения карт — ключевые рабочие станции.", "color": "$text" } ] }, "icon": "the_vault:gui/quests/card_table", "targetId": "the_vault:deck_station", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:gem_pog", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "obtain_card", "name": "Типы карт", "descriptionData": { "description": [ { "text": "Карты из бустер-паков: Статы, Ресурсы, Аркана, Эволюция, Смешанные. Хранятся в Подшивке, перерабатываются в Переработчике, улучшаются в Станции улучшения.", "color": "$text" }, { "text": "\n\nПолучите бустер-пак", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/booster", "targetId": "the_vault:booster_pack", "targetProgress": 1.0, "unlockedBy": "card_system", "reward": { "items": [ { "item": "the_vault:booster_pack", "nbt": "{id:\"the_vault:arcane_pack\"}", "amount": 1 }, { "item": "the_vault:booster_pack", "nbt": "{id:\"the_vault:evolution_pack\"}", "amount": 1 }, { "item": "the_vault:booster_pack", "nbt": "{id:\"the_vault:resource_pack\"}", "amount": 1 }, { "item": "the_vault:booster_pack", "nbt": "{id:\"the_vault:stat_pack\"}", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "decks", "name": "Колоды", "descriptionData": { "description": [ { "text": "Колоды хранят карты и дают эффекты в хранилище. Экипируйте в слот Curios. Создаются в Станции колод. Собираются в Подшивке карт.", "color": "$text" }, { "text": "\n\nСоздайте колоду карт", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/deck", "targetId": "the_vault:card_deck", "targetProgress": 1.0, "unlockedBy": "card_system", "reward": { "items": [ { "item": "the_vault:card_binder", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "cores", "name": "Ядра колод", "descriptionData": { "description": [ { "text": "Ядра — усиления для колод, применяемые на наковальне. Малые ядра создаются в Станции колод. После установки ядро нельзя заменить!", "color": "$text" }, { "text": "\n\nСоздайте Малое ядро", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/lesser_deck_core", "targetId": "the_vault:deck_socket", "targetProgress": 1.0, "unlockedBy": "card_system", "reward": { "items": [ { "item": "the_vault:silver_scrap", "amount": 256 }, { "item": "the_vault:gem_black_opal", "amount": 16 }, { "item": "the_vault:gem_pog", "amount": 1 }, { "item": "the_vault:vault_gold", "amount": 16 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "obtain_juicer", "name": "Улучшение карт", "descriptionData": { "description": [ { "text": "Ненужные карты перерабатываются в Сок карт. В Станции улучшения карт можно повысить уровень карт за сок.", "color": "$text" }, { "text": "\n\nСоздайте Станцию улучшения карт", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/card_upgrade_table", "targetId": "the_vault:card_essence_extractor", "targetProgress": 1.0, "unlockedBy": "card_system", "reward": { "items": [ { "item": "the_vault:card_juice", "amount": 5 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "blank_key", "name": "Ключи от сокровищ", "descriptionData": { "description": [ { "text": "После 50 уровня появляются цветные Двери сокровищ! Открываются Ключами сокровищ соответствующего типа самоцвета. Создайте пустой ключ и соедините с кластером самоцветов на наковальне.", "color": "$text" }, { "text": "\n\nСоздайте Пустой ключ", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/blank_key", "targetId": "the_vault:blank_key", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:perfect_echo_gem" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "gear_sealer", "name": "Запечатывание снаряжения", "descriptionData": { "description": [ { "text": "Запечатывание даёт шанс 1 из 10 получить дополнительный мощный модификатор. Иначе заменяет случайный незамороженный модификатор. Нужны Метки вознесения. После запечатывания снаряжение нельзя модифицировать.", "color": "$text" }, { "text": "\n\nСоздайте Запечатыватель снаряжения", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/modifier", "targetId": "the_vault:vault_sealer", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:vorpal_focus", "amount": 3 } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "treasure", "name": "Сокровищницы", "descriptionData": { "description": [ { "text": "Сокровищницы содержат Сокровищный песок и три пьедестала с гарантированным легендарным модификатором! Выбрать можно только один пьедестал.", "color": "$text" }, { "text": "\n\nВзаимодействуйте с Пьедесталом сокровищ", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/treasure", "targetId": "the_vault:treasure_pedestal", "targetProgress": 1.0, "unlockedBy": "blank_key", "reward": { "items": [ { "item": "the_vault:unidentified_treasure_key" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "royale", "name": "Королевские Хранилища", "descriptionData": { "description": [ { "text": "Королевские хранилища — необязательный режим! Вы входите без снаряжения и навыков, встречаете Томми, выбираете экипировку, брелоки и награду. Нет зелий и Исцеления — лечитесь Сытными яблоками. Выход только через завершение цели!", "color": "$text" }, { "text": "\n\nПолучите Королевский камешек", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/royale", "targetId": "the_vault:crystal_seal_vault_royale", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:crystal_seal_vault_royale" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "antiques", "name": "Антиквариат", "descriptionData": { "description": [ { "text": "Антиквариат — древние печати, дающие награду при сборе полного набора. Появляются после 50 уровня при наличии Книги коллекционера антиквариата в инвентаре.", "color": "$text" }, { "text": "\n\nСоздайте Книгу коллекционера антиквариата", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/antique_collector_book", "targetId": "the_vault:antique_collector_book", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [], "vaultExp": 0 } },
+    { "type": "collection", "id": "companions", "name": "Компаньоны!", "descriptionData": { "description": [ { "text": "После 50 уровня можно находить яйца Компаньонов! Вылупляются в Инкубаторе. Компаньоны имеют Временной модификатор, могут экипировать Реликвии компаньонов для дополнительных модификаторов.", "color": "$text" }, { "text": "\n\nСоздайте Инкубатор компаньонов", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/companion", "targetId": "the_vault:companion_incubator", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:companion_egg", "nbt": "{HatchTime:20,Series:\"PET\"}" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "soul_flame", "name": "Камень претендента Хранилища", "descriptionData": { "description": [ { "text": "С 65 уровня можно создавать Кристалл претендента — немодифицируемый, отслеживающий серию побед (восхождение). Поражение даёт Угольки для Кузницы восхождения.", "color": "$text" }, { "text": "\n\nСоздайте Камень претендента Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/flame", "targetId": "the_vault:soul_flame", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:vault_gold", "amount": 64 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "ascension_forge", "name": "Кузница восхождения", "descriptionData": { "description": [ { "text": "В Кузнице восхождения тратьте Угольки на особые трансмоги и титулы для таблички имени!", "color": "$text" }, { "text": "\n\nСоздайте Кузницу восхождения", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/ascensionforge", "targetId": "the_vault:ascension_forge", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:ember", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "imbuement_altar", "name": "Алтари насыщения", "descriptionData": { "description": [ { "text": "После 60 уровня в подземельях можно найти Алтарь насыщения. Он усиливает модификатор снаряжения с шансом успеха. При неудаче снаряжение становится испорченным. Насыщенное снаряжение можно запечатать, но нельзя модифицировать.", "color": "$text" }, { "text": "\n\nВзаимодействуйте с Алтарём насыщения", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/imbuement_altar", "targetId": "the_vault:imbuement_altar", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:gem_echo", "amount": 10 } ], "vaultExp": 0 } },
+    { "type": "level_up", "id": "reach_level_100", "name": "Достижение максимального уровня", "descriptionData": { "description": [ { "text": "Уровень 100 — конец обычных уровней! Все очки навыков получены, все группы уровней снаряжения разблокированы. Теперь доступны Арена и Вестник.", "color": "$text" }, { "text": "\n\nДостигните уровня 100 Хранилища", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/100", "targetId": "the_vault:100", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:companion_egg", "nbt": "{HatchTime:20,Series:\"PET\"}" } ], "vaultExp": 0 } },
+    { "type": "complete_vault", "id": "herald", "name": "Вестник", "descriptionData": { "description": [ { "text": "Пора доказать свою ценность! Для встречи с Вестником нужен 100 уровень и завершённый пазл артефактов. Получите Камень Вестника кликнув ПКМ по завершённой Книге артефактов. Это очень сложный босс с несколькими фазами!", "color": "$text" }, { "text": "\n\nПобедите Вестника", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/herald", "targetId": "the_vault:herald", "targetProgress": 1.0, "unlockedBy": "reach_level_100", "reward": { "items": [ { "item": "the_vault:omega_pog", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "complete_vault", "id": "greed", "name": "Жадность", "descriptionData": { "description": [ { "text": "После победы над Вестником открывается финальная глава: Жадность! Испытание Жадности — бесконечное хранилище. Прогресс повышает Уровень жадности, открывая Узлы жадности. Якорь жадности призывает Мистера Жадину с магазином, заданиями и Кристаллами испытаний. Тигель жадности конвертирует материалы в Монеты жадности!", "color": "$text" }, { "text": "\n\nЗавершите Испытание жадности", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/greed", "targetId": "the_vault:rebirth", "targetProgress": 1.0, "unlockedBy": "herald", "reward": { "items": [ { "item": "minecraft:stick", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "crafting", "id": "greed_cauldron", "name": "Тигель жадности", "descriptionData": { "description": [ { "text": "Тигель жадности поглощает материалы Хранилища. Каждый выполненный запрос даёт Монеты жадности и увеличивает множитель для последующих наград!", "color": "$text" }, { "text": "\n\nСоздайте Тигель жадности", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/greed_cauldron", "targetId": "the_vault:greed_cauldron", "targetProgress": 1.0, "unlockedBy": "greed", "reward": { "items": [], "vaultExp": 0 } }
+  ]
+}

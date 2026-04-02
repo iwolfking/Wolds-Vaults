@@ -1,0 +1,361 @@
+{
+  "Bosses": {
+    "the_vault:golem_boss": {
+      "BaseTraits": [
+        "golem_melee_attack",
+        "summon_vault",
+        "life_leech_on_hit",
+        "levitate_on_hit"
+      ],
+      "ModifierTraits": {
+        "light_ranged": "golem_hand_ranged_attack"
+      }
+    },
+    "the_vault:black_widow_boss": {
+      "BaseTraits": [
+        "place_cobwebs_around",
+        "spider_attack",
+        "leap_at_target"
+      ],
+      "ModifierTraits": {
+        "light_ranged": "evoker_fangs"
+      }
+    },
+    "the_vault:boogieman_boss": {
+      "BaseTraits": [
+        "boogieman_melee_attack",
+        "snowball_ranged_attack",
+        "summon_vanilla",
+        "higher_health",
+        "higher_speed"
+      ],
+      "ModifierTraits": {
+        "light_ranged": "blood_orb"
+      }
+    }
+  },
+  "Traits": {
+    "fireball_ranged_attack": {
+      "Type": "fireball_ranged_attack",
+      "Attributes": {
+        "AttackIntervalMin": 20,
+        "AttackIntervalMax": 60,
+        "SpeedModifier": 1.0,
+        "MaxInaccuracy": 0.5,
+        "StackSize": 1,
+        "AttackRadius": 25.0,
+        "AttackWhenInMeleeReach": 1
+      }
+    },
+    "snowball_ranged_attack": {
+      "Type": "snowball_ranged_attack",
+      "Attributes": {
+        "AttackIntervalMin": 10,
+        "AttackIntervalMax": 20,
+        "SpeedModifier": 1.0,
+        "DamageMultiplier": 0.5,
+        "StackSize": 1,
+        "Inaccuracy": 12.0,
+        "AttackRadius": 25.0,
+        "AttackWhenInMeleeReach": 0
+      }
+    },
+    "golem_hand_ranged_attack": {
+      "Type": "golem_hand_ranged_attack",
+      "Attributes": {
+        "AttackIntervalMin": 20,
+        "AttackIntervalMax": 60,
+        "SpeedModifier": 1.0,
+        "DamageMultiplier": 0.5,
+        "StackSize": 1,
+        "AttackRadius": 25.0,
+        "AttackWhenInMeleeReach": 0
+      }
+    },
+    "cobweb_ranged_attack": {
+      "Type": "cobweb_ranged_attack",
+      "Attributes": {
+        "AttackIntervalMin": 20,
+        "AttackIntervalMax": 60,
+        "SpeedModifier": 1.0,
+        "StackSize": 1,
+        "Inaccuracy": 12.0,
+        "AttackRadius": 25.0,
+        "AttackWhenInMeleeReach": 1
+      }
+    },
+    "golem_melee_attack": {
+      "Type": "melee_attack",
+      "Attributes": {
+        "Attacks": [
+          {
+            "Multiplier": 1.0,
+            "Weight": 1.0,
+            "Name": "punch"
+          }
+        ]
+      }
+    },
+    "boogieman_melee_attack": {
+      "Type": "melee_attack",
+      "Attributes": {
+        "Attacks": [
+          {
+            "Multiplier": 1.0,
+            "Weight": 1.0,
+            "Name": "slash"
+          },
+          {
+            "Multiplier": 1.0,
+            "Weight": 1.0,
+            "Name": "jab"
+          }
+        ]
+      }
+    },
+    "sweep_attack": {
+      "Type": "melee_attack",
+      "Attributes": {
+        "Attacks": [
+          {
+            "Multiplier": 1.0,
+            "Weight": 1.0,
+            "Name": "aoeclose"
+          }
+        ]
+      }
+    },
+    "summon_vanilla": {
+      "Type": "summon",
+      "Attributes": {
+        "SpawnInterval": 100,
+        "EntityTypes": [
+          {
+            "EntityType": "minecraft:zombie",
+            "Weight": 1.0
+          },
+          {
+            "EntityType": "minecraft:skeleton",
+            "Weight": 1.0
+          },
+          {
+            "EntityType": "minecraft:creeper",
+            "Weight": 1.0
+          }
+        ],
+        "Radius": 15,
+        "MaxMobSpawnCount": 4,
+        "StackSize": 1,
+        "MaxMobsAliveBeforeNextSpawn": 10,
+        "MinMobSpawnCount": 1,
+        "MinDistanceFromCenter": 1
+      }
+    },
+    "summon_vanilla_at_target": {
+      "Type": "summon_at_target",
+      "Attributes": {
+        "SpawnInterval": 100,
+        "EntityTypes": [
+          {
+            "EntityType": "minecraft:zombie",
+            "Weight": 1.0
+          },
+          {
+            "EntityType": "minecraft:skeleton",
+            "Weight": 1.0
+          },
+          {
+            "EntityType": "minecraft:creeper",
+            "Weight": 1.0
+          }
+        ],
+        "Radius": 15,
+        "MaxMobSpawnCount": 4,
+        "StackSize": 1,
+        "MaxMobsAliveBeforeNextSpawn": 10,
+        "MinMobSpawnCount": 1,
+        "MinDistanceFromCenter": 5
+      }
+    },
+    "summon_vault": {
+      "Type": "summon",
+      "Attributes": {
+        "SpawnInterval": 100,
+        "EntityTypes": [
+          {
+            "EntityType": "the_vault:fighter",
+            "EntityNbt": {
+              "HandItems": [
+                {
+                  "id": "minecraft:netherite_sword",
+                  "Count": 1,
+                  "tag": {
+                    "Damage": 0
+                  }
+                }
+              ]
+            },
+            "Weight": 1.0
+          },
+          {
+            "EntityType": "the_vault:dungeon_skeleton",
+            "Weight": 1.0
+          },
+          {
+            "EntityType": "the_vault:dungeon_vindicator",
+            "Weight": 1.0
+          }
+        ],
+        "Radius": 15,
+        "MaxMobSpawnCount": 4,
+        "StackSize": 1,
+        "MaxMobsAliveBeforeNextSpawn": 10,
+        "MinMobSpawnCount": 1,
+        "MinDistanceFromCenter": 1
+      }
+    },
+    "shulker_bullet": {
+      "Type": "shulker_bullet",
+      "Attributes": {
+        "AttackIntervalMin": 10,
+        "AttackIntervalMax": 40,
+        "StackSize": 0
+      }
+    },
+    "heal": {
+      "Type": "heal",
+      "Attributes": {
+        "HealCooldown": 0,
+        "HealInterval": 40,
+        "StackSize": 0,
+        "HealPercentage": 0.1
+      }
+    },
+    "blood_orb": {
+      "Type": "blood_orb",
+      "Attributes": {
+        "MaxBloodOrbs": 4,
+        "BloodOrbSpawnIntervalMin": 40,
+        "StackSize": 1,
+        "BloodOrbs": [],
+        "BloodOrbSpawnRadius": 20,
+        "BloodOrbSpawnIntervalMax": 100
+      }
+    },
+    "evoker_fangs": {
+      "Type": "evoker_fangs",
+      "Attributes": {
+        "Radius": 3,
+        "DamageMultiplier": 0.7,
+        "MaxAttackInterval": 200,
+        "FangCount": 5,
+        "StackSize": 1,
+        "Inaccuracy": 1.5,
+        "MinAttackInterval": 100
+      }
+    },
+    "higher_health": {
+      "Type": "attribute_modifier",
+      "Attributes": {
+        "Operator": "multiply",
+        "Value": 1.5,
+        "Name": "minecraft:generic.max_health"
+      }
+    },
+    "higher_speed": {
+      "Type": "attribute_modifier",
+      "Attributes": {
+        "Operator": "add",
+        "Value": 0.30000001192092896,
+        "Name": "minecraft:generic.movement_speed"
+      }
+    },
+    "life_leech_on_hit": {
+      "Type": "life_leech_on_hit",
+      "Attributes": {
+        "LeechPercentage": 0.5
+      }
+    },
+    "wither_on_hit": {
+      "Type": "apply_potion_on_hit",
+      "Attributes": {
+        "MobEffect": "minecraft:wither",
+        "Duration": 100,
+        "Amplifier": 0,
+        "Chance": 0.2
+      }
+    },
+    "levitate_on_hit": {
+      "Type": "apply_potion_on_hit",
+      "Attributes": {
+        "MobEffect": "minecraft:levitation",
+        "Duration": 100,
+        "Amplifier": 0,
+        "Chance": 0.5
+      }
+    },
+    "steal_mana_on_hit": {
+      "Type": "apply_potion_on_hit",
+      "Attributes": {
+        "MobEffect": "the_vault:mana_steal",
+        "Duration": 20,
+        "Amplifier": 0,
+        "Chance": 0.5
+      }
+    },
+    "throw_lingering_poison": {
+      "Type": "throw_potion",
+      "Attributes": {
+        "AttackIntervalMin": 100,
+        "AttackIntervalMax": 200,
+        "SpeedModifier": 1.0,
+        "StackSize": 1,
+        "MobEffect": "minecraft:poison",
+        "AttackRadius": 10.0,
+        "Duration": 100,
+        "Amplifier": 0,
+        "Lingering": 1,
+        "AttackWhenInMeleeReach": 1
+      }
+    },
+    "levitation_aura": {
+      "Type": "potion_aura",
+      "Attributes": {
+        "MobEffect": "minecraft:levitation",
+        "Duration": 40,
+        "Amplifier": 0,
+        "Range": 5
+      }
+    },
+    "bleed_aura": {
+      "Type": "potion_aura",
+      "Attributes": {
+        "MobEffect": "the_vault:bleed",
+        "Duration": 40,
+        "Amplifier": 0,
+        "Range": 5
+      }
+    },
+    "leap_at_target": {
+      "Type": "leap_at_target",
+      "Attributes": {}
+    },
+    "spider_attack": {
+      "Type": "spider_attack",
+      "Attributes": {}
+    },
+    "place_cobwebs_around": {
+      "Type": "place_block_around",
+      "Attributes": {
+        "placeIntervalMin": 20,
+        "blockState": {
+          "Name": "cobweb"
+        },
+        "stackSize": 1,
+        "radius": 5,
+        "maxYOffset": 1,
+        "placeIntervalMax": 60
+      }
+    }
+  }
+}

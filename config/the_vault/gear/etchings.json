@@ -1,5 +1,3327 @@
 {
     "ETCHINGS": {
+        "the_vault:etching_blocking_mana": {
+            "name": "Blocking Mana",
+            "description": "Blocking restores <yellow>%dvalue <gray>mana",
+            "color": 16777215,
+            "affixType": "IMPLICIT",
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_blocking_mana",
+                    "group": "BlockEtching",
+                    "identifier": "the_vault:etching_blocking_mana",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 2,
+                                "max": 4,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 3,
+                                "max": 6,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 5,
+                                "max": 8,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 6,
+                                "max": 10,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_chaining_penalty": {
+            "name": "Chaining Penalty",
+            "description": "<#5c5db6>Chaining Hits <gray>have their damage penalty lowered by <yellow>%.0fpvalue%",
+            "color": 16777215,
+            "affixType": "PREFIX",
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_chaining_penalty",
+                    "group": "ChainingEtching",
+                    "identifier": "the_vault:chaining_penalty",
+                    "tags": [
+                        "chaining"
+                    ],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.005,
+                                "max": 0.007,
+                                "step": 0.001
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.006,
+                                "max": 0.008,
+                                "step": 0.001
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.007,
+                                "max": 0.009,
+                                "step": 0.001
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.008,
+                                "max": 0.012,
+                                "step": 0.001
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_frost_nova_freeze": {
+            "name": "Glacial Nova",
+            "description": "<gray>Frost nova has <yellow>%.0fpvalue% <gray>chance to <#2FE1FA>freeze <gray>(glacially imprison) mobs hit for 2 seconds",
+            "color": 16777215,
+            "affixType": "PREFIX",
+            "typeGroups": [
+                "Offensive",
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_frost_nova_freeze",
+                    "group": "NovaEtching",
+                    "identifier": "the_vault:etching_frost_nova_freeze",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.1,
+                                "max": 0.25,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.2,
+                                "max": 0.4,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.3,
+                                "max": 0.55,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.45,
+                                "max": 0.75,
+                                "step": 0.05
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_glacial_shatter_explosion": {
+            "name": "Glacial Shatter Explosion",
+            "description": "<gray>Frostbitten mobs when shattered will explode into ice chunks dealing <yellow>%.0fpvalueA% <#C23627>Attack damage <gray>in a <yellow>%.1fvalueB <gray>block radius",
+            "color": 16777215,
+            "affixType": "PREFIX",
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_glacial_shatter_explosion",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_glacial_shatter_explosion",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "percentAD": {
+                                    "min": 0.1,
+                                    "max": 0.25,
+                                    "step": 0.05
+                                },
+                                "radius": {
+                                    "min": 2.0,
+                                    "max": 3.0,
+                                    "step": 0.5
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "percentAD": {
+                                    "min": 0.2,
+                                    "max": 0.4,
+                                    "step": 0.05
+                                },
+                                "radius": {
+                                    "min": 2.5,
+                                    "max": 4.0,
+                                    "step": 0.5
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "percentAD": {
+                                    "min": 0.3,
+                                    "max": 0.55,
+                                    "step": 0.05
+                                },
+                                "radius": {
+                                    "min": 3.5,
+                                    "max": 5.0,
+                                    "step": 0.5
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "percentAD": {
+                                    "min": 0.45,
+                                    "max": 0.75,
+                                    "step": 0.05
+                                },
+                                "radius": {
+                                    "min": 4.0,
+                                    "max": 6.0,
+                                    "step": 0.5
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_heal_cleanse": {
+            "name": "Heal Cleanse",
+            "description": "<gray>Heal also casts a level <yellow>%dvalue <gray>Cleanse",
+            "color": 16777215,
+            "affixType": "PREFIX",
+            "typeGroups": [
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_heal_cleanse",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_heal_cleanse",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 3,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 2,
+                                "max": 5,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 4,
+                                "max": 7,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 6,
+                                "max": 10,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_ice_bolt_chunk_damage": {
+            "name": "Glacial Damage",
+            "description": "<gray>Glacial Blast deals <yellow>%.0fpvalue% <#C23627>Attack damage",
+            "color": 16777215,
+            "affixType": "PREFIX",
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_ice_bolt_chunk_damage",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_ice_bolt_chunk_damage",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.1,
+                                "max": 0.3,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.2,
+                                "max": 0.5,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.4,
+                                "max": 0.7,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.6,
+                                "max": 1.0,
+                                "step": 0.05
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_ice_bolt_effect": {
+            "name": "Ice Bolt Effect",
+            "description": "Ice Bolt has a <yellow>%.0fpvalueB% <gray>chance of applying Glacial Prison for <yellow>%dvalueC <gray>seconds",
+            "color": 16777215,
+            "affixType": "PREFIX",
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_ice_bolt_effect",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_ice_bolt_effect",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "glacial_prison",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "chance": {
+                                    "min": 0.2,
+                                    "max": 0.4,
+                                    "step": 0.05
+                                },
+                                "duration": {
+                                    "min": 2,
+                                    "max": 3,
+                                    "step": 1
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "glacial_prison",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "chance": {
+                                    "min": 0.3,
+                                    "max": 0.55,
+                                    "step": 0.05
+                                },
+                                "duration": {
+                                    "min": 2,
+                                    "max": 3,
+                                    "step": 1
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "glacial_prison",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "chance": {
+                                    "min": 0.45,
+                                    "max": 0.7,
+                                    "step": 0.05
+                                },
+                                "duration": {
+                                    "min": 3,
+                                    "max": 4,
+                                    "step": 1
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "glacial_prison",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "chance": {
+                                    "min": 0.6,
+                                    "max": 0.9,
+                                    "step": 0.05
+                                },
+                                "duration": {
+                                    "min": 3,
+                                    "max": 5,
+                                    "step": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_ice_bolt_lucky": {
+            "name": "Lucky Bolt",
+            "description": "Ice Bolt can now proc <#6DF5A3>Lucky Hit",
+            "color": 16777215,
+            "affixType": "PREFIX",
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_ice_bolt_lucky",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_ice_bolt_lucky",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 4,
+                                "max": 5,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 5,
+                                "max": 6,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 6,
+                                "max": 7,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 7,
+                                "max": 10,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_ice_bolt_multicast": {
+            "name": "Frozen Barrage",
+            "description": "Ice Bolt casts itself again rapidly <yellow>%dvalue <gray>times after the first cast one",
+            "color": 16777215,
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_ice_bolt_multicast",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_ice_bolt_multicast",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 4,
+                                "max": 5,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 5,
+                                "max": 6,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 6,
+                                "max": 8,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 7,
+                                "max": 10,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_ice_bolt_pierce": {
+            "name": "Piercing Bolt",
+            "description": "<gray>Ice Bolt pierces <yellow>%dvalue <gray>mobs",
+            "color": 16777215,
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_ice_bolt_pierce",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_ice_bolt_pierce",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 4,
+                                "max": 6,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 5,
+                                "max": 8,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 7,
+                                "max": 10,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 9,
+                                "max": 15,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_implode_mana_regen": {
+            "name": "Imploding Reversal",
+            "description": "<gray>Implode increases your mana regeneration by <yellow>%.0fpvalue% <gray>for each mob it kills for 10 seconds",
+            "color": 16777215,
+            "typeGroups": [
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_implode_mana_regen",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_implode_mana_regen",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.01,
+                                "max": 0.02,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.02,
+                                "max": 0.03,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.03,
+                                "max": 0.04,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.04,
+                                "max": 0.06,
+                                "step": 0.01
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lucky_cooldown_reset": {
+            "name": "Lucky Reset",
+            "description": "<gray>Proccing <#6DF5A3>Lucky Hit <gray>will remove any remaining cooldown of <yellow>%svalue/ability",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive",
+                "Defensive",
+                "Utility"
+            ],
+            "minGreedTier": 12,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lucky_cooldown_reset",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lucky_cooldown_reset",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "strings": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Dot",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Dash_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Dash_Damage",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Dash_Warp",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Heal_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Heal_Group",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Heal_Cleanse",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Totem",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Totem_Player_Damage",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Totem_Mana_Regen",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Totem_Mob_Damage",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Fireball_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Fireball_Volley",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Mana_Shield_Implode",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Hunter_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Javelin_Sight",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Ice_Bolt_Blast",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Ghost_Walk",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Ghost_Walk_Spirit",
+                                        "weight": 1.0
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lucky_frost_nova": {
+            "name": "Lucky Nova",
+            "description": "<gray>Proccing <#6DF5A3>Lucky Hit <gray>will cast a level <yellow>%dvalue <gray>Frost Nova",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive",
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lucky_frost_nova",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lucky_frost_nova",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 3,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 2,
+                                "max": 5,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 4,
+                                "max": 7,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 6,
+                                "max": 10,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lucky_low_health": {
+            "name": "Lucky Amplifier",
+            "description": "Gain <yellow>%.0fpvalueA% <#6DF5A3>Lucky Hit <gray>chance while below <yellow>%.0fpvalueB% <gray>health",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive",
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lucky_low_health",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lucky_low_health",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "chance": {
+                                    "min": 0.02,
+                                    "max": 0.04,
+                                    "step": 0.01
+                                },
+                                "healthThreshold": {
+                                    "min": 0.5,
+                                    "max": 0.5,
+                                    "step": 0
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "chance": {
+                                    "min": 0.03,
+                                    "max": 0.06,
+                                    "step": 0.01
+                                },
+                                "healthThreshold": {
+                                    "min": 0.5,
+                                    "max": 0.5,
+                                    "step": 0
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "chance": {
+                                    "min": 0.05,
+                                    "max": 0.08,
+                                    "step": 0.01
+                                },
+                                "healthThreshold": {
+                                    "min": 0.5,
+                                    "max": 0.5,
+                                    "step": 0
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "chance": {
+                                    "min": 0.07,
+                                    "max": 0.12,
+                                    "step": 0.01
+                                },
+                                "healthThreshold": {
+                                    "min": 0.5,
+                                    "max": 0.5,
+                                    "step": 0
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lucky_vulnerable": {
+            "name": "Lucky Vulnerable",
+            "description": "<gray>Proccing <#6DF5A3>Lucky Hit <gray>will apply <yellow>%dvalueC <gray>stack(s) of <yellow>%svalueA <gray>for <yellow>%.1fvalueB <gray>second(s)",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lucky_vulnerable",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lucky_vulnerable",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 1,
+                                    "max": 4,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 1.0,
+                                    "max": 2.5,
+                                    "step": 0.5
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 3,
+                                    "max": 6,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 2.0,
+                                    "max": 3.5,
+                                    "step": 0.5
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 5,
+                                    "max": 8,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 3.0,
+                                    "max": 4.5,
+                                    "step": 0.5
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 7,
+                                    "max": 12,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 4.0,
+                                    "max": 6.0,
+                                    "step": 0.5
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_smite_stun": {
+            "name": "Stunning Smite",
+            "description": "<gray>Smite has a <yellow>%.0fpvalue% <gray>chance of stunning mobs",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_smite_stun",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_smite_stun",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.5,
+                                "max": 0.65,
+                                "step": 0.1,
+                                "type": "uniformed_step"
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.55,
+                                "max": 0.75,
+                                "step": 0.1,
+                                "type": "uniformed_step"
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.65,
+                                "max": 0.9,
+                                "step": 0.1,
+                                "type": "uniformed_step"
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.8,
+                                "max": 1.0,
+                                "step": 0.1,
+                                "type": "uniformed_step"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_smite_echo": {
+            "name": "Echoing Smite",
+            "description": "<yellow>Smite <gray>casts an additional bolt 0.5 seconds after the first one dealing <yellow>%.0fpvalue% <gray>of the original smite damage",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_smite_echo",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_smite_echo",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.2,
+                                "max": 0.4,
+                                "step": 0.05,
+                                "type": "uniformed_step"
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.3,
+                                "max": 0.6,
+                                "step": 0.05,
+                                "type": "uniformed_step"
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.5,
+                                "max": 0.85,
+                                "step": 0.05,
+                                "type": "uniformed_step"
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.7,
+                                "max": 1.2,
+                                "step": 0.05,
+                                "type": "uniformed_step"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_nova_recast": {
+            "name": "Nova Recast",
+            "description": "<gray>Nova is cast again within <yellow>%tvalue <gray>seconds after cast",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive",
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_nova_recast",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_nova_recast",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 20,
+                                "max": 40,
+                                "step": 10
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 30,
+                                "max": 55,
+                                "step": 10
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 45,
+                                "max": 75,
+                                "step": 10
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 60,
+                                "max": 100,
+                                "step": 10
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_shield_bash_damage": {
+            "name": "Shield Bash Damage",
+            "description": "<gray>Shield Bash additionally deals <yellow>%.0fpvalue% <#C23627>Attack Damage",
+            "color": 16777215,
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_shield_bash_damage",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_shield_bash_damage",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.1,
+                                "max": 0.2,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.15,
+                                "max": 0.3,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.25,
+                                "max": 0.4,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.3,
+                                "max": 0.5,
+                                "step": 0.05
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_extra_piercing_javelin": {
+            "name": "Scatter Pierce",
+            "description": "<gray>Piercing Javelin throws an additional 2 javelins horizontally, dealing <yellow>%.0fpvalue% <gray>of your original javelin damage",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_extra_piercing_javelin",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_extra_piercing_javelin",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.3,
+                                "max": 0.5,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.4,
+                                "max": 0.7,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.6,
+                                "max": 0.9,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.8,
+                                "max": 1.2,
+                                "step": 0.05
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_piercing_javelin_ricochet": {
+            "name": "Piercing Ricochet",
+            "description": "<gray>Piercing Javelin ricochets to the side when piercing, dealing <yellow>%.0fpvalue% <gray>reduced damage",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_piercing_javelin_ricochet",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_piercing_javelin_ricochet",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.2,
+                                "max": 0.35,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.3,
+                                "max": 0.45,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.4,
+                                "max": 0.55,
+                                "step": 0.05
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.5,
+                                "max": 0.7,
+                                "step": 0.05
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_poison_mana": {
+            "name": "Poison Mana",
+            "description": "<gray>Poison Damage ticks generates <yellow>%dvalue <gray>mana",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive",
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_poison_mana",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_poison_mana",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 2,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 3,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 2,
+                                "max": 3,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 2,
+                                "max": 4,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_scatter_mana": {
+            "name": "Scatter Mana",
+            "description": "<gray>Scatter Javelins restore <yellow>%dvalue <gray>mana when hitting a mob",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_scatter_mana",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_scatter_mana",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 3,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 2,
+                                "max": 4,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 3,
+                                "max": 5,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 4,
+                                "max": 8,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_storm_arrow_blizzard_damage": {
+            "name": "Blizzard Damage",
+            "description": "<gray>Storm Arrow Blizzard also deals <yellow>%.0fpvalue% <gray>AP damage per hit",
+            "color": 16777215,
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_storm_arrow_blizzard_damage",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_storm_arrow_blizzard_damage",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.1,
+                                "max": 0.2,
+                                "step": 0.1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.15,
+                                "max": 0.3,
+                                "step": 0.1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.25,
+                                "max": 0.45,
+                                "step": 0.1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.35,
+                                "max": 0.6,
+                                "step": 0.1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_nova_low_mana_damage": {
+            "name": "Nova Damage Increase",
+            "description": "<gray>Casting Nova with less than <yellow>%.0fpvalueA% <gray>mana remaining increases its damage by <yellow>%.0fpvalueB%",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive",
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_nova_low_mana_damage",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_nova_low_mana_damage",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "damageMultiplier": {
+                                    "min": 0.4,
+                                    "max": 0.6,
+                                    "step": 0.1
+                                },
+                                "manaThreshold": {
+                                    "min": 0.5,
+                                    "max": 0.5,
+                                    "step": 0
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "damageMultiplier": {
+                                    "min": 0.5,
+                                    "max": 0.75,
+                                    "step": 0.1
+                                },
+                                "manaThreshold": {
+                                    "min": 0.5,
+                                    "max": 0.5,
+                                    "step": 0
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "damageMultiplier": {
+                                    "min": 0.65,
+                                    "max": 0.9,
+                                    "step": 0.1
+                                },
+                                "manaThreshold": {
+                                    "min": 0.5,
+                                    "max": 0.5,
+                                    "step": 0
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "damageMultiplier": {
+                                    "min": 0.8,
+                                    "max": 1.2,
+                                    "step": 0.1
+                                },
+                                "manaThreshold": {
+                                    "min": 0.5,
+                                    "max": 0.5,
+                                    "step": 0
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_stone_fall_stun": {
+            "name": "Shockwave",
+            "description": "<gray>Stonefall has a <yellow>%.0fpvalueA% <gray>chance of <yellow>%svalueC/effect <gray>mobs it knocks backs for <red>%tvalueB <red>seconds?",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_stone_fall_stun",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_stone_fall_stun",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:noai",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "chance": {
+                                    "min": 0.2,
+                                    "max": 0.4,
+                                    "step": 0.05
+                                },
+                                "duration": {
+                                    "min": 40,
+                                    "max": 60,
+                                    "step": 5.0
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:noai",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "chance": {
+                                    "min": 0.3,
+                                    "max": 0.6,
+                                    "step": 0.05
+                                },
+                                "duration": {
+                                    "min": 50,
+                                    "max": 70,
+                                    "step": 5.0
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:noai",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "chance": {
+                                    "min": 0.5,
+                                    "max": 0.85,
+                                    "step": 0.05
+                                },
+                                "duration": {
+                                    "min": 60,
+                                    "max": 85,
+                                    "step": 5.0
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:noai",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "chance": {
+                                    "min": 0.7,
+                                    "max": 1.0,
+                                    "step": 0.05
+                                },
+                                "duration": {
+                                    "min": 75,
+                                    "max": 120,
+                                    "step": 5.0
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_totem_mob_damage_ad": {
+            "name": "AD Totem",
+            "description": "<gray>Totem of Hatred now also scales with AD Damage",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 4,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_totem_mob_damage_ad",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_totem_mob_damage_ad",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "flag": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_totem_player_damage_ap": {
+            "name": "AP Totem",
+            "description": "<gray>Wrath totem also increases <$ability_power>Ability Power",
+            "color": 16777215,
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 4,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_totem_player_damage_ap",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_totem_player_damage_ap",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "flag": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_mana_shield_nova": {
+            "name": "Nova Shield",
+            "description": "<gray>Mana Shield casts a level <yellow>%dvalueB %svalueA/ability <gray>when expiring",
+            "color": 16777215,
+            "typeGroups": [
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_mana_shield_nova",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_mana_shield_nova",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Dot",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 2,
+                                    "max": 6,
+                                    "step": 1
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Dot",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 4,
+                                    "max": 10,
+                                    "step": 1
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Dot",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 8,
+                                    "max": 14,
+                                    "step": 1
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Dot",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 12,
+                                    "max": 20,
+                                    "step": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_rampage_lucky_hit": {
+            "name": "Rampaging Lucky Hit",
+            "description": "<gray>While active, Rampage will increase your <$luckyHit>Lucky Hit <gray>chance by <yellow>%.0fpvalue%",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_rampage_lucky_hit",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_rampage_lucky_hit",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.02,
+                                "max": 0.04,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.03,
+                                "max": 0.06,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.05,
+                                "max": 0.08,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.07,
+                                "max": 0.12,
+                                "step": 0.01
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_dash_warp_nova": {
+            "name": "Nova Dash",
+            "description": "<gray>Dash warp will cast a level <yellow>%dvalueB %svalueA/ability <gray>upon landing",
+            "color": 16777215,
+            "typeGroups": [
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_dash_warp_nova",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_dash_warp_nova",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Dot",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 2,
+                                    "max": 6,
+                                    "step": 1
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Dot",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 4,
+                                    "max": 10,
+                                    "step": 1
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Dot",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 8,
+                                    "max": 14,
+                                    "step": 1
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Base",
+                                        "weight": 1.0
+                                    },
+                                    {
+                                        "value": "Nova_Dot",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 12,
+                                    "max": 20,
+                                    "step": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_storm_arrow_blizzard_effect": {
+            "name": "Blizzard Effect",
+            "description": "<gray>Storm Arrow Blizzard applies <yellow>%dvalueC <gray>stack(s) of <yellow>%svalueA/effect <gray>for <yellow>%tvalueB <gray>second(s) to mobs it hits",
+            "color": 5476034,
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_storm_arrow_blizzard_effect",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_storm_arrow_blizzard_effect",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 1,
+                                    "max": 3,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 20,
+                                    "max": 40,
+                                    "step": 10
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 2,
+                                    "max": 5,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 30,
+                                    "max": 60,
+                                    "step": 10
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 4,
+                                    "max": 7,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 50,
+                                    "max": 80,
+                                    "step": 10
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 6,
+                                    "max": 10,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 70,
+                                    "max": 120,
+                                    "step": 10
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_spirit_walk_ability": {
+            "name": "Spirit Nova",
+            "description": "<gray>Spirit Walk will cast a level <yellow>%dvalueB %svalueA/ability <gray>when it expires",
+            "color": 16777215,
+            "typeGroups": [
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_spirit_walk_ability",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_spirit_walk_ability",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 1,
+                                    "max": 3,
+                                    "step": 1
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 2,
+                                    "max": 5,
+                                    "step": 1
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 4,
+                                    "max": 7,
+                                    "step": 1
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "ability": [
+                                    {
+                                        "value": "Nova_Slow",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 6,
+                                    "max": 10,
+                                    "step": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lucky_vortex": {
+            "name": "Lucky Vortex",
+            "description": "<gray>Proccing <#6DF5A3>Lucky Hit <gray>will cast a Vortex in a radius of <yellow>%dvalueA <gray>blocks for <yellow>%dvalueB <gray>second(s)",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive",
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lucky_vortex",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lucky_vortex",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "radius": {
+                                    "min": 4.0,
+                                    "max": 5.5,
+                                    "step": 1.0
+                                },
+                                "duration": {
+                                    "min": 20,
+                                    "max": 40,
+                                    "step": 10
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "radius": {
+                                    "min": 5.0,
+                                    "max": 6.5,
+                                    "step": 1.0
+                                },
+                                "duration": {
+                                    "min": 30,
+                                    "max": 60,
+                                    "step": 10
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "radius": {
+                                    "min": 6.0,
+                                    "max": 7.5,
+                                    "step": 1.0
+                                },
+                                "duration": {
+                                    "min": 50,
+                                    "max": 80,
+                                    "step": 10
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "radius": {
+                                    "min": 7.0,
+                                    "max": 10.0,
+                                    "step": 1.0
+                                },
+                                "duration": {
+                                    "min": 70,
+                                    "max": 120,
+                                    "step": 10
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_totem_player_damage_effect": {
+            "name": "Vulnerable Totem",
+            "description": "<gray>Totem of Hatred applies <yellow>%dvalueC <gray>stack(s) of <yellow>%svalueA/effect <gray>to mobs hit for <yellow>%tvalueB <gray>second(s)",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_totem_player_damage_effect",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_totem_player_damage_effect",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 1,
+                                    "max": 3,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 20,
+                                    "max": 40,
+                                    "step": 10
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 2,
+                                    "max": 5,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 30,
+                                    "max": 60,
+                                    "step": 10
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 4,
+                                    "max": 7,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 50,
+                                    "max": 80,
+                                    "step": 10
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "effect": [
+                                    {
+                                        "value": "the_vault:vulnerable",
+                                        "weight": 1.0
+                                    }
+                                ],
+                                "level": {
+                                    "min": 6,
+                                    "max": 10,
+                                    "step": 1
+                                },
+                                "duration": {
+                                    "min": 70,
+                                    "max": 120,
+                                    "step": 10
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_life_tap_extra_damage": {
+            "name": "Life Tap Extra Damage",
+            "description": "<gray>Life Tap does <yellow>%dvalue <gray>additional damage per hitpoint drained",
+            "color": 16777215,
+            "typeGroups": [
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_life_tap_extra_damage",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_life_tap_extra_damage",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 2,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 2,
+                                "max": 4,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 3,
+                                "max": 5,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 4,
+                                "max": 8,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_life_tap_lucky_hit": {
+            "name": "Lucky Life Tap",
+            "description": "<gray>Life Tap increases your lucky hit chance with <yellow>%.0fpvalueA% <gray>for <yellow>%tvalueB <gray>second(s) for each mob it kills",
+            "color": 16777215,
+            "typeGroups": [
+                "Defensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_life_tap_lucky_hit",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_life_tap_lucky_hit",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "chance": {
+                                    "min": 0.005,
+                                    "max": 0.01,
+                                    "step": 0.005
+                                },
+                                "duration": {
+                                    "min": 160,
+                                    "max": 175,
+                                    "step": 20
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "chance": {
+                                    "min": 0.008,
+                                    "max": 0.015,
+                                    "step": 0.005
+                                },
+                                "duration": {
+                                    "min": 170,
+                                    "max": 185,
+                                    "step": 20
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "chance": {
+                                    "min": 0.012,
+                                    "max": 0.018,
+                                    "step": 0.005
+                                },
+                                "duration": {
+                                    "min": 180,
+                                    "max": 195,
+                                    "step": 20
+                                }
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "chance": {
+                                    "min": 0.015,
+                                    "max": 0.025,
+                                    "step": 0.005
+                                },
+                                "duration": {
+                                    "min": 190,
+                                    "max": 220,
+                                    "step": 20
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_earthquake_recast_delay": {
+            "name": "Earthquake Recast Delay",
+            "description": "<gray>Earthquake quakes again after the first impact after <yellow>%tvalue <gray>second{value>1=s}",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_earthquake_recast_delay",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_earthquake_recast_delay",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 20,
+                                "max": 30,
+                                "step": 20
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 25,
+                                "max": 40,
+                                "step": 20
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 30,
+                                "max": 50,
+                                "step": 20
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 40,
+                                "max": 70,
+                                "step": 20
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_earthquake_chest_loot": {
+            "name": "Earthquake Chest Loot",
+            "description": "<gray>Earthquake also spits out any chests loot in its radius with <yellow>%.0fpvalue% <gray>increased item rarity and quantity",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_earthquake_chest_loot",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_earthquake_chest_loot",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.25,
+                                "max": 0.5,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.4,
+                                "max": 0.7,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.6,
+                                "max": 0.9,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.8,
+                                "max": 1.25,
+                                "step": 0.01
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_landmine_spawn": {
+            "name": "Landmine Spawn",
+            "description": "<gray>Land Mines spawn a new land mine after exploding",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive"
+            ],
+            "minGreedTier": 4,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_landmine_spawn",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_landmine_spawn",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "flag": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_arcane_pierce": {
+            "name": "Arcane Pierce",
+            "description": "<gray>Arcane pierces <yellow>%dvalue <gray>mob{value>1=s}",
+            "color": 16777215,
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_arcane_pierce",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_arcane_pierce",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 2,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 3,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 2,
+                                "max": 3,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 2,
+                                "max": 4,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_rail_pierce": {
+            "name": "Rail Pierce",
+            "description": "<gray>Arcane Rail pierces <yellow>%dvalue <gray>mob{value>1=s}",
+            "color": 16777215,
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_rail_pierce",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_rail_pierce",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 10,
+                                "max": 13,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 12,
+                                "max": 16,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 14,
+                                "max": 18,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 16,
+                                "max": 25,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_arcane_rail_size": {
+            "name": "Arcane Rail Size",
+            "description": "<gray>Arcane Rail increases it hit size by <yellow>%.0fpvalue%",
+            "color": 16777215,
+            "typeGroups": [
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_arcane_rail_size",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_arcane_rail_size",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 2,
+                                "step": 0.1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 1.5,
+                                "max": 3,
+                                "step": 0.1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 2.5,
+                                "max": 4,
+                                "step": 0.1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 3,
+                                "max": 5,
+                                "step": 0.1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lightning_strike_delay": {
+            "name": "Lightning Strike Delay",
+            "description": "<#f5ac36>+Lightning Strike thunders again in the hit location after <#fad8a2>%tvalue <#f5ac36>second{value>1=s}",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive",
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "affixType": "SUFFIX",
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lightning_strike_delay",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lightning_strike_delay",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 1,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 1,
+                                "max": 2,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 2,
+                                "max": 3,
+                                "step": 1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 2,
+                                "max": 4,
+                                "step": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lightning_orb_size": {
+            "name": "Lightning Orb Size",
+            "description": "<gray>The size of Ball Lightning is increased by <yellow>%.0fpvalue%",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive",
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lightning_orb_size",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lightning_orb_size",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.5,
+                                "max": 1.0,
+                                "step": 0.1
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.8,
+                                "max": 1.5,
+                                "step": 0.1
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 1.2,
+                                "max": 2.0,
+                                "step": 0.1
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 1.5,
+                                "max": 2.5,
+                                "step": 0.1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lightning_orb_kill_cooldown": {
+            "name": "Lightning Orb Kill Cooldown",
+            "description": "<gray>Killing a mob with ball lightning reduces its cooldown by <yellow>%.0fpvalue% <gray>seconds",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive",
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lightning_orb_kill_cooldown",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lightning_orb_kill_cooldown",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.2,
+                                "max": 0.4,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.3,
+                                "max": 0.5,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.4,
+                                "max": 0.7,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.6,
+                                "max": 1.0,
+                                "step": 0.01
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "the_vault:etching_lightning_orb_triple_damage": {
+            "name": "Tristorm Orbs",
+            "description": "<gray>Ball lightning instead summons 3, smaller balls in a horizontal line, each dealing <yellow>%.0fpvalue% <gray>lower damage",
+            "color": 16777215,
+            "typeGroups": [
+                "Offensive",
+                "Utility"
+            ],
+            "minGreedTier": 0,
+            "attributes": [
+                {
+                    "attribute": "the_vault:etching_lightning_orb_triple_damage",
+                    "group": "EtchingGroup",
+                    "identifier": "the_vault:etching_lightning_orb_triple_damage",
+                    "tags": [],
+                    "tiers": [
+                        {
+                            "minGreedTier": 0,
+                            "maxGreedTier": 3,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.2,
+                                "max": 0.3,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 4,
+                            "maxGreedTier": 7,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.25,
+                                "max": 0.4,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 8,
+                            "maxGreedTier": 11,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.35,
+                                "max": 0.5,
+                                "step": 0.01
+                            }
+                        },
+                        {
+                            "minGreedTier": 12,
+                            "maxGreedTier": -1,
+                            "weight": 100,
+                            "value": {
+                                "min": 0.4,
+                                "max": 0.6,
+                                "step": 0.01
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
     },
     "groups": {
         "Defensive": [
@@ -17,17 +3339,41 @@
             "WAND",
             "SHIELD"
         ],
-        "HELMET": [ "HELMET" ],
-        "CHESTPLATE": [ "CHESTPLATE" ],
-        "LEGGINGS": [ "LEGGINGS" ],
-        "BOOTS": [ "BOOTS" ],
-        "SWORD": [ "SWORD" ],
-        "AXE": [ "AXE" ],
-        "FOCUS": [ "FOCUS" ],
-        "WAND": [ "WAND" ],
-        "SHIELD": [ "SHIELD" ],
-        "MAGNET": [ "MAGNET" ],
-        "VOID_STONE": [ "VOID_STONE" ],
-        "CHARM": [ "CHARM" ]
+        "HELMET": [
+            "HELMET"
+        ],
+        "CHESTPLATE": [
+            "CHESTPLATE"
+        ],
+        "LEGGINGS": [
+            "LEGGINGS"
+        ],
+        "BOOTS": [
+            "BOOTS"
+        ],
+        "SWORD": [
+            "SWORD"
+        ],
+        "AXE": [
+            "AXE"
+        ],
+        "FOCUS": [
+            "FOCUS"
+        ],
+        "WAND": [
+            "WAND"
+        ],
+        "SHIELD": [
+            "SHIELD"
+        ],
+        "MAGNET": [
+            "MAGNET"
+        ],
+        "VOID_STONE": [
+            "VOID_STONE"
+        ],
+        "CHARM": [
+            "CHARM"
+        ]
     }
 }
