@@ -15,9 +15,52 @@ onEvent("recipes", event => {
             'I'
         ], {
         F: '#minecraft:small_flowers',
-        E: 'minecraft:glass_bottle',
-        A: 'the_vault:chromatic_iron_ingot'
+        B: 'minecraft:glass_bottle',
+        I: 'the_vault:chromatic_iron_ingot'
     }).id('the_vault:bottle_vial_time')
+
+    event.shaped(Item.of('the_vault:bottle', {charges:6,recharge: "time",type:"brew"}),
+        [
+            'DFD',
+            'ABA',
+            'CIC'
+        ], {
+        F: '#minecraft:small_flowers',
+        B: 'minecraft:glass_bottle',
+        I: 'the_vault:echo_pog',
+        A: 'minecraft:golden_apple',
+        C: 'the_vault:vault_diamond',
+        D: 'the_vault:vault_diamond_block'
+    }).id('the_vault:bottle_brew_time')
+
+    event.shaped(Item.of('the_vault:bottle', {charges:6,recharge: "time",type:"potion"}),
+        [
+            'DFD',
+            'ABA',
+            'CIC'
+        ], {
+        F: '#minecraft:small_flowers',
+        B: 'minecraft:glass_bottle',
+        I: 'the_vault:vault_diamond',
+        A: 'minecraft:golden_apple',
+        C: 'the_vault:vault_diamond',
+        D: 'the_vault:vault_essence'
+    }).id('the_vault:bottle_potion_time')
+
+    event.shaped(Item.of('the_vault:bottle', {charges:6,recharge: "time",type:"mixture"}),
+        [
+            'DFD',
+            'ABA',
+            'CIC'
+        ], {
+        F: '#minecraft:small_flowers',
+        B: 'minecraft:glass_bottle',
+        I: 'the_vault:gem_pog',
+        A: 'minecraft:golden_apple',
+        C: 'the_vault:vault_diamond',
+        D: 'the_vault:vault_diamond'
+    }).id('the_vault:bottle_mixture_time')
+
 
     event.shaped(Item.of('the_vault:crystal_budding'),
         [
