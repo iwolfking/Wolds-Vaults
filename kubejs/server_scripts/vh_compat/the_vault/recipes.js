@@ -8,6 +8,17 @@ onEvent("recipes", event => {
     event.remove({id: 'the_vault:crystal_seal_ordinator_build'})
     event.remove({id: 'the_vault:vault_compass'})
 
+    event.shaped(Item.of('the_vault:bottle', {charges:6,recharge: "time",type:"vial"}),
+        [
+            'F',
+            'B',
+            'I'
+        ], {
+        F: '#minecraft:small_flowers',
+        E: 'minecraft:glass_bottle',
+        A: 'the_vault:chromatic_iron_ingot'
+    }).id('the_vault:bottle_vial_time')
+
     event.shaped(Item.of('the_vault:crystal_budding'),
         [
             'AEA',
