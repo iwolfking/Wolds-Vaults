@@ -1537,7 +1537,11 @@
       "name": "Guardians",
       "entity": {
         "id": "the_vault:bruiser_guardian",
-        "Tags": ["no_champion", "ethereal_immune", "no_drops"]
+        "Tags": [
+          "no_champion",
+          "ethereal_immune",
+          "no_drops"
+        ]
       },
       "count": 4,
       "spawner": "elevated"
@@ -1547,7 +1551,11 @@
       "name": "Guardians",
       "entity": {
         "id": "the_vault:bruiser_guardian",
-        "Tags": ["no_champion", "ethereal_immune", "no_drops"]
+        "Tags": [
+          "no_champion",
+          "ethereal_immune",
+          "no_drops"
+        ]
       },
       "count": 8,
       "spawner": "elevated"
@@ -1557,7 +1565,11 @@
       "name": "Guardians",
       "entity": {
         "id": "the_vault:bruiser_guardian",
-        "Tags": ["no_champion", "ethereal_immune", "no_drops"]
+        "Tags": [
+          "no_champion",
+          "ethereal_immune",
+          "no_drops"
+        ]
       },
       "count": 12,
       "spawner": "elevated"
@@ -2033,6 +2045,10 @@
             {
               "value": "leg_battlestaff",
               "weight": 2
+            },
+            {
+              "value": "double_everything",
+              "weight": 4
             }
           ]
         },
@@ -2258,6 +2274,10 @@
             {
               "value": "leg_battlestaff",
               "weight": 2
+            },
+            {
+              "value": "double_everything",
+              "weight": 4
             }
           ]
         }
@@ -2428,6 +2448,10 @@
             {
               "value": "raid_rock_infinite_hard",
               "weight": 10
+            },
+            {
+              "value": "double_everything",
+              "weight": 4
             }
           ]
         }
@@ -2634,6 +2658,10 @@
             {
               "value": "leg_battlestaff",
               "weight": 2
+            },
+            {
+              "value": "double_everything",
+              "weight": 4
             }
           ]
         },
@@ -2859,6 +2887,10 @@
             {
               "value": "leg_battlestaff",
               "weight": 2
+            },
+            {
+              "value": "double_everything",
+              "weight": 4
             }
           ]
         }
@@ -3277,40 +3309,94 @@
     "positive_wildwest": {
       "type": "pool",
       "levels": [
-        { "level": 0, "pool": [
-          { "value": "gilded_chest_big", "weight": 100 },
-          { "value": "ornate_chest_big", "weight": 100 },
-          { "value": "living_chest_big", "weight": 100 },
-          { "value": "coin_pile_big", "weight": 100 }
-        ] }
+        {
+          "level": 0,
+          "pool": [
+            {
+              "value": "gilded_chest_big",
+              "weight": 100
+            },
+            {
+              "value": "ornate_chest_big",
+              "weight": 100
+            },
+            {
+              "value": "living_chest_big",
+              "weight": 100
+            },
+            {
+              "value": "coin_pile_big",
+              "weight": 100
+            }
+          ]
+        }
       ]
     },
     "positive_temple": {
       "type": "pool",
       "levels": [
-        { "level": 0, "pool": [
-          { "value": "gilded_chest_big", "weight": 100 },
-          { "value": "ornate_chest_big", "weight": 100 },
-          { "value": "living_chest_big", "weight": 100 },
-          { "value": "coin_pile_big", "weight": 100 }
-        ] }
+        {
+          "level": 0,
+          "pool": [
+            {
+              "value": "gilded_chest_big",
+              "weight": 100
+            },
+            {
+              "value": "ornate_chest_big",
+              "weight": 100
+            },
+            {
+              "value": "living_chest_big",
+              "weight": 100
+            },
+            {
+              "value": "coin_pile_big",
+              "weight": 100
+            }
+          ]
+        }
       ]
     },
     "negative_temple": {
       "type": "pool",
       "levels": [
-        { "level": 0, "pool": [
-          { "value": "add_low_level_guardians", "weight": 100 }
-        ] },
-        { "level": 20, "pool": [
-          { "value": "add_low_2_level_guardians", "weight": 100 }
-        ] },
-        { "level": 50, "pool": [
-          { "value": "add_guardians", "weight": 100 }
-        ] },
-        { "level": 90, "pool": [
-          { "value": "add_high_level_guardians", "weight": 100 }
-        ] }
+        {
+          "level": 0,
+          "pool": [
+            {
+              "value": "add_low_level_guardians",
+              "weight": 100
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "pool": [
+            {
+              "value": "add_low_2_level_guardians",
+              "weight": 100
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "pool": [
+            {
+              "value": "add_guardians",
+              "weight": 100
+            }
+          ]
+        },
+        {
+          "level": 90,
+          "pool": [
+            {
+              "value": "add_high_level_guardians",
+              "weight": 100
+            }
+          ]
+        }
       ]
     }
   }
