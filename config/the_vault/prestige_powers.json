@@ -182,6 +182,24 @@
       },
       {
         "type": "tiered",
+        "id": "PrismaticPouch",
+        "name": "Prism Possessor",
+        "tiers": [
+          {
+            "type": "crafting_recipe_power",
+            "recipeUnlock": "woldsvaults:prismatic_trinket_pouch",
+            "learnPointCost": 0,
+            "learnKnowledgeCost": 400,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "prism_possessor_1",
+            "tier": 4,
+            "requiredGreedTier": 4
+          }
+        ]
+      },
+      {
+        "type": "tiered",
         "id": "NoVoidUses",
         "name": "Immortal Pendants",
         "tiers": [
@@ -335,6 +353,24 @@
             "regretPointCost": 1,
             "unlockLevel": 0,
             "id": "cat_dodge_1",
+            "tier": 7,
+            "requiredGreedTier": 7
+          }
+        ]
+      },
+      {
+        "type": "tiered",
+        "id": "SpiritsHand",
+        "name": "Spirit's Hand",
+        "tiers": [
+          {
+            "type": "reach_cap_power",
+            "reachIncrease": 0.5,
+            "learnPointCost": 0,
+            "learnKnowledgeCost": 1000,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "spirits_hand_1",
             "tier": 7,
             "requiredGreedTier": 7
           }
@@ -531,11 +567,11 @@
           {
             "type": "wings_power",
             "learnPointCost": 0,
-            "learnKnowledgeCost": 1800,
+            "learnKnowledgeCost": 1600,
             "regretPointCost": 1,
             "unlockLevel": 0,
-            "tier": 11,
-            "requiredGreedTier": 11
+            "tier": 10,
+            "requiredGreedTier": 10
           }
         ]
       },
@@ -601,10 +637,48 @@
           {
             "type": "berserk_power",
             "learnPointCost": 0,
-            "learnKnowledgeCost": 2000,
+            "learnKnowledgeCost": 1800,
             "regretPointCost": 1,
             "unlockLevel": 0,
             "id": "berserk_power_1",
+            "tier": 11,
+            "requiredGreedTier": 11
+          }
+        ]
+      },
+      {
+        "type": "tiered",
+        "id": "BarrierOfResilience",
+        "name": "Barrier of Resilience",
+        "tiers": [
+          {
+            "type": "gear_attribute_power",
+            "attribute": "the_vault:resistance_cap",
+            "value": 0.05,
+            "learnPointCost": 0,
+            "learnKnowledgeCost": 1400,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "barrier_of_resilience_1",
+            "tier": 9,
+            "requiredGreedTier": 9
+          }
+        ]
+      },
+      {
+        "type": "tiered",
+        "id": "WeaverOfTime",
+        "name": "Weaver of Time",
+        "tiers": [
+          {
+            "type": "gear_attribute_power",
+            "attribute": "the_vault:cooldown_reduction_cap",
+            "value": 0.05,
+            "learnPointCost": 0,
+            "learnKnowledgeCost": 2000,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "weaver_of_time_1",
             "tier": 12,
             "requiredGreedTier": 12
           }
