@@ -8105,7 +8105,7 @@
       ],
       "maxTier": 1
     },
-     "greed_below_evolution": {
+     "greed_above_red": {
       "type": "greed",
       "name": {
         "text": "Greed Card"
@@ -8113,8 +8113,8 @@
       "groups": [
         "Greed"
       ],
-      "targetNeighborTypes": ["BELOW"],
-      "targetGroupFilter": ["Evolution"],
+      "targetNeighborTypes": ["ABOVE"],
+      "targetColorFilter": ["RED"],
       "multiplierPool": [
         {
           "tier": 1,
@@ -8131,7 +8131,7 @@
       ],
       "maxTier": 3
     },
-    "greed_above_stat": {
+    "greed_above_blue": {
       "type": "greed",
       "name": {
         "text": "Greed Card"
@@ -8140,24 +8140,24 @@
         "Greed"
       ],
       "targetNeighborTypes": ["ABOVE"],
-      "targetGroupFilter": ["Stat"],
+      "targetColorFilter": ["BLUE"],
       "multiplierPool": [
         {
           "tier": 1,
-          "roll": 1.5
-        },
-        {
-          "tier": 2,
           "roll": 2.0
         },
         {
-          "tier": 3,
+          "tier": 2,
           "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
         }
       ],
       "maxTier": 3
     },
-    "greed_adjacent_arcane": {
+    "greed_above_green": {
       "type": "greed",
       "name": {
         "text": "Greed Card"
@@ -8165,25 +8165,25 @@
       "groups": [
         "Greed"
       ],
-      "targetNeighborTypes": ["ADJACENT"],
-      "targetGroupFilter": ["Arcane"],
+      "targetNeighborTypes": ["ABOVE"],
+      "targetColorFilter": ["GREEN"],
       "multiplierPool": [
         {
           "tier": 1,
-          "roll": 1.5
+          "roll": 2.0
         },
         {
           "tier": 2,
-          "roll": 1.75
+          "roll": 2.5
         },
         {
           "tier": 3,
-          "roll": 2.0
+          "roll": 3.0
         }
       ],
       "maxTier": 3
     },
-    "greed_left_resource": {
+    "greed_above_yellow": {
       "type": "greed",
       "name": {
         "text": "Greed Card"
@@ -8191,51 +8191,25 @@
       "groups": [
         "Greed"
       ],
-      "targetNeighborTypes": ["LEFT"],
-      "targetGroupFilter": ["Resource"],
+      "targetNeighborTypes": ["ABOVE"],
+      "targetColorFilter": ["YELLOW"],
       "multiplierPool": [
         {
           "tier": 1,
-          "roll": 1.5
-        },
-        {
-          "tier": 2,
           "roll": 2.0
         },
         {
-          "tier": 3,
+          "tier": 2,
           "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
         }
       ],
       "maxTier": 3
     },
-    "greed_right_offensive": {
-      "type": "greed",
-      "name": {
-        "text": "Greed Card"
-      },
-      "groups": [
-        "Greed"
-      ],
-      "targetNeighborTypes": ["RIGHT"],
-      "targetGroupFilter": ["Offensive"],
-      "multiplierPool": [
-        {
-          "tier": 1,
-          "roll": 1.5
-        },
-        {
-          "tier": 2,
-          "roll": 2.0
-        },
-        {
-          "tier": 3,
-          "roll": 2.5
-        }
-      ],
-      "maxTier": 3
-    },
-    "greed_below_defensive": {
+    "greed_below_red": {
       "type": "greed",
       "name": {
         "text": "Greed Card"
@@ -8244,45 +8218,19 @@
         "Greed"
       ],
       "targetNeighborTypes": ["BELOW"],
-      "targetGroupFilter": ["Defensive"],
-      "multiplierPool": [
-        {
-          "tier": 1,
-          "roll": 1.5
-        },
-        {
-          "tier": 2,
-          "roll": 2.0
-        },
-        {
-          "tier": 3,
-          "roll": 2.5
-        }
-      ],
-      "maxTier": 3
-    },
-    "greed_above_red": {
-      "type": "greed",
-      "name": {
-        "text": "Greed Card"
-      },
-      "groups": [
-        "Greed"
-      ],
-      "targetNeighborTypes": ["ABOVE"],
       "targetColorFilter": ["RED"],
       "multiplierPool": [
         {
           "tier": 1,
-          "roll": 1.5
-        },
-        {
-          "tier": 2,
           "roll": 2.0
         },
         {
-          "tier": 3,
+          "tier": 2,
           "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
         }
       ],
       "maxTier": 3
@@ -8300,20 +8248,20 @@
       "multiplierPool": [
         {
           "tier": 1,
-          "roll": 1.5
-        },
-        {
-          "tier": 2,
           "roll": 2.0
         },
         {
-          "tier": 3,
+          "tier": 2,
           "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
         }
       ],
       "maxTier": 3
     },
-    "greed_surrounding_any": {
+    "greed_below_green": {
       "type": "greed",
       "name": {
         "text": "Greed Card"
@@ -8321,19 +8269,254 @@
       "groups": [
         "Greed"
       ],
-      "targetNeighborTypes": ["SURROUNDING"],
+      "targetNeighborTypes": ["BELOW"],
+      "targetColorFilter": ["GREEN"],
       "multiplierPool": [
         {
           "tier": 1,
-          "roll": 1.25
+          "roll": 2.0
         },
         {
           "tier": 2,
-          "roll": 1.5
+          "roll": 2.5
         },
         {
           "tier": 3,
-          "roll": 1.75
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_below_yellow": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["BELOW"],
+      "targetColorFilter": ["YELLOW"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_left_red": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["LEFT"],
+      "targetColorFilter": ["RED"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_left_blue": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["LEFT"],
+      "targetColorFilter": ["BLUE"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_left_green": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["LEFT"],
+      "targetColorFilter": ["GREEN"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_left_yellow": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["LEFT"],
+      "targetColorFilter": ["YELLOW"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_right_red": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["RIGHT"],
+      "targetColorFilter": ["RED"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_right_blue": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["RIGHT"],
+      "targetColorFilter": ["BLUE"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_right_green": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["RIGHT"],
+      "targetColorFilter": ["GREEN"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_right_yellow": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["RIGHT"],
+      "targetColorFilter": ["YELLOW"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
         }
       ],
       "maxTier": 3

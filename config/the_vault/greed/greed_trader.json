@@ -211,7 +211,7 @@
       {
         "type": "pool",
         "weight": 2,
-        "poolId": "companion_super_relics",
+        "poolId": "greed_companion_relics",
         "minCoinCost": 33,
         "maxCoinCost": 53
       },
@@ -274,8 +274,8 @@
       },
       {
         "type": "pool",
-        "weight": 3,
-        "poolId": "modified_super_inscriptions",
+        "weight": 2,
+        "poolId": "greed_companion_relics",
         "minCoinCost": 35,
         "maxCoinCost": 55
       },
@@ -345,6 +345,13 @@
       },
       {
         "type": "pool",
+        "weight": 2,
+        "poolId": "greed_companion_relics",
+        "minCoinCost": 37,
+        "maxCoinCost": 57
+      },
+      {
+        "type": "pool",
         "weight": 3,
         "poolId": "catalyst_t2",
         "minCoinCost": 29,
@@ -406,6 +413,13 @@
         "poolId": "greed_booster_packs",
         "minCoinCost": 28,
         "maxCoinCost": 48
+      },
+      {
+        "type": "pool",
+        "weight": 2,
+        "poolId": "greed_companion_relics",
+        "minCoinCost": 39,
+        "maxCoinCost": 59
       },
       {
         "type": "pool",
@@ -473,6 +487,13 @@
       },
       {
         "type": "pool",
+        "weight": 2,
+        "poolId": "greed_companion_relics",
+        "minCoinCost": 41,
+        "maxCoinCost": 61
+      },
+      {
+        "type": "pool",
         "weight": 3,
         "poolId": "catalyst_t2",
         "minCoinCost": 33,
@@ -537,8 +558,8 @@
       },
       {
         "type": "pool",
-        "weight": 3,
-        "poolId": "modified_super_inscriptions",
+        "weight": 2,
+        "poolId": "greed_companion_relics",
         "minCoinCost": 43,
         "maxCoinCost": 63
       },
@@ -615,8 +636,8 @@
       },
       {
         "type": "pool",
-        "weight": 3,
-        "poolId": "modified_super_inscriptions",
+        "weight": 2,
+        "poolId": "greed_companion_relics",
         "minCoinCost": 45,
         "maxCoinCost": 65
       },
@@ -693,8 +714,8 @@
       },
       {
         "type": "pool",
-        "weight": 3,
-        "poolId": "modified_super_inscriptions",
+        "weight": 2,
+        "poolId": "greed_companion_relics",
         "minCoinCost": 47,
         "maxCoinCost": 67
       },
@@ -936,6 +957,62 @@
           "maxTime": 2400,
           "isSuper": true,
           "color": 7012096
+        }
+      }
+    ],
+    "greed_companion_relics": [
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_coins\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_wooden\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_ornate\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_gilded\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_living\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_plentiful\"}"
         }
       }
     ]
