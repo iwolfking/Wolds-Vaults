@@ -99,6 +99,7 @@ onEvent('jei.hide.items', event => {
     event.hide(/dungeons_mobs:.*/)
     event.hide('sophisticatedbackpacks:copper_backpack')
     event.hide('sophisticatedbackpacks:stack_upgrade_starter_tier')
+    event.hide('woldsvaults:augment_assembly_pedestal') //rip to a legend
 })
 
 
