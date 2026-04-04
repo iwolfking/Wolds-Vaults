@@ -10,6 +10,13 @@
       },
       {
         "type": "pool",
+        "weight": 3,
+        "poolId": "greed_maps",
+        "minCoinCost": 35,
+        "maxCoinCost": 50
+      },
+      {
+        "type": "pool",
         "weight": 4,
         "poolId": "catalyst_t1",
         "minCoinCost": 15,
@@ -38,6 +45,13 @@
       }
     ],
     "2": [
+      {
+        "type": "pool",
+        "weight": 3,
+        "poolId": "greed_maps",
+        "minCoinCost": 35,
+        "maxCoinCost": 50
+      },
       {
         "type": "random_etching",
         "weight": 5,
@@ -74,6 +88,13 @@
       }
     ],
     "3": [
+      {
+        "type": "pool",
+        "weight": 3,
+        "poolId": "greed_maps",
+        "minCoinCost": 35,
+        "maxCoinCost": 50
+      },
       {
         "type": "random_etching",
         "weight": 5,
@@ -117,6 +138,13 @@
       }
     ],
     "4": [
+      {
+        "type": "pool",
+        "weight": 3,
+        "poolId": "greed_maps",
+        "minCoinCost": 35,
+        "maxCoinCost": 50
+      },
       {
         "type": "random_etching",
         "weight": 5,
@@ -167,6 +195,13 @@
       }
     ],
     "5": [
+      {
+        "type": "pool",
+        "weight": 3,
+        "poolId": "greed_maps",
+        "minCoinCost": 35,
+        "maxCoinCost": 50
+      },
       {
         "type": "random_etching",
         "weight": 5,
@@ -231,6 +266,13 @@
       }
     ],
     "6": [
+      {
+        "type": "pool",
+        "weight": 3,
+        "poolId": "greed_maps",
+        "minCoinCost": 35,
+        "maxCoinCost": 50
+      },
       {
         "type": "random_etching",
         "weight": 5,
@@ -303,6 +345,13 @@
     ],
     "7": [
       {
+        "type": "pool",
+        "weight": 3,
+        "poolId": "greed_maps",
+        "minCoinCost": 35,
+        "maxCoinCost": 50
+      },
+      {
         "type": "random_etching",
         "weight": 5,
         "minCoinCost": 22,
@@ -373,6 +422,13 @@
       }
     ],
     "8": [
+      {
+        "type": "pool",
+        "weight": 3,
+        "poolId": "greed_maps",
+        "minCoinCost": 35,
+        "maxCoinCost": 50
+      },
       {
         "type": "random_etching",
         "weight": 5,
@@ -445,6 +501,13 @@
     ],
     "9": [
       {
+        "type": "pool",
+        "weight": 3,
+        "poolId": "greed_maps",
+        "minCoinCost": 35,
+        "maxCoinCost": 50
+      },
+      {
         "type": "random_etching",
         "weight": 5,
         "minCoinCost": 26,
@@ -515,6 +578,13 @@
       }
     ],
     "10": [
+      {
+        "type": "pool",
+        "weight": 3,
+        "poolId": "greed_maps",
+        "minCoinCost": 35,
+        "maxCoinCost": 50
+      },
       {
         "type": "random_etching",
         "weight": 5,
@@ -594,6 +664,13 @@
     ],
     "11": [
       {
+        "type": "pool",
+        "weight": 3,
+        "poolId": "greed_maps",
+        "minCoinCost": 35,
+        "maxCoinCost": 50
+      },
+      {
         "type": "random_etching",
         "weight": 5,
         "minCoinCost": 30,
@@ -671,6 +748,13 @@
       }
     ],
     "12": [
+      {
+        "type": "pool",
+        "weight": 3,
+        "poolId": "greed_maps",
+        "minCoinCost": 35,
+        "maxCoinCost": 50
+      },
       {
         "type": "random_etching",
         "weight": 5,
@@ -957,6 +1041,44 @@
           "maxTime": 2400,
           "isSuper": true,
           "color": 7012096
+        }
+      }
+    ],
+    "greed_maps": [
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": 4,
+        "itemStack": {
+          "item": "the_vault:map",
+          "nbt": "{\"the_vault:gear_roll_type_pool\": \"gear_completion_crate_mono\",\"the_vault:map_tier\": -1}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 5,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:map",
+          "nbt": "{\"the_vault:gear_roll_type_pool\": \"gear_completion\",\"the_vault:map_tier\": -1}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 8,
+        "maxGreedTier": 11,
+        "itemStack": {
+          "item": "the_vault:map",
+          "nbt": "{\"the_vault:gear_roll_type_pool\": \"strong_omega\",\"the_vault:map_tier\": -1}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 11,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:map",
+          "nbt": "{\"the_vault:gear_roll_type_pool\": \"gear_treasure_map\",\"the_vault:map_tier\": 4}"
         }
       }
     ],
