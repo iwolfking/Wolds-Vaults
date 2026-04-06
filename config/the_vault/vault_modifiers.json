@@ -62,6 +62,23 @@
         }
       }
     },
+    "the_vault:modifier_type/blacklist_removal": {
+      "the_vault:no_research_lock": {
+        "properties": {
+          "whitelist": [],
+          "useAsBlacklist": true,
+          "appliesToItems": true,
+          "appliesToBlocks": true
+        },
+        "display": {
+          "name": "Bad Idea",
+          "color": "#FF00FF",
+          "description": "Unrestricts all normally restricted items from vaults",
+          "descriptionFormatted": "Unrestricts all normally restricted items from vaults",
+          "icon": "the_vault:gui/modifiers/warrior"
+        }
+      }
+    },
     "the_vault:modifier_type/greedy": {
       "the_vault:greedy_single": {
         "properties": {},
@@ -554,7 +571,7 @@
           "icon": "the_vault:gui/modifiers/god_token_idona"
         }
       },
-       "the_vault:no_souls": {
+      "the_vault:no_souls": {
         "properties": {
           "chance": -10000.0
         },
@@ -693,7 +710,7 @@
           "output": "the_vault:custom_entity_spawner{spawnerGroupName: \"champion_vex\"}",
           "attemptsPerChunk": 1,
           "requireConditions": false,
-           "roomTypeWhitelist": [
+          "roomTypeWhitelist": [
             "COMMON",
             "ORE"
           ]
@@ -711,7 +728,7 @@
           "output": "the_vault:custom_entity_spawner{spawnerGroupName: \"all_ghosts\"}",
           "attemptsPerChunk": 2,
           "requireConditions": false,
-           "roomTypeWhitelist": [
+          "roomTypeWhitelist": [
             "COMMON",
             "ORE"
           ]
@@ -729,7 +746,7 @@
           "output": "the_vault:custom_entity_spawner{spawnerGroupName: \"all_ghosts\"}",
           "attemptsPerChunk": 1,
           "requireConditions": false,
-           "roomTypeWhitelist": [
+          "roomTypeWhitelist": [
             "COMMON",
             "ORE"
           ]
@@ -742,7 +759,7 @@
           "icon": "the_vault:gui/modifiers/ghost_town"
         }
       },
- "the_vault:pandoras_box": {
+      "the_vault:pandoras_box": {
         "properties": {
           "output": "the_vault:pandora_box{action:\"success_memory\"}",
           "attemptsPerChunk": 1,
@@ -844,7 +861,7 @@
           "icon": "the_vault:gui/modifiers/wooden"
         }
       },
-       "the_vault:wooden_bonus": {
+      "the_vault:wooden_bonus": {
         "properties": {
           "output": "the_vault:placeholder[type=wooden_chest]",
           "attemptsPerChunk": 8,
@@ -902,7 +919,7 @@
           "output": "the_vault:vault_bedrock",
           "attemptsPerChunk": 16,
           "requireConditions": false,
-           "roomTypeWhitelist": [
+          "roomTypeWhitelist": [
             "COMMON",
             "ORE"
           ]
@@ -920,7 +937,7 @@
           "output": "minecraft:lava",
           "attemptsPerChunk": 20,
           "requireConditions": false,
-           "roomTypeWhitelist": [
+          "roomTypeWhitelist": [
             "COMMON",
             "ORE"
           ]
@@ -974,7 +991,7 @@
           "output": "the_vault:custom_entity_spawner{spawnerGroupName: \"safari\"}",
           "attemptsPerChunk": 4,
           "requireConditions": false,
-           "roomTypeWhitelist": [
+          "roomTypeWhitelist": [
             "COMMON",
             "ORE"
           ]
@@ -992,7 +1009,7 @@
           "output": "the_vault:custom_entity_spawner{spawnerGroupName: \"frosty\"}",
           "attemptsPerChunk": 7,
           "requireConditions": false,
-           "roomTypeWhitelist": [
+          "roomTypeWhitelist": [
             "COMMON",
             "ORE"
           ]
@@ -1010,7 +1027,7 @@
           "output": "the_vault:custom_entity_spawner{spawnerGroupName: \"electric\"}",
           "attemptsPerChunk": 6,
           "requireConditions": false,
-           "roomTypeWhitelist": [
+          "roomTypeWhitelist": [
             "COMMON",
             "ORE"
           ]
@@ -1028,7 +1045,7 @@
           "output": "the_vault:custom_entity_spawner{spawnerGroupName: \"tnt\"}",
           "attemptsPerChunk": 8,
           "requireConditions": false,
-           "roomTypeWhitelist": [
+          "roomTypeWhitelist": [
             "COMMON",
             "ORE"
           ]
@@ -1046,7 +1063,7 @@
           "output": "the_vault:custom_entity_spawner{spawnerGroupName: \"shulkerbullet\"}",
           "attemptsPerChunk": 24,
           "requireConditions": false,
-           "roomTypeWhitelist": [
+          "roomTypeWhitelist": [
             "COMMON",
             "ORE"
           ]
@@ -1276,8 +1293,7 @@
     },
     "the_vault:modifier_type/crate_item_quantity_settable": {
       "the_vault:map_crate_quantity": {
-        "properties": {
-        },
+        "properties": {},
         "display": {
           "name": "Crate Quantity",
           "color": "#38C9C0",
@@ -1984,7 +2000,7 @@
       }
     },
     "the_vault:modifier_type/mob_attribute": {
-       "the_vault:daycare_scale": {
+      "the_vault:daycare_scale": {
         "properties": {
           "type": "scale",
           "amount": -0.5,
@@ -1998,19 +2014,19 @@
           "icon": "the_vault:gui/modifiers/daycare"
         },
         "the_vault:chunky_scale": {
-        "properties": {
-          "type": "scale",
-          "amount": 0.2,
-          "attributeStackingStrategy": "STACK"
-        },
-        "display": {
-          "name": "Chunky Scale",
-          "color": "#dc693c",
-          "description": "Mobs are chunky in size",
-          "descriptionFormatted": "The mobs are visiting daycare and have shrunk by %d%% size!",
-          "icon": "the_vault:gui/modifiers/daycare"
+          "properties": {
+            "type": "scale",
+            "amount": 0.2,
+            "attributeStackingStrategy": "STACK"
+          },
+          "display": {
+            "name": "Chunky Scale",
+            "color": "#dc693c",
+            "description": "Mobs are chunky in size",
+            "descriptionFormatted": "The mobs are visiting daycare and have shrunk by %d%% size!",
+            "icon": "the_vault:gui/modifiers/daycare"
+          }
         }
-       }
       },
       "the_vault:nightcare": {
         "properties": {
@@ -2110,7 +2126,7 @@
           "icon": "the_vault:gui/modifiers/chunky"
         }
       },
-"the_vault:brutal_chunky_mobs": {
+      "the_vault:brutal_chunky_mobs": {
         "properties": {
           "type": "max_health_additive_percentile",
           "amount": 0.5,
@@ -2404,7 +2420,7 @@
           "icon": "the_vault:gui/modifiers/glued_mobs"
         }
       },
-       "the_vault:tiny_mob_speed": {
+      "the_vault:tiny_mob_speed": {
         "properties": {
           "type": "speed_additive_percentile",
           "amount": 0.002,
@@ -2418,7 +2434,7 @@
           "icon": "the_vault:gui/modifiers/rapid_mobs"
         }
       },
-       "the_vault:slower_mobs": {
+      "the_vault:slower_mobs": {
         "properties": {
           "type": "speed_additive_percentile",
           "amount": -0.15,
@@ -2785,7 +2801,7 @@
           "icon": "the_vault:gui/modifiers/draining"
         }
       },
-           "the_vault:mana_regen_down": {
+      "the_vault:mana_regen_down": {
         "properties": {
           "type": "mana_regen_additive_percentile",
           "amount": -0.25,
@@ -3140,7 +3156,7 @@
           "icon": "the_vault:gui/modifiers/reinforced"
         }
       },
-         "the_vault:no_durability_damage": {
+      "the_vault:no_durability_damage": {
         "properties": {
           "durabilityDamageTakenMultiplier": 0.0
         },
@@ -3487,7 +3503,7 @@
           "icon": "the_vault:gui/modifiers/regeneration"
         }
       },
-       "the_vault:saturation": {
+      "the_vault:saturation": {
         "properties": {
           "effect": "minecraft:saturation",
           "effectAmplifier": 1,
@@ -3740,7 +3756,7 @@
           "icon": "the_vault:gui/modifiers/wendarr_tear"
         }
       },
-       "the_vault:movement_speed": {
+      "the_vault:movement_speed": {
         "properties": {
           "stat": "speed",
           "addend": 0.02
@@ -4026,7 +4042,7 @@
           "icon": "the_vault:gui/modifiers/vulnerable"
         }
       },
-       "the_vault:corroded_veins": {
+      "the_vault:corroded_veins": {
         "properties": {
           "stat": "copiously",
           "addend": -1.0
@@ -4534,7 +4550,7 @@
           "icon": "the_vault:gui/modifiers/experienced"
         }
       },
-       "the_vault:refined_experience": {
+      "the_vault:refined_experience": {
         "properties": {
           "addend": 0.50
         },
@@ -5100,7 +5116,7 @@
           "icon": "the_vault:gui/modifiers/impossible"
         }
       },
-       "the_vault:buffed": {
+      "the_vault:buffed": {
         "properties": {
           "children": {
             "the_vault:energizing": 1,
@@ -5697,7 +5713,7 @@
           "icon": "the_vault:gui/modifiers/challenging"
         }
       },
-       "the_vault:velara_challenge": {
+      "the_vault:velara_challenge": {
         "properties": {
           "children": {
             "the_vault:furious_mobs": 4,
@@ -5712,7 +5728,7 @@
           "icon": "the_vault:gui/modifiers/challenging"
         }
       },
-       "the_vault:tenos_challenge": {
+      "the_vault:tenos_challenge": {
         "properties": {
           "children": {
             "the_vault:furious_mobs": 4,
@@ -5727,7 +5743,7 @@
           "icon": "the_vault:gui/modifiers/challenging"
         }
       },
-       "the_vault:wendarr_challenge": {
+      "the_vault:wendarr_challenge": {
         "properties": {
           "children": {
             "the_vault:furious_mobs": 4,
@@ -5742,7 +5758,7 @@
           "icon": "the_vault:gui/modifiers/challenging"
         }
       },
-       "the_vault:idona_challenge": {
+      "the_vault:idona_challenge": {
         "properties": {
           "children": {
             "the_vault:furious_mobs": 8,
@@ -5928,7 +5944,7 @@
             "the_vault:freezing": 1,
             "the_vault:poisoning": 1,
             "the_vault:wither": 1,
-            "the_vault:bleeding_mobs":1   
+            "the_vault:bleeding_mobs": 1
           }
         },
         "display": {
@@ -5979,7 +5995,7 @@
           "icon": "the_vault:gui/modifiers/armored_mobs"
         }
       },
-     "the_vault:weak_heart": {
+      "the_vault:weak_heart": {
         "properties": {
           "children": {
             "the_vault:antiheal": 1,
@@ -6027,7 +6043,8 @@
           "children": {
             "the_vault:ruthless_mobs": 1,
             "the_vault:critical_mobs": 1,
-            "the_vault:chunky_mobs2": 1          }
+            "the_vault:chunky_mobs2": 1
+          }
         },
         "display": {
           "name": "Focused Mobs",
@@ -6097,7 +6114,6 @@
           "children": {
             "the_vault:chunky_mobs": 1,
             "the_vault:chunky_scale": 1
-            
           }
         },
         "display": {
@@ -6134,7 +6150,7 @@
           "icon": "the_vault:gui/modifiers/flame"
         }
       },
-       "the_vault:daycare": {
+      "the_vault:daycare": {
         "properties": {
           "children": {
             "the_vault:daycare_scale": 1,
@@ -7251,10 +7267,9 @@
         }
       }
     },
-     "the_vault:modifier_type/player_no_temporal_shard": {
+    "the_vault:modifier_type/player_no_temporal_shard": {
       "the_vault:no_temporal_shard": {
-        "properties": {
-        },
+        "properties": {},
         "display": {
           "name": "No Temporal Shard",
           "color": "#ffcc73",
@@ -7445,7 +7460,7 @@
           "icon": "the_vault:gui/modifiers/haunted"
         }
       },
-"the_vault:lunar": {
+      "the_vault:lunar": {
         "properties": {
           "filter": "",
           "effect": "minecraft:levitation",
@@ -7539,7 +7554,7 @@
           "icon": "the_vault:gui/modifiers/vendoor_doors"
         }
       },
-     "the_vault:vendoor_doors": {
+      "the_vault:vendoor_doors": {
         "properties": {
           "entries": [
             {
@@ -7989,7 +8004,7 @@
         }
       }
     },
-    "the_vault:modifier_type/legendary_modifier_duration":  {
+    "the_vault:modifier_type/legendary_modifier_duration": {
       "the_vault:legendary_duration": {
         "properties": {
           "reduction": 0.8
@@ -8002,7 +8017,7 @@
         }
       }
     },
-    "the_vault:modifier_type/spell_fail_chance":  {
+    "the_vault:modifier_type/spell_fail_chance": {
       "the_vault:spell_failure": {
         "properties": {
           "spellFailureChance": 0.5
@@ -8030,7 +8045,8 @@
             }
           },
           "roomTypeWhitelist": [
-            "COMMON", "ORE"
+            "COMMON",
+            "ORE"
           ]
         },
         "display": {
@@ -8054,7 +8070,7 @@
         }
       }
     },
-    "the_vault:modifier_type/gemstones_on_kill":  {
+    "the_vault:modifier_type/gemstones_on_kill": {
       "the_vault:gemstones_on_kill": {
         "properties": {
           "gemstoneChance": 0.01
@@ -8067,34 +8083,34 @@
         }
       }
     },
-     "the_vault:modifier_type/pool_reference_weight": {
+    "the_vault:modifier_type/pool_reference_weight": {
       "the_vault:omega_fortune": {
-          "properties": {
-              "references": [
-                  "the_vault:vault/rooms/omega_rooms"
-              ],
-              "weightMultiplier": 10.0
-          },
-          "display": {
-              "name": "Omega Bloom",
-              "color": "#6AFF00",
-              "description": "10x Omega Room Chance",
-              "icon": "the_vault:gui/modifiers/omega_fortune"
-          }
+        "properties": {
+          "references": [
+            "the_vault:vault/rooms/omega_rooms"
+          ],
+          "weightMultiplier": 10.0
+        },
+        "display": {
+          "name": "Omega Bloom",
+          "color": "#6AFF00",
+          "description": "10x Omega Room Chance",
+          "icon": "the_vault:gui/modifiers/omega_fortune"
+        }
       },
       "the_vault:challenge_fortune": {
-          "properties": {
-              "references": [
-                  "the_vault:vault/rooms/challenge_rooms"
-              ],
-              "weightMultiplier": 5.0
-          },
-          "display": {
-              "name": "Challenge Vein",
-              "color": "#FF4500",
-              "description": "10x Challenge Room Chance",
-              "icon": "the_vault:gui/modifiers/challenge_fortune"
-          }
+        "properties": {
+          "references": [
+            "the_vault:vault/rooms/challenge_rooms"
+          ],
+          "weightMultiplier": 5.0
+        },
+        "display": {
+          "name": "Challenge Vein",
+          "color": "#FF4500",
+          "description": "10x Challenge Room Chance",
+          "icon": "the_vault:gui/modifiers/challenge_fortune"
+        }
       }
     },
     "the_vault:modifier_type/objective_shuffle": {
@@ -8125,8 +8141,7 @@
     },
     "the_vault:modifier_type/no_companion": {
       "the_vault:no_companion": {
-        "properties": {
-        },
+        "properties": {},
         "display": {
           "name": "Companionless",
           "color": "#DB7C00",
