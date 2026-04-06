@@ -17,34 +17,8 @@
                             }
                         },
                         "weight": 20.0
-                    },
-                    {
-                        "value": {
-                            "modifiers": [
-                                "the_vault:coin_cascade"
-                            ],
-                            "model": {
-                                "min": 2,
-                                "max": 2,
-                                "type": "uniform"
-                            }
-                        },
-                        "weight": 3.0
-                    },
-                    {
-                        "value": {
-                            "modifiers": [
-                                "the_vault:coin_pile",
-                                "the_vault:companion_challenge"
-                            ],
-                            "model": {
-                                "min": 2,
-                                "max": 2,
-                                "type": "uniform"
-                            }
-                        },
-                        "weight": 1.0
                     }
+                
                 ]
             }
         ],
@@ -65,33 +39,6 @@
                             }
                         },
                         "weight": 20.0
-                    },
-                    {
-                        "value": {
-                            "modifiers": [
-                                "the_vault:wooden_cascade"
-                            ],
-                            "model": {
-                                "min": 4,
-                                "max": 4,
-                                "type": "uniform"
-                            }
-                        },
-                        "weight": 3.0
-                    },
-                    {
-                        "value": {
-                            "modifiers": [
-                                "the_vault:wooden_bonus",
-                                "the_vault:companion_challenge"
-                            ],
-                            "model": {
-                                "min": 4,
-                                "max": 4,
-                                "type": "uniform"
-                            }
-                        },
-                        "weight": 1.0
                     }
                 ]
             }
@@ -113,33 +60,6 @@
                             }
                         },
                         "weight": 20.0
-                    },
-                    {
-                        "value": {
-                            "modifiers": [
-                                "the_vault:ornate_cascade"
-                            ],
-                            "model": {
-                                "min": 1,
-                                "max": 1,
-                                "type": "uniform"
-                            }
-                        },
-                        "weight": 3.0
-                    },
-                    {
-                        "value": {
-                            "modifiers": [
-                                "the_vault:ornate",
-                                "the_vault:companion_challenge"
-                            ],
-                            "model": {
-                                "min": 1,
-                                "max": 1,
-                                "type": "uniform"
-                            }
-                        },
-                        "weight": 1.0
                     }
                 ]
             }
@@ -161,33 +81,6 @@
                             }
                         },
                         "weight": 20.0
-                    },
-                    {
-                        "value": {
-                            "modifiers": [
-                                "the_vault:gilded_cascade"
-                            ],
-                            "model": {
-                                "min": 3,
-                                "max": 3,
-                                "type": "uniform"
-                            }
-                        },
-                        "weight": 3.0
-                    },
-                    {
-                        "value": {
-                            "modifiers": [
-                                "the_vault:gilded",
-                                "the_vault:companion_challenge"
-                            ],
-                            "model": {
-                                "min": 3,
-                                "max": 3,
-                                "type": "uniform"
-                            }
-                        },
-                        "weight": 1.0
                     }
                 ]
             }
@@ -209,33 +102,6 @@
                             }
                         },
                         "weight": 20.0
-                    },
-                    {
-                        "value": {
-                            "modifiers": [
-                                "the_vault:living_cascade"
-                            ],
-                            "model": {
-                                "min": 6,
-                                "max": 6,
-                                "type": "uniform"
-                            }
-                        },
-                        "weight": 3.0
-                    },
-                    {
-                        "value": {
-                            "modifiers": [
-                                "the_vault:living",
-                                "the_vault:companion_challenge"
-                            ],
-                            "model": {
-                                "min": 6,
-                                "max": 6,
-                                "type": "uniform"
-                            }
-                        },
-                        "weight": 1.0
                     }
                 ]
             }
@@ -257,24 +123,11 @@
                             }
                         },
                         "weight": 20.0
-                    },
-                    {
-                        "value": {
-                            "modifiers": [
-                                "the_vault:plentiful"
-                            ],
-                            "model": {
-                                "min": 5,
-                                "max": 5,
-                                "type": "uniform"
-                            }
-                        },
-                        "weight": 3.0
                     }
                 ]
             }
         ],
-        "the_vault:random": [
+        "the_vault:ancient_4": [
             {
                 "level": 0,
                 "pool": [
@@ -283,16 +136,198 @@
                             "modifiers": [
                                 "@the_vault:companion_modifiers",
                                 "@the_vault:companion_modifiers",
+                                "@the_vault:companion_modifiers",
+                                "@the_vault:companion_modifiers",
+                                "the_vault:companion_challenge",
+                                "the_vault:companion_challenge",
+                                "the_vault:companion_challenge",
                                 "the_vault:companion_challenge"
                             ],
                             "model": {
                                 "min": 7,
-                                "max": 10,
+                                "max": 8,
                                 "type": "uniform"
-                            }
+                            },
+                            "isAncient": true
                         },
                         "weight": 1.0
                     }
+                ]
+            }
+        ],
+        "the_vault:ancient_3": [
+            {
+                "level": 0,
+                "pool": [
+                    {
+                        "value": {
+                            "modifiers": [
+                                "@the_vault:companion_modifiers",
+                                "@the_vault:companion_modifiers",
+                                "@the_vault:companion_modifiers",
+                                "the_vault:companion_challenge",
+                                "the_vault:companion_challenge",
+                                "the_vault:companion_challenge"
+                            ],
+                            "model": {
+                                "min": 9,
+                                "max": 10,
+                                "type": "uniform"
+                            },
+                            "isAncient": true
+                        },
+                        "weight": 1.0
+                    }
+                ]
+            }
+        ],
+        "the_vault:greed_coins": [
+            {
+                "level": 0,
+                "pool": [
+                    {
+                        "value": {
+                            "modifiers": [
+                                "the_vault:coin_cascade",
+                                "the_vault:coin_cascade",
+                                "the_vault:companion_challenge",
+                                "the_vault:companion_challenge"
+                            ],
+                            "model": {
+                                "min": 2,
+                                "max": 2,
+                                "type": "uniform"
+                            },
+                            "isGreed": true
+                        },
+                        "weight": 20.0
+                    }
+
+                ]
+            }
+        ],
+        "the_vault:greed_wooden": [
+            {
+                "level": 0,
+                "pool": [
+                    {
+                        "value": {
+                            "modifiers": [
+                                "the_vault:wooden_cascade",
+                                "the_vault:wooden_cascade",
+                                "the_vault:companion_challenge",
+                                "the_vault:companion_challenge"
+                            ],
+                            "model": {
+                                "min": 4,
+                                "max": 4,
+                                "type": "uniform"
+                            },
+                            "isGreed": true
+                        },
+                        "weight": 20.0
+                    }
+
+                ]
+            }
+        ],
+        "the_vault:greed_ornate": [
+            {
+                "level": 0,
+                "pool": [
+                    {
+                        "value": {
+                            "modifiers": [
+                                "the_vault:ornate_cascade",
+                                "the_vault:ornate_cascade",
+                                "the_vault:companion_challenge",
+                                "the_vault:companion_challenge"
+                            ],
+                            "model": {
+                                "min": 1,
+                                "max": 1,
+                                "type": "uniform"
+                            },
+                            "isGreed": true
+                        },
+                        "weight": 20.0
+                    }
+
+                ]
+            }
+        ],
+        "the_vault:greed_gilded": [
+            {
+                "level": 0,
+                "pool": [
+                    {
+                        "value": {
+                            "modifiers": [
+                                "the_vault:gilded_cascade",
+                                "the_vault:gilded_cascade",
+                                "the_vault:companion_challenge",
+                                "the_vault:companion_challenge"
+                            ],
+                            "model": {
+                                "min": 3,
+                                "max": 3,
+                                "type": "uniform"
+                            },
+                            "isGreed": true
+                        },
+                        "weight": 20.0
+                    }
+
+                ]
+            }
+        ],
+        "the_vault:greed_living": [
+            {
+                "level": 0,
+                "pool": [
+                    {
+                        "value": {
+                            "modifiers": [
+                                "the_vault:living_cascade",
+                                "the_vault:living_cascade",
+                                "the_vault:companion_challenge",
+                                "the_vault:companion_challenge"
+                            ],
+                            "model": {
+                                "min": 6,
+                                "max": 6,
+                                "type": "uniform"
+                            },
+                            "isGreed": true
+                        },
+                        "weight": 20.0
+                    }
+
+                ]
+            }
+        ],
+        "the_vault:greed_plentiful": [
+            {
+                "level": 0,
+                "pool": [
+                    {
+                        "value": {
+                            "modifiers": [
+                                "the_vault:plentiful",
+                                "the_vault:plentiful",
+                                "the_vault:companion_challenge",
+                                "the_vault:companion_challenge"
+                            ],
+                            "model": {
+                                "min": 5,
+                                "max": 5,
+                                "type": "uniform"
+                            },
+                            "isGreed": true
+                        },
+                        "weight": 20.0
+                    }
+
                 ]
             }
         ]
@@ -436,6 +471,85 @@
             "OMEGA": 0.02
         }
     },
+    "ancientRelicChances": {
+        "the_vault:wooden_chest": {
+            "COMMON": 0.0,
+            "RARE": 0.0,
+            "EPIC": 0.0,
+            "OMEGA": 0.0
+        },
+        "the_vault:gilded_chest": {
+            "COMMON": 0.0005,
+            "RARE": 0.001,
+            "EPIC": 0.002,
+            "OMEGA": 0.005
+        },
+        "the_vault:living_chest": {
+            "COMMON": 0.0005,
+            "RARE": 0.001,
+            "EPIC": 0.002,
+            "OMEGA": 0.005
+        },
+        "the_vault:ornate_chest": {
+            "COMMON": 0.0005,
+            "RARE": 0.001,
+            "EPIC": 0.002,
+            "OMEGA": 0.005
+        },
+        "the_vault:ornate_strongbox": {
+            "COMMON": 0.001,
+            "RARE": 0.002,
+            "EPIC": 0.005,
+            "OMEGA": 0.01
+        },
+        "the_vault:gilded_strongbox": {
+            "COMMON": 0.001,
+            "RARE": 0.002,
+            "EPIC": 0.005,
+            "OMEGA": 0.01
+        },
+        "the_vault:living_strongbox": {
+            "COMMON": 0.001,
+            "RARE": 0.002,
+            "EPIC": 0.005,
+            "OMEGA": 0.01
+        },
+        "the_vault:ornate_barrel": {
+            "COMMON": 0.001,
+            "RARE": 0.002,
+            "EPIC": 0.005,
+            "OMEGA": 0.01
+        },
+        "the_vault:gilded_barrel": {
+            "COMMON": 0.001,
+            "RARE": 0.002,
+            "EPIC": 0.005,
+            "OMEGA": 0.01
+        },
+        "the_vault:living_barrel": {
+            "COMMON": 0.001,
+            "RARE": 0.002,
+            "EPIC": 0.005,
+            "OMEGA": 0.01
+        },
+        "the_vault:wooden_barrel": {
+            "COMMON": 0.0,
+            "RARE": 0.0,
+            "EPIC": 0.0,
+            "OMEGA": 0.0
+        }
+    },
+    "ancientRelicMinLevel": 100,
+    "ancientRelicPoolWeights": [
+        {
+            "value": "the_vault:ancient_3",
+            "weight": 3.0
+        },
+        {
+            "value": "the_vault:ancient_4",
+            "weight": 1.0
+        }
+    ],
     "lootMinLevel": 50,
     "lootPoolWeights": [
         {

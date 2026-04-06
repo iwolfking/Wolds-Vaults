@@ -1,0 +1,1613 @@
+{
+  "quests": [
+    {
+      "type": "checkmark",
+      "id": "welcome_quest",
+      "name": "Introdu\u00e7\u00e3o ao Vault Hunters",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Bem-vindo ao Vault Hunters Terceira Edi\u00e7\u00e3o!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEste modpack transforma sua experi\u00eancia de Minecraft em um jogo RPG de a\u00e7\u00e3o baseado em progress\u00e3o. Ele \u00e9 projetado para ser jogado por um longo per\u00edodo de tempo e tem muitas configura\u00e7\u00f5es de acessibilidade para personalizar sua jogatina ao seu estilo de jogo!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nNesta linha de miss\u00f5es, ensinamos os fundamentos b\u00e1sicos do jogo e ajudamos voc\u00ea a come\u00e7ar sua jornada.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAntes de come\u00e7ar a jogar, certifique-se de definir a dificuldade que melhor se adapta a voc\u00ea, isso pode ser feito no menu de pausa, e oferecemos 5 dificuldades diferentes. Essas configura\u00e7\u00f5es afetam a sa\u00fade e o dano dos mobs dentro dos cofres.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAl\u00e9m das diferentes dificuldades, voc\u00ea tamb\u00e9m pode selecionar seu modo de jogo. Vault Hunters possui tr\u00eas modos de jogo; Normal, Casual e Hardcore, sendo Normal o modo padr\u00e3o. Seu modo de jogo pode ser definido usando /gamerule vaultMode.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nNormal",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - morrer ap\u00f3s o n\u00edvel vinte faz com que um esp\u00edrito apare\u00e7a no seu ponto de spawn, usando um extrator de esp\u00edritos voc\u00ea pode recuperar seus itens perdidos",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCasual",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - morrer ap\u00f3s o n\u00edvel vinte n\u00e3o causa perda de itens, voc\u00ea apenas recebe algum dano de durabilidade",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nHardcore",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - morrer ap\u00f3s o n\u00edvel vinte causa perda permanente de itens e invent\u00e1rio",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n/party invite nomedojogador ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "convidar\u00e1 amigos para seu grupo para que possam explorar cofres juntos e ver a sa\u00fade uns dos outros.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n/the_vault research_team invite nomedojogador ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "agrupar\u00e1 jogadores em um time para que possam trabalhar em suas pesquisas juntos.",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/welcome",
+      "targetId": "the_vault:raw_chromatic_iron",
+      "targetProgress": 1.0,
+      "unlockedBy": "",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:cooked_vault_steak",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      },
+      "questTypes": ["SKY", "NORMAL"]
+    },
+    {
+      "type": "collection",
+      "id": "find_chromatic_iron",
+      "name": "Ferro Crom\u00e1tico",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "O primeiro passo na sua jornada como Ca\u00e7ador de Cofres \u00e9 encontrar o ",
+            "color": "$text"
+          },
+          {
+            "text": "metal principal",
+            "color": "$text"
+          },
+          {
+            "text": " do Vault Hunters, ",
+            "color": "$text"
+          },
+          {
+            "text": "Ferro Crom\u00e1tico",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Ferro Crom\u00e1tico",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " \u00e9 encontrado na parte mais profunda do seu mundo, abaixo de ",
+            "color": "$text"
+          },
+          {
+            "text": "Y-30",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Pode ser minerado com uma ",
+            "color": "$text"
+          },
+          {
+            "text": "Picareta de Ferro",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " e pode ser encantado com fortuna para aumentar seu rendimento!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsiga 16x Ferro Crom\u00e1tico Bruto",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/find_chromatic_iron",
+      "targetId": "the_vault:raw_chromatic_iron",
+      "targetProgress": 16.0,
+      "unlockedBy": "welcome_quest",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_iron_ingot",
+            "amount": 24
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "mining",
+      "id": "mine_vault_stone",
+      "name": "Pedra de Cofre",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "O pr\u00f3ximo passo na sua aventura \u00e9 encontrar ",
+            "color": "$text"
+          },
+          {
+            "text": "Pedra de Cofre",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Voc\u00ea pode j\u00e1 ter encontrado essa pedra muito escura enquanto procurava Ferro Crom\u00e1tico, pois ela pode ser encontrada em qualquer lugar abaixo de ",
+            "color": "$text"
+          },
+          {
+            "text": "Y-5",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\nAo minerar ",
+            "color": "$text"
+          },
+          {
+            "text": "Pedra de Cofre",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " sem toque suave, h\u00e1 uma chance de obter ",
+            "color": "$text"
+          },
+          {
+            "text": "uma Rocha de Cofre",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", certifique-se de n\u00e3o jog\u00e1-las fora pois elas s\u00e3o a chave para entrar em um cofre!",
+            "color": "$text"
+          },
+          {
+            "text": ".\n",
+            "color": "$text"
+          },
+          {
+            "text": "Pedra de Cofre",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " em si \u00e9 um material muito resistente usado para muitas coisas diferentes, mas talvez o mais importante \u00e9 que \u00e9 usado para fazer seus portais de cofre!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nMinere 10x Pedra de Cofre",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/vault_stone",
+      "targetId": "the_vault:vault_stone",
+      "targetProgress": 10,
+      "unlockedBy": "welcome_quest",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_rock",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_vault_altar",
+      "name": "O Altar do Cofre",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Agora \u00e9 hora de criar seu Altar do Cofre, colocar sua rocha de cofre no seu Altar do Cofre \u00e9 como voc\u00ea obt\u00e9m sua receita para criar um Cristal de Cofre",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsiga um Altar do Cofre",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/altar",
+      "targetId": "the_vault:vault_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "mine_vault_stone",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:stone_button"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "craft_crystal",
+      "id": "complete_vault_crystal",
+      "name": "Cristais de Cofre",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Chegou a hora de forjar seu primeiro Cristal de Cofre! Cada receita \u00e9 diferente e a quantidade de ingredientes necess\u00e1rios aumentar\u00e1 lentamente conforme voc\u00ea cria mais cristais.\n\nUsar uma Rocha de Cofre em um Altar do Cofre identificar\u00e1 os itens necess\u00e1rios para completar a receita do cristal. Voc\u00ea pode enviar itens ao altar jogando-os do seu invent\u00e1rio perto do altar. Uma vez que a receita do altar esteja conclu\u00edda, aplicar um sinal de redstone completa o processo de cria\u00e7\u00e3o.\n\nSe voc\u00ea tiver dificuldade em identificar o que \u00e9 um item, voc\u00ea pode agachar para ver seu nome.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nComplete um Cristal de Cofre",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/crystal",
+      "targetId": "the_vault:vault_crystal",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_vault_altar",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:shulker_box"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "learning_skills",
+      "name": "Habilidades e Talentos",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Antes de entrar no seu primeiro cofre, queremos inform\u00e1-lo sobre algumas partes importantes do Vault Hunters. Vault Hunters tem um sistema detalhado de Habilidades e Talentos que voc\u00ea utilizar\u00e1 para tornar sua experi\u00eancia no Cofre muito mais agrad\u00e1vel.\n\nHabilidades geralmente focam em dar habilidades ativas poderosas que mudam significativamente como voc\u00ea joga; desde habilidades de dano como Nova ou Rampage, habilidades de cura como Heal e Totem, e habilidades de sobreviv\u00eancia como Dash e Ghost Walk.\n\nTalentos fornecem ao jogador b\u00f4nus passivos. H\u00e1 uma grande variedade de Talentos para conferir, cada um projetado para melhorar aspectos espec\u00edficos da sua experi\u00eancia.\n\nConfira a interface do Cofre pressionando 'H' por padr\u00e3o e clique na segunda e terceira abas no topo para ver Habilidades e Talentos respectivamente.\n\nSua recompensa por esta miss\u00e3o \u00e9 ",
+            "color": "$text"
+          },
+          {
+            "text": "1 Ponto de Habilidade",
+            "color": "$manaCost"
+          },
+          {
+            "text": ", \u00e9 altamente recomendado pegar a ",
+            "color": "$text"
+          },
+          {
+            "text": "Habilidade de Cura",
+            "color": "$heal"
+          },
+          {
+            "text": " se esta \u00e9 sua primeira vez jogando, pois n\u00e3o h\u00e1 regenera\u00e7\u00e3o natural de sa\u00fade nos cofres",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/skills",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "complete_vault_crystal",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:cooked_vault_steak",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0,
+        "skillPoints": 1
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_enchanter",
+      "name": "Encantamento Melhorado",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "No Vault Hunters, os Encantamentos s\u00e3o um pouco diferentes do Minecraft Vanilla. Encantamentos de Prote\u00e7\u00e3o e Ofensivos foram desativados, para permitir maior escala de atributos defensivos e ofensivos mais adiante. No entanto, h\u00e1 alguns encantamentos que funcionam tanto em ferramentas e equipamentos vanilla quanto em ferramentas e equipamentos de cofre.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nO Encantador do Cofre \u00e9 sua mesa principal para encantar qualquer equipamento ou ferramenta, sempre oferecer\u00e1 o encantamento m\u00e1ximo dispon\u00edvel pelo custo de algumas esmeraldas e experi\u00eancia, crie um e tente colocar qualquer item encant\u00e1vel nele.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsiga um Encantador do Cofre",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/enchanter",
+      "targetId": "the_vault:vault_enchanter",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:experience_bottle",
+            "amount": 20
+          },
+          {
+            "item": "minecraft:emerald",
+            "amount": 50
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_potions",
+      "name": "Po\u00e7\u00f5es de Cofre",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "As po\u00e7\u00f5es de cofre s\u00e3o uma alternativa fora de combate \u00e0s ",
+            "color": "$text"
+          },
+          {
+            "text": "Habilidades de Cura",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\nElas s\u00e3o o \u00fanico tipo de po\u00e7\u00e3o que n\u00e3o irrita ",
+            "color": "$text"
+          },
+          {
+            "text": "Velara",
+            "color": "$velara"
+          },
+          {
+            "text": " dentro dos cofres!\n\nPo\u00e7\u00f5es de Cofre t\u00eam uma quantidade definida de ",
+            "color": "$text"
+          },
+          {
+            "text": "cargas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " para serem usadas em cada cofre, recarregando completamente assim que voc\u00ea sair de um cofre.\nCome\u00e7ando, voc\u00ea tem acesso ao n\u00edvel de po\u00e7\u00f5es ",
+            "color": "$text"
+          },
+          {
+            "text": "Frasco",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", mais adiante na sua aventura voc\u00ea ter\u00e1 a possibilidade de pesquisar n\u00edveis melhores, concedendo curas maiores com cada carga.\nAo criar sua primeira Po\u00e7\u00e3o (",
+            "color": "$text"
+          },
+          {
+            "text": "Frasco",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ") voc\u00ea poder\u00e1 escolher entre 3 mec\u00e2nicas de recarga diferentes;\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Massacre",
+            "color": "$red"
+          },
+          {
+            "text": ", que recarrega seu frasco ao matar uma certa quantidade de mobs\n",
+            "color": "$text"
+          },
+          {
+            "text": "Goblin",
+            "color": "$yellow"
+          },
+          {
+            "text": ", que recarrega seu frasco ao saquear uma certa quantidade de ba\u00fas\n",
+            "color": "$text"
+          },
+          {
+            "text": "Pacifista",
+            "color": "$blue"
+          },
+          {
+            "text": ", que recarrega seu frasco passivamente ao longo do tempo\n\nN\u00e3o se preocupe, voc\u00ea pode criar todos e ver qual se encaixa melhor, mas s\u00f3 pode usar um por cofre!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCrie um Frasco",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/potion",
+      "targetId": "the_vault:bottle",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:ender_pearl"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "enter_vault",
+      "id": "enter_vault",
+      "name": "Ca\u00e7ando Cofres",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Construa um Portal de Cofre com qualquer combina\u00e7\u00e3o de blocos de Pedra de Cofre de maneira similar ao Portal do Nether. Uma vez que o portal esteja constru\u00eddo, voc\u00ea pode clicar com o bot\u00e3o direito com seu Cristal de Cofre no quadro para abrir um Portal.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nH\u00e1 um limite de tempo dentro do Cofre, exigindo que voc\u00ea o complete antes que chegue a 0. Marcar seu caminho com blocos permitir\u00e1 que voc\u00ea encontre facilmente o caminho de volta ao seu portal.\n\nSe voc\u00ea morrer, voltar\u00e1 ao overworld e se estiver abaixo do n\u00edvel 20 do cofre, receber\u00e1 'Gra\u00e7a de Iniciante' que permitir\u00e1 que voc\u00ea mantenha todo o seu saque independentemente de morrer ou escapar.\n\nSe voc\u00ea conseguir completar o Cofre, receber\u00e1 uma Caixa que pode ser colocada e ent\u00e3o Agachar+Clique Direito para abrir!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEntre em um Cofre",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/enter_vault",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:sword",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:shield",
+            "nbt": ""
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "shard_pouch",
+      "name": "Saqueando!",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Saquear nos cofres \u00e9 divertido, e h\u00e1 muitas coisas empolgantes para encontrar!\nEstat\u00edsticas de equipamento como",
+            "color": "$text"
+          },
+          {
+            "text": " quantidade de itens ",
+            "color": "$itemquantity"
+          },
+          {
+            "text": "aumenta a quantidade de saque que voc\u00ea encontra enquanto",
+            "color": "$text"
+          },
+          {
+            "text": " raridade de itens ",
+            "color": "$itemrarity"
+          },
+          {
+            "text": "faz voc\u00ea encontrar saque de n\u00edvel superior.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Al\u00e9m dos ba\u00fas terem saque, matar mobs produzir\u00e1",
+            "color": "$text"
+          },
+          {
+            "text": " fragmentos de alma",
+            "color": "$soulchance"
+          },
+          {
+            "text": ", que podem ser usados para comprar itens raros no",
+            "color": "$text"
+          },
+          {
+            "text": " Mercado Negro",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\nNo entanto, todo esse saque pode rapidamente se tornar esmagador, e todo bom ca\u00e7ador precisa de boa organiza\u00e7\u00e3o de saque!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Caixas Shulker podem ser muito \u00fateis no in\u00edcio, e suas conchas podem ser encontradas dentro de ",
+            "color": "$text"
+          },
+          {
+            "text": "Ba\u00fas de Madeira",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", no entanto, uma ",
+            "color": "$text"
+          },
+          {
+            "text": "Bolsa",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " \u00e9 uma maneira muito melhor e mais confi\u00e1vel de coletar seu saque.\n",
+            "color": "$text"
+          },
+          {
+            "text": "A primeira bolsa da sua jornada \u00e9 por nossa conta, mas recomendamos criar mais conforme voc\u00ea progride. Bolsas maiores, cintos e mochilas podem ser pesquisados mais tarde para obter ",
+            "color": "$text"
+          },
+          {
+            "text": "conhecimento\n\n",
+            "color": "$knowledge"
+          },
+          {
+            "text": "As bolsas podem ser melhoradas com cart\u00f5es de upgrade para carregar mais saque, pegar automaticamente o saque quando voc\u00ea quebra um ba\u00fa, eliminar saque excedente e at\u00e9 aliment\u00e1-lo!\n",
+            "color": "$text"
+          },
+          {
+            "text": "A bolsa tamb\u00e9m pode ser configurada com um filtro, ou deixada vazia para aceitar qualquer item.\nPara configurar um filtro, abra sua bolsa e navegue at\u00e9 a aba de ",
+            "color": "$text"
+          },
+          {
+            "text": "Configura\u00e7\u00f5es da Mochila",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " dentro dela. A aba de ",
+            "color": "$text"
+          },
+          {
+            "text": "Configura\u00e7\u00f5es de Mem\u00f3ria de Slots",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " permite que voc\u00ea defina um filtro para sua bolsa para lista branca ou lista negra de certo conte\u00fado. Esses filtros tamb\u00e9m podem ser salvos e reaplicados a outras bolsas mais tarde. Recomendamos que voc\u00ea brinque com essas configura\u00e7\u00f5es at\u00e9 entender o sistema.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Completar esta miss\u00e3o recompensar\u00e1 voc\u00ea com duas melhorias b\u00e1sicas, que podem ser instaladas na sua bolsa:\n",
+            "color": "$text"
+          },
+          {
+            "text": "A Melhoria de Coleta",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " que far\u00e1 a bolsa pegar automaticamente itens do ch\u00e3o, quando um ba\u00fa \u00e9 quebrado ou itens s\u00e3o jogados dele\n",
+            "color": "$text"
+          },
+          {
+            "text": "A Melhoria de Elimina\u00e7\u00e3o",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " que pode ser configurada para eliminar (deletar) qualquer item excedente que n\u00e3o cabe na sua bolsa. Eliminar itens pode parecer estranho, mas pode ser extremamente \u00fatil para melhorar seu saque no in\u00edcio do jogo. No entanto, s\u00e3o caras de criar, ent\u00e3o use a desta miss\u00e3o sabiamente!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Fragmentos de Alma",
+            "color": "$soulchance"
+          },
+          {
+            "text": ", os itens dropados pelos mobs, s\u00e3o melhor armazenados em uma ",
+            "color": "$text"
+          },
+          {
+            "text": "Bolsa de Fragmentos",
+            "color": "$soulchance"
+          },
+          {
+            "text": ". A Bolsa de Fragmentos s\u00f3 pode armazenar Fragmentos de Alma, mas uma quantidade infinita deles desde que esteja no seu invent\u00e1rio. Tamb\u00e9m pode ser deixada no seu invent\u00e1rio ao comprar coisas do Mercado Negro, sem que voc\u00ea precise contar manualmente os Fragmentos de Alma, \u00e9 indispens\u00e1vel para qualquer ca\u00e7ador!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCrie uma Bolsa de Fragmentos",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/black_market2",
+      "targetId": "the_vault:shard_pouch",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "sophisticatedbackpacks:backpack",
+            "amount": 1
+          },
+          {
+            "item": "sophisticatedbackpacks:pickup_upgrade",
+            "amount": 1
+          },
+          {
+            "item": "sophisticatedbackpacks:void_upgrade",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "coin_pouch",
+      "name": "Bolsa de Moedas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "A melhor forma de armazenar seu ",
+            "color": "$text"
+          },
+          {
+            "text": "bronze",
+            "color": "$bronze"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "prata",
+            "color": "$common"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "ouro",
+            "color": "$gold"
+          },
+          {
+            "text": " e ",
+            "color": "$text"
+          },
+          {
+            "text": "platina",
+            "color": "$platinum"
+          },
+          {
+            "text": ", \u00e9 adquirindo uma ",
+            "color": "$text"
+          },
+          {
+            "text": "Bolsa de Moedas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\nA ",
+            "color": "$text"
+          },
+          {
+            "text": "Bolsa de Moedas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " \u00e9 um item ",
+            "color": "$text"
+          },
+          {
+            "text": "vinculado \u00e0 alma",
+            "color": "$soulchance"
+          },
+          {
+            "text": " que voc\u00ea mant\u00e9m no seu invent\u00e1rio. Ela ficar\u00e1 l\u00e1 mesmo se voc\u00ea morrer, e pode conter uma quantidade ilimitada de ",
+            "color": "$text"
+          },
+          {
+            "text": "bronze",
+            "color": "$bronze"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "prata",
+            "color": "$common"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "ouro",
+            "color": "$gold"
+          },
+          {
+            "text": " e ",
+            "color": "$text"
+          },
+          {
+            "text": "platina",
+            "color": "$platinum"
+          },
+          {
+            "text": ". Auto-converte entre elas, e todas as esta\u00e7\u00f5es de trabalho no ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault Hunters",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " podem ler diretamente dela - sem necessidade de micro-gerenciar seus itens!\n\nOutra caracter\u00edstica brilhante da ",
+            "color": "$text"
+          },
+          {
+            "text": "Bolsa de Moedas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " \u00e9 que ela pegar\u00e1 automaticamente qualquer moeda que voc\u00ea coletar, desde que n\u00e3o esteja posicionada depois de uma ",
+            "color": "$text"
+          },
+          {
+            "text": "mochila",
+            "color": "$blocks"
+          },
+          {
+            "text": " que permita moedas na sua lista branca.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsiga uma Bolsa de Moedas",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/coin_pouch",
+      "targetId": "the_vault:coin_pouch",
+      "targetProgress": 1.0,
+      "unlockedBy": "shard_pouch",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_platinum",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:chromatic_steel_ingot",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "complete_bounty",
+      "name": "Ca\u00e7a de Recompensas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Completar recompensas \u00e9 uma \u00f3tima maneira de garantir algum saque extra e dar a si mesmo um objetivo s\u00f3lido para trabalhar. Primeiro voc\u00ea precisar\u00e1 criar uma Mesa de Recompensas e ent\u00e3o interagir com ela clicando com o bot\u00e3o direito.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCrie uma Mesa de Recompensas",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/bounty_table",
+      "targetId": "the_vault:bounty_block",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:bounty_pearl",
+            "amount": 10
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "bounty_complete",
+      "id": "complete_bounty2",
+      "name": "Recompensas e Pr\u00eamios",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Dentro da Mesa de Recompensas voc\u00ea pode selecionar uma recompensa clicando em uma das recompensas dispon\u00edveis e clicando em ativar. Uma vez que voc\u00ea complete uma recompensa, pode voltar \u00e0 mesa e coletar seus pr\u00eamios.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nComplete uma Recompensa",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/bounty",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "complete_bounty",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_iron_ingot",
+            "amount": 32
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "animal_pens",
+      "name": "Currais de Animais",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Animais podem ser dif\u00edceis de gerenciar em grande escala, e podem causar muito lag no ",
+            "color": "$text"
+          },
+          {
+            "text": "Minecraft",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Isso \u00e9 resolvido pelo uso de ",
+            "color": "$text"
+          },
+          {
+            "text": "Currais de Animais",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Estes podem ser criados, e com o uso de um ",
+            "color": "$text"
+          },
+          {
+            "text": "Pote de Animal",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", uma quantidade infinita de um tipo de animal pode ser mantida e criada em um \u00fanico curral! Isso reduz o lag massivamente, e torna os animais n\u00e3o apenas fofos para manter na prateleira, mas f\u00e1ceis de gerenciar!\n\nAp\u00f3s colocar um ",
+            "color": "$text"
+          },
+          {
+            "text": "Curral de Animais",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", colete quantos de um \u00fanico tipo de animal quiser em um ",
+            "color": "$text"
+          },
+          {
+            "text": "Pote de Animal",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Todos os animais passivos e reprod\u00fativeis do jogo podem ser coletados. Ent\u00e3o simplesmente clique com o bot\u00e3o direito com seu pote no curral para torn\u00e1-lo o lar deles.\n\nVoc\u00ea pode criar os animais se tiver pelo menos 2, usando o item de reprodu\u00e7\u00e3o deles - por exemplo ",
+            "color": "$text"
+          },
+          {
+            "text": "Trigo",
+            "color": "$gold"
+          },
+          {
+            "text": " para uma vaca.\n\nFinalmente, os animais podem ser abatidos com sua ",
+            "color": "$text"
+          },
+          {
+            "text": "espada",
+            "color": "$damage"
+          },
+          {
+            "text": " para obter seus drops. O encantamento de ",
+            "color": "$text"
+          },
+          {
+            "text": "Saque",
+            "color": "$fortune"
+          },
+          {
+            "text": " funciona aqui tamb\u00e9m, aumentando seu rendimento. Alguns animais t\u00eam caracter\u00edsticas especiais - por exemplo, voc\u00ea pode ",
+            "color": "$text"
+          },
+          {
+            "text": "ordenhar uma Vaca",
+            "color": "$heal"
+          },
+          {
+            "text": " em um curral usando um ",
+            "color": "$text"
+          },
+          {
+            "text": "balde",
+            "color": "$blocks"
+          },
+          {
+            "text": ", ou ",
+            "color": "$text"
+          },
+          {
+            "text": "tosquiar uma Abelha",
+            "color": "$yellow"
+          },
+          {
+            "text": " para obter favos de mel. Ao segurar ",
+            "color": "$text"
+          },
+          {
+            "text": "shift",
+            "color": "$cooldown"
+          },
+          {
+            "text": " enquanto olha para um ",
+            "color": "$text"
+          },
+          {
+            "text": "Curral de Animais",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", voc\u00ea pode ver mais informa\u00e7\u00f5es sobre o curral espec\u00edfico.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsiga um Curral de Animais",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/animal_pen",
+      "targetId": "the_vault:animal_pen",
+      "targetProgress": 1.0,
+      "unlockedBy": "enter_vault",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:animal_jar",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:animal_jar",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:animal_pen",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "tool_station",
+      "name": "Esta\u00e7\u00e3o de Ferramentas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "A Esta\u00e7\u00e3o de Ferramentas pode ser usada para criar ferramentas que melhoram significativamente sua experi\u00eancia nos cofres.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n(A maioria das esta\u00e7\u00f5es de cofre agora mant\u00eam seu invent\u00e1rio quando quebradas)",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsiga uma Esta\u00e7\u00e3o de Ferramentas",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/station",
+      "targetId": "the_vault:tool_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "enter_vault",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gemstone",
+            "amount": 2
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "forge_gear",
+      "id": "craft_tool",
+      "name": "Ferramentas de Cofre",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "As Ferramentas de Cofre s\u00e3o as sucessoras das ferramentas vanilla. Estas podem ser modificadas com joias para aplicar novas afinidades e atributos \u00e0 ferramenta.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAfinidades permitem que voc\u00ea quebre ba\u00fas/moedas a uma velocidade significativamente maior, permitindo que voc\u00ea minere instantaneamente todas as moedas e ba\u00fas, exceto os de madeira.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTamb\u00e9m h\u00e1 joias que podem mudar a funcionalidade da ferramenta para incluir a de outra. Por exemplo, voc\u00ea poderia colocar uma joia de Escavar em uma Picareta para criar um Mattock que pode minerar t\u00e3o r\u00e1pido quanto uma picareta e cavar t\u00e3o r\u00e1pido quanto uma p\u00e1!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTamb\u00e9m h\u00e1 mais modificadores que melhoram sua ferramenta significativamente:",
+            "color": "$text"
+          },
+          {
+            "text": "\nRaridade de Itens",
+            "color": "#E5B819"
+          },
+          {
+            "text": " e ",
+            "color": "$text"
+          },
+          {
+            "text": "Quantidade de Itens ",
+            "color": "#E88A12"
+          },
+          {
+            "text": " ambos melhoram sua ferramenta com maiores capacidades de saque.",
+            "color": "$text"
+          },
+          {
+            "text": "\nChance de Desarmar Armadilha",
+            "color": "#8143FF"
+          },
+          {
+            "text": " tem uma chance de desarmar um ba\u00fa armadilhado dentro dos Cofres.",
+            "color": "$text"
+          },
+          {
+            "text": "\nVelocidade de Minera\u00e7\u00e3o",
+            "color": "#48BAF8"
+          },
+          {
+            "text": " aumenta a velocidade base de minera\u00e7\u00e3o da sua ferramenta!",
+            "color": "$text"
+          },
+          {
+            "text": "\nCopiosamente",
+            "color": "#F74780"
+          },
+          {
+            "text": " adiciona uma chance de dobrar a sa\u00edda de um Min\u00e9rio de Cofre minerado dentro dos cofres! Funciona com Toque Suave e Fortuna.",
+            "color": "$text"
+          },
+          {
+            "text": "\nDurabilidade",
+            "color": "#DFD0FE"
+          },
+          {
+            "text": " aumenta a Durabilidade base da ferramenta",
+            "color": "$text"
+          },
+          {
+            "text": "\nPulveriza\u00e7\u00e3o",
+            "color": "#73B373"
+          },
+          {
+            "text": " e ",
+            "color": "$text"
+          },
+          {
+            "text": "Fundi\u00e7\u00e3o ",
+            "color": "#FF4500"
+          },
+          {
+            "text": "ambos mudam a ferramenta para ter intera\u00e7\u00f5es especiais. Pulveriza\u00e7\u00e3o age como um substituto b\u00e1sico de processamento de pulverizar/triturar a sa\u00edda do bloco minerado. Fundi\u00e7\u00e3o fundir\u00e1 a sa\u00edda do bloco minerado!",
+            "color": "$text"
+          },
+          {
+            "text": "\nMartelamento ",
+            "color": "#25d4A5"
+          },
+          {
+            "text": "pode ser aplicado a Martelos para aumentar sua \u00e1rea de minera\u00e7\u00e3o",
+            "color": "$text"
+          },
+          {
+            "text": "\nVinculado \u00e0 Alma ",
+            "color": "#9664FD"
+          },
+          {
+            "text": "faz uma ferramenta permanecer no seu invent\u00e1rio mesmo ap\u00f3s a morte!",
+            "color": "$text"
+          },
+          {
+            "text": "\nImortalidade Vanilla ",
+            "color": "#AF8DC3"
+          },
+          {
+            "text": "aplica uma chance da sua ferramenta n\u00e3o receber dano de durabilidade fora dos cofres. A 100% tornar\u00e1 sua ferramenta inquebravel!",
+            "color": "$text"
+          },
+          {
+            "text": "\nAlcance ",
+            "color": "#F9B37F"
+          },
+          {
+            "text": "aumenta o alcance no qual o jogador pode interagir com blocos.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCrie uma Picareta de Ferro Crom\u00e1tico",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/tool",
+      "targetId": "the_vault:tool/pick/chromatic_iron_ingot",
+      "targetProgress": 1.0,
+      "unlockedBy": "tool_station",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;3591402060363627150L,2130563721701514760L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,2196334573319662592L,-6834473908914065246L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;8807676962843960878L,-1018090581902778908L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-7164678727146624000L,-6834473908914083200L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;-4246674546207997586L,469804410667479720L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,1749915260256562176L,-6834473908914085726L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;9040600318283653614L,-2646425694881105473L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-6032128973979210752L,-6834473908914079292L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;1437378485525153694L,-4161882800610591095L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617707599909354749L,1330939757422750720L,-348445744039196665L,268435455L,8L,16L]}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "apply_jewel",
+      "name": "Joias em Ferramentas",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "O Aplicador de Joias torna a aplica\u00e7\u00e3o de joias nas suas ferramentas mais f\u00e1cil do que nunca, fornecendo os meios de ver facilmente o resultado da sua Ferramenta.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nO Aplicador de Joias tem tr\u00eas partes no seu invent\u00e1rio; \nO",
+            "color": "$text"
+          },
+          {
+            "text": " Lado Esquerdo ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "\u00e9 onde voc\u00ea pode colocar suas joias, mostrando o resultado total se elas fossem colocadas na sua ferramenta. \nO ",
+            "color": "$text"
+          },
+          {
+            "text": "Centro ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "\u00e9 onde voc\u00ea coloca sua ferramenta e tamb\u00e9m pode ver a sa\u00edda visual de combinar joias de tipo ferramenta como escavar ou machadar, por exemplo. \nPor \u00faltimo, o ",
+            "color": "$text"
+          },
+          {
+            "text": "Lado Direito ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "mostrar\u00e1 as estat\u00edsticas atualizadas usando as joias colocadas no lado esquerdo, calculando automaticamente a capacidade e todos os seus prefixos e sufixos conforme voc\u00ea coloca joias no Aplicador",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCada joia \u00e9 gerada com um ",
+            "color": "$text"
+          },
+          {
+            "text": "tamanho consistente de 10",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", garantindo que use apenas uma pequena por\u00e7\u00e3o da ",
+            "color": "$text"
+          },
+          {
+            "text": "capacidade.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " da sua Ferramenta",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsiga um Aplicador de Joias",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/apply_jewel",
+      "targetId": "the_vault:vault_jewel_application_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_tool",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_steel_ingot",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "jewel_crafting",
+      "name": "Fabrica\u00e7\u00e3o de Joias",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "A Mesa de Fabrica\u00e7\u00e3o de Joias permite que voc\u00ea crie uma ampla variedade de joias que podem ser aplicadas \u00e0s suas ferramentas para melhorar suas capacidades. Essas joias t\u00eam tamanhos fixos. Nem todos os afixos est\u00e3o dispon\u00edveis para fabrica\u00e7\u00e3o, ent\u00e3o voc\u00ea ainda ter\u00e1 que encontrar o resto!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsiga uma Mesa de Fabrica\u00e7\u00e3o de Joias",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/jewel_cutting",
+      "targetId": "the_vault:jewel_crafting_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_tool",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:silver_scrap",
+            "amount": 512
+          },
+          {
+            "item": "the_vault:gemstone",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+
+    {
+      "type": "level_up",
+      "id": "level_five",
+      "name": "Especializa\u00e7\u00f5es",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Especializa\u00e7\u00f5es s\u00e3o obtidas gastando Pontos de Especializa\u00e7\u00e3o que s\u00e3o obtidos a cada 5 n\u00edveis. Especializa\u00e7\u00f5es s\u00e3o similares aos Talentos fornecendo b\u00f4nus passivos ao jogador, no entanto, s\u00e3o direcionadas para casos de uso mais espec\u00edficos como Afortunado que pode adicionar dois n\u00edveis adicionais de Fortuna ao jogador ou Anjo que permite criar um Bloco Anjo que fornece voo criativo em um raio de 64 blocos ao redor dele.\n\nH\u00e1 um total de vinte pontos de especializa\u00e7\u00e3o para adquirir durante sua jogatina e devido \u00e0 sua utilidade, n\u00e3o s\u00e3o t\u00e3o f\u00e1ceis de resetar, exigindo um Neuralizador em vez de ouro de cofre.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAlcance o N\u00edvel de Cofre 5",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/expertises",
+      "targetId": "the_vault:5",
+      "targetProgress": 1.0,
+      "unlockedBy": "apply_jewel",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_forge",
+      "name": "Forjando Equipamento",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "A Forja do Cofre permite que voc\u00ea crie equipamentos poderosos usando profici\u00eancia, que est\u00e1 vinculada ao seu n\u00edvel de jogador.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nA profici\u00eancia aumenta ao sacrificar Sucata de Cofre na forja, e ela impacta o Potencial de Cria\u00e7\u00e3o, Raridade, Durabilidade, Slots de Reparo, Chance de V\u00ednculo de Alma e chance de Modificador Superior. Um modificador superior \u00e9 um modificador um n\u00edvel acima do modificador m\u00e1ximo para aquele n\u00edvel de equipamento.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCriar equipamento n\u00e3o consome profici\u00eancia, ent\u00e3o voc\u00ea pode continuar criando sem perder seu progresso.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nO custo principal de cria\u00e7\u00e3o \u00e9 Liga de Cofre, e o sistema \u00e9 equilibrado para manter a cria\u00e7\u00e3o de equipamento poderosa, especialmente no in\u00edcio do jogo.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nPara criar em massa, segure Shift enquanto cria para enviar itens criados diretamente ao seu invent\u00e1rio.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsiga uma Forja do Cofre",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/forge",
+      "targetId": "the_vault:vault_forge",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_alloy",
+            "amount": 9
+          },
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 3
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "forge_gear",
+      "id": "gear_forge",
+      "name": "\u00cdm\u00e3s",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "\u00cdm\u00e3s sugam saque dentro de um raio do jogador! Eles sinergizam excepcionalmente com Afinidades/Quebrar ba\u00fas dentro do cofre e podem acelerar significativamente seu saque. \u00cdm\u00e3s tamb\u00e9m t\u00eam modificadores que podem ser aplicados para melhorar suas for\u00e7as.\n\nPara equipar um \u00cdm\u00e3, pressione o bot\u00e3o Curios ao lado do slot do seu capacete no invent\u00e1rio e coloque o \u00edm\u00e3 no slot de Cinto!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nForje um \u00cdm\u00e3 na Forja do Cofre",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/magnet",
+      "targetId": "the_vault:magnet",
+      "targetProgress": 1.0,
+      "unlockedBy": "vault_forge",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_alloy",
+            "amount": 9
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "artisan_table",
+      "name": "Modifica\u00e7\u00e3o na Esta\u00e7\u00e3o Artes\u00e3",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "A Esta\u00e7\u00e3o Artes\u00e3 pode ser usada para modificar e criar equipamento adequado a um certo estilo de build. A interface tem slots para Blindagem de Cofre, Bronze de Cofre, uma ampla variedade de focos com fun\u00e7\u00f5es diferentes e seu Equipamento de Cofre.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsiga uma Esta\u00e7\u00e3o Artes\u00e3",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/artisan",
+      "targetId": "the_vault:vault_artisan_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "gear_forge",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:wild_focus",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "modify_gear",
+      "id": "wild_focus",
+      "name": "Rerrolando Modificadores de Equipamento",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Colocar Bronze de Cofre, Blindagem de Cofre e um Foco Selvagem na Esta\u00e7\u00e3o Artes\u00e3 permitir\u00e1 que voc\u00ea rerrole todos os modificadores do seu equipamento. Clicar no bot\u00e3o Reforjar aplicar\u00e1 novos modificadores ao seu equipamento/arma. Este \u00e9 o passo inicial para criar equipamento adequado ao seu estilo de build.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nRerrole uma Pe\u00e7a de Equipamento com um Foco Selvagem",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/reroll",
+      "targetId": "the_vault:reforge_all",
+      "targetProgress": 1.0,
+      "unlockedBy": "artisan_table",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_plating",
+            "amount": 12
+          },
+          {
+            "item": "the_vault:vault_bronze",
+            "amount": 32
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_recycler",
+      "name": "Sucateando Equipamento de Cofre",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "O Reciclador de Cofre \u00e9 usado para decompor equipamento velho e indesejado em Sucata de Cofre, Focos Selvagens e Focos Facetados. Tamb\u00e9m pode ser usado para decompor e reciclar Joias, \u00cdm\u00e3s e Inscri\u00e7\u00f5es!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nConsiga um Reciclador de Cofre",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/recycler",
+      "targetId": "the_vault:vault_recycler",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_scrap",
+            "amount": 16
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "alchemystation",
+      "name": "Mesa de Alquimia",
+      "descriptionData": {
+        "description": [
+          { "text": "A ", "color": "$text" },
+          { "text": "Mesa de Alquimia", "color": "$qhighlight" },
+          { "text": " \u00e9 uma mesa muito \u00fatil. Ela permite que voc\u00ea modifique suas ", "color": "$text" },
+          { "text": "Po\u00e7\u00f5es de Cofre", "color": "$qhighlight" },
+          { "text": " para adicionar um ", "color": "$text" },
+          { "text": "efeito secund\u00e1rio", "color": "$qhighlight" },
+          { "text": " \u00e0s suas cargas!\n\nAlguns desses ", "color": "$text" },
+          { "text": "efeitos secund\u00e1rios", "color": "$qhighlight" },
+          { "text": " precisam ser desbloqueados, o que voc\u00ea aprender\u00e1 mais tarde, mas alguns j\u00e1 s\u00e3o ", "color": "$text" },
+          { "text": "acess\u00edveis", "color": "$qhighlight" },
+          { "text": " agora. \nUm efeito pode ser adicionado por po\u00e7\u00e3o, e sua for\u00e7a ", "color": "$text" },
+          { "text": "escala", "color": "$qhighlight" },
+          { "text": " com o ", "color": "$text" },
+          { "text": "n\u00edvel", "color": "$qhighlight" },
+          { "text": " base da sua po\u00e7\u00e3o.", "color": "$text" },
+          { "text": "\n\nConsiga uma Mesa de Alquimia", "color": "$heal" }
+        ]
+      },
+      "icon": "the_vault:gui/quests/alchemytable",
+      "targetId": "the_vault:alchemy_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          { "item": "the_vault:vault_gold", "amount": 8 },
+          { "item": "the_vault:vault_diamond", "amount": 8 }
+        ],
+        "vaultExp": 0
+      }
+    },
+
+    { "type": "level_up", "id": "level_ten", "name": "Objetivos do Cofre", "descriptionData": { "description": [ { "text": "Conforme voc\u00ea sobe de n\u00edvel, o Cofre se adaptar\u00e1 e apresentar\u00e1 novos Objetivos mais desafiadores; estes tamb\u00e9m podem ser adicionados ao seu cristal criando um Selo e aplicando-o ao seu cristal em uma bigorna. \n\nO n\u00edvel 10 marca a introdu\u00e7\u00e3o do Objetivo de Acender o Braseiro em cofres aleat\u00f3rios.\nO n\u00edvel 20 marca a introdu\u00e7\u00e3o do Objetivo de Catador em cofres aleat\u00f3rios.\nO n\u00edvel 50 marca a introdu\u00e7\u00e3o do Objetivo de Bingo e Ca\u00e7a \u00e0s Runas em cofres aleat\u00f3rios.", "color": "$text" }, { "text": "\n\nAlcance o N\u00edvel de Cofre 10", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/ten", "targetId": "the_vault:10", "targetProgress": 1.0, "unlockedBy": "level_five", "reward": { "items": [ { "item": "the_vault:crystal_seal_scout" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "seals", "name": "Escolhendo seu pr\u00f3prio objetivo", "descriptionData": { "description": [ { "text": "Selos s\u00e3o itens especialmente \u00fateis pois permitem que voc\u00ea defina o objetivo do cofre. Desta forma, mesmo se voc\u00ea for de n\u00edvel menor, poder\u00e1 jogar qualquer objetivo a qualquer momento. Para usar um selo, aplique-o a um cristal na bancada de cristais", "color": "$text" }, { "text": "\n\nConsiga um selo em branco", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/empty_seal", "targetId": "the_vault:crystal_seal_empty", "targetProgress": 1.0, "unlockedBy": "level_ten", "reward": { "items": [ { "item": "the_vault:crystal_seal_empty" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_sage_seal", "name": "Crie um selo de Elixir", "descriptionData": { "description": [ { "text": "O Selo do ", "color": "$text" }, { "text": "S\u00e1bio", "color": "$qhighlight" }, { "text": " aplica o objetivo de ", "color": "$text" }, { "text": "Elixir", "color": "$qhighlight" }, { "text": " a um cristal. Para cri\u00e1-lo voc\u00ea precisar\u00e1 de um selo em branco e alguns ingredientes de cofre", "color": "$text" }, { "text": "\n\nO objetivo de Elixir exige que voc\u00ea obtenha uma certa quantidade de elixir saqueando ba\u00fas, matando mobs ou minerando min\u00e9rio. Uma vez que voc\u00ea encha sua barra de elixir, encontre uma magnetita para sair do cofre", "color": "$text" }, { "text": "\n\nEste objetivo tem um n\u00edvel recomendado de 0 e tamb\u00e9m aparecer\u00e1 aleatoriamente nos cofres ap\u00f3s esse n\u00edvel.", "color": "$qhighlight" }, { "text": "\n\nConsiga um Selo do S\u00e1bio", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/sage", "targetId": "the_vault:crystal_seal_sage", "targetProgress": 1.0, "unlockedBy": "seals", "reward": { "items": [ { "item": "the_vault:crystal_seal_sage", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_brazier_seal", "name": "Crie um selo de Braseiro", "descriptionData": { "description": [ { "text": "O Selo do ", "color": "$text" }, { "text": "Explorador", "color": "$qhighlight" }, { "text": " aplica o objetivo de ", "color": "$text" }, { "text": "Acender o Braseiro", "color": "$qhighlight" }, { "text": " a um cristal. Para cri\u00e1-lo voc\u00ea precisar\u00e1 de um selo em branco e alguns ingredientes de cofre", "color": "$text" }, { "text": "\n\nO objetivo de Acender o Braseiro exige que voc\u00ea encontre braseiros e os acenda. Esses braseiros ter\u00e3o efeitos positivos e negativos associados, ent\u00e3o escolha com cuidado. Depois de acender todos os braseiros, voc\u00ea pode escolher sair pelo portal do cofre ou saquear mais braseiros para saque adicional!", "color": "$text" }, { "text": "\n\nEste objetivo tem um n\u00edvel recomendado de 10+ e tamb\u00e9m aparecer\u00e1 aleatoriamente nos cofres ap\u00f3s esse n\u00edvel.", "color": "$qhighlight" }, { "text": "\n\nConsiga um Selo do Explorador", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/scout", "targetId": "the_vault:crystal_seal_scout", "targetProgress": 1.0, "unlockedBy": "seals", "reward": { "items": [ { "item": "the_vault:crystal_seal_scout", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_hunter_seal", "name": "Crie um selo de Catador", "descriptionData": { "description": [ { "text": "O Selo do ", "color": "$text" }, { "text": "Ca\u00e7ador", "color": "$qhighlight" }, { "text": " aplica o objetivo de ", "color": "$text" }, { "text": "Catador", "color": "$qhighlight" }, { "text": " a um cristal. Para cri\u00e1-lo voc\u00ea precisar\u00e1 de um selo em branco e alguns ingredientes de cofre", "color": "$text" }, { "text": "\n\nTamb\u00e9m recomendamos fazer uma bolsa extra s\u00f3 para itens de catador, comumente chamada de ", "color": "$text" }, { "text": "Bolsa de Catador", "color": "$qhighlight" }, { "text": ". Isso tornar\u00e1 a organiza\u00e7\u00e3o dos seus itens de catador muito mais f\u00e1cil! Outra coisa boa de saber \u00e9 que quando voc\u00ea sai dos cofres os itens de catador s\u00e3o", "color": "$text" }, { "text": "removidos", "color": "$qhighlight" }, { "text": ". Os itens de catador s\u00e3o exclusivos daquele cofre!", "color": "$text" }, { "text": "\n\nO objetivo de Catador exige que voc\u00ea encontre uma certa lista de itens exibidos no topo da sua tela. Voc\u00ea pode ver onde obter os itens olhando os \u00edcones abaixo deles. Uma vez que voc\u00ea tenha coletado todos os itens, deposite-os em um altar de catador!", "color": "$text" }, { "text": "\n\nEste objetivo tem um n\u00edvel recomendado de 20+ e tamb\u00e9m aparecer\u00e1 aleatoriamente nos cofres ap\u00f3s esse n\u00edvel.", "color": "$qhighlight" }, { "text": "\n\nConsiga um Selo do Ca\u00e7ador", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/hunter", "targetId": "the_vault:crystal_seal_hunter", "targetProgress": 1.0, "unlockedBy": "seals", "reward": { "items": [ { "item": "the_vault:crystal_seal_hunter", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_Prophet_seal", "name": "Crie um selo de Bingo", "descriptionData": { "description": [ { "text": "O Selo do ", "color": "$text" }, { "text": "Profeta", "color": "$qhighlight" }, { "text": " aplica o objetivo de ", "color": "$text" }, { "text": "Bingo", "color": "$qhighlight" }, { "text": " a um cristal. Para cri\u00e1-lo voc\u00ea precisar\u00e1 de um selo em branco e alguns ingredientes de cofre", "color": "$text" }, { "text": "\n\nO objetivo de Bingo exige que voc\u00ea execute tarefas no tabuleiro de bingo e tente completar uma linha. As recompensas deste objetivo escalam com a quantidade de linhas completadas.", "color": "$text" }, { "text": "\n\nJogadores de n\u00edvel 90 ou acima ter\u00e3o uma grade 5x5 em vez da grade 4x4.", "color": "$qhighlight" }, { "text": "\n\nModificadores do objetivo de Bingo:", "color": "$text" }, { "text": "\n\nRapidamente: ", "color": "$qhighlight" }, { "text": "Execute a tarefa muito rapidamente ou ela ser\u00e1 resetada. Por exemplo: Saqueie rapidamente 10 ba\u00fas de madeira em 6 segundos", "color": "$text" }, { "text": "\n\nImpecavelmente: ", "color": "$qhighlight" }, { "text": "Execute a tarefa sem receber nenhum dano (incluindo veneno e dano de queda)", "color": "$text" }, { "text": "\n\nSilenciosamente: ", "color": "$qhighlight" }, { "text": "N\u00e3o cause dano a nenhum mob enquanto executa a tarefa", "color": "$text" }, { "text": "\n\nPrimitivamente: ", "color": "$qhighlight" }, { "text": "N\u00e3o use mana enquanto executa a tarefa", "color": "$text" }, { "text": "\n\nCombo: ", "color": "$qhighlight" }, { "text": "Execute uma s\u00e9rie de tarefas dentro de um prazo, quando voc\u00ea completar a primeira tarefa ela mudar\u00e1 para a pr\u00f3xima", "color": "$text" }, { "text": "\n\nEste objetivo tem um n\u00edvel recomendado de 50+ e tamb\u00e9m aparecer\u00e1 aleatoriamente nos cofres ap\u00f3s esse n\u00edvel.", "color": "$qhighlight" }, { "text": "\n\nConsiga um Selo do Profeta", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/prophet", "targetId": "the_vault:crystal_seal_prophet", "targetProgress": 1.0, "unlockedBy": "seals", "reward": { "items": [ { "item": "the_vault:crystal_seal_prophet", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_guardian_seal", "name": "Crie um selo de Ca\u00e7a \u00e0s Runas", "descriptionData": { "description": [ { "text": "O Selo do ", "color": "$text" }, { "text": "Executor", "color": "$qhighlight" }, { "text": " aplica o objetivo de ", "color": "$text" }, { "text": "Ca\u00e7a \u00e0s Runas", "color": "$qhighlight" }, { "text": " a um cristal. Para cri\u00e1-lo voc\u00ea precisar\u00e1 de um selo em branco e alguns ingredientes de cofre", "color": "$text" }, { "text": "\n\nEm Ca\u00e7a \u00e0s Runas seu objetivo \u00e9 encontrar runas e aplic\u00e1-las a um pilar de chefe de runas. Cada runa pode ter um modificador diferente e um item de recompensa diferente. Uma vez que voc\u00ea tenha inserido o n\u00famero correto de runas, a sala se fechar\u00e1 e o chefe aparecer\u00e1 com os modificadores que voc\u00ea escolheu.", "color": "$text" }, { "text": "\n\nO item de recompensa de cada runa ser\u00e1 adicionado \u00e0 sua caixa de conclus\u00e3o. Alguns desses itens podem incluir equipamento, focos de equipamento e inscri\u00e7\u00f5es", "color": "$text" }, { "text": "\n\nEste objetivo tem um n\u00edvel recomendado de 50+ e tamb\u00e9m aparecer\u00e1 aleatoriamente nos cofres ap\u00f3s esse n\u00edvel.", "color": "$qhighlight" }, { "text": "\n\nConsiga um Selo do Executor", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/executioner", "targetId": "the_vault:crystal_seal_executioner", "targetProgress": 1.0, "unlockedBy": "seals", "reward": { "items": [ { "item": "the_vault:crystal_seal_executioner", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "checkmark", "id": "regret", "name": "Arrependendo-se de Decis\u00f5es", "descriptionData": { "description": [ { "text": "Pode ser bastante estressante tomar decis\u00f5es sobre quais habilidades e talentos escolher ao longo da sua jogatina, mas n\u00e3o se estresse!", "color": "$text" }, { "text": "\n\n", "color": "$text" }, { "text": "Vault Hunters tem um mecanismo para se arrepender das suas decis\u00f5es usando ", "color": "$text" }, { "text": "Ouro de Cofre", "color": "$qhighlight" }, { "text": ". Se voc\u00ea tiver suficiente ", "color": "$text" }, { "text": "Ouro de Cofre ", "color": "$qhighlight" }, { "text": "no seu invent\u00e1rio, voc\u00ea pode escolher ", "color": "$text" }, { "text": "Desaprender ", "color": "$qhighlight" }, { "text": "da ", "color": "$text" }, { "text": "\u00c1rvore de Habilidades", "color": "$qhighlight" }, { "text": ".", "color": "$text" }, { "text": "\n\n", "color": "$text" }, { "text": "Note que isso era feito anteriormente com um ", "color": "$text" }, { "text": "Orbe de Arrependimento", "color": "$qhighlight" }, { "text": ", esse mecanismo foi removido.", "color": "$text" }, { "text": "\n\n", "color": "$text" }, { "text": "O arrependimento n\u00e3o pode ser feito enquanto estiver dentro de um cofre.", "color": "$text" } ] }, "icon": "the_vault:gui/quests/regretorb", "targetId": "the_vault:any", "targetProgress": 1.0, "unlockedBy": "level_ten", "reward": { "items": [ { "item": "the_vault:vault_gold", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "craft_black_market", "name": "Produtos do Mercado Negro", "descriptionData": { "description": [ { "text": "Com o mercado negro voc\u00ea pode usar fragmentos de alma para comprar de um conjunto de itens que se atualiza a cada 2 horas ou de um conjunto aleat\u00f3rio de todos os itens que podem ser obtidos por compra. H\u00e1 uma variedade de itens raros que voc\u00ea pode obter no Mercado Negro, ent\u00e3o certifique-se de verificar com frequ\u00eancia!", "color": "$text" }, { "text": "\n\nInteraja com um Mercado Negro", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/black_market", "targetId": "the_vault:black_market", "targetProgress": 1.0, "unlockedBy": "level_ten", "reward": { "items": [ { "item": "the_vault:soul_shard", "amount": 256 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "soul_diffuser", "name": "O Difusor de Almas", "descriptionData": { "description": [ { "text": "O Difusor de Almas decompor\u00e1 itens de cofre em p\u00f3 de alma que pode ent\u00e3o ser transformado em Fragmentos de Alma para usar como moeda no Mercado Negro. Isso te d\u00e1 a escolha de decidir o que voc\u00ea considera valioso e o que considera digno de difundir!", "color": "$text" }, { "text": "\n\nConsiga um Difusor de Almas do Cofre", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/diffuser", "targetId": "the_vault:vault_diffuser", "targetProgress": 1.0, "unlockedBy": "level_ten", "reward": { "items": [ { "item": "the_vault:soul_shard", "amount": 256 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "identification_stand", "name": "Suporte de Identifica\u00e7\u00e3o", "descriptionData": { "description": [ { "text": "O Suporte de Identifica\u00e7\u00e3o \u00e9 um bloco que ao clicar com o bot\u00e3o direito ", "color": "$text" }, { "text": "identificar\u00e1", "color": "$qhighlight" }, { "text": " todo o equipamento de cofre n\u00e3o identificado no seu invent\u00e1rio instantaneamente.", "color": "$text" }, { "text": "\n\nConsiga um Suporte de Identifica\u00e7\u00e3o", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/identificationstand", "targetId": "the_vault:identification_stand", "targetProgress": 1.0, "unlockedBy": "level_ten", "reward": { "items": [ { "item": "the_vault:helmet", "nbt": "" }, { "item": "the_vault:chestplate", "nbt": "" }, { "item": "the_vault:leggings", "nbt": "" }, { "item": "the_vault:boots", "nbt": "" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "craft_knowledge_star", "name": "Usando Conhecimento", "descriptionData": { "description": [ { "text": "Obter e usar Estrelas de Conhecimento \u00e9 um dos aspectos chave da progress\u00e3o de Vault Hunters pois \u00e9 o componente principal para desbloquear novos mods. Pressionar a tecla 'H' e selecionar a aba de Pesquisas no topo mostrar\u00e1 tudo que voc\u00ea pode desbloquear. Note que comprar alguns destes aumentar\u00e1 o pre\u00e7o dos desbloqueios subsequentes dentro daquele grupo.\n\nSua recompensa por esta miss\u00e3o \u00e9 uma Caixa de Mod! Quando usada, a Caixa de Mod concede um item aleat\u00f3rio dos seus mods desbloqueados", "color": "$text" }, { "text": "\n\nCrie uma Estrela de Conhecimento", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/knowledge", "targetId": "the_vault:knowledge_star", "targetProgress": 1.0, "unlockedBy": "level_ten", "reward": { "items": [ { "item": "the_vault:mod_box" } ], "vaultExp": 0 } },
+
+    { "type": "level_up", "id": "reach_level_20", "name": "Mudan\u00e7as no N\u00edvel 20", "descriptionData": { "description": [ { "text": "Alcan\u00e7ar o n\u00edvel 20 marca o fim da etapa tutorial de Vault Hunters!\n\n", "color": "$text" }, { "text": "A menos que voc\u00ea esteja jogando em ", "color": "$text" }, { "text": "Modo Casual", "color": "$qhighlight" }, { "text": " morrer em um cofre n\u00e3o mant\u00e9m mais seus itens, voc\u00ea aprender\u00e1 mais sobre isso na miss\u00e3o do ", "color": "$text" }, { "text": "Extrator de Esp\u00edritos", "color": "$qhighlight" }, { "text": ".\n\n", "color": "$text" }, { "text": "Muitas coisas novas acontecem neste n\u00edvel, voc\u00ea agora encontrar\u00e1 ", "color": "$text" }, { "text": "Vendoors", "color": "$qhighlight" }, { "text": " e ", "color": "$text" }, { "text": "Portas de Masmorra", "color": "$qhighlight" }, { "text": " dentro do cofre, al\u00e9m de saque adicional e novos mobs!\n\n", "color": "$text" }, { "text": "N\u00e3o se preocupe, voc\u00ea apenas come\u00e7ou!", "color": "$text" }, { "text": "\n\nAlcance o N\u00edvel de Cofre 20", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/twenty", "targetId": "the_vault:20", "targetProgress": 1.0, "unlockedBy": "craft_knowledge_star", "reward": { "items": [ { "item": "the_vault:knowledge_star" } ], "vaultExp": 0 } },
+    { "type": "checkmark", "id": "burgers", "name": "Experi\u00eancia Adicional", "descriptionData": { "description": [ { "text": "Consumir ", "color": "$text" }, { "text": "Hamb\u00fargueres de Cofre", "color": "$qhighlight" }, { "text": " te d\u00e1 experi\u00eancia de cofre.\nHamb\u00fargueres de Cofre podem ser encontrados raramente no ", "color": "$text" }, { "text": "Mercado Negro", "color": "$qhighlight" }, { "text": " e nos ", "color": "$text" }, { "text": "Vendoors", "color": "$qhighlight" }, { "text": ". Eles v\u00eam em diferentes tamanhos, e quanto mais farto, mais experi\u00eancia concedem.\n Embora experi\u00eancia extra \u00e0s vezes possa ser legal, use por sua conta e risco, pois voc\u00ea pode ultrapassar o n\u00edvel do seu equipamento atual!", "color": "$text" } ] }, "icon": "the_vault:gui/quests/burger", "targetId": "the_vault:plain_burger", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:plain_burger", "amount": 1 }, { "item": "the_vault:cheese_burger", "amount": 1 }, { "item": "the_vault:deluxe_cheese_burger", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "crystal_workbench", "name": "Modificando Cristais de Cofre", "descriptionData": { "description": [ { "text": "Cristais de Cofre podem ser ", "color": "$text" }, { "text": "modificados", "color": "$qhighlight" }, { "text": " para se adequar \u00e0s suas necessidades ou prefer\u00eancias atuais. H\u00e1 v\u00e1rias modifica\u00e7\u00f5es diferentes que podem ser feitas em um cristal.\n\n", "color": "$text" }, { "text": "Aumentos", "color": "$titleLine" }, { "text": " definem o tema do cofre, estes s\u00e3o encontrados de vez em quando em caixas de conclus\u00e3o.\n\n", "color": "$text" }, { "text": "Pedras Angulares", "color": "$titleLine" }, { "text": " d\u00e3o ao cofre um buff, dependendo de qual pedra angular \u00e9 usada, e ent\u00e3o torna o cofre n\u00e3o modific\u00e1vel\n\n", "color": "$text" }, { "text": "Catalisadores", "color": "$titleLine" }, { "text": " adiciona modificadores ao cofre, modificadores podem por exemplo aumentar a quantidade de um ba\u00fa espec\u00edfico, enquanto tamb\u00e9m tornam o cofre um pouco mais dif\u00edcil ao adicionar um modificador negativo aleat\u00f3rio, por exemplo um que melhora os mobs dentro do cofre.\n\n", "color": "$text" }, { "text": "Inscri\u00e7\u00f5es", "color": "$titleLine" }, { "text": " adiciona uma sala espec\u00edfica em algum lugar dentro do cofre, para cada inscri\u00e7\u00e3o adicionada.\n\n", "color": "$text" }, { "text": "Ao ", "color": "$text" }, { "text": "modificar", "color": "$qhighlight" }, { "text": " cristais voc\u00ea pode ", "color": "$text" }, { "text": "personalizar", "color": "$qhighlight" }, { "text": " o cofre ao seu gosto. Cada cristal tem um ", "color": "$text" }, { "text": "indicador de capacidade", "color": "$qhighlight" }, { "text": ", quanto maior o seu n\u00edvel, maior a capacidade do cristal. Voc\u00ea pode exceder a capacidade de um cristal, mas cada vez que fizer isso, adicionar\u00e1 uma ", "color": "$text" }, { "text": "maldi\u00e7\u00e3o", "color": "$qhighlight" }, { "text": " ao cofre!\n\nTodas as modifica\u00e7\u00f5es em um cristal s\u00e3o feitas na ", "color": "$text" }, { "text": "Bancada de Cristais", "color": "$qhighlight" }, { "text": "!", "color": "$text" }, { "text": "\n\nCrie uma Bancada de Cristais", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/crystalworkbench", "targetId": "the_vault:crystal_workbench", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:augment", "nbt": "{\"theme\":\"the_vault:classic_vault_cave_geode\"}", "amount": 1 }, { "item": "the_vault:phoenix_feather", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "apply_catalyst", "name": "Catalisadores", "descriptionData": { "description": [ { "text": "Usar ", "color": "$text" }, { "text": "Catalisadores", "color": "$qhighlight" }, { "text": " nos seus cristais de cofre pode melhorar enormemente o saque que voc\u00ea est\u00e1 procurando!\n", "color": "$text" }, { "text": "Catalisadores", "color": "$qhighlight" }, { "text": " adiciona ", "color": "$text" }, { "text": "modificadores", "color": "$qhighlight" }, { "text": " ao cofre, ", "color": "$text" }, { "text": "modificadores", "color": "$qhighlight" }, { "text": " podem por exemplo aumentar a quantidade de um ba\u00fa espec\u00edfico, enquanto tamb\u00e9m tornam o cofre um pouco mais dif\u00edcil ao adicionar um modificador negativo aleat\u00f3rio.\n\n", "color": "$text" }, { "text": "Catalisadores", "color": "$qhighlight" }, { "text": " s\u00e3o feitos na ", "color": "$text" }, { "text": "Mesa de Infus\u00e3o de Catalisadores", "color": "$titleLine" }, { "text": ", usando a mat\u00e9ria-prima ", "color": "$text" }, { "text": "Fragmentos de Catalisador", "color": "$qhighlight" }, { "text": ", que podem ser encontrados dentro de ", "color": "$text" }, { "text": "cofres n\u00e3o modificados", "color": "$qhighlight" }, { "text": ", em ", "color": "$text" }, { "text": "Ba\u00fas de Madeira", "color": "$qhighlight" }, { "text": ".\nTodos os catalisadores criados ocupam ", "color": "$text" }, { "text": "10 de capacidade", "color": "$qhighlight" }, { "text": " em um cristal de cofre, catalisadores com menor requisito de tamanho podem ser encontrados raramente em salas de tesouro e caixas de conclus\u00e3o.\n", "color": "$text" }, { "text": "Catalisadores", "color": "$qhighlight" }, { "text": " podem ser aplicados a um cristal na ", "color": "$text" }, { "text": "Bancada de Cristais", "color": "$titleLine" }, { "text": "\n\n", "color": "$text" }, { "text": "Crie uma Mesa de Infus\u00e3o de Catalisadores", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/catalyst", "targetId": "the_vault:catalyst_infusion_table", "targetProgress": 1.0, "unlockedBy": "crystal_workbench", "reward": { "items": [ { "item": "the_vault:vault_catalyst_fragment", "amount": 9 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "inscription_table", "name": "Inscri\u00e7\u00f5es", "descriptionData": { "description": [ { "text": "Usar ", "color": "$text" }, { "text": "Inscri\u00e7\u00f5es", "color": "$qhighlight" }, { "text": " nos seus cristais de cofre pode te dar muitas vantagens, pois permite criar um cofre ", "color": "$text" }, { "text": "contendo salas espec\u00edficas", "color": "$qhighlight" }, { "text": "!\n\n", "color": "$text" }, { "text": "Inscri\u00e7\u00f5es", "color": "$qhighlight" }, { "text": " podem ser criadas na ", "color": "$text" }, { "text": "Mesa de Inscri\u00e7\u00f5es", "color": "$titleLine" }, { "text": ", usando a mat\u00e9ria-prima ", "color": "$text" }, { "text": "Pe\u00e7as de Inscri\u00e7\u00e3o", "color": "$qhighlight" }, { "text": ", que podem ser encontradas em ", "color": "$text" }, { "text": "Ba\u00fas de Madeira", "color": "$qhighlight" }, { "text": "\nInscri\u00e7\u00f5es criadas ocupam ", "color": "$text" }, { "text": "10 de capacidade", "color": "$qhighlight" }, { "text": " de um cristal, inscri\u00e7\u00f5es com menor requisito de tamanho podem ser encontradas raramente em Ba\u00fas Vivos, Salas de Tesouro e Caixas de Conclus\u00e3o.\n\n", "color": "$text" }, { "text": "Inscri\u00e7\u00f5es", "color": "$qhighlight" }, { "text": " podem ser aplicadas a um cristal na ", "color": "$text" }, { "text": "Bancada de Cristais", "color": "$qhighlight" }, { "text": ", quando um cristal tem pelo menos 1 inscri\u00e7\u00e3o inscrita nele, o cofre ", "color": "$text" }, { "text": "renderizar\u00e1 um mapa", "color": "$qhighlight" }, { "text": " de onde encontrar aquela sala na sala inicial. Reserve um tempo para memorizar o caminho at\u00e9 a(s) sala(s) e ent\u00e3o saia para encontr\u00e1-las!\n\n", "color": "$text" }, { "text": "Crie uma Mesa de Inscri\u00e7\u00f5es", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/inscriptiontable", "targetId": "the_vault:inscription_table", "targetProgress": 1.0, "unlockedBy": "crystal_workbench", "reward": { "items": [ { "item": "the_vault:inscription_piece", "amount": 32 } ], "vaultExp": 0 } },
+    { "type": "mining", "id": "temporal_shards", "name": "Pilones e Rel\u00edquias Temporais", "descriptionData": { "description": [ { "text": "Voc\u00ea pode j\u00e1 ter encontrado ", "color": "$text" }, { "text": "Pilones", "color": "$qhighlight" }, { "text": " dentro dos seus cofres. Esses poderosos cristais flutuantes, ao clicar com o bot\u00e3o direito, concedem um buff limitado dependendo do pilone.\n\n", "color": "$text" }, { "text": "No entanto, voc\u00ea pode escolher destruir o Pilone e seu poder, em vez de consumi-lo, quebrando-o com sua ferramenta (com picareta). Demora muito para quebr\u00e1-lo, mas quando feito h\u00e1 uma pequena chance de render uma ", "color": "$text" }, { "text": "Rel\u00edquia Temporal", "color": "$qhighlight" }, { "text": ". Este \u00e9 um item muito poderoso que quando identificado, te d\u00e1 um item consum\u00edvel que adiciona um ", "color": "$text" }, { "text": "Modificador Temporal", "color": "$qhighlight" }, { "text": " ao cofre em que \u00e9 consumido!\n\nModificadores Temporais s\u00e3o super fortes, duram 5 minutos, e quando usados corretamente podem mudar completamente o resultado do seu cofre ou objetivo atual!", "color": "$text" }, { "text": "!\n\n", "color": "$text" }, { "text": "Quebre um Pilone para ter uma chance de obter uma Rel\u00edquia Temporal", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/temporal_shard", "targetId": "the_vault:pylon", "targetProgress": 1, "unlockedBy": "crystal_workbench", "reward": { "items": [ { "item": "the_vault:temporal_shard", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "artifact", "name": "Artefatos", "descriptionData": { "description": [ { "text": "O objetivo de todo ca\u00e7ador \u00e9 completar o infame Quebra-cabe\u00e7a de Artefatos, e lutar contra o lend\u00e1rio Arauto!\n", "color": "$text" }, { "text": "Artefatos s\u00e3o encontrados raramente em ", "color": "$text" }, { "text": "Caixas de Conclus\u00e3o", "color": "$yellow" }, { "text": ", ap\u00f3s o n\u00edvel 20. A chance de encontrar um Artefato fica maior quanto maior o n\u00edvel do seu cofre ao complet\u00e1-lo.\n\n", "color": "$text" }, { "text": "H\u00e1 25 artefatos \u00fanicos para coletar, e para ter acesso ao ", "color": "$text" }, { "text": "Arauto", "color": "$herald" }, { "text": " voc\u00ea precisa coletar todos!\n\n", "color": "$text" }, { "text": "O ", "color": "$text" }, { "text": "Tomo de Artefatos", "color": "$yellow" }, { "text": " exibir\u00e1 o quebra-cabe\u00e7a acima dele, e artefatos podem ser colocados no lugar correto para completar o quebra-cabe\u00e7a.\n\n", "color": "$text" }, { "text": "Enquanto ca\u00e7a Artefatos voc\u00ea provavelmente encontrar\u00e1 duplicatas. Estas podem ser ", "color": "$text" }, { "text": "jogadas no fogo", "color": "$orange" }, { "text": " para queimar em um ", "color": "$text" }, { "text": "Fragmento de Artefato", "color": "$fragment" }, { "text": " que pode ser usado para criar um novo Artefato.\n\n", "color": "$text" }, { "text": "\n\nConsiga um Tomo de Artefatos", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/artifact", "targetId": "the_vault:artifact_projector_block", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:unidentified_artifact" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "spirit_extractor", "name": "Ressurrei\u00e7\u00e3o", "descriptionData": { "description": [ { "text": "O Extrator de Esp\u00edritos \u00e9 usado para recuperar saque perdido dentro dos cofres. Se voc\u00ea morrer, pegue seu esp\u00edrito com Agachar+Clique Direito e coloque-o no Extrator com Clique Direito. Isso te dar\u00e1 um pre\u00e7o em Ouro de Cofre que voc\u00ea ter\u00e1 que pagar para receber seus itens.", "color": "$text" }, { "text": "\n\nConsiga um Extrator de Esp\u00edritos", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/extractor", "targetId": "the_vault:spirit_extractor", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:vault_gold", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "checkmark", "id": "trinkets", "name": "Berloque", "descriptionData": { "description": [ { "text": "Outra grande mudan\u00e7a ap\u00f3s o n\u00edvel 20 \u00e9 a capacidade de encontrar Berloques!\nEstes s\u00e3o itens poderosos que podem ser equipados nos seus slots de badulaques. Eles v\u00eam em duas cores, ", "color": "$text" }, { "text": "azul", "color": "$blue" }, { "text": " e ", "color": "$text" }, { "text": "vermelho", "color": "$red" }, { "text": ". Voc\u00ea pode equipar um de cada cor a qualquer momento para um total de dois berloques.\n\n", "color": "$text" }, { "text": "Azul", "color": "$blue" }, { "text": " berloques te d\u00e3o uma caracter\u00edstica que n\u00e3o pode ser adquirida em outro lugar, por exemplo a capacidade de ", "color": "$text" }, { "text": "pulo triplo", "color": "$qhighlight" }, { "text": " ou ", "color": "$text" }, { "text": "escalar paredes", "color": "$qhighlight" }, { "text": ".\n\n", "color": "$text" }, { "text": "Vermelho", "color": "$red" }, { "text": " berloques melhoram estat\u00edsticas, como ", "color": "$text" }, { "text": "regenera\u00e7\u00e3o de mana", "color": "$manaCost" }, { "text": " ou ", "color": "$text" }, { "text": "sa\u00fade", "color": "$heal" }, { "text": ".\n\n", "color": "$text" }, { "text": "Berloques n\u00e3o t\u00eam durabilidade, em vez disso t\u00eam usos ou cargas. Podem ser usados permanentemente fora dos cofres sem nenhum custo, mas gastar\u00e3o uma carga cada vez que voc\u00ea entrar em um cofre com um equipado. Tamb\u00e9m n\u00e3o podem ser desequipados dentro de um cofre.\nH\u00e1 uma ", "color": "$text" }, { "text": "especializa\u00e7\u00e3o", "color": "$expertise" }, { "text": " chamada ", "color": "$text" }, { "text": "Berloqueiro", "color": "$expertise" }, { "text": " que te d\u00e1 uma chance aleat\u00f3ria de n\u00e3o usar uma carga de berloque ao entrar em um cofre.\n\n", "color": "$text" }, { "text": "Uma vez que voc\u00ea tenha encontrado um berloque, ele ser\u00e1 permanentemente descoberto e poder\u00e1 ser criado na ", "color": "$text" }, { "text": "Forja de Berloques", "color": "$qhighlight" }, { "text": ".\n\nUm Berloque Criado sempre ter\u00e1 12 usos/cargas, enquanto um berloque saqueado gera aleatoriamente de 20 a 30 usos/cargas.", "color": "$text" }, { "text": "\n\nSeu primeiro berloque \u00e9 uma recompensa por ler esta miss\u00e3o, esperamos que voc\u00ea consiga algo que goste! Se n\u00e3o, berloques podem ser sucateados no Reciclador de Cofre, que rende seu ingrediente principal: ", "color": "$text" }, { "text": "Sucata de Berloque", "color": "$qhighlight" }, { "text": ".\nA chance de obter uma Sucata de Berloque \u00e9 determinada por quantos usos/cargas o berloque tem restante ao ser sucateado; Um berloque completamente carregado sempre render\u00e1 a sucata, enquanto um completamente esgotado nunca render\u00e1.", "color": "$text" }, { "text": "\n\n", "color": "$text" } ] }, "icon": "the_vault:gui/quests/trinket", "targetId": "the_vault:trinket", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:trinket", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "trinket_forge", "name": "Forja de Berloques", "descriptionData": { "description": [ { "text": "Agora que voc\u00ea descobriu um ", "color": "$text" }, { "text": "Berloque", "color": "$qhighlight" }, { "text": ", voc\u00ea pode criar os seus na ", "color": "$text" }, { "text": "Forja de Berloques", "color": "$qhighlight" }, { "text": ".\n\n", "color": "$text" }, { "text": "Voc\u00ea precisar\u00e1 de ", "color": "$text" }, { "text": "Sucata de Berloques", "color": "$qhighlight" }, { "text": " que voc\u00ea pode obter no ", "color": "$text" }, { "text": "Reciclador de Cofre", "color": "$qhighlight" }, { "text": ".\n\n", "color": "$text" }, { "text": "Consiga uma Forja de Berloques", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/trinket_forge", "targetId": "the_vault:trinket_forge", "targetProgress": 1.0, "unlockedBy": "trinkets", "reward": { "items": [ { "item": "the_vault:trinket_scrap", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "checkmark", "id": "vaultrocks", "name": "Rochas de Cofre", "descriptionData": { "description": [ { "text": "O mundo de Vault Hunters tamb\u00e9m abriga m\u00edsticas ", "color": "$text" }, { "text": "Rochas de Cofre especiais", "color": "$qhighlight" }, { "text": ", algumas delas fabric\u00e1veis, outras s\u00f3 encontr\u00e1veis.\n\nEssas ", "color": "$text" }, { "text": "Rochas de Cofre especiais", "color": "$text" }, { "text": " podem ser usadas no ", "color": "$text" }, { "text": "Altar do Cofre", "color": "$qhighlight" }, { "text": " para criar um, ", "color": "$text" }, { "text": "cristal de cofre especial n\u00e3o modific\u00e1vel", "color": "$qhighlight" }, { "text": ".\n\n", "color": "$text" } ] }, "icon": "the_vault:gui/quests/vaultrock", "targetId": "the_vault:none", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:vault_diamond", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "warden", "name": "Rocha de Cofre do Guardi\u00e3o", "descriptionData": { "description": [ { "text": "Ap\u00f3s o n\u00edvel 20, enquanto n\u00e3o jogar no Modo Casual, morrer em um cofre significa que voc\u00ea perde ouro por ter que recomprar seu esp\u00edrito, ou perde itens se n\u00e3o recomprar seu esp\u00edrito.\n\nIsso \u00e0s vezes pode ser assustador e frustrante, no entanto, se voc\u00ea se encontrar em uma situa\u00e7\u00e3o onde gostaria de um seguro contra a morte antes de entrar em um cofre, crie uma ", "color": "$text" }, { "text": "Rocha de Cofre do Guardi\u00e3o", "color": "$qhighlight" }, { "text": ".\n\nUm Cristal criado com esta rocha especial concede o ", "color": "$text" }, { "text": "modificador de Outra Vida", "color": "$qhighlight" }, { "text": ", assegurando a seguran\u00e7a dos seus itens em caso de morte. A desvantagem \u00e9 que tamb\u00e9m ", "color": "$text" }, { "text": "reduzir\u00e1 pela metade toda a experi\u00eancia", "color": "$qhighlight" }, { "text": " ganha dentro do cofre, o que pode ser potencialmente positivo caso voc\u00ea precise se atualizar!\n\n", "color": "$text" }, { "text": "Crie uma Rocha de Cofre do Guardi\u00e3o", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/wardenrock", "targetId": "the_vault:wardens_pearl", "targetProgress": 1.0, "unlockedBy": "vaultrocks", "reward": { "items": [ { "item": "the_vault:vault_diamond", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "plunderer", "name": "Rocha de Cofre do Saqueador", "descriptionData": { "description": [ { "text": "A ", "color": "$text" }, { "text": "Rocha de Cofre do Saqueador", "color": "$qhighlight" }, { "text": " \u00e9 uma \u00f3tima rocha de cofre especial caso voc\u00ea esteja se sentindo atr\u00e1s da curva de escala dos cofres. Ela ", "color": "$text" }, { "text": "aumenta a quantidade de saque", "color": "$qhighlight" }, { "text": " que voc\u00ea obt\u00e9m, incluindo min\u00e9rios de cofre, mas ", "color": "$text" }, { "text": "remove qualquer ganho de experi\u00eancia", "color": "$qhighlight" }, { "text": " do cofre.\n\nIsso pode ser \u00f3timo de usar caso voc\u00ea n\u00e3o queira subir de n\u00edvel, mas apenas quer saquear mais!\n\n", "color": "$text" }, { "text": "Crie uma Rocha de Cofre do Saqueador", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/plunderrock", "targetId": "the_vault:plunderer_pearl", "targetProgress": 1.0, "unlockedBy": "vaultrocks", "reward": { "items": [ { "item": "the_vault:vault_diamond", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "vendoors", "name": "Vendoors", "descriptionData": { "description": [ { "text": "Agora que voc\u00ea alcan\u00e7ou o n\u00edvel 20, poder\u00e1 encontrar ", "color": "$text" }, { "text": "Vendoors", "color": "$qhighlight" }, { "text": " dentro do cofre!\n\nEssas ", "color": "$text" }, { "text": "portas vermelho escuro", "color": "$qhighlight" }, { "text": " s\u00e3o abertas clicando com o bot\u00e3o direito com a m\u00e3o vazia, e t\u00eam 3 ", "color": "$text" }, { "text": "pedestais de compra", "color": "$qhighlight" }, { "text": " dentro.\n\nOs pre\u00e7os s\u00e3o em ", "color": "$text" }, { "text": "ouro de cofre", "color": "$qhighlight" }, { "text": ", ent\u00e3o certifique-se de levar um pouco ao entrar nos cofres. O jogo combinar\u00e1 automaticamente bronze e prata no seu invent\u00e1rio ou em mochilas se necess\u00e1rio para fazer a compra. A especializa\u00e7\u00e3o de ", "color": "$text" }, { "text": "Barganha", "color": "$qhighlight" }, { "text": " pode ajudar a baixar os pre\u00e7os.\n\n", "color": "$text" }, { "text": "Abra um Vendoor dentro de um cofre", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/vendoor", "targetId": "the_vault:vendor_door", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:vault_gold", "amount": 20 } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "dungeons", "name": "Masmorras", "descriptionData": { "description": [ { "text": "Masmorras s\u00e3o lugares assustadores dentro do cofre, contendo um desafio e saque!\n\n", "color": "$text" }, { "text": "Portas de Masmorra, encontradas aleatoriamente dentro do cofre, s\u00e3o abertas ", "color": "$text" }, { "text": "clicando com o bot\u00e3o direito", "color": "$qhighlight" }, { "text": " nelas. Uma vez abertas, a masmorra anunciar\u00e1 qual ", "color": "$text" }, { "text": "dificuldade", "color": "$qhighlight" }, { "text": " ela tem, variando entre ", "color": "$text" }, { "text": "Normal", "color": "$normal" }, { "text": " e ", "color": "$text" }, { "text": "Imposs\u00edvel", "color": "$impossible" }, { "text": ".\n\nA cabe\u00e7a de mob na pr\u00f3pria porta te diz que tipo de mobs est\u00e3o guardando a masmorra.", "color": "$text" }, { "text": " Masmorras t\u00eam diferentes ", "color": "$text" }, { "text": "tamanhos", "color": "$qhighlight" }, { "text": ", quanto maior a masmorra, mais saque e maior a chance de um ", "color": "$text" }, { "text": "Arquivo de Alquimia", "color": "$qhighlight" }, { "text": ", ap\u00f3s voc\u00ea derrotar o ", "color": "$text" }, { "text": "Campe\u00e3o da Masmorra", "color": "$qhighlight" }, { "text": "!\n\nSe tiver sorte, voc\u00ea pode encontrar um ", "color": "$text" }, { "text": "Globo de Cofre", "color": "$qhighlight" }, { "text": " dentro da masmorra, guardado por um ", "color": "$text" }, { "text": "chefe de masmorra", "color": "$qhighlight" }, { "text": ". Quanto maior a masmorra, mais prov\u00e1vel \u00e9 que voc\u00ea encontre um globo. H\u00e1 v\u00e1rios globos diferentes para encontrar, mas qualquer masmorra pode ter no m\u00e1ximo um. Quando clicado, um ", "color": "$text" }, { "text": "globo", "color": "$qhighlight" }, { "text": " ", "color": "$text" }, { "text": "revelar\u00e1 todas as salas", "color": "$qhighlight" }, { "text": " do tipo de globo dado, para todos os jogadores dentro do cofre atual.\n\nMasmorras tamb\u00e9m cont\u00eam", "color": "$text" }, { "text": " uma ", "color": "$text" }, { "text": "barreira", "color": "$qhighlight" }, { "text": ", fazendo com que os monstros da masmorra n\u00e3o possam sair dela, mas n\u00e3o se preocupe, voc\u00ea pode atravessar esta ", "color": "$text" }, { "text": "barreira", "color": "$qhighlight" }, { "text": ".\nCaminhe com cuidado, e respeite a dificuldade! Boa sorte ca\u00e7ador!", "color": "$text" }, { "text": "\n\nAbra uma Porta de Masmorra", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/dungeon_quest", "targetId": "the_vault:dungeon_door", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:gem_pog" } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "storing_gear", "name": "Armazenando Equipamento", "descriptionData": { "description": [ { "text": "O Guarda-Roupa permite que voc\u00ea armazene um conjunto de equipamento e uma hotbar entre os quais pode trocar rapidamente usando a interface. Isso permite ter muitos conjuntos de builds diferentes com muito mais facilidade de acesso.", "color": "$text" }, { "text": "\n\nInteraja com um Guarda-Roupa", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/wardrobe", "targetId": "the_vault:wardrobe", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:wardrobe" } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "skill_altar", "name": "M\u00faltiplas Builds", "descriptionData": { "description": [ { "text": "Assim como o Guarda-Roupa permite armazenar equipamento, o Altar de Habilidades permite armazenar Habilidades e Talentos para que voc\u00ea possa trocar rapidamente entre diferentes builds! Isso sinergiza excepcionalmente bem com o Guarda-Roupa.", "color": "$text" }, { "text": "\n\nInteraja com um Altar de Habilidades", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/skill_altar", "targetId": "the_vault:skill_altar", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:vault_gold", "amount": 10 } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "transmog", "name": "Transmogrifica\u00e7\u00e3o", "descriptionData": { "description": [ { "text": "A Mesa de Transmogrifica\u00e7\u00e3o permite que voc\u00ea transmogrifique pe\u00e7as de equipamento para qualquer transmog desbloqueado que voc\u00ea adquiriu. Coloque uma pe\u00e7a de equipamento e um pouco de bronze para come\u00e7ar a ver os transmogs!", "color": "$text" }, { "text": "\n\nInteraja com uma Mesa de Transmogrifica\u00e7\u00e3o", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/transmog", "targetId": "the_vault:transmog_table", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [ { "item": "the_vault:vault_bronze", "amount": 64 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "unique_codex", "name": "Equipamento \u00danico", "descriptionData": { "description": [ { "text": "Equipamento \u00danico ", "color": "$qhighlight" }, { "text": "\u00e9 um elemento empolgante de Vault Hunters!", "color": "$text" }, { "text": "\n\n", "color": "$text" }, { "text": "Equipamento \u00danico ", "color": "$qhighlight" }, { "text": "pe\u00e7as n\u00e3o podem, diferente do equipamento normal, ser modificadas - no entanto, rolam com propriedades \u00fanicas! ", "color": "$text" }, { "text": "Algumas delas podem, por exemplo, dar \u00e0s suas habilidades usos completamente novos, enquanto outras podem melhorar enormemente um estilo de jogo preferido.", "color": "$text" }, { "text": "\n\n", "color": "$text" }, { "text": "Crie o ", "color": "$text" }, { "text": "C\u00f3dice \u00danico ", "color": "$qhighlight" }, { "text": "e comece a navegar onde encontrar essas empolgantes pe\u00e7as de equipamento, mas cuidado, algumas delas s\u00e3o muito raras!", "color": "$text" }, { "text": "\n\nUma vez que voc\u00ea tenha come\u00e7ado a descobrir \u00fanicos, crie o ", "color": "$text" }, { "text": "Guarda-Roupa \u00danico", "color": "$qhighlight" }, { "text": " para mostr\u00e1-los! Este bloco de exibi\u00e7\u00e3o renderiza um jogador usando qualquer \u00fanico que voc\u00ea descobriu, permitindo admirar sua cole\u00e7\u00e3o com estilo.", "color": "$text" }, { "text": "\n\n", "color": "$text" }, { "text": "Crie o C\u00f3dice \u00danico", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/unique_codex", "targetId": "the_vault:unique_codex", "targetProgress": 1.0, "unlockedBy": "reach_level_20", "reward": { "items": [], "vaultExp": 0 } },
+
+    { "type": "level_up", "id": "reach_level_40", "name": "N\u00edvel 40!", "descriptionData": { "description": [ { "text": "Ao alcan\u00e7ar o n\u00edvel 40 voc\u00ea fez os Deuses do Cofre perceberem voc\u00ea!\n\n", "color": "$text" }, { "text": "Os Deuses n\u00e3o s\u00e3o nem bons nem maus, e voc\u00ea pode escolher ignor\u00e1-los completamente. No entanto, eles podem valer a pena seu tempo!\n\n", "color": "$text" }, { "text": "\n\nAlcance o N\u00edvel de Cofre 40", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/level40", "targetId": "the_vault:40", "targetProgress": 1.0, "unlockedBy": "transmog", "reward": { "items": [ { "item": "the_vault:gem_echo", "amount": 4 }, { "item": "the_vault:mod_box", "amount": 2 }, { "item": "the_vault:sour_orange", "amount": 1 }, { "item": "minecraft:bamboo", "amount": 12 } ], "vaultExp": 0 } },
+    { "type": "checkmark", "id": "charms", "name": "Os Deuses", "descriptionData": { "description": [ { "text": "\u00c9 hora de se familiarizar com os Deuses do Cofre!\n\n", "color": "$text" }, { "text": "Nem bons nem maus, eles s\u00e3o;\n\n", "color": "$text" }, { "text": "Idona", "color": "$idona" }, { "text": "\nA Deusa da Batalha\n\n", "color": "$text" }, { "text": "Tenos", "color": "$tenos" }, { "text": "\nO Deus do Conhecimento\n\n", "color": "$text" }, { "text": "Velara", "color": "$velara" }, { "text": "\nA Deusa da Vida\n\n", "color": "$text" }, { "text": "Wendarr", "color": "$wendarr" }, { "text": "\nO Deus do Tempo\n\n", "color": "$text" }, { "text": "Agora que voc\u00ea alcan\u00e7ou o n\u00edvel 40, voc\u00ea pode, embora muito raramente, encontrar ", "color": "$text" }, { "text": "Amuletos de Deuses", "color": "$qhighlight" }, { "text": ". Eles podem ser encontrados dentro de ", "color": "$text" }, { "text": "Ba\u00fas Vivos", "color": "$qhighlight" }, { "text": " e ", "color": "$text" }, { "text": "Barris Vivos de Masmorra", "color": "$qhighlight" }, { "text": ". N\u00e3o podem ser criados nem modificados, mas podem ser reciclados por sucata de cofre.\n\n", "color": "$text" }, { "text": "Amuletos podem ser equipados no seu ", "color": "$text" }, { "text": "slot de amuleto", "color": "$qhighlight" }, { "text": " e, como os Berloques, t\u00eam usos at\u00e9 se esgotarem.\n\n", "color": "$text" }, { "text": "Dependendo de qual Deus o amuleto est\u00e1 vinculado, podem adicionar atributos valiosos e ", "color": "$text" }, { "text": " Modificadores Temporais", "color": "$qhighlight" }, { "text": ".\n\nO poder desses atributos \u00e9 baseado na sua ", "color": "$text" }, { "text": "reputa\u00e7\u00e3o", "color": "$qhighlight" }, { "text": " com o deus ao qual est\u00e1 vinculado! Quanto maior sua reputa\u00e7\u00e3o, mais poderosos os atributos se tornam.\n\nNa pr\u00f3xima miss\u00e3o voc\u00ea pode aprender como aumentar sua reputa\u00e7\u00e3o com os deuses, mas por agora, para come\u00e7ar com o p\u00e9 direito, aqui est\u00e1 um Amuleto de Deus gratuito para voc\u00ea identificar!", "color": "$text" } ] }, "icon": "the_vault:gui/quests/gods_quest_x", "targetId": "the_vault:charms", "targetProgress": 1.0, "unlockedBy": "reach_level_40", "reward": { "items": [ { "item": "the_vault:vault_god_charm" } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "god_altars", "name": "Altares de Deuses e Reputa\u00e7\u00e3o", "descriptionData": { "description": [ { "text": "Altares de Deuses come\u00e7ar\u00e3o a aparecer nos cofres ap\u00f3s o n\u00edvel 40.\n\n", "color": "$text" }, { "text": "Os Altares representam um dos quatro deuses.\n", "color": "$text" }, { "text": "Interagir com um desses altares dentro do cofre te dar\u00e1 um desafio do deus. Completar a tarefa te dar\u00e1 um ", "color": "$text" }, { "text": "favor", "color": "$qhighlight" }, { "text": ", te fortalecendo no cofre e talvez mais importante, te fazendo ganhar um ", "color": "$text" }, { "text": "ponto de reputa\u00e7\u00e3o", "color": "$qhighlight" }, { "text": " com aquele Deus. Mas, cuidado! Falhar no desafio ", "color": "$text" }, { "text": "revogar\u00e1 um ponto de reputa\u00e7\u00e3o", "color": "$qhighlight" }, { "text": "!\n\n", "color": "$text" }, { "text": "Voc\u00ea pode alcan\u00e7ar ", "color": "$text" }, { "text": "50", "color": "$qhighlight" }, { "text": " pontos de reputa\u00e7\u00e3o por cada deus, e pode acompanhar seu progresso na tela de estat\u00edsticas.", "color": "$text" }, { "text": "\n\nQuanto mais reputa\u00e7\u00e3o voc\u00ea tiver com cada deus, mais poderosos s\u00e3o seus amuletos!", "color": "$text" }, { "text": "\n\nInteraja com um Altar de Deus", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/god_altar", "targetId": "the_vault:god_altar", "targetProgress": 1.0, "unlockedBy": "charms", "reward": { "items": [ { "item": "the_vault:gem_pog" } ], "vaultExp": 0 } },
+
+    { "type": "level_up", "id": "reach_level_50", "name": "Esquecendo Especializa\u00e7\u00f5es", "descriptionData": { "description": [ { "text": "Alcan\u00e7ar o N\u00edvel de Cofre 50 marca o ponto intermedi\u00e1rio em termos de n\u00edveis, isso significa que voc\u00ea atualmente tem metade dos seus pontos de especializa\u00e7\u00e3o totais. O Neuralizador permite que voc\u00ea resete completamente seus pontos de especializa\u00e7\u00e3o alocados caso voc\u00ea mude de ideia e decida que outra especializa\u00e7\u00e3o se adapta melhor \u00e0s suas necessidades!", "color": "$text" }, { "text": "\n\nAlcance o N\u00edvel de Cofre 50", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/level50", "targetId": "the_vault:50", "targetProgress": 1.0, "unlockedBy": "god_altars", "reward": { "items": [ { "item": "the_vault:neuralizer" } ], "vaultExp": 0 } },
+    { "type": "checkmark", "id": "card_system", "name": "Sistema de Cartas", "descriptionData": { "description": [ { "text": "O Sistema de Cartas permite que voc\u00ea melhore suas estat\u00edsticas e habilidades usando ", "color": "$text" }, { "text": "cartas", "color": "$qhighlight" }, { "text": ". As cartas v\u00eam em muitos tipos diferentes e s\u00e3o equipadas atrav\u00e9s de ", "color": "$text" }, { "text": "baralhos", "color": "$qhighlight" }, { "text": ". Cada baralho tem seu pr\u00f3prio layout e limites de slots. ", "color": "$text" }, { "text": "N\u00facleos ", "color": "$qhighlight" }, { "text": "fornecem for\u00e7a extra e personaliza\u00e7\u00e3o.\n\nJunto com cartas, baralhos e n\u00facleos, h\u00e1 v\u00e1rias novas esta\u00e7\u00f5es de trabalho associadas a este sistema.\n\nA ", "color": "$text" }, { "text": "Esta\u00e7\u00e3o de Baralhos ", "color": "$qhighlight" }, { "text": "\u00e9 usada para criar baralhos e n\u00facleos de n\u00edvel inferior.\n\nO ", "color": "$text" }, { "text": "Ficheiro de Cartas ", "color": "$qhighlight" }, { "text": "pode ser usado para armazenar cartas e construir baralhos.\n\nA ", "color": "$text" }, { "text": "Esta\u00e7\u00e3o de Melhoria de Cartas ", "color": "$qhighlight" }, { "text": "pode ser usada para melhorar cartas com n\u00edveis para torn\u00e1-las mais fortes.", "color": "$text" }, { "text": "\n\nPara aprender mais sobre cada parte do Sistema de Cartas, confira as outras miss\u00f5es relacionadas a cartas.", "color": "$text" } ] }, "icon": "the_vault:gui/quests/card_table", "targetId": "the_vault:deck_station", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:gem_pog", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "obtain_card", "name": "Tipos de Cartas", "descriptionData": { "description": [ { "text": "As cartas s\u00e3o obtidas de pacotes de refor\u00e7o, que podem ser encontrados em caixas de conclus\u00e3o ou comprados no mercado negro.\n\nElas v\u00eam em quatro cores, e o prop\u00f3sito de cada carta depende da carta espec\u00edfica que voc\u00ea recebe.", "color": "$text" }, { "text": "\n\nPacote de Estat\u00edsticas: ", "color": "$qhighlight" }, { "text": "Este pacote cont\u00e9m cartas de estat\u00edsticas. Elas melhoram estat\u00edsticas baseadas no jogador como ", "color": "$text" }, { "text": "sa\u00fade", "color": "$health" }, { "text": ", ", "color": "$text" }, { "text": "armadura", "color": "$armor" }, { "text": ", ou ", "color": "$text" }, { "text": "dano de ataque", "color": "$damage" }, { "text": ".", "color": "$text" }, { "text": "\n\nPacote de Recursos: ", "color": "$qhighlight" }, { "text": "Este pacote cont\u00e9m cartas de recursos. Cada carta tem um recurso e um requisito. Ao completar o cofre e cumprir o requisito, aquele recurso ser\u00e1 adicionado \u00e0 sua caixa de conclus\u00e3o.", "color": "$text" }, { "text": "\n\nPacote Arcano: ", "color": "$qhighlight" }, { "text": "Este pacote cont\u00e9m cartas arcanas que adicionam n\u00edveis extras \u00e0s suas habilidades atuais.", "color": "$text" }, { "text": "\n\nPacote de Evolu\u00e7\u00e3o: ", "color": "$qhighlight" }, { "text": "Este pacote fornece cartas de evolu\u00e7\u00e3o. Essas cartas s\u00e3o similares em fun\u00e7\u00e3o \u00e0s cartas de estat\u00edsticas mas se tornam mais poderosas quando colocadas e combinadas com outras cartas.", "color": "$text" }, { "text": "\n\nPacote Misto: ", "color": "$qhighlight" }, { "text": "Este pacote fornece aos jogadores uma carta aleat\u00f3ria de um dos pacotes acima.", "color": "$text" }, { "text": "\n\nTodos esses pacotes podem ser encontrados em uma variante Mega que dar\u00e1 ao jogador mais cartas para escolher ao abrir.", "color": "$text" }, { "text": "\n\nAs cartas podem ser armazenadas dentro do ", "color": "$text" }, { "text": "Ficheiro de Cartas", "color": "$qhighlight" }, { "text": ", recicladas no ", "color": "$text" }, { "text": "Reciclador de Cofre", "color": "$qhighlight" }, { "text": ", e melhoradas na ", "color": "$text" }, { "text": "Esta\u00e7\u00e3o de Melhoria de Cartas", "color": "$qhighlight" }, { "text": ".", "color": "$text" }, { "text": "\n\nObtenha um pacote de refor\u00e7o", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/booster", "targetId": "the_vault:booster_pack", "targetProgress": 1.0, "unlockedBy": "card_system", "reward": { "items": [ { "item": "the_vault:booster_pack", "nbt": "{id:\"the_vault:arcane_pack\"}", "amount": 1 }, { "item": "the_vault:booster_pack", "nbt": "{id:\"the_vault:evolution_pack\"}", "amount": 1 }, { "item": "the_vault:booster_pack", "nbt": "{id:\"the_vault:resource_pack\"}", "amount": 1 }, { "item": "the_vault:booster_pack", "nbt": "{id:\"the_vault:stat_pack\"}", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "decks", "name": "Baralhos", "descriptionData": { "description": [ { "text": "Os baralhos permitem armazenar e levar cartas ao cofre para que voc\u00ea possa se beneficiar dos seus efeitos especiais. Os baralhos devem ser colocados no slot de curios ", "color": "$text" }, { "text": "Baralho de Cartas ", "color": "$qhighlight" }, { "text": "para que um jogador obtenha os efeitos do baralho.\n\nBaralhos s\u00e3o criados na ", "color": "$text" }, { "text": "Esta\u00e7\u00e3o de Baralhos", "color": "$qhighlight" }, { "text": ", com baralhos b\u00e1sicos dispon\u00edveis imediatamente. Para acessar a aba de ", "color": "$text" }, { "text": "Baralhos Avan\u00e7ados ", "color": "$qhighlight" }, { "text": "dentro da esta\u00e7\u00e3o de baralhos, voc\u00ea deve primeiro aprender a pesquisa de ", "color": "$text" }, { "text": "Baralhos de Cofre ", "color": "$yellow" }, { "text": "e ent\u00e3o cumprir o requisito de desbloqueio de cada baralho. \n\nCada baralho tem um layout \u00fanico e n\u00famero de slots. Certifique-se de conferir todos os baralhos para encontrar a combina\u00e7\u00e3o que melhor se adapta ao baralho que voc\u00ea deseja.", "color": "$text" }, { "text": "\n\nOs baralhos podem ser constru\u00eddos e modificados dentro do ", "color": "$text" }, { "text": "Ficheiro de Cartas", "color": "$qhighlight" }, { "text": ".", "color": "$text" }, { "text": "\n\nCrie um Baralho de Cartas", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/deck", "targetId": "the_vault:card_deck", "targetProgress": 1.0, "unlockedBy": "card_system", "reward": { "items": [ { "item": "the_vault:card_binder", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "cores", "name": "N\u00facleos de Baralho", "descriptionData": { "description": [ { "text": "N\u00facleos s\u00e3o aumentos que podem ser aplicados a baralhos em uma ", "color": "$text" }, { "text": "bigorna", "color": "$qhighlight" }, { "text": ".\n\nN\u00facleos menores podem ser criados na ", "color": "$text" }, { "text": "Esta\u00e7\u00e3o de Baralhos", "color": "$qhighlight" }, { "text": ", mas n\u00facleos mais poderosos podem ser encontrados ao longo das suas aventuras nos cofres.\n\nN\u00facleos desempenham um papel crucial na cria\u00e7\u00e3o de baralhos poderosos, ent\u00e3o escolha-os cuidadosamente. ", "color": "$text" }, { "text": "Eles podem ser melhorados de n\u00facleos menores para normais, mas uma vez encaixados, um n\u00facleo nunca pode ser substitu\u00eddo por um diferente.", "color": "$text" }, { "text": "\n\nCrie um N\u00facleo Menor", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/lesser_deck_core", "targetId": "the_vault:deck_socket", "targetProgress": 1.0, "unlockedBy": "card_system", "reward": { "items": [ { "item": "the_vault:silver_scrap", "amount": 256 }, { "item": "the_vault:gem_black_opal", "amount": 16 }, { "item": "the_vault:gem_pog", "amount": 1 }, { "item": "the_vault:vault_gold", "amount": 16 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "obtain_juicer", "name": "Melhorando Cartas", "descriptionData": { "description": [ { "text": "Cartas indesejadas podem ser recicladas em um Reciclador de Cofre para obter ", "color": "$text" }, { "text": "Suco de Cartas", "color": "$qhighlight" }, { "text": ".\n\nUsando a ", "color": "$text" }, { "text": "Esta\u00e7\u00e3o de Melhoria de Cartas", "color": "$qhighlight" }, { "text": ", cartas com n\u00edveis podem ser combinadas com a quantidade necess\u00e1ria de suco de cartas para melhorar o n\u00edvel.\n\nMelhorar do n\u00edvel 1 para o n\u00edvel 2 requer 10 de suco de cartas, e n\u00edveis mais altos exigir\u00e3o significativamente mais.", "color": "$text" }, { "text": "\n\nCrie uma Esta\u00e7\u00e3o de Melhoria de Cartas", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/card_upgrade_table", "targetId": "the_vault:card_essence_extractor", "targetProgress": 1.0, "unlockedBy": "card_system", "reward": { "items": [ { "item": "the_vault:card_juice", "amount": 5 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "blank_key", "name": "Chaves do Tesouro", "descriptionData": { "description": [ { "text": "Ap\u00f3s o n\u00edvel 50, portas estranhas e coloridas come\u00e7ar\u00e3o a aparecer nos cofres, estas s\u00e3o ", "color": "$text" }, { "text": "Portas do Tesouro", "color": "$qhighlight" }, { "text": "!\n\nElas podem ser abertas usando uma ", "color": "$text" }, { "text": "Chave do Tesouro", "color": "$qhighlight" }, { "text": " do mesmo tipo de gema de que a porta \u00e9 feita.\nEssas chaves s\u00e3o caras e requerem ", "color": "$text" }, { "text": "pe\u00e7as de chave", "color": "$qhighlight" }, { "text": " assim como gemas eco, mas pode valer muito a pena faz\u00ea-las!\n\nVoc\u00ea come\u00e7a fazendo uma ", "color": "$text" }, { "text": "chave em branco", "color": "$qhighlight" }, { "text": " que voc\u00ea ent\u00e3o combina com qualquer ", "color": "$text" }, { "text": "aglomerado", "color": "$qhighlight" }, { "text": " de gema lend\u00e1ria em uma bigorna.", "color": "$text" }, { "text": "\n\nCrie uma Chave em Branco", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/blank_key", "targetId": "the_vault:blank_key", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:perfect_echo_gem" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "gear_sealer", "name": "Selando Equipamento", "descriptionData": { "description": [ { "text": "Selar seu melhor equipamento de cofre \u00e9 uma forma muito poderosa de maximiz\u00e1-lo, mas cuidado, voc\u00ea tamb\u00e9m pode ter azar.\n\n", "color": "$text" }, { "text": "Voc\u00ea precisa encontrar ", "color": "$text" }, { "text": "Marcas Ascendentes", "color": "$qhighlight" }, { "text": ", que podem ser encontradas em ", "color": "$text" }, { "text": "Vendoors", "color": "$qhighlight" }, { "text": ", ", "color": "$text" }, { "text": "Mercado Negro", "color": "$qhighlight" }, { "text": " e alguns outros lugares. Essas marcas raras s\u00e3o usadas para selar seu equipamento.\n\n", "color": "$text" }, { "text": "Ao selar uma pe\u00e7a de equipamento, h\u00e1 uma ", "color": "$text" }, { "text": "chance de 1 em 10", "color": "$qhighlight" }, { "text": " da sua pe\u00e7a de equipamento obter um modificador selado poderoso adicional, o outro resultado \u00e9 ", "color": "$text" }, { "text": "substituir um modificador aleat\u00f3rio, n\u00e3o congelado", "color": "$qhighlight" }, { "text": ", no seu equipamento com um modificador selado poderoso.\n\nO poderoso modificador selado inclui ganhar ", "color": "$text" }, { "text": "n\u00edveis de habilidade extras", "color": "$qhighlight" }, { "text": ", ou ganhar um ", "color": "$text" }, { "text": "efeito \u00fanico", "color": "$qhighlight" }, { "text": ". O custo de selar uma pe\u00e7a de equipamento depende do ", "color": "$text" }, { "text": "n\u00edvel do seu equipamento", "color": "$qhighlight" }, { "text": ", e a ", "color": "$text" }, { "text": "raridade do seu equipamento", "color": "$qhighlight" }, { "text": ".\n\nFinalmente, uma vez que uma pe\u00e7a de equipamento est\u00e1 selada voc\u00ea n\u00e3o pode modific\u00e1-la mais.\n\n", "color": "$text" }, { "text": "Crie um Selador de Equipamento", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/modifier", "targetId": "the_vault:vault_sealer", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:vorpal_focus", "amount": 3 } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "treasure", "name": "Salas do Tesouro", "descriptionData": { "description": [ { "text": "Uma vez que tenha uma chave do tesouro, leve-a com voc\u00ea para os cofres e procure uma porta correspondente, use a chave na porta para abri-la.\n\nSalas do Tesouro cont\u00eam uma quantidade aleat\u00f3ria de ", "color": "$text" }, { "text": "areia do tesouro", "color": "$qhighlight" }, { "text": ", que quando minerada rende muitos tesouros diferentes.", "color": "$text" }, { "text": "\nA Sala do Tesouro tamb\u00e9m cont\u00e9m ", "color": "$text" }, { "text": "Tr\u00eas Pedestais do Tesouro", "color": "$qhighlight" }, { "text": ", contendo um item de equipamento de cofre cada. No entanto, esses itens de equipamento de cofre s\u00e3o garantidos de ter ", "color": "$text" }, { "text": "um modificador lend\u00e1rio", "color": "$qhighlight" }, { "text": "!\n\nVoc\u00ea s\u00f3 pode escolher um dos pedestais, e a \u00fanica informa\u00e7\u00e3o que voc\u00ea tem ao escolher \u00e9 o tipo de equipamento e a raridade!", "color": "$text" }, { "text": "\n\nInteraja com um Pedestal do Tesouro", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/treasure", "targetId": "the_vault:treasure_pedestal", "targetProgress": 1.0, "unlockedBy": "blank_key", "reward": { "items": [ { "item": "the_vault:unidentified_treasure_key" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "royale", "name": "Cofres Royale", "descriptionData": { "description": [ { "text": "Cofres Royale s\u00e3o uma parte completamente opcional de Vault Hunters, mas uma agrad\u00e1vel mudan\u00e7a de ritmo se seu caminho ao n\u00edvel 100 ficar entediante e repetitivo, e as recompensas podem ser incr\u00edveis!\n\n", "color": "$text" }, { "text": "Quando voc\u00ea entra em um cofre Royale estar\u00e1 completamente nu; todo seu equipamento e aloca\u00e7\u00e3o de pontos de habilidade ser\u00e3o armazenados para quando voc\u00ea retornar. A primeira coisa que voc\u00ea faz \u00e9 conhecer ", "color": "$text" }, { "text": "Tommy", "color": "$qhighlight" }, { "text": "!\n", "color": "$text" }, { "text": "Tommy", "color": "$qhighlight" }, { "text": " te fornecer\u00e1 3 loadouts. Voc\u00ea pode escolher o que se sentir mais confort\u00e1vel - ou nenhum, se quiser um desafio extremo.\n", "color": "$text" }, { "text": "Em seguida, ", "color": "$text" }, { "text": "Tommy", "color": "$qhighlight" }, { "text": " te oferecer\u00e1 um de tr\u00eas berloques azuis, e ent\u00e3o um de tr\u00eas berloques vermelhos. Finalmente, voc\u00ea escolher\u00e1 sua recompensa - caso voc\u00ea ven\u00e7a.\n\n", "color": "$text" }, { "text": "Uma das recompensas sempre ser\u00e1 a ", "color": "$text" }, { "text": "Coroa Royale", "color": "$qhighlight" }, { "text": ". A coroa \u00e9 um multiplicador de saque, que aumenta seu multiplicador de recompensa cada vez que \u00e9 anexada ao ", "color": "$text" }, { "text": "Cristal Royale", "color": "$qhighlight" }, { "text": ", o que voc\u00ea faz em uma bigorna entre partidas Royale.\n\n", "color": "$text" }, { "text": "Agora, nem ", "color": "$text" }, { "text": "Po\u00e7\u00f5es", "color": "$qhighlight" }, { "text": " nem o feiti\u00e7o de ", "color": "$text" }, { "text": "Cura", "color": "$qhighlight" }, { "text": " ser\u00e3o oferecidos dentro de cofres Royale. Em vez disso, sua cura ter\u00e1 que depender de outras fontes - a mais comum sendo ", "color": "$text" }, { "text": "Ma\u00e7\u00e3s Fartas", "color": "$qhighlight" }, { "text": ".\n\n", "color": "$text" }, { "text": "Ao deixar ", "color": "$text" }, { "text": "Tommy", "color": "$qhighlight" }, { "text": ", voc\u00ea ter\u00e1 alguns pontos de habilidade alocados - mas ainda estar\u00e1 nu. Equipamento e pergaminhos de pontos de habilidade adicionais podem ser encontrados nos brilhantes ", "color": "$text" }, { "text": "Barris Royale", "color": "$qhighlight" }, { "text": " espalhados pelo cofre. Certifique-se de se equipar antes de lutar!\n\n", "color": "$text" }, { "text": "Uma \u00faltima coisa: um cofre Royale est\u00e1 trancado e n\u00e3o pode ser sa\u00eddo pelo caminho que voc\u00ea entrou. Voc\u00ea deve completar o objetivo aleat\u00f3rio para sair!\n\nBoa sorte, ca\u00e7ador - voc\u00ea vai amar ou odiar!\n\n", "color": "$text" }, { "text": "Obtenha uma Rocha Royale", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/royale", "targetId": "the_vault:crystal_seal_vault_royale", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:crystal_seal_vault_royale" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "antiques", "name": "Antiguidades", "descriptionData": { "description": [ { "text": "Antiguidades s\u00e3o selos antigos, carregados pelo reino do cofre. Esses selos antigos podem ser coletados e combinados para te dar uma recompensa vinculada \u00e0quela cole\u00e7\u00e3o espec\u00edfica de antiguidades.\n\n", "color": "$text" }, { "text": "Antiguidades aparecem ap\u00f3s o n\u00edvel 50, mas apenas se o ca\u00e7ador estiver carregando o ", "color": "$text" }, { "text": "livro Colecionador de Selos Antigos", "color": "$qhighlight" }, { "text": ", que pode ser criado e deixado no seu invent\u00e1rio. Ele pegar\u00e1, classificar\u00e1 e organizar\u00e1 automaticamente todas as suas antiguidades. Uma vez que voc\u00ea tenha a quantidade necess\u00e1ria de qualquer antiguidade, pode tir\u00e1-las e clicar com o bot\u00e3o direito para troc\u00e1-las por sua recompensa.\n\n", "color": "$text" }, { "text": "Onde e como encontrar antiguidades se revelar\u00e1 quanto mais voc\u00ea encontrar de uma. Preste aten\u00e7\u00e3o ao passar o cursor sobre uma antiguidade para tentar descobrir de onde ela veio!\n\n", "color": "$text" }, { "text": "Crie um livro Colecionador de Selos Antigos", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/antique_collector_book", "targetId": "the_vault:antique_collector_book", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [], "vaultExp": 0 } },
+    { "type": "collection", "id": "companions", "name": "Companheiros!", "descriptionData": { "description": [ { "text": "Ap\u00f3s o n\u00edvel 50 voc\u00ea pode come\u00e7ar a encontrar ", "color": "$text" }, { "text": "Companheiros", "color": "$qhighlight" }, { "text": "! Eles s\u00e3o bastante t\u00edmidos, mas se voc\u00ea for bem, tem uma chance de gerar um ovo de companheiro! Ele pode aparecer em qualquer sala descoberta e ter\u00e1 part\u00edculas ao redor.\n\n", "color": "$text" }, { "text": "O ovo pode ser chocado dentro de um ", "color": "$text" }, { "text": "Incubador", "color": "$qhighlight" }, { "text": ", e cada companheiro ser\u00e1 pessoalmente vinculado ao seu dono ap\u00f3s esta etapa.\n", "color": "$text" }, { "text": "Equipe seu companheiro no Slot de Cabe\u00e7a no invent\u00e1rio de curios para equip\u00e1-lo. Enquanto seu estado for pronto, ele te acompanhar\u00e1 quando voc\u00ea entrar em um cofre.\n\n", "color": "$text" }, { "text": "Companheiros", "color": "$qhighlight" }, { "text": " v\u00eam com um ", "color": "$text" }, { "text": "Modificador Temporal", "color": "$titleLine" }, { "text": ". Este modificador pode ser ativado a qualquer momento pressionando a tecla de atalho, que pode ser configurada nos controles. A dura\u00e7\u00e3o do ", "color": "$text" }, { "text": "Modificador Temporal", "color": "$titleLine" }, { "text": " \u00e9 determinada pelo n\u00edvel do seu companheiro, dura 1 minuto no n\u00edvel 1, 3 minutos no n\u00edvel 3, etc. O ", "color": "$text" }, { "text": "Modificador Temporal", "color": "$titleLine" }, { "text": " n\u00e3o pode ser alterado. \u00c9 como a alma do seu companheiro.\n\n", "color": "$text" }, { "text": "Companheiros", "color": "$qhighlight" }, { "text": " tamb\u00e9m podem equipar ", "color": "$text" }, { "text": "Rel\u00edquias de Companheiro", "color": "$qhighlight" }, { "text": ". Esses itens raros podem ser encontrados dentro de qualquer ", "color": "$text" }, { "text": "ba\u00fa", "color": "$yellow" }, { "text": ", ou em ", "color": "$text" }, { "text": "Areia do Tesouro", "color": "$yellow" }, { "text": ", desde que voc\u00ea tenha um companheiro com voc\u00ea no cofre.\n", "color": "$text" }, { "text": "Rel\u00edquias de Companheiro", "color": "$qhighlight" }, { "text": " carregam modificadores de cofre, e podem ser equipadas dentro de um ", "color": "$text" }, { "text": "Lar de Companheiro", "color": "$qhighlight" }, { "text": ". No entanto, o companheiro fica muito apegado \u00e0s suas rel\u00edquias, e tentar desequipar uma custar\u00e1 muito ouro!\n\n", "color": "$text" }, { "text": "Se cuidados corretamente, seus companheiros podem se tornar muito poderosos e ajud\u00e1-lo na sua jornada pelos cofres!\n\n", "color": "$text" }, { "text": "Crie um Incubador de Companheiros", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/companion", "targetId": "the_vault:companion_incubator", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:companion_egg", "nbt": "{HatchTime:20,Series:\"PET\"}" } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "soul_flame", "name": "Rocha de Cofre do Desafiante", "descriptionData": { "description": [ { "text": "Ao alcan\u00e7ar o n\u00edvel 65 voc\u00ea desbloqueia a possibilidade de criar um ", "color": "$text" }, { "text": "Cristal de Cofre do Desafiante", "color": "$qhighlight" }, { "text": ".\n\nEste cristal n\u00e3o pode ser modificado, e rastreia sua sequ\u00eancia de vit\u00f3rias (ascens\u00e3o). Cada vez que voc\u00ea completar com sucesso um ", "color": "$text" }, { "text": "Cristal de Cofre do Desafiante", "color": "$qhighlight" }, { "text": ", aumenta a dificuldade do pr\u00f3ximo Cristal do Desafiante que voc\u00ea executar!\n\nQuando voc\u00ea eventualmente falhar (e vai), receber\u00e1 ", "color": "$text" }, { "text": "Brasas", "color": "$qhighlight" }, { "text": ", dependendo de qu\u00e3o longe voc\u00ea chegou.\nBrasas s\u00e3o um item de moeda usado na ", "color": "$text" }, { "text": "Forja de Ascens\u00e3o", "color": "$qhighlight" }, { "text": ".\n\nVoc\u00ea est\u00e1 pronto para sua Ascens\u00e3o?", "color": "$text" }, { "text": "\n\nCrie uma Rocha de Cofre do Desafiante", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/flame", "targetId": "the_vault:soul_flame", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:vault_gold", "amount": 64 } ], "vaultExp": 0 } },
+    { "type": "collection", "id": "ascension_forge", "name": "Forja de Ascens\u00e3o", "descriptionData": { "description": [ { "text": "A ", "color": "$text" }, { "text": "Forja de Ascens\u00e3o", "color": "$qhighlight" }, { "text": " \u00e9 onde voc\u00ea pode gastar suas ", "color": "$text" }, { "text": "Brasas", "color": "$qhighlight" }, { "text": ".\nCont\u00e9m alguns ", "color": "$text" }, { "text": "transmogs especiais", "color": "$qhighlight" }, { "text": " para seu equipamento, fazendo voc\u00ea se destacar como o Desafiante em que se tornou!\nVoc\u00ea tamb\u00e9m pode comprar t\u00edtulos de ", "color": "$text" }, { "text": "prefixo", "color": "$qhighlight" }, { "text": " e ", "color": "$text" }, { "text": "sufixo", "color": "$qhighlight" }, { "text": " para sua nametag.\n\nFa\u00e7a o mundo saber que voc\u00ea sabe como vencer!\n\n", "color": "$text" }, { "text": "Crie uma Forja de Ascens\u00e3o", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/ascensionforge", "targetId": "the_vault:ascension_forge", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:ember", "amount": 4 } ], "vaultExp": 0 } },
+    { "type": "block_interact", "id": "imbuement_altar", "name": "Altares de Imbuimento", "descriptionData": { "description": [ { "text": "Ap\u00f3s o n\u00edvel 60 voc\u00ea tem uma chance rara de encontrar um ", "color": "$text" }, { "text": "Altar de Imbuimento", "color": "$qhighlight" }, { "text": " dentro de ", "color": "$text" }, { "text": "Masmorras", "color": "$qhighlight" }, { "text": ". Quanto maior a masmorra, mais prov\u00e1vel \u00e9 encontrar um.\n\n", "color": "$text" }, { "text": "Ao interagir com um ", "color": "$text" }, { "text": "Altar de Imbuimento", "color": "$qhighlight" }, { "text": ", ele pedir\u00e1 que voc\u00ea confirme uma pe\u00e7a de equipamento para imbuimento, uma vez que uma pe\u00e7a de equipamento seja confirmada n\u00e3o pode ser desfeito.\n\n", "color": "$text" }, { "text": "O altar de imbuimento ent\u00e3o apresentar\u00e1 at\u00e9 3 op\u00e7\u00f5es de imbuimento, imbuir um modificador tem uma ", "color": "$text" }, { "text": "chance de sucesso", "color": "$qhighlight" }, { "text": " para torn\u00e1-lo mais forte, melhorando seus valores.\n\nAp\u00f3s um imbuimento bem-sucedido, se o equipamento originalmente tinha o modificador ", "color": "$text" }, { "text": "Vivo ", "color": "$living" }, { "text": ", o modificador vivo ser\u00e1 removido da pe\u00e7a de equipamento.", "color": "$text" }, { "text": "\n\nSe o imbuimento ", "color": "$text" }, { "text": "falhar", "color": "$red" }, { "text": ", o equipamento se torna ", "color": "$text" }, { "text": "corrupto", "color": "$red" }, { "text": " e o modificador ser\u00e1 degradado.\n\n", "color": "$text" }, { "text": "Tanto equipamento ", "color": "$text" }, { "text": "imbu\u00eddo", "color": "$qhighlight" }, { "text": " quanto ", "color": "$text" }, { "text": "corrupto", "color": "$red" }, { "text": " n\u00e3o podem mais ser modificados na ", "color": "$text" }, { "text": "Esta\u00e7\u00e3o Artes\u00e3", "color": "$qhighlight" }, { "text": ", no entanto, ", "color": "$text" }, { "text": "equipamento imbu\u00eddo", "color": "$qhighlight" }, { "text": " ainda pode ser selado.\n\n", "color": "$text" }, { "text": "Interaja com um Altar de Imbuimento", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/imbuement_altar", "targetId": "the_vault:imbuement_altar", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:gem_echo", "amount": 10 } ], "vaultExp": 0 } },
+
+    { "type": "level_up", "id": "reach_level_100", "name": "Alcan\u00e7ando o N\u00edvel M\u00e1ximo", "descriptionData": { "description": [ { "text": "O n\u00edvel 100 marca o fim dos n\u00edveis ordin\u00e1rios no Vault Hunters, uma vez aqui voc\u00ea conquistou todos os pontos de habilidade dispon\u00edveis e desbloqueou todos os grupos de n\u00edvel de equipamento poss\u00edveis!\n\nMais importante, voc\u00ea agora desbloqueou a capacidade de entrar na Arena e enfrentar o Arauto.", "color": "$text" }, { "text": "\n\nAlcance o N\u00edvel de Cofre 100", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/100", "targetId": "the_vault:100", "targetProgress": 1.0, "unlockedBy": "reach_level_50", "reward": { "items": [ { "item": "the_vault:companion_egg", "nbt": "{HatchTime:20,Series:\"PET\"}" } ], "vaultExp": 0 } },
+    { "type": "complete_vault", "id": "herald", "name": "O Arauto", "descriptionData": { "description": [ { "text": "\u00c9 hora de provar seu valor!\n\n", "color": "$text" }, { "text": "Para enfrentar o desafio definitivo, o ", "color": "$text" }, { "text": "Arauto", "color": "$qhighlight" }, { "text": ", voc\u00ea deve ter alcan\u00e7ado o n\u00edvel 100 e completado seu ", "color": "$text" }, { "text": "Quebra-cabe\u00e7a de Artefatos", "color": "$qhighlight" }, { "text": ". Somente uma vez que ambas as coisas tenham sido completadas voc\u00ea poder\u00e1 entrar na ", "color": "$text" }, { "text": "Arena", "color": "$qhighlight" }, { "text": ".\n\n", "color": "$text" }, { "text": "Recupere a ", "color": "$text" }, { "text": "Rocha do Arauto", "color": "$qhighlight" }, { "text": " clicando com o bot\u00e3o direito no seu ", "color": "$text" }, { "text": "Tomo de Artefatos", "color": "$qhighlight" }, { "text": " completado; voc\u00ea pode recuperar quantas quiser. Criar esta rocha no seu altar te d\u00e1 o ", "color": "$text" }, { "text": "Cristal do Arauto", "color": "$qhighlight" }, { "text": ".\n\n", "color": "$text" }, { "text": "Cuidado, este \u00e9 um chefe muito dif\u00edcil com diferentes fases, e todo o seu conhecimento anterior ser\u00e1 avaliado para superar este desafio.\n\n", "color": "$text" }, { "text": "Boa Sorte Ca\u00e7ador\n\n", "color": "$text" }, { "text": "Derrote o Arauto", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/herald", "targetId": "the_vault:herald", "targetProgress": 1.0, "unlockedBy": "reach_level_100", "reward": { "items": [ { "item": "the_vault:omega_pog", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "complete_vault", "id": "greed", "name": "Gan\u00e2ncia", "descriptionData": { "description": [ { "text": "Muito bem! Ap\u00f3s derrotar o ", "color": "$text" }, { "text": "Arauto", "color": "$qhighlight" }, { "text": ", voc\u00ea desbloqueou o cap\u00edtulo final de Vault Hunters: ", "color": "$text" }, { "text": "Gan\u00e2ncia", "color": "$omega" }, { "text": ".\n\nVoc\u00ea agora tem acesso ao ", "color": "$text" }, { "text": "Teste da Gan\u00e2ncia", "color": "$omega" }, { "text": ", um cofre de dura\u00e7\u00e3o infinita que te levar\u00e1 ao limite. Quando voc\u00ea finalmente cair, seu progresso aumentar\u00e1 seu ", "color": "$text" }, { "text": "N\u00edvel de Gan\u00e2ncia", "color": "$qhighlight" }, { "text": ", desbloqueando novos e poderosos ", "color": "$text" }, { "text": "N\u00f3s de Gan\u00e2ncia", "color": "$omega" }, { "text": ".\n\nAo alcan\u00e7ar seu primeiro N\u00edvel de Gan\u00e2ncia, voc\u00ea receber\u00e1 uma ", "color": "$text" }, { "text": "\u00c2ncora de Gan\u00e2ncia", "color": "$qhighlight" }, { "text": ". Coloque-a para invocar ", "color": "$text" }, { "text": "Sr. Ganancioso", "color": "$omega" }, { "text": ", um misterioso comerciante que oferece uma ", "color": "$text" }, { "text": "Loja", "color": "$white" }, { "text": " para comprar itens de Gan\u00e2ncia com ", "color": "$text" }, { "text": "Moedas de Gan\u00e2ncia", "color": "$qhighlight" }, { "text": ", ", "color": "$text" }, { "text": "Miss\u00f5es", "color": "$white" }, { "text": " que recompensam reputa\u00e7\u00e3o atrav\u00e9s de desafios de cofre, e ", "color": "$text" }, { "text": "Cristais de Desafio", "color": "$white" }, { "text": " com um novo sistema de ", "color": "$text" }, { "text": "Perigo", "color": "$omega" }, { "text": ".\n\n", "color": "$text" }, { "text": "Cuidado com os Assassinos da Gan\u00e2ncia...", "color": "$omega" }, { "text": " at\u00e9 onde voc\u00ea ousar\u00e1 escalar? Qu\u00e3o Ganancioso voc\u00ea se tornar\u00e1?\n\nPrecisa de mais moedas? O ", "color": "$text" }, { "text": "Caldeir\u00e3o da Gan\u00e2ncia", "color": "$omega" }, { "text": " tem fome de materiais de cofre. Alimente-o com o que ele demanda, e ele te recompensar\u00e1 com ", "color": "$text" }, { "text": "Moedas de Gan\u00e2ncia", "color": "$qhighlight" }, { "text": " em troca.\n\n", "color": "$text" }, { "text": "Complete o Teste da Gan\u00e2ncia", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/greed", "targetId": "the_vault:rebirth", "targetProgress": 1.0, "unlockedBy": "herald", "reward": { "items": [ { "item": "minecraft:stick", "amount": 1 } ], "vaultExp": 0 } },
+    { "type": "crafting", "id": "greed_cauldron", "name": "Crisol da Gan\u00e2ncia", "descriptionData": { "description": [ { "text": "O ", "color": "$text" }, { "text": "Crisol da Gan\u00e2ncia", "color": "$omega" }, { "text": " \u00e9 um dispositivo poderoso que tem fome de materiais de cofre. Crie um e coloque-o para come\u00e7ar a alimentar seu apetite insaci\u00e1vel.\n\nO ", "color": "$text" }, { "text": "Crisol", "color": "$omega" }, { "text": " demandar\u00e1 grandes quantidades de recursos de cofre. Para cada solicita\u00e7\u00e3o que voc\u00ea cumprir, receber\u00e1 ", "color": "$text" }, { "text": "Moedas de Gan\u00e2ncia", "color": "$qhighlight" }, { "text": ". Mas aqui est\u00e1 o truque: cada solicita\u00e7\u00e3o completada aumenta seu ", "color": "$text" }, { "text": "multiplicador", "color": "$white" }, { "text": ", fazendo com que conclus\u00f5es subsequentes recompensem ainda mais ", "color": "$text" }, { "text": "Moedas de Gan\u00e2ncia", "color": "$qhighlight" }, { "text": ".\n\nContinue alimentando o Crisol para maximizar seus retornos.\n\n", "color": "$text" }, { "text": "Crie um Crisol da Gan\u00e2ncia", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/greed_cauldron", "targetId": "the_vault:greed_cauldron", "targetProgress": 1.0, "unlockedBy": "greed", "reward": { "items": [], "vaultExp": 0 } }
+  ]
+}

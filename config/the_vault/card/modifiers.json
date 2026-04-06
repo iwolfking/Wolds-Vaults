@@ -45,6 +45,52 @@
       ],
       "maxTier": 5
     },
+    "attack_damage_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Attack Damage Card"
+      },
+      "model": "the_vault:card/icon/attack_damage#inventory",
+      "groups": [
+        "Shiny",
+        "Offensive",
+        "Stat"
+      ],
+      "attribute": "the_vault:attack_damage",
+      "pool": [
+        {
+          "min": 0.3,
+          "max": 0.3,
+          "step": 0.5,
+          "tier": 1
+        },
+        {
+          "min": 0.6,
+          "max": 0.6,
+          "step": 0.5,
+          "tier": 2
+        },
+        {
+          "min": 0.9,
+          "max": 0.9,
+          "step": 0.5,
+          "tier": 3
+        },
+        {
+          "min": 1.2,
+          "max": 1.2,
+          "step": 0.5,
+          "tier": 4
+        },
+        {
+          "min": 1.5,
+          "max": 1.5,
+          "step": 0.5,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
     "deluxe_attack_damage": {
       "type": "gear",
       "name": {
@@ -183,6 +229,53 @@
       ],
       "maxTier": 5
     },
+    "apflat_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Ability Power Card"
+      },
+      "model": "the_vault:card/icon/ability_power#inventory",
+      "groups": [
+        "Shiny",
+        "Offensive",
+        "Stat",
+        "Magical"
+      ],
+      "attribute": "the_vault:ability_power",
+      "pool": [
+        {
+          "min": 0.3,
+          "max": 0.3,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 0.6,
+          "max": 0.6,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 0.9,
+          "max": 0.9,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 1.2,
+          "max": 1.2,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 1.5,
+          "max": 1.5,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
      "deluxe_apflat": {
       "type": "gear",
       "name": {
@@ -245,6 +338,52 @@
         {
           "min": 0.025,
           "max": 0.025,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
+    "attack_speed_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Attack Speed Card"
+      },
+      "model": "the_vault:card/icon/attack_speed#inventory",
+      "groups": [
+        "Shiny",
+        "Offensive",
+        "Stat"
+      ],
+      "attribute": "the_vault:attack_speed_percent",
+      "pool": [
+        {
+          "min": 0.0025,
+          "max": 0.0025,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 0.005,
+          "max": 0.005,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 0.0075,
+          "max": 0.0075,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 0.01,
+          "max": 0.01,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 0.0125,
+          "max": 0.0125,
           "step": 1.0,
           "tier": 5
         }
@@ -454,6 +593,54 @@
       ],
       "maxTier": 5
     },
+    "healing_effectiveness_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Healing Efficiency Card"
+      },
+      "model": "the_vault:card/icon/healing_efficiency#inventory",
+      "groups": [
+        "Shiny",
+        "Utility",
+        "Stat",
+        "Essence",
+        "Defensive"
+      ],
+      "attribute": "the_vault:healing_effectiveness",
+      "pool": [
+        {
+          "min": 0.001,
+          "max": 0.001,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 0.0025,
+          "max": 0.0025,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 0.005,
+          "max": 0.005,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 0.0075,
+          "max": 0.0075,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 0.01,
+          "max": 0.01,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
     "deluxe_healing_effectiveness": {
       "type": "gear",
       "name": {
@@ -523,6 +710,52 @@
       ],
       "maxTier": 5
     },
+      "item_quantity_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Item Quantity Card"
+      },
+      "model": "the_vault:card/icon/item_quantity#inventory",
+      "groups": [
+        "Shiny",
+        "Utility",
+        "Stat"
+      ],
+      "attribute": "the_vault:item_quantity",
+      "pool": [
+        {
+          "min": 0.001,
+          "max": 0.001,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 0.0025,
+          "max": 0.0025,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 0.005,
+          "max": 0.005,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 0.0075,
+          "max": 0.0075,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 0.01,
+          "max": 0.01,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
      "deluxe_item_quantity": {
       "type": "gear",
       "name": {
@@ -584,6 +817,52 @@
         {
           "min": 0.025,
           "max": 0.025,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
+     "item_rarity_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Item Rarity Card"
+      },
+      "model": "the_vault:card/icon/item_rarity#inventory",
+      "groups": [
+        "Shiny",
+        "Utility",
+        "Stat"
+      ],
+      "attribute": "the_vault:item_rarity",
+      "pool": [
+        {
+          "min": 0.002,
+          "max": 0.002,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 0.004,
+          "max": 0.004,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 0.006,
+          "max": 0.006,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 0.008,
+          "max": 0.02,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 0.01,
+          "max": 0.01,
           "step": 1.0,
           "tier": 5
         }
@@ -798,6 +1077,53 @@
       ],
       "maxTier": 5
     },
+    "shiny_mana_flat": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Mana Card"
+      },
+      "model": "the_vault:card/icon/mana#inventory",
+      "groups": [
+        "Shiny",
+        "Utility",
+        "Essence",
+        "Stat"
+      ],
+      "attribute": "the_vault:mana_additive",
+      "pool": [
+        {
+          "min": 0.5,
+          "max": 0.5,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 1.0,
+          "max": 1.0,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 1.5,
+          "max": 1.5,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 2.0,
+          "max": 2.0,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 4.0,
+          "max": 4.0,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
     "deluxe_mana_flat": {
       "type": "gear",
       "name": {
@@ -867,6 +1193,53 @@
       ],
       "maxTier": 5
     },
+     "mana_regeneration_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Mana Regeneration Card"
+      },
+      "model": "the_vault:card/icon/mana_regeneration#inventory",
+      "groups": [
+        "Shiny",
+        "Utility",
+        "Essence",
+        "Stat"
+      ],
+      "attribute": "the_vault:mana_regen",
+      "pool": [
+        {
+          "min": 0.005,
+          "max": 0.005,
+          "step": 0.01,
+          "tier": 1
+        },
+        {
+          "min": 0.0075,
+          "max": 0.0075,
+          "step": 0.01,
+          "tier": 2
+        },
+        {
+          "min": 0.01,
+          "max": 0.01,
+          "step": 0.01,
+          "tier": 3
+        },
+        {
+          "min": 0.015,
+          "max": 0.015,
+          "step": 0.01,
+          "tier": 4
+        },
+        {
+          "min": 0.02,
+          "max": 0.02,
+          "step": 0.01,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
       "deluxe_mana_regeneration": {
       "type": "gear",
       "name": {
@@ -929,6 +1302,52 @@
         {
           "min": 10.0,
           "max": 10.0,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
+     "mining_speed_flat_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Mining Speed Card"
+      },
+      "model": "the_vault:card/icon/mining_speed#inventory",
+      "groups": [
+        "Shiny",
+        "Utility",
+        "Stat"
+      ],
+      "attribute": "the_vault:mining_speed",
+      "pool": [
+        {
+          "min": 0.5,
+          "max": 0.5,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 1.0,
+          "max": 1.0,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 1.5,
+          "max": 1.5,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 2.0,
+          "max": 2.0,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 3.0,
+          "max": 3.0,
           "step": 1.0,
           "tier": 5
         }
@@ -1072,6 +1491,53 @@
       ],
       "maxTier": 5
     },
+    "soul_chance_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Soul Quantity Card"
+      },
+      "model": "the_vault:card/icon/soul_chance#inventory",
+      "groups": [
+        "Shiny",
+        "Utility",
+        "Magical",
+        "Stat"
+      ],
+      "attribute": "the_vault:soul_chance",
+      "pool": [
+        {
+          "min": 0.01,
+          "max": 0.01,
+          "step": 0.001,
+          "tier": 1
+        },
+        {
+          "min": 0.02,
+          "max": 0.02,
+          "step": 0.001,
+          "tier": 2
+        },
+        {
+          "min": 0.03,
+          "max": 0.03,
+          "step": 0.001,
+          "tier": 3
+        },
+        {
+          "min": 0.04,
+          "max": 0.04,
+          "step": 0.001,
+          "tier": 4
+        },
+        {
+          "min": 0.05,
+          "max": 0.05,
+          "step": 0.001,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
       "deluxe_soul_chance": {
       "type": "gear",
       "name": {
@@ -1135,6 +1601,53 @@
         {
           "min": 5.0,
           "max": 5.0,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
+    "thorns_flat_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Thorns Card"
+      },
+      "model": "the_vault:card/icon/thorns#inventory",
+      "groups": [
+        "Shiny",
+        "Offensive",
+        "Defensive",
+        "Stat"
+      ],
+      "attribute": "the_vault:thorns_damage_flat",
+      "pool": [
+        {
+          "min": 0.25,
+          "max": 0.25,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 0.5,
+          "max": 0.5,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 1.0,
+          "max": 1.0,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 1.5,
+          "max": 1.5,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 2.0,
+          "max": 2.0,
           "step": 1.0,
           "tier": 5
         }
@@ -1277,6 +1790,53 @@
       ],
       "maxTier": 5
     },
+    "mana_additive_percentile_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Scaling Mana Card"
+      },
+      "model": "the_vault:card/icon/mana_percentile#inventory",
+      "groups": [
+        "Shiny",
+        "Utility",
+        "Essence",
+        "Stat"
+      ],
+      "attribute": "the_vault:mana_additive_percentile",
+      "pool": [
+        {
+          "min": 0.002,
+          "max": 0.002,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 0.004,
+          "max": 0.004,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 0.006,
+          "max": 0.006,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 0.008,
+          "max": 0.008,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 0.01,
+          "max": 0.01,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
     "deluxe_mana_additive_percentile": {
       "type": "gear",
       "name": {
@@ -1340,6 +1900,53 @@
         {
           "min": 0.025,
           "max": 0.025,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
+    "damage_increase_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Scaling Attack Damage Card"
+      },
+      "model": "the_vault:card/icon/attack_damage_percentile#inventory",
+      "groups": [
+        "Shiny",
+        "Offensive",
+        "Stat",
+        "Physical"
+      ],
+      "attribute": "the_vault:damage_increase",
+      "pool": [
+        {
+          "min": 0.002,
+          "max": 0.002,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 0.004,
+          "max": 0.004,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 0.006,
+          "max": 0.006,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 0.008,
+          "max": 0.008,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 0.01,
+          "max": 0.01,
           "step": 1.0,
           "tier": 5
         }
@@ -1415,6 +2022,53 @@
       ],
       "maxTier": 5
     },
+    "ability_power_percent_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Scaling Ability Power Card"
+      },
+      "model": "the_vault:card/icon/ability_power_percentile#inventory",
+      "groups": [
+        "Shiny",
+        "Offensive",
+        "Magical",
+        "Stat"
+      ],
+      "attribute": "the_vault:ability_power_percent",
+      "pool": [
+        {
+          "min": 0.002,
+          "max": 0.002,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 0.004,
+          "max": 0.004,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 0.006,
+          "max": 0.006,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 0.008,
+          "max": 0.008,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 0.01,
+          "max": 0.01,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
     "deluxe_ability_power_percent": {
       "type": "gear",
       "name": {
@@ -1477,6 +2131,52 @@
         {
           "min": 0.05,
           "max": 0.05,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
+    "armor_percent_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Scaling Armor Card"
+      },
+      "model": "the_vault:card/icon/armor#inventory",
+      "groups": [
+        "Shiny",
+        "Defensive",
+        "Stat"
+      ],
+      "attribute": "the_vault:armor_percentile",
+      "pool": [
+        {
+          "min": 0.005,
+          "max": 0.005,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 0.0075,
+          "max": 0.0075,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 0.01,
+          "max": 0.01,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 0.0125,
+          "max": 0.0125,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 0.015,
+          "max": 0.015,
           "step": 1.0,
           "tier": 5
         }
@@ -1552,6 +2252,54 @@
       ],
       "maxTier": 5
     },
+     "health_percentile_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Scaling Health Card"
+      },
+      "model": "the_vault:card/icon/health#inventory",
+      "groups": [
+        "Shiny",
+        "Utility",
+        "Defensive",
+        "Stat",
+        "Physical"
+      ],
+      "attribute": "the_vault:health_percentile",
+      "pool": [
+        {
+          "min": 0.0025,
+          "max": 0.0025,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 0.005,
+          "max": 0.005,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 0.0075,
+          "max": 0.0075,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 0.01,
+          "max": 0.01,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 0.015,
+          "max": 0.015,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
     "deluxe_health_percentile": {
       "type": "gear",
       "name": {
@@ -1616,6 +2364,53 @@
         {
           "min": 0.025,
           "max": 0.025,
+          "step": 1.0,
+          "tier": 5
+        }
+      ],
+      "maxTier": 5
+    },
+    "area_of_effect_shiny": {
+      "type": "gear",
+      "name": {
+        "text": "Shiny Area of Effect Card"
+      },
+      "model": "the_vault:card/icon/area_of_effect#inventory",
+      "groups": [
+        "Shiny",
+        "Utility",
+        "Stat",
+        "Magical"
+      ],
+      "attribute": "the_vault:area_of_effect",
+      "pool": [
+        {
+          "min": 0.002,
+          "max": 0.002,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
+          "min": 0.004,
+          "max": 0.004,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 0.006,
+          "max": 0.006,
+          "step": 1.0,
+          "tier": 3
+        },
+        {
+          "min": 0.008,
+          "max": 0.008,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 0.01,
+          "max": 0.01,
           "step": 1.0,
           "tier": 5
         }
@@ -8104,6 +8899,422 @@
         "Utility"
       ],
       "maxTier": 1
+    },
+     "greed_above_red": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["ABOVE"],
+      "targetColorFilter": ["RED"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_above_blue": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["ABOVE"],
+      "targetColorFilter": ["BLUE"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_above_green": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["ABOVE"],
+      "targetColorFilter": ["GREEN"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_above_yellow": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["ABOVE"],
+      "targetColorFilter": ["YELLOW"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_below_red": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["BELOW"],
+      "targetColorFilter": ["RED"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_below_blue": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["BELOW"],
+      "targetColorFilter": ["BLUE"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_below_green": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["BELOW"],
+      "targetColorFilter": ["GREEN"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_below_yellow": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["BELOW"],
+      "targetColorFilter": ["YELLOW"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_left_red": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["LEFT"],
+      "targetColorFilter": ["RED"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_left_blue": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["LEFT"],
+      "targetColorFilter": ["BLUE"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_left_green": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["LEFT"],
+      "targetColorFilter": ["GREEN"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_left_yellow": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["LEFT"],
+      "targetColorFilter": ["YELLOW"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_right_red": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["RIGHT"],
+      "targetColorFilter": ["RED"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_right_blue": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["RIGHT"],
+      "targetColorFilter": ["BLUE"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_right_green": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["RIGHT"],
+      "targetColorFilter": ["GREEN"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
+    },
+    "greed_right_yellow": {
+      "type": "greed",
+      "name": {
+        "text": "Greed Card"
+      },
+      "groups": [
+        "Greed"
+      ],
+      "targetNeighborTypes": ["RIGHT"],
+      "targetColorFilter": ["YELLOW"],
+      "multiplierPool": [
+        {
+          "tier": 1,
+          "roll": 2.0
+        },
+        {
+          "tier": 2,
+          "roll": 2.5
+        },
+        {
+          "tier": 3,
+          "roll": 3.0
+        }
+      ],
+      "maxTier": 3
     }
   },
   "pools": {
@@ -8206,6 +9417,76 @@
       },
       {
         "value": "copiously",
+        "weight": 1.0
+      }
+    ],
+    "shiny": [
+      {
+        "value": "attack_damage_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "health_percentile_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "apflat_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "attack_speed_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "healing_effectiveness_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "item_quantity_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "item_rarity_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "mana_flat_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "mana_regeneration_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "mining_speed_flat_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "soul_chance_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "thorns_flat_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "mana_additive_percentile_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "damage_increase_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "ability_power_percent_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "armor_percent_shiny",
+        "weight": 1.0
+      },
+      {
+        "value": "area_of_effect_shiny",
         "weight": 1.0
       }
     ],
@@ -8982,6 +10263,44 @@
       },
       {
         "value": "wild_blue_green_red",
+        "weight": 5.0
+      }
+    ],
+    "greed": [
+      {
+        "value": "greed_below_evolution",
+        "weight": 10.0
+      },
+      {
+        "value": "greed_above_stat",
+        "weight": 10.0
+      },
+      {
+        "value": "greed_adjacent_arcane",
+        "weight": 8.0
+      },
+      {
+        "value": "greed_left_resource",
+        "weight": 8.0
+      },
+      {
+        "value": "greed_right_offensive",
+        "weight": 8.0
+      },
+      {
+        "value": "greed_below_defensive",
+        "weight": 8.0
+      },
+      {
+        "value": "greed_above_red",
+        "weight": 6.0
+      },
+      {
+        "value": "greed_below_blue",
+        "weight": 6.0
+      },
+      {
+        "value": "greed_surrounding_any",
         "weight": 5.0
       }
     ]

@@ -1,0 +1,3961 @@
+{
+  "data": {
+    "Dash_Base": {
+      "description": [
+        {
+          "text": "Толкает вас на ",
+          "color": "$text"
+        },
+        {
+          "text": "расстояние",
+          "color": "$distance"
+        },
+        {
+          "text": " в направлении, куда вы смотрите!\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "distance"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "distance"
+      ]
+    },
+    "Dash_Damage": {
+      "description": [
+        {
+          "text": "Превращает ваш рывок в снаряд, нанося процент от вашего ",
+          "color": "$text"
+        },
+        {
+          "text": "физического урона",
+          "color": "$damage"
+        },
+        {
+          "text": " любому мобу, которого вы задели рывком.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "distance",
+        "damage"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "distance",
+        "damage"
+      ]
+    },
+    "Dash_Warp": {
+      "description": [
+        {
+          "text": "Выстрелите ",
+          "color": "$text"
+        },
+        {
+          "text": "магической стрелой",
+          "color": "$force"
+        },
+        {
+          "text": ", которая телепортирует вас к месту попадания ",
+          "color": "$text"
+        },
+        {
+          "text": "при ударе",
+          "color": "$name"
+        },
+        {
+          "text": "\nЕсли вы попали в моба или другого игрока, вы меняетесь с ними местами",
+          "color": "$text"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "force"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "force"
+      ]
+    },
+    "Execute_Base": {
+      "description": [
+        {
+          "text": "Наносит ",
+          "color": "$text"
+        },
+        {
+          "text": "процент",
+          "color": "$damage"
+        },
+        {
+          "text": " от общего здоровья цели в виде ",
+          "color": "$text"
+        },
+        {
+          "text": "урона",
+          "color": "$damage"
+        },
+        {
+          "text": " при следующем ударе.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2297 Способность следующего удара ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "duration",
+        "damage"
+      ],
+      "next": [
+
+        "cooldown",
+        "duration",
+        "damage"
+      ]
+    },
+    "Farmer_Base": {
+      "description": [
+        {
+          "text": "Увеличивает скорость роста посевов в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " с ",
+          "color": "$text"
+        },
+        {
+          "text": "задержкой",
+          "color": "$delay"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Фермер действует на:\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Семена\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Картофель\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Морковь (PAG)\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Свёкла\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Семена льна\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical"
+      ],
+      "next": [
+
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical"
+      ]
+    },
+    "Farmer_Animal": {
+      "description": [
+        {
+          "text": "Фермер также стимулирует ",
+          "color": "$text"
+        },
+        {
+          "text": "детёнышей животных",
+          "color": "$baby"
+        },
+        {
+          "text": " вырасти побыстрее! (пог)\n",
+          "color": "$text"
+        },
+        {
+          "text": "Действует с ",
+          "color": "$text"
+        },
+        {
+          "text": "задержкой",
+          "color": "$delay"
+        },
+        {
+          "text": " в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " вокруг вас.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Скотовод действует на все цели базовой способности, а также:\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Детёнышей животных\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Детёнышей жителей\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical",
+        "chance"
+      ],
+      "next": [
+
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical",
+        "chance"
+      ]
+    },
+    "Farmer_Cactus": {
+      "description": [
+        {
+          "text": "Увеличивает скорость роста посевов в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " с ",
+          "color": "$text"
+        },
+        {
+          "text": "задержкой",
+          "color": "$delay"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Садовод действует на все цели базовой способности, а также:\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Кактус\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Сахарный тростник\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Адский нарост\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical"
+      ],
+      "next": [
+
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical"
+      ]
+    },
+    "Farmer_Melon": {
+      "description": [
+        {
+          "text": "Увеличивает скорость роста посевов в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " с ",
+          "color": "$text"
+        },
+        {
+          "text": "задержкой",
+          "color": "$delay"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Культиватор действует на все цели базовой способности, а также:\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Арбуз\n",
+          "color": "$text"
+        },
+        {
+          "text": " \u2022 Тыквы\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical"
+      ],
+      "next": [
+
+        "manaCost",
+        "delay",
+        "rangeHorizontal",
+        "rangeVertical"
+      ]
+    },
+    "Ghost_Walk_Base": {
+      "description": [
+        {
+          "text": "Делает вас невидимым на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ". Атака чего-либо во время Призрачного Шага отменяет его действие.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedDuration"
+      ]
+    },
+    "Ghost_Walk_Spirit": {
+      "description": [
+        {
+          "text": "Делает вас невидимым на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ". Атака чего-либо, разрушение блока или открытие контейнера во время ",
+          "color": "$text"
+        },
+        {
+          "text": "Духовного Шага",
+          "color": "$name"
+        },
+        {
+          "text": " отменяет его действие.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration"
+      ],
+      "next": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration"
+      ]
+    },
+    "Heal_Base": {
+      "description": [
+        {
+          "text": "Исцеляет вас на количество ",
+          "color": "$text"
+        },
+        {
+          "text": "единиц здоровья",
+          "color": "$heal"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "heal"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "heal"
+      ]
+    },
+    "Heal_Cleanse": {
+      "description": [
+        {
+          "text": "Заменяет Исцеление на Очищение, снимая все негативные эффекты.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Heal_Group": {
+      "description": [
+        {
+          "text": "Позволяет вашему Исцелению действовать на всех членов группы Хранилища.\n\nЧлены группы в пределах ",
+          "color": "$text"
+        },
+        {
+          "text": "радиуса",
+          "color": "$heal"
+        },
+        {
+          "text": " будут исцелены на полное количество ",
+          "color": "$text"
+        },
+        {
+          "text": "единиц здоровья",
+          "color": "$heal"
+        },
+        {
+          "text": ", а те, кто за пределами радиуса, получат половину ",
+          "color": "$text"
+        },
+        {
+          "text": "единиц здоровья",
+          "color": "$heal"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "heal",
+        "adjustedRadius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "heal",
+        "adjustedRadius"
+      ]
+    },
+    "Hunter_Base": {
+      "description": [
+        {
+          "text": "Подсвечивает все",
+          "color": "$text"
+        },
+        {
+          "text": " точки интереса",
+          "color": "$qhighlight"
+        },
+        {
+          "text": " в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " на ",
+          "color": "$text"
+        },
+        {
+          "text": "длительность",
+          "color": "$duration"
+        },
+        {
+          "text": " времени.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Точки интереса включают ",
+          "color": "$text"
+        },
+        {
+          "text": "все сундуки",
+          "color": "$chance"
+        },
+        {
+          "text": ", ",
+          "color": "$text"
+        },
+        {
+          "text": "монеты",
+          "color": "$chance"
+        },
+        {
+          "text": ", ",
+          "color": "$text"
+        },
+        {
+          "text": "алтари богов",
+          "color": "$chance"
+        },
+        {
+          "text": " и ",
+          "color": "$text"
+        },
+        {
+          "text": "точки заданий",
+          "color": "$chance"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius"
+      ],
+      "next": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius"
+      ]
+    },
+    "Hunter_Blocks": {
+      "description": [
+        {
+          "text": "Изменяет Охотника, отображая задания в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ]
+    },
+    "Hunter_Wooden": {
+      "description": [
+        {
+          "text": "Изменяет Охотника, отображая Деревянные сундуки в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ]
+    },
+    "Hunter_Gilded": {
+      "description": [
+        {
+          "text": "Изменяет Охотника, отображая Позолоченные сундуки в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ]
+    },
+    "Hunter_Living": {
+      "description": [
+        {
+          "text": "Изменяет Охотника, отображая Живые сундуки в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ]
+    },
+    "Hunter_Ornate": {
+      "description": [
+        {
+          "text": "Изменяет Охотника, отображая Изысканные сундуки в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ]
+    },
+    "Hunter_Coins": {
+      "description": [
+        {
+          "text": "Изменяет Охотника, отображая Кучи монет в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "duration",
+        "radius"
+      ]
+    },
+    "Shield_Bash": {
+      "description": [
+        {
+          "text": "Рывок вперёд с ударом щитом по мобам, нанося ",
+          "color": "$text"
+        },
+        {
+          "text": "Урон от шанса блока",
+          "color": "$damage"
+        },
+        {
+          "text": " в ",
+          "color": "$text"
+        },
+        {
+          "text": "конусе",
+          "color": "$radius"
+        },
+        {
+          "text": " перед вами с ",
+          "color": "$text"
+        },
+        {
+          "text": "отбрасыванием",
+          "color": "$knockback"
+        },
+        {
+          "text": ". Есть шанс ",
+          "color": "$text"
+        },
+        {
+          "text": "оглушить",
+          "color": "$stunChance"
+        },
+        {
+          "text": " поражённых врагов.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaCost",
+        "cooldown",
+        "damage",
+        "adjustedRadius",
+        "knockback",
+        "stunChance"
+      ],
+      "next": [
+        "manaCost",
+        "cooldown",
+        "damage",
+        "adjustedRadius",
+        "knockback",
+        "stunChance"
+      ]
+    },
+    "Mana_Shield_Base": {
+      "description": [
+        {
+          "text": "Даёт ",
+          "color": "$text"
+        },
+        {
+          "text": "защитный барьер",
+          "color": "$absorb"
+        },
+        {
+          "text": " на ",
+          "color": "$text"
+        },
+        {
+          "text": "ограниченное время",
+          "color": "$duration"
+        },
+        {
+          "text": ", поглощающий весь входящий урон, пока щит не истощится или время не закончится.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaCost",
+        "cooldown",
+        "healthPoints"
+
+      ],
+      "next": [
+        "manaCost",
+        "cooldown",
+        "healthPoints"
+      ]
+    },
+    "Mana_Barrier": {
+      "description": [
+        {
+          "text": "Призовите магический ",
+          "color": "$text"
+        },
+        {
+          "text": "Куб Маны",
+          "color": "$absorb"
+        },
+        {
+          "text": " вокруг вас на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ". Мобы не могут пройти через эти ",
+          "color": "$text"
+        },
+        {
+          "text": "блоки",
+          "color": "$absorb"
+        },
+        {
+          "text": ", но вы можете!",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "duration",
+        "manaCost",
+        "cooldown",
+        "adjustedRadius"
+      ],
+      "next": [
+        "duration",
+        "manaCost",
+        "cooldown",
+        "adjustedRadius"
+      ]
+    },
+    "Retribution_Base": {
+      "description": [
+        {
+          "text": "Даёт вам щит маны, который ",
+          "color": "$text"
+        },
+        {
+          "text": "перенаправляет процент",
+          "color": "$absorb"
+        },
+        {
+          "text": " входящего урона в ваш ",
+          "color": "$text"
+        },
+        {
+          "text": "запас маны",
+          "color": "$manaCost"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "После поглощения урона, урон вашей следующей атаки будет увеличен на ",
+          "color": "$text"
+        },
+        {
+          "text": "процент от поглощённого урона",
+          "color": "$damage"
+        },
+        {
+          "text": " и нанесён всем мобам в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " вокруг вашей цели.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "thornsDamage",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "thornsDamage",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Mana_Shield_Retribution": {
+      "description": [
+        {
+          "text": "Даёт вам мощную ауру возмездия. При активации любой входящий урон от мобов будет накапливать ",
+          "color": "$text"
+        },
+        {
+          "text": "Заряды Возмездия",
+          "color": "$qhighlight"
+        },
+        {
+          "text": ", и когда аура ",
+          "color": "$text"
+        },
+        {
+          "text": "истечёт",
+          "color": "$duration"
+        },
+        {
+          "text": ", будет выпущен мощный взрыв в сферическом ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": ", нанося ",
+          "color": "$text"
+        },
+        {
+          "text": "Урон шипов за заряд",
+          "color": "$thornsDamage"
+        },
+        {
+          "text": " накопленных, всем мобам вокруг вас.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "thornsDamage",
+        "adjustedRadius",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "thornsDamage",
+        "adjustedRadius",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Mana_Shield_Implode": {
+      "description": [
+        {
+          "text": "Высасывает всю вашу ману, нанося урон равный ",
+          "color": "$text"
+        },
+        {
+          "text": "проценту",
+          "color": "$damage"
+        },
+        {
+          "text": " от высосанной маны всем врагам в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "manaDamage",
+        "adjustedRadius",
+        "cooldown"
+
+      ],
+      "next": [
+        "manaDamage",
+        "adjustedRadius",
+        "cooldown"
+      ]
+    },
+    "Mega_Jump_Base": {
+      "description": [
+        {
+          "text": "Даёт вам способность совершить ",
+          "color": "$text"
+        },
+        {
+          "text": "мега-прыжок",
+          "color": "$range"
+        },
+        {
+          "text": " высоко в воздух.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "rangeVertical"
+      ],
+      "next": [
+        "cooldown",
+        "manaCost",
+        "rangeVertical"
+      ]
+    },
+    "Mega_Jump_Break_Down": {
+      "description": [
+        {
+          "text": "Превращает Мега-Прыжок в Мега-Бурение! Вместо того, чтобы подбрасывать вас вверх, бурит вниз сквозь блоки, разрушая их на пути.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Эта способность не работает в обычном мире.\n\n",
+          "color": "$chance"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "rangeVertical",
+        "radius"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "rangeVertical",
+        "radius"
+      ]
+    },
+    "Mega_Jump_Break_Up": {
+      "description": [
+        {
+          "text": "Изменяет ваш мега-прыжок, разрушая блоки, в которые вы врезаетесь.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Эта способность не работает в обычном мире.\n\n",
+          "color": "$chance"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "rangeVertical"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "rangeVertical"
+      ]
+    },
+    "Nova_Base": {
+      "description": [
+        {
+          "text": "Нанесите процент от вашей ",
+          "color": "$text"
+        },
+        {
+          "text": "силы способности ",
+          "color": "$ability_power"
+        },
+        {
+          "text": "в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " вокруг себя.\n",
+          "color": "$text"
+        },
+        {
+          "text": "Урон Новы ",
+          "color": "$name"
+        },
+        {
+          "text": "уменьшается с расстоянием до цели в пределах радиуса.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "ability_power"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "ability_power"
+      ]
+    },
+    "Nova_Dot": {
+      "description": [
+        {
+          "text": "Изменяет Нову, нанося вместо этого процент от вашей ",
+          "color": "$text"
+        },
+        {
+          "text": "силы способности ",
+          "color": "$ability_power"
+        },
+        {
+          "text": "через ",
+          "color": "$text"
+        },
+        {
+          "text": "яд",
+          "color": "$poison"
+        },
+        {
+          "text": ". Урон будет нанесён в течение ",
+          "color": "$text"
+        },
+        {
+          "text": "определённого времени",
+          "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "ability_power",
+        "adjustedDuration"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "ability_power",
+        "adjustedDuration"
+      ]
+    },
+    "Nova_Slow": {
+      "description": [
+        {
+          "text": "Изменяет Нову, замораживая мобов вокруг вас в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": ". Мобы останутся замороженными на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ", а затем получат ",
+          "color": "$text"
+        },
+        {
+          "text": "Гипотермию",
+          "color": "$slowness"
+        },
+        {
+          "text": ", вызывая у них постоянное ",
+          "color": "$text"
+        },
+        {
+          "text": "охлаждение",
+          "color": "$chilled"
+        },
+        {
+          "text": " и получение урона каждые 3 секунды\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration"
+      ]
+    },
+    "Rampage_Base": {
+      "description": [
+        {
+          "text": "Вводит вас в состояние неистовства, давая дополнительное увеличение ",
+          "color": "$text"
+        },
+        {
+          "text": "физического урона",
+          "color": "$damage"
+        },
+        {
+          "text": " пока активно.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCostPerSecond",
+        "damage"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCostPerSecond",
+        "damage"
+      ]
+    },
+    "Rampage_Chain": {
+      "description": [
+        {
+          "text": "Изменяет Неистовство, давая вашим атакам ",
+          "color": "$text"
+        },
+        {
+          "text": "эффект цепочки",
+          "color": "$chains"
+        },
+        {
+          "text": ", поражая нескольких мобов помимо первого, вместо увеличения урона во время неистовства.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCostPerSecond",
+        "chains"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCostPerSecond",
+        "chains"
+      ]
+    },
+    "Rampage_Leech": {
+      "description": [
+        {
+          "text": "Изменяет Неистовство, давая вам ",
+          "color": "$text"
+        },
+        {
+          "text": "похищение жизни",
+          "color": "$leech"
+        },
+        {
+          "text": " вместо увеличения урона во время неистовства.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCostPerSecond",
+        "leech"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCostPerSecond",
+        "leech"
+      ]
+    },
+    "Earthquake_Landmine": {
+      "description": [
+        {
+          "text": "Призовите ",
+          "color": "$text"
+        },
+        {
+          "text": "Мину",
+          "color": "$name"
+        },
+        {
+          "text": " там, где вы стоите, которая взрывается в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": ", нанося урон на основе вашего ",
+          "color": "$text"
+        },
+        {
+          "text": "Урона Атаки",
+          "color": "$damage"
+        },
+        {
+          "text": " и ",
+          "color": "$text"
+        },
+        {
+          "text": "отбрасывая",
+          "color": "$knockback"
+        },
+        {
+          "text": " всех врагов, если на неё наступит моб.\n\nМины также могут вызвать цепную реакцию, взрываясь в радиусе друг друга.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "damage",
+        "adjustedRadius",
+        "knockback"
+      ],
+      "next": [
+        "cooldown",
+        "manaCost",
+        "damage",
+        "adjustedRadius",
+        "knockback"
+      ]
+    },
+    "Stonefall_Base": {
+      "description": [
+        {
+          "text": "Уменьшает ",
+          "color": "$text"
+        },
+        {
+          "text": "урон от падения",
+          "color": "$damage"
+        },
+        {
+          "text": " при приземлении, пока ",
+          "color": "$text"
+        },
+        {
+          "text": "активно",
+          "color": "$duration"
+        },
+        {
+          "text": " отбрасывая",
+          "color": "$radius"
+        },
+        {
+          "text": " мобов в радиусе",
+          "color": "$text"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "damageReduction",
+        "adjustedRadius",
+        "knockback",
+        "adjustedDuration"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "damageReduction",
+        "adjustedRadius",
+        "knockback",
+        "adjustedDuration"
+      ]
+    },
+    "Stonefall_Cold": {
+      "description": [
+        {
+          "text": "Уменьшает ",
+          "color": "$text"
+        },
+        {
+          "text": "урон от падения",
+          "color": "$damage"
+        },
+        {
+          "text": " при приземлении, пока ",
+          "color": "$text"
+        },
+        {
+          "text": "активно.\n",
+          "color": "$duration"
+        },
+        {
+          "text": "Охлаждая",
+          "color": "$chilled"
+        },
+        {
+          "text": " и создавая ",
+          "color": "$text"
+        },
+        {
+          "text": "ледяные тюрьмы ",
+          "color": "$maxGlacialPrison"
+        },
+        {
+          "text": "для мобов в радиусе.\n",
+          "color": "$text"
+        },
+        {
+          "text": "Радиус зависит от высоты падения.",
+          "color": "$text"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damageReduction",
+        "maxGlacialPrison",
+        "adjustedRadius",
+        "freezeDuration",
+        "adjustedDuration",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "damageReduction",
+        "maxGlacialPrison",
+        "adjustedRadius",
+        "freezeDuration",
+        "adjustedDuration",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Stonefall_Snow": {
+      "description": [
+        {
+          "text": "Уменьшает ",
+          "color": "$text"
+        },
+        {
+          "text": "урон от падения",
+          "color": "$damage"
+        },
+        {
+          "text": " при приземлении, пока ",
+          "color": "$text"
+        },
+        {
+          "text": "активно ",
+          "color": "$duration"
+        },
+        {
+          "text": "нанося урон на основе ",
+          "color": "$text"
+        },
+        {
+          "text": "силы способности",
+          "color": "$ability_power"
+        },
+        {
+          "text": " ближайшим мобам в радиусе\nРадиус увеличивается с высотой падения.",
+          "color": "$text"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "damageReduction",
+        "adjustedRadius",
+        "ability_power",
+        "adjustedDuration"
+      ],
+      "next": [
+        "cooldown",
+        "manaCost",
+        "damageReduction",
+        "adjustedRadius",
+        "ability_power",
+        "adjustedDuration"
+      ]
+    },
+    "Summon_Eternal_Base": {
+      "description": [
+        {
+          "text": "Призывает ваших ",
+          "color": "$text"
+        },
+        {
+          "text": "вечных",
+          "color": "$eternals"
+        },
+        {
+          "text": "! Для этой способности необходим хотя бы один живой вечный на Пьедестале Вечных, иначе она ничего не сделает.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "eternals",
+        "duration"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "eternals",
+        "duration"
+      ]
+    },
+    "Empower_Base": {
+      "description": [
+        {
+          "text": "Даёт вам ауру ",
+          "color": "$text"
+        },
+        {
+          "text": "скорости передвижения",
+          "color": "$speed"
+        },
+        {
+          "text": ". Действует на вас и других игроков в пределах ",
+          "color": "$text"
+        },
+        {
+          "text": "дальности",
+          "color": "$radius"
+        },
+        {
+          "text": " пока активно\n\n\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "speed",
+        "adjustedRadius",
+        "cooldown",
+        "manaCostPerSecond"
+
+      ],
+      "next": [
+
+        "speed",
+        "adjustedRadius",
+        "cooldown",
+        "manaCostPerSecond"
+
+      ]
+    },
+    "Empower_Ice_Armor": {
+      "description": [
+        {
+          "text": "Окутайте себя барьером мороза, ",
+          "color": "$text"
+        },
+        {
+          "text": "охлаждая",
+          "color": "$chilled"
+        },
+        {
+          "text": " любого моба, ударившего вас, на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": " пока активно\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "chilled",
+        "adjustedDuration",
+        "manaCostPerSecond",
+        "cooldown"
+
+
+      ],
+      "next": [
+        "chilled",
+        "adjustedDuration",
+        "manaCostPerSecond",
+        "cooldown"
+      ]
+    },
+    "Empower_Slowness_Aura": {
+      "description": [
+        {
+          "text": "Даёт вам ауру энтропии, ",
+          "color": "$text"
+        },
+        {
+          "text": "замедляя",
+          "color": "$slowness"
+        },
+        {
+          "text": " мобов в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " вокруг вас, пока активно\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "manaCostPerSecond",
+        "cooldown"
+
+
+      ],
+      "next": [
+        "adjustedRadius",
+        "manaCostPerSecond",
+        "cooldown"
+      ]
+    },
+    "Taunt_Base": {
+      "description": [
+        {
+          "text": "Провоцирует мобов вокруг вас в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": ", злит их на вас и делает ",
+          "color": "$text"
+        },
+        {
+          "text": "уязвимыми",
+          "color": "$vulnerable"
+        },
+        {
+          "text": " на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Каждый ",
+          "color": "$text"
+        },
+        {
+          "text": "уровень Уязвимости",
+          "color": "$vulnerable"
+        },
+        {
+          "text": " увеличивает получаемый мобом урон на ",
+          "color": "$text"
+        },
+        {
+          "text": "10%",
+          "color": "$vulnerable"
+        },
+        {
+          "text": ".\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration",
+        "vulnerable"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration",
+        "vulnerable"
+      ]
+    },
+    "Taunt_Repel": {
+      "description": [
+        {
+          "text": "Вместо провокации мобов вокруг вас, теперь они боятся вас в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": ". Испуганный моб будет ",
+          "color": "$text"
+        },
+        {
+          "text": "оттолкнут",
+          "color": "$distance"
+        },
+        {
+          "text": " и откажется атаковать вас на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration",
+        "distance"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration",
+        "distance"
+      ]
+    },
+    "Taunt_Charm": {
+      "description": [
+        {
+          "text": "Очаровывает ",
+          "color": "$text"
+        },
+        {
+          "text": "случайного моба",
+          "color": "$maxTargets"
+        },
+        {
+          "text": " в пределах ",
+          "color": "$text"
+        },
+        {
+          "text": "радиуса",
+          "color": "$radius"
+        },
+        {
+          "text": " вокруг вас, чтобы он сражался за вас. Очарованные мобы наносят ",
+          "color": "$text"
+        },
+        {
+          "text": "процент от вашего урона атаки",
+          "color": "$damage"
+        },
+        {
+          "text": " в качестве урона по своим целям и могут вызывать ",
+          "color": "$text"
+        },
+        {
+          "text": "эффекты при ударе. ",
+          "color": "$name"
+        },
+        {
+          "text": " Очарованные мобы также имеют",
+          "color": "$text"
+        },
+        {
+          "text": " повышенную скорость",
+          "color": "$speed"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration",
+        "maxTargets",
+        "damage",
+        "speed"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedRadius",
+        "adjustedDuration",
+        "maxTargets",
+        "damage",
+        "speed"
+      ]
+    },
+    "Totem_Base": {
+      "description": [
+        {
+          "text": "Создаёт тотем рядом с вами, который ",
+          "color": "$text"
+        },
+        {
+          "text": "исцеляет",
+          "color": "$heal"
+        },
+        {
+          "text": " всех игроков в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " в секунду.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "heal"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "heal"
+      ]
+    },
+    "Totem_Mana_Regen": {
+      "description": [
+        {
+          "text": "Создаёт тотем рядом с вами, восстанавливающий ",
+          "color": "$text"
+        },
+        {
+          "text": "ману",
+          "color": "$manaCost"
+        },
+        {
+          "text": " всех игроков в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " в секунду.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "manaRegen"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "manaRegen"
+      ]
+    },
+    "Totem_Mob_Damage": {
+      "description": [
+        {
+          "text": "Создаёт тотем рядом с вами, наносящий небольшой процент от вашей ",
+          "color": "$text"
+        },
+        {
+          "text": "силы способности",
+          "color": "$ability_power"
+        },
+        {
+          "text": " всем мобам в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " с ",
+          "color": "$text"
+        },
+        {
+          "text": "задержкой",
+          "color": "$delay"
+        },
+        {
+          "text": ". Эти удары применяют все ",
+          "color": "$text"
+        },
+        {
+          "text": "эффекты при ударе ",
+          "color": "$name"
+        },
+        {
+          "text": "которые у вас есть, за исключением Удачного Удара",
+          "color": "$text"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "ability_power",
+        "delay"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "ability_power",
+        "delay"
+      ]
+    },
+    "Totem_Player_Damage": {
+      "description": [
+        {
+          "text": "Создаёт тотем рядом с вами, увеличивающий ",
+          "color": "$text"
+        },
+        {
+          "text": "физический урон",
+          "color": "$damage"
+        },
+        {
+          "text": " всех игроков в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": ".\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "damage"
+      ],
+      "next": [
+
+        "cooldown",
+        "manaCost",
+        "adjustedDuration",
+        "adjustedRadius",
+        "damage"
+      ]
+    },
+    "Vein_Miner_Base": {
+      "description": [
+        {
+          "text": "Позволяет добывать несколько ",
+          "color": "$text"
+        },
+        {
+          "text": "блоков",
+          "color": "$blocks"
+        },
+        {
+          "text": " одновременно!\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf Удерживаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "blocks"
+      ],
+      "next": [
+
+        "blocks"
+      ]
+    },
+    "Vein_Miner_Durability": {
+      "description": [
+        {
+          "text": "Изменяет Жильного Шахтёра, давая шанс игнорировать ",
+          "color": "$text"
+        },
+        {
+          "text": "урон прочности",
+          "color": "$unbreaking"
+        },
+        {
+          "text": " при добыче блоков. Однако количество",
+          "color": "$text"
+        },
+        {
+          "text": " добытых блоков",
+          "color": "$blocks"
+        },
+        {
+          "text": " уменьшено.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf Удерживаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "blocks",
+        "unbreaking"
+      ],
+      "next": [
+
+        "blocks",
+        "unbreaking"
+      ]
+    },
+    "Vein_Miner_Fortune": {
+      "description": [
+        {
+          "text": "Изменяет Жильного Шахтёра, добавляя уровень ",
+          "color": "$text"
+        },
+        {
+          "text": "удачи",
+          "color": "$fortune"
+        },
+        {
+          "text": " при добыче блоков. Однако количество",
+          "color": "$text"
+        },
+        {
+          "text": " добытых блоков",
+          "color": "$blocks"
+        },
+        {
+          "text": " уменьшено.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf Удерживаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "blocks",
+        "fortune"
+      ],
+      "next": [
+
+        "blocks",
+        "fortune"
+      ]
+    },
+    "Vein_Miner_Void": {
+      "description": [
+        {
+          "text": "Изменяет Жильного Шахтёра, уничтожая все добытые блоки ",
+          "color": "$text"
+        },
+        {
+          "text": "внутри хранилища",
+          "color": "$chance"
+        },
+        {
+          "text": " за исключением руд хранилища. Однако количество",
+          "color": "$text"
+        },
+        {
+          "text": " добытых блоков",
+          "color": "$blocks"
+        },
+        {
+          "text": " уменьшено.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u25cf Удерживаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "blocks"
+      ],
+      "next": [
+
+        "blocks"
+      ]
+    },
+    "Javelin_Base": {
+      "description": [
+        {
+          "text": "Призовите магическое Копьё, чтобы поразить врагов издалека\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Наносит количество ",
+          "color": "$text"
+        },
+        {
+          "text": "урона ",
+          "color": "$damage"
+        },
+        {
+          "text": "на основе урона вашего оружия и ",
+          "color": "$text"
+        },
+        {
+          "text": "отбрасывает мобов ",
+          "color": "$knockback"
+        },
+        {
+          "text": "при попадании\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damage",
+        "knockback",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+
+        "damage",
+        "knockback",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Javelin_Piercing": {
+      "description": [
+        {
+          "text": "Призовите магическое Копьё, чтобы поразить врагов издалека\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Наносит количество ",
+          "color": "$text"
+        },
+        {
+          "text": "урона ",
+          "color": "$damage"
+        },
+        {
+          "text": "на основе урона вашего оружия и ",
+          "color": "$text"
+        },
+        {
+          "text": "пронзает нескольких мобов ",
+          "color": "$piercing"
+        },
+        {
+          "text": "при попадании\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damage",
+        "piercing",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+
+        "damage",
+        "piercing",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Javelin_Scatter": {
+      "description": [
+        {
+          "text": "Призовите магическое Копьё, чтобы поразить врагов издалека\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Наносит количество ",
+          "color": "$text"
+        },
+        {
+          "text": "урона ",
+          "color": "$damage"
+        },
+        {
+          "text": "на основе урона вашего оружия и ",
+          "color": "$text"
+        },
+        {
+          "text": "рассеивает несколько копий ",
+          "color": "$numberOfJavelins"
+        },
+        {
+          "text": "при попадании ",
+          "color": "$text"
+        },
+        {
+          "text": "отскакивая несколько раз\n\n",
+          "color": "$numberOfBounces"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damage",
+        "numberOfJavelins",
+        "numberOfBounces",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+
+        "damage",
+        "numberOfJavelins",
+        "numberOfBounces",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Javelin_Sight": {
+      "description": [
+        {
+          "text": "Выстрелите магическим ",
+          "color": "$text"
+        },
+        {
+          "text": "Копьём",
+          "color": "$qhighlight"
+        },
+        {
+          "text": ", которое сканирует область при попадании в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": ", выявляя все ",
+          "color": "$text"
+        },
+        {
+          "text": "сундуки",
+          "color": "$qhighlight"
+        },
+        {
+          "text": " и ",
+          "color": "$text"
+        },
+        {
+          "text": "мобов",
+          "color": "$qhighlight"
+        },
+        {
+          "text": " на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время\n\n",
+          "color": "$duration"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Smite_Base": {
+      "description": [
+        {
+          "text": "Пока активно, ",
+          "color": "$text"
+        },
+        {
+          "text": "Кара",
+          "color": "$name"
+        },
+        {
+          "text": " будет ",
+          "color": "$text"
+        },
+        {
+          "text": " периодически ",
+          "color": "$damageInterval"
+        },
+        {
+          "text": " поражать моба в пределах ",
+          "color": "$text"
+        },
+        {
+          "text": " дальности ",
+          "color": "$radius"
+        },
+        {
+          "text": ", нанося случайный процент от вашей ",
+          "color": "$text"
+        },
+        {
+          "text": "силы способности",
+          "color": "$ability_power"
+        },
+        {
+          "text": " и передавая все ",
+          "color": "$text"
+        },
+        {
+          "text": "модификаторы при ударе ",
+          "color": "$name"
+        },
+        {
+          "text": "цели, за исключением Удачного Удара.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+
+        "abilityRange",
+        "damageInterval",
+        "adjustedRadius",
+        "additionalManaPerBolt",
+        "manaCostPerSecond",
+        "cooldown"
+      ],
+      "next": [
+
+
+        "abilityRange",
+        "damageInterval",
+        "adjustedRadius",
+        "additionalManaPerBolt",
+        "manaCostPerSecond",
+        "cooldown"
+      ]
+    },
+    "Smite_Thunderstorm": {
+      "description": [
+        {
+          "text": "Пока активно, ",
+          "color": "$text"
+        },
+        {
+          "text": "Кара: Гроза",
+          "color": "$name"
+        },
+        {
+          "text": " будет",
+          "color": "$text"
+        },
+        {
+          "text": " обрушивать молнии ",
+          "color": "$damageInterval"
+        },
+        {
+          "text": ", поражая мобов в пределах ",
+          "color": "$text"
+        },
+        {
+          "text": " дальности ",
+          "color": "$radius"
+        },
+        {
+          "text": ", нанося случайный процент от вашей ",
+          "color": "$text"
+        },
+        {
+          "text": "силы способности",
+          "color": "$ability_power"
+        },
+        {
+          "text": ".",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "damageInterval",
+        "adjustedRadius",
+        "manaCostPerSecond",
+        "cooldown"
+      ],
+      "next": [
+        "abilityRange",
+        "damageInterval",
+        "adjustedRadius",
+        "manaCostPerSecond",
+        "cooldown"
+      ]
+    },
+    "Smite_Archon": {
+      "description": [
+        {
+          "text": "Пока активно, ",
+          "color": "$text"
+        },
+        {
+          "text": "Кара: Архонт",
+          "color": "$name"
+        },
+        {
+          "text": " превратит вас в искру. Любой моб, которого вы физически коснётесь, будет поражён молнией за случайный процент от вашей ",
+          "color": "$text"
+        },
+        {
+          "text": "силы способности",
+          "color": "$ability_power"
+        },
+        {
+          "text": ". ",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "additionalManaPerBolt",
+        "manaCostPerSecond",
+        "cooldown"
+      ],
+      "next": [
+        "abilityRange",
+        "additionalManaPerBolt",
+        "manaCostPerSecond",
+        "cooldown"
+      ]
+    },
+    "Shell_Base": {
+      "description": [
+        {
+          "text": "Пока активно, ",
+          "color": "$text"
+        },
+        {
+          "text": "Панцирь",
+          "color": "$name"
+        },
+        {
+          "text": " даст вам закалённую кожу, давая ",
+          "color": "$text"
+        },
+        {
+          "text": " шанс оглушить мобов",
+          "color": "$chance"
+        },
+        {
+          "text": " при получении удара.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+
+        "stunChance",
+        "manaCostPerSecond",
+        "additionalManaPerHit",
+        "cooldown"
+      ],
+      "next": [
+
+        "stunChance",
+        "manaCostPerSecond",
+        "additionalManaPerHit",
+        "cooldown"
+      ]
+    },
+    "Shell_Porcupine": {
+      "description": [
+        {
+          "text": "Пока активно, ",
+          "color": "$text"
+        },
+        {
+          "text": "Дикобраз",
+          "color": "$name"
+        },
+        {
+          "text": " увеличит ваш",
+          "color": "$text"
+        },
+        {
+          "text": " Урон шипов",
+          "color": "$damage"
+        },
+        {
+          "text": ".",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "additionalThornsDamage",
+        "manaCostPerSecond",
+        "cooldown"
+      ],
+      "next": [
+        "additionalThornsDamage",
+        "manaCostPerSecond",
+        "cooldown"
+      ]
+    },
+    "Shell_Quill": {
+      "description": [
+        {
+          "text": "Пока активно, ",
+          "color": "$text"
+        },
+        {
+          "text": "Игла",
+          "color": "$name"
+        },
+        {
+          "text": " увеличит ваш",
+          "color": "$text"
+        },
+        {
+          "text": " Урон шипов",
+          "color": "$damage"
+        },
+        {
+          "text": " и",
+          "color": "$text"
+        },
+        {
+          "text": " цепная реакция шипов ",
+          "color": "$chains"
+        },
+        {
+          "text": "поражает дополнительные цели.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25d0 Переключаемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "additionalThornsDamage",
+        "quillCount",
+        "manaCostPerSecond",
+        "additionalManaPerHit",
+        "cooldown"
+      ],
+      "next": [
+        "additionalThornsDamage",
+        "quillCount",
+        "manaCostPerSecond",
+        "additionalManaPerHit",
+        "cooldown"
+      ]
+    },
+    "Fireball_Base": {
+      "description": [
+        {
+          "text": "Призовите магический Огненный Шар, чтобы поразить врагов издалека\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Наносит количество ",
+          "color": "$text"
+        },
+        {
+          "text": "урона ",
+          "color": "$ability_power"
+        },
+        {
+          "text": "на основе вашей силы способности.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "adjustedRadius",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "ability_power",
+        "adjustedRadius",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Fireball_Volley": {
+      "description": [
+        {
+          "text": "Призовите магический отскакивающий Огненный Шар, который ",
+          "color": "$text"
+        },
+        {
+          "text": "обжигает ",
+          "color": "$ability_power"
+        },
+        {
+          "text": "мобов на своём пути и наносит количество ",
+          "color": "$text"
+        },
+        {
+          "text": "урона ",
+          "color": "$ability_power"
+        },
+        {
+          "text": "на основе вашей силы способности.\nПосле ",
+          "color": "$text"
+        },
+        {
+          "text": "длительности",
+          "color": "$duration"
+        },
+        {
+          "text": " времени он взрывается в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": ", нанося полный урон.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "adjustedRadius",
+        "duration",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "ability_power",
+        "adjustedRadius",
+        "duration",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Fireball_Fireshot": {
+      "description": [
+        {
+          "text": "Призовите маленький магический огненный выстрел для поражения мобов издалека\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Наносит количество ",
+          "color": "$text"
+        },
+        {
+          "text": "урона ",
+          "color": "$ability_power"
+        },
+        {
+          "text": "на основе вашей ",
+          "color": "$text"
+        },
+        {
+          "text": "силы способности",
+          "color": "$ability_power"
+        },
+        {
+          "text": " и передаёт все ",
+          "color": "$text"
+        },
+        {
+          "text": "эффекты при ударе ",
+          "color": "$name"
+        },
+        {
+          "text": "от вас, за исключением Удачного Удара.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "cooldown",
+        "manaCost"
+      ],
+      "next": [
+        "ability_power",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Storm_Arrow_Base": {
+      "description": [
+        {
+          "text": "Выстрелите стрелой, создающей шторм над местом попадания\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Наносит случайное количество ",
+          "color": "$text"
+        },
+        {
+          "text": "урона ",
+          "color": "$ability_power"
+        },
+        {
+          "text": "на основе вашей силы способности. Грозовое облако остаётся на ",
+          "color": "$text"
+        },
+        {
+          "text": "длительность",
+          "color": "$duration"
+        },
+        {
+          "text": " и будет ",
+          "color": "$text"
+        },
+        {
+          "text": "бить",
+          "color": "$duration"
+        },
+        {
+          "text": " через определённые промежутки.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "adjustedRadius",
+        "adjustedDuration",
+        "stormInterval",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "abilityRange",
+        "adjustedRadius",
+        "adjustedDuration",
+        "stormInterval",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Storm_Arrow_Blizzard": {
+      "description": [
+        {
+          "text": "Выстрелите стрелой, создающей ледяной шторм над местом попадания\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Каждый осколок льда замораживает мобов при попадании на ",
+          "color": "$text"
+        },
+        {
+          "text": "длительность.",
+          "color": "$duration"
+        },
+        {
+          "text": " Также есть ",
+          "color": "$text"
+        },
+        {
+          "text": "шанс",
+          "color": "$chance"
+        },
+        {
+          "text": " обморожения моба на ",
+          "color": "$text"
+        },
+        {
+          "text": "длительность",
+          "color": "$duration"
+        },
+        {
+          "text": " через определённые промежутки.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "stormInterval",
+        "slowDuration",
+        "frostbiteChance",
+        "frostbiteDuration",
+        "cooldown",
+        "manaCost"
+      ],
+      "next": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "stormInterval",
+        "slowDuration",
+        "frostbiteChance",
+        "frostbiteDuration",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Battle_Cry_Base": {
+      "description": [
+        {
+          "text": "Высасывайте эссенцию мобов вокруг вас, накапливая ",
+          "color": "$text"
+        },
+        {
+          "text": "заряды Боевого Клича ",
+          "color": "$maxStacks"
+        },
+        {
+          "text": "и высвобождайте ",
+          "color": "$text"
+        },
+        {
+          "text": "количество ",
+          "color": "$stacksUsedPerHit"
+        },
+        {
+          "text": "зарядов, давая вам ",
+          "color": "$text"
+        },
+        {
+          "text": "дополнительный урон атаки ",
+          "color": "$damage"
+        },
+        {
+          "text": "при следующей прямой атаке.\nЗаряды рассеются через ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время ",
+          "color": "$duration"
+        },
+        {
+          "text": "если не использованы.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "attackDamagePerStack",
+        "maxStacks",
+        "stacksUsedPerHit",
+        "cooldown",
+        "manaCost"
+      ],
+      "next": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "attackDamagePerStack",
+        "maxStacks",
+        "stacksUsedPerHit",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Battle_Cry_Spectral_Strike": {
+      "description": [
+        {
+          "text": "Высасывайте эссенцию мобов вокруг вас, накапливая ",
+          "color": "$text"
+        },
+        {
+          "text": "заряды Боевого Клича ",
+          "color": "$maxStacks"
+        },
+        {
+          "text": "и высвобождайте ",
+          "color": "$text"
+        },
+        {
+          "text": "количество ",
+          "color": "$stacksUsedPerHit"
+        },
+        {
+          "text": "зарядов, добавляя ",
+          "color": "$text"
+        },
+        {
+          "text": "силы способности ",
+          "color": "$abilityPowerPerStack"
+        },
+        {
+          "text": "в качестве урона при следующей прямой атаке.\nЗаряды рассеются через ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время ",
+          "color": "$duration"
+        },
+        {
+          "text": "если не использованы.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "abilityPowerPerStack",
+        "maxStacks",
+        "stacksUsedPerHit",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "abilityPowerPerStack",
+        "maxStacks",
+        "stacksUsedPerHit",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Battle_Cry_Lucky_Strike": {
+      "description": [
+        {
+          "text": "Высасывайте эссенцию мобов вокруг вас, накапливая ",
+          "color": "$text"
+        },
+        {
+          "text": "заряды Боевого Клича ",
+          "color": "$maxStacks"
+        },
+        {
+          "text": "и высвобождайте ",
+          "color": "$text"
+        },
+        {
+          "text": "количество ",
+          "color": "$stacksUsedPerHit"
+        },
+        {
+          "text": "зарядов, давая вам ",
+          "color": "$text"
+        },
+        {
+          "text": "дополнительный шанс Удачного Удара ",
+          "color": "$luckyHit"
+        },
+        {
+          "text": "при следующей прямой атаке.\nЗаряды рассеются через ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время ",
+          "color": "$duration"
+        },
+        {
+          "text": "если не использованы.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "luckyHitPerStack",
+        "maxStacks",
+        "stacksUsedPerHit",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "adjustedRadius",
+        "adjustedDuration",
+        "luckyHitPerStack",
+        "maxStacks",
+        "stacksUsedPerHit",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Ice_Bolt_Base": {
+      "description": [
+        {
+          "text": "Призовите маленькую Ледяную Стрелу, наносящую ",
+          "color": "$text"
+        },
+        {
+          "text": "фиксированный урон",
+          "color": "$damage"
+        },
+        {
+          "text": " и ",
+          "color": "$text"
+        },
+        {
+          "text": "охлаждая",
+          "color": "$chilled"
+        },
+        {
+          "text": " мобов при попадании на ",
+          "color": "$text"
+        },
+        {
+          "text": "определённое время",
+          "color": "$duration"
+        },
+        {
+          "text": ".",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "setDamage",
+        "throwPower",
+        "adjustedDuration",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "setDamage",
+        "throwPower",
+        "adjustedDuration",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Ice_Bolt_Blast": {
+      "description": [
+        {
+          "text": "Призовите большой Ледяной Взрыв, который при попадании взрывается, ",
+          "color": "$text"
+        },
+        {
+          "text": "охлаждая",
+          "color": "$chilled"
+        },
+        {
+          "text": " и потенциально ",
+          "color": "$text"
+        },
+        {
+          "text": "заключая в ледяную тюрьму",
+          "color": "$maxGlacialPrison"
+        },
+        {
+          "text": " мобов в его ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": ", на ",
+          "color": "$text"
+        },
+        {
+          "text": "длительность",
+          "color": "$duration"
+        },
+        {
+          "text": " времени ",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "throwPower",
+        "adjustedDuration",
+        "adjustedRadius",
+        "glacialChance",
+        "cooldown",
+        "manaCost"
+      ],
+      "next": [
+        "throwPower",
+        "adjustedDuration",
+        "adjustedRadius",
+        "glacialChance",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Arcane_Base": {
+      "description": [
+        {
+          "text": "Направьте магический луч для быстрого уничтожения мобов, нанося процент от вашей ",
+          "color": "$text"
+        },
+        {
+          "text": "силы способности",
+          "color": "$ability_power"
+        },
+        {
+          "text": " каждые полсекунды на его ",
+          "color": "$text"
+        },
+        {
+          "text": "расстоянии",
+          "color": "$distance"
+        },
+        {
+          "text": ".\n\nТайная магия расходует ",
+          "color": "$text"
+        },
+        {
+          "text": "стоимость маны",
+          "color": "$manaCost"
+        },
+        {
+          "text": " каждую секунду во время направления.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u25cf Удерживаемая способность",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "distance",
+        "manaCost"
+
+      ],
+      "next": [
+        "ability_power",
+        "distance",
+        "manaCost"
+      ]
+    },
+    "Arcane_Rail": {
+      "description": [
+        {
+          "text": "Призовите магический Тайный Рельс для поражения одного моба с невероятной силой",
+          "color": "$text"
+        },
+        {
+          "text": ", нанося процент от вашей ",
+          "color": "$text"
+        },
+        {
+          "text": "силы способности",
+          "color": "$ability_power"
+        },
+        {
+          "text": " в качестве урона и вызывая ",
+          "color": "$text"
+        },
+        {
+          "text": "эффекты при ударе ",
+          "color": "$name"
+        },
+        {
+          "text": "такие как ",
+          "color": "$text"
+        },
+        {
+          "text": "Облака",
+          "color": "$name"
+        },
+        {
+          "text": " и ",
+          "color": "$text"
+        },
+        {
+          "text": "Цепочка",
+          "color": "$chaining"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "cooldown",
+        "manaCost"
+
+      ],
+      "next": [
+        "abilityRange",
+        "cooldown",
+        "manaCost"
+      ]
+    },
+    "Earthquake_Base": {
+      "description": [
+        {
+          "text": "Вызовите мощный взрыв там, где стоите, нанося урон на основе вашего ",
+          "color": "$text"
+        },
+        {
+          "text": "урона атаки",
+          "color": "$damage"
+        },
+        {
+          "text": " и ",
+          "color": "$text"
+        },
+        {
+          "text": "отбрасывая",
+          "color": "$knockback"
+        },
+        {
+          "text": " всех враждебных мобов в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " после ",
+          "color": "$text"
+        },
+        {
+          "text": "задержки\nНаносимый урон уменьшается с расстоянием от центра.",
+          "color": "$delay"
+        },
+        {
+          "text": "\n\nЗемлетрясение также имеет шанс разрушить блоки на своём пути.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damage",
+        "knockback",
+        "adjustedRadius",
+        "delay",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "damage",
+        "knockback",
+        "adjustedRadius",
+        "delay",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Implode_Life_Tap": {
+      "description": [
+        {
+          "text": "Высосите 80% вашего ",
+          "color": "$text"
+        },
+        {
+          "text": "оставшегося здоровья",
+          "color": "$health"
+        },
+        {
+          "text": ", нанося урон за каждую ",
+          "color": "$text"
+        },
+        {
+          "text": "высосанную единицу здоровья",
+          "color": "$damage"
+        },
+        {
+          "text": " всем мобам в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " вокруг вас.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "Примечание: 1 сердце = 2 единицы здоровья.",
+          "color": "$darkgray"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "adjustedRadius",
+        "damagePerHealth",
+        "cooldown"
+      ],
+      "next": [
+        "adjustedRadius",
+        "damagePerHealth",
+        "cooldown"
+      ]
+    },
+    "Chain_Lightning_Base": {
+      "description": [
+        {
+          "text": "Создайте молниевую стрелу, вызывающую ",
+          "color": "$text"
+        },
+        {
+          "text": "удар молнии",
+          "color": "$name"
+        },
+        {
+          "text": " при попадании, нанося ",
+          "color": "$text"
+        },
+        {
+          "text": "урон молнией",
+          "color": "$lightning"
+        },
+        {
+          "text": " на основе вашей ",
+          "color": "$text"
+        },
+        {
+          "text": "Силы Способности",
+          "color": "$ability_power"
+        },
+        {
+          "text": " и распространяется на мобов в ",
+          "color": "$text"
+        },
+        {
+          "text": "дальности",
+          "color": "$range"
+        },
+        {
+          "text": " вокруг места попадания.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "distance",
+        "chainRange",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "abilityRange",
+        "distance",
+        "chainRange",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Chain_Lightning_Orbs": {
+      "description": [
+        {
+          "text": "Призывает мощный ",
+          "color": "$text"
+        },
+        {
+          "text": "Шар Молнии",
+          "color": "$name"
+        },
+        {
+          "text": ", который медленно летит, следуя за прицелом, и поражает каждого моба ",
+          "color": "$text"
+        },
+        {
+          "text": "Уроном Молнии",
+          "color": "$lightning"
+        },
+        {
+          "text": " на основе вашей ",
+          "color": "$text"
+        },
+        {
+          "text": "Силы Способности",
+          "color": "$ability_power"
+        },
+        {
+          "text": ".",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Активируемая способность ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "abilityRange",
+        "adjustedDuration",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "abilityRange",
+        "adjustedDuration",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Grenade_Base": {
+      "description": [
+        {
+          "text": "Бросьте загадочный, мощный ",
+          "color": "$text"
+        },
+        {
+          "text": "Куб Хаоса",
+          "color": "$qhighlight"
+        },
+        {
+          "text": ", который взрывается через некоторое время, нанося ",
+          "color": "$text"
+        },
+        {
+          "text": "Урон Атаки",
+          "color": "$damage"
+        },
+        {
+          "text": " масштабируемый урон в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": ".",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "damage",
+        "adjustedRadius",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "damage",
+        "adjustedRadius",
+        "manaCost",
+        "cooldown"
+      ]
+    },
+    "Toxic_Grenade": {
+      "description": [
+        {
+          "text": "Бросьте ",
+          "color": "$text"
+        },
+        {
+          "text": "Токсичную",
+          "color": "$poison"
+        },
+        {
+          "text": ", ",
+          "color": "$text"
+        },
+        {
+          "text": "ядовитую",
+          "color": "$poison"
+        },
+        {
+          "text": " колбу, которая при разбивании взрывается в ",
+          "color": "$text"
+        },
+        {
+          "text": "ядовитое облако",
+          "color": "$poison"
+        },
+        {
+          "text": ", нанося ",
+          "color": "$text"
+        },
+        {
+          "text": "Силу Способности",
+          "color": "$ability_power"
+        },
+        {
+          "text": " масштабируемый урон в ",
+          "color": "$text"
+        },
+        {
+          "text": "радиусе",
+          "color": "$radius"
+        },
+        {
+          "text": " на определённое ",
+          "color": "$text"
+        },
+        {
+          "text": "количество времени",
+          "color": "$duration"
+        },
+        {
+          "text": ".",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Активируемая способность",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "adjustedRadius",
+        "adjustedDuration",
+        "manaCost",
+        "cooldown"
+      ],
+      "next": [
+        "ability_power",
+        "adjustedRadius",
+        "adjustedDuration",
+        "manaCost",
+        "cooldown"
+      ]
+    }
+  }
+}

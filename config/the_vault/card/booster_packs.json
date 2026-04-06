@@ -800,6 +800,127 @@
         }
       ]
     },
+    "the_vault:greed_pack": {
+      "name": {
+        "text": "Greed Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/greed_pack#inventory",
+        "opened": "the_vault:booster_pack/greed_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 3,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@greed",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@greed",
+              "groups": [ "Foil" ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    "the_vault:mega_greed_pack": {
+      "name": {
+        "text": "Mega Greed Booster Pack"
+      },
+      "model": {
+        "unopened": "the_vault:booster_pack/mega_greed_pack#inventory",
+        "opened": "the_vault:booster_pack/mega_greed_pack_ripped#inventory"
+      },
+      "roll": [
+        {
+          "value": 5,
+          "weight": 1.0
+        }
+      ],
+      "tier": [
+        {
+          "value": 1,
+          "weight": 1.0
+        }
+      ],
+      "color": [
+        {
+          "value": "GREEN",
+          "weight": 1.0
+        },
+        {
+          "value": "BLUE",
+          "weight": 1.0
+        },
+        {
+          "value": "YELLOW",
+          "weight": 1.0
+        },
+        {
+          "value": "RED",
+          "weight": 1.0
+        }
+      ],
+      "card": [
+        {
+          "value": [
+            {
+              "modifier": "@greed",
+              "probability": 1.0
+            }
+          ],
+          "weight": 9
+        },
+        {
+          "value": [
+            {
+              "modifier": "@greed",
+              "groups": [ "Foil" ],
+              "probability": 1.0
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+
     "the_vault:wild_pack": {
       "name": {
         "text": "Wild Booster Pack (Legacy)"
@@ -946,7 +1067,7 @@
         {
           "value": [
             {
-              "modifier": "@default",
+              "modifier": "@shiny",
               "groups": [ "Foil" ],
               "scaler": "@default",
               "condition": "",

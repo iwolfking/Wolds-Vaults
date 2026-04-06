@@ -1,0 +1,604 @@
+{
+    "pools": {
+        "the_vault:default": [
+            {
+                "level": 0,
+                "type": "chaos",
+                "minTasks": 7,
+                "maxTasks": 11,
+                "ticksPerTask": 4800,
+                "mysteryChance": 0,
+                "renderer": {
+                    "type": "chaos"
+                },
+                "tasks": [
+                    {
+                        "type": "loot_chest",
+                        "filter": "@the_vault:wooden",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 15,
+                                "max": 25
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 1.0
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Loot Wooden Chests",
+                            "icon": "the_vault:textures/gui/bingo/wooden.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "loot_chest",
+                        "filter": "@the_vault:gilded",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 10,
+                                "max": 18
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 1.0
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Loot Gilded Chests",
+                            "icon": "the_vault:textures/gui/bingo/gilded.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "loot_chest",
+                        "filter": "@the_vault:ornate",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 10,
+                                "max": 18
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 1.0
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Loot Ornate Chests",
+                            "icon": "the_vault:textures/gui/bingo/ornate.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "loot_chest",
+                        "filter": "@the_vault:living",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 10,
+                                "max": 18
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 1.0
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Loot Living Chests",
+                            "icon": "the_vault:textures/gui/bingo/living.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "loot_chest_item",
+                        "chestFilter": "@the_vault:wooden",
+                        "itemFilter": "the_vault:wooden_chunk",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 80,
+                                "max": 120
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 1.0
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Find Wooden Chunks",
+                            "icon": "the_vault:textures/gui/bingo/wooden.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "mine_block",
+                        "filter": "the_vault:coin_pile[size=1]",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 10,
+                                "max": 20
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 1.0
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Loot Coins",
+                            "icon": "the_vault:textures/gui/bingo/lootcoins.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "mine_block",
+                        "filter": "@the_vault:ores[generated=true]",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 20,
+                                "max": 30
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 0.8
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Mine Vault Ores",
+                            "icon": "the_vault:textures/gui/bingo/minevaultore.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "kill_entity",
+                        "filter": "@the_vault:horde",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 25,
+                                "max": 45
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 0.75
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Kill Hordes",
+                            "icon": "the_vault:textures/gui/bingo/killhorde.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "kill_entity",
+                        "filter": "@the_vault:assassin",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 5,
+                                "max": 12
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 1.0
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Kill Assassins",
+                            "icon": "the_vault:textures/gui/bingo/killassassin.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "kill_entity",
+                        "filter": "@the_vault:tank",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 4,
+                                "max": 8
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 0.75
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Kill Tanks",
+                            "icon": "the_vault:textures/gui/bingo/killtank.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "kill_entity",
+                        "filter": "@the_vault:guardians",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 4,
+                                "max": 10
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 0.75
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Kill Guardians",
+                            "icon": "the_vault:textures/gui/bingo/killguardians.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "kill_entity",
+                        "filter": "@the_vault:fighter",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 4,
+                                "max": 7
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 0.75
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Kill Dwellers",
+                            "icon": "the_vault:textures/gui/bingo/killdweller.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "kill_entity",
+                        "filter": "@the_vault:mob_type/champion",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 2,
+                                "max": 4
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 1.0
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Kill Champion",
+                            "icon": "the_vault:textures/gui/bingo/killchampion.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "kill_entity",
+                        "filter": "@the_vault:mob_type/dungeon_boss",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 1,
+                                "max": 2
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 1.0
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Kill Dungeon Boss",
+                            "icon": "the_vault:textures/gui/bingo/killdungeonboss.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "interact_block",
+                        "pre": "the_vault:pylon{Consumed:0b}",
+                        "post": "the_vault:pylon{Consumed:1b}",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 2,
+                                "max": 4
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 0.5
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Activate Pylons",
+                            "icon": "the_vault:textures/gui/bingo/pylon.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "interact_block",
+                        "pre": "the_vault:vendor_door[open=false]",
+                        "post": "the_vault:vendor_door[open=true]",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 2,
+                                "max": 5
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 0.75
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Open Vendoors",
+                            "icon": "the_vault:textures/gui/bingo/vendoor.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "loot_chest",
+                        "filter": "@the_vault:wooden",
+                        "counter": {
+                            "type": "sliding_timed_target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 5,
+                                "max": 10
+                            },
+                            "window": {
+                                "type": "constant",
+                                "count": 120
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 0.75
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Rapidly Loot Wooden Chests",
+                            "icon": "the_vault:textures/gui/bingo/rapidwooden.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "kill_entity",
+                        "filter": "@the_vault:horde",
+                        "counter": {
+                            "type": "sliding_timed_target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 8,
+                                "max": 15
+                            },
+                            "window": {
+                                "type": "constant",
+                                "count": 120
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 0.75
+                            }
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Rapidly Kill Horde Mobs",
+                            "icon": "the_vault:textures/gui/bingo/rapidhorde.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "take_no_damage",
+                        "children": [
+                            {
+                                "type": "kill_entity",
+                                "filter": "@the_vault:tank",
+                                "counter": {
+                                    "type": "target",
+                                    "target": {
+                                        "type": "uniform",
+                                        "min": 3,
+                                        "max": 5
+                                    },
+                                    "variables": {
+                                        "targetPlayerContribution": 0.25
+                                    }
+                                },
+                                "renderer": {
+                                    "type": "bingo",
+                                    "name": "Flawlessly Kill Tanks",
+                                    "icon": "the_vault:textures/gui/bingo/nodamagetanks.png"
+                                }
+                            }
+                        ],
+                        "weight": 1
+                    },
+                    {
+                        "type": "take_no_damage",
+                        "children": [
+                            {
+                                "type": "kill_entity",
+                                "filter": "@the_vault:mob_type/horde",
+                                "counter": {
+                                    "type": "target",
+                                    "target": {
+                                        "type": "uniform",
+                                        "min": 10,
+                                        "max": 20
+                                    },
+                                    "variables": {
+                                        "targetPlayerContribution": 0.25
+                                    }
+                                },
+                                "renderer": {
+                                    "type": "bingo",
+                                    "name": "Flawlessly Kill Hordes",
+                                    "icon": "the_vault:textures/gui/bingo/nodamagehorde.png"
+                                }
+                            }
+                        ],
+                        "weight": 1
+                    },
+                    {
+                        "type": "take_no_damage",
+                        "children": [
+                            {
+                                "type": "mine_block",
+                                "filter": "@the_vault:ores[generated=true]",
+                                "counter": {
+                                    "type": "target",
+                                    "target": {
+                                        "type": "uniform",
+                                        "min": 15,
+                                        "max": 25
+                                    },
+                                    "variables": {
+                                        "targetPlayerContribution": 0.25
+                                    }
+                                },
+                                "renderer": {
+                                    "type": "bingo",
+                                    "name": "Flawlessly Mine Ores",
+                                    "icon": "the_vault:textures/gui/bingo/nodamageores.png"
+                                }
+                            }
+                        ],
+                        "weight": 1
+                    },
+                    {
+                        "type": "deal_no_damage",
+                        "children": [
+                            {
+                                "type": "loot_chest",
+                                "filter": "@the_vault:gilded",
+                                "counter": {
+                                    "type": "target",
+                                    "target": {
+                                        "type": "uniform",
+                                        "min": 5,
+                                        "max": 12
+                                    },
+                                    "variables": {
+                                        "targetPlayerContribution": 0.25
+                                    }
+                                },
+                                "renderer": {
+                                    "type": "bingo",
+                                    "name": "Peacefully Loot Gilded Chests",
+                                    "icon": "the_vault:textures/gui/bingo/peacefulgilded.png"
+                                }
+                            }
+                        ],
+                        "weight": 1
+                    },
+                    {
+                        "type": "deal_no_damage",
+                        "children": [
+                            {
+                                "type": "mine_block",
+                                "filter": "@the_vault:ores[generated=true]",
+                                "counter": {
+                                    "type": "target",
+                                    "target": {
+                                        "type": "uniform",
+                                        "min": 10,
+                                        "max": 18
+                                    },
+                                    "variables": {
+                                        "targetPlayerContribution": 0.25
+                                    }
+                                },
+                                "renderer": {
+                                    "type": "bingo",
+                                    "name": "Peacefully Mine Ores",
+                                    "icon": "the_vault:textures/gui/bingo/peacefulgilded.png"
+                                }
+                            }
+                        ],
+                        "weight": 1
+                    },
+                    {
+                        "type": "mine_block",
+                        "filter": "the_vault:barred_door[generated=true]",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 1,
+                                "max": 1
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 0.0
+                            }
+                        },
+                        "condition": {
+                            "type": "room_generation",
+                            "filter": [
+                                "the_vault:vault/rooms/challenge/village1",
+                                "the_vault:vault/rooms/challenge/village2",
+                                "the_vault:vault/rooms/challenge/village3",
+                                "the_vault:vault/rooms/challenge/village4"
+                            ]
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Free Villager",
+                            "icon": "the_vault:textures/gui/bingo/freevillager.png"
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "type": "interact_block",
+                        "pre": "the_vault:treasure_door[open=false]",
+                        "post": "the_vault:treasure_door[open=true]",
+                        "counter": {
+                            "type": "target",
+                            "target": {
+                                "type": "uniform",
+                                "min": 1,
+                                "max": 1
+                            },
+                            "variables": {
+                                "targetPlayerContribution": 0.1
+                            }
+                        },
+                        "condition": {
+                            "type": "items_available",
+                            "filter": [
+                                "the_vault:key_iskallium",
+                                "the_vault:key_gorginite",
+                                "the_vault:key_sparkletine",
+                                "the_vault:key_ashium",
+                                "the_vault:key_bomignite",
+                                "the_vault:key_tubium",
+                                "the_vault:key_upaline",
+                                "the_vault:key_petzanite",
+                                "the_vault:key_xenium"
+                            ]
+                        },
+                        "renderer": {
+                            "type": "bingo",
+                            "name": "Open Treasure Room",
+                            "icon": "the_vault:textures/gui/bingo/treasure_doors.png"
+                        },
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

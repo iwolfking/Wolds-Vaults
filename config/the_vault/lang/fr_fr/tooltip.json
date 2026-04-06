@@ -1,0 +1,1355 @@
+{
+  "tooltips": [
+    {
+      "item": "the_vault:soul_vortex",
+      "value": "Un noyau de vortex magique incroyablement puissant, contenant les ames de nombreux guerriers tombes.\n\nUtilisez un Diffuseur d'Ames pour liberer sa puissance"
+    },
+    {
+      "item": "the_vault:crystal_seal_empty",
+      "value": "Ingredient de fabrication utilise pour creer des roches de caveau speciales ou des sceaux de caveau."
+    },
+    {
+      "item": "the_vault:crystal_seal_scout",
+      "value": "Utilisez dans l'Etabli de Cristal pour definir l'objectif sur <#dcb60b>Allumer les Braseros"
+    },
+    {
+      "item": "the_vault:crystal_seal_hunter",
+      "value": "Utilisez dans l'Etabli de Cristal pour definir l'objectif sur <#a7e915>Chasse au Tresor"
+    },
+    {
+      "item": "the_vault:crystal_seal_big_hunter",
+      "value": "Utilisez dans l'Etabli de Cristal pour definir l'objectif sur <#a7e915>Chasse au Tresor<gray> (Grand Format)"
+    },
+    {
+      "item": "the_vault:crystal_seal_executioner",
+      "value": "Utilisez dans l'Etabli de Cristal pour definir l'objectif sur <#fca800>Chasse aux Runes"
+    },
+    {
+      "item": "the_vault:crystal_seal_sage",
+      "value": "Utilisez dans l'Etabli de Cristal pour definir l'objectif sur <#c013e4>Ruee d'Elixir"
+    },
+    {
+      "item": "the_vault:crystal_seal_prophet",
+      "value": "Utilisez dans l'Etabli de Cristal pour definir l'objectif sur <#488ebd>Bingo<gray> (4x4)"
+    },
+    {
+      "item": "the_vault:crystal_seal_big_prophet",
+      "value": "Utilisez dans l'Etabli de Cristal pour definir l'objectif sur <#488ebd>Bingo<gray> (5x5)"
+    },
+    {
+      "item": "the_vault:crystal_seal_greed",
+      "value": "Utilisez dans l'Etabli de Cristal pour definir le <white>palier <gray>de votre Cristal <#2bd752>Greed"
+    },
+    {
+      "item": "the_vault:capstone_dungeon_hunter",
+      "value": "Utilisez dans l'Etabli de Cristal comme pierre de couronnement, rendant le cristal <#a64141>non modifiable <gray>et ajoutant le modificateur <#ffba00>Chasseur de Donjon<gray>"
+    },
+    {
+      "item": "the_vault:capstone_treasure_hunter",
+      "value": "Utilisez dans l'Etabli de Cristal comme pierre de couronnement, rendant le cristal <#a64141>non modifiable <gray>et ajoutant le modificateur <#ffba00>Chasseur de Tresor<gray>"
+    },
+    {
+      "item": "the_vault:phoenix_feather",
+      "value": "Utilisez dans l'Etabli de Cristal comme pierre de couronnement, rendant le cristal <#a64141>non modifiable <gray>et ajoutant le modificateur <#FF8900>Phoenix<gray>"
+    },
+    {
+      "item": "the_vault:capstone_blacksmith",
+      "value": "Cette pierre de couronnement va <#FF8900>recycler tout <gray>l'equipement non <yellow>legendaire<gray> trouve dans les coffres, ne laissant que les ressources obtenues."
+    },
+    {
+      "item": "the_vault:eye_of_avarice",
+      "value": "Utilisez dans l'Etabli de Cristal comme pierre de couronnement, rendant le cristal <#a64141>non modifiable <gray>et ajoutant le <#A3E2F5>Reve du Pilleur<gray>. Cela annulera completement toute chance de piege, meme sur un cristal avec le Modificateur Piege."
+    },
+    {
+      "item": "the_vault:god_token",
+      "value": "Utilisez dans l'Etabli de Cristal comme pierre de couronnement, rendant le cristal <#a64141>non modifiable et ajoutant la faveur de ce dieu"
+    },
+    {
+      "item": "the_vault:capstone_pylon_hunter",
+      "value": "Utilisez dans l'Etabli de Cristal comme pierre de couronnement, rendant le cristal <#a64141>non modifiable <gray>et ajoutant le modificateur <#FFEA00>Chasseur de Pylone<gray>"
+    },
+    {
+      "item": "the_vault:capstone_vendoor_hunter",
+      "value": "Utilisez dans l'Etabli de Cristal comme pierre de couronnement, rendant le cristal <#a64141>non modifiable <gray>et ajoutant le modificateur <#ffba00>Chasseur de Vendoor<gray>"
+    },
+    {
+      "item": "the_vault:capstone_companion_hunt",
+      "value": "Utilisez dans l'Etabli de Cristal comme pierre de couronnement, rendant le cristal <#a64141>non modifiable <gray>et ajoutant le modificateur <#acbde8>Chasse au Compagnon<gray>"
+    },
+    {
+      "item": "the_vault:capstone_peaceful",
+      "value": "Utilisez dans l'Etabli de Cristal comme pierre de couronnement, rendant le cristal <#a64141>non modifiable <gray>et ajoutant le modificateur <#EBFF8D>Paisible<gray>"
+    },
+    {
+      "item": "the_vault:augment",
+      "value": "Utilisez dans l'Etabli de Cristal pour changer le theme d'un caveau"
+    },
+    {
+      "item": "the_vault:crystal_seal_cake",
+      "value": "Est-ce un gateau ?\nPlacez cette Roche de Caveau sur un Autel de Caveau pour creer un <#f26499>Cristal Gateau<gray> !"
+    },
+    {
+      "item": "the_vault:crystal_seal_herald",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer un <#8d7d76>Cristal Herald<gray> !"
+    },
+    {
+      "item": "the_vault:crystal_seal_raid",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer un <#ca0000>Cristal de Raid<gray> !"
+    },
+    {
+      "item": "the_vault:crystal_seal_raid_infinite",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer un <#ca0000>Cristal de Raid Infini<gray> !"
+    },
+    {
+      "item": "the_vault:crystal_seal_ordinator_build",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer votre Cristal d'Architecture Divine"
+    },
+    {
+      "item": "the_vault:crystal_seal_ordinator_run",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer votre Cristal de Paradoxe Divin"
+    },
+    {
+      "item": "the_vault:crystal_seal_trial_chamber",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer un Cristal <#b9f032>Salle d'Epreuve<gray>. Les caveaux d'epreuve ne contiennent <yellow>aucun butin <gray>et sont utilises pour tester des builds"
+    },
+    {
+      "item": "the_vault:paradoxical_gem",
+      "value": "Combinez avec un cristal de Paradoxe Divin scelle en mode course pour effacer et reinitialiser toute votre progression de Paradoxe Divin"
+    },
+    {
+      "item": "the_vault:animatrix_block",
+      "value": "Peut contenir un oeuf de mob et afficher l'entite au-dessus"
+    },
+    {
+      "item": "the_vault:topaz_shard",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:gilded_ingot",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:ornate_ingot",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:ancient_copper_ingot",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:velvet",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:rotten_meat",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:wooden_chunk",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:overgrown_wooden_chunk",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:sandy_rocks",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:living_rock",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:mossy_bone",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:ornate_chain",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:gilded_sconce",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:vault_moss",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:soot",
+      "value": "Decoratif"
+    },
+    {
+      "item": "the_vault:vault_sweets",
+      "value": "Delicieux"
+    },
+    {
+      "item": "the_vault:soul_flame",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer un Cristal du Challenger, qui ajoute l'<#19ebef>Ascension <gray>a votre Cristal"
+    },
+    {
+      "item": "the_vault:plunderer_pearl",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer un Cristal du Pilleur, le caveau ne rapportera ni experience ni artefacts, mais augmente la quantite de butin de <yellow>10% <gray>et la generation de minerai de caveau de <yellow>25%"
+    },
+    {
+      "item": "the_vault:wardens_pearl",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer un Cristal Protege, qui possede le modificateur <#0FA6E3>Vie Apres la Mort<gray>, empechant la perte d'objets a la mort !"
+    },
+    {
+      "item": "the_vault:crystal_seal_vault_royale",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer un Caveau <#fcbf11>Royale<gray>. Commencez sans rien et progressez tout au long du caveau pour terminer l'objectif"
+    },
+    {
+      "item": "the_vault:crystal_seal_vault_royale_pvp",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer un Caveau <#fc4343>JcJ <#fcbf11>Royale<gray>"
+    },
+    {
+      "item": "the_vault:crystal_seal_pvp",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer un Caveau <#d72b2b>JcJ<gray>"
+    },
+    {
+      "item": "the_vault:crystal_seal_time_trial",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer un Caveau <#f29532>Contre-la-Montre<gray>"
+    },
+    {
+      "item": "the_vault:ascension_forge",
+      "value": "Une boutique ou les braises peuvent etre echangees contre des transmogrifications et des titres de joueur."
+    },
+    {
+      "item": "the_vault:ember",
+      "value": "La monnaie principale de la Forge d'Ascension"
+    },
+    {
+      "item": "minecraft:shield",
+      "value": "Les boucliers bloquent automatiquement les attaques selon leur chance de blocage et ne peuvent pas etre utilises pour bloquer manuellement\nCe bouclier Vanilla a une chance de blocage de 5%"
+    },
+    {
+      "item": "minecraft:totem_of_undying",
+      "value": "Ne fonctionne pas a l'interieur d'un caveau !"
+    },
+    {
+      "item": "the_vault:vault_compass",
+      "value": "Peut pointer vers differents Points d'Interet a l'interieur d'un caveau (Necessite une Recherche)"
+    },
+    {
+      "item": "the_vault:plain_burger",
+      "value": "Consommez pour gagner <$yellow>1500<gray> d'Experience de Caveau"
+    },
+    {
+      "item": "the_vault:cheese_burger",
+      "value": "Consommez pour gagner <$yellow>3000<gray> d'Experience de Caveau"
+    },
+    {
+      "item": "the_vault:double_cheese_burger",
+      "value": "Consommez pour gagner <$yellow>4500<gray> d'Experience de Caveau"
+    },
+    {
+      "item": "the_vault:deluxe_cheese_burger",
+      "value": "Consommez pour gagner <$yellow>6000<gray> d'Experience de Caveau"
+    },
+    {
+      "item": "the_vault:crispy_deluxe_cheese_burger",
+      "value": "Consommez pour gagner <$yellow>12000<gray> d'Experience de Caveau"
+    },
+    {
+      "item": "the_vault:salty_deluxe_cheese_burger",
+      "value": "Consommez pour gagner <$yellow>18000<gray> d'Experience de Caveau"
+    },
+    {
+      "item": "the_vault:cheese_burger_feast",
+      "value": "Consommez pour gagner <$yellow>40000<gray> d'Experience de Caveau"
+    },
+    {
+      "item": "the_vault:spicy_hearty_burger",
+      "value": "Consommez pour gagner <$yellow>80000<gray> d'Experience de Caveau"
+    },
+    {
+      "item": "the_vault:vault_burger",
+      "value": "Mangez pour gagner <$yellow>0-3%<gray> de l'experience\nrequise pour le prochain niveau"
+    },
+    {
+      "item": "the_vault:oozing_pizza",
+      "value": "Mangez pour gagner <$yellow>0-1%<gray> de l'experience\nrequise pour le prochain niveau"
+    },
+    {
+      "item": "the_vault:vault_cookie",
+      "value": "Mangez pour gagner de l'experience de caveau"
+    },
+    {
+      "item": "the_vault:skill_orb",
+      "value": "Consommez pour gagner un point de competence\nAugmente votre Niveau de Puissance de 1"
+    },
+    {
+      "item": "the_vault:gem_alexandrite",
+      "value": "Une gemme de caveau peu commune"
+    },
+    {
+      "item": "the_vault:gem_benitoite",
+      "value": "Une gemme de caveau commune"
+    },
+    {
+      "item": "the_vault:gem_larimar",
+      "value": "Une gemme de caveau commune"
+    },
+    {
+      "item": "the_vault:gem_black_opal",
+      "value": "Une gemme de caveau tres rare"
+    },
+    {
+      "item": "the_vault:gem_painite",
+      "value": "Une gemme de caveau rare"
+    },
+    {
+      "item": "the_vault:gem_wutodie",
+      "value": "Une gemme de caveau peu commune (Legacy)"
+    },
+    {
+      "item": "the_vault:gem_iskallium",
+      "value": "Une gemme de caveau unique"
+    },
+    {
+      "item": "the_vault:gem_gorginite",
+      "value": "Une gemme de caveau unique"
+    },
+    {
+      "item": "the_vault:gem_sparkletine",
+      "value": "Une gemme de caveau unique"
+    },
+    {
+      "item": "the_vault:gem_ashium",
+      "value": "Une gemme de caveau unique"
+    },
+    {
+      "item": "the_vault:gem_bomignite",
+      "value": "Une gemme de caveau unique"
+    },
+    {
+      "item": "the_vault:gem_funsoide",
+      "value": "Une gemme de caveau unique"
+    },
+    {
+      "item": "the_vault:gem_tubium",
+      "value": "Une gemme de caveau unique"
+    },
+    {
+      "item": "the_vault:gem_upaline",
+      "value": "Une gemme de caveau unique"
+    },
+    {
+      "item": "the_vault:gem_puffium",
+      "value": "Une gemme de caveau unique"
+    },
+    {
+      "item": "the_vault:gem_xenium",
+      "value": "Une gemme de caveau unique"
+    },
+    {
+      "item": "the_vault:gem_petzanite",
+      "value": "Une gemme de caveau unique"
+    },
+    {
+      "item": "the_vault:gem_echo",
+      "value": "Une gemme de caveau legendaire"
+    },
+    {
+      "item": "the_vault:vault_rock",
+      "value": "Utilisez dans un Autel de Caveau pour la transformer en Cristal de Caveau"
+    },
+    {
+      "item": "the_vault:gem_pog",
+      "value": "Une combinaison de toutes les gemmes de caveau uniques\nNecessaire dans les recettes de fabrication de haut niveau"
+    },
+    {
+      "item": "the_vault:echo_pog",
+      "value": "Un pog imbu d'echo\nNecessaire dans les recettes de fabrication de haut niveau"
+    },
+    {
+      "item": "the_vault:key_iskallium",
+      "value": "Ouvre une salle au tresor avec une porte en Iskallium a l'interieur des caveaux"
+    },
+    {
+      "item": "the_vault:key_gorginite",
+      "value": "Ouvre une salle au tresor avec une porte en Gorginite a l'interieur des caveaux"
+    },
+    {
+      "item": "the_vault:key_sparkletine",
+      "value": "Ouvre une salle au tresor avec une porte en Sparkletine a l'interieur des caveaux"
+    },
+    {
+      "item": "the_vault:key_ashium",
+      "value": "Ouvre une salle au tresor avec une porte en Ashium a l'interieur des caveaux"
+    },
+    {
+      "item": "the_vault:key_bomignite",
+      "value": "Ouvre une salle au tresor avec une porte en Bomignite a l'interieur des caveaux"
+    },
+    {
+      "item": "the_vault:key_funsoide",
+      "value": "Ouvre une salle au tresor avec une porte en Funsoide a l'interieur des caveaux"
+    },
+    {
+      "item": "the_vault:key_tubium",
+      "value": "Ouvre une salle au tresor avec une porte en Tubium a l'interieur des caveaux"
+    },
+    {
+      "item": "the_vault:key_upaline",
+      "value": "Ouvre une salle au tresor avec une porte en Upaline a l'interieur des caveaux"
+    },
+    {
+      "item": "the_vault:key_puffium",
+      "value": "Ouvre une salle au tresor avec une porte en Puffium a l'interieur des caveaux"
+    },
+    {
+      "item": "the_vault:key_xenium",
+      "value": "Ouvre une salle au tresor avec une porte en Xeenium a l'interieur des caveaux"
+    },
+    {
+      "item": "the_vault:key_petzanite",
+      "value": "Ouvre une salle au tresor avec une porte en Petezanite a l'interieur des caveaux"
+    },
+    {
+      "item": "the_vault:treasure_keyring",
+      "value": "Un porte-cles pouvant contenir jusqu'a 64 de chaque cle au tresor"
+    },
+    {
+      "item": "the_vault:relic_booster_pack",
+      "value": "Consommez pour avoir une chance d'obtenir un morceau de Relique"
+    },
+    {
+      "item": "the_vault:relic_dragon_head",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Relique Dragon pour completer la Relique Dragon\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_dragon_tail",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Relique Dragon pour completer la Relique Dragon\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_dragon_foot",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Relique Dragon pour completer la Relique Dragon\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_dragon_chest",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Relique Dragon pour completer la Relique Dragon\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_dragon_breath",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Relique Dragon pour completer la Relique Dragon\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_miners_delight",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Mineur pour completer la Relique Mineur\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_miners_light",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Mineur pour completer la Relique Mineur\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_pickaxe_handle",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Mineur pour completer la Relique Mineur\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_pickaxe_head",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Mineur pour completer la Relique Mineur\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_pickaxe_tool",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Mineur pour completer la Relique Mineur\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_sword_blade",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Guerrier pour completer la Relique Guerrier\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_sword_handle",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Guerrier pour completer la Relique Guerrier\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_sword_stick",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Guerrier pour completer la Relique Guerrier\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_warriors_armour",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Guerrier pour completer la Relique Guerrier\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_warriors_charm",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Guerrier pour completer la Relique Guerrier\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_diamond_essence",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Richesse pour completer la Relique Richesse\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_gold_essence",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Richesse pour completer la Relique Richesse\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_mystic_gem_essence",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Richesse pour completer la Relique Richesse\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_netherite_essence",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Richesse pour completer la Relique Richesse\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_platinum_essence",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Richesse pour completer la Relique Richesse\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_cupcake_blue",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Cupcake pour completer la Relique Cupcake\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_cupcake_lime",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Cupcake pour completer la Relique Cupcake\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_cupcake_pink",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Cupcake pour completer la Relique Cupcake\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_cupcake_purple",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Cupcake pour completer la Relique Cupcake\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_cupcake_red",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Cupcake pour completer la Relique Cupcake\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_air",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Element pour completer la Relique Element\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_spirit",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Element pour completer la Relique Element\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_fire",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Element pour completer la Relique Element\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_earth",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Element pour completer la Relique Element\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_water",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Element pour completer la Relique Element\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_twolf999_head",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Twolf999 pour completer la Relique Twolf999\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_twolf999_combat_vest",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Twolf999 pour completer la Relique Twolf999\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_twolf999_combat_leggings",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Twolf999 pour completer la Relique Twolf999\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_twolf999_combat_gloves",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Twolf999 pour completer la Relique Twolf999\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_twolf999_combat_boots",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Twolf999 pour completer la Relique Twolf999\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_armor_of_forbearance",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble ShieldmanH pour completer la Relique ShieldmanH\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_heart_of_the_void",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble ShieldmanH pour completer la Relique ShieldmanH\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_nemesis_thwarter",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble ShieldmanH pour completer la Relique ShieldmanH\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_reverence_edge",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble ShieldmanH pour completer la Relique ShieldmanH\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_wings_of_equity",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble ShieldmanH pour completer la Relique ShieldmanH\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_twitch_emote1",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Twitch pour completer la Relique Twitch\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_twitch_emote2",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Twitch pour completer la Relique Twitch\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_twitch_emote3",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Twitch pour completer la Relique Twitch\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_twitch_emote4",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Twitch pour completer la Relique Twitch\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:relic_twitch_emote5",
+      "value": "Assemblez avec les quatre autres pieces\n de l'ensemble Twitch pour completer la Relique Twitch\nUne relique augmente votre temps dans le caveau\n de 30 secondes de facon permanente, mais une seule fois\nLes Statues de Relique en surplus peuvent etre fondues pour creer des Citrons Amers"
+    },
+    {
+      "item": "the_vault:trader_core",
+      "value": "Inserez dans un Distributeur Automatique pour echanger"
+    },
+    {
+      "item": "the_vault:orb_frame",
+      "value": "Base de fabrication pour les Orbes de Competence"
+    },
+    {
+      "item": "the_vault:skill_shard",
+      "value": "Ingredient de fabrication pour les Orbes de Competence"
+    },
+    {
+      "item": "the_vault:key_piece",
+      "value": "Ingredient de fabrication pour les Cles au Tresor"
+    },
+    {
+      "item": "the_vault:key_mould",
+      "value": "Ingredient de fabrication pour les Cles au Tresor"
+    },
+    {
+      "item": "the_vault:blank_key",
+      "value": "Combinez avec un Amas de gemme dans une Enclume pour creer une Cle au Tresor"
+    },
+    {
+      "item": "the_vault:netherite_cluster",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:cluster_iskallium",
+      "value": "Ingredient de fabrication haut de gamme"
+    },
+    {
+      "item": "the_vault:cluster_gorginite",
+      "value": "Ingredient de fabrication haut de gamme"
+    },
+    {
+      "item": "the_vault:cluster_sparkletine",
+      "value": "Ingredient de fabrication haut de gamme"
+    },
+    {
+      "item": "the_vault:cluster_ashium",
+      "value": "Ingredient de fabrication haut de gamme"
+    },
+    {
+      "item": "the_vault:cluster_bomignite",
+      "value": "Ingredient de fabrication haut de gamme"
+    },
+    {
+      "item": "the_vault:cluster_funsoide",
+      "value": "Ingredient de fabrication haut de gamme"
+    },
+    {
+      "item": "the_vault:cluster_tubium",
+      "value": "Ingredient de fabrication haut de gamme"
+    },
+    {
+      "item": "the_vault:cluster_upaline",
+      "value": "Ingredient de fabrication haut de gamme"
+    },
+    {
+      "item": "the_vault:cluster_puffium",
+      "value": "Ingredient de fabrication haut de gamme"
+    },
+    {
+      "item": "the_vault:cluster_xenium",
+      "value": "Ingredient de fabrication haut de gamme"
+    },
+    {
+      "item": "the_vault:cluster_petzanite",
+      "value": "Ingredient de fabrication haut de gamme"
+    },
+    {
+      "item": "the_vault:vault_stew_mystery",
+      "value": "Contient un ragout mystere de rarete inconnue\nClic droit pour identifier"
+    },
+    {
+      "item": "the_vault:vault_stew_normal",
+      "value": "Consommez pour gagner 20% d'experience vers le prochain niveau"
+    },
+    {
+      "item": "the_vault:vault_stew_rare",
+      "value": "Consommez pour gagner 40% d'experience vers le prochain niveau"
+    },
+    {
+      "item": "the_vault:vault_stew_epic",
+      "value": "Consommez pour gagner 60% d'experience vers le prochain niveau"
+    },
+    {
+      "item": "the_vault:vault_stew_omega",
+      "value": "Consommez pour gagner 99% d'experience vers le prochain niveau"
+    },
+    {
+      "item": "the_vault:poisonous_mushroom",
+      "value": "Ingredient de fabrication rare"
+    },
+    {
+      "item": "the_vault:vault_gold",
+      "value": "La monnaie de Vault Hunters"
+    },
+    {
+      "item": "the_vault:vault_diamond",
+      "value": "Un ingredient de fabrication rare"
+    },
+    {
+      "item": "the_vault:skill_essence",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:hunter_eye",
+      "value": "Un ingredient de fabrication epique"
+    },
+    {
+      "item": "the_vault:burger_patty",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:burger_bun",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:mystic_tomato",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:mature_cheddar",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:vault_ingot",
+      "value": "Ingredient de fabrication, principalement utilise pour fabriquer de l'Equipement de Caveau"
+    },
+    {
+      "item": "the_vault:vault_platinum",
+      "value": "La monnaie de Vault Hunters"
+    },
+    {
+      "item": "the_vault:mystery_box",
+      "value": "Objet Legacy\n\nContient des surprises aleatoires\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:drilling_tip",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:drill_arrow",
+      "value": "Transforme votre arc en lance-roquettes\nATTENTION !"
+    },
+    {
+      "item": "the_vault:mystery_egg",
+      "value": "Contient un oeuf de mob passif aleatoire\nClic droit pour ouvrir\n\nPeut aussi etre utilise pour fabriquer un Oeuf de Mob Hostile Mystere"
+    },
+    {
+      "item": "the_vault:mystery_hostile_egg",
+      "value": "Contient un oeuf de mob hostile aleatoire\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:pandoras_box",
+      "value": "??????\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:chunk_iskallium",
+      "value": "Ingredient de fabrication epique"
+    },
+    {
+      "item": "the_vault:chunk_gorginite",
+      "value": "Ingredient de fabrication epique"
+    },
+    {
+      "item": "the_vault:chunk_sparkletine",
+      "value": "Ingredient de fabrication epique"
+    },
+    {
+      "item": "the_vault:chunk_ashium",
+      "value": "Ingredient de fabrication epique"
+    },
+    {
+      "item": "the_vault:chunk_bomignite",
+      "value": "Ingredient de fabrication epique"
+    },
+    {
+      "item": "the_vault:chunk_funsoide",
+      "value": "Ingredient de fabrication epique"
+    },
+    {
+      "item": "the_vault:chunk_tubium",
+      "value": "Ingredient de fabrication epique"
+    },
+    {
+      "item": "the_vault:chunk_upaline",
+      "value": "Ingredient de fabrication epique"
+    },
+    {
+      "item": "the_vault:chunk_puffium",
+      "value": "Ingredient de fabrication epique"
+    },
+    {
+      "item": "the_vault:chunk_petzanite",
+      "value": "Ingredient de fabrication epique"
+    },
+    {
+      "item": "the_vault:chunk_xenium",
+      "value": "Ingredient de fabrication epique"
+    },
+    {
+      "item": "the_vault:omega_pog",
+      "value": "Utilise comme ingredient de fabrication pour les creations de fin de jeu"
+    },
+    {
+      "item": "the_vault:eternal_soul",
+      "value": "L'ame d'un Chasseur de Caveau tombe\nUtilisee dans une Chambre Cryogenique pour creer des Eternels"
+    },
+    {
+      "item": "the_vault:spark",
+      "value": "Peut etre utilisee pour fabriquer des artefacts a partir de rien"
+    },
+    {
+      "item": "the_vault:star_shard",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:star_core",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:star_essence",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:knowledge_star",
+      "value": "Consommez pour obtenir +1 Point de Connaissance"
+    },
+    {
+      "item": "the_vault:infused_eternal_soul",
+      "value": "Ingredient de fabrication de haut niveau"
+    },
+    {
+      "item": "the_vault:vault_apple",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:repair_core",
+      "value": "Reparera completement une piece d'equipement ou un outil en consommant un emplacement de reparation lorsqu'utilise dans une enclume."
+    },
+    {
+      "item": "the_vault:perfect_alexandrite",
+      "value": "Gemme de caveau parfaite peu commune"
+    },
+    {
+      "item": "the_vault:perfect_painite",
+      "value": "Gemme de caveau parfaite rare"
+    },
+    {
+      "item": "the_vault:perfect_benitoite",
+      "value": "Gemme de caveau parfaite commune"
+    },
+    {
+      "item": "the_vault:perfect_larimar",
+      "value": "Gemme de caveau parfaite commune"
+    },
+    {
+      "item": "the_vault:perfect_black_opal",
+      "value": "Gemme de caveau parfaite tres rare"
+    },
+    {
+      "item": "the_vault:perfect_echo_gem",
+      "value": "Gemme de caveau parfaite epique"
+    },
+    {
+      "item": "the_vault:perfect_wutodie",
+      "value": "Gemme de caveau parfaite peu commune (Legacy)"
+    },
+    {
+      "item": "the_vault:vault_dust",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:vault_nugget",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:vault_bronze",
+      "value": "La monnaie de Vault Hunters\nPeut etre utilise pour acheter des echanges aupres des vendeurs"
+    },
+    {
+      "item": "the_vault:vault_silver",
+      "value": "La monnaie de Vault Hunters"
+    },
+    {
+      "item": "the_vault:magnet_core_weak",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:magnet_core_strong",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:magnet_core_omega",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:wutax_crystal",
+      "value": "Combinez avec n'importe quelle piece d'Equipement de Caveau dans une enclume pour ajouter un modificateur aleatoire"
+    },
+    {
+      "item": "the_vault:vault_catalyst_infused",
+      "value": "Utilisez dans un Etabli de Cristal pour modifier/ameliorer un Cristal de Caveau"
+    },
+    {
+      "item": "the_vault:companion_relic",
+      "value": "Utilisez dans une Maison de Compagnon pour ajouter un modificateur a votre compagnon. Pour retirer cette relique, cela coutera de l'or de caveau."
+    },
+    {
+      "item": "the_vault:companion_egg",
+      "value": "Placez dans un Incubateur de Compagnon pour faire eclore un compagnon !"
+    },
+    {
+      "item": "the_vault:companion_particle_trail",
+      "value": "Placez dans une Maison de Compagnon pour donner une trainee a votre compagnon !"
+    },
+    {
+      "item": "the_vault:vault_catalyst_chaos",
+      "value": "Placez cette Roche de Caveau sur un Autel de Caveau pour creer un Cristal <#d87b00>Chaos<gray>, ajoutant 30 modificateurs completement aleatoires au caveau."
+    },
+    {
+      "item": "the_vault:vault_inhibitor",
+      "value": "Combinez avec un Cristal de Caveau pour retirer des modificateurs"
+    },
+    {
+      "item": "the_vault:soul_shard",
+      "value": "Monnaie pour le marche noir"
+    },
+    {
+      "item": "the_vault:shard_pouch",
+      "value": "Stocke une grande quantite de <#4800FF>soul shards\nLes Soul Shards <gray>ramasses iront directement dans la bourse."
+    },
+    {
+      "item": "the_vault:coin_pouch",
+      "value": "Stocke une grande quantite de Pieces de Caveau\nLes Pieces de Caveau ramassees iront directement dans la bourse."
+    },
+    {
+      "item": "the_vault:artifact_fragment",
+      "value": "Un fragment d'un artefact ancien"
+    },
+    {
+      "item": "the_vault:vault_artifact",
+      "value": "Un artefact ancien lie au puzzle qui debloque le Herald"
+    },
+
+    {
+      "item": "the_vault:vault_paxel",
+      "value": "Une Pioche, une Hache et une Pelle - tout en un\nNe peut pas etre enchante avec Raccommodage"
+    },
+    {
+      "item": "the_vault:infinite_water_bucket",
+      "value": "Une source d'eau permanente"
+    },
+    {
+      "item": "the_vault:vault_pearl",
+      "value": "Peut etre utilisee plusieurs fois pour teleporter le joueur dans la direction lancee"
+    },
+    {
+      "item": "the_vault:vault_magnet_weak",
+      "value": "Attire les objets laches vers le joueur\nActivez par Clic droit dans la barre d'action"
+    },
+    {
+      "item": "the_vault:vault_magnet_strong",
+      "value": "Attire les objets laches vers le joueur\nActivez par Clic droit dans la barre d'action"
+    },
+    {
+      "item": "the_vault:vault_magnet_omega",
+      "value": "Attire les objets laches vers le joueur\nActivez par Clic droit dans la barre d'action"
+    },
+    {
+      "item": "the_vault:vaulterite_ingot",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:red_vault_essence",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:unidentified_treasure_key",
+      "value": "Contient une Cle au Tresor aleatoire\nClic droit pour identifier"
+    },
+    {
+      "item": "the_vault:fabrication_jewel",
+      "value": "Combinez avec une piece d'Equipement de Caveau dans une enclume pour creer un Parchemin d'Artisan\nATTENTION ce processus detruit la piece d'equipement de caveau"
+    },
+    {
+      "item": "the_vault:armor_crate_hellcow",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Hellcow\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_botania",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Botania\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_create",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Create\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_dank",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Dank\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_flux",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Flux\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_ie",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : IE\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_meka",
+      "value": "Contient 1 des 8 pieces de l'ensemble cosmetique : Meka\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_powah",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Powah\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_thermal",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Thermal\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_trash",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Trash\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_villager",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Villager\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_automatic",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Automatic\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_fairy",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Fairy\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_building",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Building\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_zombie",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Zombie\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_xnet",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Xnet\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_test_dummy",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Mannequin de Test\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_if",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Industrial Foregoing\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:armor_crate_cake",
+      "value": "Contient 1 des 4 pieces de l'ensemble cosmetique : Cake\nClic droit pour ouvrir"
+    },
+    {
+      "item": "the_vault:vending_machine",
+      "value": "Peut accueillir un noyau de marchand du meme nom plusieurs fois"
+    },
+    {
+      "item": "the_vault:advanced_vending_machine",
+      "value": "Peut accueillir un nombre illimite de noyaux de marchand"
+    },
+    {
+      "item": "the_vault:gift_normal_statue",
+      "value": "Genere une ressource aleatoire jusqu'a ce qu'elle se decompose"
+    },
+    {
+      "item": "the_vault:gift_mega_statue",
+      "value": "Genere une grande quantite d'une ressource aleatoire jusqu'a ce qu'elle se decompose"
+    },
+    {
+      "item": "the_vault:vault_player_loot_statue",
+      "value": "Genere une ressource aleatoire jusqu'a ce qu'elle se decompose"
+    },
+    {
+      "item": "the_vault:vault_diamond_block",
+      "value": "Ingredient de fabrication"
+    },
+    {
+      "item": "the_vault:lost_bounty",
+      "value": "Utilisez sur la Table de Primes pour acquerir une Prime Legendaire"
+    },
+    {
+      "item": "the_vault:bounty_pearl",
+      "value": "Utilisez sur la Table de Primes pour relancer les primes disponibles"
+    },
+    {
+      "item": "the_vault:mote_clarity",
+      "value": "Revele toutes les maledictions sur un Cristal de Caveau."
+    },
+    {
+      "item": "the_vault:mote_sanctity",
+      "value": "Retire toutes les maledictions d'un Cristal de Caveau."
+    },
+    {
+      "item": "the_vault:mote_purity",
+      "value": "Retire une malediction aleatoire d'un Cristal de Caveau."
+    },
+    {
+      "item": "the_vault:mod_box",
+      "value": "Clic droit pour ouvrir\n\nContient des Fragments de Connaissance ou si vous avez debloque un mod avec des recompenses de Boite de Mod, contiendra des objets de ce mod"
+    },
+    {
+      "item": "the_vault:identification_tome",
+      "value": "Tenez dans la main secondaire pour\nidentifier instantanement l'equipement de caveau."
+    },
+    {
+      "item": "the_vault:life_scroll",
+      "value": "Ressuscite un eternel elimine"
+    },
+    {
+      "item": "the_vault:aura_scroll",
+      "value": "Relance les auras disponibles d'un eternel"
+    },
+    {
+      "item": "the_vault:vault_jewel_cutting_station",
+      "value": "Permet de tailler les Joyaux pour reduire leur taille"
+    },
+    {
+      "item": "vaultintegrations:altar_conduit",
+      "value": "Automatise le processus de completion de l'Autel de Caveau"
+    },
+    {
+      "item": "vaultintegrations:speed_enhancement",
+      "value": "Augmente la vitesse des objets transportes par le Conduit d'Autel"
+    },
+    {
+      "item": "vaultintegrations:quantity_enhancement",
+      "value": "Augmente la quantite d'objets transportes par le Conduit d'Autel"
+    },
+    {
+      "item": "vaultintegrations:teleport_enhancement",
+      "value": "Teleporte les objets transportes par le Conduit d'Autel"
+    },
+    {
+      "item": "the_vault:regret_orb",
+      "value": "Les points de regret ont change dans la Mise a jour 17, desapprendre une competence necessite maintenant de l'Or de Caveau."
+    },
+    {
+      "item": "the_vault:mentors_brew",
+      "value": "Le niveau du breuvage est determine par son proprietaire lors de la fabrication et definit le niveau du consommateur au niveau du breuvage si celui-ci est superieur."
+    },
+    {
+      "item": "the_vault:knowledge_brew",
+      "value": "Contient les recherches du proprietaire et debloque celles que le consommateur n'a pas encore apprises lors de la consommation"
+    },
+    {
+      "item": "the_vault:antique_collector_book",
+      "value": "Un livre de collection pour tous les timbres Antiques trouves dans les caveaux.\n<red>Note<gray> : Doit etre dans l'inventaire pour que les antiques puissent tomber"
+    },
+    {
+      "item": "the_vault:unique_codex",
+      "value": "Contient des informations sur tout l'equipement <#ea7a24>Unique <gray>du jeu"
+    },
+    {
+      "item": "the_vault:quest_book",
+      "value": "Contient toutes les quetes Vault Hunters. Les quetes peuvent aussi etre consultees via une touche de raccourci"
+    },
+    {
+      "item": "the_vault:inscription_piece",
+      "value": "Ingredient de base pour la fabrication d'inscriptions"
+    },
+    {
+      "item": "the_vault:vault_catalyst_fragment",
+      "value": "Ingredient de base pour la fabrication de catalyseurs infuses"
+    },
+
+    {
+      "item": "the_vault:sugar_plum_fairy_flower",
+      "value": "Une fleur rare qui peut apparaitre dans les caveaux"
+    },
+    {
+      "item": "the_vault:golden_tooth",
+      "value": "Une dent rare en or pur qui peut apparaitre dans les caveaux"
+    },
+    {
+      "item": "the_vault:fools_gold",
+      "value": "Un rare tas d'or qui peut apparaitre dans les caveaux"
+    },
+    {
+      "item": "the_vault:vault_doll",
+      "value": "Accumule du butin et de l'experience lorsque portee dans les caveaux. Vainquez la poupee en la placant pour reclamer vos recompenses.\n<red>Note<gray> : Vous ne pouvez pas porter votre propre poupee."
+    },
+
+    {
+      "item": "the_vault:vault_forge",
+      "value": "Un atelier de caveau ou l'equipement de caveau peut etre fabrique"
+    },
+    {
+      "item": "the_vault:tool_station",
+      "value": "Un atelier de caveau ou les outils de caveau peuvent etre fabriques"
+    },
+    {
+      "item": "the_vault:inscription_table",
+      "value": "Un atelier de caveau ou les inscriptions peuvent etre fabriquees"
+    },
+    {
+      "item": "the_vault:catalyst_infusion_table",
+      "value": "Un atelier de caveau ou les catalyseurs infuses peuvent etre fabriques"
+    },
+    {
+      "item": "the_vault:vault_artisan_station",
+      "value": "Un atelier de caveau ou l'equipement de caveau peut etre modifie par differents focus"
+    },
+    {
+      "item": "the_vault:vault_jewel_application_station",
+      "value": "Un atelier de caveau ou les outils de caveau peuvent etre ameliores avec des joyaux"
+    },
+    {
+      "item": "the_vault:jewel_crafting_table",
+      "value": "Un atelier de caveau ou les joyaux peuvent etre fabriques"
+    },
+    {
+      "item": "the_vault:trinket_forge",
+      "value": "Un atelier de caveau ou les bibelots peuvent etre fabriques"
+    },
+    {
+      "item": "the_vault:crystal_workbench",
+      "value": "Un atelier de caveau ou les Cristaux de Caveau peuvent etre modifies avec precision."
+    },
+    {
+      "item": "the_vault:personal_vault",
+      "value": "Un atelier de caveau ou les caveaux personnels peuvent etre construits et modifies"
+    },
+    {
+      "item": "the_vault:vault_recycler",
+      "value": "Un atelier de caveau ou les inscriptions, joyaux et equipements de caveau non desires peuvent etre recycles"
+    },
+    {
+      "item": "the_vault:vault_diffuser",
+      "value": "Un atelier de caveau qui diffuse les objets a valeur d'ame en poussiere d'ame"
+    },
+    {
+      "item": "the_vault:vault_harvester",
+      "value": "Une version amelioree du Diffuseur de Caveau"
+    },
+    {
+      "item": "the_vault:modifier_workbench",
+      "value": "Un atelier de caveau ou les modificateurs fabriques peuvent etre appliques a l'equipement de caveau"
+    },
+    {
+      "item": "the_vault:identification_stand",
+      "value": "Un atelier de caveau qui identifie de grandes quantites d'objets de caveau non identifies en un seul clic"
+    },
+    {
+      "item": "the_vault:card_essence_extractor",
+      "value": "Un atelier de caveau ou les cartes peuvent etre ameliorees"
+    },
+    {
+      "item": "the_vault:unboxing_station",
+      "value": "Un atelier de caveau ou les bourses de joyaux et les paquets de cartes peuvent etre ouverts"
+    },
+    {
+      "item": "the_vault:jewel_application_station",
+      "value": "Un atelier de caveau qui permet aux joueurs de stocker des cartes"
+    },
+    {
+      "item": "the_vault:companion_incubator",
+      "value": "Une chambre ou les oeufs de compagnon peuvent etre incubes"
+    },
+    {
+      "item": "the_vault:companion_home",
+      "value": "Stocke les compagnons inutilises.\nPeut etre teint en faisant un clic droit avec un colorant lorsque place"
+    },
+    {
+      "item": "the_vault:spirit_extractor",
+      "value": "Permet au joueur de racheter son corps apres une mort dans les caveaux"
+    },
+    {
+      "item": "the_vault:wardrobe",
+      "value": "Affiche armure, armes et curios de maniere similaire a un porte-armure"
+    },
+    {
+      "item": "the_vault:skill_altar",
+      "value": "Contient differentes configurations de points de competence, permettant de changer facilement entre les builds"
+    },
+    {
+      "item": "the_vault:bounty_block",
+      "value": "Une table ou les primes peuvent etre reclamees et soumises"
+    },
+    {
+      "item": "the_vault:artifact_projector_block",
+      "value": "Affiche le puzzle d'artefact et delivrera la roche Herald lorsqu'on fait un clic droit avec le puzzle complete"
+    },
+    {
+      "item": "the_vault:spectator_terminal",
+      "value": "Permet aux joueurs d'observer d'autres joueurs qui sont dans un caveau"
+    },
+    {
+      "item": "the_vault:alchemy_table",
+      "value": "Atelier de caveau ou les potions, melanges et breuvages de caveau peuvent etre ameliores."
+    },
+    {
+      "item": "the_vault:card_binder",
+      "value": "Atelier de caveau ou les cartes peuvent etre organisees et stockees"
+    },
+    {
+      "item": "the_vault:vault_anvil",
+      "value": "Une enclume amelioree qui ne se casse pas"
+    },
+    {
+      "item": "the_vault:vault_enchanter",
+      "value": "Permet d'enchanter facilement l'equipement et les outils"
+    },
+    {
+      "item": "the_vault:black_market",
+      "value": "La boutique du marche noir de VH ou les soul shards peuvent etre depenses"
+    },
+    {
+      "item": "the_vault:crystal_budding",
+      "value": "Le bloc de croissance pour les Cristaux de Caveau Bruts"
+    },
+    {
+      "item": "the_vault:demagnetizer",
+      "value": "Empeche les aimants dans son rayon de fonctionner"
+    },
+    {
+      "item": "the_vault:debagnetizer",
+      "value": "Empeche les sacs avec ramassage automatique dans son rayon de fonctionner"
+    },
+    {
+      "item": "the_vault:dehammerizer",
+      "value": "Empeche les marteaux dans son rayon de fonctionner"
+    },
+    {
+      "item": "the_vault:ability_suppressor",
+      "value": "Empeche le Minage de Veine, toutes les capacites offensives, et certaines capacites de renforcement qui causent des degats."
+    },
+    {
+      "item": "the_vault:vault_charm_controller",
+      "value": "Permet de marquer des blocs pour qu'ils ne soient pas ramasses dans les caveaux."
+    },
+    {
+      "item": "the_vault:neuralizer",
+      "value": "Permet la redistribution des points d'expertise."
+    },
+    {
+      "item": "the_vault:etching_vendor_controller",
+      "value": "<yellow>Il a la marchandise, il a le regard, et il est pret a partager... c'est le seul, l'unique... C'EST TOOOOMMMMYYYY !...Hrrrhhhhh..."
+    },
+    {
+      "item": "powah:photoelectric_pane",
+      "value": "Faites un clic droit sur un enderman apparu naturellement"
+    }
+  ]
+}

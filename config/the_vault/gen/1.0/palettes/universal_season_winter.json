@@ -51,9 +51,20 @@
             "type": "weighted_target",
             "target": "minecraft:coarse_dirt",
             "output": {
-                "quark:permafrost": 1,
-                "architects_palette:polished_packed_ice": 1,
-                "architects_palette:chiseled_packed_ice": 1
+                "create:cut_calcite": 10,
+                "minecraft:calcite": 1,
+                "minecraft:white_concrete_powder": 14,
+                "minecraft:snow_block": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:podzol",
+            "output": {
+                "create:cut_calcite": 10,
+                "minecraft:calcite": 1,
+                "minecraft:white_concrete_powder": 14,
+                "minecraft:snow_block": 1
             }
         },
         {
@@ -74,7 +85,7 @@
             "type": "weighted_target",
             "target": "minecraft:spruce_slab",
             "output": {
-                "quark:permafrost_bricks_slab": 1
+                "create:cut_calcite_slab": 1
             }
         },
         {
@@ -176,7 +187,10 @@
             "target": "minecraft:grass",
             "output": {
                 "minecraft:blue_orchid": 1,
-                "minecraft:nether_sprouts": 5,
+                "minecraft:snow[layers=1]": 8,
+                "minecraft:snow[layers=2]": 4,
+                "minecraft:snow[layers=3]": 2,
+                "minecraft:snow[layers=4]": 1,
                 "minecraft:air": 3
             }
         },
@@ -220,7 +234,8 @@
             "type": "weighted_target",
             "target": "minecraft:lime_wool",
             "output": {
-                "quark:blue_blossom_leaves": 1
+                "minecraft:ice": 2,
+                "minecraft:packed_ice": 1
             }
         },
         {
@@ -248,7 +263,7 @@
             "type": "weighted_target",
             "target": "minecraft:oak_leaves",
             "output": {
-                "quark:blue_blossom_leaves": 1
+                "minecraft:blue_ice": 1
             }
         },
         {

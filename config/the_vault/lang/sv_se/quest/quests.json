@@ -1,0 +1,5491 @@
+{
+  "quests": [
+    {
+      "type": "checkmark",
+      "id": "welcome_quest",
+      "name": "Gewölbe-Jäger Einführung",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Välkommen bei Vault Hunters Dritte Edition!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDetta modpack förvandlar din Minecraft-upplevelse in ein fortschrittsbasiertes Action-RPG-Spiel. Es ist darauf ausgelegt, über einen längeren tidraum gespielt zu werden und bietet viele Barrierefreiheitseinstellungen, um dein Spielerlebnis an deinen Spielstil anzupassen!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nIn dieser Questreihe bringen wir dir die grundlegenden Spielmechaniken bei und helfen dir, deine resa zu beginnen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nBevor du anfängst zu spielen, stelle sicher, dass du die svårighetsgrad auf eine für dich passende Stufe einstellst. Dies kann im Pausenmenü eingestellt werden, und wir bieten 5 verschiedene svårighetsgradsgrade an. Diese Einstellungen beeinflussen die hälsa und den skada der mobs in den Vaultn.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nZusätzlich zu den verschiedenen svårighetsgradsgraden kannst du auch deinen Spielmodus wählen. Vault Hunters bietet drei Spielmodi: Normal, Casual und Hardcore, wobei Normal der Standardmodus ist. Dein Spielmodus kann mit /gamerule vaultMode eingestellt werden.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nNormal",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - Tod nach Level zwanzig erzeugt einen Geist an deinem Spawnpunkt, mit einem Geistextraktor kannst du deine verlorenen föremål zurückkaufen",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nCasual",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - Tod nach Level zwanzig verursacht keinen Gegenstandsverlust, du erleidest stattdessen nur etwas Haltbarkeitsschaden",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nHardcore",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - Tod nach Level zwanzig verursacht permanenten Verlust von föremåln und Inventar",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n/party invite Spielername ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "lädt Freunde in deine Gruppe ein, damit ihr zusammen Vault erkunden und die hälsa des anderen sehen könnt.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n/the_vault research_team invite Spielername ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "gruppiert Spieler in ein Team, damit sie gemeinsam an ihren Forschungen arbeiten können.",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/welcome",
+      "targetId": "the_vault:raw_chromatic_iron",
+      "targetProgress": 1.0,
+      "unlockedBy": "",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:cooked_vault_steak",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      },
+      "questTypes": [
+        "SKY",
+        "NORMAL"
+      ]
+    },
+    {
+      "type": "collection",
+      "id": "find_chromatic_iron",
+      "name": "Chromatisches Eisen",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der erste Schritt auf deiner resa als Vault Hunters ist es, das ",
+            "color": "$text"
+          },
+          {
+            "text": "Kernmetall",
+            "color": "$text"
+          },
+          {
+            "text": " der Vault Hunters zu finden, ",
+            "color": "$text"
+          },
+          {
+            "text": "Chromatisches Eisen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Chromatisches Eisen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " findet man im tiefsten Teil deiner Welt, unterhalb von ",
+            "color": "$text"
+          },
+          {
+            "text": "Y-30",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Es kann mit einer ",
+            "color": "$text"
+          },
+          {
+            "text": "Eisenspitzhacke",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " abgebaut und mit Glück verzaubert werden, um den Ertrag zu erhöhen!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSammle 16x Rohes Chromatisches Eisen",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/find_chromatic_iron",
+      "targetId": "the_vault:raw_chromatic_iron",
+      "targetProgress": 16.0,
+      "unlockedBy": "welcome_quest",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_iron_ingot",
+            "amount": 24
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "mining",
+      "id": "mine_vault_stone",
+      "name": "Gewölbestein",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der nächste Schritt deines Abenteuers ist es, ",
+            "color": "$text"
+          },
+          {
+            "text": "Vaultstein",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " zu finden. Du bist diesem sehr dunklen Stein vielleicht schon bei der Suche nach Chromatischem Eisen begegnet, da er überall unterhalb von ",
+            "color": "$text"
+          },
+          {
+            "text": "Y-5",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " zu finden ist.\n\nBeim Abbau von ",
+            "color": "$text"
+          },
+          {
+            "text": "Vaultstein",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ohne Behutsamkeit besteht die chans, ",
+            "color": "$text"
+          },
+          {
+            "text": "einen Vault-Fels",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " zu erhalten. Wirf diese nicht weg, denn sie sind der Schlüssel zum Betreten eines Vaults!",
+            "color": "$text"
+          },
+          {
+            "text": ".\n",
+            "color": "$text"
+          },
+          {
+            "text": "Vaultstein",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " selbst ist ein sehr robustes Material, das für viele verschiedene Dinge verwendet wird, aber am wichtigsten ist es für die Herstellung deiner Vault-portale!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nBaue 10x Vaultstein ab",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/vault_stone",
+      "targetId": "the_vault:vault_stone",
+      "targetProgress": 10,
+      "unlockedBy": "welcome_quest",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_rock",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_vault_altar",
+      "name": "Der Gewölbe-Altar",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Jetzt ist es tid, deinen Vault-Altar herzustellen. Wenn du deinen Vault-Fels auf den Vault-Altar legst, erhältst du das Rezept für die Herstellung eines Vault-kristalls",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa einen Vault-Altar",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/altar",
+      "targetId": "the_vault:vault_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "mine_vault_stone",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:stone_button"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "craft_crystal",
+      "id": "complete_vault_crystal",
+      "name": "Gewölbe-Kristalle",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Die tid ist gekommen, deinen ersten Vault-kristall zu schmieden! Jedes Rezept ist anders und die Menge der benötigten Zutaten wird langsam steigen, je mehr kristalle du herstellst.\n\nWenn du einen Vault-Fels auf einem Vault-Altar verwendest, werden die benötigten föremål für das kristallrezept identifiziert. Du kannst föremål an den Altar liefern, indem du sie aus deinem Inventar in der Nähe des Altars herauswirfst. Sobald das Altarrezept fertig ist, wird der Herstellungsprozess durch ein Redstone-Signal abgeschlossen.\n\nWenn du svårighetsgraden hast zu erkennen, was ein Gegenstand ist, kannst du dich ducken, um seinen Namen anzuzeigen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTillverka einen Vault-kristall fertig",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/crystal",
+      "targetId": "the_vault:vault_crystal",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_vault_altar",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:shulker_box"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "learning_skills",
+      "name": "Fähigkeiten und Talente",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Bevor du in dein erstes Vault gehst, möchten wir dich über einige wichtige Teile von Vault Hunters informieren. Vault Hunters hat ein tiefgreifendes förmågor- und Talentsystem, das du nutzen wirst, um dein Vault-Erlebnis deutlich angenehmer zu gestalten.\n\nförmågor konzentrieren sich typischerweise darauf, dir mächtige aktive Fertigkeiten zu geben, die deine Spielweise erheblich verändern; von skadasfähigkeiten wie Nova oder Rampage, Heilfähigkeiten wie Heilung und Totem bis hin zu Überlebensfähigkeiten wie Sprint und Geisterwandel.\n\ntalanger bieten dem Spieler passive Verbesserungen. Es gibt eine große Vielfalt an talangern zum Entdecken, die jeweils darauf ausgelegt sind, bestimmte Aspekte deines Erlebnisses zu verbessern.\n\nÜberprüfe die Vault-Benutzeroberfläche, indem du standardmäßig 'H' drückst, und klicke auf den zweiten und dritten Tab oben, um förmågor bzw. talanger anzuzeigen.\n\nDeine belöning für diese Quest ist ",
+            "color": "$text"
+          },
+          {
+            "text": "1 Fähigkeitspunkt",
+            "color": "$manaCost"
+          },
+          {
+            "text": ", es wird dringend empfohlen, die ",
+            "color": "$text"
+          },
+          {
+            "text": "Heilungsfähigkeit",
+            "color": "$heal"
+          },
+          {
+            "text": " zu nehmen, wenn du zum ersten Mal spielst, da es in den Vaultn keine natürliche hälsasregeneration gibt",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/skills",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "complete_vault_crystal",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:cooked_vault_steak",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0,
+        "skillPoints": 1
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_enchanter",
+      "name": "Bessere Verzauberung",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "In Vault Hunters sind Verzauberungen etwas anders als im Vanilla-Minecraft. Schutz- und Angriffsverzauberungen wurden deaktiviert, um eine höhere Skalierung von Verteidigungs- und Angriffsattributen im späteren Spielverlauf zu ermöglichen. Es gibt jedoch einige Verzauberungen, die sowohl auf Vanilla-verktygen und -utrustning als auch auf Vault-verktygen und -utrustning funktionieren.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDer Vault-Verzauberer ist dein bevorzugter Tisch zum Verzaubern jeglicher utrustning oder verktyge. Er bietet immer die maximal verfügbare Verzauberung für den Preis einiger Smaragde und Erfahrung an. Tillverka einen her und versuche, einen verzauberbaren Gegenstand hineinzulegen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa einen Vault-Verzauberer",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/enchanter",
+      "targetId": "the_vault:vault_enchanter",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:experience_bottle",
+            "amount": 20
+          },
+          {
+            "item": "minecraft:emerald",
+            "amount": 50
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_potions",
+      "name": "Gewölbe-Tränke",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Vault-Tränke sind eine Alternative außerhalb des Kampfes zu den ",
+            "color": "$text"
+          },
+          {
+            "text": "Heilungsfähigkeiten",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\nSie sind die einzige Art von Trank, die ",
+            "color": "$text"
+          },
+          {
+            "text": "Velara",
+            "color": "$velara"
+          },
+          {
+            "text": " in den Vaultn nicht verärgert!\n\nVault-Tränke haben eine festgelegte Anzahl von ",
+            "color": "$text"
+          },
+          {
+            "text": "Aufladungen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", die pro Vault verwendet werden können, und füllen sich nach dem Verlassen eines Vaults vollständig auf.\nZu Beginn hast du Zugang zur ",
+            "color": "$text"
+          },
+          {
+            "text": "Phiole",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Stufe der Tränke. Später in deinem Abenteuer wirst du die Möglichkeit haben, bessere Stufen zu erforschen, die dir bei jeder Aufladung größere Heilungen gewähren.\nBei der Herstellung deines ersten Tranks (",
+            "color": "$text"
+          },
+          {
+            "text": "Phiole",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ") kannst du zwischen 3 verschiedenen Auflade-Mechaniken wählen;\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Abschlachten",
+            "color": "$red"
+          },
+          {
+            "text": ", lädt deine Phiole auf, wenn du eine bestimmte Anzahl von mobs tötest\n",
+            "color": "$text"
+          },
+          {
+            "text": "Goblin",
+            "color": "$yellow"
+          },
+          {
+            "text": ", lädt deine Phiole auf, wenn du eine bestimmte Anzahl von kistor plünderst\n",
+            "color": "$text"
+          },
+          {
+            "text": "Pazifist",
+            "color": "$blue"
+          },
+          {
+            "text": ", lädt deine Phiole passiv über die tid auf\n\nKeine Sorge, du kannst alle herstellen und sehen, welche am besten zu dir passt, aber du kannst immer nur eine pro Vault verwenden!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTillverka eine Phiole her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/potion",
+      "targetId": "the_vault:bottle",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:ender_pearl"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "enter_vault",
+      "id": "enter_vault",
+      "name": "Gewölbe-Jagd",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Baue dir ein Vault-portal mit einer beliebigen Zusammenstellung von Vaultstein-Blöcken auf ähnliche Weise wie das Netherportal. Sobald das portal gebaut ist, kannst du deinen Vault-kristall auf den Rahmen rechtsklicken, um ein portal zu öffnen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nIm Vault gibt es ein tidlimit, das erfordert, dass du es abschließt, bevor es auf 0 herunterzählt. Markiere deinen Weg mit Blöcken, damit du leicht zurück zu deinem portal findest.\n\nWenn du stirbst, kehrst du in die Oberwelt zurück, und wenn du unter Vault-Level 20 bist, erhältst du die 'Anfänger-Gnade', die dir ermöglicht, deine gesamte loot zu behalten, unabhängig davon, ob du stirbst oder entkommen bist.\n\nWenn du es schaffst, das Vault abzuschließen, erhältst du eine Kiste, die platziert und dann mit Schleichen+Rechtsklick geöffnet werden kann!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nBetritt ein Vault",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/enter_vault",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:sword",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:shield",
+            "nbt": ""
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "shard_pouch",
+      "name": "Plündern!",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Plündern in Vaultn macht Spaß, und es gibt viele aufregende Dinge zu finden!\nutrustningswerte wie",
+            "color": "$text"
+          },
+          {
+            "text": " Gegenstandsmenge ",
+            "color": "$itemquantity"
+          },
+          {
+            "text": "erhöhen die Menge an loot, die du findest, während",
+            "color": "$text"
+          },
+          {
+            "text": " Gegenstandsseltenheit ",
+            "color": "$itemrarity"
+          },
+          {
+            "text": "dafür sorgt, dass du höherstufige loot findest.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Zusätzlich zu kistor mit loot lassen getötete mobs",
+            "color": "$text"
+          },
+          {
+            "text": " Seelensplitter",
+            "color": "$soulchance"
+          },
+          {
+            "text": " fallen, die zum Kauf seltener föremål auf dem",
+            "color": "$text"
+          },
+          {
+            "text": " Svarta marknaden",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " verwendet werden können.\nAll diese loot kann jedoch schnell überwältigend werden, und jeder gute Jäger braucht eine gute lootorganisation!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Shulker-Kisten können am Anfang sehr hilfreich sein, und ihre Schalen können in ",
+            "color": "$text"
+          },
+          {
+            "text": "Holztruhen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " gefunden werden. Ein ",
+            "color": "$text"
+          },
+          {
+            "text": "lootl",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ist jedoch eine viel bessere und zuverlässigere Methode, um deine loot zu sammeln.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Der erste lootl deiner resa geht auf uns, aber wir empfehlen, im Verlauf mehr herzustellen. Größere lootl, Gürtel und Rucksäcke können später für ",
+            "color": "$text"
+          },
+          {
+            "text": "Wissen\n\n",
+            "color": "$knowledge"
+          },
+          {
+            "text": "erforscht werden.\nlootl können mit Upgrade-Karten aufgerüstet werden, damit sie mehr loot tragen, automatisch loot aufheben wenn du eine Truhe zerstörst, überschüssige loot vernichten und dich sogar füttern!\n",
+            "color": "$text"
+          },
+          {
+            "text": "Der lootl selbst kann auch mit einem Filter konfiguriert werden, oder leer gelassen werden, um beliebige föremål aufzunehmen.\nUm einen Filter zu konfigurieren, öffne deinen lootl und navigiere zum ",
+            "color": "$text"
+          },
+          {
+            "text": "Rucksack-Einstellungen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Tab darin. Der ",
+            "color": "$text"
+          },
+          {
+            "text": "Slot-Speicher-Einstellungen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Tab ermöglicht es dir, einen Filter für deinen lootl einzustellen, um bestimmte Inhalte auf die Whitelist oder Blacklist zu setzen. Diese Filter können auch gespeichert und später auf andere lootl angewendet werden. Wir empfehlen dir, mit diesen Einstellungen zu experimentieren, bis du das System verstehst.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Das Abschließen dieser Quest belohnt dich mit zwei grundlegenden Upgrades, die beide in deinem lootl installiert werden können:\n",
+            "color": "$text"
+          },
+          {
+            "text": "Das Aufhebe-Upgrade",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " lässt den lootl automatisch föremål vom Boden aufheben, wenn eine Truhe zerstört wird oder föremål herausgeworfen werden\n",
+            "color": "$text"
+          },
+          {
+            "text": "Das Vernichtungs-Upgrade",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " kann konfiguriert werden, um überschüssige föremål zu vernichten (löschen), die nicht in deinen lootl passen. Das Vernichten von föremåln mag seltsam klingen, kann aber extrem nützlich sein, um dein frühes Plündern zu verbessern. Diese sind jedoch teuer in der Herstellung, also nutze das von dieser Quest weise!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Seelensplitter",
+            "color": "$soulchance"
+          },
+          {
+            "text": ", die von mobs fallengelassenen föremål, werden besser in einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Splitterbeutel",
+            "color": "$soulchance"
+          },
+          {
+            "text": " aufbewahrt. Der Splitterbeutel kann nur Seelensplitter aufbewahren, aber eine unbegrenzte Menge davon, solange er sich in deinem Inventar befindet. Er kann auch beim Einkaufen auf dem Svarta marknaden in deinem Inventar bleiben, ohne dass du Seelensplitter manuell zählen musst - ein Muss für jeden Jäger!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTillverka einen Splitterbeutel her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/black_market2",
+      "targetId": "the_vault:shard_pouch",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "sophisticatedbackpacks:backpack",
+            "amount": 1
+          },
+          {
+            "item": "sophisticatedbackpacks:pickup_upgrade",
+            "amount": 1
+          },
+          {
+            "item": "sophisticatedbackpacks:void_upgrade",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "coin_pouch",
+      "name": "Münzbeutel",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Die beste Art, deine ",
+            "color": "$text"
+          },
+          {
+            "text": "Bronze",
+            "color": "$bronze"
+          },
+          {
+            "text": "-, ",
+            "color": "$text"
+          },
+          {
+            "text": "Silber",
+            "color": "$common"
+          },
+          {
+            "text": "-, ",
+            "color": "$text"
+          },
+          {
+            "text": "Gold",
+            "color": "$gold"
+          },
+          {
+            "text": "- und ",
+            "color": "$text"
+          },
+          {
+            "text": "Platin",
+            "color": "$platinum"
+          },
+          {
+            "text": "münzen aufzubewahren, ist die Beschaffung eines ",
+            "color": "$text"
+          },
+          {
+            "text": "Münzbeutels",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\nDer ",
+            "color": "$text"
+          },
+          {
+            "text": "Münzbeutel",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ist ein ",
+            "color": "$text"
+          },
+          {
+            "text": "seelengebundener",
+            "color": "$soulchance"
+          },
+          {
+            "text": " Gegenstand, den du in deinem Inventar behältst. Er bleibt dort, selbst wenn du stirbst, und kann eine unbegrenzte Menge an ",
+            "color": "$text"
+          },
+          {
+            "text": "Bronze",
+            "color": "$bronze"
+          },
+          {
+            "text": "-, ",
+            "color": "$text"
+          },
+          {
+            "text": "Silber",
+            "color": "$common"
+          },
+          {
+            "text": "-, ",
+            "color": "$text"
+          },
+          {
+            "text": "Gold",
+            "color": "$gold"
+          },
+          {
+            "text": "- und ",
+            "color": "$text"
+          },
+          {
+            "text": "Platin",
+            "color": "$platinum"
+          },
+          {
+            "text": "münzen aufnehmen. Er konvertiert automatisch zwischen ihnen, und alle Arbeitsstationen in ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault Hunters",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " können direkt daraus lesen - kein Mikromanagement deiner föremål nötig!\n\nEin weiteres brillantes Feature des ",
+            "color": "$text"
+          },
+          {
+            "text": "Münzbeutels",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ist, dass er automatisch jede Währung aufhebt, die du sammelst, solange er nicht nach einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Rucksack",
+            "color": "$blocks"
+          },
+          {
+            "text": " positioniert ist, der Währung in seiner Whitelist erlaubt.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa einen Münzbeutel",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/coin_pouch",
+      "targetId": "the_vault:coin_pouch",
+      "targetProgress": 1.0,
+      "unlockedBy": "shard_pouch",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_platinum",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:chromatic_steel_ingot",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "complete_bounty",
+      "name": "Kopfgeldjagd",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Kopfgelder abzuschließen ist ein großartiger Weg, dir zusätzliche loot zu sichern und dir ein solides Ziel zu geben, auf das du hinarbeiten kannst. Du musst dir zuerst einen Kopfgeldtisch herstellen und dann durch Rechtsklick damit interagieren.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTillverka einen Kopfgeldtisch her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/bounty_table",
+      "targetId": "the_vault:bounty_block",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:bounty_pearl",
+            "amount": 10
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "bounty_complete",
+      "id": "complete_bounty2",
+      "name": "Kopfgelder und Belohnungen",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Im Kopfgeldtisch kannst du ein Kopfgeld auswählen, indem du auf eines der verfügbaren Kopfgelder klickst und auf Aktivieren klickst. Sobald du ein Kopfgeld abgeschlossen hast, kannst du zum Tisch zurückkehren und deine belöningen einsammeln.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSlutför ein Kopfgeld ab",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/bounty",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "complete_bounty",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_iron_ingot",
+            "amount": 32
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "animal_pens",
+      "name": "Tiergehege",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Tiere können in großem Maßstab schwer zu verwalten sein und in ",
+            "color": "$text"
+          },
+          {
+            "text": "Minecraft",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " viel Lag verursachen. Dies wird durch die Verwendung von ",
+            "color": "$text"
+          },
+          {
+            "text": "Djurhagen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " gelöst. Diese können hergestellt werden, und mit einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Tierglas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " kann eine unbegrenzte Anzahl einer Tierart in einem einzigen Gehege gehalten und gezüchtet werden! Dies reduziert den Lag massiv und macht Tiere nicht nur niedlich zum Aufstellen, sondern auch einfach zu verwalten!\n\nNachdem du ein ",
+            "color": "$text"
+          },
+          {
+            "text": "Djurhage",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " platziert hast, sammle so viele einer einzelnen Tierart wie du willst in einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Tierglas",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Alle passiven, züchtbaren Tiere im Spiel können gesammelt werden. Dann rechtsklicke einfach mit deinem Glas auf das Gehege, um es zu ihrem Zuhause zu machen.\n\nDu kannst die Tiere züchten, wenn du mindestens 2 hast, indem du ihren Zuchtgegenstand verwendest - zum Beispiel ",
+            "color": "$text"
+          },
+          {
+            "text": "Weizen",
+            "color": "$gold"
+          },
+          {
+            "text": " für eine Kuh.\n\nSchließlich können die Tiere mit deinem ",
+            "color": "$text"
+          },
+          {
+            "text": "Schwert",
+            "color": "$damage"
+          },
+          {
+            "text": " getötet werden, um ihre loot zu erhalten. Die ",
+            "color": "$text"
+          },
+          {
+            "text": "Plünderung",
+            "color": "$fortune"
+          },
+          {
+            "text": "-Verzauberung funktioniert hier auch und erhöht deinen Ertrag. Einige Tiere haben besondere Funktionen - zum Beispiel kannst du ",
+            "color": "$text"
+          },
+          {
+            "text": "eine Kuh melken",
+            "color": "$heal"
+          },
+          {
+            "text": " in einem Gehege mit einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Eimer",
+            "color": "$blocks"
+          },
+          {
+            "text": ", oder ",
+            "color": "$text"
+          },
+          {
+            "text": "eine Biene scheren",
+            "color": "$yellow"
+          },
+          {
+            "text": " für Honigwaben. Durch Halten von ",
+            "color": "$text"
+          },
+          {
+            "text": "Schleichen",
+            "color": "$cooldown"
+          },
+          {
+            "text": " während du ein ",
+            "color": "$text"
+          },
+          {
+            "text": "Djurhage",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ansiehst, kannst du mehr Informationen über das spezifische Gehege sehen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa ein Djurhage",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/animal_pen",
+      "targetId": "the_vault:animal_pen",
+      "targetProgress": 1.0,
+      "unlockedBy": "enter_vault",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:animal_jar",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:animal_jar",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:animal_pen",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "tool_station",
+      "name": "Werkzeugstation",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Die verktygstation kann verwendet werden, um verktyge herzustellen, die dein Erlebnis in den Vaultn erheblich verbessern.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n(Die meisten Vault-Stationen behalten ihr Inventar, wenn sie abgebaut werden)",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa eine verktygstation",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/station",
+      "targetId": "the_vault:tool_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "enter_vault",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gemstone",
+            "amount": 2
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "forge_gear",
+      "id": "craft_tool",
+      "name": "Gewölbe-Werkzeuge",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Vault-verktyge sind der Nachfolger der Vanilla-verktyge. Diese können mit Juwelen modifiziert werden, um neue Affinitäten und Eigenschaften auf das verktyg anzuwenden.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAffinitäten ermöglichen es dir, kistor/mynt mit deutlich höherer Geschwindigkeit zu brechen, sodass du alle mynt und kistor außer den hölzernen sofort abbauen kannst.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEs gibt auch Juwelen, die die Funktionalität des verktygs ändern können, um die eines anderen einzuschließen. Zum Beispiel könntest du ein Schaufel-Juwel auf eine Spitzhacke setzen, um eine Hacke zu erschaffen, die so schnell wie eine Spitzhacke abbauen und so schnell wie eine Schaufel graben kann!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEs gibt auch weitere modifiers, die dein verktyg erheblich verbessern:",
+            "color": "$text"
+          },
+          {
+            "text": "\nGegenstandsseltenheit",
+            "color": "#E5B819"
+          },
+          {
+            "text": " und ",
+            "color": "$text"
+          },
+          {
+            "text": "Gegenstandsmenge ",
+            "color": "#E88A12"
+          },
+          {
+            "text": " verbessern beide dein verktyg mit höheren lootfähigkeiten.",
+            "color": "$text"
+          },
+          {
+            "text": "\nFallenentschärfungschance",
+            "color": "#8143FF"
+          },
+          {
+            "text": " hat eine chans, eine Fallentruhe in den Vaultn zu entschärfen.",
+            "color": "$text"
+          },
+          {
+            "text": "\nAbbaugeschwindigkeit",
+            "color": "#48BAF8"
+          },
+          {
+            "text": " erhöht die Grundabbaugeschwindigkeit deines verktygs!",
+            "color": "$text"
+          },
+          {
+            "text": "\nReichlich",
+            "color": "#F74780"
+          },
+          {
+            "text": " fügt eine chans hinzu, die Ausgabe eines abgebauten Vault-Erzes in den Vaultn zu verdoppeln! Funktioniert mit Behutsamkeit und Glück.",
+            "color": "$text"
+          },
+          {
+            "text": "\nHaltbarkeit",
+            "color": "#DFD0FE"
+          },
+          {
+            "text": " erhöht die Grundhaltbarkeit des verktygs",
+            "color": "$text"
+          },
+          {
+            "text": "\nPulverisierung",
+            "color": "#73B373"
+          },
+          {
+            "text": " und ",
+            "color": "$text"
+          },
+          {
+            "text": "Schmelzen ",
+            "color": "#FF4500"
+          },
+          {
+            "text": "ändern beide das verktyg für spezielle Interaktionen. Pulverisierung dient als werkzeugbasierter Ersatz für die Pulverisierungs-/Zerkleinerungsverarbeitung der Ausgabe des abgebauten Blocks. Schmelzen schmilzt die Ausgabe des abgebauten Blocks!",
+            "color": "$text"
+          },
+          {
+            "text": "\nHämmern ",
+            "color": "#25d4A5"
+          },
+          {
+            "text": "kann auf Hämmer angewendet werden, um ihren Abbau-Wirkungsbereich zu erhöhen",
+            "color": "$text"
+          },
+          {
+            "text": "\nSeelengebunden ",
+            "color": "#9664FD"
+          },
+          {
+            "text": "lässt ein verktyg auch durch den Tod in deinem Inventar bleiben!",
+            "color": "$text"
+          },
+          {
+            "text": "\nVanilla-Unsterblichkeit ",
+            "color": "#AF8DC3"
+          },
+          {
+            "text": "gibt deinem verktyg eine chans, außerhalb von Vaultn keine Haltbarkeit zu verlieren. Bei 100% wird dein verktyg unzerstörbar!",
+            "color": "$text"
+          },
+          {
+            "text": "\nReichweite ",
+            "color": "#F9B37F"
+          },
+          {
+            "text": "erhöht die Entfernung, in der der Spieler mit Blöcken interagieren kann.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTillverka eine Chromatische Eisenspitzhacke her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/tool",
+      "targetId": "the_vault:tool/pick/chromatic_iron_ingot",
+      "targetProgress": 1.0,
+      "unlockedBy": "tool_station",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;3591402060363627150L,2130563721701514760L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,2196334573319662592L,-6834473908914065246L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;8807676962843960878L,-1018090581902778908L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-7164678727146624000L,-6834473908914083200L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;-4246674546207997586L,469804410667479720L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,1749915260256562176L,-6834473908914085726L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;9040600318283653614L,-2646425694881105473L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-6032128973979210752L,-6834473908914079292L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;1437378485525153694L,-4161882800610591095L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617707599909354749L,1330939757422750720L,-348445744039196665L,268435455L,8L,16L]}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "apply_jewel",
+      "name": "Juwelen auf Werkzeugen",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der Juwelen-Applikator macht das Anbringen von Juwelen an deine verktyge so einfach wie nie zuvor, indem er dir die Möglichkeit bietet, das Ergebnis deines verktygs leicht zu sehen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDer Juwelen-Applikator hat drei Teile seines Inventars;\nDie",
+            "color": "$text"
+          },
+          {
+            "text": " linke Seite ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "ist der Platz für deine Juwelen und zeigt das Gesamtergebnis an, wenn sie auf dein verktyg gesetzt würden.\nDie ",
+            "color": "$text"
+          },
+          {
+            "text": "Mitte ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "ist der Platz für dein verktyg und zeigt auch die visuelle Ausgabe der Kombination von verktygtyp-Juwelen wie Schaufeln oder Äxten.\nZuletzt zeigt die ",
+            "color": "$text"
+          },
+          {
+            "text": "rechte Seite ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "die aktualisierten Werte unter Verwendung der links platzierten Juwelen an und berechnet automatisch Kapazität und alle Präfixe und Suffixe, wenn du Juwelen in den Applikator legst",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nJedes Juwel hat eine ",
+            "color": "$text"
+          },
+          {
+            "text": "einheitliche Größe von 10",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", wodurch sichergestellt wird, dass es nur einen kleinen Teil der ",
+            "color": "$text"
+          },
+          {
+            "text": "Kapazität",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " deines verktygs beansprucht.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa einen Juwelen-Applikator",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/apply_jewel",
+      "targetId": "the_vault:vault_jewel_application_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_tool",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_steel_ingot",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "jewel_crafting",
+      "name": "Juwelen herstellen",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der Juwelen-Herstellungstisch ermöglicht es dir, eine Vielzahl von Juwelen herzustellen, die auf deine verktyge angewendet werden können, um deren förmågor zu verbessern. Diese Juwelen haben alle festgelegte Größen. Nicht alle Affixe sind für die Herstellung verfügbar, du musst also den Rest noch finden!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa einen Juwelen-Herstellungstisch",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/jewel_cutting",
+      "targetId": "the_vault:jewel_crafting_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_tool",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:silver_scrap",
+            "amount": 512
+          },
+          {
+            "item": "the_vault:gemstone",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "level_up",
+      "id": "level_five",
+      "name": "Expertisen",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Expertisen werden durch das Ausgeben von Expertisepunkten erlangt, die alle 5 Level erhalten werden. Expertisen sind ähnlich wie talanger und bieten dem Spieler passive Verbesserungen, sind jedoch auf spezifischere Anwendungsfälle ausgerichtet, wie zum Beispiel Glücklich, das dem Spieler zwei zusätzliche Glücksstufen hinzufügen kann, oder Engel, das dir ermöglicht, einen Engelsblock herzustellen, der kreatives Fliegen in einem 64-Block-Radius bietet.\n\nInsgesamt gibt es zwanzig Expertisepunkte, die während deines Durchspielens erworben werden können, und aufgrund ihrer Nützlichkeit sind sie nicht so einfach zurückzusetzen - sie erfordern einen Neuralisierer anstatt Vault-Gold.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nNå Vault-Level 5",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/expertises",
+      "targetId": "the_vault:5",
+      "targetProgress": 1.0,
+      "unlockedBy": "apply_jewel",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_forge",
+      "name": "Ausrüstung schmieden",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Die Vault-smedja ermöglicht es dir, mächtige utrustning mit Fertigkeit herzustellen, die an dein Spielerlevel gebunden ist.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nFertigkeit wird durch das Opfern von Vault-Schrott in der smedja erhöht und beeinflusst Herstellungspotenzial, Seltenheit, Haltbarkeit, Reparaturslots, Seelengebunden-chans und chans auf höherstufige modifiers. Ein höherstufiger Modifikator ist ein Modifikator eine Stufe über dem maximalen Modifikator für diese utrustningsstufe.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDas Herstellen von utrustning verbraucht keine Fertigkeit, du kannst also weiter herstellen, ohne deinen Fortschritt zu verlieren.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDie Hauptkosten der Herstellung sind Vault-Legierung, und das System ist ausbalanciert, um die utrustningsherstellung mächtig zu halten, besonders im frühen Spiel.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nUm massenweise herzustellen, halte Shift gedrückt, um hergestellte föremål direkt in dein Inventar zu senden.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa eine Vault-smedja",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/forge",
+      "targetId": "the_vault:vault_forge",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_alloy",
+            "amount": 9
+          },
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 3
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "forge_gear",
+      "id": "gear_forge",
+      "name": "Magnete",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Magnete saugen loot im Umkreis des Spielers auf! Sie harmonieren außergewöhnlich gut mit Affinitäten/dem Zerbrechen von kistor im Vault und können dein Plündern erheblich beschleunigen. Magnete haben auch modifiers, die ihre Stärken verbessern können.\n\nUm einen Magneten auszurüsten, drücke den Curios-Knopf neben deinem Helmslot in deinem Inventar und platziere den Magneten im Gürtelslot!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nsmedja einen Magneten in der Vault-smedja",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/magnet",
+      "targetId": "the_vault:magnet",
+      "targetProgress": 1.0,
+      "unlockedBy": "vault_forge",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_alloy",
+            "amount": 9
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "artisan_table",
+      "name": "Handwerker-Station Modifizierung",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Die Handwerker-Station kann verwendet werden, um utrustning weiter zu modifizieren und für einen bestimmten Build-Stil geeignete utrustning zu erstellen. Die Oberfläche hat Slots für Vault-Plattierung, Vault-Bronze, eine Vielzahl unterschiedlich funktionierender Foki und deine Vault-utrustning.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa eine Handwerker-Station",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/artisan",
+      "targetId": "the_vault:vault_artisan_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "gear_forge",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:wild_focus",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "modify_gear",
+      "id": "wild_focus",
+      "name": "Ausrüstungs-Modifikatoren neu würfeln",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Wenn du Vault-Bronze, Vault-Plattierung und einen Wilden Fokus in die Handwerker-Station legst, kannst du alle modifiers deiner utrustning neu würfeln. Das Klicken auf den Umschmieden-Button wendet neue modifiers auf deine utrustning/Waffe an. Dies sind die ersten Schritte zur Erstellung von utrustning, die zu deinem Build-Stil passt.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nWürfle ein utrustningsteil mit einem Wilden Fokus neu",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/reroll",
+      "targetId": "the_vault:reforge_all",
+      "targetProgress": 1.0,
+      "unlockedBy": "artisan_table",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_plating",
+            "amount": 12
+          },
+          {
+            "item": "the_vault:vault_bronze",
+            "amount": 32
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_recycler",
+      "name": "Gewölbe-Ausrüstung verschrotten",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der Vault-Recycler wird verwendet, um alte und unerwünschte utrustning in Vault-Schrott, Wilde Foki und Facettierte Foki zu zerlegen. Er kann auch verwendet werden, um Juwelen, Magnete und Inschriften zu zerlegen und zu recyceln!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa einen Vault-Recycler",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/recycler",
+      "targetId": "the_vault:vault_recycler",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_scrap",
+            "amount": 16
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "alchemystation",
+      "name": "Alchemie-Tisch",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der ",
+            "color": "$text"
+          },
+          {
+            "text": "Alchemie-Tisch",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ist ein sehr nützlicher Tisch. Er ermöglicht es dir, deine ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault-Tränke",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " zu modifizieren, um deinen Aufladungen einen ",
+            "color": "$text"
+          },
+          {
+            "text": "sekundären Effekt",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " hinzuzufügen!\n\nEinige dieser ",
+            "color": "$text"
+          },
+          {
+            "text": "sekundären Effekte",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " müssen freigeschaltet werden, was du später lernen wirst, aber einige sind bereits jetzt ",
+            "color": "$text"
+          },
+          {
+            "text": "zugänglich",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\nEin Effekt kann pro Trank hinzugefügt werden, und ihre Stärke ",
+            "color": "$text"
+          },
+          {
+            "text": "skaliert",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " mit der Grund-",
+            "color": "$text"
+          },
+          {
+            "text": "stufe",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " deines Tranks.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa einen Alchemie-Tisch",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/alchemytable",
+      "targetId": "the_vault:alchemy_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 8
+          },
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "level_up",
+      "id": "level_ten",
+      "name": "Gewölbe-Ziele",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Während du aufsteigst, wird sich das Vault anpassen und dir neue, herausforderndere Ziele präsentieren; diese können auch durch das Herstellen eines Siegels und dessen Anwendung auf deinen kristall in einer Werkbank zu deinem kristall hinzugefügt werden.\n\nLevel 10 markiert die Introduktion des Entzünde-den-Kohlenbecken-Ziels in zufälligen Vaultn.\nLevel 20 markiert die Introduktion des Sammler-Ziels in zufälligen Vaultn.\nLevel 50 markiert die Introduktion des Bingo- und Runen-Jagd-Ziels in zufälligen Vaultn.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nNå Vault-Level 10",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/ten",
+      "targetId": "the_vault:10",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_scout"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "seals",
+      "name": "Wähle dein eigenes Ziel",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Siegel sind besonders praktische föremål, da sie dir ermöglichen, das Ziel des Vaults festzulegen. So kannst du auch mit niedrigerem Level jederzeit jedes Ziel spielen. Um ein Siegel zu verwenden, wende es auf einen kristall in der kristall-Werkbank an",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa ein leeres Siegel",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/empty_seal",
+      "targetId": "the_vault:crystal_seal_empty",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_empty"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_sage_seal",
+      "name": "Stelle ein Elixier-Siegel her",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Das Siegel des ",
+            "color": "$text"
+          },
+          {
+            "text": "Weisen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " wendet das ",
+            "color": "$text"
+          },
+          {
+            "text": "Elixier",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Ziel auf einen kristall an. Zur Herstellung benötigst du ein leeres Siegel und einige Vault-Zutaten",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDas Elixier-Ziel erfordert, dass du eine bestimmte Menge Elixier erhältst, indem du kistor plünderst, mobs tötest oder Erz abbaust. Sobald du deinen Elixierbalken gefüllt hast, finde einen Magnetstein, um das Vault zu verlassen",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDieses Ziel hat ein empfohlenes Level von 0 und wird danach auch zufällig in den Vaultn erscheinen.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\nSkaffa ein Siegel des Weisen",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/sage",
+      "targetId": "the_vault:crystal_seal_sage",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_sage",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_brazier_seal",
+      "name": "Stelle ein Kohlenbecken-Siegel her",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Das Siegel des ",
+            "color": "$text"
+          },
+          {
+            "text": "Kundschafters",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " wendet das ",
+            "color": "$text"
+          },
+          {
+            "text": "Entzünde das Kohlenbecken",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Ziel auf einen kristall an. Zur Herstellung benötigst du ein leeres Siegel und einige Vault-Zutaten",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDas Entzünde-das-Kohlenbecken-Ziel erfordert, dass du Kohlenbecken findest und entzündest. Diese Kohlenbecken haben positive und negative Effekte, also wähle sorgfältig. Nachdem du alle Kohlenbecken entzündet hast, kannst du wählen, ob du durch das Vault-portal gehst oder weitere Kohlenbecken für zusätzliche loot plünderst!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDieses Ziel hat ein empfohlenes Level von 10+ und wird danach auch zufällig in den Vaultn erscheinen.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\nSkaffa ein Siegel des Kundschafters",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/scout",
+      "targetId": "the_vault:crystal_seal_scout",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_scout",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_hunter_seal",
+      "name": "Stelle ein Sammler-Siegel her",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Das Siegel des ",
+            "color": "$text"
+          },
+          {
+            "text": "Jägers",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " wendet das ",
+            "color": "$text"
+          },
+          {
+            "text": "Sammler",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Ziel auf einen kristall an. Zur Herstellung benötigst du ein leeres Siegel und einige Vault-Zutaten",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nWir empfehlen auch, einen extra lootl nur für Sammelgegenstände herzustellen, üblicherweise als ",
+            "color": "$text"
+          },
+          {
+            "text": "Sammelbeutel",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " bezeichnet. Dies erleichtert die Organisation deiner Sammelgegenstände erheblich! Eine weitere gute Sache ist, dass beim Verlassen der Vault die Sammelgegenstände ",
+            "color": "$text"
+          },
+          {
+            "text": "entfernt",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " werden. Sammelgegenstände sind auf das jeweilige Vault beschränkt!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDas Sammler-Ziel erfordert, dass du eine bestimmte Liste von föremåln findest, die oben auf deinem Bildschirm angezeigt wird. Du kannst sehen, woher du die föremål bekommst, indem du die Symbole unter den föremåln betrachtest. Sobald du alle föremål gesammelt hast, lege sie in einen Sammleraltar!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDieses Ziel hat ein empfohlenes Level von 20+ und wird danach auch zufällig in den Vaultn erscheinen.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\nSkaffa ein Siegel des Jägers",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/hunter",
+      "targetId": "the_vault:crystal_seal_hunter",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_hunter",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_Prophet_seal",
+      "name": "Stelle ein Bingo-Siegel her",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Das Siegel des ",
+            "color": "$text"
+          },
+          {
+            "text": "Propheten",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " wendet das ",
+            "color": "$text"
+          },
+          {
+            "text": "Bingo",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Ziel auf einen kristall an. Zur Herstellung benötigst du ein leeres Siegel und einige Vault-Zutaten",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDas Bingo-Ziel erfordert, dass du Aufgaben auf dem Bingo-Brett ausführst und versuchst, eine Linie zu vervollständigen. Die belöningen für dieses Ziel skalieren mit der Anzahl der abgeschlossenen Linien.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSpieler, die Level 90 oder höher sind, haben ein 5x5-Raster anstelle des 4x4-Rasters.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\nBingo-Ziel-modifiers:",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSchnell: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Führe die Aufgabe sehr schnell aus, sonst wird sie zurückgesetzt. Zum Beispiel: Plündere schnell 10 Holztruhen in 6 Sekunden",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nMakellos: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Führe die Aufgabe aus, ohne skada zu nehmen (einschließlich Gift und Fallschaden)",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nLautlos: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Füge während der Aufgabe keinem Mob skada zu",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nPrimitiv: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Verwende während der Aufgabe kein Mana",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nKombo: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Führe eine Reihe von Aufgaben innerhalb eines tidrahmens aus, wenn du die erste Aufgabe abschließt, wechselt sie zur nächsten",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDieses Ziel hat ein empfohlenes Level von 50+ und wird danach auch zufällig in den Vaultn erscheinen.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\nSkaffa ein Siegel des Propheten",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/prophet",
+      "targetId": "the_vault:crystal_seal_prophet",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_prophet",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_guardian_seal",
+      "name": "Stelle ein Runen-Jagd-Siegel her",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Das Siegel des ",
+            "color": "$text"
+          },
+          {
+            "text": "Henkers",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " wendet das ",
+            "color": "$text"
+          },
+          {
+            "text": "Jage die Runen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Ziel auf einen kristall an. Zur Herstellung benötigst du ein leeres Siegel und einige Vault-Zutaten",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nBei Jage die Runen ist dein Ziel, Runen zu finden und sie an einer Runen-Boss-Säule anzubringen. Jede Rune kann einen anderen Modifikator und einen anderen belöningsgegenstand haben. Sobald du die richtige Anzahl an Runen eingesetzt hast, schließt sich der Raum und der Boss erscheint mit den von dir gewählten modifiers.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDer belöningsgegenstand jeder Rune wird zu deiner Abschluss-Kiste hinzugefügt. Einige dieser föremål können utrustning, utrustnings-Foki und Inschriften umfassen",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDieses Ziel hat ein empfohlenes Level von 50+ und wird danach auch zufällig in den Vaultn erscheinen.",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\nSkaffa ein Siegel des Henkers",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/executioner",
+      "targetId": "the_vault:crystal_seal_executioner",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_executioner",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "regret",
+      "name": "Entscheidungen bereuen",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Es kann ziemlich stressig sein, Entscheidungen zu treffen, welche förmågor und talanger du im Laufe deines Durchspielens nehmen sollst, aber keine Sorge!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Vault Hunters hat eine Mechanik zum Bereuen deiner Entscheidungen mit ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault-Gold",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Wenn du ausreichend ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault-Gold ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "in deinem Inventar hast, kannst du ",
+            "color": "$text"
+          },
+          {
+            "text": "Verlernen ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "aus dem ",
+            "color": "$text"
+          },
+          {
+            "text": "Fähigkeitsbaum",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " wählen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Beachte, dass dies zuvor mit einer ",
+            "color": "$text"
+          },
+          {
+            "text": "Reue-Kugel",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " gemacht wurde, dieser Mechanismus wurde entfernt.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Reue kann nicht innerhalb eines Vaults durchgeführt werden.",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/regretorb",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "craft_black_market",
+      "name": "Schwarzmarkt-Waren",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Mit dem Svarta marknaden kannst du Seelensplitter verwenden, um aus einem Pool von föremåln zu kaufen, der sich alle 2 Stunden aktualisiert, oder aus einem zufälligen Pool aller erhältlichen föremål. Es gibt eine Vielzahl seltener föremål, die du auf dem Svarta marknaden finden kannst, also schau regelmäßig vorbei!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteragiere mit einem Svarta marknaden",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/black_market",
+      "targetId": "the_vault:black_market",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:soul_shard",
+            "amount": 256
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "soul_diffuser",
+      "name": "Der Seelendiffusor",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der Seelendiffusor zerlegt Vault-föremål in Seelenstaub, der dann in Seelensplitter umgewandelt werden kann, die als Währung für den Svarta marknaden verwendet werden. Dies gibt dir die Wahl zu entscheiden, was du für wertvoll hältst und was es wert ist, diffundiert zu werden!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa einen Vault-Seelendiffusor",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/diffuser",
+      "targetId": "the_vault:vault_diffuser",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:soul_shard",
+            "amount": 256
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "identification_stand",
+      "name": "Identifizierungsständer",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der Identifizierungsständer ist ein Block, der bei Rechtsklick alle nicht identifizierten Vault-utrustningsteile in deinem Inventar sofort ",
+            "color": "$text"
+          },
+          {
+            "text": "identifiziert",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa einen Identifizierungsständer",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/identificationstand",
+      "targetId": "the_vault:identification_stand",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:helmet",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:chestplate",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:leggings",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:boots",
+            "nbt": ""
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_knowledge_star",
+      "name": "Wissen einsetzen",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Das Skaffan und Einsetzen von Wissenssternen ist einer der Schlüsselaspekte des Vault Hunters-Fortschritts, da es die Schlüsselkomponente zum Freischalten neuer Mods ist. Drücke die 'H'-Taste und wähle den Forschungs-Tab oben aus, um alles zu sehen, was du freischalten kannst. Beachte, dass der Kauf einiger davon den Preis nachfolgender Freischaltungen innerhalb dieser Freischaltungsgruppe erhöht.\n\nDeine belöning für diese Quest ist eine Mod-Box! Bei Verwendung vergibt die Mod-Box einen zufälligen Gegenstand aus deinen freigeschalteten Mods",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTillverka einen Wissensstern her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/knowledge",
+      "targetId": "the_vault:knowledge_star",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:mod_box"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "level_up",
+      "id": "reach_level_20",
+      "name": "Level 20 Änderungen",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Das Nån von Level 20 markiert das Ende der Tutorial-Phase von Vault Hunters!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Sofern du nicht im ",
+            "color": "$text"
+          },
+          {
+            "text": "Casual-Modus",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " spielst, behältst du beim Tod in einem Vault deine föremål nicht mehr. Du wirst in der ",
+            "color": "$text"
+          },
+          {
+            "text": "Geistextraktor",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Quest mehr darüber erfahren.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Auf diesem Level passiert viel Neues, du wirst jetzt ",
+            "color": "$text"
+          },
+          {
+            "text": "Verkaufstüren",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " und ",
+            "color": "$text"
+          },
+          {
+            "text": "Dungeon-Türen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " im Vault finden, sowie zusätzliche loot und neue mobs!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Keine Sorge, du hast gerade erst angefangen!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nNå Vault-Level 20",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/twenty",
+      "targetId": "the_vault:20",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_knowledge_star",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:knowledge_star"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "burgers",
+      "name": "Zusätzliche Erfahrung",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Das Essen von ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault-Burgern",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " gibt dir Vault-Erfahrung.\nVault-Burger können selten auf dem ",
+            "color": "$text"
+          },
+          {
+            "text": "Svarta marknaden",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " und in ",
+            "color": "$text"
+          },
+          {
+            "text": "Verkaufstüren",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " gefunden werden. Sie kommen in verschiedenen Größen, und je sättigender, desto mehr Erfahrung geben sie.\nWährend zusätzliche Erfahrung manchmal nützlich sein kann, verwendest du sie auf eigenes Risiko, da du dein aktuelles utrustningsniveau übersteigen könntest!",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/burger",
+      "targetId": "the_vault:plain_burger",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:plain_burger",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:cheese_burger",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:deluxe_cheese_burger",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "crystal_workbench",
+      "name": "Gewölbe-Kristalle modifizieren",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Vault-kristalle können ",
+            "color": "$text"
+          },
+          {
+            "text": "modifiziert",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " werden, um deinen aktuellen Bedürfnissen oder Vorlieben zu entsprechen. Es gibt verschiedene Modifikationen, die an einem kristall vorgenommen werden können.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Augmente",
+            "color": "$titleLine"
+          },
+          {
+            "text": " legen das Thema des Vaults fest, diese werden gelegentlich in Abschluss-Kisten gefunden.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Schlusssteine",
+            "color": "$titleLine"
+          },
+          {
+            "text": " geben dem Vault einen Buff, abhängig vom verwendeten Schlussstein, und machen den kristall dann unmodifizierbar\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Katalysatoren",
+            "color": "$titleLine"
+          },
+          {
+            "text": " fügen dem Vault modifiers hinzu, die zum Beispiel die Menge einer bestimmten Truhe erhöhen können, während sie das Vault durch einen zufälligen negativen Modifikator etwas schwieriger machen, zum Beispiel einen, der die mobs im Vault verstärkt.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Inschriften",
+            "color": "$titleLine"
+          },
+          {
+            "text": " fügen für jede hinzugefügte Inschrift einen bestimmten Raum irgendwo im Vault hinzu.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Durch das ",
+            "color": "$text"
+          },
+          {
+            "text": "Modifizieren",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " von kristallen kannst du das Vault nach deinem ",
+            "color": "$text"
+          },
+          {
+            "text": "Geschmack",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " anpassen. Jeder kristall hat einen ",
+            "color": "$text"
+          },
+          {
+            "text": "Kapazitätsanzeiger",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", je höher dein Level, desto höher die Kapazität des kristalls. Du kannst die Kapazität eines kristalls überschreiten, aber jedes Mal, wenn du das tust, fügst du dem Vault einen ",
+            "color": "$text"
+          },
+          {
+            "text": "Fluch",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " hinzu!\n\nAlle Modifikationen an einem kristall werden in der ",
+            "color": "$text"
+          },
+          {
+            "text": "kristall-Werkbank",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " durchgeführt!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTillverka eine kristall-Werkbank her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/crystalworkbench",
+      "targetId": "the_vault:crystal_workbench",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:augment",
+            "nbt": "{\"theme\":\"the_vault:classic_vault_cave_geode\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:phoenix_feather",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "apply_catalyst",
+      "name": "Katalysatoren",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Die Verwendung von ",
+            "color": "$text"
+          },
+          {
+            "text": "Katalysatoren",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " auf deinen Vault-kristallen kann die loot, die du suchst, stark verbessern!\n",
+            "color": "$text"
+          },
+          {
+            "text": "Katalysatoren",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " fügen dem Vault ",
+            "color": "$text"
+          },
+          {
+            "text": "modifiers",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " hinzu, ",
+            "color": "$text"
+          },
+          {
+            "text": "modifiers",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " können zum Beispiel die Menge einer bestimmten Truhe erhöhen, während sie das Vault durch einen zufälligen negativen Modifikator etwas schwieriger machen, zum Beispiel einen, der die Stärke der mobs im Vault verstärkt.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Katalysatoren",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " werden im ",
+            "color": "$text"
+          },
+          {
+            "text": "Katalysator-Infusionstisch",
+            "color": "$titleLine"
+          },
+          {
+            "text": " hergestellt, unter Verwendung des Rohmaterials ",
+            "color": "$text"
+          },
+          {
+            "text": "Katalysator-Fragmente",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", die in ",
+            "color": "$text"
+          },
+          {
+            "text": "nicht-modifizierten Vaultn",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " in ",
+            "color": "$text"
+          },
+          {
+            "text": "Holztruhen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " gefunden werden können.\nAlle hergestellten Katalysatoren benötigen ",
+            "color": "$text"
+          },
+          {
+            "text": "10 Kapazität",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " auf einem Vault-kristall, Katalysatoren mit geringerer Größenanforderung können selten in Schatzkammern und Abschluss-Kisten gefunden werden.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Katalysatoren",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " können in der ",
+            "color": "$text"
+          },
+          {
+            "text": "kristall-Werkbank",
+            "color": "$titleLine"
+          },
+          {
+            "text": " auf einen kristall angewendet werden",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tillverka einen Katalysator-Infusionstisch her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/catalyst",
+      "targetId": "the_vault:catalyst_infusion_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "crystal_workbench",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_catalyst_fragment",
+            "amount": 9
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "inscription_table",
+      "name": "Inschriften",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Die Verwendung von ",
+            "color": "$text"
+          },
+          {
+            "text": "Inschriften",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " auf deinen Vault-kristallen kann dir viele Vorteile verschaffen, da du ein Vault ",
+            "color": "$text"
+          },
+          {
+            "text": "mit bestimmten Räumen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " erstellen kannst!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Inschriften",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " können im ",
+            "color": "$text"
+          },
+          {
+            "text": "Inschriften-Tisch",
+            "color": "$titleLine"
+          },
+          {
+            "text": " hergestellt werden, unter Verwendung des Rohmaterials ",
+            "color": "$text"
+          },
+          {
+            "text": "Inschriften-Teile",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", die in ",
+            "color": "$text"
+          },
+          {
+            "text": "Holztruhen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " gefunden werden können\nHergestellte Inschriften benötigen ",
+            "color": "$text"
+          },
+          {
+            "text": "10 Kapazität",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " eines kristalls, Inschriften mit geringerer Größenanforderung können selten in Lebenden kistor, Schatzkammern und Abschluss-Kisten gefunden werden.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Inschriften",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " können in der ",
+            "color": "$text"
+          },
+          {
+            "text": "kristall-Werkbank",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " auf einen kristall angewendet werden. Wenn ein kristall mindestens 1 Inschrift hat, wird das Vault im Startraum eine ",
+            "color": "$text"
+          },
+          {
+            "text": "Karte rendern",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", die zeigt, wo der Raum zu finden ist. Nimm dir tid, den Weg zum Raum zu merken, und begib dich dann auf die Suche!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tillverka einen Inschriften-Tisch her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/inscriptiontable",
+      "targetId": "the_vault:inscription_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "crystal_workbench",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:inscription_piece",
+            "amount": 32
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "mining",
+      "id": "temporal_shards",
+      "name": "Pylone und Temporale Relikte",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Möglicherweise bist du bereits auf ",
+            "color": "$text"
+          },
+          {
+            "text": "Pylone",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " in deinen Vaultn gestoßen. Diese mächtigen schwebenden kristalle gewähren dir bei Rechtsklick einen zeitlich begrenzten Buff, abhängig vom Pylon.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Du kannst dich jedoch entscheiden, den Pylon und seine Kraft zu zerstören, anstatt ihn zu konsumieren, indem du ihn mit deinem verktyg (mit Abbau) zerstörst. Es dauert lange, ihn zu zerstören, aber wenn du es schaffst, besteht eine geringe chans, ein ",
+            "color": "$text"
+          },
+          {
+            "text": "Temporales Relikt",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " zu erhalten. Dies ist ein sehr mächtiger Gegenstand, der nach der Identifizierung ein Verbrauchsmaterial ergibt, das dem Vault, in dem es verwendet wird, einen ",
+            "color": "$text"
+          },
+          {
+            "text": "Temporalen Modifikator",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " hinzufügt!\n\nTemporale modifiers sind super stark und halten 5 Minuten an. Bei richtiger Verwendung können sie das Ergebnis deines Vaults oder deines aktuellen Ziels komplett verändern!",
+            "color": "$text"
+          },
+          {
+            "text": "!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Zerstöre einen Pylon für die chans auf ein Temporales Relikt",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/temporal_shard",
+      "targetId": "the_vault:pylon",
+      "targetProgress": 1,
+      "unlockedBy": "crystal_workbench",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:temporal_shard",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "artifact",
+      "name": "Artefakte",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Das Ziel jedes Jägers ist es, das berüchtigte Artefakt-Puzzle zu vervollständigen und den legendären Herold zu bekämpfen!\n",
+            "color": "$text"
+          },
+          {
+            "text": "Artefakte werden selten in ",
+            "color": "$text"
+          },
+          {
+            "text": "Abschluss-Kisten",
+            "color": "$yellow"
+          },
+          {
+            "text": " nach Level 20 gefunden. Die chans, ein Artefakt zu finden, steigt mit dem Level deines Vaults bei Abschluss.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Es gibt 25 einzigartige Artefakte zu sammeln, und um Zugang zum ",
+            "color": "$text"
+          },
+          {
+            "text": "Herold",
+            "color": "$herald"
+          },
+          {
+            "text": " zu erhalten, musst du alle sammeln!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Das ",
+            "color": "$text"
+          },
+          {
+            "text": "Artefakt-Buch",
+            "color": "$yellow"
+          },
+          {
+            "text": " zeigt das Puzzle darüber an, und Artefakte können an ihrer richtigen Tillverka platziert werden, um das Puzzle zu vervollständigen.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Während du nach Artefakten jagst, wirst du höchstwahrscheinlich auf Duplikate stoßen. Diese können ",
+            "color": "$text"
+          },
+          {
+            "text": "ins Feuer geworfen",
+            "color": "$orange"
+          },
+          {
+            "text": " werden, um zu einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Artefakt-Fragment",
+            "color": "$fragment"
+          },
+          {
+            "text": " zu verbrennen, das zur Herstellung eines neuen Artefakts verwendet werden kann.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa ein Artefakt-Buch",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/artifact",
+      "targetId": "the_vault:artifact_projector_block",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:unidentified_artifact"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "spirit_extractor",
+      "name": "Wiederbelebung",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der Geistextraktor wird verwendet, um in Vaultn verlorene loot zurückzugewinnen. Wenn du stirbst, hebe deinen Geist auf, indem du ihn mit Schleichen+Rechtsklick aufhebst, und platziere ihn durch Rechtsklick auf dem Extraktor. Dadurch erhältst du einen Preis in Vault-Gold, den du zahlen musst, um deine föremål zurückzubekommen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa einen Geistextraktor",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/extractor",
+      "targetId": "the_vault:spirit_extractor",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "trinkets",
+      "name": "Schmuckstücke",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Eine weitere große Änderung nach Level 20 ist die Möglichkeit, Schmuckstücke zu finden!\nDies sind mächtige föremål, die in deinen Schmuck-Slots ausgerüstet werden können. Sie kommen in zwei verschiedenen Farben, ",
+            "color": "$text"
+          },
+          {
+            "text": "blau",
+            "color": "$blue"
+          },
+          {
+            "text": " und ",
+            "color": "$text"
+          },
+          {
+            "text": "rot",
+            "color": "$red"
+          },
+          {
+            "text": ". Du kannst von jeder Farbe eines gleichzeitig tragen, insgesamt also zwei Schmuckstücke.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Blaue",
+            "color": "$blue"
+          },
+          {
+            "text": " Schmuckstücke geben dir eine Funktion, die anderswo nicht erhältlich ist, zum Beispiel die Fähigkeit zum ",
+            "color": "$text"
+          },
+          {
+            "text": "Dreifachsprung",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " oder ",
+            "color": "$text"
+          },
+          {
+            "text": "Wände klettern",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Rote",
+            "color": "$red"
+          },
+          {
+            "text": " Schmuckstücke verbessern Werte wie ",
+            "color": "$text"
+          },
+          {
+            "text": "Manaregeneration",
+            "color": "$manaCost"
+          },
+          {
+            "text": " oder ",
+            "color": "$text"
+          },
+          {
+            "text": "hälsa",
+            "color": "$heal"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Schmuckstücke haben keine Haltbarkeit, stattdessen haben sie Verwendungen oder Aufladungen. Sie können außerhalb von Vaultn permanent ohne Kosten verwendet werden, aber sie verbrauchen eine Aufladung jedes Mal, wenn du mit einem ausgerüsteten Schmuckstück ein Vault betrittst. Sie können auch nicht innerhalb eines Vaults abgelegt werden.\nEs gibt eine ",
+            "color": "$text"
+          },
+          {
+            "text": "Expertise",
+            "color": "$expertise"
+          },
+          {
+            "text": " namens ",
+            "color": "$text"
+          },
+          {
+            "text": "Schmuckträger",
+            "color": "$expertise"
+          },
+          {
+            "text": ", die dir eine zufällige chans gibt, beim Betreten eines Vaults keine Schmuckaufladung zu verbrauchen.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Sobald du ein Schmuckstück gefunden hast, wird es permanent entdeckt und kann in der ",
+            "color": "$text"
+          },
+          {
+            "text": "Schmuckschmiede",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " hergestellt werden.\n\nEin hergestelltes Schmuckstück hat immer 12 Verwendungen/Aufladungen, während ein gefundenes zufällig 20 bis 30 Verwendungen/Aufladungen hat.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDein erstes Schmuckstück ist eine belöning für das Lesen dieser Quest, hoffentlich bekommst du etwas, das dir gefällt! Falls nicht, können Schmuckstücke im Vault-Recycler verschrottet werden, was ihre Hauptzutat ergibt: ",
+            "color": "$text"
+          },
+          {
+            "text": "Schmuckschrott",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\nDie chans, einen Schmuckschrott zu erhalten, hängt davon ab, wie viele Verwendungen/Aufladungen das Schmuckstück beim Verschrotten noch hat; ein voll aufgeladenes Schmuckstück ergibt immer den Schrott, während ein komplett verbrauchtes niemals den Schrott ergibt.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/trinket",
+      "targetId": "the_vault:trinket",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:trinket",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "trinket_forge",
+      "name": "Schmuckschmiede",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Jetzt, wo du ein ",
+            "color": "$text"
+          },
+          {
+            "text": "Schmuckstück",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " entdeckt hast, kannst du dein eigenes in der ",
+            "color": "$text"
+          },
+          {
+            "text": "Schmuckschmiede",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " herstellen.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Du benötigst ",
+            "color": "$text"
+          },
+          {
+            "text": "Schmuckschrott",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", den du im ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault-Recycler",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " bekommst.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Skaffa eine Schmuckschmiede",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/trinket_forge",
+      "targetId": "the_vault:trinket_forge",
+      "targetProgress": 1.0,
+      "unlockedBy": "trinkets",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:trinket_scrap",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "vaultrocks",
+      "name": "Gewölbe-Felsen",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Die Welt der Vault Hunters beherbergt auch mystische ",
+            "color": "$text"
+          },
+          {
+            "text": "spezielle Vault-Felsen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", einige davon herstellbar, andere nur auffindbar.\n\nDiese ",
+            "color": "$text"
+          },
+          {
+            "text": "speziellen Vault-Felsen",
+            "color": "$text"
+          },
+          {
+            "text": " können auf dem ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault-Altar",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " verwendet werden, um einen ",
+            "color": "$text"
+          },
+          {
+            "text": "nicht modifizierbaren, speziellen Vault-kristall",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " zu erstellen.\n\n",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/vaultrock",
+      "targetId": "the_vault:none",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "warden",
+      "name": "Wärters Gewölbe-Fels",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Nach Level 20, wenn du nicht im Casual-Modus spielst, bedeutet der Tod in einem Vault, dass du entweder Gold verlierst, um deinen Geist zurückzukaufen, oder föremål verlierst, wenn du deinen Geist nicht zurückkaufst.\n\nDas kann manchmal sowohl beängstigend als auch frustrierend sein. Wenn du dich jedoch in einer Situation befindest, in der du vor dem Betreten eines Vaults eine Versicherung gegen den Tod haben möchtest, stelle dir einen ",
+            "color": "$text"
+          },
+          {
+            "text": "Wärters Vault-Fels",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " her.\n\nEin mit diesem speziellen Felsen erstellter kristall gewährt dir den ",
+            "color": "$text"
+          },
+          {
+            "text": "Jenseits-Modifikator",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", der deine föremål im Todesfall absichert. Der Nachteil ist, dass er auch alle im Vault ",
+            "color": "$text"
+          },
+          {
+            "text": "gewonnene Erfahrung halbiert",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", was möglicherweise sogar positiv sein kann, falls du aufholen musst!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tillverka einen Wärters Vault-Fels her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/wardenrock",
+      "targetId": "the_vault:wardens_pearl",
+      "targetProgress": 1.0,
+      "unlockedBy": "vaultrocks",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "plunderer",
+      "name": "Plünderers Gewölbe-Fels",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der ",
+            "color": "$text"
+          },
+          {
+            "text": "Plünderers Vault-Fels",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ist ein großartiger spezieller Vault-Fels, falls du das Gefühl hast, hinter der Skalierungskurve der Vault zu liegen. Er ",
+            "color": "$text"
+          },
+          {
+            "text": "erhöht die Menge der loot",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", die du bekommst, einschließlich Vault-Erze, ",
+            "color": "$text"
+          },
+          {
+            "text": "entfernt aber jeglichen Erfahrungsgewinn",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " aus dem Vault.\n\nDies kann großartig sein, wenn du nicht aufleveln, sondern einfach mehr plündern willst!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tillverka einen Plünderers Vault-Fels her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/plunderrock",
+      "targetId": "the_vault:plunderer_pearl",
+      "targetProgress": 1.0,
+      "unlockedBy": "vaultrocks",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "vendoors",
+      "name": "Verkaufstüren",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Jetzt, wo du Level 20 erreicht hast, wirst du ",
+            "color": "$text"
+          },
+          {
+            "text": "Verkaufstüren",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " im Vault finden können!\n\nDiese ",
+            "color": "$text"
+          },
+          {
+            "text": "dunkelroten Türen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " werden durch Rechtsklick mit leerer Hand geöffnet und haben 3 ",
+            "color": "$text"
+          },
+          {
+            "text": "Verkaufspodeste",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " im Inneren.\n\nDie Preise sind in ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault-Gold",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", also stelle sicher, dass du etwas davon dabei hast, wenn du Vault betrittst. Das Spiel konvertiert automatisch Bronze und Silber in deinem Inventar oder in Rucksäcken, falls nötig. Die ",
+            "color": "$text"
+          },
+          {
+            "text": "Handeln",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Expertise kann helfen, die Preise zu senken.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Öffne eine Verkaufstür im Vault",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/vendoor",
+      "targetId": "the_vault:vendor_door",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 20
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "dungeons",
+      "name": "Dungeons",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Dungeons sind gruselige Orte im Vault, die eine Herausforderung und loot enthalten!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Dungeon-Türen, die zufällig im Vault zu finden sind, werden durch ",
+            "color": "$text"
+          },
+          {
+            "text": "Rechtsklick",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " geöffnet. Einmal geöffnet, verkündet der Dungeon seine ",
+            "color": "$text"
+          },
+          {
+            "text": "svårighetsgrad",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", die von ",
+            "color": "$text"
+          },
+          {
+            "text": "Normal",
+            "color": "$normal"
+          },
+          {
+            "text": " bis ",
+            "color": "$text"
+          },
+          {
+            "text": "Unmöglich",
+            "color": "$impossible"
+          },
+          {
+            "text": " reicht.\n\nDer Mob-Kopf auf der Tür selbst verrät dir, welche Art von mobs den Dungeon bewachen.",
+            "color": "$text"
+          },
+          {
+            "text": " Dungeons haben verschiedene ",
+            "color": "$text"
+          },
+          {
+            "text": "Größen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", je größer der Dungeon, desto mehr loot und desto höher die chans auf ein ",
+            "color": "$text"
+          },
+          {
+            "text": "Alchemie-Archiv",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", nachdem du den ",
+            "color": "$text"
+          },
+          {
+            "text": "Dungeon-Champion",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " besiegt hast!\n\nMit etwas Glück findest du einen ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault-Globus",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " im Dungeon, bewacht von einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Dungeon-Boss",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Je größer der Dungeon, desto wahrscheinlicher findest du einen Globus. Es gibt verschiedene Globen zu finden, aber jeder Dungeon kann maximal einen haben. Bei Klick ",
+            "color": "$text"
+          },
+          {
+            "text": "enthüllt",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ein ",
+            "color": "$text"
+          },
+          {
+            "text": "Globus",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ",
+            "color": "$text"
+          },
+          {
+            "text": "alle Räume",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " des gegebenen Globus-Typs für alle Spieler im aktuellen Vault.\n\nDungeons enthalten auch",
+            "color": "$text"
+          },
+          {
+            "text": " eine ",
+            "color": "$text"
+          },
+          {
+            "text": "Barriere",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", die verhindert, dass die Dungeon-Monster den Dungeon verlassen, aber keine Sorge, du kannst durch diese ",
+            "color": "$text"
+          },
+          {
+            "text": "Barriere",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " hindurchgehen.\nSei vorsichtig und respektiere die svårighetsgrad! Viel Glück, Jäger!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nÖffne eine Dungeon-Tür",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/dungeon_quest",
+      "targetId": "the_vault:dungeon_door",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_pog"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "storing_gear",
+      "name": "Ausrüstung lagern",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der Kleiderschrank ermöglicht es dir, ein Set an utrustning und eine Hotbar zu speichern, zwischen denen du über die Benutzeroberfläche schnell wechseln kannst. Dies ermöglicht viele verschiedene Build-Sets bei gleichzeitig deutlich einfacherem Zugriff.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteragiere mit einem Kleiderschrank",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/wardrobe",
+      "targetId": "the_vault:wardrobe",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:wardrobe"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "skill_altar",
+      "name": "Mehrere Builds",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Genau wie der Kleiderschrank das Speichern von utrustning ermöglicht, erlaubt der Fähigkeitsaltar das Speichern von förmågor und talangern, damit du schnell zwischen verschiedenen Builds wechseln kannst! Dies harmoniert außergewöhnlich gut mit dem Kleiderschrank.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteragiere mit einem Fähigkeitsaltar",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/skill_altar",
+      "targetId": "the_vault:skill_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 10
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "transmog",
+      "name": "Transmogrifikation",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der Transmogrifikations-Tisch ermöglicht es dir, utrustningsteile in jedes freigeschaltete Transmog-Aussehen zu verwandeln, das du erworben hast. Lege ein utrustningsteil und etwas Bronze hinein, um Transmogs anzusehen!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteragiere mit einem Transmogrifikations-Tisch",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/transmog",
+      "targetId": "the_vault:transmog_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_bronze",
+            "amount": 64
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "unique_codex",
+      "name": "Einzigartige Ausrüstung",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Einzigartige utrustning ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "ist ein aufregendes Element von Vault Hunters!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Einzigartige utrustning ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "kann im Gegensatz zu normaler utrustning nicht modifiziert werden - sie hat jedoch einzigartige Eigenschaften! ",
+            "color": "$text"
+          },
+          {
+            "text": "Einige von ihnen können deinen förmågor völlig neue Verwendungen geben, während andere einen bevorzugten Spielstil erheblich verbessern können.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tillverka den ",
+            "color": "$text"
+          },
+          {
+            "text": "Einzigartigen Kodex ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "her und beginne zu durchstöbern, wo du diese aufregenden utrustningsteile finden kannst, aber Vorsicht, einige sind sehr selten!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSobald du anfängst, Einzigartiges zu entdecken, stelle den ",
+            "color": "$text"
+          },
+          {
+            "text": "Einzigartigen Kleiderschrank",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " her, um sie zur Schau zu stellen! Dieser Anzeigeblock rendert einen Spieler, der ein von dir entdecktes Einzigartiges trägt, und lässt dich deine Sammlung stilvoll bewundern.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tillverka den Einzigartigen Kodex her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/unique_codex",
+      "targetId": "the_vault:unique_codex",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "level_up",
+      "id": "reach_level_40",
+      "name": "Level 40!",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Mit dem Nån von Level 40 hast du die Vault-Götter auf dich aufmerksam gemacht!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Die Götter sind weder gut noch böse, und du kannst sie vollständig ignorieren. Allerdings könnten sie deine tid wert sein!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nNå Vault-Level 40",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/level40",
+      "targetId": "the_vault:40",
+      "targetProgress": 1.0,
+      "unlockedBy": "transmog",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_echo",
+            "amount": 4
+          },
+          {
+            "item": "the_vault:mod_box",
+            "amount": 2
+          },
+          {
+            "item": "the_vault:sour_orange",
+            "amount": 1
+          },
+          {
+            "item": "minecraft:bamboo",
+            "amount": 12
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "charms",
+      "name": "Die Götter",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Es ist tid, dass du die Vault-Götter kennenlernst!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Weder gut noch böse, sie sind;\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Idona",
+            "color": "$idona"
+          },
+          {
+            "text": "\nDie Göttin des Kampfes\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tenos",
+            "color": "$tenos"
+          },
+          {
+            "text": "\nDer Gott des Wissens\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Velara",
+            "color": "$velara"
+          },
+          {
+            "text": "\nDie Göttin des Lebens\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Wendarr",
+            "color": "$wendarr"
+          },
+          {
+            "text": "\nDer Gott der tid\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Jetzt, wo du Level 40 erreicht hast, kannst du, wenn auch sehr selten, auf ",
+            "color": "$text"
+          },
+          {
+            "text": "Götter-Amulette",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " stoßen. Sie können in ",
+            "color": "$text"
+          },
+          {
+            "text": "Lebenden kistor",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " und ",
+            "color": "$text"
+          },
+          {
+            "text": "Lebenden Dungeon-Fässern",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " gefunden werden. Sie können weder hergestellt noch modifiziert werden, aber sie können im Recycler zu Vault-Schrott recycelt werden.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Amulette können in deinem ",
+            "color": "$text"
+          },
+          {
+            "text": "Amulett-Slot",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ausgerüstet werden und haben, wie Schmuckstücke, Verwendungen bis sie erschöpft sind.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Je nachdem, welchem Gott das Amulett zugeordnet ist, können sie wertvolle Attribute und",
+            "color": "$text"
+          },
+          {
+            "text": " Temporale modifiers",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " hinzufügen.\n\nDie Stärke dieser Attribute basiert auf deiner ",
+            "color": "$text"
+          },
+          {
+            "text": "Reputation",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " beim zugehörigen Gott! Je höher deine Reputation, desto mächtiger werden die Attribute.\n\nIn der nächsten Quest erfährst du, wie du deine Götter-Reputation erhöhen kannst, aber für den Moment, um dir einen guten Start zu ermöglichen, hier ist ein kostenloses Götter-Amulett zum Identifizieren!",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/gods_quest_x",
+      "targetId": "the_vault:charms",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_40",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_god_charm"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "god_altars",
+      "name": "Götter-Altäre und Reputation",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Götter-Altäre werden nach Level 40 in Vaultn erscheinen.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Die Altäre repräsentieren einen der vier Götter.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Die Interaktion mit einem dieser Altäre im Vault gibt dir eine Herausforderung des Gottes. Das Abschließen der Aufgabe gibt dir eine ",
+            "color": "$text"
+          },
+          {
+            "text": "Gunst",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", die dich im Vault stark verstärkt und, noch wichtiger, dir einen ",
+            "color": "$text"
+          },
+          {
+            "text": "Reputationspunkt",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " bei diesem Gott einbringt. Aber Vorsicht! Das Scheitern der Herausforderung ",
+            "color": "$text"
+          },
+          {
+            "text": "entzieht einen Reputationspunkt",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Du kannst ",
+            "color": "$text"
+          },
+          {
+            "text": "50",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " Reputationspunkte pro Gott erreichen, und du kannst deinen Fortschritt in deinem Statistik-Bildschirm verfolgen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nJe mehr Reputation du bei jedem Gott hast, desto mächtiger sind ihre Amulette!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteragiere mit einem Götter-Altar",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/god_altar",
+      "targetId": "the_vault:god_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "charms",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_pog"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "level_up",
+      "id": "reach_level_50",
+      "name": "Expertisen vergessen",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Das Nån von Vault-Level 50 markiert die Hälfte in Bezug auf die Level, was bedeutet, dass du derzeit die Hälfte deiner gesamten Expertisepunkte bereits hast. Der Neuralisierer ermöglicht es dir, deine aktuell vergebenen Expertisepunkte vollständig zurückzusetzen, falls du deine Meinung änderst und entscheidest, dass eine andere Expertise besser zu deinen Bedürfnissen passt!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nNå Vault-Level 50",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/level50",
+      "targetId": "the_vault:50",
+      "targetProgress": 1.0,
+      "unlockedBy": "god_altars",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:neuralizer"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "card_system",
+      "name": "Kartensystem",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Das Kartensystem ermöglicht es dir, deine Werte und förmågor mit ",
+            "color": "$text"
+          },
+          {
+            "text": "Karten",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " zu verbessern. Karten gibt es in vielen verschiedenen Typen und werden durch ",
+            "color": "$text"
+          },
+          {
+            "text": "Decks",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ausgerüstet. Jedes Deck hat sein eigenes Layout und Socket-Limits. ",
+            "color": "$text"
+          },
+          {
+            "text": "Kerne ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "bieten zusätzliche Stärke und Anpassung.\n\nNeben Karten, Decks und Kernen gibt es mehrere neue Arbeitsstationen, die mit diesem System verbunden sind.\n\nDie ",
+            "color": "$text"
+          },
+          {
+            "text": "Deck-Station ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "wird verwendet, um Decks und niedrigstufige Kerne herzustellen.\n\nDer ",
+            "color": "$text"
+          },
+          {
+            "text": "Kartenordner ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "kann zum Aufbewahren von Karten und Erstellen von Decks verwendet werden.\n\nDie ",
+            "color": "$text"
+          },
+          {
+            "text": "Karten-Upgrade-Station ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "kann zum Aufwerten gestufer Karten verwendet werden, um sie stärker zu machen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nUm mehr über jeden Teil des Kartensystems zu erfahren, sieh dir die anderen kartenbezogenen Quests an.",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/card_table",
+      "targetId": "the_vault:deck_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_pog",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "obtain_card",
+      "name": "Kartentypen",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Karten werden aus Booster-Packs erhalten, die in Abschluss-Kisten gefunden oder auf dem Svarta marknaden gekauft werden können.\n\nSie kommen in vier Farben, und der Zweck jeder Karte hängt von der spezifischen Karte ab, die du erhältst.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nStat-Pack: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Dieses Pack enthält Stat-Karten. Sie verbessern spielerbasierte Werte wie ",
+            "color": "$text"
+          },
+          {
+            "text": "hälsa",
+            "color": "$health"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "Rüstung",
+            "color": "$armor"
+          },
+          {
+            "text": " oder ",
+            "color": "$text"
+          },
+          {
+            "text": "Angriffsschaden",
+            "color": "$damage"
+          },
+          {
+            "text": ".",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nRessourcen-Pack: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Dieses Pack enthält Ressourcen-Karten. Jede Karte hat eine Ressource und eine Anforderung. Bei Vaultabschluss und Erfüllung der Anforderung wird diese Ressource deiner Abschluss-Kiste hinzugefügt.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nArkanes Pack: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Dieses Pack enthält arkane Karten, die deinen aktuellen förmågor zusätzliche Level hinzufügen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nEvolutions-Pack: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Dieses Pack enthält Evolutions-Karten. Diese Karten funktionieren ähnlich wie Stat-Karten, werden aber stärker, wenn sie platziert und mit anderen Karten gepaart werden.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nGemischtes Pack: ",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "Dieses Pack gibt Spielern eine zufällige Karte aus einem der oben genannten Packs.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nAlle diese Packs gibt es auch in einer Mega-Variante, die dem Spieler beim Öffnen mehr Karten zur Auswahl gibt.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nKarten können im ",
+            "color": "$text"
+          },
+          {
+            "text": "Kartenordner",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " aufbewahrt, im ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault-Recycler",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " recycelt und in der ",
+            "color": "$text"
+          },
+          {
+            "text": "Karten-Upgrade-Station",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " aufgewertet werden.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nSkaffa ein Booster-Pack",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/booster",
+      "targetId": "the_vault:booster_pack",
+      "targetProgress": 1.0,
+      "unlockedBy": "card_system",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:arcane_pack\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:evolution_pack\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:resource_pack\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:stat_pack\"}",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "decks",
+      "name": "Decks",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Decks ermöglichen es dir, Karten zu speichern und ins Vault mitzunehmen, damit du von ihren Spezialeffekten profitieren kannst. Decks müssen im ",
+            "color": "$text"
+          },
+          {
+            "text": "Kartendeck",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Curios-Slot platziert werden, damit ein Spieler die Deck-Effekte erhält.\n\nDecks werden in der ",
+            "color": "$text"
+          },
+          {
+            "text": "Deck-Station",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " hergestellt, wobei Basis-Decks sofort verfügbar sind. Um auf den ",
+            "color": "$text"
+          },
+          {
+            "text": "Erweiterte Decks",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Tab innerhalb der Deck-Station zuzugreifen, musst du zuerst die ",
+            "color": "$text"
+          },
+          {
+            "text": "Vault-Decks",
+            "color": "$yellow"
+          },
+          {
+            "text": "-Forschung erlernen und dann die Freischaltanforderung jedes Decks erfüllen.\n\nJedes Deck hat ein einzigartiges Layout und eine bestimmte Anzahl von Sockets. Schau dir alle Decks an, um die Kombination zu finden, die am besten zu dem Deck passt, das du willst.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nDecks können im ",
+            "color": "$text"
+          },
+          {
+            "text": "Kartenordner",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " gebaut und modifiziert werden.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTillverka ein Kartendeck her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/deck",
+      "targetId": "the_vault:card_deck",
+      "targetProgress": 1.0,
+      "unlockedBy": "card_system",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:card_binder",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "cores",
+      "name": "Deck-Kerne",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Kerne sind Augmente, die in einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Amboss",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " auf Decks angewendet werden können.\n\nGeringere Kerne können in der ",
+            "color": "$text"
+          },
+          {
+            "text": "Deck-Station",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " hergestellt werden, aber mächtigere Kerne können in deinen Vault-Abenteuern gefunden werden.\n\nKerne spielen eine entscheidende Rolle bei der Erstellung mächtiger Decks, also wähle sie sorgfältig. ",
+            "color": "$text"
+          },
+          {
+            "text": "Sie können von geringeren zu normalen Kernen aufgewertet werden, aber einmal eingesetzt, kann ein Kern nie durch einen anderen ersetzt werden.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTillverka einen Geringeren Kern her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/lesser_deck_core",
+      "targetId": "the_vault:deck_socket",
+      "targetProgress": 1.0,
+      "unlockedBy": "card_system",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:silver_scrap",
+            "amount": 256
+          },
+          {
+            "item": "the_vault:gem_black_opal",
+            "amount": 16
+          },
+          {
+            "item": "the_vault:gem_pog",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 16
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "obtain_juicer",
+      "name": "Karten aufwerten",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Unerwünschte Karten können im Vault-Recycler recycelt werden, um ",
+            "color": "$text"
+          },
+          {
+            "text": "Kartensaft",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " zu erhalten.\n\nMit der ",
+            "color": "$text"
+          },
+          {
+            "text": "Karten-Upgrade-Station",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " können Karten mit Stufen mit der erforderlichen Menge Kartensaft kombiniert werden, um die Stufe aufzuwerten.\n\nDas Aufwerten von Stufe 1 auf Stufe 2 erfordert 10 Kartensaft, und höhere Stufen benötigen deutlich mehr.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTillverka eine Karten-Upgrade-Station her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/card_upgrade_table",
+      "targetId": "the_vault:card_essence_extractor",
+      "targetProgress": 1.0,
+      "unlockedBy": "card_system",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:card_juice",
+            "amount": 5
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "blank_key",
+      "name": "Schatzschlüssel",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Nach Level 50 werden seltsame bunte Türen in den Vaultn erscheinen, dies sind ",
+            "color": "$text"
+          },
+          {
+            "text": "Schatztüren",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\nSie können mit einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Schatzschlüssel",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " des gleichen Edelsteintyps geöffnet werden, aus dem die Tür besteht.\nDiese Schlüssel sind teuer und benötigen ",
+            "color": "$text"
+          },
+          {
+            "text": "Schlüsselteile",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " sowie Echo-Edelsteine, aber die Herstellung kann sich sehr lohnen!\n\nDu beginnst mit der Herstellung eines ",
+            "color": "$text"
+          },
+          {
+            "text": "leeren Schlüssels",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", den du dann mit einem beliebigen legendären Edelstein-",
+            "color": "$text"
+          },
+          {
+            "text": "Cluster",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " in einem Amboss kombinierst.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTillverka einen leeren Schlüssel her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/blank_key",
+      "targetId": "the_vault:blank_key",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:perfect_echo_gem"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "gear_sealer",
+      "name": "Ausrüstung versiegeln",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Das Versiegeln deiner besten Vault-utrustning ist ein sehr mächtiger Weg, sie zu maximieren, aber Vorsicht, du könntest auch Pech haben.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Du musst ",
+            "color": "$text"
+          },
+          {
+            "text": "Aufstiegsmarken",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " finden, die in ",
+            "color": "$text"
+          },
+          {
+            "text": "Verkaufstüren",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", ",
+            "color": "$text"
+          },
+          {
+            "text": "Svarta marknaden",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " und an einigen anderen Orten gefunden werden können. Diese seltenen Marken werden zum Versiegeln deiner utrustning verwendet.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Beim Versiegeln eines utrustningsteils gibt es eine ",
+            "color": "$text"
+          },
+          {
+            "text": "1 zu 10 chans",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", dass dein utrustningsteil einen zusätzlichen mächtigen versiegelten Modifikator erhält, das andere Ergebnis ist, einen ",
+            "color": "$text"
+          },
+          {
+            "text": "zufälligen, nicht eingefrorenen Modifikator zu ersetzen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " durch einen mächtigen versiegelten Modifikator.\n\nDer mächtige versiegelte Modifikator umfasst ",
+            "color": "$text"
+          },
+          {
+            "text": "zusätzliche Fähigkeitsstufen",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " oder einen ",
+            "color": "$text"
+          },
+          {
+            "text": "einzigartigen Effekt",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Die Kosten zum Versiegeln eines utrustningsteils hängen vom ",
+            "color": "$text"
+          },
+          {
+            "text": "Level deiner utrustning",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " und der ",
+            "color": "$text"
+          },
+          {
+            "text": "Seltenheit deiner utrustning",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ab.\n\nSchließlich kann ein versiegeltes utrustningsteil nicht weiter modifiziert werden.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tillverka einen utrustningsversiegler her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/modifier",
+      "targetId": "the_vault:vault_sealer",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vorpal_focus",
+            "amount": 3
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "treasure",
+      "name": "Schatzkammern",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Sobald du einen Schatzschlüssel hast, nimm ihn mit in die Vault und suche nach einer passenden Tür, benutze den Schlüssel an der Tür, um sie zu öffnen.\n\nSchatzkammern enthalten eine zufällige Menge an ",
+            "color": "$text"
+          },
+          {
+            "text": "Schatzsand",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", der beim Abbau viele verschiedene Schätze ergibt.",
+            "color": "$text"
+          },
+          {
+            "text": "\nDie Schatzkammer enthält auch ",
+            "color": "$text"
+          },
+          {
+            "text": "drei Schatzpodeste",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", die jeweils ein Vault-utrustningsteil enthalten. Diese utrustningsteile haben jedoch garantiert ",
+            "color": "$text"
+          },
+          {
+            "text": "einen legendären Modifikator",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "!\n\nDu darfst nur eines der Podeste auswählen, und die einzige Information, die du bei der Auswahl hast, ist der utrustningstyp und die Seltenheit!",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nInteragiere mit einem Schatzpodest",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/treasure",
+      "targetId": "the_vault:treasure_pedestal",
+      "targetProgress": 1.0,
+      "unlockedBy": "blank_key",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:unidentified_treasure_key"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "royale",
+      "name": "Royale-Gewölbe",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Royale-Vault sind ein völlig optionaler Teil von Vault Hunters, aber eine nette Abwechslung, wenn dein Weg zu Level 100 eintönig und mühsam wird, und die belöningen können unglaublich sein!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Wenn du ein Royale-Vault betrittst, bist du völlig nackt; all deine utrustning und Skillpunkt-Zuweisung werden für deine Rückkehr gespeichert. Das erste, was du tust, ist ",
+            "color": "$text"
+          },
+          {
+            "text": "Tommy",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " zu treffen!\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tommy",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " bietet dir 3 utrustningssets an. Du kannst das nehmen, mit dem du dich wohl fühlst - oder keines, wenn du eine extreme Herausforderung willst.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Als nächstes bietet ",
+            "color": "$text"
+          },
+          {
+            "text": "Tommy",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " dir eines von drei blauen Schmuckstücken an, und dann eines von drei roten Schmuckstücken. Schließlich wählst du deine belöning - solltest du gewinnen.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Eine der belöningen ist immer die ",
+            "color": "$text"
+          },
+          {
+            "text": "Royale-Krone",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Die Krone ist ein loot-Multiplikator, der deinen belönings-Multiplikator jedes Mal erhöht, wenn sie am ",
+            "color": "$text"
+          },
+          {
+            "text": "Royale-kristall",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " befestigt wird, was du zwischen Royale-Durchgängen im Amboss tust.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Weder ",
+            "color": "$text"
+          },
+          {
+            "text": "Tränke",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " noch der ",
+            "color": "$text"
+          },
+          {
+            "text": "Heilzauber",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " werden in Royale-Vaultn angeboten. Stattdessen muss sich deine Heilung auf andere Quellen verlassen - die häufigste sind ",
+            "color": "$text"
+          },
+          {
+            "text": "Herzhafte Äpfel",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Wenn du ",
+            "color": "$text"
+          },
+          {
+            "text": "Tommy",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " verlässt, hast du einige Skillpunkte zugewiesen - bist aber immer noch nackt. utrustning und weitere Skillpunkt-Rollen findest du in den leuchtenden ",
+            "color": "$text"
+          },
+          {
+            "text": "Royale-Fässern",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", die über das Vault verteilt sind. Tillverka sicher, dass du dich ausrüstest, bevor du kämpfst!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Eine letzte Sache: Ein Royale-Vault ist verschlossen und kann nicht auf dem Weg, den du gekommen bist, verlassen werden. Du musst das zufällige Ziel abschließen, um herauszukommen!\n\nViel Glück, Jäger - du wirst es entweder lieben oder hassen!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Skaffa einen Royale-Fels",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/royale",
+      "targetId": "the_vault:crystal_seal_vault_royale",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_vault_royale"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "antiques",
+      "name": "Antiquitäten",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Antiquitäten sind uralte Stempel, die vom Reich des Vaults getragen werden. Diese uralten Stempel können gesammelt und kombiniert werden, um dir eine belöning zu geben, die mit dieser bestimmten Antiquitätensammlung verbunden ist.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Antiquitäten erscheinen nach Level 50, aber nur wenn der Jäger das ",
+            "color": "$text"
+          },
+          {
+            "text": "Antiquitäten-Stempel-Sammlerbuch",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " bei sich trägt, das hergestellt und im Inventar gelassen werden kann. Es wird automatisch alle deine Antiquitäten aufheben, sortieren und organisieren. Sobald du die erforderliche Menge einer beliebigen Antiquität hast, kannst du sie herausnehmen und rechtsklicken, um sie gegen ihre belöning einzutauschen.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Wo und wie man Antiquitäten findet, offenbart sich, je mehr du von einer findest. Achte beim Überfahren einer Antiquität genau darauf, um herauszufinden, woher sie stammt!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tillverka ein Antiquitäten-Stempel-Sammlerbuch her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/antique_collector_book",
+      "targetId": "the_vault:antique_collector_book",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "companions",
+      "name": "Begleiter!",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Nach Level 50 kannst du anfangen, ",
+            "color": "$text"
+          },
+          {
+            "text": "Begleiter",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " zu finden! Sie sind ziemlich schüchtern, aber wenn du gut abschneidest, hast du die chans, ein Begleiter-Ei zu spawnen! Es kann in jedem entdeckten Raum spawnen und hat Partikel um sich herum.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Das Ei kann in einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Inkubator",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ausgebrütet werden, und jeder Begleiter wird nach dieser Phase persönlich an seinen Besitzer gebunden.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Rüste deinen Begleiter im Kopf-Slot deines Curios-Inventars aus, um ihn zu aktivieren. Solange sein Status bereit ist, wird er dir beitreten, wenn du ein Vault betrittst.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Begleiter",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " kommen mit einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Temporalen Modifikator",
+            "color": "$titleLine"
+          },
+          {
+            "text": ". Dieser Modifikator kann jederzeit durch Drücken der Hotkey-Taste aktiviert werden, die du in den Tastenbelegungen binden kannst. Die Dauer des ",
+            "color": "$text"
+          },
+          {
+            "text": "Temporalen Modifikators",
+            "color": "$titleLine"
+          },
+          {
+            "text": " wird durch das Level deines Begleiters bestimmt, er dauert 1 Minute auf Level 1, 3 Minuten auf Level 3 usw. Der ",
+            "color": "$text"
+          },
+          {
+            "text": "Temporale Modifikator",
+            "color": "$titleLine"
+          },
+          {
+            "text": " kann nicht geändert oder verändert werden. Er ist so etwas wie die Seele deines Begleiters.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Begleiter",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " können auch ",
+            "color": "$text"
+          },
+          {
+            "text": "Begleiter-Relikte",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ausrüsten. Diese seltenen föremål können in jeder ",
+            "color": "$text"
+          },
+          {
+            "text": "Truhe",
+            "color": "$yellow"
+          },
+          {
+            "text": " oder in ",
+            "color": "$text"
+          },
+          {
+            "text": "Schatzsand",
+            "color": "$yellow"
+          },
+          {
+            "text": " gefunden werden, solange du einen Begleiter im Vault bei dir hast.\n",
+            "color": "$text"
+          },
+          {
+            "text": "Begleiter-Relikte",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " tragen Vault-modifiers und können in einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Begleiter-Heim",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ausgerüstet werden. Der Begleiter wird jedoch sehr an seine Relikte gebunden, und der Versuch, eines abzulegen, wird dich viel Gold kosten!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Bei richtiger Pflege können deine Begleiter sehr mächtig werden und dir auf deiner resa durch die Vault helfen!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tillverka einen Begleiter-Inkubator her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/companion",
+      "targetId": "the_vault:companion_incubator",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:companion_egg",
+            "nbt": "{HatchTime:20,Series:\"PET\"}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "soul_flame",
+      "name": "Herausforderers Gewölbe-Fels",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Ab Level 65 schaltest du die Möglichkeit frei, einen ",
+            "color": "$text"
+          },
+          {
+            "text": "Herausforderer-Vault-kristall",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " herzustellen.\n\nDieser kristall kann nicht modifiziert werden und verfolgt deine Siegesserie (Aufstieg). Jedes Mal, wenn du einen ",
+            "color": "$text"
+          },
+          {
+            "text": "Herausforderer-Vault-kristall",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " erfolgreich abschließt, erhöhst du die svårighetsgrad des nächsten Herausforderer-kristalls!\n\nWenn du schließlich scheiterst (und das wirst du), erhältst du ",
+            "color": "$text"
+          },
+          {
+            "text": "Glut",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", abhängig davon, wie weit du gekommen bist.\nGlut ist ein Währungsgegenstand, der in der ",
+            "color": "$text"
+          },
+          {
+            "text": "Aufstiegsschmiede",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " verwendet wird.\n\nBist du bereit für deinen Aufstieg?",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nTillverka einen Herausforderers Vault-Fels her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/flame",
+      "targetId": "the_vault:soul_flame",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 64
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "ascension_forge",
+      "name": "Aufstiegsschmiede",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Die ",
+            "color": "$text"
+          },
+          {
+            "text": "Aufstiegsschmiede",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ist der Ort, an dem du deine ",
+            "color": "$text"
+          },
+          {
+            "text": "Glut",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " ausgeben kannst.\nSie enthält einige sehr ",
+            "color": "$text"
+          },
+          {
+            "text": "spezielle Transmogs",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " für deine utrustning, die dich als den Herausforderer hervorstechen lassen, der du geworden bist!\nDu kannst auch ",
+            "color": "$text"
+          },
+          {
+            "text": "Präfix",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "- und ",
+            "color": "$text"
+          },
+          {
+            "text": "Suffix",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "-Titel für dein Namensschild kaufen.\n\nLass die Welt wissen, dass du weißt, wie man gewinnt!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tillverka eine Aufstiegsschmiede her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/ascensionforge",
+      "targetId": "the_vault:ascension_forge",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:ember",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "imbuement_altar",
+      "name": "Durchtränkungs-Altäre",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Nach Level 60 hast du eine seltene chans, einen ",
+            "color": "$text"
+          },
+          {
+            "text": "Durchtränkungs-Altar",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " in ",
+            "color": "$text"
+          },
+          {
+            "text": "Dungeons",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " zu finden. Je größer der Dungeon, desto wahrscheinlicher findest du einen.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Bei der Interaktion mit einem ",
+            "color": "$text"
+          },
+          {
+            "text": "Durchtränkungs-Altar",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " wird er dich bitten, ein utrustningsteil für die Durchtränkung zu bestätigen. Einmal bestätigt, kann es nicht rückgängig gemacht werden.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Der Durchtränkungs-Altar präsentiert dir dann bis zu 3 Durchtränkungsoptionen. Das Durchtränken eines Modifikators hat eine ",
+            "color": "$text"
+          },
+          {
+            "text": "Erfolgschance",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", ihn stärker zu machen und seine Werte zu verbessern.\n\nNach einer erfolgreichen Durchtränkung wird der ",
+            "color": "$text"
+          },
+          {
+            "text": "Lebend",
+            "color": "$living"
+          },
+          {
+            "text": "-Modifikator von der utrustning entfernt, falls die utrustning ursprünglich einen hatte.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nWenn die Durchtränkung ",
+            "color": "$text"
+          },
+          {
+            "text": "fehlschlägt",
+            "color": "$red"
+          },
+          {
+            "text": ", wird die utrustning ",
+            "color": "$text"
+          },
+          {
+            "text": "korrumpiert",
+            "color": "$red"
+          },
+          {
+            "text": " und der Modifikator wird stattdessen herabgestuft.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Sowohl ",
+            "color": "$text"
+          },
+          {
+            "text": "durchtränkte",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " als auch ",
+            "color": "$text"
+          },
+          {
+            "text": "korrumpierte",
+            "color": "$red"
+          },
+          {
+            "text": " utrustning kann nicht mehr in der ",
+            "color": "$text"
+          },
+          {
+            "text": "Handwerker-Station",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " modifiziert werden, jedoch kann ",
+            "color": "$text"
+          },
+          {
+            "text": "durchtränkte utrustning",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " weiterhin versiegelt werden.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Interagiere mit einem Durchtränkungs-Altar",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/imbuement_altar",
+      "targetId": "the_vault:imbuement_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_echo",
+            "amount": 10
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "level_up",
+      "id": "reach_level_100",
+      "name": "Maximallevel erreicht",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Level 100 markiert das Ende der normalen Level in Vault Hunters. Hier angekommen, hast du alle verfügbaren Skillpunkte erobert und alle möglichen utrustningsstufengruppen freigeschaltet!\n\nAm wichtigsten ist, dass du jetzt die Fähigkeit freigeschaltet hast, die Arena zu betreten und dich dem Herold zu stellen.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nNå Vault-Level 100",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/100",
+      "targetId": "the_vault:100",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:companion_egg",
+            "nbt": "{HatchTime:20,Series:\"PET\"}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "complete_vault",
+      "id": "herald",
+      "name": "Der Herold",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Es ist tid, deinen Wert zu beweisen!\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Um dich der ultimativen Herausforderung zu stellen, dem ",
+            "color": "$text"
+          },
+          {
+            "text": "Herold",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", musst du Level 100 erreicht und dein ",
+            "color": "$text"
+          },
+          {
+            "text": "Artefakt-Puzzle",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " abgeschlossen haben. Erst wenn beides erledigt ist, kannst du ",
+            "color": "$text"
+          },
+          {
+            "text": "die Arena",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " betreten.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Hole dir den ",
+            "color": "$text"
+          },
+          {
+            "text": "Herolds-Fels",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ", indem du auf dein vollständiges ",
+            "color": "$text"
+          },
+          {
+            "text": "Artefakt-Buch",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " rechtsklickst; du kannst so viele holen, wie du willst. Das Herstellen dieses Felsens auf deinem Altar gibt dir den ",
+            "color": "$text"
+          },
+          {
+            "text": "Herolds-kristall",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ".\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Vorsicht, dies ist ein sehr schwieriger Boss mit verschiedenen Phasen, und all dein bisheriges Wissen wird bewertet, um diese Herausforderung zu bestehen.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Viel Glück, Jäger\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Besiege den Herold",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/herald",
+      "targetId": "the_vault:herald",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_100",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:omega_pog",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "complete_vault",
+      "id": "greed",
+      "name": "Gier",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Gut gemacht! Nach dem Besiegen des ",
+            "color": "$text"
+          },
+          {
+            "text": "Herolds",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " hast du das letzte Kapitel von Vault Hunters freigeschaltet: ",
+            "color": "$text"
+          },
+          {
+            "text": "Gier",
+            "color": "$omega"
+          },
+          {
+            "text": ".\n\nDu hast jetzt Zugang zur ",
+            "color": "$text"
+          },
+          {
+            "text": "Gier-Prüfung",
+            "color": "$omega"
+          },
+          {
+            "text": ", einem Vault mit unendlicher Länge, das dich an deine Grenzen bringen wird. Wenn du schließlich fällst, wird dein Fortschritt deine ",
+            "color": "$text"
+          },
+          {
+            "text": "Gier-Stufe",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " erhöhen und mächtige neue ",
+            "color": "$text"
+          },
+          {
+            "text": "Gier-Knoten",
+            "color": "$omega"
+          },
+          {
+            "text": " freischalten.\n\nBeim Nån deiner ersten Gier-Stufe erhältst du einen ",
+            "color": "$text"
+          },
+          {
+            "text": "Gier-Anker",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Platziere ihn, um ",
+            "color": "$text"
+          },
+          {
+            "text": "Herrn Gierig",
+            "color": "$omega"
+          },
+          {
+            "text": " zu beschwören, einen mysteriösen Händler, der einen ",
+            "color": "$text"
+          },
+          {
+            "text": "Laden",
+            "color": "$white"
+          },
+          {
+            "text": " zum Kauf von Gier-föremåln mit ",
+            "color": "$text"
+          },
+          {
+            "text": "Gier-mynt",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " anbietet, ",
+            "color": "$text"
+          },
+          {
+            "text": "Quests",
+            "color": "$white"
+          },
+          {
+            "text": ", die Reputation durch Vault-Herausforderungen belohnen, und ",
+            "color": "$text"
+          },
+          {
+            "text": "Herausforderungs-kristalle",
+            "color": "$white"
+          },
+          {
+            "text": " mit einem völlig neuen ",
+            "color": "$text"
+          },
+          {
+            "text": "Gefahren",
+            "color": "$omega"
+          },
+          {
+            "text": "-System.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Hüte dich vor Gier-Assassinen...",
+            "color": "$omega"
+          },
+          {
+            "text": " wie weit wagst du zu klettern? Wie gierig wirst du werden?\n\nBrauchst du mehr mynt? Der ",
+            "color": "$text"
+          },
+          {
+            "text": "Gier-Tiegel",
+            "color": "$omega"
+          },
+          {
+            "text": " hungert nach Vault-Materialien. Füttere ihn mit dem, was er verlangt, und er wird dich mit ",
+            "color": "$text"
+          },
+          {
+            "text": "Gier-mynt",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " belohnen.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Slutför die Gier-Prüfung ab",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/greed",
+      "targetId": "the_vault:rebirth",
+      "targetProgress": 1.0,
+      "unlockedBy": "herald",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:stick",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "crafting",
+      "id": "greed_cauldron",
+      "name": "Gier-Tiegel",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Der ",
+            "color": "$text"
+          },
+          {
+            "text": "Gier-Tiegel",
+            "color": "$omega"
+          },
+          {
+            "text": " ist ein mächtiges Gerät, das nach Vault-Materialien hungert. Tillverka einen her und platziere ihn, um seinen unersättlichen Appetit zu stillen.\n\nDer ",
+            "color": "$text"
+          },
+          {
+            "text": "Tiegel",
+            "color": "$omega"
+          },
+          {
+            "text": " wird große Mengen an Vault-Ressourcen verlangen. Für jede erfüllte Anfrage erhältst du ",
+            "color": "$text"
+          },
+          {
+            "text": "Gier-mynt",
+            "color": "$qhighlight"
+          },
+          {
+            "text": ". Aber hier ist der Trick: Jede abgeschlossene Anfrage erhöht deinen ",
+            "color": "$text"
+          },
+          {
+            "text": "Multiplikator",
+            "color": "$white"
+          },
+          {
+            "text": ", wodurch nachfolgende Abschlüsse noch mehr ",
+            "color": "$text"
+          },
+          {
+            "text": "Gier-mynt",
+            "color": "$qhighlight"
+          },
+          {
+            "text": " belohnen.\n\nFüttere den Tiegel weiter, um deine Erträge zu maximieren.\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "Tillverka einen Gier-Tiegel her",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/greed_cauldron",
+      "targetId": "the_vault:greed_cauldron",
+      "targetProgress": 1.0,
+      "unlockedBy": "greed",
+      "reward": {
+        "items": [],
+        "vaultExp": 0
+      }
+    }
+  ]
+}

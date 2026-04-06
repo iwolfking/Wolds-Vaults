@@ -1,26 +1,6 @@
 {
   "catalystRecipes": [
     {
-      "id": "woldsvaults:greed_rock",
-      "output": {
-        "AMOUNT": 1,
-        "ITEM": "woldsvaults:greedy_vault_rock",
-        "NBT": "{}"
-      },
-      "inputs": [
-        {
-          "AMOUNT": 1,
-          "ITEM": "the_vault:vault_rock",
-          "NBT": "{}"
-        },
-        {
-          "AMOUNT": 1,
-          "ITEM": "the_vault:gem_pog",
-          "NBT": "{}"
-        }
-      ]
-    },
-    {
       "id": "the_vault:catalyst_wooden_cascade",
       "output": {
         "AMOUNT": 1,
@@ -216,6 +196,31 @@
         {
           "AMOUNT": 1,
           "ITEM": "the_vault:mystical_powder",
+          "NBT": "{}"
+        }
+      ]
+    },
+    {
+      "id": "the_vault:catalyst_onslaught",
+      "output": {
+        "AMOUNT": 1,
+        "ITEM": "the_vault:vault_catalyst_infused",
+        "NBT": "{model:15,modifiers:[\"the_vault:more_mobs_cata\",\"the_vault:challenge_stack\"],pool:\"the_vault:craft_mobs\",size:10}"
+      },
+      "inputs": [
+        {
+          "AMOUNT": 9,
+          "ITEM": "the_vault:vault_catalyst_fragment",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 4,
+          "ITEM": "the_vault:gem_benitoite",
+          "NBT": "{}"
+        },
+        {
+          "AMOUNT": 4,
+          "ITEM": "the_vault:dreamstone",
           "NBT": "{}"
         }
       ]

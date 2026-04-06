@@ -6,21 +6,39 @@
         {
           "level": 0,
           "type": "weighted_target",
-          "target": "the_vault:treasure_chest",
+          "target": "the_vault:treasure_container",
           "output": {
-            "the_vault:treasure_chest{Generated:0b,LootTable:\"the_vault:treasure_chest_lvl0\"}": 1
-          }
-        },
-        {
-          "level": 50,
-          "type": "weighted_target",
-          "target": "the_vault:treasure_chest",
-          "output": {
-            "the_vault:treasure_pedestal{Generated:0b,LootTable:\"the_vault:treasure_chest_stand_lvl50\"}": 1,
-            "the_vault:treasure_chest{Generated:0b,LootTable:\"the_vault:treasure_chest_lvl50\"}": 3
+            "the_vault:treasure_container{Generated:0b,LootTable:\"the_vault:treasure_chest_lvl50\"}": 1
           }
         }
       ]
+    },
+    {
+        "type": "leveled",
+        "levels": [
+            {
+                "level": 0,
+                "type": "weighted_target",
+                "target": "minecraft:light_blue_wool",
+                "output": {
+                    "the_vault:treasure_pedestal{LootTable:\"the_vault:treasure_pillar\"}": 3,
+                    "minecraft:air": 7
+                }
+            }
+        ]
+    },
+    {
+        "type": "leveled",
+        "levels": [
+            {
+                "level": 0,
+                "type": "weighted_target",
+                "target": "minecraft:blue_wool",
+                "output": {
+                    "the_vault:treasure_pedestal{LootTable:\"the_vault:treasure_pillar\"}": 1
+                }
+            }
+        ]
     }
   ]
 }

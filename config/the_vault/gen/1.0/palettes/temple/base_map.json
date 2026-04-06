@@ -1,0 +1,69 @@
+{
+  "tile_processors": [
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=ornate_chest]",
+      "output": {
+        "the_vault:placeholder[type=ornate_chest]": 80,
+        "minecraft:air": 20
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=living_chest]",
+      "output": {
+        "the_vault:placeholder[type=living_chest]": 80,
+        "minecraft:air": 20
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=gilded_chest]",
+      "output": {
+        "the_vault:placeholder[type=gilded_chest]": 80,
+        "minecraft:air": 20
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=coin_stacks]",
+      "output": {
+        "the_vault:placeholder[type=coin_stacks]": 80,
+        "minecraft:air": 20
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:placeholder[type=objective]",
+      "output": [
+        {
+          "block": "the_vault:temple_controller",
+          "renderer": {
+            "coreColor": "0x069022",
+            "glyphColor": "0x069022",
+            "particleColor": "0x069022"
+          },
+          "zone": {
+            "min": [-23, -12, -23],
+            "max": [23, 27, 23]
+          },
+          "proxyPositions": [
+            [15, -2, 15],
+            [-15, -2, 15],
+            [15, -2, -15],
+            [-15, -2, -15]
+          ],
+          "positivePool": "positive_temple",
+          "negativePool": "negative_temple",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "type": "reference",
+      "id": "the_vault:generic/room_base_map"
+    }
+  ],
+  "entity_processors": [],
+  "decorators": []
+}

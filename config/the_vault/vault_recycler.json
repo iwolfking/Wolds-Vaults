@@ -130,7 +130,23 @@
                 "maxCount": 8
             },
             "extraOutput1": {
-                "conditionalOutputs": {},
+                "conditionalOutputs": [
+                    [
+                        {
+                            "rarity": null,
+                            "isCrafted": null,
+                            "isLegendary": true
+                        },
+                        {
+                            "chance": 1,
+                            "stack": {
+                                "item": "the_vault:faceted_focus"
+                            },
+                            "minCount": 1,
+                            "maxCount": 1
+                        }
+                    ]
+                ],
                 "chance": 0.2,
                 "stack": {
                     "item": "minecraft:netherite_scrap"
@@ -171,6 +187,34 @@
                 "chance": 0.0,
                 "stack": {
                     "item": "the_vault:faceted_focus"
+                },
+                "minCount": 1,
+                "maxCount": 1
+            }
+        },
+        "the_vault:vault_infused_catalyst": {
+            "mainOutput": {
+                "chance": 1.0,
+                "stack": {
+                    "item": "the_vault:vault_catalyst_fragment"
+                },
+                "minCount": 4,
+                "maxCount": 6
+            },
+            "extraOutput1": {
+                "conditionalOutputs": {},
+                "chance": 0.0,
+                "stack": {
+                    "item": "minecraft:air"
+                },
+                "minCount": 1,
+                "maxCount": 1
+            },
+            "extraOutput2": {
+                "conditionalOutputs": {},
+                "chance": 0.0,
+                "stack": {
+                    "item": "minecraft:air"
                 },
                 "minCount": 1,
                 "maxCount": 1

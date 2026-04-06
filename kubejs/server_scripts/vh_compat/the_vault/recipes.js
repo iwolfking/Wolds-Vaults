@@ -8,16 +8,70 @@ onEvent("recipes", event => {
     event.remove({id: 'the_vault:crystal_seal_ordinator_build'})
     event.remove({id: 'the_vault:vault_compass'})
 
-    event.shaped(Item.of('the_vault:crystal_budding'),
+    event.shaped(Item.of('the_vault:bottle', {charges:6,recharge: "time",type:"vial"}),
         [
-            'AEA',
-            'ECE',
-            'AEA'
+            'F',
+            'B',
+            'I'
         ], {
-        C: 'the_vault:living_rock_block_cobble',
-        E: 'the_vault:gem_larimar',
-        A: 'minecraft:amethyst_block'
-    }).id('the_vault:crystal_budding')
+        F: '#minecraft:small_flowers',
+        B: 'minecraft:glass_bottle',
+        I: 'the_vault:chromatic_iron_ingot'
+    }).id('the_vault:bottle_vial_time')
+
+    event.shaped(Item.of('the_vault:bottle', {charges:6,recharge: "time",type:"brew"}),
+        [
+            'DFD',
+            'ABA',
+            'CIC'
+        ], {
+        F: '#minecraft:small_flowers',
+        B: 'minecraft:glass_bottle',
+        I: 'the_vault:echo_pog',
+        A: 'minecraft:golden_apple',
+        C: 'the_vault:vault_diamond',
+        D: 'the_vault:vault_diamond_block'
+    }).id('the_vault:bottle_brew_time')
+
+    event.shaped(Item.of('the_vault:bottle', {charges:6,recharge: "time",type:"potion"}),
+        [
+            'DFD',
+            'ABA',
+            'CIC'
+        ], {
+        F: '#minecraft:small_flowers',
+        B: 'minecraft:glass_bottle',
+        I: 'the_vault:vault_diamond',
+        A: 'minecraft:golden_apple',
+        C: 'the_vault:vault_diamond',
+        D: 'the_vault:vault_essence'
+    }).id('the_vault:bottle_potion_time')
+
+    event.shaped(Item.of('the_vault:bottle', {charges:6,recharge: "time",type:"mixture"}),
+        [
+            'DFD',
+            'ABA',
+            'CIC'
+        ], {
+        F: '#minecraft:small_flowers',
+        B: 'minecraft:glass_bottle',
+        I: 'the_vault:gem_pog',
+        A: 'minecraft:golden_apple',
+        C: 'the_vault:vault_diamond',
+        D: 'the_vault:vault_diamond'
+    }).id('the_vault:bottle_mixture_time')
+
+
+    // event.shaped(Item.of('the_vault:crystal_budding'),
+    //     [
+    //         'AEA',
+    //         'ECE',
+    //         'AEA'
+    //     ], {
+    //     C: 'the_vault:living_rock_block_cobble',
+    //     E: 'the_vault:gem_larimar',
+    //     A: 'minecraft:amethyst_block'
+    // }).id('the_vault:crystal_budding')
 
     event.shaped(Item.of('the_vault:mystical_powder'),
         [

@@ -12,8 +12,8 @@
             "type": "weighted_target",
             "target": "minecraft:cobblestone",
             "output": {
-                "minecraft:cobbled_deepslate": 1,
-                "minecraft:deepslate": 1
+                "the_vault:ashen_rock_block": 8,
+                "the_vault:smooth_dark_ashen_block": 1
             }
         },
         {
@@ -29,32 +29,39 @@
             "type": "weighted_target",
             "target": "minecraft:gray_concrete",
             "output": {
-                "auxiliaryblocks:red_gelatin": 4,
-                "auxiliaryblocks:red_crystal": 1,
-                "minecraft:red_concrete": 16
+                "the_vault:vault_ash": 0,
+                "the_vault:dry_vault_ash": 0,
+                "the_vault:ashen_magma": 0,
+                "minecraft:smooth_basalt": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:grass_block",
             "output": {
-                "minecraft:cobbled_deepslate": 1,
-                "minecraft:deepslate": 1
+                "the_vault:ashen_rock_block": 8,
+                "the_vault:smooth_dark_ashen_block": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:coarse_dirt",
             "output": {
-                "minecraft:cracked_deepslate_tiles": 1,
-                "minecraft:deepslate_tiles": 6
+                "the_vault:ashen_block": 3,
+                "the_vault:dark_ashen_block": 3,
+                "the_vault:smooth_ashen_block": 1,
+                "the_vault:smooth_dark_ashen_block": 1
+
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:dirt",
             "output": {
-                "minecraft:polished_deepslate": 1
+                "the_vault:dark_ashen_block": 2,
+                "the_vault:ashen_block": 2,
+                "the_vault:smooth_dark_ashen_block": 1,
+                "the_vault:smooth_ashen_block": 1
             }
         },
         {
@@ -75,21 +82,22 @@
             "type": "weighted_target",
             "target": "minecraft:spruce_slab",
             "output": {
-                "minecraft:deepslate_tile_slab": 1
+                "the_vault:dark_ashen_block_slab": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:purple_wool",
             "output": {
-                "auxiliaryblocks:asphalt": 1
+                "minecraft:basalt": 1,
+                "minecraft:polished_basalt": 4
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:water",
             "output": {
-                "minecraft:water": 1
+                "the_vault:pyrite_flow": 4
             }
         },
         {
@@ -103,7 +111,7 @@
             "type": "weighted_target",
             "target": "minecraft:birch_fence",
             "output": {
-                "minecraft:red_nether_brick_wall": 1
+                "buildscape:polished_basalt_wall": 1
             }
         },
         {
@@ -138,14 +146,14 @@
             "type": "weighted_target",
             "target": "minecraft:cave_vines_plant",
             "output": {
-                "minecraft:weeping_vines_plant": 1
+                "minecraft:air": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:cave_vines",
             "output": {
-                "minecraft:weeping_vines": 1
+                "minecraft:air": 1
             }
         },
         {
@@ -173,18 +181,20 @@
             "type": "weighted_target",
             "target": "minecraft:grass",
             "output": {
-                "minecraft:air": 7,
-                "minecraft:red_carpet": 1,
-                "architects_palette:bone_nub[facing=down]": 1
+                "the_vault:ashen_layer[layers=1]": 4,
+                "the_vault:ashen_layer[layers=2]": 3,
+                "the_vault:ashen_layer[layers=3]": 2
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:tall_grass[half=lower]",
             "output": {
-                "minecraft:red_carpet": 1,
-                "twigs:pebble": 2,
-                "minecraft:air": 2
+                "the_vault:ashen_layer[layers=1]": 14,
+                "the_vault:ashen_layer[layers=2]": 12,
+                "the_vault:ashen_layer[layers=3]": 10,
+                "minecraft:air": 5,
+                "the_vault:ashen_smoke": 1
             }
         },
         {
@@ -212,39 +222,43 @@
             "type": "weighted_target",
             "target": "minecraft:fern",
             "output": {
-                "twigs:pebble": 1
+                "the_vault:ashen_smoke": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:lime_wool",
             "output": {
-                "auxiliaryblocks:red_crystal": 1,
-                "auxiliaryblocks:red_gelatin": 3,
-                "minecraft:red_concrete": 12
+                "the_vault:vault_ash": 0,
+                "the_vault:dry_vault_ash": 0,
+                "the_vault:ashen_magma": 0,
+                "minecraft:smooth_basalt": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:cyan_wool",
             "output": {
-                "auxiliaryblocks:red_crystal": 1,
-                "auxiliaryblocks:red_gelatin": 3,
-                "minecraft:red_concrete": 12
+                "the_vault:vault_ash": 0,
+                "the_vault:dry_vault_ash": 0,
+                "the_vault:ashen_magma": 0,
+                "minecraft:smooth_basalt": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:oak_log",
             "output": {
-                "minecraft:deepslate_tiles": 1
+                "supplementaries:ash_bricks": 6,
+                "the_vault:vault_ash": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:oak_wood",
             "output": {
-                "minecraft:deepslate_tiles": 1
+                "supplementaries:ash_bricks": 6,
+                "the_vault:vault_ash": 1
             }
         },
         {
@@ -258,87 +272,89 @@
             "type": "weighted_target",
             "target": "minecraft:oak_planks",
             "output": {
-                "minecraft:deepslate_tiles": 1
+                "supplementaries:ash_bricks": 6,
+                "the_vault:vault_ash": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:oak_fence",
             "output": {
-                "minecraft:red_nether_brick_wall": 1
+                "buildscape:polished_basalt_wall": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:oak_slab",
             "output": {
-                "minecraft:deepslate_tile_slab": 1
+                "supplementaries:ash_bricks_slab": 6
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:oak_trapdoor",
             "output": {
-                "everycomp:mct/quark/blossom_classic_trapdoor": 1,
-                "everycomp:mct/quark/blossom_cottage_trapdoor": 1,
-                "everycomp:mct/quark/blossom_barn_trapdoor": 1,
-                "everycomp:mct/quark/blossom_mystic_trapdoor": 1
+                "everycomp:mct/the_vault/driftwood_barred_trapdoor": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:oak_stairs",
             "output": {
-                "minecraft:polished_deepslate_stairs": 1
+                "supplementaries:ash_bricks_stairs": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:oak_fence_gate",
             "output": {
-                "quark:blossom_fence_gate": 1
+                "buildscape:ashpen_light_gray_fence_gate": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:oak_door",
             "output": {
-                "everycomp:mcd/quark/blossom_mystic_door": 1
+                "everycomp:mcd/the_vault/driftwood_cottage_door": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:stone_bricks",
             "output": {
-                "minecraft:polished_deepslate": 3
+                "supplementaries:ash_bricks": 6,
+                "the_vault:vault_ash": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:stone_brick_stairs",
             "output": {
-                "minecraft:polished_deepslate_stairs": 1
+                "supplementaries:ash_bricks_stairs": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "create:andesite_pillar",
             "output": {
-                "the_vault:vault_stone_pillar": 1
+                "supplementaries:ash_bricks": 5,
+                "the_vault:dry_vault_ash": 1,
+                "the_vault:vault_ash": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:chiseled_stone_bricks",
             "output": {
-                "the_vault:chiseled_vault_stone": 1
+                "supplementaries:ash_bricks": 6,
+                "the_vault:vault_ash": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:stone_brick_slab",
             "output": {
-                "the_vault:polished_vault_stone_slab": 1
+                "supplementaries:ash_bricks_slab": 1
             }
         },
         {
@@ -359,21 +375,21 @@
             "type": "weighted_target",
             "target": "minecraft:stone_brick_wall",
             "output": {
-                "minecraft:polished_deepslate_wall": 1
+                "buildscape:polished_basalt_wall": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:cobblestone_wall",
             "output": {
-                "minecraft:cobbled_deepslate_wall": 1
+                "buildscape:polished_basalt_wall": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:cobblestone_stairs",
             "output": {
-                "the_vault:polished_vault_stone_stairs": 1
+                "supplementaries:ash_bricks_slab": 1
             }
         },
         {
@@ -394,14 +410,14 @@
             "type": "weighted_target",
             "target": "minecraft:magma_block",
             "output": {
-                "minecraft:magma_block": 1
+                "the_vault:ashen_magma": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:lava",
             "output": {
-                "minecraft:lava": 1
+                "the_vault:pyrite_flow": 1
             }
         },
         {
@@ -436,7 +452,7 @@
             "type": "weighted_target",
             "target": "minecraft:lantern",
             "output": {
-                "minecraft:red_candle[candles=3,lit=true]": 1
+                "supplementaries:blaze_rod": 1
             }
         },
         {
@@ -450,7 +466,7 @@
             "type": "weighted_target",
             "target": "minecraft:soul_lantern",
             "output": {
-                "mcwwindows:red_mosaic_glass_pane": 1
+                "supplementaries:blaze_rod": 1
                 
             }
         },
@@ -465,78 +481,80 @@
             "type": "weighted_target",
             "target": "minecraft:cyan_stained_glass",
             "output": {
-                "auxiliaryblocks:red_frameless_glass": 1
+                "auxiliaryblocks:orange_frameless_glass": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:light_blue_stained_glass",
             "output": {
-                "auxiliaryblocks:red_frameless_glass": 1
+                "auxiliaryblocks:orange_frameless_glass": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:bookshelf",
             "output": {
-                "quark:crimson_bookshelf": 1
+                "everycomp:q/the_vault/driftwood_bookshelf": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "ecologics:azalea_log",
             "output": {
-                "the_vault:vault_stone_pillar": 6,
-                "the_vault:chiseled_vault_stone": 1
+                "supplementaries:ash_bricks": 6,
+                "the_vault:vault_ash": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "ecologics:azalea_fence",
             "output": {
-                "minecraft:polished_deepslate_wall": 1
+                "buildscape:polished_basalt_wall": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "create:cut_crimsite_wall",
             "output": {
-                "minecraft:red_nether_brick_wall": 1
+                "buildscape:polished_basalt_wall": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "quark:azalea_log",
             "output": {
-                "the_vault:vault_stone_pillar": 1
+                "supplementaries:ash_bricks": 6,
+                "the_vault:vault_ash": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "quark:azalea_planks",
             "output": {
-                "the_vault:polished_vault_stone": 1
+                "supplementaries:ash_bricks": 6,
+                "the_vault:vault_ash": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "quark:azalea_planks_stairs",
             "output": {
-                "the_vault:polished_vault_stone_stairs": 1
+                "supplementaries:ash_bricks_stairs": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "create:cut_veridium_wall",
             "output": {
-                "minecraft:red_nether_brick_wall": 1
+                "buildscape:polished_basalt_wall": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:sand",
             "output": {
-                "minecraft:brown_concrete_powder": 1
+                "the_vault:vault_ash": 1
             }
         },
         {
@@ -550,28 +568,29 @@
             "type": "weighted_target",
             "target": "quark:oak_hedge",
             "output": {
-                "quark:red_blossom_hedge": 1
+                "minecraft:air": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "decorative_blocks:oak_support",
             "output": {
-                "everycomp:db/botania/livingwood_support": 1
+                "everycomp:db/the_vault/burnt_support": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:end_stone_bricks",
             "output": {
-                "the_vault:polished_vault_stone": 3
+                "supplementaries:ash_bricks": 6,
+                "the_vault:vault_ash": 1
             }
         },
         {
             "type": "weighted_target",
             "target": "minecraft:end_stone_brick_stairs",
             "output": {
-                "the_vault:polished_vault_stone_stairs": 1
+                "supplementaries:ash_bricks_stairs": 6
             }
         },
         {

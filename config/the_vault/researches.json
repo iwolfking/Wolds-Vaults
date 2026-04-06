@@ -2,24 +2,6 @@
   "MOD_RESEARCHES": [
     {
       "modIds": [
-        "vending_companions",
-        "companion_work_station"
-      ],
-      "restrictions": {
-        "restricts": {
-          "HITTABILITY": false,
-          "BLOCK_INTERACTABILITY": true,
-          "USABILITY": true,
-          "CRAFTABILITY": true,
-          "ENTITY_INTERACTABILITY": false
-        }
-      },
-      "name": "Companion Workstation",
-      "cost": 16,
-      "usesKnowledge": true
-    },
-    {
-      "modIds": [
         "chunkymcchunkface"
       ],
       "restrictions": {
@@ -1265,8 +1247,8 @@
       "blockRestrictions": {},
       "entityRestrictions": {},
       "name": "Mod Box Tinkering",
-      "cost": 1,
-      "usesKnowledge": true
+      "cost": 10,
+      "usesKnowledge": false
     },
     {
       "itemRestrictions": {
@@ -1750,63 +1732,6 @@
       "usesKnowledge": true
     },
     {
-      "itemRestrictions": {
-        "woldsvaults:filter_necklace": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:vault_charm_controller": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:vault_charm": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:vault_charm_upgrade_tier_1": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:vault_charm_upgrade_tier_2": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        },
-        "the_vault:vault_charm_upgrade_tier_3": {
-          "restricts": {
-            "HITTABILITY": true,
-            "USABILITY": true,
-            "CRAFTABILITY": true
-          }
-        }
-      },
-      "blockRestrictions": {},
-      "entityRestrictions": {},
-      "name": "Junk Management",
-      "cost": 2,
-      "usesKnowledge": true,
-      "discoversModels": [
-        "the_vault:gear/armor/dank/helmet",
-        "the_vault:gear/armor/dank/chestplate",
-        "the_vault:gear/armor/dank/leggings",
-        "the_vault:gear/armor/dank/boots"
-      ]
-    },
-    {
       "itemRestrictions": {},
       "blockRestrictions": {},
       "entityRestrictions": {},
@@ -2208,7 +2133,7 @@
         "the_vault:gear/armor/villager/boots"
       ]
     },
-{
+    {
       "itemRestrictions": {},
       "blockRestrictions": {},
       "entityRestrictions": {},

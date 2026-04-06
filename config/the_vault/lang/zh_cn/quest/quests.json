@@ -1,0 +1,5489 @@
+{
+  "quests": [
+    {
+      "type": "checkmark",
+      "id": "welcome_quest",
+      "name": "宝库猎人介绍",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "欢迎来到宝库猎人第三版！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n这个整合包将你的Minecraft体验转变为基于进度的动作RPG游戏。它旨在长期游玩，并拥有许多辅助设置来定制你的游戏体验以适应你的游玩风格！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n在这条任务线中，我们会教你游戏的基本知识，帮助你开始你的冒险之旅。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n在开始游玩之前，请确保你设置了适合你的难度，这可以在暂停菜单中完成，我们提供5种不同的难度。这些设置会影响宝库内怪物的生命值和伤害。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n除了不同的难度之外，你还可以选择游戏模式。宝库猎人提供三种游戏模式：普通、休闲和硬核，普通是默认的游戏模式。你的游戏模式可以使用/gamerule vaultMode来设置。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n普通",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - 20级之后死亡会在你的重生点生成一个灵魂，使用灵魂提取器你可以买回丢失的物品",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n休闲",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - 20级之后死亡不会导致物品丢失，你只会受到一些耐久度损伤",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n硬核",
+            "color": "$manaCost"
+          },
+          {
+            "text": " - 20级之后死亡会导致物品和背包永久丢失",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n/party invite 玩家名 ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "可以邀请朋友加入你的队伍，这样你们可以一起探索宝库并看到彼此的血量。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n/the_vault research_team invite 玩家名 ",
+            "color": "$manaCost"
+          },
+          {
+            "text": "可以将玩家组成一个团队，这样他们可以一起进行研究。",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/welcome",
+      "targetId": "the_vault:raw_chromatic_iron",
+      "targetProgress": 1.0,
+      "unlockedBy": "",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:cooked_vault_steak",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      },
+      "questTypes": ["SKY", "NORMAL"]
+    },
+    {
+      "type": "collection",
+      "id": "find_chromatic_iron",
+      "name": "幻彩铁",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "作为宝库猎人，你旅程的第一步是找到",
+            "color": "$text"
+          },
+          {
+            "text": "核心金属",
+            "color": "$text"
+          },
+          {
+            "text": "——宝库猎人的",
+            "color": "$text"
+          },
+          {
+            "text": "幻彩铁",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "幻彩铁",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "分布在世界最深处，在",
+            "color": "$text"
+          },
+          {
+            "text": "Y-30",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "以下。可以用",
+            "color": "$text"
+          },
+          {
+            "text": "铁镐",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "开采，使用时运附魔可以增加产量！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取16个粗幻彩铁",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/find_chromatic_iron",
+      "targetId": "the_vault:raw_chromatic_iron",
+      "targetProgress": 16.0,
+      "unlockedBy": "welcome_quest",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_iron_ingot",
+            "amount": 24
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "mining",
+      "id": "mine_vault_stone",
+      "name": "宝库石",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "你冒险的下一步是找到",
+            "color": "$text"
+          },
+          {
+            "text": "宝库石",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。你可能在寻找幻彩铁时已经遇到了这种非常深色的石头，它可以在",
+            "color": "$text"
+          },
+          {
+            "text": "Y-5",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "以下的任何地方找到。\n\n开采",
+            "color": "$text"
+          },
+          {
+            "text": "宝库石",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "时如果不使用精准采集，有机会获得",
+            "color": "$text"
+          },
+          {
+            "text": "宝库岩石",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，请确保不要丢弃它们，因为它们是进入宝库的钥匙！",
+            "color": "$text"
+          },
+          {
+            "text": "。\n",
+            "color": "$text"
+          },
+          {
+            "text": "宝库石",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "本身是一种非常坚固的材料，可以用于许多不同的用途，但最重要的是用来制作宝库传送门！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n开采10个宝库石",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/vault_stone",
+      "targetId": "the_vault:vault_stone",
+      "targetProgress": 10,
+      "unlockedBy": "welcome_quest",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_rock",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_vault_altar",
+      "name": "宝库祭坛",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "现在是时候制作你的宝库祭坛了，将宝库岩石放在宝库祭坛上，就能获得制作宝库水晶的配方",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个宝库祭坛",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/altar",
+      "targetId": "the_vault:vault_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "mine_vault_stone",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:stone_button"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "craft_crystal",
+      "id": "complete_vault_crystal",
+      "name": "宝库水晶",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "是时候锻造你的第一个宝库水晶了！每个配方都不同，所需材料的数量会随着你制作更多水晶而逐渐增加。\n\n在宝库祭坛上使用宝库岩石将会确定完成水晶配方所需的物品。你可以通过在祭坛附近从背包中丢出物品来向祭坛提交材料。一旦祭坛配方完成，施加红石信号即可完成制作过程。\n\n如果你难以辨认某个物品，可以按住蹲下键来查看其名称。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n完成一个宝库水晶",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/crystal",
+      "targetId": "the_vault:vault_crystal",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_vault_altar",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:shulker_box"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "learning_skills",
+      "name": "技能与天赋",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "在你进入第一个宝库之前，我们想告知你宝库猎人的几个重要组成部分。宝库猎人拥有深度的技能和天赋系统，你将利用它们使你的宝库体验更加愉快。\n\n技能通常侧重于给你强大的主动技能，显著改变你的游玩方式；从伤害技能如新星或暴走，治疗技能如治愈和图腾，到生存技能如冲刺和幽灵行走。\n\n天赋为玩家提供被动增益。有各种各样的天赋可供查看，每种天赋都旨在提升你体验的特定方面。\n\n按下默认的'H'键查看宝库界面，并点击顶部的第二和第三个标签分别查看技能和天赋。\n\n这个任务的奖励是",
+            "color": "$text"
+          },
+          {
+            "text": "1个技能点",
+            "color": "$manaCost"
+          },
+          {
+            "text": "，如果这是你第一次游玩，强烈推荐选择",
+            "color": "$text"
+          },
+          {
+            "text": "治愈技能",
+            "color": "$heal"
+          },
+          {
+            "text": "，因为宝库内没有自然生命恢复",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/skills",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "complete_vault_crystal",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:cooked_vault_steak",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0,
+        "skillPoints": 1
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_enchanter",
+      "name": "更好的附魔",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "在宝库猎人中，附魔与原版Minecraft有些不同。保护和攻击性附魔已被禁用，以便在后期允许更高的防御和攻击属性缩放。然而，有一些附魔既可以用于原版工具和装备，也可以用于宝库工具和装备。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n宝库附魔台是你附魔任何装备或工具的首选，它总是以一些绿宝石和经验为代价提供最高可用的附魔，制作一个并尝试将任何可附魔的物品放入其中。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个宝库附魔台",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/enchanter",
+      "targetId": "the_vault:vault_enchanter",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:experience_bottle",
+            "amount": 20
+          },
+          {
+            "item": "minecraft:emerald",
+            "amount": 50
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_potions",
+      "name": "宝库药水",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "宝库药水是",
+            "color": "$text"
+          },
+          {
+            "text": "治疗技能",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "的非战斗替代品。\n它们是唯一不会激怒宝库内",
+            "color": "$text"
+          },
+          {
+            "text": "维拉拉",
+            "color": "$velara"
+          },
+          {
+            "text": "的药水！\n\n宝库药水有固定数量的",
+            "color": "$text"
+          },
+          {
+            "text": "充能次数",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，可以在每个宝库中使用，一旦你退出宝库就会完全补充。\n一开始你可以使用",
+            "color": "$text"
+          },
+          {
+            "text": "药瓶",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "级别的药水，在冒险后期你将有可能研究更好的级别，为你的每次充能提供更大的治疗量。\n制作你的第一瓶药水（",
+            "color": "$text"
+          },
+          {
+            "text": "药瓶",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "）时，你可以在3种不同的充能机制中做出选择；\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "屠戮",
+            "color": "$red"
+          },
+          {
+            "text": "，当你击杀一定数量的怪物时，为你的药瓶充能\n",
+            "color": "$text"
+          },
+          {
+            "text": "哥布林",
+            "color": "$yellow"
+          },
+          {
+            "text": "，当你搜刮一定数量的宝箱时，为你的药瓶充能\n",
+            "color": "$text"
+          },
+          {
+            "text": "和平主义者",
+            "color": "$blue"
+          },
+          {
+            "text": "，随时间被动为你的药瓶充能\n\n不过别担心，你可以全部制作并看看哪种最适合你，但每次宝库只能使用一种！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n制作一个药瓶",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/potion",
+      "targetId": "the_vault:bottle",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:ender_pearl"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "enter_vault",
+      "id": "enter_vault",
+      "name": "宝库狩猎",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "用任意组合的宝库石方块建造一个宝库传送门，方式类似于下界传送门。传送门建好后，右键点击框架上的宝库水晶即可打开传送门。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n宝库内有时间限制，要求你在倒计时归零之前完成任务。用方块标记你的路径，可以让你更容易找到回传送门的路。\n\n如果你死亡，你将返回主世界，如果你的宝库等级低于20级，你将获得'新手恩典'，无论是死亡还是逃脱，你都可以保留所有战利品。\n\n如果你成功完成宝库，你将获得一个宝箱，可以放置后按住蹲下+右键打开！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n进入一个宝库",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/enter_vault",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:sword",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:shield",
+            "nbt": ""
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "shard_pouch",
+      "name": "战利品！",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "在宝库中搜刮战利品很有趣，有很多令人兴奋的东西可以找到！\n装备属性如",
+            "color": "$text"
+          },
+          {
+            "text": "物品数量",
+            "color": "$itemquantity"
+          },
+          {
+            "text": "会增加你找到的战利品数量，而",
+            "color": "$text"
+          },
+          {
+            "text": "物品稀有度",
+            "color": "$itemrarity"
+          },
+          {
+            "text": "则让你找到更高级别的战利品。\n",
+            "color": "$text"
+          },
+          {
+            "text": "除了宝箱有战利品外，击杀怪物会掉落",
+            "color": "$text"
+          },
+          {
+            "text": "灵魂碎片",
+            "color": "$soulchance"
+          },
+          {
+            "text": "，可以用来在",
+            "color": "$text"
+          },
+          {
+            "text": "黑市",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "购买稀有物品。\n然而，所有这些战利品可能会很快变得难以管理，任何优秀的猎人都需要良好的战利品整理！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "潜影盒在初期很有用，它们的壳可以在",
+            "color": "$text"
+          },
+          {
+            "text": "木质宝箱",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中找到，不过，",
+            "color": "$text"
+          },
+          {
+            "text": "收纳袋",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "是一种更好、更可靠的收集战利品的方式。\n",
+            "color": "$text"
+          },
+          {
+            "text": "你旅程的第一个收纳袋由我们免费提供，但我们建议你在进度推进时制作更多。更大的收纳袋、腰带和背包可以在之后研究",
+            "color": "$text"
+          },
+          {
+            "text": "知识\n\n",
+            "color": "$knowledge"
+          },
+          {
+            "text": "收纳袋可以用升级卡进行升级，使其能够携带更多战利品、在你打破宝箱时自动拾取战利品、销毁多余战利品，甚至喂饱你！\n",
+            "color": "$text"
+          },
+          {
+            "text": "收纳袋本身也可以配置过滤器，或留空以容纳任何物品。\n要配置过滤器，打开你的收纳袋并浏览到其中的",
+            "color": "$text"
+          },
+          {
+            "text": "背包设置",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "标签。",
+            "color": "$text"
+          },
+          {
+            "text": "槽位记忆设置",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "标签允许你为你的收纳袋设置过滤器，以白名单或黑名单的方式控制某些内容是否放入其中。这些过滤器也可以保存并之后重新应用到其他收纳袋。我们建议你多尝试这些设置直到理解这个系统。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "完成这个任务会奖励你两个基础升级，它们都可以安装在你的收纳袋中：\n",
+            "color": "$text"
+          },
+          {
+            "text": "拾取升级",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "会让收纳袋自动从地面拾取物品，当宝箱被打破或物品被丢出时\n",
+            "color": "$text"
+          },
+          {
+            "text": "销毁升级",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "可以配置为销毁（删除）任何无法放入收纳袋的多余物品。销毁物品可能听起来很奇怪，但对于改善你的早期战利品收集非常有用。不过这些制作成本很高，所以明智地使用这个任务给的那个！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "灵魂碎片",
+            "color": "$soulchance"
+          },
+          {
+            "text": "，即怪物掉落的物品，最好存放在",
+            "color": "$text"
+          },
+          {
+            "text": "碎片收纳袋",
+            "color": "$soulchance"
+          },
+          {
+            "text": "中。碎片收纳袋只能存放灵魂碎片，但只要它在你的背包中就可以存放无限数量。在黑市购物时也可以将它留在背包中，无需手动计算灵魂碎片，这是任何猎人的必备品！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n制作一个碎片收纳袋",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/black_market2",
+      "targetId": "the_vault:shard_pouch",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "sophisticatedbackpacks:backpack",
+            "amount": 1
+          },
+          {
+            "item": "sophisticatedbackpacks:pickup_upgrade",
+            "amount": 1
+          },
+          {
+            "item": "sophisticatedbackpacks:void_upgrade",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "coin_pouch",
+      "name": "钱袋",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "存放你的",
+            "color": "$text"
+          },
+          {
+            "text": "铜币",
+            "color": "$bronze"
+          },
+          {
+            "text": "、",
+            "color": "$text"
+          },
+          {
+            "text": "银币",
+            "color": "$common"
+          },
+          {
+            "text": "、",
+            "color": "$text"
+          },
+          {
+            "text": "金币",
+            "color": "$gold"
+          },
+          {
+            "text": "和",
+            "color": "$text"
+          },
+          {
+            "text": "铂金币",
+            "color": "$platinum"
+          },
+          {
+            "text": "的最佳方式是获取一个",
+            "color": "$text"
+          },
+          {
+            "text": "钱袋",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "钱袋",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "是一个",
+            "color": "$text"
+          },
+          {
+            "text": "灵魂绑定",
+            "color": "$soulchance"
+          },
+          {
+            "text": "物品，你把它放在背包中。即使你死亡它也会保留在那里，它可以容纳无限数量的",
+            "color": "$text"
+          },
+          {
+            "text": "铜币",
+            "color": "$bronze"
+          },
+          {
+            "text": "、",
+            "color": "$text"
+          },
+          {
+            "text": "银币",
+            "color": "$common"
+          },
+          {
+            "text": "、",
+            "color": "$text"
+          },
+          {
+            "text": "金币",
+            "color": "$gold"
+          },
+          {
+            "text": "和",
+            "color": "$text"
+          },
+          {
+            "text": "铂金币",
+            "color": "$platinum"
+          },
+          {
+            "text": "。它会自动在它们之间转换，而且",
+            "color": "$text"
+          },
+          {
+            "text": "宝库猎人",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中所有的工作站都可以直接从中读取——无需微观管理你的物品！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "钱袋",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "的另一个出色功能是，只要它不在允许货币进入白名单的",
+            "color": "$text"
+          },
+          {
+            "text": "背包",
+            "color": "$blocks"
+          },
+          {
+            "text": "之后，它就会自动拾取你收集到的任何货币。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个钱袋",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/coin_pouch",
+      "targetId": "the_vault:coin_pouch",
+      "targetProgress": 1.0,
+      "unlockedBy": "shard_pouch",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_platinum",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:chromatic_steel_ingot",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "complete_bounty",
+      "name": "赏金猎人",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "完成赏金是获取额外战利品的好方法，也能给你一个明确的目标。你首先需要制作一个赏金桌，然后右键点击与之互动。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n制作一个赏金桌",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/bounty_table",
+      "targetId": "the_vault:bounty_block",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:bounty_pearl",
+            "amount": 10
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "bounty_complete",
+      "id": "complete_bounty2",
+      "name": "赏金与奖励",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "在赏金桌内，你可以通过点击一个可用的赏金并点击激活来选择赏金。完成赏金后，你可以回到桌子领取你的奖励。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n完成一个赏金",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/bounty",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "complete_bounty",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_iron_ingot",
+            "amount": 32
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "animal_pens",
+      "name": "动物围栏",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "大规模管理动物可能很困难，而且在",
+            "color": "$text"
+          },
+          {
+            "text": "Minecraft",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中会造成大量卡顿。这个问题通过使用",
+            "color": "$text"
+          },
+          {
+            "text": "动物围栏",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "来解决。这些可以制作，并且通过使用",
+            "color": "$text"
+          },
+          {
+            "text": "动物罐",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，可以在一个围栏中饲养和繁殖无限数量的同一种动物！这大大减少了卡顿，使动物不仅可以可爱地放在你的架子上，还易于管理！\n\n放置一个",
+            "color": "$text"
+          },
+          {
+            "text": "动物围栏",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "后，用",
+            "color": "$text"
+          },
+          {
+            "text": "动物罐",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "收集尽可能多的同一种动物。游戏中所有被动的、可繁殖的动物都可以收集。然后只需右键点击围栏上的罐子，让它成为它们的家。\n\n如果你有至少2只动物，你可以用它们的繁殖物品来繁殖动物——例如对牛使用",
+            "color": "$text"
+          },
+          {
+            "text": "小麦",
+            "color": "$gold"
+          },
+          {
+            "text": "。\n\n最后，可以用你的",
+            "color": "$text"
+          },
+          {
+            "text": "剑",
+            "color": "$damage"
+          },
+          {
+            "text": "杀死动物以获取它们的掉落物。",
+            "color": "$text"
+          },
+          {
+            "text": "抢夺",
+            "color": "$fortune"
+          },
+          {
+            "text": "附魔在这里也有效，可以增加你的产出。一些动物有特殊功能——例如，你可以用",
+            "color": "$text"
+          },
+          {
+            "text": "桶",
+            "color": "$blocks"
+          },
+          {
+            "text": "在围栏中",
+            "color": "$text"
+          },
+          {
+            "text": "挤牛奶",
+            "color": "$heal"
+          },
+          {
+            "text": "，或者",
+            "color": "$text"
+          },
+          {
+            "text": "剪蜜蜂",
+            "color": "$yellow"
+          },
+          {
+            "text": "获取蜜脾。按住",
+            "color": "$text"
+          },
+          {
+            "text": "蹲下",
+            "color": "$cooldown"
+          },
+          {
+            "text": "键同时看着",
+            "color": "$text"
+          },
+          {
+            "text": "动物围栏",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，你可以看到关于该围栏的更多信息。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个动物围栏",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/animal_pen",
+      "targetId": "the_vault:animal_pen",
+      "targetProgress": 1.0,
+      "unlockedBy": "enter_vault",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:animal_jar",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:animal_jar",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:animal_pen",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "tool_station",
+      "name": "工具站",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "工具站可以用来制作工具，显著提升你在宝库中的体验。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n（大多数宝库工作站在被破坏时会保留其物品栏）",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个工具站",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/station",
+      "targetId": "the_vault:tool_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "enter_vault",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gemstone",
+            "amount": 2
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "forge_gear",
+      "id": "craft_tool",
+      "name": "宝库工具",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "宝库工具是原版工具的升级版。这些工具可以用宝石进行修改，为工具添加新的亲和力和特性。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n亲和力可以让你以显著更快的速度破坏宝箱/钱币，使你能够立即采集除木质宝箱以外的所有钱币和宝箱。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n还有一些宝石可以改变工具的功能，使其包含另一种工具的功能。例如，你可以在镐上放一颗挖掘宝石来创建一把锄镐，它既能像镐一样快速开采，又能像铲一样快速挖掘！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n还有更多能显著增强你工具的修饰词：",
+            "color": "$text"
+          },
+          {
+            "text": "\n物品稀有度",
+            "color": "#E5B819"
+          },
+          {
+            "text": "和",
+            "color": "$text"
+          },
+          {
+            "text": "物品数量",
+            "color": "#E88A12"
+          },
+          {
+            "text": "都能增强你的工具获取更多战利品的能力。",
+            "color": "$text"
+          },
+          {
+            "text": "\n陷阱拆除几率",
+            "color": "#8143FF"
+          },
+          {
+            "text": "有几率拆除宝库内的陷阱宝箱。",
+            "color": "$text"
+          },
+          {
+            "text": "\n采掘速度",
+            "color": "#48BAF8"
+          },
+          {
+            "text": "增加你工具的基础采掘速度！",
+            "color": "$text"
+          },
+          {
+            "text": "\n丰饶",
+            "color": "#F74780"
+          },
+          {
+            "text": "为你在宝库内采集的宝库矿石增加翻倍产出的几率！与精准采集和时运兼容。",
+            "color": "$text"
+          },
+          {
+            "text": "\n耐久度",
+            "color": "#DFD0FE"
+          },
+          {
+            "text": "增加工具的基础耐久度",
+            "color": "$text"
+          },
+          {
+            "text": "\n粉碎",
+            "color": "#73B373"
+          },
+          {
+            "text": "和",
+            "color": "$text"
+          },
+          {
+            "text": "熔炼",
+            "color": "#FF4500"
+          },
+          {
+            "text": "都会改变工具使其具有特殊互动。粉碎作为基于工具的替代品来粉碎/破碎处理采集方块的产出。熔炼则会将采集方块的产出进行烧炼！",
+            "color": "$text"
+          },
+          {
+            "text": "\n锤击",
+            "color": "#25d4A5"
+          },
+          {
+            "text": "可以应用到锤子上以增加其采掘范围",
+            "color": "$text"
+          },
+          {
+            "text": "\n灵魂绑定",
+            "color": "#9664FD"
+          },
+          {
+            "text": "使工具即使在死亡后也能保留在你的背包中！",
+            "color": "$text"
+          },
+          {
+            "text": "\n原版不朽",
+            "color": "#AF8DC3"
+          },
+          {
+            "text": "为你的工具在宝库外使用时增加不消耗耐久度的几率。达到100%时会使你的工具不可破坏！",
+            "color": "$text"
+          },
+          {
+            "text": "\n触及距离",
+            "color": "#F9B37F"
+          },
+          {
+            "text": "增加玩家与方块互动的距离。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n制作一把幻彩铁镐",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/tool",
+      "targetId": "the_vault:tool/pick/chromatic_iron_ingot",
+      "targetProgress": 1.0,
+      "unlockedBy": "tool_station",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;3591402060363627150L,2130563721701514760L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,2196334573319662592L,-6834473908914065246L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;8807676962843960878L,-1018090581902778908L,2398483460923590697L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-7164678727146624000L,-6834473908914083200L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;-4246674546207997586L,469804410667479720L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,1749915260256562176L,-6834473908914085726L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;9040600318283653614L,-2646425694881105473L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617703201862843645L,-6032128973979210752L,-6834473908914079292L,1099511627698L,32768L,65536L]}"
+          },
+          {
+            "item": "the_vault:jewel",
+            "nbt": "{vaultGearData:[L;1437378485525153694L,-4161882800610591095L,2398483460923590699L,7301343536245727237L,5575674136L,23103591157858304L,324563159483502678L,-8640993352180625592L,3132658643786425171L,661424963584L,423311976693760L,5788814723563913216L,5980992884900975665L,-281474976377438L,36028797019029503L,72057594037927936L,-6617707599909354749L,1330939757422750720L,-348445744039196665L,268435455L,8L,16L]}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "apply_jewel",
+      "name": "工具上的宝石",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "宝石镶嵌器使你将宝石应用到工具上变得前所未有的简单，让你能够轻松看到工具的最终效果。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n宝石镶嵌器的物品栏分三个部分：\n",
+            "color": "$text"
+          },
+          {
+            "text": "左侧",
+            "color": "$manaCost"
+          },
+          {
+            "text": "是你放置宝石的地方，显示如果将它们放置在你的工具上的总效果。\n",
+            "color": "$text"
+          },
+          {
+            "text": "中间",
+            "color": "$manaCost"
+          },
+          {
+            "text": "是你放置工具的地方，也可以看到组合工具类型宝石（如挖掘或劈砍）的视觉输出。\n最后，",
+            "color": "$text"
+          },
+          {
+            "text": "右侧",
+            "color": "$manaCost"
+          },
+          {
+            "text": "将显示使用左侧放置的宝石后更新的属性，当你将宝石放入镶嵌器时会自动计算容量以及所有你的前缀和后缀",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n每颗宝石的大小固定为",
+            "color": "$text"
+          },
+          {
+            "text": "10",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，确保它只使用你工具",
+            "color": "$text"
+          },
+          {
+            "text": "容量",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "的一小部分。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个宝石镶嵌器",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/apply_jewel",
+      "targetId": "the_vault:vault_jewel_application_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_tool",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:chromatic_steel_ingot",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "jewel_crafting",
+      "name": "制作宝石",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "宝石制作台允许你制作各种各样的宝石，这些宝石可以应用到你的工具上以增强其能力。这些宝石都有固定大小。并非所有词缀都可以制作，所以你仍然需要找到其余的！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个宝石制作台",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/jewel_cutting",
+      "targetId": "the_vault:jewel_crafting_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_tool",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:silver_scrap",
+            "amount": 512
+          },
+          {
+            "item": "the_vault:gemstone",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "level_up",
+      "id": "level_five",
+      "name": "专精",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "专精通过花费专精点来获得，专精点每5级获得一次。专精类似于天赋，为玩家提供被动增益，但这些更针对特定的使用场景，例如幸运专精可以为玩家额外增加两级时运，或天使专精允许你制作一个天使方块，在其64格范围内提供创造模式飞行。\n\n在你的游戏过程中共有二十个专精点可以获得，由于它们的实用性，重置它们不像重置技能那样简单，需要使用洗脑器而不是宝库金币。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n达到宝库等级5",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/expertises",
+      "targetId": "the_vault:5",
+      "targetProgress": 1.0,
+      "unlockedBy": "apply_jewel",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "vault_forge",
+      "name": "锻造装备",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "宝库锻造台允许你使用与玩家等级挂钩的精通度来制作强大的装备。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n精通度通过在锻造台中献祭宝库残片来提升，它会影响制作潜力、稀有度、耐久度、修复槽位、灵魂绑定几率和高级修饰词几率。高级修饰词是比该装备等级最高级别修饰词还高一级的修饰词。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n制作装备不会消耗精通度，所以你可以继续制作而不会失去进度。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n制作的主要材料消耗是宝库合金，该系统的平衡使得装备制作特别强大，尤其是在前期。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n要批量制作，按住Shift键制作可以将制作好的物品直接发送到你的背包。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个宝库锻造台",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/forge",
+      "targetId": "the_vault:vault_forge",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_alloy",
+            "amount": 9
+          },
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 3
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "forge_gear",
+      "id": "gear_forge",
+      "name": "磁铁",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "磁铁能吸取玩家周围范围内的战利品！它们与亲和力/在宝库内打破宝箱的配合非常好，可以显著加快你的搜刮速度。磁铁也有可以应用的修饰词来增强其效果。\n\n要装备磁铁，按下你背包中头盔槽位旁边的饰品按钮，然后将磁铁放入腰带槽位！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n在宝库锻造台中锻造一个磁铁",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/magnet",
+      "targetId": "the_vault:magnet",
+      "targetProgress": 1.0,
+      "unlockedBy": "vault_forge",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_alloy",
+            "amount": 9
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "artisan_table",
+      "name": "工匠站修改",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "工匠站可以用来进一步修改和创建适合某种搭配风格的装备。界面有宝库镀层、宝库铜、各种不同功能的聚焦和你的宝库装备的槽位。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个工匠站",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/artisan",
+      "targetId": "the_vault:vault_artisan_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "gear_forge",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:wild_focus",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "modify_gear",
+      "id": "wild_focus",
+      "name": "重铸装备修饰词",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "将宝库铜、宝库镀层和狂野聚焦放入工匠站将允许你重铸装备的所有修饰词。点击重铸按钮将为你的装备/武器应用新的修饰词。这是创建适合你搭配风格的装备的起始步骤。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n用狂野聚焦重铸一件装备",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/reroll",
+      "targetId": "the_vault:reforge_all",
+      "targetProgress": 1.0,
+      "unlockedBy": "artisan_table",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_plating",
+            "amount": 12
+          },
+          {
+            "item": "the_vault:vault_bronze",
+            "amount": 32
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_recycler",
+      "name": "分解宝库装备",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "宝库回收站用于将旧的和不需要的装备分解为宝库残片、狂野聚焦和切面聚焦。它还可以用于分解和回收宝石、磁铁和铭文！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个宝库回收站",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/recycler",
+      "targetId": "the_vault:vault_recycler",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_scrap",
+            "amount": 16
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "alchemystation",
+      "name": "炼金桌",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "",
+            "color": "$text"
+          },
+          {
+            "text": "炼金桌",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "是一个非常有用的工作台。它允许你修改你的",
+            "color": "$text"
+          },
+          {
+            "text": "宝库药水",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，为你的充能添加",
+            "color": "$text"
+          },
+          {
+            "text": "次要效果",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "！\n\n一些",
+            "color": "$text"
+          },
+          {
+            "text": "次要效果",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "需要解锁，这个你以后会学到，但有一些现在就",
+            "color": "$text"
+          },
+          {
+            "text": "可以使用",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "了。\n每瓶药水可以添加一个效果，其强度会随着你药水的基础",
+            "color": "$text"
+          },
+          {
+            "text": "等级",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "而",
+            "color": "$text"
+          },
+          {
+            "text": "提升",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个炼金桌",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/alchemytable",
+      "targetId": "the_vault:alchemy_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 8
+          },
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 8
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "level_up",
+      "id": "level_ten",
+      "name": "宝库目标",
+      "descriptionData": {
+        "description": [
+        {
+          "text": "随着你升级，宝库会适应并向你展示新的、更具挑战性的目标；这些也可以通过制作封印并在铁砧中将其应用到你的水晶上来添加。\n\n10级标志着点燃火盆目标随机出现在宝库中。\n20级标志着拾荒者目标随机出现在宝库中。\n50级标志着宾果和追猎符文目标随机出现在宝库中。",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n达到宝库等级10",
+          "color": "$heal"
+        }
+        ]
+      },
+      "icon": "the_vault:gui/quests/ten",
+      "targetId": "the_vault:10",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_five",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_scout"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "seals",
+      "name": "选择你自己的目标",
+      "descriptionData": {
+        "description": [
+        {
+          "text": "封印是特别方便的物品，因为它们让你设置宝库的目标。这样即使你等级较低，也能随时游玩任何目标。要使用封印，在水晶工作台中将其应用到水晶上",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n获取一个空白封印",
+          "color": "$heal"
+        }
+
+        ]
+      },
+      "icon": "the_vault:gui/quests/empty_seal",
+      "targetId": "the_vault:crystal_seal_empty",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_empty"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_sage_seal",
+      "name": "制作灵药封印",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "",
+            "color": "$text"
+          },
+          {
+            "text": "贤者",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "的封印将",
+            "color": "$text"
+          },
+          {
+            "text": "灵药",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "目标应用到水晶上。制作它需要一个空白封印和一些宝库材料",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n灵药目标要求你通过搜刮宝箱、击杀怪物或开采矿石来获取一定数量的灵药。一旦你填满灵药条，找到磁石即可退出宝库",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n此目标的推荐等级为0，且在该等级之后也会随机出现在宝库中。",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\n获取一个贤者封印",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/sage",
+      "targetId": "the_vault:crystal_seal_sage",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_sage",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_brazier_seal",
+      "name": "制作火盆封印",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "",
+            "color": "$text"
+          },
+          {
+            "text": "斥候",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "的封印将",
+            "color": "$text"
+          },
+          {
+            "text": "点燃火盆",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "目标应用到水晶上。制作它需要一个空白封印和一些宝库材料",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n点燃火盆目标要求你找到火盆并点燃它们。这些火盆会附带正面和负面效果，所以请谨慎选择。在你点燃所有火盆后，你可以选择通过宝库传送门离开或继续掠夺更多火盆以获取额外战利品！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n此目标的推荐等级为10+，且在该等级之后也会随机出现在宝库中。",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\n获取一个斥候封印",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/scout",
+      "targetId": "the_vault:crystal_seal_scout",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_scout",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_hunter_seal",
+      "name": "制作拾荒封印",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "",
+            "color": "$text"
+          },
+          {
+            "text": "猎手",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "的封印将",
+            "color": "$text"
+          },
+          {
+            "text": "拾荒者",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "目标应用到水晶上。制作它需要一个空白封印和一些宝库材料",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n我们也建议你专门为拾荒物品制作一个额外的收纳袋，通常称为",
+            "color": "$text"
+          },
+          {
+            "text": "拾荒收纳袋",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。这将使整理你的拾荒物品更加容易！另一个需要知道的好消息是，当你退出宝库时，拾荒物品会被",
+            "color": "$text"
+          },
+          {
+            "text": "移除",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。拾荒物品仅限于那个宝库！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n拾荒者目标要求你找到屏幕顶部显示的特定物品列表。你可以通过查看物品下方的图标来了解在哪里可以获得这些物品。收集完所有物品后，将它们存入拾荒祭坛！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n此目标的推荐等级为20+，且在该等级之后也会随机出现在宝库中。",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\n获取一个猎手封印",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/hunter",
+      "targetId": "the_vault:crystal_seal_hunter",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_hunter",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_Prophet_seal",
+      "name": "制作宾果封印",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "",
+            "color": "$text"
+          },
+          {
+            "text": "先知",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "的封印将",
+            "color": "$text"
+          },
+          {
+            "text": "宾果",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "目标应用到水晶上。制作它需要一个空白封印和一些宝库材料",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n宾果目标要求你执行宾果棋盘上的任务并尝试完成一条线。这个目标的奖励会随着完成的线数而增加。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n90级及以上的玩家将拥有5x5的网格，而不是4x4的网格。",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\n宾果目标修饰词：",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n迅速：",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "非常快速地执行任务，否则它会重置。例如：在6秒内迅速搜刮10个木质宝箱",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n完美：",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "在不受到任何伤害（包括中毒和坠落伤害）的情况下执行任务",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n无声：",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "在执行任务时不对任何怪物造成伤害",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n原始：",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "在执行任务时不使用任何法力",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n连击：",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "在时间限制内执行一系列任务，当你完成第一个任务时它会切换到下一个",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n此目标的推荐等级为50+，且在该等级之后也会随机出现在宝库中。",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\n获取一个先知封印",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/prophet",
+      "targetId": "the_vault:crystal_seal_prophet",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_prophet",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_guardian_seal",
+      "name": "制作追猎符文封印",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "",
+            "color": "$text"
+          },
+          {
+            "text": "刽子手",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "的封印将",
+            "color": "$text"
+          },
+          {
+            "text": "追猎符文",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "目标应用到水晶上。制作它需要一个空白封印和一些宝库材料",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n在追猎符文中，你的目标是找到符文并将它们放置到符文首领柱上。每个符文可以有不同的修饰词和不同的奖励物品。一旦你插入了正确数量的符文，房间将关闭，首领将带着你选择的修饰词生成。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n每个符文的奖励物品将被添加到你的完成宝箱中。其中一些物品可以包括装备、装备聚焦和铭文",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n此目标的推荐等级为50+，且在该等级之后也会随机出现在宝库中。",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "\n\n获取一个刽子手封印",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/executioner",
+      "targetId": "the_vault:crystal_seal_executioner",
+      "targetProgress": 1.0,
+      "unlockedBy": "seals",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_executioner",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "regret",
+      "name": "后悔决定",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "在你的游戏过程中，选择哪些技能和天赋可能会很有压力，但是别担心！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "宝库猎人有一个使用",
+            "color": "$text"
+          },
+          {
+            "text": "宝库金币",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "来后悔你的决定的机制。如果你有足够的",
+            "color": "$text"
+          },
+          {
+            "text": "宝库金币",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "在你的背包中，你可以从",
+            "color": "$text"
+          },
+          {
+            "text": "技能树",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中选择",
+            "color": "$text"
+          },
+          {
+            "text": "遗忘",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "请注意，这之前是通过",
+            "color": "$text"
+          },
+          {
+            "text": "后悔宝珠",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "来完成的，那个机制已被移除。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "在宝库内无法进行后悔操作。",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/regretorb",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "craft_black_market",
+      "name": "黑市商品",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "通过黑市，你可以使用灵魂碎片从每2小时刷新的物品池中购买，或者从所有可通过购买获得的物品的随机池中购买。黑市中有各种稀有物品可以抽取，所以请经常查看！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n与黑市互动",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/black_market",
+      "targetId": "the_vault:black_market",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:soul_shard",
+            "amount": 256
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "soul_diffuser",
+      "name": "灵魂扩散器",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "灵魂扩散器将宝库物品分解为灵魂粉末，然后可以转化为灵魂碎片，用作黑市的货币。这让你可以自行决定什么是有价值的，什么值得分解！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个宝库灵魂扩散器",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/diffuser",
+      "targetId": "the_vault:vault_diffuser",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:soul_shard",
+            "amount": 256
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "identification_stand",
+      "name": "鉴定台",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "鉴定台是一个方块，右键点击时将立即",
+            "color": "$text"
+          },
+          {
+            "text": "鉴定",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "你背包中所有未鉴定的宝库装备。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个鉴定台",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/identificationstand",
+      "targetId": "the_vault:identification_stand",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:helmet",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:chestplate",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:leggings",
+            "nbt": ""
+          },
+          {
+            "item": "the_vault:boots",
+            "nbt": ""
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "craft_knowledge_star",
+      "name": "使用知识",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "获取和使用知识之星是宝库猎人进度中的关键环节之一，因为它是解锁新模组的核心组件。按下'H'键并在顶部选择研究标签，将显示你可以解锁的所有内容。请注意，购买其中一些将增加该解锁组中后续解锁的价格。\n\n这个任务的奖励是一个模组箱！使用时，模组箱会奖励你已解锁模组中的一个随机物品",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n制作一颗知识之星",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/knowledge",
+      "targetId": "the_vault:knowledge_star",
+      "targetProgress": 1.0,
+      "unlockedBy": "level_ten",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:mod_box"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "level_up",
+      "id": "reach_level_20",
+      "name": "20级变化",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "达到20级标志着宝库猎人教程阶段的结束！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "除非你在玩",
+            "color": "$text"
+          },
+          {
+            "text": "休闲模式",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，否则在宝库中死亡不再保留你的物品，你将在",
+            "color": "$text"
+          },
+          {
+            "text": "灵魂提取器",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "任务中了解更多。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "这个等级有很多新内容，你现在会在宝库内找到",
+            "color": "$text"
+          },
+          {
+            "text": "贩卖门",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "和",
+            "color": "$text"
+          },
+          {
+            "text": "地牢门",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，以及额外的战利品和新怪物！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "不过别担心，你才刚刚开始！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n达到宝库等级20",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/twenty",
+      "targetId": "the_vault:20",
+      "targetProgress": 1.0,
+      "unlockedBy": "craft_knowledge_star",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:knowledge_star"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "burgers",
+      "name": "额外经验",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "食用",
+            "color": "$text"
+          },
+          {
+            "text": "宝库汉堡",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "会给你宝库经验。\n宝库汉堡可以在",
+            "color": "$text"
+          },
+          {
+            "text": "黑市",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中稀有地找到，也可以在",
+            "color": "$text"
+          },
+          {
+            "text": "贩卖门",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中找到。它们有不同的大小，越丰盛的汉堡给予的经验越多。\n虽然额外经验有时很好用，但请自行承担风险使用，因为你可能会超过你当前装备的等级！",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/burger",
+      "targetId": "the_vault:plain_burger",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:plain_burger",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:cheese_burger",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:deluxe_cheese_burger",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "crystal_workbench",
+      "name": "修改宝库水晶",
+      "descriptionData": {
+        "description": [
+            {
+              "text": "宝库水晶可以被",
+              "color": "$text"
+            },
+            {
+              "text": "修改",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "以适应你当前的需求或偏好。水晶可以进行多种不同的修改。\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "增强",
+              "color": "$titleLine"
+            },
+            {
+              "text": "设置宝库的主题，这些偶尔可以在完成宝箱中找到。\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "顶石",
+              "color": "$titleLine"
+            },
+            {
+              "text": "根据使用的顶石给宝库一个增益，然后使水晶不可修改\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "催化剂",
+              "color": "$titleLine"
+            },
+            {
+              "text": "为宝库添加修饰词，修饰词可以例如增加特定宝箱的数量，同时通过添加随机负面修饰词（例如增强宝库内怪物能力的修饰词）来使宝库稍微困难一些。\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "铭文",
+              "color": "$titleLine"
+            },
+            {
+              "text": "为每个添加的铭文在宝库内某处添加一个特定房间。\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "通过",
+              "color": "$text"
+            },
+            {
+              "text": "修改",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "水晶，你可以",
+              "color": "$text"
+            },
+            {
+              "text": "定制",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "宝库以符合你的喜好。每个水晶都有一个",
+              "color": "$text"
+            },
+            {
+              "text": "容量指示器",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "，你的等级越高，水晶的容量就越大。你可以超过水晶的容量，但每次超过都会为宝库添加一个",
+              "color": "$text"
+            },
+            {
+              "text": "诅咒",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "！\n\n所有对水晶的修改都在",
+              "color": "$text"
+            },
+            {
+              "text": "水晶工作台",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "中完成！",
+              "color": "$text"
+            },
+        {
+          "text": "\n\n制作一个水晶工作台",
+          "color": "$heal"
+        }
+        ]
+      },
+      "icon": "the_vault:gui/quests/crystalworkbench",
+      "targetId": "the_vault:crystal_workbench",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+            {
+              "item": "the_vault:augment",
+              "nbt": "{\"theme\":\"the_vault:classic_vault_cave_geode\"}",
+              "amount": 1
+            },
+            {
+              "item": "the_vault:phoenix_feather",
+              "amount": 1
+            }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "apply_catalyst",
+      "name": "催化剂",
+      "descriptionData": {
+        "description": [
+            {
+              "text": "在你的宝库水晶上使用",
+              "color": "$text"
+            },
+            {
+              "text": "催化剂",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "可以大幅提升你想要的战利品！\n",
+              "color": "$text"
+            },
+            {
+              "text": "催化剂",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "为宝库添加",
+              "color": "$text"
+            },
+            {
+              "text": "修饰词",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "，",
+              "color": "$text"
+            },
+            {
+              "text": "修饰词",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "可以例如增加特定宝箱的数量，同时通过添加随机负面修饰词（例如增强宝库内怪物力量的修饰词）来使宝库稍微困难一些。\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "催化剂",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "在",
+              "color": "$text"
+            },
+            {
+              "text": "催化剂注入台",
+              "color": "$titleLine"
+            },
+            {
+              "text": "中制作，使用原材料",
+              "color": "$text"
+            },
+            {
+              "text": "催化剂碎片",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "，可以在",
+              "color": "$text"
+            },
+            {
+              "text": "未修改的宝库",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "中，在",
+              "color": "$text"
+            },
+            {
+              "text": "木质宝箱",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "里找到。\n所有制作的催化剂占用宝库水晶上",
+              "color": "$text"
+            },
+            {
+              "text": "10容量",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "，大小需求较小的催化剂可以稀有地在宝藏室和完成宝箱中找到。\n",
+              "color": "$text"
+            },
+            {
+              "text": "催化剂",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "可以在",
+              "color": "$text"
+            },
+            {
+              "text": "水晶工作台",
+              "color": "$titleLine"
+            },
+            {
+              "text": "中应用到水晶上",
+              "color": "$text"
+            },
+            {
+              "text": "\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "制作一个催化剂注入台",
+              "color": "$heal"
+            }
+
+        ]
+      },
+      "icon": "the_vault:gui/quests/catalyst",
+      "targetId": "the_vault:catalyst_infusion_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "crystal_workbench",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_catalyst_fragment",
+            "amount": 9
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "inscription_table",
+      "name": "铭文",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "在你的宝库水晶上使用",
+            "color": "$text"
+          },
+          {
+            "text": "铭文",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "可以给你很多优势，因为它允许你创建一个",
+            "color": "$text"
+          },
+          {
+            "text": "包含特定房间",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "的宝库！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "铭文",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "可以在",
+            "color": "$text"
+          },
+          {
+            "text": "铭文台",
+            "color": "$titleLine"
+          },
+          {
+            "text": "中制作，使用原材料",
+            "color": "$text"
+          },
+          {
+            "text": "铭文碎片",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，可以在",
+            "color": "$text"
+          },
+          {
+            "text": "木质宝箱",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中找到\n制作的铭文占用水晶的",
+            "color": "$text"
+          },
+          {
+            "text": "10容量",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，大小需求较小的铭文可以稀有地在活体宝箱、宝藏室和完成宝箱中找到。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "铭文",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "可以在",
+            "color": "$text"
+          },
+          {
+            "text": "水晶工作台",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中应用到水晶上，当水晶上至少有1个铭文时，宝库将在起始房间",
+            "color": "$text"
+          },
+          {
+            "text": "渲染一张地图",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，显示在哪里可以找到那个房间。花时间记住到达房间的路线，然后出发去找它们！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "制作一个铭文台",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/inscriptiontable",
+      "targetId": "the_vault:inscription_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "crystal_workbench",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:inscription_piece",
+            "amount": 32
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "mining",
+      "id": "temporal_shards",
+      "name": "水晶柱与时空遗物",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "你可能已经在宝库中遇到了",
+            "color": "$text"
+          },
+          {
+            "text": "水晶柱",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。这些强大的浮动水晶，右键点击时会根据水晶柱类型给你一个有限的增益。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "然而，你可以选择摧毁水晶柱及其力量，而不是消耗它，用你的工具（挖掘）来破坏它。破坏它需要很长时间，但完成后有小概率获得一个",
+            "color": "$text"
+          },
+          {
+            "text": "时空遗物",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。这是一个非常强大的物品，鉴定后会给你一个消耗品，在使用它的宝库中添加一个",
+            "color": "$text"
+          },
+          {
+            "text": "时空修饰词",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "！\n\n时空修饰词非常强大，持续5分钟，正确使用时可以完全改变你的宝库或当前目标的结果！",
+            "color": "$text"
+          },
+          {
+            "text": "！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "破坏一个水晶柱以获取时空遗物的机会",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/temporal_shard",
+      "targetId": "the_vault:pylon",
+      "targetProgress": 1,
+      "unlockedBy": "crystal_workbench",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:temporal_shard",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "artifact",
+      "name": "神器",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "每个猎人的目标是完成著名的神器拼图，并与传奇的先驱者战斗！\n",
+            "color": "$text"
+          },
+          {
+            "text": "神器稀有地出现在",
+            "color": "$text"
+          },
+          {
+            "text": "完成宝箱",
+            "color": "$yellow"
+          },
+          {
+            "text": "中，20级之后。完成宝库时等级越高，找到神器的几率就越高。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "共有25个独特的神器可以收集，为了获得进入",
+            "color": "$text"
+          },
+          {
+            "text": "先驱者",
+            "color": "$herald"
+          },
+          {
+            "text": "的资格，你需要收集所有神器！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "",
+            "color": "$text"
+          },
+          {
+            "text": "神器典籍",
+            "color": "$yellow"
+          },
+          {
+            "text": "会在上方显示拼图，神器可以被放置在正确的位置来完成拼图。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "在寻找神器的过程中，你很可能会遇到重复的。这些可以",
+            "color": "$text"
+          },
+          {
+            "text": "丢入火中",
+            "color": "$orange"
+          },
+          {
+            "text": "燃烧成",
+            "color": "$text"
+          },
+          {
+            "text": "神器碎片",
+            "color": "$fragment"
+          },
+          {
+            "text": "，可以用来制作新的神器。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个神器典籍",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/artifact",
+      "targetId": "the_vault:artifact_projector_block",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:unidentified_artifact"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "spirit_extractor",
+      "name": "复活",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "灵魂提取器用于恢复在宝库中丢失的战利品。如果你死了，按住蹲下+右键拾取你的灵魂，然后右键点击提取器上放置它。这将给你一个需要用宝库金币支付的价格来领回你的物品。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个灵魂提取器",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/extractor",
+      "targetId": "the_vault:spirit_extractor",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "trinkets",
+      "name": "饰品",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "20级之后的另一大变化是能够找到饰品！\n这些是可以装备在你的饰品槽中的强大物品。它们有两种不同的颜色，",
+            "color": "$text"
+          },
+          {
+            "text": "蓝色",
+            "color": "$blue"
+          },
+          {
+            "text": "和",
+            "color": "$text"
+          },
+          {
+            "text": "红色",
+            "color": "$red"
+          },
+          {
+            "text": "。你可以同时装备每种颜色各一个，共两个饰品。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "蓝色",
+            "color": "$blue"
+          },
+          {
+            "text": "饰品给你一个其他地方无法获得的功能，例如",
+            "color": "$text"
+          },
+          {
+            "text": "三段跳",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "或",
+            "color": "$text"
+          },
+          {
+            "text": "攀爬墙壁",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "的能力。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "红色",
+            "color": "$red"
+          },
+          {
+            "text": "饰品增强属性，如",
+            "color": "$text"
+          },
+          {
+            "text": "法力回复",
+            "color": "$manaCost"
+          },
+          {
+            "text": "或",
+            "color": "$text"
+          },
+          {
+            "text": "生命值",
+            "color": "$heal"
+          },
+          {
+            "text": "。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "饰品没有耐久度，而是有使用次数或充能。它们可以在宝库外永久使用且无消耗，但每次装备着饰品进入宝库时会消耗一次充能。它们也不能在宝库内取下。\n有一个",
+            "color": "$text"
+          },
+          {
+            "text": "专精",
+            "color": "$expertise"
+          },
+          {
+            "text": "叫做",
+            "color": "$text"
+          },
+          {
+            "text": "饰品师",
+            "color": "$expertise"
+          },
+          {
+            "text": "，在进入宝库时有随机几率不消耗饰品充能。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "一旦你找到一个饰品，它将被永久发现并可以在",
+            "color": "$text"
+          },
+          {
+            "text": "饰品锻造台",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中制作。\n\n制作的饰品总是有12次使用/充能，而搜刮到的饰品随机有20到30次使用/充能。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n你的第一个饰品是阅读这个任务的奖励，希望你能得到喜欢的！如果不喜欢，饰品可以在宝库回收站中分解，会产出其主要材料：",
+            "color": "$text"
+          },
+          {
+            "text": "饰品残片",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n获得饰品残片的几率取决于分解时饰品剩余的使用/充能次数；充满充能的饰品总是会产出残片，而完全耗尽的饰品则永远不会。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/trinket",
+      "targetId": "the_vault:trinket",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:trinket",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "trinket_forge",
+      "name": "饰品锻造台",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "现在你已经发现了一个",
+            "color": "$text"
+          },
+          {
+            "text": "饰品",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，你可以在",
+            "color": "$text"
+          },
+          {
+            "text": "饰品锻造台",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中制作你自己的。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "你需要",
+            "color": "$text"
+          },
+          {
+            "text": "饰品残片",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，可以在",
+            "color": "$text"
+          },
+          {
+            "text": "宝库回收站",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中获取。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "获取一个饰品锻造台",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/trinket_forge",
+      "targetId": "the_vault:trinket_forge",
+      "targetProgress": 1.0,
+      "unlockedBy": "trinkets",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:trinket_scrap",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "vaultrocks",
+      "name": "宝库岩石",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "宝库猎人的世界还拥有神秘的",
+            "color": "$text"
+          },
+          {
+            "text": "特殊宝库岩石",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，有些可以制作，有些只能找到。\n\n这些",
+            "color": "$text"
+          },
+          {
+            "text": "特殊宝库岩石",
+            "color": "$text"
+          },
+          {
+            "text": "可以在",
+            "color": "$text"
+          },
+          {
+            "text": "宝库祭坛",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "上使用来创建一个",
+            "color": "$text"
+          },
+          {
+            "text": "不可修改的特殊宝库水晶",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n\n",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/vaultrock",
+      "targetId": "the_vault:none",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "warden",
+      "name": "守望者的宝库岩石",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "20级之后，在非休闲模式下，在宝库中死亡意味着你要么因买回灵魂而失去金币，要么因不买回灵魂而失去物品。\n\n这有时既可怕又令人沮丧，但是，如果你想在进入宝库前获得一份死亡保险，就制作一个",
+            "color": "$text"
+          },
+          {
+            "text": "守望者的宝库岩石",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n\n用这个特殊岩石创建的水晶赋予你",
+            "color": "$text"
+          },
+          {
+            "text": "来世修饰词",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，在死亡情况下确保你的物品安全。缺点是它也会",
+            "color": "$text"
+          },
+          {
+            "text": "减半所有经验",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "获取量，这在你需要追赶进度时可能反而是好事！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "制作一个守望者的宝库岩石",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/wardenrock",
+      "targetId": "the_vault:wardens_pearl",
+      "targetProgress": 1.0,
+      "unlockedBy": "vaultrocks",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "plunderer",
+      "name": "掠夺者的宝库岩石",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "",
+            "color": "$text"
+          },
+          {
+            "text": "掠夺者的宝库岩石",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "是当你感觉落后于宝库难度曲线时的好选择。它",
+            "color": "$text"
+          },
+          {
+            "text": "增加你获得的战利品数量",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，包括宝库矿石，但",
+            "color": "$text"
+          },
+          {
+            "text": "移除所有经验获取",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n\n如果你不想升级，只想搜刮更多战利品，这将非常好用！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "制作一个掠夺者的宝库岩石",
+            "color": "$heal"
+          }
+        ]
+
+      },
+      "icon": "the_vault:gui/quests/plunderrock",
+      "targetId": "the_vault:plunderer_pearl",
+      "targetProgress": 1.0,
+      "unlockedBy": "vaultrocks",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_diamond",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "vendoors",
+      "name": "贩卖门",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "现在你已经达到20级，你将能够在宝库内找到",
+            "color": "$text"
+          },
+          {
+            "text": "贩卖门",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "！\n\n这些",
+            "color": "$text"
+          },
+          {
+            "text": "深红色门",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "通过空手右键点击打开，里面有3个",
+            "color": "$text"
+          },
+          {
+            "text": "购物展示台",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n\n价格以",
+            "color": "$text"
+          },
+          {
+            "text": "宝库金币",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "支付，所以进入宝库时确保携带一些。游戏会自动合并你背包或收纳袋中的铜币和银币来完成购买。",
+            "color": "$text"
+          },
+          {
+            "text": "讨价还价",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "专精可以帮助降低价格。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "在宝库内打开一扇贩卖门",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/vendoor",
+      "targetId": "the_vault:vendor_door",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 20
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "dungeons",
+      "name": "地牢",
+      "descriptionData": {
+        "description": [
+            {
+              "text": "地牢是宝库内的可怕之地，包含挑战和战利品！\n\n",
+              "color": "$text"
+            },
+            {
+              "text": "地牢门随机出现在宝库内，通过",
+              "color": "$text"
+            },
+            {
+              "text": "右键点击",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "打开。打开后，地牢会宣布其",
+              "color": "$text"
+            },
+            {
+              "text": "难度",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "，从",
+              "color": "$text"
+            },
+            {
+              "text": "普通",
+              "color": "$normal"
+            },
+            {
+              "text": "到",
+              "color": "$text"
+            },
+            {
+              "text": "不可能",
+              "color": "$impossible"
+            },
+            {
+              "text": "。\n\n门上的怪物头颅告诉你守卫地牢的怪物类型。",
+              "color": "$text"
+            },
+            {
+              "text": "地牢有不同的",
+              "color": "$text"
+            },
+            {
+              "text": "大小",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "，地牢越大，战利品越多，在你击败",
+              "color": "$text"
+            },
+            {
+              "text": "地牢冠军",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "后出现",
+              "color": "$text"
+            },
+            {
+              "text": "炼金档案",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "的几率也越高！\n\n如果你幸运的话，你可能会在地牢内找到一个",
+              "color": "$text"
+            },
+            {
+              "text": "宝库地球仪",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "，由一个",
+              "color": "$text"
+            },
+            {
+              "text": "地牢首领",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "守卫。地牢越大，你就越有可能找到地球仪。有几种不同的地球仪可以找到，但任何一个地牢最多只有一个。点击时，",
+              "color": "$text"
+            },
+            {
+              "text": "地球仪",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "将向当前宝库中的所有玩家",
+              "color": "$text"
+            },
+            {
+              "text": "揭示所有房间",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "的给定地球仪类型。\n\n地牢还包含",
+              "color": "$text"
+            },
+            {
+              "text": "一个",
+              "color": "$text"
+            },
+            {
+              "text": "屏障",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "，使地牢怪物无法离开地牢，但别担心你可以穿过这个",
+              "color": "$text"
+            },
+            {
+              "text": "屏障",
+              "color": "$qhighlight"
+            },
+            {
+              "text": "。\n谨慎行事，尊重难度！祝你好运猎人！",
+              "color": "$text"
+            },
+            {
+              "text": "\n\n打开一扇地牢门",
+              "color": "$heal"
+            }
+        ]
+      },
+      "icon": "the_vault:gui/quests/dungeon_quest",
+      "targetId": "the_vault:dungeon_door",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_pog"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "storing_gear",
+      "name": "存储装备",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "衣柜允许你存储一套装备和一个快捷栏，你可以通过界面快速切换。这使得拥有许多不同的搭配变得可能，同时提供更大的便利性。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n与衣柜互动",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/wardrobe",
+      "targetId": "the_vault:wardrobe",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:wardrobe"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "skill_altar",
+      "name": "多种搭配",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "就像衣柜允许存储装备一样，技能祭坛允许存储技能和天赋，这样你可以快速切换不同的搭配！这与衣柜配合使用效果极佳。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n与技能祭坛互动",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/skill_altar",
+      "targetId": "the_vault:skill_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 10
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "transmog",
+      "name": "幻化",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "幻化台允许你将装备幻化为任何已解锁的幻化外观。放入一件装备和一些铜币即可开始浏览幻化！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n与幻化台互动",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/transmog",
+      "targetId": "the_vault:transmog_table",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_bronze",
+            "amount": 64
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "unique_codex",
+      "name": "独特装备",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "独特装备",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "是宝库猎人中令人兴奋的元素！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "独特装备",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "与普通装备不同，不能被修改——但是，它带有独特属性！",
+            "color": "$text"
+          },
+          {
+            "text": "其中一些可以给你的技能全新的用途，而其他的则可以极大地增强你偏好的游玩风格。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "制作",
+            "color": "$text"
+          },
+          {
+            "text": "独特图鉴",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "并开始浏览在哪里可以找到这些令人兴奋的装备，但要注意，有些非常稀有！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n一旦你开始发现独特装备，制作",
+            "color": "$text"
+          },
+          {
+            "text": "独特展示柜",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "来展示它们！这个展示方块会渲染一个穿着你已发现的任何独特装备的玩家，让你可以优雅地欣赏你的收藏。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "制作独特图鉴",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/unique_codex",
+      "targetId": "the_vault:unique_codex",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_20",
+      "reward": {
+        "items": [],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "level_up",
+      "id": "reach_level_40",
+      "name": "40级！",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "达到40级意味着你已经引起了宝库诸神的注意！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "诸神既非善也非恶，你可以选择完全忽略他们。然而，他们可能值得你花时间了解！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n达到宝库等级40",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/level40",
+      "targetId": "the_vault:40",
+      "targetProgress": 1.0,
+      "unlockedBy": "transmog",
+      "reward": {
+        "items": [
+            {
+              "item": "the_vault:gem_echo",
+              "amount": 4
+            },
+            {
+              "item": "the_vault:mod_box",
+              "amount": 2
+            },
+            {
+              "item": "the_vault:sour_orange",
+              "amount": 1
+            },
+            {
+              "item": "minecraft:bamboo",
+              "amount": 12
+            }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "charms",
+      "name": "诸神",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "是时候让你了解宝库诸神了！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "既非善也非恶，他们是；\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "伊多娜",
+            "color": "$idona"
+          },
+          {
+            "text": "\n战斗之神\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "特诺斯",
+            "color": "$tenos"
+          },
+          {
+            "text": "\n知识之神\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "维拉拉",
+            "color": "$velara"
+          },
+          {
+            "text": "\n生命之神\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "温达尔",
+            "color": "$wendarr"
+          },
+          {
+            "text": "\n时间之神\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "现在你已经达到40级，你可能会非常稀有地遇到",
+            "color": "$text"
+          },
+          {
+            "text": "神之护符",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。它们可以在",
+            "color": "$text"
+          },
+          {
+            "text": "活体宝箱",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "和",
+            "color": "$text"
+          },
+          {
+            "text": "活体地牢桶",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中找到。它们不能制作也不能修改，但可以在回收站中回收为宝库残片。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "护符可以装备在你的",
+            "color": "$text"
+          },
+          {
+            "text": "护符槽",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中，像饰品一样，有使用次数直到耗尽。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "根据护符绑定的神灵，它们可以添加有价值的属性和",
+            "color": "$text"
+          },
+          {
+            "text": "时空修饰词",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n\n这些属性的强度基于你与其绑定的神灵的",
+            "color": "$text"
+          },
+          {
+            "text": "声望",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "！声望越高，属性越强大。\n\n在下一个任务中你可以了解如何提高你的神灵声望，但现在，为了让你有个好的开始，这里有一个免费的神之护符供你鉴定！",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/gods_quest_x",
+      "targetId": "the_vault:charms",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_40",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_god_charm"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "god_altars",
+      "name": "神之祭坛与声望",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "神之祭坛将在40级之后开始出现在宝库中。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "祭坛代表四位神灵中的一位。\n",
+            "color": "$text"
+          },
+          {
+            "text": "在宝库内与这些祭坛之一互动将给你一个来自该神灵的挑战。完成任务将给你一个",
+            "color": "$text"
+          },
+          {
+            "text": "恩惠",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，在宝库中大幅增强你，更重要的是，为你赢得与该神灵的",
+            "color": "$text"
+          },
+          {
+            "text": "声望点",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。但要注意！失败的挑战将",
+            "color": "$text"
+          },
+          {
+            "text": "扣除一个声望点",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "每位神灵最多可以达到",
+            "color": "$text"
+          },
+          {
+            "text": "50",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "声望点，你可以在统计页面追踪进度。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n与每位神灵的声望越高，他们的护符就越强大！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n与神之祭坛互动",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/god_altar",
+      "targetId": "the_vault:god_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "charms",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_pog"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "level_up",
+      "id": "reach_level_50",
+      "name": "遗忘专精",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "达到宝库等级50标志着等级的中点，这意味着你目前已经拥有了总专精点的一半。洗脑器允许你完全重置你当前分配的专精点，以防你改变主意并决定其他专精可能更适合你的需求！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n达到宝库等级50",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/level50",
+      "targetId": "the_vault:50",
+      "targetProgress": 1.0,
+      "unlockedBy": "god_altars",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:neuralizer"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "checkmark",
+      "id": "card_system",
+      "name": "卡牌系统",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "卡牌系统让你可以使用",
+            "color": "$text"
+          },
+          {
+            "text": "卡牌",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "来增强你的属性和技能。卡牌有多种不同类型，通过",
+            "color": "$text"
+          },
+          {
+            "text": "卡组",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "来装备。每个卡组有自己的布局和插槽限制。",
+            "color": "$text"
+          },
+          {
+            "text": "核心",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "提供额外的强度和自定义。\n\n除了卡牌、卡组和核心之外，还有几个与该系统相关的新工作站。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "卡组工作站",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "用于制作卡组和低级核心。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "卡牌收藏夹",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "可以用来存储卡牌和构建卡组。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "卡牌升级站",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "可以用来升级分级卡牌使其更强。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n要了解卡牌系统的每个部分，请查看其他与卡牌相关的任务。",
+            "color": "$text"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/card_table",
+      "targetId": "the_vault:deck_station",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_pog",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "obtain_card",
+      "name": "卡牌类型",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "卡牌从补充包中获得，补充包可以在完成宝箱中找到或从黑市购买。\n\n它们有四种颜色，每张卡牌的用途取决于你收到的具体卡牌。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n属性包：",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "这个包含属性卡牌。它们提升玩家的基本属性，如",
+            "color": "$text"
+          },
+          {
+            "text": "生命值",
+            "color": "$health"
+          },
+          {
+            "text": "、",
+            "color": "$text"
+          },
+          {
+            "text": "护甲",
+            "color": "$armor"
+          },
+          {
+            "text": "或",
+            "color": "$text"
+          },
+          {
+            "text": "攻击伤害",
+            "color": "$damage"
+          },
+          {
+            "text": "。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n资源包：",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "这个包含资源卡牌。每张卡牌有一个资源和一个条件。完成宝库并满足条件后，该资源将被添加到你的完成宝箱中。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n奥术包：",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "这个包含奥术卡牌，为你当前的技能增加额外等级。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n进化包：",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "这个提供进化卡牌。这些卡牌功能类似于属性卡牌，但当与其他卡牌放置和配对时会变得更强大。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n混合包：",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "这个为玩家提供上述包中的一张随机卡牌。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n所有这些包都有超级变体，打开时会给玩家提供更多的卡牌选择。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n卡牌可以存储在",
+            "color": "$text"
+          },
+          {
+            "text": "卡牌收藏夹",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中，在",
+            "color": "$text"
+          },
+          {
+            "text": "宝库回收站",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中回收，在",
+            "color": "$text"
+          },
+          {
+            "text": "卡牌升级站",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中升级。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n获取一个补充包",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/booster",
+      "targetId": "the_vault:booster_pack",
+      "targetProgress": 1.0,
+      "unlockedBy": "card_system",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:arcane_pack\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:evolution_pack\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:resource_pack\"}",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:booster_pack",
+            "nbt": "{id:\"the_vault:stat_pack\"}",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "decks",
+      "name": "卡组",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "卡组让你可以存储卡牌并带入宝库，从而受益于它们的特殊效果。卡组必须放在",
+            "color": "$text"
+          },
+          {
+            "text": "卡组",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "饰品槽中，玩家才能获得卡组效果。\n\n卡组在",
+            "color": "$text"
+          },
+          {
+            "text": "卡组工作站",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中制作，基础卡组可立即使用。要访问卡组工作站内的",
+            "color": "$text"
+          },
+          {
+            "text": "高级卡组",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "标签，你必须先学习",
+            "color": "$text"
+          },
+          {
+            "text": "宝库卡组",
+            "color": "$yellow"
+          },
+          {
+            "text": "研究，然后满足每个卡组的解锁要求。\n\n每个卡组都有独特的布局和插槽数量。一定要查看所有卡组，找到最适合你想要的组合。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n卡组可以在",
+            "color": "$text"
+          },
+          {
+            "text": "卡牌收藏夹",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中构建和修改。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n制作一个卡组",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/deck",
+      "targetId": "the_vault:card_deck",
+      "targetProgress": 1.0,
+      "unlockedBy": "card_system",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:card_binder",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "cores",
+      "name": "卡组核心",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "核心是可以在",
+            "color": "$text"
+          },
+          {
+            "text": "铁砧",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中应用到卡组上的增强。\n\n较低级的核心可以在",
+            "color": "$text"
+          },
+          {
+            "text": "卡组工作站",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中制作，但更强大的核心可以在你的宝库冒险中找到。\n\n核心在创建强大卡组中起着至关重要的作用，所以请谨慎选择。",
+            "color": "$text"
+          },
+          {
+            "text": "它们可以从低级升级到普通核心，但一旦嵌入，核心就不能被替换为其他核心。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n制作一个低级核心",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/lesser_deck_core",
+      "targetId": "the_vault:deck_socket",
+      "targetProgress": 1.0,
+      "unlockedBy": "card_system",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:silver_scrap",
+            "amount": 256
+          },
+          {
+            "item": "the_vault:gem_black_opal",
+            "amount": 16
+          },
+          {
+            "item": "the_vault:gem_pog",
+            "amount": 1
+          },
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 16
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "obtain_juicer",
+      "name": "升级卡牌",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "不需要的卡牌可以在宝库回收站中回收以获得",
+            "color": "$text"
+          },
+          {
+            "text": "卡牌精华",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n\n使用",
+            "color": "$text"
+          },
+          {
+            "text": "卡牌升级站",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，有等级的卡牌可以与所需数量的卡牌精华结合来升级等级。\n\n从1级升级到2级需要10个卡牌精华，更高的等级需要显著更多。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n制作一个卡牌升级站",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/card_upgrade_table",
+      "targetId": "the_vault:card_essence_extractor",
+      "targetProgress": 1.0,
+      "unlockedBy": "card_system",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:card_juice",
+            "amount": 5
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "blank_key",
+      "name": "宝藏钥匙",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "50级之后，奇怪的彩色门将开始出现在宝库中，这些是",
+            "color": "$text"
+          },
+          {
+            "text": "宝藏门",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "！\n\n它们可以使用与门相同宝石类型的",
+            "color": "$text"
+          },
+          {
+            "text": "宝藏钥匙",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "打开。\n这些钥匙价格昂贵，需要",
+            "color": "$text"
+          },
+          {
+            "text": "钥匙碎片",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "以及回响宝石，但制作它们可能非常值得！\n\n你首先制作一把",
+            "color": "$text"
+          },
+          {
+            "text": "空白钥匙",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，然后在铁砧中与任何传说级宝石",
+            "color": "$text"
+          },
+          {
+            "text": "集群",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "结合。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n制作一把空白钥匙",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/blank_key",
+      "targetId": "the_vault:blank_key",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:perfect_echo_gem"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "gear_sealer",
+      "name": "封印装备",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "封印你最好的宝库装备是最大化它的强大方式，但要注意，你也可能运气不好。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "你需要找到",
+            "color": "$text"
+          },
+          {
+            "text": "飞升印记",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，可以在",
+            "color": "$text"
+          },
+          {
+            "text": "贩卖门",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "、",
+            "color": "$text"
+          },
+          {
+            "text": "黑市",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "和其他一些地方找到。这些稀有印记用于封印你的装备。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "封印装备时，有",
+            "color": "$text"
+          },
+          {
+            "text": "十分之一的几率",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "为你的装备获得一个额外的强大封印修饰词，另一种结果是",
+            "color": "$text"
+          },
+          {
+            "text": "替换一个随机的、未冻结的修饰词",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "为一个强大的封印修饰词。\n\n强大的封印修饰词包括获得",
+            "color": "$text"
+          },
+          {
+            "text": "额外技能等级",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，或获得一个",
+            "color": "$text"
+          },
+          {
+            "text": "独特效果",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。封印装备的费用取决于",
+            "color": "$text"
+          },
+          {
+            "text": "装备等级",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "和",
+            "color": "$text"
+          },
+          {
+            "text": "装备稀有度",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n\n最后，一旦装备被封印，你就不能再进一步修改它了。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "制作一个装备封印器",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/modifier",
+      "targetId": "the_vault:vault_sealer",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vorpal_focus",
+            "amount": 3
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "treasure",
+      "name": "宝藏室",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "一旦你有了宝藏钥匙，带着它进入宝库寻找对应的门，用钥匙打开门。\n\n宝藏室包含随机数量的",
+            "color": "$text"
+          },
+          {
+            "text": "宝藏沙",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，开采时会产出许多不同的宝物。",
+            "color": "$text"
+          },
+          {
+            "text": "\n宝藏室还包含",
+            "color": "$text"
+          },
+          {
+            "text": "三个宝藏展示台",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，每个展示台包含一件宝库装备。但是，这些宝库装备保证拥有",
+            "color": "$text"
+          },
+          {
+            "text": "一个传说修饰词",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "！\n\n你只能选择一个展示台，选择时你唯一拥有的信息是装备类型和稀有度！",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n与宝藏展示台互动",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/treasure",
+      "targetId": "the_vault:treasure_pedestal",
+      "targetProgress": 1.0,
+      "unlockedBy": "blank_key",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:unidentified_treasure_key"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "royale",
+      "name": "皇家宝库",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "皇家宝库是宝库猎人中完全可选的部分，但如果你通往100级的道路变得乏味和重复，它是一个很好的节奏调整，而且奖励可能非常惊人！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "当你进入皇家宝库时，你将完全赤手空拳；你所有的装备和技能点分配将被存储直到你返回。你做的第一件事是见到",
+            "color": "$text"
+          },
+          {
+            "text": "汤米",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "！\n",
+            "color": "$text"
+          },
+          {
+            "text": "汤米",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "将为你提供3套装备方案。你可以选择你觉得舒适的任何一个——或者一个都不选，如果你想要极限挑战。\n",
+            "color": "$text"
+          },
+          {
+            "text": "接下来，",
+            "color": "$text"
+          },
+          {
+            "text": "汤米",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "将为你提供三个蓝色饰品中的一个，然后三个红色饰品中的一个。最后，你将选择你的奖励——如果你赢了的话。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "其中一个奖励总是",
+            "color": "$text"
+          },
+          {
+            "text": "皇家王冠",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。王冠是一个战利品倍率器，每次在",
+            "color": "$text"
+          },
+          {
+            "text": "皇家水晶",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "上附加时会增加你的奖励倍率，这在铁砧中的皇家挑战间完成。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "现在，",
+            "color": "$text"
+          },
+          {
+            "text": "药水",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "和",
+            "color": "$text"
+          },
+          {
+            "text": "治愈",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "技能在皇家宝库中不会被提供。你的治疗将依赖于其他来源——最常见的是",
+            "color": "$text"
+          },
+          {
+            "text": "丰盛苹果",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "当你离开",
+            "color": "$text"
+          },
+          {
+            "text": "汤米",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "时，你将有一些技能点已分配——但仍然赤身裸体。装备和更多技能点卷轴可以在散布在宝库各处的发光",
+            "color": "$text"
+          },
+          {
+            "text": "皇家桶",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中找到。确保在战斗前搜刮装备！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "最后一件事：皇家宝库是锁定的，不能以你进来的方式退出。你必须完成随机目标才能出去！\n\n祝你好运猎人——你要么爱上它，要么恨它！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "获取一个皇家岩石",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/royale",
+      "targetId": "the_vault:crystal_seal_vault_royale",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:crystal_seal_vault_royale"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "antiques",
+      "name": "古董",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "古董是宝库领域携带的古老印章。这些古老印章可以被收集和组合，给你与该特定古董收藏相关的奖励。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "古董在50级之后出现，但只有猎人携带着",
+            "color": "$text"
+          },
+          {
+            "text": "古董印章收藏册",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "时才会出现，这本书可以制作并放在你的背包中。它会自动拾取、分类和整理你所有的古董。一旦你有了足够数量的任意一种古董，你可以取出它们并右键点击使用来兑换奖励。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "在哪里以及如何找到古董，随着你找到更多同种古董会逐渐揭示。悬停古董时请注意观察，尝试找出它来自哪里！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "制作一本古董印章收藏册",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/antique_collector_book",
+      "targetId": "the_vault:antique_collector_book",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "companions",
+      "name": "伙伴！",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "50级之后你可以开始找到",
+            "color": "$text"
+          },
+          {
+            "text": "伙伴",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "！它们相当害羞，但如果你表现出色，就有机会生成一个伙伴蛋！它可以在任何已发现的房间中生成，周围会有粒子效果。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "蛋可以在",
+            "color": "$text"
+          },
+          {
+            "text": "孵化器",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "内孵化，每个伙伴在这个阶段后将被个人绑定到其主人。\n",
+            "color": "$text"
+          },
+          {
+            "text": "在你的饰品物品栏的头部槽中装备你的伙伴来使用它。只要它的状态是就绪的，当你进入宝库时它会加入你。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "伙伴",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "自带一个",
+            "color": "$text"
+          },
+          {
+            "text": "时空修饰词",
+            "color": "$titleLine"
+          },
+          {
+            "text": "。这个修饰词可以随时通过按下热键激活，你可以在按键绑定中设置。",
+            "color": "$text"
+          },
+          {
+            "text": "时空修饰词",
+            "color": "$titleLine"
+          },
+          {
+            "text": "的持续时间由伙伴的等级决定，1级持续1分钟，3级持续3分钟，依此类推。",
+            "color": "$text"
+          },
+          {
+            "text": "时空修饰词",
+            "color": "$titleLine"
+          },
+          {
+            "text": "无法更改或修改。它就像是伙伴的灵魂。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "伙伴",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "还可以装备",
+            "color": "$text"
+          },
+          {
+            "text": "伙伴遗物",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。这些稀有物品可以在任何",
+            "color": "$text"
+          },
+          {
+            "text": "宝箱",
+            "color": "$yellow"
+          },
+          {
+            "text": "中找到，或在",
+            "color": "$text"
+          },
+          {
+            "text": "宝藏沙",
+            "color": "$yellow"
+          },
+          {
+            "text": "中找到，只要你在宝库中携带着伙伴。\n",
+            "color": "$text"
+          },
+          {
+            "text": "伙伴遗物",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "携带宝库修饰词，可以在",
+            "color": "$text"
+          },
+          {
+            "text": "伙伴小屋",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中装备。但是，伙伴会非常喜欢他们的遗物，尝试卸下一个将花费你大量金币！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "如果正确照顾，你的伙伴可以变得非常强大，并在你的宝库冒险中帮助你！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "制作一个伙伴孵化器",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/companion",
+      "targetId": "the_vault:companion_incubator",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:companion_egg",
+            "nbt": "{HatchTime:20,Series:\"PET\"}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "soul_flame",
+      "name": "挑战者的宝库岩石",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "达到65级后，你可以解锁制作",
+            "color": "$text"
+          },
+          {
+              "text": "挑战者的宝库水晶",
+              "color": "$qhighlight"
+          },
+          {
+              "text": "的能力。\n\n这个水晶不能被修改，并且会追踪你的连胜（飞升）。每次你成功完成一个",
+              "color": "$text"
+          },
+          {
+              "text": "挑战者的宝库水晶",
+              "color": "$qhighlight"
+          },
+          {
+              "text": "，你就会增加下一个挑战者水晶的难度！\n\n当你最终失败（你一定会的）时，你将根据你走了多远获得",
+              "color": "$text"
+          },
+          {
+              "text": "余烬",
+              "color": "$qhighlight"
+          },
+          {
+              "text": "。\n余烬是一种在",
+              "color": "$text"
+          },
+          {
+              "text": "飞升锻造台",
+              "color": "$qhighlight"
+          },
+          {
+              "text": "中使用的货币物品。\n\n你准备好飞升了吗？",
+              "color": "$text"
+          },
+          {
+            "text": "\n\n制作一个挑战者的宝库岩石",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/flame",
+      "targetId": "the_vault:soul_flame",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:vault_gold",
+            "amount": 64
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "collection",
+      "id": "ascension_forge",
+      "name": "飞升锻造台",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "",
+            "color": "$text"
+          },
+          {
+              "text": "飞升锻造台",
+              "color": "$qhighlight"
+          },
+          {
+              "text": "是你可以花费",
+              "color": "$text"
+          },
+          {
+              "text": "余烬",
+              "color": "$qhighlight"
+          },
+          {
+              "text": "的地方。\n它包含一些非常",
+              "color": "$text"
+          },
+          {
+              "text": "特别的幻化",
+              "color": "$qhighlight"
+          },
+          {
+              "text": "装备外观，让你作为挑战者脱颖而出！\n你还可以为你的名牌购买",
+              "color": "$text"
+          },
+          {
+              "text": "前缀",
+              "color": "$qhighlight"
+          },
+          {
+              "text": "和",
+              "color": "$text"
+          },
+          {
+              "text": "后缀",
+              "color": "$qhighlight"
+          },
+          {
+              "text": "称号。\n\n让世界知道你懂得如何获胜！\n\n",
+              "color": "$text"
+          },
+          {
+              "text": "制作一个飞升锻造台",
+              "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/ascensionforge",
+      "targetId": "the_vault:ascension_forge",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:ember",
+            "amount": 4
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "block_interact",
+      "id": "imbuement_altar",
+      "name": "灌注祭坛",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "60级之后，你有稀有机会在",
+            "color": "$text"
+          },
+          {
+            "text": "地牢",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中找到",
+            "color": "$text"
+          },
+          {
+            "text": "灌注祭坛",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。地牢越大，你越有可能找到一个。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "与",
+            "color": "$text"
+          },
+          {
+            "text": "灌注祭坛",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "互动时，它会要求你确认一件装备进行灌注，一旦确认就不能撤销。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "灌注祭坛将为你呈现最多3个灌注选项，灌注一个修饰词有一定",
+            "color": "$text"
+          },
+          {
+            "text": "成功几率",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "使其变得更强，升级其数值。\n\n成功灌注后，如果装备原本具有",
+            "color": "$text"
+          },
+          {
+            "text": "活体",
+            "color": "$living"
+          },
+          {
+            "text": "修饰词，活体修饰词将从装备上移除。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n如果灌注",
+            "color": "$text"
+          },
+          {
+            "text": "失败",
+            "color": "$red"
+          },
+          {
+            "text": "，装备将变得",
+            "color": "$text"
+          },
+          {
+            "text": "腐化",
+            "color": "$red"
+          },
+          {
+            "text": "，修饰词将被降级。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "",
+            "color": "$text"
+          },
+          {
+            "text": "灌注",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "和",
+            "color": "$text"
+          },
+          {
+            "text": "腐化",
+            "color": "$red"
+          },
+          {
+            "text": "的装备都不能再在",
+            "color": "$text"
+          },
+          {
+            "text": "工匠站",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "中修改，但是，",
+            "color": "$text"
+          },
+          {
+            "text": "灌注装备",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "仍然可以被封印。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "与灌注祭坛互动",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/imbuement_altar",
+      "targetId": "the_vault:imbuement_altar",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:gem_echo",
+            "amount": 10
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "level_up",
+      "id": "reach_level_100",
+      "name": "达到满级",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "100级标志着宝库猎人中普通等级的终点，达到这里你已经获得了所有可用的技能点，并解锁了所有可能的装备等级组！\n\n最重要的是，你现在已经解锁了进入竞技场和面对先驱者的能力。",
+            "color": "$text"
+          },
+          {
+            "text": "\n\n达到宝库等级100",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/100",
+      "targetId": "the_vault:100",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_50",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:companion_egg",
+            "nbt": "{HatchTime:20,Series:\"PET\"}"
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "complete_vault",
+      "id": "herald",
+      "name": "先驱者",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "是时候证明你的价值了！\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "为了面对终极挑战——",
+            "color": "$text"
+          },
+          {
+            "text": "先驱者",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，你必须达到100级并完成你的",
+            "color": "$text"
+          },
+          {
+            "text": "神器拼图",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。只有当这两件事都完成后，你才能进入",
+            "color": "$text"
+          },
+          {
+            "text": "竞技场",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "右键点击你完成的",
+            "color": "$text"
+          },
+          {
+            "text": "神器典籍",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "来获取",
+            "color": "$text"
+          },
+          {
+            "text": "先驱者之石",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "；你可以获取任意数量。在祭坛上制作这个石头会给你",
+            "color": "$text"
+          },
+          {
+            "text": "先驱者水晶",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "注意，这是一个非常困难的首领，有不同的阶段，你之前的所有知识都将被用来评估你是否能通过这个挑战。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "祝你好运猎人\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "击败先驱者",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/herald",
+      "targetId": "the_vault:herald",
+      "targetProgress": 1.0,
+      "unlockedBy": "reach_level_100",
+      "reward": {
+        "items": [
+          {
+            "item": "the_vault:omega_pog",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "complete_vault",
+      "id": "greed",
+      "name": "贪婪",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "干得好！击败",
+            "color": "$text"
+          },
+          {
+            "text": "先驱者",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "后，你已经解锁了宝库猎人的最终篇章：",
+            "color": "$text"
+          },
+          {
+            "text": "贪婪",
+            "color": "$omega"
+          },
+          {
+            "text": "。\n\n你现在可以进入",
+            "color": "$text"
+          },
+          {
+            "text": "贪婪试炼",
+            "color": "$omega"
+          },
+          {
+            "text": "，一个无限长度的宝库，将把你推向极限。当你最终倒下时，你的进度将提升你的",
+            "color": "$text"
+          },
+          {
+            "text": "贪婪等级",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "，解锁强大的新",
+            "color": "$text"
+          },
+          {
+            "text": "贪婪节点",
+            "color": "$omega"
+          },
+          {
+            "text": "。\n\n达到你的第一个贪婪等级后，你将获得一个",
+            "color": "$text"
+          },
+          {
+            "text": "贪婪锚",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。放置它来召唤",
+            "color": "$text"
+          },
+          {
+            "text": "贪婪先生",
+            "color": "$omega"
+          },
+          {
+            "text": "，一个神秘商人，提供用",
+            "color": "$text"
+          },
+          {
+            "text": "贪婪金币",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "购买贪婪物品的",
+            "color": "$text"
+          },
+          {
+            "text": "商店",
+            "color": "$white"
+          },
+          {
+            "text": "、通过宝库挑战奖励声望的",
+            "color": "$text"
+          },
+          {
+            "text": "任务",
+            "color": "$white"
+          },
+          {
+            "text": "，以及具有全新",
+            "color": "$text"
+          },
+          {
+            "text": "危险",
+            "color": "$omega"
+          },
+          {
+            "text": "系统的",
+            "color": "$text"
+          },
+          {
+            "text": "挑战水晶",
+            "color": "$white"
+          },
+          {
+            "text": "。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "当心贪婪刺客...",
+            "color": "$omega"
+          },
+          {
+            "text": "你敢攀登多高？你会变得多贪婪？\n\n需要更多金币？",
+            "color": "$text"
+          },
+          {
+            "text": "贪婪坩埚",
+            "color": "$omega"
+          },
+          {
+            "text": "渴望宝库材料。喂给它所需的东西，它会回报你",
+            "color": "$text"
+          },
+          {
+            "text": "贪婪金币",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "完成贪婪试炼",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/greed",
+      "targetId": "the_vault:rebirth",
+      "targetProgress": 1.0,
+      "unlockedBy": "herald",
+      "reward": {
+        "items": [
+          {
+            "item": "minecraft:stick",
+            "amount": 1
+          }
+        ],
+        "vaultExp": 0
+      }
+    },
+    {
+      "type": "crafting",
+      "id": "greed_cauldron",
+      "name": "贪婪坩埚",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "",
+            "color": "$text"
+          },
+          {
+            "text": "贪婪坩埚",
+            "color": "$omega"
+          },
+          {
+            "text": "是一个渴望宝库材料的强大装置。制作一个并放置下来，开始满足它贪得无厌的胃口。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "坩埚",
+            "color": "$omega"
+          },
+          {
+            "text": "将索取大量宝库资源。每完成一个请求，你将获得",
+            "color": "$text"
+          },
+          {
+            "text": "贪婪金币",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。但关键在于：每次完成请求都会增加你的",
+            "color": "$text"
+          },
+          {
+            "text": "倍率",
+            "color": "$white"
+          },
+          {
+            "text": "，使后续完成奖励更多",
+            "color": "$text"
+          },
+          {
+            "text": "贪婪金币",
+            "color": "$qhighlight"
+          },
+          {
+            "text": "。\n\n持续喂养坩埚以最大化你的回报。\n\n",
+            "color": "$text"
+          },
+          {
+            "text": "制作一个贪婪坩埚",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/greed_cauldron",
+      "targetId": "the_vault:greed_cauldron",
+      "targetProgress": 1.0,
+      "unlockedBy": "greed",
+      "reward": {
+        "items": [
+        ],
+        "vaultExp": 0
+      }
+    }
+  ]
+}

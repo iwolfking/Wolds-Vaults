@@ -6,6 +6,7 @@
             "amplifier": 1,
             "ambient": false,
             "showParticles": false,
+            "displayName": "Weakened Attacks",
             "renderer": {
                 "texture": "the_vault:textures/gui/vignette.png",
                 "color": 3809098,
@@ -16,17 +17,33 @@
         },
         "the_vault:nullify_area_of_effect": {
             "effect": "the_vault:nullify_area_of_effect",
-            "duration": 100,
+            "duration": 800,
             "amplifier": 0,
             "ambient": false,
             "showParticles": false,
+            "displayName": "Area of Effect bonuses removed",
             "renderer": {
                 "texture": "the_vault:textures/gui/vignette.png",
-                "color": 3809098,
-                "alpha": 0,
+                "color": 44454,
+                "alpha": 0.0,
                 "type": "vignette"
             },
             "type": "mob_effect"
+        },
+        "the_vault:disable_dash": {
+            "abilityId": "DashAbility",
+            "displayName": "Dash disabled",
+            "type": "disable_ability"
+        },
+        "the_vault:disable_wings": {
+            "trinketId": "the_vault:wings",
+            "displayName": "Elytra Wings disabled",
+            "type": "disable_trinket"
+        },
+        "the_vault:disable_cat": {
+            "trinketId": "the_vault:cat_in_a_jar",
+            "displayName": "Portable Cat disabled",
+            "type": "disable_trinket"
         }
     },
     "curseWeights": {
