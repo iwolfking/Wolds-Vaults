@@ -1,4 +1,5 @@
 let removedOutputsDE = [
+    "draconicadditions:chaotic_auto_feed_module",
     "draconicevolution:draconium_core",
     "draconicevolution:wyvern_core",
     "draconicevolution:module_core",
@@ -16,6 +17,7 @@ let removedOutputsDE = [
     "draconicevolution:reactor_prt_focus_ring",
     "draconicevolution:reactor_prt_stab_frame",
 
+    /draconicadditions:.*_tick_accel/,
     /draconicadditions:.*_harness/,
     /draconicadditions:.*chaos_*/,
     /draconicadditions:.*_necklace/,
