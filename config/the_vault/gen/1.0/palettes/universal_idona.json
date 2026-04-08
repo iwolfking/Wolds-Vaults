@@ -636,7 +636,14 @@
             "type": "weighted_target",
             "target": "the_vault:god_altar",
             "output": {
-              "minecraft:air": 1
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "the_vault:placeholder{type: GATE}",
+            "output": {
+                "minecraft:air": 1
             }
         },
         {
@@ -650,10 +657,6 @@
         {
             "type": "reference",
             "id": "the_vault:generic/common_elite_spawners"
-        },
-        {
-            "type": "reference",
-            "id": "the_vault:gate_lock/base"
         }
     ],
     "entity_processors": [],
