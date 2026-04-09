@@ -1222,6 +1222,13 @@
       "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
       "count": 16
     },
+    "gilded_chest_ww": {
+      "type": "tile_reward",
+      "name": "Gilded Chests",
+      "textColor": "0xFFfff0a9",
+      "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "count": 8
+    },
     "gilded_chest_bigger": {
       "type": "tile_reward",
       "name": "Gilded Chests",
@@ -1242,6 +1249,13 @@
       "textColor": "0xFFfff0a9",
       "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
       "count": 16
+    },
+    "ornate_chest_ww": {
+      "type": "tile_reward",
+      "name": "Ornate Chests",
+      "textColor": "0xFFfff0a9",
+      "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "count": 8
     },
     "ornate_chest_bigger": {
       "type": "tile_reward",
@@ -1264,6 +1278,13 @@
       "tile": "the_vault:placeholder[type=coin_stacks,facing=up]{Hidden:1b}",
       "count": 16
     },
+     "coin_pile_ww": {
+      "type": "tile_reward",
+      "name": "Coin Piles",
+      "textColor": "0xFFfff0a9",
+      "tile": "the_vault:placeholder[type=coin_stacks,facing=up]{Hidden:1b}",
+      "count": 16
+    },
     "coin_pile_bigger": {
       "type": "tile_reward",
       "name": "Coin Piles",
@@ -1279,6 +1300,13 @@
       "count": 10
     },
     "living_chest_big": {
+      "type": "tile_reward",
+      "name": "Living Chests",
+      "textColor": "0xFFfff0a9",
+      "tile": "the_vault:placeholder[type=living_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "count": 16
+    },
+     "living_chest_ww": {
       "type": "tile_reward",
       "name": "Living Chests",
       "textColor": "0xFFfff0a9",
@@ -3329,19 +3357,19 @@
           "level": 0,
           "pool": [
             {
-              "value": "gilded_chest_big",
+              "value": "gilded_chest_ww",
               "weight": 100
             },
             {
-              "value": "ornate_chest_big",
+              "value": "ornate_chest_ww",
               "weight": 100
             },
             {
-              "value": "living_chest_big",
+              "value": "living_chest_ww",
               "weight": 100
             },
             {
-              "value": "coin_pile_big",
+              "value": "coin_pile_ww",
               "weight": 100
             }
           ]

@@ -27,9 +27,9 @@ onEvent("recipes", event => {
         ], {
         C: 'sophisticatedbackpacks:upgrade_base',
         I: 'the_vault:chromatic_steel_ingot',
-        T: 'craftingstation:crafting_station',
+        T: 'minecraft:crafting_table',
         G: 'the_vault:vault_diamond',
-        X: 'the_vault:vault_essence'
+        X: 'woldsvaults:chromatic_gold_ingot'
     })
 
     event.shaped(Item.of('sophisticatedbackpacks:everlasting_upgrade'),

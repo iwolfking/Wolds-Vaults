@@ -5089,6 +5089,19 @@
       }
     },
     "the_vault:modifier_type/grouped": {
+      "the_vault:greed_trial": {
+        "properties": {
+          "children": {
+            "the_vault:rotten": 1
+          }
+        },
+        "display": {
+          "name": "Greed Trial",
+          "color": "#1e31b0",
+          "description": "This vault is a Greed Trial, you will face the increasingly powerful Vessel.",
+          "icon": "the_vault:gui/modifiers/greed"
+        }
+      },
       "the_vault:royale": {
         "properties": {
           "children": {
@@ -7975,9 +7988,9 @@
     "the_vault:modifier_type/sound_on_entity_hit": {
       "the_vault:daycare_sound": {
         "properties": {
-          "sound": "the_vault:ghost_walk",
-          "volume": 1.0,
-          "pitch": 1.0,
+          "sound": "minecraft:block.glass.break",
+          "volume": 0.5,
+          "pitch": 2.0,
           "soundSource": "HOSTILE"
         },
         "display": {

@@ -916,6 +916,7 @@ craftingTable.remove(<item:powah:solar_panel_basic>);
 //JEI.hideIngredient
 // Alexsmobs
 JEI.hideMod("alexsmobs");
+JEI.addIngredient(<item:the_vault:respec_flask>);
 JEI.addIngredient(<item:alexsmobs:rainbow_glass>);
 JEI.addIngredient(<item:alexsmobs:spawn_egg_flutter>);
 JEI.addIngredient(<item:alexsmobs:dimensional_carver>);

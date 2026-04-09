@@ -26,18 +26,6 @@ onEvent("recipes", event => {
 
     }).id('immersiveengineering:crafting/blastbrick')
 
-    event.shaped(Item.of('immersiveengineering:craftingtable', 1),
-        [
-            'XXX',
-            'TBT',
-            'T T'
-        ], {
-        X: '#forge:treated_wood_slab',
-        T: 'immersiveengineering:stick_treated',
-        B: 'craftingstation:crafting_station'
-
-    }).id('immersiveengineering:crafting/craftingtable')
-
     event.shaped(Item.of('immersiveengineering:workbench', 1),
         [
             '   ',
