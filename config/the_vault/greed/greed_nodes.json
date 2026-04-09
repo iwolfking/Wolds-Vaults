@@ -1250,12 +1250,12 @@
       },
       {
         "id": "util_t2_xp_gain_1",
-        "name": "+10% XP Gain",
+        "name": "+20% XP Gain",
         "present": false,
         "parent": "util_t1_mana_regen_3",
         "tier": 2,
         "type": "greed_xp_gain",
-        "xpMultiplier": 0.1
+        "xpMultiplier": 0.2
       },
       {
         "id": "util_t2_item_rarity_1",
@@ -1273,12 +1273,12 @@
       },
       {
         "id": "util_t2_xp_gain_2",
-        "name": "+10% XP Gain",
+        "name": "+20% XP Gain",
         "present": false,
         "parent": "util_t1_cooldown_2",
         "tier": 2,
         "type": "greed_xp_gain",
-        "xpMultiplier": 0.1
+        "xpMultiplier": 0.2
       },
       {
         "id": "util_t2_fruit_eff_1",
@@ -1541,6 +1541,79 @@
         "tier": 2,
         "reputationMultiplier": 0.25,
         "type": "greed_reputation"
+      },
+      {
+        "id": "off_t1_xp_path_1",
+        "name": "+4% Inc Atk Dmg & 3% Ability Power",
+        "present": false,
+        "parent": "off_t3_unique_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:damage_increase",
+            "value": 0.04
+          },
+          {
+            "attribute": "the_vault:ability_power_percent",
+            "value": 0.03
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "off_t2_xp_gain_1",
+        "name": "+20% XP Gain",
+        "present": false,
+        "parent": "off_t1_xp_path_1",
+        "tier": 2,
+        "type": "greed_xp_gain",
+        "xpMultiplier": 0.2
+      },
+      {
+        "id": "def_t1_xp_path_1",
+        "name": "+3% Resistance",
+        "present": false,
+        "parent": "def_t3_unique_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:resistance",
+            "value": 0.03
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "def_t2_xp_gain_1",
+        "name": "+20% XP Gain",
+        "present": false,
+        "parent": "def_t1_xp_path_1",
+        "tier": 2,
+        "type": "greed_xp_gain",
+        "xpMultiplier": 0.2
+      },
+      {
+        "id": "util_t1_xp_path_1",
+        "name": "+5% Cooldown Reduction",
+        "present": false,
+        "parent": "util_t3_cryonic_1",
+        "tier": 1,
+        "entries": [
+          {
+            "attribute": "the_vault:cooldown_reduction",
+            "value": 0.05
+          }
+        ],
+        "type": "greed_gear_attribute"
+      },
+      {
+        "id": "util_t2_xp_gain_3",
+        "name": "+20% XP Gain",
+        "present": false,
+        "parent": "util_t1_xp_path_1",
+        "tier": 2,
+        "type": "greed_xp_gain",
+        "xpMultiplier": 0.2
       }
     ],
     "greedTier": 0,
