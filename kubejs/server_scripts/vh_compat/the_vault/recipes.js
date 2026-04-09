@@ -62,16 +62,16 @@ onEvent("recipes", event => {
     }).id('the_vault:bottle_mixture_time')
 
 
-    // event.shaped(Item.of('the_vault:crystal_budding'),
-    //     [
-    //         'AEA',
-    //         'ECE',
-    //         'AEA'
-    //     ], {
-    //     C: 'the_vault:living_rock_block_cobble',
-    //     E: 'the_vault:gem_larimar',
-    //     A: 'minecraft:amethyst_block'
-    // }).id('the_vault:crystal_budding')
+    event.shaped(Item.of('the_vault:crystal_budding'),
+        [
+            'AEA',
+            'ECE',
+            'AEA'
+        ], {
+        C: 'the_vault:living_rock_block_cobble',
+        E: 'the_vault:gem_larimar',
+        A: 'minecraft:amethyst_block'
+    }).id('the_vault:crystal_budding')
 
     event.shaped(Item.of('the_vault:mystical_powder'),
         [
