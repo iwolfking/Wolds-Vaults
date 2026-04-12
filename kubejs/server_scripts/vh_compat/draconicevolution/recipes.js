@@ -272,7 +272,7 @@ onEvent("recipes", event => {
             'CCC',
         ], {
             C: 'draconicevolution:chaos_shard',
-            W: 'draconicevolution:awakened_core'
+            W: 'draconicevolution:wyvern_core'
         })
 
 })
