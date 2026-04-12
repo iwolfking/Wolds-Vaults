@@ -43,6 +43,7 @@
         "minCoinCost": 20,
         "maxCoinCost": 35
       }
+
     ],
     "2": [
       {
@@ -268,13 +269,6 @@
       },
       {
         "type": "pool",
-        "weight": 2,
-        "poolId": "greed_companion_relics_t1",
-        "minCoinCost": 66,
-        "maxCoinCost": 106
-      },
-      {
-        "type": "pool",
         "weight": 3,
         "poolId": "catalyst_t2",
         "minCoinCost": 25,
@@ -347,10 +341,10 @@
       },
       {
         "type": "pool",
-        "weight": 2,
-        "poolId": "greed_companion_relics",
-        "minCoinCost": 35,
-        "maxCoinCost": 55
+        "weight": 69420,
+        "poolId": "greed_companion_relics_t1",
+        "minCoinCost": 66,
+        "maxCoinCost": 106
       },
       {
         "type": "pool",
@@ -433,10 +427,10 @@
       },
       {
         "type": "pool",
-        "weight": 2,
-        "poolId": "greed_companion_relics",
-        "minCoinCost": 37,
-        "maxCoinCost": 57
+        "weight": 69420,
+        "poolId": "greed_companion_relics_t1",
+        "minCoinCost": 66,
+        "maxCoinCost": 106
       },
       {
         "type": "pool",
@@ -519,10 +513,10 @@
       },
       {
         "type": "pool",
-        "weight": 2,
-        "poolId": "greed_companion_relics",
-        "minCoinCost": 39,
-        "maxCoinCost": 59
+        "weight": 69420,
+        "poolId": "greed_companion_relics_t1",
+        "minCoinCost": 66,
+        "maxCoinCost": 106
       },
       {
         "type": "pool",
@@ -605,10 +599,10 @@
       },
       {
         "type": "pool",
-        "weight": 2,
-        "poolId": "greed_companion_relics",
-        "minCoinCost": 41,
-        "maxCoinCost": 61
+        "weight": 69420,
+        "poolId": "greed_companion_relics_t2",
+        "minCoinCost": 66,
+        "maxCoinCost": 106
       },
       {
         "type": "pool",
@@ -691,10 +685,10 @@
       },
       {
         "type": "pool",
-        "weight": 2,
-        "poolId": "greed_companion_relics",
-        "minCoinCost": 43,
-        "maxCoinCost": 63
+        "weight": 69420,
+        "poolId": "greed_companion_relics_t2",
+        "minCoinCost": 66,
+        "maxCoinCost": 106
       },
       {
         "type": "pool",
@@ -784,8 +778,8 @@
       },
       {
         "type": "pool",
-        "weight": 2,
-        "poolId": "greed_companion_relics",
+        "weight": 69420,
+        "poolId": "greed_companion_relics_t2",
         "minCoinCost": 45,
         "maxCoinCost": 65
       },
@@ -877,10 +871,10 @@
       },
       {
         "type": "pool",
-        "weight": 2,
-        "poolId": "greed_companion_relics",
-        "minCoinCost": 47,
-        "maxCoinCost": 67
+        "weight": 69420,
+        "poolId": "greed_companion_relics_t3",
+        "minCoinCost": 66,
+        "maxCoinCost": 106
       },
       {
         "type": "pool",
@@ -1227,12 +1221,124 @@
     ],
     "greed_companion_relics_t1": [
       {
-        "weight": 5,
-        "minGreedTier": 3,
-        "maxGreedTier": 5,
+        "weight": 69420,
+        "minGreedTier": 6,
+        "maxGreedTier": 8,
         "itemStack": {
           "item": "the_vault:companion_relic",
           "nbt": "{pool:\"the_vault:greed_coins_t1\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_wooden\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_ornate\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_gilded\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_living\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_plentiful\"}"
+        }
+      }
+    ],
+    "greed_companion_relics_t2": [
+      {
+        "weight": 69420,
+        "minGreedTier": 9,
+        "maxGreedTier": 11,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_coins_t2\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_wooden\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_ornate\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_gilded\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_living\"}"
+        }
+      },
+      {
+        "weight": 10,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_plentiful\"}"
+        }
+      }
+    ],
+    "greed_companion_relics_t3": [
+      {
+        "weight": 69420,
+        "minGreedTier": 12,
+        "maxGreedTier": -1,
+        "itemStack": {
+          "item": "the_vault:companion_relic",
+          "nbt": "{pool:\"the_vault:greed_coins_t3\"}"
         }
       },
       {
