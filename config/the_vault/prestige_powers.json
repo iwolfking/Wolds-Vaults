@@ -236,23 +236,23 @@
       },
       {
         "type": "tiered",
-        "id": "ChampionsDamage",
-        "name": "Victor's Edge",
+        "id": "NoCharmsUses",
+        "name": "Immortal Charms",
         "tiers": [
           {
-            "type": "champion_damage_power",
-            "attribute": "the_vault:damage_champion",
-            "value": 0.5,
+            "type": "no_uses_power",
+            "itemId": "the_vault:vault_god_charm",
             "learnPointCost": 0,
             "learnKnowledgeCost": 600,
             "regretPointCost": 1,
             "unlockLevel": 0,
-            "id": "champions_damage_1",
+            "id": "charm_uses_1",
             "tier": 5,
             "requiredGreedTier": 5
           }
         ]
       },
+
       {
         "type": "tiered",
         "id": "TripleJump",
@@ -306,22 +306,23 @@
       },
       {
         "type": "tiered",
-        "id": "NoCharmsUses",
-        "name": "Immortal Charms",
+        "id": "NoTrinketUses",
+        "name": "Immortal Trinkets",
         "tiers": [
           {
             "type": "no_uses_power",
-            "itemId": "the_vault:vault_god_charm",
+            "itemId": "the_vault:trinket",
             "learnPointCost": 0,
-            "learnKnowledgeCost": 800,
+            "learnKnowledgeCost": 1200,
             "regretPointCost": 1,
             "unlockLevel": 0,
-            "id": "charm_uses_1",
+            "id": "trinket_uses_1",
             "tier": 6,
             "requiredGreedTier": 6
           }
         ]
       },
+
       {
         "type": "tiered",
         "id": "StepUpPower",
@@ -471,17 +472,18 @@
       },
       {
         "type": "tiered",
-        "id": "NoTrinketUses",
-        "name": "Immortal Trinkets",
+        "id": "ChampionsDamage",
+        "name": "Victor's Edge",
         "tiers": [
           {
-            "type": "no_uses_power",
-            "itemId": "the_vault:trinket",
+            "type": "champion_damage_power",
+            "attribute": "the_vault:damage_champion",
+            "value": 0.5,
             "learnPointCost": 0,
             "learnKnowledgeCost": 1400,
             "regretPointCost": 1,
             "unlockLevel": 0,
-            "id": "trinket_uses_1",
+            "id": "champions_damage_1",
             "tier": 9,
             "requiredGreedTier": 9
           }
