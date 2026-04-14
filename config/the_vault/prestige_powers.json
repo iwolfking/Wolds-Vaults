@@ -182,17 +182,17 @@
       },
       {
         "type": "tiered",
-        "id": "PrismaticPouch",
-        "name": "Prism Possessor",
+        "id": "GearDurabilityPower",
+        "name": "Immortal Gear",
         "tiers": [
           {
-            "type": "crafting_recipe_power",
-            "recipeUnlock": "woldsvaults:prismatic_trinket_pouch",
+            "type": "gear_durability_power",
+            "damageReduction": 1.0,
             "learnPointCost": 0,
-            "learnKnowledgeCost": 500,
-            "regretPointCost": 1,
+            "learnKnowledgeCost": 1800,
+            "regretPointCost": 2,
             "unlockLevel": 0,
-            "id": "prism_possessor_1",
+            "id": "gear_immortality_1",
             "tier": 4,
             "requiredGreedTier": 4
           }
@@ -561,6 +561,24 @@
       },
       {
         "type": "tiered",
+        "id": "PrismaticPouch",
+        "name": "Prism Possessor",
+        "tiers": [
+          {
+            "type": "crafting_recipe_power",
+            "recipeUnlock": "woldsvaults:prismatic_trinket_pouch",
+            "learnPointCost": 0,
+            "learnKnowledgeCost": 1800,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "prism_possessor_1",
+            "tier": 11,
+            "requiredGreedTier": 11
+          }
+        ]
+      },
+      {
+        "type": "tiered",
         "id": "ElytraWings",
         "name": "Wings of Ascension",
         "tiers": [
@@ -575,24 +593,7 @@
           }
         ]
       },
-      {
-        "type": "tiered",
-        "id": "GearDurabilityPower",
-        "name": "Immortal Gear",
-        "tiers": [
-          {
-            "type": "gear_durability_power",
-            "damageReduction": 1.0,
-            "learnPointCost": 0,
-            "learnKnowledgeCost": 1800,
-            "regretPointCost": 2,
-            "unlockLevel": 0,
-            "id": "gear_immortality_1",
-            "tier": 11,
-            "requiredGreedTier": 11
-          }
-        ]
-      },
+
       {
         "type": "tiered",
         "id": "Fruity",
