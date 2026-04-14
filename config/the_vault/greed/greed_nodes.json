@@ -557,14 +557,14 @@
       },
       {
         "id": "def_t1_health_1",
-        "name": "+2% Increased Health",
+        "name": "+10% Increased Health",
         "present": false,
         "parent": "defensive_root",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:health_percentile",
-            "value": 0.02
+            "value": 0.1
           }
         ],
         "type": "greed_gear_attribute"
@@ -613,14 +613,14 @@
       },
       {
         "id": "def_t1_health_2",
-        "name": "+2% Increased Health",
+        "name": "+10% Increased Health",
         "present": false,
         "parent": "def_t1_health_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:health_percentile",
-            "value": 0.02
+            "value": 0.10
           }
         ],
         "type": "greed_gear_attribute"
@@ -725,7 +725,7 @@
       },
       {
         "id": "def_t2_flat_health_1",
-        "name": "+2 Hitpoints",
+        "name": "+10 Hitpoints",
         "present": false,
         "parents": [
           "def_t1_health_2",
@@ -735,7 +735,7 @@
         "entries": [
           {
             "attribute": "the_vault:health",
-            "value": 2.0
+            "value": 10.0
           }
         ],
         "type": "greed_gear_attribute"
@@ -756,7 +756,7 @@
       },
       {
         "id": "def_t2_health_1",
-        "name": "+4% Increased Health",
+        "name": "+25% Increased Health",
         "present": false,
         "parents": [
           "def_t1_knockback_res_2",
@@ -766,7 +766,7 @@
         "entries": [
           {
             "attribute": "the_vault:health_percentile",
-            "value": 0.04
+            "value": 0.25
           }
         ],
         "type": "greed_gear_attribute"
@@ -829,14 +829,14 @@
       },
       {
         "id": "def_t1_health_3",
-        "name": "+2% Increased Health",
+        "name": "+4% Increased Health",
         "present": false,
         "parent": "def_t2_flat_health_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:health_percentile",
-            "value": 0.02
+            "value": 0.04
           }
         ],
         "type": "greed_gear_attribute"
@@ -997,14 +997,14 @@
       },
       {
         "id": "def_t1_health_4",
-        "name": "+2% Increased Health",
+        "name": "+4% Increased Health",
         "present": false,
         "parent": "def_t2_heal_eff_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:health_percentile",
-            "value": 0.02
+            "value": 0.04
           }
         ],
         "type": "greed_gear_attribute"
