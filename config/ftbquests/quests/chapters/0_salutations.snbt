@@ -536,7 +536,7 @@
 		{
 			title: "Syncronized Vaulting"
 			icon: "pneumaticcraft:coordinate_tracker_upgrade"
-			x: 3.0d
+			x: 1.9107142857142847d
 			y: 3.0d
 			shape: "rsquare"
 			subtitle: "All Together Now!"
@@ -558,6 +558,27 @@
 			id: "72D348A77152625D"
 			tasks: [{
 				id: "62F45E5292A4932C"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Your Crystals, Your Price"
+			icon: "draconicevolution:wyvern_wireless_crystal"
+			x: 4.125d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "Individual Pricing Changes!"
+			description: [
+				"&5If you are playing on a server with players who have differing needs on the price of making Vault Crystals, you can set the Crystal Mode for individual players with a command!"
+				""
+				"&6/the_vault local_crystal_mode player_name crystal_mode"
+				""
+				"&5See the previous quest for the description of each crystal mode."
+			]
+			dependencies: ["33C206FEA6772466"]
+			id: "3E03C854B94F8B03"
+			tasks: [{
+				id: "1D99A883A055E94F"
 				type: "checkmark"
 			}]
 		}
