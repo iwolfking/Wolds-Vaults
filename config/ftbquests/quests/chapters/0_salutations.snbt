@@ -258,7 +258,7 @@
 					}
 				}
 			}
-			x: 4.0d
+			x: 4.160714285714292d
 			y: 1.0d
 			shape: "rsquare"
 			subtitle: "Entrance Fee"
@@ -288,7 +288,7 @@
 		{
 			title: "Loot! Experience! Rewards!"
 			icon: "the_vault:treasure_chest"
-			x: 2.0d
+			x: 1.875d
 			y: 1.0d
 			shape: "rsquare"
 			subtitle: "How Much or Little Would You Like?"
@@ -494,7 +494,7 @@
 			title: "Locking Your Level"
 			icon: "thermal:lock"
 			x: 3.0d
-			y: 3.25d
+			y: 4.25d
 			shape: "rsquare"
 			subtitle: "Go No Further!"
 			description: [
@@ -530,6 +530,34 @@
 			id: "497A36CA870E3B59"
 			tasks: [{
 				id: "50C32CC3FD55E35B"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Syncronized Vaulting"
+			icon: "pneumaticcraft:coordinate_tracker_upgrade"
+			x: 3.0d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "All Together Now!"
+			description: [
+				"&5If you are in a group that would like to stay at the same level, even if you aren't all playing at the same time, you can use the new Vault Level Sync feature."
+				""
+				"&5You will need to create a separate team using the command : &r&6/the_vault level_sync invite player_name &r&5 which will create your team and invite that player. You can use the command to invite more players to your Level Sync team."
+				""
+				"&5The other players will need to type: &r&6/the_vault level_sync accept"
+				""
+				"&5All players within the Level Sync team will stay on equal level."
+				""
+				"&5If a player wants to leave the team, they can use: &r&6/the_vault level_sync leave"
+				""
+				"&5The Level Sync party leader can break the group apart with: &r&6/the_vault level_sync disband"
+			]
+			dependencies: ["40E4E5113E933B44"]
+			hide: true
+			id: "72D348A77152625D"
+			tasks: [{
+				id: "62F45E5292A4932C"
 				type: "checkmark"
 			}]
 		}
