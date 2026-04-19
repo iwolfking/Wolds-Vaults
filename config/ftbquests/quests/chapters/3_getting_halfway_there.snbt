@@ -26,20 +26,19 @@
 				"&5Get all of em, and find a Scavenger Altar (green glowing altar that spawns in most rooms). Right Click each stack to deposit it before the timer runs out."
 				""
 				"&5If you don't get enough in time, you'll want to leave via the Portal before the time runs out."
+				""
+				"&5To make carrying all these Scav items easier, you should make a Scavenger Bag. It will hold all the items you might collect in Scavenger type Vaults."
 			]
 			dependencies: ["148669A61C9EFBF4"]
 			hide: true
 			id: "1881243BF68F0FAC"
 			tasks: [{
-				id: "5E9808306C7C79CF"
+				id: "123D636E3B672089"
 				type: "item"
-				title: "Any Scavenger Item"
 				item: {
-					id: "itemfilters:tag"
+					id: "woldsvaults:scavenger_pouch"
 					Count: 1b
-					tag: {
-						value: "the_vault:scavenger_item"
-					}
+					tag: { }
 				}
 			}]
 			rewards: [{
@@ -231,41 +230,8 @@
 			}]
 		}
 		{
-			title: "Bigger Modifiers"
-			x: -9.25d
-			y: 2.5d
-			shape: "rsquare"
-			subtitle: "Make My Modifier Grow!"
-			description: [
-				"&5Inside Dungeons in Vaults, you have a small chance of finding a Modifier Archive"
-				""
-				"&5The Modifier Archive will present you with a bunch of new Modifiers you can put on your Vault Gear with the Modification Table."
-				""
-				"&5You can only choose one, however."
-			]
-			hide_dependency_lines: true
-			dependencies: ["0E520C1ADD9E71DF"]
-			hide: true
-			id: "26943BB19E61CF27"
-			tasks: [{
-				id: "79772958EF616B60"
-				type: "observation"
-				title: "Find a Modifier Archive"
-				icon: "the_vault:modifier_discovery"
-				timer: 0L
-				observe_type: 0
-				to_observe: "the_vault:modifier_discovery"
-			}]
-			rewards: [{
-				id: "2E6973301EE076C8"
-				type: "item"
-				item: "the_vault:vault_gold"
-				count: 2
-			}]
-		}
-		{
 			title: "Potion Seller!"
-			x: -10.25d
+			x: -9.25d
 			y: 2.5d
 			shape: "rsquare"
 			subtitle: "Give Me Your Strongest Potions"
@@ -519,14 +485,14 @@
 		}
 		{
 			title: "God Affinity and Reputation"
-			x: -4.25d
+			x: -4.75d
 			y: -2.0d
 			shape: "rsquare"
 			subtitle: "The Gods are Fickle"
 			description: [
 				"&5So it's important to understand the difference between Affinity and Reputation when it comes to the Gods."
 				""
-				"&5Affinity is, hm... basicaly showing favor to one of the four Vault Gods : Idona, Wendarr, Tenos, and Velara."
+				"&5Affinity is basically showing favor to one of the four Vault Gods : Idona, Wendarr, Tenos, and Velara."
 				""
 				"&5The easiest way to do that is to wear one of the God Charms. There's also an Expertise to help with this."
 				""
@@ -672,7 +638,7 @@
 		{
 			title: "Before and After"
 			x: 0.75d
-			y: 1.5d
+			y: -2.0d
 			shape: "rsquare"
 			subtitle: "Wax On, Wax Off"
 			description: [
@@ -803,9 +769,11 @@
 				""
 				"&5This includes more dangerous themes like Nether or Void themes. As well as the monsters from them."
 				""
-				"&5The chests at points of interest are random too!"
+				"&5The Objective for Chaos Vaults is...Chaos. You will see a single task at the top of the screen, and you will have a couple minutes to complete it."
 				""
-				"&5See? Chaos."
+				"&5Whether you complete the task in time or not, it will be replaced with a new task. If you complete the task before the timer runs out, you'll be teleported back to the entrance for your new task."
+				""
+				"&5You need to complete an unspecified number of these tasks to Complete the Vault."
 			]
 			hide_dependency_lines: true
 			dependencies: ["2EC8B80AE1A271D5"]
@@ -1025,33 +993,6 @@
 			}]
 		}
 		{
-			title: "Cap of the Gods"
-			x: -4.75d
-			y: -3.0d
-			shape: "rsquare"
-			subtitle: "Pray to My Altar"
-			description: [
-				"&5When you complete a God Altar, you will get a bonus modifier to the rest of that Vault, and the chance at gaining reputation with that God."
-				""
-				"&5But if you remember where that God Altar was, you can return to it to get a prize as well."
-			]
-			hide_dependency_lines: true
-			dependencies: ["1799D40CDE8D8F82"]
-			hide: true
-			id: "4606E122BFBD99C6"
-			tasks: [{
-				id: "60F0944ABB06D46A"
-				type: "item"
-				title: "Any God Capstone"
-				item: "the_vault:god_token"
-			}]
-			rewards: [{
-				id: "09DAA2B5603F5B65"
-				type: "item"
-				item: "the_vault:knowledge_star"
-			}]
-		}
-		{
 			title: "Vendoor Vision"
 			x: -9.25d
 			y: -1.0d
@@ -1146,8 +1087,8 @@
 		}
 		{
 			title: "Godly Shaped Rocks"
-			x: -5.25d
-			y: -2.0d
+			x: -4.75d
+			y: -3.0d
 			shape: "rsquare"
 			subtitle: "One For Each God"
 			description: [
@@ -1160,7 +1101,7 @@
 				"&5The whole Vault will be themed to that God, and all God Altars you find will be for that God only."
 			]
 			hide_dependency_lines: true
-			dependencies: ["4606E122BFBD99C6"]
+			dependencies: ["1799D40CDE8D8F82"]
 			hide: true
 			id: "55C6A431EBF09D21"
 			tasks: [
@@ -1397,8 +1338,6 @@
 				"&5In the Void Crucible UI, in the top tab, you can look through the different themes and select blocks to blacklist and disable voiding on."
 				""
 				"&5The bottom tab will show you all the items you have blacklisted, and you can click to remove them."
-				""
-				"&5&lVOID CRUCIBLE REQUIRES RESEARCH."
 			]
 			hide_dependency_lines: true
 			dependencies: ["2EC8B80AE1A271D5"]
@@ -1513,7 +1452,7 @@
 		{
 			title: "Fundamentally Better"
 			x: -0.25d
-			y: 1.5d
+			y: -2.0d
 			shape: "rsquare"
 			subtitle: "Ex Bawx"
 			description: [
@@ -1618,6 +1557,102 @@
 						SigilModel: "the_vault:sigil/adept_sigil#inventory"
 					}
 				}
+			}]
+		}
+		{
+			title: "Survivor : Vault Edition"
+			x: 0.25d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "The Council Convenes"
+			description: [
+				"&5A challenging new Vault Objective is the Survival Objective."
+				""
+				"&5You start with only a few minutes on the timer. Your goal is to survive for 10 minutes!"
+				""
+				"&5To gain more time, you must kill mobs. Each mob will add time based on the type they are. You can also find Pylons that add more Vault Time, and these will be useable again after a cooldown."
+				""
+				"&5Be ready for a fight though, as mobs will continuously spawn nearby and charge you!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["1799D40CDE8D8F82"]
+			hide: true
+			id: "746B629661F3B4FC"
+			tasks: [{
+				id: "23FBB451D7FB2004"
+				type: "item"
+				item: "woldsvaults:crystal_seal_survivor"
+			}]
+			rewards: [{
+				id: "2E2268E95DE93697"
+				type: "item"
+				item: "woldsvaults:crystal_seal_survivor"
+			}]
+		}
+		{
+			title: "Birds Eye View"
+			x: -10.25d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "Does This Mean Vaults are Cubical?"
+			description: [
+				"&5Inside some Dungeons, you can find a Vault Globe."
+				""
+				"&5The Vault Globe, when used, will reveal a large section of the Vault Map, including Ore rooms and special rooms like challenge or omega rooms."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0E520C1ADD9E71DF"]
+			hide: true
+			id: "55E310A476E70A79"
+			tasks: [{
+				id: "5D984F55BE9E8F77"
+				type: "observation"
+				title: "Look at a Vault Globe"
+				icon: "the_vault:vault_globe"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:vault_globe"
+			}]
+			rewards: [{
+				id: "4C4B28D423B915D1"
+				type: "item"
+				item: "the_vault:vault_gold"
+			}]
+		}
+		{
+			title: "Prebuilt Housing"
+			x: 0.25d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "Like a 3D Printer....For Buildings!"
+			description: [
+				"&5When you've unlocked the Inscription Table, you'll notice that there is a tab for Overworld Inscriptions."
+				""
+				"&5These craftable inscriptions are premade houses, bases, and other builds that you can spawn using the Architect's Crucible."
+				""
+				"&5Place down the Architect's Crucible, and put in an Overworld Inscription. You can preview and move around the build before having it spawn the build."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"1799D40CDE8D8F82"
+				"341E8BC988FE57D3"
+			]
+			hide: true
+			id: "0C536BB09AD62C79"
+			tasks: [{
+				id: "43C79646622EBFF5"
+				type: "observation"
+				title: "Look at an Architect's Crucible"
+				icon: "the_vault:schematic_terminal"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:schematic_terminal"
+			}]
+			rewards: [{
+				id: "2772D55DABE6988B"
+				type: "item"
+				item: "the_vault:inscription_piece"
+				count: 8
 			}]
 		}
 	]

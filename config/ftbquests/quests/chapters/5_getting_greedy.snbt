@@ -190,20 +190,20 @@
 					}
 				}
 			}
-			x: -3.25d
-			y: -1.0d
+			x: -4.5d
+			y: -1.25d
 			shape: "hexagon"
 			subtitle: "Your Guide to Greed"
 			description: [
-				"&5Once you've defeated the Herald, you gain access to a brand new piece of Vault Gear : a Vault Map. Vault Maps are the key to a new post-Herald challenge called Mapped Vaults. They can be crafted in the Vault Forge."
+				"&5Mr Greedy's shop contains a new, special piece of Vault Gear called a Vault Map."
 				""
 				"&5When you identify a Vault Map, it will roll a set Objective, Theme, as well as set Modifiers like bonus Item Quantity and similar. There are multiple tiers of Maps to keep a look out for as well!"
 				""
 				"&5Also, there's some neat things you can do with Vault Maps, since they are considered Vault Gear..."
 				""
-				"&5To get more Vault Maps, you can find them in Mapped Vaults, or craft them in the Vault Forge."
+				"&5To get more Vault Maps, you can find them in Mapped Vaults, or purchase more from Mr Greedy."
 			]
-			dependencies: ["1E1457C794B6792E"]
+			dependencies: ["1C8A442CD0503860"]
 			hide: true
 			id: "64E050541DAAF09C"
 			tasks: [{
@@ -212,48 +212,38 @@
 				item: "the_vault:map"
 			}]
 			rewards: [{
-				id: "6D70E8A224867A71"
+				id: "39C1263177E78127"
 				type: "item"
-				item: "woldsvaults:altar_recatalyzer"
+				item: "the_vault:greed_coin"
 				count: 2
 			}]
 		}
 		{
-			title: "Rocking The Greed"
-			x: -1.25d
-			y: -1.0d
+			title: "A Map to Wonders, a Map to Dangers"
+			icon: "luphieclutteredmod:luphie_antique_map"
+			x: -2.25d
+			y: -1.25d
 			shape: "pentagon"
 			subtitle: "A Best Laid Plan"
 			description: [
-				"&5To run a Mapped Vault, you will need a Vault Crystal with the Greedy modifier, obtainable by using a Greedy Vault Rock on a Vault Altar and filling out the ingredients. "
-				""
-				"&5BE WARNED, these ingredients will be items found inside Vaults instead of outside!"
-				""
-				"&5An Altar Recatalyzer will cancel a Greedy Rock Vault completely instead of rerolling it, in case you don't have the Vault materials needed."
-				""
-				"&5Take a Vault Map and a Vault Crystal with Greedy on it, combine them in an Anvil and you are ready to Greed!"
+				"&5To run a Mapped Vault, you need to add the Vault Map to a Vault Crystal in a Crystal Modification Table. You should add the map last, as once applied to the Crystal it will become unmodifiable."
 				""
 				"&5Mapped Vaults will be more difficult than your standard Vaults. New themes, new mobs, new loot you can ONLY find in Mapped Vaults!"
+				""
+				"&5It is highly recommended that you use the Vault Artisan Table to fill any empty slots in your Vault Map before applying it to a Vault Crystal."
 			]
 			dependencies: ["64E050541DAAF09C"]
 			hide: true
 			id: "1BB69DE20D9F42F7"
 			tasks: [{
-				id: "4993208738D202D0"
-				type: "item"
-				item: "woldsvaults:greedy_vault_rock"
-			}]
-			rewards: [{
-				id: "6134CA7EF4DC2BE4"
-				type: "item"
-				item: "woldsvaults:greedy_vault_rock"
-				count: 4
+				id: "6B6FD4C143E49A4B"
+				type: "checkmark"
 			}]
 		}
 		{
 			title: "Task Corrupted Succesfully "
-			x: -1.75d
-			y: -2.25d
+			x: -2.25d
+			y: 0.0d
 			shape: "rsquare"
 			subtitle: "Falling Apart"
 			description: [
@@ -287,7 +277,7 @@
 		{
 			title: "Null in the Void"
 			x: -0.75d
-			y: -2.25d
+			y: -1.25d
 			shape: "rsquare"
 			subtitle: "From Corruption to Control"
 			description: [
@@ -315,8 +305,8 @@
 		}
 		{
 			title: "Pearlescent Battles"
-			x: -1.25d
-			y: 0.25d
+			x: -2.25d
+			y: -2.5d
 			shape: "rsquare"
 			subtitle: "Challenging and Rewarding"
 			description: [
@@ -345,8 +335,8 @@
 		}
 		{
 			title: "Pretty Fly For A Vault..."
-			x: -3.25d
-			y: -2.25d
+			x: -9.0d
+			y: -2.5d
 			shape: "rsquare"
 			subtitle: "...Wait, Are We God Now?"
 			description: [
@@ -376,18 +366,18 @@
 		{
 			title: "Prestigous Ascent"
 			icon: "woldsvaults:chromatic_gold_angel_ring"
-			x: -5.0d
-			y: -1.0d
-			shape: "hexagon"
+			x: -9.0d
+			y: 0.0d
+			shape: "rsquare"
 			subtitle: "Grinding to Godhood"
 			description: [
-				"&5Upon defeating the Herald, you unlock one of the major end-game systems : Prestige."
+				"&5Upon gaining Greed tier one, you unlock another major end-game system : Prestige."
 				""
-				"&5Prestige enables you to continue running Vaults, earning XP and loot. When you gain a level above 100, you earn a Prestige Point."
+				"&5Prestiges are a collection of powers you can permanently unlock. Every Greed tier, up to Tier 12, unlocks another set of Prestige powers you can obtain."
 				""
-				"&5Prestige Points can be used in the new Prestige Power tab in your VH GUI. They are set into tiers, and each power in a tier you unlock requires a power unlocked in a previous tier (Example : to unlock a 3rd Tier3 Power, you must have 3 Tier2 powers and 3 Tier1 Powers unlocked!)"
+				"&5Prestige powers can be found in the Prestige tab in the Vault Hunters GUI menu, to the left of the Greed tab."
 				""
-				"&5Note that Prestige Powers not only require Prestige Points, but also Knowledge Points to unlock!"
+				"&5Note that Prestige Powers not only require you to be of the appropriate Greed tier, but also require Knowledge points to unlock!"
 			]
 			dependencies: ["1E1457C794B6792E"]
 			id: "52C9C1DA4A72E836"
@@ -403,8 +393,8 @@
 		}
 		{
 			title: "More Expertly"
-			x: -3.25d
-			y: 0.25d
+			x: -6.75d
+			y: -2.5d
 			shape: "rsquare"
 			subtitle: "Think Smarter"
 			description: [
@@ -426,6 +416,222 @@
 				id: "69D0C3B91BDCC05A"
 				type: "item"
 				item: "woldsvaults:arcane_essence"
+			}]
+		}
+		{
+			title: "Open the Gates of Greed"
+			x: -9.0d
+			y: -1.25d
+			shape: "hexagon"
+			subtitle: "An Endless Cycle"
+			description: [
+				"&5Once the Herald is defeated, you'll gain the ability to tackle the endgame : Greed. "
+				""
+				"&5The final tab in the Vault Hunters GUI is the Greed Tab, which should now be activated. You can begin the first Greed Trial."
+				""
+				"&5You can only face the Greed Trial alone, so prepare accordingly. Make sure your gear and skills are set for a big boss fight."
+				""
+				"&5When you begin the Greed Trial, you'll face The Vessel, an invincible boss that will gauge your strength."
+				""
+				"&5Your goal is not only to last as long as you can against it, but also to damage it as much as possible to get through its \"Phases\"."
+				""
+				"&5You are rewarded Greed Coins depending on both of those, which can be used to purcase special Greed items."
+			]
+			dependencies: ["1E1457C794B6792E"]
+			id: "1CE0B175500298F9"
+			tasks: [{
+				id: "5AECE36FD6422579"
+				type: "item"
+				item: "the_vault:greed_coin"
+			}]
+		}
+		{
+			x: -6.75d
+			y: -1.25d
+			shape: "pentagon"
+			subtitle: "Phenomenal Power, Itty Bitty Living Space"
+			description: [
+				"&5Defeating the Greed Trial the first time will unlock the first Greed tier, as well as give you a Greedy Anchor."
+				""
+				"&5The Greedy Anchor is the home of Mr Greedy, an NPC shopkeep who offers you various Greed related items, quests, and more."
+				""
+				"&5You can spend Greed Coins at Mr Greedy's shop, which gains more item slots the higher Greed tier you are."
+				""
+				"&5Mr Greedy also offers various Quests for you to do to earn Reputation, which is needed to progress to higher Greed tiers (along with levels, of course)."
+				""
+				"&5And finally, Mr Greedy offers you Challenge Crystals for reputation as well. These have specific modfiers on them to make them, well, a challenge!"
+			]
+			dependencies: ["1CE0B175500298F9"]
+			id: "1C8A442CD0503860"
+			tasks: [{
+				id: "4761BC1CDBDD6C75"
+				type: "observation"
+				title: "Look at a Greedy Anchor"
+				icon: "the_vault:greedy_anchor"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:greedy_anchor"
+			}]
+			rewards: [{
+				id: "1C4B1D70E58B055E"
+				type: "item"
+				item: "the_vault:greed_coin"
+				count: 5
+			}]
+		}
+		{
+			title: "The Greed Tree"
+			icon: "botania:gaia_head"
+			x: -4.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: [
+				"&5Once you finish the first Greed Trial, the Greed tree will open up, and you'll receive three Greed points to spend as you like."
+				""
+				"&5The Greed Tree has three skill sections : Utility, Defensive, and Offensive. You can hover over a node to see what it does, and click it to spend your Greed Point in it. "
+				""
+				"&5To get more Greed points, you'll need to level and gain enough reputation to take the next Greed Trial, which will advance you to the next Greed tier."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1CE0B175500298F9"]
+			hide: true
+			id: "6117225098ED88B2"
+			tasks: [{
+				id: "4B97454859DA0623"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "A Bottomless Cauldron"
+			x: -10.5d
+			y: -1.75d
+			shape: "rsquare"
+			subtitle: "Ever Hungry"
+			description: [
+				"&5Aside from the Greed Trials, another way to gain Greed Coins is by using the Greed Cauldron."
+				""
+				"&5The Greed Cauldron will ask for Vault materials, such as vault burgers, vault gems, etc. When you feed it the shown item, you'll receive Greed Coins as payment."
+				""
+				"&5Note that your Greed Cauldron will scale with how much you use it! It will ask for more and more Vault materials the more coins you gain from it."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1CE0B175500298F9"]
+			hide: true
+			id: "5AEB11256B8F16F0"
+			tasks: [{
+				id: "097B63097FF1F992"
+				type: "observation"
+				title: "Look at a Greed Cauldron"
+				icon: "the_vault:greed_cauldron"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:greed_cauldron"
+			}]
+			rewards: [{
+				id: "75DF9922902C805C"
+				type: "item"
+				item: "the_vault:greed_coin"
+				count: 2
+			}]
+		}
+		{
+			title: "Killing For Coin"
+			x: -10.5d
+			y: -0.75d
+			shape: "rsquare"
+			subtitle: "Kill Them Before They Kill You"
+			description: [
+				"&5When you activate Greed, all of your Vaults become Greed vaults. All mobs get increased stats, and Greed Assassins can start to appear."
+				""
+				"&5Greed Assassins have a chance of spawning every time you kill a mob. They will spawn nearby, glow brightly, and charge at you. They are like supercharged Champions, with their own abilities."
+				""
+				"&5Defeating a Greed Assassin will get you some Greed Coins and Reputation."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1CE0B175500298F9"]
+			hide: true
+			id: "1A0233FD81BD2182"
+			tasks: [{
+				id: "6AE0FA503A475658"
+				type: "kill"
+				title: "Kill Greed Assassin"
+				entity: "the_vault:acid_enforcer"
+				value: 1L
+			}]
+			rewards: [{
+				id: "2751FA6C49C1C4D6"
+				type: "item"
+				item: "the_vault:greed_coin"
+				count: 2
+			}]
+		}
+		{
+			title: "Etched in Glory"
+			x: -6.75d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Carved in Power"
+			description: [
+				"&5Mr Greedy's shop offers a new kind of item : Etchings."
+				""
+				"&5Etchings are used to modify your abilities in various powerful ways. Make Arcane Rail or Ice Bolt pierce through mobs. Make Dash Warp cause a Nova explosion wherever you teleport to. And many many others."
+				""
+				"&5Etchings are applied to Vault Gear using an Etching Application Table. Etchings can only be applied to Vault Gear related to the etching type : Offensive on Vault Weapons, Defensive on Vault Armor, and Utility on Vault Off-Hand gear."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1C8A442CD0503860"]
+			hide: true
+			id: "0D821DF7DFC819D3"
+			tasks: [{
+				id: "726ECF245B9D86A5"
+				type: "observation"
+				title: "Look at an Etching Application Table"
+				icon: "the_vault:etching_application_table"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:etching_application_table"
+			}]
+			rewards: [{
+				id: "4A175CAD57FDDBB1"
+				type: "item"
+				item: "the_vault:greed_coin"
+			}]
+		}
+		{
+			title: "A Vault of Your Own"
+			x: -4.5d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Does Feng Shui Include Mushrooms?"
+			description: [
+				"&5Mr Greedy's shop includes Greedy versions of Inscriptions and Catalysts. These are used to design your own custom Vault layout called a Personal Vault."
+				""
+				"&5To design your Personal Vault, you'll need an Architect's Workbench. Here, you can place down Super Inscriptions to set what rooms will appear and Super Catalysts to set what bonus modifiers your Personal Vault will have."
+				""
+				"&5Each Super Inscription added to your Personal Vault will add more Time to your Vault Timer, so balancing Common Rooms and special rooms is important."
+				""
+				"&5You can insert a Level 100 Vault Crystal and some Echo Gems to create a Personal Vault Crystal."
+				""
+				"&5Personal Vaults can only be run once every 20 hours."
+			]
+			hide_dependency_lines: true
+			dependencies: ["1C8A442CD0503860"]
+			hide: true
+			id: "42316598F41BE2A9"
+			tasks: [{
+				id: "2CE2FA855212E0DE"
+				type: "observation"
+				title: "Look at an Architect's Workbench"
+				icon: "the_vault:personal_vault"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:personal_vault"
+			}]
+			rewards: [{
+				id: "13E6CE4B8744F68F"
+				type: "item"
+				item: "the_vault:greed_coin"
+				count: 2
 			}]
 		}
 	]

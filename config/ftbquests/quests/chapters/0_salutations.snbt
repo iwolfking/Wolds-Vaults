@@ -258,7 +258,7 @@
 					}
 				}
 			}
-			x: 4.0d
+			x: 4.160714285714292d
 			y: 1.0d
 			shape: "rsquare"
 			subtitle: "Entrance Fee"
@@ -288,7 +288,7 @@
 		{
 			title: "Loot! Experience! Rewards!"
 			icon: "the_vault:treasure_chest"
-			x: 2.0d
+			x: 1.875d
 			y: 1.0d
 			shape: "rsquare"
 			subtitle: "How Much or Little Would You Like?"
@@ -494,7 +494,7 @@
 			title: "Locking Your Level"
 			icon: "thermal:lock"
 			x: 3.0d
-			y: 3.25d
+			y: 4.25d
 			shape: "rsquare"
 			subtitle: "Go No Further!"
 			description: [
@@ -530,6 +530,70 @@
 			id: "497A36CA870E3B59"
 			tasks: [{
 				id: "50C32CC3FD55E35B"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Syncronized Vaulting"
+			icon: "pneumaticcraft:coordinate_tracker_upgrade"
+			x: 1.9107142857142847d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "All Together Now!"
+			description: [
+				"&5If you are in a group that would like to stay at the same level, even if you aren't all playing at the same time, you can use the new Vault Level Sync feature."
+				""
+				"&5You will need to create a separate team using the command : &r&6/the_vault level_sync invite player_name &r&5 which will create your team and invite that player. You can use the command to invite more players to your Level Sync team."
+				""
+				"&5The other players will need to type: &r&6/the_vault level_sync accept"
+				""
+				"&5All players within the Level Sync team will stay on equal level."
+				""
+				"&5If a player wants to leave the team, they can use: &r&6/the_vault level_sync leave"
+				""
+				"&5The Level Sync party leader can break the group apart with: &r&6/the_vault level_sync disband"
+			]
+			dependencies: ["40E4E5113E933B44"]
+			hide: true
+			id: "72D348A77152625D"
+			tasks: [{
+				id: "62F45E5292A4932C"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Your Crystals, Your Price"
+			icon: "draconicevolution:wyvern_wireless_crystal"
+			x: 4.125d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "Individual Pricing Changes!"
+			description: [
+				"&5If you are playing on a server with players who have differing needs on the price of making Vault Crystals, you can set the Crystal Mode for individual players with a command!"
+				""
+				"&6/the_vault local_crystal_mode player_name crystal_mode"
+				""
+				"&5See the previous quest for the description of each crystal mode."
+			]
+			dependencies: ["33C206FEA6772466"]
+			id: "3E03C854B94F8B03"
+			tasks: [{
+				id: "1D99A883A055E94F"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "It's Always About The Clock"
+			icon: "botania:cosmetic_clock_eye"
+			x: 3.0d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "Just Look at the Time"
+			description: ["&5If you'd like to increase or decrease the default amount of time you (and your players, if on a server) have in a vault, you can change it via a gamerule."]
+			dependencies: ["4CA0844372B19F19"]
+			id: "0EF0C127BD458787"
+			tasks: [{
+				id: "609994794D891552"
 				type: "checkmark"
 			}]
 		}
