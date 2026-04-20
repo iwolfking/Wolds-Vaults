@@ -162,9 +162,9 @@
 			tasks: [{
 				id: "55A7B143D76A1571"
 				type: "woldsvaults:vault_level"
-				title: "Reach Level 65"
+				title: "Reach Level 50"
 				icon: "the_vault:ascension_forge"
-				value: 65
+				value: 50
 			}]
 			rewards: [{
 				id: "18216CECAFDE1257"
@@ -543,7 +543,7 @@
 			shape: "rsquare"
 			subtitle: "A Prize on Display"
 			description: [
-				"&5When you finally get into a Treasure Room, you'll find one of three things: a Treasure Chest, a single Treasure Pedestal, or THREE Treasure Pedestals!"
+				"&5When you finally get into a Treasure Room, among the piles of coins and boxes you might fight a Treasure Pedestal as well!"
 				""
 				"&5Unlike the Treasure Chest, there is only one piece of loot on a Treasure Pedestal. But this is the only way to get two of the rarest treasure rewards: The Treasure Card Deck, and a unique Treasure Magnet. "
 				""
@@ -657,9 +657,9 @@
 			shape: "rsquare"
 			subtitle: "Treasure!"
 			description: [
-				"&5When you finally get into a Treasure Room, you'll find one of three things: a Treasure Chest, a single Treasure Pedestal, or THREE Treasure Pedestals!"
+				"&5When you finally get into a Treasure Room, you'll find a Treasure Chest, along with piles of Coins and Cardboard Boxes full of loot."
 				""
-				"&5Usually you will find a Treasure Chest. Full of good loot in it, but not always the best loot."
+				"&5Opening the Treasure Chest, you'll find 9 items that will be revealed one by one. These range from capstones to deck cores to other rare items."
 				""
 				"&5But these are usually good ways of finding Wold Star Chunks, which you'll want for high end items."
 			]
@@ -936,7 +936,7 @@
 				""
 				"&5One phase is a straight up fight. Watch out for AoE attacks!"
 				""
-				"&5Another is a charge up attack. You'll see glasses full of Time Sand or something in them. Run around and hit these before the charge up finishes!"
+				"&5Another is a charge up attack. You'll see glasses full of Time Sand or something in them. Run around and hit these before they charge up fully!"
 				""
 				"&5Then there's what I call the Monster Mash phase. Five waves of monsters will spawn, and to get to the next stage you need to kill the mobs in the gray zone that shows up."
 				""
@@ -1024,13 +1024,15 @@
 			shape: "hexagon"
 			subtitle: "Bout to Get Down"
 			description: [
-				"&5Another new type of Vault that opens up at level 50 is called the Vault Royale, a take on Battle Royale style games. You need to use a Royale Rock to create the crystal."
+				"&5Another new type of Vault that opens up at level 50 is called the Royale Vault, a take on Battle Royale style games. You need to use a Royale Rock to create the crystal."
 				""
-				"&5The Royale Vault will roll a random objective to complete. All loot from chests, mobs, etc will go into a Royale Crate in your inventory, which you only get when you complete the Vault. You cannot exit the portal early, so it is either all or nothing."
+				"&5Vault Royale's have their own special objective: you must rebuild the Royale Crown to face the Royale Boss, the Skeleton King. Defeat the Skeleton King to complete the Vault!"
 				""
-				"&5Objectives that require items, such as Scavenger, will drop into your Inventory like normal however."
+				"&5Chests in Vault Royale will either be empty, or contain up to 4 Crown Fragments. You must collect these Fragments and submit them to the piles of skulls you can find scattered around the Vault."
 				""
-				"&5When you enter a Royale Vault, you arrive with no skills or items (You'll get them back when you leave!), and you must gear and skill up while in the Vault."
+				"&5When you enter a Vault Royale, you arrive with no skills or items (You'll get them back when you leave!), and you must gear and skill up while in the Vault."
+				""
+				"&5The starting room contains an NPC where you can get a pre-made skill Loadout, as well as a starting set of gear in a Royale box."
 			]
 			dependencies: ["479A00BDE6E0257F"]
 			hide: true
@@ -1080,17 +1082,18 @@
 		}
 		{
 			title: "Winner Winner Crate Dinner"
+			icon: "the_vault:royale_crate"
 			x: 8.0d
 			y: -3.25d
 			shape: "rsquare"
 			subtitle: "A Tough Fought Reward"
 			description: [
-				"&5In the Entrance, you'll find an NPC called Tommy. This NPC will offer you 3 Skill loadouts, randomly chosen from over a couple dozen. Any skill points not used with the loadouts can be used with Skill Scrolls. You can also go in 'skillless', but this is VERY difficult!"
+				"&5In the Entrance, you'll find an NPC called the Royale Drafter. This NPC will offer you 3 Skill loadouts, randomly chosen from over a couple dozen. Any skill points not used with the loadouts can be used with Skill Scrolls. You can also go in 'skillless', but this is VERY difficult!"
 				""
-				"&5After the loadout, Tommy will offer you two sets of Trinkets, which you can select one from each group. And finally, a choice of reward for completing the Royale Vault."
+				"&5After the loadout, the Royale Drafter will offer you two sets of Trinkets, which you can select one from each group. And finally, a choice of reward for completing the Royale Vault."
 				""
-				"&5You'll also have at least one Royale Loot Crate in the main room, containing up to 5 items from the following list : "
-				"&5 -Vault Gear, Skill Scrolls, Vault Modifiers, Vault Fruit, Food, and Blocks"
+				"&5You'll also have at least one Royale Loot Crate in the main room, containing a starting Vault Gear loadout of  : "
+				"&5 -1 Scrappy Weapon, 1 Paxel, 1 Scrappy set of Armor, Food, Healing, and Blocks."
 				""
 				"&5These Royale Loot Crates are also scattered in the Vault, looting them will help you gear up to complete the Vault."
 			]
@@ -1099,20 +1102,13 @@
 			hide: true
 			id: "6BBA294D34AA81D7"
 			tasks: [{
-				id: "1E4849390C85217F"
-				type: "item"
-				item: "the_vault:royale_crate"
-			}]
-			rewards: [{
-				id: "028B889F4C4D7544"
-				type: "item"
-				item: {
-					id: "the_vault:boost_modification_stone"
-					Count: 1b
-					tag: {
-						LootBoost: 2
-					}
-				}
+				id: "23090A09131735BD"
+				type: "observation"
+				title: "Look at a Royale Pillar"
+				icon: "the_vault:royale_pillar"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:royale_pillar"
 			}]
 		}
 		{
@@ -1129,7 +1125,7 @@
 				""
 				"&5You can also dye the Companion Home the same way you dye Leather Armor (put any number of dyes + the home in a crafting table)."
 				""
-				"&5Companions can equip Companion Relics and Particles, which can be found as loot in Vault Chests and Treasure Sand."
+				"&5Companions can equip Companion Relics and Particles, which can be crafed in the Relic Crafting Table. Components for these can spawn in Vault Chests when you have a Companion equipped."
 				""
 				"&5Companions also have Hearts. If you die in a Vault, your equipped Companion will lose a Heart as well. When a Companion has no hearts left, it will retire and can no longer help in a Vault."
 				""
@@ -1149,6 +1145,11 @@
 					id: "5AFE1659281D1201"
 					type: "item"
 					item: "the_vault:companion_heal"
+				}
+				{
+					id: "391BA89E4FA1E62D"
+					type: "item"
+					item: "the_vault:relic_crafting_table"
 				}
 			]
 			rewards: [{
@@ -1481,7 +1482,7 @@
 		}
 		{
 			title: "You're My Friend Now"
-			x: 5.5d
+			x: 5.0d
 			y: -5.25d
 			shape: "rsquare"
 			subtitle: "We're Getting Vault Burgers Later!"
@@ -1576,7 +1577,7 @@
 		{
 			title: "Stylish Jewelry"
 			x: 12.5d
-			y: -0.75d
+			y: 0.25d
 			shape: "rsquare"
 			subtitle: "Fancy and Functional"
 			description: [
@@ -1625,6 +1626,156 @@
 						}
 					}
 				}
+			}]
+		}
+		{
+			title: "Decking Back Out"
+			x: 12.5d
+			y: -4.25d
+			shape: "rsquare"
+			subtitle: "No, No, I Change My Mind"
+			description: [
+				"&5Reclamation Altars can show up in Dungeons, and are used to remove modifiers from Decks."
+				""
+				"&5Usually these modifiers are added by adding a Deck Core to a Deck, and the Reclamation Altar can remove these for you."
+				""
+				"&5When you use the Reclamation Altar, it will confirm the Deck you currently have equipped. When confirmed, it will remove a random modifier from it."
+				""
+				"&5There is a small chance for that Deck Core to return to your inventory."
+			]
+			hide_dependency_lines: true
+			dependencies: ["73F19D407DDBD157"]
+			hide: true
+			id: "5935A358A21413F2"
+			tasks: [{
+				id: "0C6D98708ACF5145"
+				type: "observation"
+				title: "Find a Reclamation Altar"
+				icon: "the_vault:reclamation_altar"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:reclamation_altar"
+			}]
+			rewards: [{
+				id: "1FBA1CFF5EEF1923"
+				type: "item"
+				item: "the_vault:gem_pog"
+			}]
+		}
+		{
+			title: "Personalization"
+			x: 12.5d
+			y: -0.75d
+			shape: "rsquare"
+			subtitle: "A Unique You"
+			description: [
+				"&5The Customization Station is used to customize your own title in your game. "
+				""
+				"&5You can also set an icon/emblem for yourself, as well as a partical trail that follows behind you, much like Companions have."
+				""
+				"&5Your title and emblem can be seen by others, as well as for yourself in text chat."
+				""
+				"&5Most title pieces, emblems, and trails are locked to start with, and need to be unlocked through various means. Highlighting the title piece you want will tell you how to obtain it."
+			]
+			hide_dependency_lines: true
+			dependencies: ["783B07D340595603"]
+			hide: true
+			id: "09D6CBCEBA3EBC1D"
+			tasks: [{
+				id: "362F7AA531BDD7FD"
+				type: "observation"
+				title: "Look at Customization Station"
+				icon: "the_vault:player_customisation_station"
+				timer: 0L
+				observe_type: 0
+				to_observe: "the_vault:player_customisation_station"
+			}]
+			rewards: [{
+				id: "2CE3FCA9C8D9F1F4"
+				type: "item"
+				item: "woldsvaults:supply_box"
+			}]
+		}
+		{
+			title: "Collecting Bits and Bobs"
+			x: 3.25d
+			y: -4.25d
+			shape: "rsquare"
+			subtitle: "Scavingo? Bivenger?"
+			description: [
+				"&5Another special Vault Objective combines Scavenger and Bingo into a new one called Collector."
+				""
+				"&5You are presented with a Bingo Board, except instead of tasks you are given a number of Scavenger items for each spot."
+				""
+				"&5Like Bingo, once you fill a line, you can find a Grid Gateway to complete the Vault, or you can complete more lines for a better reward."
+			]
+			hide_dependency_lines: true
+			dependencies: ["504DC166104A8063"]
+			hide: true
+			id: "4DDE4C5B65344C79"
+			tasks: [{
+				id: "7FAAAC00ECD11179"
+				type: "item"
+				item: "the_vault:crystal_seal_collector"
+			}]
+			rewards: [{
+				id: "1A577E98B49662E5"
+				type: "item"
+				item: "the_vault:crystal_seal_collector"
+			}]
+		}
+		{
+			title: "A Home For Your Friends"
+			x: 6.0d
+			y: -5.25d
+			shape: "rsquare"
+			subtitle: "Despite All My Rage...."
+			description: [
+				"&5If you want a more stylish place to house your Companions, you can always make yourself a Companion Terrarium."
+				""
+				"&5You can place up to 4 Companions in a Terrarium, and set the theme of the Terrarium. Then you can watch them run around."
+			]
+			hide_dependency_lines: true
+			dependencies: ["4EA298FC76637A03"]
+			hide: true
+			id: "33B453257B0EE8E1"
+			tasks: [{
+				id: "0FD37612D6F3F70D"
+				type: "item"
+				item: "the_vault:companion_terrarium"
+			}]
+			rewards: [{
+				id: "39A76DE0B61DA8DB"
+				type: "item"
+				item: "the_vault:companion_relic_fragment"
+			}]
+		}
+		{
+			title: "A Shuffling We'll Go"
+			x: 3.25d
+			y: -5.25d
+			shape: "rsquare"
+			subtitle: "Keep Mixing It Up!"
+			description: [
+				"&5An interesting twist you can make to Bingo and Collector Vaults is by making them Shuffled."
+				""
+				"&5You run Shuffled Objectives like normal, aiming to complete a line."
+				""
+				"&5But once you complete a line, all other non-completed spaces will shuffle around and reset their progress!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["504DC166104A8063"]
+			hide: true
+			id: "34030A46EB2E636D"
+			tasks: [{
+				id: "4340B81DAF8EA5BE"
+				type: "item"
+				item: "the_vault:crystal_seal_shuffle_prophet"
+			}]
+			rewards: [{
+				id: "120D7560D8BF2E94"
+				type: "item"
+				item: "the_vault:crystal_seal_shuffle_prophet"
 			}]
 		}
 	]

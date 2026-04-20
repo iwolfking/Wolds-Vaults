@@ -1224,22 +1224,20 @@
 			shape: "rsquare"
 			subtitle: "By Your Design"
 			description: [
-				"&5While expensive, the Augment Assembly Pedestal is fairly powerful as you unlock more and more Themes."
+				"&5While expensive, the Augment Station is fairly powerful as you unlock more and more Themes."
 				""
-				"&5This Augment Assembly Table will let ye craft any Themes you have unlocked."
+				"&5This Augment Station will let ye craft any Themes you have unlocked."
 				""
 				"&5You can get Augment Pieces by recycling unused Augments."
-				""
-				"&4(RESEARCH REQUIRED)"
 			]
 			hide_dependency_lines: true
 			dependencies: ["420733071145A568"]
 			hide: true
 			id: "0DF63164F7EBCD97"
 			tasks: [{
-				id: "742DD8844D5AD687"
+				id: "28B9FB797072A756"
 				type: "item"
-				item: "woldsvaults:augment_crafting_table"
+				item: "the_vault:augment_station"
 			}]
 			rewards: [{
 				id: "0F234AC92C9A7BAB"
@@ -2336,7 +2334,7 @@
 		}
 		{
 			title: "Uniquely Found"
-			x: 2.25d
+			x: 1.75d
 			y: 2.0d
 			shape: "rsquare"
 			subtitle: "Tucked Away for a Rainy Day"
@@ -2373,15 +2371,17 @@
 			description: [
 				"&5As you start to get higher level and get more gear and tools, you'll probably end up with a need to...turn off some of those tools in your Base."
 				""
-				"&5Popping half your base with a super hammer isn't really fun the first time."
+				"&5Popping half your base with a super hammer isn't really fun the first time, nor is melting all your villagers on accident."
 				""
-				"&5Nor is always having to dig into your backpack to grab dropped items."
+				"&5Neither is always having to dig into your backpack to grab dropped items."
 				""
-				"&5So there's a few things ye can make to help out. The Debagnitizer will stop your Sophisticated Backpacks from auto picking up items in an area."
+				"&5So there's a few things ye can make to help out. The Bag Suppressor will stop your Sophisticated Backpacks from auto picking up items in an area."
 				""
-				"&5And the Demagnetizer will disable all Vault Magnets near it."
+				"&5And the Magnet Suppressor will disable all Vault Magnets near it."
 				""
-				"&5As for the hammer, you can use the Dehammerizer to disable the area effect of yer hammer. Save yourself a big headache."
+				"&5As for the hammer, you can use the Hammer Supprressor to disable the area effect of yer hammer. "
+				""
+				"&5And finally the Ability Suppressor will prevent most damaging attack skills from activating."
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
@@ -2402,6 +2402,11 @@
 					id: "2CFB49DD80033A6D"
 					type: "item"
 					item: "the_vault:dehammerizer"
+				}
+				{
+					id: "525524F4B72D7173"
+					type: "item"
+					item: "the_vault:ability_suppressor"
 				}
 			]
 			rewards: [{
@@ -2449,7 +2454,7 @@
 				Count: 1b
 				tag: { }
 			}
-			x: 3.75d
+			x: 4.25d
 			y: 2.0d
 			shape: "rsquare"
 			subtitle: "You Equals Me"
@@ -2688,32 +2693,6 @@
 			}]
 		}
 		{
-			title: "Slightly Forgetful"
-			icon: {
-				id: "the_vault:respec_flask"
-				Count: 1b
-				tag: { }
-			}
-			x: 4.75d
-			y: 2.0d
-			shape: "rsquare"
-			subtitle: "Choosing Anew"
-			description: [
-				"&5Many skills have specializations you can select. Nova has Toxic or Frost Nova, Earthquake has Landmine, etc."
-				""
-				"&5Forgetting these specializations isn't as easy as spending a bit of gold to unlearn spent skill points, however. Even if you remove all the skill points spent in a skill, the Specialization will still be selected."
-				""
-				"&5Instead you must craft a Choice Flask that matches the base skill of the specialization you want to unlearn."
-			]
-			hide_dependency_lines: true
-			dependencies: ["76B7D44E338DC9B7"]
-			id: "5F1769A5225837C4"
-			tasks: [{
-				id: "3DA6BBF80165F690"
-				type: "checkmark"
-			}]
-		}
-		{
 			title: "Unnecessary Additions"
 			icon: {
 				id: "woldsvaults:chiseling_focus"
@@ -2879,6 +2858,32 @@
 				id: "7C0DE356EE7E9DF8"
 				type: "item"
 				item: "the_vault:unique_shard"
+			}]
+		}
+		{
+			title: "A Unique Display"
+			x: 2.75d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "Showing Off a Bit"
+			description: [
+				"&5If you want a great way to see what Uniques there are, how to find them, and display ones you have found, then look no further than the Unique Safe."
+				""
+				"&5In this, you can see a list of every unique, along with a hint on where to find it. You can also select one that you've unlocked to display on a player mannequin above the Unique Safe."
+			]
+			hide_dependency_lines: true
+			dependencies: ["7C06CB39886FCC9B"]
+			hide: true
+			id: "055DC72980065907"
+			tasks: [{
+				id: "16CB1EAA6A385240"
+				type: "item"
+				item: "the_vault:unique_wardrobe"
+			}]
+			rewards: [{
+				id: "3DA86015554D4C51"
+				type: "item"
+				item: "the_vault:gem_pog"
 			}]
 		}
 	]

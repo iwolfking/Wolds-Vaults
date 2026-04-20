@@ -3663,7 +3663,7 @@
         }
       }
     ],
-    "the_vault:crystal_seal_big_shuffle_prophet": [
+    "the_vault:crystal_seal_shuffle_big_prophet": [
       {
         "level": 0,
         "input": [
@@ -3901,6 +3901,30 @@
           "width": 5,
           "height": 5,
           "modifierPool": "the_vault:bingos"
+        }
+      }
+    ],
+     "the_vault:crystal_seal_shuffle_prophet": [
+      {
+        "level": 0,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objective": {
+          "type": "bingo",
+          "objective_probability": 1.0,
+          "width": 4,
+          "height": 4
+        },
+        "modifiers": {
+          "type": "default",
+          "list": [
+            {
+              "modifier": "the_vault:shuffle",
+              "count": 1
+            }
+          ],
+          "random_modifiers": false
         }
       }
     ],

@@ -1,0 +1,491 @@
+{
+  "version": 4,
+  "options": {
+    "the_vault:cooldown_gui_enabled": true,
+    "the_vault:do_vanilla_potion_damage_effects": false,
+    "the_vault:ability_scrolling": true,
+    "the_vault:treasure_door_names": false,
+    "the_vault:highlight_rarity": true,
+    "the_vault:show_point_messages": true,
+    "the_vault:elixir_orb_numbers": false,
+    "the_vault:ability_quickbinding_enabled": false,
+    "the_vault:hud_on_tab": false,
+    "the_vault:inv_hud_mode": "LOW",
+    "the_vault:inv_hud_uses_mode": "LOW",
+    "the_vault:healthbar_enabled": "ENABLED",
+    "the_vault:simple_map_icons": true,
+    "the_vault:show_hud_on_tab": false,
+    "the_vault:inv_hud_helmet": {
+      "displayMode": "durability_low",
+      "hudPosition": {
+        "anchor": {
+          "horizontal": "center",
+          "vertical": "bottom"
+        },
+        "offsetX": -141.0,
+        "offsetY": -86.0
+      },
+      "size": 1.0,
+      "indicator": "bar",
+      "useOverlay": false,
+      "textPosition": "RIGHT"
+    },
+    "the_vault:inv_hud_chestplate": {
+      "displayMode": "durability_low",
+      "hudPosition": {
+        "anchor": {
+          "horizontal": "center",
+          "vertical": "bottom"
+        },
+        "offsetX": -141.0,
+        "offsetY": -64.0
+      },
+      "size": 1.0,
+      "indicator": "bar",
+      "useOverlay": false,
+      "textPosition": "RIGHT"
+    },
+    "the_vault:inv_hud_leggings": {
+      "displayMode": "durability_low",
+      "hudPosition": {
+        "anchor": {
+          "horizontal": "center",
+          "vertical": "bottom"
+        },
+        "offsetX": -141.0,
+        "offsetY": -42.0
+      },
+      "size": 1.0,
+      "indicator": "bar",
+      "useOverlay": false,
+      "textPosition": "RIGHT"
+    },
+    "the_vault:inv_hud_boots": {
+      "displayMode": "durability_low",
+      "hudPosition": {
+        "anchor": {
+          "horizontal": "center",
+          "vertical": "bottom"
+        },
+        "offsetX": -141.0,
+        "offsetY": -20.0
+      },
+      "size": 1.0,
+      "indicator": "bar",
+      "useOverlay": false,
+      "textPosition": "RIGHT"
+    },
+    "the_vault:inv_hud_trinket_red": {
+      "displayMode": "durability_low",
+      "hudPosition": {
+        "anchor": {
+          "horizontal": "center",
+          "vertical": "bottom"
+        },
+        "offsetX": 96.0,
+        "offsetY": -42.0
+      },
+      "size": 1.0,
+      "indicator": "bar",
+      "useOverlay": false,
+      "textPosition": "RIGHT"
+    },
+    "the_vault:inv_hud_trinket_blue": {
+      "displayMode": "durability_low",
+      "hudPosition": {
+        "anchor": {
+          "horizontal": "center",
+          "vertical": "bottom"
+        },
+        "offsetX": 118.0,
+        "offsetY": -42.0
+      },
+      "size": 1.0,
+      "indicator": "bar",
+      "useOverlay": false,
+      "textPosition": "RIGHT"
+    },
+    "the_vault:inv_hud_trinket_vault_necklace": {
+      "displayMode": "durability_low",
+      "hudPosition": {
+        "anchor": {
+          "horizontal": "center",
+          "vertical": "bottom"
+        },
+        "offsetX": 118.0,
+        "offsetY": -20.0
+      },
+      "size": 1.0,
+      "indicator": "bar",
+      "useOverlay": false,
+      "textPosition": "RIGHT"
+    },
+    "the_vault:inv_hud_trinket_god_charm": {
+      "displayMode": "durability_low",
+      "hudPosition": {
+        "anchor": {
+          "horizontal": "center",
+          "vertical": "bottom"
+        },
+        "offsetX": 139.0,
+        "offsetY": -42.0
+      },
+      "size": 1.0,
+      "indicator": "bar",
+      "useOverlay": false,
+      "textPosition": "RIGHT"
+    },
+    "the_vault:inv_hud_magnet": {
+      "displayMode": "durability_low",
+      "hudPosition": {
+        "anchor": {
+          "horizontal": "center",
+          "vertical": "bottom"
+        },
+        "offsetX": 96.0,
+        "offsetY": -20.0
+      },
+      "size": 1.0,
+      "indicator": "bar",
+      "useOverlay": false,
+      "textPosition": "RIGHT"
+    },
+    "the_vault:inv_hud_backpack": {
+      "displayMode": "durability_low",
+      "hudPosition": {
+        "anchor": {
+          "horizontal": "center",
+          "vertical": "middle"
+        },
+        "offsetX": -44.5,
+        "offsetY": 15.0
+      },
+      "size": 1.0,
+      "indicator": "bar",
+      "useOverlay": false,
+      "textPosition": "RIGHT"
+    },
+    "the_vault:inv_hud_compass": {
+      "displayMode": "always",
+      "hudPosition": {
+        "anchor": {
+          "horizontal": "center",
+          "vertical": "top"
+        },
+        "offsetX": -8.0,
+        "offsetY": 37.0
+      },
+      "size": 1.0,
+      "indicator": "bar",
+      "useOverlay": false,
+      "textPosition": "RIGHT"
+    },
+    "the_vault:inv_hud_bounty": {
+      "displayMode": "always",
+      "hudPosition": {
+        "anchor": {
+          "horizontal": "left",
+          "vertical": "middle"
+        },
+        "offsetX": 3.0,
+        "offsetY": -59.5
+      },
+      "size": 1.0,
+      "indicator": "bar",
+      "useOverlay": false,
+      "textPosition": "RIGHT"
+    },
+    "the_vault:vault_bar_position": {
+      "anchor": {
+        "horizontal": "center",
+        "vertical": "bottom"
+      },
+      "offsetX": 4.0,
+      "offsetY": -41.0
+    },
+    "the_vault:vault_bar_scale": 1.0,
+    "the_vault:vault_points_position": {
+      "anchor": {
+        "horizontal": "right",
+        "vertical": "top"
+      },
+      "offsetX": -5.0,
+      "offsetY": 10.0
+    },
+    "the_vault:vault_points_offset_for_potions": true,
+    "the_vault:vault_points_scale": 1.0,
+    "the_vault:abilities_position": {
+      "anchor": {
+        "horizontal": "left",
+        "vertical": "bottom"
+      },
+      "offsetX": 4.0,
+      "offsetY": -36.0
+    },
+    "the_vault:abilities_scale": 1.0,
+    "the_vault:abilities_show_mana_bar": true,
+    "the_vault:abilities_show_ability_icons": true,
+    "the_vault:abilities_show_selection_indicator": true,
+    "the_vault:abilities_show_background": true,
+    "the_vault:abilities_show_mana_text": true,
+    "the_vault:abilities_use_custom_mana_text": false,
+    "the_vault:abilities_mana_fx_intensity": 1.0,
+    "the_vault:abilities_cooldown_position": {
+      "anchor": {
+        "horizontal": "left",
+        "vertical": "bottom"
+      },
+      "offsetX": 4.0,
+      "offsetY": -61.0
+    },
+    "the_vault:abilities_cooldown_scale": 1.0,
+    "the_vault:abilities_cooldown_columns": 4,
+    "the_vault:abilities_cooldown_spacing": 18.0,
+    "the_vault:abilities_cooldown_show_numbers": true,
+    "the_vault:abilities_cooldown_icon_size": 1.0,
+    "the_vault:show_vault_timer": true,
+    "the_vault:vault_timer_minimal": true,
+    "the_vault:vault_timer_position": {
+      "anchor": {
+        "horizontal": "left",
+        "vertical": "bottom"
+      },
+      "offsetX": 72.0,
+      "offsetY": -16.0
+    },
+    "the_vault:vault_timer_scale": 1.0,
+    "the_vault:timer_early_warning_time": 0,
+    "the_vault:vault_party_display_mode": "ALWAYS",
+    "the_vault:show_vault_party_health": true,
+    "the_vault:vault_party_position": {
+      "anchor": {
+        "horizontal": "right",
+        "vertical": "middle"
+      },
+      "offsetX": -4.0,
+      "offsetY": 13.5
+    },
+    "the_vault:vault_party_scale": 1.0,
+    "the_vault:vault_party_alignment": {
+      "horizontal": "right",
+      "vertical": "bottom"
+    },
+    "the_vault:show_vault_objective_always": true,
+    "the_vault:vault_objective_size": 1.0,
+    "the_vault:vault_objective_position": {
+      "anchor": {
+        "horizontal": "center",
+        "vertical": "top"
+      },
+      "offsetX": 0.0,
+      "offsetY": 0.0
+    },
+    "the_vault:vault_xp_tracker_display_mode": "DISABLED",
+    "the_vault:vault_xp_tracker_position": {
+      "anchor": {
+        "horizontal": "left",
+        "vertical": "top"
+      },
+      "offsetX": 132.0,
+      "offsetY": 8.0
+    },
+    "the_vault:vault_xp_tracker_scale": 1.0,
+    "the_vault:vault_xp_tracker_notifications": true,
+    "the_vault:show_vault_modifiers_always": true,
+    "the_vault:vault_modifiers_size": 1.0,
+    "the_vault:vault_modifiers_position": {
+      "anchor": {
+        "horizontal": "right",
+        "vertical": "bottom"
+      },
+      "offsetX": -5.0,
+      "offsetY": -5.0
+    },
+    "the_vault:vault_modifiers_alignment": {
+      "horizontal": "right",
+      "vertical": "bottom"
+    },
+    "the_vault:custom_effect_icons": true,
+    "the_vault:potion_effect_scale": 1.0,
+    "the_vault:potion_effect_position": {
+      "anchor": {
+        "horizontal": "right",
+        "vertical": "top"
+      },
+      "offsetX": -5.0,
+      "offsetY": 5.0
+    },
+    "the_vault:potion_effect_icon_size": 22,
+    "the_vault:potion_effect_effect_size": 16,
+    "the_vault:potion_effect_icon_offset": 3,
+    "the_vault:potion_effect_icons_per_row": 8,
+    "the_vault:potion_effect_refresh_cycle_threshold": 3,
+    "the_vault:potion_effect_show_duration_bar": false,
+    "the_vault:potion_effect_duration_bar_height": 2,
+    "the_vault:potion_effect_alignment": {
+      "horizontal": "right",
+      "vertical": "top"
+    },
+    "the_vault:minimap_position": {
+      "anchor": {
+        "horizontal": "left",
+        "vertical": "top"
+      },
+      "offsetX": 35.0,
+      "offsetY": 47.0
+    },
+    "the_vault:minimap_scale": 0.75,
+    "the_vault:minimap_zoom": 0.5,
+    "the_vault:map_overlay_position": {
+      "anchor": {
+        "horizontal": "center",
+        "vertical": "middle"
+      },
+      "offsetX": -8.0,
+      "offsetY": -10.5
+    },
+    "the_vault:minimap_visibility": "ALWAYS",
+    "the_vault:map_overlay_opacity": 0.5,
+    "the_vault:map_overlay_scale": 1.0,
+    "the_vault:map_overlay_requires_hold": true,
+    "the_vault:vault_objectives_position": {
+      "anchor": {
+        "horizontal": "center",
+        "vertical": "top"
+      },
+      "offsetX": 0.0,
+      "offsetY": 0.0
+    },
+    "the_vault:vault_objectives_hud_settings": {
+      "rune_boss": {
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "scale": 1.0,
+        "simplified": false
+      },
+      "corrupted": {
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "scale": 1.0,
+        "simplified": false
+      },
+      "elixir": {
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "scale": 1.0,
+        "simplified": false
+      },
+      "monolith": {
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "scale": 1.0,
+        "simplified": false
+      },
+      "royale": {
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "scale": 1.0,
+        "simplified": false
+      },
+      "survival": {
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "scale": 1.0,
+        "simplified": false
+      },
+      "alchemy": {
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "scale": 1.0,
+        "simplified": false
+      },
+      "scavenger": {
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "scale": 1.0,
+        "simplified": false
+      },
+      "cake": {
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "scale": 1.0,
+        "simplified": false
+      },
+      "zealot": {
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "scale": 1.0,
+        "simplified": false
+      },
+      "bingo": {
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "scale": 1.0,
+        "simplified": false
+      },
+      "brutal_bosses": {
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "scale": 1.0,
+        "simplified": false
+      }
+    },
+    "the_vault:show_scavenger_origin": true,
+    "the_vault:totem_particles": true,
+    "the_vault:gear_tooltips_colours": true,
+    "the_vault:hunter_particles": false,
+    "the_vault:hunter_outline_mode": "DETAILED",
+    "the_vault:hunter_outline_thickness": "NORMAL",
+    "the_vault:hunter_particle_density": "NORMAL",
+    "the_vault:hunter_wooden_color": 14912768,
+    "the_vault:hunter_gilded_color": 16776960,
+    "the_vault:hunter_living_color": 65280,
+    "the_vault:hunter_ornate_color": 15597568,
+    "the_vault:hunter_coins_color": 13464103,
+    "the_vault:hunter_hardened_color": 16711680,
+    "the_vault:hunter_flesh_color": 16711935,
+    "the_vault:hunter_enigma_color": 255,
+    "the_vault:hunter_objectives_color": 2468608,
+    "the_vault:hunter_god_altars_color": 2468608,
+    "the_vault:hunter_dungeons_color": 6836358,
+    "the_vault:hunter_vendoors_color": 16472397,
+    "the_vault:hunter_treasure_doors_color": 16771584,
+    "the_vault:hunter_pylons_color": 8501759,
+    "the_vault:show_unboxing_details": true,
+    "the_vault:color_blind_mode": "NONE",
+    "the_vault:show_rarity_symbols": false,
+    "the_vault:hide_offhand_in_first_person": false,
+    "the_vault:show_uses_as_stack_size": false,
+    "the_vault:player_health_bar": false,
+    "the_vault:floored_damage_numbers": false,
+    "the_vault:damage_particles": "VAULT_ONLY",
+    "the_vault:vault_level_bar_hidden": false,
+    "the_vault:healthbar_color": 16711680,
+    "the_vault:healthbar_height": "SMALL",
+    "the_vault:show_mob_group_icons": true,
+    "the_vault:show_potion_effects": true,
+    "the_vault:damage_color_generic": 15223354,
+    "the_vault:damage_color_fire": 11035173,
+    "the_vault:damage_color_magic": 13369599,
+    "the_vault:damage_color_projectile": 15223354,
+    "the_vault:damage_color_explosion": 15223354,
+    "the_vault:damage_color_fall": 15223354,
+    "the_vault:damage_color_drowning": 24831,
+    "the_vault:damage_color_poison": 7334234,
+    "the_vault:damage_color_chaining": 6119096,
+    "the_vault:damage_color_thorns": 12932951,
+    "the_vault:damage_color_critical": 9109504,
+    "the_vault:damage_color_dot": 16738816,
+    "the_vault:damage_color_aoe": 15319925,
+    "the_vault:damage_color_reflect": 16756751,
+    "the_vault:damage_color_totem": 14155776,
+    "the_vault:damage_color_charmed": 16711883,
+    "the_vault:damage_color_effect": 1681124,
+    "the_vault:damage_color_javelin": 14155776,
+    "the_vault:damage_color_smite": 16711883,
+    "the_vault:damage_color_smite_base": 16711883,
+    "the_vault:damage_color_fireshot": 16743168,
+    "the_vault:damage_color_glacial": 8973822,
+    "the_vault:damage_color_ap": 16711883
+  }
+}
