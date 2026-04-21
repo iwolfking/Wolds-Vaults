@@ -503,11 +503,11 @@
       },
       {
         "id": "off_t3_skillpoint_1",
-        "name": "+1 Skillpoint",
+        "name": "+4 Skillpoints",
         "present": false,
         "parent": "off_t2_lucky_hit_3",
         "tier": 3,
-        "skillPoints": 1,
+        "skillPoints": 4,
         "type": "greed_skill_point"
       },
       {
@@ -557,14 +557,14 @@
       },
       {
         "id": "def_t1_health_1",
-        "name": "+2% Increased Health",
+        "name": "+10% Increased Health",
         "present": false,
         "parent": "defensive_root",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:health_percentile",
-            "value": 0.02
+            "value": 0.1
           }
         ],
         "type": "greed_gear_attribute"
@@ -599,28 +599,28 @@
       },
       {
         "id": "def_t1_resistance_1",
-        "name": "+2% Resistance",
+        "name": "+5% Resistance",
         "present": false,
         "parent": "def_t1_knockback_res_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:resistance",
-            "value": 0.02
+            "value": 0.05
           }
         ],
         "type": "greed_gear_attribute"
       },
       {
         "id": "def_t1_health_2",
-        "name": "+2% Increased Health",
+        "name": "+10% Increased Health",
         "present": false,
         "parent": "def_t1_health_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:health_percentile",
-            "value": 0.02
+            "value": 0.10
           }
         ],
         "type": "greed_gear_attribute"
@@ -697,14 +697,14 @@
       },
       {
         "id": "def_t1_resistance_2",
-        "name": "+2% Resistance",
+        "name": "+5% Resistance",
         "present": false,
         "parent": "def_t1_resistance_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:resistance",
-            "value": 0.02
+            "value": 0.05
           }
         ],
         "type": "greed_gear_attribute"
@@ -725,7 +725,7 @@
       },
       {
         "id": "def_t2_flat_health_1",
-        "name": "+2 Hitpoints",
+        "name": "+10 Hitpoints",
         "present": false,
         "parents": [
           "def_t1_health_2",
@@ -735,7 +735,7 @@
         "entries": [
           {
             "attribute": "the_vault:health",
-            "value": 2.0
+            "value": 10.0
           }
         ],
         "type": "greed_gear_attribute"
@@ -756,7 +756,7 @@
       },
       {
         "id": "def_t2_health_1",
-        "name": "+4% Increased Health",
+        "name": "+25% Increased Health",
         "present": false,
         "parents": [
           "def_t1_knockback_res_2",
@@ -766,7 +766,7 @@
         "entries": [
           {
             "attribute": "the_vault:health_percentile",
-            "value": 0.04
+            "value": 0.25
           }
         ],
         "type": "greed_gear_attribute"
@@ -815,42 +815,42 @@
       },
       {
         "id": "def_t2_resistance_1",
-        "name": "+4% Resistance",
+        "name": "+10% Resistance",
         "present": false,
         "parent": "def_t1_durability_2",
         "tier": 2,
         "entries": [
           {
             "attribute": "the_vault:resistance",
-            "value": 0.04
+            "value": 0.1
           }
         ],
         "type": "greed_gear_attribute"
       },
       {
         "id": "def_t1_health_3",
-        "name": "+2% Increased Health",
+        "name": "+10% Increased Health",
         "present": false,
         "parent": "def_t2_flat_health_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:health_percentile",
-            "value": 0.02
+            "value": 0.1
           }
         ],
         "type": "greed_gear_attribute"
       },
       {
         "id": "def_t1_resistance_3",
-        "name": "+2% Resistance",
+        "name": "+5% Resistance",
         "present": false,
         "parent": "def_t2_flat_health_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:resistance",
-            "value": 0.02
+            "value": 0.05
           }
         ],
         "type": "greed_gear_attribute"
@@ -983,39 +983,39 @@
       },
       {
         "id": "def_t1_resistance_4",
-        "name": "+2% Resistance",
+        "name": "+5% Resistance",
         "present": false,
         "parent": "def_t2_crit_mitigation_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:resistance",
-            "value": 0.02
+            "value": 0.05
           }
         ],
         "type": "greed_gear_attribute"
       },
       {
         "id": "def_t1_health_4",
-        "name": "+2% Increased Health",
+        "name": "+10% Increased Health",
         "present": false,
         "parent": "def_t2_heal_eff_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:health_percentile",
-            "value": 0.02
+            "value": 0.1
           }
         ],
         "type": "greed_gear_attribute"
       },
       {
         "id": "def_t3_skillpoint_1",
-        "name": "+1 Skillpoint",
+        "name": "+4 Skillpoints",
         "present": false,
         "parent": "def_t1_health_4",
         "tier": 3,
-        "skillPoints": 1,
+        "skillPoints": 4,
         "type": "greed_skill_point"
       },
       {
@@ -1048,11 +1048,11 @@
       },
       {
         "id": "def_t2_greed_reputation",
-        "name": "+25% Greed Reputation",
+        "name": "+50% Greed Reputation",
         "present": false,
         "parent": "def_t3_skillpoint_1",
         "tier": 2,
-        "reputationMultiplier": 0.25,
+        "reputationMultiplier": 0.5,
         "type": "greed_reputation"
       },
       {
@@ -1065,14 +1065,14 @@
       },
       {
         "id": "util_t1_mana_regen_1",
-        "name": "+10% Mana Regeneration",
+        "name": "+25% Mana Regeneration",
         "present": false,
         "parent": "utility_root",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:mana_regen",
-            "value": 0.1
+            "value": 0.25
           }
         ],
         "type": "greed_gear_attribute"
@@ -1093,14 +1093,14 @@
       },
       {
         "id": "util_t1_cooldown_1",
-        "name": "+1% Cooldown Reduction",
+        "name": "+5% Cooldown Reduction",
         "present": false,
         "parent": "utility_root",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:cooldown_reduction",
-            "value": 0.01
+            "value": 0.05
           }
         ],
         "type": "greed_gear_attribute"
@@ -1121,14 +1121,14 @@
       },
       {
         "id": "util_t1_mana_regen_2",
-        "name": "+10% Mana Regeneration",
+        "name": "+50% Mana Regeneration",
         "present": false,
         "parent": "util_t1_mana_regen_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:mana_regen",
-            "value": 0.1
+            "value": 0.5
           }
         ],
         "type": "greed_gear_attribute"
@@ -1177,14 +1177,14 @@
       },
       {
         "id": "util_t1_cooldown_2",
-        "name": "+1% Cooldown Reduction",
+        "name": "+5% Cooldown Reduction",
         "present": false,
         "parent": "util_t1_cooldown_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:cooldown_reduction",
-            "value": 0.01
+            "value": 0.05
           }
         ],
         "type": "greed_gear_attribute"
@@ -1336,28 +1336,28 @@
       },
       {
         "id": "util_t1_mana_regen_3",
-        "name": "+10% Mana Regeneration",
+        "name": "+50% Mana Regeneration",
         "present": false,
         "parent": "util_t2_max_mana_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:mana_regen",
-            "value": 0.1
+            "value": 0.5
           }
         ],
         "type": "greed_gear_attribute"
       },
       {
         "id": "util_t1_cooldown_3",
-        "name": "+1% Cooldown Reduction",
+        "name": "+5% Cooldown Reduction",
         "present": false,
         "parent": "util_t2_max_mana_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:cooldown_reduction",
-            "value": 0.01
+            "value": 0.05
           }
         ],
         "type": "greed_gear_attribute"
@@ -1420,14 +1420,14 @@
       },
       {
         "id": "util_t1_mana_regen_4",
-        "name": "+10% Mana Regeneration",
+        "name": "+50% Mana Regeneration",
         "present": false,
         "parent": "util_t2_xp_gain_2",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:mana_regen",
-            "value": 0.1
+            "value": 0.5
           }
         ],
         "type": "greed_gear_attribute"
@@ -1448,14 +1448,14 @@
       },
       {
         "id": "util_t1_mana_regen_5",
-        "name": "+10% Mana Regeneration",
+        "name": "+50% Mana Regeneration",
         "present": false,
         "parent": "util_t2_xp_gain_2",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:mana_regen",
-            "value": 0.1
+            "value": 0.5
           }
         ],
         "type": "greed_gear_attribute"
@@ -1504,11 +1504,11 @@
       },
       {
         "id": "util_t3_skillpoint_1",
-        "name": "+1 Skillpoint",
+        "name": "+4 Skillpoints",
         "present": false,
         "parent": "util_t1_mana_regen_4",
         "tier": 3,
-        "skillPoints": 1,
+        "skillPoints": 4,
         "type": "greed_skill_point"
       },
       {
@@ -1571,14 +1571,14 @@
       },
       {
         "id": "def_t1_xp_path_1",
-        "name": "+3% Resistance",
+        "name": "+8% Resistance",
         "present": false,
         "parent": "def_t3_unique_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:resistance",
-            "value": 0.03
+            "value": 0.08
           }
         ],
         "type": "greed_gear_attribute"
@@ -1594,14 +1594,14 @@
       },
       {
         "id": "util_t1_xp_path_1",
-        "name": "+5% Cooldown Reduction",
+        "name": "+10% Cooldown Reduction",
         "present": false,
         "parent": "util_t3_cryonic_1",
         "tier": 1,
         "entries": [
           {
             "attribute": "the_vault:cooldown_reduction",
-            "value": 0.05
+            "value": 0.1
           }
         ],
         "type": "greed_gear_attribute"
