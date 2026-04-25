@@ -515,6 +515,33 @@
                 ]
             }
         ],
+        "the_vault:greed_ornate_t2": [
+            {
+                "level": 0,
+                "pool": [
+                    {
+                        "value": {
+                            "modifiers": [
+                                "the_vault:ornate_cascade",
+                                "the_vault:ornate_cascade",
+                                "@the_vault:companion_modifiers",
+                                "the_vault:companion_challenge",
+                                "the_vault:companion_challenge",
+                                "the_vault:companion_challenge"
+                            ],
+                            "model": {
+                                "min": 1,
+                                "max": 1,
+                                "type": "uniform"
+                            },
+                            "isGreed": true
+                        },
+                        "weight": 20.0
+                    }
+
+                ]
+            }
+        ],
         "the_vault:_t2": [
             {
                 "level": 0,
@@ -783,69 +810,69 @@
     "relicChances": {
         "the_vault:wooden_chest": {
             "COMMON": 0.001,
-            "RARE": 0.002,
-            "EPIC": 0.005,
-            "OMEGA": 0.01
+            "RARE": 0.003,
+            "EPIC": 0.007,
+            "OMEGA": 0.015
         },
         "the_vault:gilded_chest": {
-            "COMMON": 0.002,
-            "RARE": 0.005,
-            "EPIC": 0.01,
-            "OMEGA": 0.02
+            "COMMON": 0.004,
+            "RARE": 0.008,
+            "EPIC": 0.014,
+            "OMEGA": 0.025
         },
         "the_vault:living_chest": {
-            "COMMON": 0.002,
-            "RARE": 0.005,
-            "EPIC": 0.01,
-            "OMEGA": 0.02
+            "COMMON": 0.0028,
+            "RARE": 0.009,
+            "EPIC": 0.018,
+            "OMEGA": 0.03
         },
         "the_vault:ornate_chest": {
-            "COMMON": 0.002,
-            "RARE": 0.005,
-            "EPIC": 0.01,
-            "OMEGA": 0.02
+            "COMMON": 0.0042,
+            "RARE": 0.008,
+            "EPIC": 0.015,
+            "OMEGA": 0.027
         },
         "the_vault:ornate_strongbox": {
-            "COMMON": 0.005,
-            "RARE": 0.01,
-            "EPIC": 0.02,
-            "OMEGA": 0.03
+            "COMMON": 0.01,
+            "RARE": 0.02,
+            "EPIC": 0.025,
+            "OMEGA": 0.035
         },
         "the_vault:gilded_strongbox": {
-            "COMMON": 0.005,
-            "RARE": 0.01,
-            "EPIC": 0.02,
-            "OMEGA": 0.03
+            "COMMON": 0.01,
+            "RARE": 0.02,
+            "EPIC": 0.025,
+            "OMEGA": 0.035
         },
         "the_vault:living_strongbox": {
-            "COMMON": 0.005,
-            "RARE": 0.01,
-            "EPIC": 0.02,
-            "OMEGA": 0.03
+            "COMMON": 0.015,
+            "RARE": 0.025,
+            "EPIC": 0.04,
+            "OMEGA": 0.06
         },
         "the_vault:ornate_barrel": {
-            "COMMON": 0.005,
+            "COMMON": 0.01,
             "RARE": 0.01,
             "EPIC": 0.02,
             "OMEGA": 0.03
         },
         "the_vault:gilded_barrel": {
-            "COMMON": 0.005,
+            "COMMON": 0.01,
             "RARE": 0.01,
             "EPIC": 0.02,
             "OMEGA": 0.03
         },
         "the_vault:living_barrel": {
-            "COMMON": 0.005,
-            "RARE": 0.01,
-            "EPIC": 0.02,
-            "OMEGA": 0.03
+            "COMMON": 0.01,
+            "RARE": 0.0125,
+            "EPIC": 0.0225,
+            "OMEGA": 0.0325
         },
         "the_vault:wooden_barrel": {
-            "COMMON": 0.005,
-            "RARE": 0.01,
-            "EPIC": 0.02,
-            "OMEGA": 0.03
+            "COMMON": 0.01,
+            "RARE": 0.0125,
+            "EPIC": 0.0225,
+            "OMEGA": 0.0325
         },
         "the_vault:treasure_sand": {
             "OMEGA": 0.0002
