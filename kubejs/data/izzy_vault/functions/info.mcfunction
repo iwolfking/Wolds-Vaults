@@ -1,1 +1,0 @@
-tellraw @a ["",{"text":"Hello! You've Successfully installed","color":"gold"},{"text":" IzzyBizzy","color":"#E91E63"},{"text":"'s Vault Advancements!","color":"gold"}]

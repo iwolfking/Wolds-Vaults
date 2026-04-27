@@ -10,6 +10,21 @@
         { "weight": 70,
           "pool": [
             {
+              "weight": 10,
+              "item": {
+                "id": "the_vault:magnet",
+                "nbt": {
+                  "the_vault:gear_unique_pool": "woldsvaults:treasure_magnet",
+                  "the_vault:gear_roll_type": "Unique"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
               "weight": 100,
               "item": {
                 "id": "the_vault:sword",
