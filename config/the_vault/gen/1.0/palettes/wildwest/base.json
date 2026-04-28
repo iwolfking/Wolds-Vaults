@@ -1,6 +1,10 @@
 {
   "tile_processors": [
     {
+      "type": "reference",
+      "id": "the_vault:generic/room_base"
+    },
+    {
       "type": "weighted_target",
       "target": "minecraft:smooth_quartz",
       "output": {
@@ -27,14 +31,30 @@
             "the_vault:disable_cat"
           ],
           "zone": {
-            "min": [ -23, -20, -23 ],
-            "max": [ 23, 27, 23 ]
+            "min": [
+              -23,
+              -20,
+              -23
+            ],
+            "max": [
+              23,
+              27,
+              23
+            ]
           },
           "proxies": [
             {
               "pos": [
-                [ 3, 0, 0 ],
-                [ -3, 0, 0 ]
+                [
+                  3,
+                  0,
+                  0
+                ],
+                [
+                  -3,
+                  0,
+                  0
+                ]
               ],
               "entries": [
                 {
@@ -78,10 +98,38 @@
             }
           ],
           "gates": [
-            { "pos": [23, 0, -1], "rotation": 1 },
-            { "pos": [-24, 0, -1], "rotation": 1 },
-            { "pos": [-1, 0, 23], "rotation": 0 },
-            { "pos": [-1, 0, -23], "rotation": 0 }
+            {
+              "pos": [
+                23,
+                0,
+                -1
+              ],
+              "rotation": 1
+            },
+            {
+              "pos": [
+                -24,
+                0,
+                -1
+              ],
+              "rotation": 1
+            },
+            {
+              "pos": [
+                -1,
+                0,
+                23
+              ],
+              "rotation": 0
+            },
+            {
+              "pos": [
+                -1,
+                0,
+                -23
+              ],
+              "rotation": 0
+            }
           ],
           "maxRounds": 5,
           "countdownTicks": 100,
