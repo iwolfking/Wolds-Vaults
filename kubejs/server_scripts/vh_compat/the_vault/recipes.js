@@ -1,12 +1,15 @@
 onEvent("recipes", event => {
-    event.remove({ output: 'the_vault:angel_block' })
-    event.remove({ id: 'the_vault:vault_catalyst_reroll' })
+    event.remove({output: 'the_vault:angel_block' })
+    event.remove({id: 'the_vault:shard_pouch'})
+    event.remove({id: 'the_vault:vault_catalyst_reroll' })
     event.remove({id: 'the_vault:infused_eternal_soul'})
     event.remove({id: 'the_vault:echoing_ingot'})
     event.remove({id: 'the_vault:smelt_etching'})
     event.remove({id: 'the_vault:crystal_seal_ordinator_run'})
     event.remove({id: 'the_vault:crystal_seal_ordinator_build'})
     event.remove({id: 'the_vault:vault_compass'})
+    event.remove({id: 'the_vault:drill_arrow'})
+
 
     event.shaped(Item.of('the_vault:bottle', {charges:6,recharge: "time",type:"vial"}),
         [
@@ -132,6 +135,18 @@ onEvent("recipes", event => {
         P: 'woldsvaults:chroma_core',
         I: 'the_vault:chromatic_steel_ingot'
     }).id('the_vault:vault_charm_controller')
+
+    event.shaped(Item.of('the_vault:shard_pouch'),
+        [
+            'ADA',
+            'BCB',
+            'BBB'
+        ], {
+        A: 'the_vault:vault_essence',
+        B: '#forge:wool',
+        C: 'the_vault:soul_shard',
+        D: 'minecraft:string'
+        }).id('the_vault:shard_pouch')
 
     event.shapeless('the_vault:capstone_vendoor_hunter', ['woldsvaults:capstone_vendoors']).id('woldsvaults:vendoor_capstone_conversion')
 
