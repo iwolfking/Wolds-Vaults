@@ -19,5 +19,5 @@ onEvent("recipes", event => {
             C: 'the_vault:chromatic_iron_ingot'
         })
 
-    //event.shapeless('minecraft:beetroot', ['minecraft:beetroot_seeds'])
+    event.shapeless('minecraft:beetroot', ['minecraft:beetroot_seeds'])
 })
