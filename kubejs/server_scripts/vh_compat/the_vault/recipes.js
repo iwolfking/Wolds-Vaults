@@ -7,6 +7,7 @@ onEvent("recipes", event => {
     event.remove({id: 'the_vault:crystal_seal_ordinator_run'})
     event.remove({id: 'the_vault:crystal_seal_ordinator_build'})
     event.remove({id: 'the_vault:vault_compass'})
+    event.remove({id: 'the_vault:drill_arrow'})
 
     event.shaped(Item.of('the_vault:bottle', {charges:6,recharge: "time",type:"vial"}),
         [
