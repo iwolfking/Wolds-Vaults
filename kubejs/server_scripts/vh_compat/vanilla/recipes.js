@@ -3,21 +3,21 @@ onEvent("recipes", event => {
     event.shaped(Item.of('minecraft:bucket'),
         [
             '   ',
-            'B B',
-            ' B '
+            'C C',
+            ' C '
         ], {
-            B: 'the_vault:chromatic_iron_ingot'
+            C: 'the_vault:chromatic_iron_ingot'
         })
 
 
     event.shaped(Item.of('minecraft:shears'),
         [
-            ' B ',
-            'B  ',
+            ' C ',
+            'C  ',
             '   '
         ], {
-            B: 'the_vault:chromatic_iron_ingot'
+            C: 'the_vault:chromatic_iron_ingot'
         })
 
-    event.shapeless('minecraft:beetroot', ['minecraft:beetroot_seeds'])
+    //event.shapeless('minecraft:beetroot', ['minecraft:beetroot_seeds'])
 })
