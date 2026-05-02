@@ -1,699 +1,1499 @@
 {
-    "values": {
-      "default": {
-        "type": "loot_chest",
-        "filter": "@the_vault:wooden",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 1,
-            "max": 4
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
+  "values": {
+    "default": {
+      "type": "loot_chest",
+      "filter": "@the_vault:wooden",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 1,
+          "max": 4
         },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Wooden Chests (${current}/${target})"
+        "variables": {
+          "targetTierContribution": 1.0
         }
       },
-      "kill_horde_big": {
-        "type": "kill_entity",
-        "filter": "@the_vault:horde",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 24,
-            "max": 36
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": [
-                {
-                    "text": "per ",
-                    "color": "gray"
-                },
-                {
-                    "text": "${target}",
-                    "color": "gold"
-                },
-                {
-                    "text": " Horde Mobs killed",
-                    "color": "white"
-                }
-            ]
-        }
-      },
-      "kill_horde_easy": {
-        "type": "kill_entity",
-        "filter": "@the_vault:horde",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 10,
-            "max": 18
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Horde Mobs killed"
-        }
-      },
-      "kill_dungeon_easy": {
-        "type": "kill_entity",
-        "filter": "@the_vault:dungeon",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 3,
-            "max": 5
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Dungeon Mobs killed"
-        }
-      },
-      "loot_wooden_easy": {
-        "type": "loot_chest",
-        "filter": "@the_vault:wooden",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 10,
-            "max": 14
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Wooden Chests looted"
-        }
-      },
-      "loot_ornate_easy": {
-        "type": "loot_chest",
-        "filter": "@the_vault:ornate",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 6,
-            "max": 7
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Ornate Chests looted"
-        }
-      },
-      "loot_living_easy": {
-        "type": "loot_chest",
-        "filter": "@the_vault:living",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 6,
-            "max": 7
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Living Chests looted"
-        }
-      },
-      "loot_gilded_easy": {
-        "type": "loot_chest",
-        "filter": "@the_vault:gilded",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 6,
-            "max": 7
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Gilded Chests looted"
-        }
-      },
-      "kill_dwellers_easy": {
-        "type": "kill_entity",
-        "filter": "@the_vault:fighter",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 4,
-            "max": 6
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Dwellers killed"
-        }
-      },
-      "kill_any_easy": {
-        "type": "kill_entity",
-        "filter": "@the_vault:mobs",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 14,
-            "max": 22
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} mobs killed"
-        }
-      },
-      "loot_any_easy": {
-        "type": "loot_chest",
-        "filter": "@the_vault:chest",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 18,
-            "max": 20
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} chests looted"
-        }
-      },
-      "kill_horde_medium": {
-        "type": "kill_entity",
-        "filter": "@the_vault:horde",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 40,
-            "max": 50
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Horde Mobs killed"
-        }
-      },
-      "kill_dungeon_medium": {
-        "type": "kill_entity",
-        "filter": "@the_vault:dungeon",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 6,
-            "max": 8
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Dungeon Mobs killed"
-        }
-      },
-      "loot_wooden_medium": {
-        "type": "loot_chest",
-        "filter": "@the_vault:wooden",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 24,
-            "max": 32
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Wooden Chests looted"
-        }
-      },
-      "loot_ornate_medium": {
-        "type": "loot_chest",
-        "filter": "@the_vault:ornate",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 8,
-            "max": 12
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Ornate Chests looted"
-        }
-      },
-      "loot_living_medium": {
-        "type": "loot_chest",
-        "filter": "@the_vault:living",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 8,
-            "max": 12
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Living Chests looted"
-        }
-      },
-      "loot_gilded_medium": {
-        "type": "loot_chest",
-        "filter": "@the_vault:gilded",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 8,
-            "max": 12
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Gilded Chests looted"
-        }
-      },
-      "kill_dwellers_medium": {
-        "type": "kill_entity",
-        "filter": "@the_vault:fighter",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 10,
-            "max": 12
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Dwellers killed"
-        }
-      },
-      "kill_tanks_medium": {
-        "type": "kill_entity",
-        "filter": "@the_vault:tank",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 3,
-            "max": 4
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Tanks killed"
-        }
-      },
-
-      "kill_horde_extreme": {
-        "type": "kill_entity",
-        "filter": "@the_vault:horde",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 240,
-            "max": 400
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Horde Mobs killed"
-        }
-      },
-      "kill_champion_extreme": {
-        "type": "kill_entity",
-        "filter": "@the_vault:mob_type/champion",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 4,
-            "max": 8
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Champions killed"
-        }
-      },
-      "kill_dwellers_extreme": {
-        "type": "kill_entity",
-        "filter": "@the_vault:fighter",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 50,
-            "max": 80
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Dwellers killed"
-        }
-      },
-      "kill_tanks_extreme": {
-        "type": "kill_entity",
-        "filter": "@the_vault:tank",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 20,
-            "max": 30
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Tanks killed"
-        }
-      },
-      "kill_dungeon_extreme": {
-        "type": "kill_entity",
-        "filter": "@the_vault:dungeon",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 28,
-            "max": 48
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Dungeon Mobs killed"
-        }
-      },
-
-      "kill_horde_hard": {
-        "type": "kill_entity",
-        "filter": "@the_vault:horde",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 60,
-            "max": 90
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Horde Mobs killed"
-        }
-      },
-      "kill_champion_hard": {
-        "type": "kill_entity",
-        "filter": "@the_vault:mob_type/champion",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 2,
-            "max": 4
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Champions killed"
-        }
-      },
-      "kill_dwellers_hard": {
-        "type": "kill_entity",
-        "filter": "@the_vault:fighter",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 14,
-            "max": 20
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Dwellers killed"
-        }
-      },
-      "kill_tanks_hard": {
-        "type": "kill_entity",
-        "filter": "@the_vault:tank",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 6,
-            "max": 12
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Tanks killed"
-        }
-      },
-      "kill_dungeon_hard": {
-        "type": "kill_entity",
-        "filter": "@the_vault:dungeon",
-        "counter": {
-          "type": "target",
-          "target": {
-            "type": "uniform",
-            "min": 10,
-            "max": 24
-          },
-          "variables": {
-            "targetTierContribution": 1.0
-          }
-        },
-        "renderer": {
-          "type": "card",
-          "tooltip": "per ${target} Dungeon Mobs killed"
-        }
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Wooden Chests (${current}/${target})"
       }
     },
-    "pools": {
-      "default": [
-        {
-          "value": "default",
-          "weight": 1
+
+    "kill_horde_big": {
+      "type": "kill_entity",
+      "filter": "@the_vault:horde",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 24,
+          "max": 36
         },
-        {
-            "value": "kill_horde_big",
-            "weight": 1
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": [
+          {
+            "text": "per ",
+            "color": "gray"
+          },
+          {
+            "text": "${target}",
+            "color": "gold"
+          },
+          {
+            "text": " Horde Mobs killed",
+            "color": "white"
           }
-      ],
-      "easy": [
-        {
-            "value": "kill_horde_easy",
-            "weight": 1
+        ]
+      }
+    },
+    "kill_horde_easy": {
+      "type": "kill_entity",
+      "filter": "@the_vault:horde",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 10,
+          "max": 18
         },
-        {
-            "value": "loot_wooden_easy",
-            "weight": 1
-        },
-        {
-            "value": "loot_ornate_easy",
-            "weight": 1
-        },
-        {
-            "value": "loot_gilded_easy",
-            "weight": 1
-        },
-        {
-            "value": "loot_living_easy",
-            "weight": 1
-        },
-        {
-            "value": "kill_dwellers_easy",
-            "weight": 1
-        },
-        {
-            "value": "loot_any_easy",
-            "weight": 1
-        },
-        {
-            "value": "kill_any_easy",
-            "weight": 1
-        },
-        {
-          "value": "kill_dungeon_easy",
-          "weight": 1
+        "variables": {
+          "targetTierContribution": 1.0
         }
-      ],
-      "medium": [
-        {
-            "value": "kill_horde_medium",
-            "weight": 1
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Horde Mobs killed"
+      }
+    },
+    "kill_dungeon_easy": {
+      "type": "kill_entity",
+      "filter": "@the_vault:dungeon",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 3,
+          "max": 5
         },
-        {
-            "value": "loot_wooden_medium",
-            "weight": 1
-        },
-        {
-            "value": "loot_ornate_medium",
-            "weight": 1
-        },
-        {
-            "value": "loot_gilded_medium",
-            "weight": 1
-        },
-        {
-            "value": "loot_living_medium",
-            "weight": 1
-        },
-        {
-            "value": "kill_dwellers_medium",
-            "weight": 1
-        },
-        {
-            "value": "kill_tanks_medium",
-            "weight": 1
-        },
-        {
-          "value": "kill_dungeon_medium",
-          "weight": 1
+        "variables": {
+          "targetTierContribution": 1.0
         }
-      ],
-      "hard": [
-        {
-          "value": "kill_horde_hard",
-          "weight": 1
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeon Mobs killed"
+      }
+    },
+    "loot_wooden_easy": {
+      "type": "loot_chest",
+      "filter": "@the_vault:wooden",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 10,
+          "max": 14
         },
-        {
-          "value": "kill_champion_hard",
-          "weight": 1
-        },
-        {
-          "value": "kill_dwellers_hard",
-          "weight": 1
-        },
-        {
-          "value": "kill_tanks_hard",
-          "weight": 1
-        },
-        {
-          "value": "kill_dungeon_hard",
-          "weight": 1
+        "variables": {
+          "targetTierContribution": 1.0
         }
-        
-      ],
-      "extreme": [
-        {
-          "value": "kill_horde_extreme",
-          "weight": 1
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Wooden Chests looted"
+      }
+    },
+    "loot_ornate_easy": {
+      "type": "loot_chest",
+      "filter": "@the_vault:ornate",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 6,
+          "max": 7
         },
-        {
-          "value": "kill_champion_extreme",
-          "weight": 1
-        },
-        {
-          "value": "kill_dwellers_extreme",
-          "weight": 1
-        },
-        {
-          "value": "kill_tanks_extreme",
-          "weight": 1
-        },
-        {
-          "value": "kill_dungeon_extreme",
-          "weight": 1
+        "variables": {
+          "targetTierContribution": 1.0
         }
-      ]
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Ornate Chests looted"
+      }
+    },
+    "loot_living_easy": {
+      "type": "loot_chest",
+      "filter": "@the_vault:living",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 6,
+          "max": 7
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Living Chests looted"
+      }
+    },
+    "loot_gilded_easy": {
+      "type": "loot_chest",
+      "filter": "@the_vault:gilded",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 6,
+          "max": 7
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Gilded Chests looted"
+      }
+    },
+    "kill_dwellers_easy": {
+      "type": "kill_entity",
+      "filter": "@the_vault:fighter",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 4,
+          "max": 8
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dwellers killed"
+      }
+    },
+    "kill_assassin_easy": {
+      "type": "kill_entity",
+      "filter": "@the_vault:assassin",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 8,
+          "max": 14
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Assassin Mobs killed"
+      }
+    },
+    "kill_tanks_easy": {
+      "type": "kill_entity",
+      "filter": "@the_vault:tank",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 3,
+          "max": 4
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Tanks killed"
+      }
+    },
+    "kill_any_easy": {
+      "type": "kill_entity",
+      "filter": "@the_vault:mobs",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 14,
+          "max": 22
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} mobs killed"
+      }
+    },
+    "kill_guardian_easy": {
+      "type": "kill_entity",
+      "filter": "@the_vault:guardians",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 3,
+          "max": 5
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Guardians killed"
+      }
+    },
+    "loot_any_easy": {
+      "type": "loot_chest",
+      "filter": "@the_vault:chest",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 18,
+          "max": 20
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} chests looted"
+      }
+    },
+    "find_vendoor_easy": {
+      "type": "interact_block",
+      "pre": "the_vault:vendor_door[open=false]",
+      "post": "the_vault:vendor_door[open=true]",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 5,
+          "max": 8
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Vendoors Opened"
+      }
+    },
+    "find_dungeon_easy": {
+      "type": "interact_block",
+      "pre": "the_vault:dungeon_door[open=false]",
+      "post": "the_vault:dungeon_door[open=true]",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 5,
+          "max": 8
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeons Opened"
+      }
+    },
+    "activate_pylon_easy": {
+      "type": "interact_block",
+      "pre": "the_vault:pylon{Consumed:0b}",
+      "post": "the_vault:pylon{Consumed:1b}",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 3,
+          "max": 5
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Pylons Activated"
+      }
+    },
+
+
+    "kill_horde_medium": {
+      "type": "kill_entity",
+      "filter": "@the_vault:horde",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 40,
+          "max": 50
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Horde Mobs killed"
+      }
+    },
+    "kill_dungeon_medium": {
+      "type": "kill_entity",
+      "filter": "@the_vault:dungeon",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 6,
+          "max": 8
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeon Mobs killed"
+      }
+    },
+    "loot_wooden_medium": {
+      "type": "loot_chest",
+      "filter": "@the_vault:wooden",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 24,
+          "max": 32
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Wooden Chests looted"
+      }
+    },
+    "loot_ornate_medium": {
+      "type": "loot_chest",
+      "filter": "@the_vault:ornate",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 8,
+          "max": 12
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Ornate Chests looted"
+      }
+    },
+    "loot_living_medium": {
+      "type": "loot_chest",
+      "filter": "@the_vault:living",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 8,
+          "max": 12
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Living Chests looted"
+      }
+    },
+    "loot_gilded_medium": {
+      "type": "loot_chest",
+      "filter": "@the_vault:gilded",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 8,
+          "max": 12
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Gilded Chests looted"
+      }
+    },
+    "kill_dwellers_medium": {
+      "type": "kill_entity",
+      "filter": "@the_vault:fighter",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 10,
+          "max": 12
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dwellers killed"
+      }
+    },
+    "kill_assassin_medium": {
+      "type": "kill_entity",
+      "filter": "@the_vault:assassin",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 15,
+          "max": 29
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Assassin Mobs killed"
+      }
+    },
+    "kill_tanks_medium": {
+      "type": "kill_entity",
+      "filter": "@the_vault:tank",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 5,
+          "max": 6
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Tanks killed"
+      }
+    },
+    "kill_guardian_medium": {
+      "type": "kill_entity",
+      "filter": "@the_vault:guardians",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 6,
+          "max": 8
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Guardians killed"
+      }
+    },
+    "find_vendoor_medium": {
+      "type": "interact_block",
+      "pre": "the_vault:vendor_door[open=false]",
+      "post": "the_vault:vendor_door[open=true]",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 5,
+          "max": 8
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Vendoors Opened"
+      }
+    },
+    "find_dungeon_medium": {
+      "type": "interact_block",
+      "pre": "the_vault:dungeon_door[open=false]",
+      "post": "the_vault:dungeon_door[open=true]",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 5,
+          "max": 8
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeons Opened"
+      }
+    },
+    "activate_pylon_medium": {
+      "type": "interact_block",
+      "pre": "the_vault:pylon{Consumed:0b}",
+      "post": "the_vault:pylon{Consumed:1b}",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 3,
+          "max": 5
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Pylons Activated"
+      }
+    },
+
+
+    "kill_horde_hard": {
+      "type": "kill_entity",
+      "filter": "@the_vault:horde",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 60,
+          "max": 90
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Horde Mobs killed"
+      }
+    },
+    "kill_champion_hard": {
+      "type": "kill_entity",
+      "filter": "@the_vault:mob_type/champion",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 2,
+          "max": 4
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Champions killed"
+      }
+    },
+    "kill_dwellers_hard": {
+      "type": "kill_entity",
+      "filter": "@the_vault:fighter",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 14,
+          "max": 20
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dwellers killed"
+      }
+    },
+    "kill_tanks_hard": {
+      "type": "kill_entity",
+      "filter": "@the_vault:tank",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 6,
+          "max": 12
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Tanks killed"
+      }
+    },
+    "kill_dungeon_hard": {
+      "type": "kill_entity",
+      "filter": "@the_vault:dungeon",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 10,
+          "max": 24
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeon Mobs killed"
+      }
+    },
+    "kill_guardian_hard": {
+      "type": "kill_entity",
+      "filter": "@the_vault:guardians",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 10,
+          "max": 24
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Guardians killed"
+      }
+    },
+    "kill_elite_hard": {
+      "type": "kill_entity",
+      "filter": "@the_vault:elite",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 1,
+          "max": 1
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Elite killed"
+      }
+    },
+    "kill_dungeon_boss_hard": {
+      "type": "kill_entity",
+      "filter": "@the_vault:mob_type/dungeon_boss",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 1,
+          "max": 1
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeon Boss killed"
+      }
+    },
+    "find_vendoor_hard": {
+      "type": "interact_block",
+      "pre": "the_vault:vendor_door[open=false]",
+      "post": "the_vault:vendor_door[open=true]",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 9,
+          "max": 11
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Vendoors Opened"
+      }
+    },
+    "find_dungeon_hard": {
+      "type": "interact_block",
+      "pre": "the_vault:dungeon_door[open=false]",
+      "post": "the_vault:dungeon_door[open=true]",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 9,
+          "max": 11
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeons Opened"
+      }
+    },
+    "activate_pylon_hard": {
+      "type": "interact_block",
+      "pre": "the_vault:pylon{Consumed:0b}",
+      "post": "the_vault:pylon{Consumed:1b}",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 6,
+          "max": 8
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Pylons Activated"
+      }
+    },
+
+
+    "kill_horde_extreme": {
+      "type": "kill_entity",
+      "filter": "@the_vault:horde",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 240,
+          "max": 400
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Horde Mobs killed"
+      }
+    },
+    "kill_champion_extreme": {
+      "type": "kill_entity",
+      "filter": "@the_vault:mob_type/champion",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 4,
+          "max": 8
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Champions killed"
+      }
+    },
+    "kill_dwellers_extreme": {
+      "type": "kill_entity",
+      "filter": "@the_vault:fighter",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 50,
+          "max": 80
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dwellers killed"
+      }
+    },
+    "kill_tanks_extreme": {
+      "type": "kill_entity",
+      "filter": "@the_vault:tank",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 20,
+          "max": 30
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Tanks killed"
+      }
+    },
+    "kill_dungeon_extreme": {
+      "type": "kill_entity",
+      "filter": "@the_vault:dungeon",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 28,
+          "max": 48
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeon Mobs killed"
+      }
+    },
+    "kill_guardian_extreme": {
+      "type": "kill_entity",
+      "filter": "@the_vault:guardians",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 28,
+          "max": 48
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Guardians killed"
+      }
+    },
+    "kill_elite_extreme": {
+      "type": "kill_entity",
+      "filter": "@the_vault:elite",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 2,
+          "max": 2
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Elites killed"
+      }
+    },
+    "kill_dungeon_boss_extreme": {
+      "type": "kill_entity",
+      "filter": "@the_vault:mob_type/dungeon_boss",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 2,
+          "max": 2
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeon Boss killed"
+      }
+    },
+    "find_vendoor_extreme": {
+      "type": "interact_block",
+      "pre": "the_vault:vendor_door[open=false]",
+      "post": "the_vault:vendor_door[open=true]",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 12,
+          "max": 15
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Vendoors Opened"
+      }
+    },
+    "find_dungeon_extreme": {
+      "type": "interact_block",
+      "pre": "the_vault:dungeon_door[open=false]",
+      "post": "the_vault:dungeon_door[open=true]",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 12,
+          "max": 15
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeons Opened"
+      }
+    },
+    "activate_pylon_extreme": {
+      "type": "interact_block",
+      "pre": "the_vault:pylon{Consumed:0b}",
+      "post": "the_vault:pylon{Consumed:1b}",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 9,
+          "max": 11
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Pylons Activated"
+      }
+    },
+
+    "kill_horde_impossible": {
+      "type": "kill_entity",
+      "filter": "@the_vault:horde",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 500,
+          "max": 750
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Horde Mobs killed"
+      }
+    },
+    "kill_assassin_impossible": {
+      "type": "kill_entity",
+      "filter": "@the_vault:assassin",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 250,
+          "max": 375
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Assassin Mobs killed"
+      }
+    },
+    "kill_tanks_impossible": {
+      "type": "kill_entity",
+      "filter": "@the_vault:tank",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 40,
+          "max": 60
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Tank Mobs killed"
+      }
+    },
+    "kill_dwellers_impossible": {
+      "type": "kill_entity",
+      "filter": "@the_vault:fighter",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 120,
+          "max": 150
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Vault Dwellers killed"
+      }
+    },
+    "kill_dungeon_impossible": {
+      "type": "kill_entity",
+      "filter": "@the_vault:dungeon",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 60,
+          "max": 90
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeon Mobs killed"
+      }
+    },
+    "kill_guardian_impossible": {
+      "type": "kill_entity",
+      "filter": "@the_vault:guardians",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 60,
+          "max": 90
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Guardians killed"
+      }
+    },
+    "kill_elite_impossible": {
+      "type": "kill_entity",
+      "filter": "@the_vault:elite",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 2,
+          "max": 3
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Elites killed"
+      }
+    },
+    "kill_dungeon_boss_impossible": {
+      "type": "kill_entity",
+      "filter": "@the_vault:mob_type/dungeon_boss",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 3,
+          "max": 3
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeon Boss killed"
+      }
+    },
+    "find_vendoor_impossible": {
+      "type": "interact_block",
+      "pre": "the_vault:vendor_door[open=false]",
+      "post": "the_vault:vendor_door[open=true]",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 15,
+          "max": 20
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Vendoors Opened"
+      }
+    },
+    "find_dungeon_impossible": {
+      "type": "interact_block",
+      "pre": "the_vault:dungeon_door[open=false]",
+      "post": "the_vault:dungeon_door[open=true]",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 15,
+          "max": 20
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Dungeons Opened"
+      }
+    },
+    "activate_pylon_impossible": {
+      "type": "interact_block",
+      "pre": "the_vault:pylon{Consumed:0b}",
+      "post": "the_vault:pylon{Consumed:1b}",
+      "counter": {
+        "type": "target",
+        "target": {
+          "type": "uniform",
+          "min": 12,
+          "max": 15
+        },
+        "variables": {
+          "targetTierContribution": 1.0
+        }
+      },
+      "renderer": {
+        "type": "card",
+        "tooltip": "per ${target} Pylons Activated"
+      }
     }
+  },
+  "pools": {
+    "default": [
+      {
+        "value": "default",
+        "weight": 1
+      },
+      {
+        "value": "kill_horde_big",
+        "weight": 1
+      }
+    ],
+    "easy": [
+      {
+        "value": "kill_horde_easy",
+        "weight": 1
+      },
+      {
+        "value": "loot_wooden_easy",
+        "weight": 1
+      },
+      {
+        "value": "loot_ornate_easy",
+        "weight": 1
+      },
+      {
+        "value": "loot_gilded_easy",
+        "weight": 1
+      },
+      {
+        "value": "loot_living_easy",
+        "weight": 1
+      },
+      {
+        "value": "kill_dwellers_easy",
+        "weight": 1
+      },
+      {
+        "value": "kill_assassin_easy",
+        "weight": 1
+      },
+      {
+        "value": "kill_tanks_easy",
+        "weight": 1
+      },
+      {
+        "value": "loot_any_easy",
+        "weight": 1
+      },
+      {
+        "value": "kill_any_easy",
+        "weight": 1
+      },
+      {
+        "value": "kill_dungeon_easy",
+        "weight": 1
+      },
+      {
+        "value": "kill_guardian_easy",
+        "weight": 1
+      },
+      {
+        "value": "find_vendoor_easy",
+        "weight": 0
+      },
+      {
+        "value": "find_dungeon_easy",
+        "weight": 0
+      },
+      {
+        "value": "activate_pylon_easy",
+        "weight": 0
+      }
+    ],
+    "medium": [
+      {
+        "value": "kill_horde_medium",
+        "weight": 1
+      },
+      {
+        "value": "loot_wooden_medium",
+        "weight": 1
+      },
+      {
+        "value": "loot_ornate_medium",
+        "weight": 1
+      },
+      {
+        "value": "loot_gilded_medium",
+        "weight": 1
+      },
+      {
+        "value": "loot_living_medium",
+        "weight": 1
+      },
+      {
+        "value": "kill_dwellers_medium",
+        "weight": 1
+      },
+      {
+        "value": "kill_assassin_medium",
+        "weight": 1
+      },
+      {
+        "value": "kill_tanks_medium",
+        "weight": 1
+      },
+      {
+        "value": "kill_dungeon_medium",
+        "weight": 1
+      },
+      {
+        "value": "kill_guardian_medium",
+        "weight": 1
+      },
+      {
+        "value": "find_vendoor_medium",
+        "weight": 1
+      },
+      {
+        "value": "find_dungeon_medium",
+        "weight": 1
+      },
+      {
+        "value": "activate_pylon_medium",
+        "weight": 1
+      }
+    ],
+    "hard": [
+      {
+        "value": "kill_horde_hard",
+        "weight": 1
+      },
+      {
+        "value": "kill_champion_hard",
+        "weight": 1
+      },
+      {
+        "value": "kill_dwellers_hard",
+        "weight": 1
+      },
+      {
+        "value": "kill_tanks_hard",
+        "weight": 1
+      },
+      {
+        "value": "kill_dungeon_hard",
+        "weight": 1
+      },
+      {
+        "value": "kill_guardian_hard",
+        "weight": 1
+      },
+      {
+        "value": "kill_elite_hard",
+        "weight": 1
+      },
+      {
+        "value": "kill_dungeon_boss_hard",
+        "weight": 1
+      },
+      {
+        "value": "find_vendoor_hard",
+        "weight": 1
+      },
+      {
+        "value": "find_dungeon_hard",
+        "weight": 1
+      },
+      {
+        "value": "activate_pylon_hard",
+        "weight": 1
+      }
+    ],
+    "extreme": [
+      {
+        "value": "kill_horde_extreme",
+        "weight": 1
+      },
+      {
+        "value": "kill_champion_extreme",
+        "weight": 1
+      },
+      {
+        "value": "kill_dwellers_extreme",
+        "weight": 1
+      },
+      {
+        "value": "kill_dungeon_boss_extreme",
+        "weight": 1
+      },
+      {
+        "value": "kill_tanks_extreme",
+        "weight": 1
+      },
+      {
+        "value": "kill_dungeon_extreme",
+        "weight": 1
+      },
+      {
+        "value": "kill_guardian_extreme",
+        "weight": 1
+      },
+      {
+        "value": "kill_elite_extreme",
+        "weight": 1
+      },
+      {
+        "value": "find_vendoor_extreme",
+        "weight": 1
+      },
+      {
+        "value": "find_dungeon_extreme",
+        "weight": 1
+      },
+      {
+        "value": "activate_pylon_extreme",
+        "weight": 1
+      }
+    ],
+    "impossible": [
+      {
+        "value": "kill_horde_impossible",
+        "weight": 1
+      },
+      {
+        "value": "kill_assassin_impossible",
+        "weight": 1
+      },
+      {
+        "value": "kill_dwellers_impossible",
+        "weight": 1
+      },
+      {
+        "value": "kill_tanks_impossible",
+        "weight": 1
+      },
+      {
+        "value": "kill_dungeon_impossible",
+        "weight": 1
+      },
+      {
+        "value": "kill_guardian_impossible",
+        "weight": 1
+      },
+      {
+        "value": "kill_elite_impossible",
+        "weight": 1
+      },
+      {
+        "value": "find_vendoor_impossible",
+        "weight": 1
+      },
+      {
+        "value": "find_dungeon_impossible",
+        "weight": 1
+      },
+      {
+        "value": "activate_pylon_impossible",
+        "weight": 1
+      }
+    ]
   }
+}
