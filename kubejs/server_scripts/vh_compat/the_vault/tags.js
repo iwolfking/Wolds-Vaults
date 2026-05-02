@@ -119,7 +119,6 @@ onEvent('item.tags', event => {
     event.add('the_vault:spawnegg', 'thermal:basalz_spawn_egg')
     event.add('the_vault:spawnegg', 'tropicraft:iguana_spawn_egg')
     event.add('the_vault:spawnegg', 'ars_nouveau:starbuncle_se')
-    event.add('the_vault:spawnegg', 'ars_nouveau:drygmy_se')
     event.add('the_vault:spawnegg', 'ars_nouveau:wilden_stalker_se')
     event.add('the_vault:spawnegg', 'ars_nouveau:wilden_guardian_se')
 })

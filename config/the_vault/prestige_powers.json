@@ -735,6 +735,44 @@
             "requiredGreedTier": 12
           }
         ]
+      },
+      {
+        "type": "tiered",
+        "id": "SoulFetcher",
+        "name": "Fetcher of Souls",
+        "tiers": [
+          {
+            "type": "gear_attribute_power",
+            "attribute": "the_vault:soul_chance",
+            "value": 1.0,
+            "learnPointCost": 0,
+            "learnKnowledgeCost": 800,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "soul_fetcher_1",
+            "tier": 6,
+            "requiredGreedTier": 6
+          }
+        ]
+      },
+      {
+        "type": "tiered",
+        "id": "HealthIncrease",
+        "name": "Blessing of the Dryad",
+        "tiers": [
+          {
+            "type": "gear_attribute_power",
+            "attribute": "the_vault:health",
+            "value": 30.0,
+            "learnPointCost": 0,
+            "learnKnowledgeCost": 1200,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "health_increase_1",
+            "tier": 8,
+            "requiredGreedTier": 8
+          }
+        ]
       }
     ]
   }
