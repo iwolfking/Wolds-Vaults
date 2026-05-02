@@ -21,6 +21,23 @@
       },
       {
         "type": "tiered",
+        "id": "Toolsmith",
+        "name": "Echoing Hammersmith",
+        "tiers": [
+          {
+            "type": "tool_capacity_power",
+            "capacityIncrease": 75,
+            "learnPointCost": 0,
+            "learnKnowledgeCost": 100,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "tier": 2,
+            "requiredGreedTier": 2
+          }
+        ]
+      },
+      {
+        "type": "tiered",
         "id": "BountyCooldownReduction",
         "name": "Relentless Pursuit",
         "tiers": [
@@ -154,12 +171,12 @@
             "type": "activatable_trinket_power",
             "trinketEffectId": "the_vault:ender_anchor",
             "learnPointCost": 0,
-            "learnKnowledgeCost": 200,
+            "learnKnowledgeCost": 50,
             "regretPointCost": 1,
             "unlockLevel": 0,
             "id": "ender_anchor_1",
-            "tier": 3,
-            "requiredGreedTier": 3
+            "tier": 1,
+            "requiredGreedTier": 1
           }
         ]
       },
@@ -252,7 +269,6 @@
           }
         ]
       },
-
       {
         "type": "tiered",
         "id": "TripleJump",
@@ -277,6 +293,22 @@
         "tiers": [
           {
             "type": "instant_item_use_power",
+            "learnPointCost": 0,
+            "learnKnowledgeCost": 200,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "tier": 3,
+            "requiredGreedTier": 3
+          }
+        ]
+      },
+      {
+        "type": "tiered",
+        "id": "Artificer",
+        "name": "Artificer of Ages",
+        "tiers": [
+          {
+            "type": "crafting_potential_power",
             "learnPointCost": 0,
             "learnKnowledgeCost": 600,
             "regretPointCost": 1,
@@ -322,7 +354,6 @@
           }
         ]
       },
-
       {
         "type": "tiered",
         "id": "StepUpPower",
@@ -332,12 +363,12 @@
             "type": "activatable_trinket_power",
             "trinketEffectId": "the_vault:high_heels",
             "learnPointCost": 0,
-            "learnKnowledgeCost": 800,
+            "learnKnowledgeCost": 600,
             "regretPointCost": 1,
             "unlockLevel": 0,
             "id": "step_up_1",
-            "tier": 6,
-            "requiredGreedTier": 6
+            "tier": 5,
+            "requiredGreedTier": 5
           }
         ]
       },
@@ -595,7 +626,6 @@
           }
         ]
       },
-
       {
         "type": "tiered",
         "id": "Fruity",
@@ -646,6 +676,25 @@
             "id": "berserk_power_1",
             "tier": 11,
             "requiredGreedTier": 11
+          }
+        ]
+      },
+      {
+        "type": "tiered",
+        "id": "ShieldOfLastingGuard",
+        "name": "Shield of Lasting Guard",
+        "tiers": [
+          {
+            "type": "gear_attribute_power",
+            "attribute": "the_vault:block_cap",
+            "value": 0.1,
+            "learnPointCost": 0,
+            "learnKnowledgeCost": 1600,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "shield_of_lasting_guard_1",
+            "tier": 10,
+            "requiredGreedTier": 10
           }
         ]
       },
