@@ -31,7 +31,7 @@
           "value": {
             "OFFER": {
               "item": "the_vault:map",
-              "nbt": "{\"the_vault:gear_roll_type_poll\":\"gear_treasure\",\"the_vault:map_tier\":1}"
+              "nbt": "{\"the_vault:gear_roll_type_poll\":\"map_loot\",\"the_vault:map_tier\":1}"
             },
             "CURRENCY": "the_vault:vault_gold",
             "MIN_COST": 20,
@@ -43,7 +43,7 @@
           "value": {
             "OFFER": {
               "item": "the_vault:map",
-              "nbt": "{\"the_vault:gear_roll_type_poll\":\"gear_treasure\",\"the_vault:map_tier\":2}"
+              "nbt": "{\"the_vault:gear_roll_type_poll\":\"map_loot\",\"the_vault:map_tier\":2}"
             },
             "CURRENCY": "the_vault:vault_gold",
             "MIN_COST": 30,
@@ -55,7 +55,7 @@
           "value": {
             "OFFER": {
               "item": "the_vault:map",
-              "nbt": "{\"the_vault:gear_roll_type_poll\":\"gear_treasure\",\"the_vault:map_tier\":3}"
+              "nbt": "{\"the_vault:gear_roll_type_poll\":\"map_loot\",\"the_vault:map_tier\":3}"
             },
             "CURRENCY": "the_vault:vault_gold",
             "MIN_COST": 40,
@@ -67,7 +67,7 @@
           "value": {
             "OFFER": {
               "item": "the_vault:map",
-              "nbt": "{\"the_vault:gear_roll_type_poll\":\"gear_treasure\",\"the_vault:map_tier\":4}"
+              "nbt": "{\"the_vault:gear_roll_type_poll\":\"map_loot\",\"the_vault:map_tier\":4}"
             },
             "CURRENCY": "the_vault:vault_gold",
             "MIN_COST": 50,
@@ -79,7 +79,7 @@
           "value": {
             "OFFER": {
               "item": "the_vault:map",
-              "nbt": "{\"the_vault:gear_roll_type_poll\":\"gear_treasure\",\"the_vault:map_tier\":5}"
+              "nbt": "{\"the_vault:gear_roll_type_poll\":\"map_loot\",\"the_vault:map_tier\":5}"
             },
             "CURRENCY": "the_vault:vault_gold",
             "MIN_COST": 60,
@@ -305,25 +305,133 @@
           "value": {
             "OFFER": {
               "item": "the_vault:helmet",
-              "nbt": "{\"the_vault:gear_roll_type_pool\":\"shop_pedestal\",\"the_vault:is_loot\":\"true\"}"
+              "nbt": "{\"the_vault:gear_roll_type_pool\":\"map_loot\",\"the_vault:is_loot\":\"true\"}"
             },
             "CURRENCY": "the_vault:vault_gold",
-            "MIN_COST": 24,
-            "MAX_COST": 32
+            "MIN_COST": 128,
+            "MAX_COST": 256
           },
-          "weight": 80
+          "weight": 4
         },
         {
           "value": {
             "OFFER": {
               "item": "the_vault:chestplate",
-              "nbt": "{\"the_vault:gear_roll_type_pool\":\"gear_treasure\",\"the_vault:is_loot\":\"true\"}"
+              "nbt": "{\"the_vault:gear_roll_type_pool\":\"map_loot\",\"the_vault:is_loot\":\"true\"}"
             },
             "CURRENCY": "the_vault:vault_gold",
-            "MIN_COST": 24,
-            "MAX_COST": 32
+            "MIN_COST": 128,
+            "MAX_COST": 256
           },
-          "weight": 40
+          "weight": 4
+        },
+        {
+          "value": {
+            "OFFER": {
+              "item": "the_vault:leggings",
+              "nbt": "{\"the_vault:gear_roll_type_pool\":\"map_loot\",\"the_vault:is_loot\":\"true\"}"
+            },
+            "CURRENCY": "the_vault:vault_gold",
+            "MIN_COST": 128,
+            "MAX_COST": 256
+          },
+          "weight": 4
+        },
+        {
+          "value": {
+            "OFFER": {
+              "item": "the_vault:boots",
+              "nbt": "{\"the_vault:gear_roll_type_pool\":\"map_loot\",\"the_vault:is_loot\":\"true\"}"
+            },
+            "CURRENCY": "the_vault:vault_gold",
+            "MIN_COST": 128,
+            "MAX_COST": 256
+          },
+          "weight": 4
+        },
+        {
+          "value": {
+            "OFFER": {
+              "item": "the_vault:sword",
+              "nbt": "{\"the_vault:gear_roll_type_pool\":\"map_loot\",\"the_vault:is_loot\":\"true\"}"
+            },
+            "CURRENCY": "the_vault:vault_gold",
+            "MIN_COST": 128,
+            "MAX_COST": 256
+          },
+          "weight": 4
+        },
+        {
+          "value": {
+            "OFFER": {
+              "item": "the_vault:axe",
+              "nbt": "{\"the_vault:gear_roll_type_pool\":\"map_loot\",\"the_vault:is_loot\":\"true\"}"
+            },
+            "CURRENCY": "the_vault:vault_gold",
+            "MIN_COST": 128,
+            "MAX_COST": 256
+          },
+          "weight": 4
+        },
+        {
+          "value": {
+            "OFFER": {
+              "item": "the_vault:battlestaff",
+              "nbt": "{\"the_vault:gear_roll_type_pool\":\"map_loot\",\"the_vault:is_loot\":\"true\"}"
+            },
+            "CURRENCY": "the_vault:vault_gold",
+            "MIN_COST": 128,
+            "MAX_COST": 256
+          },
+          "weight": 4
+        },
+        {
+          "value": {
+            "OFFER": {
+              "item": "the_vault:trident",
+              "nbt": "{\"the_vault:gear_roll_type_pool\":\"map_loot\",\"the_vault:is_loot\":\"true\"}"
+            },
+            "CURRENCY": "the_vault:vault_gold",
+            "MIN_COST": 128,
+            "MAX_COST": 256
+          },
+          "weight": 4
+        },
+        {
+          "value": {
+            "OFFER": {
+              "item": "the_vault:rang",
+              "nbt": "{\"the_vault:gear_roll_type_pool\":\"map_loot\",\"the_vault:is_loot\":\"true\"}"
+            },
+            "CURRENCY": "the_vault:vault_gold",
+            "MIN_COST": 128,
+            "MAX_COST": 256
+          },
+          "weight": 4
+        },
+        {
+          "value": {
+            "OFFER": {
+              "item": "the_vault:plushie",
+              "nbt": "{\"the_vault:gear_roll_type_pool\":\"map_loot\",\"the_vault:is_loot\":\"true\"}"
+            },
+            "CURRENCY": "the_vault:vault_gold",
+            "MIN_COST": 128,
+            "MAX_COST": 256
+          },
+          "weight": 4
+        },
+        {
+          "value": {
+            "OFFER": {
+              "item": "the_vault:loot_sack",
+              "nbt": "{\"the_vault:gear_roll_type_pool\":\"map_loot\",\"the_vault:is_loot\":\"true\"}"
+            },
+            "CURRENCY": "the_vault:vault_gold",
+            "MIN_COST": 128,
+            "MAX_COST": 256
+          },
+          "weight": 4
         },
         {
           "value": {

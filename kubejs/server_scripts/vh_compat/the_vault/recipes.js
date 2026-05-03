@@ -142,9 +142,9 @@ onEvent("recipes", event => {
             'BCB',
             'BBB'
         ], {
-        A: 'the_vault:vault_essence',
+        A: 'minecraft:iron_nugget',
         B: '#forge:wool',
-        C: 'the_vault:soul_shard',
+        C: 'minecraft:ender_pearl',
         D: 'minecraft:string'
         }).id('the_vault:shard_pouch')
 
