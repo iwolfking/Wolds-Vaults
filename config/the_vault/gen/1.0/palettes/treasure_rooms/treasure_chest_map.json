@@ -21,6 +21,33 @@
         }
       ]
     },
+      {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "the_vault:treasure_chest",
+          "output": {
+            "the_vault:treasure_chest{Generated:0b,LootTable:\"the_vault:treasure_chest_map\"}": 1
+          }
+        }
+      ]
+    },
+    {
+        "type": "leveled",
+        "levels": [
+            {
+                "level": 0,
+                "type": "weighted_target",
+                "target": "the_vault:treasure_pedestal",
+                "output": {
+                    "the_vault:treasure_pedestal{LootTable:\"the_vault:treasure_pillar_map\"}": 7,
+                    "minecraft:air": 3
+                }
+            }
+        ]
+    },
     {
         "type": "leveled",
         "levels": [
@@ -47,6 +74,13 @@
                 }
             }
         ]
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:treasure_sand",
+      "output": {
+        "the_vault:treasure_sand{LootTable:\"the_vault:treasure_sand_lvl0\"}": 1
+      }
     }
   ]
 }
