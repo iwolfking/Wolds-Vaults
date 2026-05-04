@@ -5,7 +5,7 @@
 		#Configure FPS Display mode
 		#Complete mode gives you min FPS count and average count
 		#Allowed Values: OFF, SIMPLE, ADVANCED
-		fpsDisplay = "ADVANCED"
+		fpsDisplay = "OFF"
 		#Shows GPU and memory usage onto FPS display
 		#Allowed Values: OFF, ON, GPU, RAM
 		fpsDisplaySystem = "OFF"
@@ -79,12 +79,12 @@
 
 	[embeddiumplus.dynlights]
 		#Toggle if Block Entities should have dynamic lights
-		onTileEntities = true
+		onTileEntities = false
 		#Configure how fast light whould be updated
 		#Allowed Values: OFF, SLOW, NORMAL, FAST, SUPERFAST, FASTESTS, REALTIME
-		updateSpeed = "REALTIME"
+		updateSpeed = "OFF"
 		#Toggle if Entities should have dynamic lights
-		onEntities = true
+		onEntities = false
 		updateOnlyOnPositionChange = true
 
 	[embeddiumplus.others]
