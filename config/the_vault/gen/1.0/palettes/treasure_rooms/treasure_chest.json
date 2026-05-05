@@ -73,6 +73,28 @@
       "output": {
         "the_vault:treasure_sand{LootTable:\"the_vault:treasure_sand_lvl0\"}": 1
       }
+    },
+    {
+      "type": "placeholder",
+      "target": "ORE",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 0.3,
+          "success": {
+            "the_vault:ore_painite[type=vault_stone,generated=true]": 75,
+            "the_vault:ore_alexandrite[type=vault_stone,generated=true]": 35,
+            "the_vault:ore_wutodie[type=vault_stone,generated=true]": 35,
+            "the_vault:ore_benitoite[type=vault_stone,generated=true]": 50,
+            "the_vault:ore_larimar[type=vault_stone,generated=true]": 40,
+            "the_vault:ore_black_opal[type=vault_stone,generated=true]": 75,
+            "the_vault:ore_echo[type=vault_stone,generated=true]": 5
+          },
+          "failure": {
+            "the_vault:vault_stone": 1
+          }
+        }
+      ]
     }
   ]
 }
