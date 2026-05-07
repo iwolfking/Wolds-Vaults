@@ -177,6 +177,10 @@ file = "config/mantle-client.toml"
 hash = "d3e16b023c4d03c0c80f44d84d0570cde535f2fca02fdcac0d0adeb23c60f071"
 
 [[files]]
+file = "config/mobprocessor-common.toml"
+hash = "58d19b0b42f25179e65a4abd680ad8b5a9b18bab139d1414318e81fdf4cbd6b9"
+
+[[files]]
 file = "config/mysticalagriculture-common.toml"
 hash = "d1d9e16824208cacaadf3898d0181468eab0986c2ec7db5cee1b559a54bd0ea6"
 
@@ -15798,7 +15802,7 @@ hash = "f47e759f122406bd69bdc9805e6f6d1671a2afea67498e3667a9eba19bc3b8b4"
 
 [[files]]
 file = "config/the_vault/omega_soul_shard.json"
-hash = "9e40826e0241bf280819a3a3ca383913598253edb1c4bf5b0d2cfaf97df47795"
+hash = "e15f54a363c4465e44cff1b4a9e2c9ae7333595a6edf0620b334046c7da56b25"
 
 [[files]]
 file = "config/the_vault/overlevel_enchant.json"
@@ -15950,7 +15954,7 @@ hash = "4311add8c90b4f178deb107952ce9608b7c62a9987d2803d3b9fcd0b707cd9cd"
 
 [[files]]
 file = "config/the_vault/researches.json"
-hash = "8e867093e2681e82f71da6b9f53485ca3829b22d4cf0631367abf9aef7211cde"
+hash = "95e98b56334848264e88ec39594d54aeebbae2e7e0315dfa603c96ca2f45c647"
 
 [[files]]
 file = "config/the_vault/researches_groups.json"
@@ -16022,7 +16026,7 @@ hash = "12cd6b8f26cc38f5bf6bcf9205755c6a13cad8b4f5e2aea2216f51b3f801af5c"
 
 [[files]]
 file = "config/the_vault/skill_descriptions.json"
-hash = "e2e20a4e2d40d0bba3175b44cf632367a678f57ee284ff59defac8ab4007a2c2"
+hash = "ac71aeb0ee612270d0b8559fa8061e3340b8cb37b020315e90a8f8cda514a1a0"
 
 [[files]]
 file = "config/the_vault/skill_gates.json"
@@ -17549,6 +17553,10 @@ file = "configureddefaults/config/mininggadgets-common.toml"
 hash = "a44eb3c126d28f1500f7b81111e8590cfeca6f2e02111139f71241827f453e95"
 
 [[files]]
+file = "configureddefaults/config/mobprocessor-common.toml"
+hash = "58d19b0b42f25179e65a4abd680ad8b5a9b18bab139d1414318e81fdf4cbd6b9"
+
+[[files]]
 file = "configureddefaults/config/modernfix-common.toml"
 hash = "d40a0510a5eaf56e3c48e881348d7d826c5a1f61aa29b69cf0fc33dd96d6fdcd"
 
@@ -18034,11 +18042,11 @@ hash = "678b1b9f0e3faee35f69ca3e5b52a377560fdbbb0909bbc903e39cc415efa381"
 
 [[files]]
 file = "configureddefaults/vault-settings/pickup_notifier_groups.json"
-hash = "62bff0c5168f8d450b5a4902d69127a2152b35719c0ea8eae5ee38ddfd1acc77"
+hash = "b9fcafd20f3671bc443dc2d1c638471b37c745fab5e6518f0201d1a0b710ae49"
 
 [[files]]
 file = "configureddefaults/vault-settings/pickup_notifier_presets.json"
-hash = "594ce7c20514dfc9901f4c1084ec58e7bdde37fdccda327d8986394df8f15e5e"
+hash = "64e4948ce8b825ab22ba397beab09a61a3995a62ec89bed45f1b275c68b5be92"
 
 [[files]]
 file = "configureddefaults/vault-settings/vaultOptions.json"
@@ -22270,11 +22278,15 @@ hash = "89cf379798c45156691aab86468e13294d7a0ecd0de65c892b83278ec963e27a"
 
 [[files]]
 file = "kubejs/server_scripts/vh_compat/mekanism/recipes.js"
-hash = "d432ab36ee499ebceed17af40b2096699854ac72ef6a3afc98459fe35ddd9ef9"
+hash = "38a03fc42c3e6fb00ffb2c90186092b3329cd87ce46daad7efd1d9e873baa18c"
 
 [[files]]
 file = "kubejs/server_scripts/vh_compat/mining_and_void_dimension/recipes.js"
 hash = "03a6fe9f8d5297c18a01ae7af127667e8caa440f8f8ae6fbeabd4c8bd0872508"
+
+[[files]]
+file = "kubejs/server_scripts/vh_compat/mob_processor/recipes.js"
+hash = "d32af36fa33d1cbd5632a5a4e0489e96a7410b36574d9ac8fccb0f1013df256b"
 
 [[files]]
 file = "kubejs/server_scripts/vh_compat/morecreateburners/recipes.js"
@@ -23886,6 +23898,11 @@ metafile = true
 [[files]]
 file = "mods/mmmmmmmmmmmm.pw.toml"
 hash = "543cae965a82c348b1a64fce5b3d7a4690970b6db6f38518c6f99771cec9a387"
+metafile = true
+
+[[files]]
+file = "mods/mob-processor.pw.toml"
+hash = "c7a9799ac8c263633c7e1b5658b01818f19ff9b3f862f5111cc7e64379b8d51d"
 metafile = true
 
 [[files]]
@@ -26388,7 +26405,7 @@ hash = "67c615fe185763c4d23f912503300f94eb38a8c03190ee3de763704858e65bc4"
 
 [[files]]
 file = "scripts/CollosalChests.zs"
-hash = "eeaf4daaea5a1f2274f0610e1e8406b3b970ac07538ab87ae92b18d4dec2e952"
+hash = "9c75f692abc212165df61ee2c0e7e0c9382dab3ff48dff062cbd5866350137ae"
 
 [[files]]
 file = "scripts/Compressium.zs"

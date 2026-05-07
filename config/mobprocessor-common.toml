@@ -1,0 +1,22 @@
+
+[processing]
+	#Default number of ticks per processing cycle (20 ticks = 1 second)
+	#Range: > 1
+	defaultCycleTimeTicks = 100
+
+[anti_lag]
+	#Maximum number of item entities nearby before processing pauses
+	#Range: > 1
+	maxNearbyItems = 2000
+	#Radius to scan for nearby item entities
+	#Range: 1.0 ~ 64.0
+	detectionRadius = 16.0
+
+[mob_overrides]
+	#Per-mob cycle time overrides. Format: "minecraft:zombie=120"
+	mobCycleOverrides = []
+
+[recipe]
+	#Registry name of the item required in the center of the Augment Egg recipe
+	augmentEggCenterItem = "woldsvaults:mob_binding_stone"
+
