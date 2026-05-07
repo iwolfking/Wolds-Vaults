@@ -2958,7 +2958,7 @@
       "the_vault:reduce_attack_damage": {
         "properties": {
           "type": "attack_damage_additive_percentile",
-          "amount": -0.2,
+          "amount": -0.1,
           "attributeStackingStrategy": "STACK"
         },
         "display": {
@@ -3034,7 +3034,7 @@
       "the_vault:injured_percent_small": {
         "properties": {
           "type": "max_health_additive_percentile",
-          "amount": -0.05,
+          "amount": -0.02,
           "attributeStackingStrategy": "STACK",
           "reputation": {
             "addendPerLevel": 0.01
@@ -3803,7 +3803,7 @@
       "the_vault:reduce_movement_speed": {
         "properties": {
           "stat": "speed",
-          "addend": -0.04
+          "addend": -0.02
         },
         "display": {
           "name": "Movement Speed",
@@ -3926,6 +3926,19 @@
           "name": "Inert",
           "color": "#6DACB5",
           "description": "-10% Cooldown Reduction",
+          "descriptionFormatted": "%d%% Cooldown Reduction",
+          "icon": "the_vault:gui/modifiers/inert"
+        }
+      },
+      "the_vault:inert_small": {
+        "properties": {
+          "stat": "cooldown_reduction",
+          "addend": -0.05
+        },
+        "display": {
+          "name": "Inert",
+          "color": "#6DACB5",
+          "description": "-5% Cooldown Reduction",
           "descriptionFormatted": "%d%% Cooldown Reduction",
           "icon": "the_vault:gui/modifiers/inert"
         }
@@ -5190,8 +5203,8 @@
       "the_vault:buffed": {
         "properties": {
           "children": {
-            "the_vault:drought": 1,
-            "the_vault:inert": 1,
+            "the_vault:draining": 1,
+            "the_vault:inert_small": 1,
             "the_vault:reduce_movement_speed": 1,
             "the_vault:reduce_ability_power": 1,
             "the_vault:reduce_attack_damage": 1,
