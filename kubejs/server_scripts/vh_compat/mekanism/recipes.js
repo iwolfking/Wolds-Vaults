@@ -95,6 +95,26 @@ onEvent("recipes", event => {
         )
     })
 
+    event.custom(
+        {
+                "type": "mekanism:combining",
+                "extraInput": {
+                    "ingredient": {
+                        "item": "the_vault:vault_stone"
+                    }
+                },
+                "mainInput": {
+                    "amount": 32,
+                    "ingredient": {
+                        "item": 'woldsvaults:nullite_fragment'
+                    }
+                },
+                "output": {
+                    "item": 'woldsvaults:nullite_ore'
+                }
+            }
+    )
+
     vaultOreGems.forEach(gem => {
         event.custom(
             {
