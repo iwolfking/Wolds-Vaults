@@ -2955,6 +2955,20 @@
           "icon": "the_vault:gui/modifiers/god_token_idona"
         }
       },
+      "the_vault:reduce_attack_damage": {
+        "properties": {
+          "type": "attack_damage_additive_percentile",
+          "amount": -0.2,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Reduced Attack Damage",
+          "color": "#FF5555",
+          "description": "Players deal less physical damage in this vault",
+          "descriptionFormatted": "-20% Attack Damage",
+          "icon": "the_vault:gui/modifiers/god_token_idona"
+        }
+      },
       "the_vault:kbres": {
         "properties": {
           "type": "knockback_resistance_additive",
@@ -3013,6 +3027,23 @@
           "name": "Injured",
           "color": "#bc2525",
           "description": "-10% Max Health",
+          "descriptionFormatted": "-%d%% Max Health",
+          "icon": "the_vault:gui/modifiers/injured"
+        }
+      },
+      "the_vault:injured_percent_small": {
+        "properties": {
+          "type": "max_health_additive_percentile",
+          "amount": -0.05,
+          "attributeStackingStrategy": "STACK",
+          "reputation": {
+            "addendPerLevel": 0.01
+          }
+        },
+        "display": {
+          "name": "Injured",
+          "color": "#bc2525",
+          "description": "-5% Max Health",
           "descriptionFormatted": "-%d%% Max Health",
           "icon": "the_vault:gui/modifiers/injured"
         }
@@ -3769,6 +3800,19 @@
           "icon": "the_vault:gui/modifiers/speed"
         }
       },
+      "the_vault:reduce_movement_speed": {
+        "properties": {
+          "stat": "speed",
+          "addend": -0.04
+        },
+        "display": {
+          "name": "Movement Speed",
+          "color": "#dea700",
+          "description": "-4% Movement Speed",
+          "descriptionFormatted": "%d%% Movement Speed",
+          "icon": "the_vault:gui/modifiers/speed"
+        }
+      },
       "the_vault:clumsy": {
         "properties": {
           "stat": "block_chance",
@@ -4267,6 +4311,20 @@
           "color": "#FF5555",
           "description": "+5% Ability Power",
           "descriptionFormatted": "+5% Ability Power",
+          "icon": "the_vault:gui/modifiers/god_token_idona"
+        }
+      },
+      "the_vault:reduce_ability_power": {
+        "properties": {
+          "type": "ability_power_percent",
+          "amount": -0.05,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Ability Power",
+          "color": "#FF5555",
+          "description": "-5% Ability Power",
+          "descriptionFormatted": "-5% Ability Power",
           "icon": "the_vault:gui/modifiers/god_token_idona"
         }
       }
@@ -5132,16 +5190,18 @@
       "the_vault:buffed": {
         "properties": {
           "children": {
-            "the_vault:energizing": 1,
-            "the_vault:cdr_5": 1,
-            "the_vault:movement_speed": 1,
-            "the_vault:ability_power": 1
+            "the_vault:drought": 1,
+            "the_vault:inert": 1,
+            "the_vault:reduce_movement_speed": 1,
+            "the_vault:reduce_ability_power": 1,
+            "the_vault:reduce_attack_damage": 1,
+            "the_vault:injured_percent_small": 1
           }
         },
         "display": {
-          "name": "Buffed",
+          "name": "Nerfed",
           "color": "#bbf333",
-          "description": "Adds Mana Regen, Cooldown Reduction, Damage, Ability Power, Movement Speed and Health",
+          "description": "Reduces Mana Regen, Cooldown Reduction, Damage, Ability Power, Movement Speed and Health",
           "icon": "the_vault:gui/modifiers/stronk"
         }
       },
