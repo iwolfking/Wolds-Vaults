@@ -237,10 +237,7 @@
         "id": "off_t2_lucky_hit_1",
         "name": "+2% Lucky Hit Chance",
         "present": false,
-        "parents": [
-          "off_t1_double_hit_1",
-          "off_t1_aoe_1"
-        ],
+        "parents": ["off_t1_double_hit_1", "off_t1_aoe_1"],
         "tier": 2,
         "entries": [
           {
@@ -300,10 +297,7 @@
         "id": "off_t2_chain_1",
         "name": "+1 Attack Chain",
         "present": false,
-        "parents": [
-          "off_t1_atk_ap_3",
-          "off_t2_stun_1"
-        ],
+        "parents": ["off_t1_atk_ap_3", "off_t2_stun_1"],
         "tier": 2,
         "entries": [
           {
@@ -533,7 +527,7 @@
         "entries": [
           {
             "attribute": "the_vault:damage_assassin",
-            "value": 1.00
+            "value": 1.0
           }
         ],
         "type": "greed_gear_attribute"
@@ -620,7 +614,7 @@
         "entries": [
           {
             "attribute": "the_vault:health_percentile",
-            "value": 0.10
+            "value": 0.1
           }
         ],
         "type": "greed_gear_attribute"
@@ -683,14 +677,14 @@
       },
       {
         "id": "def_t1_durability_1",
-        "name": "+10% Durability Wear Reduction",
+        "name": "+4% Heart Fragment Chance",
         "present": false,
         "parent": "def_t1_knockback_res_1",
         "tier": 1,
         "entries": [
           {
-            "attribute": "the_vault:durability_wear_reduction",
-            "value": 0.1
+            "attribute": "the_vault:hit_hearts",
+            "value": 0.04
           }
         ],
         "type": "greed_gear_attribute"
@@ -711,14 +705,14 @@
       },
       {
         "id": "def_t1_durability_2",
-        "name": "+10% Durability Wear Reduction",
+        "name": "+4% Heart Fragment Chance",
         "present": false,
         "parent": "def_t1_knockback_res_2",
         "tier": 1,
         "entries": [
           {
-            "attribute": "the_vault:durability_wear_reduction",
-            "value": 0.1
+            "attribute": "the_vault:hit_hearts",
+            "value": 0.04
           }
         ],
         "type": "greed_gear_attribute"
@@ -727,10 +721,7 @@
         "id": "def_t2_flat_health_1",
         "name": "+10 Hitpoints",
         "present": false,
-        "parents": [
-          "def_t1_health_2",
-          "def_t1_resistance_1"
-        ],
+        "parents": ["def_t1_health_2", "def_t1_resistance_1"],
         "tier": 2,
         "entries": [
           {
@@ -758,10 +749,7 @@
         "id": "def_t2_health_1",
         "name": "+25% Increased Health",
         "present": false,
-        "parents": [
-          "def_t1_knockback_res_2",
-          "def_t2_crit_mitigation_1"
-        ],
+        "parents": ["def_t1_knockback_res_2", "def_t2_crit_mitigation_1"],
         "tier": 2,
         "entries": [
           {
@@ -773,14 +761,14 @@
       },
       {
         "id": "def_t1_durability_3",
-        "name": "+10% Durability Wear Reduction",
+        "name": "+4% Heart Fragment Chance",
         "present": false,
         "parent": "def_t1_knockback_res_4",
         "tier": 1,
         "entries": [
           {
-            "attribute": "the_vault:durability_wear_reduction",
-            "value": 0.1
+            "attribute": "the_vault:hit_hearts",
+            "value": 0.04
           }
         ],
         "type": "greed_gear_attribute"
@@ -955,14 +943,14 @@
       },
       {
         "id": "def_t1_durability_4",
-        "name": "+10% Durability Wear Reduction",
+        "name": "+4% Heart Fragment Chance",
         "present": false,
         "parent": "def_t2_armor_1",
         "tier": 1,
         "entries": [
           {
-            "attribute": "the_vault:durability_wear_reduction",
-            "value": 0.1
+            "attribute": "the_vault:hit_hearts",
+            "value": 0.04
           }
         ],
         "type": "greed_gear_attribute"
@@ -1235,10 +1223,7 @@
         "id": "util_t2_max_mana_1",
         "name": "+5% Max Mana",
         "present": false,
-        "parents": [
-          "util_t1_mana_regen_2",
-          "util_t1_cooldown_2"
-        ],
+        "parents": ["util_t1_mana_regen_2", "util_t1_cooldown_2"],
         "tier": 2,
         "entries": [
           {
@@ -1307,10 +1292,7 @@
         "id": "util_t2_fruit_eff_2",
         "name": "+10% Fruit Effectiveness",
         "present": false,
-        "parents": [
-          "util_t1_soul_quantity_1",
-          "util_t2_xp_gain_2"
-        ],
+        "parents": ["util_t1_soul_quantity_1", "util_t2_xp_gain_2"],
         "tier": 2,
         "entries": [
           {

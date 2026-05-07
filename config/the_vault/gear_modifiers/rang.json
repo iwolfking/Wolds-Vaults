@@ -628,9 +628,9 @@
         ]
       },
       {
-        "attribute": "the_vault:on_hit_chain",
+        "attribute": "the_vault:ricochet",
         "group": "ModOnHitType",
-        "identifier": "the_vault:mod_on_hit_chain",
+        "identifier": "the_vault:mod_on_hit_ricochet",
         "tags": [
           "focusChaining"
         ],
@@ -640,23 +640,13 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 1,
-              "max": 1,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 40,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
               "min": 2,
               "max": 3,
               "step": 1
             }
           },
           {
-            "minLevel": 98,
+            "minLevel": 40,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -666,12 +656,22 @@
             }
           },
           {
+            "minLevel": 98,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 4,
+              "max": 6,
+              "step": 1
+            }
+          },
+          {
             "minLevel": 101,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 5,
-              "max": 6,
+              "max": 7,
               "step": 1
             }
           },
@@ -681,7 +681,7 @@
             "weight": 10,
             "value": {
               "min": 7,
-              "max": 8,
+              "max": 9,
               "step": 1
             }
           }
