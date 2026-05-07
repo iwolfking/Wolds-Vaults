@@ -12,7 +12,7 @@
         "extraMaxMobs": 15,
         "minDistance": 10.0,
         "maxDistance": 12.0,
-        "despawnDistance": 32.0
+        "despawnDistance": 64.0
       },
       "name": "Mob Trap"
     }
@@ -24,8 +24,8 @@
       "yOffset": 3.0,
       "zOffset": 0.0,
       "causesFire": true,
-      "damage": 10.0,
-      "mode": "BREAK",
+      "damage": 15.0,
+      "mode": "NONE",
       "name": "Explosion"
     }
   ],
@@ -35,6 +35,12 @@
         "minecraft:strong_poison"
       ],
       "name": "Poison"
+    },
+    {
+      "potions": [
+        "minecraft:strong_slowness"
+      ],
+      "name": "Slowness"
     }
     
   ],
@@ -49,7 +55,7 @@
     {
       "radius": 6.0,
       "manaDrainPerTick": 1.0,
-      "duration": 200,
+      "duration": 100,
       "name": "Mana Stealer"
     }
   ],
@@ -60,11 +66,11 @@
       "pool": [
         {
           "value": "Explosion",
-          "weight": 0
+          "weight": 4
         },
         {
           "value": "Mob Trap",
-          "weight": 4
+          "weight": 5
         },
         {
           "value": "Poison",
@@ -76,6 +82,22 @@
         },
         {
           "value": "Mana Stealer",
+          "weight": 1
+        },
+        {
+          "value": "Shockwave",
+          "weight": 2
+        },
+        {
+          "value": "Zoomies",
+          "weight": 3
+        },
+        {
+          "value": "Plating",
+          "weight": 2
+        },
+          {
+          "value": "Slowness",
           "weight": 4
         }
       ]
