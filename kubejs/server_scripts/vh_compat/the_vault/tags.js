@@ -121,6 +121,7 @@ onEvent('item.tags', event => {
     event.add('the_vault:spawnegg', 'ars_nouveau:starbuncle_se')
     event.add('the_vault:spawnegg', 'ars_nouveau:wilden_stalker_se')
     event.add('the_vault:spawnegg', 'ars_nouveau:wilden_guardian_se')
+    event.add('the_vault:spawnegg', 'woldsvaults:drygmy_spawn_egg')
 })
 
 onEvent('block.tags', event => {
