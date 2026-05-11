@@ -96,7 +96,7 @@ onEvent("recipes", event => {
             'IMI',
             ' C '
         ], {
-        C: 'the_vault:pog_prism',
+        C: 'woldsvaults:pog_prism',
         M: 'mobprocessor:storage_upgrade_1',
         I: 'the_vault:wutodic_mass'
     }).id('mobprocessor:storage_upgrade_2')
