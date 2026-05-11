@@ -27,6 +27,16 @@
       "damage": 15.0,
       "mode": "NONE",
       "name": "Explosion"
+    },
+     {
+      "radius": 2.0,
+      "xOffset": 0.0,
+      "yOffset": 3.0,
+      "zOffset": 0.0,
+      "causesFire": true,
+      "damage": 7.0,
+      "mode": "NONE",
+      "name": "Explosion_Small"
     }
   ],
   "POTION_CLOUD_EFFECTS": [
@@ -65,12 +75,12 @@
       "probability": 0.05,
       "pool": [
         {
-          "value": "Explosion",
-          "weight": 4
+          "value": "Explosion_Small",
+          "weight": 2
         },
         {
           "value": "Mob Trap",
-          "weight": 5
+          "weight": 6
         },
         {
           "value": "Poison",
@@ -87,6 +97,48 @@
         {
           "value": "Shockwave",
           "weight": 2
+        },
+        {
+          "value": "Zoomies",
+          "weight": 3
+        },
+        {
+          "value": "Plating",
+          "weight": 2
+        },
+          {
+          "value": "Slowness",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "probability": 0.05,
+      "pool": [
+        {
+          "value": "Explosion",
+          "weight": 3
+        },
+        {
+          "value": "Mob Trap",
+          "weight": 6
+        },
+        {
+          "value": "Poison",
+          "weight": 4
+        },
+        {
+          "value": "Teleport Trap",
+          "weight": 0
+        },
+        {
+          "value": "Mana Stealer",
+          "weight": 1
+        },
+        {
+          "value": "Shockwave",
+          "weight": 3
         },
         {
           "value": "Zoomies",
