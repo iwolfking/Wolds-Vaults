@@ -476,6 +476,401 @@
         "random_modifiers": false,
         "clarity": false
       }
+    },
+    "pitch_black": {
+      "objective": {
+        "target": {
+          "count": 10,
+          "type": "constant"
+        },
+        "objective_probability": 1.0,
+        "type": "haunted_braziers"
+      },
+      "theme": {
+        "id": "the_vault:classic_vault_dark_cavern",
+        "type": "value"
+      },
+      "time": {
+        "roll": {
+          "count": 12000,
+          "type": "constant"
+        },
+        "type": "value"
+      },
+      "modifiers": {
+        "list": [
+          {
+            "modifier": "woldsvaults:lights_out",
+            "count": 1
+          },
+          {
+            "modifier": "woldsvaults:all_bad_haunted_braziers",
+            "count": 1
+          },
+          {
+            "modifier": "woldsvaults:blindness_immunity_cancel",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false,
+        "type": "default"
+      },
+      "hazards": {
+        "hazards": []
+      },
+      "exhausted": true
+    },
+    "ultra_hard": {
+      "objective": {
+        "objective_probability": 0.4,
+        "type": "elixir"
+      },
+      "theme": {
+        "id": "woldsvaults:map_themes",
+        "type": "pool"
+      },
+      "modifiers": {
+        "list": [
+          {
+            "modifier": "the_vault:champions_realm",
+            "count": 4
+          },
+          {
+            "modifier": "the_vault:fading",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_champ_drops",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:hard",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false,
+        "type": "default"
+      },
+      "hazards": {
+        "hazards": []
+      },
+      "sigil": "expert",
+      "exhausted": true
+    },
+    "elixir_of_doom": {
+      "objective": {
+        "objective_probability": 0.25,
+        "type": "enchanted_elixir"
+      },
+      "modifiers": {
+        "list": [
+          {
+            "modifier": "woldsvaults:all_bad_enchanted_elixir",
+            "count": 1
+          },
+          {
+            "modifier": "woldsvaults:enchanted_elixir_50_events",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false,
+        "type": "default"
+      },
+      "hazards": {
+        "hazards": []
+      },
+      "sigil": "expert",
+      "exhausted": true
+    },
+    "ballistic_bingo_blackout": {
+      "objective": {
+        "objective_probability": 0.25,
+        "blackout": true,
+        "type": "ballistic_bingo"
+      },
+      "modifiers": {
+        "list": [
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false,
+        "type": "default"
+      },
+      "hazards": {
+        "hazards": []
+      },
+      "exhausted": true
+    },
+    "blackout_scavingo": {
+      "objective": {
+        "objective_probability": 0.25,
+        "width": 5,
+        "height": 5,
+        "blackout": true,
+        "modifierPool": "the_vault:bingos",
+        "type": "scavenger_bingo"
+      },
+      "modifiers": {
+        "list": [
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false,
+        "type": "default"
+      },
+      "hazards": {
+        "hazards": []
+      },
+      "exhausted": true
+    },
+    "gods_challenge": {
+      "objective": {
+        "target": {
+          "count": 10,
+          "type": "constant"
+        },
+        "type": "zealot"
+      },
+      "layout": {
+        "tunnel_span": 1,
+        "type": "infinite"
+      },
+      "theme": {
+        "id": "woldsvaults:god_themes",
+        "type": "pool"
+      },
+      "modifiers": {
+        "list": [
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:velara_challenge",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:wendarr_challenge",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:tenos_challenge",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:idona_challenge",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false,
+        "type": "default"
+      },
+      "hazards": {
+        "hazards": []
+      },
+      "exhausted": true
+    },
+    "big_bad_brew": {
+      "objective": {
+        "objective_probability": 0.5,
+        "required_progress": 5.0,
+        "type": "alchemy"
+      },
+      "layout": {
+        "tunnel_span": 1,
+        "type": "infinite"
+      },
+      "modifiers": {
+        "list": [
+          {
+            "modifier": "the_vault:bubbling_trouble",
+            "count": 4
+          },
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false,
+        "type": "default"
+      },
+      "hazards": {
+        "hazards": []
+      },
+      "exhausted": true
+    },
+    "chaos_chaos_chaos": {
+      "objective": {
+        "objective_probability": 1.0,
+        "type": "chaos"
+      },
+      "layout": {
+        "tunnel_span": 1,
+        "type": "infinite"
+      },
+      "theme": {
+        "id": "the_vault:classic_vault_chaos",
+        "type": "value"
+      },
+      "modifiers": {
+        "list": [
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:unhinged",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:chaos_return",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false,
+        "type": "default"
+      },
+      "hazards": {
+        "hazards": []
+      },
+      "sigil": "adept",
+      "exhausted": true
+    },
+    "rage_cage": {
+      "objective": {
+        "target": {
+          "count": 7,
+          "type": "constant"
+        },
+        "wave": {
+          "count": 5,
+          "type": "constant"
+        },
+        "objective_probability": 1.0,
+        "type": "brutal_bosses"
+      },
+      "layout": {
+        "tunnel_span": 1,
+        "type": "infinite"
+      },
+      "modifiers": {
+        "list": [
+          {
+            "modifier": "the_vault:challenge_stack",
+            "count": 5
+          },
+          {
+            "modifier": "the_vault:rotten",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          },
+          {
+            "modifier": "woldsvaults:infernal_fury",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false,
+        "type": "default"
+      },
+      "hazards": {
+        "hazards": []
+      },
+      "exhausted": true
+    },
+    "survival_of_the_fittest": {
+      "objective": {
+        "objective_probability": 0.5,
+        "target": 45,
+        "waveGroups": [
+          "t1",
+          "t1_t2",
+          "t2",
+          "t2_t3",
+          "t3",
+          "t3_t4",
+          "t4"
+        ],
+        "type": "survival"
+      },
+      "layout": {
+        "tunnel_span": 1,
+        "type": "infinite"
+      },
+      "modifiers": {
+        "list": [
+          {
+            "modifier": "the_vault:no_companion",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false,
+        "type": "default"
+      },
+      "hazards": {
+        "hazards": []
+      },
+      "exhausted": true
     }
   }
 }
