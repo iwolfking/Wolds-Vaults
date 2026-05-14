@@ -3201,6 +3201,19 @@
       }
     },
     "the_vault:modifier_type/player_effect": {
+       "woldsvaults:lights_out": {
+        "properties": {
+          "effect": "wildbackport:darkness",
+          "effectAmplifier": 0
+        },
+        "display": {
+          "name": "Light's Out",
+          "color": "#47402d",
+          "description": "Permanent Blindness Effect",
+          "descriptionFormatted": "Permanent Blindness Effect",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
       "the_vault:hunger": {
         "properties": {
           "effect": "minecraft:hunger",
@@ -7326,6 +7339,20 @@
       }
     },
     "the_vault:modifier_type/infernal_mobs": {
+      "woldsvaults:infernal_fury": {
+        "properties": {
+          "filter": "",
+          "chance": 0.25,
+          "amount": 3
+        },
+        "display": {
+          "name": "Infernal",
+          "color": "#a996ca",
+          "description": "25% chance for mobs to spawn with Infernal modifiers",
+          "descriptionFormatted": "Chance for mobs to spawn with Infernal modifiers",
+          "icon": "the_vault:gui/modifiers/infernal"
+        }
+      },
       "the_vault:raging": {
         "properties": {
           "filter": "",
@@ -8262,6 +8289,65 @@
           "icon": "the_vault:gui/modifiers/impossible"
         }
       }
+    },
+     "woldsvaults:modifier_type/brazier_pool_modification": {
+      "woldsvaults:all_bad_haunted_braziers": {
+        "properties": {
+          "id": "woldsvaults:all_bad_haunted_braziers"
+        },
+        "display": {
+          "name": "All Bad Haunted Braziers",
+          "color": "#47402d",
+          "description": "Braziers only have negative effects",
+          "descriptionFormatted": "Braziers only have negative effects",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      }
+    },
+    "woldsvaults:modifier_type/enchanted_elixir_tags": {
+      "woldsvaults:all_bad_enchanted_elixir": {
+        "properties": {
+          "allowedTags": [
+            "NEGATIVE"
+          ]
+        },
+        "display": {
+          "name": "All Bad Enchanted Elixir",
+          "color": "#47402d",
+          "description": "Enchanted Elixir events are always negative",
+          "descriptionFormatted": "Enchanted Elixir events are always negative",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      }
+    },
+    "woldsvaults:modifier_type/enchanted_elixir_event_count": {
+      "woldsvaults:enchanted_elixir_50_events": {
+        "properties": {
+          "count": 50
+        },
+        "display": {
+          "name": "Events Extravaganza",
+          "color": "#47402d",
+          "description": "Enchanted Elixir will roll 50 events",
+          "descriptionFormatted": "Enchanted Elixir will roll 50 events",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      }
+    },
+    "woldsvaults:modifier_type/anti_effect_immunity": {
+      "woldsvaults:blindness_immunity_cancel": {
+        "properties": {
+          "id": "blindness"
+        },
+        "display": {
+          "name": "Anti-Blindness Immunity",
+          "color": "#47402d",
+          "description": "Blindness can't be prevented",
+          "descriptionFormatted": "Blindness can't be prevented",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      }
     }
   }
+  
 }
