@@ -4911,6 +4911,27 @@
       ],
       "maxTier": 1
     },
+    "fangs": {
+      "type": "gear",
+      "name": {
+        "text": "Fangs Card"
+      },
+      "model": "the_vault:card/icon/fangs#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Fangs",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
     "heal": {
       "type": "gear",
       "name": {
@@ -10020,6 +10041,10 @@
       },
       {
         "value": "expunge",
+        "weight": 1.0
+      },
+      {
+        "value": "fangs",
         "weight": 1.0
       }
     ],
