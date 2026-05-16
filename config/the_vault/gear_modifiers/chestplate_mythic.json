@@ -1699,6 +1699,52 @@
       },
       { "attribute": "the_vault:added_ability_level",
         "group": "ModAbility",
+        "identifier": "the_vault:mod_added_ability_level_fangs",
+        "tags": [
+          "focusAbilityPower",
+          "focusAbilityFangs"
+        ],
+        "tiers": [
+          {
+            "minLevel": 25,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "abilityKey": "Fangs",
+              "levelChange": 2
+            }
+          },
+          {
+            "minLevel": 50,
+            "maxLevel": -1,
+            "weight": 8,
+            "value": {
+              "abilityKey": "Fangs",
+              "levelChange": 3
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 80,
+            "value": {
+              "abilityKey": "Fangs",
+              "levelChange": 4
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 80,
+            "value": {
+              "abilityKey": "Fangs",
+              "levelChange": 5
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:added_ability_level",
+        "group": "ModAbility",
         "identifier": "the_vault:mod_added_ability_level_arcane",
         "tags": [
           "focusAbilityPower",
