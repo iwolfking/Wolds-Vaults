@@ -3778,35 +3778,16 @@
         }
       }
     ],
-    "the_vault:crystal_seal_architect": [
+   "the_vault:crystal_seal_architect": [
       {
         "level": 0,
         "input": [
           "the_vault:vault_crystal"
         ],
         "objective": {
-          "type": "empty"
-        },
-        "layout": {
-          "type": "architect",
-          "tunnel_span": 1,
-          "entries": [],
-          "completion": 0.0
-        },
-        "theme": {
-          "type": "pool",
-          "id": "the_vault:diy"
-        },
-        "time": {
-          "type": "value",
-          "roll": {
-            "type": "constant",
-            "count": 200
-          }
-        },
-        "modifiers": {
-          "type": "default",
-          "random_modifiers": false
+          "type": "scaling_bingo",
+          "objective_probability": 1.0,
+          "sealCount": 1
         }
       }
     ],
