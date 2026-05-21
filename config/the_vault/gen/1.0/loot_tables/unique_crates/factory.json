@@ -13,15 +13,15 @@
                         {
                             "weight": 5,
                             "item": {
-                              "id": "the_vault:jewel",
-                              "nbt": {
-                                "the_vault:gear_unique_pool": "the_vault:pax",
-                                "the_vault:gear_roll_type": "Unique"
-                              },
-                              "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                "id": "the_vault:jewel",
+                                "nbt": {
+                                    "the_vault:gear_unique_pool": "the_vault:pax",
+                                    "the_vault:gear_roll_type": "Unique"
+                                },
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
                         }
@@ -33,15 +33,34 @@
                         {
                             "weight": 5,
                             "item": {
-                              "id": "the_vault:boots",
-                              "nbt": {
-                                "the_vault:gear_unique_pool": "the_vault:frostguards",
-                                "the_vault:gear_roll_type": "Unique"
-                              },
-                              "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                "id": "the_vault:boots",
+                                "nbt": {
+                                    "the_vault:gear_unique_pool": "the_vault:frostguards",
+                                    "the_vault:gear_roll_type": "Unique"
+                                },
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "pool": [
+                        {
+                            "weight": 5,
+                            "item": {
+                                "id": "the_vault:deck_socket",
+                                "nbt": {
+                                     "Modifier": "@factory"
+                                },
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
                         }
@@ -62,11 +81,11 @@
                         {
                             "weight": 1,
                             "item": {
-                              "id": "the_vault:unique_crate_scroll",
-                              "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                "id": "the_vault:unique_crate_scroll",
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
                         }
@@ -78,11 +97,11 @@
                         {
                             "weight": 10,
                             "item": {
-                              "id": "minecraft:air",
-                              "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
+                                "id": "minecraft:air",
+                                "count": {
+                                    "type": "uniform",
+                                    "min": 1,
+                                    "max": 1
                                 }
                             }
                         }
