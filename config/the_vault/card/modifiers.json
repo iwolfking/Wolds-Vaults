@@ -244,32 +244,32 @@
       "attribute": "the_vault:ability_power",
       "pool": [
         {
-          "min": 0.3,
-          "max": 0.3,
-          "step": 1.0,
-          "tier": 1
-        },
-        {
           "min": 0.6,
           "max": 0.6,
           "step": 1.0,
-          "tier": 2
+          "tier": 1
         },
         {
           "min": 0.9,
           "max": 0.9,
           "step": 1.0,
-          "tier": 3
+          "tier": 2
         },
         {
           "min": 1.2,
           "max": 1.2,
           "step": 1.0,
-          "tier": 4
+          "tier": 3
         },
         {
           "min": 1.5,
           "max": 1.5,
+          "step": 1.0,
+          "tier": 4
+        },
+        {
+          "min": 1.8,
+          "max": 1.8,
           "step": 1.0,
           "tier": 5
         }
@@ -3047,32 +3047,32 @@
       "attribute": "the_vault:lucky_hit_chance",
       "pool": [
         {
-          "min": 0.002,
-          "max": 0.002,
+          "min": 0.001,
+          "max": 0.001,
           "step": 1.0,
           "tier": 1
         },
         {
-          "min": 0.005,
-          "max": 0.005,
+          "min": 0.002,
+          "max": 0.002,
           "step": 1.0,
           "tier": 2
         },
         {
-          "min": 0.007,
-          "max": 0.007,
+          "min": 0.003,
+          "max": 0.003,
           "step": 1.0,
           "tier": 3
         },
         {
-          "min": 0.009,
-          "max": 0.009,
+          "min": 0.004,
+          "max": 0.004,
           "step": 1.0,
           "tier": 4
         },
         {
-          "min": 0.01,
-          "max": 0.01,
+          "min": 0.005,
+          "max": 0.005,
           "step": 1.0,
           "tier": 5
         }
@@ -3251,8 +3251,8 @@
           "tier": 4
         },
         {
-          "min": 0.0125,
-          "max": 0.0125,
+          "min": 0.01,
+          "max": 0.01,
           "step": 0.001,
           "tier": 5
         }
@@ -3546,32 +3546,32 @@
       "attribute": "the_vault:armor_percentile",
       "pool": [
         {
-          "min": 0.004,
-          "max": 0.004,
+          "min": 0.002,
+          "max": 0.002,
           "step": 1.0,
           "tier": 1
+        },
+        {
+          "min": 0.0035,
+          "max": 0.0035,
+          "step": 1.0,
+          "tier": 2
+        },
+        {
+          "min": 0.005,
+          "max": 0.005,
+          "step": 1.0,
+          "tier": 3
         },
         {
           "min": 0.0075,
           "max": 0.0075,
           "step": 1.0,
-          "tier": 2
+          "tier": 4
         },
         {
           "min": 0.01,
           "max": 0.01,
-          "step": 1.0,
-          "tier": 3
-        },
-        {
-          "min": 0.0125,
-          "max": 0.0125,
-          "step": 1.0,
-          "tier": 4
-        },
-        {
-          "min": 0.015,
-          "max": 0.015,
           "step": 1.0,
           "tier": 5
         }
@@ -6192,8 +6192,8 @@
           "modifier": "the_vault:kill_charm",
           "count": 1,
           "time": {
-            "min": 100,
-            "max": 400,
+            "min": 200,
+            "max": 600,
             "step": 20
           }
         }
@@ -6219,8 +6219,8 @@
           "modifier": "the_vault:kill_charm",
           "count": 1,
           "time": {
-            "min": 300,
-            "max": 800,
+            "min": 600,
+            "max": 1000,
             "step": 20
           }
         }
@@ -6245,8 +6245,8 @@
           "modifier": "the_vault:bronze_nuke",
           "count": 1,
           "time": {
-            "min": 100,
-            "max": 400,
+            "min": 300,
+            "max": 600,
             "step": 20
           }
         }
@@ -6272,8 +6272,8 @@
           "modifier": "the_vault:bronze_nuke",
           "count": 1,
           "time": {
-            "min": 300,
-            "max": 800,
+            "min": 600,
+            "max": 1000,
             "step": 20
           }
         }
@@ -6297,8 +6297,8 @@
           "modifier": "the_vault:kill_hunter",
           "count": 1,
           "time": {
-            "min": 100,
-            "max": 400,
+            "min": 200,
+            "max": 600,
             "step": 20
           }
         }
@@ -6323,8 +6323,8 @@
           "modifier": "the_vault:kill_hunter",
           "count": 1,
           "time": {
-            "min": 300,
-            "max": 800,
+            "min": 600,
+            "max": 1000,
             "step": 20
           }
         }
@@ -6349,8 +6349,8 @@
           "modifier": "the_vault:kill_nuke",
           "count": 1,
           "time": {
-            "min": 100,
-            "max": 400,
+            "min": 200,
+            "max": 600,
             "step": 20
           }
         }
@@ -6376,8 +6376,8 @@
           "modifier": "the_vault:kill_nuke",
           "count": 1,
           "time": {
-            "min": 300,
-            "max": 800,
+            "min": 600,
+            "max": 1000,
             "step": 20
           }
         }
@@ -6402,8 +6402,8 @@
           "modifier": "the_vault:kill_totem",
           "count": 1,
           "time": {
-            "min": 100,
-            "max": 400,
+            "min": 200,
+            "max": 600,
             "step": 20
           }
         }
@@ -6429,8 +6429,8 @@
           "modifier": "the_vault:kill_totem",
           "count": 1,
           "time": {
-            "min": 300,
-            "max": 800,
+            "min": 600,
+            "max": 1000,
             "step": 20
           }
         }
@@ -6454,8 +6454,8 @@
           "modifier": "the_vault:loot_goblin",
           "count": 1,
           "time": {
-            "min": 100,
-            "max": 400,
+            "min": 200,
+            "max": 600,
             "step": 20
           }
         }
@@ -6480,8 +6480,8 @@
           "modifier": "the_vault:loot_goblin",
           "count": 1,
           "time": {
-            "min": 300,
-            "max": 800,
+            "min": 600,
+            "max": 1000,
             "step": 20
           }
         }
@@ -6505,8 +6505,8 @@
           "modifier": "the_vault:door_hunter",
           "count": 1,
           "time": {
-            "min": 100,
-            "max": 400,
+            "min": 200,
+            "max": 600,
             "step": 20
           }
         }
@@ -6531,8 +6531,8 @@
           "modifier": "the_vault:door_hunter",
           "count": 1,
           "time": {
-            "min": 300,
-            "max": 800,
+            "min": 600,
+            "max": 1000,
             "step": 20
           }
         }
@@ -6556,8 +6556,8 @@
           "modifier": "the_vault:overpower",
           "count": 1,
           "time": {
-            "min": 100,
-            "max": 400,
+            "min": 200,
+            "max": 600,
             "step": 20
           }
         }
@@ -6582,8 +6582,8 @@
           "modifier": "the_vault:overpower",
           "count": 1,
           "time": {
-            "min": 300,
-            "max": 800,
+            "min": 600,
+            "max": 1000,
             "step": 20
           }
         }
@@ -10363,14 +10363,6 @@
       },
       {
         "value": "amp_area_of_effect",
-        "weight": 1.0
-      },
-      {
-        "value": "amp_movement_speed",
-        "weight": 1.0
-      },
-      {
-        "value": "amp_copiously",
         "weight": 1.0
       }
     ],
