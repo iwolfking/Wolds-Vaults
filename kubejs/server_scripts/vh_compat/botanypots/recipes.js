@@ -103,6 +103,10 @@ onEvent("recipes", event => {
             ]
         }
     ).id('botanypots:minecraft/crop/potato')
+
+    event.remove({ output: /^dyenamicsandfriends:botanypots_.*$/ });
+
+
 })
 
 
