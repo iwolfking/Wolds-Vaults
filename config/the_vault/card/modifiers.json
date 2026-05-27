@@ -3592,26 +3592,26 @@
       "attribute": "the_vault:health_percentile",
       "pool": [
         {
+          "min": 0.0025,
+          "max": 0.0025,
+          "step": 1.0,
+          "tier": 1
+        },
+        {
           "min": 0.005,
           "max": 0.005,
           "step": 1.0,
-          "tier": 1
+          "tier": 2
         },
         {
           "min": 0.0075,
           "max": 0.0075,
           "step": 1.0,
-          "tier": 2
+          "tier": 3
         },
         {
           "min": 0.01,
           "max": 0.01,
-          "step": 1.0,
-          "tier": 3
-        },
-        {
-          "min": 0.0125,
-          "max": 0.0125,
           "step": 1.0,
           "tier": 4
         },
