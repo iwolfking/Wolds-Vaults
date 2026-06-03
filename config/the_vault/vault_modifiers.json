@@ -4610,6 +4610,18 @@
           "icon": "the_vault:gui/modifiers/experienced"
         }
       },
+      "the_vault:bingo_xp": {
+        "properties": {
+          "addend": 0.1
+        },
+        "display": {
+          "name": "Bingo Experience",
+          "color": "#DB7C00",
+          "description": "+10% Vault XP Gained",
+          "descriptionFormatted": "+%d%% Vault XP Gained",
+          "icon": "the_vault:gui/modifiers/experienced"
+        }
+      },
       "the_vault:noxp": {
         "properties": {
           "addend": -10000.0
@@ -5335,7 +5347,7 @@
       "the_vault:challenge_bingo": {
         "properties": {
           "children": {
-            "the_vault:bingo_challenge": 5,
+            "the_vault:challenge_stack": 4,
             "the_vault:bingo_quantity": 1,
             "the_vault:bingo_rarity": 1,
             "the_vault:champion_chance": 2
@@ -5344,7 +5356,7 @@
         "display": {
           "name": "Challenging Bingo!",
           "color": "#B71C1C",
-          "description": "Every Challenging BINGO adds 10% item rarity and quantity, and adds 5 stacks of Bingo Challenge, and adds 20% more chance for champions.",
+          "description": "Every Challenging BINGO adds 10% item rarity and quantity, and adds 4 Challenge Stacks, and adds 20% more chance for champions.",
           "icon": "the_vault:gui/modifiers/bingo"
         }
       },
@@ -5610,13 +5622,14 @@
           "children": {
             "the_vault:bingo_quantity": 1,
             "the_vault:bingo_rarity": 1,
-            "the_vault:soul_boost": 1
+            "the_vault:soul_boost": 1,
+            "the_vault:bingo_xp": 1
           }
         },
         "display": {
           "name": "Bingo!",
           "color": "#bbf333",
-          "description": "Every BINGO Increases Item Quantity & Rarity by 10%, and boosts soul chance by 25%",
+          "description": "Every BINGO Increases Item Quantity & Rarity by 10%, Experienced Gain by 10%, and boosts soul chance by 25%",
           "icon": "the_vault:gui/modifiers/bingo"
         }
       },
@@ -5772,7 +5785,8 @@
             "the_vault:furious_mobs": 2,
             "the_vault:chunky_mobs2": 1,
             "the_vault:cake_layer_mobspeed": 2,
-            "the_vault:critical_mobs": 1
+            "the_vault:critical_mobs": 1,
+            "the_vault:bingo_xp": 1
           }
         },
         "display": {
