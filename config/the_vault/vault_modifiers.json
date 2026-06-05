@@ -776,6 +776,23 @@
           "icon": "the_vault:gui/modifiers/pandora"
         }
       },
+      "woldsvaults:cardboard_boxes": {
+        "properties": {
+          "output": "the_vault:cardboard_box{LootTable:\"the_vault:cardboard_box\"}",
+          "attemptsPerChunk": 3,
+          "requireConditions": true,
+          "roomTypeWhitelist": [
+            "COMMON",
+            "ORE"
+          ]
+        },
+        "display": {
+          "name": "Moving Day",
+          "color": "#ffae00",
+          "description": "Spawns Cardboard Boxes inside the vault",
+          "icon": "the_vault:gui/modifiers/pandora"
+        }
+      },
       "the_vault:coin_pile": {
         "properties": {
           "output": "the_vault:placeholder[type=coin_stacks]",
