@@ -2694,12 +2694,12 @@
     "the_vault:modifier_type/spawner_mobs": {
       "the_vault:mob_increase": {
         "properties": {
-          "increase": 1.0
+          "increase": 0.5
         },
         "display": {
           "name": "Onslaught",
           "color": "#FC7C5C",
-          "description": "+20% Mob Spawns",
+          "description": "+50% Mob Spawns",
           "descriptionFormatted": "+%d%% increased amount of mob spawns",
           "icon": "the_vault:gui/modifiers/mob_increase"
         }
@@ -2742,12 +2742,12 @@
       },
       "the_vault:unhinged_mob_increase": {
         "properties": {
-          "increase": 3.0
+          "increase": 1.5
         },
         "display": {
           "name": "Super Onslaught",
           "color": "#FC7C5C",
-          "description": "+200% Mob Spawns",
+          "description": "+150% Mob Spawns",
           "descriptionFormatted": "+%d%% increased amount of mob spawns",
           "icon": "the_vault:gui/modifiers/mob_increase"
         }
@@ -5893,7 +5893,8 @@
           "children": {
             "the_vault:furious_mobs": 8,
             "the_vault:chunky_mobs": 8,
-            "the_vault:cake_layer_mobspeed": 4
+            "the_vault:cake_layer_mobspeed": 4,
+            "the_vault:mob_increase": 1
           }
         },
         "display": {
