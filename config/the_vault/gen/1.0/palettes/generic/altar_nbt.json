@@ -564,6 +564,46 @@
             {
               "taskPool": {
                 "type": "mine_block",
+                "filter": "@the_vault:chest",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "uniform",
+                    "min": 80,
+                    "max": 100
+                  }
+                },
+                "renderer": {
+                  "type": "god_altar",
+                  "title": "Loot Chests",
+                  "hint": "${current}/${target}"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "taskPool": {
+                "type": "loot_chest",
+                "filter": "@the_vault:coins",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "uniform",
+                    "min": 10,
+                    "max": 21
+                  }
+                },
+                "renderer": {
+                  "type": "god_altar",
+                  "title": "Loot Coin Piles",
+                  "hint": "${current}/${target}"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "taskPool": {
+                "type": "mine_block",
                 "filter": "@the_vault:ores[generated=true]",
                 "counter": {
                   "type": "target",
@@ -808,6 +848,46 @@
                 "renderer": {
                   "type": "god_altar",
                   "title": "Loot Ornate Chests",
+                  "hint": "${current}/${target}"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "taskPool": {
+                "type": "loot_chest",
+                "filter": "@the_vault:coins",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "uniform",
+                    "min": 15,
+                    "max": 21
+                  }
+                },
+                "renderer": {
+                  "type": "god_altar",
+                  "title": "Loot Coin Piles",
+                  "hint": "${current}/${target}"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "taskPool": {
+                "type": "mine_block",
+                "filter": "@the_vault:chest",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "uniform",
+                    "min": 60,
+                    "max": 90
+                  }
+                },
+                "renderer": {
+                  "type": "god_altar",
+                  "title": "Loot Chests",
                   "hint": "${current}/${target}"
                 }
               },
@@ -1068,6 +1148,26 @@
             {
               "taskPool": {
                 "type": "loot_chest",
+                "filter": "@the_vault:coins",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "uniform",
+                    "min": 18,
+                    "max": 30
+                  }
+                },
+                "renderer": {
+                  "type": "god_altar",
+                  "title": "Loot Coin Piles",
+                  "hint": "${current}/${target}"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "taskPool": {
+                "type": "loot_chest",
                 "filter": "@the_vault:wooden",
                 "counter": {
                   "type": "target",
@@ -1080,6 +1180,26 @@
                 "renderer": {
                   "type": "god_altar",
                   "title": "Loot Wooden Chests",
+                  "hint": "${current}/${target}"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "taskPool": {
+                "type": "mine_block",
+                "filter": "@the_vault:chest",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "uniform",
+                    "min": 75,
+                    "max": 120
+                  }
+                },
+                "renderer": {
+                  "type": "god_altar",
+                  "title": "Loot Chests",
                   "hint": "${current}/${target}"
                 }
               },
@@ -1320,6 +1440,26 @@
             {
               "taskPool": {
                 "type": "loot_chest",
+                "filter": "@the_vault:coins",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "uniform",
+                    "min": 18,
+                    "max": 34
+                  }
+                },
+                "renderer": {
+                  "type": "god_altar",
+                  "title": "Loot Coin Piles",
+                  "hint": "${current}/${target}"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "taskPool": {
+                "type": "loot_chest",
                 "filter": "@the_vault:wooden",
                 "counter": {
                   "type": "target",
@@ -1352,6 +1492,26 @@
                 "renderer": {
                   "type": "god_altar",
                   "title": "Mine Vault Ores",
+                  "hint": "${current}/${target}"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "taskPool": {
+                "type": "mine_block",
+                "filter": "@the_vault:chest",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "uniform",
+                    "min": 90,
+                    "max": 150
+                  }
+                },
+                "renderer": {
+                  "type": "god_altar",
+                  "title": "Loot Chests",
                   "hint": "${current}/${target}"
                 }
               },
