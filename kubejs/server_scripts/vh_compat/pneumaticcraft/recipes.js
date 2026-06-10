@@ -53,7 +53,7 @@ onEvent("recipes", event => {
     event.custom({
         "type": 'pneumaticcraft:explosion_crafting',
         "input": {
-            "item": 'the_vault:chromatic_iron_ingot'
+            "item": 'minecraft:iron_ingot'
         },
         "loss_rate": 20,
         "results": [
@@ -66,7 +66,7 @@ onEvent("recipes", event => {
     event.custom({
         "type": 'pneumaticcraft:explosion_crafting',
         "input": {
-            "item": 'the_vault:chromatic_iron_block'
+            "item": 'minecraft:iron_block'
         },
         "loss_rate": 20,
         "results": [
@@ -80,7 +80,7 @@ onEvent("recipes", event => {
         "type": 'pneumaticcraft:pressure_chamber',
         "inputs": [
             {
-                "item": 'the_vault:chromatic_iron_ingot'
+                "item": 'minecraft:iron_ingot'
             }
         ],
         "pressure": 2.0,
@@ -95,7 +95,7 @@ onEvent("recipes", event => {
         "type": 'pneumaticcraft:pressure_chamber',
         "inputs": [
             {
-                "item": 'the_vault:chromatic_iron_block'
+                "item": 'minecraft:iron_block'
             }
         ],
         "pressure": 2.0,
@@ -291,6 +291,26 @@ onEvent("recipes", event => {
         "results": [
             {
                 "item": "pneumaticcraft:printed_circuit_board"
+            }
+        ]
+    });
+
+    event.custom({
+        "type": 'pneumaticcraft:pressure_chamber',
+        "inputs": [
+            {
+                "type": "pneumaticcraft:stacked_item",
+                "item": 'the_vault:chromatic_iron_ingot',
+                "count": 3
+            },
+            {
+                "item": 'the_vault:carbon',
+            }
+        ],
+        "pressure": 2.0,
+        "results": [
+            {
+                "item": "the_vault:chromatic_steel_ingot"
             }
         ]
     });
