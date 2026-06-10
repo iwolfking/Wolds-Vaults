@@ -57,6 +57,15 @@ for Iskall85's Vaulthunters */
                                                       .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:the_vault:chromatic_iron_ingot>))
                                                       .addStep<mods.createtweaker.PressingRecipe>((rb) => rb.duration(50)));
 
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("chromatic_steel_ingot")
+                                                      .transitionTo(<item:the_vault:chromatic_iron_ingot>)
+                                                      .require(<item:the_vault:chromatic_iron_ingot>)
+                                                      .loops(1)
+                                                      .addOutput(<item:the_vault:chromatic_steel_ingot>, 1)
+                                                      .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:the_vault:chromatic_iron_ingot>))
+                                                      .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:the_vault:chromatic_iron_ingot>))
+                                                      .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:the_vault:carbon>)));
+
 craftingTable.addShaped("create_andesite_alloy", <item:create:andesite_alloy> *2, [
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>],
     [<item:minecraft:andesite>, <item:the_vault:chromatic_iron_ingot>, <item:minecraft:andesite>],
