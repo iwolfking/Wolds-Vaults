@@ -6471,6 +6471,60 @@
           "icon": "the_vault:gui/modifiers/armed"
         }
       },
+      "woldsvaults:armed_chest_special": {
+        "properties": {
+          "chance": 0.04,
+          "amounts": [
+            {
+              "value": 1,
+              "weight": 2
+            }
+          ],
+          "entities": [
+            {
+              "value": {
+                "type": "thermal:slime_grenade",
+                "randomMotion": true
+              },
+              "weight": 4
+            },
+            {
+              "value": {
+                "type": "thermal:explosive_grenade",
+                "randomMotion": true
+              },
+              "weight": 4
+            },
+            {
+              "value": {
+                "type": "thermal:fire_grenade",
+                "randomMotion": true
+              },
+              "weight": 4
+            },
+            {
+              "value": {
+                "type": "thermal:ender_grenade",
+                "randomMotion": true
+              },
+              "weight": 1
+            },
+            {
+              "value": {
+                "type": "thermal:lightning_grenade",
+                "randomMotion": true
+              },
+              "weight": 4
+            }
+          ]
+        },
+        "display": {
+          "name": "Armed",
+          "color": "#33691E",
+          "description": "Grenades sometimes drop from chests.",
+          "icon": "the_vault:gui/modifiers/armed"
+        }
+      },
       "the_vault:bingo_slime_grenade_chest": {
         "properties": {
           "chance": 0.09,
@@ -6577,7 +6631,7 @@
       },
       "the_vault:surprise_boxes": {
         "properties": {
-          "chance": 0.5,
+          "chance": 0.25,
           "amounts": [
             {
               "value": 1,
