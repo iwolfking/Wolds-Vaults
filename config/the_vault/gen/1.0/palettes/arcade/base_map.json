@@ -1,61 +1,113 @@
 {
-  "tile_processors": [
-    {
-      "type": "reference",
-      "id": "the_vault:generic/vendor_pedestal_placeholder_map"
-    },
-    {
-        "type": "weighted_target",
-        "target": "the_vault:placeholder[type=wooden_chest]",
-        "output": {
-            "the_vault:placeholder[type=wooden_chest]": 65,
-            "minecraft:air": 35
+    "tile_processors": [
+        {
+            "type": "reference",
+            "id": "the_vault:generic/vendor_pedestal_placeholder_map"
+        },
+        {
+            "type": "weighted_target",
+            "target": "the_vault:placeholder[type=wooden_chest]",
+            "output": {
+                "the_vault:placeholder[type=wooden_chest]": 65,
+                "minecraft:air": 35
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "the_vault:placeholder[type=gilded_chest]",
+            "output": {
+                "the_vault:placeholder[type=gilded_chest]": 40,
+                "minecraft:air": 60
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "the_vault:placeholder[type=living_chest]",
+            "output": {
+                "the_vault:placeholder[type=living_chest]": 40,
+                "minecraft:air": 60
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "the_vault:placeholder[type=ornate_chest]",
+            "output": {
+                "the_vault:placeholder[type=ornate_chest]": 40,
+                "minecraft:air": 60
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "the_vault:placeholder[type=coin_stacks]",
+            "output": {
+                "the_vault:placeholder[type=coin_stacks]": 40,
+                "minecraft:air": 60
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:command_block",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "weighted_target",
+            "target": "minecraft:crying_obsidian",
+            "output": {
+                "minecraft:air": 1
+            }
+        },
+        {
+            "type": "leveled",
+            "levels": [
+                {
+                    "level": 0,
+                    "type": "weighted_target",
+                    "target": "the_vault:cardboard_box",
+                    "output": {
+                        "minecraft:air": 7,
+                        "the_vault:cardboard_box[facing=east,color=1,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=east,color=2,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=east,color=3,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=east,color=4,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=west,color=1,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=west,color=2,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=west,color=3,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=west,color=4,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=north,color=1,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=north,color=2,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=north,color=3,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=north,color=4,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=south,color=1,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=south,color=2,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=south,color=3,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=south,color=4,open=false]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=east,color=1,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=east,color=2,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=east,color=3,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=east,color=4,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=west,color=1,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=west,color=2,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=west,color=3,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=west,color=4,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=north,color=1,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=north,color=2,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=north,color=3,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=north,color=4,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=south,color=1,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=south,color=2,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=south,color=3,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1,
+                        "the_vault:cardboard_box[facing=south,color=4,open=true]{LootTable:\"the_vault:cardboard_box\"}": 1
+                    }
+                }
+            ]
+        },
+        {
+            "type": "reference",
+            "id": "the_vault:generic/room_base_map"
         }
-    },
-    {
-        "type": "weighted_target",
-        "target": "the_vault:placeholder[type=gilded_chest]",
-        "output": {
-            "the_vault:placeholder[type=gilded_chest]": 40,
-            "minecraft:air": 60
-    }
-    },
-    {
-        "type": "weighted_target",
-        "target": "the_vault:placeholder[type=living_chest]",
-        "output": {
-            "the_vault:placeholder[type=living_chest]": 40,
-            "minecraft:air": 60
-        }
-    },
-    {
-        "type": "weighted_target",
-        "target": "the_vault:placeholder[type=ornate_chest]",
-        "output": {
-            "the_vault:placeholder[type=ornate_chest]": 40,
-            "minecraft:air": 60
-        }
-    },
-    {
-        "type": "weighted_target",
-        "target": "the_vault:placeholder[type=coin_stacks]",
-        "output": {
-            "the_vault:placeholder[type=coin_stacks]": 40,
-            "minecraft:air": 60
-        }
-    },
-    {
-        "type": "weighted_target",
-        "target": "minecraft:command_block",
-        "output": {
-            "minecraft:air": 1
-        }
-    },
-    {
-      "type": "reference",
-      "id": "the_vault:generic/room_base_map"
-    }
-  ],
-  "entity_processors": [],
-  "decorators": []
+    ],
+    "entity_processors": [],
+    "decorators": []
 }
