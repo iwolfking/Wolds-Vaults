@@ -143,7 +143,7 @@ onEvent("recipes", (event) => {
   event
     .shaped(Item.of("the_vault:shard_pouch"), ["ADA", "BCB", "BBB"], {
       A: "minecraft:iron_nugget",
-      B: "#forge:wool",
+      B: "#minecraft:wool",
       C: "minecraft:ender_pearl",
       D: "minecraft:string",
     })
