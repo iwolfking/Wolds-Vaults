@@ -280,6 +280,81 @@
               }
             }
           ]
+        },
+        {
+          "weight": 0.00445,
+          "pool": [
+            {
+              "weight": 200,
+              "item": {
+                "id": "the_vault:vault_diamond",
+                "count": {
+                  "type": "uniform",
+                  "min": 8,
+                  "max": 12
+                }
+              }
+            },
+            {
+              "weight": 100,
+              "item": {
+                "id": "the_vault:jewel_pouch",
+                "count": {
+                  "type": "uniform",
+                  "min": 5,
+                  "max": 10
+                }
+              }
+            },
+            {
+              "weight": 33,
+              "item": {
+                "id": "woldsvaults:altar_recatalyzer",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 20,
+              "item": {
+                "id": "the_vault:trinket",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 20,
+              "item": {
+                "id": "woldsvaults:catalyst_box",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:map",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "gear_completion",
+                  "the_vault:map_tier": -1
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            }
+          ]
         }
       ]
     }

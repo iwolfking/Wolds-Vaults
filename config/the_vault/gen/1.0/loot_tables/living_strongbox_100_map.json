@@ -355,6 +355,70 @@
               }
             }
           ]
+        },
+        {
+          "weight": 0.00445,
+          "pool": [
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:map",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "gear_completion",
+                  "the_vault:map_tier": -1
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 50,
+              "item": {
+                "id": "the_vault:knowledge_star_essence",
+                "count": {
+                  "type": "uniform",
+                  "min": 16,
+                  "max": 32
+                }
+              }
+            },
+            {
+              "weight": 20,
+              "item": {
+                "id": "woldsvaults:soul_ichor",
+                "count": {
+                  "type": "uniform",
+                  "min": 4,
+                  "max": 8
+                }
+              }
+            },
+            {
+              "weight": 6,
+              "item": {
+                "id": "woldsvaults:unidentified_gateway_pearl",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 20,
+              "item": {
+                "id": "the_vault:burger_chili",
+                "count": {
+                  "type": "uniform",
+                  "min": 5,
+                  "max": 10
+                }
+              }
+            }
+          ]
         }
       ]
     }
