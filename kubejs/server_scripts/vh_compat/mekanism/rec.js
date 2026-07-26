@@ -534,6 +534,30 @@ onEvent("recipes", event => {
         C: 'mekanism:steel_casing'
     })
 
+     event.shaped(Item.of('mekanism:painting_machine'),
+        [
+            'APA',
+            'ECE',
+            'APA'
+        ], {
+        A: 'mekanism:alloy_reinforced',
+        P: 'mekanism:elite_control_circuit',
+        E: 'mekanism:dye_base',
+        C: 'mekanism:steel_casing'
+    }).id('mekanism:painting_machine')
+
+    event.shaped(Item.of('mekanism:pigment_extractor'),
+        [
+            'APA',
+            'ECE',
+            'APA'
+        ], {
+        A: 'woldsvaults:vault_essence_block',
+        P: 'mekanism:ultimate_control_circuit',
+        E: 'the_vault:black_chromatic_steel_ingot',
+        C: 'mekanism:steel_casing'
+    }).id('mekanism:pigment_extractor')
+
     // This is literally just a joke recipe, you cant actually craft this, the internal buffer of a antiprotonic nucleosynthensizer is 10000mB, this recipe requires 10001mB
     event.custom({
         "type": "mekanism:nucleosynthesizing",

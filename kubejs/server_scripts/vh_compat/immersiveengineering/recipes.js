@@ -521,4 +521,266 @@ onEvent("recipes", event => {
         "fail_chance": 0.2
     }).id('woldsvaults:certus_quartz_mineral_vein')
 
+    event.custom({
+        "type": "immersiveengineering:arc_furnace",
+        "results": [
+            {
+                "count": 2,
+                "base_ingredient": {
+                    "item": "the_vault:chromatic_iron_ingot"
+                }
+            }
+        ],
+        "additives": [],
+        "input": {
+            "item": "the_vault:chromatic_iron_ore"
+        },
+        "slag": {
+            "item": "the_vault:vault_cobblestone"
+        },
+        "time": 200,
+        "energy": 102400
+    }).id('woldsvaults:arc_furnace/chromatic_iron_ore_to_ingot')
+
+    event.custom({
+        "type": "immersiveengineering:arc_furnace",
+        "results": [
+            {
+                "count": 13,
+                "base_ingredient": {
+                    "item": "the_vault:chromatic_iron_ingot"
+                }
+            }
+        ],
+        "additives": [],
+        "secondaries": [
+            {
+                "chance": 0.5,
+                "output": {
+                    "item": "the_vault:chromatic_iron_ingot"
+                }
+            }
+        ],
+        "input": {
+            "item": "the_vault:raw_chromatic_iron_block"
+        },
+        "time": 900,
+        "energy": 230400
+    }).id('woldsvaults:arc_furnace/raw_chromatic_iron_block_to_ingot')
+
+    event.custom({
+        "type": "immersiveengineering:arc_furnace",
+        "results": [
+            {
+                "item": "the_vault:chromatic_iron_ingot"
+            }
+        ],
+        "additives": [],
+        "secondaries": [
+            {
+                "chance": 0.5,
+                "output": {
+                    "item": "the_vault:chromatic_iron_ingot"
+                }
+            }
+        ],
+        "input": {
+            "item": "the_vault:raw_chromatic_iron"
+        },
+        "time": 100,
+        "energy": 25600
+    }).id('woldsvaults:arc_furnace/raw_chromatic_iron_to_ingot')
+
+    event.custom({
+        "type": "immersiveengineering:arc_furnace",
+        "results": [
+            {
+                "count": 1,
+                "base_ingredient": {
+                    "item": "the_vault:chromatic_steel_ingot"
+                }
+            }
+        ],
+        "additives": [
+            {
+                "item": "the_vault:carbon"
+            },
+            {
+                "item": "the_vault:carbon"
+            }
+        ],
+        "input": {
+            "item": "the_vault:chromatic_iron_ingot"
+        },
+        "time": 100,
+        "energy": 51200
+    }).id('woldsvaults:arc_furnace/chromatic_steel_ingot')
+
+     event.custom({
+        "type": "immersiveengineering:arc_furnace",
+        "results": [
+            {
+                "count": 1,
+                "base_ingredient": {
+                    "item": "the_vault:wutodic_silver_ingot"
+                }
+            }
+        ],
+        "additives": [
+            {
+                "item": "the_vault:silver_scrap"
+            },
+            {
+                "item": "the_vault:silver_scrap"
+            }
+        ],
+        "input": {
+            "item": "the_vault:perfect_wutodie"
+        },
+        "time": 100,
+        "energy": 51200
+    }).id('woldsvaults:arc_furnace/wutodic_silver_ingot')
+
+    event.custom({
+        "type": "immersiveengineering:arc_furnace",
+        "results": [
+            {
+                "count": 1,
+                "base_ingredient": {
+                    "item": "the_vault:vault_ingot"
+                }
+            }
+        ],
+        "additives": [
+            {
+                "item": "the_vault:chromatic_iron_ingot"
+            },
+            {
+                "item": "woldsvaults:chromatic_gold_ingot"
+            }
+        ],
+        "input": {
+            "item": "the_vault:chromatic_steel_ingot"
+        },
+        "time": 100,
+        "energy": 51200
+    }).id('woldsvaults:arc_furnace/vault_ingot')
+
+    event.custom({
+        "type": "immersiveengineering:arc_furnace",
+        "results": [
+            {
+                "count": 1,
+                "base_ingredient": {
+                    "item": "the_vault:vault_alloy"
+                }
+            }
+        ],
+        "additives": [
+            {
+                "item": "the_vault:vaulterite_ingot"
+            },
+            {
+                 "item": "the_vault:chromatic_steel_ingot"
+            }
+        ],
+        "input": {
+            "item": "the_vault:vaulterite_ingot"
+        },
+        "time": 100,
+        "energy": 51200
+    }).id('woldsvaults:arc_furnace/vault_alloy')
+
+    event.custom({
+        "type": "immersiveengineering:arc_furnace",
+        "results": [
+            {
+                "count": 1,
+                "base_ingredient": {
+                    "item": "woldsvaults:chromatic_gold_ingot"
+                }
+            }
+        ],
+        "additives": [
+            {
+                "item": "the_vault:magic_silk"
+            },
+            {
+                "item": "woldsvaults:vault_essence_block"
+            }
+        ],
+        "input": {
+            "item": "minecraft:gold_ingot"
+        },
+        "time": 100,
+        "energy": 51200
+    }).id('woldsvaults:arc_furnace/chromatic_gold_ingot')
+
+
+    event.custom({
+        "type": "immersiveengineering:arc_furnace",
+        "results": [
+            {
+                "count": 2,
+                "base_ingredient": {
+                    "item": "the_vault:gilded_ingot"
+                }
+            }
+        ],
+        "additives": [
+            {
+                "item": "minecraft:gold_nugget"
+            }
+        ],
+        "input": {
+            "item": "the_vault:carbon_nugget"
+        },
+        "time": 100,
+        "energy": 12800
+    }).id('woldsvaults:arc_furnace/gilded_ingot')
+
+    event.custom({
+        "type": "immersiveengineering:arc_furnace",
+        "results": [
+            {
+                "count": 2,
+                "base_ingredient": {
+                    "item": "the_vault:ornate_ingot"
+                }
+            }
+        ],
+        "additives": [
+            {
+                "item": "minecraft:charcoal"
+            }
+        ],
+        "input": {
+            "item": "the_vault:carbon_nugget"
+        },
+        "time": 100,
+        "energy": 12800
+    }).id('woldsvaults:arc_furnace/ornate_ingot')
+
+    event.custom({
+        "type": "immersiveengineering:arc_furnace",
+        "results": [
+            {
+                "count": 2,
+                "base_ingredient": {
+                    "item": "the_vault:ancient_copper_ingot"
+                }
+            }
+        ],
+        "additives": [
+            {
+                "item": "minecraft:copper_nugget"
+            }
+        ],
+        "input": {
+            "item": "the_vault:carbon_nugget"
+        },
+        "time": 100,
+        "energy": 12800
+    }).id('woldsvaults:arc_furnace/ancient_copper_ingot')
+
 })
