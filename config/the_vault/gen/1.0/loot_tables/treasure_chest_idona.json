@@ -8,7 +8,6 @@
       },
       "pool": [
         {
-
           "weight": 0,
           "pool": [
             {
@@ -24,12 +23,36 @@
             }
           ]
         },
-        {"weight": 60,
+        {
+          "weight": 60,
           "pool": [
             {
               "weight": 4,
               "item": {
                 "id": "the_vault:mod_box",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "weight": 4,
+              "item": {
+                "id": "the_vault:red_vault_essence",
+                "count": {
+                  "type": "uniform",
+                  "min": 4,
+                  "max": 8
+                }
+              }
+            },
+            {
+              "weight": 4,
+              "item": {
+                "id": "the_vault:vault_catalyst_infused",
+                "nbt": "{\"pool\":\"the_vault:treasure_bonus\"}",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -40,8 +63,8 @@
             {
               "weight": 4,
               "item": {
-                "id": "the_vault:vault_catalyst_infused",
-                "nbt": "{\"pool\":\"the_vault:treasure_bonus\"}",
+                "id": "the_vault:booster_pack",
+                "nbt": "{\"id\": \"the_vault:hellish_pack\"}",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -214,7 +237,6 @@
         {
           "weight": 10,
           "pool": [
-
             {
               "weight": 4,
               "item": {
@@ -386,7 +408,7 @@
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                  }
+                }
               }
             }
           ]

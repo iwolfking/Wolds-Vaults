@@ -1,5 +1,6 @@
 onEvent('recipes', event => {
-
+    event.remove({id: 'the_vault:red_vault_essence'})
+    event.remove({id: 'the_vault:memory_shard'})
 
 
     //Seals
