@@ -87,7 +87,7 @@ onEvent("recipes", event => {
         ], {
         P: 'refinedstorage:advanced_processor',
         I: 'the_vault:echoing_ingot',
-        C: 'extrastorage:256k_storage_part',
+        C: 'extrastorage:storagepart_256k',
         R: 'the_vault:echo_pog'
     })
 
