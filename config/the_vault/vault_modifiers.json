@@ -1306,6 +1306,134 @@
           "description": "Killing a mob will have it drop bronze or silver!",
           "icon": "the_vault:gui/modifiers/kill_coin"
         }
+      },
+      "the_vault:wooden_mob_drops": {
+        "properties": {
+          "filter": "",
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "the_vault:wooden_chest_lvl0"
+            },
+            {
+              "level": 20,
+              "lootTable": "the_vault:wooden_chest_lvl20"
+            },
+            {
+              "level": 30,
+              "lootTable": "the_vault:wooden_chest_lvl30"
+            }
+          ],
+          "chance": 0.1,
+          "singleItem": true
+        },
+        "display": {
+          "name": "Wooden Mob Drops",
+          "color": "#c7b281",
+          "description": "Killing a mob has a 10% chance to drop Wooden Chest loot.",
+          "descriptionFormatted": "Killing a mob has a %d%% chance to drop Wooden Chest loot.",
+          "icon": "the_vault:gui/modifiers/wooden_chests"
+        }
+      },
+      "the_vault:gilded_mob_drops": {
+        "properties": {
+          "filter": "",
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "the_vault:gilded_chest_lvl0"
+            },
+            {
+              "level": 20,
+              "lootTable": "the_vault:gilded_chest_lvl20"
+            },
+            {
+              "level": 50,
+              "lootTable": "the_vault:gilded_chest_lvl50"
+            }
+          ],
+          "chance": 0.1,
+          "singleItem": true
+        },
+        "display": {
+          "name": "Gilded Mob Drops",
+          "color": "#FFEC00",
+          "description": "Killing a mob has a 10% chance to drop Gilded Chest loot.",
+          "descriptionFormatted": "Killing a mob has a %d%% chance to drop Gilded Chest loot.",
+          "icon": "the_vault:gui/modifiers/gilded_chests"
+        }
+      },
+      "the_vault:ornate_mob_drops": {
+        "properties": {
+          "filter": "",
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "the_vault:ornate_chest_lvl0"
+            },
+            {
+              "level": 20,
+              "lootTable": "the_vault:ornate_chest_lvl20"
+            },
+            {
+              "level": 30,
+              "lootTable": "the_vault:ornate_chest_lvl30"
+            },
+            {
+              "level": 50,
+              "lootTable": "the_vault:ornate_chest_lvl50"
+            },
+            {
+              "level": 65,
+              "lootTable": "the_vault:ornate_chest_lvl65"
+            }
+          ],
+          "chance": 0.1,
+          "singleItem": true
+        },
+        "display": {
+          "name": "Ornate Mob Drops",
+          "color": "#c90d73",
+          "description": "Killing a mob has a 10% chance to drop Ornate Chest loot.",
+          "descriptionFormatted": "Killing a mob has a %d%% chance to drop Ornate Chest loot.",
+          "icon": "the_vault:gui/modifiers/ornate_chests"
+        }
+      },
+      "the_vault:living_mob_drops": {
+        "properties": {
+          "filter": "",
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "the_vault:living_chest_lvl0"
+            },
+            {
+              "level": 10,
+              "lootTable": "the_vault:living_chest_lvl10"
+            },
+            {
+              "level": 20,
+              "lootTable": "the_vault:living_chest_lvl20"
+            },
+            {
+              "level": 30,
+              "lootTable": "the_vault:living_chest_lvl30"
+            },
+            {
+              "level": 40,
+              "lootTable": "the_vault:living_chest_lvl40"
+            }
+          ],
+          "chance": 0.1,
+          "singleItem": true
+        },
+        "display": {
+          "name": "Living Mob Drops",
+          "color": "#38d800",
+          "description": "Killing a mob has a 10% chance to drop Living Chest loot.",
+          "descriptionFormatted": "Killing a mob has a %d%% chance to drop Living Chest loot.",
+          "icon": "the_vault:gui/modifiers/living_chests"
+        }
       }
     },
     "the_vault:modifier_type/crate_item_quantity_settable": {
@@ -8644,6 +8772,58 @@
           "description": "Mobs spawn at 1 hp",
           "descriptionFormatted": "Mobs spawn at 1 hp",
           "icon": "the_vault:gui/modifiers/overpower"
+        }
+      }
+    },
+    "the_vault:modifier_type/chest_loot": {
+      "the_vault:coin_chest_loot": {
+        "properties": {
+          "chance": 0.1,
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "the_vault:coin_pile_lvl0"
+            },
+            {
+              "level": 30,
+              "lootTable": "the_vault:coin_pile_lvl30"
+            }
+          ],
+          "whitelist": [
+            "WOODEN",
+            "GILDED",
+            "LIVING",
+            "ORNATE"
+          ]
+        },
+        "display": {
+          "name": "Coin Chest Loot",
+          "color": "#ffae00",
+          "description": "Wooden, Gilded, Living, and Ornate chests have a 10% chance to generate Coin Pile loot.",
+          "descriptionFormatted": "Wooden, Gilded, Living, and Ornate chests have a %d%% chance to generate Coin Pile loot.",
+          "icon": "the_vault:gui/modifiers/bonus_coin"
+        }
+      }
+    },
+    "the_vault:modifier_type/chest_mob_spawn": {
+      "the_vault:dweller_chests": {
+        "properties": {
+          "chance": 0.05,
+          "mob": "minecraft:cow",
+          "spawnRadius": 4,
+          "whitelist": [
+            "WOODEN",
+            "GILDED",
+            "LIVING",
+            "ORNATE"
+          ]
+        },
+        "display": {
+          "name": "Dweller Chests",
+          "color": "#AA0000",
+          "description": "Looting chests have a 5% chance to spawn a dweller.",
+          "descriptionFormatted": "Looting chests have a %d%% chance to spawn a dweller.",
+          "icon": "the_vault:gui/modifiers/impossible"
         }
       }
     }
