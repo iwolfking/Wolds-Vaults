@@ -1298,7 +1298,14 @@
       "the_vault:bronze_nuke": {
         "properties": {
           "filter": "",
-          "lootTable": "the_vault:bronze_table"
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "the_vault:bronze_table"
+            }
+          ],
+          "chance": 1,
+          "singleItem": false
         },
         "display": {
           "name": "Coin Explosion",
