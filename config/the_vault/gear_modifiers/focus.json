@@ -257,6 +257,34 @@
           }
         ]
       },
+      { "attribute": "the_vault:added_ability_level",
+        "group": "ModAPLvl",
+        "identifier": "the_vault:mod_added_ability_level_necro",
+        "tags": [
+          "focusAbilityPower",
+          "focusAbilityPowerNecro"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 60,
+            "value": {
+              "abilityKey": "Necromancy",
+              "levelChange": 1
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 60,
+            "value": {
+              "abilityKey": "Necromancy",
+              "levelChange": 2
+            }
+          }
+        ]
+      },
       {
         "attribute": "the_vault:added_ability_level",
         "group": "ModLvlBuff",
@@ -1291,87 +1319,6 @@
               "min": 0.2,
               "max": 0.25,
               "step": 0.01
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:durability",
-        "group": "ModDurability",
-        "identifier": "the_vault:mod_durability",
-        "tags": [
-          "focusDurability",
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 11,
-            "maxLevel": 66,
-            "weight": 200,
-            "value": {
-              "min": 400,
-              "max": 800,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 28,
-            "maxLevel": -1,
-            "weight": 200,
-            "value": {
-              "min": 801,
-              "max": 1600,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 46,
-            "maxLevel": -1,
-            "weight": 200,
-            "value": {
-              "min": 1601,
-              "max": 2400,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 67,
-            "maxLevel": -1,
-            "weight": 200,
-            "value": {
-              "min": 2401,
-              "max": 3200,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 89,
-            "maxLevel": -1,
-            "weight": 200,
-            "value": {
-              "min": 3201,
-              "max": 4000,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
-              "min": 4001,
-              "max": 6000,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
-              "min": 6001,
-              "max": 8000,
-              "step": 1
             }
           }
         ]
