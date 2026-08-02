@@ -5086,6 +5086,51 @@
       ],
       "maxTier": 1
     },
+     "ethereal": {
+      "type": "gear",
+      "name": {
+        "text": "Ethereal Card"
+      },
+      "model": "the_vault:skills/ethereal#inventory",
+      "groups": [
+        "Knack",
+        "Magical",
+        "Essence",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Ethereal",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_ethereal": {
+      "type": "gear",
+      "name": {
+        "text": "Ethereal Card"
+      },
+      "model": "the_vault:skills/ethereal#inventory",
+      "groups": [
+        "Knack",
+        "Magical",
+        "Essence",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Ethereal",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
     "quickening": {
       "type": "gear",
       "name": {
@@ -10789,6 +10834,10 @@
        {
         "value": "deluxe_arcane_strike",
         "weight": 4.0
+      },
+      {
+        "value": "deluxe_ethereal",
+        "weight": 4.0
       }
     ],
     "knack": [
@@ -10829,16 +10878,8 @@
         "weight": 4.0
       },
       {
-        "value": "dweller_mastery",
-        "weight": 3.0
-      },
-      {
         "value": "champion_mastery",
         "weight": 2.0
-      },
-      {
-        "value": "tank_mastery",
-        "weight": 4.0
       },
       {
         "value": "last_stand",
@@ -11021,16 +11062,8 @@
         "weight": 3.0
       },
       {
-        "value": "javelin_throw_power",
-        "weight": 6.0
-      },
-      {
-        "value": "javelin_damage",
-        "weight": 4.0
-      },
-      {
-        "value": "javelin_frugal",
-        "weight": 4.0
+        "value": "ethereal",
+        "weight": 3.0
       }
     ],
     "arcane": [
