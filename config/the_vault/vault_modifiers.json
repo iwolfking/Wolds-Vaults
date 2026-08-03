@@ -3381,6 +3381,36 @@
           "icon": "the_vault:gui/modifiers/hunger"
         }
       },
+      "woldsvaults:unlucky_aura": {
+        "properties": {
+          "effect": "minecraft:unluck",
+          "effectAmplifier": 2,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Jinxed",
+          "color": "#5032a8",
+          "description": "You aren't feeling very lucky...",
+          "descriptionFormatted": "+%d Unluck",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
+      "woldsvaults:doomed_aura": {
+        "properties": {
+          "effect": "minecraft:unluck",
+          "effectAmplifier": 6,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Doomed",
+          "color": "#5032a8",
+          "description": "It seems almost all the luck has been sucked out of the Vault...",
+          "descriptionFormatted": "+%d Unluck",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
       "the_vault:lucky": {
         "properties": {
           "effect": "minecraft:luck",
@@ -3392,6 +3422,21 @@
           "name": "Lucky",
           "color": "#b3ff20",
           "description": "+1 Luck",
+          "descriptionFormatted": "+%d Luck",
+          "icon": "the_vault:gui/modifiers/lucky"
+        }
+      },
+      "woldsvaults:super_lucky": {
+        "properties": {
+          "effect": "minecraft:luck",
+          "effectAmplifier": 4,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Four-Leafed Clover",
+          "color": "#b3ff20",
+          "description": "+4 Luck",
           "descriptionFormatted": "+%d Luck",
           "icon": "the_vault:gui/modifiers/lucky"
         }
@@ -8617,6 +8662,34 @@
       }
     },
     "the_vault:modifier_type/pool_reference_weight": {
+      "woldsvaults:challenge_fortune_small": {
+        "properties": {
+          "references": [
+            "the_vault:vault/rooms/challenge_rooms"
+          ],
+          "weightMultiplier": 3.0
+        },
+        "display": {
+          "name": "Challenge Vein",
+          "color": "#FF4500",
+          "description": "3x Challenge Room Chance",
+          "icon": "the_vault:gui/modifiers/challenge_fortune"
+        }
+      },
+      "woldsvaults:omega_fortune_small": {
+        "properties": {
+          "references": [
+            "the_vault:vault/rooms/omega_rooms"
+          ],
+          "weightMultiplier": 4.0
+        },
+        "display": {
+          "name": "Omega Vein",
+          "color": "#6AFF00",
+          "description": "4x Omega Room Chance",
+          "icon": "the_vault:gui/modifiers/omega_fortune"
+        }
+      },
       "the_vault:omega_fortune": {
         "properties": {
           "references": [
@@ -8639,9 +8712,9 @@
           "weightMultiplier": 5.0
         },
         "display": {
-          "name": "Challenge Vein",
+          "name": "Challenge Bloom",
           "color": "#FF4500",
-          "description": "10x Challenge Room Chance",
+          "description": "5x Challenge Room Chance",
           "icon": "the_vault:gui/modifiers/challenge_fortune"
         }
       }
