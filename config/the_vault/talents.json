@@ -1911,12 +1911,6 @@
           }
         ]
       },
-      {
-        "type": "grouped",
-        "id": "Masteries",
-        "name": "Masteries",
-        "maxSpentLearnPoints": 20,
-        "children": [
           {
             "type": "tiered",
             "id": "Horde_Mastery",
@@ -2119,9 +2113,7 @@
                 "unlockLevel": 0
               }
             ]
-          }
-        ]
-      },
+          },
       {
         "type": "tiered",
         "id": "Weakness_Affinity",
@@ -7754,81 +7746,81 @@
         "type": "tiered",
         "id": "Arcane_Strike",
         "name": "Arcane Cascade",
-        "maxLearnableTier": 1,
+        "maxLearnableTier": 3,
         "tiers": [
           {
             "type": "cooldown_lucky_hit",
-            "cooldownDecrease": 0.1,
+            "cooldownDecrease": 0.02,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
           {
             "type": "cooldown_lucky_hit",
-            "cooldownDecrease": 0.12,
+            "cooldownDecrease": 0.03,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
           {
             "type": "cooldown_lucky_hit",
-            "cooldownDecrease": 0.14,
+            "cooldownDecrease": 0.04,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
           {
             "type": "cooldown_lucky_hit",
-            "cooldownDecrease": 0.16,
+            "cooldownDecrease": 0.045,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
           {
             "type": "cooldown_lucky_hit",
-            "cooldownDecrease": 0.18,
+            "cooldownDecrease": 0.05,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
           {
             "type": "cooldown_lucky_hit",
-            "cooldownDecrease": 0.2,
+            "cooldownDecrease": 0.055,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
           {
             "type": "cooldown_lucky_hit",
-            "cooldownDecrease": 0.22,
+            "cooldownDecrease": 0.06,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
           {
             "type": "cooldown_lucky_hit",
-            "cooldownDecrease": 0.24,
+            "cooldownDecrease": 0.065,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
           {
             "type": "cooldown_lucky_hit",
-            "cooldownDecrease": 0.26,
+            "cooldownDecrease": 0.07,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
           {
             "type": "cooldown_lucky_hit",
-            "cooldownDecrease": 0.28,
+            "cooldownDecrease": 0.075,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
           {
             "type": "cooldown_lucky_hit",
-            "cooldownDecrease": 0.3,
+            "cooldownDecrease": 0.08,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
@@ -9940,6 +9932,23 @@
       },
       {
         "type": "tiered",
+        "id": "Stack_Master",
+        "name": "Stack Master",
+        "maxLearnableTier": 1,
+        "tiers": [
+          {
+            "type": "gear_attribute",
+            "attribute": "woldsvaults:additional_stacking_stacks",
+            "value": 10,
+            "learnPointCost": 4,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "stack_master_1"
+          }
+        ]
+      },
+      {
+        "type": "tiered",
         "id": "Arcana",
         "name": "Arcana",
         "maxLearnableTier": 4,
@@ -11549,252 +11558,6 @@
             "id": "voltaic_impact_24"
           }
         ]
-      },
-      {
-        "type": "tiered",
-        "id": "Battlestaff_Master",
-        "name": "Battlestaff Blocker",
-        "maxLearnableTier": 4,
-        "tiers": [
-          {
-            "type": "stack_on_hit_talent",
-            "attribute": "the_vault:block",
-            "value": 0.02,
-            "effect": "woldsvaults:battlestaff_blocking",
-            "durationTicks": 160,
-            "maxStacks": 5,
-            "learnPointCost": 2,
-            "regretPointCost": 1,
-            "unlockLevel": 0,
-            "id": "bblocker_1"
-          },
-          {
-            "type": "stack_on_hit_talent",
-            "attribute": "the_vault:block",
-            "value": 0.03,
-            "effect": "woldsvaults:battlestaff_blocking",
-            "durationTicks": 160,
-            "maxStacks": 6,
-            "learnPointCost": 2,
-            "regretPointCost": 1,
-            "unlockLevel": 0,
-            "id": "bblocker_2"
-          },
-          {
-            "type": "stack_on_hit_talent",
-            "attribute": "the_vault:block",
-            "value": 0.04,
-            "effect": "woldsvaults:battlestaff_blocking",
-            "durationTicks": 160,
-            "maxStacks": 7,
-            "learnPointCost": 2,
-            "regretPointCost": 1,
-            "unlockLevel": 0,
-            "id": "bblocker_3"
-          },
-          {
-            "type": "stack_on_hit_talent",
-            "attribute": "the_vault:block",
-            "value": 0.05,
-            "effect": "woldsvaults:battlestaff_blocking",
-            "durationTicks": 160,
-            "maxStacks": 8,
-            "learnPointCost": 2,
-            "regretPointCost": 1,
-            "unlockLevel": 0,
-            "id": "bblocker_4"
-          }
-        ]
-      },
-      {
-          "type": "tiered",
-          "id": "Axe_Master",
-          "name": "Axe Master",
-          "maxLearnableTier": 4,
-          "tiers": [
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.04,
-              "learnPointCost": 2,
-              "regretPointCost": 1,
-              "unlockLevel": 25
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.08,
-              "learnPointCost": 2,
-              "regretPointCost": 1,
-              "unlockLevel": 25
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.12,
-              "learnPointCost": 2,
-              "regretPointCost": 1,
-              "unlockLevel": 50
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.16,
-              "learnPointCost": 2,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.18,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.2,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.22,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.24,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.26,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.28,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.3,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.32,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.34,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.36,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.38,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.4,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.42,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.44,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.46,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.48,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.5,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.52,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.54,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.56,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.58,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            },
-            {
-              "type": "wold_axe_talent",
-              "cleavingDamagePercentage": 0.6,
-              "learnPointCost": 1,
-              "regretPointCost": 1,
-              "unlockLevel": 75
-            }
-          ]
       },
       {
         "type": "tiered",
