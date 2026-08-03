@@ -127,5 +127,5 @@ onEvent("recipes", event => {
             "item": "immersiveengineering:light_bulb",
             "count": 3
         }
-    })
+    }).id('immersiveengineering:blueprint/light_bulb')
 })
