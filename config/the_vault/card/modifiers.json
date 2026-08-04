@@ -4057,26 +4057,6 @@
       ],
       "maxTier": 1
     },
-    "dweller_mastery": {
-      "type": "gear",
-      "name": {
-        "text": "Dweller Mastery Card"
-      },
-      "model": "the_vault:skills/champion_mastery#inventory",
-      "groups": [
-        "Knack",
-        "Offensive"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Illager_Mastery",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
     "champion_mastery": {
       "type": "gear",
       "name": {
@@ -4092,26 +4072,6 @@
         {
           "tier": 1,
           "talentKey": "Champion_Mastery",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "tank_mastery": {
-      "type": "gear",
-      "name": {
-        "text": "Tank Mastery Card"
-      },
-      "model": "the_vault:skills/illager_mastery#inventory",
-      "groups": [
-        "Knack",
-        "Offensive"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Tank_Mastery",
           "levelChange": 1
         }
       ],
@@ -5413,6 +5373,50 @@
       ],
       "maxTier": 1
     },
+    "fanged_strike": {
+      "type": "gear",
+      "name": {
+        "text": "Fanged Strike Card"
+      },
+      "model": "woldsvaults:skills/fanged_strike#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Physical",
+        "Essence"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Fanged_Strike",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_fanged_strike": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Fanged Strike Card"
+      },
+      "model": "woldsvaults:skills/fanged_strike#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Physical",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Fanged_Strike",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
     "deluxe_arcane_strike": {
       "type": "gear",
       "name": {
@@ -5734,129 +5738,6 @@
           "tier": 1,
           "talentKey": "Toxic_Reaction",
           "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "javelin_throw_power": {
-      "type": "gear",
-      "name": {
-        "text": "Javelin Throw Power Card"
-      },
-      "model": "the_vault:skills/javelin_throw_power#inventory",
-      "groups": [
-        "Knack",
-        "Utility"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Javelin_Throw_Power",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "deluxe_javelin_throw_power": {
-      "type": "gear",
-      "name": {
-        "text": "Deluxe Javelin Throw Power Card"
-      },
-      "model": "the_vault:skills/javelin_throw_power#inventory",
-      "groups": [
-        "Knack",
-        "Utility",
-        "Deluxe"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Javelin_Throw_Power",
-          "levelChange": 2
-        }
-      ],
-      "maxTier": 1
-    },
-    "javelin_damage": {
-      "type": "gear",
-      "name": {
-        "text": "Javelin Damage Card"
-      },
-      "model": "the_vault:skills/javelin_damage#inventory",
-      "groups": [
-        "Knack",
-        "Offensive"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Javelin_Damage",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "deluxe_javelin_damage": {
-      "type": "gear",
-      "name": {
-        "text": "Deluxe Javelin Damage Card"
-      },
-      "model": "the_vault:skills/javelin_damage#inventory",
-      "groups": [
-        "Knack",
-        "Offensive",
-        "Deluxe"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Javelin_Damage",
-          "levelChange": 2
-        }
-      ],
-      "maxTier": 1
-    },
-    "javelin_frugal": {
-      "type": "gear",
-      "name": {
-        "text": "Ethereal Javelin Card"
-      },
-      "model": "the_vault:skills/javelin_ethereal#inventory",
-      "groups": [
-        "Knack",
-        "Utility"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Javelin_Frugal",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "deluxe_javelin_frugal": {
-      "type": "gear",
-      "name": {
-        "text": "Deluxe Ethereal Javelin Card"
-      },
-      "model": "the_vault:skills/javelin_ethereal#inventory",
-      "groups": [
-        "Knack",
-        "Utility",
-        "Deluxe"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Javelin_Frugal",
-          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -10740,18 +10621,6 @@
         "weight": 6.0
       },
       {
-        "value": "deluxe_javelin_throw_power",
-        "weight": 3.0
-      },
-      {
-        "value": "deluxe_javelin_damage",
-        "weight": 3.0
-      },
-      {
-        "value": "deluxe_javelin_frugal",
-        "weight": 3.0
-      },
-      {
         "value": "deluxe_last_stand",
         "weight": 6.0
       },
@@ -10833,6 +10702,10 @@
       },
        {
         "value": "deluxe_arcane_strike",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_fanged_strike",
         "weight": 4.0
       },
       {
@@ -10987,6 +10860,10 @@
       },
       {
         "value": "arcane_strike",
+        "weight": 4.0
+      },
+       {
+        "value": "fanged_strike",
         "weight": 4.0
       },
       {
