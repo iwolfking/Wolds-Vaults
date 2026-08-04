@@ -3826,6 +3826,28 @@
       ],
       "maxTier": 1
     },
+    "deluxe_haste": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Haste Card"
+      },
+      "model": "the_vault:skills/haste#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Deluxe",
+        "Physical"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Haste",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
     "strength": {
       "type": "gear",
       "name": {
@@ -3887,6 +3909,28 @@
           "tier": 1,
           "talentKey": "Speed",
           "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "deluxe_speed_talent": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Speed Card"
+      },
+      "model": "the_vault:skills/speed#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Deluxe",
+        "Physical"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Speed",
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -3967,7 +4011,7 @@
       "pool": [
         {
           "tier": 1,
-          "talentKey": "Nether_Mastery",
+          "talentKey": "Dungeon_Mastery",
           "levelChange": 1
         }
       ],
@@ -3987,7 +4031,7 @@
       "pool": [
         {
           "tier": 1,
-          "talentKey": "Undead_Mastery",
+          "talentKey": "Horde_Mastery",
           "levelChange": 1
         }
       ],
@@ -4007,27 +4051,7 @@
       "pool": [
         {
           "tier": 1,
-          "talentKey": "Arthropod_Mastery",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "dweller_mastery": {
-      "type": "gear",
-      "name": {
-        "text": "Dweller Mastery Card"
-      },
-      "model": "the_vault:skills/champion_mastery#inventory",
-      "groups": [
-        "Knack",
-        "Offensive"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Illager_Mastery",
+          "talentKey": "Assassin_Mastery",
           "levelChange": 1
         }
       ],
@@ -4048,26 +4072,6 @@
         {
           "tier": 1,
           "talentKey": "Champion_Mastery",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "tank_mastery": {
-      "type": "gear",
-      "name": {
-        "text": "Tank Mastery Card"
-      },
-      "model": "the_vault:skills/illager_mastery#inventory",
-      "groups": [
-        "Knack",
-        "Offensive"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Tank_Mastery",
           "levelChange": 1
         }
       ],
@@ -4410,6 +4414,26 @@
       "model": "the_vault:skills/fatal_strike#inventory",
       "groups": [
         "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Fatal_Strike",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_lucky_hit_fatal": {
+      "type": "gear",
+      "name": {
+        "text": "Fatal Strike Card"
+      },
+      "model": "the_vault:skills/fatal_strike#inventory",
+      "groups": [
+        "Knack",
         "Offensive",
         "Deluxe"
       ],
@@ -4418,7 +4442,7 @@
         {
           "tier": 1,
           "talentKey": "Fatal_Strike",
-          "levelChange": 1
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -4431,6 +4455,26 @@
       "model": "the_vault:skills/mana_steal#inventory",
       "groups": [
         "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Mana_Steal",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_lucky_hit_mana": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Mana Steal Card"
+      },
+      "model": "the_vault:skills/mana_steal#inventory",
+      "groups": [
+        "Knack",
         "Utility",
         "Deluxe"
       ],
@@ -4439,7 +4483,7 @@
         {
           "tier": 1,
           "talentKey": "Mana_Steal",
-          "levelChange": 1
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -4452,6 +4496,26 @@
       "model": "the_vault:skills/life_steal#inventory",
       "groups": [
         "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Life_Steal",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_life_leech": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Life Leech Card"
+      },
+      "model": "the_vault:skills/life_steal#inventory",
+      "groups": [
+        "Knack",
         "Utility",
         "Deluxe"
       ],
@@ -4460,7 +4524,7 @@
         {
           "tier": 1,
           "talentKey": "Life_Steal",
-          "levelChange": 1
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -4473,8 +4537,7 @@
       "model": "the_vault:skills/cleave#inventory",
       "groups": [
         "Knack",
-        "Offensive",
-        "Deluxe"
+        "Offensive"
       ],
       "attribute": "the_vault:added_talent_level",
       "pool": [
@@ -4482,6 +4545,897 @@
           "tier": 1,
           "talentKey": "Cleave",
           "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "deluxe_cleave_talent": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Cleave Card"
+      },
+      "model": "the_vault:skills/cleave#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Cleave",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "execution_strike": {
+      "type": "gear",
+      "name": {
+        "text": "Executing Strike Card"
+      },
+      "model": "the_vault:skills/execution_strike#inventory",
+      "groups": [
+        "Knack",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Execution_Strike",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_execution_strike": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Executing Strike Card"
+      },
+      "model": "the_vault:skills/execution_strike#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Execution_Strike",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "heart_fragments": {
+      "type": "gear",
+      "name": {
+        "text": "Heart Fragments Card"
+      },
+      "model": "the_vault:skills/heart_fragments#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Defensive",
+        "Essence"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Heart_Fragments",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_heart_fragments": {
+      "type": "gear",
+      "name": {
+        "text": "Heart Fragments Card"
+      },
+      "model": "the_vault:skills/heart_fragments#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Defensive",
+        "Essence",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Heart_Fragments",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "voltaic_impact": {
+      "type": "gear",
+      "name": {
+        "text": "Voltaic Impact Card"
+      },
+      "model": "the_vault:skills/voltaic_impact#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Voltaic_Impact",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_voltaic_impact": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Voltaic Impact Card"
+      },
+      "model": "the_vault:skills/voltaic_impact#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Voltaic_Impact",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "blood_rush": {
+      "type": "gear",
+      "name": {
+        "text": "Blood Rush Card"
+      },
+      "model": "the_vault:skills/voltaic_impact#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Defensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Blood_Rush",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_blood_rush": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Blood Rush Card"
+      },
+      "model": "the_vault:skills/voltaic_impact#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Defensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Blood_Rush",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "momentum_engine": {
+      "type": "gear",
+      "name": {
+        "text": "Momentum Engine Card"
+      },
+      "model": "the_vault:skills/momentum_engine#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Momentum_Engine",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "deluxe_momentum_engine": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Momentum Engine Card"
+      },
+      "model": "the_vault:skills/momentum_engine#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Offensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Momentum_Engine",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "mind_meld": {
+      "type": "gear",
+      "name": {
+        "text": "Mind Meld Card"
+      },
+      "model": "the_vault:skills/mind_meld#inventory",
+      "groups": [
+        "Knack",
+        "Magical"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Mind_Meld",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "deluxe_mind_meld": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Mind Meld Card"
+      },
+      "model": "the_vault:skills/mind_meld#inventory",
+      "groups": [
+        "Knack",
+        "Magical",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Mind_Meld",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "lunge": {
+      "type": "gear",
+      "name": {
+        "text": "Lunge Card"
+      },
+      "model": "the_vault:skills/lunge#inventory",
+      "groups": [
+        "Knack",
+        "Physical",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Lunge",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_lunge": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Lunge Card"
+      },
+      "model": "the_vault:skills/lunge#inventory",
+      "groups": [
+        "Knack",
+        "Physical",
+        "Offensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Lunge",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+     "ransack": {
+      "type": "gear",
+      "name": {
+        "text": "Ransack Card"
+      },
+      "model": "the_vault:skills/ransack#inventory",
+      "groups": [
+        "Knack",
+        "Physical",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Ransack",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_ransack": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Ransack Card"
+      },
+      "model": "the_vault:skills/ransack#inventory",
+      "groups": [
+        "Knack",
+        "Physical",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Ransack",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "potent_elixir": {
+      "type": "gear",
+      "name": {
+        "text": "Potent Elixir Card"
+      },
+      "model": "the_vault:skills/potent_elixir#inventory",
+      "groups": [
+        "Knack",
+        "Magical",
+        "Essence",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Potent_Elixir",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_potent_elixir": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Potent Elixir Card"
+      },
+      "model": "the_vault:skills/potent_elixir#inventory",
+      "groups": [
+        "Knack",
+        "Magical",
+        "Essence",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Potent_Elixir",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+     "healthy_elixir": {
+      "type": "gear",
+      "name": {
+        "text": "Healthy Elixir Card"
+      },
+      "model": "the_vault:skills/healthy_elixir#inventory",
+      "groups": [
+        "Knack",
+        "Magical",
+        "Essence",
+        "Utility",
+        "Defensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Healthy_Elixir",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_healthy_elixir": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Healthy Elixir Card"
+      },
+      "model": "the_vault:skills/healthy_elixir#inventory",
+      "groups": [
+        "Knack",
+        "Magical",
+        "Essence",
+        "Utility",
+        "Defensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Healthy_Elixir",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "medic": {
+      "type": "gear",
+      "name": {
+        "text": "Medic Card"
+      },
+      "model": "the_vault:skills/medic#inventory",
+      "groups": [
+        "Knack",
+        "Essence",
+        "Utility",
+        "Defensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Medic",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_medic": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Medic Card"
+      },
+      "model": "the_vault:skills/medic#inventory",
+      "groups": [
+        "Knack",
+        "Essence",
+        "Utility",
+        "Defensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Medic",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+     "ethereal": {
+      "type": "gear",
+      "name": {
+        "text": "Ethereal Card"
+      },
+      "model": "the_vault:skills/ethereal#inventory",
+      "groups": [
+        "Knack",
+        "Magical",
+        "Essence",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Ethereal",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_ethereal": {
+      "type": "gear",
+      "name": {
+        "text": "Ethereal Card"
+      },
+      "model": "the_vault:skills/ethereal#inventory",
+      "groups": [
+        "Knack",
+        "Magical",
+        "Essence",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Ethereal",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "quickening": {
+      "type": "gear",
+      "name": {
+        "text": "Quickening Card"
+      },
+      "model": "the_vault:skills/quickening#inventory",
+      "groups": [
+        "Knack",
+        "Magical",
+        "Essence",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Quickening",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_quickening": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Quickening Card"
+      },
+      "model": "the_vault:skills/quickening#inventory",
+      "groups": [
+        "Knack",
+        "Magical",
+        "Essence",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Quickening",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "trap_disarm_talent": {
+      "type": "gear",
+      "name": {
+        "text": "Trap Disarm Card"
+      },
+      "model": "the_vault:skills/trap_disarm#inventory",
+      "groups": [
+        "Knack",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Trap_Disarm",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_trap_disarm_talent": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Trap Disarm Card"
+      },
+      "model": "the_vault:skills/trap_disarm#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Trap_Disarm",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "clean_escape": {
+      "type": "gear",
+      "name": {
+        "text": "Clean Escape Card"
+      },
+      "model": "the_vault:skills/clean_escape#inventory",
+      "groups": [
+        "Knack",
+        "Physical",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Clean_Escape",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+      "deluxe_clean_escape": {
+      "type": "gear",
+      "name": {
+        "text": "Clean Escape Card"
+      },
+      "model": "the_vault:skills/clean_escape#inventory",
+      "groups": [
+        "Knack",
+        "Physical",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Clean_Escape",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "executioner": {
+      "type": "gear",
+      "name": {
+        "text": "Executioner Card"
+      },
+      "model": "the_vault:skills/executioner#inventory",
+      "groups": [
+        "Knack",
+        "Physical",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Executioner",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "deluxe_executioner": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Executioner Card"
+      },
+      "model": "the_vault:skills/executioner#inventory",
+      "groups": [
+        "Knack",
+        "Physical",
+        "Offensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Executioner",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+     "battle_trance": {
+      "type": "gear",
+      "name": {
+        "text": "Battle Trance Card"
+      },
+      "model": "the_vault:skills/battle_trance#inventory",
+      "groups": [
+        "Knack",
+        "Physical",
+        "Offensive"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Battle_Trance",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_battle_trance": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Battle Trance Card"
+      },
+      "model": "the_vault:skills/battle_trance#inventory",
+      "groups": [
+        "Knack",
+        "Physical",
+        "Offensive",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Battle_Trance",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "lingering_fumes": {
+      "type": "gear",
+      "name": {
+        "text": "Lingering Fumes Card"
+      },
+      "model": "the_vault:skills/lingering_fumes#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Defensive",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Lingering_Fumes",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+     "deluxe_lingering_fumes": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Lingering Fumes Card"
+      },
+      "model": "the_vault:skills/lingering_fumes#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Defensive",
+        "Utility",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Lingering_Fumes",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "arcane_strike": {
+      "type": "gear",
+      "name": {
+        "text": "Arcane Cascade Card"
+      },
+      "model": "the_vault:skills/arcane_strike#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Magical",
+        "Essence"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Arcane_Strike",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "fanged_strike": {
+      "type": "gear",
+      "name": {
+        "text": "Fanged Strike Card"
+      },
+      "model": "the_vault:skills/fanged_strike#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Physical",
+        "Essence"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Fanged_Strike",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_fanged_strike": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Fanged Strike Card"
+      },
+      "model": "the_vault:skills/fanged_strike#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Physical",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Fanged_Strike",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+    "deluxe_arcane_strike": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Arcane Cascade Card"
+      },
+      "model": "the_vault:skills/arcane_strike#inventory",
+      "groups": [
+        "Knack",
+        "Utility",
+        "Magical",
+        "Essence",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Arcane_Strike",
+          "levelChange": 2
         }
       ],
       "maxTier": 1
@@ -4788,129 +5742,6 @@
       ],
       "maxTier": 1
     },
-    "javelin_throw_power": {
-      "type": "gear",
-      "name": {
-        "text": "Javelin Throw Power Card"
-      },
-      "model": "the_vault:skills/javelin_throw_power#inventory",
-      "groups": [
-        "Knack",
-        "Utility"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Javelin_Throw_Power",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "deluxe_javelin_throw_power": {
-      "type": "gear",
-      "name": {
-        "text": "Deluxe Javelin Throw Power Card"
-      },
-      "model": "the_vault:skills/javelin_throw_power#inventory",
-      "groups": [
-        "Knack",
-        "Utility",
-        "Deluxe"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Javelin_Throw_Power",
-          "levelChange": 2
-        }
-      ],
-      "maxTier": 1
-    },
-    "javelin_damage": {
-      "type": "gear",
-      "name": {
-        "text": "Javelin Damage Card"
-      },
-      "model": "the_vault:skills/javelin_damage#inventory",
-      "groups": [
-        "Knack",
-        "Offensive"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Javelin_Damage",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "deluxe_javelin_damage": {
-      "type": "gear",
-      "name": {
-        "text": "Deluxe Javelin Damage Card"
-      },
-      "model": "the_vault:skills/javelin_damage#inventory",
-      "groups": [
-        "Knack",
-        "Offensive",
-        "Deluxe"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Javelin_Damage",
-          "levelChange": 2
-        }
-      ],
-      "maxTier": 1
-    },
-    "javelin_frugal": {
-      "type": "gear",
-      "name": {
-        "text": "Ethereal Javelin Card"
-      },
-      "model": "the_vault:skills/javelin_ethereal#inventory",
-      "groups": [
-        "Knack",
-        "Utility"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Javelin_Frugal",
-          "levelChange": 1
-        }
-      ],
-      "maxTier": 1
-    },
-    "deluxe_javelin_frugal": {
-      "type": "gear",
-      "name": {
-        "text": "Deluxe Ethereal Javelin Card"
-      },
-      "model": "the_vault:skills/javelin_ethereal#inventory",
-      "groups": [
-        "Knack",
-        "Utility",
-        "Deluxe"
-      ],
-      "attribute": "the_vault:added_talent_level",
-      "pool": [
-        {
-          "tier": 1,
-          "talentKey": "Javelin_Frugal",
-          "levelChange": 2
-        }
-      ],
-      "maxTier": 1
-    },
     "fangs": {
       "type": "gear",
       "name": {
@@ -4927,6 +5758,28 @@
         {
           "tier": 1,
           "abilityKey": "Fangs",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "necromancy": {
+      "type": "gear",
+      "name": {
+        "text": "Necromancy Card"
+      },
+      "model": "the_vault:card/icon/necromancy#inventory",
+      "groups": [
+        "Arcane",
+        "Offensive",
+        "Defensive",
+        "Utility"
+      ],
+      "attribute": "the_vault:added_ability_level",
+      "pool": [
+        {
+          "tier": 1,
+          "abilityKey": "Necromancy",
           "levelChange": 1
         }
       ],
@@ -9716,11 +10569,11 @@
     ],
     "deluxe_knack": [
       {
-        "value": "haste",
+        "value": "deluxe_haste",
         "weight": 3.0
       },
       {
-        "value": "speed_talent",
+        "value": "deluxe_speed_talent",
         "weight": 1.0
       },
       {
@@ -9732,19 +10585,19 @@
         "weight": 6.0
       },
       {
-        "value": "lucky_hit_fatal",
+        "value": "deluxe_lucky_hit_fatal",
         "weight": 4.0
       },
       {
-        "value": "lucky_hit_mana",
+        "value": "deluxe_lucky_hit_mana",
         "weight": 4.0
       },
       {
-        "value": "life_leech",
+        "value": "deluxe_life_leech",
         "weight": 4.0
       },
       {
-        "value": "cleave_talent",
+        "value": "deluxe_cleave_talent",
         "weight": 4.0
       },
       {
@@ -9768,18 +10621,6 @@
         "weight": 6.0
       },
       {
-        "value": "deluxe_javelin_throw_power",
-        "weight": 3.0
-      },
-      {
-        "value": "deluxe_javelin_damage",
-        "weight": 3.0
-      },
-      {
-        "value": "deluxe_javelin_frugal",
-        "weight": 3.0
-      },
-      {
         "value": "deluxe_last_stand",
         "weight": 6.0
       },
@@ -9790,6 +10631,86 @@
       {
         "value": "deluxe_sorcery",
         "weight": 6.0
+      },
+      {
+        "value": "deluxe_execution_strike",
+        "weight": 3.0
+      },
+      {
+        "value": "deluxe_heart_fragments",
+        "weight": 4.0
+      },
+      {
+        "value": "deluxe_voltaic_impact",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_blood_rush",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_momentum_engine",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_mind_meld",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_lunge",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_ransack",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_potent_elixir",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_healthy_elixir",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_medic",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_quickening",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_trap_disarm_talent",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_clean_escape",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_executioner",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_battle_trance",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_lingering_fumes",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_arcane_strike",
+        "weight": 4.0
+      },
+       {
+        "value": "deluxe_fanged_strike",
+        "weight": 4.0
+      },
+      {
+        "value": "deluxe_ethereal",
+        "weight": 4.0
       }
     ],
     "knack": [
@@ -9800,6 +10721,14 @@
       {
         "value": "strength",
         "weight": 6.0
+      },
+      {
+        "value": "haste",
+        "weight": 4.0
+      },
+      {
+        "value": "speed_talent",
+        "weight": 3.0
       },
       {
         "value": "purist",
@@ -9822,16 +10751,8 @@
         "weight": 4.0
       },
       {
-        "value": "dweller_mastery",
-        "weight": 3.0
-      },
-      {
         "value": "champion_mastery",
         "weight": 2.0
-      },
-      {
-        "value": "tank_mastery",
-        "weight": 4.0
       },
       {
         "value": "last_stand",
@@ -9852,6 +10773,98 @@
       {
         "value": "bountiful_harvest",
         "weight": 6.0
+      },
+      {
+        "value": "lucky_hit_fatal",
+        "weight": 2.0
+      },
+      {
+        "value": "lucky_hit_mana",
+        "weight": 2.0
+      },
+      {
+        "value": "life_leech",
+        "weight": 2.0
+      },
+      {
+        "value": "cleave_talent",
+        "weight": 2.0
+      },
+      {
+        "value": "execution_strike",
+        "weight": 2.0
+      },
+      {
+        "value": "heart_fragments",
+        "weight": 4.0
+      },
+       {
+        "value": "voltaic_impact",
+        "weight": 4.0
+      },
+       {
+        "value": "blood_rush",
+        "weight": 4.0
+      },
+      {
+        "value": "momentum_engine",
+        "weight": 4.0
+      },
+      {
+        "value": "mind_meld",
+        "weight": 4.0
+      },
+       {
+        "value": "lunge",
+        "weight": 4.0
+      },
+      {
+        "value": "ransack",
+        "weight": 4.0
+      },
+      {
+        "value": "potent_elixir",
+        "weight": 4.0
+      },
+      {
+        "value": "healthy_elixir",
+        "weight": 4.0
+      },
+      {
+        "value": "medic",
+        "weight": 4.0
+      },
+      {
+        "value": "quickening",
+        "weight": 4.0
+      },
+      {
+        "value": "trap_disarm_talent",
+        "weight": 4.0
+      },
+      {
+        "value": "clean_escape",
+        "weight": 4.0
+      },
+      {
+        "value": "executioner",
+        "weight": 4.0
+      },
+      {
+        "value": "battle_trance",
+        "weight": 4.0
+      },
+      {
+        "value": "lingering_fumes",
+        "weight": 4.0
+      },
+      {
+        "value": "arcane_strike",
+        "weight": 4.0
+      },
+       {
+        "value": "fanged_strike",
+        "weight": 4.0
       },
       {
         "value": "lightning_damage",
@@ -9926,16 +10939,8 @@
         "weight": 3.0
       },
       {
-        "value": "javelin_throw_power",
-        "weight": 6.0
-      },
-      {
-        "value": "javelin_damage",
-        "weight": 4.0
-      },
-      {
-        "value": "javelin_frugal",
-        "weight": 4.0
+        "value": "ethereal",
+        "weight": 3.0
       }
     ],
     "arcane": [

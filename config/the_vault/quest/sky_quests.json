@@ -126,6 +126,43 @@
       }
     },
     {
+      "type": "checkmark",
+      "id": "archetypes",
+      "name": "Archetypes",
+      "descriptionData": {
+        "description": [
+          {
+            "text": "Vault Hunters has many open build choices. Archetypes are optional build guides that can help you decide which abilities, talents, and gear stats to chase next.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nOpen the Vault UI with H, go to the Statistics tab, and click the Archetypes button beside the quest button.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nChoose an archetype to track it. The guide compares your current spent skill points against the build path and shows important gear goals like cooldown reduction and mana regeneration.",
+            "color": "$text"
+          },
+          {
+            "text": "\n\nOpen the Archetypes screen",
+            "color": "$heal"
+          }
+        ]
+      },
+      "icon": "the_vault:gui/quests/skills",
+      "targetId": "the_vault:any",
+      "targetProgress": 1.0,
+      "unlockedBy": "learning_skills",
+      "reward": {
+        "items": [],
+        "vaultExp": 0
+      },
+      "questTypes": [
+        "SKY",
+        "NORMAL"
+      ]
+    },
+    {
       "type": "collection",
       "id": "raw_crystal",
       "name": "Sky Vaulting",
@@ -1220,13 +1257,13 @@
             "color": "$text"
           },
           {
-            "text": "\n\nCraft a Chromatic Iron Pick",
+            "text": "\n\nCraft a Chromatic Iron Tool",
             "color": "$heal"
           }
         ]
       },
       "icon": "the_vault:gui/quests/tool",
-      "targetId": "the_vault:tool/pick/chromatic_iron_ingot",
+      "targetId": "the_vault:tool/",
       "targetProgress": 1.0,
       "unlockedBy": "tool_station",
       "reward": {
@@ -3054,7 +3091,7 @@
             "color": "$text"
           },
           {
-            "text": "Vault Forge",
+            "text": "Trinket Forge",
             "color": "$qhighlight"
           },
           {

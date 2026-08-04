@@ -1,43 +1,99 @@
 {
-  "DEFAULT": {
-    "learningCost": 1,
-    "levelRequirement": 0
-  },
-  "BERSERKER": {
-    "playerMaxLifeMultiplier": 0.2,
-    "playerDamageDealtMultiplier": 5.0,
-    "learningCost": 2,
-    "levelRequirement": 50
-  },
-  "COMMANDER": {
-    "eternalDamageDealtMultiplier": 2.0,
-    "playerDamageDealtMultiplier": -0.5,
-    "learningCost": 1,
-    "levelRequirement": 50
-  },
-  "TREASURE_HUNTER": {
-    "additionalItemQuantity": 0.5,
-    "additionalItemRarity": 0.5,
-    "playerDamageTakenMultiplier": 2.0,
-    "learningCost": 3,
-    "levelRequirement": 50
-  },
-  "WARD": {
-    "additionalBlockChanceWithShieldEquipped": 0.25,
-    "playerDamageDealtMultiplier": -0.5,
-    "learningCost": 2,
-    "levelRequirement": 50
-  },
-  "BARBARIAN": {
-    "ragePerHit": 3,
-    "playerDamageDealtMultiplierPerRagePoint": 0.025,
-    "playerHealingEfficiencyMultiplierPerRagePoint": -0.005,
-    "learningCost": 1,
-    "levelRequirement": 50
-  },
-  "VAMPIRE": {
-    "additionalPercentageLifeLeech": 0.05,
-    "learningCost": 2,
-    "levelRequirement": 50
-  }
+  "archetypes": [
+    {
+      "id": "fireball",
+      "name": "Fireball",
+      "shortDescription": "A ranged spell caster that rushes Fireball, then fixes cooldown and mana sustain.",
+      "description": "Fireball plays best when the player can kite, cast often, and keep mana flowing. The early route gets Vein Miner, Dash, Heal, and Fireball online quickly, then layers Intelligence, Prime Amplification, Mana Harvest, Quickening, Arcana, Speed, and late sustain.",
+      "difficulty": 2,
+      "damage": 5,
+      "defense": 2,
+      "mobility": 4,
+      "sustain": 3,
+      "sortOrder": 0,
+      "pros": [
+        "Excellent ranged area damage",
+        "Simple rotation and clear gear goals",
+        "Scales hard with cooldown reduction and mana regen"
+      ],
+      "cons": [
+        "Mana hungry before sustain gear",
+        "Needs kiting while Fireball is on cooldown",
+        "Less forgiving than melee builds early"
+      ],
+      "trinkets": [
+        { "name": "Cufflinks", "note": "Take this if cooldown reduction is below the 50% target." },
+        { "name": "Phylactery", "note": "Take this if mana regeneration is below the +200% target." },
+        { "name": "Spellbook", "note": "Best damage option once cooldown and mana sustain are already healthy." }
+      ],
+      "gearGoals": [
+        { "spentPoints": 12, "stat": "cooldown_reduction", "label": "Cooldown Reduction", "target": 20.0, "note": "Start looking for early CDR so Fireball downtime is manageable." },
+        { "spentPoints": 12, "stat": "mana_regen_bonus", "label": "Mana Regeneration", "target": 80.0, "note": "Any early mana regen makes the build feel smoother." },
+        { "spentPoints": 25, "stat": "cooldown_reduction", "label": "Cooldown Reduction", "target": 35.0, "note": "This is where Fireball starts feeling like the main button." },
+        { "spentPoints": 25, "stat": "mana_regen_bonus", "label": "Mana Regeneration", "target": 140.0, "note": "Mana Harvest helps, but gear should carry the sustain." },
+        { "spentPoints": 45, "stat": "cooldown_reduction", "label": "Cooldown Reduction", "target": 50.0, "note": "Fireball feels properly online at 50% or better." },
+        { "spentPoints": 45, "stat": "mana_regen_bonus", "label": "Mana Regeneration", "target": 200.0, "note": "The long-term sustain target for repeated casting." },
+        { "spentPoints": 45, "stat": "ability_power", "label": "Ability Power", "target": 0.0, "note": "After CDR and mana are solved, stack Ability Power." }
+      ],
+      "steps": [
+        { "spentPoints": 1, "skillType": "ability", "skillId": "Vein_Miner_Base", "label": "Vein Miner", "targetRank": 1, "x": -260, "y": 0, "note": "Utility baseline for every build." },
+        { "spentPoints": 2, "skillType": "ability", "skillId": "Dash_Base", "label": "Dash", "targetRank": 1, "x": -220, "y": 0, "note": "Kiting starts here." },
+        { "spentPoints": 3, "skillType": "ability", "skillId": "Heal_Base", "label": "Heal", "targetRank": 1, "x": -180, "y": 0, "note": "Basic safety before investing into damage." },
+        { "spentPoints": 4, "skillType": "ability", "skillId": "Fireball_Base", "label": "Fireball", "targetRank": 1, "x": -130, "y": -32, "note": "Unlock the primary damage button." },
+        { "spentPoints": 5, "skillType": "ability", "skillId": "Fireball_Base", "label": "Fireball", "targetRank": 2, "x": -86, "y": -32, "note": "Rush early ranks for damage." },
+        { "spentPoints": 6, "skillType": "talent", "skillId": "Intelligence", "label": "Intelligence", "targetRank": 1, "x": -42, "y": 0, "note": "Mana pool support." },
+        { "spentPoints": 7, "skillType": "ability", "skillId": "Fireball_Base", "label": "Fireball", "targetRank": 3, "x": 2, "y": -32, "note": "Keep Fireball ahead of utility." },
+        { "spentPoints": 8, "skillType": "ability", "skillId": "Fireball_Base", "label": "Fireball", "targetRank": 4, "x": 46, "y": -32, "note": "Fireball remains the priority." },
+        { "spentPoints": 9, "skillType": "ability", "skillId": "Dash_Base", "label": "Dash", "targetRank": 2, "x": 90, "y": 0, "note": "More mobility for downtime windows." },
+        { "spentPoints": 10, "skillType": "ability", "skillId": "Heal_Base", "label": "Heal", "targetRank": 2, "x": 134, "y": 0, "note": "Stabilize before deeper spell investment." },
+        { "spentPoints": 11, "skillType": "talent", "skillId": "Mana_Harvest", "label": "Mana Harvest", "targetRank": 1, "x": 178, "y": 32, "note": "Early sustain pickup." },
+        { "spentPoints": 12, "skillType": "ability", "skillId": "Fireball_Base", "label": "Fireball", "targetRank": 5, "x": 222, "y": -32, "note": "Push Fireball damage." },
+        { "spentPoints": 13, "skillType": "talent", "skillId": "Prime_Amplification", "label": "Prime Amp", "targetRank": 1, "x": 266, "y": -64, "note": "Spell scaling begins." },
+        { "spentPoints": 14, "skillType": "ability", "skillId": "Fireball_Base", "label": "Fireball", "targetRank": 6, "x": 310, "y": -32, "note": "Keep the spell ahead." },
+        { "spentPoints": 15, "skillType": "talent", "skillId": "Intelligence", "label": "Intelligence", "targetRank": 2, "x": 354, "y": 0, "note": "Finish base Intelligence." },
+        { "spentPoints": 16, "skillType": "talent", "skillId": "Sorcery", "label": "Sorcery", "targetRank": 1, "x": 398, "y": -64, "note": "More spell value." },
+        { "spentPoints": 17, "skillType": "ability", "skillId": "Fireball_Base", "label": "Fireball", "targetRank": 7, "x": 442, "y": -32, "note": "Near max Fireball." },
+        { "spentPoints": 18, "skillType": "ability", "skillId": "Fireball_Base", "label": "Fireball", "targetRank": 8, "x": 486, "y": -32, "note": "Core Fireball complete." },
+        { "spentPoints": 19, "skillType": "talent", "skillId": "Mana_Harvest", "label": "Mana Harvest", "targetRank": 2, "x": 530, "y": 32, "note": "More sustain." },
+        { "spentPoints": 20, "skillType": "talent", "skillId": "Quickening", "label": "Quickening", "targetRank": 1, "x": 574, "y": -64, "note": "Cooldown support beats Ethereal for this build." },
+        { "spentPoints": 21, "skillType": "talent", "skillId": "Prime_Amplification", "label": "Prime Amp", "targetRank": 2, "x": 618, "y": -64, "note": "More damage scaling." },
+        { "spentPoints": 22, "skillType": "talent", "skillId": "Prime_Amplification", "label": "Prime Amp", "targetRank": 3, "x": 662, "y": -64, "note": "Stay on the spell path." },
+        { "spentPoints": 23, "skillType": "talent", "skillId": "Intelligence_II", "label": "Greater Intelligence", "targetRank": 1, "x": 706, "y": 0, "note": "Mana pool extension." },
+        { "spentPoints": 24, "skillType": "talent", "skillId": "Intelligence_II", "label": "Greater Intelligence", "targetRank": 2, "x": 750, "y": 0, "note": "Finish Greater Intelligence." },
+        { "spentPoints": 25, "skillType": "talent", "skillId": "Mana_Harvest", "label": "Mana Harvest", "targetRank": 3, "x": 794, "y": 32, "note": "Early sustain package complete." },
+        { "spentPoints": 26, "skillType": "ability", "skillId": "Dash_Base", "label": "Dash", "targetRank": 3, "x": 838, "y": 0, "note": "Kiting comfort." },
+        { "spentPoints": 27, "skillType": "ability", "skillId": "Heal_Base", "label": "Heal", "targetRank": 3, "x": 882, "y": 0, "note": "Recovery comfort." },
+        { "spentPoints": 28, "skillType": "talent", "skillId": "Sorcery", "label": "Sorcery", "targetRank": 2, "x": 926, "y": -64, "note": "Spell scaling." },
+        { "spentPoints": 29, "skillType": "talent", "skillId": "Prime_Amplification", "label": "Prime Amp", "targetRank": 4, "x": 970, "y": -64, "note": "Core spell scaling." },
+        { "spentPoints": 30, "skillType": "talent", "skillId": "Quickening", "label": "Quickening", "targetRank": 2, "x": 1014, "y": -64, "note": "More cooldown support." },
+        { "spentPoints": 31, "skillType": "talent", "skillId": "Prime_Amplification", "label": "Prime Amp", "targetRank": 5, "x": 1058, "y": -64, "note": "Prime Amp keeps scaling Fireball." },
+        { "spentPoints": 33, "skillType": "talent", "skillId": "Arcana", "label": "Arcana", "targetRank": 1, "x": 1102, "y": 32, "note": "Two-point rank for mana regen." },
+        { "spentPoints": 34, "skillType": "talent", "skillId": "Speed", "label": "Speed", "targetRank": 1, "x": 1146, "y": 0, "note": "More kite speed." },
+        { "spentPoints": 35, "skillType": "talent", "skillId": "Speed", "label": "Speed", "targetRank": 2, "x": 1190, "y": 0, "note": "Finish base Speed." },
+        { "spentPoints": 36, "skillType": "talent", "skillId": "Quickening", "label": "Quickening", "targetRank": 3, "x": 1234, "y": -64, "note": "Quickening complete." },
+        { "spentPoints": 37, "skillType": "ability", "skillId": "Dash_Base", "label": "Dash", "targetRank": 4, "x": 1278, "y": 0, "note": "Dash complete." },
+        { "spentPoints": 38, "skillType": "ability", "skillId": "Heal_Base", "label": "Heal", "targetRank": 4, "x": 1322, "y": 0, "note": "Heal complete." },
+        { "spentPoints": 39, "skillType": "talent", "skillId": "Prime_Amplification", "label": "Prime Amp", "targetRank": 6, "x": 1366, "y": -64, "note": "Late core scaling." },
+        { "spentPoints": 40, "skillType": "talent", "skillId": "Prime_Amplification", "label": "Prime Amp", "targetRank": 7, "x": 1410, "y": -64, "note": "Late core scaling." },
+        { "spentPoints": 41, "skillType": "talent", "skillId": "Prime_Amplification", "label": "Prime Amp", "targetRank": 8, "x": 1454, "y": -64, "note": "Prime Amp complete." },
+        { "spentPoints": 42, "skillType": "talent", "skillId": "Sorcery", "label": "Sorcery", "targetRank": 3, "x": 1498, "y": -64, "note": "More spell value." },
+        { "spentPoints": 43, "skillType": "talent", "skillId": "Sorcery", "label": "Sorcery", "targetRank": 4, "x": 1542, "y": -64, "note": "Initial Sorcery target complete." },
+        { "spentPoints": 45, "skillType": "talent", "skillId": "Arcana", "label": "Arcana", "targetRank": 2, "x": 1586, "y": 32, "note": "Mana regen target path." },
+        { "spentPoints": 47, "skillType": "talent", "skillId": "Arcana", "label": "Arcana", "targetRank": 3, "x": 1630, "y": 32, "note": "More mana regen." },
+        { "spentPoints": 49, "skillType": "talent", "skillId": "Arcana", "label": "Arcana", "targetRank": 4, "x": 1674, "y": 32, "note": "Arcana complete." },
+        { "spentPoints": 51, "skillType": "talent", "skillId": "Speed_II", "label": "Greater Speed", "targetRank": 1, "x": 1718, "y": 0, "note": "Two-point mobility rank." },
+        { "spentPoints": 53, "skillType": "talent", "skillId": "Speed_II", "label": "Greater Speed", "targetRank": 2, "x": 1762, "y": 0, "note": "More kite speed." },
+        { "spentPoints": 55, "skillType": "talent", "skillId": "Speed_II", "label": "Greater Speed", "targetRank": 3, "x": 1806, "y": 0, "note": "More kite speed." },
+        { "spentPoints": 57, "skillType": "talent", "skillId": "Speed_II", "label": "Greater Speed", "targetRank": 4, "x": 1850, "y": 0, "note": "Greater Speed complete." },
+        { "spentPoints": 58, "skillType": "talent", "skillId": "Depleted", "label": "Depleted", "targetRank": 1, "x": 1894, "y": 32, "note": "Late mana-heavy support." },
+        { "spentPoints": 59, "skillType": "talent", "skillId": "Depleted", "label": "Depleted", "targetRank": 2, "x": 1938, "y": 32, "note": "More depleted scaling." },
+        { "spentPoints": 60, "skillType": "talent", "skillId": "Depleted", "label": "Depleted", "targetRank": 3, "x": 1982, "y": 32, "note": "More depleted scaling." },
+        { "spentPoints": 61, "skillType": "talent", "skillId": "Depleted", "label": "Depleted", "targetRank": 4, "x": 2026, "y": 32, "note": "Depleted complete." },
+        { "spentPoints": 62, "skillType": "talent", "skillId": "Sorcery", "label": "Sorcery", "targetRank": 5, "x": 2070, "y": -64, "note": "Max Sorcery after the core." },
+        { "spentPoints": 63, "skillType": "talent", "skillId": "Sorcery", "label": "Sorcery", "targetRank": 6, "x": 2114, "y": -64, "note": "Max Sorcery after the core." },
+        { "spentPoints": 64, "skillType": "talent", "skillId": "Sorcery", "label": "Sorcery", "targetRank": 7, "x": 2158, "y": -64, "note": "Max Sorcery after the core." },
+        { "spentPoints": 65, "skillType": "talent", "skillId": "Sorcery", "label": "Sorcery", "targetRank": 8, "x": 2202, "y": -64, "note": "Sorcery complete." }
+      ]
+    }
+  ]
 }

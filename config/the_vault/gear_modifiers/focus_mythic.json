@@ -147,6 +147,34 @@
           }
         ]
       },
+      { "attribute": "the_vault:added_ability_level",
+        "group": "ModAPLvl",
+        "identifier": "the_vault:mod_added_ability_level_necro",
+        "tags": [
+          "focusAbilityPower",
+          "focusAbilityPowerNecro"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 60,
+            "value": {
+              "abilityKey": "Necromancy",
+              "levelChange": 2
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 60,
+            "value": {
+              "abilityKey": "Necromancy",
+              "levelChange": 3
+            }
+          }
+        ]
+      },
       {
         "attribute": "the_vault:added_ability_level",
         "group": "ModLvlBuff",
@@ -828,47 +856,6 @@
               "min": 0.25,
               "max": 0.3,
               "step": 0.01
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:durability",
-        "group": "ModDurability",
-        "identifier": "the_vault:mod_durability",
-        "tags": [
-          "focusDurability",
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 200,
-            "value": {
-              "min": 6400,
-              "max": 8000,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
-              "min": 8000,
-              "max": 12000,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
-              "min": 12000,
-              "max": 16000,
-              "step": 1
             }
           }
         ]
