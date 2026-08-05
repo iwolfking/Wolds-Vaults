@@ -1,0 +1,55 @@
+{
+  "tile_processors": [
+    {
+        "type": "leveled",
+        "levels": [
+            {
+                "level": 0,
+                "type": "weighted_target",
+                "target": "the_vault:placeholder",
+                "output": {
+                    "the_vault:placeholder{ Hidden: 1b }": 1
+                }
+            }
+        ]
+    },
+    {
+      "type": "placeholder",
+      "target": "WOODEN_CHEST",
+      "levels": [
+        {
+          "level": 50,
+          "probability": 0.75,
+          "success": {
+            "the_vault:gilded_barrel{LootTable:\"the_vault:gilded_dungeon_barrel_map\"}": 1,
+            "the_vault:living_barrel{LootTable:\"the_vault:living_dungeon_barrel_map\"}": 1,
+            "the_vault:ornate_barrel{LootTable:\"the_vault:ornate_dungeon_barrel_map\"}": 1,
+            "the_vault:wooden_barrel{LootTable:\"the_vault:wooden_dungeon_barrel_map\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "placeholder",
+      "target": "COIN_STACKS",
+      "levels": [
+        {
+          "level": 50,
+          "probability": 1.0,
+          "success": {
+            "the_vault:gilded_barrel{LootTable:\"the_vault:gilded_dungeon_barrel_map\"}": 1,
+            "the_vault:ornate_barrel{LootTable:\"the_vault:ornate_dungeon_barrel_map\"}": 1,
+            "the_vault:living_barrel{LootTable:\"the_vault:living_dungeon_barrel_map\"}": 1,
+            "the_vault:wooden_barrel{LootTable:\"the_vault:wooden_dungeon_barrel_map\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        }
+      ]
+    }
+  ]
+}

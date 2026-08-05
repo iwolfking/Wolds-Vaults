@@ -95,6 +95,116 @@ onEvent("recipes", event => {
         "type": 'pneumaticcraft:pressure_chamber',
         "inputs": [
             {
+                "item": 'pneumaticcraft:ingot_iron_compressed'
+            },
+            {
+                "item": 'the_vault:carbon'
+            }
+        ],
+        "pressure": 2.0,
+        "results": [
+            {
+                "item": "the_vault:chromatic_steel_ingot"
+            }
+        ]
+    }).id('woldsvaults:pressure_chamber/chromatic_steel_ingot');
+
+    event.custom({
+        "type": 'pneumaticcraft:pressure_chamber',
+        "inputs": [
+           {
+                "type": "pneumaticcraft:stacked_item",
+                "item": 'the_vault:chromatic_steel_ingot',
+                "count": 4
+            },
+            {
+                "item": 'the_vault:perfect_black_opal'
+            }
+        ],
+        "pressure": 4.0,
+        "results": [
+            {
+                "item": "the_vault:black_chromatic_steel_ingot"
+            }
+        ]
+    }).id('woldsvaults:pressure_chamber/black_chromatic_steel_ingot');
+
+    event.custom({
+        "type": 'pneumaticcraft:pressure_chamber',
+        "inputs": [
+            {
+                "type": "pneumaticcraft:stacked_item",
+                "item": 'the_vault:silver_scrap',
+                "count": 4
+            },
+            {
+                "item": 'the_vault:perfect_wutodie'
+            }
+        ],
+        "pressure": 1.0,
+        "results": [
+            {
+                "item": "the_vault:wutodic_silver_ingot"
+            }
+        ]
+    }).id('woldsvaults:pressure_chamber/wutodic_silver_ingot');
+
+    event.custom({
+        "type": 'pneumaticcraft:pressure_chamber',
+        "inputs": [
+            {
+                "item": 'the_vault:chromatic_iron_ingot'
+            },
+            {
+                "item": 'woldsvaults:chromatic_gold_ingot'
+            },
+            {
+                "item": 'the_vault:chromatic_steel_ingot'
+            }
+        ],
+        "pressure": 2.0,
+        "results": [
+            {
+                "item": "the_vault:vault_ingot"
+            }
+        ]
+    }).id('woldsvaults:pressure_chamber/vault_ingot');
+
+    event.custom({
+        "type": 'pneumaticcraft:pressure_chamber',
+        "inputs": [
+            {
+                "item": 'woldsvaults:carbon_block'
+            }
+        ],
+        "pressure": 5.0,
+        "results": [
+            {
+                "item": "the_vault:vault_diamond"
+            }
+        ]
+    }).id('woldsvaults:pressure_chamber/vault_diamond');
+
+    event.custom({
+        "type": 'pneumaticcraft:pressure_chamber',
+        "inputs": [
+            {
+                "tag": 'the_vault:vault_ores'
+            }
+        ],
+        "pressure": 3.0,
+        "results": [
+            {
+                "item": "woldsvaults:smashed_vault_gem"
+            }
+        ]
+    }).id('woldsvaults:pressure_chamber/smashed_vault_gem');
+
+
+    event.custom({
+        "type": 'pneumaticcraft:pressure_chamber',
+        "inputs": [
+            {
                 "item": 'the_vault:chromatic_iron_block'
             }
         ],

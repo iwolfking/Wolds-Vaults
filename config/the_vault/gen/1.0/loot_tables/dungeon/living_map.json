@@ -9,22 +9,19 @@
       "pool": [
         { "weight": 1,
           "pool": [
-              {
-              "weight": 2,
+             {
+              "weight": 15,
               "item": {
-                "id": "the_vault:vault_god_charm",
-                "nbt": {
-                    "the_vault:gear_roll_type_pool": "charms_dungeons"
-                  },
+                "id": "the_vault:knowledge_star_essence",
                 "count": {
                   "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                  }
+                  "min": 10,
+                  "max": 20
+                }
               }
             },
             {
-              "weight": 5,
+              "weight": 2,
               "item": {
                 "id": "the_vault:inscription",
                 "nbt": {
@@ -44,6 +41,28 @@
               "count": {
                 "type": "uniform",
                 "min": 1,
+                "max": 3
+                }
+              }
+            },
+            {
+              "weight": 5,
+              "item": {
+              "id": "woldsvaults:soul_ichor",
+              "count": {
+                "type": "uniform",
+                "min": 1,
+                "max": 1
+                }
+              }
+            },
+            {
+              "weight": 3,
+              "item": {
+              "id": "the_vault:burger_chili",
+              "count": {
+                "type": "uniform",
+                "min": 1,
                 "max": 1
                 }
               }
@@ -55,8 +74,51 @@
               "count": {
                 "type": "uniform",
                 "min": 1,
-                "max": 1
+                "max": 2
                 }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+                "id": "the_vault:vault_god_charm",
+                "nbt": {
+                    "the_vault:gear_roll_type_pool": "charms_dungeons"
+                  },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
+              }
+            },
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:deck_socket",
+                "nbt": {
+                  "Modifier": "@colour_cores",
+                  "ModifierRoll": "greater"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+                "id": "the_vault:deck_socket",
+                "nbt": {
+                  "Modifier": "@colour_cores"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
               }
             }
           ]

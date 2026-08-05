@@ -178,6 +178,7 @@ onEvent('jei.hide.items', event => {
     event.hide(/draconicevolution:.*_filter_module/)
     event.hide(/draconicevolution:.*_aoe_module/)
     event.hide(/draconicevolution:.*_speed_module/)
+    event.hide(/dyenamicsandfriends:botanypots_.*/)
 
 
     //Blocks with rendering/crashing issues

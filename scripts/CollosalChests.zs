@@ -58,58 +58,58 @@ craftingTable.addShapeless("colossalchests_chest_iron", <item:colossalchests:col
 ]);
 
 // Gold
-craftingTable.addShaped("colossalchests_chest_wall_gold", <item:colossalchests:chest_wall_gold>, [
-    [<tag:items:forge:storage_blocks/gold>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/gold>],
-    [<item:the_vault:chromatic_steel_ingot>, <item:colossalchests:chest_wall_iron>, <item:the_vault:chromatic_steel_ingot>],
-    [<tag:items:forge:storage_blocks/gold>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/gold>]
-]);
+//craftingTable.addShaped("colossalchests_chest_wall_gold", <item:colossalchests:chest_wall_gold>, [
+//    [<tag:items:forge:storage_blocks/gold>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/gold>],
+//    [<item:the_vault:chromatic_steel_ingot>, <item:colossalchests:chest_wall_iron>, <item:the_vault:chromatic_steel_ingot>],
+//    [<tag:items:forge:storage_blocks/gold>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/gold>]
+//]);
 
-craftingTable.addShaped("colossalchests_chest_interface_gold", <item:colossalchests:interface_gold>, [
-    [<tag:items:forge:storage_blocks/gold>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/gold>],
-    [<item:the_vault:chromatic_steel_ingot>, <item:colossalchests:interface_iron>, <item:the_vault:chromatic_steel_ingot>],
-    [<tag:items:forge:storage_blocks/gold>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/gold>]
-]);
+//craftingTable.addShaped("colossalchests_chest_interface_gold", <item:colossalchests:interface_gold>, [
+//    [<tag:items:forge:storage_blocks/gold>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/gold>],
+//    [<item:the_vault:chromatic_steel_ingot>, <item:colossalchests:interface_iron>, <item:the_vault:chromatic_steel_ingot>],
+//    [<tag:items:forge:storage_blocks/gold>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/gold>]
+//]);
 
-craftingTable.addShapeless("colossalchests_chest_gold", <item:colossalchests:colossal_chest_gold>, [
- <item:colossalchests:colossal_chest_iron>, <item:the_vault:perfect_larimar>, <item:the_vault:perfect_larimar>,
- <item:minecraft:gold_block>, <item:the_vault:perfect_larimar>
-]);
+//craftingTable.addShapeless("colossalchests_chest_gold", <item:colossalchests:colossal_chest_gold>, [
+// <item:colossalchests:colossal_chest_iron>, <item:the_vault:perfect_larimar>, <item:the_vault:perfect_larimar>,
+// <item:minecraft:gold_block>, <item:the_vault:perfect_larimar>
+//]);
 
 // Diamond
-craftingTable.addShaped("colossalchests_chest_wall_diamond", <item:colossalchests:chest_wall_diamond>, [
-    [<tag:items:forge:storage_blocks/diamond>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/diamond>],
-    [<item:the_vault:chromatic_steel_ingot>, <item:colossalchests:chest_wall_gold>, <item:the_vault:chromatic_steel_ingot>],
-    [<tag:items:forge:storage_blocks/diamond>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/diamond>]
-]);
+//craftingTable.addShaped("colossalchests_chest_wall_diamond", <item:colossalchests:chest_wall_diamond>, [
+//    [<tag:items:forge:storage_blocks/diamond>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/diamond>],
+//    [<item:the_vault:chromatic_steel_ingot>, <item:colossalchests:chest_wall_gold>, <item:the_vault:chromatic_steel_ingot>],
+//    [<tag:items:forge:storage_blocks/diamond>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/diamond>]
+//]);
 
-craftingTable.addShaped("colossalchests_chest_interface_diamond", <item:colossalchests:interface_diamond>, [
-    [<tag:items:forge:storage_blocks/diamond>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/diamond>],
-    [<item:the_vault:chromatic_steel_ingot>, <item:colossalchests:interface_gold>, <item:the_vault:chromatic_steel_ingot>],
-    [<tag:items:forge:storage_blocks/diamond>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/diamond>]
-]);
+//craftingTable.addShaped("colossalchests_chest_interface_diamond", <item:colossalchests:interface_diamond>, [
+//    [<tag:items:forge:storage_blocks/diamond>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/diamond>],
+//    [<item:the_vault:chromatic_steel_ingot>, <item:colossalchests:interface_gold>, <item:the_vault:chromatic_steel_ingot>],
+//    [<tag:items:forge:storage_blocks/diamond>, <item:the_vault:chromatic_steel_ingot>, <tag:items:forge:storage_blocks/diamond>]
+//]);
 
-craftingTable.addShapeless("colossalchests_chest_diamond", <item:colossalchests:colossal_chest_diamond>, [
- <item:colossalchests:colossal_chest_gold>, <item:the_vault:extraordinary_larimar>, <item:the_vault:extraordinary_larimar>,
- <item:minecraft:diamond_block>, <item:the_vault:extraordinary_larimar>
-]);
+//craftingTable.addShapeless("colossalchests_chest_diamond", <item:colossalchests:colossal_chest_diamond>, [
+// <item:colossalchests:colossal_chest_gold>, <item:the_vault:extraordinary_larimar>, <item:the_vault:extraordinary_larimar>,
+// <item:minecraft:diamond_block>, <item:the_vault:extraordinary_larimar>
+//]);
 
 // Obsidian
-craftingTable.addShaped("colossalchests_chest_wall_obsidian", <item:colossalchests:chest_wall_obsidian>, [
-    [<item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>],
-    [<item:minecraft:obsidian>, <item:colossalchests:chest_wall_diamond>, <item:minecraft:obsidian>],
-    [<item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>]
-]);
+//craftingTable.addShaped("colossalchests_chest_wall_obsidian", <item:colossalchests:chest_wall_obsidian>, [
+//    [<item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>],
+//    [<item:minecraft:obsidian>, <item:colossalchests:chest_wall_diamond>, <item:minecraft:obsidian>],
+//    [<item:the_vault:vault_diamond>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:vault_diamond>]
+//]);
 
-craftingTable.addShaped("colossalchests_chest_interface_obsidian", <item:colossalchests:interface_obsidian>, [
-    [<item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>],
-    [<item:minecraft:obsidian>, <item:colossalchests:interface_diamond>, <item:minecraft:obsidian>],
-    [<item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>]
-]);
+//craftingTable.addShaped("colossalchests_chest_interface_obsidian", <item:colossalchests:interface_obsidian>, [
+//    [<item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>],
+//    [<item:minecraft:obsidian>, <item:colossalchests:interface_diamond>, <item:minecraft:obsidian>],
+//    [<item:the_vault:vault_diamond>, <item:the_vault:black_chromatic_steel_ingot>, <item:the_vault:vault_diamond>]
+//]);
 
-craftingTable.addShapeless("colossalchests_chest_obsidian", <item:colossalchests:colossal_chest_obsidian>, [
- <item:colossalchests:colossal_chest_diamond>, <item:the_vault:extraordinary_larimar>, <item:the_vault:extraordinary_larimar>,
- <item:minecraft:obsidian>, <item:the_vault:extraordinary_larimar>
-]);
+//craftingTable.addShapeless("colossalchests_chest_obsidian", <item:colossalchests:colossal_chest_obsidian>, [
+// <item:colossalchests:colossal_chest_diamond>, <item:the_vault:extraordinary_larimar>, <item:the_vault:extraordinary_larimar>,
+// <item:minecraft:obsidian>, <item:the_vault:extraordinary_larimar>
+//]);
 
 craftingTable.addShapeless("colossalchests_upgrade_tool", <item:colossalchests:upgrade_tool>, [
  <item:the_vault:magic_silk>, <item:the_vault:chromatic_steel_ingot>, <item:the_vault:perfect_larimar>

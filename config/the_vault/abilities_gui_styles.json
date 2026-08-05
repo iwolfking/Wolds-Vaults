@@ -49,8 +49,8 @@
         "Taunt_Repel": {
           "icon": "the_vault:gui/abilities/taunt_repel"
         },
-        "Taunt_Charm": {
-          "icon": "the_vault:gui/abilities/taunt_charm"
+        "Taunt_Decoy": {
+          "icon": "the_vault:gui/abilities/taunt"
         }
       }
     },
@@ -69,7 +69,6 @@
         }
       }
     },
-
     "Nova": {
       "x": 0,
       "y": 17,
@@ -95,7 +94,6 @@
         "Mana_Barrier": {
           "icon": "the_vault:gui/abilities/mana_barrier"
         }
-
       }
     },
     "Implode": {
@@ -108,7 +106,6 @@
         "Implode_Life_Tap": {
           "icon": "the_vault:gui/abilities/life_tap"
         }
-
       }
     },
     "Retribution": {
@@ -118,10 +115,12 @@
         "Shield_Bash": {
           "icon": "the_vault:gui/abilities/retribution"
         },
-        "Mana_Shield_Retribution": {
-          "icon": "the_vault:gui/abilities/shield_bash_retribution"
+        "Shield_Bash_Earthshatter": {
+          "icon": "the_vault:gui/abilities/bulwark"
+        },
+        "Shield_Bash_Battering_Ram": {
+          "icon": "the_vault:gui/abilities/battering_ram"
         }
-
       }
     },
     "Heal": {
@@ -209,15 +208,17 @@
         "Rampage_Base": {
           "icon": "the_vault:gui/abilities/rampage"
         },
-        "Rampage_Leech": {
+        "Rampage_Bloodlust": {
           "icon": "the_vault:gui/abilities/rampage_leech"
         },
-        "Rampage_Chain": {
-          "icon": "the_vault:gui/abilities/rampage_chain"
+        "Rampage_Berserker": {
+          "icon": "the_vault:gui/abilities/rampage_berserk"
+        },
+        "Rampage_Instinct": {
+          "icon": "the_vault:gui/abilities/rampage_lucky"
         }
       }
     },
-
     "Javelin": {
       "x": 70,
       "y": 17,
@@ -231,7 +232,6 @@
         "Javelin_Scatter": {
           "icon": "the_vault:gui/abilities/javelin_scatter"
         }
-
       }
     },
     "Smite": {
@@ -243,6 +243,9 @@
         },
         "Smite_Archon": {
           "icon": "the_vault:gui/abilities/smite_archon"
+        },
+        "Smite_Blast_Wave": {
+          "icon": "the_vault:gui/abilities/smite_thunderstorm"
         }
       }
     },
@@ -282,9 +285,6 @@
       "specializationStyles": {
         "Storm_Arrow_Base": {
           "icon": "the_vault:gui/abilities/thunderstorm"
-        },
-        "Storm_Arrow_Blizzard": {
-          "icon": "the_vault:gui/abilities/blizzard"
         }
       }
     },
@@ -297,6 +297,9 @@
         },
         "Ice_Bolt_Blast": {
           "icon": "the_vault:gui/abilities/ice_blast"
+        },
+        "Shard_Blizzard": {
+          "icon": "the_vault:gui/abilities/blizzard_shard"
         }
       }
     },
@@ -324,8 +327,10 @@
         },
         "Arcane_Rail": {
           "icon": "the_vault:gui/abilities/arcane_rail"
+        },
+        "Arcane_Prism": {
+          "icon": "the_vault:gui/abilities/arcane_prism"
         }
-
       }
     },
     "Chain_Lightning": {
@@ -333,10 +338,13 @@
       "y": 17,
       "specializationStyles": {
         "Chain_Lightning_Base": {
-          "icon": "the_vault:gui/abilities/chain_lightning"
+          "icon": "the_vault:gui/abilities/lightning_strike"
         },
         "Chain_Lightning_Orbs": {
-          "icon": "the_vault:gui/abilities/chain_lightning2"
+          "icon": "the_vault:gui/abilities/orb_lightning"
+        },
+        "Chain_Lightning_Charged_Bolts": {
+          "icon": "the_vault:gui/abilities/charged_bolts"
         }
       }
     },
@@ -347,10 +355,12 @@
         "Earthquake_Base": {
           "icon": "the_vault:gui/abilities/earthquake"
         },
-        "Earthquake_Landmine": {
-          "icon": "the_vault:gui/abilities/landmine"
+        "Earthquake_Singularity": {
+          "icon": "the_vault:gui/abilities/singularity"
+        },
+        "Earthquake_Tremor": {
+          "icon": "the_vault:gui/abilities/tremor"
         }
-
       }
     },
     "Grenade": {
@@ -360,13 +370,27 @@
         "Grenade_Base": {
           "icon": "the_vault:gui/abilities/chaos_cube"
         },
+        "Grenade_Sticky": {
+          "icon": "the_vault:gui/abilities/sticky_cube"
+        },
         "Toxic_Grenade": {
           "icon": "the_vault:gui/abilities/toxic_grenade"
         }
-
       }
     },
-     "Expunge": {
+    "Fangs": {
+      "x": 35,
+      "y": 265,
+      "specializationStyles": {
+        "Fangs_Base": {
+          "icon": "woldsvaults:gui/abilities/wall_of_fangs"
+        },
+        "Fangs_Maw": {
+          "icon": "woldsvaults:gui/abilities/hungry_maw"
+        }
+      }
+    },
+    "Expunge": {
       "x": 275,
       "y": -100,
       "specializationStyles": {
@@ -387,6 +411,21 @@
         },
         "Sneaky_Getaway": {
           "icon": "woldsvaults:gui/abilities/sneaky_getaway"
+        }
+      }
+    },
+    "Necromancy": {
+      "x": 210,
+      "y": 134,
+      "specializationStyles": {
+        "Necromancy_Base": {
+          "icon": "the_vault:gui/abilities/necromancy"
+        },
+        "Necromancy_Archer": {
+          "icon": "the_vault:gui/abilities/necromancy_archer"
+        },
+        "Necromancy_Golem": {
+          "icon": "the_vault:gui/abilities/necromancy_golem"
         }
       }
     }

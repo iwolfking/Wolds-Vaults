@@ -1,6 +1,338 @@
 {
   "SKILL_GATES": {
     "entries": {
+      "Mekanism Generators": {
+        "dependsOn": [
+          {
+            "type": "constant",
+            "id": "Mekanism"
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Digital Miner": {
+        "dependsOn": [
+          {
+            "type": "constant",
+            "id": "Mekanism"
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Mekanism QIO": {
+        "dependsOn": [
+          {
+            "type": "constant",
+            "id": "Mekanism"
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Thermal Dynamos": {
+        "dependsOn": [
+          {
+            "type": "constant",
+            "id": "Thermal Expansion"
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Phytogenic Insulator": {
+        "dependsOn": [
+          {
+            "type": "constant",
+            "id": "Thermal Expansion"
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Belts": {
+        "dependsOn": [
+          {
+            "type": "constant",
+            "id": "Double Pouches"
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Double Pouches": {
+        "dependsOn": [],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Backpacks": {
+        "dependsOn": [
+          {
+            "type": "constant",
+            "id": "Belts"
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Big Backpacks": {
+        "dependsOn": [
+          {
+            "type": "constant",
+            "id": "Backpacks"
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Botania Flux Field": {
+        "dependsOn": [
+          {
+            "type": "constant",
+            "id": "Botania"
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Mixtures": {
+        "dependsOn": [
+          {
+            "type": "constant",
+            "id": "Potions"
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Brews": {
+        "dependsOn": [
+          {
+            "type": "constant",
+            "id": "Mixtures"
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Automatic Genius": {
+        "dependsOn": [
+          {
+            "type": "constant",
+            "id": "Colossal Chests"
+          },
+          {
+            "type": "constant",
+            "id": "Simple Storage Network"
+          },
+          {
+            "type": "constant",
+            "id": "Drawers"
+          },
+          {
+            "type": "constant",
+            "id": "Mekanism QIO"
+          },
+          {
+            "type": "constant",
+            "id": "Refined Storage"
+          },
+          {
+            "type": "constant",
+            "id": "Applied Energistics"
+          },
+          {
+            "type": "constant",
+            "id": "Double Pouches"
+          },
+          {
+            "type": "constant",
+            "id": "Belts"
+          },
+          {
+            "type": "constant",
+            "id": "Backpacks"
+          },
+          {
+            "type": "constant",
+            "id": "Big Backpacks"
+          },
+          {
+            "type": "constant",
+            "id": "Junk Management"
+          },
+          {
+            "type": "constant",
+            "id": "Iron Generators"
+          },
+          {
+            "type": "constant",
+            "id": "Powah"
+          },
+          {
+            "type": "constant",
+            "id": "Flux Networks"
+          },
+          {
+            "type": "constant",
+            "id": "Thermal Dynamos"
+          },
+          {
+            "type": "constant",
+            "id": "Mekanism Generators"
+          },
+          {
+            "type": "constant",
+            "id": "Botania Flux Field"
+          },
+          {
+            "type": "constant",
+            "id": "Xnet"
+          },
+          {
+            "type": "constant",
+            "id": "Modular Routers"
+          },
+          {
+            "type": "constant",
+            "id": "Pipez"
+          },
+          {
+            "type": "constant",
+            "id": "Iron Furnaces"
+          },
+          {
+            "type": "constant",
+            "id": "Dark Utilities"
+          },
+          {
+            "type": "constant",
+            "id": "Botania"
+          },
+          {
+            "type": "constant",
+            "id": "Mekanism"
+          },
+          {
+            "type": "constant",
+            "id": "Thermal Expansion"
+          },
+          {
+            "type": "constant",
+            "id": "Create"
+          },
+          {
+            "type": "constant",
+            "id": "Waystones"
+          },
+          {
+            "type": "constant",
+            "id": "Torch Master"
+          },
+          {
+            "type": "constant",
+            "id": "Trashcans"
+          },
+          {
+            "type": "constant",
+            "id": "Elevators"
+          },
+          {
+            "type": "constant",
+            "id": "Vault Compass"
+          },
+          {
+            "type": "constant",
+            "id": "Altar Automation"
+          },
+          {
+            "type": "constant",
+            "id": "Building Gadgets"
+          },
+          {
+            "type": "constant",
+            "id": "Weirding Gadgets"
+          },
+          {
+            "type": "constant",
+            "id": "Mining Gadgets"
+          },
+          {
+            "type": "constant",
+            "id": "Digital Miner"
+          },
+          {
+            "type": "constant",
+            "id": "Easy Villagers"
+          },
+          {
+            "type": "constant",
+            "id": "Easy Piglins"
+          },
+          {
+            "type": "constant",
+            "id": "Botany Pots"
+          },
+          {
+            "type": "constant",
+            "id": "SNAD"
+          },
+          {
+            "type": "constant",
+            "id": "Cagerium"
+          },
+          {
+            "type": "constant",
+            "id": "Mob Spawners"
+          },
+          {
+            "type": "constant",
+            "id": "Phytogenic Insulator"
+          },
+          {
+            "type": "constant",
+            "id": "Potions"
+          },
+          {
+            "type": "constant",
+            "id": "Mixtures"
+          },
+          {
+            "type": "constant",
+            "id": "Brews"
+          },
+          {
+            "type": "constant",
+            "id": "Entangled"
+          },
+          {
+            "type": "constant",
+            "id": "Laser Bridges"
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
+      "Altar Automation": {
+        "dependsOn": [
+          {
+            "type": "either",
+            "gates": [
+              {
+                "type": "constant",
+                "id": "Refined Storage"
+              },
+              {
+                "type": "constant",
+                "id": "Applied Energistics"
+              }
+            ]
+          }
+        ],
+        "ignoreArrow": true,
+        "lockedBy": []
+      },
       "Regeneration": {
         "dependsOn": [],
         "lockedBy": [
@@ -118,7 +450,12 @@
             "id": "Berserking"
           }
         ],
-        "dependsOn": []
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 40
+          }
+        ]
       },
       "Berserking": {
         "lockedBy": [
@@ -127,25 +464,34 @@
             "id": "Last_Stand"
           }
         ],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 40
+          }
+        ]
+      },
+      "Stoneskin": {
+        "lockedBy": [],
         "dependsOn": []
       },
       "Nucleus": {
-        "lockedBy": [
+        "lockedBy": [],
+        "dependsOn": [
           {
-            "type": "constant",
-            "id": "Daze"
+            "type": "talent_points_spent",
+            "amount": 15
           }
-        ],
-        "dependsOn": []
+        ]
       },
       "Daze": {
-        "lockedBy": [
+        "lockedBy": [],
+        "dependsOn": [
           {
-            "type": "constant",
-            "id": "Nucleus"
+            "type": "talent_points_spent",
+            "amount": 5
           }
-        ],
-        "dependsOn": []
+        ]
       },
       "Weakness_Affinity": {
         "lockedBy": [
@@ -186,796 +532,554 @@
         ],
         "dependsOn": []
       },
-      "Mekanism Generators": {
+      "Methodical": {
+        "lockedBy": [],
         "dependsOn": [
           {
+            "type": "talent_points_spent",
+            "amount": 15
+          },
+          {
             "type": "constant",
-            "id": "Mekanism"
+            "id": "Depleted"
+          }
+        ]
+      },
+      "Depleted": {
+        "lockedBy": [],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 5
+          }
+        ]
+      },
+      "Blizzard": {
+        "lockedBy": [],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 15
+          }
+        ]
+      },
+      "Frostbite": {
+        "lockedBy": [],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 15
+          }
+        ]
+      },
+      "Blight": {
+        "lockedBy": [],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 40
+          }
+        ]
+      },
+      "Toxic_Reaction": {
+        "lockedBy": [],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 25
+          }
+        ]
+      },
+      "Lightning_Damage": {
+        "lockedBy": [],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 15
+          }
+        ]
+      },
+      "Lightning_Stun": {
+        "lockedBy": [],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 25
+          },
+          {
+            "type": "constant",
+            "id": "Lightning_Damage"
+          }
+        ]
+      },
+      "Axe_Specialisation": {
+        "lockedBy": [
+          {
+            "type": "constant",
+            "id": "Sword_Specialisation"
           }
         ],
-        "ignoreArrow": true,
-        "lockedBy": []
-      },
-      "Digital Miner": {
         "dependsOn": [
           {
+            "type": "talent_points_spent",
+            "amount": 5
+          },
+          {
             "type": "constant",
-            "id": "Mekanism"
+            "id": "Strength"
+          }
+        ]
+      },
+      "Sword_Specialisation": {
+        "lockedBy": [
+          {
+            "type": "constant",
+            "id": "Axe_Specialisation"
           }
         ],
-        "ignoreArrow": true,
-        "lockedBy": []
-      },
-      "Mekanism QIO": {
         "dependsOn": [
           {
+            "type": "talent_points_spent",
+            "amount": 5
+          },
+          {
             "type": "constant",
-            "id": "Mekanism"
+            "id": "Strength"
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Applied Compatability": {
+      "Voltaic_Impact": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Applied Energistics"
+            "type": "talent_points_spent",
+            "amount": 5
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Applied Botanics": {
+      "Fatal_Strike": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Applied Energistics"
-          },
-          {
-            "type": "constant",
-            "id": "Botania"
+            "type": "talent_points_spent",
+            "amount": 5
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Advanced Peripherals": {
+      "Fatal_Strike_II": {
+        "lockedBy": [],
         "dependsOn": [
           {
+            "type": "talent_points_spent",
+            "amount": 40
+          },
+          {
             "type": "constant",
-            "id": "ComputerCraft"
+            "id": "Fatal_Strike"
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Compressed Creativity": {
+      "Cleave": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Create"
-          },
-          {
-            "type": "constant",
-            "id": "PneumaticCraft"
+            "type": "talent_points_spent",
+            "amount": 5
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Applied Mekanistics": {
+      "Mana_Harvest": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Applied Energistics"
-          },
-          {
-            "type": "constant",
-            "id": "Mekanism"
+            "type": "talent_points_spent",
+            "amount": 5
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Incorporeal": {
+      "Heart_Fragments": {
+        "lockedBy": [],
+        "dependsOn": []
+      },
+      "Mana_Steal": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Botania"
+            "type": "talent_points_spent",
+            "amount": 15
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Botanical Machinery": {
+      "Mana_Steal_II": {
+        "lockedBy": [],
         "dependsOn": [
           {
+            "type": "talent_points_spent",
+            "amount": 40
+          },
+          {
             "type": "constant",
-            "id": "Botania"
+            "id": "Mana_Steal"
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Mystical Agriculture": {
+      "Life_Steal": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Botania"
-          },
-          {
-            "type": "constant",
-            "id": "Bonsai Pots"
-          },
-          {
-            "type": "constant",
-            "id": "Botany Pots"
-          },
-          {
-            "type": "constant",
-            "id": "Botanical Machinery"
-          },
-          {
-            "type": "constant",
-            "id": "Botania Flux Field"
-          },
-          {
-            "type": "constant",
-            "id": "Incorporeal"
+            "type": "talent_points_spent",
+            "amount": 15
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "QuarryPlus": {
+      "Life_Steal_II": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Oops, All Iron Mods"
+            "type": "talent_points_spent",
+            "amount": 40
           },
           {
             "type": "constant",
-            "id": "Mekanism"
-          },
-          {
-            "type": "constant",
-            "id": "Digital Miner"
-          },
-          {
-            "type": "constant",
-            "id": "Create Ore Excavation"
-          },
-          {
-            "type": "constant",
-            "id": "Mining Gadgets"
+            "id": "Life_Steal"
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Create Ore Excavation": {
+      "Blood_Rush": {
+        "lockedBy": [],
         "dependsOn": [
           {
+            "type": "talent_points_spent",
+            "amount": 25
+          },
+          {
             "type": "constant",
-            "id": "Create"
+            "id": "Methodical"
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Create Diesel Generators": {
+      "Sorcery": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Create"
-          },
-          {
-            "type": "constant",
-            "id": "Create Crafts and Additions"
+            "type": "talent_points_spent",
+            "amount": 5
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Create Mechanical Extruder": {
+      "Witchery": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Create"
+            "type": "talent_points_spent",
+            "amount": 5
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Create Crafts and Additions": {
+      "Bountiful_Harvest": {
+        "lockedBy": [],
+        "dependsOn": []
+      },
+      "Treasure_Seeker": {
+        "lockedBy": [],
+        "dependsOn": []
+      },
+      "Speed": {
+        "lockedBy": [],
+        "dependsOn": []
+      },
+      "Arcana": {
+        "lockedBy": [],
         "dependsOn": [
           {
+            "type": "talent_points_spent",
+            "amount": 15
+          },
+          {
             "type": "constant",
-            "id": "Create"
+            "id": "Sorcery"
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Extra Storage": {
+      "Horde_Mastery": {
+        "lockedBy": [],
         "dependsOn": [
           {
+            "type": "talent_points_spent",
+            "amount": 25
+          },
+          {
             "type": "constant",
-            "id": "Refined Storage"
+            "id": "Witchery"
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Cable Tiers": {
+      "Dungeon_Mastery": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Refined Storage"
+            "type": "talent_points_spent",
+            "amount": 25
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Mega Cells": {
+      "Frenzy": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Applied Energistics"
-          },
-          {
-            "type": "constant",
-            "id": "Mekanism"
+            "type": "talent_points_spent",
+            "amount": 25
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Thermal Dynamos": {
+      "Prime_Amplification": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Thermal Expansion"
+            "type": "talent_points_spent",
+            "amount": 25
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Phytogenic Insulator": {
+      "Blazing": {
+        "lockedBy": [],
         "dependsOn": [
           {
+            "type": "talent_points_spent",
+            "amount": 40
+          },
+          {
             "type": "constant",
-            "id": "Thermal Expansion"
+            "id": "Speed_II"
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Belts": {
+      "Assassin_Mastery": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Double Pouches"
+            "type": "talent_points_spent",
+            "amount": 25
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Double Pouches": {
-        "dependsOn": [],
-        "ignoreArrow": true,
-        "lockedBy": []
-      },
-      "Backpacks": {
+      "Champion_Mastery": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Belts"
+            "type": "talent_points_spent",
+            "amount": 40
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Misc Bag Upgrades": {
+      "Lucky_Momentum": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Backpacks"
+            "type": "talent_points_spent",
+            "amount": 40
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Bag Inception": {
+      "Javelin_Conduct": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Big Backpacks"
-          },
-          {
-            "type": "constant",
-            "id": "Junk Management"
-          },
-          {
-            "type": "constant",
-            "id": "Soul Harvester"
-          },
-          {
-            "type": "constant",
-            "id": "Stack Upgrading"
-          },
-          {
-            "type": "constant",
-            "id": "Auto Feeding"
-          },
-          {
-            "type": "constant",
-            "id": "Misc Bag Upgrades"
-          },
-          {
-            "type": "constant",
-            "id": "Scanner"
+            "type": "talent_points_spent",
+            "amount": 40
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Big Backpacks": {
+      "Javelin_Frugal": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Backpacks"
+            "type": "talent_points_spent",
+            "amount": 40
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Botania Flux Field": {
+      "Hunters_Instinct": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Botania"
+            "type": "talent_points_spent",
+            "amount": 40
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Mixtures": {
+      "Farmer_Twerker": {
+        "lockedBy": [],
+        "dependsOn": []
+      },
+      "Strength": {
+        "lockedBy": [],
+        "dependsOn": []
+      },
+      "Intelligence": {
+        "lockedBy": [],
+        "dependsOn": []
+      },
+      "Haste": {
+        "lockedBy": [],
+        "dependsOn": []
+      },
+      "Purist": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Potions"
+            "type": "talent_points_spent",
+            "amount": 5
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Brews": {
+      "Prudent": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Mixtures"
+            "type": "talent_points_spent",
+            "amount": 5
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Automatic Genius": {
+      "Speed_II": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "Occultism"
-          },
-          {
-            "type": "constant",
-            "id": "Ars Nouveau"
-          },
-          {
-            "type": "constant",
-            "id": "Easy Villagers"
-          },
-          {
-            "type": "constant",
-            "id": "Better Wallets"
-          },
-          {
-            "type": "constant",
-            "id": "Bag Inception"
-          },
-          {
-            "type": "constant",
-            "id": "Misc Bag Upgrades"
-          },
-          {
-            "type": "constant",
-            "id": "Junk Management"
-          },
-          {
-            "type": "constant",
-            "id": "Phytogenic Insulator"
-          },
-          {
-            "type": "constant",
-            "id": "Digital Miner"
-          },
-          {
-            "type": "constant",
-            "id": "Brews"
-          },
-          {
-            "type": "constant",
-            "id": "Thermal Dynamos"
-          },
-          {
-            "type": "constant",
-            "id": "Altar Automation"
-          },
-          {
-            "type": "constant",
-            "id": "Mekanism QIO"
-          },
-          {
-            "type": "constant",
-            "id": "Create Ore Excavation"
-          },
-          {
-            "type": "constant",
-            "id": "Mekanism Generators"
-          },
-          {
-            "type": "constant",
-            "id": "Powah"
-          },
-          {
-            "type": "constant",
-            "id": "Flux Networks"
-          },
-          {
-            "type": "constant",
-            "id": "Botany Pots"
-          },
-          {
-            "type": "constant",
-            "id": "Bonsai Pots"
-          },
-          {
-            "type": "constant",
-            "id": "Cagerium"
-          },
-          {
-            "type": "constant",
-            "id": "Hostile Neural Networks"
-          },
-          {
-            "type": "constant",
-            "id": "Create Mechanical Extruder"
-          },
-          {
-            "type": "constant",
-            "id": "Dark Utilities"
-          },
-          {
-            "type": "constant",
-            "id": "Industrial Foregoing"
-          },
-          {
-            "type": "constant",
-            "id": "PneumaticCraft"
-          },
-          {
-            "type": "constant",
-            "id": "Mob Spawners"
-          },
-          {
-            "type": "constant",
-            "id": "Psi"
-          },
-          {
-            "type": "constant",
-            "id": "ComputerCraft"
-          },
-          {
-            "type": "constant",
-            "id": "Pipez"
-          },
-          {
-            "type": "constant",
-            "id": "Modular Routers"
-          },
-          {
-            "type": "constant",
-            "id": "Hexcasting"
-          },
-          {
-            "type": "constant",
-            "id": "LaserIO"
-          },
-          {
-            "type": "constant",
-            "id": "Super Factory Manager"
-          },
-          {
-            "type": "constant",
-            "id": "Xnet"
-          },
-          {
-            "type": "constant",
-            "id": "Elevators"
-          },
-          {
-            "type": "constant",
-            "id": "Oops, All Iron Mods"
-          },
-          {
-            "type": "constant",
-            "id": "Functional Storage"
-          },
-          {
-            "type": "constant",
-            "id": "Drawers"
-          },
-          {
-            "type": "constant",
-            "id": "Sophisticated Storage"
-          },
-          {
-            "type": "constant",
-            "id": "Mining Gadgets"
-          },
-          {
-            "type": "constant",
-            "id": "Building Gadgets"
-          },
-          {
-            "type": "constant",
-            "id": "Trashcans"
-          },
-          {
-            "type": "constant",
-            "id": "Torch Master"
-          },
-          {
-            "type": "constant",
-            "id": "Waystones"
-          },
-          {
-            "type": "constant",
-            "id": "Toms Simple Storage"
-          },
-          {
-            "type": "constant",
-            "id": "Cloud Storage"
-          },
-          {
-            "type": "constant",
-            "id": "RFTools Storage"
-          },
-          {
-            "type": "constant",
-            "id": "Colossal Chests"
-          },
-          {
-            "type": "constant",
-            "id": "Mega Cells"
-          },
-          {
-            "type": "constant",
-            "id": "Extra Storage"
-          },
-          {
-            "type": "constant",
-            "id": "Botanical Machinery"
-          },
-          {
-            "type": "constant",
-            "id": "Applied Compatability"
-          },
-          {
-            "type": "constant",
-            "id": "Create Crafts and Additions"
-          },
-          {
-            "type": "constant",
-            "id": "Create Diesel Generators"
-          },
-          {
-            "type": "constant",
-            "id": "Time in a Bottle"
-          },
-          {
-            "type": "constant",
-            "id": "QuarryPlus"
-          },
-          {
-            "type": "constant",
-            "id": "Mystical Agriculture"
-          },
-          {
-            "type": "constant",
-            "id": "Entangled"
-          },
-          {
-            "type": "constant",
-            "id": "Cable Tiers"
-          },
-          {
-            "type": "constant",
-            "id": "Little Logistics"
-          },
-          {
-            "type": "constant",
-            "id": "Incorporeal"
-          },
-          {
-            "type": "constant",
-            "id": "Advanced Peripherals"
-          },
-          {
-            "type": "constant",
-            "id": "Compressed Creativity"
-          },
-          {
-            "type": "constant",
-            "id": "RFTools Power"
-          },
-          {
-            "type": "constant",
-            "id": "Immersive Engineering"
-          },
-          {
-            "type": "constant",
-            "id": "Dave's Potioneering"
-          },
-          {
-            "type": "constant",
-            "id": "Integrated Dynamics"
-          },
-          {
-            "type": "constant",
-            "id": "Refined Storage"
-          },
-          {
-            "type": "constant",
-            "id": "Applied Energistics"
-          },
-          {
-            "type": "constant",
-            "id": "Botania"
-          },
-          {
-            "type": "constant",
-            "id": "Mekanism"
-          },
-          {
-            "type": "constant",
-            "id": "Create"
-          },
-          {
-            "type": "constant",
-            "id": "Mega Cells"
-          },
-          {
-            "type": "constant",
-            "id": "RFTools Utility"
+            "type": "talent_points_spent",
+            "amount": 15
           },
           {
             "type": "constant",
-            "id": "Thermal Expansion"
+            "id": "Speed"
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Draconic Evolution": {
+      "Intelligence_II": {
+        "lockedBy": [],
         "dependsOn": [
           {
-            "type": "constant",
-            "id": "RFTools Power"
+            "type": "talent_points_spent",
+            "amount": 15
           },
           {
             "type": "constant",
-            "id": "Powah"
-          },
-          {
-            "type": "constant",
-            "id": "Flux Networks"
-          },
-          {
-            "type": "constant",
-            "id": "Thermal Dynamos"
-          },
-          {
-            "type": "constant",
-            "id": "Mekanism Generators"
-          },
-          {
-            "type": "constant",
-            "id": "Botania Flux Field"
+            "id": "Intelligence"
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Altar Automation": {
+      "Might_II": {
+        "lockedBy": [],
         "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 25
+          },
           {
             "type": "either",
             "gates": [
               {
                 "type": "constant",
-                "id": "Refined Storage"
+                "id": "Axe_Specialisation"
               },
               {
                 "type": "constant",
-                "id": "Applied Energistics"
+                "id": "Sword_Specialisation"
               }
             ]
           }
-        ],
-        "ignoreArrow": true,
-        "lockedBy": []
+        ]
       },
-      "Methodical": {
+      "Haste_II": {
+        "lockedBy": [],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 25
+          },
+          {
+            "type": "constant",
+            "id": "Haste"
+          }
+        ]
+      },
+      "Prudent_II": {
+        "lockedBy": [],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 40
+          },
+          {
+            "type": "constant",
+            "id": "Prudent"
+          }
+        ]
+      },
+      "Ethereal": {
         "lockedBy": [
           {
             "type": "constant",
-            "id": "Depleted"
+            "id": "Quickening"
           }
         ],
         "dependsOn": []
       },
-      "Depleted": {
+      "Quickening": {
         "lockedBy": [
           {
             "type": "constant",
-            "id": "Methodical"
+            "id": "Ethereal"
           }
         ],
         "dependsOn": []
       },
-      "Blizzard": {
-        "lockedBy": [
+      "Trap_Disarm": {
+        "lockedBy": [],
+        "dependsOn": []
+      },
+      "Clean_Escape": {
+        "lockedBy": [],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 15
+          }
+        ]
+      },
+      "Executioner": {
+        "lockedBy": [],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 5
+          }
+        ]
+      },
+      "Battle_Trance": {
+        "lockedBy": [],
+        "dependsOn": [
+          {
+            "type": "talent_points_spent",
+            "amount": 40
+          },
           {
             "type": "constant",
-            "id": "Frostbite"
+            "id": "Might_II"
           }
-        ],
-        "dependsOn": []
+        ]
       },
-      "Frostbite": {
-        "lockedBy": [
+      "Treasure_Sense": {
+        "lockedBy": [],
+        "dependsOn": [
           {
-            "type": "constant",
-            "id": "Blizzard"
+            "type": "talent_points_spent",
+            "amount": 40
           }
-        ],
-        "dependsOn": []
+        ]
       },
-      "Blight": {
-        "lockedBy": [
-          {
-            "type": "constant",
-            "id": "Toxic_Reaction"
-          }
-        ],
-        "dependsOn": []
-      },
-      "Toxic_Reaction": {
-        "lockedBy": [
-          {
-            "type": "constant",
-            "id": "Blight"
-          }
-        ],
-        "dependsOn": []
-      },
-      "Lightning_Damage": {
-        "lockedBy": [{ "type": "constant", "id": "Lightning_Stun" }],
-        "dependsOn": []
-      },
-      "Lightning_Stun": {
-        "lockedBy": [{ "type": "constant", "id": "Lightning_Damage" }],
+      "Lingering_Fumes": {
+        "lockedBy": [],
         "dependsOn": []
       }
     }

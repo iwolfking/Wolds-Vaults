@@ -79,7 +79,7 @@ onEvent("recipes", event => {
         R: 'the_vault:echo_pog'
     })
 
-    event.shaped(Item.of('extrastorage:storagepart_4096k'),
+    event.shaped(Item.of('extrastorage:storagepart_1024k'),
         [
             'PIP',
             'CRC',
@@ -88,6 +88,18 @@ onEvent("recipes", event => {
         P: 'refinedstorage:advanced_processor',
         I: 'the_vault:echoing_ingot',
         C: 'extrastorage:storagepart_256k',
+        R: 'the_vault:echo_pog'
+    })
+
+    event.shaped(Item.of('extrastorage:storagepart_4096k'),
+        [
+            'PIP',
+            'CRC',
+            'PCP'
+        ], {
+        P: 'refinedstorage:advanced_processor',
+        I: 'the_vault:echoing_ingot',
+        C: 'extrastorage:storagepart_1024k',
         R: 'the_vault:omega_pog'
     })
 

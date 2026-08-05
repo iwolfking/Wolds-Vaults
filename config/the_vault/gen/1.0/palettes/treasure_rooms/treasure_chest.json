@@ -27,45 +27,97 @@
       ]
     },
     {
-        "type": "leveled",
-        "levels": [
-            {
-                "level": 0,
-                "type": "weighted_target",
-                "target": "the_vault:treasure_pedestal",
-                "output": {
-                    "the_vault:treasure_pedestal{LootTable:\"the_vault:treasure_pillar\"}": 7,
-                    "minecraft:air": 3
-                }
-            }
-        ]
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "minecraft:lime_concrete",
+          "output": {
+            "the_vault:treasure_container{Generated:0b,LootTable:\"the_vault:treasure_chest_velara\"}": 1
+          }
+        }
+      ]
     },
     {
-        "type": "leveled",
-        "levels": [
-            {
-                "level": 0,
-                "type": "weighted_target",
-                "target": "minecraft:light_blue_wool",
-                "output": {
-                    "the_vault:treasure_pedestal{LootTable:\"the_vault:treasure_pillar\"}": 3,
-                    "minecraft:air": 7
-                }
-            }
-        ]
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "minecraft:blue_concrete",
+          "output": {
+            "the_vault:treasure_container{Generated:0b,LootTable:\"the_vault:treasure_chest_tenos\"}": 1
+          }
+        }
+      ]
     },
     {
-        "type": "leveled",
-        "levels": [
-            {
-                "level": 0,
-                "type": "weighted_target",
-                "target": "minecraft:blue_wool",
-                "output": {
-                    "the_vault:treasure_pedestal{LootTable:\"the_vault:treasure_pillar\"}": 1
-                }
-            }
-        ]
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "minecraft:yellow_concrete",
+          "output": {
+            "the_vault:treasure_container{Generated:0b,LootTable:\"the_vault:treasure_chest_wendarr\"}": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "minecraft:red_concrete",
+          "output": {
+            "the_vault:treasure_container{Generated:0b,LootTable:\"the_vault:treasure_chest_idona\"}": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "the_vault:treasure_pedestal",
+          "output": {
+            "the_vault:treasure_pedestal{LootTable:\"the_vault:treasure_pillar\"}": 7,
+            "minecraft:air": 3
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "minecraft:light_blue_wool",
+          "output": {
+            "the_vault:treasure_pedestal{LootTable:\"the_vault:treasure_pillar\"}": 3,
+            "minecraft:air": 7
+          }
+        }
+      ]
+    },
+    {
+      "type": "leveled",
+      "levels": [
+        {
+          "level": 0,
+          "type": "weighted_target",
+          "target": "minecraft:blue_wool",
+          "output": {
+            "the_vault:treasure_pedestal{LootTable:\"the_vault:treasure_pillar\"}": 1
+          }
+        }
+      ]
     },
     {
       "type": "weighted_target",
@@ -92,6 +144,181 @@
           },
           "failure": {
             "the_vault:vault_stone": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:polished_vault_stone",
+      "output": {
+        "the_vault:ore_painite[type=vault_stone,generated=true]": 60,
+        "the_vault:ore_black_opal[type=vault_stone,generated=true]": 20,
+        "the_vault:vault_stone": 60
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "the_vault:vault_stone",
+      "output": {
+        "the_vault:ore_painite[type=vault_stone,generated=true]": 75,
+        "the_vault:ore_alexandrite[type=vault_stone,generated=true]": 35,
+        "the_vault:ore_wutodie[type=vault_stone,generated=true]": 35,
+        "the_vault:ore_benitoite[type=vault_stone,generated=true]": 50,
+        "the_vault:ore_larimar[type=vault_stone,generated=true]": 40,
+        "the_vault:ore_black_opal[type=vault_stone,generated=true]": 75,
+        "the_vault:ore_echo[type=vault_stone,generated=true]": 5,
+        "the_vault:vault_stone": 70
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "woldsvaults:hellish_sand",
+      "output": {
+        "woldsvaults:hellish_sand{LootTable:\"the_vault:hellish_sand_idona\"}": 1
+      }
+    },
+    {
+      "type": "weighted_target",
+      "target": "woldsvaults:iskallian_leaves",
+      "output": {
+        "woldsvaults:iskallian_leaves{LootTable:\"the_vault:iskallian_leaves_velara\"}": 1
+      }
+    },
+    {
+      "type": "placeholder",
+      "target": "LIVING_CHEST",
+      "levels": [
+        {
+          "level": 50,
+          "probability": 1.0,
+          "success": {
+            "the_vault:living_strongbox{LootTable:\"the_vault:living_strongbox_lvl50\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 60,
+          "probability": 1.0,
+          "success": {
+            "the_vault:living_strongbox{LootTable:\"the_vault:living_strongbox_lvl50\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 70,
+          "probability": 1.0,
+          "success": {
+            "the_vault:living_strongbox{LootTable:\"the_vault:living_strongbox_lvl70\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 80,
+          "probability": 1.0,
+          "success": {
+            "the_vault:living_strongbox{LootTable:\"the_vault:living_strongbox_lvl70\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 100,
+          "probability": 1.0,
+          "success": {
+            "the_vault:living_strongbox{LootTable:\"the_vault:living_strongbox_lvl70\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "placeholder",
+      "target": "ORNATE_CHEST",
+      "levels": [
+        {
+          "level": 50,
+          "probability": 1.0,
+          "success": {
+            "the_vault:ornate_strongbox{LootTable:\"the_vault:ornate_strongbox_lvl50\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 65,
+          "probability": 1.0,
+          "success": {
+            "the_vault:ornate_strongbox{LootTable:\"the_vault:ornate_strongbox_lvl65\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 80,
+          "probability": 1.0,
+          "success": {
+            "the_vault:ornate_strongbox{LootTable:\"the_vault:ornate_strongbox_lvl65\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 100,
+          "probability": 1.0,
+          "success": {
+            "the_vault:ornate_strongbox{LootTable:\"the_vault:ornate_strongbox_lvl65\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "placeholder",
+      "target": "GILDED_CHEST",
+      "levels": [
+        {
+          "level": 50,
+          "probability": 1.0,
+          "success": {
+            "the_vault:gilded_strongbox{LootTable:\"the_vault:gilded_strongbox_lvl50\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 80,
+          "probability": 1.0,
+          "success": {
+            "the_vault:gilded_strongbox{LootTable:\"the_vault:gilded_strongbox_lvl50\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 100,
+          "probability": 1.0,
+          "success": {
+            "the_vault:gilded_strongbox{LootTable:\"the_vault:gilded_strongbox_lvl50\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
           }
         }
       ]

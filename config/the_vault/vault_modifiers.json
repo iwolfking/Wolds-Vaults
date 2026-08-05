@@ -776,6 +776,23 @@
           "icon": "the_vault:gui/modifiers/pandora"
         }
       },
+      "woldsvaults:cardboard_boxes": {
+        "properties": {
+          "output": "the_vault:cardboard_box{LootTable:\"the_vault:cardboard_box\"}",
+          "attemptsPerChunk": 3,
+          "requireConditions": true,
+          "roomTypeWhitelist": [
+            "COMMON",
+            "ORE"
+          ]
+        },
+        "display": {
+          "name": "Moving Day",
+          "color": "#ffae00",
+          "description": "Spawns Cardboard Boxes inside the vault",
+          "icon": "the_vault:gui/modifiers/pandora"
+        }
+      },
       "the_vault:coin_pile": {
         "properties": {
           "output": "the_vault:placeholder[type=coin_stacks]",
@@ -1281,13 +1298,148 @@
       "the_vault:bronze_nuke": {
         "properties": {
           "filter": "",
-          "lootTable": "the_vault:bronze_table"
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "the_vault:bronze_table"
+            }
+          ],
+          "chance": 1,
+          "singleItem": false
         },
         "display": {
           "name": "Coin Explosion",
           "color": "#e6fffe",
           "description": "Killing a mob will have it drop bronze or silver!",
           "icon": "the_vault:gui/modifiers/kill_coin"
+        }
+      },
+      "the_vault:wooden_mob_drops": {
+        "properties": {
+          "filter": "",
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "the_vault:wooden_chest_lvl0"
+            },
+            {
+              "level": 20,
+              "lootTable": "the_vault:wooden_chest_lvl20"
+            },
+            {
+              "level": 30,
+              "lootTable": "the_vault:wooden_chest_lvl30"
+            }
+          ],
+          "chance": 0.1,
+          "singleItem": true
+        },
+        "display": {
+          "name": "Wooden Mob Drops",
+          "color": "#c7b281",
+          "description": "Killing a mob has a 10% chance to drop Wooden Chest loot.",
+          "descriptionFormatted": "Killing a mob has a %d%% chance to drop Wooden Chest loot.",
+          "icon": "the_vault:gui/modifiers/wooden_chests"
+        }
+      },
+      "the_vault:gilded_mob_drops": {
+        "properties": {
+          "filter": "",
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "the_vault:gilded_chest_lvl0"
+            },
+            {
+              "level": 20,
+              "lootTable": "the_vault:gilded_chest_lvl20"
+            },
+            {
+              "level": 50,
+              "lootTable": "the_vault:gilded_chest_lvl50"
+            }
+          ],
+          "chance": 0.1,
+          "singleItem": true
+        },
+        "display": {
+          "name": "Gilded Mob Drops",
+          "color": "#FFEC00",
+          "description": "Killing a mob has a 10% chance to drop Gilded Chest loot.",
+          "descriptionFormatted": "Killing a mob has a %d%% chance to drop Gilded Chest loot.",
+          "icon": "the_vault:gui/modifiers/gilded_chests"
+        }
+      },
+      "the_vault:ornate_mob_drops": {
+        "properties": {
+          "filter": "",
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "the_vault:ornate_chest_lvl0"
+            },
+            {
+              "level": 20,
+              "lootTable": "the_vault:ornate_chest_lvl20"
+            },
+            {
+              "level": 30,
+              "lootTable": "the_vault:ornate_chest_lvl30"
+            },
+            {
+              "level": 50,
+              "lootTable": "the_vault:ornate_chest_lvl50"
+            },
+            {
+              "level": 65,
+              "lootTable": "the_vault:ornate_chest_lvl65"
+            }
+          ],
+          "chance": 0.1,
+          "singleItem": true
+        },
+        "display": {
+          "name": "Ornate Mob Drops",
+          "color": "#c90d73",
+          "description": "Killing a mob has a 10% chance to drop Ornate Chest loot.",
+          "descriptionFormatted": "Killing a mob has a %d%% chance to drop Ornate Chest loot.",
+          "icon": "the_vault:gui/modifiers/ornate_chests"
+        }
+      },
+      "the_vault:living_mob_drops": {
+        "properties": {
+          "filter": "",
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "the_vault:living_chest_lvl0"
+            },
+            {
+              "level": 10,
+              "lootTable": "the_vault:living_chest_lvl10"
+            },
+            {
+              "level": 20,
+              "lootTable": "the_vault:living_chest_lvl20"
+            },
+            {
+              "level": 30,
+              "lootTable": "the_vault:living_chest_lvl30"
+            },
+            {
+              "level": 40,
+              "lootTable": "the_vault:living_chest_lvl40"
+            }
+          ],
+          "chance": 0.1,
+          "singleItem": true
+        },
+        "display": {
+          "name": "Living Mob Drops",
+          "color": "#38d800",
+          "description": "Killing a mob has a 10% chance to drop Living Chest loot.",
+          "descriptionFormatted": "Killing a mob has a %d%% chance to drop Living Chest loot.",
+          "icon": "the_vault:gui/modifiers/living_chests"
         }
       }
     },
@@ -1658,12 +1810,12 @@
       },
       "the_vault:goblin_quantity": {
         "properties": {
-          "percentage": 1.0
+          "percentage": 2.0
         },
         "display": {
           "name": "Goblin Hoard",
           "color": "#ffcc73",
-          "description": "+100% Item Quantity",
+          "description": "+200% Item Quantity",
           "descriptionFormatted": "+%d%% Item Quantity",
           "icon": "the_vault:gui/modifiers/item_quant_2"
         }
@@ -1755,12 +1907,12 @@
       },
       "the_vault:hoard": {
         "properties": {
-          "percentage": 0.5
+          "percentage": 1.0
         },
         "display": {
           "name": "Hoard",
           "color": "#ffaf23",
-          "description": "+50% Item Quantity",
+          "description": "+100% Item Quantity",
           "descriptionFormatted": "+%d%% Item Quantity",
           "icon": "the_vault:gui/modifiers/item_quant_4"
         }
@@ -2052,7 +2204,7 @@
           "name": "Critical Mobs",
           "color": "#dc693c",
           "description": "+7.5% Mob Critical Strike Chance",
-          "descriptionFormatted": "+%d%% Mob Critical Strike Chance",
+          "descriptionFormatted": "+7.5 Mob Critical Strike Chance",
           "icon": "the_vault:gui/modifiers/destructive"
         }
       },
@@ -2635,13 +2787,13 @@
         "properties": {
           "damage": 3.0,
           "movementSpeed": 0.1,
-          "maxHealth": 2.0,
+          "maxHealth": 3.0,
           "doHealthReduction": true
         },
         "display": {
           "name": "Frenzy",
           "color": "#FC7C5C",
-          "description": "+300% Mob Damage, +10% Mob Speed, Mob Health reduced to 1",
+          "description": "+300% Mob Damage, +10% Mob Speed, Mobs take Double Damage",
           "icon": "the_vault:gui/modifiers/frenzy"
         }
       },
@@ -2649,7 +2801,7 @@
         "properties": {
           "damage": 2.0,
           "movementSpeed": 0.25,
-          "maxHealth": 2.0,
+          "maxHealth": 1.0,
           "doHealthReduction": false
         },
         "display": {
@@ -2669,7 +2821,7 @@
         "display": {
           "name": "Overpower",
           "color": "#e6fffe",
-          "description": "Mobs spawn with 1 heart!",
+          "description": "Mobs take double damage!",
           "icon": "the_vault:gui/modifiers/overpower"
         }
       }
@@ -2677,12 +2829,12 @@
     "the_vault:modifier_type/spawner_mobs": {
       "the_vault:mob_increase": {
         "properties": {
-          "increase": 1.0
+          "increase": 0.5
         },
         "display": {
           "name": "Onslaught",
           "color": "#FC7C5C",
-          "description": "+20% Mob Spawns",
+          "description": "+50% Mob Spawns",
           "descriptionFormatted": "+%d%% increased amount of mob spawns",
           "icon": "the_vault:gui/modifiers/mob_increase"
         }
@@ -2725,12 +2877,12 @@
       },
       "the_vault:unhinged_mob_increase": {
         "properties": {
-          "increase": 3.0
+          "increase": 1.5
         },
         "display": {
           "name": "Super Onslaught",
           "color": "#FC7C5C",
-          "description": "+200% Mob Spawns",
+          "description": "+150% Mob Spawns",
           "descriptionFormatted": "+%d%% increased amount of mob spawns",
           "icon": "the_vault:gui/modifiers/mob_increase"
         }
@@ -2955,6 +3107,20 @@
           "icon": "the_vault:gui/modifiers/god_token_idona"
         }
       },
+      "the_vault:reduce_attack_damage": {
+        "properties": {
+          "type": "attack_damage_additive_percentile",
+          "amount": -0.1,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Reduced Attack Damage",
+          "color": "#FF5555",
+          "description": "Players deal less physical damage in this vault",
+          "descriptionFormatted": "-20% Attack Damage",
+          "icon": "the_vault:gui/modifiers/god_token_idona"
+        }
+      },
       "the_vault:kbres": {
         "properties": {
           "type": "knockback_resistance_additive",
@@ -3013,6 +3179,23 @@
           "name": "Injured",
           "color": "#bc2525",
           "description": "-10% Max Health",
+          "descriptionFormatted": "-%d%% Max Health",
+          "icon": "the_vault:gui/modifiers/injured"
+        }
+      },
+      "the_vault:injured_percent_small": {
+        "properties": {
+          "type": "max_health_additive_percentile",
+          "amount": -0.02,
+          "attributeStackingStrategy": "STACK",
+          "reputation": {
+            "addendPerLevel": 0.01
+          }
+        },
+        "display": {
+          "name": "Injured",
+          "color": "#bc2525",
+          "description": "-5% Max Health",
           "descriptionFormatted": "-%d%% Max Health",
           "icon": "the_vault:gui/modifiers/injured"
         }
@@ -3170,6 +3353,19 @@
       }
     },
     "the_vault:modifier_type/player_effect": {
+       "woldsvaults:lights_out": {
+        "properties": {
+          "effect": "wildbackport:darkness",
+          "effectAmplifier": 0
+        },
+        "display": {
+          "name": "Light's Out",
+          "color": "#47402d",
+          "description": "Permanent Blindness Effect",
+          "descriptionFormatted": "Permanent Blindness Effect",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
       "the_vault:hunger": {
         "properties": {
           "effect": "minecraft:hunger",
@@ -3185,6 +3381,36 @@
           "icon": "the_vault:gui/modifiers/hunger"
         }
       },
+      "woldsvaults:unlucky_aura": {
+        "properties": {
+          "effect": "minecraft:unluck",
+          "effectAmplifier": 2,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Jinxed",
+          "color": "#5032a8",
+          "description": "You aren't feeling very lucky...",
+          "descriptionFormatted": "+%d Unluck",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
+      "woldsvaults:doomed_aura": {
+        "properties": {
+          "effect": "minecraft:unluck",
+          "effectAmplifier": 6,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Doomed",
+          "color": "#5032a8",
+          "description": "It seems almost all the luck has been sucked out of the Vault...",
+          "descriptionFormatted": "+%d Unluck",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
       "the_vault:lucky": {
         "properties": {
           "effect": "minecraft:luck",
@@ -3196,6 +3422,21 @@
           "name": "Lucky",
           "color": "#b3ff20",
           "description": "+1 Luck",
+          "descriptionFormatted": "+%d Luck",
+          "icon": "the_vault:gui/modifiers/lucky"
+        }
+      },
+      "woldsvaults:super_lucky": {
+        "properties": {
+          "effect": "minecraft:luck",
+          "effectAmplifier": 4,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Four-Leafed Clover",
+          "color": "#b3ff20",
+          "description": "+4 Luck",
           "descriptionFormatted": "+%d Luck",
           "icon": "the_vault:gui/modifiers/lucky"
         }
@@ -3769,6 +4010,19 @@
           "icon": "the_vault:gui/modifiers/speed"
         }
       },
+      "the_vault:reduce_movement_speed": {
+        "properties": {
+          "stat": "speed",
+          "addend": -0.02
+        },
+        "display": {
+          "name": "Movement Speed",
+          "color": "#dea700",
+          "description": "-4% Movement Speed",
+          "descriptionFormatted": "%d%% Movement Speed",
+          "icon": "the_vault:gui/modifiers/speed"
+        }
+      },
       "the_vault:clumsy": {
         "properties": {
           "stat": "block_chance",
@@ -3882,6 +4136,19 @@
           "name": "Inert",
           "color": "#6DACB5",
           "description": "-10% Cooldown Reduction",
+          "descriptionFormatted": "%d%% Cooldown Reduction",
+          "icon": "the_vault:gui/modifiers/inert"
+        }
+      },
+      "the_vault:inert_small": {
+        "properties": {
+          "stat": "cooldown_reduction",
+          "addend": -0.05
+        },
+        "display": {
+          "name": "Inert",
+          "color": "#6DACB5",
+          "description": "-5% Cooldown Reduction",
           "descriptionFormatted": "%d%% Cooldown Reduction",
           "icon": "the_vault:gui/modifiers/inert"
         }
@@ -4269,6 +4536,20 @@
           "descriptionFormatted": "+5% Ability Power",
           "icon": "the_vault:gui/modifiers/god_token_idona"
         }
+      },
+      "the_vault:reduce_ability_power": {
+        "properties": {
+          "type": "ability_power_percent",
+          "amount": -0.05,
+          "attributeStackingStrategy": "STACK"
+        },
+        "display": {
+          "name": "Ability Power",
+          "color": "#FF5555",
+          "description": "-5% Ability Power",
+          "descriptionFormatted": "-5% Ability Power",
+          "icon": "the_vault:gui/modifiers/god_token_idona"
+        }
       }
     },
     "the_vault:modifier_type/vault_level": {
@@ -4516,12 +4797,24 @@
       },
       "the_vault:soul_xp": {
         "properties": {
-          "addend": 0.02
+          "addend": 0.05
         },
         "display": {
           "name": "Extra Vault Experience",
           "color": "#DB7C00",
-          "description": "+2% Vault XP Gained",
+          "description": "+5% Vault XP Gained",
+          "descriptionFormatted": "+%d%% Vault XP Gained",
+          "icon": "the_vault:gui/modifiers/experienced"
+        }
+      },
+      "the_vault:bingo_xp": {
+        "properties": {
+          "addend": 0.1
+        },
+        "display": {
+          "name": "Bingo Experience",
+          "color": "#DB7C00",
+          "description": "+10% Vault XP Gained",
           "descriptionFormatted": "+%d%% Vault XP Gained",
           "icon": "the_vault:gui/modifiers/experienced"
         }
@@ -5132,16 +5425,18 @@
       "the_vault:buffed": {
         "properties": {
           "children": {
-            "the_vault:energizing": 1,
-            "the_vault:cdr_5": 1,
-            "the_vault:movement_speed": 1,
-            "the_vault:ability_power": 1
+            "the_vault:draining": 1,
+            "the_vault:inert_small": 1,
+            "the_vault:reduce_movement_speed": 1,
+            "the_vault:reduce_ability_power": 1,
+            "the_vault:reduce_attack_damage": 1,
+            "the_vault:injured_percent_small": 1
           }
         },
         "display": {
-          "name": "Buffed",
+          "name": "Nerfed",
           "color": "#bbf333",
-          "description": "Adds Mana Regen, Cooldown Reduction, Damage, Ability Power, Movement Speed and Health",
+          "description": "Reduces Mana Regen, Cooldown Reduction, Damage, Ability Power, Movement Speed and Health",
           "icon": "the_vault:gui/modifiers/stronk"
         }
       },
@@ -5249,7 +5544,7 @@
       "the_vault:challenge_bingo": {
         "properties": {
           "children": {
-            "the_vault:bingo_challenge": 5,
+            "the_vault:challenge_stack": 4,
             "the_vault:bingo_quantity": 1,
             "the_vault:bingo_rarity": 1,
             "the_vault:champion_chance": 2
@@ -5258,7 +5553,7 @@
         "display": {
           "name": "Challenging Bingo!",
           "color": "#B71C1C",
-          "description": "Every Challenging BINGO adds 10% item rarity and quantity, and adds 5 stacks of Bingo Challenge, and adds 20% more chance for champions.",
+          "description": "Every Challenging BINGO adds 10% item rarity and quantity, and adds 4 Challenge Stacks, and adds 20% more chance for champions.",
           "icon": "the_vault:gui/modifiers/bingo"
         }
       },
@@ -5524,13 +5819,14 @@
           "children": {
             "the_vault:bingo_quantity": 1,
             "the_vault:bingo_rarity": 1,
-            "the_vault:soul_boost": 1
+            "the_vault:soul_boost": 1,
+            "the_vault:bingo_xp": 1
           }
         },
         "display": {
           "name": "Bingo!",
           "color": "#bbf333",
-          "description": "Every BINGO Increases Item Quantity & Rarity by 10%, and boosts soul chance by 25%",
+          "description": "Every BINGO Increases Item Quantity & Rarity by 10%, Experienced Gain by 10%, and boosts soul chance by 25%",
           "icon": "the_vault:gui/modifiers/bingo"
         }
       },
@@ -5686,7 +5982,8 @@
             "the_vault:furious_mobs": 2,
             "the_vault:chunky_mobs2": 1,
             "the_vault:cake_layer_mobspeed": 2,
-            "the_vault:critical_mobs": 1
+            "the_vault:critical_mobs": 1,
+            "the_vault:bingo_xp": 1
           }
         },
         "display": {
@@ -5776,7 +6073,8 @@
           "children": {
             "the_vault:furious_mobs": 8,
             "the_vault:chunky_mobs": 8,
-            "the_vault:cake_layer_mobspeed": 4
+            "the_vault:cake_layer_mobspeed": 4,
+            "the_vault:mob_increase": 1
           }
         },
         "display": {
@@ -6112,7 +6410,8 @@
             "the_vault:cake_cascade_living": 1,
             "the_vault:cake_cascade_wooden": 1,
             "the_vault:crake_quantity": 1,
-            "the_vault:cake_artifact": 1
+            "the_vault:cake_artifact": 1,
+            "the_vault:soul_xp": 1
           }
         },
         "display": {
@@ -6352,6 +6651,60 @@
           "icon": "the_vault:gui/modifiers/armed"
         }
       },
+      "woldsvaults:armed_chest_special": {
+        "properties": {
+          "chance": 0.04,
+          "amounts": [
+            {
+              "value": 1,
+              "weight": 2
+            }
+          ],
+          "entities": [
+            {
+              "value": {
+                "type": "thermal:slime_grenade",
+                "randomMotion": true
+              },
+              "weight": 4
+            },
+            {
+              "value": {
+                "type": "thermal:explosive_grenade",
+                "randomMotion": true
+              },
+              "weight": 4
+            },
+            {
+              "value": {
+                "type": "thermal:fire_grenade",
+                "randomMotion": true
+              },
+              "weight": 4
+            },
+            {
+              "value": {
+                "type": "thermal:ender_grenade",
+                "randomMotion": true
+              },
+              "weight": 1
+            },
+            {
+              "value": {
+                "type": "thermal:lightning_grenade",
+                "randomMotion": true
+              },
+              "weight": 4
+            }
+          ]
+        },
+        "display": {
+          "name": "Armed",
+          "color": "#33691E",
+          "description": "Grenades sometimes drop from chests.",
+          "icon": "the_vault:gui/modifiers/armed"
+        }
+      },
       "the_vault:bingo_slime_grenade_chest": {
         "properties": {
           "chance": 0.09,
@@ -6458,7 +6811,7 @@
       },
       "the_vault:surprise_boxes": {
         "properties": {
-          "chance": 0.5,
+          "chance": 0.25,
           "amounts": [
             {
               "value": 1,
@@ -6829,6 +7182,204 @@
           "color": "#33691E",
           "description": "Candy mobs wildly spawn constantly.",
           "icon": "the_vault:gui/modifiers/candy"
+        }
+      },
+      "woldsvaults:rage_cage": {
+        "properties": {
+          "chance": 0.5,
+          "ticksPerCheck": 100,
+          "amounts": [
+            {
+              "value": 2,
+              "weight": 2
+            },
+            {
+              "value": 3,
+              "weight": 6
+            },
+            {
+              "value": 4,
+              "weight": 4
+            },
+            {
+              "value": 5,
+              "weight": 2
+            },
+            {
+              "value": 6,
+              "weight": 1
+            }
+          ],
+          "entities": [
+            {
+              "value": {
+                "type": "the_vault:vault_spider",
+                "randomMotion": false
+              },
+              "weight": 8
+            },
+            {
+              "value": {
+                "type": "the_vault:t3_creeper",
+                "randomMotion": false
+              },
+              "weight": 6
+            },
+            {
+              "value": {
+                "type": "the_vault:t3_drowned",
+                "randomMotion": false
+              },
+              "weight": 6
+            },
+            {
+              "value": {
+                "type": "the_vault:t3_husk",
+                "randomMotion": false
+              },
+              "weight": 6
+            },
+            {
+              "value": {
+                "type": "the_vault:t3_piglin",
+                "randomMotion": false
+              },
+              "weight": 8
+            },
+            {
+              "value": {
+                "type": "the_vault:t3_skeleton",
+                "randomMotion": false
+              },
+              "weight": 8
+            },
+            {
+              "value": {
+                "type": "the_vault:skeleton_vanguard",
+                "randomMotion": false
+              },
+              "weight": 6
+            },
+            {
+              "value": {
+                "type": "the_vault:t3_stray",
+                "randomMotion": false
+              },
+              "weight": 6
+            },
+            {
+              "value": {
+                "type": "the_vault:t3_zombie",
+                "randomMotion": false
+              },
+              "weight": 10
+            },
+            {
+              "value": {
+                "type": "the_vault:vault_fighter_3",
+                "randomMotion": false
+              },
+              "weight": 10
+            },
+            {
+              "value": {
+                "type": "the_vault:vault_fighter_7",
+                "randomMotion": false
+              },
+              "weight": 10
+            },
+            {
+              "value": {
+                "type": "minecraft:witch",
+                "randomMotion": false
+              },
+              "weight": 2
+            },
+            {
+              "value": {
+                "type": "tropicraft:eih",
+                "randomMotion": false
+              },
+              "weight": 4
+            },
+            {
+              "value": {
+                "type": "grimoireofgaia:minotaur",
+                "randomMotion": false
+              },
+              "weight": 4
+            },
+            {
+              "value": {
+                "type": "dungeons_mobs:redstone_cube",
+                "randomMotion": false
+              },
+              "weight": 4
+            },
+            {
+              "value": {
+                "type": "dungeons_mobs:redstone_golem",
+                "randomMotion": false
+              },
+              "weight": 3
+            },
+            {
+              "value": {
+                "type": "dungeons_mobs:necromancer",
+                "randomMotion": false
+              },
+              "weight": 1
+            },
+            {
+              "value": {
+                "type": "grimoireofgaia:banshee",
+                "randomMotion": false
+              },
+              "weight": 2
+            },
+            {
+              "value": {
+                "type": "grimoireofgaia:mummy",
+                "randomMotion": false
+              },
+              "weight": 5
+            },
+            {
+              "value": {
+                "type": "grimoireofgaia:wither_cow",
+                "randomMotion": false
+              },
+              "weight": 5
+            },
+            {
+              "value": {
+                "type": "dungeons_mobs:royal_guard",
+                "randomMotion": false
+              },
+              "weight": 4
+            },
+            {
+              "value": {
+                "type": "grimoireofgaia:bone_knight",
+                "randomMotion": false
+              },
+              "weight": 4
+            },
+            {
+              "value": {
+                "type": "cloudstorage:bloviator",
+                "randomMotion": false
+              },
+              "weight": 1
+            }
+          ],
+          "cap": 10
+        },
+        "display": {
+          "name": "Rage Cage",
+          "color": "#33691E",
+          "description": "Mobs wildly spawn constantly.",
+          "icon": "the_vault:gui/modifiers/retro"
         }
       },
       "the_vault:classic_retro": {
@@ -7253,6 +7804,20 @@
       }
     },
     "the_vault:modifier_type/infernal_mobs": {
+      "woldsvaults:infernal_fury": {
+        "properties": {
+          "filter": "",
+          "chance": 0.25,
+          "amount": 3
+        },
+        "display": {
+          "name": "Infernal",
+          "color": "#a996ca",
+          "description": "25% chance for mobs to spawn with Infernal modifiers",
+          "descriptionFormatted": "Chance for mobs to spawn with Infernal modifiers",
+          "icon": "the_vault:gui/modifiers/infernal"
+        }
+      },
       "the_vault:raging": {
         "properties": {
           "filter": "",
@@ -8097,6 +8662,34 @@
       }
     },
     "the_vault:modifier_type/pool_reference_weight": {
+      "woldsvaults:challenge_fortune_small": {
+        "properties": {
+          "references": [
+            "the_vault:vault/rooms/challenge_rooms"
+          ],
+          "weightMultiplier": 3.0
+        },
+        "display": {
+          "name": "Challenge Vein",
+          "color": "#FF4500",
+          "description": "3x Challenge Room Chance",
+          "icon": "the_vault:gui/modifiers/challenge_fortune"
+        }
+      },
+      "woldsvaults:omega_fortune_small": {
+        "properties": {
+          "references": [
+            "the_vault:vault/rooms/omega_rooms"
+          ],
+          "weightMultiplier": 4.0
+        },
+        "display": {
+          "name": "Omega Vein",
+          "color": "#6AFF00",
+          "description": "4x Omega Room Chance",
+          "icon": "the_vault:gui/modifiers/omega_fortune"
+        }
+      },
       "the_vault:omega_fortune": {
         "properties": {
           "references": [
@@ -8119,9 +8712,9 @@
           "weightMultiplier": 5.0
         },
         "display": {
-          "name": "Challenge Vein",
+          "name": "Challenge Bloom",
           "color": "#FF4500",
-          "description": "10x Challenge Room Chance",
+          "description": "5x Challenge Room Chance",
           "icon": "the_vault:gui/modifiers/challenge_fortune"
         }
       }
@@ -8189,6 +8782,131 @@
           "icon": "the_vault:gui/modifiers/impossible"
         }
       }
+    },
+     "woldsvaults:modifier_type/brazier_pool_modification": {
+      "woldsvaults:all_bad_haunted_braziers": {
+        "properties": {
+          "id": "woldsvaults:all_bad_haunted_braziers"
+        },
+        "display": {
+          "name": "All Bad Haunted Braziers",
+          "color": "#47402d",
+          "description": "Braziers only have negative effects",
+          "descriptionFormatted": "Braziers only have negative effects",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      }
+    },
+    "woldsvaults:modifier_type/enchanted_elixir_tags": {
+      "woldsvaults:all_bad_enchanted_elixir": {
+        "properties": {
+          "allowedTags": [
+            "NEGATIVE"
+          ]
+        },
+        "display": {
+          "name": "All Bad Enchanted Elixir",
+          "color": "#47402d",
+          "description": "Enchanted Elixir events are always negative",
+          "descriptionFormatted": "Enchanted Elixir events are always negative",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      }
+    },
+    "woldsvaults:modifier_type/enchanted_elixir_event_count": {
+      "woldsvaults:enchanted_elixir_50_events": {
+        "properties": {
+          "count": 50
+        },
+        "display": {
+          "name": "Events Extravaganza",
+          "color": "#47402d",
+          "description": "Enchanted Elixir will roll 50 events",
+          "descriptionFormatted": "Enchanted Elixir will roll 50 events",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      }
+    },
+    "woldsvaults:modifier_type/anti_effect_immunity": {
+      "woldsvaults:blindness_immunity_cancel": {
+        "properties": {
+          "id": "blindness"
+        },
+        "display": {
+          "name": "Anti-Blindness Immunity",
+          "color": "#47402d",
+          "description": "Blindness can't be prevented",
+          "descriptionFormatted": "Blindness can't be prevented",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      }
+    },
+    "woldsvaults:modifier_type/overpower": {
+      "woldsvaults:cull": {
+        "properties": {
+          "maxHealth": 2.0
+        },
+        "display": {
+          "name": "Cull",
+          "color": "#e6fffe",
+          "description": "Mobs spawn at 1 hp",
+          "descriptionFormatted": "Mobs spawn at 1 hp",
+          "icon": "the_vault:gui/modifiers/overpower"
+        }
+      }
+    },
+    "the_vault:modifier_type/chest_loot": {
+      "the_vault:coin_chest_loot": {
+        "properties": {
+          "chance": 0.1,
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "the_vault:coin_pile_lvl0"
+            },
+            {
+              "level": 30,
+              "lootTable": "the_vault:coin_pile_lvl30"
+            }
+          ],
+          "whitelist": [
+            "WOODEN",
+            "GILDED",
+            "LIVING",
+            "ORNATE"
+          ]
+        },
+        "display": {
+          "name": "Coin Chest Loot",
+          "color": "#ffae00",
+          "description": "Wooden, Gilded, Living, and Ornate chests have a 10% chance to generate Coin Pile loot.",
+          "descriptionFormatted": "Wooden, Gilded, Living, and Ornate chests have a %d%% chance to generate Coin Pile loot.",
+          "icon": "the_vault:gui/modifiers/bonus_coin"
+        }
+      }
+    },
+    "the_vault:modifier_type/chest_mob_spawn": {
+      "the_vault:dweller_chests": {
+        "properties": {
+          "chance": 0.05,
+          "mob": "minecraft:cow",
+          "spawnRadius": 4,
+          "whitelist": [
+            "WOODEN",
+            "GILDED",
+            "LIVING",
+            "ORNATE"
+          ]
+        },
+        "display": {
+          "name": "Dweller Chests",
+          "color": "#AA0000",
+          "description": "Looting chests have a 5% chance to spawn a dweller.",
+          "descriptionFormatted": "Looting chests have a %d%% chance to spawn a dweller.",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      }
     }
   }
+  
 }

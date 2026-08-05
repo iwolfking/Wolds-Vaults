@@ -29,6 +29,91 @@ onEvent("recipes", event => {
     //     }
     // })
 
+    event.custom({
+         "type": "mekanism:nucleosynthesizing",
+        "itemInput": {
+            "ingredient": {
+                "item": "the_vault:water_bucket"
+            }
+        },
+        "gasInput": {
+            "amount": 1,
+            "gas": "mekanism:antimatter"
+        },
+        "output": {
+            "item": "the_vault:void_liquid_bucket"
+        },
+        "duration": 500
+    }).id('woldsvaults:void_liquid_nucleosynth')
+
+    event.custom({
+         "type": "mekanism:nucleosynthesizing",
+        "itemInput": {
+            "ingredient": {
+                "item": "the_vault:repair_core"
+            }
+        },
+        "gasInput": {
+            "amount": 10,
+            "gas": "mekanism:antimatter"
+        },
+        "output": {
+            "item": "the_vault:recharge_core"
+        },
+        "duration": 500
+    }).id('woldsvaults:recharge_core_nucleosynth')
+
+    event.custom({
+        "type": "mekanism:nucleosynthesizing",
+        "itemInput": {
+            "ingredient": {
+                "item": "the_vault:vault_rock"
+            }
+        },
+        "gasInput": {
+            "amount": 100,
+            "gas": "mekanism:antimatter"
+        },
+        "output": {
+            "item": "the_vault:vault_catalyst_chaos"
+        },
+        "duration": 500
+    }).id('woldsvaults:vault_catalyst_chaos_nucleosynth')
+
+    event.custom({
+        "type": "mekanism:nucleosynthesizing",
+        "itemInput": {
+            "ingredient": {
+                "item": "the_vault:mystery_egg"
+            }
+        },
+        "gasInput": {
+            "amount": 5,
+            "gas": "mekanism:antimatter"
+        },
+        "output": {
+            "item": "the_vault:mystery_hostile_egg"
+        },
+        "duration": 500
+    }).id('woldsvaults:mystery_hostile_eggnucleosynth')
+
+    event.custom({
+        "type": "mekanism:nucleosynthesizing",
+        "itemInput": {
+            "ingredient": {
+                "item": "the_vault:mystery_hostile_egg"
+            }
+        },
+        "gasInput": {
+            "amount": 5,
+            "gas": "mekanism:antimatter"
+        },
+        "output": {
+            "item": "woldsvaults:enigma_egg"
+        },
+        "duration": 500
+    }).id('woldsvaults:enigma_egg_nucleosynth')
+
     mekanismMetals.forEach(metal => {
         event.custom(
             {
@@ -95,6 +180,26 @@ onEvent("recipes", event => {
         )
     })
 
+    event.custom(
+        {
+            "type": "mekanism:combining",
+            "extraInput": {
+                "ingredient": {
+                    "item": "the_vault:vault_stone"
+                }
+            },
+            "mainInput": {
+                "amount": 32,
+                "ingredient": {
+                    "item": 'woldsvaults:nullite_fragment'
+                }
+            },
+            "output": {
+                "item": 'woldsvaults:nullite_ore'
+            }
+        }
+    )
+
     vaultOreGems.forEach(gem => {
         event.custom(
             {
@@ -159,6 +264,8 @@ onEvent("recipes", event => {
             }
         )
     })
+
+
 
 
 

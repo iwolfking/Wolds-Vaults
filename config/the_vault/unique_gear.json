@@ -232,7 +232,7 @@
         "PREFIX": [],
         "SUFFIX": [
           "the_vault:u_item_rarity",
-          "the_vault:jester_lucky_hit"
+          "the_vault:jester_lucky_hit_percentile"
         ]
       },
       "modifierTags": [],
@@ -380,11 +380,12 @@
           "the_vault:mod_resistance"
         ],
         "SUFFIX": [
-          "the_vault:u_knockback_resistance"
+          "the_vault:u_castle_knockback_resistance",
+          "the_vault:u_castle_bastion"
         ]
       },
       "modifierTags": [],
-      "lore": "Forged like a fortress, it shrugs off even the sharpest blows; Turning aside critical strikes. Its walls of iron grant double layers of resistance to those who refuse to fall.",
+      "lore": "Forged like a fortress, it shrugs off even the sharpest blows. Standing your ground builds Bastion, turning final damage aside and driving attackers from its walls.",
       "weight": 1
     },
     "the_vault:crystalplate": {
@@ -1091,6 +1092,12 @@
     "the_vault:kaleidoscope": {
       "name": "Kaleidoscope",
       "item": "the_vault:jewel",
+      "models": [
+        {
+          "value": "the_vault:gear/jewel/kaleidoscope",
+          "weight": 1
+        }
+      ],
       "modifierIdentifiers": {
         "IMPLICIT": [
           "the_vault:u_jewel_size"
@@ -1113,6 +1120,12 @@
     "the_vault:manabloom": {
       "name": "Manabloom",
       "item": "the_vault:jewel",
+      "models": [
+        {
+          "value": "the_vault:gear/jewel/manabloom",
+          "weight": 1
+        }
+      ],
       "modifierIdentifiers": {
         "IMPLICIT": [
           "the_vault:u_jewel_size_manabloom"
@@ -1125,12 +1138,18 @@
         ]
       },
       "modifierTags": [],
-      "lore": "A crystalised flower fed by pure arcana, it blossoms with bursts of mana hidden in treasure’s heart. Each chest may awaken its bloom anew.",
+      "lore": "A crystalised flower fed by pure arcana, it blossoms with bursts of mana hidden in treasure\u2019s heart. Each chest may awaken its bloom anew.",
       "weight": 1
     },
     "the_vault:pax": {
       "name": "Pax",
       "item": "the_vault:jewel",
+      "models": [
+        {
+          "value": "the_vault:gear/jewel/pax",
+          "weight": 1
+        }
+      ],
       "modifierIdentifiers": {
         "IMPLICIT": [
           "the_vault:u_jewel_size_pax"
@@ -1138,7 +1157,8 @@
         "PREFIX": [
           "the_vault:u_picking",
           "the_vault:u_axing",
-          "the_vault:u_shovelling"
+          "the_vault:u_shovelling",
+          "the_vault:u_reaping"
 
         ],
         "SUFFIX": [
@@ -1151,6 +1171,12 @@
     "the_vault:frozen_heart": {
       "name": "Frozen Heart",
       "item": "the_vault:jewel",
+      "models": [
+        {
+          "value": "the_vault:gear/jewel/frost",
+          "weight": 1
+        }
+      ],
       "modifierIdentifiers": {
         "IMPLICIT": [
           "the_vault:u_jewel_size"
@@ -1342,7 +1368,13 @@
       "the_vault:kaleidoscope": 1,
       "the_vault:manabloom": 1,
       "the_vault:pax": 1,
-      "the_vault:frozen_heart": 1
+      "the_vault:frozen_heart": 1,
+      "the_vault:iskallibur": 1,
+      "the_vault:starforge": 1,
+      "the_vault:butcher_axe": 1,
+      "the_vault:honey_stick": 1,
+      "the_vault:inflated_justice": 1,
+      "the_vault:quickstone": 1
     },
     "the_vault:collection": {
       "the_vault:jester": 1,

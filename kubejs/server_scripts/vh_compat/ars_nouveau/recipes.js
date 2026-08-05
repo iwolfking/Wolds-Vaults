@@ -156,11 +156,12 @@ onEvent("recipes", event => {
         [
             'SDS',
             'S S',
-            'BBB'
+            'BXB'
         ], {
         S: 'woldsvaults:chromatic_gold_ingot',
-        D: 'the_vault:perfect_wutodie',
-        B: 'ars_nouveau:arcane_stone'
+        D: 'the_vault:wutodic_mass',
+        B: 'ars_nouveau:arcane_stone',
+        X: 'woldsvaults:pog_prism'
     }).id('ars_nouveau:enchanting_apparatus')
 
     event.shaped(Item.of('ars_nouveau:scribes_table'),

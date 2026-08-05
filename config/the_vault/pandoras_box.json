@@ -54,6 +54,10 @@
       "type": "add_modifier",
       "modifierId": "the_vault:crit_mobs"
     },
+    "champs_domain": {
+      "type": "add_modifier",
+      "modifierId": "the_vault:champion_domain"
+    },
     "cake": {
       "type": "tile_replace",
       "tile": "minecraft:cake"
@@ -80,19 +84,111 @@
         {
           "level": 0,
           "pool": [
-            { "value": "aggro_cows", "weight": 20 },
-            { "value": "guardians", "weight": 80 },
-            { "value": "cake", "weight": 80 },
-            { "value": "completion_crate", "weight": 2 },
-            { "value": "ethereal_mobs", "weight": 1 },
-            { "value": "treasure", "weight": 5 },
-            { "value": "hoard", "weight": 5 },
-            { "value": "brutal_mobs_combo", "weight": 20 },
-            { "value": "crit_mobs", "weight": 20 },
-            { "value": "discover_common", "weight": 8 },
-            { "value": "discover_ore", "weight": 8 },
-            { "value": "discover_omega", "weight": 1 },
-            { "value": "discover_challenge", "weight": 5 }
+            {
+              "value": "cake",
+              "weight": 50
+            },
+            {
+              "value": "completion_crate",
+              "weight": 2
+            },
+            {
+              "value": "ethereal_mobs",
+              "weight": 1
+            },
+            {
+              "value": "treasure",
+              "weight": 5
+            },
+            {
+              "value": "hoard",
+              "weight": 5
+            },
+            {
+              "value": "brutal_mobs_combo",
+              "weight": 20
+            },
+            {
+              "value": "crit_mobs",
+              "weight": 20
+            },
+            {
+              "value": "champs_domain",
+              "weight": 20
+            },
+            {
+              "value": "discover_common",
+              "weight": 8
+            },
+            {
+              "value": "discover_ore",
+              "weight": 8
+            },
+            {
+              "value": "discover_omega",
+              "weight": 1
+            },
+            {
+              "value": "discover_challenge",
+              "weight": 5
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "pool": [
+            {
+              "value": "aggro_cows",
+              "weight": 20
+            },
+            {
+              "value": "guardians",
+              "weight": 80
+            },
+            {
+              "value": "cake",
+              "weight": 80
+            },
+            {
+              "value": "completion_crate",
+              "weight": 2
+            },
+            {
+              "value": "ethereal_mobs",
+              "weight": 1
+            },
+            {
+              "value": "treasure",
+              "weight": 5
+            },
+            {
+              "value": "hoard",
+              "weight": 5
+            },
+            {
+              "value": "brutal_mobs_combo",
+              "weight": 20
+            },
+            {
+              "value": "crit_mobs",
+              "weight": 20
+            },
+            {
+              "value": "discover_common",
+              "weight": 8
+            },
+            {
+              "value": "discover_ore",
+              "weight": 8
+            },
+            {
+              "value": "discover_omega",
+              "weight": 1
+            },
+            {
+              "value": "discover_challenge",
+              "weight": 5
+            }
           ]
         }
       ]

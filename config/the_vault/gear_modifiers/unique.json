@@ -230,8 +230,8 @@
             "maxLevel": 41,
             "weight": 100,
             "value": {
-              "min": 520,
-              "max": 1040,
+              "min": 1270,
+              "max": 1790,
               "step": 1
             }
           },
@@ -240,8 +240,8 @@
             "maxLevel": 50,
             "weight": 100,
             "value": {
-              "min": 1041,
-              "max": 1560,
+              "min": 2198,
+              "max": 2717,
               "step": 1
             }
           },
@@ -250,8 +250,8 @@
             "maxLevel": 58,
             "weight": 100,
             "value": {
-              "min": 1561,
-              "max": 2200,
+              "min": 3207,
+              "max": 3846,
               "step": 1
             }
           },
@@ -260,8 +260,8 @@
             "maxLevel": 72,
             "weight": 100,
             "value": {
-              "min": 2201,
-              "max": 3380,
+              "min": 4436,
+              "max": 5615,
               "step": 1
             }
           },
@@ -270,8 +270,8 @@
             "maxLevel": 79,
             "weight": 100,
             "value": {
-              "min": 3381,
-              "max": 4420,
+              "min": 5616,
+              "max": 6655,
               "step": 1
             }
           },
@@ -280,8 +280,8 @@
             "maxLevel": 85,
             "weight": 100,
             "value": {
-              "min": 4421,
-              "max": 5200,
+              "min": 7484,
+              "max": 8263,
               "step": 1
             }
           },
@@ -290,8 +290,8 @@
             "maxLevel": -1,
             "weight": 100,
             "value": {
-              "min": 5201,
-              "max": 6500,
+              "min": 8842,
+              "max": 10141,
               "step": 1
             }
           },
@@ -300,8 +300,8 @@
             "maxLevel": -1,
             "weight": 100,
             "value": {
-              "min": 6501,
-              "max": 7800,
+              "min": 10142,
+              "max": 11441,
               "step": 1
             }
           },
@@ -310,8 +310,8 @@
             "maxLevel": -1,
             "weight": 100,
             "value": {
-              "min": 7801,
-              "max": 10000,
+              "min": 12339,
+              "max": 14538,
               "step": 1
             }
           }
@@ -327,11 +327,11 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 62,
             "weight": 10,
             "value": {
-              "min": 400,
-              "max": 800,
+              "min": 3290,
+              "max": 4330,
               "step": 1
             }
           },
@@ -340,18 +340,38 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 801,
-              "max": 1600,
+              "min": 4331,
+              "max": 5370,
               "step": 1
             }
           },
           {
-            "minLevel": 60,
+            "minLevel": 42,
             "maxLevel": -1,
-            "weight": 1000,
+            "weight": 10,
             "value": {
-              "min": 1601,
-              "max": 2400,
+              "min": 5746,
+              "max": 6785,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 63,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 7245,
+              "max": 8284,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 88,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 9202,
+              "max": 10501,
               "step": 1
             }
           }
@@ -3241,6 +3261,26 @@
         ]
       },
       {
+        "attribute": "the_vault:jester_lucky_hit_chance_percentile",
+        "group": "UniqueLuckyHit",
+        "identifier": "the_vault:jester_lucky_hit_percentile",
+        "tags": [
+          "focusLuckyHitChance"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.5,
+              "max": 1,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      {
         "attribute": "the_vault:healing_effectiveness",
         "group": "ModHealthEff",
         "identifier": "the_vault:u_chunky_magnet_healing",
@@ -5457,8 +5497,8 @@
             "maxLevel": 50,
             "weight": 100,
             "value": {
-              "min": 0.125,
-              "max": 0.125,
+              "min": 0.5,
+              "max": 0.5,
               "step": 0.01
             }
           },
@@ -5467,8 +5507,8 @@
             "maxLevel": -1,
             "weight": 100,
             "value": {
-              "min": 0.25,
-              "max": 0.25,
+              "min": 1.0,
+              "max": 1.25,
               "step": 0.01
             }
           },
@@ -5477,8 +5517,8 @@
             "maxLevel": -1,
             "weight": 100,
             "value": {
-              "min": 0.26,
-              "max": 0.35,
+              "min": 1.25,
+              "max": 2.0,
               "step": 0.01
             }
           }
@@ -5497,8 +5537,8 @@
             "maxLevel": 50,
             "weight": 100,
             "value": {
-              "min": 0.2,
-              "max": 0.2,
+              "min": 0.5,
+              "max": 0.5,
               "step": 0.01
             }
           },
@@ -5507,8 +5547,8 @@
             "maxLevel": -1,
             "weight": 100,
             "value": {
-              "min": 0.4,
-              "max": 0.4,
+              "min": 1.0,
+              "max": 1.25,
               "step": 0.01
             }
           },
@@ -5517,8 +5557,8 @@
             "maxLevel": -1,
             "weight": 100,
             "value": {
-              "min": 0.6,
-              "max": 0.6,
+              "min": 1.25,
+              "max": 2.0,
               "step": 0.01
             }
           }
@@ -6375,6 +6415,49 @@
             "value": {
               "min": 0.2,
               "max": 0.3,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:knockback_resistance",
+        "group": "UniqueCastleKnockbackResistance",
+        "identifier": "the_vault:u_castle_knockback_resistance",
+        "tags": [
+          "focusKnockbackRes",
+          "noLegendary",
+          "noImbuement"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 1.0,
+              "max": 1.0,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:castle_bastion",
+        "group": "UniqueCastleBastion",
+        "identifier": "the_vault:u_castle_bastion",
+        "tags": [
+          "noLegendary",
+          "noImbuement"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.06,
+              "max": 0.1,
               "step": 0.01
             }
           }

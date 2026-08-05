@@ -1,0 +1,371 @@
+{
+  "documentation": {
+    "hyperStatFactor": "Per-cycle compounding factor for mob health/damage and the boss escalation",
+    "speedPerStack": "Additive mob movement speed per HYPER stack (0.2 = +20%)",
+    "bossHealthPercent": "Boss base escalation as a fraction of base health (50 = +5000%), multiplied by hyperStatFactor^cycle",
+    "bossDamagePercent": "Boss base damage escalation, same shape as bossHealthPercent",
+    "bossStatIncrement": "Boss-exclusive linear bonus added per cycle on top of the exponential (15 = +1500%/cycle)",
+    "bossAbilityHaste": "Rune 'haste points' for the boss's shield/waveblast abilities (vanilla rune roll is 0-3)",
+    "baseRuneTier": "Rune count at cycle 0 (keys the shield/waveblast settings table)",
+    "runeTierCap": "Rune count ceiling so deep cycles cannot index past the config",
+    "playerScaleBossHealth": "Extra boss max health per EXTRA runner (0.5 = duo x1.5, trio x2.0); excluded from the loot score",
+    "chaosPerKill": "Chaos modifiers dumped per boss kill (and once when the vault starts)",
+    "chaosCap": "Total chaos budget for the whole vault (dumps, ambient events and brutal kills all draw from it)",
+    "ambientPeriodTicks": "Ticks between ambient negative modifier pulls (one per runner per period)",
+    "wavePeriodTicks": "Ticks between timed brutal waves during the boss fight",
+    "waveMobMin/waveMobMax": "Brutal bosses per wave",
+    "healthGates": "Boss health fractions that each trigger one extra brutal wave (order = persisted gate bits; do not reorder mid-vault)",
+    "fightAddPeriodTicks": "Ticks between lone tank/assassin arena adds during the fight",
+    "magicMissileCooldownTicks/magicMissileChargeTicks": "Ticks between Magic Missile volleys, and the telegraphed charge-up before each volley fires",
+    "magicMissileCount/magicMissileSpeed/magicMissileTurnDegrees": "Missiles per volley, their speed in blocks per tick, and their homing turn rate in degrees per tick (lower = easier to juke)",
+    "magicMissileLifetimeTicks/magicMissileDamageMultiplier/magicMissileAoeRadius": "Flight time before a missile self-destructs, its damage as a fraction of boss attack damage, and the blast radius (impact and self-destruct alike)",
+    "magicMissileHoverTicks": "Ticks a freshly placed missile hovers in the overhead fan before it starts flying (0 = immediate)",
+    "waveBlastDamageMultiplier": "Hyper-only multiplier applied when the boss's WaveBlast is normalized to physical damage (the shared rune-boss config keeps its own DamageMultiplier)",
+    "exitPillarTicks": "Lifetime of the post-kill exit pillar",
+    "winTransitionTicks": "Personal victory countdown after clicking the exit pillar",
+    "obeliskMin/obeliskMax": "Brutal pillar count range; the floor rises +1 per 3 kills and +1 per 2 extra runners",
+    "brutalObeliskProbability": "Per-room chance the brutal mini claims a room's objective anchor",
+    "elixirTargetMultiplier/elixirTargetIncrement": "Elixir target = base x (multiplier + increment x cycle)",
+    "cycleRequirementIncrement": "Card requirements grow this fraction of base per boss kill",
+    "boardUpsizeCycle": "Cycle at which bingo/collector boards grow to 5x5",
+    "playerScaleElixir/playerScaleBingo": "Requirement scale per EXTRA runner (the collector keeps VH's native +50%)",
+    "speedCapFactor": "Final mob movement speed is capped at base x this (2.5 = +150%)",
+    "referenceBossHealth/referenceBossDamage": "Boogeyman level-100 bases; scores apply the killed boss's multipliers to these so every roster boss scores identically",
+    "scoreRare/scoreEpic/scoreOmega": "Kill scores that add one rare/epic/omega crate-injection marker (non-exclusive)",
+    "scoreDoubleGreedy/scoreTripleGreedy": "Kill scores that raise the greedy crate tiers granted per kill to 2 / 3",
+    "scoreExtraDraw": "Epic/omega markers earned at or above this score roll one extra draw per set",
+    "crateTierScore7/9/15": "Kill k grants 5k regular crate tiers, 7k/9k/15k once the kill scores past these",
+    "greedBonusTierEfficiency": "The per-crate greed bonus rolls at crate quantity x this in hyper vaults (coins excluded)",
+    "greedyCoinBonusPerStack": "Extra greed coins in the completion crate per greedy crate tier stack (1.0 = +100%)",
+    "rareRolls/epicRolls/omegaRolls": "Draws per marker stack from each injection pool",
+    "rareRewards/epicRewards/omegaRewards": "The injection pools: item+count(+weight), or a boosterPack/deckCore/greedCoins/randomEtching special"
+  },
+  "hyperStatFactor": 1.65,
+  "speedPerStack": 0.2,
+  "bossHealthPercent": 50.0,
+  "bossDamagePercent": 50.0,
+  "bossStatIncrement": 15.0,
+  "bossAbilityHaste": 6,
+  "baseRuneTier": 40,
+  "runeTierCap": 40,
+  "playerScaleBossHealth": 0.5,
+  "chaosPerKill": 25,
+  "chaosCap": 350,
+  "ambientPeriodTicks": 2400,
+  "wavePeriodTicks": 400,
+  "waveMobMin": 2,
+  "waveMobMax": 4,
+  "healthGates": [
+    0.8,
+    0.6,
+    0.4,
+    0.2
+  ],
+  "fightAddPeriodTicks": 120,
+  "magicMissileCooldownTicks": 300,
+  "magicMissileChargeTicks": 90,
+  "magicMissileCount": 3,
+  "magicMissileSpeed": 0.43,
+  "magicMissileTurnDegrees": 5.0,
+  "magicMissileLifetimeTicks": 120,
+  "magicMissileDamageMultiplier": 0.75,
+  "magicMissileAoeRadius": 2.0,
+  "magicMissileHoverTicks": 6,
+  "waveBlastDamageMultiplier": 3.0,
+  "exitPillarTicks": 300,
+  "winTransitionTicks": 300,
+  "obeliskMin": 2,
+  "obeliskMax": 5,
+  "brutalObeliskProbability": 0.6,
+  "elixirTargetMultiplier": 0.75,
+  "elixirTargetIncrement": 0.25,
+  "cycleRequirementIncrement": 0.1,
+  "boardUpsizeCycle": 4,
+  "playerScaleElixir": 0.45,
+  "playerScaleBingo": 0.25,
+  "speedCapFactor": 2.5,
+  "referenceBossHealth": 388000.0,
+  "referenceBossDamage": 1460.0,
+  "scoreRare": 75000,
+  "scoreEpic": 150000,
+  "scoreOmega": 500000,
+  "scoreDoubleGreedy": 1000000,
+  "scoreTripleGreedy": 5000000,
+  "scoreExtraDraw": 2000000,
+  "crateTierScore7": 250000,
+  "crateTierScore9": 1500000,
+  "crateTierScore15": 25000000,
+  "greedBonusTierEfficiency": 0.15,
+  "greedyCoinBonusPerStack": 1.0,
+  "rareRolls": 4,
+  "epicRolls": 3,
+  "omegaRolls": 3,
+  "rareRewards": [
+    {
+      "item": "the_vault:repair_core",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 100
+    },
+    {
+      "item": "woldsvaults:companion_reroller",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 25
+    },
+    {
+      "item": "the_vault:booster_pack",
+      "boosterPack": "the_vault:deluxe_resource_pack",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 2
+    },
+    {
+      "item": "woldsvaults:omega_box",
+      "min": 2,
+      "max": 2,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 10
+    },
+    {
+      "item": "the_vault:map",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 10
+    },
+    {
+      "item": "the_vault:recharge_core",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 50
+    },
+    {
+      "item": "the_vault:fundamental_focus",
+      "min": 15,
+      "max": 15,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 40
+    },
+    {
+      "item": "the_vault:opportunistic_focus",
+      "min": 10,
+      "max": 10,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 10
+    },
+    {
+      "item": "woldsvaults:altar_recatalyzer",
+      "min": 2,
+      "max": 2,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 50
+    },
+    {
+      "item": "the_vault:vault_platinum",
+      "min": 5,
+      "max": 5,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 40
+    },
+    {
+      "item": "the_vault:etching",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": true,
+      "weight": 5
+    }
+  ],
+  "epicRewards": [
+    {
+      "item": "the_vault:greed_coin",
+      "min": 1,
+      "max": 1,
+      "greedCoins": true,
+      "randomEtching": false,
+      "weight": 10
+    },
+    {
+      "item": "the_vault:vault_palladium",
+      "min": 5,
+      "max": 5,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 30
+    },
+    {
+      "item": "woldsvaults:nullite_crystal",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 5
+    },
+    {
+      "item": "the_vault:map",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 30
+    },
+    {
+      "item": "woldsvaults:chunk_of_power",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 1
+    },
+    {
+      "item": "the_vault:booster_pack",
+      "boosterPack": "the_vault:deluxe_resource_pack",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 4
+    },
+    {
+      "item": "woldsvaults:omega_box",
+      "min": 2,
+      "max": 2,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 5
+    },
+    {
+      "item": "the_vault:booster_pack",
+      "boosterPack": "the_vault:evolution_pack",
+      "min": 10,
+      "max": 10,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 5
+    },
+    {
+      "item": "the_vault:booster_pack",
+      "boosterPack": "the_vault:shiny_pack",
+      "min": 2,
+      "max": 2,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 5
+    },
+    {
+      "item": "the_vault:unique_shard",
+      "min": 10,
+      "max": 10,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 20
+    },
+    {
+      "item": "woldsvaults:greedy_ticket",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 5
+    }
+  ],
+  "omegaRewards": [
+    {
+      "item": "the_vault:greed_coin",
+      "min": 2,
+      "max": 3,
+      "greedCoins": true,
+      "randomEtching": false,
+      "weight": 300
+    },
+    {
+      "item": "the_vault:mystic_pear",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 20
+    },
+    {
+      "item": "woldsvaults:wold_star_chunk",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 10
+    },
+    {
+      "item": "woldsvaults:chunk_of_power",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 40
+    },
+    {
+      "item": "woldsvaults:nullite_crystal",
+      "min": 2,
+      "max": 2,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 50
+    },
+    {
+      "item": "the_vault:booster_pack",
+      "boosterPack": "the_vault:deluxe_resource_pack",
+      "min": 2,
+      "max": 2,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 50
+    },
+    {
+      "item": "the_vault:booster_pack",
+      "boosterPack": "the_vault:shiny_pack",
+      "min": 5,
+      "max": 5,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 100
+    },
+    {
+      "item": "woldsvaults:crystal_reinforcement",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 20
+    },
+    {
+      "item": "woldsvaults:greedy_ticket",
+      "min": 3,
+      "max": 3,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 20
+    },
+    {
+      "item": "woldsvaults:core_of_the_vault_gods",
+      "min": 1,
+      "max": 1,
+      "greedCoins": false,
+      "randomEtching": false,
+      "weight": 1
+    }
+  ]
+}

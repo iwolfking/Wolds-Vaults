@@ -9,13 +9,13 @@
           "resilientFocusTarget"
         ],
         "tiers": [
-   {
+          {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 62,
             "weight": 10,
             "value": {
-              "min": 2400,
-              "max": 4800,
+              "min": 3290,
+              "max": 4330,
               "step": 1
             }
           },
@@ -24,28 +24,38 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 3600,
-              "max": 5400,
+              "min": 4331,
+              "max": 5370,
               "step": 1
             }
           },
           {
-            "minLevel": 60,
+            "minLevel": 42,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 4800,
-              "max": 6000,
+              "min": 5746,
+              "max": 6785,
               "step": 1
             }
           },
-           {
-            "minLevel": 90,
+          {
+            "minLevel": 63,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 6000,
-              "max": 8000,
+              "min": 7245,
+              "max": 8284,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 88,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 9202,
+              "max": 10501,
               "step": 1
             }
           }
@@ -721,87 +731,6 @@
               "min": 0.51,
               "max": 0.7,
               "step": 0.01
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:durability",
-        "group": "ModDurability",
-        "identifier": "the_vault:mod_durability",
-        "tags": [
-          "focusDurability",
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": 66,
-            "weight": 200,
-            "value": {
-              "min": 400,
-              "max": 800,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 28,
-            "maxLevel": -1,
-            "weight": 200,
-            "value": {
-              "min": 801,
-              "max": 1600,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 46,
-            "maxLevel": -1,
-            "weight": 200,
-            "value": {
-              "min": 1601,
-              "max": 2400,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 67,
-            "maxLevel": -1,
-            "weight": 200,
-            "value": {
-              "min": 2401,
-              "max": 3200,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 89,
-            "maxLevel": -1,
-            "weight": 200,
-            "value": {
-              "min": 3201,
-              "max": 4000,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
-              "min": 4001,
-              "max": 6000,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
-              "min": 6001,
-              "max": 8000,
-              "step": 1
             }
           }
         ]
