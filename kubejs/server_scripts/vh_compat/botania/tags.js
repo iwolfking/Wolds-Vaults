@@ -1,8 +1,4 @@
 onEvent('item.tags', event => {
-  event.remove('curios:ring', 'botania:mana_ring')
-  event.remove('curios:ring', 'botania:mana_ring_greater')
-  event.remove('curios:ring', 'botania:aura_ring')
-  event.remove('curios:ring', 'botania:aura_ring_greater')
   event.remove('curios:ring', 'botania:magnet_ring')
   event.remove('curios:ring', 'botania:magnet_ring_greater')
   event.remove('curios:ring', 'botania:water_ring')
