@@ -1,6 +1,10 @@
 {
   "tile_processors": [
     {
+      "type": "reference",
+      "id": "the_vault:generic/hidden_placeholder"
+    },
+    {
       "type": "weighted_target",
       "target": "the_vault:raid_controller",
       "output": [
@@ -127,10 +131,6 @@
           "weight": 1
         }
       ]
-    },
-    {
-      "type": "reference",
-      "id": "the_vault:generic/hidden_placeholder"
     }
   ],
   "entity_processors": [],
