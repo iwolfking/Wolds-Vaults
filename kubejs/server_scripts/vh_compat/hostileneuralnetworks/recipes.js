@@ -601,7 +601,7 @@ onEvent("recipes", event => {
             M: Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
         })
 
-        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:54,id:"hostilenetworks:ars_nouveau/wilden_mobs}"}}`),
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:54,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
             [
                 ' E ',
                 'ZMZ',
