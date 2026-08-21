@@ -5211,6 +5211,71 @@
           "icon": "the_vault:gui/modifiers/ornate"
         }
       },
+      "woldsvaults:omega_cascading_wooden": {
+        "properties": {
+          "filter": "the_vault:wooden_chest",
+          "chance": 0.01
+        },
+        "display": {
+          "name": "Omega Cascading",
+          "color": "#3ffbf4",
+          "description": "+1% Wooden Chests",
+          "descriptionFormatted": "+%d%% Wooden Chests",
+          "icon": "the_vault:gui/modifiers/item_quant_4"
+        }
+      },
+      "woldsvaults:omega_cascading_gilded": {
+        "properties": {
+          "filter": "the_vault:gilded_chest",
+          "chance": 0.01
+        },
+        "display": {
+          "name": "Omega Cascading",
+          "color": "#3ffbf4",
+          "description": "+1% Gilded Chests",
+          "descriptionFormatted": "+%d%% Gilded Chests",
+          "icon": "the_vault:gui/modifiers/item_quant_4"
+        }
+      },
+      "woldsvaults:omega_cascading_ornate": {
+        "properties": {
+          "filter": "the_vault:ornate_chest",
+          "chance": 0.01
+        },
+        "display": {
+          "name": "Omega Cascading",
+          "color": "#3ffbf4",
+          "description": "+1% Ornate Chests",
+          "descriptionFormatted": "+%d%% Ornate Chests",
+          "icon": "the_vault:gui/modifiers/item_quant_4"
+        }
+      },
+      "woldsvaults:omega_cascading_living": {
+        "properties": {
+          "filter": "the_vault:living_chest",
+          "chance": 0.01
+        },
+        "display": {
+          "name": "Omega Cascading",
+          "color": "#3ffbf4",
+          "description": "+1% Living Chests",
+          "descriptionFormatted": "+%d%% Living Chests",
+          "icon": "the_vault:gui/modifiers/item_quant_4"
+        }
+      },
+      "woldsvaults:omega_cascading_coins": {
+        "properties": {
+          "filter": "the_vault:coin_pile",
+          "chance": 0.01
+        },
+        "display": {
+          "name": "Omega Cascading",
+          "color": "#3ffbf4",
+          "description": "+1% Coin Piles",
+          "descriptionFormatted": "+%d%% Coin Piles",
+          "icon": "the_vault:gui/modifiers/item_quant_4"
+        }
+      },
       "the_vault:wooden_cascade": {
         "properties": {
           "filter": "the_vault:wooden_chest",
@@ -5490,6 +5555,23 @@
           "name": "Omega Bonus",
           "color": "#3ffbf4",
           "description": "+1 of All Chests and Coin Piles",
+          "icon": "the_vault:gui/modifiers/item_quant_4"
+        }
+      },
+      "woldsvaults:omega_cascading": {
+        "properties": {
+          "children": {
+            "woldsvaults:omega_cascading_wooden": 1,
+            "woldsvaults:omega_cascading_gilded": 1,
+            "woldsvaults:omega_cascading_ornate": 1,
+            "woldsvaults:omega_cascading_living": 1,
+            "woldsvaults:omega_cascading_coins": 1
+          }
+        },
+        "display": {
+          "name": "Omega Cascading",
+          "color": "#3ffbf4",
+          "description": "+1% Cascading for all chests and coins.",
           "icon": "the_vault:gui/modifiers/item_quant_4"
         }
       },
