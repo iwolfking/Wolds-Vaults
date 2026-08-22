@@ -1,0 +1,192 @@
+{
+  "documentation": {
+    "tiers": "One entry per medallion, keyed by the greed rank it belongs to. Rank 1 is the first medallion and rank 16 the last; the band names come from greed_ranks.json",
+    "baseGreedCoins": "Greed coins an assassin killed in this medallion's vault pays, and the per-crate base the completion crate pays",
+    "mobHealthDamageBonus": "Percent added to vault mob health and damage. Multiplicative with every other source",
+    "crateLootBonus": "Percent added to the item count of completion crates",
+    "greedCrateLootTier": "Which greed_crate_loot_N table the completion crate additionally rolls. 0 rolls none",
+    "chestRollsBonus": "Percent added to the roll count of tiered chests. Barrels and treasure chests are not tiered and are unaffected",
+    "trapDisarmPenalty": "Percent subtracted from trap disarming. A magnitude, so 33 means -33%",
+    "mobSpawnBonus": "Percent added to the sustained vault mob population ceiling",
+    "objectiveDifficultyBonus": "Percent added to objective difficulty. Reaches brutal boss pillars and bosses only, the one numeric difficulty axis in the game",
+    "gates": "The medallion rank each behaviour switches on at. Vault Champion behaviours are tabled but not implemented",
+    "spawn": "Assassin spawn chance per attempt is base * (1 + rankChanceStep * (rank - 1)), decaying by decayFactor per spawn and recovering over recoveryTicks"
+  },
+  "tiers": {
+    "1": {
+      "baseGreedCoins": 2,
+      "mobHealthDamageBonus": 25,
+      "crateLootBonus": 0,
+      "greedCrateLootTier": 0,
+      "chestRollsBonus": 0,
+      "trapDisarmPenalty": 0,
+      "mobSpawnBonus": 0,
+      "objectiveDifficultyBonus": 0
+    },
+    "2": {
+      "baseGreedCoins": 3,
+      "mobHealthDamageBonus": 45,
+      "crateLootBonus": 5,
+      "greedCrateLootTier": 0,
+      "chestRollsBonus": 0,
+      "trapDisarmPenalty": 0,
+      "mobSpawnBonus": 0,
+      "objectiveDifficultyBonus": 0
+    },
+    "3": {
+      "baseGreedCoins": 3,
+      "mobHealthDamageBonus": 60,
+      "crateLootBonus": 5,
+      "greedCrateLootTier": 1,
+      "chestRollsBonus": 0,
+      "trapDisarmPenalty": 0,
+      "mobSpawnBonus": 0,
+      "objectiveDifficultyBonus": 0
+    },
+    "4": {
+      "baseGreedCoins": 4,
+      "mobHealthDamageBonus": 90,
+      "crateLootBonus": 10,
+      "greedCrateLootTier": 1,
+      "chestRollsBonus": 0,
+      "trapDisarmPenalty": 0,
+      "mobSpawnBonus": 0,
+      "objectiveDifficultyBonus": 0
+    },
+    "5": {
+      "baseGreedCoins": 5,
+      "mobHealthDamageBonus": 125,
+      "crateLootBonus": 15,
+      "greedCrateLootTier": 1,
+      "chestRollsBonus": 10,
+      "trapDisarmPenalty": 50,
+      "mobSpawnBonus": 33,
+      "objectiveDifficultyBonus": 0
+    },
+    "6": {
+      "baseGreedCoins": 5,
+      "mobHealthDamageBonus": 150,
+      "crateLootBonus": 20,
+      "greedCrateLootTier": 2,
+      "chestRollsBonus": 10,
+      "trapDisarmPenalty": 75,
+      "mobSpawnBonus": 33,
+      "objectiveDifficultyBonus": 0
+    },
+    "7": {
+      "baseGreedCoins": 6,
+      "mobHealthDamageBonus": 225,
+      "crateLootBonus": 25,
+      "greedCrateLootTier": 2,
+      "chestRollsBonus": 15,
+      "trapDisarmPenalty": 100,
+      "mobSpawnBonus": 33,
+      "objectiveDifficultyBonus": 0
+    },
+    "8": {
+      "baseGreedCoins": 7,
+      "mobHealthDamageBonus": 300,
+      "crateLootBonus": 25,
+      "greedCrateLootTier": 3,
+      "chestRollsBonus": 15,
+      "trapDisarmPenalty": 125,
+      "mobSpawnBonus": 50,
+      "objectiveDifficultyBonus": 25
+    },
+    "9": {
+      "baseGreedCoins": 8,
+      "mobHealthDamageBonus": 400,
+      "crateLootBonus": 30,
+      "greedCrateLootTier": 4,
+      "chestRollsBonus": 20,
+      "trapDisarmPenalty": 175,
+      "mobSpawnBonus": 50,
+      "objectiveDifficultyBonus": 25
+    },
+    "10": {
+      "baseGreedCoins": 9,
+      "mobHealthDamageBonus": 550,
+      "crateLootBonus": 35,
+      "greedCrateLootTier": 4,
+      "chestRollsBonus": 20,
+      "trapDisarmPenalty": 175,
+      "mobSpawnBonus": 50,
+      "objectiveDifficultyBonus": 25
+    },
+    "11": {
+      "baseGreedCoins": 10,
+      "mobHealthDamageBonus": 700,
+      "crateLootBonus": 35,
+      "greedCrateLootTier": 4,
+      "chestRollsBonus": 25,
+      "trapDisarmPenalty": 200,
+      "mobSpawnBonus": 60,
+      "objectiveDifficultyBonus": 35
+    },
+    "12": {
+      "baseGreedCoins": 11,
+      "mobHealthDamageBonus": 950,
+      "crateLootBonus": 40,
+      "greedCrateLootTier": 5,
+      "chestRollsBonus": 25,
+      "trapDisarmPenalty": 200,
+      "mobSpawnBonus": 60,
+      "objectiveDifficultyBonus": 35
+    },
+    "13": {
+      "baseGreedCoins": 12,
+      "mobHealthDamageBonus": 1250,
+      "crateLootBonus": 40,
+      "greedCrateLootTier": 5,
+      "chestRollsBonus": 30,
+      "trapDisarmPenalty": 250,
+      "mobSpawnBonus": 60,
+      "objectiveDifficultyBonus": 40
+    },
+    "14": {
+      "baseGreedCoins": 13,
+      "mobHealthDamageBonus": 1600,
+      "crateLootBonus": 45,
+      "greedCrateLootTier": 6,
+      "chestRollsBonus": 30,
+      "trapDisarmPenalty": 275,
+      "mobSpawnBonus": 65,
+      "objectiveDifficultyBonus": 45
+    },
+    "15": {
+      "baseGreedCoins": 14,
+      "mobHealthDamageBonus": 2000,
+      "crateLootBonus": 45,
+      "greedCrateLootTier": 6,
+      "chestRollsBonus": 35,
+      "trapDisarmPenalty": 300,
+      "mobSpawnBonus": 70,
+      "objectiveDifficultyBonus": 45
+    },
+    "16": {
+      "baseGreedCoins": 15,
+      "mobHealthDamageBonus": 2500,
+      "crateLootBonus": 50,
+      "greedCrateLootTier": 7,
+      "chestRollsBonus": 40,
+      "trapDisarmPenalty": 350,
+      "mobSpawnBonus": 75,
+      "objectiveDifficultyBonus": 50
+    }
+  },
+  "gates": {
+    "assassinsInheritVaultModifiers": 4,
+    "assassinsInflictNegativeEffects": 7,
+    "assassinsGainBuffingAuras": 9,
+    "assassinsGainInfernalModifiers": 13,
+    "vaultChampionHunts": 10,
+    "vaultChampionEnraged": 16
+  },
+  "spawn": {
+    "hordeBaseChance": 2.0E-4,
+    "eliteBaseChance": 0.01,
+    "rankChanceStep": 0.15,
+    "decayFactor": 0.5,
+    "recoveryTicks": 6000.0
+  }
+}
