@@ -150,6 +150,30 @@
     },
     {
       "type": "placeholder",
+      "target": "PYLON",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 1,
+          "success": {
+            "woldsvaults:locked_treasure_container[type=ashium]{Generated:0b,LootTable:\"the_vault:treasure_chest_map\"}": 1,
+            "woldsvaults:locked_treasure_container[type=bomignite]{Generated:0b,LootTable:\"the_vault:treasure_chest_map\"}": 1,
+            "woldsvaults:locked_treasure_container[type=gorginite]{Generated:0b,LootTable:\"the_vault:treasure_chest_map\"}": 1,
+            "woldsvaults:locked_treasure_container[type=iskallium]{Generated:0b,LootTable:\"the_vault:treasure_chest_map\"}": 1,
+            "woldsvaults:locked_treasure_container[type=petzanite]{Generated:0b,LootTable:\"the_vault:treasure_chest_map\"}": 1,
+            "woldsvaults:locked_treasure_container[type=sparkletine]{Generated:0b,LootTable:\"the_vault:treasure_chest_map\"}": 1,
+            "woldsvaults:locked_treasure_container[type=tubium]{Generated:0b,LootTable:\"the_vault:treasure_chest_map\"}": 1,
+            "woldsvaults:locked_treasure_container[type=upaline]{Generated:0b,LootTable:\"the_vault:treasure_chest_map\"}": 1,
+            "woldsvaults:locked_treasure_container[type=xenium]{Generated:0b,LootTable:\"the_vault:treasure_chest_map\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "placeholder",
       "target": "ORE",
       "levels": [
         {
