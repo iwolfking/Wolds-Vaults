@@ -10,8 +10,11 @@
     "movementSpeedCap": "Hard ceiling on effective movement speed. Vanilla pathfinding degrades badly above roughly 1.0; the leash teleport closes distance instead",
     "scaleTeleportCooldown": "Whether attackSpeedMultiplier also shortens the 200-tick teleport cooldown. Off by default: scaling it puts the grab-and-stun on a very short cycle at Legend",
     "inheritVaultModifiers": "Replay the crystal's mob attribute modifiers onto the Champion. Max-health modifiers are excluded regardless, to keep the pool from compounding into float overflow",
+    "sizeMultiplier": "Scales the Champion's model and hitbox through the base mod's entity-scale capability, the same one the Grow effect uses. 1.0 is the Vessel's own size - a 0.9 x 3.5 hitbox drawn at the renderer's fixed 1.5x model scale. Clamped by that capability to 8.0",
+    "hud": "Pixel offset of the health bar from the top centre of the screen",
     "aggroRadius": "How far the Champion will acquire a target on its own",
     "leashDistance": "Beyond this the Champion teleports in front of its quarry, ignoring every cooldown. This is what makes the hunt inescapable",
+    "spawnRingMax": "Fallback search radius. The Champion lands on the player; this is only how far out it looks when there is no room to stand there",
     "dormantTicks": "How long the Champion stands inert after spawning before it activates",
     "orphanTicks": "How long a Champion with no runner left in the vault survives before it is discarded",
     "lightning": "Being out of position for chargeTicks forces a lightning storm. One shared counter: above, below or far all charge the same one",
@@ -70,16 +73,21 @@
     "levelAnchor": 100,
     "movementSpeedCap": 1.0,
     "scaleTeleportCooldown": false,
-    "inheritVaultModifiers": true
+    "inheritVaultModifiers": true,
+    "sizeMultiplier": 1.5
   },
   "hunt": {
     "aggroRadius": 40.0,
     "leashDistance": 35.0,
-    "spawnRingMin": 20.0,
-    "spawnRingMax": 32.0,
+    "spawnRingMin": 0.0,
+    "spawnRingMax": 8.0,
     "dormantTicks": 40,
     "orphanTicks": 200,
     "managerIntervalTicks": 20
+  },
+  "hud": {
+    "offsetX": 0,
+    "offsetY": 8
   },
   "lightning": {
     "aboveBlocks": 1.5,
