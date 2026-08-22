@@ -1,0 +1,116 @@
+{
+  "documentation": {
+    "ranks": "One entry per medallion rank that can summon a Champion. Ranks with no entry never spawn one; as shipped that is every rank below Master 1 (rank 10)",
+    "healthPool": "Damage the Champion must absorb before it is defeated, at the level anchor and before difficulty, medallion and vault modifiers. It is a damage pool, not entity health: the Vessel cannot be killed, so emptying the pool discards it",
+    "damageMultiplier": "Multiplier on baseAttackDamage. The Vessel's own time ramp (1.2x/min for five minutes then 1.35x/min) applies on top",
+    "movementSpeedMultiplier": "Multiplier on the Vessel's 0.25 base movement speed, then clamped to movementSpeedCap",
+    "attackSpeedMultiplier": "Divisor on every attack cooldown. 2.0 halves the gap between swings. Animation lengths are untouched",
+    "baseAttackDamage": "The Vessel's authored attack damage, scaled by vault level over levelAnchor before the rank multiplier",
+    "levelAnchor": "Vault level at which healthPool and baseAttackDamage are quoted verbatim. Crystals clamp to level 100 internally, so this is normally the ceiling too",
+    "movementSpeedCap": "Hard ceiling on effective movement speed. Vanilla pathfinding degrades badly above roughly 1.0; the leash teleport closes distance instead",
+    "scaleTeleportCooldown": "Whether attackSpeedMultiplier also shortens the 200-tick teleport cooldown. Off by default: scaling it puts the grab-and-stun on a very short cycle at Legend",
+    "inheritVaultModifiers": "Replay the crystal's mob attribute modifiers onto the Champion. Max-health modifiers are excluded regardless, to keep the pool from compounding into float overflow",
+    "aggroRadius": "How far the Champion will acquire a target on its own",
+    "leashDistance": "Beyond this the Champion teleports in front of its quarry, ignoring every cooldown. This is what makes the hunt inescapable",
+    "dormantTicks": "How long the Champion stands inert after spawning before it activates",
+    "orphanTicks": "How long a Champion with no runner left in the vault survives before it is discarded",
+    "lightning": "Being out of position for chargeTicks forces a lightning storm. One shared counter: above, below or far all charge the same one",
+    "trueDamage": "Flat unnegatable damage landed as a second event on every melee hit, bypassing armor, resistance and invulnerability frames. Deliberately does not scale with anything",
+    "aura": "Inside this radius of a Champion or assassin, players cannot avoid harmful effects. Time Acceleration is exempt",
+    "rage": "Per-player, per-vault. Rises on the listed actions, decays every tick. Once rage reaches the threshold a roll every rollIntervalTicks can ARM a spawn, which then fires on the player's next rage-increasing action",
+    "baseThreshold": "Rage needed before rolls begin. Multiplied by thresholdMultiplierPerKill for each Champion this player has already defeated this vault",
+    "rewards": "Multiplied by the medallion's rank index. Rank 10 (Master 1) with the shipped values pays 50 greed coins and 20 tickets"
+  },
+  "ranks": {
+    "10": {
+      "healthPool": 2000000.0,
+      "damageMultiplier": 1.0,
+      "movementSpeedMultiplier": 1.5,
+      "attackSpeedMultiplier": 2.0
+    },
+    "11": {
+      "healthPool": 2000000.0,
+      "damageMultiplier": 2.0,
+      "movementSpeedMultiplier": 1.8,
+      "attackSpeedMultiplier": 2.4
+    },
+    "12": {
+      "healthPool": 2000000.0,
+      "damageMultiplier": 4.0,
+      "movementSpeedMultiplier": 2.1,
+      "attackSpeedMultiplier": 2.8
+    },
+    "13": {
+      "healthPool": 10000000.0,
+      "damageMultiplier": 8.0,
+      "movementSpeedMultiplier": 2.5,
+      "attackSpeedMultiplier": 3.3
+    },
+    "14": {
+      "healthPool": 10000000.0,
+      "damageMultiplier": 15.0,
+      "movementSpeedMultiplier": 3.0,
+      "attackSpeedMultiplier": 3.9
+    },
+    "15": {
+      "healthPool": 10000000.0,
+      "damageMultiplier": 30.0,
+      "movementSpeedMultiplier": 3.5,
+      "attackSpeedMultiplier": 4.4
+    },
+    "16": {
+      "healthPool": 100000000.0,
+      "damageMultiplier": 100.0,
+      "movementSpeedMultiplier": 4.0,
+      "attackSpeedMultiplier": 5.0
+    }
+  },
+  "scaling": {
+    "baseAttackDamage": 24.0,
+    "levelAnchor": 100,
+    "movementSpeedCap": 1.0,
+    "scaleTeleportCooldown": false,
+    "inheritVaultModifiers": true
+  },
+  "hunt": {
+    "aggroRadius": 40.0,
+    "leashDistance": 35.0,
+    "spawnRingMin": 20.0,
+    "spawnRingMax": 32.0,
+    "dormantTicks": 40,
+    "orphanTicks": 200,
+    "managerIntervalTicks": 20
+  },
+  "lightning": {
+    "aboveBlocks": 1.5,
+    "belowBlocks": 4.0,
+    "farBlocks": 25.0,
+    "chargeTicks": 40
+  },
+  "trueDamage": {
+    "champion": 15.0,
+    "assassin": 10.0
+  },
+  "aura": {
+    "radius": 10.0,
+    "assassinsCarryIt": true
+  },
+  "rage": {
+    "decayPerTick": 6.0,
+    "chestLooted": 200.0,
+    "oreMined": 200.0,
+    "hordeKill": 100.0,
+    "assassinKill": 300.0,
+    "tankKill": 700.0,
+    "eliteChampionMultiplier": 2.0,
+    "baseThreshold": 100000.0,
+    "thresholdMultiplierPerKill": 4.0,
+    "rollIntervalTicks": 20,
+    "baseChance": 0.001,
+    "legendBaseChance": 0.0025
+  },
+  "rewards": {
+    "greedCoinsPerRank": 5,
+    "greedyTicketsPerRank": 2
+  }
+}
