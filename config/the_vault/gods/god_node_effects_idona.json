@@ -95,7 +95,22 @@
     },
     "idona_ultra_rampaging": {
       "handler": "idona_ultra_rampaging",
-      "values": []
+      "values": [],
+      "fury_per_hit": 100.0,
+      "fury_per_kill": 200.0,
+      "fury_boss_hit_multiplier": 2.0,
+      "fury_boss_kill_multiplier": 10.0,
+      "fury_per_hp_fraction_lost": 6000.0,
+      "fury_decay_per_tick": 0.985,
+      "fury_decay_scale_from": 6000.0,
+      "fury_decay_scale_divisor": 2000.0,
+      "fury_floor": 25.0,
+      "fury_cap": 15000.0,
+      "cdm_additive_divisor": 6500.0,
+      "cdm_multiplier_base": 1.03,
+      "cdm_sqrt_from": 6000.0,
+      "incoming_divisor": 3000.0,
+      "incoming_scale": 0.5
     },
     "idona_overcrit": {
       "handler": "idona_overcrit",
