@@ -558,6 +558,45 @@
           ]
         }
       ]
+    },
+    {
+      "roll": {
+        "type": "uniform",
+        "min": 1,
+        "max": 1
+      },
+      "pool": [
+        {
+          "weight": 1,
+          "pool": [
+            {
+              "weight": 6,
+              "item": {
+                "id": "minecraft:air",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 4,
+              "item": {
+                "id": "the_vault:card_deck",
+                "nbt": {
+                  "id": "mystery"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
