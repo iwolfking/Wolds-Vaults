@@ -32,15 +32,15 @@
                 "id": "the_vault:mod_box",
                 "count": {
                   "type": "uniform",
-                  "min": 2,
-                  "max": 4
+                  "min": 1,
+                  "max": 1
                 }
               }
             },
             {
               "weight": 4,
               "item": {
-                "id": "woldsvaults:green_vault_essence",
+                "id": "woldsvaults:blue_vault_essence",
                 "count": {
                   "type": "uniform",
                   "min": 4,
@@ -64,7 +64,7 @@
               "weight": 4,
               "item": {
                 "id": "the_vault:booster_pack",
-                "nbt": "{\"id\": \"the_vault:grove_pack\"}",
+                "nbt": "{\"id\": \"the_vault:library_pack\"}",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -125,7 +125,7 @@
               "weight": 4,
               "item": {
                 "id": "the_vault:vault_catalyst_infused",
-                "nbt": "{\"pool\":\"the_vault:velara_bonus\"}",
+                "nbt": "{\"pool\":\"the_vault:tenos_bonus\"}",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -333,7 +333,7 @@
               "item": {
                 "id": "the_vault:inscription",
                 "nbt": {
-                  "pool": "the_vault:velara"
+                  "pool": "the_vault:tenos"
                 },
                 "count": {
                   "type": "uniform",
@@ -379,6 +379,36 @@
                   "min": 1,
                   "max": 1
                 }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+                "id": "the_vault:deck_socket",
+                "nbt": {
+                  "Modifier": "@treasure_sand",
+                  "ModifierRoll": "greater"
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:map",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "gear_treasure_map",
+                  "the_vault:map_tier": -1
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                  }
               }
             }
           ]

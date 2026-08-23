@@ -50,7 +50,7 @@ onEvent('jei.hide.items', event => {
     event.hide(Item.of('the_vault:god_blessing').ignoreNBT())
     event.hide('the_vault:gate_lock')
     event.hide('the_vault:herald_controller')
-    event.hide('the_vault:raid_controller')
+    // event.hide('the_vault:raid_controller') - at least one controller is needed for JEI (JEVH)
     event.hide('the_vault:memory_room_controller')
     event.hide('the_vault:wild_west_controller')
     event.hide('the_vault:dragon_room_controller')
@@ -64,8 +64,8 @@ onEvent('jei.hide.items', event => {
     event.hide('the_vault:horde_rush_controller_purchase')
     event.hide(Item.of('the_vault:god_obelisk').ignoreNBT())
     event.hide('the_vault:mob_barrier')
-    event.hide('the_vault:ability_scroll')
-    event.hide('the_vault:talent_scroll')
+    // event.hide('the_vault:ability_scroll') // needed for JEI (VHAPI)
+    // event.hide('the_vault:talent_scroll') // needed for JEI (VHAPI)
     event.hide('the_vault:vault_modifier')
     event.hide('the_vault:small_charm')
     event.hide('the_vault:large_charm')
@@ -86,7 +86,9 @@ onEvent('jei.hide.items', event => {
     event.hide('the_vault:lava_splatter_1')
     event.hide('the_vault:lava_splatter_2')
     event.hide('the_vault:lava_splatter_3')
+    event.hide('the_vault:abyssal_ichor')
     event.hide('woldsvaults:accoutre_focus')
+    event.hide('woldsvaults:locked_treasure_container')
     event.hide('pneumaticcraft:jet_boots_upgrade_1')
     event.hide('pneumaticcraft:jet_boots_upgrade_2')
     event.hide('pneumaticcraft:jet_boots_upgrade_3')
@@ -180,6 +182,21 @@ onEvent('jei.hide.items', event => {
     event.hide(/draconicevolution:.*_speed_module/)
     event.hide(/dyenamicsandfriends:botanypots_.*/)
 
+    event.hide(Item.of('minecraft:potion', {Potion: "the_vault:time_acceleration_x2"}))
+    event.hide(Item.of('minecraft:potion', {Potion: "the_vault:time_acceleration_x3"}))
+    event.hide(Item.of('minecraft:potion', {Potion: "the_vault:time_acceleration_x4"}))
+
+    event.hide(Item.of('minecraft:splash_potion', {Potion: "the_vault:time_acceleration_x2"}))
+    event.hide(Item.of('minecraft:splash_potion', {Potion: "the_vault:time_acceleration_x3"}))
+    event.hide(Item.of('minecraft:splash_potion', {Potion: "the_vault:time_acceleration_x4" }))
+
+    event.hide(Item.of('minecraft:lingering_potion', {Potion: "the_vault:time_acceleration_x2"}))
+    event.hide(Item.of('minecraft:lingering_potion', {Potion: "the_vault:time_acceleration_x3"}))
+    event.hide(Item.of('minecraft:lingering_potion', {Potion: "the_vault:time_acceleration_x4" }))
+
+    event.hide(Item.of('minecraft:tipped_arrow', {Potion: "the_vault:time_acceleration_x2"}))
+    event.hide(Item.of('minecraft:tipped_arrow', {Potion: "the_vault:time_acceleration_x3"}))
+    event.hide(Item.of('minecraft:tipped_arrow', {Potion: "the_vault:time_acceleration_x4" }))
 
     //Blocks with rendering/crashing issues
     event.hide('blockcarpentry:frame_sign')

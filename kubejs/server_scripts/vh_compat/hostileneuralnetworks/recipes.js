@@ -61,6 +61,8 @@ onEvent("recipes", event => {
 
     let alexsMobsTypes = ['flutter']
 
+    let arsNouveauMobTypes = ['wilden_mobs']
+
     // event.shaped(Item.of('hostilenetworks:deep_learner'),
     //     [
     //         'PRP',
@@ -516,6 +518,180 @@ onEvent("recipes", event => {
             M: Item.of('hostilenetworks:data_model', `{data_model:{data:354,id:"hostilenetworks:alexsmobs/${mob}"}}`)
         })
     })
+
+
+        //Base Models
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_hunter_se`,
+            M: 'the_vault:vault_diamond'
+        })
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_stalker_se`,
+            M: 'the_vault:vault_diamond'
+        })
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_guardian_se`,
+            M: 'the_vault:vault_diamond'
+        })
+
+        //6 Data
+
+         event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_guardian_se`,
+            M: Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
+        })
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_hunter_se`,
+            M: Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
+        })
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_stalker_se`,
+            M: Item.of('hostilenetworks:data_model', `{data_model:{id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
+        })
+
+        //6->54
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:54,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_stalker_se`,
+            M: Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
+        })
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:54,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_guardian_se`,
+            M: Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
+        })
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:54,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_hunter_se`,
+            M: Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
+        })
+
+        //54->354
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:354,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_stalker_se`,
+            M: Item.of('hostilenetworks:data_model', `{data_model:{data:54,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
+        })
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:354,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_guardian_se`,
+            M: Item.of('hostilenetworks:data_model', `{data_model:{data:54,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
+        })
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:354,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_hunter_se`,
+            M: Item.of('hostilenetworks:data_model', `{data_model:{data:54,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
+        })
+
+        //354->1254
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:1254,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_hunter_se`,
+            M: Item.of('hostilenetworks:data_model', `{data_model:{data:354,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
+        })
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:1254,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_guardian_se`,
+            M: Item.of('hostilenetworks:data_model', `{data_model:{data:354,id:"hostilenetworks:ars_nouveau/wilden_mob}"}}`)
+        })
+
+        event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:1254,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),
+            [
+                ' E ',
+                'ZMZ',
+                ' Z '
+            ], {
+            Z: 'the_vault:vault_essence',
+            E: `ars_nouveau:wilden_stalker_se`,
+            M: Item.of('hostilenetworks:data_model', `{data_model:{data:354,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
+        })
 
     event.shapeless('16x hostilenetworks:empty_prediction', ['4x #forge:glass_panes', 'minecraft:lapis_lazuli', 'the_vault:chromatic_iron_ingot'])
 

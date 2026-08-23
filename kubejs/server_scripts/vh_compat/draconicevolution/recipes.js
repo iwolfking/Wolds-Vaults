@@ -16,6 +16,8 @@ let removedOutputsDE = [
     "draconicevolution:basic_crafting_injector",
     "draconicevolution:reactor_prt_focus_ring",
     "draconicevolution:reactor_prt_stab_frame",
+    "draconicevolution:basic_relay_crystal",
+    "draconicevolution:wyvern_relay_crystal",
 
     /draconicadditions:.*_tick_accel/,
     /draconicadditions:.*_harness/,
@@ -43,8 +45,7 @@ let removedOutputsDE = [
     /draconicevolution:.*_collection_module/,
     /draconicevolution:.*_filter_module/,
     /draconicevolution:.*_aoe_module/,
-    /draconicevolution:.*_speed_module/,
-    /draconicevolution:.(basic|wyvern)_relay_crystal/
+    /draconicevolution:.*_speed_module/
 ];
 onEvent("recipes", event => {
     removedOutputsDE.forEach(id => {
@@ -111,7 +112,7 @@ onEvent("recipes", event => {
             D: 'the_vault:extraordinary_echo_gem',
             W: 'draconicevolution:wyvern_energy_core',
             H: 'draconicevolution:draconium_block'
-        })
+        }).id('draconicevolution:basic_relay_crystal')
 
 
     event.shaped(Item.of('draconicevolution:wyvern_relay_crystal'),
@@ -123,7 +124,7 @@ onEvent("recipes", event => {
             D: 'draconicevolution:basic_relay_crystal',
             W: 'draconicevolution:wyvern_core',
             H: 'draconicevolution:draconium_block'
-        })
+        }).id('draconicevolution:wyvern_relay_crystal')
 
 
     event.shaped(Item.of('draconicevolution:wyvern_energy_core'),

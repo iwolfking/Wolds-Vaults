@@ -266,6 +266,17 @@
       "color1": "0xFF49d64f",
       "color2": "0xFF5b23b0"
     },
+    "deck_core_greater": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "item": {
+        "id": "the_vault:deck_socket",
+        "nbt": "{Modifier:\"@default\", ModifierRoll: \"greater\"}",
+        "count": 1
+      },
+      "color1": "0xFFffb400",
+      "color2": "0xFFffe04e"
+    },
     "shiny_pack": {
       "type": "floating_item_reward",
       "textColor": "0xFFffb400",
@@ -1212,133 +1223,133 @@
       "type": "tile_reward",
       "name": "Gilded Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 10
     },
     "gilded_chest_big": {
       "type": "tile_reward",
       "name": "Gilded Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 16
     },
     "gilded_chest_ww": {
       "type": "tile_reward",
       "name": "Gilded Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 10
     },
     "gilded_chest_bigger": {
       "type": "tile_reward",
       "name": "Gilded Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=gilded_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 24
     },
     "ornate_chest": {
       "type": "tile_reward",
       "name": "Ornate Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 10
     },
     "ornate_chest_big": {
       "type": "tile_reward",
       "name": "Ornate Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 16
     },
     "ornate_chest_ww": {
       "type": "tile_reward",
       "name": "Ornate Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 10
     },
     "ornate_chest_bigger": {
       "type": "tile_reward",
       "name": "Ornate Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=ornate_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 16
     },
     "coin_pile": {
       "type": "tile_reward",
       "name": "Coin Piles",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=coin_stacks,facing=up]{Hidden:1b}",
+      "tile": "the_vault:placeholder[type=coin_stacks,facing=up]",
       "count": 10
     },
     "coin_pile_big": {
       "type": "tile_reward",
       "name": "Coin Piles",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=coin_stacks,facing=up]{Hidden:1b}",
+      "tile": "the_vault:placeholder[type=coin_stacks,facing=up]",
       "count": 16
     },
      "coin_pile_ww": {
       "type": "tile_reward",
       "name": "Coin Piles",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=coin_stacks,facing=up]{Hidden:1b}",
+      "tile": "the_vault:placeholder[type=coin_stacks,facing=up]",
       "count": 10
     },
     "coin_pile_bigger": {
       "type": "tile_reward",
       "name": "Coin Piles",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=coin_stacks,facing=up]{Hidden:1b}",
+      "tile": "the_vault:placeholder[type=coin_stacks,facing=up]",
       "count": 24
     },
     "living_chest": {
       "type": "tile_reward",
       "name": "Living Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=living_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=living_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 10
     },
     "living_chest_big": {
       "type": "tile_reward",
       "name": "Living Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=living_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=living_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 16
     },
     "living_chest_ww": {
       "type": "tile_reward",
       "name": "Living Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=living_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=living_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 10
     },
     "living_chest_bigger": {
       "type": "tile_reward",
       "name": "Living Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=living_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=living_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 24
     },
     "wooden_chest": {
       "type": "tile_reward",
       "name": "Wooden Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=wooden_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=wooden_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 16
     },
     "wooden_chest_big": {
       "type": "tile_reward",
       "name": "Wooden Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=wooden_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=wooden_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 24
     },
     "wooden_chest_bigger": {
       "type": "tile_reward",
       "name": "Wooden Chests",
       "textColor": "0xFFfff0a9",
-      "tile": "the_vault:placeholder[type=wooden_chest,facing=up]{Hidden:1b,template_tags:[\"no_trap\"]}",
+      "tile": "the_vault:placeholder[type=wooden_chest,facing=up]{template_tags:[\"no_trap\"]}",
       "count": 32
     },
     "add_pillager": {
@@ -2085,10 +2096,6 @@
             {
               "value": "leg_battlestaff",
               "weight": 2
-            },
-            {
-              "value": "double_everything",
-              "weight": 4
             }
           ]
         },
@@ -2314,10 +2321,6 @@
             {
               "value": "leg_battlestaff",
               "weight": 2
-            },
-            {
-              "value": "double_everything",
-              "weight": 4
             }
           ]
         }
@@ -2352,6 +2355,10 @@
             {
               "value": "deck_core",
               "weight": 4
+            },
+            {
+              "value": "deck_core_greater",
+              "weight": 2
             },
             {
               "value": "eccentric_focus_big",
@@ -2484,10 +2491,6 @@
             {
               "value": "raid_rock_infinite_hard",
               "weight": 10
-            },
-            {
-              "value": "double_everything",
-              "weight": 4
             }
           ]
         }
@@ -2694,10 +2697,6 @@
             {
               "value": "leg_battlestaff",
               "weight": 2
-            },
-            {
-              "value": "double_everything",
-              "weight": 4
             }
           ]
         },
@@ -2923,10 +2922,6 @@
             {
               "value": "leg_battlestaff",
               "weight": 2
-            },
-            {
-              "value": "double_everything",
-              "weight": 4
             }
           ]
         }
