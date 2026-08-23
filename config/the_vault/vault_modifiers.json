@@ -1113,6 +1113,17 @@
       }
     },
     "the_vault:modifier_type/crate_item_quantity": {
+      "woldsvaults:tenos_challenge_tackler": {
+        "properties": {
+          "percentage": 1.0
+        },
+        "display": {
+          "name": "Crate Tier",
+          "color": "#38C9C0",
+          "description": "Increases the reward crate tier once per modifier",
+          "icon": "the_vault:gui/modifiers/crate_item_quantity"
+        }
+      },
       "the_vault:crake_quantity": {
         "properties": {
           "percentage": 0.4
@@ -5447,6 +5458,23 @@
       }
     },
     "the_vault:modifier_type/grouped": {
+      "woldsvaults:tenos_master_of_chests": {
+        "properties": {
+          "children": {
+            "woldsvaults:omega_cascading_wooden": 15,
+            "woldsvaults:omega_cascading_gilded": 15,
+            "woldsvaults:omega_cascading_ornate": 15,
+            "woldsvaults:omega_cascading_living": 15,
+            "woldsvaults:omega_cascading_coins": 15
+          }
+        },
+        "display": {
+          "name": "Master of Chests",
+          "color": "#3FFBF4",
+          "description": "+15% Cascading for all chests and coins.",
+          "icon": "the_vault:gui/modifiers/item_quant_4"
+        }
+      },
       "the_vault:greed_trial": {
         "properties": {
           "children": {
@@ -8744,6 +8772,20 @@
       }
     },
     "the_vault:modifier_type/pool_reference_weight": {
+      "woldsvaults:omega_fortune_double": {
+        "properties": {
+          "references": [
+            "the_vault:vault/rooms/omega_rooms"
+          ],
+          "weightMultiplier": 2.0
+        },
+        "display": {
+          "name": "Omega Sprout",
+          "color": "#6AFF00",
+          "description": "2x Omega Room Chance",
+          "icon": "the_vault:gui/modifiers/omega_fortune"
+        }
+      },
       "woldsvaults:challenge_fortune_small": {
         "properties": {
           "references": [
