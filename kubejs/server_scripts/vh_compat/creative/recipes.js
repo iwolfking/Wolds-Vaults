@@ -256,7 +256,7 @@ onEvent("recipes", event => {
         "ingredients": [
             { "item": "ae2:dense_energy_cell" },
             { "item": "woldsvaults:wold_star" },
-            { "item": "woldsvaults:wold_star" },
+            { "item": "the_vault:omega_pog" },
             { "item": "the_vault:omega_pog" },
             { "item": "compressium:vault_diamond_block_1" },
             { "item": "ae2:singularity" }
