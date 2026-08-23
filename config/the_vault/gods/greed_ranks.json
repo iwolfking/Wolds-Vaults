@@ -1,0 +1,41 @@
+{
+  "documentation": {
+    "bandSize": "Ranks per band. A rank-up that lands on the first rank of a band is a hyper trial; every other rank-up is a vessel trial",
+    "bandNames": "Band names in ladder order, one per band. Medallion registry paths, rank badges and band colours all derive from these",
+    "thresholds": "Greed reputation needed to hold each rank, rank 1 upwards. The list must hold one entry per rank of the ladder",
+    "godLevelGates": "God alignment level needed with any single god before the rank-up trial for that rank may be taken, keyed by the rank being climbed to. Ranks with no gate are omitted"
+  },
+  "bandSize": 3,
+  "bandNames": [
+    "scavenger",
+    "looter",
+    "hunter",
+    "master",
+    "champion",
+    "legend"
+  ],
+  "thresholds": [
+    0,
+    75,
+    100,
+    125,
+    150,
+    175,
+    200,
+    250,
+    300,
+    400,
+    500,
+    550,
+    600,
+    800,
+    900,
+    1000
+  ],
+  "godLevelGates": {
+    "7": 2,
+    "10": 4,
+    "13": 6,
+    "16": 8
+  }
+}

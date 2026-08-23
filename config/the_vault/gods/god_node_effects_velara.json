@@ -1,0 +1,220 @@
+{
+  "effects": {
+    "velara_tough": {
+      "handler": "gear_attribute_scaled",
+      "attribute": "the_vault:health_percentile",
+      "values": [
+        0.25
+      ]
+    },
+    "velara_tough_ii": {
+      "handler": "gear_attribute_scaled",
+      "attribute": "the_vault:health_percentile",
+      "values": [
+        0.5
+      ]
+    },
+    "velara_armored": {
+      "handler": "gear_attribute_scaled",
+      "attribute": "the_vault:armor_percentile",
+      "values": [
+        0.25
+      ]
+    },
+    "velara_armored_ii": {
+      "handler": "gear_attribute_scaled",
+      "attribute": "the_vault:armor_percentile",
+      "values": [
+        0.5
+      ]
+    },
+    "velara_immune": {
+      "handler": "velara_effect_avoidance",
+      "values": [
+        0.05
+      ]
+    },
+    "velara_immune_ii": {
+      "handler": "velara_effect_avoidance",
+      "values": [
+        0.1
+      ]
+    },
+    "velara_healthy": {
+      "handler": "gear_attribute_scaled",
+      "attribute": "the_vault:healing_effectiveness",
+      "values": [
+        0.2
+      ]
+    },
+    "velara_healthy_ii": {
+      "handler": "gear_attribute_scaled",
+      "attribute": "the_vault:healing_effectiveness",
+      "values": [
+        0.4
+      ]
+    },
+    "velara_fast_reflexes": {
+      "handler": "gear_attribute_scaled",
+      "attribute": "the_vault:dodge_percent",
+      "values": [
+        0.02
+      ]
+    },
+    "velara_fast_reflexes_ii": {
+      "handler": "gear_attribute_scaled",
+      "attribute": "the_vault:dodge_percent",
+      "values": [
+        0.05
+      ]
+    },
+    "velara_guarded": {
+      "handler": "gear_attribute_scaled",
+      "attribute": "the_vault:block",
+      "values": [
+        0.02
+      ]
+    },
+    "velara_guarded_ii": {
+      "handler": "gear_attribute_scaled",
+      "attribute": "the_vault:block",
+      "values": [
+        0.05
+      ]
+    },
+    "velara_thorny": {
+      "handler": "gear_attribute_scaled",
+      "attribute": "the_vault:thorns_damage_flat",
+      "values": [
+        25.0
+      ]
+    },
+    "velara_thorny_ii": {
+      "handler": "gear_attribute_scaled",
+      "attribute": "the_vault:thorns_damage_flat",
+      "values": [
+        50.0
+      ]
+    },
+    "velara_pious_devotion": {
+      "handler": "piety",
+      "values": [
+        10.0
+      ]
+    },
+    "velara_counterstrike": {
+      "handler": "velara_counterstrike",
+      "values": [],
+      "chance": 0.5
+    },
+    "velara_magic_armor": {
+      "handler": "velara_magic_armor",
+      "values": [],
+      "efficiency": 0.5
+    },
+    "velara_defender_of_the_faith": {
+      "handler": "velara_defender_of_the_faith",
+      "values": [],
+      "per_charm": 0.05
+    },
+    "velara_sacrifice": {
+      "handler": "velara_sacrifice",
+      "values": [],
+      "syphon": 0.66,
+      "resistance": 0.33
+    },
+    "velara_perserverence": {
+      "handler": "velara_perserverence",
+      "values": [],
+      "timer_bonus": 0.5
+    },
+    "velara_adaptive_armor": {
+      "handler": "velara_adaptive_armor",
+      "values": [],
+      "per_stack": 0.1,
+      "max_stacks": 6
+    },
+    "velara_bounce_back": {
+      "handler": "velara_bounce_back",
+      "values": [],
+      "multiplier": 2.0,
+      "health_threshold": 0.1
+    },
+    "velara_indomitable": {
+      "handler": "velara_indomitable",
+      "values": [],
+      "regeneration_levels": 3
+    },
+    "velara_field_medic": {
+      "handler": "velara_field_medic",
+      "values": [],
+      "multiplier": 1.5
+    },
+    "velara_the_stonewall": {
+      "handler": "velara_the_stonewall",
+      "values": [],
+      "speed_multiplier": 0.33,
+      "armor_multiplier": 1.5
+    },
+    "velara_cactus": {
+      "handler": "velara_cactus",
+      "values": [],
+      "armor_multiplier": 0.33,
+      "thorns_multiplier": 2.0
+    },
+    "velara_malediction": {
+      "handler": "velara_malediction",
+      "values": [],
+      "forced_healing": 0.5
+    },
+    "velara_immortal": {
+      "handler": "velara_immortal",
+      "values": [],
+      "health_multiplier": 1.33,
+      "armor_multiplier": 1.33,
+      "healing_multiplier": 1.5,
+      "flat_health": 20.0,
+      "flat_armor": 50.0,
+      "regeneration_levels": 10,
+      "damage_multiplier": 0.5,
+      "revive_cooldown_ticks": 6000
+    },
+    "velara_fleeting_physicality": {
+      "handler": "velara_fleeting_physicality",
+      "values": [],
+      "immune_ticks": 200,
+      "vulnerable_ticks": 400,
+      "damage_multiplier": 3.0
+    },
+    "velara_steadfast": {
+      "handler": "velara_steadfast",
+      "values": [],
+      "knockback_floor": 1.0,
+      "armor_per_excess": 1.0
+    },
+    "velara_sanitation": {
+      "handler": "velara_sanitation",
+      "values": [],
+      "radius": 50.0,
+      "duration_divisor": 3
+    },
+    "velara_presence": {
+      "handler": "velara_presence",
+      "values": [],
+      "radius": 100.0,
+      "resistance": 0.1,
+      "healing": 1.0,
+      "regeneration_levels": 2
+    },
+    "velara_healing_flow": {
+      "handler": "velara_healing_flow",
+      "values": [],
+      "per_mana_regen": 0.04
+    },
+    "velara_utilized": {
+      "handler": "velara_utilized",
+      "values": [],
+      "ability_levels": 3
+    }
+  }
+}

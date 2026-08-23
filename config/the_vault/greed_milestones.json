@@ -1,0 +1,1098 @@
+{
+  "documentation": {
+    "milestones": "One entry per milestone id: thresholds are the counter values each tier is reached at, reputation is what each tier banks for collection at Mr. Greedy",
+    "requiredRank": "Greed rank a challenge crystal's milestone is tagged with; it gates the crystal in the shop. Omitted for every milestone that is not a challenge",
+    "challenge reputation": "Shipped challenge reputation is 15% of the greed_ranks threshold of the rank above the tag, floored; edit it here to break that link",
+    "vaultOfVaults": "All four totals must be met inside a single vault, on top of completing its objective. Deliberately one run, not a lifetime tally",
+    "dedicatedLooter": "Chest types must be looted to perChestType in chestOrder, one type at a time, inside a single vault. Names are VaultChestType values",
+    "seen_it_all": "Its final threshold must equal the number of counted objective types in code; a mismatch is logged at load and makes the milestone uncompletable"
+  },
+  "milestones": {
+    "living_looter": {
+      "thresholds": [
+        2000,
+        10000,
+        50000,
+        200000,
+        1000000
+      ],
+      "reputation": [
+        20,
+        45,
+        70,
+        120,
+        300
+      ]
+    },
+    "ornate_looter": {
+      "thresholds": [
+        2000,
+        10000,
+        50000,
+        200000,
+        1000000
+      ],
+      "reputation": [
+        20,
+        45,
+        70,
+        120,
+        300
+      ]
+    },
+    "gilded_looter": {
+      "thresholds": [
+        2000,
+        10000,
+        50000,
+        200000,
+        1000000
+      ],
+      "reputation": [
+        20,
+        45,
+        70,
+        120,
+        300
+      ]
+    },
+    "wooden_looter": {
+      "thresholds": [
+        2000,
+        10000,
+        50000,
+        200000,
+        1000000
+      ],
+      "reputation": [
+        20,
+        45,
+        70,
+        120,
+        300
+      ]
+    },
+    "treasure_hunter": {
+      "thresholds": [
+        20,
+        100,
+        400,
+        1000,
+        3000
+      ],
+      "reputation": [
+        15,
+        25,
+        50,
+        100,
+        225
+      ]
+    },
+    "shop_hunter": {
+      "thresholds": [
+        20,
+        100,
+        400,
+        1000,
+        3000
+      ],
+      "reputation": [
+        15,
+        25,
+        50,
+        100,
+        175
+      ]
+    },
+    "diggy_diggy_jewel": {
+      "thresholds": [
+        1000,
+        10000,
+        50000,
+        250000,
+        800000
+      ],
+      "reputation": [
+        10,
+        30,
+        55,
+        85,
+        160
+      ]
+    },
+    "amazon_worker": {
+      "thresholds": [
+        200,
+        1000,
+        3000,
+        10000
+      ],
+      "reputation": [
+        20,
+        30,
+        50,
+        75
+      ]
+    },
+    "nullified": {
+      "thresholds": [
+        25,
+        100,
+        400,
+        1500
+      ],
+      "reputation": [
+        10,
+        20,
+        35,
+        50
+      ]
+    },
+    "dedicated_looter": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        75
+      ]
+    },
+    "bingo": {
+      "thresholds": [
+        30,
+        90,
+        220,
+        500,
+        1000
+      ],
+      "reputation": [
+        15,
+        30,
+        60,
+        115,
+        190
+      ]
+    },
+    "drink_up": {
+      "thresholds": [
+        20000,
+        100000,
+        250000,
+        500000,
+        1000000
+      ],
+      "reputation": [
+        15,
+        40,
+        75,
+        130,
+        190
+      ]
+    },
+    "brutalized": {
+      "thresholds": [
+        25,
+        100,
+        300,
+        700,
+        1500
+      ],
+      "reputation": [
+        15,
+        25,
+        50,
+        80,
+        120
+      ]
+    },
+    "scavingo": {
+      "thresholds": [
+        30,
+        90,
+        220,
+        500,
+        1000
+      ],
+      "reputation": [
+        15,
+        30,
+        60,
+        115,
+        190
+      ]
+    },
+    "chaos_objectives": {
+      "thresholds": [
+        30,
+        90,
+        220,
+        500,
+        1000
+      ],
+      "reputation": [
+        15,
+        30,
+        60,
+        115,
+        190
+      ]
+    },
+    "hyperion": {
+      "thresholds": [
+        150,
+        500,
+        2000,
+        5000,
+        10000
+      ],
+      "reputation": [
+        15,
+        25,
+        50,
+        80,
+        130
+      ]
+    },
+    "alchemist": {
+      "thresholds": [
+        700,
+        3000,
+        10000,
+        25000,
+        50000
+      ],
+      "reputation": [
+        15,
+        25,
+        50,
+        80,
+        130
+      ]
+    },
+    "vaults_hunted": {
+      "thresholds": [
+        10,
+        40,
+        100,
+        200,
+        500
+      ],
+      "reputation": [
+        10,
+        30,
+        65,
+        100,
+        250
+      ]
+    },
+    "light_the_flame": {
+      "thresholds": [
+        15,
+        50,
+        125,
+        375,
+        800
+      ],
+      "reputation": [
+        10,
+        25,
+        40,
+        70,
+        120
+      ]
+    },
+    "i_will_survive": {
+      "thresholds": [
+        36000,
+        180000,
+        432000,
+        720000,
+        1152000
+      ],
+      "reputation": [
+        10,
+        25,
+        40,
+        70,
+        125
+      ]
+    },
+    "runic_ritual": {
+      "thresholds": [
+        3,
+        10,
+        25,
+        50,
+        100
+      ],
+      "reputation": [
+        10,
+        25,
+        40,
+        70,
+        125
+      ]
+    },
+    "eternal_darkness": {
+      "thresholds": [
+        50,
+        200,
+        500,
+        1000,
+        2000
+      ],
+      "reputation": [
+        15,
+        25,
+        50,
+        80,
+        135
+      ]
+    },
+    "royale_paine": {
+      "thresholds": [
+        1,
+        5,
+        10,
+        25,
+        50
+      ],
+      "reputation": [
+        10,
+        20,
+        35,
+        50,
+        80
+      ]
+    },
+    "stairway_to_heaven": {
+      "thresholds": [
+        3,
+        10,
+        25,
+        50,
+        100
+      ],
+      "reputation": [
+        15,
+        30,
+        50,
+        100,
+        150
+      ]
+    },
+    "seen_it_all": {
+      "thresholds": [
+        15
+      ],
+      "reputation": [
+        50
+      ]
+    },
+    "slayerrr": {
+      "thresholds": [
+        5000,
+        20000,
+        100000,
+        500000,
+        1500000
+      ],
+      "reputation": [
+        10,
+        30,
+        75,
+        115,
+        190
+      ]
+    },
+    "hack_n_slash": {
+      "thresholds": [
+        50000000,
+        1000000000,
+        100000000000,
+        1000000000000,
+        10000000000000
+      ],
+      "reputation": [
+        5,
+        15,
+        35,
+        65,
+        100
+      ]
+    },
+    "archmage": {
+      "thresholds": [
+        50000000,
+        1000000000,
+        100000000000,
+        1000000000000,
+        10000000000000
+      ],
+      "reputation": [
+        5,
+        15,
+        35,
+        65,
+        100
+      ]
+    },
+    "spell_spammer": {
+      "thresholds": [
+        5000,
+        50000,
+        175000,
+        750000,
+        2000000
+      ],
+      "reputation": [
+        10,
+        15,
+        25,
+        50,
+        75
+      ]
+    },
+    "electric_conduit": {
+      "thresholds": [
+        1000,
+        5000,
+        35000,
+        125000,
+        400000
+      ],
+      "reputation": [
+        10,
+        15,
+        25,
+        50,
+        100
+      ]
+    },
+    "master_of_chains": {
+      "thresholds": [
+        1000,
+        5000,
+        35000,
+        125000,
+        400000
+      ],
+      "reputation": [
+        10,
+        15,
+        25,
+        50,
+        100
+      ]
+    },
+    "defense": {
+      "thresholds": [
+        500,
+        2000,
+        10000,
+        25000,
+        50000
+      ],
+      "reputation": [
+        10,
+        15,
+        25,
+        45,
+        70
+      ]
+    },
+    "woosh": {
+      "thresholds": [
+        500,
+        2000,
+        10000,
+        25000,
+        50000
+      ],
+      "reputation": [
+        10,
+        15,
+        25,
+        45,
+        70
+      ]
+    },
+    "five_leaf_clover": {
+      "thresholds": [
+        500,
+        2000,
+        10000,
+        25000,
+        50000
+      ],
+      "reputation": [
+        10,
+        15,
+        25,
+        45,
+        70
+      ]
+    },
+    "boom": {
+      "thresholds": [
+        10000,
+        75000,
+        225000,
+        700000
+      ],
+      "reputation": [
+        10,
+        25,
+        40,
+        70
+      ]
+    },
+    "dungeoneer": {
+      "thresholds": [
+        5,
+        15,
+        50,
+        125
+      ],
+      "reputation": [
+        10,
+        20,
+        40,
+        60
+      ]
+    },
+    "villain": {
+      "thresholds": [
+        1,
+        15,
+        60,
+        250
+      ],
+      "reputation": [
+        5,
+        10,
+        20,
+        30
+      ]
+    },
+    "flawless_victory": {
+      "thresholds": [
+        3,
+        10,
+        25,
+        50
+      ],
+      "reputation": [
+        15,
+        20,
+        30,
+        60
+      ]
+    },
+    "assassin_assassinator": {
+      "thresholds": [
+        10,
+        50,
+        150,
+        400,
+        1000
+      ],
+      "reputation": [
+        20,
+        40,
+        75,
+        100,
+        125
+      ]
+    },
+    "fail_vaults": {
+      "thresholds": [
+        5,
+        15,
+        40,
+        100,
+        200
+      ],
+      "reputation": [
+        10,
+        20,
+        40,
+        70,
+        90
+      ]
+    },
+    "master_smith": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        75
+      ]
+    },
+    "idonas_champion": {
+      "thresholds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reputation": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ]
+    },
+    "priest_of_velara": {
+      "thresholds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reputation": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ]
+    },
+    "tenos_right_hand": {
+      "thresholds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reputation": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ]
+    },
+    "wendarrs_timekeeper": {
+      "thresholds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reputation": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ]
+    },
+    "explorer": {
+      "thresholds": [
+        3,
+        15,
+        40,
+        100,
+        200
+      ],
+      "reputation": [
+        10,
+        25,
+        60,
+        90,
+        150
+      ]
+    },
+    "i_live_here_now": {
+      "thresholds": [
+        144000,
+        720000,
+        1800000,
+        3600000,
+        7200000
+      ],
+      "reputation": [
+        10,
+        40,
+        80,
+        140,
+        280
+      ]
+    },
+    "legendary": {
+      "thresholds": [
+        5,
+        25,
+        100,
+        250
+      ],
+      "reputation": [
+        10,
+        25,
+        75,
+        150
+      ]
+    },
+    "challenged": {
+      "thresholds": [
+        5,
+        25,
+        100,
+        250
+      ],
+      "reputation": [
+        10,
+        25,
+        75,
+        150
+      ]
+    },
+    "vault_of_vaults": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        50
+      ]
+    },
+    "wanted_criminal": {
+      "thresholds": [
+        100,
+        500,
+        2000,
+        10000,
+        50000
+      ],
+      "reputation": [
+        15,
+        20,
+        30,
+        50,
+        75
+      ]
+    },
+    "archeologist": {
+      "thresholds": [
+        2,
+        5,
+        25,
+        100
+      ],
+      "reputation": [
+        10,
+        15,
+        25,
+        50
+      ]
+    },
+    "send_a_prayer": {
+      "thresholds": [
+        25,
+        75,
+        200,
+        400,
+        750
+      ],
+      "reputation": [
+        10,
+        20,
+        35,
+        50,
+        75
+      ]
+    },
+    "born_again": {
+      "thresholds": [
+        3,
+        10,
+        25,
+        100
+      ],
+      "reputation": [
+        5,
+        10,
+        20,
+        30
+      ]
+    },
+    "pal_trainer": {
+      "thresholds": [
+        1,
+        5,
+        10,
+        25
+      ],
+      "reputation": [
+        10,
+        20,
+        30,
+        50
+      ]
+    },
+    "vault_veteran": {
+      "thresholds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reputation": [
+        50,
+        100,
+        200,
+        300,
+        500
+      ]
+    },
+    "unstable_shuffle": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        22
+      ],
+      "requiredRank": 4
+    },
+    "pitch_black": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        22
+      ],
+      "requiredRank": 4
+    },
+    "trapped": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        30
+      ],
+      "requiredRank": 6
+    },
+    "ballistic_blackout": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        75
+      ],
+      "requiredRank": 10
+    },
+    "rune_master": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        75
+      ],
+      "requiredRank": 10
+    },
+    "elixir_of_doom": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        37
+      ],
+      "requiredRank": 7
+    },
+    "collectathon": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        82
+      ],
+      "requiredRank": 11
+    },
+    "royale_king": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        135
+      ],
+      "requiredRank": 14
+    },
+    "gone_in_60_seconds": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        22
+      ],
+      "requiredRank": 4
+    },
+    "survival_of_the_fittest": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        90
+      ],
+      "requiredRank": 12
+    },
+    "the_pacifist": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        26
+      ],
+      "requiredRank": 5
+    },
+    "gods_challenge": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        60
+      ],
+      "requiredRank": 9
+    },
+    "luckiest_win": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        26
+      ],
+      "requiredRank": 5
+    },
+    "big_bad_brew": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        37
+      ],
+      "requiredRank": 7
+    },
+    "the_speedrunner": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        26
+      ],
+      "requiredRank": 5
+    },
+    "time_you_say": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        45
+      ],
+      "requiredRank": 8
+    },
+    "chaos_chaos_chaos": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        120
+      ],
+      "requiredRank": 13
+    },
+    "the_speed_blackout": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        45
+      ],
+      "requiredRank": 8
+    },
+    "frenzy_adventures": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        60
+      ],
+      "requiredRank": 9
+    },
+    "rage_cage": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        120
+      ],
+      "requiredRank": 13
+    },
+    "celebrations": {
+      "thresholds": [
+        1
+      ],
+      "reputation": [
+        150
+      ],
+      "requiredRank": 15
+    }
+  },
+  "vaultOfVaults": {
+    "mobKills": 10000,
+    "chestsPerType": 1000,
+    "doorsPerType": 10,
+    "ores": 1000
+  },
+  "dedicatedLooter": {
+    "perChestType": 25000,
+    "chestOrder": [
+      "WOODEN",
+      "GILDED",
+      "ORNATE",
+      "LIVING"
+    ]
+  }
+}

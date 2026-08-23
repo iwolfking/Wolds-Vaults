@@ -3,28 +3,61 @@
     {
       "roll": {
         "type": "uniform",
-        "min": 24,
-        "max": 26
+        "min": 3,
+        "max": 3
       },
       "pool": [
         {
-          "weight": 70,
+          "weight": 1,
           "pool": [
             {
-              "weight": 16,
+              "weight": 2,
               "item": {
-                "id": "the_vault:living_rock",
+                "id": "the_vault:vorpal_focus",
                 "count": {
                   "type": "uniform",
-                  "min": 1,
+                  "min": 2,
                   "max": 2
                 }
               }
             },
             {
-              "weight": 8,
+              "weight": 2,
               "item": {
-                "id": "the_vault:mossy_bone",
+                "id": "the_vault:waning_focus",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "weight": 2,
+              "item": {
+                "id": "the_vault:waxing_focus",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "item": {
+                "id": "woldsvaults:eccentric_focus",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:cryonic_focus",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -33,20 +66,309 @@
               }
             },
             {
-              "weight": 10,
+              "weight": 1,
               "item": {
-                "id": "the_vault:overgrown_wooden_chunk",
+                "id": "the_vault:pyretic_focus",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:opportunistic_focus",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 1,
+              "item": {
+                "id": "the_vault:empowered_chaotic_focus",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "roll": {
+        "type": "uniform",
+        "min": 2,
+        "max": 2
+      },
+      "pool": [
+        {
+          "weight": 1,
+          "pool": [
+            {
+              "weight": 15,
+              "item": {
+                "id": "the_vault:vault_gold",
+                "count": {
+                  "type": "uniform",
+                  "min": 3,
+                  "max": 8
+                }
+              }
+            },
+            {
+              "weight": 5,
+              "item": {
+                "id": "the_vault:vault_platinum",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "weight": 4,
+              "item": {
+                "id": "woldsvaults:greedy_ticket",
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 2
                 }
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "roll": {
+        "type": "uniform",
+        "min": 1,
+        "max": 1
+      },
+      "pool": [
+        {
+          "weight": 1,
+          "pool": [
+            {
+              "weight": 20,
+              "item": {
+                "id": "minecraft:air",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 5,
+              "item": {
+                "id": "the_vault:map",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "gear_completion",
+                  "the_vault:map_tier": 0
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 5,
+              "item": {
+                "id": "the_vault:map",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "gear_completion",
+                  "the_vault:map_tier": 1
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 5,
+              "item": {
+                "id": "the_vault:map",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "gear_completion",
+                  "the_vault:map_tier": 2
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 5,
+              "item": {
+                "id": "the_vault:map",
+                "nbt": {
+                  "the_vault:gear_roll_type_pool": "gear_completion",
+                  "the_vault:map_tier": 3
+                },
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "roll": {
+        "type": "uniform",
+        "min": 2,
+        "max": 2
+      },
+      "pool": [
+        {
+          "weight": 1,
+          "pool": [
+            {
+              "weight": 16,
+              "item": {
+                "id": "the_vault:soul_vortex",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
             },
             {
               "weight": 16,
               "item": {
-                "id": "the_vault:rotten_meat",
+                "id": "the_vault:spicy_hearty_burger",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "weight": 16,
+              "item": {
+                "id": "the_vault:gem_pog",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "weight": 12,
+              "item": {
+                "id": "the_vault:bitter_lemon",
+                "count": {
+                  "type": "uniform",
+                  "min": 3,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "weight": 12,
+              "item": {
+                "id": "the_vault:sour_orange",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "weight": 12,
+              "item": {
+                "id": "woldsvaults:soul_ichor",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "weight": 12,
+              "item": {
+                "id": "the_vault:unidentified_treasure_key",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 12,
+              "item": {
+                "id": "the_vault:recharge_core",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 12,
+              "item": {
+                "id": "woldsvaults:altar_recatalyzer",
+                "count": {
+                  "type": "uniform",
+                  "min": 2,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "weight": 10,
+              "item": {
+                "id": "the_vault:card_juice",
+                "count": {
+                  "type": "uniform",
+                  "min": 16,
+                  "max": 16
+                }
+              }
+            },
+            {
+              "weight": 8,
+              "item": {
+                "id": "the_vault:jewel_pouch",
+                "count": {
+                  "type": "uniform",
+                  "min": 6,
+                  "max": 6
+                }
+              }
+            },
+            {
+              "weight": 8,
+              "item": {
+                "id": "woldsvaults:augment_box",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -57,7 +379,40 @@
             {
               "weight": 8,
               "item": {
-                "id": "the_vault:knowledge_star_essence",
+                "id": "woldsvaults:hasty_pomegranate",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 1
+                }
+              }
+            },
+            {
+              "weight": 6,
+              "item": {
+                "id": "woldsvaults:inscription_box",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "weight": 6,
+              "item": {
+                "id": "woldsvaults:catalyst_box",
+                "count": {
+                  "type": "uniform",
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            },
+            {
+              "weight": 4,
+              "item": {
+                "id": "woldsvaults:repair_augmenter",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -68,23 +423,35 @@
             {
               "weight": 4,
               "item": {
-                "id": "the_vault:vault_meat",
+                "id": "the_vault:deck_socket",
+                "nbt": {
+                  "Modifier": "@completion_crate"
+                },
                 "count": {
                   "type": "uniform",
                   "min": 1,
-                  "max": 3
+                  "max": 1
                 }
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "roll": {
+        "type": "uniform",
+        "min": 1,
+        "max": 1
+      },
+      "pool": [
         {
-          "weight": 20,
+          "weight": 1,
           "pool": [
             {
-              "weight": 30,
+              "weight": 150,
               "item": {
-                "id": "the_vault:burger_patty",
+                "id": "minecraft:air",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -93,9 +460,9 @@
               }
             },
             {
-              "weight": 30,
+              "weight": 2,
               "item": {
-                "id": "the_vault:burger_bun",
+                "id": "woldsvaults:concealed_chaos",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -104,9 +471,9 @@
               }
             },
             {
-              "weight": 30,
+              "weight": 2,
               "item": {
-                "id": "the_vault:burger_cheese",
+                "id": "the_vault:companion_egg",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -115,9 +482,9 @@
               }
             },
             {
-              "weight": 29,
+              "weight": 1,
               "item": {
-                "id": "the_vault:burger_tomato",
+                "id": "woldsvaults:uber_chaos_catalyst",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -126,151 +493,34 @@
               }
             },
             {
-              "weight": 28,
+              "weight": 1,
               "item": {
-                "id": "the_vault:burger_lettuce",
+                "id": "woldsvaults:capstone_all_seeing_eye",
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
-              }
-            },
-            {
-              "weight": 27,
-              "item": {
-                "id": "the_vault:burger_pickles",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 26,
-              "item": {
-                "id": "the_vault:burger_sauce",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 25,
-              "item": {
-                "id": "the_vault:burger_chili",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 100,
-              "item": {
-                "id": "the_vault:knowledge_star_essence",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 2
-                }
-              }
-            },
-            {
-              "weight": 120,
-              "item": {
-                "id": "the_vault:vault_meat",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 2
                 }
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "roll": {
+        "type": "uniform",
+        "min": 1,
+        "max": 1
+      },
+      "pool": [
         {
-          "weight": 8,
+          "weight": 1,
           "pool": [
             {
-              "weight": 60,
+              "weight": 7,
               "item": {
-                "id": "the_vault:living_rock",
-                "count": {
-                  "type": "uniform",
-                  "min": 4,
-                  "max": 8
-                }
-              }
-            },
-            {
-              "weight": 80,
-              "item": {
-                "id": "the_vault:knowledge_star_essence",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 2
-                }
-              }
-            }
-          ]
-        },
-        {
-          "weight": 2,
-          "pool": [
-            {
-              "weight": 30,
-              "item": {
-                "id": "the_vault:sweet_kiwi",
-                "count": {
-                  "type": "uniform",
-                  "min": 2,
-                  "max": 3
-                }
-              }
-            },
-            {
-              "weight": 200,
-              "item": {
-                "id": "the_vault:knowledge_star_essence",
-                "count": {
-                  "type": "uniform",
-                  "min": 2,
-                  "max": 3
-                }
-              }
-            },
-            {
-              "weight": 84,
-              "item": {
-                "id": "the_vault:mystery_egg",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 56,
-              "item": {
-                "id": "the_vault:vault_moss",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 16,
-              "item": {
-                "id": "the_vault:living_chest_scroll",
+                "id": "minecraft:air",
                 "count": {
                   "type": "uniform",
                   "min": 1,
@@ -281,168 +531,14 @@
             {
               "weight": 3,
               "item": {
-                "id": "the_vault:vault_god_charm",
+                "id": "the_vault:card_deck",
                 "nbt": {
-                    "the_vault:gear_roll_type_pool": "charms"
-                  },
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                  }
-              }
-            },
-            {
-              "weight": 4,
-              "item": {
-                "id": "the_vault:inscription",
-                "nbt": {
-                  "pool": "the_vault:random"
+                  "id": "mystery"
                 },
                 "count": {
                   "type": "uniform",
                   "min": 1,
                   "max": 1
-                }
-              }
-            },
-            {
-              "weight": 16,
-              "item": {
-                "id": "woldsvaults:soul_ichor",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 8,
-              "item": {
-                "id": "woldsvaults:unidentified_gateway_pearl",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 1,
-              "item": {
-                "id": "the_vault:knowledge_star",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 1,
-              "item": {
-                "id": "the_vault:map",
-                "nbt": {
-                  "the_vault:gear_roll_type_pool": "gear_completion",
-                  "the_vault:map_tier": -1
-                },
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                  }
-              }
-            },
-            {
-              "weight": 0.106,
-              "item": {
-                "id": "woldsvaults:mythic_vault_charm",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "nbt": {
-                  "the_vault:gear_roll_type": "Mythic"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "weight": 0.00445,
-          "pool": [
-            {
-              "weight": 1,
-              "item": {
-                "id": "the_vault:map",
-                "nbt": {
-                  "the_vault:gear_roll_type_pool": "gear_completion",
-                  "the_vault:map_tier": -1
-                },
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 50,
-              "item": {
-                "id": "the_vault:knowledge_star_essence",
-                "count": {
-                  "type": "uniform",
-                  "min": 16,
-                  "max": 32
-                }
-              }
-            },
-            {
-              "weight": 20,
-              "item": {
-                "id": "woldsvaults:soul_ichor",
-                "count": {
-                  "type": "uniform",
-                  "min": 4,
-                  "max": 8
-                }
-              }
-            },
-            {
-              "weight": 6,
-              "item": {
-                "id": "woldsvaults:unidentified_gateway_pearl",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                }
-              }
-            },
-            {
-              "weight": 20,
-              "item": {
-                "id": "the_vault:burger_chili",
-                "count": {
-                  "type": "uniform",
-                  "min": 5,
-                  "max": 10
-                }
-              }
-            },
-            {
-              "weight": 0.018,
-              "item": {
-                "id": "woldsvaults:mythic_vault_charm",
-                "count": {
-                  "type": "uniform",
-                  "min": 1,
-                  "max": 1
-                },
-                "nbt": {
-                  "the_vault:gear_roll_type": "Mythic"
                 }
               }
             }

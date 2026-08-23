@@ -1,0 +1,205 @@
+{
+  "effects": {
+    "idona_hard_hitter": {
+      "handler": "gear_attribute_scaled",
+      "values": [
+        0.25
+      ],
+      "attribute": "the_vault:damage_increase"
+    },
+    "idona_hard_hitter_ii": {
+      "handler": "gear_attribute_scaled",
+      "values": [
+        0.5
+      ],
+      "attribute": "the_vault:damage_increase"
+    },
+    "idona_elite_caster": {
+      "handler": "gear_attribute_scaled",
+      "values": [
+        0.25
+      ],
+      "attribute": "the_vault:ability_power_percent"
+    },
+    "idona_elite_caster_ii": {
+      "handler": "gear_attribute_scaled",
+      "values": [
+        0.5
+      ],
+      "attribute": "the_vault:ability_power_percent"
+    },
+    "idona_pious_devotion": {
+      "handler": "piety",
+      "values": [
+        10.0
+      ]
+    },
+    "idona_full_of_soul": {
+      "handler": "gear_attribute_scaled",
+      "values": [
+        0.5
+      ],
+      "attribute": "the_vault:soul_chance_percentile"
+    },
+    "idona_fortunate": {
+      "handler": "gear_attribute_scaled",
+      "values": [
+        0.025
+      ],
+      "attribute": "the_vault:lucky_hit_chance"
+    },
+    "idona_fortunate_ii": {
+      "handler": "gear_attribute_scaled",
+      "values": [
+        0.04
+      ],
+      "attribute": "the_vault:lucky_hit_chance"
+    },
+    "idona_stack_stack_stack": {
+      "handler": "idona_stack_stack_stack",
+      "values": [
+        1.0
+      ]
+    },
+    "idona_king_hunter": {
+      "handler": "idona_king_hunter",
+      "values": [
+        0.75
+      ]
+    },
+    "idona_enforcer": {
+      "handler": "idona_enforcer",
+      "values": [
+        0.75
+      ]
+    },
+    "idona_kinetic_impact": {
+      "handler": "idona_kinetic_impact",
+      "values": [],
+      "per_percent": 0.001
+    },
+    "idona_surrounded": {
+      "handler": "idona_surrounded",
+      "values": [],
+      "per_mob": 0.025,
+      "radius": 20.0
+    },
+    "idona_grand_archmage": {
+      "handler": "idona_grand_archmage",
+      "values": [],
+      "mana_percentile": 1.0,
+      "mana_flat": 200,
+      "mana_regen": 8.0,
+      "ability_damage": 2.0,
+      "cooldown_reduction_cap": 0.05
+    },
+    "idona_ultra_rampaging": {
+      "handler": "idona_ultra_rampaging",
+      "values": [],
+      "fury_per_hit": 100.0,
+      "fury_per_kill": 200.0,
+      "fury_boss_hit_multiplier": 2.0,
+      "fury_boss_kill_multiplier": 10.0,
+      "fury_per_hp_fraction_lost": 6000.0,
+      "fury_decay_per_tick": 0.985,
+      "fury_decay_scale_from": 6000.0,
+      "fury_decay_scale_divisor": 2000.0,
+      "fury_floor": 25.0,
+      "fury_cap": 15000.0,
+      "cdm_additive_divisor": 6500.0,
+      "cdm_multiplier_base": 1.03,
+      "cdm_sqrt_from": 6000.0,
+      "incoming_divisor": 3000.0,
+      "incoming_scale": 0.5
+    },
+    "idona_overcrit": {
+      "handler": "idona_overcrit",
+      "values": []
+    },
+    "idona_true_rage": {
+      "handler": "idona_true_rage",
+      "values": [],
+      "efficiency": 0.5
+    },
+    "idona_crushing_blows": {
+      "handler": "idona_crushing_blows",
+      "values": [],
+      "multiplier": 1.15
+    },
+    "idona_under_pressure": {
+      "handler": "idona_under_pressure",
+      "values": [],
+      "window_ticks": 18000,
+      "max": 2.0
+    },
+    "idona_pincushion": {
+      "handler": "idona_pincushion",
+      "values": [],
+      "per_hit": 0.005
+    },
+    "idona_banked_anger": {
+      "handler": "idona_banked_anger",
+      "values": [],
+      "base": 100000.0
+    },
+    "idona_soulstealer": {
+      "handler": "idona_soulstealer",
+      "values": [],
+      "multiplier": 1.5
+    },
+    "idona_luckiest_hit": {
+      "handler": "idona_luckiest_hit",
+      "values": [],
+      "chance_scale": 0.1
+    },
+    "idona_thwack": {
+      "handler": "idona_thwack",
+      "values": [],
+      "multiplier": 2.0
+    },
+    "idona_weaponmaster": {
+      "handler": "idona_weaponmaster",
+      "values": [],
+      "two_handed": 1.5,
+      "dual_wield_attack_speed": 0.3
+    },
+    "idona_cleave_expert": {
+      "handler": "idona_cleave_expert",
+      "values": [],
+      "efficiency": 0.2
+    },
+    "idona_sneaky_advantage": {
+      "handler": "idona_sneaky_advantage",
+      "values": [],
+      "per_effect": 0.05
+    },
+    "idona_super_stacker": {
+      "handler": "idona_super_stacker",
+      "values": [],
+      "multiplier": 1.25
+    },
+    "idona_stack_hoarder": {
+      "handler": "idona_stack_hoarder",
+      "values": [],
+      "multiplier": 1.5
+    },
+    "idona_prison_warden": {
+      "handler": "idona_prison_warden",
+      "values": [],
+      "multiplier": 2.0,
+      "duration_ticks": 600
+    },
+    "idona_greedbane": {
+      "handler": "idona_greedbane",
+      "values": [],
+      "multiplier": 1.5
+    },
+    "idona_power_dump": {
+      "handler": "idona_power_dump",
+      "values": [],
+      "per_mana": 0.0025,
+      "surplus_ttl_ticks": 900,
+      "continuous_grace_ticks": 30
+    }
+  }
+}
