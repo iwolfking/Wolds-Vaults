@@ -773,7 +773,7 @@ onEvent("recipes", event => {
         ],
         "additives": [
             {
-                "item": "minecraft:copper_nugget"
+                "item": "buildscape:copper_nugget"
             }
         ],
         "input": {
