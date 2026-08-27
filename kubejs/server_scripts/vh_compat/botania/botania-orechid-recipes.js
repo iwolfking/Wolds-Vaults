@@ -30,14 +30,14 @@ onEvent('recipes', event => {
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "minecraft:redstone_ore"},"weight": 30});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "minecraft:lapis_ore"},"weight": 25});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "minecraft:gold_ore"},"weight": 20});
-	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "minecraft:emerald"},"weight": 20});
+	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "minecraft:emerald_ore"},"weight": 20});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "minecraft:diamond_ore"},"weight": 15});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "ae2:quartz_ore"},"weight": 7});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "create:zinc_ore"},"weight": 7});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "immersiveengineering:ore_aluminum"},"weight": 7});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "mekanism:osmium_ore"},"weight": 7});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "mekanism:uranium_ore"},"weight": 7});
-	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "mekanism:flourite_ore"},"weight": 7});
+	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "mekanism:fluorite_ore"},"weight": 7});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "mekanism:lead_ore"},"weight": 7});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "powah:uraninite_ore"},"weight": 7});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:stone","output": {"type": "block","block": "rftoolsbase:dimensionalshard_overworld"},"weight": 7});
@@ -61,7 +61,7 @@ onEvent('recipes', event => {
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:deepslate","output": {"type": "block","block": "immersiveengineering:deepslate_ore_aluminum"},"weight": 15});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:deepslate","output": {"type": "block","block": "mekanism:deepslate_osmium_ore"},"weight": 15});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:deepslate","output": {"type": "block","block": "mekanism:deepslate_uranium_ore"},"weight": 15});
-	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:deepslate","output": {"type": "block","block": "mekanism:deepslate_flourite_ore"},"weight": 15});
+	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:deepslate","output": {"type": "block","block": "mekanism:deepslate_fluorite_ore"},"weight": 15});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:deepslate","output": {"type": "block","block": "mekanism:deepslate_lead_ore"},"weight": 15});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:deepslate","output": {"type": "block","block": "powah:deepslate_uraninite_ore"},"weight": 15});
 	event.recipes.botania.orechid({"type": "botania:orechid","input": "minecraft:deepslate","output": {"type": "block","block": "thermal:deepslate_cinnabar_ore"},"weight": 15});
