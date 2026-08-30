@@ -1,9 +1,4 @@
 onEvent('item.tags', event => {
-
-    //Vanilla mining compat
-    event.add('forge:axes', 'the_vault:axe')
-    event.add('forge:swords', 'the_vault:sword')
-
     event.add('the_vault:vault_ores', 'the_vault:ore_larimar')
     event.add('the_vault:vault_ores', 'the_vault:ore_benitoite')
     event.add('the_vault:vault_ores', 'the_vault:ore_alexandrite')
