@@ -27,7 +27,8 @@ let removedOutputsMEKA = [
     'mekanism:digital_miner',
     'mekanismgenerators:gas_burning_generator',
     'mekanismgenerators:wind_generator',
-    'mekanismgenerators:fusion_reactor_controller'
+    'mekanismgenerators:fusion_reactor_controller',
+    'mekanism:module_base'
 ];
 
 let mekmachines = [
@@ -557,6 +558,53 @@ onEvent("recipes", event => {
         E: 'the_vault:black_chromatic_steel_ingot',
         C: 'mekanism:steel_casing'
     }).id('mekanism:pigment_extractor')
+    
+    event.shaped(Item.of('mekanism:module_base'),
+        [
+            'APA',
+            'PCP',
+            'APA'
+        ], {
+        A: 'woldsvaults:chromatic_gold_nugget',
+        P: 'the_vault:chromatic_steel_ingot',
+        C: 'mekanism:hdpe_sheet'
+    }).id('mekanism:module_base')
+
+    event.shaped(Item.of('mekanism:module_radiation_shielding_unit'),
+        [
+            'AXA',
+            'ACA',
+            'PPP'
+        ], {
+        A: 'mekanism:alloy_infused',
+        P: 'mekanism:hdpe_sheet',
+        X: '#forge:storage_blocks/lead',
+        C: 'mekanism:module_base'
+    }).id('mekanism:module_radiation_shielding_unit')
+
+     event.shaped(Item.of('mekanism:module_radiation_shielding_unit'),
+        [
+            'AXA',
+            'ACA',
+            'PPP'
+        ], {
+        A: 'mekanism:alloy_infused',
+        P: 'mekanism:hdpe_sheet',
+        X: '#forge:storage_blocks/lead',
+        C: 'mekanism:module_base'
+    }).id('mekanism:module_radiation_shielding_unit')
+
+     event.shaped(Item.of('mekanism:module_teleportation_unit'),
+        [
+            'AXA',
+            'ACA',
+            'PPP'
+        ], {
+        A: 'mekanism:alloy_atomic',
+        P: 'mekanism:hdpe_sheet',
+        X: 'mekanism:teleportation_core',
+        C: 'mekanism:module_base'
+    }).id('mekanism:module_teleportation_unit')
 
     // This is literally just a joke recipe, you cant actually craft this, the internal buffer of a antiprotonic nucleosynthensizer is 10000mB, this recipe requires 10001mB
     event.custom({
