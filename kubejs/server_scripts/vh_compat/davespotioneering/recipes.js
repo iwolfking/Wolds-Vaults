@@ -1,27 +1,6 @@
-let removedOutputsDPP = [
-    'davespotioneering:white_umbrella',
-    'davespotioneering:orange_umbrella',
-    'davespotioneering:magenta_umbrella',
-    'davespotioneering:light_blue_umbrella',
-    'davespotioneering:yellow_umbrella',
-    'davespotioneering:lime_umbrella',
-    'davespotioneering:pink_umbrella',
-    'davespotioneering:gray_umbrella',
-    'davespotioneering:light_gray_umbrella',
-    'davespotioneering:cyan_umbrella',
-    'davespotioneering:purple_umbrella',
-    'davespotioneering:blue_umbrella',
-    'davespotioneering:brown_umbrella',
-    'davespotioneering:green_umbrella',
-    'davespotioneering:red_umbrella',
-    'davespotioneering:black_umbrella',
-    'davespotioneering:gilded_umbrella',
-    'davespotioneering:aged_umbrella'
-];
+
 onEvent("recipes", event => {
-    removedOutputsDPP.forEach(id => {
-        event.remove({ 'output': `${id}` })
-    })
+    event.remove({ 'output': /^davespotioneering:.*_umbrella$/ })
 
     event.shaped(Item.of('davespotioneering:compound_brewing_stand'),
         [

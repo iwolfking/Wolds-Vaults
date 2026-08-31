@@ -5,14 +5,9 @@ onEvent("recipes", event => {
 
     let potTypes = ['terracotta', 'concrete', 'glazed_terracotta']
 
+    event.remove({'mod' : "botanypotstiers"})
     colors.forEach(color => {
         potTypes.forEach(type => {
-            event.remove({ 'output': `botanypotstiers:elite_${color}_${type}_botany_pot` })
-            event.remove({ 'output': `botanypotstiers:elite_${color}_${type}_hopper_botany_pot` })
-            event.remove({ 'output': `botanypotstiers:ultra_${color}_${type}_botany_pot` })
-            event.remove({ 'output': `botanypotstiers:ultra_${color}_${type}_hopper_botany_pot` })
-            event.remove({ 'output': `botanypotstiers:creative_${color}_${type}_botany_pot` })
-            event.remove({ 'output': `botanypotstiers:creative_${color}_${type}_hopper_botany_pot` })
             event.shapeless(Item.of(`botanypotstiers:elite_${color}_${type}_botany_pot`), [`botanypotstiers:elite_${color}_${type}_hopper_botany_pot`])
             event.shapeless(Item.of(`botanypotstiers:elite_${color}_${type}_hopper_botany_pot`), [`botanypotstiers:elite_${color}_${type}_botany_pot`])
             event.shapeless(Item.of(`botanypotstiers:ultra_${color}_${type}_botany_pot`), [`botanypotstiers:ultra_${color}_${type}_hopper_botany_pot`])
@@ -96,12 +91,6 @@ onEvent("recipes", event => {
         })
     })
 
-    event.remove({ 'output': `botanypotstiers:elite_terracotta_botany_pot` })
-    event.remove({ 'output': `botanypotstiers:elite_terracotta_hopper_botany_pot` })
-    event.remove({ 'output': `botanypotstiers:ultra_terracotta_botany_pot` })
-    event.remove({ 'output': `botanypotstiers:ultra_terracotta_hopper_botany_pot` })
-    event.remove({ 'output': `botanypotstiers:creative_terracotta_botany_pot` })
-    event.remove({ 'output': `botanypotstiers:creative_terracotta_hopper_botany_pot` })
     event.shapeless('botanypotstiers:elite_terracotta_botany_pot', ['botanypotstiers:elite_terracotta_hopper_botany_pot'])
     event.shapeless('botanypotstiers:ultra_terracotta_botany_pot', ['botanypotstiers:ultra_terracotta_hopper_botany_pot'])
     event.shapeless('botanypotstiers:creative_terracotta_botany_pot', ['botanypotstiers:creative_terracotta_hopper_botany_pot'])
