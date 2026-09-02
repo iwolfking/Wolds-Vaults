@@ -3761,6 +3761,92 @@
       ],
       "maxTier": 5
     },
+    "hex_breaker": {
+      "type": "gear",
+      "name": {
+        "text": "Hexbreaker Card"
+      },
+      "model": "the_vault:skills/hex_breaker#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Magical"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Hexbreaker",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "hex_breaker_deluxe": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Hexbreaker Card"
+      },
+      "model": "the_vault:skills/hex_breaker#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Magical",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Hexbreaker",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
+     "blood_chakra": {
+      "type": "gear",
+      "name": {
+        "text": "Blood Chakra Card"
+      },
+      "model": "the_vault:skills/blood_chakra#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Magical"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Blood_Chakra",
+          "levelChange": 1
+        }
+      ],
+      "maxTier": 1
+    },
+    "blood_chakra_deluxe": {
+      "type": "gear",
+      "name": {
+        "text": "Deluxe Blood Chakra Card"
+      },
+      "model": "the_vault:skills/blood_chakra#inventory",
+      "groups": [
+        "Knack",
+        "Offensive",
+        "Magical",
+        "Deluxe"
+      ],
+      "attribute": "the_vault:added_talent_level",
+      "pool": [
+        {
+          "tier": 1,
+          "talentKey": "Blood_Chakra",
+          "levelChange": 2
+        }
+      ],
+      "maxTier": 1
+    },
     "intelligence": {
       "type": "gear",
       "name": {
@@ -10711,6 +10797,14 @@
       {
         "value": "deluxe_ethereal",
         "weight": 4.0
+      },
+      {
+        "value": "deluxe_blood_chakra",
+        "weight": 3.0
+      },
+       {
+        "value": "deluxe_hex_breaker",
+        "weight": 3.0
       }
     ],
     "knack": [
@@ -10940,6 +11034,14 @@
       },
       {
         "value": "ethereal",
+        "weight": 3.0
+      },
+      {
+        "value": "blood_chakra",
+        "weight": 3.0
+      },
+       {
+        "value": "hex_breaker",
         "weight": 3.0
       }
     ],
