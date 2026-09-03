@@ -138,6 +138,15 @@ onEvent("recipes", event => {
         E: 'mysticalagriculture:tin_essence'
     }).id('mysticalagriculture:essence/common/tin_ingot')
 
+    event.shaped(Item.of('mekanism:ingot_tin', 4),
+        [
+            'EEE',
+            'E E',
+            'EEE'
+        ], {
+        E: 'mysticalagriculture:tin_essence'
+    }).id('mysticalagriculture:essence/common/tin_ingot_mekanism')
+
     event.shaped(Item.of('thermal:constantan_ingot', 4),
         [
             'EEE',
