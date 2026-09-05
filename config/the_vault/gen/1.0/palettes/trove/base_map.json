@@ -24,12 +24,11 @@
         }
       ]
     },
-    {
+       {
       "type": "weighted_target",
       "target": "minecraft:yellow_wool",
       "output": {
-        "the_vault:treasure_sand{LootTable:\"the_vault:digsite_sand_lvl0\"}": 1,
-        "minecraft:yellow_wool": 0
+        "the_vault:treasure_sand{LootTable:\"the_vault:digsite_sand_lvl0\"}": 1
       }
     },
     {
@@ -37,15 +36,16 @@
       "target": "minecraft:yellow_concrete_powder",
       "output": {
         "the_vault:treasure_sand{LootTable:\"the_vault:treasure_sand_lvl0\"}": 1,
-        "minecraft:yellow_wool": 0
+        "the_vault:treasure_sand{LootTable:\"the_vault:digsite_sand_lvl0\"}": 3
       }
     },
     {
       "type": "weighted_target",
       "target": "minecraft:yellow_concrete",
       "output": {
-        "the_vault:treasure_sand{LootTable:\"woldsvaults:trove_sand_map\"}": 1,
-        "minecraft:yellow_wool": 0
+        "the_vault:treasure_sand{LootTable:\"woldsvaults:trove_sand\"}": 2,
+        "the_vault:treasure_sand{LootTable:\"the_vault:treasure_sand_lvl0\"}": 7,
+        "the_vault:treasure_sand{LootTable:\"the_vault:digsite_sand_lvl0\"}": 12
       }
     },
     {
