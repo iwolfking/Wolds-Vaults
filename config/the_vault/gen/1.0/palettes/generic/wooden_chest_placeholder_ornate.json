@@ -1,0 +1,130 @@
+{
+  "tile_processors": [
+    {
+      "type": "placeholder",
+      "target": "WOODEN_CHEST",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 1.0,
+          "success": {
+            "the_vault:wooden_chest{LootTable:\"the_vault:wooden_chest_lvl0\"}": 6,
+             "the_vault:ornate_chest{LootTable:\"the_vault:ornate_chest_lvl0\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 20,
+          "probability": 1.0,
+          "success": {
+            "the_vault:wooden_chest{LootTable:\"the_vault:wooden_chest_lvl20\"}": 6,
+             "the_vault:ornate_chest{LootTable:\"the_vault:ornate_chest_lvl20\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 30,
+          "probability": 1.0,
+          "success": {
+            "the_vault:wooden_chest{LootTable:\"the_vault:wooden_chest_lvl30\"}": 6,
+             "the_vault:ornate_chest{LootTable:\"the_vault:ornate_chest_lvl30\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 50,
+          "probability": 1.0,
+          "success": {
+             "the_vault:wooden_chest{LootTable:\"the_vault:wooden_chest_lvl30\"}": 85,
+            "the_vault:ornate_chest{LootTable:\"the_vault:ornate_chest_lvl50\"}": 14,
+            "the_vault:ornate_strongbox{LootTable:\"the_vault:ornate_strongbox_lvl50\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        },
+        {
+          "level": 65,
+          "probability": 1.0,
+          "success": {
+             "the_vault:wooden_chest{LootTable:\"the_vault:wooden_chest_lvl30\"}": 85,
+            "the_vault:ornate_chest{LootTable:\"the_vault:ornate_chest_lvl65\"}": 14,
+            "the_vault:ornate_strongbox{LootTable:\"the_vault:ornate_strongbox_lvl65\"}": 1
+          },
+          "failure": {
+            "minecraft:air": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "placeholder",
+      "target": "WOODEN_CHEST_WATERLOGGED",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 1.0,
+          "success": {
+            "the_vault:wooden_chest[waterlogged=true]{LootTable:\"the_vault:wooden_chest_lvl0\"}": 6,
+            "the_vault:ornate_chest[waterlogged=true]{LootTable:\"the_vault:ornate_chest_lvl0\"}": 1
+          },
+          "failure": {
+            "minecraft:water": 1
+          }
+        },
+        {
+          "level": 20,
+          "probability": 1.0,
+          "success": {
+            "the_vault:wooden_chest[waterlogged=true]{LootTable:\"the_vault:wooden_chest_lvl20\"}": 6,
+            "the_vault:ornate_chest[waterlogged=true]{LootTable:\"the_vault:ornate_chest_lvl20\"}": 1
+          },
+          "failure": {
+            "minecraft:water": 1
+          }
+        },
+        {
+          "level": 30,
+          "probability": 1.0,
+          "success": {
+            "the_vault:wooden_chest[waterlogged=true]{LootTable:\"the_vault:wooden_chest_lvl30\"}": 6,
+            "the_vault:ornate_chest[waterlogged=true]{LootTable:\"the_vault:ornate_chest_lvl30\"}": 1
+          },
+          "failure": {
+            "minecraft:water": 1
+          }
+        },
+        {
+          "level": 50,
+          "probability": 1.0,
+          "success": {
+            "the_vault:wooden_chest[waterlogged=true]{LootTable:\"the_vault:wooden_chest_lvl30\"}": 85,
+            "the_vault:ornate_chest[waterlogged=true]{LootTable:\"the_vault:ornate_chest_lvl50\"}": 14,
+            "the_vault:ornate_strongbox[waterlogged=true]{LootTable:\"the_vault:ornate_strongbox_lvl50\"}": 1
+          },
+          "failure": {
+            "minecraft:water": 1
+          }
+        },
+        {
+          "level": 65,
+          "probability": 1.0,
+          "success": {
+            "the_vault:wooden_chest[waterlogged=true]{LootTable:\"the_vault:wooden_chest_lvl30\"}": 85,
+            "the_vault:ornate_chest[waterlogged=true]{LootTable:\"the_vault:ornate_chest_lvl65\"}": 14,
+            "the_vault:ornate_strongbox[waterlogged=true]{LootTable:\"the_vault:ornate_strongbox_lvl65\"}": 1
+          },
+          "failure": {
+            "minecraft:water": 1
+          }
+        }
+      ]
+    }
+  ]
+}
