@@ -1314,6 +1314,26 @@
           "icon": "the_vault:gui/modifiers/kill_coin"
         }
       },
+       "woldsvaults:gem_mob_drops": {
+        "properties": {
+          "filter": "",
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "woldsvaults:mob_gem_drops"
+            }
+          ],
+          "chance": 0.1,
+          "singleItem": true
+        },
+        "display": {
+          "name": "Gem Mob Drops",
+          "color": "#c90d73",
+          "description": "Killing a mob has a 10% chance to drop a non-player gem.",
+          "descriptionFormatted": "Killing a mob has a %d%% chance to drop a non-player gem.",
+          "icon": "the_vault:gui/modifiers/plentiful"
+        }
+      },
       "the_vault:wooden_mob_drops": {
         "properties": {
           "filter": "",
@@ -4893,6 +4913,18 @@
       }
     },
     "the_vault:modifier_type/experience_multiplier": {
+      "woldsvaults:double_xp": {
+        "properties": {
+          "addend": 2
+        },
+        "display": {
+          "name": "Double XP",
+          "color": "#DB7C00",
+          "description": "x2 Vault XP Gained",
+          "descriptionFormatted": "x%d%% Vault XP Gained",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
       "the_vault:true_noxp": {
         "properties": {
           "addend": 0
