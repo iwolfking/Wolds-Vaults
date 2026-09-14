@@ -3427,6 +3427,21 @@
           "icon": "the_vault:gui/modifiers/hunger"
         }
       },
+      "the_vault:hunger_mini": {
+        "properties": {
+          "effect": "minecraft:hunger",
+          "effectAmplifier": 1,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Hunger",
+          "color": "#E8DACD",
+          "description": "Hunger",
+          "descriptionFormatted": "+%d Hunger",
+          "icon": "the_vault:gui/modifiers/hunger"
+        }
+      },
       "woldsvaults:unlucky_aura": {
         "properties": {
           "effect": "minecraft:unluck",
@@ -6739,13 +6754,6 @@
                 "randomMotion": true
               },
               "weight": 4
-            },
-            {
-              "value": {
-                "type": "thermal:ender_grenade",
-                "randomMotion": true
-              },
-              "weight": 1
             },
             {
               "value": {
