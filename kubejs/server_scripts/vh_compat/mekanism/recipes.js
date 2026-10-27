@@ -33,7 +33,7 @@ onEvent("recipes", event => {
          "type": "mekanism:nucleosynthesizing",
         "itemInput": {
             "ingredient": {
-                "item": "the_vault:water_bucket"
+                "item": "minecraft:water_bucket"
             }
         },
         "gasInput": {

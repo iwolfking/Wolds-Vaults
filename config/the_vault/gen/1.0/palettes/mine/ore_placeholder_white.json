@@ -1,0 +1,35 @@
+{
+  "tile_processors": [
+    {
+      "type": "placeholder",
+      "target": "ORE",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 0.01,
+          "success": {
+            "the_vault:ore_painite[type=white,generated=true]": 100,
+            "the_vault:ore_alexandrite[type=white,generated=true]": 40,
+            "the_vault:ore_wutodie[type=white,generated=true]": 80,
+            "the_vault:ore_benitoite[type=white,generated=true]": 120,
+            "the_vault:ore_larimar[type=white,generated=true]": 300,
+            "the_vault:ore_black_opal[type=white,generated=true]": 20,
+            "the_vault:ore_echo[type=white,generated=true]": 1,
+            "the_vault:ore_iskallium[type=white,generated=true]": 5,
+            "the_vault:ore_gorginite[type=white,generated=true]": 5,
+            "the_vault:ore_ashium[type=white,generated=true]": 5,
+            "the_vault:ore_sparkletine[type=white,generated=true]": 5,
+            "the_vault:ore_bomignite[type=white,generated=true]": 5,
+            "the_vault:ore_tubium[type=white,generated=true]": 5,
+            "the_vault:ore_upaline[type=white,generated=true]": 5,
+            "the_vault:ore_xenium[type=white,generated=true]": 5,
+            "the_vault:ore_petzanite[type=white,generated=true]": 5
+          },
+          "failure": {
+            "auxiliaryblocks:purple_diorite": 1
+          }
+        }
+      ]
+    }
+  ]
+}

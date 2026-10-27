@@ -1,0 +1,37 @@
+{
+  "tile_processors": [
+    {
+      "type": "placeholder",
+      "target": "ORE",
+      "levels": [
+        {
+          "level": 0,
+          "probability": 0.01,
+          "success": {
+            "the_vault:ore_larimar[type=stone,generated=true]": 270,
+            "the_vault:ore_benitoite[type=stone,generated=true]": 130,
+            "the_vault:ore_wutodie[type=stone,generated=true]": 50,
+            "the_vault:ore_alexandrite[type=stone,generated=true]": 50,
+            "the_vault:ore_painite[type=stone,generated=true]": 61,
+            "the_vault:ore_black_opal[type=stone,generated=true]": 20,
+            "the_vault:ore_iskallium[type=stone,generated=true]": 4,
+            "the_vault:ore_gorginite[type=stone,generated=true]": 4,
+            "the_vault:ore_ashium[type=stone,generated=true]": 4,
+            "the_vault:ore_sparkletine[type=stone,generated=true]": 4,
+            "the_vault:ore_bomignite[type=stone,generated=true]": 4,
+            "the_vault:ore_tubium[type=stone,generated=true]": 4,
+            "the_vault:ore_upaline[type=stone,generated=true]": 4,
+            "the_vault:ore_xenium[type=stone,generated=true]": 4,
+            "the_vault:ore_petzanite[type=stone,generated=true]": 4,
+            "the_vault:ore_echo[type=stone,generated=true]": 1
+          },
+          "failure": {
+            "minecraft:stone": 3,
+            "minecraft:andesite": 1,
+            "minecraft:cobblestone": 1
+          }
+        }
+      ]
+    }
+  ]
+}

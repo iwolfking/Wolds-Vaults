@@ -329,7 +329,17 @@ onEvent("recipes", event => {
         }
     })
 
-
+    event.shaped(Item.of('ars_nouveau:creative_source_jar'),
+        [
+            'SXS',
+            'GLG',
+            'SSS'
+        ], {
+        S: 'the_vault:black_chromatic_steel_block',
+        G: 'the_vault:gem_glass_echo',
+        L: 'ars_nouveau:source_jar',
+        X: 'woldsvaults:wold_star',
+    }).id('ars_nouveau:creative_source_jar')
 
 
 

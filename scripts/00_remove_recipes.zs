@@ -475,7 +475,6 @@ craftingTable.remove(<item:mekanism:basic_pressurized_tube>);
 
 craftingTable.remove(<item:mekanism:upgrade_anchor>);
 craftingTable.remove(<item:mekanism:upgrade_filter>);
-craftingTable.remove(<item:mekanism:module_base>);
 craftingTable.remove(<item:mekanism:module_energy_unit>);
 craftingTable.remove(<item:mekanism:module_laser_dissipation_unit>);
 craftingTable.remove(<item:mekanism:module_radiation_shielding_unit>);
@@ -485,16 +484,11 @@ craftingTable.remove(<item:mekanism:module_farming_unit>);
 craftingTable.remove(<item:mekanism:module_shearing_unit>);
 craftingTable.remove(<item:mekanism:module_silk_touch_unit>);
 craftingTable.remove(<item:mekanism:module_vein_mining_unit>);
-craftingTable.remove(<item:mekanism:module_teleportation_unit>);
 craftingTable.remove(<item:mekanism:module_geiger_unit>);
 craftingTable.remove(<item:mekanism:module_hydraulic_propulsion_unit>);
 craftingTable.remove(<item:mekanism:module_frost_walker_unit>);
-craftingTable.remove(<item:mekanism:module_magnetic_attraction_unit>);
 craftingTable.remove(<item:mekanism:module_dosimeter_unit>);
 craftingTable.remove(<item:mekanism:module_jetpack_unit>);
-craftingTable.remove(<item:mekanism:module_inhalation_purification_unit>);
-craftingTable.remove(<item:mekanism:module_vision_enhancement_unit>);
-craftingTable.remove(<item:mekanism:module_nutritional_injection_unit>);
 craftingTable.remove(<item:mekanism:module_locomotive_boosting_unit>);
 craftingTable.remove(<item:mekanism:module_hydrostatic_repulsor_unit>);
 craftingTable.remove(<item:mekanism:module_gyroscopic_stabilization_unit>);
@@ -503,7 +497,6 @@ craftingTable.remove(<item:mekanism:module_charge_distribution_unit>);
 craftingTable.remove(<item:mekanism:module_gravitational_modulating_unit>);
 craftingTable.remove(<item:mekanism:module_fortune_unit>);
 craftingTable.remove(<item:mekanism:module_blasting_unit>);
-craftingTable.remove(<item:mekanism:module_electrolytic_breathing_unit>);
 craftingTable.remove(<item:mekanism:dimensional_stabilizer>);
 
 // Enercell
@@ -1043,26 +1036,20 @@ JEI.hideIngredient(<item:mekanism:free_runners_armored>);
 JEI.hideIngredient(<item:mekanism:jetpack_armored>);
 JEI.hideIngredient(<item:mekanism:portable_teleporter>);
 JEI.hideIngredient(<item:mekanism:cardboard_box>);
-JEI.hideIngredient(<item:mekanism:module_base>);
 JEI.hideIngredient(<item:mekanism:module_energy_unit>);
 JEI.hideIngredient(<item:mekanism:module_laser_dissipation_unit>);
-JEI.hideIngredient(<item:mekanism:module_radiation_shielding_unit>);
 JEI.hideIngredient(<item:mekanism:module_excavation_escalation_unit>);
 JEI.hideIngredient(<item:mekanism:module_attack_amplification_unit>);
 JEI.hideIngredient(<item:mekanism:module_farming_unit>);
 JEI.hideIngredient(<item:mekanism:module_shearing_unit>);
 JEI.hideIngredient(<item:mekanism:module_silk_touch_unit>);
 JEI.hideIngredient(<item:mekanism:module_vein_mining_unit>);
-JEI.hideIngredient(<item:mekanism:module_teleportation_unit>);
 JEI.hideIngredient(<item:mekanism:module_geiger_unit>);
 JEI.hideIngredient(<item:mekanism:module_hydraulic_propulsion_unit>);
 JEI.hideIngredient(<item:mekanism:module_frost_walker_unit>);
-JEI.hideIngredient(<item:mekanism:module_magnetic_attraction_unit>);
 JEI.hideIngredient(<item:mekanism:module_dosimeter_unit>);
 JEI.hideIngredient(<item:mekanism:module_jetpack_unit>);
 JEI.hideIngredient(<item:mekanism:module_inhalation_purification_unit>);
-JEI.hideIngredient(<item:mekanism:module_vision_enhancement_unit>);
-JEI.hideIngredient(<item:mekanism:module_nutritional_injection_unit>);
 JEI.hideIngredient(<item:mekanism:module_locomotive_boosting_unit>);
 JEI.hideIngredient(<item:mekanism:module_hydrostatic_repulsor_unit>);
 JEI.hideIngredient(<item:mekanism:module_gyroscopic_stabilization_unit>);
@@ -1071,7 +1058,6 @@ JEI.hideIngredient(<item:mekanism:module_charge_distribution_unit>);
 JEI.hideIngredient(<item:mekanism:module_gravitational_modulating_unit>);
 JEI.hideIngredient(<item:mekanism:module_fortune_unit>);
 JEI.hideIngredient(<item:mekanism:module_blasting_unit>);
-JEI.hideIngredient(<item:mekanism:module_electrolytic_breathing_unit>);
 
 // Thermal
 for coin in coins{

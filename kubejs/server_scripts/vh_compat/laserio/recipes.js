@@ -3,18 +3,25 @@ let removedOutputsLI = [
     'laserio:laser_node',
     'laserio:laser_wrench',
     'laserio:card_holder',
-    'laserio:card_item',
-    'laserio:card_fluid',
-    'laserio:card_energy',
-    'laserio:card_redstone',
-    'laserio:filter_basic',
     'laserio:logic_chip_raw',
     'laserio:overclocker_card',
     'laserio:overclocker_node'
 ];
+
+let removedRecipesLI = [
+    'laserio:filter_basic',
+    'laserio:card_item',
+    'laserio:card_fluid',
+    'laserio:card_energy',
+    'laserio:card_redstone',
+]
 onEvent("recipes", event => {
     removedOutputsLI.forEach(id => {
         event.remove({ 'output': `${id}` })
+    })
+
+    removedRecipesLI.forEach(id => {
+        event.remove({ 'id': `${id}` })
     })
 
     event.shaped(Item.of('laserio:laser_connector'),
@@ -158,10 +165,5 @@ onEvent("recipes", event => {
         C: 'laserio:logic_chip',
         L: 'the_vault:perfect_larimar',
     })
-
-    event.shapeless('laserio:card_item', ['laserio:card_item'])
-    event.shapeless('laserio:card_fluid', ['laserio:card_fluid'])
-    event.shapeless('laserio:card_energy', ['laserio:card_energy'])
-    event.shapeless('laserio:card_redstone', ['laserio:card_redstone'])
 
 })

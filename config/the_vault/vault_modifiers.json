@@ -1314,6 +1314,26 @@
           "icon": "the_vault:gui/modifiers/kill_coin"
         }
       },
+       "woldsvaults:gem_mob_drops": {
+        "properties": {
+          "filter": "",
+          "lootTable": [
+            {
+              "level": 0,
+              "lootTable": "woldsvaults:mob_gem_drops"
+            }
+          ],
+          "chance": 0.1,
+          "singleItem": true
+        },
+        "display": {
+          "name": "Gem Mob Drops",
+          "color": "#c90d73",
+          "description": "Killing a mob has a 10% chance to drop a non-player gem.",
+          "descriptionFormatted": "Killing a mob has a %d%% chance to drop a non-player gem.",
+          "icon": "the_vault:gui/modifiers/plentiful"
+        }
+      },
       "the_vault:wooden_mob_drops": {
         "properties": {
           "filter": "",
@@ -3353,6 +3373,32 @@
       }
     },
     "the_vault:modifier_type/player_effect": {
+      "woldsvaults:water_breathing": {
+        "properties": {
+          "effect": "minecraft:water_breathing",
+          "effectAmplifier": 1
+        },
+        "display": {
+          "name": "Water Breathing",
+          "color": "#47402d",
+          "description": "Somehow you can breathe underwater!",
+          "descriptionFormatted": "Permanent Water Breathing Effect",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
+      "woldsvaults:slippery_floors": {
+        "properties": {
+          "effect": "ecologics:slippery",
+          "effectAmplifier": 0
+        },
+        "display": {
+          "name": "Icy Floors",
+          "color": "#47402d",
+          "description": "Slippery ice coats everything!",
+          "descriptionFormatted": "Permanent Blindness Effect",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
        "woldsvaults:lights_out": {
         "properties": {
           "effect": "wildbackport:darkness",
@@ -3370,6 +3416,21 @@
         "properties": {
           "effect": "minecraft:hunger",
           "effectAmplifier": 6,
+          "operator": "add",
+          "type": "icon_only"
+        },
+        "display": {
+          "name": "Hunger",
+          "color": "#E8DACD",
+          "description": "Hunger",
+          "descriptionFormatted": "+%d Hunger",
+          "icon": "the_vault:gui/modifiers/hunger"
+        }
+      },
+      "the_vault:hunger_mini": {
+        "properties": {
+          "effect": "minecraft:hunger",
+          "effectAmplifier": 1,
           "operator": "add",
           "type": "icon_only"
         },
@@ -4589,7 +4650,7 @@
           "name": "No Ores",
           "color": "#FF85FF",
           "description": "-100% Vault Ores",
-          "descriptionFormatted": "+%d%% Vault Ores",
+          "descriptionFormatted": "-%d%% Vault Ores",
           "icon": "the_vault:gui/modifiers/chaotic"
         }
       },
@@ -4893,6 +4954,18 @@
       }
     },
     "the_vault:modifier_type/experience_multiplier": {
+      "woldsvaults:double_xp": {
+        "properties": {
+          "addend": 2
+        },
+        "display": {
+          "name": "Double XP",
+          "color": "#DB7C00",
+          "description": "x2 Vault XP Gained",
+          "descriptionFormatted": "x%d%% Vault XP Gained",
+          "icon": "the_vault:gui/modifiers/impossible"
+        }
+      },
       "the_vault:true_noxp": {
         "properties": {
           "addend": 0
@@ -6205,7 +6278,9 @@
             "the_vault:gilded_hunter": 1,
             "the_vault:ornate_hunter": 1,
             "the_vault:living_hunter": 1,
-            "the_vault:altar_hunter": 1
+            "the_vault:altar_hunter": 1,
+            "the_vault:enigma_hunter": 1,
+            "the_vault:pylon_hunter": 1
           }
         },
         "display": {
@@ -6473,7 +6548,7 @@
           "name": "Daycare",
           "color": "#e6fffe",
           "description": "The mobs are visiting daycare and have shrunk by half their size, and have 50% less damage!",
-          "descriptionFormatted": "The mobs are visiting daycare and have shrunk by %d%% size, and have half their damage!",
+          "descriptionFormatted": "The mobs are visiting daycare and have shrunk by half their size, and have half their damage!",
           "icon": "the_vault:gui/modifiers/daycare"
         }
       },
@@ -6534,6 +6609,20 @@
           "color": "#d89e01",
           "description": "+100% Mana Regeneration & +50% Cooldown Reduction",
           "icon": "the_vault:gui/modifiers/god_token_wendarr"
+        }
+      },
+      "the_vault:tenos_favour": {
+        "properties": {
+          "children": {
+            "the_vault:treasure": 1,
+            "the_vault:hoard": 1
+          }
+        },
+        "display": {
+          "name": "Tenos's Favour",
+          "color": "#d89e01",
+          "description": "+50% Item Quantity and +100% Item Rarity",
+          "icon": "the_vault:gui/modifiers/god_token_tenos"
         }
       },
       "the_vault:incredible_chests": {
@@ -6681,13 +6770,6 @@
                 "randomMotion": true
               },
               "weight": 4
-            },
-            {
-              "value": {
-                "type": "thermal:ender_grenade",
-                "randomMotion": true
-              },
-              "weight": 1
             },
             {
               "value": {
@@ -8238,6 +8320,24 @@
           "color": "#FF2600",
           "description": "Highlights Ornate Chests in this vault",
           "icon": "the_vault:gui/modifiers/ornate"
+        }
+      },
+      "the_vault:enigma_hunter": {
+        "properties": {
+          "entries": [
+            {
+              "filter": "the_vault:enigma_chest",
+              "radius": 64.0,
+              "target": "enigma",
+              "color": 16721408
+            }
+          ]
+        },
+        "display": {
+          "name": "Enigma Hunter",
+          "color": "#7d60c4",
+          "description": "Highlights Enigma Chests in this vault",
+          "icon": "the_vault:gui/modifiers/impossible"
         }
       },
       "the_vault:gilded_hunter": {

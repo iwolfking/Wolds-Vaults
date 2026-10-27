@@ -181,6 +181,8 @@ onEvent('jei.hide.items', event => {
     event.hide(/draconicevolution:.*_aoe_module/)
     event.hide(/draconicevolution:.*_speed_module/)
     event.hide(/dyenamicsandfriends:botanypots_.*/)
+    event.hide(/^justdirethings:upgrade_/)
+    event.hide('justdirethings:generatort1')
 
     event.hide(Item.of('minecraft:potion', {Potion: "the_vault:time_acceleration_x2"}))
     event.hide(Item.of('minecraft:potion', {Potion: "the_vault:time_acceleration_x3"}))

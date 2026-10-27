@@ -1,7 +1,6 @@
 onEvent("recipes", event => {
     let noRemoveTS = ['toms_storage:ts.inventory_cable_framed', 'toms_storage:ts.inventory_cable_connector_framed', 'toms_storage:ts.paint_kit']
     Ingredient.of('@toms_storage').itemIds.forEach(id => {
-        console.log(id)
         if (!noRemoveTS.includes(id))
             event.remove({ 'output': `${id}` })
     })

@@ -222,7 +222,7 @@ craftingTable.addShaped("powah_energizing_orb", <item:powah:energizing_orb>, [
 	[<item:powah:dielectric_rod_horizontal>, <item:powah:dielectric_rod_horizontal>, <item:powah:dielectric_rod_horizontal>]
 ]);
 
-craftingTable.addShaped("powah_photoelectric_pane", <item:powah:photoelectric_pane>, [
+craftingTable.addShaped("powah_photoelectric_pane", <item:powah:photoelectric_pane> * 2, [
 	[<item:the_vault:driftwood>, <item:powah:dielectric_paste>, <item:the_vault:driftwood>],
 	[<item:powah:dielectric_paste>, <item:minecraft:tinted_glass>, <item:powah:dielectric_paste>],
 	[<item:the_vault:driftwood>, <item:powah:dielectric_paste>, <item:the_vault:driftwood>]

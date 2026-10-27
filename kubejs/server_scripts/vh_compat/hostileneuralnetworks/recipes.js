@@ -679,7 +679,7 @@ onEvent("recipes", event => {
             ], {
             Z: 'the_vault:vault_essence',
             E: `ars_nouveau:wilden_guardian_se`,
-            M: Item.of('hostilenetworks:data_model', `{data_model:{data:354,id:"hostilenetworks:ars_nouveau/wilden_mob}"}}`)
+            M: Item.of('hostilenetworks:data_model', `{data_model:{data:354,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`)
         })
 
         event.shaped(Item.of('hostilenetworks:data_model', `{data_model:{data:1254,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}`),

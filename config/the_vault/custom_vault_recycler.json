@@ -104,7 +104,7 @@
                 "maxCount": 1
             }
         },
-         "the_vault:companion_particle_trail": {
+        "the_vault:companion_particle_trail": {
             "mainOutput": {
                 "chance": 1.0,
                 "stack": {
@@ -128,6 +128,58 @@
                 },
                 "minCount": 1,
                 "maxCount": 1
+            }
+        },
+        "the_vault:deck_socket": {
+            "mainOutput": {
+                "stack": {
+                    "item": "the_vault:silver_scrap"
+                },
+                "minCount": 0,
+                "maxCount": 10,
+                "chance": 1.0
+            },
+            "extraOutput1": {
+                "stack": {
+                    "item": "the_vault:gem_black_opal"
+                },
+                "minCount": 0,
+                "maxCount": 4,
+                "chance": 1.0
+            },
+            "extraOutput2": {
+                "stack": {
+                    "item": "the_vault:card_juice"
+                },
+                "minCount": 0,
+                "maxCount": 6,
+                "chance": 1.0
+            }
+        },
+        "the_vault:mod_box": {
+            "mainOutput": {
+                "stack": {
+                    "item": "the_vault:knowledge_star_shard"
+                },
+                "minCount": 1,
+                "maxCount": 4,
+                "chance": 1.0
+            },
+            "extraOutput1": {
+                "stack": {
+                    "item": "minecraft:air"
+                },
+                "minCount": 0,
+                "maxCount": 0,
+                "chance": 0.0
+            },
+            "extraOutput2": {
+                "stack": {
+                    "item": "minecraft:air"
+                },
+                "minCount": 0,
+                "maxCount": 0,
+                "chance": 0.0
             }
         }
     }
