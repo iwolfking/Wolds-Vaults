@@ -35,9 +35,17 @@
     "rodOvershoot": 0.5,
     "rodDamageMultiplier": 1.5,
     "rodCooldownTicks": 10,
-    "thunderDamagePerSecond": 1.0,
-    "thunderRadius": 10.0,
-    "thunderMinFormTicks": 60
+    "thunderBaseDamage": 5.0,
+    "thunderMaxMultiplier": 30.0,
+    "thunderBaseRadius": 3.0,
+    "thunderMaxRadius": 7.0,
+    "chargeMax": 500.0,
+    "chargePerThrowHit": 5.0,
+    "chargePerArcLash": 5.0,
+    "chargePerDash": 10.0,
+    "chargePerRod": 15.0,
+    "chargeBossMultiplier": 3.0,
+    "formResistanceCapBonus": 0.1
   },
   "sets": {
     "woldsvaults:tidebreaker": {
@@ -116,11 +124,11 @@
       "tiers": [
         {
           "pieces": 2,
-          "text": "Channeling strikes deal 50% more damage and chain to 2 more enemies within 6 blocks.",
+          "text": "Channeling strikes deal 100% more damage and chain to 2 more enemies within 3 blocks.",
           "grants": [
             {
               "attribute": "woldsvaults:channeling_damage_more",
-              "value": 0.5
+              "value": 1.0
             },
             {
               "attribute": "woldsvaults:channeling_chain",
@@ -140,7 +148,7 @@
         },
         {
           "pieces": 6,
-          "text": "Throwing your trident turns you into lightning for 10 seconds: tap a movement key, jump or sneak to dash 7 blocks that way, striking every enemy in your path for 10% of a channeling strike's damage (0.5 second cooldown between dashes). Left click throws a fan of spinning lightning bolts that strike everything they pass through and call lightning down on it; right click marks one as a lightning rod your dashes lock on to; middle click ends the form with a giant lightning strike around you, stronger the more time you have left.",
+          "text": "Throwing your trident turns you into lightning for 10 seconds. During lightning form, using movement keys causes you to dash through enemies for 10% channeling damage, and left clicking releases a fan of arc lightning outwards. You can also mark a single enemy with a lightning rod for increased damage by right clicking them, and middle click (pick block) releases a devastating thunderbolt attack centered on you, dealing more damage the more lightning strikes you land while in lightning form.",
           "grants": [
             {
               "attribute": "woldsvaults:lightning_dash",
