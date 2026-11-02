@@ -7,6 +7,7 @@
 	icon: "woldsvaults:monolith"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	progression_mode: "flexible"
 	quests: [
 		{
 			title: "The Early Crunch"
@@ -62,7 +63,7 @@
 				"&5To complete the Vault properly, you'll need to exit out of the Portal."
 			]
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "76B7D44E338DC9B7"
 			tasks: [{
 				id: "7412F948DB85C8F1"
@@ -94,6 +95,7 @@
 				"&5They contain a lot of the non-Vault resources you need to build a base and gear and machines. Like Iron, Diamonds, Stone, etc."
 			]
 			dependencies: ["69C663CDD23190A9"]
+			hide: false
 			size: 0.75d
 			id: "3E2831A2D27654C0"
 			tasks: [{
@@ -119,10 +121,7 @@
 				"&5The Recycler is also the only way you can get some resources. And Recycling gear with special affixes (like Chilling, or extra armor, etc) might net you a Faceted Focus you can use on a piece of Vault Gear in your Vault Artisan Station."
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"7543E03FC25521E7"
-				"69C663CDD23190A9"
-			]
+			dependencies: ["5E574242513BE343"]
 			hide: true
 			id: "29198B5EA727A867"
 			tasks: [{
@@ -162,10 +161,7 @@
 				"&5Seems a few recipes still need Soul Shards, so you'll need to grab them out yourself. But things like The Black Market can pull out Shards for you."
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"0AF2E388B45934CC"
-				"69C663CDD23190A9"
-			]
+			dependencies: ["5E574242513BE343"]
 			hide: true
 			id: "287AFB08CA4CC848"
 			tasks: [{
@@ -199,7 +195,7 @@
 				"&5The Spirit Extractor will list how much Vault Gold it costs to get your equipment back. If you don't have enough, you may have the option to get your items back in exchange for going into debt with The Locker. See the Spirit Extractor quest in the next section."
 			]
 			dependencies: ["76B7D44E338DC9B7"]
-			hide: true
+			hide: false
 			dependency_requirement: "one_completed"
 			id: "148669A61C9EFBF4"
 			tasks: [{
@@ -262,10 +258,7 @@
 				"&5Versatility makes up for that. You can augment and upgrade your tools with Jewels, which will need its own quests to explain."
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"232779928B96328E"
-				"69C663CDD23190A9"
-			]
+			dependencies: ["5E574242513BE343"]
 			hide: true
 			id: "3E4FCFC9637F8B61"
 			tasks: [{
@@ -298,10 +291,7 @@
 				"&5Though it looks like there are some special high cost Enchantments you can get. Probably best saved for higher level gear."
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"7543E03FC25521E7"
-				"69C663CDD23190A9"
-			]
+			dependencies: ["5E574242513BE343"]
 			hide: true
 			id: "76705D95215E5BCA"
 			tasks: [{
@@ -371,7 +361,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["76B7D44E338DC9B7"]
-			hide: true
+			hide: false
 			id: "4C97356EDF3283CB"
 			tasks: [{
 				id: "702B00A63120D0C8"
@@ -405,10 +395,7 @@
 				"&5The rarity of the gear determines how many Prefix and Suffix slots it has. The rarer, the more slots."
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"7543E03FC25521E7"
-				"69C663CDD23190A9"
-			]
+			dependencies: ["5E574242513BE343"]
 			hide: true
 			id: "6473A9F33F692821"
 			tasks: [
@@ -444,7 +431,7 @@
 				"&5The last mode is Off, which disables your Magnet completely."
 			]
 			hide_dependency_lines: true
-			dependencies: ["075AD2D046BFE367"]
+			dependencies: ["5E574242513BE343"]
 			hide: true
 			id: "40008EC8697729A5"
 			tasks: [{
@@ -526,10 +513,7 @@
 				"&5They are a good way to speed up leveling. The higher level you are, the more Burger ingredients you'll find, to make bigger Burgers."
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"50D9EFE8ABEA9779"
-				"69C663CDD23190A9"
-			]
+			dependencies: ["5E574242513BE343"]
 			hide: true
 			id: "4D3F25E7797D88D1"
 			tasks: [{
@@ -561,7 +545,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4C97356EDF3283CB"]
-			hide: true
+			hide: false
 			id: "420733071145A568"
 			tasks: [{
 				id: "272ED903C6F93751"
@@ -613,7 +597,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4C97356EDF3283CB"]
-			hide: true
+			hide: false
 			id: "3C78334E9B675974"
 			tasks: [{
 				id: "75977BC2DAF52BED"
@@ -678,7 +662,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "5BFB2FFADFE2072F"
 			tasks: [{
 				id: "731C0F983798F22B"
@@ -706,7 +690,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["76B7D44E338DC9B7"]
-			hide: true
+			hide: false
 			id: "08E517D3A58B0E81"
 			tasks: [{
 				id: "67E8414855446E0C"
@@ -798,7 +782,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["76B7D44E338DC9B7"]
-			hide: true
+			hide: false
 			id: "7B4E0CC53475C2C5"
 			tasks: [{
 				id: "035C593D99171247"
@@ -832,10 +816,7 @@
 				"&5Oh, and the Table has a slot to store all your Bounty Pearls. You use these to 'reroll' a bounty you don't want by selecting it, the hitting the circular arrow."
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"232779928B96328E"
-				"69C663CDD23190A9"
-			]
+			dependencies: ["5E574242513BE343"]
 			hide: true
 			hide_text_until_complete: false
 			id: "1A438987A9D3D7AD"
@@ -873,7 +854,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "5FA6AD660F7FEFD9"
 			tasks: [{
 				id: "5D94E803A3DB0DC6"
@@ -905,10 +886,7 @@
 				"&5They also fully recharge between Vault runs, thankfully. For now, you can only make Vials, but with the proper Research you can make bigger, better ones."
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"50D9EFE8ABEA9779"
-				"69C663CDD23190A9"
-			]
+			dependencies: ["5E574242513BE343"]
 			hide: true
 			id: "600061B7D508477A"
 			tasks: [{
@@ -943,7 +921,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "50203F008ADF0804"
 			tasks: [{
 				id: "78917DC8115FDEE1"
@@ -971,6 +949,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["3E4FCFC9637F8B61"]
+			hide: true
 			size: 0.75d
 			id: "6E76FC7B7537B0B8"
 			tasks: [{
@@ -1030,10 +1009,7 @@
 				"&5But at the same time, you're ability to loot more and faster should increase too, yeah?"
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"7543E03FC25521E7"
-				"69C663CDD23190A9"
-			]
+			dependencies: ["5E574242513BE343"]
 			hide: true
 			id: "075AD2D046BFE367"
 			tasks: [{
@@ -1068,7 +1044,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "175A7FF1C22107B1"
 			tasks: [
 				{
@@ -1114,7 +1090,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "6A5D150DBF70C1E7"
 			tasks: [{
 				id: "4A4FC759292A8025"
@@ -1134,7 +1110,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "589513669CDDE01C"
 			tasks: [{
 				id: "1527D2FB9D7D99D5"
@@ -1160,10 +1136,7 @@
 				"&5Like it says on the tin. Zombies, Endermen, etc Spawn Eggs will drop out of these."
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"50D9EFE8ABEA9779"
-				"69C663CDD23190A9"
-			]
+			dependencies: ["5E574242513BE343"]
 			hide: true
 			id: "4AD8ED2C12A8B58D"
 			tasks: [
@@ -1204,7 +1177,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "159BD132C3F6B884"
 			tasks: [{
 				id: "26635C74B4103B75"
@@ -1232,7 +1205,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["420733071145A568"]
-			hide: true
+			hide: false
 			id: "0DF63164F7EBCD97"
 			tasks: [{
 				id: "28B9FB797072A756"
@@ -1262,7 +1235,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["3E2831A2D27654C0"]
-			hide: true
+			hide: false
 			size: 0.75d
 			id: "72DDF12B4CD0E628"
 			tasks: [{
@@ -2319,7 +2292,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["76B7D44E338DC9B7"]
-			hide: true
+			hide: false
 			id: "7C06CB39886FCC9B"
 			tasks: [{
 				id: "0E41BFBAFDE67D5D"
@@ -2349,7 +2322,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["76B7D44E338DC9B7"]
-			hide: true
+			hide: false
 			id: "096608AC80F2A0F0"
 			tasks: [{
 				id: "6A36F4E0B8DA3824"
@@ -2384,8 +2357,8 @@
 				"&5And finally the Ability Suppressor will prevent most damaging attack skills from activating."
 			]
 			hide_dependency_lines: true
-			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			dependencies: ["5E574242513BE343"]
+			hide: false
 			id: "40B3DC65625197C4"
 			tasks: [
 				{
@@ -2430,10 +2403,7 @@
 				"&5The downside is twofold, though : It is very expensive to apply, and it will consume a Repair Slot on the piece of gear."
 			]
 			hide_dependency_lines: true
-			dependencies: [
-				"29198B5EA727A867"
-				"6473A9F33F692821"
-			]
+			dependencies: ["5E574242513BE343"]
 			hide: true
 			id: "66FBB145605DD232"
 			tasks: [{
@@ -2467,7 +2437,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "2EB82342DD80197E"
 			tasks: [{
 				id: "75F2D64C16EA2A45"
@@ -2494,7 +2464,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["50203F008ADF0804"]
-			hide: true
+			hide: false
 			id: "74637538A0EBEA2E"
 			tasks: [{
 				id: "3EF5F614F1B0D63C"
@@ -2525,7 +2495,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "3F5860F8A067ED38"
 			tasks: [{
 				id: "074E58FA044A2409"
@@ -2563,7 +2533,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["76B7D44E338DC9B7"]
-			hide: true
+			hide: false
 			id: "2A847F412902DA5B"
 			tasks: [{
 				id: "3FDF17BD0A6025A8"
@@ -2593,8 +2563,8 @@
 				"&5Note that you don't get a refund if you already put stuff in!"
 			]
 			hide_dependency_lines: true
-			dependencies: ["76B7D44E338DC9B7"]
-			hide: true
+			dependencies: ["5E574242513BE343"]
+			hide: false
 			id: "56993A9EFAD6616F"
 			tasks: [{
 				id: "44B9D9692434EAF0"
@@ -2626,7 +2596,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "65BD291636819F4D"
 			tasks: [{
 				id: "76789CC9FF9B9EB3"
@@ -2647,7 +2617,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "26EA3C18DFFEE0D2"
 			tasks: [{
 				id: "1D0FF69CA4265638"
@@ -2674,7 +2644,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69C663CDD23190A9"]
-			hide: true
+			hide: false
 			id: "6D44254815EB39A2"
 			tasks: [{
 				id: "01D82E6E19203838"
@@ -2712,6 +2682,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["3E4FCFC9637F8B61"]
+			hide: true
 			size: 0.75d
 			id: "0557F37AD25CCAA1"
 			tasks: [{
@@ -2873,7 +2844,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["7C06CB39886FCC9B"]
-			hide: true
+			hide: false
 			id: "055DC72980065907"
 			tasks: [{
 				id: "16CB1EAA6A385240"

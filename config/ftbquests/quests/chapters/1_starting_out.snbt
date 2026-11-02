@@ -10,8 +10,8 @@
 		tag: {
 			CrystalData: {
 				Properties: {
-					exhausted: 0b
 					size: 0b
+					exhausted: 0b
 					type: "capacity"
 				}
 				Version: 3b
@@ -27,6 +27,7 @@
 	subtitle: ["The Basics"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	progression_mode: "flexible"
 	quests: [
 		{
 			title: "Of Skills and Preperation"
@@ -47,7 +48,7 @@
 				"&5I also recommend getting yourself some Iron or Diamond Armor to start with. But that's up to you!"
 			]
 			dependencies: ["19220F4E56CB0A0F"]
-			hide: true
+			hide: false
 			id: "78B5BCD7C6C45779"
 			tasks: [{
 				id: "4080321A77B04EDC"
@@ -79,7 +80,7 @@
 				"&5To pay for the crystal, just throw the items near the Altar. It will pull them in if they are needed, otherwise it just ignores them. Once the price is paid, put a Button or Lever on the Altar and activate it to create the Vault Crystal."
 			]
 			dependencies: ["13443B45E662A04C"]
-			hide: true
+			hide: false
 			id: "19220F4E56CB0A0F"
 			tasks: [
 				{
@@ -167,6 +168,7 @@
 				"&5If you've been following the built-in Vault Hunter's quests, you should of been given your first pieces of Vault Gear!"
 			]
 			dependencies: ["4A7F919339917ED3"]
+			hide: false
 			id: "249CEFD98AF2D014"
 			tasks: [{
 				id: "4DB4702036EF06D7"
@@ -247,7 +249,7 @@
 				"&5So a Zombie might give you a lot of Elixir, while a Skeleton gives you little, for example. "
 			]
 			dependencies: ["249CEFD98AF2D014"]
-			hide: true
+			hide: false
 			id: "1F2875BC889232AC"
 			tasks: [{
 				id: "01B9FE8410D5956E"
@@ -276,7 +278,7 @@
 				"&5Along with the map, I like to mark my path or interesting things with blocks that stand out. Take this Unobtanium, which you can duplicate by crafting it back into ingots then into blocks again. Try it!"
 			]
 			dependencies: ["1F2875BC889232AC"]
-			hide: true
+			hide: false
 			id: "5E574242513BE343"
 			tasks: [{
 				id: "3CF0023E538CD2C5"
@@ -297,8 +299,8 @@
 				tag: {
 					CrystalData: {
 						Properties: {
-							exhausted: 0b
 							size: 0b
+							exhausted: 0b
 							type: "capacity"
 						}
 						Version: 3b
@@ -327,6 +329,7 @@
 				"&5You only get one Expertise point every 5 levels, and it is expensive to reset them, so choose carefully!"
 			]
 			dependencies: ["78B5BCD7C6C45779"]
+			hide: false
 			id: "4A7F919339917ED3"
 			tasks: [{
 				id: "1C84C5A5A169E1FA"
@@ -350,7 +353,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["5E574242513BE343"]
-			hide: true
+			hide: false
 			id: "7543E03FC25521E7"
 			tasks: [{
 				id: "46553F28DFD27AB0"
@@ -383,7 +386,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["5E574242513BE343"]
-			hide: true
+			hide: false
 			id: "4342B9F453AD1F1B"
 			tasks: [{
 				id: "581BC33235669CC2"
@@ -418,8 +421,8 @@
 				"&5Makes a neat sound when it pops open. And some items you'll need can only be found in these Completion Crates."
 			]
 			hide_dependency_lines: true
-			dependencies: ["4342B9F453AD1F1B"]
-			hide: true
+			dependencies: ["5E574242513BE343"]
+			hide: false
 			size: 1.1d
 			id: "38F44668E26A3013"
 			tasks: [{
@@ -451,7 +454,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["5E574242513BE343"]
-			hide: true
+			hide: false
 			id: "0AF2E388B45934CC"
 			tasks: [{
 				id: "31FB3AD1EDA5E299"
@@ -479,7 +482,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["5E574242513BE343"]
-			hide: true
+			hide: false
 			id: "50D9EFE8ABEA9779"
 			tasks: [{
 				id: "2E58E45C6F54C018"
@@ -510,7 +513,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["5E574242513BE343"]
-			hide: true
+			hide: false
 			id: "232779928B96328E"
 			tasks: [{
 				id: "08D5E2871BC8ECD2"
@@ -546,6 +549,7 @@
 				"&5A big tip for early game : a good source for many crops and plant items is the Farming for Blockheads Market block!"
 			]
 			dependencies: ["19220F4E56CB0A0F"]
+			hide: false
 			size: 0.75d
 			id: "032265635198E365"
 			tasks: [{
@@ -571,6 +575,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["78B5BCD7C6C45779"]
+			hide: false
 			size: 0.75d
 			id: "239811C5D36CE83E"
 			tasks: [{
@@ -631,7 +636,7 @@
 				"Be careful though, there's a few issues with the system. Using a Pylon to add time might just insta-kill you."
 			]
 			dependencies: ["1F2875BC889232AC"]
-			hide: true
+			hide: false
 			size: 0.75d
 			id: "2771C2A7766E883D"
 			tasks: [{
@@ -652,6 +657,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["5E574242513BE343"]
+			hide: false
 			id: "4B14B1799E6DCDC0"
 			tasks: [{
 				id: "23272624EE1A3EE3"
