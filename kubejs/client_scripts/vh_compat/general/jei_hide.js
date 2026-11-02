@@ -89,6 +89,7 @@ onEvent('jei.hide.items', event => {
     event.hide('the_vault:abyssal_ichor')
     event.hide('woldsvaults:accoutre_focus')
     event.hide('woldsvaults:locked_treasure_container')
+    event.hide('woldsvaults:creative_armory')
     event.hide('pneumaticcraft:jet_boots_upgrade_1')
     event.hide('pneumaticcraft:jet_boots_upgrade_2')
     event.hide('pneumaticcraft:jet_boots_upgrade_3')
