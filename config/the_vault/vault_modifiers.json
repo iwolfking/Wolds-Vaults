@@ -6458,7 +6458,9 @@
             "the_vault:gilded_hunter": 1,
             "the_vault:ornate_hunter": 1,
             "the_vault:living_hunter": 1,
-            "the_vault:altar_hunter": 1
+            "the_vault:altar_hunter": 1,
+            "the_vault:enigma_hunter": 1,
+            "the_vault:pylon_hunter": 1
           }
         },
         "display": {
@@ -6726,7 +6728,7 @@
           "name": "Daycare",
           "color": "#e6fffe",
           "description": "The mobs are visiting daycare and have shrunk by half their size, and have 50% less damage!",
-          "descriptionFormatted": "The mobs are visiting daycare and have shrunk by %d%% size, and have half their damage!",
+          "descriptionFormatted": "The mobs are visiting daycare and have shrunk by half their size, and have half their damage!",
           "icon": "the_vault:gui/modifiers/daycare"
         }
       },
@@ -8498,6 +8500,24 @@
           "color": "#FF2600",
           "description": "Highlights Ornate Chests in this vault",
           "icon": "the_vault:gui/modifiers/ornate"
+        }
+      },
+      "the_vault:enigma_hunter": {
+        "properties": {
+          "entries": [
+            {
+              "filter": "the_vault:enigma_chest",
+              "radius": 64.0,
+              "target": "enigma",
+              "color": 16721408
+            }
+          ]
+        },
+        "display": {
+          "name": "Enigma Hunter",
+          "color": "#7d60c4",
+          "description": "Highlights Enigma Chests in this vault",
+          "icon": "the_vault:gui/modifiers/impossible"
         }
       },
       "the_vault:gilded_hunter": {
