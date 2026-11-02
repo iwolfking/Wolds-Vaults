@@ -44,6 +44,20 @@
 				id: "7ACDC215732E8AD9"
 				type: "checkmark"
 			}]
+			rewards: [
+				{
+					id: "1DF5E98A06447CF2"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 7123252829813722944L
+				}
+				{
+					id: "07F3C61D8BFB145D"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 3967543429940756880L
+				}
+			]
 		}
 		{
 			title: "Lighting the Way"
@@ -133,7 +147,7 @@
 				id: "0628A30C8A36855E"
 				type: "item"
 				item: "the_vault:vault_scrap"
-				count: 8
+				count: 16
 			}]
 		}
 		{
@@ -169,12 +183,42 @@
 				type: "item"
 				item: "the_vault:shard_pouch"
 			}]
-			rewards: [{
-				id: "5FA79AC47E85271D"
-				type: "item"
-				item: "the_vault:soul_shard"
-				count: 32
-			}]
+			rewards: [
+				{
+					id: "5FA79AC47E85271D"
+					type: "item"
+					item: "the_vault:soul_shard"
+					count: 32
+				}
+				{
+					id: "40372C7A6633B3D8"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:backpack"
+						Count: 1b
+						tag: {
+							inventorySlots: 27
+							contentsUuid: [I;
+								-1981972490
+								2142717551
+								-1342277617
+								-773253991
+							]
+							upgradeSlots: 2
+						}
+					}
+				}
+				{
+					id: "48B2CDC255826A97"
+					type: "item"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+				}
+				{
+					id: "6683F6B8D573369F"
+					type: "item"
+					item: "sophisticatedbackpacks:void_upgrade"
+				}
+			]
 		}
 		{
 			title: "Vault Death, Level 20, And You"
@@ -205,6 +249,11 @@
 				icon: "woldsvaults:tombstone"
 				value: 20
 			}]
+			rewards: [{
+				id: "6B90507E57E0E5AC"
+				type: "item"
+				item: "the_vault:knowledge_star"
+			}]
 		}
 		{
 			title: "Carefully Shaped Jewels"
@@ -233,12 +282,20 @@
 				type: "item"
 				item: "the_vault:jewel_crafting_table"
 			}]
-			rewards: [{
-				id: "33DF9312E90F983C"
-				type: "item"
-				item: "the_vault:gemstone"
-				count: 4
-			}]
+			rewards: [
+				{
+					id: "33DF9312E90F983C"
+					type: "item"
+					item: "the_vault:gemstone"
+					count: 4
+				}
+				{
+					id: "2A88F701BBD932D2"
+					type: "item"
+					item: "the_vault:silver_scrap"
+					count: 64
+				}
+			]
 		}
 		{
 			title: "A Tool for All Occasions"
@@ -266,12 +323,20 @@
 				type: "item"
 				item: "the_vault:tool_station"
 			}]
-			rewards: [{
-				id: "2B8417EB9F3192B1"
-				type: "item"
-				item: "the_vault:chromatic_iron_ingot"
-				count: 16
-			}]
+			rewards: [
+				{
+					id: "2B8417EB9F3192B1"
+					type: "item"
+					item: "the_vault:chromatic_iron_ingot"
+					count: 16
+				}
+				{
+					id: "1114A2853EACD406"
+					type: "item"
+					item: "the_vault:gemstone"
+					count: 2
+				}
+			]
 		}
 		{
 			title: "Easily Enchanting"
@@ -299,12 +364,20 @@
 				type: "item"
 				item: "the_vault:vault_enchanter"
 			}]
-			rewards: [{
-				id: "4077436D79373DEA"
-				type: "item"
-				item: "minecraft:emerald"
-				count: 32
-			}]
+			rewards: [
+				{
+					id: "4077436D79373DEA"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 64
+				}
+				{
+					id: "40BEB8FBD24B18E1"
+					type: "item"
+					item: "minecraft:experience_bottle"
+					count: 32
+				}
+			]
 		}
 		{
 			title: "In The Soul Market"
@@ -338,6 +411,7 @@
 				id: "505147CD4CADB4C4"
 				type: "item"
 				item: "woldsvaults:soul_ichor"
+				count: 8
 			}]
 		}
 		{
@@ -444,31 +518,10 @@
 				}
 			}]
 			rewards: [{
-				id: "1C8C76010EBCCCA3"
+				id: "6FDD65410164D376"
 				type: "item"
-				item: {
-					id: "the_vault:magnet"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							-8266451470597690145L
-							-5342229571147975363L
-							2392537302042632L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;12369084]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -492,12 +545,20 @@
 				type: "item"
 				item: "the_vault:alchemy_table"
 			}]
-			rewards: [{
-				id: "0C0AF4B1F49DF0F9"
-				type: "item"
-				item: "the_vault:vault_diamond"
-				count: 4
-			}]
+			rewards: [
+				{
+					id: "0C0AF4B1F49DF0F9"
+					type: "item"
+					item: "the_vault:vault_diamond"
+					count: 8
+				}
+				{
+					id: "48B69345ED78C579"
+					type: "item"
+					item: "the_vault:vault_gold"
+					count: 8
+				}
+			]
 		}
 		{
 			title: "Welcome to Vault Burger"
@@ -634,15 +695,244 @@
 				type: "item"
 				item: "the_vault:vault_jewel_application_station"
 			}]
-			rewards: [{
-				id: "3FE57992641B4D00"
-				type: "item"
-				item: {
-					id: "the_vault:jewel_pouch"
-					Count: 1b
-					tag: { }
+			rewards: [
+				{
+					id: "0AA0B3C9070A56C7"
+					type: "item"
+					item: {
+						id: "the_vault:jewel"
+						Count: 1b
+						tag: {
+							vaultGearData: [L;
+								-1574540980042615408L
+								-1076939057758820498L
+								1482810177311768960L
+								1488813722600603730L
+								305261898154327L
+								56857945295552512L
+								-9151314442816847872L
+								23103573977989121L
+								-4515117383921086378L
+								21837796096L
+								0L
+								7106869330744781184L
+								4946642901492388520L
+								43L
+								3602879701946925312L
+								-7878939105864670167L
+								1310759148522351689L
+								72057594032857383L
+								2147483648L
+								4294967296L
+							]
+							clientCache: {
+								"presentthe_vault:weapon_type": 0b
+								gearName: [B; ]
+								"presentthe_vault:living": 0b
+								jcolors: [I;7536449]
+								hasModifierUNUSUAL: 0b
+								model: [B; ]
+								hasModifierGREATER: 0b
+								hasModifierETCHING: 0b
+								state: 2
+								hasModifierLEGENDARY: 0b
+								hasModifierCORRUPTED: 0b
+								rarity: 4
+							}
+						}
+					}
 				}
-			}]
+				{
+					id: "2BFCF4AA8455D992"
+					type: "item"
+					item: {
+						id: "the_vault:jewel"
+						Count: 1b
+						tag: {
+							vaultGearData: [L;
+								7088846493985878928L
+								8283106568290517381L
+								1482810177311769010L
+								1488813722600603730L
+								305261898154327L
+								56857945295552512L
+								-9151314442816847872L
+								23103573977989121L
+								-4515117383921086378L
+								21837796096L
+								0L
+								7106869330744781184L
+								4946642901492388520L
+								43L
+								3602879701946925312L
+								-961410078223588311L
+								1310759149442834042L
+								72057594032857383L
+								2147483648L
+								4294967296L
+							]
+							clientCache: {
+								"presentthe_vault:weapon_type": 0b
+								gearName: [B; ]
+								"presentthe_vault:living": 0b
+								jcolors: [I;11233838]
+								hasModifierUNUSUAL: 0b
+								model: [B; ]
+								hasModifierGREATER: 0b
+								hasModifierETCHING: 0b
+								state: 2
+								hasModifierLEGENDARY: 0b
+								hasModifierCORRUPTED: 0b
+								rarity: 4
+							}
+						}
+					}
+				}
+				{
+					id: "02BCFEA8F25B76A3"
+					type: "item"
+					item: {
+						id: "the_vault:jewel"
+						Count: 1b
+						tag: {
+							vaultGearData: [L;
+								4491855583892945040L
+								-2742325920550130317L
+								1482810177311768964L
+								1488813722600603730L
+								305261898154327L
+								56857945295552512L
+								-9151314442816847872L
+								23103573977989121L
+								-4515117383921086378L
+								21837796096L
+								0L
+								7106869330744781184L
+								4946642901492388520L
+								43L
+								3602879701946925312L
+								-961410078223588311L
+								1310759148266232977L
+								72057594032857383L
+								2147483648L
+								4294967296L
+							]
+							clientCache: {
+								"presentthe_vault:weapon_type": 0b
+								gearName: [B; ]
+								"presentthe_vault:living": 0b
+								jcolors: [I;15476005]
+								hasModifierUNUSUAL: 0b
+								model: [B; ]
+								hasModifierGREATER: 0b
+								hasModifierETCHING: 0b
+								state: 2
+								hasModifierLEGENDARY: 0b
+								hasModifierCORRUPTED: 0b
+								rarity: 4
+							}
+						}
+					}
+				}
+				{
+					id: "56BD9D07C506C08B"
+					type: "item"
+					item: {
+						id: "the_vault:jewel"
+						Count: 1b
+						tag: {
+							vaultGearData: [L;
+								246957028076165776L
+								5572209682723015362L
+								1482810177311768986L
+								1488813722600603730L
+								305261898154327L
+								56857945295552512L
+								-9151314442816847872L
+								23103573977989121L
+								-4515117383921086378L
+								21837796096L
+								0L
+								7106869330744781184L
+								4946642901492388520L
+								43L
+								3314649325795213568L
+								8261961958631187497L
+								1328881899632267896L
+								17592186043178L
+								524288L
+								1048576L
+							]
+							clientCache: {
+								"presentthe_vault:weapon_type": 0b
+								gearName: [B; ]
+								"presentthe_vault:living": 0b
+								jcolors: [I;15704086]
+								hasModifierUNUSUAL: 0b
+								model: [B; ]
+								hasModifierGREATER: 0b
+								hasModifierETCHING: 0b
+								state: 2
+								hasModifierLEGENDARY: 0b
+								hasModifierCORRUPTED: 0b
+								rarity: 4
+							}
+						}
+					}
+				}
+				{
+					id: "4369369C13342B5F"
+					type: "item"
+					item: {
+						id: "the_vault:jewel"
+						Count: 1b
+						tag: {
+							vaultGearData: [L;
+								-7165283178452533360L
+								1263871849671110154L
+								1482810177311768986L
+								1488813722600603730L
+								305261898154327L
+								56857945295552512L
+								-9151314442816847872L
+								23103573977989121L
+								-4515117383921086378L
+								21837796096L
+								0L
+								7106869330744781184L
+								4946642901492388520L
+								43L
+								3602879701946925312L
+								-961410078223588311L
+								1310759148100655176L
+								72057594032857383L
+								2147483648L
+								4294967296L
+							]
+							clientCache: {
+								"presentthe_vault:weapon_type": 0b
+								gearName: [B; ]
+								"presentthe_vault:living": 0b
+								jcolors: [I;16770092]
+								hasModifierUNUSUAL: 0b
+								model: [B; ]
+								hasModifierGREATER: 0b
+								hasModifierETCHING: 0b
+								state: 2
+								hasModifierLEGENDARY: 0b
+								hasModifierCORRUPTED: 0b
+								rarity: 4
+							}
+						}
+					}
+				}
+				{
+					id: "08A79D52D2E447E1"
+					type: "item"
+					item: "the_vault:chromatic_steel_ingot"
+					count: 4
+				}
+			]
 		}
 		{
 			title: "Becoming an Expert"
@@ -789,11 +1079,96 @@
 				type: "item"
 				item: "the_vault:identification_stand"
 			}]
-			rewards: [{
-				id: "528C00CB553C4B96"
-				type: "item"
-				item: "the_vault:mystery_box"
-			}]
+			rewards: [
+				{
+					id: "6F7E373BD60D93FF"
+					type: "item"
+					item: {
+						id: "the_vault:boots"
+						Count: 1b
+						tag: {
+							vaultGearData: [L;
+								7233783624247447440L
+								4988408054293579055L
+								38280596832682150L
+								-9223372036854775808L
+								32896L
+							]
+							clientCache: {
+								"presentthe_vault:weapon_type": 0b
+								rollType: [B; ]
+								state: 0
+							}
+						}
+					}
+				}
+				{
+					id: "2492DEEF74A4B390"
+					type: "item"
+					item: {
+						id: "the_vault:leggings"
+						Count: 1b
+						tag: {
+							vaultGearData: [L;
+								-9109087004422548080L
+								1798975278096262256L
+								38280596832682116L
+								-9223372036854775808L
+								32896L
+							]
+							clientCache: {
+								"presentthe_vault:weapon_type": 0b
+								rollType: [B; ]
+								state: 0
+							}
+						}
+					}
+				}
+				{
+					id: "4CFCA7F9B29CED29"
+					type: "item"
+					item: {
+						id: "the_vault:chestplate"
+						Count: 1b
+						tag: {
+							vaultGearData: [L;
+								4208908224780704912L
+								-7554992666971114579L
+								38280596832682134L
+								-9223372036854775808L
+								32896L
+							]
+							clientCache: {
+								"presentthe_vault:weapon_type": 0b
+								rollType: [B; ]
+								state: 0
+							}
+						}
+					}
+				}
+				{
+					id: "332D353A2D2C2966"
+					type: "item"
+					item: {
+						id: "the_vault:helmet"
+						Count: 1b
+						tag: {
+							vaultGearData: [L;
+								-333913646120949104L
+								5839601064503457668L
+								38280596832682128L
+								-9223372036854775808L
+								32896L
+							]
+							clientCache: {
+								"presentthe_vault:weapon_type": 0b
+								rollType: [B; ]
+								state: 0
+							}
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "A Bounty of Missions"
@@ -895,12 +1270,19 @@
 				title: "Any Vial"
 				item: "the_vault:bottle"
 			}]
-			rewards: [{
-				id: "6A767BCF51D6B70C"
-				type: "item"
-				item: "the_vault:chromatic_iron_ingot"
-				count: 16
-			}]
+			rewards: [
+				{
+					id: "6A767BCF51D6B70C"
+					type: "item"
+					item: "the_vault:chromatic_iron_ingot"
+					count: 16
+				}
+				{
+					id: "3213DD6390D807DF"
+					type: "item"
+					item: "minecraft:ender_pearl"
+				}
+			]
 		}
 		{
 			title: "Shining Knowledge"
@@ -927,6 +1309,12 @@
 				id: "78917DC8115FDEE1"
 				type: "item"
 				item: "the_vault:knowledge_star"
+			}]
+			rewards: [{
+				id: "0DAAC7F1E4B785C5"
+				type: "item"
+				item: "the_vault:mod_box"
+				count: 3
 			}]
 		}
 		{
@@ -1017,11 +1405,20 @@
 				type: "item"
 				item: "the_vault:vault_forge"
 			}]
-			rewards: [{
-				id: "6A7B3EFAD9CA3060"
-				type: "item"
-				item: "the_vault:vault_alloy"
-			}]
+			rewards: [
+				{
+					id: "6A7B3EFAD9CA3060"
+					type: "item"
+					item: "the_vault:vault_alloy"
+					count: 9
+				}
+				{
+					id: "40C3F3BF528E4091"
+					type: "item"
+					item: "the_vault:vault_gold"
+					count: 3
+				}
+			]
 		}
 		{
 			title: "A Spot for Animals"
@@ -1291,32 +1688,10 @@
 				}
 			}]
 			rewards: [{
-				id: "0DABE8C53DF81150"
+				id: "29EDFEFA6A4118D8"
 				type: "item"
-				item: {
-					id: "the_vault:helmet"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							7499144922595103294L
-							-9143979404463387082L
-							2392537302042635L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							"presentthe_vault:weapon_type": 0b
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;11184810]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -1345,15 +1720,10 @@
 				}
 			}]
 			rewards: [{
-				id: "2A9AA9FFE9E0B567"
+				id: "7B046FA866BE481B"
 				type: "item"
-				item: {
-					id: "the_vault:chestplate"
-					Count: 1b
-					tag: {
-						"the_vault:gear_roll_type": "Omega"
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -1404,32 +1774,10 @@
 				}
 			}]
 			rewards: [{
-				id: "7DBC2F7817695E81"
+				id: "06313319F4380D91"
 				type: "item"
-				item: {
-					id: "the_vault:leggings"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							2965476282188746238L
-							866320481166884620L
-							2392537302042634L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							"presentthe_vault:weapon_type": 0b
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;11184810]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -1480,32 +1828,10 @@
 				}
 			}]
 			rewards: [{
-				id: "14F9BEE352995AB8"
+				id: "1C7061F8827345B2"
 				type: "item"
-				item: {
-					id: "the_vault:boots"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							5674597227358867742L
-							8788229904885742272L
-							2392537302042634L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							"presentthe_vault:weapon_type": 0b
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;11184810]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -1556,32 +1882,10 @@
 				}
 			}]
 			rewards: [{
-				id: "46753E871BF0EC00"
+				id: "373E2FF600280879"
 				type: "item"
-				item: {
-					id: "the_vault:sword"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							-4323236370466944738L
-							-3119269083687429169L
-							2392537302042635L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							"presentthe_vault:weapon_type": 0b
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;11184810]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -1632,32 +1936,10 @@
 				}
 			}]
 			rewards: [{
-				id: "010AC22FCADEF2A0"
+				id: "38D25AC30DFBAAC0"
 				type: "item"
-				item: {
-					id: "the_vault:axe"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							8639927770871560974L
-							7082286325219341786L
-							2392537302042635L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							"presentthe_vault:weapon_type": 0b
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;11184810]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -1708,32 +1990,10 @@
 				}
 			}]
 			rewards: [{
-				id: "0357BAC3AADA5658"
+				id: "7562FAA7418032EB"
 				type: "item"
-				item: {
-					id: "the_vault:battlestaff"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							-5029249127322212690L
-							3324477113181156500L
-							2392537302042633L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							"presentthe_vault:weapon_type": 0b
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;11184810]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -1786,32 +2046,10 @@
 				}
 			}]
 			rewards: [{
-				id: "201308D2DD0FE4FE"
+				id: "334E6A01BCB2DEEE"
 				type: "item"
-				item: {
-					id: "the_vault:trident"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							-7410733934983228082L
-							5675058750218247669L
-							2392537302042634L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							"presentthe_vault:weapon_type": 0b
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;11184810]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -1862,32 +2100,10 @@
 				}
 			}]
 			rewards: [{
-				id: "1639C47D78DC1E58"
+				id: "6620F48EBD2A4936"
 				type: "item"
-				item: {
-					id: "the_vault:rang"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							61488450257560382L
-							2636020975074132085L
-							2392537302042632L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							"presentthe_vault:weapon_type": 0b
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;11184810]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -1940,9 +2156,10 @@
 				}
 			}]
 			rewards: [{
-				id: "3A2931ECC8DF2AA1"
+				id: "321DAD408B334C66"
 				type: "item"
-				item: "the_vault:shield"
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -1993,32 +2210,10 @@
 				}
 			}]
 			rewards: [{
-				id: "381FDE30F0A80C57"
+				id: "163B6BAD24C9676B"
 				type: "item"
-				item: {
-					id: "the_vault:wand"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							-1450851639308786114L
-							8809015951179555342L
-							2392537302042633L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							"presentthe_vault:weapon_type": 0b
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;11184810]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -2069,32 +2264,10 @@
 				}
 			}]
 			rewards: [{
-				id: "75728311D1DA4A2A"
+				id: "21DF3F7B99DD663C"
 				type: "item"
-				item: {
-					id: "the_vault:focus"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							4321364370534999502L
-							3439893691901799201L
-							2392537302042633L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							"presentthe_vault:weapon_type": 0b
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;11184810]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -2147,32 +2320,10 @@
 				}
 			}]
 			rewards: [{
-				id: "083EE07DA8FCC89F"
+				id: "2A941B939C07EF4D"
 				type: "item"
-				item: {
-					id: "the_vault:plushie"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							3351985703550721742L
-							-5078956863028409088L
-							2392537302042635L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							"presentthe_vault:weapon_type": 0b
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;11184810]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -2225,32 +2376,10 @@
 				}
 			}]
 			rewards: [{
-				id: "778E8E4675A70641"
+				id: "435DD31EEBABB23A"
 				type: "item"
-				item: {
-					id: "the_vault:loot_sack"
-					Count: 1b
-					tag: {
-						vaultGearData: [L;
-							-878855642086580082L
-							-3311764175241024741L
-							2392537302042635L
-							576460752303423488L
-							2056L
-						]
-						clientCache: {
-							color: [B; ]
-							gearName: [B; ]
-							"presentthe_vault:weapon_type": 0b
-							rollType: [B; ]
-							jcolors: [I; ]
-							model: [B; ]
-							state: 0
-							colors: [I;11184810]
-							rarity: 0
-						}
-					}
-				}
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 		{
@@ -2855,6 +2984,80 @@
 				id: "3DA86015554D4C51"
 				type: "item"
 				item: "the_vault:gem_pog"
+			}]
+		}
+		{
+			title: "Vault Scepter"
+			x: -12.0d
+			y: -4.25d
+			shape: "square"
+			subtitle: "A mage's tool"
+			description: ["&5Vault Scepters are one of a variety of weapon types you can use. All weapons gain a broader range of Suffixes and Prefixes as you level up.\\n\\nVault Scepters are a pretty unique gear piece that is great for the aspiring Mage, it offers Ability Power enhanced melee strikes, a chargeable Beam attack, or can Invoke one of the variety of Vault Hunters abilities after charging it. "]
+			id: "7D8AF01A1AD89FC6"
+			tasks: [{
+				id: "06FFFF757CAD63CD"
+				type: "item"
+				item: {
+					id: "the_vault:scepter"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							2540973885777038480L
+							-409615243156606238L
+							38280596832682139L
+							-9223372036854775808L
+							32896L
+						]
+						clientCache: {
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							state: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0E10523FFEB5216E"
+				type: "item"
+				item: "the_vault:vault_alloy"
+				count: 3
+			}]
+		}
+		{
+			title: "Vault Dagger"
+			x: -12.0d
+			y: 1.75d
+			shape: "square"
+			subtitle: "Slice n Dice (mini edition)"
+			description: ["&5Vault Swords are one of a variety of weapon types you can use. All weapons gain a broader range of Suffixes and Prefixes as you level up.\\n\\nVault Daggers are fast attacking weapons designed around dual wielding! Give them a try!"]
+			id: "2E34EB8E8338657A"
+			tasks: [{
+				id: "0A6472ED36B0B52A"
+				type: "item"
+				item: {
+					id: "the_vault:dagger"
+					Count: 1b
+					tag: {
+						vaultGearData: [L;
+							-3365134507579863664L
+							-793653886736677108L
+							38280596832682141L
+							-9223372036854775808L
+							32896L
+						]
+						clientCache: {
+							"presentthe_vault:weapon_type": 0b
+							rollType: [B; ]
+							state: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "03DE28D0D1F7BBBF"
+				type: "item"
+				item: "the_vault:vault_alloy"
+				count: 3
 			}]
 		}
 	]

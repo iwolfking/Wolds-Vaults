@@ -56,17 +56,57 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "33E3116058C5A4CC"
-				type: "item"
-				item: {
-					id: "the_vault:booster_pack"
-					Count: 1b
-					tag: {
-						id: "the_vault:default"
+			rewards: [
+				{
+					id: "33E3116058C5A4CC"
+					type: "item"
+					item: {
+						id: "the_vault:booster_pack"
+						Count: 1b
+						tag: {
+							id: "the_vault:default"
+						}
 					}
 				}
-			}]
+				{
+					id: "1C5200781363CA4F"
+					type: "item"
+					item: "the_vault:gem_pog"
+				}
+				{
+					id: "4B527E39CC5D46AB"
+					type: "item"
+					item: {
+						id: "the_vault:booster_pack"
+						Count: 1b
+						tag: {
+							id: "the_vault:arcane_pack"
+						}
+					}
+				}
+				{
+					id: "533A1CFFD566D409"
+					type: "item"
+					item: {
+						id: "the_vault:booster_pack"
+						Count: 1b
+						tag: {
+							id: "the_vault:resource_pack"
+						}
+					}
+				}
+				{
+					id: "1DAE57BFC92F6517"
+					type: "item"
+					item: {
+						id: "the_vault:booster_pack"
+						Count: 1b
+						tag: {
+							id: "the_vault:evolution_pack"
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "Keys to the Heart..."
@@ -503,11 +543,18 @@
 				icon: "the_vault:crystal_seal_herald"
 				value: 100
 			}]
-			rewards: [{
-				id: "705EC640EAE30F70"
-				type: "item"
-				item: "the_vault:echo_pog"
-			}]
+			rewards: [
+				{
+					id: "705EC640EAE30F70"
+					type: "item"
+					item: "the_vault:echo_pog"
+				}
+				{
+					id: "5112AD55E37C0C20"
+					type: "item"
+					item: "the_vault:companion_egg"
+				}
+			]
 		}
 		{
 			title: "Bounty Posted"
@@ -679,11 +726,18 @@
 				observe_type: 0
 				to_observe: "the_vault:treasure_chest"
 			}]
-			rewards: [{
-				id: "4F1C766C20A781BA"
-				type: "item"
-				item: "the_vault:vault_platinum"
-			}]
+			rewards: [
+				{
+					id: "4F1C766C20A781BA"
+					type: "item"
+					item: "the_vault:vault_platinum"
+				}
+				{
+					id: "30F482EF05DFE493"
+					type: "item"
+					item: "the_vault:unidentified_treasure_key"
+				}
+			]
 		}
 		{
 			title: "Powered Up Foci"
@@ -966,6 +1020,7 @@
 				id: "5DD66633E192A7EC"
 				type: "item"
 				item: "woldsvaults:omega_box"
+				count: 3
 			}]
 		}
 		{
@@ -1010,11 +1065,24 @@
 				type: "item"
 				item: "woldsvaults:enigma_egg"
 			}]
-			rewards: [{
-				id: "406BA1260254FFB4"
-				type: "item"
-				item: "woldsvaults:enigma_egg"
-			}]
+			rewards: [
+				{
+					id: "406BA1260254FFB4"
+					type: "item"
+					item: "woldsvaults:enigma_egg"
+				}
+				{
+					id: "0AF52790FE798664"
+					type: "item"
+					item: {
+						id: "supplementaries:bubble_blower"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "Number One Royale"
@@ -1550,9 +1618,10 @@
 				to_observe: "the_vault:imbuement_altar"
 			}]
 			rewards: [{
-				id: "67847C91359D6381"
+				id: "14ADCF642A623A7E"
 				type: "item"
-				item: "the_vault:gem_pog"
+				item: "the_vault:gem_echo"
+				count: 10
 			}]
 		}
 		{

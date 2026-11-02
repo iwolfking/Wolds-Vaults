@@ -55,11 +55,24 @@
 				type: "checkmark"
 				title: "Got Enough Space?"
 			}]
-			rewards: [{
-				id: "3FF61EC07B0806E4"
-				type: "item"
-				item: "minecraft:shulker_box"
-			}]
+			rewards: [
+				{
+					id: "3FF61EC07B0806E4"
+					type: "item"
+					item: "minecraft:shulker_box"
+				}
+				{
+					id: "5FDB87916F8BBDB8"
+					type: "woldsvaults:vault_points"
+					title: "1 Skill Point"
+					icon: "woldsvaults:skill_orb"
+					skillPoints: 1
+					knowledgePoints: 0
+					expertisePoints: 0
+					prestigePoints: 0
+					regretPoints: 0
+				}
+			]
 		}
 		{
 			title: "The Altar"
@@ -221,12 +234,20 @@
 					item: "the_vault:vault_rock"
 				}
 			]
-			rewards: [{
-				id: "43CF6A7F7FFEFCE5"
-				type: "item"
-				item: "the_vault:vault_rock"
-				count: 5
-			}]
+			rewards: [
+				{
+					id: "43CF6A7F7FFEFCE5"
+					type: "item"
+					item: "the_vault:vault_rock"
+					count: 5
+				}
+				{
+					id: "14180E07775D7AA4"
+					type: "item"
+					item: "the_vault:chromatic_iron_ingot"
+					count: 24
+				}
+			]
 		}
 		{
 			title: "The Time of Your Life"
@@ -555,6 +576,11 @@
 			tasks: [{
 				id: "4D3E4B7763278CC6"
 				type: "checkmark"
+			}]
+			rewards: [{
+				id: "38DAECA69F0DB3A9"
+				type: "item"
+				item: "minecraft:stone_button"
 			}]
 		}
 		{
