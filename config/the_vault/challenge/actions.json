@@ -571,6 +571,36 @@
       "color1": "0xFFffb400",
       "color2": "0xFFffe04e"
     },
+    "leg_scepter": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Legendary Scepter",
+      "item": {
+        "id": "the_vault:scepter",
+        "nbt": {
+          "the_vault:is_legendary": "true",
+          "the_vault:gear_roll_type_pool": "gear_treasure"
+        },
+        "count": 1
+      },
+      "color1": "0xFFffb400",
+      "color2": "0xFFffe04e"
+    },
+    "leg_dagger": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Legendary Dagger",
+      "item": {
+        "id": "the_vault:dagger",
+        "nbt": {
+          "the_vault:is_legendary": "true",
+          "the_vault:gear_roll_type_pool": "gear_treasure"
+        },
+        "count": 1
+      },
+      "color1": "0xFFffb400",
+      "color2": "0xFFffe04e"
+    },
     "rare_helmet": {
       "type": "floating_item_reward",
       "textColor": "0xFFfff0a9",
@@ -721,6 +751,30 @@
       "name": "Battlestaff",
       "item": {
         "id": "the_vault:battlestaff",
+        "nbt": "{\"the_vault:gear_roll_type\":\"Rare+\"}",
+        "count": 1
+      },
+      "color1": "0xFFffea00",
+      "color2": "0xFFffd200"
+    },
+    "rare_scepter": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFfff0a9",
+      "name": "Scepter",
+      "item": {
+        "id": "the_vault:scepter",
+        "nbt": "{\"the_vault:gear_roll_type\":\"Rare+\"}",
+        "count": 1
+      },
+      "color1": "0xFFffea00",
+      "color2": "0xFFffd200"
+    },
+    "rare_dagger": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFfff0a9",
+      "name": "Dagger",
+      "item": {
+        "id": "the_vault:dagger",
         "nbt": "{\"the_vault:gear_roll_type\":\"Rare+\"}",
         "count": 1
       },
@@ -1289,7 +1343,7 @@
       "tile": "the_vault:placeholder[type=coin_stacks,facing=up]",
       "count": 16
     },
-     "coin_pile_ww": {
+    "coin_pile_ww": {
       "type": "tile_reward",
       "name": "Coin Piles",
       "textColor": "0xFFfff0a9",
@@ -2096,6 +2150,14 @@
             {
               "value": "leg_battlestaff",
               "weight": 2
+            },
+            {
+              "value": "leg_scepter",
+              "weight": 2
+            },
+            {
+              "value": "leg_dagger",
+              "weight": 2
             }
           ]
         },
@@ -2321,6 +2383,14 @@
             {
               "value": "leg_battlestaff",
               "weight": 2
+            },
+            {
+              "value": "leg_scepter",
+              "weight": 2
+            },
+            {
+              "value": "leg_dagger",
+              "weight": 2
             }
           ]
         }
@@ -2454,6 +2524,14 @@
             },
             {
               "value": "leg_battlestaff",
+              "weight": 6
+            },
+            {
+              "value": "leg_scepter",
+              "weight": 6
+            },
+            {
+              "value": "leg_dagger",
               "weight": 6
             },
             {
@@ -2697,6 +2775,14 @@
             {
               "value": "leg_battlestaff",
               "weight": 2
+            },
+            {
+              "value": "leg_scepter",
+              "weight": 6
+            },
+            {
+              "value": "leg_dagger",
+              "weight": 6
             }
           ]
         },
@@ -2922,6 +3008,14 @@
             {
               "value": "leg_battlestaff",
               "weight": 2
+            },
+            {
+              "value": "leg_scepter",
+              "weight": 2
+            },
+            {
+              "value": "leg_dagger",
+              "weight": 2
             }
           ]
         }
@@ -3011,6 +3105,14 @@
             },
             {
               "value": "rare_battlestaff",
+              "weight": 20
+            },
+            {
+              "value": "rare_scepter",
+              "weight": 20
+            },
+            {
+              "value": "rare_dagger",
               "weight": 20
             },
             {
@@ -3124,6 +3226,14 @@
             },
             {
               "value": "rare_battlestaff",
+              "weight": 20
+            },
+            {
+              "value": "rare_scepter",
+              "weight": 20
+            },
+            {
+              "value": "rare_dagger",
               "weight": 20
             },
             {
