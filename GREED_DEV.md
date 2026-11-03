@@ -41,10 +41,12 @@ Rules:
   No joke names, no "round N" labels.
 - Addon Java: no comments except Javadoc on important functions. Run the comment audit before
   committing.
-- Addon builds, `runData` and the god drift gates read pack configs from the nearest `Wolds-Vaults`
-  checkout, whatever branch it is on. For greed work always pass
-  `-PwvPackDir=C:\Users\river\wv-worktrees\pack-greed-dev` (or the matching feature worktree), or
-  generated files drift to another branch's values.
+- Config values WV owns live in addon datagen (unified datagen: one provider table, output in
+  `src/generated`, no pack copy, no Java default table). Change a value in its provider, run
+  `runData`, commit the provider and the regenerated files together. A full `runData` with
+  `src/generated/resources/.cache` deleted must give zero diff.
+- Addon `runData` needs `-PwvPackDir=C:\Users\river\wv-worktrees\pack-greed-dev` (or the matching
+  feature worktree) to seed the base Vault Hunters configs; addon `build` needs no pack.
 - Pack: never run bare `packwiz refresh` or `packwiz remove` (CRLF hash corruption). After any
   index change, re-hash `index.toml` into `pack.toml` and verify every entry against its staged
   blob. Lint hand-edited `config/the_vault/**/*.json` with a strict JSON parser.
