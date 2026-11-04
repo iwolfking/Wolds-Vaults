@@ -4104,6 +4104,33 @@
           }
         ]
       },
+      { "attribute": "the_vault:ability_on_damage",
+        "group": "ModOnDamageType",
+        "identifier": "the_vault:u_frost_nova_on_damage",
+        "tags": [
+          "noLegendary"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 500,
+            "value": {
+              "abilityId": "Nova_Slow",
+              "chance": {
+                "min": 0.05,
+                "max": 0.2,
+                "step": 0.01
+              },
+              "level": {
+                "min": 2,
+                "max": 7,
+                "step": 1
+              }
+            }
+          }
+        ]
+      },
       {
         "attribute": "the_vault:on_kill_heal",
         "group": "ModEnhancement",
@@ -4313,6 +4340,24 @@
       },
       { "attribute": "the_vault:ability_area_of_effect_percent",
         "group": "ModEnhancement",
+        "identifier": "the_vault:storm_aoe_reduce",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 500,
+            "value": {
+              "min": -0.8,
+              "max": -0.6,
+              "step": 0.01,
+              "abilityKey": "Storm_Arrow_Base"
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:ability_area_of_effect_percent",
+        "group": "ModEnhancement",
         "identifier": "the_vault:fear_effect_increase",
         "tags": [],
         "tiers": [
@@ -4396,6 +4441,25 @@
               "min": 5,
               "max": 6,
               "step": 1
+            }
+          }
+        ]
+      },
+
+      { "attribute": "the_vault:ability_cooldown_percent",
+        "group": "ModEnhancement",
+        "identifier": "the_vault:storm_cooldown",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 500,
+            "value": {
+              "min": -0.75,
+              "max": -0.5,
+              "step": 0.01,
+              "abilityKey": "Storm_Arrow_Base"
             }
           }
         ]

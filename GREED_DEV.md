@@ -50,6 +50,10 @@ Rules:
 - Pack: never run bare `packwiz refresh` or `packwiz remove` (CRLF hash corruption). After any
   index change, re-hash `index.toml` into `pack.toml` and verify every entry against its staged
   blob. Lint hand-edited `config/the_vault/**/*.json` with a strict JSON parser.
+- The pack's `config/the_vault` and `kubejs` stay identical to upstream. A greed edit to an entry
+  upstream owns is a config patch in addon `ModConfigPatchesProvider` (only the changed fields);
+  a new entry is a VHAPI overlay provider. Never edit the pack copy. Canonical doc:
+  `library/DATAGEN.md`.
 
 ## Deploy targets
 
