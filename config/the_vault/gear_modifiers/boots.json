@@ -3372,6 +3372,24 @@
       },
       { "attribute": "the_vault:ability_area_of_effect_percent",
         "group": "ModEnhancement",
+        "identifier": "the_vault:storm_aoe_reduce",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 500,
+            "value": {
+              "min": -0.8,
+              "max": -0.6,
+              "step": 0.01,
+              "abilityKey": "Storm_Arrow_Base"
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:ability_area_of_effect_percent",
+        "group": "ModEnhancement",
         "identifier": "the_vault:fear_effect_increase",
         "tags": [],
         "tiers": [
@@ -3455,6 +3473,25 @@
               "min": 5,
               "max": 6,
               "step": 1
+            }
+          }
+        ]
+      },
+
+      { "attribute": "the_vault:ability_cooldown_percent",
+        "group": "ModEnhancement",
+        "identifier": "the_vault:storm_cooldown",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 500,
+            "value": {
+              "min": -0.75,
+              "max": -0.5,
+              "step": 0.01,
+              "abilityKey": "Storm_Arrow_Base"
             }
           }
         ]

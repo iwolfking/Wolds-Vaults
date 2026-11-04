@@ -3105,9 +3105,9 @@
             "maxLevel": -1,
             "weight": 600,
             "value": {
-              "min": 0.015,
-              "max": 0.025,
-              "step": 0.005
+              "min": 0.03,
+              "max": 0.05,
+              "step": 0.01
             }
           },
           {
@@ -3115,9 +3115,9 @@
             "maxLevel": -1,
             "weight": 600,
             "value": {
-              "min": 0.03,
-              "max": 0.05,
-              "step": 0.005
+              "min": 0.06,
+              "max": 0.1,
+              "step": 0.01
             }
           }
         ]
@@ -4050,6 +4050,36 @@
               "max": -0.6,
               "step": 0.01,
               "abilityKey": "Storm_Arrow_Base"
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:ability_area_of_effect_percent",
+        "group": "ModEnhancement",
+        "identifier": "the_vault:fireball_aoe_increase",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 5,
+            "value": {
+              "min": 0.1,
+              "max": 0.24,
+              "step": 0.01,
+              "abilityKey": "Fireball_Base"
+            }
+          },
+          {
+            "minLevel": 65,
+            "maxLevel": -1,
+            "weight": 5,
+            "value": {
+              "min": 0.25,
+              "max": 0.5,
+              "step": 0.01,
+              "abilityKey": "Fireball_Base"
             }
           }
         ]
@@ -7678,6 +7708,24 @@
       },
       { "attribute": "the_vault:ability_area_of_effect_percent",
         "group": "ModEnhancement",
+        "identifier": "the_vault:seal_storm_aoe_reduce",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 500,
+            "value": {
+              "min": -0.8,
+              "max": -0.6,
+              "step": 0.01,
+              "abilityKey": "Storm_Arrow_Base"
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:ability_area_of_effect_percent",
+        "group": "ModEnhancement",
         "identifier": "the_vault:seal_fear_effect_increase",
         "tags": [],
         "tiers": [
@@ -7761,6 +7809,25 @@
               "min": 5,
               "max": 6,
               "step": 1
+            }
+          }
+        ]
+      },
+
+      { "attribute": "the_vault:ability_cooldown_percent",
+        "group": "ModEnhancement",
+        "identifier": "the_vault:seal_storm_cooldown",
+        "tags": [],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 500,
+            "value": {
+              "min": -0.75,
+              "max": -0.5,
+              "step": 0.01,
+              "abilityKey": "Storm_Arrow_Base"
             }
           }
         ]
