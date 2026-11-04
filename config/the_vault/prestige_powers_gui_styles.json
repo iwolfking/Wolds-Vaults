@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "text": "Scavenger 1",
+      "text": "Tier 1",
       "x": -150,
       "y": -22,
       "width": 100,
@@ -11,7 +11,7 @@
       "containerHeight": 50
     },
     {
-      "text": "Scavenger 2",
+      "text": "Tier 2",
       "x": -20,
       "y": -22,
       "width": 100,
@@ -21,7 +21,7 @@
       "containerHeight": 50
     },
     {
-      "text": "Scavenger 3",
+      "text": "Tier 3",
       "x": 110,
       "y": -22,
       "width": 100,
@@ -31,7 +31,7 @@
       "containerHeight": 50
     },
     {
-      "text": "Looter 1",
+      "text": "Tier 4",
       "x": -150,
       "y": 50,
       "width": 100,
@@ -41,7 +41,7 @@
       "containerHeight": 50
     },
     {
-      "text": "Looter 2",
+      "text": "Tier 5",
       "x": -20,
       "y": 50,
       "width": 100,
@@ -51,7 +51,7 @@
       "containerHeight": 50
     },
     {
-      "text": "Looter 3",
+      "text": "Tier 6",
       "x": 110,
       "y": 50,
       "width": 100,
@@ -61,7 +61,7 @@
       "containerHeight": 50
     },
     {
-      "text": "Hunter 1",
+      "text": "Tier 7",
       "x": -150,
       "y": 122,
       "width": 100,
@@ -71,7 +71,7 @@
       "containerHeight": 50
     },
     {
-      "text": "Hunter 2",
+      "text": "Tier 8",
       "x": -20,
       "y": 122,
       "width": 100,
@@ -81,7 +81,7 @@
       "containerHeight": 50
     },
     {
-      "text": "Hunter 3",
+      "text": "Tier 9",
       "x": 110,
       "y": 122,
       "width": 100,
@@ -91,7 +91,7 @@
       "containerHeight": 50
     },
     {
-      "text": "Master 1",
+      "text": "Tier 10",
       "x": -150,
       "y": 194,
       "width": 100,
@@ -101,7 +101,7 @@
       "containerHeight": 50
     },
     {
-      "text": "Master 2",
+      "text": "Tier 11",
       "x": -20,
       "y": 194,
       "width": 100,
@@ -111,49 +111,9 @@
       "containerHeight": 50
     },
     {
-      "text": "Master 3",
+      "text": "Tier 12",
       "x": 110,
       "y": 194,
-      "width": 100,
-      "height": 16,
-      "headerColor": -8355712,
-      "textColor": -1,
-      "containerHeight": 50
-    },
-    {
-      "text": "Champion 1",
-      "x": -150,
-      "y": 266,
-      "width": 100,
-      "height": 16,
-      "headerColor": -8355712,
-      "textColor": -1,
-      "containerHeight": 50
-    },
-    {
-      "text": "Champion 2",
-      "x": -20,
-      "y": 266,
-      "width": 100,
-      "height": 16,
-      "headerColor": -8355712,
-      "textColor": -1,
-      "containerHeight": 50
-    },
-    {
-      "text": "Champion 3",
-      "x": 110,
-      "y": 266,
-      "width": 100,
-      "height": 16,
-      "headerColor": -8355712,
-      "textColor": -1,
-      "containerHeight": 50
-    },
-    {
-      "text": "Legend",
-      "x": -150,
-      "y": 338,
       "width": 100,
       "height": 16,
       "headerColor": -8355712,
@@ -162,19 +122,19 @@
     }
   ],
   "styles": {
-    "BountyCooldownReduction": {
-      "x": -130,
-      "y": 10,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/bountymaster",
-      "inactiveIcon": "the_vault:gui/prestige/bountymaster_inactive"
-    },
     "EnderAnchorPower": {
-      "x": -100,
+      "x": -130,
       "y": 10,
       "frameType": "RECTANGULAR",
       "icon": "the_vault:gui/prestige/the_anchor",
       "inactiveIcon": "the_vault:gui/prestige/the_anchor_inactive"
+    },
+    "BountyCooldownReduction": {
+      "x": -100,
+      "y": 10,
+      "frameType": "RECTANGULAR",
+      "icon": "the_vault:gui/prestige/bountymaster",
+      "inactiveIcon": "the_vault:gui/prestige/bountymaster_inactive"
     },
     "FallImmunity": {
       "x": -70,
@@ -204,6 +164,7 @@
       "icon": "the_vault:gui/prestige/shielded",
       "inactiveIcon": "the_vault:gui/prestige/shielded_inactive"
     },
+
     "PickupRange": {
       "x": 130,
       "y": 10,
@@ -211,12 +172,12 @@
       "icon": "the_vault:gui/prestige/magnet_range",
       "inactiveIcon": "the_vault:gui/prestige/magnet_range_inactive"
     },
-    "StepUpPower": {
+    "BlackMarketRerolls": {
       "x": 160,
       "y": 10,
       "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/the_frog",
-      "inactiveIcon": "the_vault:gui/prestige/the_frog_inactive"
+      "icon": "the_vault:gui/prestige/blackmarket",
+      "inactiveIcon": "the_vault:gui/prestige/blackmarket_inactive"
     },
     "GluttonyPower": {
       "x": 190,
@@ -239,26 +200,27 @@
       "icon": "the_vault:gui/prestige/necklace",
       "inactiveIcon": "the_vault:gui/prestige/necklace_inactive"
     },
-    "BlackMarketRerolls": {
-      "x": -70,
-      "y": 82,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/blackmarket",
-      "inactiveIcon": "the_vault:gui/prestige/blackmarket_inactive"
-    },
-    "NoCharmsUses": {
-      "x": 0,
-      "y": 82,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/no_charm_use",
-      "inactiveIcon": "the_vault:gui/prestige/no_charm_use_inactive"
-    },
     "CrateTier": {
-      "x": 30,
+      "x": -70,
       "y": 82,
       "frameType": "RECTANGULAR",
       "icon": "the_vault:gui/prestige/bountiful_crates",
       "inactiveIcon": "the_vault:gui/prestige/bountiful_crates_inactive"
+    },
+
+    "ChampionsDamage": {
+      "x": 160,
+      "y": 154,
+      "frameType": "RECTANGULAR",
+      "icon": "the_vault:gui/prestige/champion",
+      "inactiveIcon": "the_vault:gui/prestige/champion_inactive"
+    },
+    "StepUpPower": {
+      "x": 30,
+      "y": 82,
+      "frameType": "RECTANGULAR",
+      "icon": "the_vault:gui/prestige/the_frog",
+      "inactiveIcon": "the_vault:gui/prestige/the_frog_inactive"
     },
     "Artificer": {
       "x": 60,
@@ -274,12 +236,12 @@
       "icon": "the_vault:gui/prestige/super_crystals",
       "inactiveIcon": "the_vault:gui/prestige/super_crystals_inactive"
     },
-    "GodsDisciple": {
-      "x": 160,
+    "NoCharmsUses": {
+      "x": 0,
       "y": 82,
       "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/the_spark",
-      "inactiveIcon": "the_vault:gui/prestige/the_spark_inactive"
+      "icon": "the_vault:gui/prestige/no_charm_use",
+      "inactiveIcon": "the_vault:gui/prestige/no_charm_use_inactive"
     },
     "SoulFetcher": {
       "x": 190,
@@ -288,6 +250,7 @@
       "icon": "the_vault:gui/prestige/soul_fetcher",
       "inactiveIcon": "the_vault:gui/prestige/soul_fetcher_inactive"
     },
+
     "MythicBounty": {
       "x": -130,
       "y": 154,
@@ -309,19 +272,19 @@
       "icon": "the_vault:gui/prestige/spirits_hand",
       "inactiveIcon": "the_vault:gui/prestige/spirits_hand_inactive"
     },
-    "ToolsmithII": {
+    "HealthIncrease": {
       "x": 0,
       "y": 154,
       "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/toolsmith",
-      "inactiveIcon": "the_vault:gui/prestige/toolsmith_inactive"
+      "icon": "the_vault:gui/prestige/dryad",
+      "inactiveIcon": "the_vault:gui/prestige/dryad_inactive"
     },
-    "NoTrinketUses": {
+    "BlackMarketer": {
       "x": 30,
       "y": 154,
       "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/no_trinket_use",
-      "inactiveIcon": "the_vault:gui/prestige/no_trinket_use_inactive"
+      "icon": "the_vault:gui/prestige/black_marketer",
+      "inactiveIcon": "the_vault:gui/prestige/black_marketer_inactive"
     },
     "TemporalShardChance": {
       "x": 60,
@@ -330,19 +293,12 @@
       "icon": "the_vault:gui/prestige/temporal",
       "inactiveIcon": "the_vault:gui/prestige/temporal_inactive"
     },
-    "SuperCrystalsII": {
-      "x": 130,
-      "y": 154,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/super_crystals",
-      "inactiveIcon": "the_vault:gui/prestige/super_crystals_inactive"
-    },
-    "ChampionsDamage": {
+    "NoTrinketUses": {
       "x": 160,
-      "y": 154,
+      "y": 82,
       "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/champion",
-      "inactiveIcon": "the_vault:gui/prestige/champion_inactive"
+      "icon": "the_vault:gui/prestige/no_trinket_use",
+      "inactiveIcon": "the_vault:gui/prestige/no_trinket_use_inactive"
     },
     "CommanderPower": {
       "x": 190,
@@ -351,12 +307,13 @@
       "icon": "the_vault:gui/prestige/commander",
       "inactiveIcon": "the_vault:gui/prestige/commander_inactive"
     },
-    "BlackMarketer": {
+
+    "MovementSpeedMultiplier": {
       "x": -130,
       "y": 226,
       "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/black_marketer",
-      "inactiveIcon": "the_vault:gui/prestige/black_marketer_inactive"
+      "icon": "the_vault:gui/prestige/swiftness_amplified",
+      "inactiveIcon": "the_vault:gui/prestige/swiftness_amplified_inactive"
     },
     "ToolDurabilityPower": {
       "x": -100,
@@ -365,13 +322,7 @@
       "icon": "the_vault:gui/prestige/no_tools_durability",
       "inactiveIcon": "the_vault:gui/prestige/no_tools_durability_inactive"
     },
-    "MovementSpeedMultiplier": {
-      "x": -70,
-      "y": 226,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/swiftness_amplified",
-      "inactiveIcon": "the_vault:gui/prestige/swiftness_amplified_inactive"
-    },
+
     "OriginalWardPower": {
       "x": 0,
       "y": 226,
@@ -379,19 +330,19 @@
       "icon": "the_vault:gui/prestige/ward",
       "inactiveIcon": "the_vault:gui/prestige/ward_inactive"
     },
-    "BerserkPower": {
-      "x": 30,
+    "ShieldOfLastingGuard": {
+      "x": -70,
       "y": 226,
       "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/berserk",
-      "inactiveIcon": "the_vault:gui/prestige/berserk_inactive"
+      "icon": "the_vault:gui/prestige/shield_of_lasting_guard",
+      "inactiveIcon": "the_vault:gui/prestige/shield_of_lasting_guard_inactive"
     },
-    "HealthIncrease": {
+    "PrismaticPouch": {
       "x": 60,
       "y": 226,
       "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/dryad",
-      "inactiveIcon": "the_vault:gui/prestige/dryad_inactive"
+      "icon": "the_vault:gui/prestige/prism_possessor",
+      "inactiveIcon": "the_vault:gui/prestige/prism_possessor_inactive"
     },
     "Fruity": {
       "x": 130,
@@ -400,103 +351,33 @@
       "icon": "the_vault:gui/prestige/fruity",
       "inactiveIcon": "the_vault:gui/prestige/fruity_inactive"
     },
-    "GodsDiscipleII": {
+    "MasterfulPower": {
       "x": 160,
       "y": 226,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/the_petal",
-      "inactiveIcon": "the_vault:gui/prestige/the_petal_inactive"
-    },
-    "RelicHunter": {
-      "x": 190,
-      "y": 226,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/the_carapace",
-      "inactiveIcon": "the_vault:gui/prestige/the_carapace_inactive"
-    },
-    "PrismaticPouch": {
-      "x": -130,
-      "y": 298,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/prism_possessor",
-      "inactiveIcon": "the_vault:gui/prestige/prism_possessor_inactive"
-    },
-    "BarrierOfResilience": {
-      "x": -100,
-      "y": 298,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/barrier_of_resilience",
-      "inactiveIcon": "the_vault:gui/prestige/barrier_of_resilience_inactive"
-    },
-    "MasterfulPower": {
-      "x": -70,
-      "y": 298,
       "frameType": "RECTANGULAR",
       "icon": "the_vault:gui/prestige/masterful",
       "inactiveIcon": "the_vault:gui/prestige/masterful_inactive"
     },
+    "BerserkPower": {
+      "x": 30,
+      "y": 226,
+      "frameType": "RECTANGULAR",
+      "icon": "the_vault:gui/prestige/berserk",
+      "inactiveIcon": "the_vault:gui/prestige/berserk_inactive"
+    },
     "WeaverOfTime": {
-      "x": 0,
-      "y": 298,
+      "x": 190,
+      "y": 226,
       "frameType": "RECTANGULAR",
       "icon": "the_vault:gui/prestige/weaver_of_time",
       "inactiveIcon": "the_vault:gui/prestige/weaver_of_time_inactive"
     },
-    "SpiritsHandII": {
-      "x": 30,
-      "y": 298,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/spirits_hand",
-      "inactiveIcon": "the_vault:gui/prestige/spirits_hand_inactive"
-    },
-    "ShieldOfLastingGuard": {
-      "x": 60,
-      "y": 298,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/shield_of_lasting_guard",
-      "inactiveIcon": "the_vault:gui/prestige/shield_of_lasting_guard_inactive"
-    },
-    "FruityII": {
+    "BarrierOfResilience": {
       "x": 130,
-      "y": 298,
+      "y": 154,
       "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/fruity",
-      "inactiveIcon": "the_vault:gui/prestige/fruity_inactive"
-    },
-    "SuperCrystalsIII": {
-      "x": 160,
-      "y": 298,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/super_crystals",
-      "inactiveIcon": "the_vault:gui/prestige/super_crystals_inactive"
-    },
-    "RelicHunterII": {
-      "x": 190,
-      "y": 298,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/the_shadow",
-      "inactiveIcon": "the_vault:gui/prestige/the_shadow_inactive"
-    },
-    "LegendOfTime": {
-      "x": -130,
-      "y": 370,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/the_wings",
-      "inactiveIcon": "the_vault:gui/prestige/the_wings_inactive"
-    },
-    "LegendOfPower": {
-      "x": -100,
-      "y": 370,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/triple_jump",
-      "inactiveIcon": "the_vault:gui/prestige/triple_jump_inactive"
-    },
-    "LegendOfRiches": {
-      "x": -70,
-      "y": 370,
-      "frameType": "RECTANGULAR",
-      "icon": "the_vault:gui/prestige/chain_miner",
-      "inactiveIcon": "the_vault:gui/prestige/chain_miner_inactive"
+      "icon": "the_vault:gui/prestige/barrier_of_resilience",
+      "inactiveIcon": "the_vault:gui/prestige/barrier_of_resilience_inactive"
     }
   }
 }

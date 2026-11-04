@@ -742,9 +742,13 @@
     },
     "the_vault:etching_lucky_cooldown_reset": {
       "name": "Lucky Reset",
-      "description": "<gray>Proccing <#6DF5A3>Lucky Hit <gray>reduces the remaining cooldown of <yellow>%svalue/ability <gray>by <yellow>10%<gray>, at most once per ability cast",
+      "description": "<gray>Proccing <#6DF5A3>Lucky Hit <gray>reduces the remaining cooldown of <yellow>%svalue/ability <gray>by <yellow>25%",
       "color": 16777215,
-      "typeGroups": ["HELMET"],
+      "typeGroups": [
+        "Offensive",
+        "Defensive",
+        "Utility"
+      ],
       "minGreedTier": 12,
       "attributes": [
         {

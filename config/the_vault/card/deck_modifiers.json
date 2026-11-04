@@ -2,15 +2,15 @@
   "values": {
     "equilibrium": {
       "modifierValue": {
-        "min": 0.12,
-        "max": 0.2,
+        "min": 0.15,
+        "max": 0.3,
         "type": "uniform"
       },
       "modifierValues": {
         "lesser": {
           "value": {
-            "min": 0.06,
-            "max": 0.06,
+            "min": 0.08,
+            "max": 0.08,
             "type": "uniform"
           },
           "modelId": "the_vault:deck_cores/lesser_equilibrium_deck_core#inventory",
@@ -19,8 +19,8 @@
         },
         "greater": {
           "value": {
-            "min": 0.2,
-            "max": 0.36,
+            "min": 0.3,
+            "max": 0.5,
             "type": "uniform"
           },
           "modelId": "the_vault:deck_cores/greater_equilibrium_deck_core#inventory",
@@ -144,15 +144,15 @@
     },
     "shiny": {
       "modifierValue": {
-        "min": 0.3,
-        "max": 0.6,
+        "min": 0.5,
+        "max": 1.0,
         "type": "uniform"
       },
       "modifierValues": {
         "lesser": {
           "value": {
-            "min": 0.2,
-            "max": 0.2,
+            "min": 0.3,
+            "max": 0.3,
             "type": "uniform"
           },
           "modelId": "the_vault:deck_cores/lesser_shiny_deck_core#inventory",
@@ -161,8 +161,8 @@
         },
         "greater": {
           "value": {
-            "min": 0.6,
-            "max": 0.9,
+            "min": 1.0,
+            "max": 1.5,
             "type": "uniform"
           },
           "modelId": "the_vault:deck_cores/greater_shiny_deck_core#inventory",
@@ -219,7 +219,7 @@
     "crimson": {
       "modifierValue": {
         "min": 0.1,
-        "max": 0.3,
+        "max": 0.4,
         "type": "uniform"
       },
       "modifierValues": {
@@ -236,7 +236,7 @@
         "greater": {
           "value": {
             "min": 0.4,
-            "max": 0.6,
+            "max": 0.75,
             "type": "uniform"
           },
           "modelId": "the_vault:deck_cores/greater_crimson_deck_core#inventory",
@@ -256,7 +256,7 @@
     "azure": {
       "modifierValue": {
         "min": 0.1,
-        "max": 0.3,
+        "max": 0.4,
         "type": "uniform"
       },
       "modifierValues": {
@@ -273,7 +273,7 @@
         "greater": {
           "value": {
             "min": 0.4,
-            "max": 0.6,
+            "max": 0.75,
             "type": "uniform"
           },
           "modelId": "the_vault:deck_cores/greater_azure_deck_core#inventory",
@@ -293,7 +293,7 @@
     "viridian": {
       "modifierValue": {
         "min": 0.1,
-        "max": 0.3,
+        "max": 0.4,
         "type": "uniform"
       },
       "modifierValues": {
@@ -310,7 +310,7 @@
         "greater": {
           "value": {
             "min": 0.4,
-            "max": 0.6,
+            "max": 0.75,
             "type": "uniform"
           },
           "modelId": "the_vault:deck_cores/greater_viridian_deck_core#inventory",
@@ -330,7 +330,7 @@
     "golden": {
       "modifierValue": {
         "min": 0.1,
-        "max": 0.3,
+        "max": 0.4,
         "type": "uniform"
       },
       "modifierValues": {
@@ -347,7 +347,7 @@
         "greater": {
           "value": {
             "min": 0.4,
-            "max": 0.6,
+            "max": 0.75,
             "type": "uniform"
           },
           "modelId": "the_vault:deck_cores/greater_golden_deck_core#inventory",
@@ -366,8 +366,8 @@
     },
     "empyreal": {
       "modifierValue": {
-        "min": 0.2,
-        "max": 0.3,
+        "min": 1.0,
+        "max": 1.0,
         "type": "uniform"
       },
       "requiredGroups": [
@@ -377,14 +377,14 @@
       "requiredColors": [],
       "slotRoll": {
         "min": 2,
-        "max": 2,
+        "max": 5,
         "type": "uniform"
       },
       "slotRolls": {
         "lesser": {
           "value": {
-            "min": 0.2,
-            "max": 0.2,
+            "min": 0.8,
+            "max": 0.8,
             "type": "uniform"
           },
           "requiredGroups": [
@@ -400,29 +400,9 @@
           "modelId": "the_vault:deck_cores/lesser_empyreal_deck_core#inventory",
           "name": "Lesser Empyreal Core",
           "colour": 13618375
-        },
-        "greater": {
-          "value": {
-            "min": 0.3,
-            "max": 0.4,
-            "type": "uniform"
-          },
-          "requiredGroups": [
-            "Stat",
-            "Evolution"
-          ],
-          "requiredColors": [],
-          "slotRoll": {
-            "min": 3,
-            "max": 3,
-            "type": "uniform"
-          },
-          "modelId": "the_vault:deck_cores/greater_empyreal_deck_core#inventory",
-          "name": "Greater Empyreal Core",
-          "colour": 16769382
         }
       },
-      "type": "slot_multiplier",
+      "type": "slot",
       "modelId": "the_vault:deck_cores/empyreal_deck_core#inventory",
       "name": "Empyreal Core",
       "colour": 13618375
@@ -430,7 +410,7 @@
     "pure": {
       "modifierValue": {
         "min": 0.02,
-        "max": 0.03,
+        "max": 0.05,
         "type": "uniform"
       },
       "modifierValues": {
@@ -446,8 +426,8 @@
         },
         "greater": {
           "value": {
-            "min": 0.03,
-            "max": 0.05,
+            "min": 0.05,
+            "max": 0.07,
             "type": "uniform"
           },
           "modelId": "the_vault:deck_cores/greater_pure_deck_core#inventory",
@@ -573,32 +553,6 @@
       {
         "value": "pure",
         "weight": 3.0
-      }
-    ],
-    "greed_basic": [
-      {
-        "value": "harvest",
-        "weight": 4.0
-      },
-      {
-        "value": "bounty",
-        "weight": 4.0
-      },
-      {
-        "value": "crimson",
-        "weight": 4.0
-      },
-      {
-        "value": "azure",
-        "weight": 4.0
-      },
-      {
-        "value": "viridian",
-        "weight": 4.0
-      },
-      {
-        "value": "golden",
-        "weight": 4.0
       }
     ],
     "champions": [
