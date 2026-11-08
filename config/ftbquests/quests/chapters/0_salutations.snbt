@@ -12,6 +12,7 @@
 	subtitle: ["Getting Up to Speed"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	progression_mode: "flexible"
 	quests: [
 		{
 			title: "Welcome to Wold's Vaults"
@@ -31,11 +32,18 @@
 				""
 				"&5There's a lot to go over! You ready?"
 			]
+			hide: false
 			id: "5DD803E2DB661B66"
 			tasks: [{
 				id: "37A8CF4751CBD764"
 				type: "checkmark"
 				title: "And Here We Go..."
+			}]
+			rewards: [{
+				id: "5DE207324946D57E"
+				type: "item"
+				item: "the_vault:cooked_vault_steak"
+				count: 16
 			}]
 		}
 		{
@@ -82,7 +90,7 @@
 				"&5After that? Well, it's time to get Greedy..."
 			]
 			dependencies: ["5DD803E2DB661B66"]
-			hide: true
+			hide: false
 			id: "19DD5DBBECEACA48"
 			tasks: [{
 				id: "351909F1249A7B6C"
@@ -111,7 +119,7 @@
 				"&5More end game goals, including the ability to craft Creative level items. And then there's the post-Herald content, a bigger and bigger challenge..."
 			]
 			dependencies: ["19DD5DBBECEACA48"]
-			hide: true
+			hide: false
 			id: "5136BFD11A07D7D0"
 			tasks: [{
 				id: "13656E047D8BD2BB"
@@ -140,7 +148,7 @@
 				"&5First things first though, let me go over two major changes to the pack in the next two quests : "
 			]
 			dependencies: ["5136BFD11A07D7D0"]
-			hide: true
+			hide: false
 			id: "1C67908469019A64"
 			tasks: [{
 				id: "6690DF0C44971A38"
@@ -165,7 +173,7 @@
 				"To join a different party or go solo, be sure to do &6/party leave&r!"
 			]
 			dependencies: ["4CA0844372B19F19"]
-			hide: true
+			hide: false
 			id: "40E4E5113E933B44"
 			tasks: [{
 				id: "483B8AF014C584F7"
@@ -196,7 +204,7 @@
 				"&6/gamerule VaultMode Royale :&r All Vault Crystals that come from basic Vault Rocks become Royale Vaults, a roguelike/battle royale style of Vault."
 			]
 			dependencies: ["2E8B1B1D23FEAF8E"]
-			hide: true
+			hide: false
 			id: "4CA0844372B19F19"
 			tasks: [{
 				id: "61503165E064852F"
@@ -228,7 +236,7 @@
 				"    Fragged"
 			]
 			dependencies: ["4CA0844372B19F19"]
-			hide: true
+			hide: false
 			id: "0BA78C5E27BA4351"
 			tasks: [{
 				id: "505126E565C13A73"
@@ -244,8 +252,8 @@
 				tag: {
 					CrystalData: {
 						Properties: {
-							exhausted: 0b
 							size: 0b
+							exhausted: 0b
 							type: "capacity"
 						}
 						Version: 3b
@@ -277,7 +285,7 @@
 				"     EXTREME (3x)"
 			]
 			dependencies: ["4CA0844372B19F19"]
-			hide: true
+			hide: false
 			id: "33C206FEA6772466"
 			tasks: [{
 				id: "31F63991B3631A9D"
@@ -310,7 +318,7 @@
 				""
 			]
 			dependencies: ["4CA0844372B19F19"]
-			hide: true
+			hide: false
 			id: "281380C803D15FCC"
 			tasks: [{
 				id: "567CEA37E19B68AD"
@@ -362,7 +370,7 @@
 				"If a Parcool move is getting in the way, or you want to disable Parcool, you can simply either rebind or unbind all Parcool hotkeys in the in-game config. Search for catagory : Parcool."
 			]
 			dependencies: ["261FB6A187AC7231"]
-			hide: true
+			hide: false
 			id: "2E8B1B1D23FEAF8E"
 			tasks: [{
 				id: "3ACC070C6FC78B9C"
@@ -398,7 +406,7 @@
 				"Change false to true to return to Vanilla Minecraft combat."
 			]
 			dependencies: ["1C67908469019A64"]
-			hide: true
+			hide: false
 			id: "261FB6A187AC7231"
 			tasks: [{
 				id: "046253A0F3B88D1A"
@@ -425,7 +433,7 @@
 				"&6/the_vault research_team invite player_name"
 			]
 			dependencies: ["40E4E5113E933B44"]
-			hide: true
+			hide: false
 			id: "764D1D5E68CF8085"
 			tasks: [{
 				id: "6AC4338386819ACB"
@@ -455,7 +463,7 @@
 				"281380C803D15FCC"
 				"40E4E5113E933B44"
 			]
-			hide: true
+			hide: false
 			id: "191249A16E7A10CB"
 			tasks: [{
 				id: "5067A383B8C390BF"
@@ -483,7 +491,7 @@
 				"    EXTREME (3x)"
 			]
 			dependencies: ["33C206FEA6772466"]
-			hide: true
+			hide: false
 			id: "0DD1712357709353"
 			tasks: [{
 				id: "39EC5A76B2FDDC7F"
@@ -503,7 +511,7 @@
 				"&5Now there is a gamerule that can be set much easier than editing a config file. This will stop all players on the server from leveling beyond that point, until you change the gamerule higher."
 			]
 			dependencies: ["4CA0844372B19F19"]
-			hide: true
+			hide: false
 			id: "6640A7AE7E21A2B7"
 			tasks: [{
 				id: "6A4213BF1B71F096"
@@ -525,7 +533,7 @@
 				"Many of them require you to be OPerator or admin on the server to set though!"
 			]
 			dependencies: ["4CA0844372B19F19"]
-			hide: true
+			hide: false
 			size: 0.75d
 			id: "497A36CA870E3B59"
 			tasks: [{
@@ -554,7 +562,7 @@
 				"&5The Level Sync party leader can break the group apart with: &r&6/the_vault level_sync disband"
 			]
 			dependencies: ["40E4E5113E933B44"]
-			hide: true
+			hide: false
 			id: "72D348A77152625D"
 			tasks: [{
 				id: "62F45E5292A4932C"
@@ -576,6 +584,7 @@
 				"&5See the previous quest for the description of each crystal mode."
 			]
 			dependencies: ["33C206FEA6772466"]
+			hide: false
 			id: "3E03C854B94F8B03"
 			tasks: [{
 				id: "1D99A883A055E94F"
@@ -591,6 +600,7 @@
 			subtitle: "Just Look at the Time"
 			description: ["&5If you'd like to increase or decrease the default amount of time you (and your players, if on a server) have in a vault, you can change it via a gamerule."]
 			dependencies: ["4CA0844372B19F19"]
+			hide: false
 			id: "0EF0C127BD458787"
 			tasks: [{
 				id: "609994794D891552"
