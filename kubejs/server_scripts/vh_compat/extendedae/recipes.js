@@ -59,4 +59,74 @@ onEvent("recipes", event => {
         E: 'the_vault:extraordinary_wutodie'
     }).id('expatternprovider:ebus_in')
 
+    event.shaped(Item.of('expatternprovider:wireless_hub'),
+        [
+            'PXP',
+            'ETE',
+            'PXP'
+        ], {
+        P: 'the_vault:chromatic_steel_ingot',
+        E: 'the_vault:gem_pog',
+        X: 'ae2:wireless_receiver',
+        T: 'expatternprovider:wireless_connector'
+    }).id('expatternprovider:wireless_hub')
+
+    event.shaped(Item.of('expatternprovider:ex_molecular_assembler'),
+        [
+            'PXP',
+            'XTX',
+            'PXP'
+        ], {
+        P: 'ae2:fluix_crystal',
+        X: 'ae2:molecular_assembler',
+        T: 'the_vault:extraordinary_echo_gem'
+    }).id('expatternprovider:ex_molecular_assembler')
+
+    event.shaped(Item.of('expatternprovider:assembler_matrix_frame'),
+        [
+            'PXP',
+            'XTX',
+            'PXP'
+        ], {
+        P: 'the_vault:perfect_benitoite',
+        X: 'the_vault:chromatic_iron_ingot',
+        T: 'ae2:quartz_glass'
+    }).id('expatternprovider:assembler_matrix_frame')
+
+    event.shaped(Item.of('expatternprovider:assembler_matrix_pattern'),
+        [
+            'PXP',
+            'ETE',
+            'PXP'
+        ], {
+        P: 'ae2:blue_lumen_paint_ball',
+        X: '#expatternprovider:extended_pattern_provider',
+        T: 'expatternprovider:assembler_matrix_frame',
+        E: 'the_vault:gem_pog'
+    }).id('expatternprovider:assembler_matrix_pattern')
+
+    event.shaped(Item.of('expatternprovider:assembler_matrix_crafter'),
+        [
+            'PXP',
+            'ETE',
+            'PXP'
+        ], {
+        P: 'ae2:purple_lumen_paint_ball',
+        X: 'expatternprovider:ex_molecular_assembler',
+        T: 'expatternprovider:assembler_matrix_frame',
+        E: 'the_vault:gem_pog'
+    }).id('expatternprovider:assembler_matrix_crafter')
+
+    event.shaped(Item.of('expatternprovider:assembler_matrix_speed'),
+        [
+            'PXP',
+            'ETE',
+            'PXP'
+        ], {
+        P: 'ae2:red_lumen_paint_ball',
+        X: 'ae2:speed_card',
+        T: 'expatternprovider:assembler_matrix_frame',
+        E: 'the_vault:gem_pog'
+    }).id('expatternprovider:assembler_matrix_speed')
+
 })
