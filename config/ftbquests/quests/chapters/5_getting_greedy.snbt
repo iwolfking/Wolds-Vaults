@@ -7,6 +7,7 @@
 	icon: "woldsvaults:wold_star"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	progression_mode: "flexible"
 	quests: [
 		{
 			title: "Mapping A Heist"
@@ -204,7 +205,7 @@
 				"&5To get more Vault Maps, you can find them in Mapped Vaults, or purchase more from Mr Greedy."
 			]
 			dependencies: ["1C8A442CD0503860"]
-			hide: true
+			hide: false
 			id: "64E050541DAAF09C"
 			tasks: [{
 				id: "12875D03FBF88755"
@@ -233,7 +234,7 @@
 				"&5It is highly recommended that you use the Vault Artisan Table to fill any empty slots in your Vault Map before applying it to a Vault Crystal."
 			]
 			dependencies: ["64E050541DAAF09C"]
-			hide: true
+			hide: false
 			id: "1BB69DE20D9F42F7"
 			tasks: [{
 				id: "6B6FD4C143E49A4B"
@@ -261,7 +262,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["1BB69DE20D9F42F7"]
-			hide: true
+			hide: false
 			id: "041C09029AA797E9"
 			tasks: [{
 				id: "2C1E6BC7DB601495"
@@ -289,7 +290,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["041C09029AA797E9"]
-			hide: true
+			hide: false
 			id: "3957537F29CC5BA6"
 			tasks: [{
 				id: "578F7AD9D4CF6448"
@@ -320,7 +321,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["1BB69DE20D9F42F7"]
-			hide: true
+			hide: false
 			id: "79311AA6B0BCC7C2"
 			tasks: [{
 				id: "2F956D364C253B92"
@@ -380,6 +381,7 @@
 				"&5Note that Prestige Powers not only require you to be of the appropriate Greed tier, but also require Knowledge points to unlock!"
 			]
 			dependencies: ["1E1457C794B6792E"]
+			hide: true
 			id: "52C9C1DA4A72E836"
 			tasks: [{
 				id: "5279E3208D0B915D"
@@ -406,6 +408,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["1E1457C794B6792E"]
+			hide: true
 			id: "1EC3CEA99FF94A5B"
 			tasks: [{
 				id: "0C2363D0E796D908"
@@ -438,6 +441,7 @@
 				"&5You are rewarded Greed Coins depending on both of those, which can be used to purcase special Greed items."
 			]
 			dependencies: ["1E1457C794B6792E"]
+			hide: true
 			id: "1CE0B175500298F9"
 			tasks: [{
 				id: "5AECE36FD6422579"
@@ -462,6 +466,7 @@
 				"&5And finally, Mr Greedy offers you Challenge Crystals for reputation as well. These have specific modfiers on them to make them, well, a challenge!"
 			]
 			dependencies: ["1CE0B175500298F9"]
+			hide: false
 			id: "1C8A442CD0503860"
 			tasks: [{
 				id: "4761BC1CDBDD6C75"
@@ -494,7 +499,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["1CE0B175500298F9"]
-			hide: true
+			hide: false
 			id: "6117225098ED88B2"
 			tasks: [{
 				id: "4B97454859DA0623"
@@ -516,7 +521,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["1CE0B175500298F9"]
-			hide: true
+			hide: false
 			id: "5AEB11256B8F16F0"
 			tasks: [{
 				id: "097B63097FF1F992"
@@ -549,7 +554,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["1CE0B175500298F9"]
-			hide: true
+			hide: false
 			id: "1A0233FD81BD2182"
 			tasks: [{
 				id: "6AE0FA503A475658"
@@ -580,7 +585,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["1C8A442CD0503860"]
-			hide: true
+			hide: false
 			id: "0D821DF7DFC819D3"
 			tasks: [{
 				id: "726ECF245B9D86A5"
@@ -616,7 +621,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["1C8A442CD0503860"]
-			hide: true
+			hide: false
 			id: "42316598F41BE2A9"
 			tasks: [{
 				id: "2CE2FA855212E0DE"
