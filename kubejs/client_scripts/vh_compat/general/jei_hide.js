@@ -211,6 +211,7 @@ onEvent('jei.hide.items', event => {
     event.hide('sophisticatedbackpacks:copper_backpack')
     event.hide('sophisticatedbackpacks:stack_upgrade_starter_tier')
     event.hide('woldsvaults:augment_assembly_pedestal') //rip to a legend
+    event.hide('ae2additions:me_wireless_transceiver') //With ExtendedAE Backforge, don't need this hunk of junk
 })
 
 onEvent('jei.add.items', event => {

@@ -7,6 +7,7 @@
 	icon: "the_vault:soul_flame"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	progression_mode: "flexible"
 	quests: [
 		{
 			title: "Decked Again"
@@ -35,6 +36,7 @@
 				"&5It's important to note : Resources you gain from cards are only obtained IF you get the Completion Crate!"
 			]
 			dependencies: ["0332B6DA83347AEB"]
+			hide: true
 			id: "24E1C6762864AEC6"
 			tasks: [
 				{
@@ -54,17 +56,57 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "33E3116058C5A4CC"
-				type: "item"
-				item: {
-					id: "the_vault:booster_pack"
-					Count: 1b
-					tag: {
-						id: "the_vault:default"
+			rewards: [
+				{
+					id: "33E3116058C5A4CC"
+					type: "item"
+					item: {
+						id: "the_vault:booster_pack"
+						Count: 1b
+						tag: {
+							id: "the_vault:default"
+						}
 					}
 				}
-			}]
+				{
+					id: "1C5200781363CA4F"
+					type: "item"
+					item: "the_vault:gem_pog"
+				}
+				{
+					id: "4B527E39CC5D46AB"
+					type: "item"
+					item: {
+						id: "the_vault:booster_pack"
+						Count: 1b
+						tag: {
+							id: "the_vault:arcane_pack"
+						}
+					}
+				}
+				{
+					id: "533A1CFFD566D409"
+					type: "item"
+					item: {
+						id: "the_vault:booster_pack"
+						Count: 1b
+						tag: {
+							id: "the_vault:resource_pack"
+						}
+					}
+				}
+				{
+					id: "1DAE57BFC92F6517"
+					type: "item"
+					item: {
+						id: "the_vault:booster_pack"
+						Count: 1b
+						tag: {
+							id: "the_vault:evolution_pack"
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "Keys to the Heart..."
@@ -86,7 +128,7 @@
 				"&5OH, in Treasure Rooms...don't forget to dig up ALL the sand as well!"
 			]
 			dependencies: ["24E1C6762864AEC6"]
-			hide: true
+			hide: false
 			id: "59965C1CF354E4CE"
 			tasks: [{
 				id: "074C3E86DA04DBDB"
@@ -123,7 +165,7 @@
 				"&5To officially complete a Bingo Vault, you'll need to find a Grid Gateway to submit your Bingo Board."
 			]
 			dependencies: ["59965C1CF354E4CE"]
-			hide: true
+			hide: false
 			id: "504DC166104A8063"
 			tasks: [{
 				id: "619D08C220484EAD"
@@ -156,7 +198,7 @@
 				"&5You can make an &lAscension Forge &r&5to spend your Embers on. Ye can buy special Transmogs, or Titles that'll show up with your name in Chat."
 			]
 			dependencies: ["73F19D407DDBD157"]
-			hide: true
+			hide: false
 			dependency_requirement: "one_completed"
 			id: "783B07D340595603"
 			tasks: [{
@@ -187,7 +229,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["24E1C6762864AEC6"]
-			hide: true
+			hide: false
 			id: "3BE49630B4DFCE74"
 			tasks: [
 				{
@@ -270,7 +312,7 @@
 				"&5Wolds adds alternate versions of most of the Vanilla VH Vault Objectives. These provide a bigger challenge, but give a bigger reward."
 			]
 			dependencies: ["455AD3A818283D5E"]
-			hide: true
+			hide: false
 			id: "73F19D407DDBD157"
 			tasks: [{
 				id: "68AEFEFD96608158"
@@ -302,7 +344,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["73F19D407DDBD157"]
-			hide: true
+			hide: false
 			id: "14A7C949E30659BE"
 			tasks: [{
 				id: "38B15409E01476DC"
@@ -334,7 +376,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["73F19D407DDBD157"]
-			hide: true
+			hide: false
 			dependency_requirement: "one_completed"
 			id: "0DD5FFE281577AB5"
 			tasks: [{
@@ -369,7 +411,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["73F19D407DDBD157"]
-			hide: true
+			hide: false
 			id: "5B34F626832B338B"
 			tasks: [{
 				id: "483FE360944D536A"
@@ -431,7 +473,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
-			hide: true
+			hide: false
 			id: "7A62423E56D40B35"
 			tasks: [{
 				id: "5D9EE4609038DF1A"
@@ -461,7 +503,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["73F19D407DDBD157"]
-			hide: true
+			hide: false
 			id: "27D6F5C91318727E"
 			tasks: [{
 				id: "7CC05A50A36CB7F1"
@@ -492,6 +534,7 @@
 				"&5The fight is in multiple phases...and is very tough. Be careful. And don't worry, it takes almost everyone multiple attempts."
 			]
 			dependencies: ["783B07D340595603"]
+			hide: false
 			id: "6CF74503417AAC2D"
 			tasks: [{
 				id: "0D86E041CE2BD1FE"
@@ -500,11 +543,18 @@
 				icon: "the_vault:crystal_seal_herald"
 				value: 100
 			}]
-			rewards: [{
-				id: "705EC640EAE30F70"
-				type: "item"
-				item: "the_vault:echo_pog"
-			}]
+			rewards: [
+				{
+					id: "705EC640EAE30F70"
+					type: "item"
+					item: "the_vault:echo_pog"
+				}
+				{
+					id: "5112AD55E37C0C20"
+					type: "item"
+					item: "the_vault:companion_egg"
+				}
+			]
 		}
 		{
 			title: "Bounty Posted"
@@ -523,7 +573,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
-			hide: true
+			hide: false
 			id: "0F71FF6EC3334CBE"
 			tasks: [{
 				id: "62B258FDD0CA89D4"
@@ -553,7 +603,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
-			hide: true
+			hide: false
 			id: "64EADF7971F554D2"
 			tasks: [{
 				id: "3F09F0C88FD56DCB"
@@ -589,7 +639,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["73F19D407DDBD157"]
-			hide: true
+			hide: false
 			id: "1BF7382696E1F780"
 			tasks: [{
 				id: "62694FC7287D6A5A"
@@ -624,7 +674,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["24E1C6762864AEC6"]
-			hide: true
+			hide: false
 			id: "6BD38C7D2E0BE866"
 			tasks: [
 				{
@@ -665,22 +715,29 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
-			hide: true
+			hide: false
 			id: "5569B6D705F2C333"
 			tasks: [{
 				id: "20ECE301325BCDB5"
 				type: "observation"
 				title: "Find a Treasure Chest"
-				icon: "the_vault:treasure_container"
+				icon: "the_vault:treasure_chest"
 				timer: 0L
 				observe_type: 0
-				to_observe: "the_vault:treasure_container"
+				to_observe: "the_vault:treasure_chest"
 			}]
-			rewards: [{
-				id: "4F1C766C20A781BA"
-				type: "item"
-				item: "the_vault:vault_platinum"
-			}]
+			rewards: [
+				{
+					id: "4F1C766C20A781BA"
+					type: "item"
+					item: "the_vault:vault_platinum"
+				}
+				{
+					id: "30F482EF05DFE493"
+					type: "item"
+					item: "the_vault:unidentified_treasure_key"
+				}
+			]
 		}
 		{
 			title: "Powered Up Foci"
@@ -699,7 +756,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
-			hide: true
+			hide: false
 			id: "702F288ABE00FEB7"
 			tasks: [
 				{
@@ -741,7 +798,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
-			hide: true
+			hide: false
 			id: "7B257BDD8F86B489"
 			tasks: [
 				{
@@ -790,7 +847,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
-			hide: true
+			hide: false
 			id: "13FDC7CE5E066C90"
 			tasks: [
 				{
@@ -823,7 +880,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
-			hide: true
+			hide: false
 			id: "1E3652E8AD02AE60"
 			tasks: [{
 				id: "1035008173501A80"
@@ -883,6 +940,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["24E1C6762864AEC6"]
+			hide: false
 			id: "3E26C31177E168FA"
 			tasks: [{
 				id: "2EF81F555D89BE8E"
@@ -910,7 +968,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
-			hide: true
+			hide: false
 			id: "3F0A84ED2402B565"
 			tasks: [{
 				id: "7FE31A77AE389420"
@@ -945,7 +1003,7 @@
 				"&5Might be a phase I'm forgetting... but the faster you beat the Herald, the better Trophy you get."
 			]
 			dependencies: ["6CF74503417AAC2D"]
-			hide: true
+			hide: false
 			id: "1E1457C794B6792E"
 			tasks: [{
 				id: "20D95980A5C8FC51"
@@ -962,6 +1020,7 @@
 				id: "5DD66633E192A7EC"
 				type: "item"
 				item: "woldsvaults:omega_box"
+				count: 3
 			}]
 		}
 		{
@@ -973,7 +1032,7 @@
 			description: ["&5The Suspension Focus enables you to freeze specifically a Legendary, Corrupted, Greater, or Unusual modifier."]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
-			hide: true
+			hide: false
 			id: "5840D59D137BB271"
 			tasks: [{
 				id: "1B49EF3C27F69587"
@@ -999,18 +1058,31 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["27D6F5C91318727E"]
-			hide: true
+			hide: false
 			id: "150237358E8A756A"
 			tasks: [{
 				id: "318D0EF06532BD79"
 				type: "item"
 				item: "woldsvaults:enigma_egg"
 			}]
-			rewards: [{
-				id: "406BA1260254FFB4"
-				type: "item"
-				item: "woldsvaults:enigma_egg"
-			}]
+			rewards: [
+				{
+					id: "406BA1260254FFB4"
+					type: "item"
+					item: "woldsvaults:enigma_egg"
+				}
+				{
+					id: "0AF52790FE798664"
+					type: "item"
+					item: {
+						id: "supplementaries:bubble_blower"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "Number One Royale"
@@ -1035,7 +1107,7 @@
 				"&5The starting room contains an NPC where you can get a pre-made skill Loadout, as well as a starting set of gear in a Royale box."
 			]
 			dependencies: ["479A00BDE6E0257F"]
-			hide: true
+			hide: false
 			id: "455AD3A818283D5E"
 			tasks: [{
 				id: "56F2F4291DFBF181"
@@ -1067,7 +1139,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["504DC166104A8063"]
-			hide: true
+			hide: false
 			id: "4EA298FC76637A03"
 			tasks: [{
 				id: "759070394562795D"
@@ -1099,7 +1171,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["455AD3A818283D5E"]
-			hide: true
+			hide: false
 			id: "6BBA294D34AA81D7"
 			tasks: [{
 				id: "23090A09131735BD"
@@ -1133,7 +1205,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4EA298FC76637A03"]
-			hide: true
+			hide: false
 			id: "3E0E4E62B5E7E5D7"
 			tasks: [
 				{
@@ -1172,7 +1244,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["455AD3A818283D5E"]
-			hide: true
+			hide: false
 			id: "07833B9543B39AD1"
 			tasks: [{
 				id: "538D9D668B61EF3D"
@@ -1192,7 +1264,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["504DC166104A8063"]
-			hide: true
+			hide: false
 			id: "2A21CDB97384E036"
 			tasks: [{
 				id: "08360BB844A9ED32"
@@ -1221,7 +1293,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["504DC166104A8063"]
-			hide: true
+			hide: false
 			id: "22BBD41021744D5D"
 			tasks: [
 				{
@@ -1267,6 +1339,7 @@
 				"&5Reach 100% completion bar and exit the vault to Complete it! If you want to push your luck, you can keep brewing potions, and you'll be rewarded with higher Crate tiers! Though note that you can only overfill by the Completion bar by so much before you can't brew any more."
 			]
 			dependencies: ["504DC166104A8063"]
+			hide: false
 			id: "479A00BDE6E0257F"
 			tasks: [{
 				id: "376CE55123737C90"
@@ -1295,6 +1368,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["24E1C6762864AEC6"]
+			hide: false
 			id: "7E8686AD708EE163"
 			tasks: [{
 				id: "7D4F27E359E0E102"
@@ -1341,6 +1415,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["24E1C6762864AEC6"]
+			hide: false
 			id: "5F6A6741417B04C5"
 			tasks: [{
 				id: "6ED37F833E18ACA3"
@@ -1378,6 +1453,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["24E1C6762864AEC6"]
+			hide: false
 			id: "555655179AE8CA32"
 			tasks: [{
 				id: "7C88B529A3CAF2B2"
@@ -1411,6 +1487,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4EA298FC76637A03"]
+			hide: false
 			id: "3511EC07F8F53E5C"
 			tasks: [{
 				id: "2E3BB6481FBD281A"
@@ -1438,6 +1515,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["59965C1CF354E4CE"]
+			hide: false
 			id: "043D50390FAFF99C"
 			tasks: [{
 				id: "707F9F0724CE0B3A"
@@ -1468,6 +1546,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["0332B6DA83347AEB"]
+			hide: true
 			id: "204DB517E4B6D994"
 			tasks: [{
 				id: "39ED0BD414188F04"
@@ -1493,6 +1572,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4EA298FC76637A03"]
+			hide: false
 			id: "7E6EC42197C1E254"
 			tasks: [{
 				id: "6397065A5379D99F"
@@ -1526,6 +1606,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["73F19D407DDBD157"]
+			hide: false
 			id: "767C4299112367EE"
 			tasks: [{
 				id: "2AF0C06A70E9BC07"
@@ -1537,9 +1618,10 @@
 				to_observe: "the_vault:imbuement_altar"
 			}]
 			rewards: [{
-				id: "67847C91359D6381"
+				id: "14ADCF642A623A7E"
 				type: "item"
-				item: "the_vault:gem_pog"
+				item: "the_vault:gem_echo"
+				count: 10
 			}]
 		}
 		{
@@ -1561,7 +1643,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["24E1C6762864AEC6"]
-			hide: true
+			hide: false
 			id: "5D9B2844DF7AD95C"
 			tasks: [{
 				id: "7EE674F8A8EDF519"
@@ -1587,6 +1669,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["783B07D340595603"]
+			hide: false
 			id: "30AEF59E7AB9D31F"
 			tasks: [{
 				id: "057460EA0D2CD793"
@@ -1645,7 +1728,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["73F19D407DDBD157"]
-			hide: true
+			hide: false
 			id: "5935A358A21413F2"
 			tasks: [{
 				id: "0C6D98708ACF5145"
@@ -1679,7 +1762,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["783B07D340595603"]
-			hide: true
+			hide: false
 			id: "09D6CBCEBA3EBC1D"
 			tasks: [{
 				id: "362F7AA531BDD7FD"
@@ -1711,7 +1794,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["504DC166104A8063"]
-			hide: true
+			hide: false
 			id: "4DDE4C5B65344C79"
 			tasks: [{
 				id: "7FAAAC00ECD11179"
@@ -1737,7 +1820,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["4EA298FC76637A03"]
-			hide: true
+			hide: false
 			id: "33B453257B0EE8E1"
 			tasks: [{
 				id: "0FD37612D6F3F70D"
@@ -1765,7 +1848,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["504DC166104A8063"]
-			hide: true
+			hide: false
 			id: "34030A46EB2E636D"
 			tasks: [{
 				id: "4340B81DAF8EA5BE"

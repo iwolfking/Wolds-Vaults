@@ -527,6 +527,36 @@
       "color1": "0xFFffb400",
       "color2": "0xFFffe04e"
     },
+    "leg_scepter": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Legendary Scepter",
+      "item": {
+        "id": "the_vault:scepter",
+        "nbt": {
+          "the_vault:is_legendary": "true",
+          "the_vault:gear_roll_type_pool": "gear_treasure"
+        },
+        "count": 1
+      },
+      "color1": "0xFFffb400",
+      "color2": "0xFFffe04e"
+    },
+    "leg_dagger": {
+      "type": "floating_item_reward",
+      "textColor": "0xFFffb400",
+      "name": "Legendary Dagger",
+      "item": {
+        "id": "the_vault:dagger",
+        "nbt": {
+          "the_vault:is_legendary": "true",
+          "the_vault:gear_roll_type_pool": "gear_treasure"
+        },
+        "count": 1
+      },
+      "color1": "0xFFffb400",
+      "color2": "0xFFffe04e"
+    },
     "rare_helmet": {
       "type": "floating_item_reward",
       "textColor": "0xFFfff0a9",
@@ -1923,6 +1953,14 @@
         "weight": 2
       },
       {
+        "value": "leg_scepter",
+        "weight": 2
+      },
+      {
+        "value": "leg_dagger",
+        "weight": 2
+      },
+      {
         "value": "castle_chestplate",
         "weight": 2
       },
@@ -2144,6 +2182,14 @@
         "value": "leg_battlestaff",
         "weight": 2
       },
+       {
+        "value": "leg_scepter",
+        "weight": 2
+      },
+       {
+        "value": "leg_dagger",
+        "weight": 2
+      },
       {
         "value": "castle_chestplate",
         "weight": 2
@@ -2296,6 +2342,14 @@
       },
       {
         "value": "leg_battlestaff",
+        "weight": 6
+      },
+       {
+        "value": "leg_scepter",
+        "weight": 6
+      },
+       {
+        "value": "leg_dagger",
         "weight": 6
       },
       {
