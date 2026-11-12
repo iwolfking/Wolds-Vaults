@@ -3,6 +3,10 @@
 This file is the rulebook for everyone working on the greed update, people and agents alike.
 It lives on the `greed/dev` branch of the pack fork and is excluded from the shipped pack.
 
+## Pushing — read first
+
+**NEVER push to iwolfking's upstream.** We have write access to `iwolfking/Wolds-Vaults-Official-Mod` and `iwolfking/Wolds-Vaults` (the `origin` remote in the addon and pack checkouts). Never push anything to iwolfking's `master` (or any other branch of his repositories) without extremely explicit permission from the user. If the user does ask for it, ask again whether they really mean it, and push only after a second, separate confirmation. Everything we push goes to our forks (`fork` remote, `Poor-Mans-Physicist/...`) and our own open PRs; that is the only push the user normally asks for.
+
 ## Repositories
 
 | Repo | Fork (where we push) | Upstream (PR target at ship) |
