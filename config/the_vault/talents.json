@@ -4,6 +4,82 @@
     "skills": [
       {
         "type": "tiered",
+        "id": "Dual_Striker",
+        "name": "Dual Striker",
+        "maxLearnableTier": 4,
+        "tiers": [
+          {
+            "type": "dual_wield_gear_attribute",
+            "attributes": [
+              "the_vault:damage_increase",
+              "the_vault:movement_speed",
+              "the_vault:attack_speed_percent"
+            ],
+            "values": [
+              0.15,
+              0.05,
+              0.15
+            ],
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "dual_striker_1"
+          },
+          {
+            "type": "dual_wield_gear_attribute",
+            "attributes": [
+              "the_vault:damage_increase",
+              "the_vault:movement_speed",
+              "the_vault:attack_speed_percent"
+            ],
+            "values": [
+              0.225,
+              0.075,
+              0.225
+            ],
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "dual_striker_2"
+          },
+          {
+            "type": "dual_wield_gear_attribute",
+            "attributes": [
+              "the_vault:damage_increase",
+              "the_vault:movement_speed",
+              "the_vault:attack_speed_percent"
+            ],
+            "values": [
+              0.3,
+              0.1,
+              0.3
+            ],
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "dual_striker_3"
+          },
+          {
+            "type": "dual_wield_gear_attribute",
+            "attributes": [
+              "the_vault:damage_increase",
+              "the_vault:movement_speed",
+              "the_vault:attack_speed_percent"
+            ],
+            "values": [
+              0.375,
+              0.125,
+              0.375
+            ],
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0,
+            "id": "dual_striker_4"
+          }
+        ]
+      },
+      {
+        "type": "tiered",
         "id": "Intelligence",
         "name": "Intelligence",
         "maxLearnableTier": 4,
@@ -1911,209 +1987,209 @@
           }
         ]
       },
+      {
+        "type": "tiered",
+        "id": "Horde_Mastery",
+        "name": "Horde Reaping",
+        "tiers": [
           {
-            "type": "tiered",
-            "id": "Horde_Mastery",
-            "name": "Horde Reaping",
-            "tiers": [
-              {
-                "type": "player_stat",
-                "stat": "SOUL_CHANCE",
-                "value": 0.5,
-                "enemy": "@the_vault:mob_type/horde",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "player_stat",
-                "stat": "SOUL_CHANCE",
-                "value": 1.0,
-                "enemy": "@the_vault:mob_type/horde",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "player_stat",
-                "stat": "SOUL_CHANCE",
-                "value": 1.5,
-                "enemy": "@the_vault:mob_type/horde",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "player_stat",
-                "stat": "SOUL_CHANCE",
-                "value": 2.0,
-                "enemy": "@the_vault:mob_type/horde",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "player_stat",
-                "stat": "SOUL_CHANCE",
-                "value": 2.5,
-                "enemy": "@the_vault:mob_type/horde",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              }
-            ]
+            "type": "player_stat",
+            "stat": "SOUL_CHANCE",
+            "value": 0.5,
+            "enemy": "@the_vault:mob_type/horde",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
           },
           {
-            "type": "tiered",
-            "id": "Assassin_Mastery",
-            "name": "Assassin Mastery",
-            "tiers": [
-              {
-                "type": "player_stat",
-                "stat": "STUN_CHANCE",
-                "value": 0.05,
-                "enemy": "@the_vault:mob_type/assassin",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "player_stat",
-                "stat": "STUN_CHANCE",
-                "value": 0.1,
-                "enemy": "@the_vault:mob_type/assassin",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "player_stat",
-                "stat": "STUN_CHANCE",
-                "value": 0.15,
-                "enemy": "@the_vault:mob_type/assassin",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "player_stat",
-                "stat": "STUN_CHANCE",
-                "value": 0.2,
-                "enemy": "@the_vault:mob_type/assassin",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "player_stat",
-                "stat": "STUN_CHANCE",
-                "value": 0.25,
-                "enemy": "@the_vault:mob_type/assassin",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              }
-            ]
+            "type": "player_stat",
+            "stat": "SOUL_CHANCE",
+            "value": 1.0,
+            "enemy": "@the_vault:mob_type/horde",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
           },
           {
-            "type": "tiered",
-            "id": "Dungeon_Mastery",
-            "name": "Dungeon Mastery",
-            "tiers": [
-              {
-                "type": "player_stat",
-                "stat": "RESISTANCE",
-                "value": 0.05,
-                "enemy": "@the_vault:mob_type/dungeon",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "player_stat",
-                "stat": "RESISTANCE",
-                "value": 0.1,
-                "enemy": "@the_vault:mob_type/dungeon",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "player_stat",
-                "stat": "RESISTANCE",
-                "value": 0.15,
-                "enemy": "@the_vault:mob_type/dungeon",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "player_stat",
-                "stat": "RESISTANCE",
-                "value": 0.2,
-                "enemy": "@the_vault:mob_type/dungeon",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "player_stat",
-                "stat": "RESISTANCE",
-                "value": 0.25,
-                "enemy": "@the_vault:mob_type/dungeon",
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              }
-            ]
+            "type": "player_stat",
+            "stat": "SOUL_CHANCE",
+            "value": 1.5,
+            "enemy": "@the_vault:mob_type/horde",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
           },
           {
-            "type": "tiered",
-            "id": "Champion_Mastery",
-            "name": "Champion Mastery",
-            "tiers": [
-              {
-                "type": "gear_attribute",
-                "attribute": "the_vault:damage_champion",
-                "value": 0.1,
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "gear_attribute",
-                "attribute": "the_vault:damage_champion",
-                "value": 0.2,
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "gear_attribute",
-                "attribute": "the_vault:damage_champion",
-                "value": 0.3,
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "gear_attribute",
-                "attribute": "the_vault:damage_champion",
-                "value": 0.4,
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              },
-              {
-                "type": "gear_attribute",
-                "attribute": "the_vault:damage_champion",
-                "value": 0.5,
-                "learnPointCost": 1,
-                "regretPointCost": 1,
-                "unlockLevel": 0
-              }
-            ]
+            "type": "player_stat",
+            "stat": "SOUL_CHANCE",
+            "value": 2.0,
+            "enemy": "@the_vault:mob_type/horde",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
           },
+          {
+            "type": "player_stat",
+            "stat": "SOUL_CHANCE",
+            "value": 2.5,
+            "enemy": "@the_vault:mob_type/horde",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          }
+        ]
+      },
+      {
+        "type": "tiered",
+        "id": "Assassin_Mastery",
+        "name": "Assassin Mastery",
+        "tiers": [
+          {
+            "type": "player_stat",
+            "stat": "STUN_CHANCE",
+            "value": 0.05,
+            "enemy": "@the_vault:mob_type/assassin",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          },
+          {
+            "type": "player_stat",
+            "stat": "STUN_CHANCE",
+            "value": 0.1,
+            "enemy": "@the_vault:mob_type/assassin",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          },
+          {
+            "type": "player_stat",
+            "stat": "STUN_CHANCE",
+            "value": 0.15,
+            "enemy": "@the_vault:mob_type/assassin",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          },
+          {
+            "type": "player_stat",
+            "stat": "STUN_CHANCE",
+            "value": 0.2,
+            "enemy": "@the_vault:mob_type/assassin",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          },
+          {
+            "type": "player_stat",
+            "stat": "STUN_CHANCE",
+            "value": 0.25,
+            "enemy": "@the_vault:mob_type/assassin",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          }
+        ]
+      },
+      {
+        "type": "tiered",
+        "id": "Dungeon_Mastery",
+        "name": "Dungeon Mastery",
+        "tiers": [
+          {
+            "type": "player_stat",
+            "stat": "RESISTANCE",
+            "value": 0.05,
+            "enemy": "@the_vault:mob_type/dungeon",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          },
+          {
+            "type": "player_stat",
+            "stat": "RESISTANCE",
+            "value": 0.1,
+            "enemy": "@the_vault:mob_type/dungeon",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          },
+          {
+            "type": "player_stat",
+            "stat": "RESISTANCE",
+            "value": 0.15,
+            "enemy": "@the_vault:mob_type/dungeon",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          },
+          {
+            "type": "player_stat",
+            "stat": "RESISTANCE",
+            "value": 0.2,
+            "enemy": "@the_vault:mob_type/dungeon",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          },
+          {
+            "type": "player_stat",
+            "stat": "RESISTANCE",
+            "value": 0.25,
+            "enemy": "@the_vault:mob_type/dungeon",
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          }
+        ]
+      },
+      {
+        "type": "tiered",
+        "id": "Champion_Mastery",
+        "name": "Champion Mastery",
+        "tiers": [
+          {
+            "type": "gear_attribute",
+            "attribute": "the_vault:damage_champion",
+            "value": 0.1,
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          },
+          {
+            "type": "gear_attribute",
+            "attribute": "the_vault:damage_champion",
+            "value": 0.2,
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          },
+          {
+            "type": "gear_attribute",
+            "attribute": "the_vault:damage_champion",
+            "value": 0.3,
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          },
+          {
+            "type": "gear_attribute",
+            "attribute": "the_vault:damage_champion",
+            "value": 0.4,
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          },
+          {
+            "type": "gear_attribute",
+            "attribute": "the_vault:damage_champion",
+            "value": 0.5,
+            "learnPointCost": 1,
+            "regretPointCost": 1,
+            "unlockLevel": 0
+          }
+        ]
+      },
       {
         "type": "tiered",
         "id": "Weakness_Affinity",
@@ -3929,70 +4005,70 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "lightning_damage",
             "percentDamageDealt": 2.1,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "lightning_damage",
             "percentDamageDealt": 2.2,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "lightning_damage",
             "percentDamageDealt": 2.3,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "lightning_damage",
             "percentDamageDealt": 2.4,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "lightning_damage",
             "percentDamageDealt": 2.5,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "lightning_damage",
             "percentDamageDealt": 2.6,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "lightning_damage",
             "percentDamageDealt": 2.7,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "lightning_damage",
             "percentDamageDealt": 2.8,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "lightning_damage",
             "percentDamageDealt": 2.9,
             "learnPointCost": 2,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "lightning_damage",
             "percentDamageDealt": 3.0,
             "learnPointCost": 2,
@@ -6109,7 +6185,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "low_mana_damage",
             "damageIncrease": 1.5,
             "manaThreshold": 0.2,
@@ -6118,7 +6194,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "low_mana_damage",
             "damageIncrease": 1.75,
             "manaThreshold": 0.2,
@@ -6127,7 +6203,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "low_mana_damage",
             "damageIncrease": 2.0,
             "manaThreshold": 0.2,
@@ -7002,7 +7078,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7011,7 +7087,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7020,7 +7096,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7029,7 +7105,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7038,7 +7114,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7047,7 +7123,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7056,7 +7132,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7065,7 +7141,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7074,7 +7150,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7083,7 +7159,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7092,7 +7168,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7101,7 +7177,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7110,7 +7186,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7119,7 +7195,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7128,7 +7204,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7137,7 +7213,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7146,7 +7222,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7155,7 +7231,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7164,7 +7240,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7173,7 +7249,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7182,7 +7258,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7191,7 +7267,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7200,7 +7276,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7209,7 +7285,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7218,7 +7294,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -7227,7 +7303,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "mana_per_looted_container",
             "tileGroupId": "the_vault:chest",
             "displayName": "Chest",
@@ -10725,7 +10801,7 @@
         "type": "tiered",
         "id": "Lucky_Momentum",
         "name": "Lucky Momentum",
-        "maxLearnableTier":  4,
+        "maxLearnableTier": 4,
         "tiers": [
           {
             "type": "stack_on_hit_talent",
@@ -11563,7 +11639,7 @@
             "unlockLevel": 0,
             "id": "voltaic_impact_20"
           },
-           {
+          {
             "type": "voltaic_impact",
             "collisionDamageIncrease": 4.4,
             "learnPointCost": 1,
@@ -11571,7 +11647,7 @@
             "unlockLevel": 0,
             "id": "voltaic_impact_21"
           },
-           {
+          {
             "type": "voltaic_impact",
             "collisionDamageIncrease": 4.6,
             "learnPointCost": 1,
@@ -11579,7 +11655,7 @@
             "unlockLevel": 0,
             "id": "voltaic_impact_22"
           },
-           {
+          {
             "type": "voltaic_impact",
             "collisionDamageIncrease": 4.8,
             "learnPointCost": 1,
@@ -11587,7 +11663,7 @@
             "unlockLevel": 0,
             "id": "voltaic_impact_23"
           },
-           {
+          {
             "type": "voltaic_impact",
             "collisionDamageIncrease": 5.0,
             "learnPointCost": 1,
@@ -13805,7 +13881,7 @@
             "unlockLevel": 0,
             "id": "executioner_6"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 0.8,
@@ -13814,7 +13890,7 @@
             "unlockLevel": 0,
             "id": "executioner_7"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 0.85,
@@ -13823,7 +13899,7 @@
             "unlockLevel": 0,
             "id": "executioner_8"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 0.9,
@@ -13832,7 +13908,7 @@
             "unlockLevel": 0,
             "id": "executioner_9"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 0.95,
@@ -13850,7 +13926,7 @@
             "unlockLevel": 0,
             "id": "executioner_11"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.05,
@@ -13859,7 +13935,7 @@
             "unlockLevel": 0,
             "id": "executioner_12"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.1,
@@ -13868,7 +13944,7 @@
             "unlockLevel": 0,
             "id": "executioner_13"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.15,
@@ -13877,7 +13953,7 @@
             "unlockLevel": 0,
             "id": "executioner_14"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.2,
@@ -13886,7 +13962,7 @@
             "unlockLevel": 0,
             "id": "executioner_15"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 0.75,
@@ -13895,7 +13971,7 @@
             "unlockLevel": 0,
             "id": "executioner_16"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.25,
@@ -13904,7 +13980,7 @@
             "unlockLevel": 0,
             "id": "executioner_17"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.3,
@@ -13913,7 +13989,7 @@
             "unlockLevel": 0,
             "id": "executioner_18"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.35,
@@ -13922,7 +13998,7 @@
             "unlockLevel": 0,
             "id": "executioner_19"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.4,
@@ -13931,7 +14007,7 @@
             "unlockLevel": 0,
             "id": "executioner_20"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.45,
@@ -13940,7 +14016,7 @@
             "unlockLevel": 0,
             "id": "executioner_21"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.5,
@@ -13949,7 +14025,7 @@
             "unlockLevel": 0,
             "id": "executioner_22"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.55,
@@ -13958,7 +14034,7 @@
             "unlockLevel": 0,
             "id": "executioner_6"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.6,
@@ -13967,7 +14043,7 @@
             "unlockLevel": 0,
             "id": "executioner_23"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.65,
@@ -13976,7 +14052,7 @@
             "unlockLevel": 0,
             "id": "executioner_24"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.7,
@@ -13985,7 +14061,7 @@
             "unlockLevel": 0,
             "id": "executioner_25"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 0.75,
@@ -13994,7 +14070,7 @@
             "unlockLevel": 0,
             "id": "executioner_26"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.75,
@@ -14003,7 +14079,7 @@
             "unlockLevel": 0,
             "id": "executioner_27"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.8,
@@ -14012,7 +14088,7 @@
             "unlockLevel": 0,
             "id": "executioner_28"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.85,
@@ -14021,7 +14097,7 @@
             "unlockLevel": 0,
             "id": "executioner_29"
           },
-           {
+          {
             "type": "low_target_health_damage",
             "healthThreshold": 0.5,
             "damageIncrease": 1.9,
@@ -15331,7 +15407,7 @@
           }
         ]
       },
-       {
+      {
         "type": "tiered",
         "id": "Blood_Chakra",
         "name": "Blood Chakra",
@@ -15733,14 +15809,14 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "debuff_damage_bonus",
             "damageIncrease": 0.85,
             "learnPointCost": 1,
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "debuff_damage_bonus",
             "damageIncrease": 0.9,
             "learnPointCost": 1,
@@ -15817,7 +15893,7 @@
             "regretPointCost": 1,
             "unlockLevel": 0
           },
-           {
+          {
             "type": "debuff_damage_bonus",
             "damageIncrease": 1.45,
             "learnPointCost": 1,
