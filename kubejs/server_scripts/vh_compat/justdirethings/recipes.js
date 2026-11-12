@@ -36,7 +36,9 @@ onEvent("recipes", event => {
         F: 'justdirethings:gooblock_tier2'
     }).id('justdirethings:gooblock_tier3')
 
-    event.replaceIngredient({ id: 'justdirethings:gooblock_tier3' }, 'the_vault:void_liquid_bucket', Item.of('the_vault:void_liquid_bucket').replaceIngredient('minecraft:bucket'))
+  event.forEachRecipe({ id: 'justdirethings:gooblock_tier3' }, recipe => {
+    recipe.replaceIngredient('the_vault:void_liquid_bucket', 'minecraft:bucket')
+  })
 
     event.shaped(Item.of('justdirethings:gooblock_tier4'),
         [
@@ -164,30 +166,6 @@ onEvent("recipes", event => {
         T: 'woldsvaults:vault_essence_block'
     }).id('justdirethings:sensort2')
 
-    event.shaped(Item.of('justdirethings:sensort1'),
-        [
-            'STS',
-            'PFP',
-            'STS'
-        ], {
-        S: 'justdirethings:ferricore_ingot',
-        P: 'the_vault:chromatic_iron_ingot',
-        F: 'minecraft:dropper',
-        T: 'the_vault:vault_essence'
-    }).id('justdirethings:sensort1')
-
-    event.shaped(Item.of('justdirethings:sensort2'),
-        [
-            'SRS',
-            'RFR',
-            'STS'
-        ], {
-        S: 'justdirethings:celestigem',
-        R: 'minecraft:ender_eye',
-        F: 'justdirethings:droppert1',
-        T: 'woldsvaults:vault_essence_block'
-    }).id('justdirethings:sensort2')
-
     event.shaped(Item.of('justdirethings:blockswappert1'),
         [
             'SRS',
@@ -296,7 +274,7 @@ onEvent("recipes", event => {
             'STS'
         ], {
         S: 'justdirethings:blazegold_ingot',
-        P: 'woldsvaults:vault_ingot',
+        P: 'the_vault:vault_ingot',
         F: 'minecraft:blast_furnace',
         R: 'minecraft:bucket',
         T: 'the_vault:vault_diamond'
