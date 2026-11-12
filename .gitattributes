@@ -1,0 +1,7 @@
+# packwiz refresh hashes files as checked out locally. GitHub always serves
+# committed blobs with LF line endings, so any contributor on a machine with
+# core.autocrlf=true silently corrupts every text-file hash in index.toml —
+# the file still reads fine, but packwiz-installer's hash check fails for
+# every affected entry on every client. Force LF so local hashing always
+# matches what's actually served.
+* text=auto eol=lf
