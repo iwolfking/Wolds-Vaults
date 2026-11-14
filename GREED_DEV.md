@@ -43,8 +43,11 @@ Rules:
   tweaks that are still being playtested and commit once they settle.
 - Messages: short, imperative, informative ("Halve the Young Kitsune execution roll").
   No joke names, no "round N" labels.
-- Addon Java: no comments except Javadoc on important functions. Run the comment audit before
-  committing.
+- Addon Java follows iwolfking's house style: no comments except Javadoc on important functions;
+  log only through `WoldLogger` (fallbacks are `error`, since `warn` prints only in debug mode);
+  import classes instead of writing fully qualified names; register blocks, items, menus, packets,
+  screens and models in the shared `Mod*` init classes, never in per-feature classes. Full list:
+  "Java house style" in the project CLAUDE.md. Run the house style audit before committing.
 - Config values WV owns live in addon datagen (unified datagen: one provider table, output in
   `src/generated`, no pack copy, no Java default table). Change a value in its provider, run
   `runData`, commit the provider and the regenerated files together. A full `runData` with
