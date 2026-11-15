@@ -75,7 +75,7 @@ onEvent("recipes", event => {
         [
             ' S ',
             'PPP',
-            'ARA '
+            'ARA'
         ], {
         S: 'minecraft:lightning_rod',
         P: '#forge:plates/copper',
