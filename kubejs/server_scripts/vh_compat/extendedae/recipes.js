@@ -43,7 +43,7 @@ onEvent("recipes", event => {
             'CPE'
         ], {
         B: 'ae2:export_bus',
-        C: 'ae2:acceleration_card',
+        C: 'ae2:speed_card',
         P: 'ae2:calculation_processor',
         E: 'the_vault:extraordinary_wutodie'
     }).id('expatternprovider:ebus_out')
@@ -54,7 +54,7 @@ onEvent("recipes", event => {
             'CPE'
         ], {
         B: 'ae2:import_bus',
-        C: 'ae2:acceleration_card',
+        C: 'ae2:speed_card',
         P: 'ae2:calculation_processor',
         E: 'the_vault:extraordinary_wutodie'
     }).id('expatternprovider:ebus_in')
@@ -68,7 +68,7 @@ onEvent("recipes", event => {
         P: 'the_vault:chromatic_steel_ingot',
         E: 'the_vault:gem_pog',
         X: 'ae2:wireless_receiver',
-        T: 'expatternprovider:wireless_connector'
+        T: 'expatternprovider:wireless_connect'
     }).id('expatternprovider:wireless_hub')
 
     event.shaped(Item.of('expatternprovider:ex_molecular_assembler'),
