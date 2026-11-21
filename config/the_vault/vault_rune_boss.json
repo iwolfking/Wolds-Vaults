@@ -1,164 +1,317 @@
 {
-  "maxFights": 1,
-  "tasks": [
+  "minimumFury": 10,
+  "healthPercentPerFury": 2.55,
+  "damagePercentPerFury": 5.0,
+  "sealedRunesAddFury": true,
+  "healthPercentPerExtraPlayer": 80.0,
+  "referenceAttackDamage": 37.0,
+  "fullScalingFury": 100.0,
+  "arenaRadius": 14.5,
+  "curtainDamagePercentPerSecond": 20.0,
+  "mechanicArmourSharePercent": 50.0,
+  "firstAttackTicks": 40,
+  "rangedFalloff": {
+    "fullDamageUpToBlocks": 5.0,
+    "lowestDamageFromBlocks": 14.0,
+    "maxReductionPercent": 65.0
+  },
+  "dodgeRule": {
+    "walkBlocksPerSecond": 4.3,
+    "reactionSeconds": 0.25,
+    "meleeSpotBlocks": 2.5,
+    "holdsKnobsBack": true
+  },
+  "furyTiers": [
     {
-      "type": "chest",
-      "target": "the_vault:wooden_chest",
-      "probability": 0.02,
-      "icon": "the_vault:gui/scav/wooden_chest",
-      "entries": {
-        "the_vault:boss_rune": {
-          "weight": 8.0,
-          "multiplier": 1.0,
-          "color": 16777215
-        }
-      }
+      "name": "Calm",
+      "from": 3,
+      "color": "#AAAAAA"
     },
     {
-      "type": "chest",
-      "target": "@the_vault:living",
-      "probability": 0.04,
-      "icon": "the_vault:gui/scav/living_chest",
-      "entries": {
-        "the_vault:boss_rune": {
-          "weight": 8.0,
-          "multiplier": 1.0,
-          "color": 16777215
-        }
-      }
+      "name": "Riled",
+      "from": 15,
+      "color": "#FFFF55"
     },
     {
-      "type": "chest",
-      "target": "@the_vault:ornate",
-      "probability": 0.04,
-      "icon": "the_vault:gui/scav/ornate_chest",
-      "entries": {
-        "the_vault:boss_rune": {
-          "weight": 8.0,
-          "multiplier": 1.0,
-          "color": 16777215
-        }
-      }
+      "name": "Enraged",
+      "from": 40,
+      "color": "#FFAA00"
     },
     {
-      "type": "chest",
-      "target": "@the_vault:gilded",
-      "probability": 0.04,
-      "icon": "the_vault:gui/scav/gilded_chest",
-      "entries": {
-        "the_vault:boss_rune": {
-          "weight": 8.0,
-          "multiplier": 1.0,
-          "color": 16777215
-        }
-      }
+      "name": "Frenzied",
+      "from": 80,
+      "color": "#FF5555"
     },
     {
-      "type": "ore",
-      "target": "@the_vault:ores",
-      "probability": 0.01,
-      "icon": "the_vault:gui/scav/ores",
-      "entries": {
-        "the_vault:boss_rune": {
-          "weight": 8.0,
-          "multiplier": 1.0,
-          "color": 16777215
-        }
-      }
-    },
-    {
-      "type": "coin_stacks",
-      "probability": 0.01,
-      "icon": "the_vault:gui/scav/coin_stacks",
-      "entries": {
-        "the_vault:boss_rune": {
-          "weight": 8.0,
-          "multiplier": 1.0,
-          "color": 16777215
-        }
-      }
-    },
-    {
-      "type": "mob",
-      "probability": 0.01,
-      "icon": "the_vault:gui/scav/mob",
-      "color": 16777215,
-      "entries": {
-        "the_vault:boss_rune": {
-          "multiplier": 0.01,
-          "mobs": [
-            "@the_vault:horde"
-          ]
-        }
-      }
-    },
-    {
-      "type": "mob",
-      "probability": 0.04,
-      "icon": "the_vault:gui/scav/mob",
-      "color": 16777215,
-      "entries": {
-        "the_vault:boss_rune": {
-          "multiplier": 0.5,
-          "mobs": [
-            "@the_vault:tank"
-          ]
-        }
-      }
-    },
-    {
-      "type": "mob",
-      "probability": 0.01,
-      "icon": "the_vault:gui/scav/mob",
-      "color": 16777215,
-      "entries": {
-        "the_vault:boss_rune": {
-          "multiplier": 0.05,
-          "mobs": [
-            "@the_vault:assassin"
-          ]
-        }
-      }
-    },
-    {
-      "type": "mob",
-      "probability": 0.04,
-      "icon": "the_vault:gui/scav/mob",
-      "color": 16777215,
-      "entries": {
-        "the_vault:boss_rune": {
-          "multiplier": 0.05,
-          "mobs": [
-            "@the_vault:dweller"
-          ]
-        }
-      }
+      "name": "APEX",
+      "from": 150,
+      "color": "#AA00AA"
     }
   ],
-  "Shield": {
-    "Enabled": true,
-    "RequiredRunes": 20,
-    "CooldownTicks": 400,
-    "DurationTicks": 100,
-    "BossBarColor": "WHITE",
-    "ParticleRadius": 2.5,
-    "CooldownReductionPerHaste": 0
+  "strengths": [
+    {
+      "key": "faint",
+      "name": "Faint",
+      "fury": 1,
+      "color": "#D8D2E6",
+      "sealChancePercent": 0.5,
+      "sources": [
+        {
+          "name": "Hordes",
+          "type": "mob",
+          "target": "@the_vault:horde",
+          "chancePercent": 1.0
+        },
+        {
+          "name": "Wooden chests",
+          "type": "chest",
+          "target": "WOODEN",
+          "chancePercent": 4.0
+        },
+        {
+          "name": "Ore",
+          "type": "ore",
+          "chancePercent": 4.0
+        },
+        {
+          "name": "Coin piles",
+          "type": "coin_pile",
+          "chancePercent": 2.0
+        },
+        {
+          "name": "Dungeon barrels",
+          "type": "barrel",
+          "chancePercent": 15.0
+        }
+      ],
+      "shelf": []
+    },
+    {
+      "key": "charged",
+      "name": "Charged",
+      "fury": 3,
+      "color": "#00A3D7",
+      "sealChancePercent": 2.0,
+      "sources": [
+        {
+          "name": "Assassins",
+          "type": "mob",
+          "target": "@the_vault:assassin",
+          "chancePercent": 2.0
+        },
+        {
+          "name": "Dwellers",
+          "type": "mob",
+          "target": "@the_vault:fighter",
+          "chancePercent": 5.0
+        },
+        {
+          "name": "Ornate chests",
+          "type": "chest",
+          "target": "ORNATE",
+          "chancePercent": 2.0
+        },
+        {
+          "name": "Gilded chests",
+          "type": "chest",
+          "target": "GILDED",
+          "chancePercent": 2.0
+        },
+        {
+          "name": "Living chests",
+          "type": "chest",
+          "target": "LIVING",
+          "chancePercent": 2.0
+        },
+        {
+          "name": "Dungeon mobs",
+          "type": "mob",
+          "target": "@the_vault:mob_type/dungeon",
+          "chancePercent": 5.0
+        }
+      ],
+      "shelf": [
+        "the_vault:booster_pack{id:\"the_vault:mix_pack\"}",
+        "the_vault:jewel_pouch",
+        "the_vault:salty_deluxe_cheese_burger"
+      ]
+    },
+    {
+      "key": "blazing",
+      "name": "Blazing",
+      "fury": 8,
+      "color": "#FFB423",
+      "sealChancePercent": 10.0,
+      "sources": [
+        {
+          "name": "Champions",
+          "type": "mob",
+          "target": "@the_vault:mob_type/champion",
+          "chancePercent": 50.0
+        },
+        {
+          "name": "Tanks",
+          "type": "mob",
+          "target": "@the_vault:tank",
+          "chancePercent": 5.0
+        },
+        {
+          "name": "Guardians",
+          "type": "mob",
+          "target": "@the_vault:guardians",
+          "chancePercent": 2.0
+        }
+      ],
+      "shelf": [
+        "the_vault:booster_pack{id:\"the_vault:mega_mix_pack\"}",
+        "the_vault:empowered_chaotic_focus",
+        "the_vault:opportunistic_focus"
+      ]
+    },
+    {
+      "key": "ancient",
+      "name": "Ancient",
+      "fury": 20,
+      "color": "#DC2A3C",
+      "sealChancePercent": 15.0,
+      "sources": [
+        {
+          "name": "Challenge room completion",
+          "type": "challenge_room",
+          "chancePercent": 80.0
+        }
+      ],
+      "shelf": [
+        "the_vault:star_fruit",
+        "the_vault:blank_key",
+        "the_vault:unique_shard",
+        "the_vault:vorpal_focus"
+      ]
+    }
+  ],
+  "bosses": {
+    "the_vault:golem_boss": {
+      "name": "Golem",
+      "bossSpeedBlocksPerSecond": 3.0,
+      "rotationGapTicks": 70,
+      "calmTicksBetweenAttacks": 24,
+      "rotation": [
+        "golem_slam",
+        "golem_throw",
+        "golem_clap"
+      ],
+      "filler": "golem_punch",
+      "curtainBottomColor": "#E0A050",
+      "curtainTopColor": "#4A2A0E",
+      "curtainRimColor": "#FFE0A8",
+      "curtainOpacity": 0.6
+    },
+    "the_vault:boogieman_boss": {
+      "name": "Boogieman",
+      "bossSpeedBlocksPerSecond": 6.0,
+      "rotationGapTicks": 64,
+      "calmTicksBetweenAttacks": 10,
+      "rotation": [
+        "boogie_slash",
+        "boogie_leap",
+        "boogie_slash",
+        "boogie_step"
+      ],
+      "filler": "boogie_jab",
+      "curtainBottomColor": "#C0395B",
+      "curtainTopColor": "#2A0612",
+      "curtainRimColor": "#FFB3C4",
+      "curtainOpacity": 0.6
+    }
   },
-  "WaveBlast": {
-    "Enabled": true,
-    "RequiredRunes": 40,
-    "CooldownTicks": 800,
-    "Radius": 30.0,
-    "DamageMultiplier": 1.0,
-    "CooldownReductionPerHaste": 0,
-    "KnockbackStrength": 1.0
-  },
-  "Revive": {
-    "Enabled": true,
-    "RequiredRunes": 60,
-    "AdditionalRunesPerStack": 20,
-    "MaxStacks": 0,
-    "HealthPercent": 1.0,
-    "InvulnerabilityTicks": 60
+  "attacks": {
+    "golem_slam": {
+      "windupAt3": 34.0,
+      "windupAtFull": 12.0,
+      "radiusAt3": 6.25,
+      "radiusAtFull": 10.0,
+      "waveFrom": 12.0,
+      "waveLead": 10.0,
+      "waveSpeed": 0.4,
+      "waveHeight": 0.55,
+      "damage": 90.0,
+      "waveDamage": 40.0
+    },
+    "golem_throw": {
+      "windupAt3": 18.0,
+      "windupAtFull": 11.0,
+      "radiusAt3": 2.75,
+      "radiusAtFull": 3.5,
+      "flight": 22.0,
+      "twoFrom": 12.0,
+      "threeFrom": 35.0,
+      "gap": 6.0,
+      "handBack": 16.0,
+      "damage": 60.0
+    },
+    "golem_clap": {
+      "windupAt3": 30.0,
+      "windupAtFull": 14.0,
+      "lenAt3": 16.0,
+      "lenAtFull": 20.0,
+      "widthAt3": 2.0,
+      "widthAtFull": 2.6,
+      "fanFrom": 20.0,
+      "spread": 26.0,
+      "turnRate": 0.12,
+      "damage": 30.0
+    },
+    "golem_punch": {
+      "speed": 1.0,
+      "reach": 3.8,
+      "arc": 90.0,
+      "damage": 37.0
+    },
+    "boogie_leap": {
+      "chaseAt3": 14.0,
+      "chaseAtFull": 8.0,
+      "lockAt3": 22.0,
+      "lockAtFull": 16.0,
+      "radiusAt3": 3.0,
+      "radiusAtFull": 3.25,
+      "twoFrom": 10.0,
+      "threeFrom": 30.0,
+      "height": 3.0,
+      "gap": 4.0,
+      "damage": 80.0
+    },
+    "boogie_step": {
+      "lockAt3": 18.0,
+      "lockAtFull": 12.0,
+      "angleAt3": 50.0,
+      "angleAtFull": 80.0,
+      "vanish": 8.0,
+      "chase": 14.0,
+      "back": 2.5,
+      "reach": 5.5,
+      "secondFrom": 25.0,
+      "gap": 8.0,
+      "slashSpeed": 1.5,
+      "damage": 70.0
+    },
+    "boogie_slash": {
+      "warnAt3": 14.0,
+      "warnAtFull": 10.0,
+      "angleAt3": 80.0,
+      "angleAtFull": 120.0,
+      "reach": 4.0,
+      "skew": 20.0,
+      "mirrorFrom": 18.0,
+      "mirrorWarnAt3": 14.0,
+      "mirrorWarnAtFull": 10.0,
+      "gap": 3.0,
+      "damage": 60.0
+    },
+    "boogie_jab": {
+      "speed": 1.5,
+      "reach": 3.8,
+      "arc": 50.0,
+      "damage": 30.0
+    }
   }
 }

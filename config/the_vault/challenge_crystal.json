@@ -1,6 +1,43 @@
 {
   "challenges": {
-    "t1_shuffle_grounds": {
+    "shuffled": {
+      "name": "Shuffled",
+      "flavour": "Black out a 5x5 Bingo and use a Grid Gateway in 25 minutes. Finish a line and every unfinished tile rerolls. Ye, even the one you were nearly done with...",
+      "embers": {
+        "min": 15,
+        "max": 20
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "bingo",
+        "objective_probability": 1.0,
+        "width": 5,
+        "height": 5,
+        "blackout": true
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 30000
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:shuffle",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true,
       "layout": {
         "type": "polygon",
         "tunnel_span": 1,
@@ -22,7 +59,16 @@
             "z": -12
           }
         ]
+      }
+    },
+    "speedy_blackout": {
+      "name": "Speedy Blackout",
+      "flavour": "Blackout the Bingo in 15 minutes, no pressure.",
+      "embers": {
+        "min": 15,
+        "max": 20
       },
+      "unlock_level": 50,
       "objective": {
         "type": "bingo",
         "objective_probability": 1.0,
@@ -30,41 +76,70 @@
         "height": 5,
         "blackout": true
       },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 18000
+        }
+      },
       "modifiers": {
         "type": "default",
         "list": [
           {
-            "modifier": "the_vault:shuffle",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:locked",
+            "modifier": "the_vault:challenge_rules",
             "count": 1
           }
         ],
         "random_modifiers": false,
         "clarity": false
       },
-      "hazards": {
-        "hazards": [
+      "exhausted": true
+    },
+    "rune_master": {
+      "name": "Rune Master",
+      "flavour": "15 minutes to gather 50 Fury. Then you get to fight a Tier 5 boss. Feed it more if u dare...",
+      "embers": {
+        "min": 10,
+        "max": 20
+      },
+      "unlock_level": 50,
+      "minimum_summon_fury": 50,
+      "objective": {
+        "type": "rune_boss",
+        "objective_probability": 0.05
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 18000
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
           {
-            "type": "unstable_ground",
-            "id": "the_vault:collapsing_floor",
-            "name": "Collapsing Floor",
-            "description": "Standing still crumbles the ground"
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
           }
-        ]
+        ],
+        "random_modifiers": false,
+        "clarity": false
       },
       "exhausted": true
     },
-    "scav_rolled": {
+    "one_shot_frenzy": {
+      "name": "One Shot Frenzy",
+      "flavour": "You will get one shot... better complete it fast!",
+      "embers": {
+        "min": 20,
+        "max": 40
+      },
+      "unlock_level": 50,
       "objective": {
-        "type": "scavenger",
-        "objective_probability": 1.0
+        "type": "elixir",
+        "objective_probability": 0.5
       },
       "time": {
         "type": "value",
@@ -73,35 +148,541 @@
           "count": 30000
         }
       },
-      "sigil": "expert",
-      "exhausted": true,
       "modifiers": {
         "type": "default",
         "list": [
           {
-            "modifier": "the_vault:no_companion",
+            "modifier": "the_vault:challenge_rules",
             "count": 1
           },
           {
-            "modifier": "the_vault:rotten",
+            "modifier": "the_vault:one_hit",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true,
+      "sigil": "expert"
+    },
+    "chased": {
+      "name": "Chased",
+      "flavour": "the vault keeps creeping, and keeps getting tougher and tougher. Creeping Doom makes the mobs hit harder every minute, so hurry up with that Elixir!",
+      "embers": {
+        "min": 10,
+        "max": 20
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "elixir",
+        "objective_probability": 0.5
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 30000
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
             "count": 1
           },
           {
-            "modifier": "the_vault:rigged",
-            "count": 4
-          },
-          {
-            "modifier": "the_vault:surprise_boxes",
+            "modifier": "the_vault:creeping_doom",
             "count": 1
           },
           {
-            "modifier": "woldsvaults:armed_chest_special",
-            "count": 4
+            "modifier": "the_vault:more_mobs_cata",
+            "count": 2
+          },
+          {
+            "modifier": "the_vault:chaos_scattered",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true,
+      "sigil": "master"
+    },
+    "gone_in_60_seconds": {
+      "name": "Gone in 60 Seconds",
+      "flavour": "Well... 10 minutes, unless you stand still, because blocks are not stable, so keep moving",
+      "embers": {
+        "min": 10,
+        "max": 15
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "elixir",
+        "objective_probability": 0.5
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 12000
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true,
+      "hazards": {
+        "hazards": [
+          {
+            "type": "unstable_ground",
+            "id": "the_vault:collapsing_floor",
+            "name": "Collapsing Floor",
+            "description": "Standing still crumbles the ground",
+            "spleef_ticks": 20
           }
         ]
       }
     },
-    "speed_blackout_bingo": {
+    "lucky_line": {
+      "name": "Lucky Line",
+      "flavour": "All you need is one line, you get a bit of help on the way",
+      "embers": {
+        "min": 15,
+        "max": 30
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "scavenger_bingo",
+        "objective_probability": 1.0,
+        "width": 5,
+        "height": 5,
+        "blackout": false
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 24000
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:wooden_cascade",
+            "count": 2
+          },
+          {
+            "modifier": "the_vault:living_cascade",
+            "count": 2
+          },
+          {
+            "modifier": "the_vault:gilded_cascade",
+            "count": 2
+          },
+          {
+            "modifier": "the_vault:ornate_cascade",
+            "count": 2
+          },
+          {
+            "modifier": "the_vault:coin_cascade",
+            "count": 2
+          },
+          {
+            "modifier": "the_vault:challenge_stack",
+            "count": 6
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true,
+      "sigil": "legend"
+    },
+    "fast_and_furious": {
+      "name": "Fast and Furious",
+      "flavour": "15 braziers in 12 minutes? Hmmm, good luck!",
+      "embers": {
+        "min": 10,
+        "max": 20
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "monolith",
+        "objective_probability": 1.0,
+        "target": {
+          "type": "constant",
+          "count": 15
+        }
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 14400
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true
+    },
+    "the_pacifist": {
+      "name": "The Pacifist",
+      "flavour": "Careful of taking damage, the vault is fading, so no healing helps",
+      "embers": {
+        "min": 10,
+        "max": 20
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "bingo",
+        "objective_probability": 1.0,
+        "width": 5,
+        "height": 5,
+        "blackout": false
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 18000
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:fading",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true,
+      "sigil": "expert"
+    },
+    "cake_walk": {
+      "name": "Cake Walk",
+      "flavour": "Eat 25 cakes. That is it. Ten minutes.",
+      "embers": {
+        "min": 10,
+        "max": 15
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "cake",
+        "objective_probability": 1.0,
+        "target": {
+          "type": "constant",
+          "count": 25
+        }
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 12000
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true
+    },
+    "glass_cannon": {
+      "name": "Glass Cannon",
+      "flavour": "How do you think the mobs feel when you use overpower? Well, here the odds are even.",
+      "embers": {
+        "min": 10,
+        "max": 20
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "elixir",
+        "objective_probability": 0.5
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 14400
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:one_hit",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:overpower",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true,
+      "sigil": "expert"
+    },
+    "the_floor_is_void": {
+      "name": "The Floor Is Void",
+      "flavour": "Careful, standing still will cost you, a lot. The floor is really void.",
+      "embers": {
+        "min": 15,
+        "max": 25
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "scavenger",
+        "objective_probability": 1.0
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 14400
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true,
+      "hazards": {
+        "hazards": [
+          {
+            "type": "void_floor",
+            "id": "the_vault:void_floor",
+            "name": "Void Floor",
+            "description": "Standing still turns the ground into void",
+            "spleef_ticks": 20
+          }
+        ]
+      }
+    },
+    "crab_rave": {
+      "name": "Crab Rave",
+      "flavour": "12 minutes to finish the scav list and reach an altar. Forward and back don't work. You can still jump, but if u want to walk there... sideways it is.",
+      "embers": {
+        "min": 10,
+        "max": 15
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "scavenger",
+        "objective_probability": 1.0
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 14400
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:crab_walk",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true
+    },
+    "ice_rink": {
+      "name": "Ice Rink",
+      "flavour": "Dont slip! The floors are icy and mobs are super speedy",
+      "embers": {
+        "min": 10,
+        "max": 20
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "scavenger",
+        "objective_probability": 1.0
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 14400
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:chaos_friction",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:faster_mobs",
+            "count": 5
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true
+    },
+    "mana_drought": {
+      "name": "Mana Drought",
+      "flavour": "25 Fury in 12 minutes, and your mana doesn’t regen. Save some for the boss, ye?",
+      "embers": {
+        "min": 10,
+        "max": 20
+      },
+      "unlock_level": 50,
+      "minimum_summon_fury": 25,
+      "objective": {
+        "type": "rune_boss",
+        "objective_probability": 0.05
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 14400
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:mana_leak",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true
+    },
+    "tiny_terrors": {
+      "name": "Tiny Terrors",
+      "flavour": "Babies, babies BABIES EVERYWHERE. You got 10 minutes to get out of there!",
+      "embers": {
+        "min": 10,
+        "max": 20
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "elixir",
+        "objective_probability": 0.5
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 12000
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:daycare",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:faster_mobs",
+            "count": 2
+          },
+          {
+            "modifier": "the_vault:daycare_sound",
+            "count": 1
+          },
+          {
+            "modifier": "the_vault:more_mobs_cata",
+            "count": 4
+          },
+          {
+            "modifier": "the_vault:soulless",
+            "count": 1
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true
+    },
+    "misstep": {
+      "name": "Misstep",
+      "flavour": "Black out 4x4, but every tile you complete voids another progressed tile. One step at a time!",
+      "embers": {
+        "min": 15,
+        "max": 30
+      },
+      "unlock_level": 50,
       "objective": {
         "type": "bingo",
         "objective_probability": 1.0,
@@ -113,780 +694,147 @@
         "type": "value",
         "roll": {
           "type": "constant",
-          "count": 30000
+          "count": 18000
         }
       },
-      "exhausted": true,
       "modifiers": {
         "type": "default",
         "list": [
           {
-            "modifier": "the_vault:shortened",
-            "count": 10
-          },
-          {
-            "modifier": "the_vault:rotten",
+            "modifier": "the_vault:challenge_rules",
             "count": 1
           },
           {
-            "modifier": "the_vault:no_companion",
+            "modifier": "the_vault:stumble",
             "count": 1
           }
         ],
         "random_modifiers": false,
         "clarity": false
-      }
+      },
+      "exhausted": true
     },
-    "rune_master": {
+    "happy_feet": {
+      "name": "Happy Feet",
+      "flavour": "...or Happy feet, also you are very hungry, bring snacks!",
+      "embers": {
+        "min": 10,
+        "max": 20
+      },
+      "unlock_level": 50,
       "objective": {
-        "type": "rune_boss",
-        "objective_probability": 0.05,
-        "minimum_runes": {
-          "type": "constant",
-          "count": 35
-        }
+        "type": "scavenger",
+        "objective_probability": 1.0
       },
       "time": {
         "type": "value",
         "roll": {
           "type": "constant",
-          "count": 30000
+          "count": 12000
         }
       },
-      "exhausted": true,
       "modifiers": {
         "type": "default",
         "list": [
           {
-            "modifier": "the_vault:rotten",
+            "modifier": "the_vault:challenge_rules",
             "count": 1
           },
           {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false
-      }
-    },
-    "royale_king": {
-      "objective": {
-        "type": "vault_royale",
-        "min_level": 50,
-        "start_crate_loot_table": "the_vault:royale_start_crate",
-        "objective_probability": 0.2,
-        "dust_target": {
-          "min": 80,
-          "max": 120,
-          "type": "uniform"
-        }
-      },
-      "theme": {
-          "type": "pool",
-          "id": "woldsvaults:royale"
-      },
-      "time": {
-        "type": "value",
-        "roll": {
-          "type": "constant",
-          "count": 30000
-        }
-      },
-      "layout": {
-          "type": "vault_royale",
-          "radius": 10,
-          "tunnel_span": 1,
-          "boss_room_pool": "the_vault:vault/rooms/special/royale_boss"
-      },
-      "exhausted": true,
-      "modifiers": {
-        "type": "default",
-        "list": [
-          {
-            "modifier": "the_vault:shortened",
-            "count": 10
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          },
-          {
-              "modifier": "the_vault:royale",
-              "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false
-      }
-    },
-    "one_shot_frenzy": {
-      "objective": {
-        "type": "elixir",
-        "objective_probability": 0.5
-      },
-      "sigil": "expert",
-      "time": {
-        "type": "value",
-        "roll": {
-          "type": "constant",
-          "count": 30000
-        }
-      },
-      "exhausted": true,
-      "modifiers": {
-        "type": "default",
-        "list": [
-          {
-            "modifier": "the_vault:one_hit",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false
-      }
-    },
-    "time_you_say": {
-      "objective": {
-        "type": "elixir",
-        "objective_probability": 0.5
-      },
-      "sigil": "legend",
-      "time": {
-        "type": "value",
-        "roll": {
-          "type": "constant",
-          "count": 30000
-        }
-      },
-      "exhausted": true,
-      "modifiers": {
-        "type": "default",
-        "list": [
-          {
-            "modifier": "the_vault:extended",
-            "count": 25
-          },
-          {
-            "modifier": "the_vault:creeping_doom",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false
-      }
-    },
-    "gone_in_60_seconds": {
-      "objective": {
-        "type": "elixir",
-        "objective_probability": 0.5
-      },
-      "sigil": "expert",
-      "time": {
-        "type": "value",
-        "roll": {
-          "type": "constant",
-          "count": 1200
-        }
-      },
-      "exhausted": true,
-      "modifiers": {
-        "type": "default",
-        "list": [
-          {
-            "modifier": "the_vault:extended",
-            "count": 25
-          },
-          {
-            "modifier": "the_vault:creeping_doom",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false
-      }
-    },
-    "celebrations": {
-      "objective": {
-        "type": "cake",
-        "objective_probability": 1.0,
-        "target": {
-          "type": "constant",
-          "count": 100
-        }
-      },
-      "theme": {
-        "type": "value",
-        "id": "the_vault:classic_vault_chaos_cake"
-      },
-      "layout": {
-        "type": "spiral",
-        "tunnel_span": 1,
-        "half_length": 99,
-        "rotation": "CLOCKWISE_90"
-      },
-      "time": {
-        "type": "value",
-        "roll": {
-          "type": "constant",
-          "count": 30000
-        }
-      },
-      "exhausted": true,
-      "modifiers": {
-        "type": "default",
-        "list": [
-          {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false
-      }
-    },
-    "luckiest_win": {
-      "objective": {
-        "type": "scavenger_bingo",
-        "objective_probability": 1.0,
-        "width": 5,
-        "height": 5
-      },
-      "sigil": "veteran",
-      "time": {
-        "type": "value",
-        "roll": {
-          "type": "constant",
-          "count": 30000
-        }
-      },
-      "exhausted": true,
-      "modifiers": {
-        "type": "default",
-        "list": [
-          {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:wooden_cascade",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:living_cascade",
+            "modifier": "the_vault:chaos_heavy",
             "count": 2
-          },
-          {
-            "modifier": "the_vault:gilded_cascade",
-            "count": 3
-          },
-          {
-            "modifier": "the_vault:ornate_cascade",
-            "count": 4
-          },
-          {
-            "modifier": "the_vault:coin_cascade",
-            "count": 5
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
           }
         ],
         "random_modifiers": false,
         "clarity": false
-      }
-    },
-    "the_speedrunner": {
-      "objective": {
-        "type": "monolith",
-        "objective_probability": 1.0,
-        "target": {
-          "type": "constant",
-          "count": 25
-        }
-      },
-      "time": {
-        "type": "value",
-        "roll": {
-          "type": "constant",
-          "count": 30000
-        }
       },
       "exhausted": true,
-      "modifiers": {
-        "type": "default",
-        "list": [
+      "hazards": {
+        "hazards": [
           {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:shortened",
-            "count": 15
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
+            "type": "sprint_fatigue",
+            "id": "the_vault:sprint_fatigue",
+            "name": "Sprint Fatigue",
+            "description": "Sprinting drains your hunger"
           }
-        ],
-        "random_modifiers": false,
-        "clarity": false
+        ]
       }
     },
-    "the_pacifist": {
+    "blackout_sprint": {
+      "name": "Blackout Sprint",
+      "flavour": "You and the mobs get +60% movement speed, Go go go!",
+      "embers": {
+        "min": 10,
+        "max": 25
+      },
+      "unlock_level": 50,
       "objective": {
         "type": "bingo",
         "objective_probability": 1.0,
-        "width": 5,
-        "height": 5
+        "width": 4,
+        "height": 4,
+        "blackout": true
       },
       "time": {
         "type": "value",
         "roll": {
           "type": "constant",
-          "count": 30000
+          "count": 18000
         }
       },
-      "sigil": "expert",
-      "exhausted": true,
       "modifiers": {
         "type": "default",
         "list": [
           {
-            "modifier": "the_vault:rotten",
+            "modifier": "the_vault:challenge_rules",
             "count": 1
           },
           {
-            "modifier": "the_vault:fading",
+            "modifier": "the_vault:chaos_tempo",
+            "count": 4
+          }
+        ],
+        "random_modifiers": false,
+        "clarity": false
+      },
+      "exhausted": true
+    },
+    "old_school": {
+      "name": "Old School",
+      "flavour": "Can you do it the Minecrafty way? No abilities, not even heal, good luck!",
+      "embers": {
+        "min": 15,
+        "max": 25
+      },
+      "unlock_level": 50,
+      "objective": {
+        "type": "scavenger",
+        "objective_probability": 1.0
+      },
+      "time": {
+        "type": "value",
+        "roll": {
+          "type": "constant",
+          "count": 18000
+        }
+      },
+      "modifiers": {
+        "type": "default",
+        "list": [
+          {
+            "modifier": "the_vault:challenge_rules",
             "count": 1
           },
           {
-            "modifier": "the_vault:no_companion",
+            "modifier": "the_vault:no_abilities",
             "count": 1
           }
         ],
         "random_modifiers": false,
         "clarity": false
-      }
-    },
-    "pitch_black": {
-      "objective": {
-        "target": {
-          "count": 10,
-          "type": "constant"
-        },
-        "objective_probability": 1.0,
-        "type": "haunted_braziers"
       },
-      "theme": {
-        "id": "the_vault:classic_vault_dark_cavern",
-        "type": "value"
-      },
-      "time": {
-        "roll": {
-          "count": 12000,
-          "type": "constant"
-        },
-        "type": "value"
-      },
-      "modifiers": {
-        "list": [
-          {
-            "modifier": "woldsvaults:lights_out",
-            "count": 1
-          },
-          {
-            "modifier": "woldsvaults:all_bad_haunted_braziers",
-            "count": 1
-          },
-          {
-            "modifier": "woldsvaults:blindness_immunity_cancel",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false,
-        "type": "default"
-      },
-      "hazards": {
-        "hazards": []
-      },
-      "exhausted": true
-    },
-    "ultra_hard": {
-      "objective": {
-        "objective_probability": 0.4,
-        "type": "elixir"
-      },
-      "theme": {
-        "id": "woldsvaults:map_themes",
-        "type": "pool"
-      },
-      "modifiers": {
-        "list": [
-          {
-            "modifier": "the_vault:champions_realm",
-            "count": 4
-          },
-          {
-            "modifier": "the_vault:fading",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_champ_drops",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:hard",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false,
-        "type": "default"
-      },
-      "hazards": {
-        "hazards": []
-      },
-      "sigil": "expert",
-      "exhausted": true
-    },
-    "elixir_of_doom": {
-      "objective": {
-        "objective_probability": 0.25,
-        "type": "enchanted_elixir"
-      },
-      "modifiers": {
-        "list": [
-          {
-            "modifier": "woldsvaults:all_bad_enchanted_elixir",
-            "count": 1
-          },
-          {
-            "modifier": "woldsvaults:enchanted_elixir_50_events",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false,
-        "type": "default"
-      },
-      "hazards": {
-        "hazards": []
-      },
-      "sigil": "expert",
-      "exhausted": true
-    },
-    "ballistic_bingo_blackout": {
-      "objective": {
-        "objective_probability": 0.25,
-        "blackout": true,
-        "type": "ballistic_bingo"
-      },
-      "modifiers": {
-        "list": [
-          {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false,
-        "type": "default"
-      },
-      "hazards": {
-        "hazards": []
-      },
-      "exhausted": true
-    },
-    "blackout_scavingo": {
-      "objective": {
-        "objective_probability": 0.25,
-        "width": 5,
-        "height": 5,
-        "blackout": true,
-        "modifierPool": "the_vault:bingos",
-        "type": "scavenger_bingo"
-      },
-      "modifiers": {
-        "list": [
-          {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false,
-        "type": "default"
-      },
-      "hazards": {
-        "hazards": []
-      },
-      "exhausted": true
-    },
-    "gods_challenge": {
-      "objective": {
-        "target": {
-          "count": 10,
-          "type": "constant"
-        },
-        "type": "zealot"
-      },
-      "layout": {
-        "tunnel_span": 1,
-        "type": "infinite"
-      },
-      "theme": {
-        "id": "woldsvaults:god_themes",
-        "type": "pool"
-      },
-      "modifiers": {
-        "list": [
-          {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:velara_challenge",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:wendarr_challenge",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:tenos_challenge",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:idona_challenge",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false,
-        "type": "default"
-      },
-      "hazards": {
-        "hazards": []
-      },
-      "exhausted": true
-    },
-    "big_bad_brew": {
-      "objective": {
-        "objective_probability": 0.5,
-        "required_progress": 10.0,
-        "type": "alchemy"
-      },
-      "layout": {
-        "tunnel_span": 1,
-        "type": "infinite"
-      },
-      "modifiers": {
-        "list": [
-          {
-            "modifier": "the_vault:bubbling_trouble",
-            "count": 4
-          },
-          {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false,
-        "type": "default"
-      },
-      "hazards": {
-        "hazards": []
-      },
-      "exhausted": true
-    },
-    "chaos_chaos_chaos": {
-      "objective": {
-        "objective_probability": 1.0,
-        "type": "chaos"
-      },
-      "layout": {
-        "tunnel_span": 1,
-        "type": "infinite"
-      },
-      "theme": {
-        "id": "the_vault:classic_vault_chaos",
-        "type": "value"
-      },
-      "modifiers": {
-        "list": [
-          {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:unhinged",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:chaos_return",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false,
-        "type": "default"
-      },
-      "hazards": {
-        "hazards": []
-      },
-      "sigil": "adept",
-      "exhausted": true
-    },
-    "rage_cage": {
-      "objective": {
-        "target": {
-          "count": 7,
-          "type": "constant"
-        },
-        "wave": {
-          "count": 5,
-          "type": "constant"
-        },
-        "objective_probability": 1.0,
-        "type": "brutal_bosses"
-      },
-      "layout": {
-        "tunnel_span": 1,
-        "type": "infinite"
-      },
-      "modifiers": {
-        "list": [
-          {
-            "modifier": "the_vault:challenge_stack",
-            "count": 5
-          },
-          {
-            "modifier": "the_vault:rotten",
-            "count": 1
-          },
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          },
-          {
-            "modifier": "woldsvaults:infernal_fury",
-            "count": 1
-          },
-          {
-            "modifier": "woldsvaults:rage_cage",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false,
-        "type": "default"
-      },
-      "hazards": {
-        "hazards": []
-      },
-      "exhausted": true
-    },
-    "survival_of_the_fittest": {
-      "objective": {
-        "objective_probability": 0.5,
-        "target": 30,
-        "waveGroups": [
-          "t1",
-          "t1_t2",
-          "t2",
-          "t2_t3",
-          "t3",
-          "t3_t4",
-          "t4",
-          "t5",
-          "t6",
-          "t7"
-        ],
-        "type": "survival"
-      },
-      "layout": {
-        "tunnel_span": 1,
-        "type": "infinite"
-      },
-      "modifiers": {
-        "list": [
-          {
-            "modifier": "the_vault:no_companion",
-            "count": 1
-          }
-        ],
-        "random_modifiers": false,
-        "clarity": false,
-        "type": "default"
-      },
-      "hazards": {
-        "hazards": []
-      },
-      "exhausted": true
+      "exhausted": true,
+      "sigil": "expert"
     }
   }
 }

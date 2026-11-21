@@ -2,15 +2,15 @@
   "defaultCraftedPool": "Scrappy",
   "proficiencyPools": [
     {
-      "minProficiency": 0.0,
+      "minProficiency": 0,
       "proficiencyName": "Beginner",
       "durabilityOutcomeName": "Very Low",
       "pool": "Scrappy+",
-      "color": 14745587,
-      "craftingPotentialMultiplier": 0.0,
-      "greaterModifierChance": 0.0,
+      "color": 16699906,
+      "craftingPotentialMultiplier": 0,
+      "greaterModifierChance": 0,
       "maximumRepairSlots": 1,
-      "soulboundChance": 0.0,
+      "soulboundChance": 0,
       "soulboundModifierId": "the_vault:base_soulbound",
       "notAllowedModifiers": [
         "the_vault:base_living"
@@ -28,7 +28,7 @@
       "proficiencyName": "Apprentice",
       "durabilityOutcomeName": "Low",
       "pool": "Common+",
-      "color": 11794910,
+      "color": 16697601,
       "craftingPotentialMultiplier": 0.25,
       "greaterModifierChance": 0.05,
       "maximumRepairSlots": 2,
@@ -50,7 +50,7 @@
       "proficiencyName": "Adept",
       "durabilityOutcomeName": "Mid",
       "pool": "Common+",
-      "color": 8844233,
+      "color": 16688898,
       "craftingPotentialMultiplier": 0.5,
       "greaterModifierChance": 0.1,
       "maximumRepairSlots": 3,
@@ -72,7 +72,7 @@
       "proficiencyName": "Expert",
       "durabilityOutcomeName": "High",
       "pool": "Common+",
-      "color": 5959092,
+      "color": 16682754,
       "craftingPotentialMultiplier": 0.75,
       "greaterModifierChance": 0.15,
       "maximumRepairSlots": 4,
@@ -94,7 +94,7 @@
       "proficiencyName": "Master",
       "durabilityOutcomeName": "Very High",
       "pool": "Rare+",
-      "color": 3008415,
+      "color": 16675842,
       "craftingPotentialMultiplier": 1,
       "greaterModifierChance": 0.25,
       "maximumRepairSlots": 5,
@@ -112,11 +112,11 @@
       ]
     },
     {
-      "minProficiency": 1.0,
+      "minProficiency": 1,
       "proficiencyName": "Grandmaster",
       "durabilityOutcomeName": "Excellent",
       "pool": "Epic+",
-      "color": 57738,
+      "color": 16669442,
       "craftingPotentialMultiplier": 1.2,
       "greaterModifierChance": 0.5,
       "maximumRepairSlots": 6,
@@ -133,6 +133,55 @@
         }
       ]
     }
+  ],
+  "priceByCraftLevel": [
+    {
+      "level": 0,
+      "multiplier": 0.25
+    },
+    {
+      "level": 10,
+      "multiplier": 0.4
+    },
+    {
+      "level": 20,
+      "multiplier": 0.55
+    },
+    {
+      "level": 30,
+      "multiplier": 0.7
+    },
+    {
+      "level": 40,
+      "multiplier": 0.85
+    },
+    {
+      "level": 50,
+      "multiplier": 1.0
+    },
+    {
+      "level": 60,
+      "multiplier": 1.2
+    },
+    {
+      "level": 70,
+      "multiplier": 1.4
+    },
+    {
+      "level": 80,
+      "multiplier": 1.6
+    },
+    {
+      "level": 90,
+      "multiplier": 1.8
+    },
+    {
+      "level": 100,
+      "multiplier": 2.0
+    }
+  ],
+  "itemsWithFlatPrice": [
+    "the_vault:unique_shard"
   ],
   "proficiencyCapMultiplier": 0.7
 }

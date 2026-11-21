@@ -6,7 +6,7 @@
     },
     {
       "item": "the_vault:crystal_seal_empty",
-      "value": "Crafting ingredient used to craft special vault rocks or vault seals."
+      "value": "Craft objective seals from it at the Crystal Workbench (Objectives tab). Also used for some Vault Rocks."
     },
     {
       "item": "the_vault:crystal_seal_scout",
@@ -87,6 +87,18 @@
     {
       "item": "the_vault:crystal_seal_cake",
       "value": "Is it cake?\nPut this Vault Rock on a Vault Altar to create a <#f26499>Cake Crystal<gray>!"
+    },
+    {
+      "item": "the_vault:crystal_seal_chaos",
+      "value": "Use in the Crystal Workbench to set the objective to <#d87b00>Chaos<gray>, or put it on a Vault Altar for a Chaos Crystal. Finish timed tasks for blessings, fail them for curses."
+    },
+    {
+      "item": "the_vault:crystal_seal_vessel",
+      "value": "Use in the Crystal Workbench to set the objective to <#f2c94c>The Vessel<gray>. A rematch at your selected Greed Tier, friends welcome. It only pays out with a Vessel Effigy in the objective modifier slot."
+    },
+    {
+      "item": "the_vault:vessel_effigy",
+      "value": "Put it in the objective modifier slot of a Vessel crystal at the Crystal Workbench. Kill the Vessel in that rematch and it pays like the trial: the coins you grabbed and a Greed Crate of that tier."
     },
     {
       "item": "the_vault:crystal_seal_herald",
@@ -922,7 +934,7 @@
     },
     {
       "item": "the_vault:coin_pouch",
-      "value": "Stores a large amount of Vault Coins\nVault Coins picked up will go directly into the pouch."
+      "value": "Stores Vault Coins, Greed Coins and <#4800FF>Soul Shards<gray>.\nAnything of those you pick up goes straight into the pouch.\nWear it in the Pouch slot of your inventory."
     },
     {
       "item": "the_vault:artifact_fragment",
@@ -1193,27 +1205,43 @@
     },
     {
       "item": "the_vault:catalyst_infusion_table",
-      "value": "A vault workstation where infused_catalysts can be crafted"
+      "value": "A vault workstation that crafts catalysts. Opens the Crystal Workbench on the Craft Catalysts tab."
+    },
+    {
+      "item": "the_vault:augment_piece",
+      "value": "The base of every augment. Craft it into the augment of a theme you have won at the Crystal Workbench (Craft Augments).\nDrops from vault crates once you have the Augment Crafting research. Recycle an augment you don't need to get one back."
+    },
+    {
+      "item": "the_vault:vault_catalyst",
+      "value": "<red>Legacy Item<gray> - No longer used"
+    },
+    {
+      "item": "the_vault:augment_station",
+      "value": "A vault workstation that crafts augments. Opens the Crystal Workbench on the Craft Augments tab."
     },
     {
       "item": "the_vault:vault_artisan_station",
-      "value": "A vault workstation where vault gear can be modified by different focuses"
+      "value": "A vault workstation that modifies vault gear with foci, adds chosen affixes and seals gear"
+    },
+    {
+      "item": "the_vault:vault_sealer",
+      "value": "A vault workstation that seals gear. Opens the Artisan Station on the Seal tab."
     },
     {
       "item": "the_vault:vault_jewel_application_station",
-      "value": "A vault workstation where vault tools can be enhanced with jewels"
+      "value": "A vault workstation that applies jewels to tools. Opens the Tool Station on the Apply Jewels tab."
     },
     {
       "item": "the_vault:jewel_crafting_table",
-      "value": "A vault workstation where jewels can be crafted"
+      "value": "A vault workstation that crafts jewels. Opens the Tool Station on the Craft Jewels tab."
     },
     {
       "item": "the_vault:trinket_forge",
-      "value": "A vault workstation where trinkets can be crafted"
+      "value": "A vault workstation that forges trinkets. Opens the Vault Forge on the Trinkets tab."
     },
     {
       "item": "the_vault:crystal_workbench",
-      "value": "A vault workstation where Vault Crystals can be precisely modified."
+      "value": "A vault workstation that modifies Vault Crystals and crafts catalysts, inscriptions and augments"
     },
     {
       "item": "the_vault:personal_vault",
@@ -1241,7 +1269,7 @@
     },
     {
       "item": "the_vault:card_essence_extractor",
-      "value": "A vault workstation where cards can be upgraded"
+      "value": "<red>Legacy Item<gray> - Cards are upgraded in the Card Binder now. Right-click a placed one to get back what is inside."
     },
     {
       "item": "the_vault:unboxing_station",
@@ -1285,7 +1313,7 @@
     },
     {
       "item": "the_vault:alchemy_table",
-      "value": "Vault workstation where vault potions, mixtures, and brews can be enhanced."
+      "value": "Vault workstation where you choose the effects in your Vault Potion's slots. Opening it refills your potion"
     },
     {
       "item": "the_vault:card_binder",
@@ -1345,7 +1373,7 @@
     },
     {
       "item": "the_vault:greed_cauldron",
-      "value": "Melts down vault resources into Greed Coins."
+      "value": "Retired. Greed Crystals take your vault materials now. Break a placed one to get back what it cost."
     },
     {
       "item": "the_vault:greedy_anchor",
@@ -1361,7 +1389,7 @@
     },
     {
       "item": "the_vault:player_customisation_station",
-      "value": "Customize your palyer's appearance.\nChange your player model, colors, and other visual options."
+      "value": "Retired. Titles, emblems, trails and auras are configured in the Looks settings now"
     },
     {
       "item": "the_vault:greed_coin",

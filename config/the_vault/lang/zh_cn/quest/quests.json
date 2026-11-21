@@ -59,7 +59,7 @@
             "color": "$text"
           },
           {
-            "text": "\n\n/the_vault research_team invite 玩家名 ",
+            "text": "\n\n/the_vault team invite 玩家名 ",
             "color": "$manaCost"
           },
           {
@@ -641,7 +641,7 @@
         ]
       },
       "icon": "the_vault:gui/quests/black_market2",
-      "targetId": "the_vault:shard_pouch",
+      "targetId": "the_vault:coin_pouch",
       "targetProgress": 1.0,
       "unlockedBy": "learning_skills",
       "reward": {
@@ -657,152 +657,6 @@
           {
             "item": "sophisticatedbackpacks:void_upgrade",
             "amount": 1
-          }
-        ],
-        "vaultExp": 0
-      }
-    },
-    {
-      "type": "collection",
-      "id": "coin_pouch",
-      "name": "钱袋",
-      "descriptionData": {
-        "description": [
-          {
-            "text": "存放你的",
-            "color": "$text"
-          },
-          {
-            "text": "铜币",
-            "color": "$bronze"
-          },
-          {
-            "text": "、",
-            "color": "$text"
-          },
-          {
-            "text": "银币",
-            "color": "$common"
-          },
-          {
-            "text": "、",
-            "color": "$text"
-          },
-          {
-            "text": "金币",
-            "color": "$gold"
-          },
-          {
-            "text": "和",
-            "color": "$text"
-          },
-          {
-            "text": "铂金币",
-            "color": "$platinum"
-          },
-          {
-            "text": "的最佳方式是获取一个",
-            "color": "$text"
-          },
-          {
-            "text": "钱袋",
-            "color": "$qhighlight"
-          },
-          {
-            "text": "！\n\n",
-            "color": "$text"
-          },
-          {
-            "text": "钱袋",
-            "color": "$qhighlight"
-          },
-          {
-            "text": "是一个",
-            "color": "$text"
-          },
-          {
-            "text": "灵魂绑定",
-            "color": "$soulchance"
-          },
-          {
-            "text": "物品，你把它放在背包中。即使你死亡它也会保留在那里，它可以容纳无限数量的",
-            "color": "$text"
-          },
-          {
-            "text": "铜币",
-            "color": "$bronze"
-          },
-          {
-            "text": "、",
-            "color": "$text"
-          },
-          {
-            "text": "银币",
-            "color": "$common"
-          },
-          {
-            "text": "、",
-            "color": "$text"
-          },
-          {
-            "text": "金币",
-            "color": "$gold"
-          },
-          {
-            "text": "和",
-            "color": "$text"
-          },
-          {
-            "text": "铂金币",
-            "color": "$platinum"
-          },
-          {
-            "text": "。它会自动在它们之间转换，而且",
-            "color": "$text"
-          },
-          {
-            "text": "宝库猎人",
-            "color": "$qhighlight"
-          },
-          {
-            "text": "中所有的工作站都可以直接从中读取——无需微观管理你的物品！\n\n",
-            "color": "$text"
-          },
-          {
-            "text": "钱袋",
-            "color": "$qhighlight"
-          },
-          {
-            "text": "的另一个出色功能是，只要它不在允许货币进入白名单的",
-            "color": "$text"
-          },
-          {
-            "text": "背包",
-            "color": "$blocks"
-          },
-          {
-            "text": "之后，它就会自动拾取你收集到的任何货币。",
-            "color": "$text"
-          },
-          {
-            "text": "\n\n获取一个钱袋",
-            "color": "$heal"
-          }
-        ]
-      },
-      "icon": "the_vault:gui/quests/coin_pouch",
-      "targetId": "the_vault:coin_pouch",
-      "targetProgress": 1.0,
-      "unlockedBy": "shard_pouch",
-      "reward": {
-        "items": [
-          {
-            "item": "the_vault:vault_platinum",
-            "amount": 1
-          },
-          {
-            "item": "the_vault:chromatic_steel_ingot",
-            "amount": 4
           }
         ],
         "vaultExp": 0

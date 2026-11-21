@@ -394,6 +394,28 @@
       }
     },
     {
+      "input": "the_vault:crystal_seal_chaos",
+      "output": {
+        "id": "the_vault:vault_crystal",
+        "nbt": {
+          "CrystalData": {
+            "Objective": {
+              "type": "chaos",
+              "objective_probability": 1.0
+            },
+            "Model": {
+              "type": "chaos"
+            },
+            "Theme": {
+              "type": "value",
+              "id": "the_vault:classic_vault_chaos"
+            },
+            "Version": 3
+          }
+        }
+      }
+    },
+    {
       "input": "the_vault:vault_catalyst_chaos",
       "output": {
         "id": "the_vault:vault_crystal",
@@ -408,11 +430,7 @@
               "RandomModifiers": 0,
               "List": [
                 {
-                  "id": "the_vault:chaos",
-                  "size": 1
-                },
-                {
-                  "id": "the_vault:chaos_return",
+                  "id": "the_vault:chaos_scattered",
                   "size": 1
                 }
               ]

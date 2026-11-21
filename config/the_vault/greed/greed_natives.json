@@ -1,0 +1,31 @@
+{
+  "activationRadius": 12.0,
+  "packSizePerMarker": {
+    "min": 2,
+    "max": 2,
+    "type": "uniform"
+  },
+  "acidNatives": {
+    "the_vault:acid_enforcer": 1,
+    "the_vault:acid_fiend": 1,
+    "the_vault:acid_hunter": 1,
+    "the_vault:acid_priest": 1
+  },
+  "deathNatives": {
+    "the_vault:death_guard": 1,
+    "the_vault:death_dancer": 1,
+    "the_vault:death_knight": 1,
+    "the_vault:death_inquisitor": 1
+  },
+  "deathKillGreed": 100,
+  "deathKillFalloffPerKill": 0.1,
+  "deathKillMinimumShare": 0.4,
+  "timekeeperKillSeconds": [
+    { "value": { "min": 10, "max": 25, "type": "uniform" }, "weight": 60 },
+    { "value": { "min": 25, "max": 40, "type": "uniform" }, "weight": 30 },
+    { "value": { "min": 40, "max": 60, "type": "uniform" }, "weight": 10 }
+  ],
+  "deathRoomClearGreedChestChance": 0.2,
+  "keyholderChancePerPack": 0.05,
+  "greedRoomShareByCompletedBars": [0.03, 0.06, 0.10, 0.15, 0.20, 0.27, 0.35]
+}

@@ -3,59 +3,149 @@
   "starts": "the_vault:vault/starts/gloom_starts",
   "rooms": "the_vault:vault/rooms/gloom_rooms",
   "tunnels": "the_vault:vault/tunnels/gloom_tunnels",
-  "ambient_light": 0.2,
-  "fog_color": 4744821,
+  "ambient_light": 0.054,
+  "fog_color": 2631720,
   "grass_color": 3033946,
   "foliage_color": 4749961,
   "water_color": 2111301,
-  "water_fog_color": 4744821,
-  "particle": "minecraft:dripping_lava",
-  "particle_probability": 0.001,
+  "water_fog_color": 2631720,
+  "fog_start": 2.0,
+  "fog_end": 28.0,
+  "particle": "minecraft:ash",
+  "particle_probability": 0.008,
+  "music": [
+    "the_vault:gloom_music_halloween",
+    "the_vault:gloom_music_spooky"
+  ],
+  "music_volume": 0.08,
   "ambient_sounds": [
     {
+      "sound": "the_vault:heartbeat",
+      "min_rate": 80,
+      "max_rate": 160
+    },
+    {
       "sound": "the_vault:gloom_bats_ambient",
-      "min_rate": 100,
-      "max_rate": 500
+      "min_rate": 200,
+      "max_rate": 400
     },
     {
       "sound": "minecraft:ambient.cave",
+      "min_rate": 300,
+      "max_rate": 500
+    },
+    {
+      "sound": "minecraft:ambient.nether_wastes.additions",
+      "min_rate": 250,
+      "max_rate": 500
+    },
+    {
+      "sound": "the_vault:looking_for_you",
+      "min_rate": 400,
+      "max_rate": 700
+    },
+    {
+      "sound": "the_vault:never_forget",
+      "min_rate": 450,
+      "max_rate": 750
+    },
+    {
+      "sound": "the_vault:never_left",
       "min_rate": 500,
       "max_rate": 800
     },
     {
-      "sound": "minecraft:ambient.nether_wastes.additions",
-      "min_rate": 200,
-      "max_rate": 600
-    },
-    {
-      "sound": "the_vault:heartbeat",
-      "min_rate": 600,
+      "sound": "the_vault:the_void",
+      "min_rate": 500,
       "max_rate": 800
     },
     {
-      "sound": "the_vault:looking_for_you",
-      "min_rate": 800,
-      "max_rate": 900
-    },
-    {
-      "sound": "the_vault:never_forget",
-      "min_rate": 900,
-      "max_rate": 1000
-    },
-    {
-      "sound": "the_vault:never_left",
-      "min_rate": 1000,
-      "max_rate": 1100
-    },
-    {
-      "sound": "the_vault:the_void",
-      "min_rate": 1100,
-      "max_rate": 1200
-    },
-    {
       "sound": "the_vault:voices",
-      "min_rate": 1200,
-      "max_rate": 1300
+      "min_rate": 400,
+      "max_rate": 700
+    }
+  ],
+  "presence_events": [
+    {
+      "type": "footsteps",
+      "sound": "minecraft:block.stone.step",
+      "min_rate": 350,
+      "max_rate": 700,
+      "min_distance": 6.0,
+      "max_distance": 14.0,
+      "volume": 0.55,
+      "count": 4,
+      "step_interval": 7
+    },
+    {
+      "type": "distant_sound",
+      "sound": "the_vault:ghost_scream",
+      "min_rate": 500,
+      "max_rate": 1000,
+      "min_distance": 10.0,
+      "max_distance": 20.0,
+      "volume": 0.65
+    },
+    {
+      "type": "chest_open",
+      "sound": "the_vault:vault_chest_rare_open",
+      "min_rate": 600,
+      "max_rate": 1100,
+      "min_distance": 8.0,
+      "max_distance": 18.0,
+      "volume": 0.45
+    },
+    {
+      "type": "light_dip",
+      "min_rate": 450,
+      "max_rate": 900,
+      "duration_ticks": 45,
+      "brightness_factor": 0.25
+    },
+    {
+      "type": "distant_sound",
+      "sound": "the_vault:looking_for_you",
+      "min_rate": 700,
+      "max_rate": 1200,
+      "min_distance": 12.0,
+      "max_distance": 22.0,
+      "volume": 0.5,
+      "pitch": 0.85
+    }
+  ],
+  "hazards": [
+    {
+      "type": "ambient_mobs",
+      "id": "the_vault:gloom_bats",
+      "name": "Bat Swarm",
+      "description": "Bats flock through the gloom",
+      "entity": "minecraft:bat",
+      "max_count": 14,
+      "spawn_interval_ticks": 60,
+      "spawn_count": 2,
+      "min_range": 6.0,
+      "max_range": 20.0,
+      "min_y_offset": 2.0,
+      "max_y_offset": 8.0,
+      "lifetime_ticks": 600,
+      "check_radius": 36.0
+    },
+    {
+      "type": "ambient_mobs",
+      "id": "the_vault:gloomwing",
+      "name": "Gloomwing",
+      "description": "A rare bat haunts the gloom",
+      "entity": "the_vault:gloomwing",
+      "max_count": 20,
+      "spawn_interval_ticks": 60,
+      "spawn_count": 1,
+      "max_per_room": 1,
+      "min_range": 6.0,
+      "max_range": 14.0,
+      "min_y_offset": 2.0,
+      "max_y_offset": 6.0,
+      "lifetime_ticks": 1200,
+      "check_radius": 36.0
     }
   ]
 }

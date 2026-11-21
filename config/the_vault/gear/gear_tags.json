@@ -1,71 +1,5 @@
 {
   "tags": {
-    "Defensive": {
-      "tags": [
-        "ModArmor",
-        "ModKnockbackResistance",
-        "ModCritHitMitigation",
-        "focusArmor"
-      ],
-      "display": "Defensive",
-      "color": 7973817,
-      "weight": 0,
-      "affixType": ["PREFIX"]
-    },
-    "ResDmg": {
-      "tags": [
-        "focusResistance",
-        "focusDamage"
-      ],
-      "display": "Resistance/Damage",
-      "color": 16760832,
-      "weight": 0,
-      "affixType": ["PREFIX"]
-    },
-    "Mana": {
-      "tags": [
-        "ModMana",
-        "ModManaRegen"
-      ],
-      "display": "Mana",
-      "color": 65535,
-      "weight": 0,
-      "affixType": []
-    },
-    "Looting": {
-      "tags": [
-        "ModItemRarity",
-        "ModItemQuantity"
-      ],
-      "display": "Looting",
-      "color": 15639054,
-      "weight": 0,
-      "affixType": ["SUFFIX"]
-    },
-    "Offensive": {
-      "tags": [
-        "ModOnHitAddition",
-        "ModAttackDamage",
-        "ModFatalStrikeDamage",
-        "ModDamageIncrease",
-        "ModTypedDamageIncrease",
-        "ModFatalStrikeChance",
-        "ModAttackSpeedPercent"
-      ],
-      "display": "Offensive",
-      "color": 12782347,
-      "weight": 0,
-      "affixType": ["PREFIX"]
-    },
-    "OnHit": {
-      "tags": [
-        "ModOnHitAddition"
-      ],
-      "display": "On Hit Type",
-      "color": 16740864,
-      "weight": 0,
-      "affixType": ["PREFIX"]
-    },
     "Resistance": {
       "tags": [
         "focusResistance"
@@ -83,15 +17,6 @@
       "color": 7206307,
       "weight": 10,
       "affixType": ["PREFIX","SUFFIX"]
-    },
-    "Slowness Cloud": {
-      "tags": [
-        "focusSlownessCloud"
-      ],
-      "display": "Slowness Cloud",
-      "color": 7400423,
-      "weight": 0,
-      "affixType": ["SUFFIX"]
     },
     "Chilling Cloud": {
       "tags": [
@@ -126,15 +51,6 @@
       ],
       "display": "Healing Cloud",
       "color": 16150747,
-      "weight": 10,
-      "affixType": ["SUFFIX"]
-    },
-    "Fear Cloud": {
-      "tags": [
-        "focusFearCloud"
-      ],
-      "display": "Fear Cloud",
-      "color": 2818160,
       "weight": 10,
       "affixType": ["SUFFIX"]
     },
@@ -300,15 +216,6 @@
       "weight": 10,
       "affixType": ["SUFFIX"]
     },
-    "Block": {
-      "tags": [
-        "focusBlock"
-      ],
-      "display": "Block Chance",
-      "color": 16109454,
-      "weight": 0,
-      "affixType": ["PREFIX"]
-    },
     "ThornsDamage": {
       "tags": [
         "focusThornsDamage"
@@ -316,51 +223,6 @@
       "display": "Thorns Damage",
       "color": 15507136,
       "weight": 10,
-      "affixType": ["PREFIX"]
-    },
-    "Sweeping": {
-      "tags": [
-        "focusSweeping"
-      ],
-      "display": "Sweeping Chance",
-      "color": 14727777,
-      "weight": 0,
-      "affixType": ["SUFFIX"]
-    },
-    "DamageIllagers": {
-      "tags": [
-        "focusDamageIllager"
-      ],
-      "display": "Illager Damage",
-      "color": 40882,
-      "weight": 0,
-      "affixType": ["PREFIX"]
-    },
-    "DamageSpiders": {
-      "tags": [
-        "focusDamageSpiders"
-      ],
-      "display": "Arthropod Damage",
-      "color": 8281694,
-      "weight": 0,
-      "affixType": ["PREFIX"]
-    },
-    "DamageUndead": {
-      "tags": [
-        "focusDamageUndead"
-      ],
-      "display": "Undead Damage",
-      "color": 16382128,
-      "weight": 0,
-      "affixType": ["PREFIX"]
-    },
-    "DamageNether": {
-      "tags": [
-        "focusDamageNether"
-      ],
-      "display": "Nether Damage",
-      "color": 16757889,
-      "weight": 0,
       "affixType": ["PREFIX"]
     },
     "DamageChampion": {
@@ -453,6 +315,321 @@
       "weight": 5,
       "affixType": ["PREFIX"]
     },
+    "AbilityDamage": {
+      "tags": [
+        "focusAbilityDamage"
+      ],
+      "display": "Ability Power Percentile",
+      "color": 16711883,
+      "weight": 10,
+      "affixType": ["PREFIX"]
+    },
+    "AbilityPower": {
+      "tags": [
+        "focusAP"
+      ],
+      "display": "Ability Power",
+      "color": 16711883,
+      "weight": 10,
+      "affixType": ["SUFFIX"]
+    },
+    "AttackSpeed": {
+      "tags": [
+        "focusAttackSpeedPercent"
+      ],
+      "display": "Attack Speed",
+      "color": 16570215,
+      "weight": 10,
+      "affixType": ["SUFFIX"]
+    },
+    "Avoidance": {
+      "tags": [
+        "focusEffAvoidance"
+      ],
+      "display": "Effect Avoidance",
+      "color": 16570215,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "KnockbackResistance": {
+      "tags": [
+        "focusKnockbackRes"
+      ],
+      "display": "Knockback Resistance",
+      "color": 16570215,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "EffectDuration": {
+      "tags": [
+        "focusDuration"
+      ],
+      "display": "Effect Duration",
+      "color": 11389439,
+      "weight": 10,
+      "affixType": ["SUFFIX"]
+    },
+    "AttackRange": {
+      "tags": [
+        "focusAttackRange"
+      ],
+      "display": "Attack Range",
+      "color": 8706047,
+      "weight": 10,
+      "affixType": ["SUFFIX"]
+    },
+    "DurabilityReduction": {
+      "tags": [
+        "focusDurabilityReduction"
+      ],
+      "display": "Durability Damage Reduction",
+      "color": 6936207,
+      "weight": 10,
+      "affixType": ["PREFIX"]
+    },
+    "AbilityLevelHeal": {
+      "tags": [
+        "focusAbilityLevelHeal"
+      ],
+      "display": "Heal, Group Heal and Cleanse Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelDash": {
+      "tags": [
+        "focusAbilityLevelDash"
+      ],
+      "display": "Dash, Bullet and Warp Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelNova": {
+      "tags": [
+        "focusAbilityLevelNova"
+      ],
+      "display": "Nova, Frost Nova and Poison Nova Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelGhost_Walk": {
+      "tags": [
+        "focusAbilityLevelGhost_Walk"
+      ],
+      "display": "Ghost Walk and Spirit Walk Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelMega_Jump": {
+      "tags": [
+        "focusAbilityLevelMega_Jump"
+      ],
+      "display": "Mega Jump and Mega Dig Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelRampage": {
+      "tags": [
+        "focusAbilityLevelRampage"
+      ],
+      "display": "Rampage, Bloodlust, Berserker and Instinct Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelSmite": {
+      "tags": [
+        "focusAbilityLevelSmite"
+      ],
+      "display": "Smite, Archon and Blast Wave Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelEmpower": {
+      "tags": [
+        "focusAbilityLevelEmpower"
+      ],
+      "display": "Empower, Ice Armor and Entropic Bind Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelVein_Miner": {
+      "tags": [
+        "focusAbilityLevelVein_Miner"
+      ],
+      "display": "Vein Miner, Finesse Miner and Void Miner Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelHunter": {
+      "tags": [
+        "focusAbilityLevelHunter"
+      ],
+      "display": "Hunter and Hunter: Javelin Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelMana_Shield": {
+      "tags": [
+        "focusAbilityLevelMana_Shield"
+      ],
+      "display": "Mana Shield and Mana Barrier Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelRetribution": {
+      "tags": [
+        "focusAbilityLevelRetribution"
+      ],
+      "display": "Shield Bash, Bulwark and Battering Ram Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelImplode": {
+      "tags": [
+        "focusAbilityLevelImplode"
+      ],
+      "display": "Implode and Life Tap Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelTaunt": {
+      "tags": [
+        "focusAbilityLevelTaunt"
+      ],
+      "display": "Taunt, Fear and Decoy Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelStonefall": {
+      "tags": [
+        "focusAbilityLevelStonefall"
+      ],
+      "display": "Stonefall, Hero's Landing and Coldsnap Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelTotem": {
+      "tags": [
+        "focusAbilityLevelTotem"
+      ],
+      "display": "Rejuvenation Totem, Wrath Totem, Spirit Totem and Hatred Totem Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelJavelin": {
+      "tags": [
+        "focusAbilityLevelJavelin"
+      ],
+      "display": "Javelin, Piercing Javelin and Scatter Javelin Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelShell": {
+      "tags": [
+        "focusAbilityLevelShell"
+      ],
+      "display": "Shell, Porcupine and Quill Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelFireball": {
+      "tags": [
+        "focusAbilityLevelFireball"
+      ],
+      "display": "Fireball, Fire Volley and Fireshot Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelStorm_Arrow": {
+      "tags": [
+        "focusAbilityLevelStorm_Arrow"
+      ],
+      "display": "Storm Arrow and Meteor Arrow Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelBattle_Cry": {
+      "tags": [
+        "focusAbilityLevelBattle_Cry"
+      ],
+      "display": "Battle Cry, Spectral Cry and Lucky Cry Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelIce_Bolt": {
+      "tags": [
+        "focusAbilityLevelIce_Bolt"
+      ],
+      "display": "Ice Bolt, Glacial Blast and Shard Blizzard Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelArcane": {
+      "tags": [
+        "focusAbilityLevelArcane"
+      ],
+      "display": "Arcane, Rail and Prism Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelEarthquake": {
+      "tags": [
+        "focusAbilityLevelEarthquake"
+      ],
+      "display": "Earthquake, Singularity and Tremor Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelChain_Lightning": {
+      "tags": [
+        "focusAbilityLevelChain_Lightning"
+      ],
+      "display": "Lightning Strike, Ball Lightning and Charged Bolts Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
+    "AbilityLevelNecromancy": {
+      "tags": [
+        "focusAbilityLevelNecromancy"
+      ],
+      "display": "Necromancy, Necromancy: Archer and Necromancy: Golem Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["SUFFIX"]
+    },
+    "AbilityLevelGrenade": {
+      "tags": [
+        "focusAbilityLevelGrenade"
+      ],
+      "display": "Chaos Cube, Sticky Cube and Toxic Vial Levels",
+      "color": 14076214,
+      "weight": 10,
+      "affixType": ["PREFIX","SUFFIX"]
+    },
     "Channeling Chance": {
       "tags": [
         "focusChannelingChance"
@@ -479,84 +656,6 @@
       "color": 12417954,
       "weight": 5,
       "affixType": ["PREFIX"]
-    },
-     "AbilityDamage": {
-      "tags": [
-        "focusAbilityDamage"
-      ],
-      "display": "Ability Power Percentile",
-      "color": 16711883,
-      "weight": 10,
-      "affixType": ["PREFIX"]
-    },
- "AbilityPower": {
-      "tags": [
-        "focusAP"
-      ],
-      "display": "Ability Power",
-      "color": 16711883,
-      "weight": 10,
-      "affixType": ["SUFFIX"]
-    },
-    "AttackSpeed": {
-      "tags": [
-        "focusAttackSpeedPercent"
-      ],
-      "display": "Attack Speed",
-      "color": 16570215,
-      "weight": 10,
-      "affixType": ["SUFFIX"]
-    },
-     "Avoidance": {
-
-
-      "tags": [
-
-
-        "focusEffAvoidance"
-
-
-      ],
-
-
-      "display": "Effect Avoidance",
-
-
-      "color": 16570215,
-
-
-      "weight": 10,
-
-
-      "affixType": ["SUFFIX"]
-
-
-    },
-
-
-    "KnockbackResistance": {
-
-
-      "tags": [
-
-
-        "focusKnockbackRes"
-
-
-      ],
-
-
-      "display": "Knockback Resistance",
-
-
-      "color": 16570215,
-
-
-      "weight": 10,
-
-
-      "affixType": ["PREFIX"]
-
     }
   }
 }

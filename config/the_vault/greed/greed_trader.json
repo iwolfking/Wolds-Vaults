@@ -1,5 +1,882 @@
 {
-  "globalCoinCost": 5,
+   "etchingPriceBase": 60,
+  "etchingPricePerTier": 40,
+  "dripUnlockTier": 2,
+  "house": {
+    "plainSparkPrice": 100,
+    "offersPerRethink": 3,
+    "families": {
+      "drip": {
+        "weight": 4.0,
+        "leanPerGreedTier": 0.0
+      },
+      "smiths": {
+        "weight": 2.5,
+        "leanPerGreedTier": 0.03
+      },
+      "cards": {
+        "weight": 1.0,
+        "leanPerGreedTier": 0.0
+      },
+      "catalysts": {
+        "weight": 1.5,
+        "leanPerGreedTier": -0.02
+      },
+      "etchings": {
+        "weight": 3.0,
+        "leanPerGreedTier": 0.01
+      }
+    },
+    "deals": {
+      "hisWord": {
+        "weight": 1.0,
+        "priceMin": 500,
+        "priceMax": 2000,
+        "minGreedTier": 0,
+        "leanPerGreedTier": 0.0
+      },
+      "double": {
+        "weight": 2.0,
+        "priceMin": 400,
+        "priceMax": 650,
+        "minGreedTier": 0,
+        "leanPerGreedTier": 0.03
+      },
+      "luckyThree": {
+        "weight": 2.0,
+        "priceMin": 325,
+        "priceMax": 425,
+        "minGreedTier": 0,
+        "leanPerGreedTier": -0.03
+      },
+      "bribe": {
+        "weight": 2.0,
+        "priceMin": 600,
+        "priceMax": 750,
+        "minGreedTier": 0,
+        "leanPerGreedTier": 0.0
+      },
+      "legendaryWard": {
+        "weight": 1.5,
+        "priceMin": 1400,
+        "priceMax": 1900,
+        "minGreedTier": 3,
+        "leanPerGreedTier": 0.03
+      },
+      "greaterWard": {
+        "weight": 1.5,
+        "priceMin": 500,
+        "priceMax": 700,
+        "minGreedTier": 0,
+        "leanPerGreedTier": 0.0
+      },
+      "clean": {
+        "weight": 1.0,
+        "priceMin": 1200,
+        "priceMax": 1600,
+        "minGreedTier": 4,
+        "leanPerGreedTier": 0.0
+      },
+      "restore": {
+        "weight": 1.0,
+        "priceMin": 1500,
+        "priceMax": 2200,
+        "minGreedTier": 3,
+        "leanPerGreedTier": 0.0
+      },
+      "push": {
+        "weight": 1.0,
+        "priceMin": 300,
+        "priceMax": 450,
+        "minGreedTier": 0,
+        "leanPerGreedTier": 0.0
+      },
+      "squeeze": {
+        "weight": 1.5,
+        "priceMin": 60,
+        "priceMax": 250,
+        "minGreedTier": 0,
+        "leanPerGreedTier": 0.0
+      },
+      "makeSuper": {
+        "weight": 1.0,
+        "priceMin": 300,
+        "priceMax": 600,
+        "minGreedTier": 0,
+        "leanPerGreedTier": 0.0
+      },
+      "reroll": {
+        "weight": 2.0,
+        "priceMin": 150,
+        "priceMax": 250,
+        "minGreedTier": 0,
+        "leanPerGreedTier": 0.0
+      },
+      "polish": {
+        "weight": 1.0,
+        "priceMin": 1200,
+        "priceMax": 1600,
+        "minGreedTier": 3,
+        "leanPerGreedTier": 0.03
+      }
+    },
+    "luckyThreeLevels": 3,
+    "bribeCleanAffixChancePerBribe": 0.2,
+    "bribeCleanAffixChanceCap": 0.9,
+    "squeezeSmallestSize": 1,
+    "squeezeChance": 0.35,
+    "makeSuperChance": 0.5,
+    "etchingRerollPriceGrowth": 1.35,
+    "rethinkBasePrice": 201,
+    "rethinkPriceGrowth": 1.6,
+    "hisWordLockoutRethinks": 10
+  },
+  "words": {
+    "plainSpark": "Just a plain **spark**",
+    "plainSparkBlurb": "Cheap and honest, but a fail drops a level",
+    "rethinkTitle": "I could always offer **other things**...",
+    "rethinkBlurb": "...for a bit of coin",
+    "rethinkArmed": "Click again and he rethinks",
+    "neverMind": "Never mind",
+    "confirm": "Confirm",
+    "confirmDone": "Done",
+    "sparkButton": "Spark",
+    "dripLocked": "The Drip opens at greed tier {tier}",
+    "hisWord": "My **Word** on your next drip",
+    "double": "**Double** up, or double down?",
+    "luckyThree": "A **Lucky Three** for fresh gear?",
+    "bribe": "I could **bribe** the blacksmiths",
+    "legendaryWard": "I'll keep the smiths off your **Legendaries**",
+    "greaterWard": "Hands off your **Greater** affixes",
+    "clean": "That seal? I can make it **vanish**",
+    "restore": "Bricked it at the altar? I know a **guy**",
+    "push": "That card could roll **better**",
+    "squeeze": "I could **squeeze** a catalyst",
+    "makeSuper": "Make it **Super**? Maybe.",
+    "reroll": "**Reroll** that etching?",
+    "polish": "**Polish** an etching perhaps hmm?",
+    "blurbHisWord": "Guaranteed to +1, no luck needed",
+    "blurbDouble": "A success is +2, but a failure... is the opposite",
+    "blurbLuckyThree": "Straight to +3, no luck needed",
+    "blurbBribe": "and give you a better chance at a clean seal",
+    "blurbLegendaryWard": "Your next seal won't touch them",
+    "blurbGreaterWard": "Your next seal won't touch them",
+    "blurbClean": "The seal comes off, the slot stays empty",
+    "blurbRestore": "He makes it workable again, no questions asked",
+    "blurbPush": "A new roll for it, never a worse one",
+    "blurbSqueeze": "A chance at a smaller catalyst, down to size 1",
+    "blurbMakeSuper": "A coin flip at Super",
+    "blurbReroll": "A new roll inside its tier, it could drop",
+    "blurbPolish": "A new roll inside its tier, never a worse one",
+    "hisWordDetail": "+{next}, guaranteed",
+    "doubleDetail": "{odds}% to +{up}, a fail drops it to +{down}",
+    "luckyThreeDetail": "+{next}, guaranteed",
+    "bribeDetail": "Next seal: {odds}% clean new affix",
+    "legendaryWardDetail": "Next seal skips Legendary affixes",
+    "greaterWardDetail": "Next seal skips Greater affixes",
+    "cleanDetail": "The seal comes off",
+    "restoreDetail": "Workable again",
+    "pushDetail": "{growth}% now, rolls up to {top}%",
+    "squeezeDetail": "{chance}% to shrink it to size {floor}-{top}",
+    "makeSuperDetail": "{chance}% chance, else nothing",
+    "rerollDetail": "A new roll, it could drop",
+    "polishDetail": "Same roll or better",
+    "sparkDetail": "{odds}% to +{next}",
+    "sparkDetailFall": "{odds}% to +{next}, a fail drops it to +{down}",
+    "whyHisWord": "A sure +1 on any gear, no roll. One flat price, so it shines on your best gear.",
+    "whyDouble": "One spark at the plain odds on any gear: a win is +2, a fail is -2. A flat price, a lottery ticket.",
+    "whyLuckyThree": "Gear that has never been sparked goes straight to +{levels}. A flat price, a little over three plain sparks.",
+    "whyBribe": "Rides on the item into the Artisan's Seal tab: +{step}% on the clean new affix for its next seal (normally {base}%). Bribe again and it stacks, up to {cap}%.",
+    "whyLegendaryWard": "The next seal can't replace a Legendary affix. Once per piece, until it is sealed.",
+    "whyGreaterWard": "The next seal can't replace a Greater affix. Once per piece, until it is sealed.",
+    "whyClean": "The seal comes off. If it replaced an affix, that spot becomes an empty affix slot (no new roll), ready for a Faceted Focus. If it was the bonus added row, that row goes away.",
+    "whyRestore": "A failed imbuement bricks gear. This makes it modifiable again; the downgraded affix stays as it is.",
+    "whyPush": "The greed growth rolls again between what it has and the {top}% top. Never worse.",
+    "whySqueeze": "Size eats crystal capacity, so a smaller catalyst fits more on a crystal. A {chance}% chance it shrinks to a size between {floor} and one under its size. A fail keeps it as it was. Keep going and any catalyst gets to size {floor}.",
+    "whyMakeSuper": "A {chance}% chance it turns Super (personal vaults). One catalyst or inscription at a time. A fail keeps it as it was.",
+    "whyReroll": "A new roll inside the etching's own tier range, it can go down. Found etchings only. Each reroll of the same etching costs {growth}x more.",
+    "whyPolish": "Same roll or better, never worse, and expensive on purpose. Found etchings only. Each reroll of the same etching costs {growth}x more.",
+    "whyPlainSpark": "Always here. {price} coins a spark at today's odds ({odds}% at +0, x{perLevel} per level, {floor}% floor). A fail drops one level. Shift-click sparks ten in a row.",
+    "whyRethink": "Three new deals. The price climbs every time. It resets when you beat your greed tier, or when you take Greedy's Reset at a Greed Rush wager pillar.",
+    "expectGear": "Any vault gear item",
+    "expectFreshGear": "Vault gear that was never sparked",
+    "expectUnsealed": "Unsealed vault gear",
+    "expectSealed": "Sealed vault gear",
+    "expectBricked": "Bricked vault gear",
+    "expectCard": "A Greedy Card",
+    "expectCatalyst": "A catalyst",
+    "expectSuperable": "A catalyst or an inscription",
+    "expectEtching": "A found etching",
+    "notFresh": "Fresh gear only. That one has been sparked.",
+    "cantSpark": "Nej, that one can't take a spark",
+    "alreadyWarded": "Already warded, greedy guts.",
+    "needGear": "Show me some gear, then we talk.",
+    "needSealed": "Nothing sealed on that one.",
+    "oldSeal": "That seal is older than my deals. Can't touch it.",
+    "needBricked": "That one's not bricked.",
+    "alreadySealed": "Sealed already. Clean it first.",
+    "bricked": "Bricked. Get it restored first.",
+    "noLegendary": "No Legendaries on it to guard.",
+    "noGreater": "No Greater affixes on it to guard.",
+    "bribeCapped": "The smiths are bribed enough on that one.",
+    "needCard": "Show me a Greedy Card, then we talk.",
+    "maxGrowth": "That card is already perfect.",
+    "needCatalyst": "Bring me a catalyst for that one.",
+    "tooSmall": "As small as it gets, friend.",
+    "needSuperable": "Catalysts or inscriptions, my friend.",
+    "alreadySuper": "Already Super, greedy guts.",
+    "needEtching": "Show me an etching you found.",
+    "boughtEtching": "Bought at the table? Nej, I only touch found ones.",
+    "dealDone": "Done. Pleasure doing business.",
+    "introHello": "Hallo...",
+    "introAsk": "How greedy would you like to be...",
+    "introName": "**{player}**?",
+    "introContinue": "Click to continue"
+  },
+  "voice": {
+    "greet": [
+      "Hallo! You have coins?!",
+      "Right now I can offer...",
+      "Psst... special deals, just for you.",
+      "Ah, a customer! Look, look...",
+      "Today's specials! Very fair. Mostly.",
+      "Coins out, friend. Look at these.",
+      "Super fair prices of doom!",
+      "Back again? I knew you'd miss me.",
+      "Step closer. Closer. Not that close.",
+      "For you? I make a special price."
+    ],
+    "greetRich": [
+      "Ooh, heavy pockets today...",
+      "I can hear your coins from here.",
+      "A rich one! Sit, sit.",
+      "Ja ja, the good customer is here.",
+      "So many coins... can I hold one?",
+      "My favourite person. Today, at least.",
+      "That purse looks heavy. Let me help.",
+      "Rich and handsome. Buy something."
+    ],
+    "greetBroke": [
+      "No coins? Then why are you here?",
+      "Window shopping? Hmph.",
+      "Come back when you jingle.",
+      "Nej nej, an empty purse is no friend of mine.",
+      "Your pockets echo, friend.",
+      "Looking is free. Barely.",
+      "Go run a vault. I'll wait. Greedily.",
+      "Broke? Oh noes. For you, not me."
+    ],
+    "greetAfterLoss": [
+      "Back for more? I like you.",
+      "The sparks were mean to you, ja?",
+      "Bad luck yesterday. Today is new luck.",
+      "Ouch, I heard about that drip. Sad.",
+      "Still standing! Good. Spend more.",
+      "The sparks owe you one. Maybe.",
+      "I saved you something nice. For coin.",
+      "Lost a bit? Win it back. That's how it works."
+    ],
+    "hover_hisWord": [
+      "My word is gold. Literally.",
+      "A Greedy always keeps his word.",
+      "No luck needed. Just coins.",
+      "Sure thing. Pricey thing, but sure.",
+      "I promise. And I never lie. Often.",
+      "One step up, no drama.",
+      "The safest coin you'll ever spend.",
+      "No spark, no fail. Just me."
+    ],
+    "hover_double": [
+      "Feeling lucky, are we?",
+      "Double or nothing. Mostly nothing.",
+      "Go on. I dare you.",
+      "Two up, or two down. Exciting, ja?",
+      "My favourite game. For me.",
+      "Brave little customer.",
+      "Big win, big fall. I love it.",
+      "Roll it, roll it!"
+    ],
+    "hover_luckyThree": [
+      "Fresh gear? Lucky you.",
+      "Three steps, zero luck.",
+      "Straight to three. Shiny!",
+      "New gear deserves a head start.",
+      "No sparks, no tears. Just three.",
+      "Lucky number three, ja?",
+      "Skip the boring part.",
+      "Untouched gear only. I'm picky."
+    ],
+    "hover_bribe": [
+      "The smiths owe me favours.",
+      "A coin here, a wink there...",
+      "I know a guy at the anvil.",
+      "Blacksmiths love coins. Like me.",
+      "They'll be gentle. I'll make sure.",
+      "A cleaner seal? Easy. For a price.",
+      "Nobody has to know about this.",
+      "Bribes stack, you know. Hint hint."
+    ],
+    "hover_legendaryWard": [
+      "Keep your shiny ones safe.",
+      "Nobody touches the gold. Nobody.",
+      "Legendaries are sacred, ja?",
+      "I'll tell the smiths to keep their hands off.",
+      "Safe as my coin vault.",
+      "Your best affix stays your best affix.",
+      "Shiny things deserve protection.",
+      "One seal, no Legendary lost."
+    ],
+    "hover_greaterWard": [
+      "Greaters are precious, no?",
+      "Wrapped in my best cloth.",
+      "Hands off, smiths. Hands off.",
+      "Keep the good stuff where it is.",
+      "A Greater lost is a Greater cried for.",
+      "I'll guard it like my own coins.",
+      "Safe and sound, for one seal.",
+      "Your Greaters, untouched."
+    ],
+    "hover_clean": [
+      "Regrets? I fix regrets.",
+      "Seal gone, nobody saw a thing.",
+      "Poof. Like it never happened.",
+      "Bad seal? My favourite kind of customer.",
+      "I know a guy who knows a guy.",
+      "Clean slate, clean slot.",
+      "That seal looks unhappy. Let me help.",
+      "Unseal, unsee, unpay. Wait, no, pay."
+    ],
+    "hover_restore": [
+      "Broken things are my business.",
+      "Bad day at the altar? I know a guy.",
+      "Bricked? Oh noes. Fixable.",
+      "I don't ask questions. I ask coins.",
+      "Good as new. Well, good as before.",
+      "The altar was rude to you, ja?",
+      "Back from the dead, for a price.",
+      "Everything is fixable with coin."
+    ],
+    "hover_push": [
+      "That card could do better.",
+      "A little push never hurt. Much.",
+      "Lazy card. Let's wake it up.",
+      "More greed, never less.",
+      "Up only. Like my prices.",
+      "Your deck will thank me.",
+      "That number looks too small.",
+      "A nudge in the greedy direction."
+    ],
+    "hover_squeeze": [
+      "Smaller is better, trust me.",
+      "Squeeze, squeeze...",
+      "Fit more on your crystal, ja?",
+      "Tiny catalysts, big plans.",
+      "I squeeze, you profit.",
+      "Everything shrinks with enough coin.",
+      "Make room, make room!",
+      "Less size, more stuff."
+    ],
+    "hover_makeSuper": [
+      "Super, or nothing!",
+      "A tiny chance at greatness.",
+      "Feeling super today?",
+      "Normal is boring. Super is shiny.",
+      "Roll for greatness!",
+      "Maybe super, maybe sad.",
+      "I like your odds. A little.",
+      "One spark of magic, ja?"
+    ],
+    "hover_reroll": [
+      "Roll the bones!",
+      "Could go up. Could go down. Fun!",
+      "New roll, new you.",
+      "Gambling on etchings? My kind of friend.",
+      "Shake it up!",
+      "Not happy with it? Roll again.",
+      "Luck is cheap here. Cheap-ish.",
+      "Up, down, who knows. I know. Kidding."
+    ],
+    "hover_polish": [
+      "Shiny, never worse. Pricey though.",
+      "Only up. Like my prices.",
+      "Polish, polish, shine.",
+      "No risk, all coin.",
+      "Safe gambling. The best kind.",
+      "It can only get better. Promise.",
+      "For the careful ones. With deep pockets.",
+      "Never worse. Always pricey."
+    ],
+    "hover_plainSpark": [
+      "The cheap stuff. Fine.",
+      "Boring, but honest. Mostly.",
+      "Classic spark. Good luck.",
+      "One coin pile, one prayer.",
+      "The old way. It works. Sometimes.",
+      "Spark it and see.",
+      "Cheap thrills, real falls.",
+      "Everybody starts here."
+    ],
+    "hover_rethink": [
+      "Not good enough for you?",
+      "I always have more. For coin.",
+      "Picky, picky.",
+      "Fine, I'll dig in the back.",
+      "Something else? It'll cost you.",
+      "My secret stash, for a fee.",
+      "New deals, new prices. Same me.",
+      "I have more. I always have more."
+    ],
+    "askFreshGear": [
+      "Something fresh. Never sparked.",
+      "Fresh gear only, friend.",
+      "Show me a clean piece.",
+      "No drip on it, ja?",
+      "Bring me something untouched.",
+      "Fresh meat. I mean, gear.",
+      "A brand new piece, please.",
+      "Zero sparks. I'll check."
+    ],
+    "askGear": [
+      "Fine, put the gear in here.",
+      "Show me the goods.",
+      "Let's see what you've got.",
+      "Gear on the counter, please.",
+      "Hand it over, gently.",
+      "Which piece? Show me.",
+      "Put it down, I won't steal it. Today.",
+      "Let me see that drip."
+    ],
+    "askUnsealed": [
+      "Which piece goes to the blacksmiths?",
+      "Hand it over, I'll talk to the smiths.",
+      "Unsealed gear, in here.",
+      "Show me the piece you want to seal.",
+      "The smiths need to see it first.",
+      "Put it down, I'll do the talking.",
+      "Something not sealed yet, ja?",
+      "Gear first, bribes after."
+    ],
+    "askSealed": [
+      "Show me the sealed piece then.",
+      "Which seal is the regret?",
+      "The sealed one, in here.",
+      "Let me see that ugly seal.",
+      "Hand over the regret.",
+      "Put the sealed gear down.",
+      "Show me what went wrong.",
+      "Sealed gear, on the counter."
+    ],
+    "askBricked": [
+      "Let me see the poor thing.",
+      "Bring me the broken one.",
+      "Bricked gear, in here.",
+      "Show me the altar's victim.",
+      "Put the sad piece down.",
+      "Let me look at the damage.",
+      "Where's the broken thing?",
+      "Hand it over, I'll be gentle."
+    ],
+    "askCard": [
+      "Fine, place a Greedy Card in here.",
+      "Which card is being lazy?",
+      "Greedy Card, on the counter.",
+      "Show me that card.",
+      "A greed card, please. Not a joke card.",
+      "Let me see its numbers.",
+      "Put the card down, I'll push it.",
+      "Which one needs a push?"
+    ],
+    "askCatalyst": [
+      "Fine, put a catalyst in here.",
+      "One catalyst. Just one.",
+      "Show me a chunky one.",
+      "A catalyst on the counter, please.",
+      "Let me squeeze that one.",
+      "One at a time, ja?",
+      "Put it down, gently.",
+      "Which catalyst is too fat?"
+    ],
+    "askSuperable": [
+      "A catalyst or an inscription, in here.",
+      "Show me something to make Super.",
+      "One to upgrade, please.",
+      "Put a normal one down.",
+      "Let me see that inscription.",
+      "Catalysts work too, you know.",
+      "One at a time, one roll.",
+      "In here, in here."
+    ],
+    "askEtching": [
+      "Fine, place an etching in here.",
+      "Which etching? A found one.",
+      "A found etching, please.",
+      "Show me the etching you dug up.",
+      "Put it down, let me look.",
+      "Not one from the table, ja?",
+      "Loose etchings only, friend.",
+      "Let me see that roll."
+    ],
+    "placedHigh": [
+      "Ooh... careful now, that one's precious.",
+      "Now THAT is drip.",
+      "Look at it shine. Wow.",
+      "That's a lot of drip. A lot of coin too.",
+      "Precious, precious.",
+      "I'm sweating just looking at it.",
+      "Handle with care. Very expensive care.",
+      "Big drip, big deals."
+    ],
+    "placedLow": [
+      "Fresh meat. I mean, gear.",
+      "No drip at all? Sad.",
+      "A blank page. Let's paint it gold.",
+      "Plain little thing. For now.",
+      "Every legend starts at zero.",
+      "Not shiny yet. Give it time.",
+      "Ooh, a clean one.",
+      "Zero drip. All potential."
+    ],
+    "placedGear": [
+      "Ooh, let me see...",
+      "Nice piece. Nice.",
+      "Ja, this I can work with.",
+      "Good choice, good choice.",
+      "Hmm, I like it.",
+      "Not bad. Not bad at all.",
+      "This will do nicely.",
+      "Ah, a classic."
+    ],
+    "placedEtching": [
+      "Ahh, a found one. Lovely.",
+      "Ooh, shiny little thing.",
+      "Fresh from the vault, ja?",
+      "Let me see that roll...",
+      "A fine find.",
+      "This one has potential.",
+      "Dug it up yourself? Good.",
+      "Pretty. Could be prettier."
+    ],
+    "placedOther": [
+      "Ja ja, this works.",
+      "Perfect, perfect.",
+      "Good, good.",
+      "That's the one.",
+      "Yes, this is what I wanted.",
+      "Right on the counter.",
+      "Just what I asked for.",
+      "Lovely."
+    ],
+    "sparkWin": [
+      "Someone is lucky...",
+      "Up it goes!",
+      "Ooh, look at it glow.",
+      "Grats, grats!",
+      "The spark likes you today.",
+      "Higher and higher!",
+      "Again? Again!",
+      "Shiny! Lucky! Pay more!"
+    ],
+    "sparkTier": [
+      "Omega luck... Grats",
+      "Look at that drip!",
+      "Now you're dripping, friend.",
+      "A new look! Fancy!",
+      "Wow. Just wow.",
+      "That's a whole new shine.",
+      "I'm jealous. Very jealous.",
+      "Grats of doom!"
+    ],
+    "sparkFail": [
+      "Oh noes... well, again?",
+      "Ouch. The spark said no.",
+      "Happens. Again?",
+      "Down it goes. Sad.",
+      "The spark is grumpy today.",
+      "Oops. Try again?",
+      "Not this time, friend.",
+      "That's gambling, ja?"
+    ],
+    "sparkFailStreak": [
+      "The sparks hate you today.",
+      "Okay, that's just sad.",
+      "Maybe a deal, hm?",
+      "Ouch, ouch, ouch.",
+      "I almost feel bad. Almost.",
+      "Have you tried my Word instead?",
+      "Unlucky streak. My Word never fails, you know.",
+      "The sparks need a break. You don't."
+    ],
+    "wordKept": [
+      "A Greedy always keeps his word.",
+      "As promised. Grats.",
+      "Told you. No luck needed.",
+      "Sure as gold.",
+      "My word, delivered.",
+      "Up one, as agreed.",
+      "Pleasure doing honest business. For once.",
+      "There. Easy money. For me."
+    ],
+    "doubleWin": [
+      "Double! Someone is lucky...",
+      "Two up! I'm sweating.",
+      "You won?! Ugh. Grats.",
+      "Double the drip!",
+      "Lucky, lucky, lucky.",
+      "Okay, that was impressive.",
+      "Two steps up. Show-off.",
+      "The house... lost? Again?"
+    ],
+    "luckyThree": [
+      "Three! As promised.",
+      "Fresh to +3. Easy.",
+      "Lucky three, delivered.",
+      "Look at it go!",
+      "Head start, done.",
+      "Three steps, no sweat. For you.",
+      "That's a good start, friend.",
+      "Shiny already. Grats."
+    ],
+    "sparkHigh": [
+      "Woah... that is a LOT of drip.",
+      "My coins... my beautiful coins.",
+      "Okay, now I'm scared of you.",
+      "That's... very high. Grats of doom!",
+      "Nobody gets that high. Nobody!",
+      "I need to sit down.",
+      "The whole vault can see that glow.",
+      "You're making me poor!"
+    ],
+    "etchingJackpot": [
+      "Woah... that is lucky!",
+      "Hey! That roll was mine!",
+      "Okay, that one hurt my wallet.",
+      "Lucky, lucky, LUCKY.",
+      "The bones love you today.",
+      "That's almost perfect. Ugh.",
+      "Who taught you to roll like that?",
+      "Grats... I guess."
+    ],
+    "doubleFail": [
+      "Nothing... ouch. Again?",
+      "Two down. I did say nothing.",
+      "Oh noes. Double noes.",
+      "The house wins. As usual.",
+      "That's the 'nothing' part.",
+      "Big fall. Big sad.",
+      "I warned you. Kind of.",
+      "Double or nothing. You got nothing."
+    ],
+    "blessed": [
+      "The smiths owe me one.",
+      "Done. They'll be gentle.",
+      "A word with the blacksmiths, done.",
+      "They took the coins. Good sign.",
+      "Your seal will be kinder now.",
+      "Bribed and ready.",
+      "The anvil will behave.",
+      "Our little secret."
+    ],
+    "cleaned": [
+      "Clean as new. Our secret.",
+      "Seal gone. Poof.",
+      "Nobody saw a thing.",
+      "Fresh start, friend.",
+      "Clean slot, clean conscience.",
+      "Like it never happened.",
+      "The smiths never knew.",
+      "All gone. Pay me, forget me."
+    ],
+    "restored": [
+      "Good as new. Our secret.",
+      "Fixed. Don't tell the altar.",
+      "Workable again!",
+      "Back to life, ja?",
+      "The guy came through.",
+      "No more brick. Just gear.",
+      "Restored. You owe me. You paid me. Even.",
+      "Like new. Almost."
+    ],
+    "pushed": [
+      "Pushed! Grats.",
+      "Better card, happy deck.",
+      "Up it went.",
+      "More greed, as promised.",
+      "That card works harder now.",
+      "Nice little bump.",
+      "Never worse, like I said.",
+      "Greedier and greedier."
+    ],
+    "squeezed": [
+      "Squeezed. Tight fit, eh?",
+      "Smaller! Better!",
+      "There, more room for you.",
+      "Squish.",
+      "Compact and pretty.",
+      "Your crystal will love this.",
+      "Tiny but mighty.",
+      "All squeezed, all done."
+    ],
+    "squeezedTiny": [
+      "Size one! Tiny and perfect.",
+      "Can't get smaller than that.",
+      "Smallest catalyst in the world.",
+      "One! Your crystal is in love.",
+      "That's as tiny as it gets.",
+      "Perfectly squished.",
+      "All the way down. Grats!",
+      "Tiny. Mighty. Expensive."
+    ],
+    "squeezeFail": [
+      "It didn't budge. Again?",
+      "Too stubborn today.",
+      "Hmm. Squeeze harder next time.",
+      "Nope, same size.",
+      "The catalyst said no.",
+      "Thick little thing, ja?",
+      "Coins gone, size stays. Sad.",
+      "One more try?"
+    ],
+    "superWin": [
+      "Super! Grats.",
+      "SUPER! I'm good at this.",
+      "Look at that shine!",
+      "Super-duper!",
+      "Lucky, lucky!",
+      "Great success!",
+      "I'm a genius. And you're lucky.",
+      "Super, as promised. Kind of."
+    ],
+    "superFail": [
+      "Oh noes... still normal.",
+      "Not today. Normal stays normal.",
+      "No super. Sad face.",
+      "The magic said no.",
+      "Normal is fine too. Right?",
+      "Better luck next time.",
+      "Coins gone, catalysts boring.",
+      "Almost super. Not quite."
+    ],
+    "rerollUp": [
+      "Up it went!",
+      "Better! The table will remember, once it's on gear.",
+      "Ooh, a better roll.",
+      "Lucky reroll!",
+      "Higher! Nice.",
+      "That's an upgrade.",
+      "Shinier numbers!",
+      "The bones were kind."
+    ],
+    "rerollDown": [
+      "Down... gambling, ja?",
+      "Oops. Again?",
+      "That's the risk, friend.",
+      "Worse. Oh noes.",
+      "The bones were mean.",
+      "Down a bit. Roll again?",
+      "Not every roll is a winner.",
+      "Hmm. Polish next time?"
+    ],
+    "polished": [
+      "Shiny. Never worse.",
+      "Polished. Pricey, but shiny.",
+      "Better or the same. As promised.",
+      "Polish complete.",
+      "Safe and shiny.",
+      "A careful upgrade.",
+      "Ooh, it sparkles.",
+      "Worth every coin. Mostly."
+    ],
+    "refused": [
+      "Nej, not that one.",
+      "That's not what I asked for.",
+      "Nope. Try again.",
+      "Wrong thing, friend.",
+      "Nej nej nej.",
+      "I can't use that.",
+      "Not for this deal.",
+      "Show me the right thing."
+    ],
+    "broke": [
+      "Haha, out of coin!",
+      "Your purse is crying.",
+      "Erhm, coins first.",
+      "No coin, no deal.",
+      "That's not enough, friend.",
+      "Run a vault, come back rich.",
+      "I don't do credit.",
+      "Your pockets say no."
+    ],
+    "locked": [
+      "Not yet. Climb higher first.",
+      "Too early, friend. Tier up.",
+      "That's for greedier players.",
+      "Come back at a higher greed tier.",
+      "Nej, you're not ready.",
+      "Patience, little one.",
+      "Earn it first.",
+      "Higher tier, then we talk."
+    ],
+    "rethought": [
+      "Hmm... how about these then?",
+      "Fine, fine. New stuff.",
+      "Okay, okay, look at these.",
+      "From the back room, just for you.",
+      "Better? I think better.",
+      "New deals, fresh from my pocket.",
+      "Picky customer gets new deals.",
+      "These are my secret ones."
+    ],
+    "soldOut": [
+      "Sold out, friend. More for a bit of coin?",
+      "That's all my good stuff.",
+      "Empty shelves. Rethink?",
+      "You bought everything! Greedy.",
+      "Nothing left. Pay me to look again.",
+      "Cleaned me out.",
+      "All gone. A bit of coin brings more.",
+      "I need to restock. For a fee."
+    ],
+    "backNoBuy": [
+      "Changed your mind? Pfft.",
+      "Fine. Look around.",
+      "Indecisive, ja?",
+      "Something else then?",
+      "No deal? No problem. For now.",
+      "Take your time. Not too much.",
+      "Window shopping again.",
+      "Okay, okay. Pick another."
+    ],
+    "idle": [
+      "Hello? Coins?",
+      "I don't have all day. I do, actually.",
+      "Tick tock, coins rot.",
+      "Hmm hm hmm...",
+      "Thinking is free. For now.",
+      "You're staring. Buy something.",
+      "Still there? Good.",
+      "Counting your coins? I'm counting mine."
+    ],
+    "reset": [
+      "Fine, fine. Fresh prices.",
+      "Rethinks are cheap again. Don't tell anyone.",
+      "My prices reset. Lucky you.",
+      "You took my reset pillar? Clever.",
+      "Back to the start, ja?",
+      "Fresh prices, same old me.",
+      "Reset done. Now spend.",
+      "The pillar was kind to you."
+    ],
+    "tierUp": [
+      "Tier up! Richer, I hope?",
+      "A new greed tier! Grats.",
+      "Higher tier, cheaper rethinks.",
+      "Look who's climbing!",
+      "Greedier and greedier. I'm proud.",
+      "New tier, fresh prices.",
+      "Grats! Now spend those coins.",
+      "You beat your tier! I reset my prices."
+    ]
+  },
   "tierPools": {
     "1": [
       {
@@ -1741,1604 +2618,5 @@
         "weight": 50
       }
     ]
-  },
-  "quests": [
-    {
-      "id": "the_vault:mega_wooden",
-      "displayName": "Mega Wooden",
-      "description": "Loot %target wooden chests.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 5,
-      "repRewardMax": 12,
-      "weight": 10,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:wooden",
-        "counter": {
-          "variables": {},
-          "target": {
-            "min": 940,
-            "max": 1840,
-            "type": "uniform"
-          },
-          "predicate": "GREATER_OR_EQUAL_TO",
-          "type": "target"
-        },
-        "type": "loot_chest"
-      },
-      "icon": "the_vault:textures/gui/bingo/wooden.png"
-    },
-    {
-      "id": "the_vault:ornate_collector",
-      "displayName": "Ornate Collector",
-      "description": "Loot %target ornate chests.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 5,
-      "repRewardMax": 12,
-      "weight": 10,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:ornate",
-        "counter": {
-          "variables": {},
-          "target": {
-            "min": 235,
-            "max": 460,
-            "type": "uniform"
-          },
-          "predicate": "GREATER_OR_EQUAL_TO",
-          "type": "target"
-        },
-        "type": "loot_chest"
-      },
-      "icon": "the_vault:textures/gui/bingo/ornate_chests.png"
-    },
-    {
-      "id": "the_vault:gilded_plunderer",
-      "displayName": "Gilded Plunderer",
-      "description": "Loot %target gilded chests.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 5,
-      "repRewardMax": 12,
-      "weight": 10,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:gilded",
-        "counter": {
-          "variables": {},
-          "target": {
-            "min": 235,
-            "max": 460,
-            "type": "uniform"
-          },
-          "predicate": "GREATER_OR_EQUAL_TO",
-          "type": "target"
-        },
-        "type": "loot_chest"
-      },
-      "icon": "the_vault:textures/gui/bingo/gilded_chests.png"
-    },
-    {
-      "id": "the_vault:living_harvester",
-      "displayName": "Living Harvester",
-      "description": "Loot %target living chests.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 5,
-      "repRewardMax": 12,
-      "weight": 10,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:living",
-        "counter": {
-          "variables": {},
-          "target": {
-            "min": 235,
-            "max": 460,
-            "type": "uniform"
-          },
-          "predicate": "GREATER_OR_EQUAL_TO",
-          "type": "target"
-        },
-        "type": "loot_chest"
-      },
-      "icon": "the_vault:textures/gui/bingo/living_chests.png"
-    },
-    {
-      "id": "the_vault:horde_slaughter",
-      "displayName": "Horde Slaughter",
-      "description": "Kill %target horde mobs.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 5,
-      "repRewardMax": 12,
-      "weight": 10,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:mob_type/horde",
-        "counter": {
-          "variables": {},
-          "target": {
-            "min": 940,
-            "max": 1840,
-            "type": "uniform"
-          },
-          "predicate": "GREATER_OR_EQUAL_TO",
-          "type": "target"
-        },
-        "type": "kill_entity"
-      },
-      "icon": "the_vault:textures/gui/bingo/killhorde.png"
-    },
-    {
-      "id": "the_vault:assassin_purge",
-      "displayName": "Assassin Purge",
-      "description": "Kill %target assassin mobs.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 5,
-      "repRewardMax": 12,
-      "weight": 10,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:mob_type/assassin",
-        "counter": {
-          "variables": {},
-          "target": {
-            "min": 376,
-            "max": 736,
-            "type": "uniform"
-          },
-          "predicate": "GREATER_OR_EQUAL_TO",
-          "type": "target"
-        },
-        "type": "kill_entity"
-      },
-      "icon": "the_vault:textures/gui/bingo/killassassin.png"
-    },
-    {
-      "id": "the_vault:tank_breaker",
-      "displayName": "Tank Breaker",
-      "description": "Kill %target tank mobs.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 5,
-      "repRewardMax": 12,
-      "weight": 10,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:mob_type/tank",
-        "counter": {
-          "variables": {},
-          "target": {
-            "min": 94,
-            "max": 184,
-            "type": "uniform"
-          },
-          "predicate": "GREATER_OR_EQUAL_TO",
-          "type": "target"
-        },
-        "type": "kill_entity"
-      },
-      "icon": "the_vault:textures/gui/bingo/killtank.png"
-    },
-    {
-      "id": "the_vault:treasure_hunter",
-      "displayName": "Treasure Hunter",
-      "description": "Open %target treasure rooms.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 10,
-      "repRewardMax": 20,
-      "weight": 10,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "pre": "the_vault:treasure_door[open=false]",
-        "post": "the_vault:treasure_door[open=true]",
-        "counter": {
-          "variables": {},
-          "target": {
-            "min": 5,
-            "max": 10,
-            "type": "uniform"
-          },
-          "predicate": "GREATER_OR_EQUAL_TO",
-          "type": "target"
-        },
-        "type": "interact_block"
-      },
-      "icon": "the_vault:textures/gui/bingo/treasure_doors.png"
-    },
-    {
-      "id": "the_vault:ore_excavator",
-      "displayName": "Ore Excavator",
-      "description": "Mine %target vault ores.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 5,
-      "repRewardMax": 12,
-      "weight": 10,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:ores[generated=true]",
-        "counter": {
-          "variables": {},
-          "target": {
-            "min": 2000,
-            "max": 3000,
-            "type": "uniform"
-          },
-          "predicate": "GREATER_OR_EQUAL_TO",
-          "type": "target"
-        },
-        "type": "mine_block"
-      },
-      "icon": "the_vault:textures/gui/bingo/minevaultore.png"
-    },
-    {
-      "id": "the_vault:champion_slayer",
-      "displayName": "Champion Slayer",
-      "description": "Defeat %target champions.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 7200,
-      "repRewardMin": 8,
-      "repRewardMax": 18,
-      "weight": 10,
-      "scalar": 1.2,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:mob_type/champion",
-        "counter": {
-          "variables": {},
-          "target": {
-            "min": 5,
-            "max": 8,
-            "type": "uniform"
-          },
-          "predicate": "GREATER_OR_EQUAL_TO",
-          "type": "target"
-        },
-        "type": "kill_entity"
-      },
-      "icon": "the_vault:textures/gui/bingo/killchampion.png"
-    },
-    {
-      "id": "the_vault:dungeon_conqueror",
-      "displayName": "Dungeon Conqueror",
-      "description": "Defeat %target dungeon bosses.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 14400,
-      "repRewardMin": 10,
-      "repRewardMax": 20,
-      "weight": 10,
-      "scalar": 1.2,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:mob_type/dungeon_boss",
-        "counter": {
-          "variables": {},
-          "target": {
-            "min": 8,
-            "max": 15,
-            "type": "constant"
-          },
-          "predicate": "GREATER_OR_EQUAL_TO",
-          "type": "target"
-        },
-        "type": "kill_entity"
-      },
-      "icon": "the_vault:textures/gui/bingo/killdungeonboss.png"
-    },
-    {
-      "id": "the_vault:coin_collector",
-      "displayName": "Coin Collector",
-      "description": "Loot %target coin piles.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 5,
-      "repRewardMax": 12,
-      "weight": 10,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "the_vault:coin_pile[size=1]",
-        "counter": {
-          "variables": {},
-          "target": {
-            "min": 940,
-            "max": 1840,
-            "type": "uniform"
-          },
-          "predicate": "GREATER_OR_EQUAL_TO",
-          "type": "target"
-        },
-        "type": "mine_block"
-      },
-      "icon": "the_vault:textures/gui/bingo/lootcoins.png"
-    },
-    {
-      "id": "the_vault:flawless_coin_collector",
-      "displayName": "Flawless Coin Collector",
-      "description": "Loot %target coin piles without taking damage.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "take_no_damage",
-        "children": [
-          {
-            "type": "mine_block",
-            "filter": "the_vault:coin_pile[size=1]",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 188,
-                "max": 368,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamagecoins.png"
-    },
-    {
-      "id": "the_vault:rapid_coin_collector",
-      "displayName": "Rapid Coin Collector",
-      "description": "Loot %target coin piles within 5 minutes.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "the_vault:coin_pile[size=1]",
-        "counter": {
-          "type": "sliding_timed_target",
-          "target": {
-            "type": "uniform",
-            "min": 282,
-            "max": 552
-          },
-          "window": 6000,
-          "variables": {}
-        },
-        "type": "mine_block"
-      },
-      "icon": "the_vault:textures/gui/bingo/rapidcoins.png"
-    },
-    {
-      "id": "the_vault:primitive_coin_collector",
-      "displayName": "Primitive Coin Collector",
-      "description": "Loot %target coin piles without using abilities.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "mine_block",
-            "filter": "the_vault:coin_pile[size=1]",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 282,
-                "max": 552,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/peacefulcoins.png"
-    },
-    {
-      "id": "the_vault:mega_multikill",
-      "displayName": "Mega Multikill",
-      "description": "Kill %target mobs almost simultaneously.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 14400,
-      "repRewardMin": 25,
-      "repRewardMax": 35,
-      "weight": 2,
-      "scalar": 1.2,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:mobs",
-        "counter": {
-          "type": "sliding_timed_target",
-          "target": {
-            "type": "uniform",
-            "min": 150,
-            "max": 200
-          },
-          "window": {
-            "type": "constant",
-            "count": 5
-          },
-          "variables": {}
-        },
-        "type": "kill_entity"
-      },
-      "icon": "the_vault:textures/gui/bingo/killmobs.png"
-    },
-    {
-      "id": "the_vault:flawless_wooden",
-      "displayName": "Flawless Wooden",
-      "description": "Loot %target wooden chests without taking damage.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "take_no_damage",
-        "children": [
-          {
-            "type": "loot_chest",
-            "filter": "@the_vault:wooden",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 188,
-                "max": 368,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamagewooden.png"
-    },
-    {
-      "id": "the_vault:ascended_horde_slaughter",
-      "displayName": "Ascended Horde Slaughter",
-      "description": "Kill %target horde mobs without taking damage or using abilities.",
-      "minTier": 5,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 20,
-      "repRewardMax": 30,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "take_no_damage",
-            "children": [
-              {
-                "type": "kill_entity",
-                "filter": "@the_vault:mob_type/horde",
-                "counter": {
-                  "variables": {},
-                  "target": {
-                    "min": 300,
-                    "max": 400,
-                    "type": "uniform"
-                  },
-                  "predicate": "GREATER_OR_EQUAL_TO",
-                  "type": "target"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamagehorde.png"
-    },
-    {
-      "id": "the_vault:ascended_assassin_purge",
-      "displayName": "Ascended Assassin Purge",
-      "description": "Kill %target assassin mobs without taking damage or using abilities.",
-      "minTier": 5,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 20,
-      "repRewardMax": 30,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "take_no_damage",
-            "children": [
-              {
-                "type": "kill_entity",
-                "filter": "@the_vault:mob_type/assassin",
-                "counter": {
-                  "variables": {},
-                  "target": {
-                    "min": 80,
-                    "max": 160,
-                    "type": "uniform"
-                  },
-                  "predicate": "GREATER_OR_EQUAL_TO",
-                  "type": "target"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamageassassin.png"
-    },
-    {
-      "id": "the_vault:ascended_tank_breaker",
-      "displayName": "Ascended Tank Breaker",
-      "description": "Kill %target tank mobs without taking damage or using abilities.",
-      "minTier": 5,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 20,
-      "repRewardMax": 30,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "take_no_damage",
-            "children": [
-              {
-                "type": "kill_entity",
-                "filter": "@the_vault:mob_type/tank",
-                "counter": {
-                  "variables": {},
-                  "target": {
-                    "min": 20,
-                    "max": 40,
-                    "type": "uniform"
-                  },
-                  "predicate": "GREATER_OR_EQUAL_TO",
-                  "type": "target"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamagetanks.png"
-    },
-    {
-      "id": "the_vault:flawless_ornate",
-      "displayName": "Flawless Ornate",
-      "description": "Loot %target ornate chests without taking damage.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "take_no_damage",
-        "children": [
-          {
-            "type": "loot_chest",
-            "filter": "@the_vault:ornate",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 47,
-                "max": 92,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamageornate.png"
-    },
-    {
-      "id": "the_vault:flawless_gilded",
-      "displayName": "Flawless Gilded",
-      "description": "Loot %target gilded chests without taking damage.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "take_no_damage",
-        "children": [
-          {
-            "type": "loot_chest",
-            "filter": "@the_vault:gilded",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 47,
-                "max": 92,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamagegilded.png"
-    },
-    {
-      "id": "the_vault:flawless_living",
-      "displayName": "Flawless Living",
-      "description": "Loot %target living chests without taking damage.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "take_no_damage",
-        "children": [
-          {
-            "type": "loot_chest",
-            "filter": "@the_vault:living",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 47,
-                "max": 92,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamageliving.png"
-    },
-    {
-      "id": "the_vault:flawless_horde_slaughter",
-      "displayName": "Flawless Horde Slaughter",
-      "description": "Kill %target horde mobs without taking damage.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "take_no_damage",
-        "children": [
-          {
-            "type": "kill_entity",
-            "filter": "@the_vault:mob_type/horde",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 188,
-                "max": 368,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamagehorde.png"
-    },
-    {
-      "id": "the_vault:flawless_assassin_purge",
-      "displayName": "Flawless Assassin Purge",
-      "description": "Kill %target assassin mobs without taking damage.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "take_no_damage",
-        "children": [
-          {
-            "type": "kill_entity",
-            "filter": "@the_vault:mob_type/assassin",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 75,
-                "max": 147,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamageassassin.png"
-    },
-    {
-      "id": "the_vault:flawless_tank_breaker",
-      "displayName": "Flawless Tank Breaker",
-      "description": "Kill %target tank mobs without taking damage.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "take_no_damage",
-        "children": [
-          {
-            "type": "kill_entity",
-            "filter": "@the_vault:mob_type/tank",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 19,
-                "max": 37,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamagetanks.png"
-    },
-    {
-      "id": "the_vault:flawless_excavation",
-      "displayName": "Flawless Excavation",
-      "description": "Mine %target vault ores without taking damage.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "take_no_damage",
-        "children": [
-          {
-            "type": "mine_block",
-            "filter": "@the_vault:ores[generated=true]",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 400,
-                "max": 600,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamageores.png"
-    },
-    {
-      "id": "the_vault:flawless_champion_slayer",
-      "displayName": "Flawless Champion Slayer",
-      "description": "Defeat %target champions without taking damage.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 7200,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.2,
-      "task": {
-        "type": "take_no_damage",
-        "children": [
-          {
-            "type": "kill_entity",
-            "filter": "@the_vault:mob_type/champion",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 1,
-                "max": 2,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nodamagechampion.png"
-    },
-    {
-      "id": "the_vault:rapid_wooden",
-      "displayName": "Rapid Wooden",
-      "description": "Loot %target wooden chests within 5 minutes.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:wooden",
-        "counter": {
-          "type": "sliding_timed_target",
-          "target": {
-            "type": "uniform",
-            "min": 282,
-            "max": 552
-          },
-          "window": 6000,
-          "variables": {}
-        },
-        "type": "loot_chest"
-      },
-      "icon": "the_vault:textures/gui/bingo/rapidwooden.png"
-    },
-    {
-      "id": "the_vault:rapid_ornate",
-      "displayName": "Rapid Ornate",
-      "description": "Loot %target ornate chests within 5 minutes.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:ornate",
-        "counter": {
-          "type": "sliding_timed_target",
-          "target": {
-            "type": "uniform",
-            "min": 71,
-            "max": 138
-          },
-          "window": 6000,
-          "variables": {}
-        },
-        "type": "loot_chest"
-      },
-      "icon": "the_vault:textures/gui/bingo/rapidornate.png"
-    },
-    {
-      "id": "the_vault:rapid_gilded",
-      "displayName": "Rapid Gilded",
-      "description": "Loot %target gilded chests within 5 minutes.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:gilded",
-        "counter": {
-          "type": "sliding_timed_target",
-          "target": {
-            "type": "uniform",
-            "min": 71,
-            "max": 138
-          },
-          "window": 6000,
-          "variables": {}
-        },
-        "type": "loot_chest"
-      },
-      "icon": "the_vault:textures/gui/bingo/rapidgilded.png"
-    },
-    {
-      "id": "the_vault:rapid_living",
-      "displayName": "Rapid Living",
-      "description": "Loot %target living chests within 5 minutes.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:living",
-        "counter": {
-          "type": "sliding_timed_target",
-          "target": {
-            "type": "uniform",
-            "min": 71,
-            "max": 138
-          },
-          "window": 6000,
-          "variables": {}
-        },
-        "type": "loot_chest"
-      },
-      "icon": "the_vault:textures/gui/bingo/rapidliving.png"
-    },
-    {
-      "id": "the_vault:rapid_horde_slaughter",
-      "displayName": "Rapid Horde Slaughter",
-      "description": "Kill %target horde mobs within 5 minutes.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:mob_type/horde",
-        "counter": {
-          "type": "sliding_timed_target",
-          "target": {
-            "type": "uniform",
-            "min": 600,
-            "max": 1000
-          },
-          "window": 6000,
-          "variables": {}
-        },
-        "type": "kill_entity"
-      },
-      "icon": "the_vault:textures/gui/bingo/rapidhorde.png"
-    },
-    {
-      "id": "the_vault:rapid_assassin_purge",
-      "displayName": "Rapid Assassin Purge",
-      "description": "Kill %target assassin mobs within 5 minutes.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:mob_type/assassin",
-        "counter": {
-          "type": "sliding_timed_target",
-          "target": {
-            "type": "uniform",
-            "min": 113,
-            "max": 221
-          },
-          "window": 6000,
-          "variables": {}
-        },
-        "type": "kill_entity"
-      },
-      "icon": "the_vault:textures/gui/bingo/rapidassassin.png"
-    },
-    {
-      "id": "the_vault:rapid_tank_breaker",
-      "displayName": "Rapid Tank Breaker",
-      "description": "Kill %target tank mobs within 5 minutes.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:mob_type/tank",
-        "counter": {
-          "type": "sliding_timed_target",
-          "target": {
-            "type": "uniform",
-            "min": 28,
-            "max": 55
-          },
-          "window": 6000,
-          "variables": {}
-        },
-        "type": "kill_entity"
-      },
-      "icon": "the_vault:textures/gui/bingo/rapidtank.png"
-    },
-    {
-      "id": "the_vault:rapid_excavation",
-      "displayName": "Rapid Excavation",
-      "description": "Mine %target vault ores within 5 minutes.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:ores[generated=true]",
-        "counter": {
-          "type": "sliding_timed_target",
-          "target": {
-            "type": "uniform",
-            "min": 600,
-            "max": 900
-          },
-          "window": 6000,
-          "variables": {}
-        },
-        "type": "mine_block"
-      },
-      "icon": "the_vault:textures/gui/bingo/minevaultore.png"
-    },
-    {
-      "id": "the_vault:rapid_champion_slayer",
-      "displayName": "Rapid Champion Slayer",
-      "description": "Defeat %target champions within 5 minutes.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 7200,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.2,
-      "task": {
-        "children": [],
-        "operating": false,
-        "filter": "@the_vault:mob_type/champion",
-        "counter": {
-          "type": "sliding_timed_target",
-          "target": {
-            "type": "uniform",
-            "min": 2,
-            "max": 3
-          },
-          "window": 6000,
-          "variables": {}
-        },
-        "type": "kill_entity"
-      },
-      "icon": "the_vault:textures/gui/bingo/rapidchampion.png"
-    },
-    {
-      "id": "the_vault:primitive_wooden",
-      "displayName": "Primitive Wooden",
-      "description": "Loot %target wooden chests without using abilities.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "loot_chest",
-            "filter": "@the_vault:wooden",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 282,
-                "max": 552,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/peacefulwooden.png"
-    },
-    {
-      "id": "the_vault:primitive_ornate",
-      "displayName": "Primitive Ornate",
-      "description": "Loot %target ornate chests without using abilities.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "loot_chest",
-            "filter": "@the_vault:ornate",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 71,
-                "max": 138,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/peacefulornate.png"
-    },
-    {
-      "id": "the_vault:primitive_gilded",
-      "displayName": "Primitive Gilded",
-      "description": "Loot %target gilded chests without using abilities.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "loot_chest",
-            "filter": "@the_vault:gilded",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 71,
-                "max": 138,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/peacefulgilded.png"
-    },
-    {
-      "id": "the_vault:primitive_living",
-      "displayName": "Primitive Living",
-      "description": "Loot %target living chests without using abilities.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "loot_chest",
-            "filter": "@the_vault:living",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 71,
-                "max": 138,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/peacefulliving.png"
-    },
-    {
-      "id": "the_vault:primitive_horde_slaughter",
-      "displayName": "Primitive Horde Slaughter",
-      "description": "Kill %target horde mobs without using abilities.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "kill_entity",
-            "filter": "@the_vault:mob_type/horde",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 282,
-                "max": 552,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nomanahorde.png"
-    },
-    {
-      "id": "the_vault:primitive_assassin_purge",
-      "displayName": "Primitive Assassin Purge",
-      "description": "Kill %target assassin mobs without using abilities.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "kill_entity",
-            "filter": "@the_vault:mob_type/assassin",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 113,
-                "max": 221,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nomanaassassin.png"
-    },
-    {
-      "id": "the_vault:primitive_tank_breaker",
-      "displayName": "Primitive Tank Breaker",
-      "description": "Kill %target tank mobs without using abilities.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "kill_entity",
-            "filter": "@the_vault:mob_type/tank",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 28,
-                "max": 55,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nomanatank.png"
-    },
-    {
-      "id": "the_vault:primitive_excavation",
-      "displayName": "Primitive Excavation",
-      "description": "Mine %target vault ores without using abilities.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 3600,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.25,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "mine_block",
-            "filter": "@the_vault:ores[generated=true]",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 600,
-                "max": 900,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/peacefulores.png"
-    },
-    {
-      "id": "the_vault:primitive_champion_slayer",
-      "displayName": "Primitive Champion Slayer",
-      "description": "Defeat %target champions without using abilities.",
-      "minTier": 0,
-      "maxTier": -1,
-      "cooldownSeconds": 7200,
-      "repRewardMin": 15,
-      "repRewardMax": 25,
-      "weight": 5,
-      "scalar": 1.2,
-      "task": {
-        "type": "use_no_mana",
-        "children": [
-          {
-            "type": "kill_entity",
-            "filter": "@the_vault:mob_type/champion",
-            "counter": {
-              "variables": {},
-              "target": {
-                "min": 2,
-                "max": 3,
-                "type": "uniform"
-              },
-              "predicate": "GREATER_OR_EQUAL_TO",
-              "type": "target"
-            }
-          }
-        ]
-      },
-      "icon": "the_vault:textures/gui/bingo/nomanachampion.png"
-    }
-  ],
-  "maxQuestsPerTier": {
-    "0": 3,
-    "1": 3,
-    "2": 3
-  },
-  "challenges": [
-    {
-      "displayName": "Unstable Shuffle",
-      "description": "Watch your step, as ground cracks below you, your only way out is by blacking out the shuffling board.",
-      "challengeCrystalId": "t1_shuffle_grounds",
-      "minTier": 1,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Trapped",
-      "description": "Can you find what you need in time if most chests are trapped?",
-      "challengeCrystalId": "scav_rolled",
-      "minTier": 2,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Rune Master",
-      "description": "Only the strongest of warriors will be able to master the runes.",
-      "challengeCrystalId": "rune_master",
-      "minTier": 3,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Royale King",
-      "description": "An empty adventure, a clean slate, are you afraid?",
-      "challengeCrystalId": "royale_king",
-      "minTier": 4,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Gone in 60 seconds",
-      "description": "A good movie, how good is it inside a vault though\u2026",
-      "challengeCrystalId": "gone_in_60_seconds",
-      "minTier": 5,
-      "maxTier": -1
-    },
-    {
-      "displayName": "The Pacifist",
-      "description": "So you say this is more efficient, faster, better, stronger? Weak\u2026",
-      "challengeCrystalId": "the_pacifist",
-      "minTier": 6,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Luckiest Win",
-      "description": "You will need luck, skill, and a lot of luck.",
-      "challengeCrystalId": "luckiest_win",
-      "minTier": 7,
-      "maxTier": -1
-    },
-    {
-      "displayName": "The Speedrunner",
-      "description": "Do you remember how it used to be? Do you romanticise it?",
-      "challengeCrystalId": "the_speedrunner",
-      "minTier": 8,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Time you say",
-      "description": "You thought you wanted more time inside a vault, I dont know, try it.",
-      "challengeCrystalId": "time_you_say",
-      "minTier": 9,
-      "maxTier": -1
-    },
-    {
-      "displayName": "The Speed Blackout",
-      "description": "Speed, luck and precision wins the race.",
-      "challengeCrystalId": "speed_blackout_bingo",
-      "minTier": 10,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Frenzy Adventures",
-      "description": "Mobs is lava, dont get touched, dont get hit, for you will fail.",
-      "challengeCrystalId": "one_shot_frenzy",
-      "minTier": 11,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Celebrations",
-      "description": "It's time to celebrate! Or is it?",
-      "challengeCrystalId": "celebrations",
-      "minTier": 12,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Pitch Black",
-      "description": "Lights out! You are blinded, fumbling through a spooky dark cavern...",
-      "challengeCrystalId": "pitch_black",
-      "minTier": 1,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Ultra Hard",
-      "description": "Who said challenges were supposed to be fun, anyway?",
-      "challengeCrystalId": "ultra_hard",
-      "minTier": 12,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Elixir of Doom",
-      "description": "RNG, more like Ridiculous Negative Garbage.",
-      "challengeCrystalId": "elixir_of_doom",
-      "minTier": 3,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Ballistic Blackout",
-      "description": "Like a Bingo but more...",
-      "challengeCrystalId": "ballistic_bingo_blackout",
-      "minTier": 2,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Collectathon",
-      "description": "Get them all and then some more! Blackout that board!",
-      "challengeCrystalId": "blackout_scavingo",
-      "minTier": 3,
-      "maxTier": -1
-    },
-    {
-      "displayName": "God's Challenge",
-      "description": "It seems the god's are impressed with you... time to prove yourself to them.",
-      "challengeCrystalId": "gods_challenge",
-      "minTier": 6,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Big Bad Brew",
-      "description": "Alchemy? I never even passed Geometry!",
-      "challengeCrystalId": "big_bad_brew",
-      "minTier": 7,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Chaos Chaos Chaos",
-      "description": "OH, IT'S JUST A SIMPLE NUMBERS GAME",
-      "challengeCrystalId": "chaos_chaos_chaos",
-      "minTier": 9,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Rage Cage",
-      "description": "The elites are back for more, and brought reinforcements!",
-      "challengeCrystalId": "rage_cage",
-      "minTier": 11,
-      "maxTier": -1
-    },
-    {
-      "displayName": "Survival of the Fittest",
-      "description": "Last as long as you can... but you won't.",
-      "challengeCrystalId": "survival_of_the_fittest",
-      "minTier": 5,
-      "maxTier": -1
-    }
-  ],
-  "maxChallengesPerTier": {
-    "0": 3,
-    "1": 3,
-    "2": 3,
-    "3": 4,
-    "4": 4,
-    "5": 4,
-    "6": 5,
-    "7": 5,
-    "8": 5,
-    "9": 5,
-    "10": 5
-  },
-  "challengeRebuyCoinCost": 5
+  }
 }

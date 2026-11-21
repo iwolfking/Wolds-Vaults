@@ -1,0 +1,3384 @@
+{
+  "coinsPerRowCrates": 2,
+  "tierCompleteCrate": true,
+  "coreRowsRequired": 3,
+  "rows": [
+    {
+      "id": "t1_0",
+      "tier": 1,
+      "text": "Kill 2,500 tanks",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Tanks",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 2500
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mob_type/tank"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 100
+    },
+    {
+      "id": "t1_1",
+      "tier": 1,
+      "text": "Complete 10 Expert+ Brazier vaults",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Braziers",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "monolith"
+            ],
+            "minimumSigil": "expert"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 100
+    },
+    {
+      "id": "t1_2",
+      "tier": 1,
+      "text": "Complete a Master+ Elixir vault in 8 minutes or less",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "vault_timed",
+            "children": [
+              {
+                "type": "finish_vault",
+                "id": "Elixir",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 1
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "completion": [
+                  "COMPLETED"
+                ],
+                "objective": [
+                  "elixir"
+                ],
+                "minimumSigil": "master"
+              }
+            ],
+            "duration": 9601
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 100
+    },
+    {
+      "id": "t1_3",
+      "tier": 1,
+      "text": "Complete a Greed Rush at +1 or higher",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Cash-outs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "CASH_OUT",
+            "minimumBars": 1
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 50
+    },
+    {
+      "id": "t2_0",
+      "tier": 2,
+      "text": "Loot 25,000 wooden chests",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "loot_chest",
+            "id": "Wooden chests",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 25000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:wooden"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 150
+    },
+    {
+      "id": "t2_1",
+      "tier": 2,
+      "text": "Complete 10 Expert+ Scavenger vaults",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Scavenger",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger"
+            ],
+            "minimumSigil": "expert"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 110
+    },
+    {
+      "id": "t2_2",
+      "tier": 2,
+      "text": "Kill 1,000 mobs in a row without taking damage in one vault",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "take_no_damage",
+            "children": [
+              {
+                "type": "kill_entity",
+                "id": "Mobs",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 1000
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "filter": "@the_vault:mobs"
+              }
+            ]
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 100
+    },
+    {
+      "id": "t2_3",
+      "tier": 2,
+      "text": "Kill 50 Timekeepers",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Timekeepers",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 50
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "TIMEKEEPER_KILL",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 50
+    },
+    {
+      "id": "t3_0",
+      "tier": 3,
+      "text": "Mine 50,000 vault ores",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "mine_block",
+            "id": "Vault ores",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 50000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:ores[generated=true]"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 200
+    },
+    {
+      "id": "t3_1",
+      "tier": 3,
+      "text": "Complete a Rune Boss vault at Crate Tier 8 or higher",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "rune_boss_objective",
+            "id": "Rune Boss clears",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "requiredCrateTier": 8
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 100
+    },
+    {
+      "id": "t3_2",
+      "tier": 3,
+      "text": "Loot 2,000 wooden chests in one vault and complete the objective",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "loot_chest",
+            "id": "Wooden chests",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 2000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:wooden"
+          },
+          {
+            "type": "finish_vault",
+            "id": "Completed vaults",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "monolith",
+              "scavenger",
+              "scavenger_bingo",
+              "elixir",
+              "bingo",
+              "rune_boss"
+            ]
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 100
+    },
+    {
+      "id": "t3_3",
+      "tier": 3,
+      "text": "Kill 50 Hoardkeepers",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Hoardkeepers",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 50
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "HOARDKEEPER_KILL",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 50
+    },
+    {
+      "id": "t4_0",
+      "tier": 4,
+      "text": "Defeat 25 champions",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Champions",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 25
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mob_type/champion"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 100
+    },
+    {
+      "id": "t4_1",
+      "tier": 4,
+      "text": "Complete 5 Master+ Bingo vaults with at least 3 Bingos each",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Bingo",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "bingo"
+            ],
+            "minimumSigil": "master",
+            "minimumBingos": 3
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 130
+    },
+    {
+      "id": "t4_2",
+      "tier": 4,
+      "text": "Complete a Veteran+ Scavenger vault alone in 10 minutes or less",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "vault_timed",
+            "children": [
+              {
+                "type": "finish_vault",
+                "id": "Scavenger",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 1
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "completion": [
+                  "COMPLETED"
+                ],
+                "objective": [
+                  "scavenger"
+                ],
+                "minimumSigil": "veteran"
+              }
+            ],
+            "duration": 12001
+          }
+        ],
+        "mode": "SOLO"
+      },
+      "coins": 120
+    },
+    {
+      "id": "t4_3",
+      "tier": 4,
+      "text": "Defeat the Taxman",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Taxmen",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "TAXMAN_KILL",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 50
+    },
+    {
+      "id": "t5_0",
+      "tier": 5,
+      "text": "Kill 50,000 mobs",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Mobs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 50000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mobs"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 220
+    },
+    {
+      "id": "t5_1",
+      "tier": 5,
+      "text": "Complete a Veteran+ Collector vault with at least 3 Bingos",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Collector",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger_bingo"
+            ],
+            "minimumSigil": "veteran",
+            "minimumBingos": 3
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 100
+    },
+    {
+      "id": "t5_2",
+      "tier": 5,
+      "text": "Blackout a Veteran+ Bingo and complete the vault in 15 minutes or less",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "vault_timed",
+            "children": [
+              {
+                "type": "finish_vault",
+                "id": "Bingo",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 1
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "completion": [
+                  "COMPLETED"
+                ],
+                "objective": [
+                  "bingo"
+                ],
+                "minimumSigil": "veteran",
+                "blackout": true
+              }
+            ],
+            "duration": 18001
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 150
+    },
+    {
+      "id": "t5_3",
+      "tier": 5,
+      "text": "Complete a Greed Rush at +4 or higher",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Cash-outs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "CASH_OUT",
+            "minimumBars": 4
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 60
+    },
+    {
+      "id": "t5_4",
+      "tier": 5,
+      "text": "Complete a Master+ Brazier, Scavenger and Elixir vault",
+      "kind": "milestone",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Braziers",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "monolith"
+            ],
+            "minimumSigil": "master"
+          },
+          {
+            "type": "finish_vault",
+            "id": "Scavenger",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger"
+            ],
+            "minimumSigil": "master"
+          },
+          {
+            "type": "finish_vault",
+            "id": "Elixir",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "elixir"
+            ],
+            "minimumSigil": "master"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 180
+    },
+    {
+      "id": "t6_0",
+      "tier": 6,
+      "text": "Loot 5,000 gilded chests",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "loot_chest",
+            "id": "Gilded chests",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:gilded"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 260
+    },
+    {
+      "id": "t6_1",
+      "tier": 6,
+      "text": "Clear 50 X-Mark rooms",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "challenge_room_complete",
+            "id": "X-Mark rooms",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 50
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "challengeId": "x-mark"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 260
+    },
+    {
+      "id": "t6_2",
+      "tier": 6,
+      "text": "Defeat 15 dungeon bosses in one vault",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Dungeon bosses",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 15
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mob_type/dungeon_boss"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 170
+    },
+    {
+      "id": "t6_3",
+      "tier": 6,
+      "text": "Clear 5 Timekeeper Trials",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Timekeeper Trials",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "TIMEKEEPER_TRIAL",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 130
+    },
+    {
+      "id": "t7_0",
+      "tier": 7,
+      "text": "Loot 25,000 coin piles",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "mine_block",
+            "id": "Coin piles",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 25000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "the_vault:coin_pile[size=1]"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 420
+    },
+    {
+      "id": "t7_1",
+      "tier": 7,
+      "text": "Complete 10 Master+ 5x5 Bingo vaults with at least 5 Bingos each",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Bingo",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "bingo"
+            ],
+            "minimumSigil": "master",
+            "minimumBingos": 5,
+            "boardWidth": 5,
+            "boardHeight": 5
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 300
+    },
+    {
+      "id": "t7_2",
+      "tier": 7,
+      "text": "Complete a Veteran+ Brazier vault in 10 minutes or less",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "vault_timed",
+            "children": [
+              {
+                "type": "finish_vault",
+                "id": "Braziers",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 1
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "completion": [
+                  "COMPLETED"
+                ],
+                "objective": [
+                  "monolith"
+                ],
+                "minimumSigil": "veteran"
+              }
+            ],
+            "duration": 12001
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 200
+    },
+    {
+      "id": "t7_3",
+      "tier": 7,
+      "text": "Clear 15 Hoardkeeper Trials",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Hoardkeeper Trials",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 15
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "HOARDKEEPER_TRIAL",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 260
+    },
+    {
+      "id": "t8_0",
+      "tier": 8,
+      "text": "Defeat 100 dungeon bosses",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Dungeon bosses",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 100
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mob_type/dungeon_boss"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 390
+    },
+    {
+      "id": "t8_1",
+      "tier": 8,
+      "text": "Complete 25 Veteran+ non-Brazier vaults",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Non-Brazier vaults",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 25
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger",
+              "scavenger_bingo",
+              "elixir",
+              "bingo",
+              "rune_boss"
+            ],
+            "minimumSigil": "veteran"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 530
+    },
+    {
+      "id": "t8_2",
+      "tier": 8,
+      "text": "Kill 500 assassins in a row without taking damage in one vault",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "take_no_damage",
+            "children": [
+              {
+                "type": "kill_entity",
+                "id": "Assassins",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 500
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "filter": "@the_vault:mob_type/assassin"
+              }
+            ]
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 230
+    },
+    {
+      "id": "t8_3",
+      "tier": 8,
+      "text": "Win 2 Double or Nothing bets",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Double or Nothing wins",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 2
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "BET_WON",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 240
+    },
+    {
+      "id": "t9_0",
+      "tier": 9,
+      "text": "Kill 100,000 mobs",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Mobs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 100000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mobs"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 540
+    },
+    {
+      "id": "t9_1",
+      "tier": 9,
+      "text": "Complete 10 Rune Boss vaults at Crate Tier 3 or higher, each in 10 minutes or less",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "rune_boss_objective",
+            "id": "Rune Boss clears",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "requiredCrateTier": 3,
+            "maximumVaultTicks": 12000
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 540
+    },
+    {
+      "id": "t9_2",
+      "tier": 9,
+      "text": "Loot 5,000 chests in a row without taking damage",
+      "kind": "restraint",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "take_no_damage",
+            "children": [
+              {
+                "type": "loot_chest",
+                "id": "Chests",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 5000
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "filter": "@the_vault:chest"
+              }
+            ]
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 330
+    },
+    {
+      "id": "t9_3",
+      "tier": 9,
+      "text": "Open 10 Greed Chests",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Greed Chests",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "CHEST_OPENED",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 270
+    },
+    {
+      "id": "t10_0",
+      "tier": 10,
+      "text": "Clear 100 challenge rooms",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "challenge_room_complete",
+            "id": "Challenge rooms",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 100
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "challengeId": ""
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 600
+    },
+    {
+      "id": "t10_1",
+      "tier": 10,
+      "text": "Kill 5,000 mobs in a row without taking damage",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "take_no_damage",
+            "children": [
+              {
+                "type": "kill_entity",
+                "id": "Mobs",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 5000
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "filter": "@the_vault:mobs"
+              }
+            ]
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 190
+    },
+    {
+      "id": "t10_2",
+      "tier": 10,
+      "text": "Complete a Legend Elixir vault alone in 8 minutes or less",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "vault_timed",
+            "children": [
+              {
+                "type": "finish_vault",
+                "id": "Elixir",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 1
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "completion": [
+                  "COMPLETED"
+                ],
+                "objective": [
+                  "elixir"
+                ],
+                "minimumSigil": "legend"
+              }
+            ],
+            "duration": 9601
+          }
+        ],
+        "mode": "SOLO"
+      },
+      "coins": 280
+    },
+    {
+      "id": "t10_3",
+      "tier": 10,
+      "text": "Complete a Greed Rush at +6 or higher",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Cash-outs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "CASH_OUT",
+            "minimumBars": 6
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 130
+    },
+    {
+      "id": "t10_4",
+      "tier": 10,
+      "text": "Complete a Greed Rush at +5 or higher",
+      "kind": "milestone",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Cash-outs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "CASH_OUT",
+            "minimumBars": 5
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 120
+    },
+    {
+      "id": "t11_0",
+      "tier": 11,
+      "text": "Open 100 treasure doors",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "interact_block",
+            "id": "Treasure doors",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 100
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "pre": "the_vault:treasure_door[open=false]",
+            "post": "the_vault:treasure_door[open=true]"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 650
+    },
+    {
+      "id": "t11_1",
+      "tier": 11,
+      "text": "Clear 50 Raid rooms",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "challenge_room_complete",
+            "id": "Raid rooms",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 50
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "challengeId": "raid"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 460
+    },
+    {
+      "id": "t11_2",
+      "tier": 11,
+      "text": "Complete 10 God altars in one Scavenger vault and complete the objective",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "complete_god_altar",
+            "id": "God altars",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            }
+          },
+          {
+            "type": "finish_vault",
+            "id": "Scavenger",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger"
+            ]
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 440
+    },
+    {
+      "id": "t11_3",
+      "tier": 11,
+      "text": "Win 10 Greed wagers",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Wagers won",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "WAGER_WON",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 230
+    },
+    {
+      "id": "t12_0",
+      "tier": 12,
+      "text": "Loot 10,000 living chests",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "loot_chest",
+            "id": "Living chests",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:living"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 720
+    },
+    {
+      "id": "t12_1",
+      "tier": 12,
+      "text": "Loot 5,000 gilded chests and 5,000 ornate chests",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "loot_chest",
+            "id": "Gilded chests",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:gilded"
+          },
+          {
+            "type": "loot_chest",
+            "id": "Ornate chests",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:ornate"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 720
+    },
+    {
+      "id": "t12_2",
+      "tier": 12,
+      "text": "Kill 2,500 mobs within 5 minutes in one vault",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Mobs",
+            "counter": {
+              "type": "sliding_timed_target",
+              "target": {
+                "type": "constant",
+                "count": 2500
+              },
+              "predicate": "GREATER_OR_EQUAL_TO",
+              "window": {
+                "type": "constant",
+                "count": 6000
+              }
+            },
+            "filter": "@the_vault:mobs"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 340
+    },
+    {
+      "id": "t12_3",
+      "tier": 12,
+      "text": "Defeat the Taxman 5 times",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Taxmen",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "TAXMAN_KILL",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 250
+    },
+    {
+      "id": "t13_0",
+      "tier": 13,
+      "text": "Kill 10,000 tanks",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Tanks",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mob_type/tank"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 490
+    },
+    {
+      "id": "t13_1",
+      "tier": 13,
+      "text": "Complete 15 Legend Brazier vaults",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Braziers",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 15
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "monolith"
+            ],
+            "minimumSigil": "legend"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 870
+    },
+    {
+      "id": "t13_2",
+      "tier": 13,
+      "text": "Blackout a Veteran+ 5x5 Bingo and complete the vault in 18 minutes or less",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "vault_timed",
+            "children": [
+              {
+                "type": "finish_vault",
+                "id": "Bingo",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 1
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "completion": [
+                  "COMPLETED"
+                ],
+                "objective": [
+                  "bingo"
+                ],
+                "minimumSigil": "veteran",
+                "boardWidth": 5,
+                "boardHeight": 5,
+                "blackout": true
+              }
+            ],
+            "duration": 21601
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 370
+    },
+    {
+      "id": "t13_3",
+      "tier": 13,
+      "text": "Complete 25 Greed Rush vaults",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Cash-outs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 25
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "CASH_OUT",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 490
+    },
+    {
+      "id": "t14_0",
+      "tier": 14,
+      "text": "Defeat 250 champions",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Champions",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 250
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mob_type/champion"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 840
+    },
+    {
+      "id": "t14_1",
+      "tier": 14,
+      "text": "Complete 150 God altars",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "complete_god_altar",
+            "id": "God altars",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 150
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            }
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1450
+    },
+    {
+      "id": "t14_2",
+      "tier": 14,
+      "text": "Mine 5,000 vault ores in a row without taking damage in one vault",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "take_no_damage",
+            "children": [
+              {
+                "type": "mine_block",
+                "id": "Vault ores",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 5000
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "filter": "@the_vault:ores[generated=true]"
+              }
+            ]
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 400
+    },
+    {
+      "id": "t14_3",
+      "tier": 14,
+      "text": "Beat your Greed Trial in 4 minutes or less",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Greed Trial clears",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "BAILED",
+              "FAILED",
+              "COMPLETED"
+            ],
+            "objective": [
+              "rebirth"
+            ],
+            "maximumTrialTicks": 4800
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 130
+    },
+    {
+      "id": "t15_0",
+      "tier": 15,
+      "text": "Loot 100,000 vault chests",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "loot_chest",
+            "id": "Vault chests",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 100000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:chest"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1650
+    },
+    {
+      "id": "t15_1",
+      "tier": 15,
+      "text": "Clear 50 X-Mark rooms, 50 Memory rooms and 50 Raid rooms",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "challenge_room_complete",
+            "id": "X-Mark rooms",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 50
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "challengeId": "x-mark"
+          },
+          {
+            "type": "challenge_room_complete",
+            "id": "Memory rooms",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 50
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "challengeId": "memory-room"
+          },
+          {
+            "type": "challenge_room_complete",
+            "id": "Raid rooms",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 50
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "challengeId": "raid"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1110
+    },
+    {
+      "id": "t15_2",
+      "tier": 15,
+      "text": "Complete a Legend Collector vault alone with at least 5 Bingos in 18 minutes or less",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "vault_timed",
+            "children": [
+              {
+                "type": "finish_vault",
+                "id": "Collector",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 1
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "completion": [
+                  "COMPLETED"
+                ],
+                "objective": [
+                  "scavenger_bingo"
+                ],
+                "minimumSigil": "legend",
+                "minimumBingos": 5
+              }
+            ],
+            "duration": 21601
+          }
+        ],
+        "mode": "SOLO"
+      },
+      "coins": 430
+    },
+    {
+      "id": "t15_3",
+      "tier": 15,
+      "text": "Complete a Greed Rush at +7 or higher",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Cash-outs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "CASH_OUT",
+            "minimumBars": 7
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 220
+    },
+    {
+      "id": "t15_4",
+      "tier": 15,
+      "text": "Complete 5 Veteran+ vaults of each type: Brazier, Scavenger, Elixir, Bingo and Collector",
+      "kind": "milestone",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Braziers",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "monolith"
+            ],
+            "minimumSigil": "veteran"
+          },
+          {
+            "type": "finish_vault",
+            "id": "Scavenger",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger"
+            ],
+            "minimumSigil": "veteran"
+          },
+          {
+            "type": "finish_vault",
+            "id": "Collector",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger_bingo"
+            ],
+            "minimumSigil": "veteran"
+          },
+          {
+            "type": "finish_vault",
+            "id": "Elixir",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "elixir"
+            ],
+            "minimumSigil": "veteran"
+          },
+          {
+            "type": "finish_vault",
+            "id": "Bingo",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "bingo"
+            ],
+            "minimumSigil": "veteran"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1520
+    },
+    {
+      "id": "t16_0",
+      "tier": 16,
+      "text": "Mine 100,000 vault ores",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "mine_block",
+            "id": "Vault ores",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 100000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:ores[generated=true]"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1370
+    },
+    {
+      "id": "t16_1",
+      "tier": 16,
+      "text": "Complete 25 Legend Elixir vaults",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Elixir",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 25
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "elixir"
+            ],
+            "minimumSigil": "legend"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1080
+    },
+    {
+      "id": "t16_2",
+      "tier": 16,
+      "text": "Loot 2,500 coin piles in one vault and complete the objective",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "mine_block",
+            "id": "Coin piles",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 2500
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "the_vault:coin_pile[size=1]"
+          },
+          {
+            "type": "finish_vault",
+            "id": "Completed vaults",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "monolith",
+              "scavenger",
+              "scavenger_bingo",
+              "elixir",
+              "bingo",
+              "rune_boss"
+            ]
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 460
+    },
+    {
+      "id": "t16_3",
+      "tier": 16,
+      "text": "Fill 50 Greed Rush bars",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Bars",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 50
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "BAR",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 610
+    },
+    {
+      "id": "t17_0",
+      "tier": 17,
+      "text": "Loot 15,000 ornate chests",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "loot_chest",
+            "id": "Ornate chests",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 15000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:ornate"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1270
+    },
+    {
+      "id": "t17_1",
+      "tier": 17,
+      "text": "Open 250 treasure doors",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "interact_block",
+            "id": "Treasure doors",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 250
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "pre": "the_vault:treasure_door[open=false]",
+            "post": "the_vault:treasure_door[open=true]"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1630
+    },
+    {
+      "id": "t17_2",
+      "tier": 17,
+      "text": "Defeat 50 champions in a row without taking damage in one vault",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "take_no_damage",
+            "children": [
+              {
+                "type": "kill_entity",
+                "id": "Champions",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 50
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "filter": "@the_vault:mob_type/champion"
+              }
+            ]
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 690
+    },
+    {
+      "id": "t17_3",
+      "tier": 17,
+      "text": "Defeat the Taxman twice in one Greed Rush vault",
+      "kind": "greed",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Taxmen",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 2
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "TAXMAN_KILL",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 230
+    },
+    {
+      "id": "t18_0",
+      "tier": 18,
+      "text": "Defeat 250 dungeon bosses",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Dungeon bosses",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 250
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mob_type/dungeon_boss"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1420
+    },
+    {
+      "id": "t18_1",
+      "tier": 18,
+      "text": "Complete 25 Legend Scavenger vaults",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Scavenger",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 25
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger"
+            ],
+            "minimumSigil": "legend"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1230
+    },
+    {
+      "id": "t18_2",
+      "tier": 18,
+      "text": "Complete a Legend 5x5 Collector vault alone with at least 8 Bingos",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Collector",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger_bingo"
+            ],
+            "minimumSigil": "legend",
+            "minimumBingos": 8,
+            "boardWidth": 5,
+            "boardHeight": 5
+          }
+        ],
+        "mode": "SOLO"
+      },
+      "coins": 520
+    },
+    {
+      "id": "t18_3",
+      "tier": 18,
+      "text": "Kill 500 Timekeepers",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Timekeepers",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 500
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "TIMEKEEPER_KILL",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 700
+    },
+    {
+      "id": "t19_0",
+      "tier": 19,
+      "text": "Kill 150,000 mobs",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Mobs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 150000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mobs"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1430
+    },
+    {
+      "id": "t19_1",
+      "tier": 19,
+      "text": "Complete 10 Rune Boss vaults at Crate Tier 8 or higher",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "rune_boss_objective",
+            "id": "Rune Boss clears",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "requiredCrateTier": 8
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1650
+    },
+    {
+      "id": "t19_2",
+      "tier": 19,
+      "text": "Kill 5,000 mobs within 5 minutes in one vault",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Mobs",
+            "counter": {
+              "type": "sliding_timed_target",
+              "target": {
+                "type": "constant",
+                "count": 5000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO",
+              "window": {
+                "type": "constant",
+                "count": 6000
+              }
+            },
+            "filter": "@the_vault:mobs"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 550
+    },
+    {
+      "id": "t19_3",
+      "tier": 19,
+      "text": "Clear 50 Keeper Trials",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Keeper Trials",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 50
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "KEEPER_TRIAL",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 740
+    },
+    {
+      "id": "t20_0",
+      "tier": 20,
+      "text": "Clear 250 challenge rooms",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "challenge_room_complete",
+            "id": "Challenge rooms",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 250
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "challengeId": ""
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1950
+    },
+    {
+      "id": "t20_1",
+      "tier": 20,
+      "text": "Complete 10 Legend Collector vaults with at least 5 Bingos each",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Collector",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger_bingo"
+            ],
+            "minimumSigil": "legend",
+            "minimumBingos": 5
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 870
+    },
+    {
+      "id": "t20_2",
+      "tier": 20,
+      "text": "Blackout a Legend 5x5 Bingo and complete the vault in 15 minutes or less",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "vault_timed",
+            "children": [
+              {
+                "type": "finish_vault",
+                "id": "Bingo",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 1
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "completion": [
+                  "COMPLETED"
+                ],
+                "objective": [
+                  "bingo"
+                ],
+                "minimumSigil": "legend",
+                "boardWidth": 5,
+                "boardHeight": 5,
+                "blackout": true
+              }
+            ],
+            "duration": 18001
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 590
+    },
+    {
+      "id": "t20_3",
+      "tier": 20,
+      "text": "Complete a Greed Rush at +8 or higher",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Cash-outs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "CASH_OUT",
+            "minimumBars": 8
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 320
+    },
+    {
+      "id": "t20_4",
+      "tier": 20,
+      "text": "Complete 5 Legend 5x5 Bingo vaults and 5 Legend 5x5 Collector vaults, with at least 8 Bingos each",
+      "kind": "milestone",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Collector",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger_bingo"
+            ],
+            "minimumSigil": "legend",
+            "minimumBingos": 8,
+            "boardWidth": 5,
+            "boardHeight": 5
+          },
+          {
+            "type": "finish_vault",
+            "id": "Bingo",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 5
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "bingo"
+            ],
+            "minimumSigil": "legend",
+            "minimumBingos": 8,
+            "boardWidth": 5,
+            "boardHeight": 5
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1310
+    },
+    {
+      "id": "t21_0",
+      "tier": 21,
+      "text": "Loot 25,000 gilded chests, 25,000 living chests and 25,000 ornate chests",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "loot_chest",
+            "id": "Gilded chests",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 25000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:gilded"
+          },
+          {
+            "type": "loot_chest",
+            "id": "Living chests",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 25000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:living"
+          },
+          {
+            "type": "loot_chest",
+            "id": "Ornate chests",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 25000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:ornate"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 2480
+    },
+    {
+      "id": "t21_1",
+      "tier": 21,
+      "text": "Clear 15 challenge rooms in one vault and complete the objective",
+      "kind": "breadth",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "challenge_room_complete",
+            "id": "Challenge rooms",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 15
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "challengeId": ""
+          },
+          {
+            "type": "finish_vault",
+            "id": "Completed vaults",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "monolith",
+              "scavenger",
+              "scavenger_bingo",
+              "elixir",
+              "bingo",
+              "rune_boss"
+            ]
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 510
+    },
+    {
+      "id": "t21_2",
+      "tier": 21,
+      "text": "Kill 1,000 tanks in a row without taking damage in one vault",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "take_no_damage",
+            "children": [
+              {
+                "type": "kill_entity",
+                "id": "Tanks",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 1000
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "filter": "@the_vault:mob_type/tank"
+              }
+            ]
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 620
+    },
+    {
+      "id": "t21_3",
+      "tier": 21,
+      "text": "Win 3 Double or Nothing bets",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Double or Nothing wins",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 3
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "BET_WON",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 800
+    },
+    {
+      "id": "t22_0",
+      "tier": 22,
+      "text": "Kill 25,000 assassins",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Assassins",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 25000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mob_type/assassin"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 1370
+    },
+    {
+      "id": "t22_1",
+      "tier": 22,
+      "text": "Complete 10 Legend 5x5 Bingo vaults with at least 8 Bingos each",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Bingo",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "bingo"
+            ],
+            "minimumSigil": "legend",
+            "minimumBingos": 8,
+            "boardWidth": 5,
+            "boardHeight": 5
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 970
+    },
+    {
+      "id": "t22_2",
+      "tier": 22,
+      "text": "Complete a Legend Elixir vault alone in 6 minutes or less",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "vault_timed",
+            "children": [
+              {
+                "type": "finish_vault",
+                "id": "Elixir",
+                "counter": {
+                  "type": "target",
+                  "target": {
+                    "type": "constant",
+                    "count": 1
+                  },
+                  "predicate": "GREATER_OR_EQUAL_TO"
+                },
+                "completion": [
+                  "COMPLETED"
+                ],
+                "objective": [
+                  "elixir"
+                ],
+                "minimumSigil": "legend"
+              }
+            ],
+            "duration": 7201
+          }
+        ],
+        "mode": "SOLO"
+      },
+      "coins": 650
+    },
+    {
+      "id": "t22_3",
+      "tier": 22,
+      "text": "Kill 500 Hoardkeepers",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Hoardkeepers",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 500
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "HOARDKEEPER_KILL",
+            "minimumBars": 0
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 870
+    },
+    {
+      "id": "t23_0",
+      "tier": 23,
+      "text": "Defeat 1,000 champions",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Champions",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mob_type/champion"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 2740
+    },
+    {
+      "id": "t23_1",
+      "tier": 23,
+      "text": "Clear 100 X-Mark rooms, 100 Memory rooms and 100 Raid rooms",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "challenge_room_complete",
+            "id": "X-Mark rooms",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 100
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "challengeId": "x-mark"
+          },
+          {
+            "type": "challenge_room_complete",
+            "id": "Memory rooms",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 100
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "challengeId": "memory-room"
+          },
+          {
+            "type": "challenge_room_complete",
+            "id": "Raid rooms",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 100
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "challengeId": "raid"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 2500
+    },
+    {
+      "id": "t23_2",
+      "tier": 23,
+      "text": "Clear 10 Raid rooms in one vault alone and complete the objective",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "challenge_room_complete",
+            "id": "Raid rooms",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "challengeId": "raid"
+          },
+          {
+            "type": "finish_vault",
+            "id": "Completed vaults",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "monolith",
+              "scavenger",
+              "scavenger_bingo",
+              "elixir",
+              "bingo",
+              "rune_boss"
+            ]
+          }
+        ],
+        "mode": "SOLO"
+      },
+      "coins": 690
+    },
+    {
+      "id": "t23_3",
+      "tier": 23,
+      "text": "Beat your Greed Trial in 3 minutes or less",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Greed Trial clears",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "BAILED",
+              "FAILED",
+              "COMPLETED"
+            ],
+            "objective": [
+              "rebirth"
+            ],
+            "maximumTrialTicks": 3600
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 230
+    },
+    {
+      "id": "t24_0",
+      "tier": 24,
+      "text": "Loot 75,000 coin piles",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "mine_block",
+            "id": "Coin piles",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 75000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "the_vault:coin_pile[size=1]"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 2630
+    },
+    {
+      "id": "t24_1",
+      "tier": 24,
+      "text": "Complete 10 Rune Boss vaults at Crate Tier 10 or higher",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "rune_boss_objective",
+            "id": "Rune Boss clears",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 10
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "requiredCrateTier": 10
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 2400
+    },
+    {
+      "id": "t24_2",
+      "tier": 24,
+      "text": "Complete a Rune Boss vault alone at Crate Tier 12 or higher",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "rune_boss_objective",
+            "id": "Rune Boss clears",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "requiredCrateTier": 12
+          }
+        ],
+        "mode": "SOLO"
+      },
+      "coins": 1250
+    },
+    {
+      "id": "t24_3",
+      "tier": 24,
+      "text": "Complete a Greed Rush at +9 or higher",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Cash-outs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "CASH_OUT",
+            "minimumBars": 9
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 420
+    },
+    {
+      "id": "t25_0",
+      "tier": 25,
+      "text": "Kill 250,000 mobs",
+      "kind": "volume",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "kill_entity",
+            "id": "Mobs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 250000
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "filter": "@the_vault:mobs"
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 2520
+    },
+    {
+      "id": "t25_1",
+      "tier": 25,
+      "text": "Complete 100 Legend non-Brazier vaults alone",
+      "kind": "breadth",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Non-Brazier vaults",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 100
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger",
+              "scavenger_bingo",
+              "elixir",
+              "bingo",
+              "rune_boss"
+            ],
+            "minimumSigil": "legend"
+          }
+        ],
+        "mode": "SOLO"
+      },
+      "coins": 3020
+    },
+    {
+      "id": "t25_2",
+      "tier": 25,
+      "text": "Blackout a Legend 5x5 Collector and complete the vault alone",
+      "kind": "restraint",
+      "task": {
+        "type": "single_vault",
+        "children": [
+          {
+            "type": "finish_vault",
+            "id": "Collector",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "completion": [
+              "COMPLETED"
+            ],
+            "objective": [
+              "scavenger_bingo"
+            ],
+            "minimumSigil": "legend",
+            "boardWidth": 5,
+            "boardHeight": 5,
+            "blackout": true
+          }
+        ],
+        "mode": "SOLO"
+      },
+      "coins": 750
+    },
+    {
+      "id": "t25_3",
+      "tier": 25,
+      "text": "Complete a Greed Rush at +10 or higher",
+      "kind": "greed",
+      "task": {
+        "type": "multi_vault",
+        "children": [
+          {
+            "type": "greed_rush",
+            "id": "Cash-outs",
+            "counter": {
+              "type": "target",
+              "target": {
+                "type": "constant",
+                "count": 1
+              },
+              "predicate": "GREATER_OR_EQUAL_TO"
+            },
+            "activity": "CASH_OUT",
+            "minimumBars": 10
+          }
+        ],
+        "mode": "ALL"
+      },
+      "coins": 460
+    },
+    {
+      "id": "t25_4",
+      "tier": 25,
+      "text": "Claim every other Greed Achievement",
+      "kind": "milestone",
+      "claimAllOthers": true,
+      "coins": 3020
+    }
+  ]
+}

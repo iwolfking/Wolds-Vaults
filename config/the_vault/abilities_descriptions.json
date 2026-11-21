@@ -1,157 +1,5 @@
 {
   "data": {
-    "Colossus_Base": {
-      "description": [
-        {
-          "text": "Makes you considerably bigger, giving you ",
-          "color": "$text"
-        },
-        {
-          "text": "knockback immunity ",
-          "color": "$knockback"
-        },
-        {
-          "text": "and a boost in ",
-          "color": "$text"
-        },
-        {
-          "text": "resistance",
-          "color": "$radius"
-        },
-        {
-          "text": " for a limited duration\n\n",
-          "color": "$text"
-        },
-        {
-          "text": "\u2734 Cast Ability ",
-          "color": "$castType"
-        }
-      ],
-      "current": [
-        "additionalResistance",
-        "size",
-        "cooldown",
-        "manaCost",
-        "adjustedDuration"
-      ],
-      "next": [
-        "additionalResistance",
-        "size",
-        "cooldown",
-        "manaCost",
-        "adjustedDuration"
-      ]
-    },
-    "Expunge_Base": {
-      "description": [
-        {
-          "text": "Activates all Effect Cloud attributes you have on your equipped gear where you are standing, ",
-          "color": "$text"
-        },
-        {
-          "text": "Activates all ",
-          "color": "$text"
-        },
-        {
-          "text": "Effect Cloud ",
-          "color": "$heal"
-        },
-        {
-          "text": "modifiers you have on your equipped gear where you are standing, and increases their duration and radius!\n\n",
-          "color": "$text"
-        },
-        {
-          "text": "\u2734 Cast Ability ",
-          "color": "$castType"
-        }
-      ],
-      "current": [
-        "durationMultiplier",
-        "radiusMultiplier",
-        "cooldown",
-        "manaCost"
-      ],
-      "next": [
-        "durationMultiplier",
-        "radiusMultiplier",
-        "cooldown",
-        "manaCost"
-      ]
-    },
-     "Concentrate_Base": {
-      "description": [
-        {
-          "text": "Drains all Mob Effects from nearby enemies in a radius. ",
-          "color": "$text"
-        },
-        {
-          "text": "Negative effects are converted into positive ones, and the same effect will always correspond with up to a couple of different effects.\n\n",
-          "color": "$text"
-        },
-        {
-          "text": "If you would receive multiple of the same effect, the base duration will be added onto the existing duration for each.",
-          "color": "$text"
-        },
-         {
-          "text": "Depending on your ability level, the level of the effect will also randomly be boosted, making it more potent.\n\n",
-          "color": "$text"
-        },
-        {
-          "text": "\u2734 Cast Ability ",
-          "color": "$castType"
-        }
-      ],
-      "current": [
-        "adjustedRadius",
-        "adjustedDuration",
-        "baseAmplitude",
-        "amplitudeScaleChance",
-        "cooldown",
-        "manaCost"
-      ],
-      "next": [
-        "adjustedRadius",
-        "adjustedDuration",
-        "baseAmplitude",
-        "amplitudeScaleChance",
-        "cooldown",
-        "manaCost"
-      ]
-    },
-    "Sneaky_Getaway": {
-      "description": [
-        {
-          "text": "Makes you considerably smaller and increases your",
-          "color": "$text"
-        },
-        {
-          "text": "movement speed",
-          "color": "$speed"
-        },
-        {
-          "text": "for a limited duration, allowing for a quick and sneaky getaway\n\n",
-          "color": "$text"
-        },
-        {
-          "text": "\u2734 Cast Ability ",
-          "color": "$castType"
-        }
-      ],
-      "current": [
-        "speed",
-        "size",
-        "cooldown",
-        "manaCost",
-        "duration"
-      ],
-      "next": [
-        "speed",
-        "size",
-        "cooldown",
-        "manaCost",
-        "duration"
-      ]
-    },
     "Dash_Base": {
       "description": [
         {
@@ -1507,7 +1355,7 @@
           "color": "$duration"
         },
         {
-          "text": ".\n\n",
+          "text": ". Your poison stacks up to 3 times on a mob, a 4th cast replaces the oldest.\n\n",
           "color": "$text"
         },
         {
@@ -1607,11 +1455,13 @@
       ],
       "current": [
         "damage",
+        "damageTaken",
         "manaCostPerSecond",
         "cooldown"
       ],
       "next": [
         "damage",
+        "damageTaken",
         "manaCostPerSecond",
         "cooldown"
       ]
@@ -2943,6 +2793,26 @@
           "color": "$text"
         },
         {
+          "text": "Running out of ",
+          "color": "$text"
+        },
+        {
+          "text": "mana",
+          "color": "$text"
+        },
+        {
+          "text": " while it is on burns you out: it can't be turned on again for ",
+          "color": "$text"
+        },
+        {
+          "text": "30 seconds",
+          "color": "$duration"
+        },
+        {
+          "text": ", and cooldown reduction doesn't shorten that. Turning it off yourself keeps the normal cooldown.",
+          "color": "$text"
+        },
+        {
           "text": "\n\n\u25cf Toggle Ability ",
           "color": "$castType"
         }
@@ -3104,6 +2974,18 @@
         },
         {
           "text": "based of your ability power.",
+          "color": "$text"
+        },
+        {
+          "text": "\nThe further it flies, the harder it hits: ",
+          "color": "$text"
+        },
+        {
+          "text": "40%",
+          "color": "$ability_power"
+        },
+        {
+          "text": " of its damage up close, full damage from 8 blocks away. Your own blast never hurts you.",
           "color": "$text"
         },
         {
@@ -3311,7 +3193,7 @@
           "color": "$chance"
         },
         {
-          "text": " to frostbite the mob for a ",
+          "text": " to glacially imprison the mob for a ",
           "color": "$text"
         },
         {
@@ -4049,12 +3931,20 @@
           "color": "$poison"
         },
         {
-          "text": "-infused, vial that when it shatters explodes into a ",
+          "text": "-infused vial that bounces around. Every bounce leaves a ",
           "color": "$text"
         },
         {
-          "text": "poison cloud",
+          "text": "poison pool",
           "color": "$poison"
+        },
+        {
+          "text": " on the floor for 3 seconds that poisons mobs walking through it for 30% of the vial's poison, up to 3 pools. When it shatters it poisons every mob in a ",
+          "color": "$text"
+        },
+        {
+          "text": "radius",
+          "color": "$radius"
         },
         {
           "text": ", dealing ",
@@ -4065,15 +3955,7 @@
           "color": "$ability_power"
         },
         {
-          "text": " scaled damage in a ",
-          "color": "$text"
-        },
-        {
-          "text": "radius",
-          "color": "$radius"
-        },
-        {
-          "text": " over a certain ",
+          "text": " scaled damage over a certain ",
           "color": "$text"
         },
         {
@@ -4395,6 +4277,7 @@
       ],
       "current": [
         "damage",
+        "damageTaken",
         "manaRefund",
         "speed",
         "maxStacks",
@@ -4404,6 +4287,7 @@
       ],
       "next": [
         "damage",
+        "damageTaken",
         "manaRefund",
         "speed",
         "maxStacks",
@@ -4433,12 +4317,14 @@
       ],
       "current": [
         "damage",
+        "damageTaken",
         "manaCostPerSecond",
         "manaRamp",
         "cooldown"
       ],
       "next": [
         "damage",
+        "damageTaken",
         "manaCostPerSecond",
         "manaRamp",
         "cooldown"
@@ -4465,12 +4351,14 @@
       ],
       "current": [
         "damage",
+        "damageTaken",
         "luckyHitChance",
         "manaCostPerSecond",
         "cooldown"
       ],
       "next": [
         "damage",
+        "damageTaken",
         "luckyHitChance",
         "manaCostPerSecond",
         "cooldown"
@@ -4641,11 +4529,11 @@
           "color": "$text"
         },
         {
-          "text": "Frostbite",
+          "text": "Glacial Prison",
           "color": "$chance"
         },
         {
-          "text": " talent synergy. Hypothermia is applied after the chill expires.",
+          "text": " with the Frost Bite talent. Hypothermia is applied after the chill expires.",
           "color": "$text"
         },
         {
@@ -4874,6 +4762,60 @@
         "minionDamage",
         "splashRadius",
         "splashDamage"
+      ]
+    },
+    "Storm_Arrow_Meteor": {
+      "description": [
+        {
+          "text": "Shoot an arrow that marks the ground where it lands\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "After the fuse a ",
+          "color": "$text"
+        },
+        {
+          "text": "meteor",
+          "color": "$name"
+        },
+        {
+          "text": " crashes into the mark, dealing ",
+          "color": "$text"
+        },
+        {
+          "text": "damage ",
+          "color": "$ability_power"
+        },
+        {
+          "text": "based of your ability power to every mob in the ",
+          "color": "$text"
+        },
+        {
+          "text": "radius",
+          "color": "$radius"
+        },
+        {
+          "text": ". The mark shows you where it will land.",
+          "color": "$text"
+        },
+        {
+          "text": "\n\n\u2734 Cast Ability ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "ability_power",
+        "adjustedRadius",
+        "duration",
+        "cooldown",
+        "manaCost"
+      ],
+      "next": [
+        "ability_power",
+        "adjustedRadius",
+        "duration",
+        "cooldown",
+        "manaCost"
       ]
     }
   }

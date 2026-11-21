@@ -1,0 +1,54 @@
+{
+  "timeWagerPillars": 2,
+  "barWagerPillars": 2,
+  "timeCostTicks": {
+    "min": 1800,
+    "max": 3600,
+    "type": "uniform"
+  },
+  "barCostPercent": {
+    "min": 10,
+    "max": 20,
+    "type": "uniform"
+  },
+  "minimumTimeLeftTicks": 3600,
+  "offerWeights": {
+    "greed_coins": 25,
+    "greed_reputation": 10,
+    "greed_key": 10,
+    "seal_key": 10,
+    "taxman_double": 5,
+    "timekeeper_trial_double": 5,
+    "hoardkeeper_trial_double": 5,
+    "etching": 25,
+    "greedy_charm": 5,
+    "vessel_effigy": 8,
+    "greedy_reset": 10
+  },
+  "maxGreedKeyOffers": 1,
+  "greedCoinsPerCacheTier": 15,
+  "greedReputationPerCrateTier": {
+    "min": 4,
+    "max": 8,
+    "type": "uniform"
+  },
+  "greedChestChancePerChest": 0.004,
+  "midRunPillarChancePerPylon": 0.026,
+  "greedChestTierBonus": {
+    "min": 0,
+    "max": 5,
+    "type": "uniform"
+  },
+  "betPillars": 1,
+  "betTargetBars": {
+    "min": 4,
+    "max": 7,
+    "type": "uniform"
+  },
+  "betPillarChance": 0.25,
+  "greedySparksPerOffer": {
+    "min": 2,
+    "max": 4,
+    "type": "uniform"
+  }
+}

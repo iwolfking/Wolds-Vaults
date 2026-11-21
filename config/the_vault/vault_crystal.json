@@ -4082,6 +4082,85 @@
         }
       }
     ],
+    "the_vault:crystal_seal_chaos": [
+      {
+        "level": 0,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objective": {
+          "type": "chaos",
+          "objective_probability": 1.0
+        },
+        "theme": {
+          "type": "value",
+          "id": "the_vault:classic_vault_chaos"
+        }
+      }
+    ],
+    "the_vault:crystal_seal_vault_royale": [
+      {
+        "level": 0,
+        "exhausted": true,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objective": {
+          "type": "vault_royale",
+          "objective_probability": 0.2,
+          "start_crate_loot_table": "the_vault:royale_start_crate"
+        },
+        "layout": {
+          "type": "vault_royale",
+          "radius": 10,
+          "tunnel_span": 1,
+          "boss_room_pool": "the_vault:vault/rooms/special/boss"
+        },
+        "modifiers": {
+          "type": "default",
+          "list": [
+            {
+              "modifier": "the_vault:royale",
+              "count": 1
+            }
+          ],
+          "random_modifiers": false
+        }
+      }
+    ],
+    "the_vault:crystal_seal_vessel": [
+      {
+        "level": 0,
+        "exhausted": true,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objective": {
+          "type": "rebirth",
+          "rematch": true
+        },
+        "theme": {
+          "type": "value",
+          "id": "the_vault:classic_vault_greed_trial"
+        },
+        "layout": {
+          "type": "rebirth"
+        },
+        "modifiers": {
+          "type": "default",
+          "list": [
+            {
+              "modifier": "the_vault:greed_trial",
+              "count": 1
+            }
+          ],
+          "random_modifiers": false
+        },
+        "time": {
+          "type": "infinite"
+        }
+      }
+    ],
     "the_vault:crystal_seal_shuffle_prophet": [
       {
         "level": 0,
@@ -4892,6 +4971,65 @@
           "type": "capacity",
           "volume": 100
         }
+      }
+    ]
+  },
+  "OBJECTIVE_MODIFIERS": {
+    "the_vault:objective_modifier_shuffle": [
+      {
+        "level": 0,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objectives": [
+          "bingo",
+          "scavenger_bingo"
+        ],
+        "modifiers": [
+          {
+            "modifier": "the_vault:shuffle",
+            "count": 1
+          }
+        ],
+        "randomModifiers": false
+      }
+    ],
+    "the_vault:objective_modifier_stumble": [
+      {
+        "level": 0,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objectives": [
+          "bingo",
+          "scavenger_bingo"
+        ],
+        "modifiers": [
+          {
+            "modifier": "the_vault:stumble",
+            "count": 1
+          }
+        ],
+        "randomModifiers": false
+      }
+    ],
+    "the_vault:vessel_effigy": [
+      {
+        "level": 0,
+        "input": [
+          "the_vault:vault_crystal"
+        ],
+        "objectives": [
+          "rebirth"
+        ],
+        "modifiers": [
+          {
+            "modifier": "the_vault:vessel_effigy",
+            "count": 1
+          }
+        ],
+        "randomModifiers": false,
+        "fitsExhaustedCrystals": true
       }
     ]
   }

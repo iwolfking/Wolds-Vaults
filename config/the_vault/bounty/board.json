@@ -1,0 +1,173 @@
+{
+  "offeredScrolls": 3,
+  "baseActiveBounties": 1,
+  "refreshBasePrice": 2.0,
+  "refreshPriceGrowth": 1.02,
+  "heatPerRefresh": 1,
+  "heatPerAbandon": 12,
+  "coolingPerFinishedBounty": 3,
+  "renownRangePerRarity": {
+    "COMMON": {
+      "min": 1,
+      "max": 4
+    },
+    "RARE": {
+      "min": 5,
+      "max": 8
+    },
+    "EPIC": {
+      "min": 9,
+      "max": 12
+    },
+    "OMEGA": {
+      "min": 13,
+      "max": 16
+    }
+  },
+  "reputationPerRarity": {
+    "COMMON": {
+      "min": 3,
+      "max": 6
+    },
+    "RARE": {
+      "min": 7,
+      "max": 9
+    },
+    "EPIC": {
+      "min": 10,
+      "max": 12
+    },
+    "OMEGA": {
+      "min": 13,
+      "max": 20
+    }
+  },
+  "baseRarityWeights": {
+    "COMMON": 70.0,
+    "RARE": 20.0,
+    "EPIC": 8.0,
+    "OMEGA": 2.0
+  },
+  "rarityWeightChangePerRank": {
+    "COMMON": -1.0,
+    "RARE": 0.5,
+    "EPIC": 0.6,
+    "OMEGA": 0.3
+  },
+  "rarityRankFalloff": 17.5,
+  "ranks": [
+    {
+      "renownCost": 9,
+      "rewardName": "Elytra",
+      "rewards": [
+        {
+          "item": "minecraft:elytra"
+        }
+      ]
+    },
+    {
+      "renownCost": 18,
+      "rewardName": "Title: Tracker + Book of Shadows",
+      "rewards": [],
+      "looks": "PREFIX"
+    },
+    {
+      "renownCost": 30,
+      "rewardName": "Dust Trail + Cauldron",
+      "rewards": [],
+      "looks": "TRAIL"
+    },
+    {
+      "renownCost": 45,
+      "rewardName": "Artifact",
+      "rewards": [
+        {
+          "item": "the_vault:unidentified_artifact"
+        }
+      ]
+    },
+    {
+      "renownCost": 60,
+      "rewardName": "Footprints Trail + Honey Drone",
+      "rewards": [],
+      "looks": "TRAIL"
+    },
+    {
+      "renownCost": 75,
+      "rewardName": "Artifact",
+      "rewards": [
+        {
+          "item": "the_vault:unidentified_artifact"
+        }
+      ]
+    },
+    {
+      "renownCost": 90,
+      "rewardName": "Title: Bounty Hunter + Heart Shaped Chocolate Box",
+      "rewards": [],
+      "looks": "PREFIX"
+    },
+    {
+      "renownCost": 105,
+      "rewardName": "Title: of Carri + Carri King Scepter",
+      "rewards": [],
+      "looks": "SUFFIX"
+    },
+    {
+      "renownCost": 120,
+      "rewardName": "Artifact",
+      "rewards": [
+        {
+          "item": "the_vault:unidentified_artifact"
+        }
+      ]
+    },
+    {
+      "renownCost": 150,
+      "rewardName": "Embers Trail + Carrot on a Wand",
+      "rewards": [],
+      "looks": "TRAIL"
+    }
+  ],
+  "endlessRank": {
+    "renownCost": 150,
+    "rewardName": "Bounty Crate",
+    "rewards": [
+      {
+        "item": "the_vault:vault_crate_bounty"
+      }
+    ]
+  },
+  "flavorLinesByType": {
+    "deliver": [
+      "The guild is building something. It needs a mountain of this.",
+      "Haul it to the table and count it twice.",
+      "Honest work for honest pay. Mostly honest.",
+      "The quartermaster is waiting, and the quartermaster is not patient."
+    ],
+    "find": [
+      "Somewhere in the vault it waits for the right hands.",
+      "The collector pays well and asks few questions.",
+      "Chests lie. Keep opening them until one tells the truth.",
+      "Rumour says it is down there. Rumours pay when they are true."
+    ],
+    "kill": [
+      "The guild pays for every one of them that stops breathing.",
+      "Too many of them crawl near the portals. Thin the herd.",
+      "Hunters before you tried. Their names are on the back of this paper.",
+      "Bring proof. Whatever is left of them will do."
+    ],
+    "mine": [
+      "The deep veins sing for those with a sharp pick.",
+      "Ore runs thin near the surface. Go deeper.",
+      "Bring back what glitters, leave what does not.",
+      "The guild forges are cold. Fill them."
+    ],
+    "vault": [
+      "The vault keeps its secrets for those who are quick.",
+      "Go in, get it done, come back with your boots still on.",
+      "Someone wagered you could not. Prove them wrong.",
+      "The clock in the vault does not wait, and neither does the guild."
+    ]
+  }
+}

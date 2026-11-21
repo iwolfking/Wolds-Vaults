@@ -799,7 +799,7 @@
       "name": "Jewel Pouch",
       "item": {
         "id": "the_vault:jewel_pouch",
-        "count": 5
+        "count": 3
       },
       "color1": "0xFFabc839",
       "color2": "0xFFab763f"
@@ -1122,6 +1122,18 @@
       "color1": "0xFFED7B24",
       "color2": "0xFFe2a631"
     },
+    "tempest_blade": {
+      "type": "floating_item_reward",
+      "textColor": -1213660,
+      "name": "Tempest Blade",
+      "item": {
+        "id": "the_vault:sword",
+        "nbt": "{\"the_vault:gear_unique_pool\":\"the_vault:tempest_blade\",\"the_vault:gear_roll_type\":\"Unique\"}",
+        "count": 1
+      },
+      "color1": "0xFFED7B24",
+      "color2": "0xFFe2a631"
+    },
     "baguette": {
       "type": "floating_item_reward",
       "textColor": -1213660,
@@ -1410,24 +1422,14 @@
       "type": "mob_spawn",
       "entity": {
         "id": "minecraft:pillager",
-        "Tags": [
-          "no_champion",
-          "ethereal_immune"
-        ],
+        "Tags": ["no_champion", "ethereal_immune", "dont_fall"],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
           "#the_vault:modifier_type/mob_attribute",
           "#the_vault:modifier_type/entity_effect"
         ],
         "Modifiers": {
-          "minecraft:generic.movement_speed": {
-            "Value": -1.0,
-            "Operation": 2
-          },
-          "minecraft:generic.knockback_resistance": {
-            "Value": 1.0,
-            "Operation": 0
-          }
+          "minecraft:generic.knockback_resistance": { "Value": 1.0, "Operation": 0 }
         }
       },
       "count": 1,
@@ -1610,10 +1612,7 @@
       "name": "Healer",
       "entity": {
         "id": "the_vault:healer",
-        "Tags": [
-          "no_champion",
-          "ethereal_immune"
-        ],
+        "Tags": ["no_champion", "ethereal_immune", "soul_shards"],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
           "#the_vault:modifier_type/mob_attribute",
@@ -1816,25 +1815,14 @@
       "textColor": "0xFFff7575",
       "entity": {
         "id": "minecraft:pillager",
-        "Tags": [
-          "vault_champion",
-          "no_drops",
-          "ethereal_immune"
-        ],
+        "Tags": ["vault_champion","no_drops", "ethereal_immune", "dont_fall"],
         "modifierImmunity": [
           "#the_vault:modifier_type/mob_frenzy",
           "#the_vault:modifier_type/mob_attribute",
           "#the_vault:modifier_type/entity_effect"
         ],
         "Modifiers": {
-          "minecraft:generic.movement_speed": {
-            "Value": -1.0,
-            "Operation": 2
-          },
-          "minecraft:generic.knockback_resistance": {
-            "Value": 1.0,
-            "Operation": 0
-          }
+          "minecraft:generic.knockback_resistance": { "Value": 1.0, "Operation": 0 }
         }
       },
       "count": 1,
@@ -3327,10 +3315,6 @@
               "weight": 4
             },
             {
-              "value": "kaleidoscope",
-              "weight": 8
-            },
-            {
               "value": "baguette",
               "weight": 20
             },
@@ -3400,10 +3384,6 @@
               "weight": 4
             },
             {
-              "value": "kaleidoscope",
-              "weight": 8
-            },
-            {
               "value": "baguette",
               "weight": 20
             },
@@ -3417,6 +3397,37 @@
             }
           ]
         }
+      ]
+    },
+    "lab_uniques": {
+      "type": "pool",
+      "levels": [
+        { "level": 0, "pool": [
+          { "value": "pestilence_wall", "weight": 4 },
+          { "value": "jester", "weight": 4 },
+          { "value": "crystalplate", "weight": 4 },
+          { "value": "crashguards", "weight": 4 },
+          { "value": "chainlash", "weight": 4 },
+          { "value": "pacifist_sandals", "weight": 4 },
+          { "value": "tempest_blade", "weight": 4 },
+          { "value": "baguette", "weight": 4 }
+        ] }
+      ]
+    },
+    "raid_uniques": {
+      "type": "pool",
+      "levels": [
+        { "level": 0, "pool": [
+          { "value": "castle_chestplate", "weight": 1 },
+          { "value": "warbound_helmet", "weight": 1 },
+          { "value": "inferno_reach", "weight": 1 },
+          { "value": "frozen_orb", "weight": 1 },
+          { "value": "grim_shield", "weight": 1 },
+          { "value": "starforge", "weight": 1 },
+          { "value": "swarmwalkers", "weight": 1 },
+          { "value": "stormcrown", "weight": 1 },
+          { "value": "inflated_justice", "weight": 1 }
+        ] }
       ]
     },
     "success_memory": {
@@ -3460,6 +3471,10 @@
             {
               "value": "broodmother",
               "weight": 10
+            },
+            {
+              "value": "sweetheart",
+              "weight": 10
             }
           ]
         },
@@ -3500,6 +3515,10 @@
             },
             {
               "value": "broodmother",
+              "weight": 10
+            },
+            {
+              "value": "sweetheart",
               "weight": 10
             }
           ]

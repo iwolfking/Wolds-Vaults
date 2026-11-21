@@ -1,5 +1,6 @@
 {
     "processingTickTime": 20,
+    "greedCoinsPerEtchingTier": 0.5,
     "additionalOutputRarityChances": {
         "SCRAPPY": 0.0,
         "COMMON": 0.0,
@@ -8,6 +9,34 @@
         "OMEGA": 0.6
     },
     "recyclingOutput": {
+        "the_vault:augment": {
+            "mainOutput": {
+                "chance": 1.0,
+                "stack": {
+                    "item": "the_vault:augment_piece"
+                },
+                "minCount": 1,
+                "maxCount": 1
+            },
+            "extraOutput1": {
+                "conditionalOutputs": {},
+                "chance": 0.0,
+                "stack": {
+                    "item": "minecraft:air"
+                },
+                "minCount": 1,
+                "maxCount": 1
+            },
+            "extraOutput2": {
+                "conditionalOutputs": {},
+                "chance": 0.0,
+                "stack": {
+                    "item": "minecraft:air"
+                },
+                "minCount": 1,
+                "maxCount": 1
+            }
+        },
         "the_vault:inscription": {
             "mainOutput": {
                 "chance": 1.0,
@@ -75,7 +104,7 @@
             },
             "extraOutput1": {
                 "conditionalOutputs": {},
-                "chance": 0.33,
+                "chance": 1.0,
                 "stack": {
                     "item": "the_vault:gemstone"
                 },
@@ -164,35 +193,7 @@
                 "maxCount": 1
             }
         },
-        "the_vault:void_stone": {
-            "mainOutput": {
-                "chance": 1.0,
-                "stack": {
-                    "item": "the_vault:vault_scrap"
-                },
-                "minCount": 4,
-                "maxCount": 8
-            },
-            "extraOutput1": {
-                "conditionalOutputs": {},
-                "chance": 0.2,
-                "stack": {
-                    "item": "minecraft:netherite_scrap"
-                },
-                "minCount": 1,
-                "maxCount": 1
-            },
-            "extraOutput2": {
-                "conditionalOutputs": {},
-                "chance": 0.0,
-                "stack": {
-                    "item": "the_vault:faceted_focus"
-                },
-                "minCount": 1,
-                "maxCount": 1
-            }
-        },
-        "the_vault:vault_infused_catalyst": {
+        "the_vault:vault_catalyst_infused": {
             "mainOutput": {
                 "chance": 1.0,
                 "stack": {
@@ -255,23 +256,7 @@
                 "maxCount": 1
             },
             "extraOutput2": {
-                "conditionalOutputs": [
-                    [
-                        {
-                            "rarity": "OMEGA",
-                            "isCrafted": false,
-                            "isLegendary": null
-                        },
-                        {
-                            "chance": 0.2,
-                            "stack": {
-                                "item": "the_vault:adaptive_focus"
-                            },
-                            "minCount": 1,
-                            "maxCount": 1
-                        }
-                    ]
-                ],
+                "conditionalOutputs": {},
                 "chance": 0.0,
                 "stack": {
                     "item": "the_vault:faceted_focus"

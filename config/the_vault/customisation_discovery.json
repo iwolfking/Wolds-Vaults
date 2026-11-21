@@ -1,5 +1,13 @@
 {
   "prefixes": {
+    "tracker": {
+      "type": "bounty_rank",
+      "rank": 2
+    },
+    "bounty_hunter": {
+      "type": "bounty_rank",
+      "rank": 7
+    },
     "azure": {
       "type": "vault_level",
       "level": 25
@@ -261,267 +269,307 @@
       "level": 100
     },
     "stoic": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "supreme": {
-      "type": "greed_challenge",
-      "challengeId": "the_speedrunner"
+      "type": "greed_tier",
+      "tier": 8
     },
     "obsidian": {
-      "type": "greed_challenge",
-      "challengeId": "time_you_say"
+      "type": "greed_tier",
+      "tier": 9
     },
     "astral": {
-      "type": "greed_challenge",
-      "challengeId": "speed_blackout_bingo"
+      "type": "greed_tier",
+      "tier": 10
     },
     "cosmic": {
-      "type": "greed_challenge",
-      "challengeId": "one_shot_frenzy"
+      "type": "greed_tier",
+      "tier": 11
     },
     "fool": {
-      "type": "greed_challenge",
-      "challengeId": "celebrations"
+      "type": "greed_tier",
+      "tier": 12
     },
     "elder": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "wise": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "baron": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "primal": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
     },
     "bone": {
-      "type": "greed_challenge",
-      "challengeId": "royale_king"
+      "type": "greed_tier",
+      "tier": 4
     },
     "lunar": {
-      "type": "greed_challenge",
-      "challengeId": "gone_in_60_seconds"
+      "type": "greed_tier",
+      "tier": 5
     },
     "hidden": {
-      "type": "greed_challenge",
-      "challengeId": "the_pacifist"
+      "type": "greed_tier",
+      "tier": 6
     },
     "angelic": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "demonic": {
-      "type": "greed_challenge",
-      "challengeId": "the_speedrunner"
+      "type": "greed_tier",
+      "tier": 8
     },
     "stunning": {
-      "type": "greed_challenge",
-      "challengeId": "time_you_say"
+      "type": "greed_tier",
+      "tier": 9
     },
     "fearless": {
-      "type": "greed_challenge",
-      "challengeId": "speed_blackout_bingo"
+      "type": "greed_tier",
+      "tier": 10
     },
     "fierce": {
-      "type": "greed_challenge",
-      "challengeId": "one_shot_frenzy"
+      "type": "greed_tier",
+      "tier": 11
     },
     "bio": {
-      "type": "greed_challenge",
-      "challengeId": "celebrations"
+      "type": "greed_tier",
+      "tier": 12
     },
     "frost": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "tame": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "venomous": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
     },
     "steel": {
-      "type": "greed_challenge",
-      "challengeId": "royale_king"
+      "type": "greed_tier",
+      "tier": 4
     },
     "swift": {
-      "type": "greed_challenge",
-      "challengeId": "gone_in_60_seconds"
+      "type": "greed_tier",
+      "tier": 5
     },
     "chrome": {
-      "type": "greed_challenge",
-      "challengeId": "the_pacifist"
+      "type": "greed_tier",
+      "tier": 6
     },
     "shadow": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "fantastic": {
-      "type": "greed_challenge",
-      "challengeId": "the_speedrunner"
+      "type": "greed_tier",
+      "tier": 8
     },
     "thunder": {
-      "type": "greed_challenge",
-      "challengeId": "time_you_say"
+      "type": "greed_tier",
+      "tier": 9
     },
     "solar": {
-      "type": "greed_challenge",
-      "challengeId": "speed_blackout_bingo"
+      "type": "greed_tier",
+      "tier": 10
     },
     "chrono": {
-      "type": "greed_challenge",
-      "challengeId": "one_shot_frenzy"
+      "type": "greed_tier",
+      "tier": 11
     },
     "abyssal": {
-      "type": "greed_challenge",
-      "challengeId": "celebrations"
+      "type": "greed_tier",
+      "tier": 12
     },
     "divine": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "tiny": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "heroic": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
     },
     "wicked": {
-      "type": "greed_challenge",
-      "challengeId": "royale_king"
+      "type": "greed_tier",
+      "tier": 4
     },
     "golden": {
-      "type": "greed_challenge",
-      "challengeId": "gone_in_60_seconds"
+      "type": "greed_tier",
+      "tier": 5
     },
     "toxic": {
-      "type": "greed_challenge",
-      "challengeId": "the_pacifist"
+      "type": "greed_tier",
+      "tier": 6
     },
     "risen": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "phantom": {
-      "type": "greed_challenge",
-      "challengeId": "the_speedrunner"
+      "type": "greed_tier",
+      "tier": 8
     },
     "ruby": {
-      "type": "greed_challenge",
-      "challengeId": "time_you_say"
+      "type": "greed_tier",
+      "tier": 9
     },
     "crazy": {
-      "type": "greed_challenge",
-      "challengeId": "speed_blackout_bingo"
+      "type": "greed_tier",
+      "tier": 10
     },
     "mega": {
-      "type": "greed_challenge",
-      "challengeId": "one_shot_frenzy"
+      "type": "greed_tier",
+      "tier": 11
     },
     "techno": {
-      "type": "greed_challenge",
-      "challengeId": "celebrations"
+      "type": "greed_tier",
+      "tier": 12
     },
     "noble": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "lady": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "cursed": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
     },
     "crystal": {
-      "type": "greed_challenge",
-      "challengeId": "royale_king"
+      "type": "greed_tier",
+      "tier": 4
     },
     "titanic": {
-      "type": "greed_challenge",
-      "challengeId": "gone_in_60_seconds"
+      "type": "greed_tier",
+      "tier": 5
     },
     "amethyst": {
-      "type": "greed_challenge",
-      "challengeId": "the_pacifist"
+      "type": "greed_tier",
+      "tier": 6
     },
     "ancient": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "gorgeous": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "necro": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
     },
     "beta": {
-      "type": "greed_challenge",
-      "challengeId": "royale_king"
+      "type": "greed_tier",
+      "tier": 4
     },
     "mad": {
-      "type": "greed_challenge",
-      "challengeId": "gone_in_60_seconds"
+      "type": "greed_tier",
+      "tier": 5
     },
     "terra": {
-      "type": "greed_challenge",
-      "challengeId": "the_pacifist"
+      "type": "greed_tier",
+      "tier": 6
     },
     "void": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "pyro": {
-      "type": "greed_challenge",
-      "challengeId": "the_speedrunner"
+      "type": "greed_tier",
+      "tier": 8
     },
     "blessed": {
-      "type": "greed_challenge",
-      "challengeId": "time_you_say"
+      "type": "greed_tier",
+      "tier": 9
     },
     "savage": {
-      "type": "greed_challenge",
-      "challengeId": "speed_blackout_bingo"
+      "type": "greed_tier",
+      "tier": 10
     },
     "captain": {
-      "type": "greed_challenge",
-      "challengeId": "one_shot_frenzy"
+      "type": "greed_tier",
+      "tier": 11
     },
     "zeta": {
-      "type": "greed_challenge",
-      "challengeId": "celebrations"
+      "type": "greed_tier",
+      "tier": 12
     },
     "dark": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "master": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "aqua": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "cunning": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
+    },
+    "veteran": {
+      "type": "vault_level",
+      "level": 125
+    },
+    "hardened": {
+      "type": "vault_level",
+      "level": 150
+    },
+    "grizzled": {
+      "type": "vault_level",
+      "level": 175
+    },
+    "exalted": {
+      "type": "vault_level",
+      "level": 200
+    },
+    "luminous": {
+      "type": "vault_level",
+      "level": 250
+    },
+    "paragon": {
+      "type": "vault_level",
+      "level": 300
+    },
+    "everlasting": {
+      "type": "vault_level",
+      "level": 400
+    },
+    "grandmaster": {
+      "type": "vault_level",
+      "level": 500
+    },
+    "infinite": {
+      "type": "vault_level",
+      "level": 1000
     }
   },
   "suffixes": {
+    "of_carri": {
+      "type": "bounty_rank",
+      "rank": 8
+    },
     "the_slab": {
       "type": "vault_level",
       "level": 25
@@ -779,264 +827,300 @@
       "level": 100
     },
     "the_hoarder": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "the_forsaken": {
-      "type": "greed_challenge",
-      "challengeId": "the_speedrunner"
+      "type": "greed_tier",
+      "tier": 8
     },
     "of_the_cosmos": {
-      "type": "greed_challenge",
-      "challengeId": "time_you_say"
+      "type": "greed_tier",
+      "tier": 9
     },
     "the_knight": {
-      "type": "greed_challenge",
-      "challengeId": "speed_blackout_bingo"
+      "type": "greed_tier",
+      "tier": 10
     },
     "of_storms": {
-      "type": "greed_challenge",
-      "challengeId": "one_shot_frenzy"
+      "type": "greed_tier",
+      "tier": 11
     },
     "of_the_wilds": {
-      "type": "greed_challenge",
-      "challengeId": "celebrations"
+      "type": "greed_tier",
+      "tier": 12
     },
     "the_wizard": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "the_cleric": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "the_rogue": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "of_destruction": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
     },
     "the_farmer": {
-      "type": "greed_challenge",
-      "challengeId": "royale_king"
+      "type": "greed_tier",
+      "tier": 4
     },
     "the_bold": {
-      "type": "greed_challenge",
-      "challengeId": "gone_in_60_seconds"
+      "type": "greed_tier",
+      "tier": 5
     },
     "the_redeemed": {
-      "type": "greed_challenge",
-      "challengeId": "the_pacifist"
+      "type": "greed_tier",
+      "tier": 6
     },
     "the_treasure_hunter": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "the_ghost": {
-      "type": "greed_challenge",
-      "challengeId": "the_speedrunner"
+      "type": "greed_tier",
+      "tier": 8
     },
     "the_relentless": {
-      "type": "greed_challenge",
-      "challengeId": "time_you_say"
+      "type": "greed_tier",
+      "tier": 9
     },
     "the_collector": {
-      "type": "greed_challenge",
-      "challengeId": "speed_blackout_bingo"
+      "type": "greed_tier",
+      "tier": 10
     },
     "of_the_mountain": {
-      "type": "greed_challenge",
-      "challengeId": "one_shot_frenzy"
+      "type": "greed_tier",
+      "tier": 11
     },
     "of_the_sun": {
-      "type": "greed_challenge",
-      "challengeId": "celebrations"
+      "type": "greed_tier",
+      "tier": 12
     },
     "the_invincible": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "the_paladin": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "the_mage": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
     },
     "the_berserker": {
-      "type": "greed_challenge",
-      "challengeId": "royale_king"
+      "type": "greed_tier",
+      "tier": 4
     },
     "the_wise": {
-      "type": "greed_challenge",
-      "challengeId": "gone_in_60_seconds"
+      "type": "greed_tier",
+      "tier": 5
     },
     "of_the_desert": {
-      "type": "greed_challenge",
-      "challengeId": "the_pacifist"
+      "type": "greed_tier",
+      "tier": 6
     },
     "the_plonker": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "of_the_sky": {
-      "type": "greed_challenge",
-      "challengeId": "the_speedrunner"
+      "type": "greed_tier",
+      "tier": 8
     },
     "the_finder": {
-      "type": "greed_challenge",
-      "challengeId": "time_you_say"
+      "type": "greed_tier",
+      "tier": 9
     },
     "the_alchemist": {
-      "type": "greed_challenge",
-      "challengeId": "speed_blackout_bingo"
+      "type": "greed_tier",
+      "tier": 10
     },
     "the_ranger": {
-      "type": "greed_challenge",
-      "challengeId": "one_shot_frenzy"
+      "type": "greed_tier",
+      "tier": 11
     },
     "the_sorcerer": {
-      "type": "greed_challenge",
-      "challengeId": "celebrations"
+      "type": "greed_tier",
+      "tier": 12
     },
     "of_chaos": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "the_enchanter": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "the_wild": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
     },
     "the_destroyer": {
-      "type": "greed_challenge",
-      "challengeId": "royale_king"
+      "type": "greed_tier",
+      "tier": 4
     },
     "the_bard": {
-      "type": "greed_challenge",
-      "challengeId": "gone_in_60_seconds"
+      "type": "greed_tier",
+      "tier": 5
     },
     "the_slayer": {
-      "type": "greed_challenge",
-      "challengeId": "the_pacifist"
+      "type": "greed_tier",
+      "tier": 6
     },
     "the_builder": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "the_magnificent": {
-      "type": "greed_challenge",
-      "challengeId": "the_speedrunner"
+      "type": "greed_tier",
+      "tier": 8
     },
     "the_remembered": {
-      "type": "greed_challenge",
-      "challengeId": "time_you_say"
+      "type": "greed_tier",
+      "tier": 9
     },
     "the_ancient": {
-      "type": "greed_challenge",
-      "challengeId": "speed_blackout_bingo"
+      "type": "greed_tier",
+      "tier": 10
     },
     "the_redstoner": {
-      "type": "greed_challenge",
-      "challengeId": "one_shot_frenzy"
+      "type": "greed_tier",
+      "tier": 11
     },
     "the_geezer": {
-      "type": "greed_challenge",
-      "challengeId": "celebrations"
+      "type": "greed_tier",
+      "tier": 12
     },
     "the_terrible": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "of_the_east": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "the_primal": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
     },
     "the_warden": {
-      "type": "greed_challenge",
-      "challengeId": "royale_king"
+      "type": "greed_tier",
+      "tier": 4
     },
     "of_darkness": {
-      "type": "greed_challenge",
-      "challengeId": "gone_in_60_seconds"
+      "type": "greed_tier",
+      "tier": 5
     },
     "the_summoner": {
-      "type": "greed_challenge",
-      "challengeId": "the_pacifist"
+      "type": "greed_tier",
+      "tier": 6
     },
     "the_gray": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "the_ageless": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "the_found": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
     },
     "the_eternal": {
-      "type": "greed_challenge",
-      "challengeId": "royale_king"
+      "type": "greed_tier",
+      "tier": 4
     },
     "the_villain": {
-      "type": "greed_challenge",
-      "challengeId": "gone_in_60_seconds"
+      "type": "greed_tier",
+      "tier": 5
     },
     "the_conqueror": {
-      "type": "greed_challenge",
-      "challengeId": "the_pacifist"
+      "type": "greed_tier",
+      "tier": 6
     },
     "the_crafter": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "of_the_abyss": {
-      "type": "greed_challenge",
-      "challengeId": "the_speedrunner"
+      "type": "greed_tier",
+      "tier": 8
     },
     "the_immortal": {
-      "type": "greed_challenge",
-      "challengeId": "time_you_say"
+      "type": "greed_tier",
+      "tier": 9
     },
     "the_defender": {
-      "type": "greed_challenge",
-      "challengeId": "speed_blackout_bingo"
+      "type": "greed_tier",
+      "tier": 10
     },
     "the_necromancer": {
-      "type": "greed_challenge",
-      "challengeId": "one_shot_frenzy"
+      "type": "greed_tier",
+      "tier": 11
     },
     "the_sage": {
-      "type": "greed_challenge",
-      "challengeId": "celebrations"
+      "type": "greed_tier",
+      "tier": 12
     },
     "of_the_north": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "the_lost": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 1
     },
     "the_blacksmith": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "of_the_void": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
+    },
+    "the_tireless": {
+      "type": "vault_level",
+      "level": 125
+    },
+    "the_devoted": {
+      "type": "vault_level",
+      "level": 150
+    },
+    "the_steadfast": {
+      "type": "vault_level",
+      "level": 175
+    },
+    "the_unyielding": {
+      "type": "vault_level",
+      "level": 200
+    },
+    "beyond_measure": {
+      "type": "vault_level",
+      "level": 250
+    },
+    "the_limitless": {
+      "type": "vault_level",
+      "level": 300
+    },
+    "of_the_endless_vault": {
+      "type": "vault_level",
+      "level": 400
+    },
+    "the_unending": {
+      "type": "vault_level",
+      "level": 500
+    },
+    "who_never_logged_off": {
+      "type": "vault_level",
+      "level": 1000
     }
   },
   "emblems": {
@@ -1089,82 +1173,160 @@
       "level": 100
     },
     "SPADE": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+      "type": "greed_tier",
+      "tier": 7
     },
     "BOLT": {
-      "type": "greed_challenge",
-      "challengeId": "the_speedrunner"
+      "type": "greed_tier",
+      "tier": 8
     },
     "ATOM": {
-      "type": "greed_challenge",
-      "challengeId": "time_you_say"
+      "type": "greed_tier",
+      "tier": 9
     },
     "CLOVER": {
-      "type": "greed_challenge",
-      "challengeId": "speed_blackout_bingo"
+      "type": "greed_tier",
+      "tier": 10
     },
     "GEAR": {
-      "type": "greed_challenge",
-      "challengeId": "one_shot_frenzy"
+      "type": "greed_tier",
+      "tier": 11
     },
     "CROWN": {
-      "type": "greed_challenge",
-      "challengeId": "celebrations"
+      "type": "greed_tier",
+      "tier": 14
     },
     "DIAMOND": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 13
     },
     "INFINITY": {
-      "type": "greed_challenge",
-      "challengeId": "t1_shuffle_grounds"
+      "type": "greed_tier",
+      "tier": 15
     },
     "YIN_YANG": {
-      "type": "greed_challenge",
-      "challengeId": "scav_rolled"
+      "type": "greed_tier",
+      "tier": 2
     },
     "PEACE": {
-      "type": "greed_challenge",
-      "challengeId": "rune_master"
+      "type": "greed_tier",
+      "tier": 3
     },
     "MUSIC": {
-      "type": "greed_challenge",
-      "challengeId": "royale_king"
+      "type": "greed_tier",
+      "tier": 4
     },
     "SNOWFLAKE": {
-      "type": "greed_challenge",
-      "challengeId": "gone_in_60_seconds"
+      "type": "greed_tier",
+      "tier": 5
     },
     "ARROW": {
-      "type": "greed_challenge",
-      "challengeId": "the_pacifist"
+      "type": "greed_tier",
+      "tier": 6
+    }
+  },
+  "gearModels": {
+    "the_vault:gear/wand/bookofshadows": {
+      "type": "bounty_rank",
+      "rank": 2
+    },
+    "the_vault:gear/focus/cauldron": {
+      "type": "bounty_rank",
+      "rank": 3
+    },
+    "the_vault:gear/shield/honey_drone": {
+      "type": "bounty_rank",
+      "rank": 5
+    },
+    "the_vault:gear/shield/heart_chocolate": {
+      "type": "bounty_rank",
+      "rank": 7
+    },
+    "the_vault:gear/wand/carri_king": {
+      "type": "bounty_rank",
+      "rank": 8
+    },
+    "the_vault:gear/wand/carrot_on_a_wand": {
+      "type": "bounty_rank",
+      "rank": 10
     }
   },
   "trails": {
-    "SCRAPE": {
-      "type": "vault_level",
-      "level": 25
+    "footprints": {
+      "type": "bounty_rank",
+      "rank": 5
     },
-    "GRID_GATEWAY": {
+    "dust": {
+      "type": "bounty_rank",
+      "rank": 3
+    },
+    "scrape": {
       "type": "vault_level",
       "level": 50
     },
-    "FLAME": {
+    "flame": {
+      "type": "bounty_rank",
+      "rank": 10
+    },
+    "heart": {
       "type": "vault_level",
       "level": 75
     },
-    "SOUL": {
-      "type": "greed_challenge",
-      "challengeId": "luckiest_win"
+    "petals": {
+      "type": "vault_level",
+      "level": 100
     },
-    "HEART": {
-      "type": "greed_challenge",
-      "challengeId": "the_speedrunner"
+    "frost_steps": {
+      "type": "vault_level",
+      "level": 150
     },
-    "DUST": {
-      "type": "greed_challenge",
-      "challengeId": "time_you_say"
+    "grid_gateway": {
+      "type": "vault_level",
+      "level": 50
+    },
+    "sparks": {
+      "type": "vault_level",
+      "level": 200
+    },
+    "soul": {
+      "type": "vault_level",
+      "level": 250
+    },
+    "void_motes": {
+      "type": "vault_level",
+      "level": 300
+    },
+    "thunder_steps": {
+      "type": "vault_level",
+      "level": 400
+    },
+    "aurora": {
+      "type": "vault_level",
+      "level": 500
+    },
+    "infinite": {
+      "type": "vault_level",
+      "level": 1000
+    },
+    "coin_glints": {
+      "type": "greed_tier",
+      "tier": 3
+    },
+    "greed_embers": {
+      "type": "greed_tier",
+      "tier": 8
+    },
+    "midas_steps": {
+      "type": "greed_tier",
+      "tier": 13
+    },
+    "hoard": {
+      "type": "greed_tier",
+      "tier": 20
+    },
+    "gods": {
+      "type": "god_reputation",
+      "reputation": 50
     }
   }
 }

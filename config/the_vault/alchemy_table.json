@@ -1,1028 +1,120 @@
 {
-  "craftableEffects": [
-    { "effectId": "mana_flat",
-      "type": "mana_flat",
-      "effectName": "Flat Mana Restoration",
-      "tooltip": "Restores %s Mana",
-      "color": "#00FFFF",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "GRANTED",
-      "typeSettings": {
-        "BREW": "{amount:100.0f}",
-        "MIXTURE": "{amount:80.0f}",
-        "POTION": "{amount:60.0f}",
-        "VIAL": "{amount:40.0f}"
-      }
+  "effects": [
+    {
+      "effect": "mana_surge",
+      "name": "Mana Surge",
+      "color": "#55CCFF",
+      "unlockLevel": 0,
+      "byTier": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "description": "Restores {value}% of your max mana"
     },
-    { "effectId": "mana_percent",
-      "type": "mana_percent",
-      "effectName": "Percent Mana Restoration",
-      "tooltip": "Restores %s%% Mana",
-      "color": "#00b4ff",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{amount:0.5f}",
-        "MIXTURE": "{amount:0.4f}",
-        "POTION": "{amount:0.3f}",
-        "VIAL": "{amount:0.2f}"
-      }
+    {
+      "effect": "quickening",
+      "name": "Quickening",
+      "color": "#B48CFF",
+      "unlockLevel": 10,
+      "byTier": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "description": "Ability cooldowns recover twice as fast for {value}s"
     },
-    { "effectId": "speed_potion_2",
-      "type": "potion",
-      "effectName": "Movement Speed Increase 2",
-      "tooltip": "+2 Speed for %1$ss",
-      "color": "#ffd63b",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{amplifier:1,duration:500,potion:\"minecraft:speed\"}",
-        "POTION": "{amplifier:1,duration:300,potion:\"minecraft:speed\"}",
-        "MIXTURE": "{amplifier:1,duration:400,potion:\"minecraft:speed\"}",
-        "VIAL": "{amplifier:1,duration:200,potion:\"minecraft:speed\"}"
-      }
+    {
+      "effect": "cleanse",
+      "name": "Cleanse",
+      "color": "#E8E8E8",
+      "unlockLevel": 15,
+      "byTier": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "description": "Removes negative effects and wards you for {value}s"
     },
-    { "effectId": "jump_boost_4",
-      "type": "potion",
-      "effectName": "Jump Boost Effect",
-      "tooltip": "+4 Jump Boost for %1$ss",
-      "color": "#886ef7",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "GRANTED",
-      "typeSettings": {
-        "BREW": "{amplifier:3,duration:500,potion:\"minecraft:jump_boost\"}",
-        "POTION": "{amplifier:3,duration:300,potion:\"minecraft:jump_boost\"}",
-        "MIXTURE": "{amplifier:3,duration:400,potion:\"minecraft:jump_boost\"}",
-        "VIAL": "{amplifier:3,duration:200,potion:\"minecraft:jump_boost\"}"
-      }
+    {
+      "effect": "splash",
+      "name": "Splash",
+      "color": "#77FFAA",
+      "unlockLevel": 30,
+      "byTier": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "description": "Party members anywhere in the vault heal {value}% of your heal"
     },
-    { "effectId": "regeneration_potion",
-      "type": "potion",
-      "effectName": "Regeneration",
-      "tooltip": "+1 Regeneration for %1$ss",
-      "color": "#84f339",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{amplifier:0,duration:1200,potion:\"minecraft:regeneration\"}",
-        "POTION": "{amplifier:0,duration:600,potion:\"minecraft:regeneration\"}",
-        "MIXTURE": "{amplifier:0,duration:800,potion:\"minecraft:regeneration\"}",
-        "VIAL": "{amplifier:0,duration:400,potion:\"minecraft:regeneration\"}"
-      }
+    {
+      "effect": "attack_damage",
+      "name": "Attack Damage",
+      "color": "#FF5555",
+      "rollMin": 10,
+      "rollMax": 100,
+      "description": "+{value}% Increased Attack Damage for {seconds}s"
     },
-    { "effectId": "absorption",
-      "type": "absorption",
-      "effectName": "Absorption",
-      "tooltip": "+%s Absorption Hearts",
-      "color": "#FFBF00",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{amount:20.0f}",
-        "MIXTURE": "{amount:16.0f}",
-        "POTION": "{amount:12.0f}",
-        "VIAL": "{amount:8.0f}"
-      }
+    {
+      "effect": "ability_power",
+      "name": "Ability Power",
+      "color": "#5599FF",
+      "rollMin": 10,
+      "rollMax": 100,
+      "description": "+{value}% Increased Ability Power for {seconds}s"
     },
-    { "effectId": "cooldown_reduction",
-      "type": "cooldown_reduction",
-      "effectName": "Instant Cooldown Reduction",
-      "tooltip": "Reduces active cooldowns by %s%%",
-      "color": "#00f5b2",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{amount:0.7f}",
-        "MIXTURE": "{amount:0.55f}",
-        "POTION": "{amount:0.4f}",
-        "VIAL": "{amount:0.25f}"
-      }
+    {
+      "effect": "movement_speed",
+      "name": "Movement Speed",
+      "color": "#FFFF55",
+      "rollMin": 10,
+      "rollMax": 100,
+      "description": "+{value}% Movement Speed for {seconds}s"
     },
-    { "effectId": "cast_cleanse",
-      "type": "cast_ability",
-      "effectName": "Cleanse",
-      "tooltip": "Casts lvl %2$s %1$s",
-      "color": "#FFEDBD",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{abilityId:\"cleanse_4\"}",
-        "MIXTURE": "{abilityId:\"cleanse_3\"}",
-        "POTION": "{abilityId:\"cleanse_2\"}",
-        "VIAL": "{abilityId:\"cleanse_1\"}"
-      }
+    {
+      "effect": "armor",
+      "name": "Armor",
+      "color": "#C6C6C6",
+      "rollMin": 10,
+      "rollMax": 100,
+      "description": "+{value}% Increased Armor for {seconds}s"
     },
-    { "effectId": "cast_frostnova",
-      "type": "cast_ability",
-      "effectName": "Frost Nova",
-      "tooltip": "Casts lvl %2$s %1$s",
-      "color": "#00f0e2",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{abilityId:\"nova_frost_8\"}",
-        "MIXTURE": "{abilityId:\"nova_frost_6\"}",
-        "POTION": "{abilityId:\"nova_frost_4\"}",
-        "VIAL": "{abilityId:\"nova_frost_2\"}"
-      }
+    {
+      "effect": "area_of_effect",
+      "name": "Area of Effect",
+      "color": "#FFAA00",
+      "rollMin": 10,
+      "rollMax": 100,
+      "description": "+{value}% Area of Effect for {seconds}s, up to the cap"
     },
-    { "effectId": "cast_totem_spirit",
-      "type": "cast_ability",
-      "effectName": "Spirit Totem",
-      "tooltip": "Summons a lvl %2$s %1$s",
-      "color": "#92afd7",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{abilityId:\"totem_spirit_10\"}",
-        "MIXTURE": "{abilityId:\"totem_spirit_8\"}",
-        "POTION": "{abilityId:\"totem_spirit_6\"}",
-        "VIAL": "{abilityId:\"totem_spirit_4\"}"
-      }
+    {
+      "effect": "lucky_hit",
+      "name": "Lucky Hit",
+      "color": "#55FF55",
+      "rollMin": 10,
+      "rollMax": 100,
+      "description": "+{value}% Lucky Hit Chance for {seconds}s, up to the cap"
     },
-    { "effectId": "cast_totem_hatred",
-      "type": "cast_ability",
-      "effectName": "Hatred Totem",
-      "tooltip": "Summons a lvl %2$s %1$s",
-      "color": "#c330be",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{abilityId:\"totem_hatred_5\"}",
-        "MIXTURE": "{abilityId:\"totem_hatred_4\"}",
-        "POTION": "{abilityId:\"totem_hatred_3\"}",
-        "VIAL": "{abilityId:\"totem_hatred_2\"}"
-      }
-    },
-    { "effectId": "cast_totem_wrath",
-      "type": "cast_ability",
-      "effectName": "Wrath Totem",
-      "tooltip": "Summons a lvl %2$s %1$s",
-      "color": "#ec440f",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{abilityId:\"totem_wrath_8\"}",
-        "MIXTURE": "{abilityId:\"totem_wrath_6\"}",
-        "POTION": "{abilityId:\"totem_wrath_5\"}",
-        "VIAL": "{abilityId:\"totem_wrath_4\"}"
-      }
-    },
-    { "effectId": "cast_taunt_charm",
-      "type": "cast_ability",
-      "effectName": "Taunt Charm",
-      "tooltip": "Casts lvl %2$s %1$s",
-      "color": "#ff59e2",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{abilityId:\"charm_6\"}",
-        "MIXTURE": "{abilityId:\"charm_4\"}",
-        "POTION": "{abilityId:\"charm_3\"}",
-        "VIAL": "{abilityId:\"charm_2\"}"
-      }
-    },
-    { "effectId": "cast_taunt",
-      "type": "cast_ability",
-      "effectName": "Taunt",
-      "tooltip": "Casts lvl %2$s %1$s",
-      "color": "#dedede",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{abilityId:\"taunt_8\"}",
-        "MIXTURE": "{abilityId:\"taunt_6\"}",
-        "POTION": "{abilityId:\"taunt_4\"}",
-        "VIAL": "{abilityId:\"taunt_2\"}"
-      }
-    },
-    { "effectId": "cast_fear",
-      "type": "cast_ability",
-      "effectName": "Fear",
-      "tooltip": "Casts lvl %2$s %1$s",
-      "color": "#3a3a3a",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{abilityId:\"fear_8\"}",
-        "MIXTURE": "{abilityId:\"fear_6\"}",
-        "POTION": "{abilityId:\"fear_4\"}",
-        "VIAL": "{abilityId:\"fear_2\"}"
-      }
-    },
-    { "effectId": "cast_mega_drill",
-      "type": "cast_ability",
-      "effectName": "Mega Drill",
-      "tooltip": "Casts lvl %2$s %1$s",
-      "color": "#cccccc",
-      "craftingCosts": {
-        "VIAL": [
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 8,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "POTION": [
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 16,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "MIXTURE": [
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 32,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ],
-        "BREW": [
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_gold",
-            "NBT": "{}"
-          },
-          {
-            "AMOUNT": 64,
-            "ITEM": "the_vault:vault_diamond",
-            "NBT": "{}"
-          }
-        ]
-        
-      },
-      "unlockCategory": "VAULT_DISCOVERY",
-      "typeSettings": {
-        "BREW": "{abilityId:\"mega_drill_5\"}",
-        "MIXTURE": "{abilityId:\"mega_drill_4\"}",
-        "POTION": "{abilityId:\"mega_drill_3\"}",
-        "VIAL": "{abilityId:\"mega_drill_2\"}"
-      }
+    {
+      "effect": "spellbrew",
+      "name": "Spellbrew",
+      "color": "#C77DFF",
+      "rollMin": 10,
+      "rollMax": 100,
+      "description": "Your next ability cast costs no mana and gets +{value}% increased damage"
     }
-  ]
+  ],
+  "archiveRolls": {
+    "firstFindRollMax": 20,
+    "stepMin": 3,
+    "stepMax": 12,
+    "specialChance": 0.05,
+    "specialStepMin": 15,
+    "specialStepMax": 30
+  }
 }

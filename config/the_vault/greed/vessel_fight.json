@@ -1,0 +1,951 @@
+{
+  "version": 1,
+  "health": {
+    "tierOne": 331000,
+    "growthPerTier": 1.45,
+    "softWallFromGreedTier": 6,
+    "softWallExtraGrowthPerTier": 1.4,
+    "lateCurveFromGreedTier": 16,
+    "lateCurveGrowthPerTier": 1.6,
+    "finalCurveFromGreedTier": 22,
+    "finalCurveGrowthPerTier": 2,
+    "steps": [
+      {
+        "fromGreedTier": 7,
+        "multiplier": 1.75
+      }
+    ]
+  },
+  "phases": [
+    {
+      "key": "hoard",
+      "name": "The Hoard",
+      "color": "#F2C94C",
+      "hpFrom": 100,
+      "hpTo": 75,
+      "rotation": [
+        "gilded_stomp",
+        "gold_rush",
+        "hoard_grab",
+        "gold_rush"
+      ],
+      "rotationGapTicks": 150,
+      "fillers": [
+        "gilded_combo",
+        "hoard_spin"
+      ],
+      "rangedFillers": [
+        "gilded_volley"
+      ],
+      "gapCloser": "rewind",
+      "passives": [],
+      "transitionIn": null
+    },
+    {
+      "key": "hourglass",
+      "name": "The Hourglass",
+      "color": "#A3E635",
+      "hpFrom": 75,
+      "hpTo": 50,
+      "rotation": [
+        "hourglass_collapse",
+        "sand_spears",
+        "acid_orbs",
+        "sand_spears"
+      ],
+      "rotationGapTicks": 160,
+      "fillers": [
+        "gilded_combo",
+        "hoard_spin"
+      ],
+      "rangedFillers": [
+        "gilded_volley"
+      ],
+      "gapCloser": "rewind",
+      "passives": [
+        "echo"
+      ],
+      "transitionIn": "transition_hoard_spills"
+    },
+    {
+      "key": "tax",
+      "name": "The Tax",
+      "color": "#D2384B",
+      "hpFrom": 50,
+      "hpTo": 25,
+      "rotation": [
+        "ledger",
+        "tax_cone",
+        "collection",
+        "tax_cone"
+      ],
+      "rotationGapTicks": 150,
+      "fillers": [
+        "gilded_combo",
+        "hoard_spin"
+      ],
+      "rangedFillers": [
+        "gilded_volley"
+      ],
+      "gapCloser": "rewind",
+      "passives": [
+        "interest"
+      ],
+      "transitionIn": "transition_time_stop"
+    },
+    {
+      "key": "null",
+      "name": "The Null",
+      "color": "#8B5CF6",
+      "hpFrom": 25,
+      "hpTo": 0,
+      "rotation": [
+        "blitz",
+        "null_stomp",
+        "gold_rush",
+        "hoard_grab",
+        "blitz"
+      ],
+      "rotationGapTicks": 130,
+      "fillers": [
+        "gilded_combo",
+        "hoard_spin"
+      ],
+      "rangedFillers": [
+        "gilded_volley"
+      ],
+      "gapCloser": "rewind",
+      "passives": [
+        "consume",
+        "rifts",
+        "emptyVessel"
+      ],
+      "transitionIn": "transition_empty"
+    }
+  ],
+  "attacks": {
+    "gilded_combo": {
+      "name": "Gilded Combo",
+      "params": {
+        "speed": 0.75,
+        "warn": 12,
+        "radius": 6,
+        "angle": 110,
+        "turn": 0.6,
+        "damage": 22
+      }
+    },
+    "hoard_spin": {
+      "name": "Hoard Spin",
+      "params": {
+        "speed": 0.7,
+        "warn": 14,
+        "secondWarn": 10,
+        "radius": 6,
+        "damage": 12
+      }
+    },
+    "gilded_volley": {
+      "name": "Gilded Volley",
+      "params": {
+        "blades": 3,
+        "spread": 22,
+        "warn": 18,
+        "length": 20,
+        "width": 1.6,
+        "damage": 14
+      }
+    },
+    "gilded_stomp": {
+      "name": "Gilded Stomp",
+      "params": {
+        "warn": 28,
+        "radius": 6,
+        "damage": 50,
+        "waveTo": 24,
+        "waveSpeed": 0.6,
+        "waveHeight": 0.55,
+        "waveDamage": 35,
+        "pools": 4,
+        "poolSeconds": 4
+      }
+    },
+    "gold_rush": {
+      "name": "Gold Rush",
+      "params": {
+        "aim": 12,
+        "lock": 12,
+        "length": 18,
+        "width": 3,
+        "speed": 1.8,
+        "damage": 65,
+        "exposed": 60
+      }
+    },
+    "hoard_grab": {
+      "name": "Hoard Grab",
+      "params": {
+        "follow": 20,
+        "lock": 16,
+        "radius": 2.8,
+        "damage": 60,
+        "lift": 14,
+        "exposed": 40
+      }
+    },
+    "rewind": {
+      "name": "Rewind",
+      "params": {
+        "follow": 14,
+        "lock": 12,
+        "radius": 3,
+        "damage": 40,
+        "exposed": 30
+      }
+    },
+    "sand_spears": {
+      "name": "Sand Spears",
+      "params": {
+        "count": 8,
+        "interval": 6,
+        "warn": 18,
+        "radius": 3,
+        "damage": 12
+      }
+    },
+    "hourglass_collapse": {
+      "name": "Hourglass Collapse",
+      "params": {
+        "duration": 80,
+        "radius": 10,
+        "pull": 0.05,
+        "damage": 60,
+        "exposed": 80
+      }
+    },
+    "acid_orbs": {
+      "name": "Acid Orbs",
+      "params": {
+        "count": 4,
+        "speed": 0.25,
+        "turn": 5,
+        "life": 200,
+        "damage": 18,
+        "corroded": 100
+      }
+    },
+    "collection": {
+      "name": "Collection",
+      "params": {
+        "maxTicks": 160,
+        "breakShare": 1.5,
+        "drainPerSecond": 6,
+        "healPerSecond": 0.4,
+        "failDamage": 50
+      }
+    },
+    "ledger": {
+      "name": "The Ledger",
+      "params": {
+        "size": 4,
+        "radius": 28.5,
+        "warn": 30,
+        "gap": 30,
+        "damage": 70,
+        "stamps": 2
+      }
+    },
+    "tax_cone": {
+      "name": "Tax Sweep",
+      "params": {
+        "warn": 26,
+        "radius": 14,
+        "angle": 160,
+        "damage": 45,
+        "exposed": 30
+      }
+    },
+    "roulette": {
+      "name": "Roulette",
+      "params": {
+        "wedges": 6,
+        "spinTicks": 110,
+        "firstHop": 2,
+        "lastHop": 12,
+        "warn": 26,
+        "damage": 60,
+        "cast": 20
+      }
+    },
+    "blitz": {
+      "name": "Blitz",
+      "params": {
+        "blinks": 1,
+        "warn": 14,
+        "swing": 7,
+        "radius": 4.5,
+        "angle": 120,
+        "damage": 35
+      }
+    },
+    "null_stomp": {
+      "name": "Null Stomp",
+      "params": {
+        "warn": 26,
+        "radius": 6.5,
+        "damage": 55,
+        "waves": 3,
+        "waveGap": 18,
+        "waveTo": 20,
+        "waveSpeed": 0.2,
+        "waveDamage": 40
+      }
+    },
+    "last_call": {
+      "name": "Last Call",
+      "params": {
+        "sealTicks": 40,
+        "exposed": 120
+      }
+    },
+    "transition_hoard_spills": {
+      "name": "The Hoard Spills",
+      "params": {
+        "warn": 40,
+        "inner": 4,
+        "damage": 40,
+        "motes": 18,
+        "adds": 2,
+        "length": 140
+      }
+    },
+    "transition_time_stop": {
+      "name": "Time Stops",
+      "params": {
+        "greyTicks": 40,
+        "waveAt": 44,
+        "waveDamage": 20,
+        "adds": 2,
+        "length": 120
+      }
+    },
+    "transition_empty": {
+      "name": "The Vessel Empties",
+      "params": {
+        "motes": 24,
+        "lifeSeconds": 4,
+        "length": 100
+      }
+    }
+  },
+  "fight": {
+    "rotationOrder": "shuffle",
+    "firstAttackTicks": 50,
+    "calmTicksBetweenAttacks": 30,
+    "bossSpeedBlocksPerSecond": 5,
+    "kiteDistance": 16,
+    "kiteSeconds": 5,
+    "rangedFillerMinDistance": 6,
+    "rangedFillerGapTicks": 90,
+    "rangedFalloffPercent": 65,
+    "rangedFalloffFrom": 8,
+    "rangedFalloffTo": 24,
+    "phaseGateEnabled": false,
+    "phaseGateSeconds": 25,
+    "enrageSeconds": 600,
+    "exposedBonusPercent": 150,
+    "guardedReductionPercent": 60,
+    "mechanicArmourSharePercent": 50,
+    "echoDelayTicks": 60,
+    "interestPerStackPercent": 8,
+    "gildedPerStackPercent": 5,
+    "gildedMaxStacks": 10,
+    "corrodedBonusPercent": 15,
+    "mechanicDamagePerPoint": 3.15,
+    "hitDamagePerPoint": 1.36,
+    "damageGrowthPerGreedTier": 1.15,
+    "damageSteps": [
+      {
+        "fromGreedTier": 7,
+        "multiplier": 2
+      }
+    ],
+    "lifeStealBossSharePercent": 25,
+    "voidDamagePerSecond": 15,
+    "voidMinRadius": 13,
+    "voidShrinkPerSecond": 0.15,
+    "curtainDamagePercentPerSecond": 20,
+    "addHits": 10,
+    "hitDamagePercent": 100,
+    "openingKeepers": 0,
+    "chains": {},
+    "lastCall": {
+      "atPercent": 10,
+      "round": [
+        "gilded_stomp",
+        "sand_spears",
+        "ledger",
+        "blitz"
+      ]
+    }
+  },
+  "stagger": {
+    "enabled": true,
+    "threshold": 100,
+    "thresholdGrowth": 1.5,
+    "durationTicks": 160,
+    "lockSeconds": 8,
+    "decayPerSecond": 5,
+    "decayDelaySeconds": 3,
+    "perStun": 12,
+    "perChill": 4,
+    "perFreeze": 15,
+    "perGlacialShatter": 20,
+    "perShock": 10,
+    "perTaunt": 8
+  },
+  "grades": {
+    "s": 240,
+    "a": 360,
+    "b": 480
+  },
+  "hoard": {
+    "enabled": true,
+    "spillEveryPercent": 2,
+    "motesPerSpill": 5,
+    "exposedMultiplier": 2,
+    "flingMin": 3,
+    "flingMax": 7,
+    "flightTicks": 18,
+    "floatMin": 0.4,
+    "floatMax": 2.6,
+    "fadeSeconds": 7,
+    "baseValue": 1,
+    "valuePerGreedTier": 0.5,
+    "decayEndSeconds": 600,
+    "decayFloor": 35,
+    "reputationShare": 0,
+    "reputationWorth": 1,
+    "killBurstMotes": 40,
+    "killAutoCollectTicks": 30,
+    "killBurstByGrade": {
+      "S": 2,
+      "A": 1.5,
+      "B": 1,
+      "C": 0.6
+    }
+  },
+  "visual": {
+    "cellSize": 0.125,
+    "edgeCells": 1.5,
+    "warnShare": 0.22,
+    "palette": "danger",
+    "tintEdges": false,
+    "light": "world",
+    "castBar": true,
+    "exposedText": true,
+    "fillAlpha": 0.34,
+    "armedAlpha": 0.16,
+    "holeShare": 0.14,
+    "scorch": true,
+    "burst": true,
+    "curtainBottomColor": "#4A7DFF",
+    "curtainTopColor": "#0B1E5B",
+    "curtainRimColor": "#9CC2FF",
+    "curtainOpacity": 0.6
+  },
+  "score": {
+    "speedPointsPerSecond": 100,
+    "cleanMax": 20000,
+    "cleanZeroAtMaxHealths": 3,
+    "hoardMax": 10000,
+    "tierMultiplierPerTier": 0.1,
+    "coinBonusByGrade": {
+      "S": 0.5,
+      "A": 0.25,
+      "B": 0.1,
+      "C": 0
+    },
+    "reputationCratesByGrade": {
+      "S": 1,
+      "A": 0.6,
+      "B": 0.3,
+      "C": 0
+    },
+    "firstClearCrate": true
+  },
+  "party": {
+    "maxPlayers": 4,
+    "healthPerExtraPlayerPercent": 75
+  },
+  "awakenings": [
+    {
+      "key": "greed_awakens",
+      "numeral": "I",
+      "name": "Greed Awakens",
+      "fromGreedTier": 7,
+      "color": "#F2C94C",
+      "preview": "The Ledger strikes a third time, in rows. Hoardkeepers guard it from the first second, and every wave of natives brings one more.",
+      "overrides": {
+        "phases": {
+          "hoard": {
+            "passives": [
+              "keepers"
+            ]
+          }
+        },
+        "attacks": {
+          "ledger": {
+            "params": {
+              "stamps": 3
+            }
+          },
+          "transition_hoard_spills": {
+            "params": {
+              "adds": 3
+            }
+          },
+          "transition_time_stop": {
+            "params": {
+              "adds": 3
+            }
+          }
+        },
+        "fight": {
+          "openingKeepers": 2
+        }
+      }
+    },
+    {
+      "key": "gilded_fury",
+      "numeral": "II",
+      "name": "Gilded Fury",
+      "fromGreedTier": 15,
+      "color": "#FF9F1C",
+      "preview": "Its big attacks chain into a second one, and the opening only comes after both. It moves faster, rests less and its plain hits land harder.",
+      "overrides": {
+        "phases": {
+          "hoard": {
+            "rotationGapTicks": 143,
+            "passives": [
+              "keepers"
+            ]
+          },
+          "hourglass": {
+            "rotationGapTicks": 152
+          },
+          "tax": {
+            "rotationGapTicks": 143
+          },
+          "null": {
+            "rotationGapTicks": 124
+          }
+        },
+        "attacks": {
+          "gilded_combo": {
+            "params": {
+              "warn": 11
+            }
+          },
+          "hoard_spin": {
+            "params": {
+              "warn": 13,
+              "secondWarn": 9
+            }
+          },
+          "gilded_volley": {
+            "params": {
+              "warn": 16
+            }
+          },
+          "gilded_stomp": {
+            "params": {
+              "warn": 25
+            }
+          },
+          "gold_rush": {
+            "params": {
+              "lock": 11,
+              "exposed": 54
+            }
+          },
+          "hoard_grab": {
+            "params": {
+              "lock": 14,
+              "exposed": 36
+            }
+          },
+          "rewind": {
+            "params": {
+              "lock": 11,
+              "exposed": 28
+            }
+          },
+          "sand_spears": {
+            "params": {
+              "warn": 16
+            }
+          },
+          "hourglass_collapse": {
+            "params": {
+              "duration": 72,
+              "exposed": 72
+            }
+          },
+          "ledger": {
+            "params": {
+              "warn": 27,
+              "gap": 27,
+              "stamps": 3
+            }
+          },
+          "tax_cone": {
+            "params": {
+              "warn": 23,
+              "exposed": 28
+            }
+          },
+          "roulette": {
+            "params": {
+              "warn": 23
+            }
+          },
+          "blitz": {
+            "params": {
+              "warn": 13
+            }
+          },
+          "null_stomp": {
+            "params": {
+              "warn": 23
+            }
+          },
+          "last_call": {
+            "params": {
+              "exposed": 110
+            }
+          },
+          "transition_hoard_spills": {
+            "params": {
+              "warn": 36,
+              "adds": 3
+            }
+          },
+          "transition_time_stop": {
+            "params": {
+              "adds": 3
+            }
+          }
+        },
+        "fight": {
+          "calmTicksBetweenAttacks": 23,
+          "bossSpeedBlocksPerSecond": 6.25,
+          "hitDamagePercent": 120,
+          "openingKeepers": 2,
+          "chains": {
+            "gilded_stomp": "gold_rush",
+            "gold_rush": "hoard_grab",
+            "hoard_grab": "hoard_spin",
+            "hourglass_collapse": "sand_spears",
+            "tax_cone": "tax_cone",
+            "blitz": "null_stomp"
+          }
+        }
+      }
+    },
+    {
+      "key": "the_house",
+      "numeral": "III",
+      "name": "The House Always Wins",
+      "fromGreedTier": 21,
+      "color": "#D2384B",
+      "preview": "In the Tax it spins the House's wheel: be in the lit wedge when it stops, while it keeps swinging at you.",
+      "overrides": {
+        "phases": {
+          "hoard": {
+            "rotationGapTicks": 135,
+            "passives": [
+              "keepers"
+            ]
+          },
+          "hourglass": {
+            "rotationGapTicks": 144
+          },
+          "tax": {
+            "rotation": [
+              "ledger",
+              "tax_cone",
+              "collection",
+              "tax_cone",
+              "roulette"
+            ],
+            "rotationGapTicks": 135
+          },
+          "null": {
+            "rotationGapTicks": 117
+          }
+        },
+        "attacks": {
+          "gilded_combo": {
+            "params": {
+              "warn": 10
+            }
+          },
+          "hoard_spin": {
+            "params": {
+              "warn": 11,
+              "secondWarn": 8
+            }
+          },
+          "gilded_volley": {
+            "params": {
+              "warn": 14
+            }
+          },
+          "gilded_stomp": {
+            "params": {
+              "warn": 22
+            }
+          },
+          "gold_rush": {
+            "params": {
+              "lock": 10,
+              "exposed": 48
+            }
+          },
+          "hoard_grab": {
+            "params": {
+              "lock": 13,
+              "exposed": 32
+            }
+          },
+          "rewind": {
+            "params": {
+              "lock": 10,
+              "exposed": 24
+            }
+          },
+          "sand_spears": {
+            "params": {
+              "warn": 14
+            }
+          },
+          "hourglass_collapse": {
+            "params": {
+              "duration": 64,
+              "exposed": 64
+            }
+          },
+          "ledger": {
+            "params": {
+              "warn": 24,
+              "gap": 24,
+              "stamps": 3
+            }
+          },
+          "tax_cone": {
+            "params": {
+              "warn": 21,
+              "exposed": 24
+            }
+          },
+          "roulette": {
+            "params": {
+              "warn": 21
+            }
+          },
+          "blitz": {
+            "params": {
+              "warn": 11
+            }
+          },
+          "null_stomp": {
+            "params": {
+              "warn": 21
+            }
+          },
+          "last_call": {
+            "params": {
+              "exposed": 100
+            }
+          },
+          "transition_hoard_spills": {
+            "params": {
+              "warn": 32,
+              "adds": 4
+            }
+          },
+          "transition_time_stop": {
+            "params": {
+              "adds": 4
+            }
+          }
+        },
+        "fight": {
+          "calmTicksBetweenAttacks": 15,
+          "bossSpeedBlocksPerSecond": 6.75,
+          "hitDamagePercent": 140,
+          "openingKeepers": 3,
+          "chains": {
+            "gilded_stomp": "gold_rush",
+            "gold_rush": "hoard_grab",
+            "hoard_grab": "hoard_spin",
+            "hourglass_collapse": "sand_spears",
+            "tax_cone": "tax_cone",
+            "blitz": "null_stomp"
+          }
+        }
+      }
+    },
+    {
+      "key": "last_call",
+      "numeral": "IV",
+      "name": "Last Call",
+      "fromGreedTier": 24,
+      "color": "#8B5CF6",
+      "preview": "At 10% it goes all in: one big attack from every phase back to back, then a long opening. The last Vessel there is.",
+      "overrides": {
+        "phases": {
+          "hoard": {
+            "rotationGapTicks": 128,
+            "passives": [
+              "keepers"
+            ]
+          },
+          "hourglass": {
+            "rotationGapTicks": 136
+          },
+          "tax": {
+            "rotation": [
+              "ledger",
+              "tax_cone",
+              "collection",
+              "tax_cone",
+              "roulette"
+            ],
+            "rotationGapTicks": 128
+          },
+          "null": {
+            "rotationGapTicks": 111,
+            "passives": [
+              "consume",
+              "rifts",
+              "emptyVessel",
+              "lastCall"
+            ]
+          }
+        },
+        "attacks": {
+          "gilded_combo": {
+            "params": {
+              "warn": 8
+            }
+          },
+          "hoard_spin": {
+            "params": {
+              "warn": 10,
+              "secondWarn": 8
+            }
+          },
+          "gilded_volley": {
+            "params": {
+              "warn": 13
+            }
+          },
+          "gilded_stomp": {
+            "params": {
+              "warn": 20
+            }
+          },
+          "gold_rush": {
+            "params": {
+              "lock": 8,
+              "exposed": 46
+            }
+          },
+          "hoard_grab": {
+            "params": {
+              "lock": 11,
+              "exposed": 30
+            }
+          },
+          "rewind": {
+            "params": {
+              "lock": 8,
+              "exposed": 22
+            }
+          },
+          "sand_spears": {
+            "params": {
+              "warn": 13
+            }
+          },
+          "hourglass_collapse": {
+            "params": {
+              "duration": 56,
+              "exposed": 60
+            }
+          },
+          "ledger": {
+            "params": {
+              "warn": 21,
+              "gap": 21,
+              "stamps": 3
+            }
+          },
+          "tax_cone": {
+            "params": {
+              "warn": 18,
+              "exposed": 22
+            }
+          },
+          "roulette": {
+            "params": {
+              "warn": 18
+            }
+          },
+          "blitz": {
+            "params": {
+              "warn": 10
+            }
+          },
+          "null_stomp": {
+            "params": {
+              "warn": 18
+            }
+          },
+          "last_call": {
+            "params": {
+              "exposed": 90
+            }
+          },
+          "transition_hoard_spills": {
+            "params": {
+              "warn": 28,
+              "adds": 4
+            }
+          },
+          "transition_time_stop": {
+            "params": {
+              "adds": 4
+            }
+          }
+        },
+        "fight": {
+          "calmTicksBetweenAttacks": 12,
+          "bossSpeedBlocksPerSecond": 7,
+          "hitDamagePercent": 150,
+          "openingKeepers": 3,
+          "chains": {
+            "gilded_stomp": "gold_rush",
+            "gold_rush": "hoard_grab",
+            "hoard_grab": "hoard_spin",
+            "hourglass_collapse": "sand_spears",
+            "tax_cone": "tax_cone",
+            "blitz": "null_stomp"
+          }
+        }
+      }
+    }
+  ]
+}

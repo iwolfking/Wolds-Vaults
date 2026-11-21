@@ -59,7 +59,7 @@
             "color": "$text"
           },
           {
-            "text": "\n\n/the_vault research_team invite имяигрока ",
+            "text": "\n\n/the_vault team invite имяигрока ",
             "color": "$manaCost"
           },
           {
@@ -638,7 +638,7 @@
         ]
       },
       "icon": "the_vault:gui/quests/black_market2",
-      "targetId": "the_vault:shard_pouch",
+      "targetId": "the_vault:coin_pouch",
       "targetProgress": 1.0,
       "unlockedBy": "learning_skills",
       "reward": {
@@ -650,7 +650,6 @@
         "vaultExp": 0
       }
     },
-    { "type": "collection", "id": "coin_pouch", "name": "Кошелёк для монет", "descriptionData": { "description": [ { "text": "Лучший способ хранить ", "color": "$text" }, { "text": "бронзу", "color": "$bronze" }, { "text": ", ", "color": "$text" }, { "text": "серебро", "color": "$common" }, { "text": ", ", "color": "$text" }, { "text": "золото", "color": "$gold" }, { "text": " и ", "color": "$text" }, { "text": "платину", "color": "$platinum" }, { "text": " — это получить ", "color": "$text" }, { "text": "Кошелёк для монет", "color": "$qhighlight" }, { "text": "!\n\nОн ", "color": "$text" }, { "text": "привязан к душе", "color": "$soulchance" }, { "text": " и остаётся даже после смерти. Вмещает неограниченное количество монет. Все рабочие станции ", "color": "$text" }, { "text": "Охотников за Хранилищем", "color": "$qhighlight" }, { "text": " могут читать прямо из него!\n\nОн автоматически подбирает валюту, пока не расположен после ", "color": "$text" }, { "text": "рюкзака", "color": "$blocks" }, { "text": " с валютой в белом списке.", "color": "$text" }, { "text": "\n\nПолучите Кошелёк для монет", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/coin_pouch", "targetId": "the_vault:coin_pouch", "targetProgress": 1.0, "unlockedBy": "shard_pouch", "reward": { "items": [ { "item": "the_vault:vault_platinum", "amount": 1 }, { "item": "the_vault:chromatic_steel_ingot", "amount": 4 } ], "vaultExp": 0 } },
     { "type": "collection", "id": "complete_bounty", "name": "Охота за наградами", "descriptionData": { "description": [ { "text": "Выполнение наград — отличный способ получить дополнительную добычу и поставить цель. Создайте Стол наград и взаимодействуйте с ним правым кликом.", "color": "$text" }, { "text": "\n\nСоздайте Стол наград", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/bounty_table", "targetId": "the_vault:bounty_block", "targetProgress": 1.0, "unlockedBy": "learning_skills", "reward": { "items": [ { "item": "the_vault:bounty_pearl", "amount": 10 } ], "vaultExp": 0 } },
     { "type": "bounty_complete", "id": "complete_bounty2", "name": "Награды и вознаграждения", "descriptionData": { "description": [ { "text": "В Столе наград выберите награду, нажав на одну из доступных и кликнув активировать. После завершения вернитесь к столу за вознаграждением.", "color": "$text" }, { "text": "\n\nЗавершите награду", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/bounty", "targetId": "the_vault:any", "targetProgress": 1.0, "unlockedBy": "complete_bounty", "reward": { "items": [ { "item": "the_vault:chromatic_iron_ingot", "amount": 32 } ], "vaultExp": 0 } },
     { "type": "collection", "id": "animal_pens", "name": "Загоны для животных", "descriptionData": { "description": [ { "text": "Управлять большим количеством животных сложно, они создают много лагов в ", "color": "$text" }, { "text": "Minecraft", "color": "$qhighlight" }, { "text": ". Это решается с помощью ", "color": "$text" }, { "text": "Загонов для животных", "color": "$qhighlight" }, { "text": ". С помощью ", "color": "$text" }, { "text": "Банки для животных", "color": "$qhighlight" }, { "text": " можно содержать неограниченное количество одного вида в одном загоне!\n\nПоставив загон, соберите животных в банку и щёлкните правой кнопкой по загону. Можно разводить, убивать мечом для добычи. ", "color": "$text" }, { "text": "Зачарование грабёж", "color": "$fortune" }, { "text": " работает и здесь.", "color": "$text" }, { "text": "\n\nПолучите Загон для животных", "color": "$heal" } ] }, "icon": "the_vault:gui/quests/animal_pen", "targetId": "the_vault:animal_pen", "targetProgress": 1.0, "unlockedBy": "enter_vault", "reward": { "items": [ { "item": "the_vault:animal_jar", "amount": 1 }, { "item": "the_vault:animal_jar", "amount": 1 }, { "item": "the_vault:animal_pen", "amount": 1 } ], "vaultExp": 0 } },

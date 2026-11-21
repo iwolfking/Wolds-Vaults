@@ -1,0 +1,223 @@
+{
+  "themePool": "the_vault:default",
+  "excludedThemeRoomPools": [
+    "the_vault:vault/rooms/challenge_rooms",
+    "the_vault:vault/rooms/omega_rooms"
+  ],
+  "excludedRoomTypes": [
+    "ORE"
+  ],
+  "cornerRoomChance": 0.35,
+  "richRewardLines": 2,
+  "riskyRewardLines": 1,
+  "riskyMinDangerLines": 1,
+  "riskyMaxDangerLines": 2,
+  "plainRewardLineChance": 0.5,
+  "rewardLineWeights": {
+    "omega_room": 2.0,
+    "chest_cascade": 3.0,
+    "greed_boost": 2.0,
+    "greed_chest": 2.0,
+    "time_from_kills": 2.0,
+    "cluster_modifier": 0.5,
+    "keyholder": 1.5,
+    "wager_pillar": 1.0
+  },
+  "dangerLineWeights": {
+    "trial": 3.0,
+    "keepers": 3.0,
+    "hunted": 1.0,
+    "damage_risks_greed": 2.0
+  },
+  "cascadeChestTypes": [
+    {
+      "label": "Gilded Chests",
+      "filter": "the_vault:gilded_chest",
+      "weight": 2.0,
+      "minChance": 0.3,
+      "maxChance": 0.6
+    },
+    {
+      "label": "Ornate Chests",
+      "filter": "the_vault:ornate_chest",
+      "weight": 1.0,
+      "minChance": 0.2,
+      "maxChance": 0.4
+    },
+    {
+      "label": "Living Chests",
+      "filter": "the_vault:living_chest",
+      "weight": 3.0,
+      "minChance": 0.4,
+      "maxChance": 0.8
+    },
+    {
+      "label": "Wooden Chests",
+      "filter": "the_vault:wooden_chest",
+      "weight": 3.0,
+      "minChance": 0.5,
+      "maxChance": 1.0
+    }
+  ],
+  "greedBoostMin": 0.2,
+  "greedBoostMax": 0.4,
+  "highKeeperChanceShare": 0.4,
+  "lowKeeperRoomChance": 0.25,
+  "highKeeperRoomChance": 0.6,
+  "timeFromKillsChances": {
+    "@the_vault:horde": 0.01,
+    "@the_vault:assassin": 0.05,
+    "@the_vault:tank": 0.1
+  },
+  "timeFromKillsMinTicks": 100,
+  "timeFromKillsMaxTicks": 200,
+  "huntedMinimumClustersBought": 1,
+  "damageGreedLossChance": 0.25,
+  "damageGreedLossShareOfBar": 0.01,
+  "damageGreedLossCooldownTicks": 20,
+  "clusterModifiers": [
+    {
+      "modifier": "the_vault:overpower",
+      "weight": 1.0,
+      "costShare": 0.15
+    },
+    {
+      "modifier": "the_vault:glued_mobs",
+      "weight": 1.0,
+      "costShare": 0.1
+    },
+    {
+      "modifier": "the_vault:chest_hunter",
+      "weight": 1.0,
+      "costShare": 0.05
+    }
+  ],
+  "costShareOfBarBaseMin": 0.12,
+  "costShareOfBarBaseMax": 0.14,
+  "omegaRoomCostShare": 0.1,
+  "cascadeCostShare": 0.05,
+  "greedBoostCostFactor": 0.25,
+  "greedChestCostShare": 0.04,
+  "timeFromKillsCostShare": 0.04,
+  "lowKeepersCostShare": 0.0,
+  "highKeepersCostShare": -0.03,
+  "huntedCostShare": -0.08,
+  "damageRisksGreedCostShare": -0.04,
+  "costShareOfBarPerCluster": 0.05,
+  "costShareOfBarMin": 0.05,
+  "costShareOfBarMax": 0.6,
+  "omegaRoomPool": "the_vault:vault/rooms/omega_rooms",
+  "trialRoomPool": "the_vault:vault/rooms/special/boss",
+  "maxConcurrentCellBuilds": 3,
+  "trialWaves": [
+    1,
+    2,
+    3
+  ],
+  "trialWaveDelayTicks": 10,
+  "timekeeperTrialClearTimeTicks": 1200,
+  "timeSourceProtectionPerDrySet": 0.35,
+  "lawChancePerSet": 0.25,
+  "lawMinimumClustersBought": 1,
+  "laws": {
+    "greed_gain": {
+      "weight": 3.0,
+      "maxStacks": 3,
+      "amount": 0.2,
+      "costShare": 0.1
+    },
+    "more_chests": {
+      "weight": 2.0,
+      "maxStacks": 2,
+      "amount": 0.2,
+      "costShare": 0.08
+    },
+    "greed_chests": {
+      "weight": 2.0,
+      "maxStacks": 2,
+      "amount": 1.0,
+      "costShare": 0.06
+    },
+    "timekeepers": {
+      "weight": 2.0,
+      "maxStacks": 2,
+      "amount": 0.5,
+      "costShare": 0.06
+    },
+    "onslaught": {
+      "weight": 2.0,
+      "maxStacks": 3,
+      "amount": 0.25,
+      "costShare": 0.04,
+      "modifier": "the_vault:more_mobs_cata"
+    },
+    "chest_respawn": {
+      "weight": 1.0,
+      "maxStacks": 1,
+      "amount": 0.25,
+      "costShare": 0.08,
+      "modifier": "the_vault:chaos_chest_respawn"
+    },
+    "treasure_sense": {
+      "weight": 1.0,
+      "maxStacks": 1,
+      "amount": 24.0,
+      "costShare": 0.05
+    }
+  },
+  "keyholderCostShare": 0.05,
+  "wagerPillarCostShare": 0.03,
+  "greedChestBonusMin": 1.0,
+  "greedChestBonusMax": 3.0,
+  "keeperDeathShare": 0.5,
+  "trialKinds": {
+    "timekeeper": {
+      "weight": 30.0,
+      "costShare": 0.05,
+      "palette": "the_vault:universal_greed_acid"
+    },
+    "hoardkeeper": {
+      "weight": 30.0,
+      "costShare": 0.02,
+      "palette": "the_vault:universal_greed_death"
+    },
+    "raid": {
+      "weight": 25.0,
+      "costShare": 0.0,
+      "palette": "the_vault:universal_greed_death"
+    },
+    "golem": {
+      "weight": 7.5,
+      "costShare": 0.0,
+      "palette": "the_vault:universal_greed_death"
+    },
+    "boogieman": {
+      "weight": 7.5,
+      "costShare": 0.0,
+      "palette": "the_vault:universal_greed_death"
+    }
+  },
+  "megaTrialChance": 0.2,
+  "megaTrialMobFactor": 3,
+  "megaTrialRewardFactor": 2,
+  "raidMobs": {
+    "minecraft:pillager": 3.0,
+    "minecraft:vindicator": 3.0,
+    "minecraft:evoker": 1.0,
+    "minecraft:ravager": 0.5,
+    "the_vault:healer": 1.0
+  },
+  "raidWaves": {
+    "min": 3,
+    "max": 6,
+    "type": "uniform"
+  },
+  "raidMobsPerWave": {
+    "min": 8,
+    "max": 12,
+    "type": "uniform"
+  },
+  "raidSeconds": 60,
+  "raidSpawnMinDistance": 7.0,
+  "raidSpawnMaxDistance": 13.0
+}

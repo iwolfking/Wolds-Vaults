@@ -6,87 +6,19 @@
       "output": [
         {
           "block": "the_vault:rune_pillar",
-          "rune": "the_vault:boss_rune",
-          "count": {
-            "type": "uniform",
-            "min": 3,
-            "max": 10
-          },
           "boss": [
             {
               "id": "the_vault:boogieman_boss",
-              "BaseTraits": [
-                "boogieman_melee_attack",
-                "snowball_ranged_attack"
-              ],
-              "ModifierTraits": {
-                "light_melee": "boogieman_melee_attack",
-                "heavy_melee": "summon_target_boogiemen",
-                "light_ranged": "snowball_ranged_attack",
-                "heavy_ranged": "fireball_ranged_attack",
-                "buff_effect": "blood_orb",
-                "aoe_attack": "sweep_attack",
-                "on-hit_effect": "life_leech_on_hit",
-                "attribute_health": "health_attribute",
-                "attribute_dmg": "dmg_attribute"
-              },
               "weight": 1
             },
             {
               "id": "the_vault:golem_boss",
-              "BaseTraits": [
-                "golem_melee_attack",
-                "levitate_on_hit",
-                "golem_hand_ranged_attack"
-              ],
-              "ModifierTraits": {
-                "light_melee": "spider_attack",
-                "heavy_melee": "leap_at_target",
-                "light_ranged": "golem_hand_ranged_attack",
-                "heavy_ranged": "golem_double_hand_ranged_attack",
-                "aoe_attack": "ground_slam",
-                "buff_effect": "heal",
-                "on-hit_effect": "poison_on_hit",
-                "attribute_health": "health_attribute",
-                "attribute_dmg": "dmg_attribute"
-              },
-              "weight": 1
-            },
-            {
-              "id": "the_vault:black_widow_boss",
-              "BaseTraits": [
-                "place_cobwebs_around",
-                "spider_attack",
-                "leap_at_target"
-              ],
-              "ModifierTraits": {
-                "light_melee": "spider_attack",
-                "heavy_melee": "leap_at_target",
-                "light_ranged": "cobweb_ranged_attack",
-                "heavy_ranged": "summon_target_spider",
-                "aoe_attack": "place_cobwebs_around",
-                "buff_effect": "poison_aura",
-                "on-hit_effect": "poison_on_hit",
-                "attribute_health": "health_attribute",
-                "attribute_dmg": "dmg_attribute"
-              },
               "weight": 1
             }
           ],
           "weight": 1
         }
       ]
-    },
-    {
-      "type": "reference",
-      "id": "the_vault:generic/room_base"
-    },
-    {
-      "type": "weighted_target",
-      "target": "minecraft:glass",
-      "output": {
-        "minecraft:light[level=12]": 1
-      }
     }
   ],
   "entity_processors": [],

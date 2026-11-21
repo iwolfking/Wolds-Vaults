@@ -388,7 +388,7 @@
       "counter": {
         "variables": {},
         "target": {
-          "count": 15,
+          "count": 8,
           "type": "constant"
         },
         "predicate": "GREATER_OR_EQUAL_TO",
@@ -463,14 +463,14 @@
       "renderer": {
         "name": "Submit Companion Gemstones",
         "stack": {
-          "id": "vhsmp:mystic_gemstone",
+          "id": "vhcompanions:mystic_gemstone",
           "count": 1
         },
         "type": "team"
       },
       "children": [],
       "operating": false,
-      "item": "vhsmp:mystic_gemstone",
+      "item": "vhcompanions:mystic_gemstone",
       "counter": {
         "variables": {},
         "target": {
@@ -1759,7 +1759,7 @@
       "counter": {
         "variables": {},
         "target": {
-          "count": 20,
+          "count": 10,
           "type": "constant"
         },
         "predicate": "GREATER_OR_EQUAL_TO",
@@ -1821,7 +1821,7 @@
       "counter": {
         "variables": {},
         "target": {
-          "count": 25,
+          "count": 12,
           "type": "constant"
         },
         "predicate": "GREATER_OR_EQUAL_TO",
@@ -1883,7 +1883,7 @@
       "counter": {
         "variables": {},
         "target": {
-          "count": 30,
+          "count": 15,
           "type": "constant"
         },
         "predicate": "GREATER_OR_EQUAL_TO",
@@ -1945,7 +1945,7 @@
       "counter": {
         "variables": {},
         "target": {
-          "count": 35,
+          "count": 18,
           "type": "constant"
         },
         "predicate": "GREATER_OR_EQUAL_TO",
@@ -2007,7 +2007,7 @@
       "counter": {
         "variables": {},
         "target": {
-          "count": 40,
+          "count": 20,
           "type": "constant"
         },
         "predicate": "GREATER_OR_EQUAL_TO",
@@ -2567,18 +2567,17 @@
       },
       "type": "collection"
     },
-    { "id": "submit_500_companion_gemstones_reclaim_2",
+    { "id": "complete_250_bounties",
       "renderer": {
-        "name": "Submit Lost Bounties",
+        "name": "Complete Bounties",
         "stack": {
-          "id": "the_vault:lost_bounty",
+          "id": "the_vault:vault_crate_bounty",
           "count": 1
         },
         "type": "team"
       },
       "children": [],
       "operating": false,
-      "item": "the_vault:lost_bounty",
       "counter": {
         "variables": {},
         "target": {
@@ -2587,7 +2586,7 @@
         },
         "type": "target"
       },
-      "type": "collection"
+      "type": "complete_bounty"
     },
 
 
@@ -2991,16 +2990,16 @@
     },
     { "id": "submit_burgers_reclaim_3",
       "renderer": {
-        "name": "Submit Chaotic Vault Rock",
+        "name": "Submit Seal of Chaos",
         "stack": {
-          "id": "the_vault:vault_catalyst_chaos",
+          "id": "the_vault:crystal_seal_chaos",
           "count": 1
         },
         "type": "team"
       },
       "children": [],
       "operating": false,
-      "item": "the_vault:vault_catalyst_chaos",
+      "item": "the_vault:crystal_seal_chaos",
       "counter": {
         "variables": {},
         "target": {
@@ -3642,7 +3641,7 @@
       },
       "type": "repeated"
     },
-    { "id": "complete_3_vaults_looting_2500_chests_reclaim_2",
+    { "id": "complete_3_vaults_looting_2500_chests_reclaim_4",
       "renderer": {
         "name": "Complete Vaults looting 3,250, or more, chests",
         "icon": "the_vault:textures/gui/bingo/wooden.png",

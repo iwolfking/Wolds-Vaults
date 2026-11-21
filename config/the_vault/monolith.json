@@ -1,22 +1,111 @@
 {
+  "tiers": {
+    "WARM": {
+      "fromHeat": 0,
+      "pool": "the_vault:brazier_warm"
+    },
+    "HOT": {
+      "fromHeat": 3,
+      "pool": "the_vault:brazier_hot"
+    },
+    "BLAZING": {
+      "fromHeat": 6,
+      "pool": "the_vault:brazier_blazing"
+    }
+  },
+  "rollNearDistance": 48.0,
+  "ringRadius": 5.0,
+  "ringHeight": 3.0,
+  "contestedSpeed": 0.0,
+  "coldDrainSpeed": 1.0,
+  "secondWaveAt": 0.5,
+  "mobHealthPerHeat": 0.1,
+  "mobDamagePerHeat": 0.1,
+  "waveSpawnMinDistance": 8.0,
+  "waveSpawnMaxDistance": 11.0,
+  "waveMobGroups": {
+    "PIECE_OF_CAKE": { "@the_vault:horde": 100 },
+    "EASY": { "@the_vault:horde": 90, "@the_vault:assassin": 10 },
+    "NORMAL": { "@the_vault:horde": 60, "@the_vault:assassin": 30, "@the_vault:tank": 10 },
+    "HARD": { "@the_vault:horde": 50, "@the_vault:assassin": 30, "@the_vault:tank": 20 },
+    "IMPOSSIBLE": { "@the_vault:horde": 20, "@the_vault:assassin": 50, "@the_vault:tank": 30 },
+    "FRAGGED": { "@the_vault:assassin": 40, "@the_vault:tank": 60 }
+  },
+  "blessingCaps": {
+    "the_vault:extended": 3
+  },
   "levels": [
     {
       "level": 0,
-      "stackModifierPool": "the_vault:brazier_new",
-      "overStackModifierPool": "the_vault:brazier_pillage",
-      "overStackLootTable": "the_vault:brazier_lvl0"
+      "holdSeconds": 12.0,
+      "holdSecondsPerHeat": 1.0,
+      "holdSecondsCap": 30.0,
+      "mobsPerWave": 3,
+      "mobsPerWavePerHeat": 2,
+      "mobsPerExtraPlayer": 1,
+      "blessingStacks": {
+        "the_vault:jackpot_chests": { "type": "uniform", "min": 3, "max": 6 }
+      }
     },
     {
       "level": 20,
-      "stackModifierPool": "the_vault:brazier_new",
-      "overStackModifierPool": "the_vault:brazier_pillage",
-      "overStackLootTable": "the_vault:brazier_lvl20"
+      "holdSeconds": 12.0,
+      "holdSecondsPerHeat": 1.0,
+      "holdSecondsCap": 30.0,
+      "mobsPerWave": 4,
+      "mobsPerWavePerHeat": 2,
+      "mobsPerExtraPlayer": 1,
+      "blessingStacks": {
+        "the_vault:jackpot_chests": { "type": "uniform", "min": 4, "max": 7 }
+      }
     },
     {
-      "level": 50,
-      "stackModifierPool": "the_vault:brazier_new",
-      "overStackModifierPool": "the_vault:brazier_pillage",
-      "overStackLootTable": "the_vault:brazier_lvl50"
+      "level": 40,
+      "holdSeconds": 12.0,
+      "holdSecondsPerHeat": 1.0,
+      "holdSecondsCap": 30.0,
+      "mobsPerWave": 6,
+      "mobsPerWavePerHeat": 2,
+      "mobsPerExtraPlayer": 1,
+      "blessingStacks": {
+        "the_vault:jackpot_chests": { "type": "uniform", "min": 5, "max": 8 }
+      }
+    },
+    {
+      "level": 60,
+      "holdSeconds": 12.0,
+      "holdSecondsPerHeat": 1.0,
+      "holdSecondsCap": 30.0,
+      "mobsPerWave": 8,
+      "mobsPerWavePerHeat": 2,
+      "mobsPerExtraPlayer": 1,
+      "blessingStacks": {
+        "the_vault:jackpot_chests": { "type": "uniform", "min": 6, "max": 9 }
+      }
+    },
+    {
+      "level": 80,
+      "holdSeconds": 12.0,
+      "holdSecondsPerHeat": 1.0,
+      "holdSecondsCap": 30.0,
+      "mobsPerWave": 12,
+      "mobsPerWavePerHeat": 2,
+      "mobsPerExtraPlayer": 1,
+      "blessingStacks": {
+        "the_vault:jackpot_chests": { "type": "uniform", "min": 7, "max": 10 }
+      }
+    },
+    {
+      "level": 100,
+      "holdSeconds": 12.0,
+      "holdSecondsPerHeat": 1.0,
+      "holdSecondsCap": 30.0,
+      "mobsPerWave": 14,
+      "mobsPerWavePerHeat": 2,
+      "mobsPerExtraPlayer": 1,
+      "blessingStacks": {
+        "the_vault:jackpot_chests": { "type": "uniform", "min": 8, "max": 11 }
+      }
     }
   ]
 }

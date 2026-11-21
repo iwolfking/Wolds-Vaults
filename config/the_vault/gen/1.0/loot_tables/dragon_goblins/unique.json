@@ -7,21 +7,6 @@
                 "max": 1
             },
             "pool": [
-                {
-                            "weight": 5,
-                            "item": {
-                              "id": "the_vault:jewel",
-                              "nbt": {
-                                "the_vault:gear_unique_pool": "the_vault:frozen_heart",
-                                "the_vault:gear_roll_type": "Unique"
-                              },
-                              "count": {
-                                "type": "uniform",
-                                "min": 1,
-                                "max": 1
-                                }
-                            }
-                        },
                         {
                             "weight": 5,
                             "item": {
@@ -43,6 +28,21 @@
                               "id": "the_vault:chestplate",
                               "nbt": {
                                 "the_vault:gear_unique_pool": "the_vault:vitalis",
+                                "the_vault:gear_roll_type": "Unique"
+                              },
+                              "count": {
+                                "type": "uniform",
+                                "min": 1,
+                                "max": 1
+                                }
+                            }
+                        },
+                        {
+                            "weight": 5,
+                            "item": {
+                              "id": "the_vault:jewel",
+                              "nbt": {
+                                "the_vault:gear_unique_pool": "the_vault:frozen_heart",
                                 "the_vault:gear_roll_type": "Unique"
                               },
                               "count": {

@@ -1,13 +1,2919 @@
 {
-    "autoLayout": {
-        "spacing": 80.0,
-        "angleOffset": 0.0,
-        "startRadius": 100.0
+  "economy": {
+    "pointsPerTier": 3,
+    "costMinor": 1,
+    "costMajor": 1,
+    "costUltimate": 3,
+    "freeRespecsPerTier": 1,
+    "respecCoinCost": 50,
+    "respecCoinStep": 50
+  },
+  "trees": [
+    {
+      "id": "offense",
+      "name": "Offensive",
+      "color": "#ff6a4d"
     },
-    "tierFrameTextures": {
-        "0": "the_vault:textures/gui/greed/frame_tier_0.png",
-        "1": "the_vault:textures/gui/greed/frame_tier_1.png",
-        "2": "the_vault:textures/gui/greed/frame_tier_2.png",
-        "3": "the_vault:textures/gui/greed/frame_tier_3.png"
+    {
+      "id": "defense",
+      "name": "Defensive",
+      "color": "#4fd69c"
+    },
+    {
+      "id": "utility",
+      "name": "Utility",
+      "color": "#5ab4ff"
     }
+  ],
+  "nodes": [
+    {
+      "id": "core",
+      "kind": "core",
+      "x": 0,
+      "y": 0,
+      "name": "Greed",
+      "description": "Where every path starts. Each greed tier you reach gives you Greed Points to spend.",
+      "icon": "greed_core"
+    },
+    {
+      "id": "off_m1",
+      "kind": "major",
+      "tree": "offense",
+      "need": 3,
+      "x": 0,
+      "y": -80,
+      "name": "Executioner",
+      "description": "Your hits deal 40% more damage to mobs below 30% health.",
+      "icon": "executioner",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_executioner",
+          "value": 0.4
+        }
+      ]
+    },
+    {
+      "id": "off_m1_1",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m1",
+      "x": 20,
+      "y": -52,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_m1_2",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m1",
+      "x": -20,
+      "y": -52,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_m1_3",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m1",
+      "x": -32,
+      "y": -91,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_m1_4",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m1",
+      "x": 0,
+      "y": -114,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_m1_5",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m1",
+      "x": 32,
+      "y": -91,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_m2",
+      "kind": "major",
+      "tree": "offense",
+      "need": 3,
+      "x": -66,
+      "y": -168,
+      "name": "Chain Reaction",
+      "description": "When a chained hit kills a mob, the chain jumps again from that mob, up to 3 extra jumps.",
+      "icon": "chain_reaction",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_chain_reaction",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "off_m2_1",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m2",
+      "x": -38,
+      "y": -148,
+      "name": "+15% Area of Effect",
+      "description": "",
+      "icon": "area_effect",
+      "attributes": [
+        {
+          "attribute": "the_vault:area_of_effect",
+          "value": 0.15
+        }
+      ]
+    },
+    {
+      "id": "off_m2_2",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m2",
+      "x": -76,
+      "y": -135,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_m2_3",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m2",
+      "x": -100,
+      "y": -167,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_m2_4",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m2",
+      "x": -77,
+      "y": -200,
+      "name": "+1 Attack Chain",
+      "description": "",
+      "icon": "attack_chain",
+      "attributes": [
+        {
+          "attribute": "the_vault:on_hit_chain",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "off_m2_5",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m2",
+      "x": -39,
+      "y": -188,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_m3",
+      "kind": "major",
+      "tree": "offense",
+      "need": 3,
+      "x": 66,
+      "y": -168,
+      "name": "Bounty Hunter",
+      "description": "Greed Mobs and The Taxman take 25% more damage from you. Slaying The Taxman pays a 25% bigger bounty.",
+      "icon": "bounty_hunter",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_bounty_hunter",
+          "value": 0.25
+        },
+        {
+          "attribute": "the_vault:greed_taxman_bounty",
+          "value": 0.25
+        }
+      ]
+    },
+    {
+      "id": "off_m3_1",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m3",
+      "x": 100,
+      "y": -167,
+      "name": "+20% All Damage to Greed Mobs",
+      "description": "Counts toward your All Damage when you hit a Greed Mob.",
+      "icon": "all_damage_greed_mobs",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage_greed_mob",
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": "off_m3_2",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m3",
+      "x": 76,
+      "y": -135,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_m3_3",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m3",
+      "x": 38,
+      "y": -148,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_m3_4",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m3",
+      "x": 39,
+      "y": -188,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_m3_5",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_m3",
+      "x": 77,
+      "y": -200,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_u",
+      "kind": "ultimate",
+      "tree": "offense",
+      "need": 4,
+      "x": 0,
+      "y": -262,
+      "name": "Overkill",
+      "description": "Damage beyond what a kill needs spills into the nearest mob within 6 blocks.",
+      "icon": "overkill",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_overkill",
+          "value": 6.0
+        }
+      ]
+    },
+    {
+      "id": "off_u_1",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_u",
+      "x": 34,
+      "y": -235,
+      "name": "+1 Skill Point",
+      "description": "",
+      "icon": "skill_point",
+      "skillPoints": 1
+    },
+    {
+      "id": "off_u_2",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_u",
+      "x": 0,
+      "y": -218,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_u_3",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_u",
+      "x": -34,
+      "y": -235,
+      "name": "+15% Area of Effect",
+      "description": "",
+      "icon": "area_effect",
+      "attributes": [
+        {
+          "attribute": "the_vault:area_of_effect",
+          "value": 0.15
+        }
+      ]
+    },
+    {
+      "id": "off_u_4",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_u",
+      "x": -43,
+      "y": -272,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_u_5",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_u",
+      "x": -19,
+      "y": -302,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "off_u_6",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_u",
+      "x": 19,
+      "y": -302,
+      "name": "+1% Drip Chance",
+      "description": "Every spark at Mr Greedy is 1% more likely to raise your gear's Drip.",
+      "icon": "drip_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_drip_chance",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": "off_u_7",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "off_u",
+      "x": 43,
+      "y": -272,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "def_m1",
+      "kind": "major",
+      "tree": "defense",
+      "need": 3,
+      "x": -69,
+      "y": 40,
+      "name": "Phoenix's Apprentice",
+      "description": "Once per vault, a hit that would kill you fully heals you instead. Stacks with Phoenix from gear.",
+      "icon": "phoenix_apprentice",
+      "attributes": [
+        {
+          "attribute": "the_vault:phoenix",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "def_m1_1",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m1",
+      "x": -35,
+      "y": 44,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_m1_2",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m1",
+      "x": -62,
+      "y": 73,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_m1_3",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m1",
+      "x": -99,
+      "y": 57,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_m1_4",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m1",
+      "x": -95,
+      "y": 17,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_m1_5",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m1",
+      "x": -55,
+      "y": 9,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_m2",
+      "kind": "major",
+      "tree": "defense",
+      "need": 3,
+      "x": -112,
+      "y": 141,
+      "name": "Stand Together",
+      "description": "You and teammates within 10 blocks take 15% less damage for each teammate nearby, up to 45%. Several players with this node don't stack.",
+      "icon": "stand_together",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_stand_together",
+          "value": 0.15
+        }
+      ]
+    },
+    {
+      "id": "def_m2_1",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m2",
+      "x": -95,
+      "y": 170,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_m2_2",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m2",
+      "x": -135,
+      "y": 167,
+      "name": "+50% Knockback Resistance",
+      "description": "",
+      "icon": "knockback_resistance",
+      "attributes": [
+        {
+          "attribute": "the_vault:knockback_resistance",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "id": "def_m2_3",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m2",
+      "x": -144,
+      "y": 128,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_m2_4",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m2",
+      "x": -110,
+      "y": 107,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_m2_5",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m2",
+      "x": -79,
+      "y": 134,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_m3",
+      "kind": "major",
+      "tree": "defense",
+      "need": 3,
+      "x": -178,
+      "y": 27,
+      "name": "Tax Shelter",
+      "description": "The Taxman's hits take 30% less of your Greed bar, and Greed Mobs deal 15% less damage to you.",
+      "icon": "tax_shelter",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_tax_shelter",
+          "value": 0.3
+        },
+        {
+          "attribute": "the_vault:greed_mob_damage_reduction",
+          "value": 0.15
+        }
+      ]
+    },
+    {
+      "id": "def_m3_1",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m3",
+      "x": -148,
+      "y": 41,
+      "name": "+15% Toughness against Greed Mobs",
+      "description": "Counts toward your Toughness when a Greed Mob hits you.",
+      "icon": "toughness_against_greed_mobs",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness_greed_mob",
+          "value": 0.15
+        }
+      ]
+    },
+    {
+      "id": "def_m3_2",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m3",
+      "x": -183,
+      "y": 61,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_m3_3",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m3",
+      "x": -212,
+      "y": 33,
+      "name": "+50% Knockback Resistance",
+      "description": "",
+      "icon": "knockback_resistance",
+      "attributes": [
+        {
+          "attribute": "the_vault:knockback_resistance",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "id": "def_m3_4",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m3",
+      "x": -195,
+      "y": -3,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_m3_5",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_m3",
+      "x": -155,
+      "y": 2,
+      "name": "+15% Toughness against Greed Mobs",
+      "description": "Counts toward your Toughness when a Greed Mob hits you.",
+      "icon": "toughness_against_greed_mobs",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness_greed_mob",
+          "value": 0.15
+        }
+      ]
+    },
+    {
+      "id": "def_u",
+      "kind": "ultimate",
+      "tree": "defense",
+      "need": 4,
+      "x": -227,
+      "y": 131,
+      "name": "Parry",
+      "description": "Every 4th hit you take is parried and deals no damage, a Taxman hit included. A parry gives you Riposte: hit the attacker you parried within 3 seconds to deal 200% more damage on that hit. Poison and other damage over time never count as hits.",
+      "icon": "parry",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_parry",
+          "value": 4
+        },
+        {
+          "attribute": "the_vault:greed_riposte",
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "id": "def_u_1",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_u",
+      "x": -186,
+      "y": 147,
+      "name": "+1 Skill Point",
+      "description": "",
+      "icon": "skill_point",
+      "skillPoints": 1
+    },
+    {
+      "id": "def_u_2",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_u",
+      "x": -214,
+      "y": 173,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_u_3",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_u",
+      "x": -252,
+      "y": 167,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_u_4",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_u",
+      "x": -271,
+      "y": 134,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_u_5",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_u",
+      "x": -257,
+      "y": 99,
+      "name": "+1% Drip Chance",
+      "description": "Every spark at Mr Greedy is 1% more likely to raise your gear's Drip.",
+      "icon": "drip_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_drip_chance",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": "def_u_6",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_u",
+      "x": -220,
+      "y": 87,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "def_u_7",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "def_u",
+      "x": -189,
+      "y": 109,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "uti_m1",
+      "kind": "major",
+      "tree": "utility",
+      "need": 3,
+      "x": 69,
+      "y": 40,
+      "name": "Arcane Echo",
+      "description": "Your abilities have a 10% chance to not go on cooldown.",
+      "icon": "arcane_echo",
+      "attributes": [
+        {
+          "attribute": "the_vault:ability_cooldown_skip",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "uti_m1_1",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m1",
+      "x": 99,
+      "y": 57,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "uti_m1_2",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m1",
+      "x": 62,
+      "y": 73,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "uti_m1_3",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m1",
+      "x": 35,
+      "y": 44,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "uti_m1_4",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m1",
+      "x": 55,
+      "y": 9,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "uti_m1_5",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m1",
+      "x": 95,
+      "y": 17,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "uti_m2",
+      "kind": "major",
+      "tree": "utility",
+      "need": 3,
+      "x": 178,
+      "y": 27,
+      "name": "Haggler",
+      "description": "Seals cost 15% less of your Greed bar, and Mr Greedy's prices are 10% lower.",
+      "icon": "haggler",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_seal_discount",
+          "value": 0.15
+        },
+        {
+          "attribute": "the_vault:greed_trader_discount",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "uti_m2_1",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m2",
+      "x": 212,
+      "y": 33,
+      "name": "+5% Greed Bar Gain",
+      "description": "",
+      "icon": "greed_bar_gain",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_bar_gain",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "uti_m2_2",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m2",
+      "x": 183,
+      "y": 61,
+      "name": "+25% Item Quantity",
+      "description": "",
+      "icon": "item_quantity",
+      "attributes": [
+        {
+          "attribute": "the_vault:item_quantity",
+          "value": 0.25
+        }
+      ]
+    },
+    {
+      "id": "uti_m2_3",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m2",
+      "x": 148,
+      "y": 41,
+      "name": "+50% Soul Quantity",
+      "description": "",
+      "icon": "soul_quantity",
+      "attributes": [
+        {
+          "attribute": "the_vault:soul_chance",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "id": "uti_m2_4",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m2",
+      "x": 155,
+      "y": 2,
+      "name": "+5% Movement Speed",
+      "description": "",
+      "icon": "movement_speed",
+      "attributes": [
+        {
+          "attribute": "the_vault:movement_speed",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "uti_m2_5",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m2",
+      "x": 195,
+      "y": -3,
+      "name": "+5% Greed Bar Gain",
+      "description": "",
+      "icon": "greed_bar_gain",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_bar_gain",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "uti_m3",
+      "kind": "major",
+      "tree": "utility",
+      "need": 3,
+      "x": 112,
+      "y": 141,
+      "name": "Prospector",
+      "description": "Greed Chests have a 20% chance to drop their loot twice. You see it happen at the chest, and the doubled loot is marked in your crate.",
+      "icon": "prospector",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_chest_double_chance",
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": "uti_m3_1",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m3",
+      "x": 135,
+      "y": 167,
+      "name": "+25% Item Quantity",
+      "description": "",
+      "icon": "item_quantity",
+      "attributes": [
+        {
+          "attribute": "the_vault:item_quantity",
+          "value": 0.25
+        }
+      ]
+    },
+    {
+      "id": "uti_m3_2",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m3",
+      "x": 95,
+      "y": 170,
+      "name": "+10% Imbuement Chance",
+      "description": "",
+      "icon": "imbuement_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_imbuement_chance",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "uti_m3_3",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m3",
+      "x": 79,
+      "y": 134,
+      "name": "Cryonic Focus always freezes a Legendary modifier",
+      "description": "",
+      "icon": "cryonic_focus_legendary",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_cryonic_legendary",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "uti_m3_4",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m3",
+      "x": 110,
+      "y": 107,
+      "name": "+25% Mining Speed",
+      "description": "",
+      "icon": "mining_speed",
+      "attributes": [
+        {
+          "attribute": "the_vault:mining_speed_percent",
+          "value": 0.25
+        }
+      ]
+    },
+    {
+      "id": "uti_m3_5",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_m3",
+      "x": 144,
+      "y": 128,
+      "name": "+1% Drip Chance",
+      "description": "Every spark at Mr Greedy is 1% more likely to raise your gear's Drip.",
+      "icon": "drip_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_drip_chance",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": "uti_u",
+      "kind": "ultimate",
+      "tree": "utility",
+      "need": 4,
+      "x": 227,
+      "y": 131,
+      "name": "Mastermind",
+      "description": "Every 4th ability you cast costs no mana and has 50% more Ability Power. Dash, Mega Jump and Heal don't count. Every 4 seconds spent channeling Arcane, Smite, Archon or Blast Wave counts as one cast.",
+      "icon": "mastermind",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_mastermind",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "id": "uti_u_1",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_u",
+      "x": 271,
+      "y": 134,
+      "name": "+1 Skill Point",
+      "description": "",
+      "icon": "skill_point",
+      "skillPoints": 1
+    },
+    {
+      "id": "uti_u_2",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_u",
+      "x": 252,
+      "y": 167,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "uti_u_3",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_u",
+      "x": 214,
+      "y": 173,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "uti_u_4",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_u",
+      "x": 186,
+      "y": 147,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "uti_u_5",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_u",
+      "x": 189,
+      "y": 109,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "uti_u_6",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_u",
+      "x": 220,
+      "y": 87,
+      "name": "+1% Drip Chance",
+      "description": "Every spark at Mr Greedy is 1% more likely to raise your gear's Drip.",
+      "icon": "drip_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_drip_chance",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": "uti_u_7",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "uti_u",
+      "x": 257,
+      "y": 99,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "bridge_off_def",
+      "kind": "major",
+      "bridge": [
+        "offense",
+        "defense"
+      ],
+      "need": 3,
+      "x": -173,
+      "y": -100,
+      "name": "Lifebane",
+      "description": "Every hit heals you for 0.5% of your max health, at most 4 times a second. Butcher's Cleaver's Bloodthirst still stops it.",
+      "icon": "lifebane",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_lifebane",
+          "value": 0.005
+        }
+      ]
+    },
+    {
+      "id": "bridge_off_def_1",
+      "kind": "minor",
+      "center": "bridge_off_def",
+      "x": -144,
+      "y": -83,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "bridge_off_def_2",
+      "kind": "minor",
+      "center": "bridge_off_def",
+      "x": -190,
+      "y": -71,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "bridge_off_def_3",
+      "kind": "minor",
+      "center": "bridge_off_def",
+      "x": -203,
+      "y": -117,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "bridge_off_def_4",
+      "kind": "minor",
+      "center": "bridge_off_def",
+      "x": -156,
+      "y": -129,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "bridge_def_uti",
+      "kind": "major",
+      "bridge": [
+        "defense",
+        "utility"
+      ],
+      "need": 3,
+      "x": 0,
+      "y": 200,
+      "name": "Lifeline",
+      "description": "You revive downed teammates twice as fast, and they get back up at full health.",
+      "icon": "lifeline",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_lifeline",
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "id": "bridge_def_uti_1",
+      "kind": "minor",
+      "center": "bridge_def_uti",
+      "x": 34,
+      "y": 200,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "bridge_def_uti_2",
+      "kind": "minor",
+      "center": "bridge_def_uti",
+      "x": 0,
+      "y": 234,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "bridge_def_uti_3",
+      "kind": "minor",
+      "center": "bridge_def_uti",
+      "x": -34,
+      "y": 200,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "bridge_def_uti_4",
+      "kind": "minor",
+      "center": "bridge_def_uti",
+      "x": 0,
+      "y": 166,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "bridge_uti_off",
+      "kind": "major",
+      "bridge": [
+        "utility",
+        "offense"
+      ],
+      "need": 3,
+      "x": 173,
+      "y": -100,
+      "name": "Spellblade",
+      "description": "Your attacks and abilities deal up to 20% more damage, the fuller your mana is.",
+      "icon": "spellblade",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_spellblade",
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": "bridge_uti_off_1",
+      "kind": "minor",
+      "center": "bridge_uti_off",
+      "x": 190,
+      "y": -71,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "bridge_uti_off_2",
+      "kind": "minor",
+      "center": "bridge_uti_off",
+      "x": 144,
+      "y": -83,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "bridge_uti_off_3",
+      "kind": "minor",
+      "center": "bridge_uti_off",
+      "x": 156,
+      "y": -129,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "bridge_uti_off_4",
+      "kind": "minor",
+      "center": "bridge_uti_off",
+      "x": 203,
+      "y": -117,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_victor",
+      "kind": "major",
+      "tree": "offense",
+      "need": 3,
+      "x": -175,
+      "y": -265,
+      "name": "Victor's Edge",
+      "description": "You deal 50% more damage to champions, and champions drop their loot twice.",
+      "icon": "victor_edge",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_victors_edge",
+          "value": 0.5
+        },
+        {
+          "attribute": "the_vault:greed_champion_loot",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "r2_victor_1",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r2_victor",
+      "x": -161,
+      "y": -296,
+      "name": "+20% All Damage to Champions",
+      "description": "Counts toward your All Damage when you hit a champion.",
+      "icon": "all_damage_champions",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage_champion",
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": "r2_victor_2",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r2_victor",
+      "x": -141,
+      "y": -261,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_victor_3",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r2_victor",
+      "x": -168,
+      "y": -232,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_victor_4",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r2_victor",
+      "x": -204,
+      "y": -248,
+      "name": "+1% Drip Chance",
+      "description": "Every spark at Mr Greedy is 1% more likely to raise your gear's Drip.",
+      "icon": "drip_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_drip_chance",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": "r2_victor_5",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r2_victor",
+      "x": -200,
+      "y": -288,
+      "name": "+15% Area of Effect",
+      "description": "",
+      "icon": "area_effect",
+      "attributes": [
+        {
+          "attribute": "the_vault:area_of_effect",
+          "value": 0.15
+        }
+      ]
+    },
+    {
+      "id": "r2_berserk",
+      "kind": "ultimate",
+      "bridge": [
+        "offense",
+        "defense"
+      ],
+      "need": 4,
+      "x": -272,
+      "y": -255,
+      "name": "Carnage",
+      "description": "Every kill gives you +5% damage for 20 seconds, stacking up to 20 times (+100%).",
+      "icon": "carnage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_carnage",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "r2_berserk_1",
+      "kind": "minor",
+      "center": "r2_berserk",
+      "x": -258,
+      "y": -297,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_berserk_2",
+      "kind": "minor",
+      "center": "r2_berserk",
+      "x": -231,
+      "y": -270,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_berserk_3",
+      "kind": "minor",
+      "center": "r2_berserk",
+      "x": -234,
+      "y": -232,
+      "name": "+10% Imbuement Chance",
+      "description": "",
+      "icon": "imbuement_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_imbuement_chance",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_berserk_4",
+      "kind": "minor",
+      "center": "r2_berserk",
+      "x": -267,
+      "y": -211,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "r2_berserk_5",
+      "kind": "minor",
+      "center": "r2_berserk",
+      "x": -303,
+      "y": -224,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "r2_berserk_6",
+      "kind": "minor",
+      "center": "r2_berserk",
+      "x": -316,
+      "y": -259,
+      "name": "+1% Drip Chance",
+      "description": "Every spark at Mr Greedy is 1% more likely to raise your gear's Drip.",
+      "icon": "drip_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_drip_chance",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": "r2_berserk_7",
+      "kind": "minor",
+      "center": "r2_berserk",
+      "x": -296,
+      "y": -292,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_mastery",
+      "kind": "ultimate",
+      "bridge": [
+        "utility",
+        "offense"
+      ],
+      "need": 4,
+      "x": 250,
+      "y": -230,
+      "name": "Virtuoso",
+      "description": "Every +ability level you get from gear and other sources counts twice.",
+      "icon": "virtuoso",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_virtuoso",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "r2_mastery_1",
+      "kind": "minor",
+      "center": "r2_mastery",
+      "x": 272,
+      "y": -268,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_mastery_2",
+      "kind": "minor",
+      "center": "r2_mastery",
+      "x": 294,
+      "y": -236,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_mastery_3",
+      "kind": "minor",
+      "center": "r2_mastery",
+      "x": 282,
+      "y": -200,
+      "name": "+10% Imbuement Chance",
+      "description": "",
+      "icon": "imbuement_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_imbuement_chance",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_mastery_4",
+      "kind": "minor",
+      "center": "r2_mastery",
+      "x": 246,
+      "y": -186,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_mastery_5",
+      "kind": "minor",
+      "center": "r2_mastery",
+      "x": 213,
+      "y": -206,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_mastery_6",
+      "kind": "minor",
+      "center": "r2_mastery",
+      "x": 208,
+      "y": -243,
+      "name": "+1% Drip Chance",
+      "description": "Every spark at Mr Greedy is 1% more likely to raise your gear's Drip.",
+      "icon": "drip_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_drip_chance",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": "r2_mastery_7",
+      "kind": "minor",
+      "center": "r2_mastery",
+      "x": 234,
+      "y": -271,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_ward",
+      "kind": "major",
+      "tree": "defense",
+      "need": 3,
+      "x": -272,
+      "y": -32,
+      "name": "Warden",
+      "description": "After 60 seconds without taking damage, your absorption refills to your max health.",
+      "icon": "warden",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_warden",
+          "value": 1200
+        }
+      ]
+    },
+    {
+      "id": "r2_ward_1",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "r2_ward",
+      "x": -264,
+      "y": -65,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "r2_ward_2",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "r2_ward",
+      "x": -238,
+      "y": -34,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "r2_ward_3",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "r2_ward",
+      "x": -259,
+      "y": 0,
+      "name": "+10% Imbuement Chance",
+      "description": "",
+      "icon": "imbuement_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_imbuement_chance",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_ward_4",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "r2_ward",
+      "x": -298,
+      "y": -10,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "r2_ward_5",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "r2_ward",
+      "x": -301,
+      "y": -50,
+      "name": "+1% Drip Chance",
+      "description": "Every spark at Mr Greedy is 1% more likely to raise your gear's Drip.",
+      "icon": "drip_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_drip_chance",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": "r2_fleetfoot",
+      "kind": "major",
+      "tree": "utility",
+      "need": 3,
+      "x": 268,
+      "y": -28,
+      "name": "Fleetfoot",
+      "description": "Dash costs no mana.",
+      "icon": "fleetfoot",
+      "attributes": [
+        {
+          "attribute": "the_vault:ability_mana_cost_percent",
+          "value": {
+            "ability": "Dash",
+            "amount": -1.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "r2_fleetfoot_1",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "r2_fleetfoot",
+      "x": 297,
+      "y": -46,
+      "name": "+5% Movement Speed",
+      "description": "",
+      "icon": "movement_speed",
+      "attributes": [
+        {
+          "attribute": "the_vault:movement_speed",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "r2_fleetfoot_2",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "r2_fleetfoot",
+      "x": 294,
+      "y": -6,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_fleetfoot_3",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "r2_fleetfoot",
+      "x": 255,
+      "y": 3,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_fleetfoot_4",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "r2_fleetfoot",
+      "x": 234,
+      "y": -31,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_fleetfoot_5",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "r2_fleetfoot",
+      "x": 260,
+      "y": -61,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_hercules",
+      "kind": "ultimate",
+      "tree": "offense",
+      "need": 4,
+      "x": 130,
+      "y": -330,
+      "name": "Might of Hercules",
+      "description": "Every 10th hit you land on the same enemy strikes with the might of the 9 before it: it deals a third of their damage again.",
+      "icon": "might_hercules",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_might_of_hercules",
+          "value": 0.333333
+        }
+      ]
+    },
+    {
+      "id": "r3_hercules_1",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r3_hercules",
+      "x": 146,
+      "y": -371,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_hercules_2",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r3_hercules",
+      "x": 172,
+      "y": -343,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_hercules_3",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r3_hercules",
+      "x": 166,
+      "y": -305,
+      "name": "+1% Drip Chance",
+      "description": "Every spark at Mr Greedy is 1% more likely to raise your gear's Drip.",
+      "icon": "drip_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_drip_chance",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": "r3_hercules_4",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r3_hercules",
+      "x": 133,
+      "y": -286,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_hercules_5",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r3_hercules",
+      "x": 98,
+      "y": -300,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "r3_hercules_6",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r3_hercules",
+      "x": 86,
+      "y": -337,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_hercules_7",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r3_hercules",
+      "x": 108,
+      "y": -368,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_lucky_seven",
+      "kind": "major",
+      "tree": "offense",
+      "need": 3,
+      "x": -110,
+      "y": -360,
+      "name": "Lucky Seven",
+      "description": "Your Double Hits have a 1 in 10 chance to hit 7 times instead.",
+      "icon": "lucky_seven",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_lucky_seven",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_lucky_seven_1",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r3_lucky_seven",
+      "x": -81,
+      "y": -378,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_lucky_seven_2",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r3_lucky_seven",
+      "x": -84,
+      "y": -338,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_lucky_seven_3",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r3_lucky_seven",
+      "x": -123,
+      "y": -329,
+      "name": "+1% Drip Chance",
+      "description": "Every spark at Mr Greedy is 1% more likely to raise your gear's Drip.",
+      "icon": "drip_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_drip_chance",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": "r3_lucky_seven_4",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r3_lucky_seven",
+      "x": -144,
+      "y": -363,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "r3_lucky_seven_5",
+      "kind": "minor",
+      "tree": "offense",
+      "center": "r3_lucky_seven",
+      "x": -118,
+      "y": -393,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_untouchable",
+      "kind": "ultimate",
+      "tree": "defense",
+      "need": 4,
+      "x": -344,
+      "y": 198,
+      "name": "Untouchable",
+      "description": "Your abilities get +5% increased damage for every second you go without taking damage, up to +100% after 20 seconds. Every hit you take sets it back 1 second for every 1% of your max health it takes.",
+      "icon": "untouchable",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_untouchable",
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "id": "r2_untouchable_1",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "r2_untouchable",
+      "x": -300,
+      "y": 198,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "r2_untouchable_2",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "r2_untouchable",
+      "x": -317,
+      "y": 232,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_untouchable_3",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "r2_untouchable",
+      "x": -354,
+      "y": 241,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "r2_untouchable_4",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "r2_untouchable",
+      "x": -384,
+      "y": 217,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_untouchable_5",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "r2_untouchable",
+      "x": -384,
+      "y": 179,
+      "name": "+1% Drip Chance",
+      "description": "Every spark at Mr Greedy is 1% more likely to raise your gear's Drip.",
+      "icon": "drip_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_drip_chance",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": "r2_untouchable_6",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "r2_untouchable",
+      "x": -354,
+      "y": 155,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_untouchable_7",
+      "kind": "minor",
+      "tree": "defense",
+      "center": "r2_untouchable",
+      "x": -317,
+      "y": 164,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "r2_flashpoint",
+      "kind": "ultimate",
+      "tree": "utility",
+      "need": 4,
+      "x": 344,
+      "y": 198,
+      "name": "Flashpoint",
+      "description": "Spending mana charges Flashpoint. Once you've spent your max mana, your next ability ignites it: your abilities get +150% increased damage for 6 seconds.",
+      "icon": "flashpoint",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_flashpoint",
+          "value": 1.5
+        }
+      ]
+    },
+    {
+      "id": "r2_flashpoint_1",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "r2_flashpoint",
+      "x": 300,
+      "y": 198,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_flashpoint_2",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "r2_flashpoint",
+      "x": 317,
+      "y": 164,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_flashpoint_3",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "r2_flashpoint",
+      "x": 354,
+      "y": 155,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_flashpoint_4",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "r2_flashpoint",
+      "x": 384,
+      "y": 179,
+      "name": "+1% Drip Chance",
+      "description": "Every spark at Mr Greedy is 1% more likely to raise your gear's Drip.",
+      "icon": "drip_chance",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_drip_chance",
+          "value": 0.01
+        }
+      ]
+    },
+    {
+      "id": "r2_flashpoint_5",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "r2_flashpoint",
+      "x": 384,
+      "y": 217,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_flashpoint_6",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "r2_flashpoint",
+      "x": 354,
+      "y": 241,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r2_flashpoint_7",
+      "kind": "minor",
+      "tree": "utility",
+      "center": "r2_flashpoint",
+      "x": 317,
+      "y": 232,
+      "name": "+7.5% Toughness",
+      "description": "Toughness divides all the damage you take. +100% halves it.",
+      "icon": "toughness",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_toughness",
+          "value": 0.075
+        }
+      ]
+    },
+    {
+      "id": "r3_crescendo",
+      "kind": "major",
+      "bridge": [
+        "utility",
+        "offense"
+      ],
+      "need": 3,
+      "x": 254,
+      "y": -348,
+      "name": "Crescendo",
+      "description": "Your abilities get +10% increased damage for every different ability you cast in the last 6 seconds after the first, up to +30% with 4.",
+      "icon": "crescendo",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_crescendo",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_crescendo_1",
+      "kind": "minor",
+      "center": "r3_crescendo",
+      "x": 278,
+      "y": -324,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_crescendo_2",
+      "kind": "minor",
+      "center": "r3_crescendo",
+      "x": 230,
+      "y": -324,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_crescendo_3",
+      "kind": "minor",
+      "center": "r3_crescendo",
+      "x": 230,
+      "y": -372,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "r3_crescendo_4",
+      "kind": "minor",
+      "center": "r3_crescendo",
+      "x": 278,
+      "y": -372,
+      "name": "+10% All Damage",
+      "description": "All Damage multiplies all the damage you deal, abilities included. +100% doubles it.",
+      "icon": "all_damage",
+      "attributes": [
+        {
+          "attribute": "the_vault:greed_all_damage",
+          "value": 0.1
+        }
+      ]
+    }
+  ],
+  "links": [
+    [
+      "core",
+      "off_m1"
+    ],
+    [
+      "off_m1",
+      "off_m2"
+    ],
+    [
+      "off_m1",
+      "off_m3"
+    ],
+    [
+      "off_m2",
+      "off_u"
+    ],
+    [
+      "off_m3",
+      "off_u"
+    ],
+    [
+      "core",
+      "def_m1"
+    ],
+    [
+      "def_m1",
+      "def_m2"
+    ],
+    [
+      "def_m1",
+      "def_m3"
+    ],
+    [
+      "def_m2",
+      "def_u"
+    ],
+    [
+      "def_m3",
+      "def_u"
+    ],
+    [
+      "core",
+      "uti_m1"
+    ],
+    [
+      "uti_m1",
+      "uti_m2"
+    ],
+    [
+      "uti_m1",
+      "uti_m3"
+    ],
+    [
+      "uti_m2",
+      "uti_u"
+    ],
+    [
+      "uti_m3",
+      "uti_u"
+    ],
+    [
+      "off_m2",
+      "bridge_off_def"
+    ],
+    [
+      "def_m3",
+      "bridge_off_def"
+    ],
+    [
+      "def_m2",
+      "bridge_def_uti"
+    ],
+    [
+      "uti_m3",
+      "bridge_def_uti"
+    ],
+    [
+      "uti_m2",
+      "bridge_uti_off"
+    ],
+    [
+      "off_m3",
+      "bridge_uti_off"
+    ],
+    [
+      "off_m2",
+      "r2_victor"
+    ],
+    [
+      "bridge_off_def",
+      "r2_berserk"
+    ],
+    [
+      "bridge_uti_off",
+      "r2_mastery"
+    ],
+    [
+      "def_m3",
+      "r2_ward"
+    ],
+    [
+      "uti_m2",
+      "r2_fleetfoot"
+    ],
+    [
+      "off_m3",
+      "r3_hercules"
+    ],
+    [
+      "off_m2",
+      "r3_lucky_seven"
+    ],
+    [
+      "def_u",
+      "r2_untouchable"
+    ],
+    [
+      "uti_u",
+      "r2_flashpoint"
+    ],
+    [
+      "r2_mastery",
+      "r3_crescendo"
+    ],
+    [
+      "r3_hercules",
+      "r3_crescendo"
+    ]
+  ]
 }

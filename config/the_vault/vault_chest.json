@@ -7,36 +7,14 @@
   },
   "MOB_TRAP_EFFECTS": [
     {
-      "attempts": 5,
-      "appliedConfig": {
-        "extraMaxMobs": 15,
-        "minDistance": 10.0,
-        "maxDistance": 12.0,
-        "despawnDistance": 64.0
-      },
       "name": "Mob Trap"
     }
   ],
   "EXPLOSION_EFFECTS": [
     {
       "radius": 4.0,
-      "xOffset": 0.0,
-      "yOffset": 3.0,
-      "zOffset": 0.0,
-      "causesFire": true,
-      "damage": 10.0,
-      "mode": "NONE",
+      "fuseTicks": 60,
       "name": "Explosion"
-    },
-     {
-      "radius": 3.0,
-      "xOffset": 0.0,
-      "yOffset": 3.0,
-      "zOffset": 0.0,
-      "causesFire": false,
-      "damage": 5.0,
-      "mode": "NONE",
-      "name": "Explosion_Small"
     }
   ],
   "POTION_CLOUD_EFFECTS": [
@@ -44,15 +22,12 @@
       "potions": [
         "minecraft:strong_poison"
       ],
-      "name": "Poison"
-    },
-    {
-      "potions": [
-        "minecraft:strong_slowness"
-      ],
-      "name": "Slowness"
+      "name": "Poison",
+      "radius": 4.0,
+      "windupTicks": 20,
+      "spreadTicks": 20,
+      "poisonDamageMultiplier": 0.35
     }
-    
   ],
   "TELEPORT_TRAP_EFFECTS": [
     {
@@ -63,9 +38,8 @@
   ],
   "MANA_STEALER_TRAP_EFFECTS": [
     {
-      "radius": 6.0,
-      "manaDrainPerTick": 1.0,
-      "duration": 100,
+      "radius": 5.0,
+      "manaShare": 0.3,
       "name": "Mana Stealer"
     }
   ],
@@ -75,84 +49,47 @@
       "probability": 0.05,
       "pool": [
         {
-          "value": "Explosion_Small",
-          "weight": 2
-        },
-        {
-          "value": "Mob Trap",
-          "weight": 6
-        },
-        {
-          "value": "Poison",
-          "weight": 4
-        },
-        {
-          "value": "Teleport Trap",
-          "weight": 0
-        },
-        {
-          "value": "Mana Stealer",
-          "weight": 1
-        },
-        {
-          "value": "Shockwave",
-          "weight": 2
-        },
-        {
-          "value": "Zoomies",
-          "weight": 3
-        },
-        {
-          "value": "Plating",
-          "weight": 2
-        },
-          {
-          "value": "Slowness",
-          "weight": 4
-        }
-      ]
-    },
-    {
-      "level": 50,
-      "probability": 0.05,
-      "pool": [
-        {
           "value": "Explosion",
-          "weight": 2
+          "weight": 4
         },
         {
           "value": "Mob Trap",
-          "weight": 6
+          "weight": 4
         },
         {
           "value": "Poison",
           "weight": 4
         },
         {
-          "value": "Teleport Trap",
-          "weight": 0
-        },
-        {
           "value": "Mana Stealer",
-          "weight": 1
+          "weight": 4
         },
         {
-          "value": "Shockwave",
-          "weight": 2
+          "value": "Minefield",
+          "weight": 4
         },
         {
-          "value": "Zoomies",
-          "weight": 3
-        },
-        {
-          "value": "Plating",
-          "weight": 2
-        },
-          {
-          "value": "Slowness",
+          "value": "Gateway",
           "weight": 4
         }
       ]
+    }
+  ],
+  "MINEFIELD_TRAP_EFFECTS": [
+    {
+      "count": 5,
+      "fuseTicks": 100,
+      "radius": 2.5,
+      "damageMultiplier": 0.5,
+      "name": "Minefield"
+    }
+  ],
+  "GATEWAY_TRAP_EFFECTS": [
+    {
+      "mobPredicate": "@the_vault:horde",
+      "minimumCount": 3,
+      "maximumCount": 20,
+      "name": "Gateway"
     }
   ]
 }

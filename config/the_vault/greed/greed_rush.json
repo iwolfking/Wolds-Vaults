@@ -1,0 +1,236 @@
+{
+  "baseVaultTimeTicks": 18000,
+  "cashoutObjectiveProbability": 0.1,
+  "targetIncreasePerBar": 0.5,
+  "mobValueIncreasePerBar": 0.15,
+  "mobHealthAtGreedTierZero": 4.0,
+  "mobHealthOverridesByGreedTier": {
+    "1": 2.0,
+    "2": 5.0
+  },
+  "mobDamageAtGreedTierZero": 1.0,
+  "vaultXpPercentPerGreedTier": 10.0,
+  "timeRewardTicks": {
+    "min": 1200,
+    "max": 6000,
+    "type": "uniform"
+  },
+  "timeGainFalloffPerCompletedBar": 0.85,
+  "greedCrystalCostIncreasePerCraft": 0.05,
+  "greedCrystalMaxCostMultiplier": 6.0,
+  "greedCrystalPillars": {
+    "gems": [
+      { "item": "the_vault:gem_larimar", "minAmount": 600, "maxAmount": 1000 },
+      { "item": "the_vault:gem_benitoite", "minAmount": 600, "maxAmount": 1000 },
+      { "item": "the_vault:gem_alexandrite", "minAmount": 450, "maxAmount": 750 },
+      { "item": "the_vault:gem_painite", "minAmount": 450, "maxAmount": 750 },
+      { "item": "the_vault:gem_black_opal", "minAmount": 300, "maxAmount": 500 },
+      { "item": "the_vault:gem_iskallium", "minAmount": 150, "maxAmount": 250 },
+      { "item": "the_vault:gem_gorginite", "minAmount": 150, "maxAmount": 250 },
+      { "item": "the_vault:gem_sparkletine", "minAmount": 150, "maxAmount": 250 },
+      { "item": "the_vault:gem_ashium", "minAmount": 150, "maxAmount": 250 },
+      { "item": "the_vault:gem_bomignite", "minAmount": 150, "maxAmount": 250 },
+      { "item": "the_vault:gem_tubium", "minAmount": 150, "maxAmount": 250 },
+      { "item": "the_vault:gem_upaline", "minAmount": 150, "maxAmount": 250 },
+      { "item": "the_vault:gem_petzanite", "minAmount": 150, "maxAmount": 250 },
+      { "item": "the_vault:gem_xenium", "minAmount": 150, "maxAmount": 250 },
+      { "item": "the_vault:gem_echo", "minAmount": 35, "maxAmount": 65 }
+    ],
+    "expensive_materials": [
+      {
+        "items": [
+          "the_vault:wild_focus", "the_vault:amplifying_focus", "the_vault:nullifying_focus", "the_vault:opportunistic_focus",
+          "the_vault:resilient_focus", "the_vault:fundamental_focus", "the_vault:faceted_focus", "the_vault:chaotic_focus",
+          "the_vault:waxing_focus", "the_vault:waning_focus", "the_vault:empowered_chaotic_focus", "the_vault:cryonic_focus",
+          "the_vault:pyretic_focus"
+        ],
+        "minAmount": 240, "maxAmount": 400
+      },
+      { "item": "the_vault:vault_plating", "minAmount": 240, "maxAmount": 400 },
+      { "item": "the_vault:vault_scrap", "minAmount": 240, "maxAmount": 400 },
+      { "item": "the_vault:knowledge_star_essence", "minAmount": 240, "maxAmount": 400 },
+      { "item": "the_vault:vault_diamond", "minAmount": 95, "maxAmount": 155 },
+      { "item": "the_vault:chromatic_iron_ingot", "minAmount": 380, "maxAmount": 630 },
+      { "item": "the_vault:vault_meat", "minAmount": 380, "maxAmount": 630 }
+    ],
+    "common_materials": [
+      { "item": "the_vault:driftwood", "minAmount": 600, "maxAmount": 1000 },
+      { "item": "the_vault:vault_essence", "minAmount": 600, "maxAmount": 1000 },
+      { "item": "the_vault:carbon_nugget", "minAmount": 240, "maxAmount": 400 },
+      { "item": "the_vault:silver_scrap", "minAmount": 240, "maxAmount": 400 },
+      { "item": "the_vault:magic_silk", "minAmount": 240, "maxAmount": 400 }
+    ],
+    "deco": [
+      { "item": "#the_vault:decor", "minAmount": 1500, "maxAmount": 2500 }
+    ]
+  },
+  "mobGroups": {
+    "the_vault:horde_mobs": ["@the_vault:horde"],
+    "the_vault:tank_mobs": ["@the_vault:tank"],
+    "the_vault:assassin_mobs": ["@the_vault:assassin"]
+  },
+  "bars": [
+    {
+      "level": 100,
+      "target": [
+        {
+          "value": {
+            "min": 1125,
+            "max": 1375,
+            "type": "uniform"
+          },
+          "weight": 1.0
+        }
+      ],
+      "woodenChest": [
+        {
+          "value": {
+            "min": 1,
+            "max": 2,
+            "type": "uniform"
+          },
+          "weight": 9.0
+        },
+        {
+          "value": {
+            "min": 4,
+            "max": 8,
+            "type": "uniform"
+          },
+          "weight": 1.0
+        }
+      ],
+      "livingChest": [
+        {
+          "value": {
+            "min": 2,
+            "max": 4,
+            "type": "uniform"
+          },
+          "weight": 19.0
+        },
+        {
+          "value": {
+            "min": 20,
+            "max": 30,
+            "type": "uniform"
+          },
+          "weight": 1.0
+        }
+      ],
+      "gildedChest": [
+        {
+          "value": {
+            "min": 2,
+            "max": 4,
+            "type": "uniform"
+          },
+          "weight": 19.0
+        },
+        {
+          "value": {
+            "min": 20,
+            "max": 30,
+            "type": "uniform"
+          },
+          "weight": 1.0
+        }
+      ],
+      "ornateChest": [
+        {
+          "value": {
+            "min": 2,
+            "max": 4,
+            "type": "uniform"
+          },
+          "weight": 19.0
+        },
+        {
+          "value": {
+            "min": 20,
+            "max": 30,
+            "type": "uniform"
+          },
+          "weight": 1.0
+        }
+      ],
+      "coinStacks": [
+        {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "type": "uniform"
+          },
+          "weight": 1.0
+        }
+      ],
+      "ores": [
+        {
+          "value": {
+            "min": 1,
+            "max": 2,
+            "type": "uniform"
+          },
+          "weight": 19.0
+        },
+        {
+          "value": {
+            "min": 15,
+            "max": 25,
+            "type": "uniform"
+          },
+          "weight": 1.0
+        }
+      ],
+      "mobRolls": [
+        {
+          "group": "the_vault:horde_mobs",
+          "rolls": [
+            {
+              "value": {
+                "min": 2,
+                "max": 7,
+                "type": "uniform"
+              },
+              "weight": 9.0
+            },
+            {
+              "value": {
+                "min": 9,
+                "max": 18,
+                "type": "uniform"
+              },
+              "weight": 1.0
+            }
+          ]
+        },
+        {
+          "group": "the_vault:tank_mobs",
+          "rolls": [
+            {
+              "value": {
+                "min": 4,
+                "max": 22,
+                "type": "uniform"
+              },
+              "weight": 1.0
+            }
+          ]
+        },
+        {
+          "group": "the_vault:assassin_mobs",
+          "rolls": [
+            {
+              "value": {
+                "min": 4,
+                "max": 22,
+                "type": "uniform"
+              },
+              "weight": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

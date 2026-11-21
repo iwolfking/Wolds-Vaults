@@ -1,0 +1,160 @@
+{
+  "auras": {
+    "dweller": {
+      "color": "#ff5555",
+      "colorLight": "",
+      "colorDark": "",
+      "radius": 0.7,
+      "cellSize": 0.125,
+      "fill": 0.1,
+      "softness": 0.4,
+      "edgeCells": 1,
+      "edgeAlpha": 0.22,
+      "pulseSeconds": 4,
+      "pulseDepth": 0.15,
+      "twinkle": 0.3,
+      "snap": true,
+      "details": []
+    },
+    "cheeser": {
+      "color": "#ffff55",
+      "colorLight": "",
+      "colorDark": "",
+      "radius": 0.7,
+      "cellSize": 0.125,
+      "fill": 0.1,
+      "softness": 0.4,
+      "edgeCells": 1,
+      "edgeAlpha": 0.22,
+      "pulseSeconds": 4,
+      "pulseDepth": 0.15,
+      "twinkle": 0.3,
+      "snap": true,
+      "details": [
+        {
+          "kind": "TWINKLE",
+          "count": 4,
+          "speed": 0.25,
+          "radiusShare": 0.8,
+          "height": 0.06,
+          "size": 1,
+          "alpha": 0.8,
+          "rate": 2,
+          "period": 3,
+          "life": 20
+        }
+      ]
+    },
+    "goblin": {
+      "color": "#00f900",
+      "colorLight": "#77bb41",
+      "colorDark": "#4f7a28",
+      "radius": 0.7,
+      "cellSize": 0.125,
+      "fill": 0.1,
+      "softness": 0.4,
+      "edgeCells": 1,
+      "edgeAlpha": 0.22,
+      "pulseSeconds": 4,
+      "pulseDepth": 0.15,
+      "twinkle": 0.3,
+      "snap": true,
+      "details": [
+        {
+          "kind": "RISE",
+          "count": 4,
+          "speed": 0.02,
+          "radiusShare": 0.8,
+          "height": 0.06,
+          "size": 1,
+          "alpha": 0.8,
+          "rate": 3,
+          "period": 3,
+          "life": 20
+        }
+      ]
+    },
+    "champion": {
+      "color": "#ffaa00",
+      "colorLight": "#ffc677",
+      "colorDark": "#d95000",
+      "radius": 0.7,
+      "cellSize": 0.125,
+      "fill": 0.1,
+      "softness": 0.4,
+      "edgeCells": 1,
+      "edgeAlpha": 0.22,
+      "pulseSeconds": 4,
+      "pulseDepth": 0.15,
+      "twinkle": 0.3,
+      "snap": true,
+      "details": [
+        {
+          "kind": "ORBIT",
+          "count": 4,
+          "speed": 0.25,
+          "radiusShare": 0.8,
+          "height": 0.06,
+          "size": 1,
+          "alpha": 0.9,
+          "rate": 2,
+          "period": 3,
+          "life": 20
+        }
+      ]
+    },
+    "legend": {
+      "color": "#55ffff",
+      "colorLight": "",
+      "colorDark": "",
+      "radius": 0.7,
+      "cellSize": 0.125,
+      "fill": 0.165,
+      "softness": 0.4,
+      "edgeCells": 1,
+      "edgeAlpha": 0.37,
+      "pulseSeconds": 4,
+      "pulseDepth": 0.49,
+      "twinkle": 0,
+      "snap": true,
+      "details": [
+        {
+          "kind": "ORBIT",
+          "count": 4,
+          "speed": 0.25,
+          "radiusShare": 0.8,
+          "height": 0.6,
+          "size": 1,
+          "alpha": 0.35,
+          "rate": 2,
+          "period": 3,
+          "life": 20
+        },
+        {
+          "kind": "ORBIT",
+          "count": 3,
+          "speed": -0.18,
+          "radiusShare": 0.65,
+          "height": 0.12,
+          "size": 1,
+          "alpha": 0.9,
+          "rate": 2,
+          "period": 3,
+          "life": 20
+        },
+        {
+          "kind": "RIPPLE",
+          "count": 4,
+          "speed": 0.25,
+          "radiusShare": 0.8,
+          "height": 0.06,
+          "size": 1,
+          "alpha": 0.9,
+          "rate": 2,
+          "period": 6.4,
+          "life": 20
+        }
+      ]
+    }
+  }
+}

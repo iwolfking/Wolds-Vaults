@@ -1,5 +1,6 @@
 {
   "defaultChampionChance": 0.01,
+  "minimumVaultLevel": 20,
   "entityChampionChance": {
     "@the_vault:dungeon": 0.02,
     "@the_vault:tank": 0.02,
@@ -166,152 +167,177 @@
       }
     ]
   },
-  "entityAffixesData": {
-    "@the_vault:mobs": [
-      {
-        "value": "{amplifier:1,chance:1.0f,duration:60,mob_effect:\"minecraft:poison\",name:\"Poisonous\",type:\"on_hit_apply_potion\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:1,duration:20,mob_effect:\"the_vault:mana_steal\",name:\"Mana Steal Aura\",range:5,target:\"player\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:1,chance:1.0f,duration:80,mob_effect:\"the_vault:mana_steal\",name:\"Mana Stealing\",type:\"on_hit_apply_potion\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:4,chance:1.0f,duration:100,mob_effect:\"the_vault:vulnerable\",name:\"Vulnerability\",type:\"on_hit_apply_potion\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:2,chance:1.0f,duration:80,mob_effect:\"the_vault:freeze\",name:\"Freezing\",type:\"on_hit_apply_potion\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:2,duration:20,mob_effect:\"minecraft:weakness\",name:\"Weakening Strike\",range:5,target:\"player\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:1,duration:40,mob_effect:\"the_vault:freeze\",name:\"Freezing Aura\",range:5,target:\"player\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:1,duration:40,mob_effect:\"the_vault:vulnerable\",name:\"Vulnerability Aura\",range:5,target:\"player\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:2,duration:20,mob_effect:\"minecraft:resistance\",name:\"Reinforcing\",range:5,target:\"mob\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:2,duration:20,mob_effect:\"minecraft:speed\",name:\"Accelerating\",range:5,target:\"mob\",type:\"potion_aura\"}",
-        "weight": 2.0
-      },
-      {
-        "value": "{amplifier:3,duration:20,mob_effect:\"minecraft:strength\",name:\"Strengthening\",range:4,target:\"mob\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:0,duration:80,mob_effect:\"the_vault:immortality\",name:\"Immune\",range:10,target:\"mob\",type:\"potion_aura\"}",
-        "weight": 2.0
-      },
-      {
-        "value": "{leech_percentage:5.0f,name:\"Leeching\",type:\"leech_on_hit\"}",
-        "weight": 4.0
-      }
+  "rules": {
+    "checkIntervalTicks": 5,
+    "heightBlocks": 3.0,
+    "targets": [
+      "the_vault:minions",
+      "the_vault:horde",
+      "the_vault:assassin",
+      "the_vault:tank",
+      "the_vault:dungeon",
+      "the_vault:illagers"
     ],
-    "@the_vault:dungeon": [
-      {
-        "value": "{amplifier:1,chance:1.0f,duration:60,mob_effect:\"minecraft:poison\",name:\"Poisonous\",type:\"on_hit_apply_potion\"}",
-        "weight": 4.0
+    "difficulty": {
+      "piece_of_cake": {
+        "aura": false,
+        "onHit": false
       },
-      {
-        "value": "{amplifier:1,duration:20,mob_effect:\"the_vault:mana_steal\",name:\"Mana Steal Aura\",range:5,target:\"player\",type:\"potion_aura\"}",
-        "weight": 4.0
+      "easy": {
+        "aura": true,
+        "onHit": false
       },
-      {
-        "value": "{amplifier:1,chance:1.0f,duration:80,mob_effect:\"the_vault:mana_steal\",name:\"Mana Stealing\",type:\"on_hit_apply_potion\"}",
-        "weight": 4.0
+      "normal": {
+        "aura": true,
+        "onHit": false
       },
-      {
-        "value": "{amplifier:2,chance:1.0f,duration:80,mob_effect:\"the_vault:freeze\",name:\"Freezing\",type:\"on_hit_apply_potion\"}",
-        "weight": 4.0
+      "hard": {
+        "aura": true,
+        "onHit": false
       },
-      {
-        "value": "{amplifier:2,duration:20,mob_effect:\"minecraft:weakness\",name:\"Weakening Strike\",range:5,target:\"player\",type:\"potion_aura\"}",
-        "weight": 4.0
+      "impossible": {
+        "aura": true,
+        "onHit": true
       },
-      {
-        "value": "{amplifier:1,duration:40,mob_effect:\"the_vault:freeze\",name:\"Freezing Aura\",range:5,target:\"player\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:2,duration:20,mob_effect:\"minecraft:resistance\",name:\"Reinforcing\",range:5,target:\"mob\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:2,duration:20,mob_effect:\"minecraft:speed\",name:\"Accelerating\",range:5,target:\"mob\",type:\"potion_aura\"}",
-        "weight": 2.0
-      },
-      {
-        "value": "{amplifier:3,duration:20,mob_effect:\"minecraft:strength\",name:\"Strengthening\",range:4,target:\"mob\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:0,duration:80,mob_effect:\"the_vault:immortality\",name:\"Immune\",range:10,target:\"mob\",type:\"potion_aura\"}",
-        "weight": 2.0
-      },
-      {
-        "value": "{leech_percentage:5.0f,name:\"Leeching\",type:\"leech_on_hit\"}",
-        "weight": 4.0
+      "fragged": {
+        "aura": true,
+        "onHit": true
       }
-    ],
-    "@the_vault:illagers": [
-      {
-        "value": "{amplifier:1,chance:1.0f,duration:60,mob_effect:\"minecraft:poison\",name:\"Poisonous\",type:\"on_hit_apply_potion\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:1,duration:20,mob_effect:\"the_vault:mana_steal\",name:\"Mana Steal Aura\",range:5,target:\"player\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:1,chance:1.0f,duration:80,mob_effect:\"the_vault:mana_steal\",name:\"Mana Stealing\",type:\"on_hit_apply_potion\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:2,chance:1.0f,duration:80,mob_effect:\"the_vault:freeze\",name:\"Freezing\",type:\"on_hit_apply_potion\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:2,duration:20,mob_effect:\"minecraft:weakness\",name:\"Weakening Strike\",range:5,target:\"player\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:1,duration:40,mob_effect:\"the_vault:freeze\",name:\"Freezing Aura\",range:5,target:\"player\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:2,duration:20,mob_effect:\"minecraft:resistance\",name:\"Reinforcing\",range:5,target:\"mob\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:2,duration:20,mob_effect:\"minecraft:speed\",name:\"Accelerating\",range:5,target:\"mob\",type:\"potion_aura\"}",
-        "weight": 2.0
-      },
-      {
-        "value": "{amplifier:3,duration:20,mob_effect:\"minecraft:strength\",name:\"Strengthening\",range:4,target:\"mob\",type:\"potion_aura\"}",
-        "weight": 4.0
-      },
-      {
-        "value": "{amplifier:0,duration:80,mob_effect:\"the_vault:immortality\",name:\"Immune\",range:10,target:\"mob\",type:\"potion_aura\"}",
-        "weight": 2.0
-      },
-      {
-        "value": "{leech_percentage:5.0f,name:\"Leeching\",type:\"leech_on_hit\"}",
-        "weight": 4.0
-      }
-    ]
+    }
+  },
+  "auras": {
+    "ethereal": {
+      "enabled": true,
+      "color": "#cfefff",
+      "radius": 10.0,
+      "value": 0,
+      "intervalTicks": 0,
+      "periodTicks": 0,
+      "chargeTicks": 0,
+      "cooldownTicks": 0,
+      "weight": 2
+    },
+    "healing": {
+      "enabled": true,
+      "color": "#f670db",
+      "radius": 5.0,
+      "value": 10,
+      "intervalTicks": 40,
+      "periodTicks": 0,
+      "chargeTicks": 0,
+      "cooldownTicks": 0,
+      "weight": 4
+    },
+    "speed": {
+      "enabled": true,
+      "color": "#fff07a",
+      "radius": 5.0,
+      "value": 25,
+      "intervalTicks": 0,
+      "periodTicks": 0,
+      "chargeTicks": 0,
+      "cooldownTicks": 0,
+      "weight": 4
+    },
+    "damage": {
+      "enabled": true,
+      "color": "#e0301f",
+      "radius": 4.5,
+      "value": 50,
+      "intervalTicks": 0,
+      "periodTicks": 0,
+      "chargeTicks": 0,
+      "cooldownTicks": 0,
+      "weight": 4
+    },
+    "aegis": {
+      "enabled": true,
+      "color": "#7fa8d9",
+      "radius": 7.0,
+      "value": 50,
+      "intervalTicks": 0,
+      "periodTicks": 0,
+      "chargeTicks": 0,
+      "cooldownTicks": 0,
+      "weight": 4
+    },
+    "poisonous": {
+      "enabled": true,
+      "color": "#8fe33a",
+      "radius": 5.0,
+      "value": 30,
+      "intervalTicks": 40,
+      "periodTicks": 0,
+      "chargeTicks": 0,
+      "cooldownTicks": 0,
+      "weight": 4
+    },
+    "chilling": {
+      "enabled": true,
+      "color": "#62cbf2",
+      "radius": 5.0,
+      "value": 50,
+      "intervalTicks": 0,
+      "periodTicks": 0,
+      "chargeTicks": 0,
+      "cooldownTicks": 0,
+      "weight": 4
+    },
+    "mana_steal": {
+      "enabled": true,
+      "color": "#3b5bff",
+      "radius": 5.0,
+      "value": 5,
+      "intervalTicks": 40,
+      "periodTicks": 0,
+      "chargeTicks": 0,
+      "cooldownTicks": 0,
+      "weight": 4
+    },
+    "blast_wave": {
+      "enabled": true,
+      "color": "#ff8a1f",
+      "radius": 5.0,
+      "value": 500,
+      "intervalTicks": 0,
+      "periodTicks": 100,
+      "chargeTicks": 20,
+      "cooldownTicks": 0,
+      "weight": 4
+    },
+    "reflect": {
+      "enabled": true,
+      "color": "#b05cf2",
+      "radius": 7.5,
+      "value": 100,
+      "intervalTicks": 0,
+      "periodTicks": 0,
+      "chargeTicks": 0,
+      "cooldownTicks": 10,
+      "weight": 4
+    }
+  },
+  "onHits": {
+    "leech": {
+      "enabled": true,
+      "value": 20,
+      "maxStacks": 0,
+      "durationTicks": 0,
+      "weight": 1
+    },
+    "vulnerable": {
+      "enabled": true,
+      "value": 0,
+      "maxStacks": 8,
+      "durationTicks": 100,
+      "weight": 1
+    },
+    "grievous": {
+      "enabled": true,
+      "value": 50,
+      "maxStacks": 0,
+      "durationTicks": 100,
+      "weight": 1
+    }
   }
 }
