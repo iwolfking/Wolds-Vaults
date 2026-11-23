@@ -22,6 +22,15 @@
         "the_vault:gem_echo",
         "the_vault:gem_pog",
         "the_vault:echo_pog",
+        "the_vault:cluster_iskallium",
+        "the_vault:cluster_gorginite",
+        "the_vault:cluster_sparkletine",
+        "the_vault:cluster_ashium",
+        "the_vault:cluster_bomignite",
+        "the_vault:cluster_tubium",
+        "the_vault:cluster_upaline",
+        "the_vault:cluster_petzanite",
+        "the_vault:cluster_xenium",
         "the_vault:omega_pog",
         "the_vault:gemstone",
         "the_vault:vault_diamond"
@@ -32,7 +41,8 @@
       "name": "Metals",
       "icon": "the_vault:chromatic_steel_ingot",
       "items": [
-        "the_vault:chromatic_iron_ingot",
+        "the_vault:chromatic_iron_nugget",
+        "the_vault:raw_chromatic_iron",
         "the_vault:chromatic_steel_ingot",
         "the_vault:black_chromatic_steel_ingot",
         "the_vault:vaulterite_ingot",
@@ -245,6 +255,114 @@
     {
       "forms": [
         {
+          "item": "the_vault:cluster_iskallium",
+          "factor": 1
+        },
+        {
+          "item": "the_vault:chunk_iskallium",
+          "factor": 9
+        }
+      ]
+    },
+    {
+      "forms": [
+        {
+          "item": "the_vault:cluster_gorginite",
+          "factor": 1
+        },
+        {
+          "item": "the_vault:chunk_gorginite",
+          "factor": 9
+        }
+      ]
+    },
+    {
+      "forms": [
+        {
+          "item": "the_vault:cluster_sparkletine",
+          "factor": 1
+        },
+        {
+          "item": "the_vault:chunk_sparkletine",
+          "factor": 9
+        }
+      ]
+    },
+    {
+      "forms": [
+        {
+          "item": "the_vault:cluster_ashium",
+          "factor": 1
+        },
+        {
+          "item": "the_vault:chunk_ashium",
+          "factor": 9
+        }
+      ]
+    },
+    {
+      "forms": [
+        {
+          "item": "the_vault:cluster_bomignite",
+          "factor": 1
+        },
+        {
+          "item": "the_vault:chunk_bomignite",
+          "factor": 9
+        }
+      ]
+    },
+    {
+      "forms": [
+        {
+          "item": "the_vault:cluster_tubium",
+          "factor": 1
+        },
+        {
+          "item": "the_vault:chunk_tubium",
+          "factor": 9
+        }
+      ]
+    },
+    {
+      "forms": [
+        {
+          "item": "the_vault:cluster_upaline",
+          "factor": 1
+        },
+        {
+          "item": "the_vault:chunk_upaline",
+          "factor": 9
+        }
+      ]
+    },
+    {
+      "forms": [
+        {
+          "item": "the_vault:cluster_petzanite",
+          "factor": 1
+        },
+        {
+          "item": "the_vault:chunk_petzanite",
+          "factor": 9
+        }
+      ]
+    },
+    {
+      "forms": [
+        {
+          "item": "the_vault:cluster_xenium",
+          "factor": 1
+        },
+        {
+          "item": "the_vault:chunk_xenium",
+          "factor": 9
+        }
+      ]
+    },
+    {
+      "forms": [
+        {
           "item": "the_vault:vault_diamond",
           "factor": 1
         },
@@ -256,12 +374,28 @@
     },
     {
       "forms": [
-        {
-          "item": "the_vault:chromatic_iron_ingot",
+                {
+          "item": "the_vault:chromatic_iron_nugget",
           "factor": 1
         },
         {
+          "item": "the_vault:chromatic_iron_ingot",
+          "factor": 9
+        },
+        {
           "item": "the_vault:chromatic_iron_block",
+          "factor": 81
+        }
+      ]
+    },
+    {
+      "forms": [
+        {
+          "item": "the_vault:raw_chromatic_iron",
+          "factor": 1
+        },
+        {
+          "item": "the_vault:raw_chromatic_iron_block",
           "factor": 9
         }
       ]
@@ -538,7 +672,8 @@
     "models": [
       {
         "id": "wooden_boxed",
-        "name": "Wooden Boxed Crate",
+        "name": "Boxed Crate",
+        "variant": "Wooden",
         "tint": "#FFFFFF",
         "sound": "the_vault:vault_stash_open_wooden",
         "unlock": {
@@ -547,7 +682,8 @@
       },
       {
         "id": "bamboo_boxed",
-        "name": "Bamboo Boxed Crate",
+        "name": "Boxed Crate",
+        "variant": "Bamboo",
         "tint": "#FFFFFF",
         "sound": "the_vault:vault_stash_open_wooden_light",
         "unlock": {
@@ -556,7 +692,28 @@
       },
       {
         "id": "onyx_boxed",
-        "name": "Onyx Boxed Crate",
+        "name": "Boxed Crate",
+        "variant": "Onyx",
+        "tint": "#FFFFFF",
+        "sound": "the_vault:vault_stash_open_wooden",
+        "unlock": {
+          "type": "default"
+        }
+      },
+      {
+        "id": "blossom_boxed",
+        "name": "Boxed Crate",
+        "variant": "Blossom",
+        "tint": "#FFFFFF",
+        "sound": "the_vault:vault_stash_open_wooden",
+        "unlock": {
+          "type": "default"
+        }
+      },
+      {
+        "id": "driftwood_boxed",
+        "name": "Boxed Crate",
+        "variant": "Driftwood",
         "tint": "#FFFFFF",
         "sound": "the_vault:vault_stash_open_wooden",
         "unlock": {
@@ -565,7 +722,8 @@
       },
       {
         "id": "wooden_ironbound",
-        "name": "Wooden Ironbound Crate",
+        "name": "Ironbound Crate",
+        "variant": "Wooden",
         "tint": "#FFFFFF",
         "sound": "the_vault:vault_stash_open_wooden",
         "unlock": {
@@ -574,7 +732,8 @@
       },
       {
         "id": "bamboo_ironbound",
-        "name": "Bamboo Ironbound Crate",
+        "name": "Ironbound Crate",
+        "variant": "Bamboo",
         "tint": "#FFFFFF",
         "sound": "the_vault:vault_stash_open_wooden_light",
         "unlock": {
@@ -583,7 +742,28 @@
       },
       {
         "id": "onyx_ironbound",
-        "name": "Onyx Ironbound Crate",
+        "name": "Ironbound Crate",
+        "variant": "Onyx",
+        "tint": "#FFFFFF",
+        "sound": "the_vault:vault_stash_open_wooden",
+        "unlock": {
+          "type": "default"
+        }
+      },
+      {
+        "id": "blossom_ironbound",
+        "name": "Ironbound Crate",
+        "variant": "Blossom",
+        "tint": "#FFFFFF",
+        "sound": "the_vault:vault_stash_open_wooden",
+        "unlock": {
+          "type": "default"
+        }
+      },
+      {
+        "id": "driftwood_ironbound",
+        "name": "Ironbound Crate",
+        "variant": "Driftwood",
         "tint": "#FFFFFF",
         "sound": "the_vault:vault_stash_open_wooden",
         "unlock": {
@@ -592,7 +772,8 @@
       },
       {
         "id": "wooden_roped",
-        "name": "Wooden Roped Crate",
+        "name": "Roped Crate",
+        "variant": "Wooden",
         "tint": "#FFFFFF",
         "sound": "the_vault:vault_stash_open_wooden",
         "unlock": {
@@ -601,7 +782,8 @@
       },
       {
         "id": "bamboo_roped",
-        "name": "Bamboo Roped Crate",
+        "name": "Roped Crate",
+        "variant": "Bamboo",
         "tint": "#FFFFFF",
         "sound": "the_vault:vault_stash_open_wooden_light",
         "unlock": {
@@ -610,7 +792,78 @@
       },
       {
         "id": "onyx_roped",
-        "name": "Onyx Roped Crate",
+        "name": "Roped Crate",
+        "variant": "Onyx",
+        "tint": "#FFFFFF",
+        "sound": "the_vault:vault_stash_open_wooden",
+        "unlock": {
+          "type": "default"
+        }
+      },
+      {
+        "id": "blossom_roped",
+        "name": "Roped Crate",
+        "variant": "Blossom",
+        "tint": "#FFFFFF",
+        "sound": "the_vault:vault_stash_open_wooden",
+        "unlock": {
+          "type": "default"
+        }
+      },
+      {
+        "id": "driftwood_roped",
+        "name": "Roped Crate",
+        "variant": "Driftwood",
+        "tint": "#FFFFFF",
+        "sound": "the_vault:vault_stash_open_wooden",
+        "unlock": {
+          "type": "default"
+        }
+      },
+      {
+        "id": "wooden_forgotten",
+        "name": "Forgotten Crate",
+        "variant": "Wooden",
+        "tint": "#FFFFFF",
+        "sound": "the_vault:vault_stash_open_wooden",
+        "unlock": {
+          "type": "default"
+        }
+      },
+      {
+        "id": "bamboo_forgotten",
+        "name": "Forgotten Crate",
+        "variant": "Bamboo",
+        "tint": "#FFFFFF",
+        "sound": "the_vault:vault_stash_open_wooden_light",
+        "unlock": {
+          "type": "default"
+        }
+      },
+      {
+        "id": "onyx_forgotten",
+        "name": "Forgotten Crate",
+        "variant": "Onyx",
+        "tint": "#FFFFFF",
+        "sound": "the_vault:vault_stash_open_wooden",
+        "unlock": {
+          "type": "default"
+        }
+      },
+      {
+        "id": "blossom_forgotten",
+        "name": "Forgotten Crate",
+        "variant": "Blossom",
+        "tint": "#FFFFFF",
+        "sound": "the_vault:vault_stash_open_wooden",
+        "unlock": {
+          "type": "default"
+        }
+      },
+      {
+        "id": "driftwood_forgotten",
+        "name": "Forgotten Crate",
+        "variant": "Driftwood",
         "tint": "#FFFFFF",
         "sound": "the_vault:vault_stash_open_wooden",
         "unlock": {
@@ -681,22 +934,6 @@
             "type": "vault_level",
             "level": 150
           }
-        }
-      },
-      {
-        "id": "aurora",
-        "name": "Aurora",
-        "trail": "aurora",
-        "unlock": {
-          "type": "reward"
-        }
-      },
-      {
-        "id": "hearts",
-        "name": "Hearts",
-        "trail": "heart",
-        "unlock": {
-          "type": "reward"
         }
       }
     ]

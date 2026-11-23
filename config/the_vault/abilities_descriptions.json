@@ -1199,15 +1199,15 @@
     "Mega_Jump_Base": {
       "description": [
         {
-          "text": "Gives you the ability to ",
+          "text": "Launch yourself ",
           "color": "$text"
         },
         {
-          "text": "mega jump",
+          "text": "high into the air",
           "color": "$range"
         },
         {
-          "text": " up in the air.\n\n",
+          "text": ". Sprint into it to carry your run into a long leap. Your own jump never gives you fall damage.\n\n",
           "color": "$text"
         },
         {
@@ -1229,15 +1229,31 @@
     "Mega_Jump_Break_Down": {
       "description": [
         {
-          "text": "Drills you downward through blocks, breaking them in a ",
+          "text": "Summon a ",
           "color": "$text"
         },
         {
-          "text": "radius",
-          "color": "$radius"
+          "text": "springboard",
+          "color": "$name"
         },
         {
-          "text": " as you descend.\n\nThis ability only works inside vaults.\n\n",
+          "text": " at your feet for a ",
+          "color": "$text"
+        },
+        {
+          "text": "duration",
+          "color": "$duration"
+        },
+        {
+          "text": ". You and your party bounce ",
+          "color": "$text"
+        },
+        {
+          "text": "high into the air",
+          "color": "$range"
+        },
+        {
+          "text": " when you step on it, with no fall damage. Sneak to walk across without bouncing. The cooldown starts when it folds away.\n\n",
           "color": "$text"
         },
         {
@@ -1249,13 +1265,13 @@
         "cooldown",
         "manaCost",
         "rangeVertical",
-        "radius"
+        "adjustedDuration"
       ],
       "next": [
         "cooldown",
         "manaCost",
         "rangeVertical",
-        "radius"
+        "adjustedDuration"
       ]
     },
     "Mega_Jump_Break_Up": {
@@ -4816,6 +4832,46 @@
         "duration",
         "cooldown",
         "manaCost"
+      ]
+    },
+    "Mega_Jump_Hangtime": {
+      "description": [
+        {
+          "text": "Launch yourself ",
+          "color": "$text"
+        },
+        {
+          "text": "up",
+          "color": "$range"
+        },
+        {
+          "text": " and hover at the top for a ",
+          "color": "$text"
+        },
+        {
+          "text": "duration",
+          "color": "$duration"
+        },
+        {
+          "text": ". Sneak to drop early. You have to touch the ground before you can cast it again, and the cooldown starts when the hover ends. Your own jump never gives you fall damage.\n\n",
+          "color": "$text"
+        },
+        {
+          "text": "\u2734 Cast Ability ",
+          "color": "$castType"
+        }
+      ],
+      "current": [
+        "cooldown",
+        "manaCost",
+        "rangeVertical",
+        "adjustedDuration"
+      ],
+      "next": [
+        "cooldown",
+        "manaCost",
+        "rangeVertical",
+        "adjustedDuration"
       ]
     }
   }
