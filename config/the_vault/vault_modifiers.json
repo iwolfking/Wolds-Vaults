@@ -30,38 +30,38 @@
           "descriptionFormatted": "This vault has been inscribed with an Expert Sigil, making it more difficult!",
           "icon": "the_vault:gui/modifiers/sigil_expert"
         }
-	},
-        "the_vault:sigil_master": {
-          "properties": {},
-          "display": {
-            "name": "Master",
-            "color": "#00FF00",
-            "description": "This vault has been inscribed with a Master Sigil",
-            "descriptionFormatted": "This vault has been inscribed with a Master Sigil, making it more difficult!",
-            "icon": "the_vault:gui/modifiers/sigil_master"
-          }
-        },
-        "the_vault:sigil_veteran": {
-          "properties": {},
-          "display": {
-            "name": "Veteran",
-            "color": "#00FF00",
-            "description": "This vault has been inscribed with a Veteran Sigil",
-            "descriptionFormatted": "This vault has been inscribed with a Veteran Sigil, making it more difficult!",
-            "icon": "the_vault:gui/modifiers/sigil_veteran"
-          }
-        },
-        "the_vault:sigil_legend": {
-          "properties": {},
-          "display": {
-            "name": "Legend",
-            "color": "#00FF00",
-            "description": "This vault has been inscribed with a Legend Sigil",
-            "descriptionFormatted": "This vault has been inscribed with a Legend Sigil, making it more difficult!",
-            "icon": "the_vault:gui/modifiers/sigil_legend"
-          }
-        },
-        "the_vault:vessel_effigy": {
+      },
+      "the_vault:sigil_master": {
+        "properties": {},
+        "display": {
+          "name": "Master",
+          "color": "#00FF00",
+          "description": "This vault has been inscribed with a Master Sigil",
+          "descriptionFormatted": "This vault has been inscribed with a Master Sigil, making it more difficult!",
+          "icon": "the_vault:gui/modifiers/sigil_master"
+        }
+      },
+      "the_vault:sigil_veteran": {
+        "properties": {},
+        "display": {
+          "name": "Veteran",
+          "color": "#00FF00",
+          "description": "This vault has been inscribed with a Veteran Sigil",
+          "descriptionFormatted": "This vault has been inscribed with a Veteran Sigil, making it more difficult!",
+          "icon": "the_vault:gui/modifiers/sigil_veteran"
+        }
+      },
+      "the_vault:sigil_legend": {
+        "properties": {},
+        "display": {
+          "name": "Legend",
+          "color": "#00FF00",
+          "description": "This vault has been inscribed with a Legend Sigil",
+          "descriptionFormatted": "This vault has been inscribed with a Legend Sigil, making it more difficult!",
+          "icon": "the_vault:gui/modifiers/sigil_legend"
+        }
+      },
+      "the_vault:vessel_effigy": {
         "properties": {},
         "display": {
           "name": "Vessel Effigy",
@@ -71,6 +71,16 @@
           "icon": "the_vault:gui/modifiers/vessel_effigy"
         }
       }
+    },
+    "the_vault:modifier_type/player_no_abilities": {
+      "the_vault:no_abilities": {
+        "properties": {},
+        "display": {
+          "name": "No Abilities",
+          "color": "#6E8BB8",
+          "description": "Abilities can't be used in this vault.",
+          "icon": "the_vault:gui/modifiers/ability_break"
+        }
       }
     },
     "the_vault:modifier_type/blacklist_removal": {
@@ -1325,7 +1335,7 @@
           "icon": "the_vault:gui/modifiers/kill_coin"
         }
       },
-       "woldsvaults:gem_mob_drops": {
+      "woldsvaults:gem_mob_drops": {
         "properties": {
           "filter": "",
           "lootTable": [
@@ -3520,7 +3530,7 @@
           "icon": "the_vault:gui/modifiers/impossible"
         }
       },
-       "woldsvaults:lights_out": {
+      "woldsvaults:lights_out": {
         "properties": {
           "effect": "wildbackport:darkness",
           "effectAmplifier": 0
@@ -9192,7 +9202,7 @@
         }
       }
     },
-     "woldsvaults:modifier_type/brazier_pool_modification": {
+    "woldsvaults:modifier_type/brazier_pool_modification": {
       "woldsvaults:all_bad_haunted_braziers": {
         "properties": {
           "id": "woldsvaults:all_bad_haunted_braziers"
@@ -9558,5 +9568,4 @@
       }
     }
   }
-  
 }

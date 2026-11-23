@@ -7680,56 +7680,6 @@
       },
       {
         "attribute": "the_vault:ability_cast_on_loot",
-        "group": "ModAbilityCastOnLoot",
-        "identifier": "the_vault:u_ability_cast_on_loot",
-        "tags": [
-          "noImbuement"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
-              "abilityId": "Nova_Slow",
-              "tileEntityGroupId": "the_vault:chest",
-              "displayName": "Omega Chest",
-              "chance": {
-                "min": 0.05,
-                "max": 0.2,
-                "step": 0.05
-              },
-              "level": {
-                "min": 4,
-                "max": 8,
-                "step": 1
-              }
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
-              "abilityId": "Nova_Slow",
-              "tileEntityGroupId": "the_vault:chest",
-              "displayName": "Omega Chest",
-              "chance": {
-                "min": 0.21,
-                "max": 0.3,
-                "step": 0.01
-              },
-              "level": {
-                "min": 9,
-                "max": 10,
-                "step": 1
-              }
-            }
-          }
-        ]
-      },
-      {
-        "attribute": "the_vault:ability_cast_on_loot",
         "group": "ModSeekersEye",
         "identifier": "the_vault:u_seekers_eye_hunter",
         "tags": [
@@ -8307,38 +8257,6 @@
                 "min": 2.0,
                 "max": 2.0,
                 "step": 0.0
-              }
-            }
-          }
-        ]
-      },
- {
-        "attribute": "the_vault:arcane_nova_on_hit",
-        "group": "ModEnhancement",
-        "identifier": "the_vault:u_arcane_nova_on_hit",
-        "tags": [
-          "noImbuement"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
-              "hitsRequired": {
-                "min": 6,
-                "max": 10,
-                "step": 1
-              },
-              "radius": {
-                "min": 3.0,
-                "max": 6.0,
-                "step": 1
-              },
-              "percentAbilityPower": {
-                "min": 0.50,
-                "max": 2.00,
-                "step": 0.05
               }
             }
           }
