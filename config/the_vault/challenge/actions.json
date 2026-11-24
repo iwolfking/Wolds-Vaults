@@ -1146,6 +1146,18 @@
       "color1": "0xFFED7B24",
       "color2": "0xFFe2a631"
     },
+    "sweetheart": {
+      "type": "floating_item_reward",
+      "textColor": -1213660,
+      "name": "The Sweetheart",
+      "item": {
+        "id": "the_vault:chestplate",
+        "nbt": "{\"the_vault:gear_unique_pool\":\"the_vault:sweetheart\",\"the_vault:gear_roll_type\":\"Unique\"}",
+        "count": 1
+      },
+      "color1": "0xFFED7B24",
+      "color2": "0xFFe2a631"
+    },
     "iskallibur": {
       "type": "floating_item_reward",
       "textColor": -1213660,
@@ -1153,6 +1165,18 @@
       "item": {
         "id": "the_vault:sword",
         "nbt": "{\"the_vault:gear_unique_pool\":\"the_vault:iskallibur\",\"the_vault:gear_roll_type\":\"Unique\"}",
+        "count": 1
+      },
+      "color1": "0xFFED7B24",
+      "color2": "0xFFe2a631"
+    },
+    "crystal_double_blade": {
+      "type": "floating_item_reward",
+      "textColor": -1213660,
+      "name": "Crystal Double Blade",
+      "item": {
+        "id": "the_vault:sword",
+        "nbt": "{\"the_vault:gear_unique_pool\":\"the_vault:crystal_double_blade\",\"the_vault:gear_roll_type\":\"Unique\"}",
         "count": 1
       },
       "color1": "0xFFED7B24",
@@ -3130,6 +3154,10 @@
             {
               "value": "ivy",
               "weight": 4
+            },
+            {
+              "value": "crystal_double_blade",
+              "weight": 4
             }
           ]
         },
@@ -3250,6 +3278,10 @@
             },
             {
               "value": "ivy",
+              "weight": 4
+            },
+            {
+              "value": "crystal_double_blade",
               "weight": 4
             }
           ]

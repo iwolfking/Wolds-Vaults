@@ -2324,10 +2324,10 @@
         "itemStack": {
           "item": "the_vault:knowledge_star"
         },
-        "minAmount": 3,
-        "maxAmount": 6,
+        "minAmount": 1,
+        "maxAmount": 2,
         "minLevel": 0,
-        "maxLevel": 49,
+        "maxLevel": 19,
         "minGreedTier": 0
       },
       {
@@ -2373,10 +2373,24 @@
           "item": "the_vault:star_fruit"
         },
         "minAmount": 1,
-        "maxAmount": 2,
-        "minLevel": 20,
+        "maxAmount": 1,
+        "minLevel": 80,
         "maxLevel": -1,
         "minGreedTier": 0
+      },
+      {
+        "type": "item",
+        "weight": 360,
+        "itemStack": {
+          "item": "the_vault:jewel",
+          "nbt": "{\"the_vault:gear_roll_type\":\"Rare\",\"the_vault:is_loot\":\"true\",\"the_vault:is_legendary\":\"true\"}"
+        },
+        "minAmount": 1,
+        "maxAmount": 1,
+        "minLevel": 20,
+        "maxLevel": -1,
+        "minGreedTier": 0,
+        "identified": true
       },
       {
         "type": "item",

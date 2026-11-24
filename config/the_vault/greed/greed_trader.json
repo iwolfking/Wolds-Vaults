@@ -2085,6 +2085,81 @@
         }
       }
     ],
+    "crate_supplies": [
+      {
+        "type": "catalyst",
+        "weight": 40,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "catalyst": {
+          "size": {
+            "type": "constant",
+            "count": 10
+          },
+          "modifierPool": "cascade_modifiers",
+          "minModifiers": 1,
+          "maxModifiers": 1,
+          "isSuper": true
+        }
+      },
+      {
+        "type": "inscription",
+        "weight": 30,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "inscription": {
+          "rooms": [
+            {
+              "roomType": "COMMON",
+              "count": 1,
+              "color": 16777215
+            }
+          ],
+          "minTime": 1200,
+          "maxTime": 3600,
+          "isSuper": true,
+          "color": 16777215
+        }
+      },
+      {
+        "type": "inscription",
+        "weight": 18,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "inscription": {
+          "rooms": [
+            {
+              "roomType": "CHALLENGE",
+              "count": 1,
+              "color": 16711935
+            }
+          ],
+          "minTime": 600,
+          "maxTime": 1800,
+          "isSuper": true,
+          "color": 16711935
+        }
+      },
+      {
+        "type": "inscription",
+        "weight": 12,
+        "minGreedTier": 0,
+        "maxGreedTier": -1,
+        "inscription": {
+          "rooms": [
+            {
+              "roomType": "OMEGA",
+              "count": 1,
+              "color": 7012096
+            }
+          ],
+          "minTime": 200,
+          "maxTime": 800,
+          "isSuper": true,
+          "color": 7012096
+        }
+      }
+    ],
     "greed_companion_relics": [
       {
         "weight": 10,
