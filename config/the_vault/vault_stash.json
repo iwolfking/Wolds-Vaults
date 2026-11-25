@@ -32,8 +32,7 @@
         "the_vault:cluster_petzanite",
         "the_vault:cluster_xenium",
         "the_vault:omega_pog",
-        "the_vault:gemstone",
-        "the_vault:vault_diamond"
+        "the_vault:gemstone"
       ]
     },
     {
@@ -43,8 +42,8 @@
       "items": [
         "the_vault:chromatic_iron_nugget",
         "the_vault:raw_chromatic_iron",
-        "the_vault:chromatic_steel_ingot",
-        "the_vault:black_chromatic_steel_ingot",
+        "the_vault:chromatic_steel_nugget",
+        "the_vault:black_chromatic_steel_nugget",
         "the_vault:vaulterite_ingot",
         "the_vault:echoing_ingot",
         "the_vault:carbon_nugget",
@@ -362,18 +361,6 @@
     },
     {
       "forms": [
-        {
-          "item": "the_vault:vault_diamond",
-          "factor": 1
-        },
-        {
-          "item": "the_vault:vault_diamond_block",
-          "factor": 9
-        }
-      ]
-    },
-    {
-      "forms": [
                 {
           "item": "the_vault:chromatic_iron_nugget",
           "factor": 1
@@ -403,24 +390,32 @@
     {
       "forms": [
         {
-          "item": "the_vault:chromatic_steel_ingot",
+          "item": "the_vault:chromatic_steel_nugget",
           "factor": 1
         },
         {
-          "item": "the_vault:chromatic_steel_block",
+          "item": "the_vault:chromatic_steel_ingot",
           "factor": 9
+        },
+        {
+          "item": "the_vault:chromatic_steel_block",
+          "factor": 81
         }
       ]
     },
     {
       "forms": [
         {
-          "item": "the_vault:black_chromatic_steel_ingot",
+          "item": "the_vault:black_chromatic_steel_nugget",
           "factor": 1
         },
         {
-          "item": "the_vault:black_chromatic_steel_block",
+          "item": "the_vault:black_chromatic_steel_ingot",
           "factor": 9
+        },
+        {
+          "item": "the_vault:black_chromatic_steel_block",
+          "factor": 81
         }
       ]
     },
@@ -433,6 +428,10 @@
         {
           "item": "the_vault:carbon",
           "factor": 9
+        },
+        {
+          "item": "woldsvaults:carbon_block",
+          "factor": 81
         }
       ]
     },
