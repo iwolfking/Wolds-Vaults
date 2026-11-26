@@ -2,25 +2,25 @@
   "tiers": {
     "WARM": {
       "fromHeat": 0,
-      "pool": "the_vault:brazier_warm"
+      "pool": "woldsvaults:haunted_braziers_warm"
     },
     "HOT": {
       "fromHeat": 3,
-      "pool": "the_vault:brazier_hot"
+      "pool": "woldsvaults:haunted_braziers_hot"
     },
     "BLAZING": {
       "fromHeat": 6,
-      "pool": "the_vault:brazier_blazing"
+      "pool": "woldsvaults:haunted_braziers_blazing"
     }
   },
   "rollNearDistance": 48.0,
-  "ringRadius": 5.0,
-  "ringHeight": 3.0,
+  "ringRadius": 7.0,
+  "ringHeight": 4.0,
   "contestedSpeed": 0.0,
   "coldDrainSpeed": 1.0,
   "secondWaveAt": 0.5,
-  "mobHealthPerHeat": 0.1,
-  "mobDamagePerHeat": 0.1,
+  "mobHealthPerHeat": 0.2,
+  "mobDamagePerHeat": 0.2,
   "waveSpawnMinDistance": 8.0,
   "waveSpawnMaxDistance": 11.0,
   "waveMobGroups": {
@@ -32,84 +32,83 @@
     "FRAGGED": { "@the_vault:assassin": 40, "@the_vault:tank": 60 }
   },
   "blessingCaps": {
-    "the_vault:extended": 3
   },
   "levels": [
     {
       "level": 0,
-      "holdSeconds": 12.0,
+      "holdSeconds": 15.0,
       "holdSecondsPerHeat": 1.0,
       "holdSecondsCap": 30.0,
-      "mobsPerWave": 3,
-      "mobsPerWavePerHeat": 2,
-      "mobsPerExtraPlayer": 1,
+      "mobsPerWave": 6,
+      "mobsPerWavePerHeat": 4,
+      "mobsPerExtraPlayer": 3,
       "blessingStacks": {
         "the_vault:jackpot_chests": { "type": "uniform", "min": 3, "max": 6 }
       }
     },
     {
       "level": 20,
-      "holdSeconds": 12.0,
+      "holdSeconds": 15.0,
       "holdSecondsPerHeat": 1.0,
       "holdSecondsCap": 30.0,
-      "mobsPerWave": 4,
-      "mobsPerWavePerHeat": 2,
-      "mobsPerExtraPlayer": 1,
+      "mobsPerWave": 9,
+      "mobsPerWavePerHeat": 4,
+      "mobsPerExtraPlayer": 3,
       "blessingStacks": {
         "the_vault:jackpot_chests": { "type": "uniform", "min": 4, "max": 7 }
       }
     },
     {
       "level": 40,
-      "holdSeconds": 12.0,
+      "holdSeconds": 15.0,
       "holdSecondsPerHeat": 1.0,
       "holdSecondsCap": 30.0,
-      "mobsPerWave": 6,
-      "mobsPerWavePerHeat": 2,
-      "mobsPerExtraPlayer": 1,
+      "mobsPerWave": 12,
+      "mobsPerWavePerHeat": 4,
+      "mobsPerExtraPlayer": 3,
       "blessingStacks": {
         "the_vault:jackpot_chests": { "type": "uniform", "min": 5, "max": 8 }
       }
     },
     {
       "level": 60,
-      "holdSeconds": 12.0,
+      "holdSeconds": 15.0,
       "holdSecondsPerHeat": 1.0,
       "holdSecondsCap": 30.0,
-      "mobsPerWave": 8,
-      "mobsPerWavePerHeat": 2,
-      "mobsPerExtraPlayer": 1,
+      "mobsPerWave": 15,
+      "mobsPerWavePerHeat": 4,
+      "mobsPerExtraPlayer": 3,
       "blessingStacks": {
         "the_vault:jackpot_chests": { "type": "uniform", "min": 6, "max": 9 }
       }
     },
     {
       "level": 80,
-      "holdSeconds": 12.0,
+      "holdSeconds": 15.0,
       "holdSecondsPerHeat": 1.0,
       "holdSecondsCap": 30.0,
-      "mobsPerWave": 12,
-      "mobsPerWavePerHeat": 2,
-      "mobsPerExtraPlayer": 1,
+      "mobsPerWave": 15,
+      "mobsPerWavePerHeat": 4,
+      "mobsPerExtraPlayer": 3,
       "blessingStacks": {
         "the_vault:jackpot_chests": { "type": "uniform", "min": 7, "max": 10 }
       }
     },
     {
       "level": 100,
-      "holdSeconds": 12.0,
+      "holdSeconds": 15.0,
       "holdSecondsPerHeat": 1.0,
       "holdSecondsCap": 30.0,
-      "mobsPerWave": 14,
-      "mobsPerWavePerHeat": 2,
-      "mobsPerExtraPlayer": 1,
+      "mobsPerWave": 18,
+      "mobsPerWavePerHeat": 4,
+      "mobsPerExtraPlayer": 3,
       "blessingStacks": {
         "the_vault:jackpot_chests": { "type": "uniform", "min": 8, "max": 11 }
       }
     }
   ],
-  "ghostDrainPerSecond": 0.35,
-  "ghostOutsideDrainMultiplier": 0.5,
-  "heatTierBiasPerHeat": 0.05,
-  "ghostDrainGraceTicks": 15
+  "ghostDrainPerSecond": 0.25,
+  "ghostOutsideDrainMultiplier": 0.2,
+  "heatTierBiasPerHeat": 0.1,
+  "ghostDrainGraceTicks": 50
 }
