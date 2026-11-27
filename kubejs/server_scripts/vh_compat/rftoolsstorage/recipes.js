@@ -317,7 +317,7 @@ onEvent("recipes", event => {
             'RLR'
         ], {
         R: 'rftoolsbase:dimensionalshard',
-        F: 'the_vault:bounty_pearl',
+        F: 'minecraft:ender_pearl',
         L: 'the_vault:gem_larimar'
     })
 
